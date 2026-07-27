@@ -1,0 +1,56 @@
+{
+  "name": "willow-ciff-editor-react-vite",
+  "private": true,
+  "version": "1.4.1",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "desktop:dev": "concurrently -k -n VITE,ELECTRON -c blue,green \"npm:dev\" \"wait-on http://127.0.0.1:5173 && electron . --dev-url=http://127.0.0.1:5173\"",
+    "build": "tsc -b && vite build",
+    "test": "node --test tests/*.test.cjs",
+    "desktop:build": "npm run build && node scripts/desktop-build.cjs",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --pretty"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^10.0.3",
+    "electron": "^43.0.0",
+    "electron-builder": "^26.15.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "wait-on": "^9.0.10"
+  },
+  "build": {
+    "appId": "com.willow.ciffeditor",
+    "productName": "Willow CIFF Editor",
+    "directories": {
+      "output": "desktop-release-local"
+    },
+    "electronDist": "node_modules/electron/dist",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "icon": "public/resourses/Icons/icon.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
