@@ -1,72 +1,109 @@
-# Willow XML CIFF Editor — React + TypeScript + Vite
+# Willow CIFF Editor
 
-Проект перенесён на стек React + TypeScript + Vite с сохранением текущей разметки, CSS-классов, `id` элементов и legacy-модулей логики.
+Редактор XML/CIFF-шаблонов на React, TypeScript и Vite. Проект также можно запускать и собирать как настольное приложение Electron для Windows.
+
+## Возможности
+
+- создание и редактирование CIFF-шаблонов;
+- загрузка и сохранение XML/CIFF-файлов;
+- визуальное редактирование элементов на рабочем холсте;
+- история изменений, панели свойств и проверка данных;
+- запуск в браузере и в виде настольного приложения.
+
+## Требования
+
+- Node.js 18 или новее;
+- npm;
+- Windows — для создания Windows-сборки Electron.
+
+## Установка
+
+Клонируйте репозиторий и установите зависимости:
+
+```bash
+git clone https://github.com/USERNAME/willow-ciff-editor.git
+cd willow-ciff-editor
+npm install
+```
+
+Замените `USERNAME` на имя владельца репозитория GitHub.
 
 ## Запуск
 
+### Веб-версия
+
 ```bash
-npm install
 npm run dev
 ```
 
-После запуска открой адрес, который покажет Vite, обычно:
+После запуска откройте адрес, указанный Vite. По умолчанию это `http://localhost:5173`.
 
-```text
-http://localhost:5173
-```
-
-## Проверка
+### Настольная версия Electron
 
 ```bash
+npm run desktop:dev
+```
+
+## Проверка проекта
+
+```bash
+npm test
 npm run typecheck
 npm run build
+```
+
+Для локального просмотра production-сборки:
+
+```bash
 npm run preview
 ```
 
-## Структура
+## Сборка приложения для Windows
+
+```bash
+npm run desktop:build
+```
+
+Готовые установочные файлы создаются в каталоге `desktop-release-local`. Каталог является результатом сборки и не добавляется в Git.
+
+## Структура проекта
 
 ```text
+electron/          Главный процесс Electron
+public/            Статические ресурсы и legacy-модули редактора
+scripts/           Сценарии сборки настольного приложения
 src/
-  components/       React-компоненты интерфейса без изменения визуальной структуры
-  hooks/            Хуки для инициализации runtime приложения
-  domain/           Типизированное описание CIFF runtime-модулей
-  legacy/           Глобальные декларации для старых модулей
-  utils/            Вспомогательные функции загрузки скриптов
-public/
-  modules/          Перенесённая существующая бизнес-логика JS без изменения поведения
-  libs/             Konva runtime
-  resourses/        SVG-иконки, используемые текущей версткой
-  styles.css        Оригинальные стили приложения
+  components/      React-компоненты интерфейса
+  domain/          Описание модулей и предметной области
+  hooks/           React-хуки и инициализация runtime
+  legacy/          Типы для существующих JavaScript-модулей
+  utils/           Вспомогательные функции
+tests/             Автоматические тесты
 ```
 
-## Важная деталь переноса
+Основная бизнес-логика редактора находится в `public/modules`. React отвечает за интерфейс и подключает существующий runtime через `useCiffEditorRuntime`.
 
-Существующая логика редактора сохранена как последовательность legacy-модулей в `public/modules`. React отвечает за структуру интерфейса и инициализацию runtime через `useCiffEditorRuntime`, но сами обработчики, расчёты, загрузка/сохранение XML/CIFF, рендеринг Konva, история, инспекторы и валидация остаются теми же модулями, чтобы не изменить текущее поведение.
+## Основные команды
 
-Проверено:
+| Команда | Назначение |
+| --- | --- |
+| `npm run dev` | Запустить веб-версию в режиме разработки |
+| `npm run desktop:dev` | Запустить Vite и Electron |
+| `npm test` | Выполнить автоматические тесты |
+| `npm run typecheck` | Проверить типы TypeScript |
+| `npm run build` | Создать production-сборку веб-версии |
+| `npm run desktop:build` | Собрать настольное приложение |
+| `npm run preview` | Просмотреть production-сборку |
 
-```text
-npm run typecheck
-npm run build
-```
+## Примечание для PowerShell
 
-## Установка на Windows
-
-Если PowerShell блокирует `npm`, используйте `npm.cmd`:
+Если выполнение `npm.ps1` запрещено политикой PowerShell, используйте `npm.cmd`:
 
 ```powershell
 npm.cmd install
-npm.cmd run typecheck
-npm.cmd run build
 npm.cmd run dev
 ```
 
-В архиве намеренно нет `package-lock.json`: зависимости должны подтягиваться из публичного npm registry.
+## Лицензия
 
-Если установка всё равно падает, выполните:
-
-```powershell
-npm.cmd cache clean --force
-npm.cmd config set registry https://registry.npmjs.org/
-npm.cmd install --no-audit --no-fund
-```
+Лицензия для проекта пока не указана.
