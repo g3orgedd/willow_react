@@ -1,0 +1,6571 @@
+{
+  "file": "CLPrintPreview.ocx",
+  "name": "CLPRINTPREVIEWLib",
+  "types": [
+    {
+      "index": 0,
+      "name": "_ICLPrintPreviewEvents",
+      "documentation": "_ICLPrintPreviewEvents Interface",
+      "guid": "{7DA01FA5-E267-11D4-8198-005004D1164E}",
+      "guidLocations": [
+        "3f4413d4",
+        "3f469d4c"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "Scroll",
+          "names": [
+            "Scroll",
+            "x",
+            "y"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": "method Scroll",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom",
+            "newVal"
+          ],
+          "memid": 2,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": "method Zoom",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ZoomRange",
+          "names": [
+            "ZoomRange",
+            "minZoom",
+            "maxZoom"
+          ],
+          "memid": 3,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": "method ZoomRange",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollRange",
+          "names": [
+            "ScrollRange",
+            "minX",
+            "maxX",
+            "minY",
+            "maxY"
+          ],
+          "memid": 4,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": "method ScrollRange",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "CLPrintPreview",
+      "documentation": "Claricom PrintPreview Class",
+      "guid": "{7DA01FA4-E267-11D4-8198-005004D1164E}",
+      "guidLocations": [
+        "3f4413e4",
+        "3f469d94"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "ICLPrintPreview",
+          "guid": "{7DA01FA3-E267-11D4-8198-005004D1164E}"
+        },
+        {
+          "name": "ICLPrintPreview2",
+          "guid": "{7DA01FA6-E267-11D4-8198-005004D1164E}"
+        },
+        {
+          "name": "ICLPrintPreviewProblem",
+          "guid": "{05F4AB41-A38B-11D5-8DAE-0050DAFE8A9F}"
+        },
+        {
+          "name": "ICLPrintPreviewDB",
+          "guid": "{F3254370-C9BB-497A-A2EF-AFBD1A50D501}"
+        },
+        {
+          "name": "ICLPrintPreview3",
+          "guid": "{4FEE7981-52AB-11D6-807A-005004D10645}"
+        },
+        {
+          "name": "ICLPrintPreview4",
+          "guid": "{5D896E67-26ED-481C-A8D9-732F4E3E8DAC}"
+        },
+        {
+          "name": "ICLPrintPreview5",
+          "guid": "{51DC7586-38F4-45DE-842C-F5E7E08D02DE}"
+        },
+        {
+          "name": "ICLPrintPreview6",
+          "guid": "{62EC7586-38F4-45DE-842C-F5E7E08D03EF}"
+        },
+        {
+          "name": "ICLPrintPreview7",
+          "guid": "{6BC4AC39-AAA0-4079-9D52-DB3670806ECE}"
+        },
+        {
+          "name": "_ICLPrintPreviewEvents",
+          "guid": "{7DA01FA5-E267-11D4-8198-005004D1164E}"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "ICLPrintPreview",
+      "documentation": "ICLPrintPreview Interface",
+      "guid": "{7DA01FA3-E267-11D4-8198-005004D1164E}",
+      "guidLocations": [
+        "3f441334",
+        "3f441ce0",
+        "3f469dac"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Window",
+          "names": [
+            "Window"
+          ],
+          "memid": -515,
+          "invkind": 2,
+          "vtableOffset32": 28,
+          "documentation": null,
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Preview",
+          "names": [
+            "Preview",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 2,
+          "vtableOffset32": 36,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 4,
+          "vtableOffset32": 40,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 2,
+          "vtableOffset32": 44,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 4,
+          "vtableOffset32": 48,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 2,
+          "vtableOffset32": 52,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 4,
+          "vtableOffset32": 56,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 2,
+          "vtableOffset32": 60,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 4,
+          "vtableOffset32": 64,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 2,
+          "vtableOffset32": 68,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 4,
+          "vtableOffset32": 72,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 2,
+          "vtableOffset32": 76,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 4,
+          "vtableOffset32": 80,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "BestFit",
+          "names": [
+            "BestFit"
+          ],
+          "memid": 8,
+          "invkind": 1,
+          "vtableOffset32": 84,
+          "documentation": "Displays current CIFF as best fit in the current window",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 2,
+          "vtableOffset32": 88,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 4,
+          "vtableOffset32": 92,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "ICLPrintPreview2",
+      "documentation": "ICLPrintPreview2 Interface",
+      "guid": "{7DA01FA6-E267-11D4-8198-005004D1164E}",
+      "guidLocations": [
+        "3f441344",
+        "3f441cf0",
+        "3f469dc4"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Window",
+          "names": [
+            "Window"
+          ],
+          "memid": -515,
+          "invkind": 2,
+          "vtableOffset32": 28,
+          "documentation": null,
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Preview",
+          "names": [
+            "Preview",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 2,
+          "vtableOffset32": 36,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 4,
+          "vtableOffset32": 40,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 2,
+          "vtableOffset32": 44,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 4,
+          "vtableOffset32": 48,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 2,
+          "vtableOffset32": 52,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 4,
+          "vtableOffset32": 56,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 2,
+          "vtableOffset32": 60,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 4,
+          "vtableOffset32": 64,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 2,
+          "vtableOffset32": 68,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 4,
+          "vtableOffset32": 72,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 2,
+          "vtableOffset32": 76,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 4,
+          "vtableOffset32": 80,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "BestFit",
+          "names": [
+            "BestFit"
+          ],
+          "memid": 8,
+          "invkind": 1,
+          "vtableOffset32": 84,
+          "documentation": "Displays current CIFF as best fit in the current window",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 2,
+          "vtableOffset32": 88,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 4,
+          "vtableOffset32": 92,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Print",
+          "names": [
+            "Print",
+            "hDC",
+            "pWidth",
+            "pHeight"
+          ],
+          "memid": 101,
+          "invkind": 1,
+          "vtableOffset32": 96,
+          "documentation": "method Print",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "wireHDC",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 6,
+      "functions": [],
+      "variables": [],
+      "implements": []
+    },
+    {
+      "index": 5,
+      "name": "_RemotableHandle",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 1,
+      "functions": [],
+      "variables": [
+        {
+          "name": "fContext",
+          "value": null
+        },
+        {
+          "name": "u",
+          "value": null
+        }
+      ],
+      "implements": []
+    },
+    {
+      "index": 6,
+      "name": "__MIDL_IWinTypes_0009",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 7,
+      "functions": [],
+      "variables": [
+        {
+          "name": "hInproc",
+          "value": null
+        },
+        {
+          "name": "hRemote",
+          "value": null
+        }
+      ],
+      "implements": []
+    },
+    {
+      "index": 7,
+      "name": "ICLPrintPreviewProblem",
+      "documentation": "ICLPrintPreviewProblems Interface",
+      "guid": "{05F4AB41-A38B-11D5-8DAE-0050DAFE8A9F}",
+      "guidLocations": [
+        "3f441354",
+        "3f441d00",
+        "3f469ddc"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "ProblemsFound",
+          "names": [
+            "ProblemsFound",
+            "pProblems"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 28,
+          "documentation": "method ProblemsFound",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "DisplayProblemsDialog",
+          "names": [
+            "DisplayProblemsDialog"
+          ],
+          "memid": 2,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "method DisplayProblemsDialog",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": []
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "ICLPrintPreviewDB",
+      "documentation": "ICLPrintPreviewDB Interface",
+      "guid": "{F3254370-C9BB-497A-A2EF-AFBD1A50D501}",
+      "guidLocations": [
+        "3f441364",
+        "3f441d10",
+        "3f469df4"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Database",
+          "names": [
+            "Database"
+          ],
+          "memid": 201,
+          "invkind": 4,
+          "vtableOffset32": 28,
+          "documentation": "Sets the name of the Database",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "UniqueJobCode",
+          "names": [
+            "UniqueJobCode"
+          ],
+          "memid": 202,
+          "invkind": 4,
+          "vtableOffset32": 32,
+          "documentation": "Sets the Unique Job Code",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "ICLPrintPreview3",
+      "documentation": "ICLPrintPreview3 Interface",
+      "guid": "{4FEE7981-52AB-11D6-807A-005004D10645}",
+      "guidLocations": [
+        "3f441374",
+        "3f441d20",
+        "3f469e0c"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Window",
+          "names": [
+            "Window"
+          ],
+          "memid": -515,
+          "invkind": 2,
+          "vtableOffset32": 28,
+          "documentation": null,
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Preview",
+          "names": [
+            "Preview",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 2,
+          "vtableOffset32": 36,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 4,
+          "vtableOffset32": 40,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 2,
+          "vtableOffset32": 44,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 4,
+          "vtableOffset32": 48,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 2,
+          "vtableOffset32": 52,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 4,
+          "vtableOffset32": 56,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 2,
+          "vtableOffset32": 60,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 4,
+          "vtableOffset32": 64,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 2,
+          "vtableOffset32": 68,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 4,
+          "vtableOffset32": 72,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 2,
+          "vtableOffset32": 76,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 4,
+          "vtableOffset32": 80,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "BestFit",
+          "names": [
+            "BestFit"
+          ],
+          "memid": 8,
+          "invkind": 1,
+          "vtableOffset32": 84,
+          "documentation": "Displays current CIFF as best fit in the current window",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 2,
+          "vtableOffset32": 88,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 4,
+          "vtableOffset32": 92,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Print",
+          "names": [
+            "Print",
+            "hDC",
+            "pWidth",
+            "pHeight"
+          ],
+          "memid": 101,
+          "invkind": 1,
+          "vtableOffset32": 96,
+          "documentation": "method Print",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "TrialPrint",
+          "names": [
+            "TrialPrint"
+          ],
+          "memid": 301,
+          "invkind": 4,
+          "vtableOffset32": 100,
+          "documentation": "Tells Print Preview that trial printing is being used",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "ICLPrintPreview4",
+      "documentation": "ICLPrintPreview4 Interface",
+      "guid": "{5D896E67-26ED-481C-A8D9-732F4E3E8DAC}",
+      "guidLocations": [
+        "3f441384",
+        "3f441d30",
+        "3f469e24"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Window",
+          "names": [
+            "Window"
+          ],
+          "memid": -515,
+          "invkind": 2,
+          "vtableOffset32": 28,
+          "documentation": null,
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Preview",
+          "names": [
+            "Preview",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 2,
+          "vtableOffset32": 36,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 4,
+          "vtableOffset32": 40,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 2,
+          "vtableOffset32": 44,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 4,
+          "vtableOffset32": 48,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 2,
+          "vtableOffset32": 52,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 4,
+          "vtableOffset32": 56,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 2,
+          "vtableOffset32": 60,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 4,
+          "vtableOffset32": 64,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 2,
+          "vtableOffset32": 68,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 4,
+          "vtableOffset32": 72,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 2,
+          "vtableOffset32": 76,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 4,
+          "vtableOffset32": 80,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "BestFit",
+          "names": [
+            "BestFit"
+          ],
+          "memid": 8,
+          "invkind": 1,
+          "vtableOffset32": 84,
+          "documentation": "Displays current CIFF as best fit in the current window",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 2,
+          "vtableOffset32": 88,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 4,
+          "vtableOffset32": 92,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Print",
+          "names": [
+            "Print",
+            "hDC",
+            "pWidth",
+            "pHeight"
+          ],
+          "memid": 101,
+          "invkind": 1,
+          "vtableOffset32": 96,
+          "documentation": "method Print",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "TrialPrint",
+          "names": [
+            "TrialPrint"
+          ],
+          "memid": 301,
+          "invkind": 4,
+          "vtableOffset32": 100,
+          "documentation": "Tells Print Preview that trial printing is being used",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "InitialiseCaps",
+          "names": [
+            "InitialiseCaps",
+            "vtFileLocation",
+            "vtCAPIName",
+            "vtName",
+            "vtCapsFile"
+          ],
+          "memid": 401,
+          "invkind": 1,
+          "vtableOffset32": 104,
+          "documentation": "Initialises component with capability file pointers",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Preview2",
+          "names": [
+            "Preview2",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation",
+            "vtCharTranslationFile"
+          ],
+          "memid": 402,
+          "invkind": 1,
+          "vtableOffset32": 108,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "ICLPrintPreview5",
+      "documentation": "ICLPrintPreview5 Interface",
+      "guid": "{51DC7586-38F4-45DE-842C-F5E7E08D02DE}",
+      "guidLocations": [
+        "3f441394",
+        "3f441d40",
+        "3f469e3c"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Window",
+          "names": [
+            "Window"
+          ],
+          "memid": -515,
+          "invkind": 2,
+          "vtableOffset32": 28,
+          "documentation": null,
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Preview",
+          "names": [
+            "Preview",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 2,
+          "vtableOffset32": 36,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 4,
+          "vtableOffset32": 40,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 2,
+          "vtableOffset32": 44,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 4,
+          "vtableOffset32": 48,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 2,
+          "vtableOffset32": 52,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 4,
+          "vtableOffset32": 56,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 2,
+          "vtableOffset32": 60,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 4,
+          "vtableOffset32": 64,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 2,
+          "vtableOffset32": 68,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 4,
+          "vtableOffset32": 72,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 2,
+          "vtableOffset32": 76,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 4,
+          "vtableOffset32": 80,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "BestFit",
+          "names": [
+            "BestFit"
+          ],
+          "memid": 8,
+          "invkind": 1,
+          "vtableOffset32": 84,
+          "documentation": "Displays current CIFF as best fit in the current window",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 2,
+          "vtableOffset32": 88,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 4,
+          "vtableOffset32": 92,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Print",
+          "names": [
+            "Print",
+            "hDC",
+            "pWidth",
+            "pHeight"
+          ],
+          "memid": 101,
+          "invkind": 1,
+          "vtableOffset32": 96,
+          "documentation": "method Print",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "TrialPrint",
+          "names": [
+            "TrialPrint"
+          ],
+          "memid": 301,
+          "invkind": 4,
+          "vtableOffset32": 100,
+          "documentation": "Tells Print Preview that trial printing is being used",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "InitialiseCaps",
+          "names": [
+            "InitialiseCaps",
+            "vtFileLocation",
+            "vtCAPIName",
+            "vtName",
+            "vtCapsFile"
+          ],
+          "memid": 401,
+          "invkind": 1,
+          "vtableOffset32": 104,
+          "documentation": "Initialises component with capability file pointers",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Preview2",
+          "names": [
+            "Preview2",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation",
+            "vtCharTranslationFile"
+          ],
+          "memid": 402,
+          "invkind": 1,
+          "vtableOffset32": 108,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "CountBlackDots",
+          "names": [
+            "CountBlackDots",
+            "pNumberOfDots",
+            "pTotalDots",
+            "lImageWidth",
+            "lImageHeight"
+          ],
+          "memid": 501,
+          "invkind": 1,
+          "vtableOffset32": 112,
+          "documentation": "Calculates number of black dots in the image",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "ICLPrintPreview6",
+      "documentation": "ICLPrintPreview6 Interface",
+      "guid": "{62EC7586-38F4-45DE-842C-F5E7E08D03EF}",
+      "guidLocations": [
+        "3f4413a4",
+        "3f441d50",
+        "3f469e54"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Window",
+          "names": [
+            "Window"
+          ],
+          "memid": -515,
+          "invkind": 2,
+          "vtableOffset32": 28,
+          "documentation": null,
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Preview",
+          "names": [
+            "Preview",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 2,
+          "vtableOffset32": 36,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 4,
+          "vtableOffset32": 40,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 2,
+          "vtableOffset32": 44,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 4,
+          "vtableOffset32": 48,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 2,
+          "vtableOffset32": 52,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 4,
+          "vtableOffset32": 56,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 2,
+          "vtableOffset32": 60,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 4,
+          "vtableOffset32": 64,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 2,
+          "vtableOffset32": 68,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 4,
+          "vtableOffset32": 72,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 2,
+          "vtableOffset32": 76,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 4,
+          "vtableOffset32": 80,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "BestFit",
+          "names": [
+            "BestFit"
+          ],
+          "memid": 8,
+          "invkind": 1,
+          "vtableOffset32": 84,
+          "documentation": "Displays current CIFF as best fit in the current window",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 2,
+          "vtableOffset32": 88,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 4,
+          "vtableOffset32": 92,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Print",
+          "names": [
+            "Print",
+            "hDC",
+            "pWidth",
+            "pHeight"
+          ],
+          "memid": 101,
+          "invkind": 1,
+          "vtableOffset32": 96,
+          "documentation": "method Print",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "TrialPrint",
+          "names": [
+            "TrialPrint"
+          ],
+          "memid": 301,
+          "invkind": 4,
+          "vtableOffset32": 100,
+          "documentation": "Tells Print Preview that trial printing is being used",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "InitialiseCaps",
+          "names": [
+            "InitialiseCaps",
+            "vtFileLocation",
+            "vtCAPIName",
+            "vtName",
+            "vtCapsFile"
+          ],
+          "memid": 401,
+          "invkind": 1,
+          "vtableOffset32": 104,
+          "documentation": "Initialises component with capability file pointers",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Preview2",
+          "names": [
+            "Preview2",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation",
+            "vtCharTranslationFile"
+          ],
+          "memid": 402,
+          "invkind": 1,
+          "vtableOffset32": 108,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "CountBlackDots",
+          "names": [
+            "CountBlackDots",
+            "pNumberOfDots",
+            "pTotalDots",
+            "lImageWidth",
+            "lImageHeight"
+          ],
+          "memid": 501,
+          "invkind": 1,
+          "vtableOffset32": 112,
+          "documentation": "Calculates number of black dots in the image",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Preview3",
+          "names": [
+            "Preview3",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation",
+            "vtCharTranslationFile",
+            "bPreProcess"
+          ],
+          "memid": 601,
+          "invkind": 1,
+          "vtableOffset32": 116,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "ICLPrintPreview7",
+      "documentation": "ICLPrintPreview7 Interface",
+      "guid": "{6BC4AC39-AAA0-4079-9D52-DB3670806ECE}",
+      "guidLocations": [
+        "3f4413b4",
+        "3f441d60",
+        "3f469e6c"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Window",
+          "names": [
+            "Window"
+          ],
+          "memid": -515,
+          "invkind": 2,
+          "vtableOffset32": 28,
+          "documentation": null,
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Preview",
+          "names": [
+            "Preview",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 2,
+          "vtableOffset32": 36,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "Visible",
+          "names": [
+            "Visible"
+          ],
+          "memid": 2,
+          "invkind": 4,
+          "vtableOffset32": 40,
+          "documentation": "Return/sets a value that determines whether an object is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 2,
+          "vtableOffset32": 44,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "Zoom",
+          "names": [
+            "Zoom"
+          ],
+          "memid": 3,
+          "invkind": 4,
+          "vtableOffset32": 48,
+          "documentation": "Return/sets the zoom value as a percentage of real size",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 2,
+          "vtableOffset32": 52,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollX",
+          "names": [
+            "ScrollX"
+          ],
+          "memid": 4,
+          "invkind": 4,
+          "vtableOffset32": 56,
+          "documentation": "Return/sets the horizontal scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 2,
+          "vtableOffset32": 60,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 3
+          },
+          "parameters": []
+        },
+        {
+          "name": "ScrollY",
+          "names": [
+            "ScrollY"
+          ],
+          "memid": 5,
+          "invkind": 4,
+          "vtableOffset32": 64,
+          "documentation": "Return/sets the vertical scroll value",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 2,
+          "vtableOffset32": 68,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayProblemFields",
+          "names": [
+            "DisplayProblemFields"
+          ],
+          "memid": 6,
+          "invkind": 4,
+          "vtableOffset32": 72,
+          "documentation": "Return/sets a value that determines whether an Problem Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 2,
+          "vtableOffset32": 76,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "DisplayHiddenFields",
+          "names": [
+            "DisplayHiddenFields"
+          ],
+          "memid": 7,
+          "invkind": 4,
+          "vtableOffset32": 80,
+          "documentation": "Return/sets a value that determines whether an Hidden Field is visible or hidden",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "BestFit",
+          "names": [
+            "BestFit"
+          ],
+          "memid": 8,
+          "invkind": 1,
+          "vtableOffset32": 84,
+          "documentation": "Displays current CIFF as best fit in the current window",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 2,
+          "vtableOffset32": 88,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 11
+          },
+          "parameters": []
+        },
+        {
+          "name": "AllowDrag",
+          "names": [
+            "AllowDrag"
+          ],
+          "memid": 9,
+          "invkind": 4,
+          "vtableOffset32": 92,
+          "documentation": "Return/sets a value that determines whether image dragging is allowed",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Print",
+          "names": [
+            "Print",
+            "hDC",
+            "pWidth",
+            "pHeight"
+          ],
+          "memid": 101,
+          "invkind": 1,
+          "vtableOffset32": 96,
+          "documentation": "method Print",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "TrialPrint",
+          "names": [
+            "TrialPrint"
+          ],
+          "memid": 301,
+          "invkind": 4,
+          "vtableOffset32": 100,
+          "documentation": "Tells Print Preview that trial printing is being used",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 11
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "InitialiseCaps",
+          "names": [
+            "InitialiseCaps",
+            "vtFileLocation",
+            "vtCAPIName",
+            "vtName",
+            "vtCapsFile"
+          ],
+          "memid": 401,
+          "invkind": 1,
+          "vtableOffset32": 104,
+          "documentation": "Initialises component with capability file pointers",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "Preview2",
+          "names": [
+            "Preview2",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation",
+            "vtCharTranslationFile"
+          ],
+          "memid": 402,
+          "invkind": 1,
+          "vtableOffset32": 108,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "CountBlackDots",
+          "names": [
+            "CountBlackDots",
+            "pNumberOfDots",
+            "pTotalDots",
+            "lImageWidth",
+            "lImageHeight"
+          ],
+          "memid": 501,
+          "invkind": 1,
+          "vtableOffset32": 112,
+          "documentation": "Calculates number of black dots in the image",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Preview3",
+          "names": [
+            "Preview3",
+            "vtCiff",
+            "vtCaps",
+            "vtSubImage",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation",
+            "vtCharTranslationFile",
+            "bPreProcess"
+          ],
+          "memid": 601,
+          "invkind": 1,
+          "vtableOffset32": 116,
+          "documentation": "Previews a CIFF",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "PreviewStitched",
+          "names": [
+            "PreviewStitched",
+            "vtCiff",
+            "vtCaps",
+            "vtCoder",
+            "vtFormat",
+            "vtFontsLocation",
+            "vtCharTranslationFile",
+            "bPreProcess"
+          ],
+          "memid": 701,
+          "invkind": 1,
+          "vtableOffset32": 120,
+          "documentation": "Previews a CIFF with stitched sub images",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    }
+  ]
+}

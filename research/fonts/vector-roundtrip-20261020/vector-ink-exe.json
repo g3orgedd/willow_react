@@ -1,0 +1,389 @@
+{
+  "mode": "exe",
+  "method": "Actual preview outline in native cell coordinates vs captured printer bitmap pixel-coverage bounds; rotations use the same native cell and printer-dot anchor. Different antialiasing/hinting is expected.",
+  "printerDotsPerMm": 12,
+  "maximumEdgeDifferenceDots": 1,
+  "maximumEdgeDifferenceMm": 0.08333333333333333,
+  "fields": [
+    {
+      "name": "TNR_Text",
+      "face": "Times New Roman",
+      "orientation": 0,
+      "cellWidth": 164,
+      "cellHeight": 29,
+      "vectorBounds": {
+        "left": 0.2031,
+        "top": 5.6406,
+        "right": 163.7969,
+        "bottom": 23.3438
+      },
+      "printerBounds": {
+        "name": "TNR_Text",
+        "left": 0,
+        "top": 5,
+        "right": 163,
+        "bottom": 23,
+        "blackPixels": 675
+      },
+      "differences": {
+        "left": 0.2031,
+        "top": 0.6406000000000001,
+        "right": 0.7968999999999937,
+        "bottom": 0.34380000000000166
+      },
+      "maximumEdgeDifferenceDots": 0.7968999999999937,
+      "origin": {
+        "x": 15,
+        "y": 28
+      },
+      "absoluteVectorBounds": {
+        "left": 15.2031,
+        "top": 33.6406,
+        "right": 178.7969,
+        "bottom": 51.3438
+      }
+    },
+    {
+      "name": "Arial_Bold",
+      "face": "Arial",
+      "orientation": 0,
+      "cellWidth": 363,
+      "cellHeight": 64,
+      "vectorBounds": {
+        "left": 4.0313,
+        "top": 11.4688,
+        "right": 360,
+        "bottom": 51.6719
+      },
+      "printerBounds": {
+        "name": "Arial_Bold",
+        "left": 4,
+        "top": 11,
+        "right": 361,
+        "bottom": 52,
+        "blackPixels": 6619
+      },
+      "differences": {
+        "left": 0.031299999999999883,
+        "top": 0.4687999999999999,
+        "right": -1,
+        "bottom": -0.32809999999999917
+      },
+      "maximumEdgeDifferenceDots": 1,
+      "origin": {
+        "x": 45,
+        "y": 108
+      },
+      "absoluteVectorBounds": {
+        "left": 49.0313,
+        "top": 119.4688,
+        "right": 405,
+        "bottom": 159.6719
+      }
+    },
+    {
+      "name": "Courier_XMag",
+      "face": "Courier New",
+      "orientation": 0,
+      "cellWidth": 315,
+      "cellHeight": 40,
+      "vectorBounds": {
+        "left": 1.0469,
+        "top": 5.9375,
+        "right": 309.0313,
+        "bottom": 30.6094
+      },
+      "printerBounds": {
+        "name": "Courier_XMag",
+        "left": 1,
+        "top": 5,
+        "right": 309,
+        "bottom": 30,
+        "blackPixels": 1124
+      },
+      "differences": {
+        "left": 0.04689999999999994,
+        "top": 0.9375,
+        "right": 0.03129999999998745,
+        "bottom": 0.6094000000000008
+      },
+      "maximumEdgeDifferenceDots": 0.9375,
+      "origin": {
+        "x": 13,
+        "y": 204
+      },
+      "absoluteVectorBounds": {
+        "left": 14.0469,
+        "top": 209.9375,
+        "right": 322.0313,
+        "bottom": 234.6094
+      }
+    },
+    {
+      "name": "Tahoma_Date",
+      "face": "Tahoma",
+      "orientation": 0,
+      "cellWidth": 140,
+      "cellHeight": 41,
+      "vectorBounds": {
+        "left": 1.8125,
+        "top": 8.1719,
+        "right": 138.4531,
+        "bottom": 39.375
+      },
+      "printerBounds": {
+        "name": "Tahoma_Date",
+        "left": 2,
+        "top": 8,
+        "right": 138,
+        "bottom": 39,
+        "blackPixels": 1145
+      },
+      "differences": {
+        "left": -0.1875,
+        "top": 0.17190000000000083,
+        "right": 0.4531000000000063,
+        "bottom": 0.375
+      },
+      "maximumEdgeDifferenceDots": 0.4531000000000063,
+      "origin": {
+        "x": 24,
+        "y": 288
+      },
+      "absoluteVectorBounds": {
+        "left": 25.8125,
+        "top": 296.1719,
+        "right": 162.4531,
+        "bottom": 327.375
+      }
+    },
+    {
+      "name": "Segoe_Offset",
+      "face": "Segoe UI",
+      "orientation": 0,
+      "cellWidth": 120,
+      "cellHeight": 41,
+      "vectorBounds": {
+        "left": 1.5938,
+        "top": 11.5313,
+        "right": 118.9688,
+        "bottom": 36.4844
+      },
+      "printerBounds": {
+        "name": "Segoe_Offset",
+        "left": 2,
+        "top": 12,
+        "right": 118,
+        "bottom": 36,
+        "blackPixels": 620
+      },
+      "differences": {
+        "left": -0.4061999999999999,
+        "top": -0.4687000000000001,
+        "right": 0.9688000000000017,
+        "bottom": 0.48440000000000083
+      },
+      "maximumEdgeDifferenceDots": 0.9688000000000017,
+      "origin": {
+        "x": 26,
+        "y": 373
+      },
+      "absoluteVectorBounds": {
+        "left": 27.5938,
+        "top": 384.5313,
+        "right": 144.9688,
+        "bottom": 409.4844
+      }
+    },
+    {
+      "name": "Narrow_Time",
+      "face": "Arial Narrow",
+      "orientation": 0,
+      "cellWidth": 86,
+      "cellHeight": 49,
+      "vectorBounds": {
+        "left": 0.9688,
+        "top": 9.8125,
+        "right": 84.5938,
+        "bottom": 40.5313
+      },
+      "printerBounds": {
+        "name": "Narrow_Time",
+        "left": 1,
+        "top": 10,
+        "right": 84,
+        "bottom": 40,
+        "blackPixels": 787
+      },
+      "differences": {
+        "left": -0.031200000000000006,
+        "top": -0.1875,
+        "right": 0.5938000000000017,
+        "bottom": 0.5313000000000017
+      },
+      "maximumEdgeDifferenceDots": 0.5938000000000017,
+      "origin": {
+        "x": 38,
+        "y": 457
+      },
+      "absoluteVectorBounds": {
+        "left": 38.9688,
+        "top": 466.8125,
+        "right": 122.5938,
+        "bottom": 497.5313
+      }
+    },
+    {
+      "name": "OCRB_Counter",
+      "face": "OCRB",
+      "orientation": 0,
+      "cellWidth": 112,
+      "cellHeight": 41,
+      "vectorBounds": {
+        "left": 3.3281,
+        "top": 0.1875,
+        "right": 102.2031,
+        "bottom": 33.3594
+      },
+      "printerBounds": {
+        "name": "OCRB_Counter",
+        "left": 3,
+        "top": 0,
+        "right": 102,
+        "bottom": 33,
+        "blackPixels": 1145
+      },
+      "differences": {
+        "left": 0.32810000000000006,
+        "top": 0.1875,
+        "right": 0.20310000000000628,
+        "bottom": 0.35940000000000083
+      },
+      "maximumEdgeDifferenceDots": 0.35940000000000083,
+      "origin": {
+        "x": 51,
+        "y": 542
+      },
+      "absoluteVectorBounds": {
+        "left": 54.3281,
+        "top": 542.1875,
+        "right": 153.2031,
+        "bottom": 575.3594
+      }
+    },
+    {
+      "name": "TNR_Rot90",
+      "face": "Times New Roman",
+      "orientation": 90,
+      "cellWidth": 67,
+      "cellHeight": 29,
+      "vectorBounds": {
+        "left": 0.4219,
+        "top": 6.1094,
+        "right": 66.6094,
+        "bottom": 23.3438
+      },
+      "printerBounds": {
+        "name": "TNR_Rot90",
+        "left": 1,
+        "top": 6,
+        "right": 66,
+        "bottom": 23,
+        "blackPixels": 292
+      },
+      "differences": {
+        "left": -0.5781000000000001,
+        "top": 0.10939999999999994,
+        "right": 0.6093999999999937,
+        "bottom": 0.34380000000000166
+      },
+      "maximumEdgeDifferenceDots": 0.6093999999999937,
+      "origin": {
+        "x": 456,
+        "y": 96
+      },
+      "absoluteVectorBounds": {
+        "left": 461.6562,
+        "top": 96.4219,
+        "right": 478.8906,
+        "bottom": 162.6094
+      }
+    },
+    {
+      "name": "Courier_Rot180",
+      "face": "Courier New",
+      "orientation": 180,
+      "cellWidth": 140,
+      "cellHeight": 37,
+      "vectorBounds": {
+        "left": 1.4688,
+        "top": 6.6719,
+        "right": 136.6094,
+        "bottom": 28.5469
+      },
+      "printerBounds": {
+        "name": "Courier_Rot180",
+        "left": 1,
+        "top": 7,
+        "right": 136,
+        "bottom": 28,
+        "blackPixels": 301
+      },
+      "differences": {
+        "left": 0.4688000000000001,
+        "top": -0.32810000000000006,
+        "right": 0.6093999999999937,
+        "bottom": 0.5469000000000008
+      },
+      "maximumEdgeDifferenceDots": 0.6093999999999937,
+      "origin": {
+        "x": 216,
+        "y": 624
+      },
+      "absoluteVectorBounds": {
+        "left": 219.3906,
+        "top": 632.4531,
+        "right": 354.5312,
+        "bottom": 654.3281
+      }
+    },
+    {
+      "name": "Tahoma_Rot270",
+      "face": "Tahoma",
+      "orientation": 270,
+      "cellWidth": 88,
+      "cellHeight": 30,
+      "vectorBounds": {
+        "left": 1.8438,
+        "top": 6.4375,
+        "right": 86.6406,
+        "bottom": 25.375
+      },
+      "printerBounds": {
+        "name": "Tahoma_Rot270",
+        "left": 2,
+        "top": 6,
+        "right": 87,
+        "bottom": 25,
+        "blackPixels": 452
+      },
+      "differences": {
+        "left": -0.1561999999999999,
+        "top": 0.4375,
+        "right": -0.3593999999999937,
+        "bottom": 0.375
+      },
+      "maximumEdgeDifferenceDots": 0.4375,
+      "origin": {
+        "x": 480,
+        "y": 360
+      },
+      "absoluteVectorBounds": {
+        "left": 486.4375,
+        "top": 361.3594,
+        "right": 505.375,
+        "bottom": 446.1562
+      }
+    }
+  ]
+}

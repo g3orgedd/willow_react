@@ -1,0 +1,11 @@
+40802ea3 PUSH ESI
+40802ea4 MOV ESI,ECX
+40802ea6 CMP dword ptr [ESI],0x0
+40802ea9 JZ 0x40802eb6
+40802eab PUSH dword ptr [ESI]
+40802ead CALL dword ptr [0x4084a1f0]
+40802eb3 AND dword ptr [ESI],0x0
+40802eb6 PUSH dword ptr [ESI]
+40802eb8 CALL dword ptr [0x4084a1f0]
+40802ebe POP ESI
+40802ebf RET

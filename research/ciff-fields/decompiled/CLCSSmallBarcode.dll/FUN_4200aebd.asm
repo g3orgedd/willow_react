@@ -1,0 +1,21 @@
+4200aebd PUSH ESI
+4200aebe MOV ESI,dword ptr [0x42089264]
+4200aec4 PUSH EDI
+4200aec5 MOV EDI,ECX
+4200aec7 PUSH dword ptr [EDI + 0x100]
+4200aecd MOV dword ptr [EDI],0x4208a79c
+4200aed3 CALL ESI
+4200aed5 PUSH dword ptr [EDI + 0x5c]
+4200aed8 CALL ESI
+4200aeda PUSH dword ptr [EDI + 0x58]
+4200aedd CALL ESI
+4200aedf PUSH dword ptr [EDI + 0x48]
+4200aee2 CALL ESI
+4200aee4 PUSH dword ptr [EDI + 0x28]
+4200aee7 CALL ESI
+4200aee9 PUSH dword ptr [EDI + 0x24]
+4200aeec CALL ESI
+4200aeee MOV ECX,EDI
+4200aef0 POP EDI
+4200aef1 POP ESI
+4200aef2 JMP 0x4200a167

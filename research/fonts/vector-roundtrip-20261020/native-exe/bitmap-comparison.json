@@ -1,0 +1,382 @@
+[
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  0,
+                                "y":  5,
+                                "width":  163,
+                                "height":  18,
+                                "blackPixels":  675,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "TNR_Text",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  0,
+                                        "y":  5,
+                                        "width":  163,
+                                        "height":  18,
+                                        "blackPixels":  675,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  164,
+                           "nativeHeight":  29,
+                           "glyphWidth":  164,
+                           "glyphHeight":  29,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "Abc 0123 АБВГ",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  164,
+                                           "nativeHeight":  29,
+                                           "glyphWidth":  164,
+                                           "glyphHeight":  29,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  4,
+                                "y":  11,
+                                "width":  357,
+                                "height":  41,
+                                "blackPixels":  6619,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "Arial_Bold",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  4,
+                                        "y":  11,
+                                        "width":  357,
+                                        "height":  41,
+                                        "blackPixels":  6619,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  363,
+                           "nativeHeight":  64,
+                           "glyphWidth":  363,
+                           "glyphHeight":  64,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "Bold 012 АБВ",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  363,
+                                           "nativeHeight":  64,
+                                           "glyphWidth":  363,
+                                           "glyphHeight":  64,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  1,
+                                "y":  5,
+                                "width":  308,
+                                "height":  25,
+                                "blackPixels":  1124,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "Courier_XMag",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  1,
+                                        "y":  5,
+                                        "width":  308,
+                                        "height":  25,
+                                        "blackPixels":  1124,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  315,
+                           "nativeHeight":  40,
+                           "glyphWidth":  315,
+                           "glyphHeight":  40,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "Wide 0123",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  315,
+                                           "nativeHeight":  40,
+                                           "glyphWidth":  315,
+                                           "glyphHeight":  40,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  2,
+                                "y":  8,
+                                "width":  136,
+                                "height":  31,
+                                "blackPixels":  1145,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "Tahoma_Date",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  2,
+                                        "y":  8,
+                                        "width":  136,
+                                        "height":  31,
+                                        "blackPixels":  1145,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  140,
+                           "nativeHeight":  41,
+                           "glyphWidth":  140,
+                           "glyphHeight":  41,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "20/10/26",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  140,
+                                           "nativeHeight":  41,
+                                           "glyphWidth":  140,
+                                           "glyphHeight":  41,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  2,
+                                "y":  12,
+                                "width":  116,
+                                "height":  24,
+                                "blackPixels":  620,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "Segoe_Offset",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  2,
+                                        "y":  12,
+                                        "width":  116,
+                                        "height":  24,
+                                        "blackPixels":  620,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  120,
+                           "nativeHeight":  41,
+                           "glyphWidth":  120,
+                           "glyphHeight":  41,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "20/10/26",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  120,
+                                           "nativeHeight":  41,
+                                           "glyphWidth":  120,
+                                           "glyphHeight":  41,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  1,
+                                "y":  10,
+                                "width":  83,
+                                "height":  30,
+                                "blackPixels":  787,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "Narrow_Time",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  1,
+                                        "y":  10,
+                                        "width":  83,
+                                        "height":  30,
+                                        "blackPixels":  787,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  86,
+                           "nativeHeight":  49,
+                           "glyphWidth":  86,
+                           "glyphHeight":  49,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "23:29",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  86,
+                                           "nativeHeight":  49,
+                                           "glyphWidth":  86,
+                                           "glyphHeight":  49,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  3,
+                                "y":  0,
+                                "width":  99,
+                                "height":  33,
+                                "blackPixels":  1145,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "OCRB_Counter",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  3,
+                                        "y":  0,
+                                        "width":  99,
+                                        "height":  33,
+                                        "blackPixels":  1145,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  112,
+                           "nativeHeight":  41,
+                           "glyphWidth":  112,
+                           "glyphHeight":  41,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "0001",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  112,
+                                           "nativeHeight":  41,
+                                           "glyphWidth":  112,
+                                           "glyphHeight":  41,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  6,
+                                "y":  1,
+                                "width":  17,
+                                "height":  65,
+                                "blackPixels":  292,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "TNR_Rot90",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  1,
+                                        "y":  6,
+                                        "width":  65,
+                                        "height":  17,
+                                        "blackPixels":  292,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  29,
+                           "nativeHeight":  67,
+                           "glyphWidth":  29,
+                           "glyphHeight":  67,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "Rot 90",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  29,
+                                           "nativeHeight":  67,
+                                           "glyphWidth":  29,
+                                           "glyphHeight":  67,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  4,
+                                "y":  9,
+                                "width":  135,
+                                "height":  21,
+                                "blackPixels":  301,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "Courier_Rot180",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  1,
+                                        "y":  7,
+                                        "width":  135,
+                                        "height":  21,
+                                        "blackPixels":  301,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  140,
+                           "nativeHeight":  37,
+                           "glyphWidth":  140,
+                           "glyphHeight":  37,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "Rot 180",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  140,
+                                           "nativeHeight":  37,
+                                           "glyphWidth":  140,
+                                           "glyphHeight":  37,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    },
+    {
+        "referenceKind":  "original-captured-printer-bitmap",
+        "nativeInkBounds":  {
+                                "x":  6,
+                                "y":  1,
+                                "width":  19,
+                                "height":  85,
+                                "blackPixels":  452,
+                                "empty":  false
+                            },
+        "clockAdvanced":  false,
+        "name":  "Tahoma_Rot270",
+        "glyphUnrotatedInkBounds":  {
+                                        "x":  2,
+                                        "y":  6,
+                                        "width":  85,
+                                        "height":  19,
+                                        "blackPixels":  452,
+                                        "empty":  false
+                                    },
+        "comparison":  {
+                           "nativeWidth":  30,
+                           "nativeHeight":  88,
+                           "glyphWidth":  30,
+                           "glyphHeight":  88,
+                           "different":  0,
+                           "sameDimensions":  true
+                       },
+        "payload":  "Rot 270",
+        "capturedSnapshotComparison":  {
+                                           "nativeWidth":  30,
+                                           "nativeHeight":  88,
+                                           "glyphWidth":  30,
+                                           "glyphHeight":  88,
+                                           "different":  0,
+                                           "sameDimensions":  true
+                                       }
+    }
+]

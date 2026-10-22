@@ -1,0 +1,3 @@
+41c11a03 MOV dword ptr [ECX],0x41c31dfc
+41c11a09 MOV EAX,ECX
+41c11a0b RET

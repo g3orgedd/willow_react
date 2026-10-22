@@ -1,0 +1,5 @@
+45423eeb MOV EAX,ECX
+45423eed LEA ECX,[EAX + 0x4]
+45423ef0 MOV dword ptr [EAX],0x4544aadc
+45423ef6 MOV dword ptr [ECX],0xc0000001
+45423efc JMP 0x45412d4f

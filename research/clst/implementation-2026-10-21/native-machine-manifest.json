@@ -1,0 +1,15 @@
+{
+  "sourceDll": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffMgr.dll",
+  "sha256": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+  "byteLength": 550400,
+  "method": "Original installed x86 E(68117D03), randomIndex(68118E73), srand(68134DBA), rand(68134D99) in Unicorn",
+  "controlledHelpers": [
+    "OLE BSTR allocation/free/length",
+    "CRT wchar copy/length",
+    "BSTR copy",
+    "GetTickCount return value",
+    "CRT __getptd address"
+  ],
+  "command": "python research/clst/implementation-2026-10-21/verify-native-machine.py",
+  "exitCode": 0
+}

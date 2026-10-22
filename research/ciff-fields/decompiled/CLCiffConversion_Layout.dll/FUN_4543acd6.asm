@@ -1,0 +1,29 @@
+4543acd6 PUSH EBP
+4543acd7 MOV EBP,ESP
+4543acd9 SUB ESP,0x10
+4543acdc PUSH dword ptr [EBP + 0xc]
+4543acdf LEA ECX,[EBP + -0x10]
+4543ace2 CALL 0x4542c8eb
+4543ace7 MOV ECX,dword ptr [EBP + -0x10]
+4543acea CMP dword ptr [ECX + 0x74],0x1
+4543acee JLE 0x4543ad05
+4543acf0 LEA EAX,[EBP + -0x10]
+4543acf3 PUSH EAX
+4543acf4 PUSH 0x4
+4543acf6 PUSH dword ptr [EBP + 0x8]
+4543acf9 CALL 0x454344e5
+4543acfe ADD ESP,0xc
+4543ad01 MOV ECX,EAX
+4543ad03 JMP 0x4543ad15
+4543ad05 MOV ECX,dword ptr [ECX + 0x90]
+4543ad0b MOV EAX,dword ptr [EBP + 0x8]
+4543ad0e MOVZX ECX,word ptr [ECX + EAX*0x2]
+4543ad12 AND ECX,0x4
+4543ad15 CMP byte ptr [EBP + -0x4],0x0
+4543ad19 JZ 0x4543ad22
+4543ad1b MOV EAX,dword ptr [EBP + -0x8]
+4543ad1e AND dword ptr [EAX + 0x70],0xfffffffd
+4543ad22 MOV EAX,ECX
+4543ad24 MOV ESP,EBP
+4543ad26 POP EBP
+4543ad27 RET

@@ -1,0 +1,38 @@
+4542239d PUSH EBP
+4542239e MOV EBP,ESP
+454223a0 PUSH EDI
+454223a1 MOV EDI,dword ptr [EBP + 0xc]
+454223a4 CMP ECX,EDI
+454223a6 JZ 0x454223b6
+454223a8 PUSH ESI
+454223a9 MOV ESI,dword ptr [EBP + 0x18]
+454223ac PUSH ESI
+454223ad CALL 0x45407112
+454223b2 SUB dword ptr [EDI + 0x4],ESI
+454223b5 POP ESI
+454223b6 MOV EAX,dword ptr [EBP + 0x10]
+454223b9 POP EDI
+454223ba MOV ECX,dword ptr [EAX + 0x4]
+454223bd MOV EAX,dword ptr [EBP + 0x14]
+454223c0 MOV dword ptr [ECX],EAX
+454223c2 MOV EAX,dword ptr [EBP + 0x14]
+454223c5 MOV ECX,dword ptr [EAX + 0x4]
+454223c8 MOV EAX,dword ptr [EBP + 0x8]
+454223cb MOV dword ptr [ECX],EAX
+454223cd MOV EAX,dword ptr [EBP + 0x8]
+454223d0 MOV ECX,dword ptr [EAX + 0x4]
+454223d3 MOV EAX,dword ptr [EBP + 0x10]
+454223d6 MOV dword ptr [ECX],EAX
+454223d8 MOV ECX,dword ptr [EBP + 0x8]
+454223db MOV EAX,dword ptr [EBP + 0x14]
+454223de MOV EDX,dword ptr [ECX + 0x4]
+454223e1 MOV EAX,dword ptr [EAX + 0x4]
+454223e4 MOV dword ptr [ECX + 0x4],EAX
+454223e7 MOV EAX,dword ptr [EBP + 0x10]
+454223ea MOV ECX,dword ptr [EAX + 0x4]
+454223ed MOV EAX,dword ptr [EBP + 0x14]
+454223f0 MOV dword ptr [EAX + 0x4],ECX
+454223f3 MOV EAX,dword ptr [EBP + 0x10]
+454223f6 MOV dword ptr [EAX + 0x4],EDX
+454223f9 POP EBP
+454223fa RET 0x14

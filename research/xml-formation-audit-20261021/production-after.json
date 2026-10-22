@@ -1,0 +1,176 @@
+{
+  "CapturedAtUtc": "2026-10-21T18:53:15.6957597Z",
+  "Version": "2.3.0",
+  "CheckedFiles": 28,
+  "AllUnchanged": true,
+  "Files": [
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\package.json",
+      "Before": "b4153f0e999b4860e1c49a3e677563b62edba1fcc6c6d95cd5457e49bc92580a",
+      "After": "b4153f0e999b4860e1c49a3e677563b62edba1fcc6c6d95cd5457e49bc92580a",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\vite.config.ts",
+      "Before": "5aff1a4607e140f0650c1f2519646836c05800631edd8160faccd940dc14d017",
+      "After": "5aff1a4607e140f0650c1f2519646836c05800631edd8160faccd940dc14d017",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\00-core.js",
+      "Before": "bde205d62a66c959f157c25b098971d089bf61e716dd7614f14cfb71dab1653b",
+      "After": "bde205d62a66c959f157c25b098971d089bf61e716dd7614f14cfb71dab1653b",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\01-ciff-compatibility.js",
+      "Before": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91",
+      "After": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\02-fonts.js",
+      "Before": "539a19b4d44c2b1808c77e14f70af55fa53e8ea111ec4b8518d778d61acecc28",
+      "After": "539a19b4d44c2b1808c77e14f70af55fa53e8ea111ec4b8518d778d61acecc28",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\03-font-catalog.js",
+      "Before": "a97126a88bf0181c248e4c8d0b99d1a7e559a9d31787e9491a8aab9678563588",
+      "After": "a97126a88bf0181c248e4c8d0b99d1a7e559a9d31787e9491a8aab9678563588",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\04-native-text-preview.js",
+      "Before": "ed1767a1acc78e5f098b962d1d991ce2cb087072c7d697c4901b52eb35ab30a5",
+      "After": "ed1767a1acc78e5f098b962d1d991ce2cb087072c7d697c4901b52eb35ab30a5",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\05-i18n.js",
+      "Before": "83feb9bdbb1a246365e18160a7dc7e0fb63bbf5c81c9d91a57ee0978808831a7",
+      "After": "83feb9bdbb1a246365e18160a7dc7e0fb63bbf5c81c9d91a57ee0978808831a7",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\06-theme.js",
+      "Before": "6057c0dd9b51efb4c3b077edc1d47ad764ea90db65b5f1663171e27e4acf05d0",
+      "After": "6057c0dd9b51efb4c3b077edc1d47ad764ea90db65b5f1663171e27e4acf05d0",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\07-logging.js",
+      "Before": "3778f2ad48ecf467208bd9eca9a02e5a12106882a984347df77a0873bccd0384",
+      "After": "3778f2ad48ecf467208bd9eca9a02e5a12106882a984347df77a0873bccd0384",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\10-canvas-ui.js",
+      "Before": "ee2c0f161a4eee2fc5e773ea270dc8637a8dd630fbd39714f5db0662dddb8602",
+      "After": "ee2c0f161a4eee2fc5e773ea270dc8637a8dd630fbd39714f5db0662dddb8602",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\20-xml-load.js",
+      "Before": "b7ddcdd964d29f787254cd19ae825902067b9930dda6f0435ff1db98e6819216",
+      "After": "b7ddcdd964d29f787254cd19ae825902067b9930dda6f0435ff1db98e6819216",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\30-rendering.js",
+      "Before": "1b31b6d3ad8772ad7ece11ddb784cee5237e862b3e389b372396e6790dad862c",
+      "After": "1b31b6d3ad8772ad7ece11ddb784cee5237e862b3e389b372396e6790dad862c",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\40-editor.js",
+      "Before": "8f31962f34544c314d410a3df01f2b4bb2792d8fc77c0e4b9b346bf52416438a",
+      "After": "8f31962f34544c314d410a3df01f2b4bb2792d8fc77c0e4b9b346bf52416438a",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\45-template-preset.js",
+      "Before": "6821c7d6ad8355e65759727f8e01ba0682ae4eb47d36c894d14b58937f8f74f6",
+      "After": "6821c7d6ad8355e65759727f8e01ba0682ae4eb47d36c894d14b58937f8f74f6",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\50-inputs.js",
+      "Before": "1a4ba1f3b2b61ee55379fa5520a05daaf4cb6458cd3223f7a9db35393d32532d",
+      "After": "1a4ba1f3b2b61ee55379fa5520a05daaf4cb6458cd3223f7a9db35393d32532d",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\60-history-save.js",
+      "Before": "41c4bafef829a84ae5632d94c4cfcdcdfa045f63efb8d60c0d31700a9fea5309",
+      "After": "41c4bafef829a84ae5632d94c4cfcdcdfa045f63efb8d60c0d31700a9fea5309",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\70-template-tabs.js",
+      "Before": "5a5cbfa1b985b2fa814bdc21e70fe918077bf59dbef4413fc8e331e366d3d65b",
+      "After": "5a5cbfa1b985b2fa814bdc21e70fe918077bf59dbef4413fc8e331e366d3d65b",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\90-bootstrap.js",
+      "Before": "abd4e3bd2e29870515ddc1b95cf397c07ea11a9d3cfdef753cd8b3d66ce92ada",
+      "After": "abd4e3bd2e29870515ddc1b95cf397c07ea11a9d3cfdef753cd8b3d66ce92ada",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\clst\\calculated-data.js",
+      "Before": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb",
+      "After": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\clst\\encryption.js",
+      "Before": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+      "After": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\clst\\tag-data.js",
+      "Before": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d",
+      "After": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\public\\modules\\clst\\version-info.js",
+      "Before": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5",
+      "After": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\electron\\font-renderer.ps1",
+      "Before": "5ddeab5babbf9b6f19891a466b2ab5ba19231ed3a057ac194e8255b9443abd66",
+      "After": "5ddeab5babbf9b6f19891a466b2ab5ba19231ed3a057ac194e8255b9443abd66",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\electron\\fonts.cjs",
+      "Before": "c803944ecbdb425a188cf02c6ebcfd490cf2662c3c3151b0bf4c22bb0d2bba56",
+      "After": "c803944ecbdb425a188cf02c6ebcfd490cf2662c3c3151b0bf4c22bb0d2bba56",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\electron\\logger.cjs",
+      "Before": "50590d9f2d155cf9c26cd5f4627a533d2b29f530ef1b61696304b9c7ff359a11",
+      "After": "50590d9f2d155cf9c26cd5f4627a533d2b29f530ef1b61696304b9c7ff359a11",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\electron\\main.cjs",
+      "Before": "ee375135c470672c23a8edb31ff0046f7b5905cdd75bc50ef9262c39f845b516",
+      "After": "ee375135c470672c23a8edb31ff0046f7b5905cdd75bc50ef9262c39f845b516",
+      "Unchanged": true
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\electron\\preload.cjs",
+      "Before": "e7ff091d5196df657021f3e6f10ba7e5a78578ec4cc28c12ce4ea690743ec5b7",
+      "After": "e7ff091d5196df657021f3e6f10ba7e5a78578ec4cc28c12ce4ea690743ec5b7",
+      "Unchanged": true
+    }
+  ]
+}

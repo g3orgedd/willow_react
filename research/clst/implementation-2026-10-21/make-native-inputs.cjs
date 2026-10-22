@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('node:fs');
+const path=require('node:path');
+const units=text=>Array.from({length:text.length},(_,i)=>text.charCodeAt(i));
+const field=(index,text=`VALUE${index}`,family=0,displayed=1)=>({name:`F${index}`,units:units(text),family,displayed});
+const basic=[0,1,2,3,31,32,33].map(count=>({name:`native-${count}-fields`,subImages:[{reference:'1',fields:Array.from({length:count},(_,i)=>field(i))}]}));
+basic.push({name:'native-multiple-subimages',subImages:[{reference:'1',fields:[field(0,'FIRST'),field(1,'SECOND')]},{reference:'2',fields:[field(2,'THIRD'),field(3,'FOURTH')]}]});
+basic.push({name:'native-hidden-graphic',subImages:[{reference:'1',fields:[field(0,'HIDDEN',0,0),field(1,'GRAPHIC',2),field(2,'VISIBLE')]}]});
+basic.push({name:'native-nul-data',subImages:[{reference:'1',fields:[field(0,'ab\u0000cd\u0001ef\u001dgh\tij\r\nkl')]}]});
+basic.push({name:'native-control-data',subImages:[{reference:'1',fields:[field(0,'ab\u0001cd\u001def\tgh\r\nij')]}]});
+basic.push({name:'native-empty-calculated-data',subImages:[{reference:'1',fields:[field(0,'')]}]});
+basic.push({name:'native-surrogate-clipping',subImages:[{reference:'1',fields:[field(0,'0123456789abcdefghi\u{1f600}suffix')]}]});
+fs.writeFileSync(path.join(__dirname,'native-inputs.json'),JSON.stringify(basic,null,2)+'\n');

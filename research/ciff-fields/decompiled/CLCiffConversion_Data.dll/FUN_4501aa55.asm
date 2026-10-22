@@ -1,0 +1,5 @@
+4501aa55 MOV EAX,dword ptr [ECX + -0xc]
+4501aa58 ADD ECX,-0xc
+4501aa5b MOV EAX,dword ptr [EAX + 0x4]
+4501aa5e ADD ECX,EAX
+4501aa60 JMP 0x45006a05

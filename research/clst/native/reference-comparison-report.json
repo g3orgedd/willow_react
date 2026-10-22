@@ -1,0 +1,139 @@
+{
+  "method": "reference generator compared against original CiffMgr.dll x86 transform execution",
+  "nativeCompositionDoesNotExecuteComDocumentGenerator": true,
+  "cipherCount": 204,
+  "cipherMatched": 204,
+  "pipelineCount": 16,
+  "pipelineMatched": 16,
+  "pipelineResults": [
+    {
+      "description": "empty document collections",
+      "fieldCount": 0,
+      "maskHex": "00000000",
+      "selectedPayloadUtf16Length": 0,
+      "outputLength": 72,
+      "matched": true
+    },
+    {
+      "description": "one SubImage with zero fields",
+      "fieldCount": 0,
+      "maskHex": "00000000",
+      "selectedPayloadUtf16Length": 0,
+      "outputLength": 72,
+      "matched": true
+    },
+    {
+      "description": "one field selected with empty payload",
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedPayloadUtf16Length": 0,
+      "outputLength": 72,
+      "matched": true
+    },
+    {
+      "description": "one fixed ASCII character",
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedPayloadUtf16Length": 1,
+      "outputLength": 81,
+      "matched": true
+    },
+    {
+      "description": "one TimeText field from confirmed vector",
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedPayloadUtf16Length": 5,
+      "outputLength": 117,
+      "matched": true
+    },
+    {
+      "description": "barcode logical payload clipped to 20 UTF16 units",
+      "fieldCount": 15,
+      "maskHex": "00000001",
+      "selectedPayloadUtf16Length": 20,
+      "outputLength": 252,
+      "matched": true
+    },
+    {
+      "description": "two-bit collection concatenation",
+      "fieldCount": 2,
+      "maskHex": "00000003",
+      "selectedPayloadUtf16Length": 9,
+      "outputLength": 153,
+      "matched": true
+    },
+    {
+      "description": "three-bit collection concatenation",
+      "fieldCount": 3,
+      "maskHex": "00000007",
+      "selectedPayloadUtf16Length": 6,
+      "outputLength": 126,
+      "matched": true
+    },
+    {
+      "description": "three nonadjacent bits",
+      "fieldCount": 5,
+      "maskHex": "00000015",
+      "selectedPayloadUtf16Length": 6,
+      "outputLength": 126,
+      "matched": true
+    },
+    {
+      "description": "ASCII clipping after concatenation",
+      "fieldCount": 2,
+      "maskHex": "00000003",
+      "selectedPayloadUtf16Length": 20,
+      "outputLength": 252,
+      "matched": true
+    },
+    {
+      "description": "Unicode clipping preserves a full surrogate pair",
+      "fieldCount": 2,
+      "maskHex": "00000003",
+      "selectedPayloadUtf16Length": 20,
+      "outputLength": 252,
+      "matched": true
+    },
+    {
+      "description": "Unicode clipping splits a surrogate pair",
+      "fieldCount": 2,
+      "maskHex": "00000003",
+      "selectedPayloadUtf16Length": 20,
+      "outputLength": 252,
+      "matched": true
+    },
+    {
+      "description": "embedded NUL in selected BSTR",
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedPayloadUtf16Length": 7,
+      "outputLength": 135,
+      "matched": true
+    },
+    {
+      "description": "high mask bit 31",
+      "fieldCount": 32,
+      "maskHex": "80000000",
+      "selectedPayloadUtf16Length": 6,
+      "outputLength": 126,
+      "matched": true
+    },
+    {
+      "description": "three bits including bit31",
+      "fieldCount": 32,
+      "maskHex": "80000003",
+      "selectedPayloadUtf16Length": 14,
+      "outputLength": 198,
+      "matched": true
+    },
+    {
+      "description": "counter saturation at 99 with bit31",
+      "fieldCount": 105,
+      "maskHex": "80000000",
+      "selectedPayloadUtf16Length": 6,
+      "outputLength": 126,
+      "matched": true
+    }
+  ],
+  "failures": []
+}

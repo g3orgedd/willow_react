@@ -1,0 +1,234 @@
+{
+  "capturedAt": "2026-10-22T09:20:22.033Z",
+  "sourceVersion": "2.3.1",
+  "packagedVersion": "2.3.1",
+  "archive": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-xml-fix-20261022\\win-unpacked\\resources\\app.asar",
+  "archiveSha256": "d11df61c0b73bdc84ab8960434d9cb2a2f0ed31818812fe24f58e5174acc315a",
+  "files": [
+    {
+      "source": "public/modules/00-core.js",
+      "archiveEntry": "dist/modules/00-core.js",
+      "sourceSha256": "ee5ce4190984501cce60d8a7fbbe21ddd8d0f81ebbfafcfedceb49d683c1aa8f",
+      "distSha256": "ee5ce4190984501cce60d8a7fbbe21ddd8d0f81ebbfafcfedceb49d683c1aa8f",
+      "archiveSha256": "ee5ce4190984501cce60d8a7fbbe21ddd8d0f81ebbfafcfedceb49d683c1aa8f",
+      "httpSha256": "ee5ce4190984501cce60d8a7fbbe21ddd8d0f81ebbfafcfedceb49d683c1aa8f",
+      "identical": true
+    },
+    {
+      "source": "public/modules/01-ciff-compatibility.js",
+      "archiveEntry": "dist/modules/01-ciff-compatibility.js",
+      "sourceSha256": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91",
+      "distSha256": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91",
+      "archiveSha256": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91",
+      "httpSha256": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91",
+      "identical": true
+    },
+    {
+      "source": "public/modules/02-fonts.js",
+      "archiveEntry": "dist/modules/02-fonts.js",
+      "sourceSha256": "539a19b4d44c2b1808c77e14f70af55fa53e8ea111ec4b8518d778d61acecc28",
+      "distSha256": "539a19b4d44c2b1808c77e14f70af55fa53e8ea111ec4b8518d778d61acecc28",
+      "archiveSha256": "539a19b4d44c2b1808c77e14f70af55fa53e8ea111ec4b8518d778d61acecc28",
+      "httpSha256": "539a19b4d44c2b1808c77e14f70af55fa53e8ea111ec4b8518d778d61acecc28",
+      "identical": true
+    },
+    {
+      "source": "public/modules/03-font-catalog.js",
+      "archiveEntry": "dist/modules/03-font-catalog.js",
+      "sourceSha256": "a97126a88bf0181c248e4c8d0b99d1a7e559a9d31787e9491a8aab9678563588",
+      "distSha256": "a97126a88bf0181c248e4c8d0b99d1a7e559a9d31787e9491a8aab9678563588",
+      "archiveSha256": "a97126a88bf0181c248e4c8d0b99d1a7e559a9d31787e9491a8aab9678563588",
+      "httpSha256": "a97126a88bf0181c248e4c8d0b99d1a7e559a9d31787e9491a8aab9678563588",
+      "identical": true
+    },
+    {
+      "source": "public/modules/04-native-text-preview.js",
+      "archiveEntry": "dist/modules/04-native-text-preview.js",
+      "sourceSha256": "d12b17415be1651de61764bd987749c50d618f6d0318eab3e5c5232e92163efc",
+      "distSha256": "d12b17415be1651de61764bd987749c50d618f6d0318eab3e5c5232e92163efc",
+      "archiveSha256": "d12b17415be1651de61764bd987749c50d618f6d0318eab3e5c5232e92163efc",
+      "httpSha256": "d12b17415be1651de61764bd987749c50d618f6d0318eab3e5c5232e92163efc",
+      "identical": true
+    },
+    {
+      "source": "public/modules/05-i18n.js",
+      "archiveEntry": "dist/modules/05-i18n.js",
+      "sourceSha256": "5fb22dd1fed40612db8ce9bdd2b8f165a25b271279b47938c3db0808b90cae5a",
+      "distSha256": "5fb22dd1fed40612db8ce9bdd2b8f165a25b271279b47938c3db0808b90cae5a",
+      "archiveSha256": "5fb22dd1fed40612db8ce9bdd2b8f165a25b271279b47938c3db0808b90cae5a",
+      "httpSha256": "5fb22dd1fed40612db8ce9bdd2b8f165a25b271279b47938c3db0808b90cae5a",
+      "identical": true
+    },
+    {
+      "source": "public/modules/06-theme.js",
+      "archiveEntry": "dist/modules/06-theme.js",
+      "sourceSha256": "6057c0dd9b51efb4c3b077edc1d47ad764ea90db65b5f1663171e27e4acf05d0",
+      "distSha256": "6057c0dd9b51efb4c3b077edc1d47ad764ea90db65b5f1663171e27e4acf05d0",
+      "archiveSha256": "6057c0dd9b51efb4c3b077edc1d47ad764ea90db65b5f1663171e27e4acf05d0",
+      "httpSha256": "6057c0dd9b51efb4c3b077edc1d47ad764ea90db65b5f1663171e27e4acf05d0",
+      "identical": true
+    },
+    {
+      "source": "public/modules/07-logging.js",
+      "archiveEntry": "dist/modules/07-logging.js",
+      "sourceSha256": "3778f2ad48ecf467208bd9eca9a02e5a12106882a984347df77a0873bccd0384",
+      "distSha256": "3778f2ad48ecf467208bd9eca9a02e5a12106882a984347df77a0873bccd0384",
+      "archiveSha256": "3778f2ad48ecf467208bd9eca9a02e5a12106882a984347df77a0873bccd0384",
+      "httpSha256": "3778f2ad48ecf467208bd9eca9a02e5a12106882a984347df77a0873bccd0384",
+      "identical": true
+    },
+    {
+      "source": "public/modules/10-canvas-ui.js",
+      "archiveEntry": "dist/modules/10-canvas-ui.js",
+      "sourceSha256": "932f64e847e22375771374f2cdf2105863b189882413acefac1f4ee11a624970",
+      "distSha256": "932f64e847e22375771374f2cdf2105863b189882413acefac1f4ee11a624970",
+      "archiveSha256": "932f64e847e22375771374f2cdf2105863b189882413acefac1f4ee11a624970",
+      "httpSha256": "932f64e847e22375771374f2cdf2105863b189882413acefac1f4ee11a624970",
+      "identical": true
+    },
+    {
+      "source": "public/modules/20-xml-load.js",
+      "archiveEntry": "dist/modules/20-xml-load.js",
+      "sourceSha256": "2b7ac6dc8da01c2d2fd5d8d0f3c6ffcb19c613d1f0cc336d2496ea7a50bfbb1b",
+      "distSha256": "2b7ac6dc8da01c2d2fd5d8d0f3c6ffcb19c613d1f0cc336d2496ea7a50bfbb1b",
+      "archiveSha256": "2b7ac6dc8da01c2d2fd5d8d0f3c6ffcb19c613d1f0cc336d2496ea7a50bfbb1b",
+      "httpSha256": "2b7ac6dc8da01c2d2fd5d8d0f3c6ffcb19c613d1f0cc336d2496ea7a50bfbb1b",
+      "identical": true
+    },
+    {
+      "source": "public/modules/30-rendering.js",
+      "archiveEntry": "dist/modules/30-rendering.js",
+      "sourceSha256": "97ecc8bba822771276fb5243bc315c904231b9750bd1234c7abcd03d3dc6cf53",
+      "distSha256": "97ecc8bba822771276fb5243bc315c904231b9750bd1234c7abcd03d3dc6cf53",
+      "archiveSha256": "97ecc8bba822771276fb5243bc315c904231b9750bd1234c7abcd03d3dc6cf53",
+      "httpSha256": "97ecc8bba822771276fb5243bc315c904231b9750bd1234c7abcd03d3dc6cf53",
+      "identical": true
+    },
+    {
+      "source": "public/modules/40-editor.js",
+      "archiveEntry": "dist/modules/40-editor.js",
+      "sourceSha256": "3856304b500417a20a5fa5e41a7ae2db2d448eb286a442ff672ee11d753e11d4",
+      "distSha256": "3856304b500417a20a5fa5e41a7ae2db2d448eb286a442ff672ee11d753e11d4",
+      "archiveSha256": "3856304b500417a20a5fa5e41a7ae2db2d448eb286a442ff672ee11d753e11d4",
+      "httpSha256": "3856304b500417a20a5fa5e41a7ae2db2d448eb286a442ff672ee11d753e11d4",
+      "identical": true
+    },
+    {
+      "source": "public/modules/45-template-preset.js",
+      "archiveEntry": "dist/modules/45-template-preset.js",
+      "sourceSha256": "f5777eb1e78d986922c23802a687405ca0e8247192cc388ce3873f7b41f8a8dc",
+      "distSha256": "f5777eb1e78d986922c23802a687405ca0e8247192cc388ce3873f7b41f8a8dc",
+      "archiveSha256": "f5777eb1e78d986922c23802a687405ca0e8247192cc388ce3873f7b41f8a8dc",
+      "httpSha256": "f5777eb1e78d986922c23802a687405ca0e8247192cc388ce3873f7b41f8a8dc",
+      "identical": true
+    },
+    {
+      "source": "public/modules/50-inputs.js",
+      "archiveEntry": "dist/modules/50-inputs.js",
+      "sourceSha256": "1a4ba1f3b2b61ee55379fa5520a05daaf4cb6458cd3223f7a9db35393d32532d",
+      "distSha256": "1a4ba1f3b2b61ee55379fa5520a05daaf4cb6458cd3223f7a9db35393d32532d",
+      "archiveSha256": "1a4ba1f3b2b61ee55379fa5520a05daaf4cb6458cd3223f7a9db35393d32532d",
+      "httpSha256": "1a4ba1f3b2b61ee55379fa5520a05daaf4cb6458cd3223f7a9db35393d32532d",
+      "identical": true
+    },
+    {
+      "source": "public/modules/60-history-save.js",
+      "archiveEntry": "dist/modules/60-history-save.js",
+      "sourceSha256": "0b076a2e34d258610cf47148744337f1d7d2328a537a2d67f59420258aa1236c",
+      "distSha256": "0b076a2e34d258610cf47148744337f1d7d2328a537a2d67f59420258aa1236c",
+      "archiveSha256": "0b076a2e34d258610cf47148744337f1d7d2328a537a2d67f59420258aa1236c",
+      "httpSha256": "0b076a2e34d258610cf47148744337f1d7d2328a537a2d67f59420258aa1236c",
+      "identical": true
+    },
+    {
+      "source": "public/modules/70-template-tabs.js",
+      "archiveEntry": "dist/modules/70-template-tabs.js",
+      "sourceSha256": "d3ecd3e624dc8750cdc16d3b87dd076c4461ec88dd462ecd828796ee4110ca6d",
+      "distSha256": "d3ecd3e624dc8750cdc16d3b87dd076c4461ec88dd462ecd828796ee4110ca6d",
+      "archiveSha256": "d3ecd3e624dc8750cdc16d3b87dd076c4461ec88dd462ecd828796ee4110ca6d",
+      "httpSha256": "d3ecd3e624dc8750cdc16d3b87dd076c4461ec88dd462ecd828796ee4110ca6d",
+      "identical": true
+    },
+    {
+      "source": "public/modules/90-bootstrap.js",
+      "archiveEntry": "dist/modules/90-bootstrap.js",
+      "sourceSha256": "abd4e3bd2e29870515ddc1b95cf397c07ea11a9d3cfdef753cd8b3d66ce92ada",
+      "distSha256": "abd4e3bd2e29870515ddc1b95cf397c07ea11a9d3cfdef753cd8b3d66ce92ada",
+      "archiveSha256": "abd4e3bd2e29870515ddc1b95cf397c07ea11a9d3cfdef753cd8b3d66ce92ada",
+      "httpSha256": "abd4e3bd2e29870515ddc1b95cf397c07ea11a9d3cfdef753cd8b3d66ce92ada",
+      "identical": true
+    },
+    {
+      "source": "public/modules/clst/calculated-data.js",
+      "archiveEntry": "dist/modules/clst/calculated-data.js",
+      "sourceSha256": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb",
+      "distSha256": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb",
+      "archiveSha256": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb",
+      "httpSha256": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb",
+      "identical": true
+    },
+    {
+      "source": "public/modules/clst/encryption.js",
+      "archiveEntry": "dist/modules/clst/encryption.js",
+      "sourceSha256": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+      "distSha256": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+      "archiveSha256": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+      "httpSha256": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+      "identical": true
+    },
+    {
+      "source": "public/modules/clst/tag-data.js",
+      "archiveEntry": "dist/modules/clst/tag-data.js",
+      "sourceSha256": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d",
+      "distSha256": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d",
+      "archiveSha256": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d",
+      "httpSha256": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d",
+      "identical": true
+    },
+    {
+      "source": "public/modules/clst/version-info.js",
+      "archiveEntry": "dist/modules/clst/version-info.js",
+      "sourceSha256": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5",
+      "distSha256": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5",
+      "archiveSha256": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5",
+      "httpSha256": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5",
+      "identical": true
+    },
+    {
+      "source": "electron/font-renderer.ps1",
+      "archiveEntry": "electron/font-renderer.ps1",
+      "sourceSha256": "5ddeab5babbf9b6f19891a466b2ab5ba19231ed3a057ac194e8255b9443abd66",
+      "archiveSha256": "5ddeab5babbf9b6f19891a466b2ab5ba19231ed3a057ac194e8255b9443abd66",
+      "identical": true
+    },
+    {
+      "source": "electron/fonts.cjs",
+      "archiveEntry": "electron/fonts.cjs",
+      "sourceSha256": "c803944ecbdb425a188cf02c6ebcfd490cf2662c3c3151b0bf4c22bb0d2bba56",
+      "archiveSha256": "c803944ecbdb425a188cf02c6ebcfd490cf2662c3c3151b0bf4c22bb0d2bba56",
+      "identical": true
+    },
+    {
+      "source": "electron/logger.cjs",
+      "archiveEntry": "electron/logger.cjs",
+      "sourceSha256": "50590d9f2d155cf9c26cd5f4627a533d2b29f530ef1b61696304b9c7ff359a11",
+      "archiveSha256": "50590d9f2d155cf9c26cd5f4627a533d2b29f530ef1b61696304b9c7ff359a11",
+      "identical": true
+    },
+    {
+      "source": "electron/main.cjs",
+      "archiveEntry": "electron/main.cjs",
+      "sourceSha256": "ee375135c470672c23a8edb31ff0046f7b5905cdd75bc50ef9262c39f845b516",
+      "archiveSha256": "ee375135c470672c23a8edb31ff0046f7b5905cdd75bc50ef9262c39f845b516",
+      "identical": true
+    },
+    {
+      "source": "electron/preload.cjs",
+      "archiveEntry": "electron/preload.cjs",
+      "sourceSha256": "e7ff091d5196df657021f3e6f10ba7e5a78578ec4cc28c12ce4ea690743ec5b7",
+      "archiveSha256": "e7ff091d5196df657021f3e6f10ba7e5a78578ec4cc28c12ce4ea690743ec5b7",
+      "identical": true
+    }
+  ],
+  "allIdentical": true
+}

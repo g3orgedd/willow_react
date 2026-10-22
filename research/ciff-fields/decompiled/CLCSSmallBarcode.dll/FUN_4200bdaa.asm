@@ -1,0 +1,49 @@
+4200bdaa PUSH 0x4
+4200bdac MOV EAX,0x42080fcf
+4200bdb1 CALL 0x4206a66c
+4200bdb6 XOR EBX,EBX
+4200bdb8 MOV dword ptr [EBP + -0x10],EBX
+4200bdbb LEA EAX,[EBP + -0x10]
+4200bdbe MOV dword ptr [EBP + -0x4],EBX
+4200bdc1 PUSH EAX
+4200bdc2 PUSH 0x4208a7cc
+4200bdc7 PUSH 0x17
+4200bdc9 PUSH EBX
+4200bdca PUSH 0x4208a628
+4200bdcf CALL dword ptr [0x42089390]
+4200bdd5 MOV ESI,dword ptr [EBP + 0x8]
+4200bdd8 TEST EAX,EAX
+4200bdda JS 0x4200be14
+4200bddc MOV dword ptr [EBP + 0x8],EBX
+4200bddf MOV EAX,dword ptr [EBP + -0x10]
+4200bde2 LEA EDX,[EBP + 0x8]
+4200bde5 PUSH EDX
+4200bde6 PUSH dword ptr [ESI]
+4200bde8 MOV byte ptr [EBP + -0x4],0x1
+4200bdec MOV ECX,dword ptr [EAX]
+4200bdee PUSH EAX
+4200bdef CALL dword ptr [ECX + 0xc]
+4200bdf2 MOV EDI,EAX
+4200bdf4 TEST EDI,EDI
+4200bdf6 JS 0x4200be04
+4200bdf8 MOV ECX,dword ptr [EBP + 0xc]
+4200bdfb LEA EAX,[EBP + 0x8]
+4200bdfe PUSH EAX
+4200bdff CALL 0x4200572b
+4200be04 PUSH dword ptr [EBP + 0x8]
+4200be07 MOV byte ptr [EBP + -0x4],BL
+4200be0a CALL dword ptr [0x42089264]
+4200be10 TEST EDI,EDI
+4200be12 JNS 0x4200be1d
+4200be14 MOV ECX,dword ptr [EBP + 0xc]
+4200be17 PUSH ESI
+4200be18 CALL 0x4200572b
+4200be1d OR dword ptr [EBP + -0x4],0xffffffff
+4200be21 MOV EAX,dword ptr [EBP + -0x10]
+4200be24 TEST EAX,EAX
+4200be26 JZ 0x4200be2e
+4200be28 MOV ECX,dword ptr [EAX]
+4200be2a PUSH EAX
+4200be2b CALL dword ptr [ECX + 0x8]
+4200be2e CALL 0x4206a63a
+4200be33 RET 0x8

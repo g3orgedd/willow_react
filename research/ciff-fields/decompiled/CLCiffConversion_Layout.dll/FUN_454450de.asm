@@ -1,0 +1,7 @@
+454450de MOV EAX,dword ptr [EBP + -0x10]
+454450e1 AND EAX,0x1
+454450e4 JZ 0x454450f6
+454450ea AND dword ptr [EBP + -0x10],0xfffffffe
+454450ee MOV ECX,dword ptr [EBP + 0x8]
+454450f1 JMP 0x45401c67
+454450f6 RET

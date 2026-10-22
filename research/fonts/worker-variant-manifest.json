@@ -1,0 +1,65 @@
+[
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "normal",
+    "reference": "variant_normal.png",
+    "candidate": "worker-variant-normal.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "bold",
+    "reference": "variant_bold.png",
+    "candidate": "worker-variant-bold.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "italic",
+    "reference": "variant_italic.png",
+    "candidate": "worker-variant-italic.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "xmag150",
+    "reference": "variant_xmag150.png",
+    "candidate": "worker-variant-xmag150.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "ymag150",
+    "reference": "variant_ymag150.png",
+    "candidate": "worker-variant-ymag150.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "spacing1",
+    "reference": "variant_spacing1.png",
+    "candidate": "worker-variant-spacing1.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "spacing50",
+    "reference": "variant_spacing50.png",
+    "candidate": "worker-variant-spacing50.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "pitchresolution10",
+    "reference": "variant_pitchresolution10.png",
+    "candidate": "worker-variant-pitchresolution10.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "variant": "ttsize0",
+    "reference": "variant_ttsize0.png",
+    "candidate": "worker-variant-ttsize0.png"
+  }
+]

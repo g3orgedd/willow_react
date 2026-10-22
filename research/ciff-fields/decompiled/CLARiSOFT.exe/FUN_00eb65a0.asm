@@ -1,0 +1,13 @@
+00eb65a0 PUSH EBP
+00eb65a1 MOV EBP,ESP
+00eb65a3 PUSH ECX
+00eb65a4 MOV EAX,dword ptr [ECX + 0x4]
+00eb65a7 LEA EDX,[EBP + -0x4]
+00eb65aa PUSH EDX
+00eb65ab PUSH EAX
+00eb65ac MOV ECX,dword ptr [EAX]
+00eb65ae CALL dword ptr [ECX + 0xc4]
+00eb65b4 MOV EAX,dword ptr [EBP + -0x4]
+00eb65b7 MOV ESP,EBP
+00eb65b9 POP EBP
+00eb65ba RET

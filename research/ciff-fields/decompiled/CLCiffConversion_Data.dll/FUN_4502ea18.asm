@@ -1,0 +1,17 @@
+4502ea18 PUSH EBP
+4502ea19 MOV EBP,ESP
+4502ea1b PUSH ECX
+4502ea1c FSTCW word ptr [EBP + -0x4]
+4502ea20 MOV ECX,dword ptr [EBP + 0xc]
+4502ea23 MOV EAX,dword ptr [EBP + 0x8]
+4502ea26 NOT ECX
+4502ea28 AND EAX,dword ptr [EBP + 0xc]
+4502ea2b AND CX,word ptr [EBP + -0x4]
+4502ea2f OR CX,AX
+4502ea32 MOVZX EAX,CX
+4502ea35 MOV dword ptr [EBP + 0xc],EAX
+4502ea38 FLDCW word ptr [EBP + 0xc]
+4502ea3b MOVSX EAX,word ptr [EBP + -0x4]
+4502ea3f MOV ESP,EBP
+4502ea41 POP EBP
+4502ea42 RET

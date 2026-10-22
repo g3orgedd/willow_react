@@ -1,0 +1,205 @@
+4081bdba PUSH 0x68
+4081bdbc MOV EAX,0x40847232
+4081bdc1 CALL 0x4082d4e4
+4081bdc6 MOV ESI,ECX
+4081bdc8 MOV dword ptr [EBP + -0x28],ESI
+4081bdcb PUSH dword ptr [EBP + 0x10]
+4081bdce LEA ECX,[EBP + -0x18]
+4081bdd1 CALL 0x40811f96
+4081bdd6 AND dword ptr [EBP + -0x4],0x0
+4081bdda LEA ECX,[EBP + -0x64]
+4081bddd CALL 0x40802e76
+4081bde2 MOV EAX,dword ptr [EBP + -0x18]
+4081bde5 LEA EDX,[EBP + -0x64]
+4081bde8 PUSH EDX
+4081bde9 PUSH EAX
+4081bdea MOV byte ptr [EBP + -0x4],0x1
+4081bdee MOV ECX,dword ptr [EAX]
+4081bdf0 CALL dword ptr [ECX + 0x64]
+4081bdf3 PUSH dword ptr [EBP + -0x5c]
+4081bdf6 LEA ECX,[EBP + -0x1c]
+4081bdf9 CALL 0x40803a87
+4081bdfe MOV EAX,dword ptr [EBP + -0x1c]
+4081be01 LEA EDX,[EBP + -0x20]
+4081be04 PUSH EDX
+4081be05 PUSH EAX
+4081be06 MOV byte ptr [EBP + -0x4],0x2
+4081be0a MOV ECX,dword ptr [EAX]
+4081be0c CALL dword ptr [ECX + 0x1c]
+4081be0f XOR EBX,EBX
+4081be11 CMP dword ptr [EBP + -0x20],EBX
+4081be14 JLE 0x4081bfd0
+4081be1a LEA ECX,[EBP + -0x54]
+4081be1d CALL 0x40802e76
+4081be22 MOV EAX,dword ptr [EBP + -0x1c]
+4081be25 LEA EDX,[EBP + -0x54]
+4081be28 PUSH EDX
+4081be29 INC EBX
+4081be2a MOV byte ptr [EBP + -0x4],0x3
+4081be2e PUSH EBX
+4081be2f MOV ECX,dword ptr [EAX]
+4081be31 PUSH EAX
+4081be32 CALL dword ptr [ECX + 0x30]
+4081be35 PUSH dword ptr [EBP + -0x4c]
+4081be38 LEA ECX,[EBP + -0x10]
+4081be3b CALL 0x40803a5e
+4081be40 AND dword ptr [EBP + -0x14],0x0
+4081be44 MOV EAX,dword ptr [EBP + -0x10]
+4081be47 LEA EDX,[EBP + -0x14]
+4081be4a PUSH EDX
+4081be4b PUSH EAX
+4081be4c MOV byte ptr [EBP + -0x4],0x5
+4081be50 MOV ECX,dword ptr [EAX]
+4081be52 CALL dword ptr [ECX + 0xbc]
+4081be58 PUSH dword ptr [EBP + -0x14]
+4081be5b CALL dword ptr [0x4084a1ec]
+4081be61 TEST EAX,EAX
+4081be63 JZ 0x4081bfa3
+4081be69 PUSH 0x4084aa5c
+4081be6e LEA ECX,[EBP + -0x14]
+4081be71 CALL 0x40803ed6
+4081be76 TEST AL,AL
+4081be78 JZ 0x4081bfa3
+4081be7e MOV EAX,dword ptr [EBP + -0x10]
+4081be81 LEA EDX,[EBP + -0x24]
+4081be84 PUSH EDX
+4081be85 PUSH EAX
+4081be86 MOV ECX,dword ptr [EAX]
+4081be88 CALL dword ptr [ECX + 0x24]
+4081be8b CMP dword ptr [EBP + -0x24],0x0
+4081be8f JZ 0x4081bfa3
+4081be95 LEA EAX,[EBP + -0x10]
+4081be98 MOV ECX,ESI
+4081be9a PUSH EAX
+4081be9b CALL 0x4081c006
+4081bea0 TEST AL,AL
+4081bea2 JNZ 0x4081bfa3
+4081bea8 LEA EAX,[EBP + -0x34]
+4081beab PUSH EAX
+4081beac CALL 0x40805bf7
+4081beb1 POP ECX
+4081beb2 CALL 0x4081d4ef
+4081beb7 TEST AL,AL
+4081beb9 JZ 0x4081bf16
+4081bebb MOV EAX,dword ptr [EBP + -0x10]
+4081bebe PUSH ECX
+4081bebf MOV ECX,ESP
+4081bec1 MOV dword ptr [ECX],EAX
+4081bec3 MOV EAX,dword ptr [EBP + -0x10]
+4081bec6 TEST EAX,EAX
+4081bec8 JZ 0x4081bed0
+4081beca MOV ECX,dword ptr [EAX]
+4081becc PUSH EAX
+4081becd CALL dword ptr [ECX + 0x4]
+4081bed0 MOV EAX,dword ptr [EBP + -0x18]
+4081bed3 PUSH ECX
+4081bed4 MOV ECX,ESP
+4081bed6 MOV dword ptr [ECX],EAX
+4081bed8 MOV EAX,dword ptr [EBP + -0x18]
+4081bedb TEST EAX,EAX
+4081bedd JZ 0x4081bee5
+4081bedf MOV ECX,dword ptr [EAX]
+4081bee1 PUSH EAX
+4081bee2 CALL dword ptr [ECX + 0x4]
+4081bee5 LEA EAX,[EBP + -0x3c]
+4081bee8 PUSH EAX
+4081bee9 CALL 0x4080e73f
+4081beee PUSH dword ptr [EAX + 0x4]
+4081bef1 PUSH dword ptr [EAX]
+4081bef3 LEA EAX,[EBP + -0x74]
+4081bef6 PUSH EAX
+4081bef7 CALL 0x4080e725
+4081befc PUSH EAX
+4081befd LEA EAX,[EBP + -0x34]
+4081bf00 PUSH EAX
+4081bf01 LEA EAX,[EBP + -0x44]
+4081bf04 PUSH EAX
+4081bf05 CALL 0x408294b5
+4081bf0a ADD ESP,0x24
+4081bf0d MOVSD XMM0,qword ptr [EAX]
+4081bf11 MOVSD qword ptr [EBP + -0x34],XMM0
+4081bf16 MOV ESI,dword ptr [EBP + -0x10]
+4081bf19 LEA ECX,[EBP + -0x34]
+4081bf1c MOV EDI,dword ptr [ESI]
+4081bf1e CALL 0x40829763
+4081bf23 PUSH EAX
+4081bf24 PUSH ESI
+4081bf25 CALL dword ptr [EDI + 0x30]
+4081bf28 MOV ESI,dword ptr [EBP + -0x10]
+4081bf2b LEA ECX,[EBP + -0x34]
+4081bf2e MOV EDI,dword ptr [ESI]
+4081bf30 CALL 0x40829cd3
+4081bf35 PUSH EAX
+4081bf36 PUSH ESI
+4081bf37 CALL dword ptr [EDI + 0x38]
+4081bf3a MOV ESI,dword ptr [EBP + -0x10]
+4081bf3d LEA ECX,[EBP + -0x34]
+4081bf40 MOV EDI,dword ptr [ESI]
+4081bf42 CALL 0x4082a025
+4081bf47 PUSH EAX
+4081bf48 PUSH ESI
+4081bf49 CALL dword ptr [EDI + 0x40]
+4081bf4c MOV EAX,dword ptr [EBP + -0x10]
+4081bf4f MOVSD XMM0,qword ptr [EBP + -0x34]
+4081bf54 MOV ECX,dword ptr [EAX]
+4081bf56 PUSH ECX
+4081bf57 PUSH ECX
+4081bf58 MOVSD qword ptr [ESP],XMM0
+4081bf5d PUSH EAX
+4081bf5e CALL dword ptr [ECX + 0x48]
+4081bf61 MOV ESI,dword ptr [EBP + -0x10]
+4081bf64 LEA ECX,[EBP + -0x34]
+4081bf67 MOV EDI,dword ptr [ESI]
+4081bf69 CALL 0x40829763
+4081bf6e PUSH EAX
+4081bf6f PUSH ESI
+4081bf70 CALL dword ptr [EDI + 0xa8]
+4081bf76 MOV ESI,dword ptr [EBP + -0x10]
+4081bf79 LEA ECX,[EBP + -0x34]
+4081bf7c MOV EDI,dword ptr [ESI]
+4081bf7e CALL 0x40829cd3
+4081bf83 PUSH EAX
+4081bf84 PUSH ESI
+4081bf85 CALL dword ptr [EDI + 0xb0]
+4081bf8b MOV ESI,dword ptr [EBP + -0x10]
+4081bf8e LEA ECX,[EBP + -0x34]
+4081bf91 MOV EDI,dword ptr [ESI]
+4081bf93 CALL 0x4082a025
+4081bf98 PUSH EAX
+4081bf99 PUSH ESI
+4081bf9a CALL dword ptr [EDI + 0xb8]
+4081bfa0 MOV ESI,dword ptr [EBP + -0x28]
+4081bfa3 PUSH dword ptr [EBP + -0x14]
+4081bfa6 CALL dword ptr [0x4084a1f0]
+4081bfac MOV EAX,dword ptr [EBP + -0x10]
+4081bfaf MOV byte ptr [EBP + -0x4],0x3
+4081bfb3 TEST EAX,EAX
+4081bfb5 JZ 0x4081bfbd
+4081bfb7 MOV ECX,dword ptr [EAX]
+4081bfb9 PUSH EAX
+4081bfba CALL dword ptr [ECX + 0x8]
+4081bfbd LEA EAX,[EBP + -0x54]
+4081bfc0 PUSH EAX
+4081bfc1 CALL dword ptr [0x4084a1e4]
+4081bfc7 CMP EBX,dword ptr [EBP + -0x20]
+4081bfca JL 0x4081be1a
+4081bfd0 MOV EAX,dword ptr [EBP + -0x1c]
+4081bfd3 MOV byte ptr [EBP + -0x4],0x1
+4081bfd7 TEST EAX,EAX
+4081bfd9 JZ 0x4081bfe1
+4081bfdb MOV ECX,dword ptr [EAX]
+4081bfdd PUSH EAX
+4081bfde CALL dword ptr [ECX + 0x8]
+4081bfe1 LEA EAX,[EBP + -0x64]
+4081bfe4 PUSH EAX
+4081bfe5 CALL dword ptr [0x4084a1e4]
+4081bfeb OR dword ptr [EBP + -0x4],0xffffffff
+4081bfef MOV ECX,dword ptr [EBP + -0x18]
+4081bff2 TEST ECX,ECX
+4081bff4 JZ 0x4081bffc
+4081bff6 MOV EDX,dword ptr [ECX]
+4081bff8 PUSH ECX
+4081bff9 CALL dword ptr [EDX + 0x8]
+4081bffc MOV AL,0x1
+4081bffe CALL 0x4082d4b2
+4081c003 RET 0x10

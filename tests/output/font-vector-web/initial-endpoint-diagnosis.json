@@ -1,0 +1,29 @@
+{
+  "capturedAt": "2026-10-20T20:13:35.703Z",
+  "endpoints": [
+    {
+      "url": "http://127.0.0.1:5173",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "width": 221,
+      "height": 28,
+      "outlineAvailable": true,
+      "outlineLength": 6633,
+      "error": null
+    },
+    {
+      "url": "http://localhost:5173",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "width": 221,
+      "height": 28,
+      "outlineAvailable": true,
+      "outlineLength": 6633,
+      "error": null
+    },
+    {
+      "url": "http://[::1]:5173",
+      "error": "fetch failed"
+    }
+  ]
+}

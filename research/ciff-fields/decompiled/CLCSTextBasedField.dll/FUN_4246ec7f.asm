@@ -1,0 +1,40 @@
+4246ec7f PUSH EBP
+4246ec80 MOV EBP,ESP
+4246ec82 SUB ESP,0x20
+4246ec85 PUSH ESI
+4246ec86 PUSH EDI
+4246ec87 PUSH 0x8
+4246ec89 POP ECX
+4246ec8a MOV ESI,0x4249d4e0
+4246ec8f LEA EDI,[EBP + -0x20]
+4246ec92 MOVSD.REP ES:EDI,ESI
+4246ec94 MOV ESI,dword ptr [EBP + 0xc]
+4246ec97 MOV EDI,dword ptr [EBP + 0x8]
+4246ec9a TEST ESI,ESI
+4246ec9c JZ 0x4246ecb1
+4246ec9e TEST byte ptr [ESI],0x10
+4246eca1 JZ 0x4246ecb1
+4246eca3 MOV ECX,dword ptr [EDI]
+4246eca5 SUB ECX,0x4
+4246eca8 PUSH ECX
+4246eca9 MOV EAX,dword ptr [ECX]
+4246ecab MOV ESI,dword ptr [EAX + 0x18]
+4246ecae CALL dword ptr [EAX + 0x20]
+4246ecb1 MOV dword ptr [EBP + -0x8],EDI
+4246ecb4 MOV dword ptr [EBP + -0x4],ESI
+4246ecb7 TEST ESI,ESI
+4246ecb9 JZ 0x4246ecc7
+4246ecbb TEST byte ptr [ESI],0x8
+4246ecbe JZ 0x4246ecc7
+4246ecc0 MOV dword ptr [EBP + -0xc],0x1994000
+4246ecc7 LEA EAX,[EBP + -0xc]
+4246ecca PUSH EAX
+4246eccb PUSH dword ptr [EBP + -0x10]
+4246ecce PUSH dword ptr [EBP + -0x1c]
+4246ecd1 PUSH dword ptr [EBP + -0x20]
+4246ecd4 CALL dword ptr [0x42495234]
+4246ecda POP EDI
+4246ecdb POP ESI
+4246ecdc MOV ESP,EBP
+4246ecde POP EBP
+4246ecdf RET 0x8

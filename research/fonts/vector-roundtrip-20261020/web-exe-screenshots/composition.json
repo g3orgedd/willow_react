@@ -1,0 +1,23 @@
+{
+  "width": 2460,
+  "height": 1197,
+  "contentHeight": 1197,
+  "scrollHeight": 1197,
+  "clientHeight": 1197,
+  "images": [
+    {
+      "src": "web-original.png",
+      "width": 1440,
+      "height": 1100,
+      "displayWidth": 1174,
+      "displayHeight": 897
+    },
+    {
+      "src": "exe-original.png",
+      "width": 1440,
+      "height": 1100,
+      "displayWidth": 1174,
+      "displayHeight": 897
+    }
+  ]
+}

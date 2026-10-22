@@ -1,0 +1,1880 @@
+====================================================================================================
+[2026-10-22 12:08:54.280 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: INITIAL_RENDERER_STATE
+Message: Начальное состояние интерфейса после запуска.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: null,
+      document: {
+        designedFor: null,
+        loaded: false,
+        overallSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        printMode: 'Intermittent',
+        printerModel: 'DataFlex 6530(53mm)',
+        usedSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        version: null
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 0
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: null,
+        count: 0,
+        items: []
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:55.595 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: APPLICATION_READY
+Message: Приложение полностью инициализировано и готово к работе.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '877d64cd-7559-402a-9693-d98eff3e362b',
+        title: 'Untitled template'
+      },
+      document: {
+        designedFor: null,
+        loaded: false,
+        overallSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        printMode: 'Intermittent',
+        printerModel: 'DataFlex 6530(53mm)',
+        usedSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        version: null
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '877d64cd-7559-402a-9693-d98eff3e362b',
+        count: 1,
+        items: [
+          {
+            dirty: false,
+            hasDocument: false,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'Untitled template'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:55.630 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: APPLICATION_STATE_AFTER_TEMPLATE_LOAD
+Message: Состояние после загрузки шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      source: 'xml-fix-exe',
+      title: 'XML fixture party-gtin2'
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '877d64cd-7559-402a-9693-d98eff3e362b',
+        title: 'XML fixture party-gtin2'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '877d64cd-7559-402a-9693-d98eff3e362b',
+        count: 1,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'XML fixture party-gtin2'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:55.655 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: APPLICATION_STATE_AFTER_TEMPLATE_LOAD
+Message: Состояние после загрузки шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      source: 'preset-builder',
+      title: 'XML party fixture party-gtin2'
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: true,
+        id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+        title: 'XML party fixture party-gtin2'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+        count: 2,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'XML fixture party-gtin2'
+          },
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+            title: 'XML party fixture party-gtin2'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.072 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: APPLICATION_STATE_AFTER_SAVE
+Message: Состояние после запуска сохранения шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      filename: 'xml-exe-party-gtin2.ciff',
+      sizeBytes: 8722
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: true,
+        id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+        title: 'XML party fixture party-gtin2'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 13,
+          width: 13
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          Barcode: 1,
+          FixedText: 6
+        },
+        hidden: 6,
+        items: [
+          {
+            barcode: {
+              moduleSize: 0.5,
+              segmentCount: 6,
+              segmentSources: '[Max depth reached]',
+              symbolSize: '22X22'
+            },
+            geometryInternal: {
+              h: 1100,
+              w: 1100,
+              x: 200,
+              y: 200
+            },
+            geometryMillimeters: {
+              height: 11,
+              width: 11,
+              x: 2,
+              y: 2
+            },
+            lineNumber: 1,
+            name: 'Field00',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'Barcode'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 783,
+              x: 1750,
+              y: 0
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 7.83,
+              x: 17.5,
+              y: 0
+            },
+            lineNumber: 1,
+            name: 'C1',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 2683,
+              x: 1750,
+              y: 430
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 26.83,
+              x: 17.5,
+              y: 4.3
+            },
+            lineNumber: 1,
+            name: 'GTIN2',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 358,
+              x: 1750,
+              y: 860
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.58,
+              x: 17.5,
+              y: 8.6
+            },
+            lineNumber: 1,
+            name: 'C3',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 1150,
+              x: 1750,
+              y: 1290
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 11.5,
+              x: 17.5,
+              y: 12.9
+            },
+            lineNumber: 1,
+            name: 'PRODUCT_DATE',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 383,
+              x: 1750,
+              y: 1720
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.83,
+              x: 17.5,
+              y: 17.2
+            },
+            lineNumber: 1,
+            name: 'C2',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 1917,
+              x: 1750,
+              y: 2150
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 19.17,
+              x: 17.5,
+              y: 21.5
+            },
+            lineNumber: 1,
+            name: 'SN',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 1,
+        total: 7
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+        count: 2,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'XML fixture party-gtin2'
+          },
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+            title: 'XML party fixture party-gtin2'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.256 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: APPLICATION_STATE_AFTER_INTERACTION
+Message: Состояние приложения после пользовательского взаимодействия.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      triggers: [
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: 'btnConfirmSaveTemplate',
+              label: 'Save',
+              role: null,
+              tagName: 'BUTTON',
+              type: 'button'
+            }
+          },
+          reason: 'click'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: null,
+              id: null,
+              label: 'A',
+              role: null,
+              tagName: 'A',
+              type: null
+            }
+          },
+          reason: 'click'
+        }
+      ]
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+        title: 'xml-exe-party-gtin2'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 13,
+          width: 13
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          Barcode: 1,
+          FixedText: 6
+        },
+        hidden: 6,
+        items: [
+          {
+            barcode: {
+              moduleSize: 0.5,
+              segmentCount: 6,
+              segmentSources: '[Max depth reached]',
+              symbolSize: '22X22'
+            },
+            geometryInternal: {
+              h: 1100,
+              w: 1100,
+              x: 200,
+              y: 200
+            },
+            geometryMillimeters: {
+              height: 11,
+              width: 11,
+              x: 2,
+              y: 2
+            },
+            lineNumber: 1,
+            name: 'Field00',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Field00',
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'Barcode'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 783,
+              x: 1750,
+              y: 0
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 7.83,
+              x: 17.5,
+              y: 0
+            },
+            lineNumber: 1,
+            name: 'C1',
+            orientation: 0,
+            printed: false,
+            sourceName: 'C1',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 2683,
+              x: 1750,
+              y: 430
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 26.83,
+              x: 17.5,
+              y: 4.3
+            },
+            lineNumber: 1,
+            name: 'GTIN2',
+            orientation: 0,
+            printed: false,
+            sourceName: 'GTIN2',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 358,
+              x: 1750,
+              y: 860
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.58,
+              x: 17.5,
+              y: 8.6
+            },
+            lineNumber: 1,
+            name: 'C3',
+            orientation: 0,
+            printed: false,
+            sourceName: 'C3',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 1150,
+              x: 1750,
+              y: 1290
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 11.5,
+              x: 17.5,
+              y: 12.9
+            },
+            lineNumber: 1,
+            name: 'PRODUCT_DATE',
+            orientation: 0,
+            printed: false,
+            sourceName: 'PRODUCT_DATE',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 383,
+              x: 1750,
+              y: 1720
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.83,
+              x: 17.5,
+              y: 17.2
+            },
+            lineNumber: 1,
+            name: 'C2',
+            orientation: 0,
+            printed: false,
+            sourceName: 'C2',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 1917,
+              x: 1750,
+              y: 2150
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 19.17,
+              x: 17.5,
+              y: 21.5
+            },
+            lineNumber: 1,
+            name: 'SN',
+            orientation: 0,
+            printed: false,
+            sourceName: 'SN',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 1,
+        total: 7
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+        count: 2,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'XML fixture party-gtin2'
+          },
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+            title: 'xml-exe-party-gtin2'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.318 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: APPLICATION_STATE_AFTER_TEMPLATE_LOAD
+Message: Состояние после загрузки шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      source: 'xml-fix-exe',
+      title: 'XML fixture party-box-gtin'
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+        title: 'XML fixture party-box-gtin'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+        count: 2,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'XML fixture party-gtin2'
+          },
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+            title: 'XML fixture party-box-gtin'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.336 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: APPLICATION_STATE_AFTER_TEMPLATE_LOAD
+Message: Состояние после загрузки шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      source: 'preset-builder',
+      title: 'XML party fixture party-box-gtin'
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: true,
+        id: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+        title: 'XML party fixture party-box-gtin'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+        count: 3,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'XML fixture party-gtin2'
+          },
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+            title: 'XML fixture party-box-gtin'
+          },
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+            title: 'XML party fixture party-box-gtin'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.381 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: APPLICATION_STATE_AFTER_SAVE
+Message: Состояние после запуска сохранения шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      filename: 'xml-exe-party-box-gtin.ciff',
+      sizeBytes: 10600
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: true,
+        id: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+        title: 'XML party fixture party-box-gtin'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 13,
+          width: 13
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          Barcode: 1,
+          FixedText: 8
+        },
+        hidden: 8,
+        items: [
+          {
+            barcode: {
+              moduleSize: 0.5,
+              segmentCount: 8,
+              segmentSources: '[Max depth reached]',
+              symbolSize: '22X22'
+            },
+            geometryInternal: {
+              h: 1100,
+              w: 1100,
+              x: 200,
+              y: 200
+            },
+            geometryMillimeters: {
+              height: 11,
+              width: 11,
+              x: 2,
+              y: 2
+            },
+            lineNumber: 1,
+            name: 'Field00',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'Barcode'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 783,
+              x: 1750,
+              y: 0
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 7.83,
+              x: 17.5,
+              y: 0
+            },
+            lineNumber: 1,
+            name: 'C1',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 2683,
+              x: 1750,
+              y: 492
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 26.83,
+              x: 17.5,
+              y: 4.92
+            },
+            lineNumber: 1,
+            name: 'GTIN',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 358,
+              x: 1750,
+              y: 984
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.58,
+              x: 17.5,
+              y: 9.84
+            },
+            lineNumber: 1,
+            name: 'C3',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 1150,
+              x: 1750,
+              y: 1475
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 11.5,
+              x: 17.5,
+              y: 14.75
+            },
+            lineNumber: 1,
+            name: 'PRODUCT_DATE',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 383,
+              x: 1750,
+              y: 1967
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.83,
+              x: 17.5,
+              y: 19.67
+            },
+            lineNumber: 1,
+            name: 'C2',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 1917,
+              x: 1750,
+              y: 2459
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 19.17,
+              x: 17.5,
+              y: 24.59
+            },
+            lineNumber: 1,
+            name: 'SN',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 383,
+              x: 1750,
+              y: 2900
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.83,
+              x: 17.5,
+              y: 29
+            },
+            lineNumber: 1,
+            name: 'C4',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 958,
+              x: 1750,
+              y: 3330
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 9.58,
+              x: 17.5,
+              y: 33.3
+            },
+            lineNumber: null,
+            name: 'BOX_COUNTER',
+            orientation: 0,
+            printed: false,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 1,
+        total: 9
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+        count: 3,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'XML fixture party-gtin2'
+          },
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+            title: 'XML fixture party-box-gtin'
+          },
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+            title: 'XML party fixture party-box-gtin'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.561 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: FINAL_RENDERER_STATE
+Message: Финальное состояние интерфейса перед выгрузкой.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+        title: 'xml-exe-party-box-gtin'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 24,
+          width: 16
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 13,
+          width: 13
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          Barcode: 1,
+          FixedText: 8
+        },
+        hidden: 8,
+        items: [
+          {
+            barcode: {
+              moduleSize: 0.5,
+              segmentCount: 8,
+              segmentSources: '[Max depth reached]',
+              symbolSize: '22X22'
+            },
+            geometryInternal: {
+              h: 1100,
+              w: 1100,
+              x: 200,
+              y: 200
+            },
+            geometryMillimeters: {
+              height: 11,
+              width: 11,
+              x: 2,
+              y: 2
+            },
+            lineNumber: 1,
+            name: 'Field00',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Field00',
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'Barcode'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 783,
+              x: 1750,
+              y: 0
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 7.83,
+              x: 17.5,
+              y: 0
+            },
+            lineNumber: 1,
+            name: 'C1',
+            orientation: 0,
+            printed: false,
+            sourceName: 'C1',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 2683,
+              x: 1750,
+              y: 492
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 26.83,
+              x: 17.5,
+              y: 4.92
+            },
+            lineNumber: 1,
+            name: 'GTIN',
+            orientation: 0,
+            printed: false,
+            sourceName: 'GTIN',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 358,
+              x: 1750,
+              y: 984
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.58,
+              x: 17.5,
+              y: 9.84
+            },
+            lineNumber: 1,
+            name: 'C3',
+            orientation: 0,
+            printed: false,
+            sourceName: 'C3',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 1150,
+              x: 1750,
+              y: 1475
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 11.5,
+              x: 17.5,
+              y: 14.75
+            },
+            lineNumber: 1,
+            name: 'PRODUCT_DATE',
+            orientation: 0,
+            printed: false,
+            sourceName: 'PRODUCT_DATE',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 383,
+              x: 1750,
+              y: 1967
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.83,
+              x: 17.5,
+              y: 19.67
+            },
+            lineNumber: 1,
+            name: 'C2',
+            orientation: 0,
+            printed: false,
+            sourceName: 'C2',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 1917,
+              x: 1750,
+              y: 2459
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 19.17,
+              x: 17.5,
+              y: 24.59
+            },
+            lineNumber: 1,
+            name: 'SN',
+            orientation: 0,
+            printed: false,
+            sourceName: 'SN',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 383,
+              x: 1750,
+              y: 2900
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 3.83,
+              x: 17.5,
+              y: 29
+            },
+            lineNumber: 1,
+            name: 'C4',
+            orientation: 0,
+            printed: false,
+            sourceName: 'C4',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 392,
+              w: 958,
+              x: 1750,
+              y: 3330
+            },
+            geometryMillimeters: {
+              height: 3.92,
+              width: 9.58,
+              x: 17.5,
+              y: 33.3
+            },
+            lineNumber: null,
+            name: 'BOX_COUNTER',
+            orientation: 0,
+            printed: false,
+            sourceName: 'BOX_COUNTER',
+            textSettings: {
+              pitch: 10,
+              xMag: 100
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 1,
+        total: 9
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+        count: 3,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '877d64cd-7559-402a-9693-d98eff3e362b',
+            title: 'XML fixture party-gtin2'
+          },
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+            title: 'XML fixture party-box-gtin'
+          },
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+            title: 'xml-exe-party-box-gtin'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }

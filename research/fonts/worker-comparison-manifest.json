@@ -1,0 +1,98 @@
+[
+  {
+    "face": "Arial",
+    "pitch": 6,
+    "reference": "Arial_6.png",
+    "candidate": "worker-Arial_6.png"
+  },
+  {
+    "face": "Arial",
+    "pitch": 13,
+    "reference": "Arial_13.png",
+    "candidate": "worker-Arial_13.png"
+  },
+  {
+    "face": "Arial Narrow",
+    "pitch": 6,
+    "reference": "Arial_Narrow_6.png",
+    "candidate": "worker-Arial_Narrow_6.png"
+  },
+  {
+    "face": "Arial Narrow",
+    "pitch": 13,
+    "reference": "Arial_Narrow_13.png",
+    "candidate": "worker-Arial_Narrow_13.png"
+  },
+  {
+    "face": "Times New Roman",
+    "pitch": 6,
+    "reference": "Times_New_Roman_6.png",
+    "candidate": "worker-Times_New_Roman_6.png"
+  },
+  {
+    "face": "Times New Roman",
+    "pitch": 13,
+    "reference": "Times_New_Roman_13.png",
+    "candidate": "worker-Times_New_Roman_13.png"
+  },
+  {
+    "face": "Courier New",
+    "pitch": 6,
+    "reference": "Courier_New_6.png",
+    "candidate": "worker-Courier_New_6.png"
+  },
+  {
+    "face": "Courier New",
+    "pitch": 13,
+    "reference": "Courier_New_13.png",
+    "candidate": "worker-Courier_New_13.png"
+  },
+  {
+    "face": "Tahoma",
+    "pitch": 6,
+    "reference": "Tahoma_6.png",
+    "candidate": "worker-Tahoma_6.png"
+  },
+  {
+    "face": "Tahoma",
+    "pitch": 13,
+    "reference": "Tahoma_13.png",
+    "candidate": "worker-Tahoma_13.png"
+  },
+  {
+    "face": "Verdana",
+    "pitch": 6,
+    "reference": "Verdana_6.png",
+    "candidate": "worker-Verdana_6.png"
+  },
+  {
+    "face": "Verdana",
+    "pitch": 13,
+    "reference": "Verdana_13.png",
+    "candidate": "worker-Verdana_13.png"
+  },
+  {
+    "face": "OCRB",
+    "pitch": 6,
+    "reference": "OCRB_6.png",
+    "candidate": "worker-OCRB_6.png"
+  },
+  {
+    "face": "OCRB",
+    "pitch": 13,
+    "reference": "OCRB_13.png",
+    "candidate": "worker-OCRB_13.png"
+  },
+  {
+    "face": "Segoe UI",
+    "pitch": 6,
+    "reference": "Segoe_UI_6.png",
+    "candidate": "worker-Segoe_UI_6.png"
+  },
+  {
+    "face": "Segoe UI",
+    "pitch": 13,
+    "reference": "Segoe_UI_13.png",
+    "candidate": "worker-Segoe_UI_13.png"
+  }
+]

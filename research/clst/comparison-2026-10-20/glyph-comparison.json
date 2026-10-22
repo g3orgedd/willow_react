@@ -1,0 +1,322 @@
+{
+  "auditDate": "2026-10-20",
+  "runtime": "v24.14.1",
+  "provenance": {
+    "directGenerator": "Production clst JS modules executed in Node vm; field values supplied through an injected resolveTagData callback.",
+    "recoveredReference": "research/clst/reference-generator.cjs; an independently tested reconstruction, NOT a live native DLL call in this script.",
+    "saveCases": "Production save functions executed through the existing Node harness with DOM/UI stubs and disabled geometry validators.",
+    "noGuiOrDllExecution": true,
+    "physicalPrinterAcceptance": "UNKNOWN",
+    "frozenNow": "2026-10-20T12:00:00.000Z"
+  },
+  "sources": [
+    {
+      "role": "production",
+      "path": "public/modules/01-ciff-compatibility.js",
+      "size": 1459,
+      "sha256": "2C2A6B0F42F1C24CD152DC2BA1D74B4836441130173E64D8E8A6B1DBB87C3637"
+    },
+    {
+      "role": "production",
+      "path": "public/modules/00-core.js",
+      "size": 29972,
+      "sha256": "AA12B91150097CCECB69A1E757AFD11403CCCCE0B7962E881C459A0784A2B500"
+    },
+    {
+      "role": "production",
+      "path": "public/modules/20-xml-load.js",
+      "size": 25228,
+      "sha256": "5E13C080FFD2FF057931784444947F6CA32F0FB7477F7921D097043AD8D8B775"
+    },
+    {
+      "role": "production",
+      "path": "public/modules/30-rendering.js",
+      "size": 117336,
+      "sha256": "A351E14BEF681D754F1B74D1B3B73043BC356CDDA5660BD505DFDEDA9D172BAC"
+    },
+    {
+      "role": "production",
+      "path": "public/modules/60-history-save.js",
+      "size": 105322,
+      "sha256": "05132E61F95232B4387F4F3348E3E2D6C41748917E501C2BAB100CF5C6F04E2E"
+    },
+    {
+      "role": "production",
+      "path": "public/modules/clst/encryption.js",
+      "size": 3549,
+      "sha256": "27EBECD7CA39EECA0C1D2E969BC1DB72CB8E9820F1CC4BA9F50261C071B5F755"
+    },
+    {
+      "role": "production",
+      "path": "public/modules/clst/tag-data.js",
+      "size": 7028,
+      "sha256": "163B93E0E66099778C9D9EF4ECC89BCA0F249059D953DA5DFD33ADBD77789DF0"
+    },
+    {
+      "role": "production",
+      "path": "public/modules/clst/version-info.js",
+      "size": 2903,
+      "sha256": "C40F2DF42C7CD17528361F964B4E8ACE21BD8EAD1E832E6436254C1492812432"
+    },
+    {
+      "role": "production-loader",
+      "path": "src/domain/ciffEditorModules.ts",
+      "size": 2663,
+      "sha256": "10C08532E2E86B4BE460B37623ED271EEA8B3DEFFD1124597526471DD16A2697"
+    },
+    {
+      "role": "reference",
+      "path": "research/clst/reference-generator.cjs",
+      "size": 7007,
+      "sha256": "B99132AE9D9476336BCA9A76D0C7BE158207BC2973159721ACA4DE0C72BB4135"
+    },
+    {
+      "role": "test-harness",
+      "path": "tests/helpers/ciff-production-harness.cjs",
+      "size": 15200,
+      "sha256": "D2108B857C10AFC792B50D840FD2DF34B0DCCFE1661F2526590B17BB0951D089"
+    },
+    {
+      "role": "audit-script",
+      "path": "research/clst/comparison-2026-10-20/glyph-comparison.cjs",
+      "size": 9857,
+      "sha256": "8C15BEF2CC3D56621E425CA156C7B8A8F8C47CB3F1A37C3ED506C5E4CCE046F5"
+    }
+  ],
+  "cases": [
+    {
+      "id": "one-field",
+      "fieldValues": [
+        "alpha"
+      ],
+      "production": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 1,
+        "structureKey": "000101",
+        "selectedFieldIndex": 0,
+        "mask": 1,
+        "maskHex": "00000001",
+        "tagData": "alpha",
+        "fragmentA": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "fragmentB": "6mKCEKVxV4R7OlK",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LERw9H_GQwHQ_MTl7LfG5Z9OO7HFE",
+        "tokenLength": 117
+      },
+      "recoveredReference": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 1,
+        "counts6": "000101",
+        "mask": 1,
+        "attempts": null,
+        "maskHex": "00000001",
+        "tagData": "alpha",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6mKCEKVxV4R7OlK",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LERw9H_GQwHQ_MTl7LfG5Z9OO7HFE",
+        "tokenLength": 117
+      },
+      "tokensEqual": true,
+      "conclusion": "One selected field and identical supplied CalculatedData reproduce the main reference path."
+    },
+    {
+      "id": "three-fields-different-permitted-mask",
+      "fieldValues": [
+        "alpha",
+        "beta",
+        "gamma"
+      ],
+      "production": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 3,
+        "structureKey": "000103",
+        "selectedFieldIndex": 0,
+        "mask": 1,
+        "maskHex": "00000001",
+        "tagData": "alpha",
+        "fragmentA": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "fragmentB": "6mKCEKVxV4R7OlK",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LERw9H_GQwHQ_MTl7LfG5Z9OO7HFE",
+        "tokenLength": 117
+      },
+      "recoveredReference": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 3,
+        "counts6": "000103",
+        "mask": 6,
+        "attempts": null,
+        "maskHex": "00000006",
+        "tagData": "betagamma",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv5",
+        "tagFragment": "6mNSCBM4T5oTCLF9f93RKBr86BV",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv56mNSCBM4T5oTCLF9f93RKBr86BV",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv56mNSCBM4T5oTCLF9f93RKBr86BV",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!C6mA3EHRfL7vJ0d1FJ4Jx3Oz3GhHP!IEYINTNQEVTa6OFSM9IHpNVNDHd0Iv5NkLU_DC!BSx56pRKZCQ!F",
+        "tokenLength": 153
+      },
+      "referenceMaskSource": "Explicit mask 6 selects fields 1 and 2; it is permitted by native 1-3 selection attempts. No native RNG is executed here.",
+      "tokensEqual": false,
+      "conclusion": "Production always selects the first resolvable field, while the native policy permits other fields and multiple bits."
+    },
+    {
+      "id": "empty-generator-and-save-fallback",
+      "fieldValues": [],
+      "productionGenerator": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 0,
+        "structureKey": "000100",
+        "selectedFieldIndex": -1,
+        "mask": 0,
+        "maskHex": "00000000",
+        "tagData": "",
+        "fragmentA": "",
+        "fragmentB": "",
+        "intermediate": "",
+        "clStVersionInfo": null,
+        "tokenLength": null
+      },
+      "recoveredReference": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 0,
+        "counts6": "000100",
+        "mask": 0,
+        "attempts": 0,
+        "maskHex": "00000000",
+        "tagData": "",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "tagFragment": "",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A",
+        "tokenLength": 72
+      },
+      "productionSaveWithoutInputToken": {
+        "method": "tests/helpers/ciff-production-harness.cjs: createProductionCiffRuntime().save()",
+        "inputToken": null,
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFtEFE14tJB8QHyE4c51D13SR5m2JC4C!HReJIzNMv7EaRC14TVSJX1Ti6D_S6QHLuGOoN2BIHtEKkTPwVMq4RaLNP4UrOELUSs51e139EUN1QgGBt63L0QEVRvKL!22pG2THF14PjEMl1UuEIqUQj16i9A2K4l7S_GUrLALTBXKI78",
+        "tokenLength": 252,
+        "validation": {
+          "invalidPrintableFieldNames": [],
+          "invalidHardwareFieldNames": [],
+          "structuralErrors": [],
+          "ok": true
+        },
+        "outputSha256": "434541FECE3474B5A8B266DC2B5D9B8F96ACB7501A356D9982AECE4DA0A7F2C0"
+      },
+      "productionSaveWithInputToken": {
+        "method": "tests/helpers/ciff-production-harness.cjs: createProductionCiffRuntime().save()",
+        "inputToken": "PRESERVED_VALUE",
+        "clStVersionInfo": "PRESERVED_VALUE",
+        "tokenLength": 15,
+        "validation": {
+          "invalidPrintableFieldNames": [],
+          "invalidHardwareFieldNames": [],
+          "structuralErrors": [],
+          "ok": true
+        },
+        "outputSha256": "06A62A53B96B66BC61DE82D440C3AA5D9A7D37D373021D9D12EFD35A078289BA"
+      },
+      "conclusion": "Production generator returns null; save repairs a missing token using the 252-character constant or preserves an existing syntactically usable value. The recovered main empty path generates 72 characters."
+    },
+    {
+      "id": "append-unselected-field-count-changes-token-unchanged",
+      "before": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 1,
+        "structureKey": "000101",
+        "selectedFieldIndex": 0,
+        "mask": 1,
+        "maskHex": "00000001",
+        "tagData": "alpha",
+        "fragmentA": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "fragmentB": "6mKCEKVxV4R7OlK",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LERw9H_GQwHQ_MTl7LfG5Z9OO7HFE",
+        "tokenLength": 117
+      },
+      "after": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 2,
+        "structureKey": "000102",
+        "selectedFieldIndex": 0,
+        "mask": 1,
+        "maskHex": "00000001",
+        "tagData": "alpha",
+        "fragmentA": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "fragmentB": "6mKCEKVxV4R7OlK",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LERw9H_GQwHQ_MTl7LfG5Z9OO7HFE",
+        "tokenLength": 117
+      },
+      "tokensEqual": true,
+      "conclusion": "DDSSFF contents change but its length stays six. With key-input flag zero, equal mask and selected value therefore produce the same token."
+    },
+    {
+      "id": "optional-filename-block",
+      "production": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 1,
+        "structureKey": "000101",
+        "selectedFieldIndex": 0,
+        "mask": 1,
+        "maskHex": "00000001",
+        "tagData": "alpha",
+        "fragmentA": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "fragmentB": "6mKCEKVxV4R7OlK",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LERw9H_GQwHQ_MTl7LfG5Z9OO7HFE",
+        "tokenLength": 117
+      },
+      "recoveredReference": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldCount": 1,
+        "counts6": "000101",
+        "mask": 1,
+        "attempts": null,
+        "maskHex": "00000001",
+        "tagData": "alpha",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6mKCEKVxV4R7OlK",
+        "fileMetadata": "Report.ciff",
+        "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv26mKCEKVxV4R7OlK",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn9NJORD03vI6zOBuFOp6Fl1QHQOFHUt3R_3Nz4M!ICk0DzC",
+        "tokenLength": 288
+      },
+      "tokensEqual": false,
+      "conclusion": "The recovered optional path includes Report.ciff filename metadata; production has no implementation of this branch. This does not claim the native flag is enabled on every save."
+    }
+  ],
+  "tests": {
+    "command": "node --test tests/clst-version-info-generation.test.cjs tests/ciff-clst-version-info.test.cjs research/clst/reference-generator.test.cjs",
+    "exitCode": 0,
+    "testCount": 41,
+    "passCount": 41,
+    "log": "glyph-tests.log",
+    "logSha256": "97A9A99ABD94E0F3DFE3C55D8398C4C812E0D785884B7230F58BE0A4088D20CF"
+  }
+}

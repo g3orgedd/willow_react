@@ -1,0 +1,12 @@
+45022c9f PUSH EBP
+45022ca0 MOV EBP,ESP
+45022ca2 PUSH dword ptr [EBP + 0x18]
+45022ca5 PUSH 0x0
+45022ca7 PUSH dword ptr [EBP + 0x14]
+45022caa PUSH dword ptr [EBP + 0x10]
+45022cad PUSH dword ptr [EBP + 0xc]
+45022cb0 PUSH dword ptr [EBP + 0x8]
+45022cb3 CALL 0x45022cbd
+45022cb8 ADD ESP,0x18
+45022cbb POP EBP
+45022cbc RET

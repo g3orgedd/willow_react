@@ -1,0 +1,4 @@
+00e2de18 XOR EAX,EAX
+00e2de1a CMP dword ptr [ECX + 0x184],0x1
+00e2de21 SETZ AL
+00e2de24 RET

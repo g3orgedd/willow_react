@@ -1,0 +1,12 @@
+414390db XOR EAX,EAX
+414390dd MOV dword ptr [ECX + 0x154],0x1e0
+414390e7 MOV dword ptr [ECX + 0x134],EAX
+414390ed MOV dword ptr [ECX + 0x138],EAX
+414390f3 MOV dword ptr [ECX + 0x13c],EAX
+414390f9 MOV dword ptr [ECX + 0x140],EAX
+414390ff MOV dword ptr [ECX + 0x148],EAX
+41439105 MOV dword ptr [ECX + 0x160],EAX
+4143910b MOV dword ptr [ECX + 0x150],EAX
+41439111 MOV dword ptr [ECX + 0x158],EAX
+41439117 MOV dword ptr [ECX + 0x15c],0x41200000
+41439121 RET

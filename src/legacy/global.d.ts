@@ -1,5 +1,5 @@
 declare global {
-  interface WillowLogPayload {
+  interface GlyphLogPayload {
     category?: 'application' | 'actions' | 'files' | 'state' | 'errors';
     level?: 'TRACE' | 'DEBUG' | 'INFO' | 'WARN' | 'ERROR' | 'FATAL';
     event?: string;
@@ -9,8 +9,8 @@ declare global {
     details?: unknown;
   }
 
-  interface WillowLoggerBridge {
-    log(payload: WillowLogPayload): void;
+  interface GlyphLoggerBridge {
+    log(payload: GlyphLogPayload): void;
     getInfo(): Promise<{
       baseDir: string;
       sessionId: string;
@@ -22,12 +22,25 @@ declare global {
   }
 
   interface Window {
+    glyphSystemTickCount?: () => number;
     CIFF_EDITOR_MODULE_FLAGS?: Record<string, boolean>;
     CIFF_EDITOR_MODULE_LIST?: readonly unknown[];
-    __WILLOW_CIFF_RUNTIME_PROMISE__?: Promise<void>;
-    __WILLOW_CIFF_RUNTIME_READY__?: boolean;
+    __GLYPH_CIFF_RUNTIME_PROMISE__?: Promise<void>;
+    __GLYPH_CIFF_RUNTIME_READY__?: boolean;
     Konva?: unknown;
-    willowLogger?: WillowLoggerBridge;
+    glyphLogger?: GlyphLoggerBridge;
+    glyphFonts?: {
+      list(): Promise<{ families: string[] }>;
+      render(request: {
+        text: string; face: string; pitch: number; pitchResolution?: number;
+        bold?: boolean; italic?: boolean; xMag?: number; yMag?: number;
+        charSpace?: number; xRes?: number; yRes?: number;
+      }): Promise<{
+        dataUrl: string; outlinePath?: string | null; width: number; height: number; advanceWidth: number;
+        fontHeight: number; baseline: number; offsetX: number; offsetY: number;
+        fontFamily: number; trueType: boolean;
+      }>;
+    };
   }
 }
 

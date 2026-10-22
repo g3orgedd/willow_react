@@ -1,0 +1,108 @@
+4280ec05 PUSH EBP
+4280ec06 MOV EBP,ESP
+4280ec08 SUB ESP,0x1c
+4280ec0b PUSH ESI
+4280ec0c PUSH EDI
+4280ec0d PUSH dword ptr [EBP + 0x24]
+4280ec10 LEA ECX,[EBP + -0x1c]
+4280ec13 CALL 0x4280d1af
+4280ec18 PUSH dword ptr [EBP + 0x34]
+4280ec1b LEA ECX,[EBP + -0xc]
+4280ec1e CALL 0x4280d15d
+4280ec23 AND dword ptr [EBP + -0x8],0x0
+4280ec27 LEA EAX,[EBP + -0x8]
+4280ec2a PUSH EAX
+4280ec2b LEA ECX,[EBP + -0xc]
+4280ec2e CALL 0x4280d99d
+4280ec33 PUSH dword ptr [EBP + 0x44]
+4280ec36 LEA ECX,[EBP + -0x4]
+4280ec39 CALL 0x4280d1d8
+4280ec3e LEA ECX,[EBP + -0x18]
+4280ec41 CALL 0x4280fd96
+4280ec46 PUSH dword ptr [EBP + 0x18]
+4280ec49 MOV EDI,dword ptr [EBP + 0x18]
+4280ec4c PUSH dword ptr [EBP + 0x14]
+4280ec4f MOV ESI,dword ptr [EBP + 0x14]
+4280ec52 PUSH dword ptr [EBP + 0x10]
+4280ec55 SUB EDI,dword ptr [EBP + 0x10]
+4280ec58 PUSH dword ptr [EBP + 0xc]
+4280ec5b SUB ESI,dword ptr [EBP + 0xc]
+4280ec5e PUSH 0x4282d350
+4280ec63 CALL 0x428071a4
+4280ec68 PUSH ESI
+4280ec69 PUSH EDI
+4280ec6a PUSH 0x4282d3a0
+4280ec6f CALL 0x428071a4
+4280ec74 MOV EAX,dword ptr [EBP + -0x4]
+4280ec77 LEA EDX,[EBP + -0x10]
+4280ec7a AND dword ptr [EBP + -0x10],0x0
+4280ec7e ADD ESP,0x20
+4280ec81 MOV ECX,dword ptr [EAX]
+4280ec83 PUSH EDX
+4280ec84 PUSH EAX
+4280ec85 CALL dword ptr [ECX + 0xd4]
+4280ec8b MOV EAX,dword ptr [EBP + -0x4]
+4280ec8e LEA EDX,[EBP + -0x14]
+4280ec91 PUSH EDX
+4280ec92 PUSH EAX
+4280ec93 MOV ECX,dword ptr [EAX]
+4280ec95 CALL dword ptr [ECX + 0xcc]
+4280ec9b MOV EAX,dword ptr [EBP + -0x4]
+4280ec9e PUSH EDI
+4280ec9f PUSH EAX
+4280eca0 MOV ECX,dword ptr [EAX]
+4280eca2 CALL dword ptr [ECX + 0x84]
+4280eca8 MOV EAX,dword ptr [EBP + -0x4]
+4280ecab PUSH ESI
+4280ecac PUSH EAX
+4280ecad MOV ECX,dword ptr [EAX]
+4280ecaf CALL dword ptr [ECX + 0x7c]
+4280ecb2 MOV EAX,dword ptr [EBP + -0x4]
+4280ecb5 PUSH EDI
+4280ecb6 PUSH EAX
+4280ecb7 MOV ECX,dword ptr [EAX]
+4280ecb9 CALL dword ptr [ECX + 0xb4]
+4280ecbf MOV EAX,dword ptr [EBP + -0x4]
+4280ecc2 PUSH ESI
+4280ecc3 PUSH EAX
+4280ecc4 MOV ECX,dword ptr [EAX]
+4280ecc6 CALL dword ptr [ECX + 0xac]
+4280eccc CMP dword ptr [EBP + -0x14],0x0
+4280ecd0 JNZ 0x4280ecdf
+4280ecd2 MOV EAX,dword ptr [EBP + -0x4]
+4280ecd5 PUSH EDI
+4280ecd6 PUSH EAX
+4280ecd7 MOV ECX,dword ptr [EAX]
+4280ecd9 CALL dword ptr [ECX + 0xd8]
+4280ecdf LEA ECX,[EBP + -0x18]
+4280ece2 CALL 0x4280fd9f
+4280ece7 MOV EAX,dword ptr [EBP + -0x4]
+4280ecea POP EDI
+4280eceb POP ESI
+4280ecec TEST EAX,EAX
+4280ecee JZ 0x4280ecf6
+4280ecf0 MOV ECX,dword ptr [EAX]
+4280ecf2 PUSH EAX
+4280ecf3 CALL dword ptr [ECX + 0x8]
+4280ecf6 MOV EAX,dword ptr [EBP + -0x8]
+4280ecf9 TEST EAX,EAX
+4280ecfb JZ 0x4280ed03
+4280ecfd MOV ECX,dword ptr [EAX]
+4280ecff PUSH EAX
+4280ed00 CALL dword ptr [ECX + 0x8]
+4280ed03 MOV EAX,dword ptr [EBP + -0xc]
+4280ed06 TEST EAX,EAX
+4280ed08 JZ 0x4280ed10
+4280ed0a MOV ECX,dword ptr [EAX]
+4280ed0c PUSH EAX
+4280ed0d CALL dword ptr [ECX + 0x8]
+4280ed10 MOV EAX,dword ptr [EBP + -0x1c]
+4280ed13 TEST EAX,EAX
+4280ed15 JZ 0x4280ed1d
+4280ed17 MOV ECX,dword ptr [EAX]
+4280ed19 PUSH EAX
+4280ed1a CALL dword ptr [ECX + 0x8]
+4280ed1d XOR EAX,EAX
+4280ed1f MOV ESP,EBP
+4280ed21 POP EBP
+4280ed22 RET 0x44

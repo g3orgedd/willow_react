@@ -1,0 +1,16 @@
+00ebf4de PUSH EBP
+00ebf4df MOV EBP,ESP
+00ebf4e1 MOV EDX,dword ptr [ECX + 0x4]
+00ebf4e4 MOV EAX,0x15555554
+00ebf4e9 PUSH ESI
+00ebf4ea MOV ESI,dword ptr [EBP + 0x8]
+00ebf4ed SUB EAX,EDX
+00ebf4ef CMP EAX,ESI
+00ebf4f1 JC 0x00ebf4fe
+00ebf4f3 LEA EAX,[EDX + ESI*0x1]
+00ebf4f6 MOV dword ptr [ECX + 0x4],EAX
+00ebf4f9 POP ESI
+00ebf4fa POP EBP
+00ebf4fb RET 0x4
+00ebf4fe PUSH 0xefcf38
+00ebf503 CALL 0x00ec8e92

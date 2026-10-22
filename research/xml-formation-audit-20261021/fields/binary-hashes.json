@@ -1,0 +1,107 @@
+[
+  {
+    "name": "CiffMgr.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffMgr.dll",
+    "current": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+    "expected": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+    "match": true
+  },
+  {
+    "name": "CiffHelper.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffHelper.dll",
+    "current": "26e0cc9bc69d44b00e9ab482e1a2d13daf5bb8f801817c717194c5f1b535558a",
+    "expected": "26e0cc9bc69d44b00e9ab482e1a2d13daf5bb8f801817c717194c5f1b535558a",
+    "match": true
+  },
+  {
+    "name": "CLCSTextBasedField.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSTextBasedField.dll",
+    "current": "2b9cedaa8a9bdc5ecb92f9dc43855650b0698b6f0ff0190237e6c5889232409b",
+    "expected": "2b9cedaa8a9bdc5ecb92f9dc43855650b0698b6f0ff0190237e6c5889232409b",
+    "match": true
+  },
+  {
+    "name": "CLCSBarcodeField.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSBarcodeField.dll",
+    "current": "258f201aaad6e993379ab725c9184afcf5a64035abb9546e1ab25bd529d8c45e",
+    "expected": "258f201aaad6e993379ab725c9184afcf5a64035abb9546e1ab25bd529d8c45e",
+    "match": true
+  },
+  {
+    "name": "CLCSGraphicBasedField.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSGraphicBasedField.dll",
+    "current": "d9158db819d9eef1a544ec9e5bbaedeb2e01c9621b7164ab45d1ad336fc12dfe",
+    "expected": "d9158db819d9eef1a544ec9e5bbaedeb2e01c9621b7164ab45d1ad336fc12dfe",
+    "match": true
+  },
+  {
+    "name": "CLCSGraphicPrimitive.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSGraphicPrimitive.dll",
+    "current": "19a1a7c24c3446ae7e48d540832a056c1d3d8c3a05d1afa96bc2f138de26ba2f",
+    "expected": "19a1a7c24c3446ae7e48d540832a056c1d3d8c3a05d1afa96bc2f138de26ba2f",
+    "match": true
+  },
+  {
+    "name": "CLCSBlockTextField.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSBlockTextField.dll",
+    "current": "443175b5452295fd1c638da06ee5f3d9ff0f5e292dcc746628e18996a1eb3d6c",
+    "expected": "443175b5452295fd1c638da06ee5f3d9ff0f5e292dcc746628e18996a1eb3d6c",
+    "match": true
+  },
+  {
+    "name": "CLCSRichTextBlockField.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSRichTextBlockField.dll",
+    "current": "09b2455e8954a95f85b9206e16fa01d816e25abb5409c74440cc379a421ffad5",
+    "expected": "09b2455e8954a95f85b9206e16fa01d816e25abb5409c74440cc379a421ffad5",
+    "match": true
+  },
+  {
+    "name": "CLCSSmallBarcode.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSSmallBarcode.dll",
+    "current": "7068b4674e98d4ed44f6025b44dc170f277adeef0929be20a817019a863324d9",
+    "expected": "7068b4674e98d4ed44f6025b44dc170f277adeef0929be20a817019a863324d9",
+    "match": true
+  },
+  {
+    "name": "CLCSBinaryFontComponent.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSBinaryFontComponent.dll",
+    "current": "8bc081e2c23fa2dedc8accd0a91dbe02c913581a7aaac2d60c20a451938be675",
+    "expected": "8bc081e2c23fa2dedc8accd0a91dbe02c913581a7aaac2d60c20a451938be675",
+    "match": true
+  },
+  {
+    "name": "CLZipherBCP2.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLZipherBCP2.dll",
+    "current": "5e4f9c6615fc1b39d235beb5103e9f0ca044bd2b110dbe53c41c05c945bf7429",
+    "expected": "5e4f9c6615fc1b39d235beb5103e9f0ca044bd2b110dbe53c41c05c945bf7429",
+    "match": true
+  },
+  {
+    "name": "CiffDateFormats.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffDateFormats.dll",
+    "current": "dfda165a8ea544b125425a256058bfe938e3adccfb786c75621bf9020c055ffb",
+    "expected": "dfda165a8ea544b125425a256058bfe938e3adccfb786c75621bf9020c055ffb",
+    "match": true
+  },
+  {
+    "name": "CLCiffConversion_Data.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCiffConversion_Data.dll",
+    "current": "9960bc627c1844a8ef510c0592ad86520ab94d3129142ca931484a6113450ecd",
+    "expected": "9960bc627c1844a8ef510c0592ad86520ab94d3129142ca931484a6113450ecd",
+    "match": true
+  },
+  {
+    "name": "CLCiffConversion_Layout.dll",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCiffConversion_Layout.dll",
+    "current": "dfee6a96e6d6d361760b5c154a4072acb83eefe11dc9a3bbe23fdbeeb2520c1a",
+    "expected": "dfee6a96e6d6d361760b5c154a4072acb83eefe11dc9a3bbe23fdbeeb2520c1a",
+    "match": true
+  },
+  {
+    "name": "CLARiSOFT.exe",
+    "installed": "C:\\Program Files (x86)\\CLARICOM\\CLARiSOFT\\CLARiSOFT.exe",
+    "current": "28aebc9c30c68e85175be90580195d6e4f3180a994ecdc8215e9b93c26304e1a",
+    "expected": "28aebc9c30c68e85175be90580195d6e4f3180a994ecdc8215e9b93c26304e1a",
+    "match": true
+  }
+]

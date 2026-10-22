@@ -1,0 +1,18 @@
+00e03f98 PUSH 0xc
+00e03f9a MOV EAX,0xee68bf
+00e03f9f CALL 0x00ec9ec3
+00e03fa4 MOV EDI,ECX
+00e03fa6 MOV dword ptr [EBP + -0x14],EDI
+00e03fa9 MOV ESI,dword ptr [EBP + 0x8]
+00e03fac TEST ESI,ESI
+00e03fae JNZ 0x00e03fb9
+00e03fb0 MOV EAX,[0x00f35014]
+00e03fb5 MOV dword ptr [EDI],EAX
+00e03fb7 JMP 0x00e03ffc
+00e03fb9 AND dword ptr [EBP + -0x18],0x0
+00e03fbd LEA EAX,[ESI*0x2 + 0xe]
+00e03fc4 AND dword ptr [EBP + -0x4],0x0
+00e03fc8 PUSH EAX
+00e03fc9 CALL 0x00ec8db7
+00e03fce POP ECX
+00e03fcf JMP 0x00e03fe0

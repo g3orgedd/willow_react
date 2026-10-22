@@ -1,0 +1,36 @@
+{
+  "scope": "Actual Glyph WEB and EXE editor screenshots only. Genuine ClariSoft GUI screenshots were not obtained and are not represented here.",
+  "method": "Original screenshot pixels are unchanged. The side-by-side PNG proportionally resizes the full screenshots to fit; original PNG files are included.",
+  "inputs": [
+    {
+      "id": "web",
+      "title": "WEB · Веб-версия Glyph",
+      "file": "web-vector-editor-full.png",
+      "metadata": "web-vector-editor-full.json",
+      "output": "web-original.png",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\web-vector-editor-full.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1100
+      },
+      "capturedAt": "2026-10-20T20:41:56.235Z",
+      "zoom": 100,
+      "sha256": "6367694f86e501757d6be1a57762d479484a23af429146ab2a5107c82260a2a9"
+    },
+    {
+      "id": "exe",
+      "title": "EXE · Glyph Studio.exe",
+      "file": "exe-vector-editor-full.png",
+      "metadata": "exe-vector-editor-full.json",
+      "output": "exe-original.png",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\exe-vector-editor-full.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 1100
+      },
+      "capturedAt": "2026-10-20T20:38:45.593Z",
+      "zoom": 100,
+      "sha256": "b2f6b29e3d00bf1ed3d6af5bf2ad05fea8718e22b9d966100156b2145c6ae5ca"
+    }
+  ]
+}

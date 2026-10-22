@@ -1,0 +1,2 @@
+4201037a MOV dword ptr [ECX],0x4208aa3c
+42010380 JMP 0x4200a02b

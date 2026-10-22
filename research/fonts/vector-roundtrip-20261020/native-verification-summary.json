@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "web",
+    "passed": true,
+    "sha256": "d6046cd29ccb5200fe80726b4eb22734ef9d236307573018457d30953d0a367e",
+    "fields": 10,
+    "exactFontGeometryFields": 10,
+    "exactPrinterRasters": 10,
+    "exactCapturedPrinterRasters": 9,
+    "exactCurrentClockPrinterRasters": 1,
+    "clockAdvancedFields": 1,
+    "failures": []
+  },
+  {
+    "mode": "exe",
+    "passed": true,
+    "sha256": "d6046cd29ccb5200fe80726b4eb22734ef9d236307573018457d30953d0a367e",
+    "fields": 10,
+    "exactFontGeometryFields": 10,
+    "exactPrinterRasters": 10,
+    "exactCapturedPrinterRasters": 10,
+    "exactCurrentClockPrinterRasters": 0,
+    "clockAdvancedFields": 0,
+    "failures": []
+  }
+]

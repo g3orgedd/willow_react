@@ -1,0 +1,11 @@
+00e2b984 PUSH ESI
+00e2b985 MOV ESI,ECX
+00e2b987 XOR EAX,EAX
+00e2b989 CMP dword ptr [ESI],EAX
+00e2b98b JZ 0x00e2b998
+00e2b98d PUSH dword ptr [ESI]
+00e2b98f CALL dword ptr [0x00efc01c]
+00e2b995 AND dword ptr [ESI],0x0
+00e2b998 AND dword ptr [ESI + 0x4],0x0
+00e2b99c POP ESI
+00e2b99d RET

@@ -1,0 +1,3 @@
+45001eea MOV dword ptr [ECX],0x4503d69c
+45001ef0 MOV EAX,ECX
+45001ef2 RET

@@ -1,0 +1,18 @@
+4206ce87 PUSH EBP
+4206ce88 MOV EBP,ESP
+4206ce8a CMP dword ptr [EBP + 0x14],0xa
+4206ce8e JNZ 0x4206ce9b
+4206ce90 CMP dword ptr [EBP + 0x8],0x0
+4206ce94 JGE 0x4206ce9b
+4206ce96 XOR EAX,EAX
+4206ce98 INC EAX
+4206ce99 JMP 0x4206ce9d
+4206ce9b XOR EAX,EAX
+4206ce9d PUSH EAX
+4206ce9e PUSH dword ptr [EBP + 0x14]
+4206cea1 PUSH dword ptr [EBP + 0x10]
+4206cea4 PUSH dword ptr [EBP + 0xc]
+4206cea7 PUSH dword ptr [EBP + 0x8]
+4206ceaa CALL 0x4206ceb1
+4206ceaf POP EBP
+4206ceb0 RET

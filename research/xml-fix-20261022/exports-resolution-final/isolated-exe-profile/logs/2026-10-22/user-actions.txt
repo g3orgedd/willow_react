@@ -1,0 +1,754 @@
+====================================================================================================
+[2026-10-22 16:03:26.178 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.186 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.466 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.473 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.678 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.681 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.902 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.905 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.115 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.119 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.342 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.345 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.587 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.591 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.802 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.806 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:28.027 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_CREATED
+Message: Для шаблона создана новая вкладка.
+Source: renderer-action
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    reusedEmptyTab: false,
+    source: 'preset-builder',
+    tabCount: 2,
+    tabId: '620ff9aa-cf0e-43e9-9e66-b49e2e2dc2e8',
+    title: 'XML party fixture party-gtin2'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.081 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:28.085 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:28.305 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_CREATED
+Message: Для шаблона создана новая вкладка.
+Source: renderer-action
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    reusedEmptyTab: false,
+    source: 'preset-builder',
+    tabCount: 3,
+    tabId: '26b667d5-d8b0-47d1-931a-91af4ceee40c',
+    title: 'XML party fixture party-box-gtin'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.352 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:28.356 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }

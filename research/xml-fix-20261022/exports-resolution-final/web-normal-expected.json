@@ -1,0 +1,816 @@
+{
+  "mode": "web",
+  "caseId": "normal",
+  "filename": "xml-web-normal.ciff",
+  "actualLocation": "http://127.0.0.1:5173/",
+  "transport": "HTTP Vite without preload/IPC",
+  "fixtureConstruction": "Research fixture prepared inside actual renderer; production Save dialog button clicked",
+  "sourceXml": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<ImageDesign Version=\"23\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6320(53mm) - Continuous\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A</ClStVersionInfo></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>1600</ImageWidth><ImageHeight>2400</ImageHeight><MaxImageWidth>1600</MaxImageWidth><MaxImageHeight>2400</MaxImageHeight><XRes>0.120000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>",
+  "builderDraft": null,
+  "beforeAction": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1600,
+      "height": 2400,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "fields": []
+  },
+  "preSave": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1033,
+      "height": 1808,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "canvas": {
+      "width": 1600,
+      "height": 2400,
+      "pixelsPerMm": 12
+    },
+    "fields": [
+      {
+        "name": "Arial10",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 125,
+          "y": 100,
+          "w": 717,
+          "h": 392
+        },
+        "previewText": "ABC",
+        "calculatedData": "ABC",
+        "text": {
+          "pitch": 10,
+          "xMag": null,
+          "face": "Arial"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "ABC",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "ABC",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 86,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "outlinePath": "M-0.0625 38L11.4844 7.9375L15.7656 7.9375L28.0781 38L23.5469 38L20.0313 28.8906L7.4688 28.8906L4.1563 38ZM8.6094 25.6563L18.8125 25.6563L15.6719 17.3281Q14.2344 13.5313 13.5313 11.0938Q12.9688 13.9844 11.9219 16.8281ZM31.0781 38L31.0781 7.9375L42.3594 7.9375Q45.7969 7.9375 47.8828 8.8516Q49.9688 9.7656 51.1484 11.6563Q52.3281 13.5469 52.3281 15.625Q52.3281 17.5469 51.2813 19.25Q50.2344 20.9531 48.125 22Q50.8438 22.7969 52.3125 24.7266Q53.7813 26.6563 53.7813 29.2813Q53.7813 31.3906 52.8906 33.2109Q52 35.0313 50.6875 36.0156Q49.375 37 47.3906 37.5Q45.4063 38 42.5469 38ZM35.0625 20.5625L41.5625 20.5625Q44.2031 20.5625 45.3438 20.2188Q46.875 19.7656 47.6406 18.7188Q48.4063 17.6719 48.4063 16.0938Q48.4063 14.5938 47.6875 13.4609Q46.9688 12.3281 45.6328 11.9063Q44.2969 11.4844 41.0625 11.4844L35.0625 11.4844ZM35.0625 34.4531L42.5469 34.4531Q44.4688 34.4531 45.25 34.3125Q46.625 34.0625 47.5469 33.4844Q48.4688 32.9063 49.0625 31.8125Q49.6563 30.7188 49.6563 29.2813Q49.6563 27.6094 48.7969 26.3672Q47.9375 25.125 46.4063 24.6172Q44.875 24.1094 42 24.1094L35.0625 24.1094ZM80.6875 27.4531L84.6719 28.4688Q83.4219 33.3594 80.1719 35.9375Q76.9219 38.5156 72.2188 38.5156Q67.3594 38.5156 64.3125 36.5313Q61.2656 34.5469 59.6797 30.7969Q58.0938 27.0469 58.0938 22.7344Q58.0938 18.0469 59.8906 14.5469Q61.6875 11.0469 65 9.2344Q68.3125 7.4219 72.2813 7.4219Q76.7969 7.4219 79.875 9.7188Q82.9531 12.0156 84.1563 16.1719L80.2344 17.1094Q79.1875 13.8281 77.2031 12.3281Q75.2188 10.8281 72.2031 10.8281Q68.7344 10.8281 66.4063 12.4922Q64.0781 14.1563 63.1328 16.9531Q62.1875 19.75 62.1875 22.7188Q62.1875 26.5625 63.3047 29.4219Q64.4219 32.2813 66.7813 33.6953Q69.1406 35.1094 71.8906 35.1094Q75.2344 35.1094 77.5547 33.1797Q79.875 31.25 80.6875 27.4531Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            35,
+            32
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 86,
+            "height": 47
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 35,
+            "y": 32,
+            "width": 86,
+            "height": 47
+          },
+          "fieldGroup": {
+            "x": 15,
+            "y": 12,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              35,
+              32
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 15,
+          "y": 12
+        },
+        "workerBitmap": "web-normal-preSave-Arial10-worker.png"
+      },
+      {
+        "name": "Times13",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 150,
+          "y": 700,
+          "w": 700,
+          "h": 517
+        },
+        "previewText": "123",
+        "calculatedData": "123",
+        "text": {
+          "pitch": 13,
+          "xMag": null,
+          "face": "Times New Roman",
+          "family": "Roman"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "123",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Times New Roman",
+          "pitch": 13,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "123",
+          "face": "Times New Roman",
+          "pitch": 13,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 84,
+          "height": 62,
+          "fontFamily": 16
+        },
+        "outlinePath": "M6.4531 16.1563L15.3125 11.8281L16.1875 11.8281L16.1875 42.5781Q16.1875 45.6406 16.4453 46.3906Q16.7031 47.1406 17.5078 47.5469Q18.3125 47.9531 20.7813 48L20.7813 49L7.0938 49L7.0938 48Q9.6719 47.9531 10.4219 47.5625Q11.1719 47.1719 11.4688 46.5156Q11.7656 45.8594 11.7656 42.5781L11.7656 22.9219Q11.7656 18.9531 11.5 17.8281Q11.3125 16.9688 10.8125 16.5625Q10.3125 16.1563 9.6094 16.1563Q8.625 16.1563 6.8438 16.9844ZM53.2188 41.9844L50.6719 49L29.1875 49L29.1875 48Q38.6563 39.3594 42.5234 33.8828Q46.3906 28.4063 46.3906 23.8594Q46.3906 20.4063 44.2734 18.1719Q42.1563 15.9375 39.2031 15.9375Q36.5156 15.9375 34.3828 17.5078Q32.25 19.0781 31.2188 22.125L30.2344 22.125Q30.9063 17.1563 33.6797 14.4922Q36.4531 11.8281 40.625 11.8281Q45.0469 11.8281 48.0156 14.6797Q50.9844 17.5313 50.9844 21.3906Q50.9844 24.1563 49.7031 26.9219Q47.7188 31.2813 43.25 36.1406Q36.5625 43.4375 34.9063 44.9375L44.4063 44.9375Q47.3125 44.9375 48.4766 44.7266Q49.6406 44.5156 50.5859 43.8594Q51.5313 43.2031 52.2188 41.9844ZM58.7969 19.5156Q60.3438 15.8281 62.7266 13.8281Q65.1094 11.8281 68.6563 11.8281Q73.0313 11.8281 75.3594 14.6719Q77.1406 16.7969 77.1406 19.2188Q77.1406 23.1875 72.1406 27.4375Q75.5 28.75 77.2188 31.1953Q78.9375 33.6406 78.9375 36.9375Q78.9375 41.6719 75.9219 45.125Q72 49.6406 64.5625 49.6406Q60.8906 49.6406 59.5625 48.7266Q58.2344 47.8125 58.2344 46.7656Q58.2344 45.9844 58.8594 45.3984Q59.4844 44.8125 60.375 44.8125Q61.0469 44.8125 61.75 45.0313Q62.2031 45.1563 63.8125 46Q65.4219 46.8438 66.0469 47.0156Q67.0313 47.3125 68.1719 47.3125Q70.9063 47.3125 72.9297 45.1875Q74.9531 43.0625 74.9531 40.1719Q74.9531 38.0469 74.0156 36.0313Q73.3281 34.5313 72.4844 33.75Q71.3281 32.6719 69.3203 31.7969Q67.3125 30.9219 65.2188 30.9219L64.3594 30.9219L64.3594 30.125Q66.4688 29.8594 68.6094 28.5938Q70.75 27.3281 71.7109 25.5547Q72.6719 23.7813 72.6719 21.6563Q72.6719 18.8906 70.9453 17.1875Q69.2188 15.4844 66.6406 15.4844Q62.4688 15.4844 59.6719 19.9375Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            38,
+            104
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 84,
+            "height": 62
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 38,
+            "y": 104,
+            "width": 84,
+            "height": 62
+          },
+          "fieldGroup": {
+            "x": 18,
+            "y": 84,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              38,
+              104
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 18,
+          "y": 84
+        },
+        "workerBitmap": "web-normal-preSave-Times13-worker.png"
+      },
+      {
+        "name": "Courier8",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 200,
+          "y": 1500,
+          "w": 833,
+          "h": 308
+        },
+        "previewText": "SN01",
+        "calculatedData": "SN01",
+        "text": {
+          "pitch": 8,
+          "xMag": 125,
+          "face": "Courier New",
+          "family": "Modern"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "SN01",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Courier New",
+          "pitch": 8,
+          "xMag": 125,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "SN01",
+          "face": "Courier New",
+          "pitch": 8,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 125,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 100,
+          "height": 37,
+          "fontFamily": 48
+        },
+        "outlinePath": "M18.7656 9.9688L18.7656 9.5Q18.7656 9 19 8.7891Q19.2344 8.5781 19.625 8.5781Q20.0156 8.5781 20.25 8.7891Q20.4844 9 20.4844 9.5L20.4844 13.0625Q20.4844 13.5625 20.25 13.7734Q20.0156 13.9844 19.625 13.9844Q19.25 13.9844 19.0156 13.7891Q18.7813 13.5938 18.7656 13.1406Q18.6563 11.75 16.9844 10.6328Q15.3125 9.5156 12.6094 9.5156Q9.7656 9.5156 8.0859 10.7031Q6.4063 11.8906 6.4063 13.5Q6.4063 14.3438 6.875 15.0234Q7.3438 15.7031 8.125 16.125Q8.9063 16.5469 9.8906 16.8047Q10.875 17.0625 12.9688 17.3438Q16.4688 17.8125 17.7969 18.2813Q19.5781 18.9375 20.4922 20.0781Q21.4063 21.2188 21.4063 22.7813Q21.4063 25.1719 19.0469 26.8594Q16.6875 28.5469 12.6875 28.5469Q8.2031 28.5469 5.5156 26.2656L5.5156 27.0625Q5.5156 27.5625 5.2813 27.7813Q5.0469 28 4.6563 28Q4.2813 28 4.0391 27.7813Q3.7969 27.5625 3.7969 27.0625L3.7969 23.2188Q3.7969 22.7031 4.0313 22.4844Q4.2656 22.2656 4.6563 22.2656Q5.0313 22.2656 5.2656 22.4688Q5.5 22.6719 5.5156 23.125Q5.625 24.6406 7.5391 25.8984Q9.4531 27.1563 12.6875 27.1563Q15.9375 27.1563 17.8125 25.8438Q19.6875 24.5313 19.6875 22.7344Q19.6875 21.6406 18.9688 20.7891Q18.25 19.9375 16.8438 19.4375Q15.8594 19.0781 12.7344 18.6563Q8.4531 18.0781 6.5625 16.875Q4.6719 15.6875 4.6719 13.4688Q4.6719 11.2813 6.8359 9.7031Q9 8.125 12.5469 8.125Q16.1563 8.125 18.7656 9.9688ZM46.0469 28L43.8281 28L31.125 10.625L31.125 26.6094L34.3125 26.6094Q34.9531 26.6094 35.2188 26.7969Q35.4844 26.9844 35.4844 27.2969Q35.4844 27.5938 35.2188 27.7969Q34.9531 28 34.3125 28L27.9688 28Q27.3438 28 27.0781 27.7969Q26.8125 27.5938 26.8125 27.2969Q26.8125 26.9844 27.0781 26.7969Q27.3438 26.6094 27.9688 26.6094L29.4063 26.6094L29.4063 9.9688L27.0938 9.9688Q26.4844 9.9688 26.2109 9.7813Q25.9375 9.5938 25.9375 9.2656Q25.9375 8.9531 26.2109 8.7656Q26.4844 8.5781 27.0938 8.5781L31.6094 8.5781L44.3125 25.9844L44.3125 9.9688L41.1406 9.9688Q40.5313 9.9688 40.2578 9.7813Q39.9844 9.5938 39.9844 9.2656Q39.9844 8.9531 40.2422 8.7656Q40.5 8.5781 41.1406 8.5781L47.5 8.5781Q48.1094 8.5781 48.375 8.7656Q48.6406 8.9531 48.6406 9.2656Q48.6406 9.5938 48.375 9.7813Q48.1094 9.9688 47.5 9.9688L46.0469 9.9688ZM70.5156 15.8594L70.5156 19.3125Q70.5156 23.8125 67.8594 26.4375Q65.7969 28.5 62.6406 28.5Q61.1094 28.5 59.7656 28.0078Q58.4219 27.5156 57.4844 26.6406Q56.8906 26.0938 56.1797 24.8828Q55.4688 23.6719 55.1719 22.6563Q54.7031 21.2188 54.7031 19.3125L54.7031 15.8594Q54.7031 11.3438 57.3438 8.7188Q59.4063 6.6719 62.5781 6.6719Q64.1094 6.6719 65.4453 7.1563Q66.7813 7.6406 67.7188 8.5313Q68.3281 9.0938 69.0313 10.3047Q69.7344 11.5156 70.0625 12.5156Q70.5156 13.9375 70.5156 15.8594ZM68.7813 16.0469Q68.7813 14.0781 68.0938 12.375Q67.4063 10.6719 66.5469 9.6563Q66.0313 9.0781 65.2188 8.6563Q64.0469 8.0781 62.5938 8.0781Q59.7031 8.0781 58.0625 10.4688Q56.4219 12.8594 56.4219 16.0469L56.4219 19.125Q56.4219 21.0938 57.1094 22.8047Q57.7969 24.5156 58.6719 25.5313Q59.1719 26.0938 59.9844 26.5Q61.1563 27.1094 62.6406 27.1094Q65.5 27.1094 67.1406 24.7109Q68.7813 22.3125 68.7813 19.125ZM88.4531 6.875L88.4531 26.6094L94.3594 26.6094Q94.9688 26.6094 95.2422 26.7969Q95.5156 26.9844 95.5156 27.2969Q95.5156 27.5938 95.2422 27.7969Q94.9688 28 94.3594 28L80.8281 28Q80.2031 28 79.9375 27.7969Q79.6719 27.5938 79.6719 27.2969Q79.6719 26.9844 79.9375 26.7969Q80.2031 26.6094 80.8281 26.6094L86.7344 26.6094L86.7344 8.8125L81.1094 10.2344Q80.7031 10.3281 80.5156 10.3281Q80.2031 10.3281 79.9531 10.125Q79.7031 9.9219 79.7031 9.6406Q79.7031 9.3906 79.9063 9.1719Q80.0625 9.0469 80.5781 8.8906Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            44,
+            200
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 100,
+            "height": 37
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 44,
+            "y": 200,
+            "width": 100,
+            "height": 37
+          },
+          "fieldGroup": {
+            "x": 24,
+            "y": 180,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              44,
+              200
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 24,
+          "y": 180
+        },
+        "workerBitmap": "web-normal-preSave-Courier8-worker.png"
+      }
+    ]
+  },
+  "aggregate": {
+    "width": 1033,
+    "height": 1808
+  },
+  "expectedImage": {
+    "width": 1033,
+    "height": 1808
+  },
+  "expectedMax": {
+    "width": 1600,
+    "height": 2400
+  },
+  "postSave": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1033,
+      "height": 1808,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "fields": [
+      {
+        "name": "Arial10",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 125,
+          "y": 100,
+          "w": 717,
+          "h": 392
+        },
+        "previewText": "ABC",
+        "calculatedData": "ABC",
+        "text": {
+          "pitch": 10,
+          "xMag": null,
+          "face": "Arial"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "ABC",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "ABC",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 86,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "outlinePath": "M-0.0625 38L11.4844 7.9375L15.7656 7.9375L28.0781 38L23.5469 38L20.0313 28.8906L7.4688 28.8906L4.1563 38ZM8.6094 25.6563L18.8125 25.6563L15.6719 17.3281Q14.2344 13.5313 13.5313 11.0938Q12.9688 13.9844 11.9219 16.8281ZM31.0781 38L31.0781 7.9375L42.3594 7.9375Q45.7969 7.9375 47.8828 8.8516Q49.9688 9.7656 51.1484 11.6563Q52.3281 13.5469 52.3281 15.625Q52.3281 17.5469 51.2813 19.25Q50.2344 20.9531 48.125 22Q50.8438 22.7969 52.3125 24.7266Q53.7813 26.6563 53.7813 29.2813Q53.7813 31.3906 52.8906 33.2109Q52 35.0313 50.6875 36.0156Q49.375 37 47.3906 37.5Q45.4063 38 42.5469 38ZM35.0625 20.5625L41.5625 20.5625Q44.2031 20.5625 45.3438 20.2188Q46.875 19.7656 47.6406 18.7188Q48.4063 17.6719 48.4063 16.0938Q48.4063 14.5938 47.6875 13.4609Q46.9688 12.3281 45.6328 11.9063Q44.2969 11.4844 41.0625 11.4844L35.0625 11.4844ZM35.0625 34.4531L42.5469 34.4531Q44.4688 34.4531 45.25 34.3125Q46.625 34.0625 47.5469 33.4844Q48.4688 32.9063 49.0625 31.8125Q49.6563 30.7188 49.6563 29.2813Q49.6563 27.6094 48.7969 26.3672Q47.9375 25.125 46.4063 24.6172Q44.875 24.1094 42 24.1094L35.0625 24.1094ZM80.6875 27.4531L84.6719 28.4688Q83.4219 33.3594 80.1719 35.9375Q76.9219 38.5156 72.2188 38.5156Q67.3594 38.5156 64.3125 36.5313Q61.2656 34.5469 59.6797 30.7969Q58.0938 27.0469 58.0938 22.7344Q58.0938 18.0469 59.8906 14.5469Q61.6875 11.0469 65 9.2344Q68.3125 7.4219 72.2813 7.4219Q76.7969 7.4219 79.875 9.7188Q82.9531 12.0156 84.1563 16.1719L80.2344 17.1094Q79.1875 13.8281 77.2031 12.3281Q75.2188 10.8281 72.2031 10.8281Q68.7344 10.8281 66.4063 12.4922Q64.0781 14.1563 63.1328 16.9531Q62.1875 19.75 62.1875 22.7188Q62.1875 26.5625 63.3047 29.4219Q64.4219 32.2813 66.7813 33.6953Q69.1406 35.1094 71.8906 35.1094Q75.2344 35.1094 77.5547 33.1797Q79.875 31.25 80.6875 27.4531Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            35,
+            32
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 86,
+            "height": 47
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 35,
+            "y": 32,
+            "width": 86,
+            "height": 47
+          },
+          "fieldGroup": {
+            "x": 15,
+            "y": 12,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              35,
+              32
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 15,
+          "y": 12
+        },
+        "workerBitmap": "web-normal-postSave-Arial10-worker.png"
+      },
+      {
+        "name": "Times13",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 150,
+          "y": 700,
+          "w": 700,
+          "h": 517
+        },
+        "previewText": "123",
+        "calculatedData": "123",
+        "text": {
+          "pitch": 13,
+          "xMag": null,
+          "face": "Times New Roman",
+          "family": "Roman"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "123",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Times New Roman",
+          "pitch": 13,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "123",
+          "face": "Times New Roman",
+          "pitch": 13,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 84,
+          "height": 62,
+          "fontFamily": 16
+        },
+        "outlinePath": "M6.4531 16.1563L15.3125 11.8281L16.1875 11.8281L16.1875 42.5781Q16.1875 45.6406 16.4453 46.3906Q16.7031 47.1406 17.5078 47.5469Q18.3125 47.9531 20.7813 48L20.7813 49L7.0938 49L7.0938 48Q9.6719 47.9531 10.4219 47.5625Q11.1719 47.1719 11.4688 46.5156Q11.7656 45.8594 11.7656 42.5781L11.7656 22.9219Q11.7656 18.9531 11.5 17.8281Q11.3125 16.9688 10.8125 16.5625Q10.3125 16.1563 9.6094 16.1563Q8.625 16.1563 6.8438 16.9844ZM53.2188 41.9844L50.6719 49L29.1875 49L29.1875 48Q38.6563 39.3594 42.5234 33.8828Q46.3906 28.4063 46.3906 23.8594Q46.3906 20.4063 44.2734 18.1719Q42.1563 15.9375 39.2031 15.9375Q36.5156 15.9375 34.3828 17.5078Q32.25 19.0781 31.2188 22.125L30.2344 22.125Q30.9063 17.1563 33.6797 14.4922Q36.4531 11.8281 40.625 11.8281Q45.0469 11.8281 48.0156 14.6797Q50.9844 17.5313 50.9844 21.3906Q50.9844 24.1563 49.7031 26.9219Q47.7188 31.2813 43.25 36.1406Q36.5625 43.4375 34.9063 44.9375L44.4063 44.9375Q47.3125 44.9375 48.4766 44.7266Q49.6406 44.5156 50.5859 43.8594Q51.5313 43.2031 52.2188 41.9844ZM58.7969 19.5156Q60.3438 15.8281 62.7266 13.8281Q65.1094 11.8281 68.6563 11.8281Q73.0313 11.8281 75.3594 14.6719Q77.1406 16.7969 77.1406 19.2188Q77.1406 23.1875 72.1406 27.4375Q75.5 28.75 77.2188 31.1953Q78.9375 33.6406 78.9375 36.9375Q78.9375 41.6719 75.9219 45.125Q72 49.6406 64.5625 49.6406Q60.8906 49.6406 59.5625 48.7266Q58.2344 47.8125 58.2344 46.7656Q58.2344 45.9844 58.8594 45.3984Q59.4844 44.8125 60.375 44.8125Q61.0469 44.8125 61.75 45.0313Q62.2031 45.1563 63.8125 46Q65.4219 46.8438 66.0469 47.0156Q67.0313 47.3125 68.1719 47.3125Q70.9063 47.3125 72.9297 45.1875Q74.9531 43.0625 74.9531 40.1719Q74.9531 38.0469 74.0156 36.0313Q73.3281 34.5313 72.4844 33.75Q71.3281 32.6719 69.3203 31.7969Q67.3125 30.9219 65.2188 30.9219L64.3594 30.9219L64.3594 30.125Q66.4688 29.8594 68.6094 28.5938Q70.75 27.3281 71.7109 25.5547Q72.6719 23.7813 72.6719 21.6563Q72.6719 18.8906 70.9453 17.1875Q69.2188 15.4844 66.6406 15.4844Q62.4688 15.4844 59.6719 19.9375Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            38,
+            104
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 84,
+            "height": 62
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 38,
+            "y": 104,
+            "width": 84,
+            "height": 62
+          },
+          "fieldGroup": {
+            "x": 18,
+            "y": 84,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              38,
+              104
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 18,
+          "y": 84
+        },
+        "workerBitmap": "web-normal-postSave-Times13-worker.png"
+      },
+      {
+        "name": "Courier8",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 200,
+          "y": 1500,
+          "w": 833,
+          "h": 308
+        },
+        "previewText": "SN01",
+        "calculatedData": "SN01",
+        "text": {
+          "pitch": 8,
+          "xMag": 125,
+          "face": "Courier New",
+          "family": "Modern"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "SN01",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Courier New",
+          "pitch": 8,
+          "xMag": 125,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "SN01",
+          "face": "Courier New",
+          "pitch": 8,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 125,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 100,
+          "height": 37,
+          "fontFamily": 48
+        },
+        "outlinePath": "M18.7656 9.9688L18.7656 9.5Q18.7656 9 19 8.7891Q19.2344 8.5781 19.625 8.5781Q20.0156 8.5781 20.25 8.7891Q20.4844 9 20.4844 9.5L20.4844 13.0625Q20.4844 13.5625 20.25 13.7734Q20.0156 13.9844 19.625 13.9844Q19.25 13.9844 19.0156 13.7891Q18.7813 13.5938 18.7656 13.1406Q18.6563 11.75 16.9844 10.6328Q15.3125 9.5156 12.6094 9.5156Q9.7656 9.5156 8.0859 10.7031Q6.4063 11.8906 6.4063 13.5Q6.4063 14.3438 6.875 15.0234Q7.3438 15.7031 8.125 16.125Q8.9063 16.5469 9.8906 16.8047Q10.875 17.0625 12.9688 17.3438Q16.4688 17.8125 17.7969 18.2813Q19.5781 18.9375 20.4922 20.0781Q21.4063 21.2188 21.4063 22.7813Q21.4063 25.1719 19.0469 26.8594Q16.6875 28.5469 12.6875 28.5469Q8.2031 28.5469 5.5156 26.2656L5.5156 27.0625Q5.5156 27.5625 5.2813 27.7813Q5.0469 28 4.6563 28Q4.2813 28 4.0391 27.7813Q3.7969 27.5625 3.7969 27.0625L3.7969 23.2188Q3.7969 22.7031 4.0313 22.4844Q4.2656 22.2656 4.6563 22.2656Q5.0313 22.2656 5.2656 22.4688Q5.5 22.6719 5.5156 23.125Q5.625 24.6406 7.5391 25.8984Q9.4531 27.1563 12.6875 27.1563Q15.9375 27.1563 17.8125 25.8438Q19.6875 24.5313 19.6875 22.7344Q19.6875 21.6406 18.9688 20.7891Q18.25 19.9375 16.8438 19.4375Q15.8594 19.0781 12.7344 18.6563Q8.4531 18.0781 6.5625 16.875Q4.6719 15.6875 4.6719 13.4688Q4.6719 11.2813 6.8359 9.7031Q9 8.125 12.5469 8.125Q16.1563 8.125 18.7656 9.9688ZM46.0469 28L43.8281 28L31.125 10.625L31.125 26.6094L34.3125 26.6094Q34.9531 26.6094 35.2188 26.7969Q35.4844 26.9844 35.4844 27.2969Q35.4844 27.5938 35.2188 27.7969Q34.9531 28 34.3125 28L27.9688 28Q27.3438 28 27.0781 27.7969Q26.8125 27.5938 26.8125 27.2969Q26.8125 26.9844 27.0781 26.7969Q27.3438 26.6094 27.9688 26.6094L29.4063 26.6094L29.4063 9.9688L27.0938 9.9688Q26.4844 9.9688 26.2109 9.7813Q25.9375 9.5938 25.9375 9.2656Q25.9375 8.9531 26.2109 8.7656Q26.4844 8.5781 27.0938 8.5781L31.6094 8.5781L44.3125 25.9844L44.3125 9.9688L41.1406 9.9688Q40.5313 9.9688 40.2578 9.7813Q39.9844 9.5938 39.9844 9.2656Q39.9844 8.9531 40.2422 8.7656Q40.5 8.5781 41.1406 8.5781L47.5 8.5781Q48.1094 8.5781 48.375 8.7656Q48.6406 8.9531 48.6406 9.2656Q48.6406 9.5938 48.375 9.7813Q48.1094 9.9688 47.5 9.9688L46.0469 9.9688ZM70.5156 15.8594L70.5156 19.3125Q70.5156 23.8125 67.8594 26.4375Q65.7969 28.5 62.6406 28.5Q61.1094 28.5 59.7656 28.0078Q58.4219 27.5156 57.4844 26.6406Q56.8906 26.0938 56.1797 24.8828Q55.4688 23.6719 55.1719 22.6563Q54.7031 21.2188 54.7031 19.3125L54.7031 15.8594Q54.7031 11.3438 57.3438 8.7188Q59.4063 6.6719 62.5781 6.6719Q64.1094 6.6719 65.4453 7.1563Q66.7813 7.6406 67.7188 8.5313Q68.3281 9.0938 69.0313 10.3047Q69.7344 11.5156 70.0625 12.5156Q70.5156 13.9375 70.5156 15.8594ZM68.7813 16.0469Q68.7813 14.0781 68.0938 12.375Q67.4063 10.6719 66.5469 9.6563Q66.0313 9.0781 65.2188 8.6563Q64.0469 8.0781 62.5938 8.0781Q59.7031 8.0781 58.0625 10.4688Q56.4219 12.8594 56.4219 16.0469L56.4219 19.125Q56.4219 21.0938 57.1094 22.8047Q57.7969 24.5156 58.6719 25.5313Q59.1719 26.0938 59.9844 26.5Q61.1563 27.1094 62.6406 27.1094Q65.5 27.1094 67.1406 24.7109Q68.7813 22.3125 68.7813 19.125ZM88.4531 6.875L88.4531 26.6094L94.3594 26.6094Q94.9688 26.6094 95.2422 26.7969Q95.5156 26.9844 95.5156 27.2969Q95.5156 27.5938 95.2422 27.7969Q94.9688 28 94.3594 28L80.8281 28Q80.2031 28 79.9375 27.7969Q79.6719 27.5938 79.6719 27.2969Q79.6719 26.9844 79.9375 26.7969Q80.2031 26.6094 80.8281 26.6094L86.7344 26.6094L86.7344 8.8125L81.1094 10.2344Q80.7031 10.3281 80.5156 10.3281Q80.2031 10.3281 79.9531 10.125Q79.7031 9.9219 79.7031 9.6406Q79.7031 9.3906 79.9063 9.1719Q80.0625 9.0469 80.5781 8.8906Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            44,
+            200
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 100,
+            "height": 37
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 44,
+            "y": 200,
+            "width": 100,
+            "height": 37
+          },
+          "fieldGroup": {
+            "x": 24,
+            "y": 180,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              44,
+              200
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 24,
+          "y": 180
+        },
+        "workerBitmap": "web-normal-postSave-Courier8-worker.png"
+      }
+    ],
+    "validation": {
+      "invalidPrintableFieldNames": [],
+      "invalidHardwareFieldNames": [],
+      "structuralErrors": []
+    }
+  },
+  "expectedResolution": {
+    "xRes": 0.12,
+    "yRes": 0.12
+  },
+  "expectedCapabilityResolution": {
+    "xRes": 1200,
+    "yRes": 1200
+  },
+  "xmlAfterSave": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<ImageDesign Version=\"23\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6320(53mm) - Continuous\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PIUnB</ClStVersionInfo></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>1033</ImageWidth><ImageHeight>1808</ImageHeight><MaxImageWidth>1600</MaxImageWidth><MaxImageHeight>2400</MaxImageHeight><XRes>0.120000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader><Field Name=\"Arial10\"><FldType>FixedText</FldType><X>125</X><Y>100</Y><W>717</W><H>392</H><CalcData><![CDATA[ABC]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[ABC]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"Times13\"><FldType>FixedText</FldType><X>150</X><Y>700</Y><W>700</W><H>517</H><CalcData><![CDATA[123]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[123]]></Default></Object></Data><Text><Font><Face><![CDATA[Times New Roman]]></Face><Family>Roman</Family></Font></Text></Field><Field Name=\"Courier8\"><FldType>FixedText</FldType><X>200</X><Y>1500</Y><W>833</W><H>308</H><CalcData><![CDATA[SN01]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[SN01]]></Default></Object></Data><Text><Font><Face><![CDATA[Courier New]]></Face><Family>Modern</Family><Pitch>8</Pitch><XMag>125</XMag></Font></Text></Field></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>",
+  "saveStartedAt": "2026-10-22T13:03:20.584Z",
+  "saveEndedAt": "2026-10-22T13:03:20.617Z",
+  "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-normal.ciff",
+  "bytes": 3304,
+  "sha256": "99d6c6a7669b2258f8f5a266a089867fe4e7b94730b312996108a79dab2323ef",
+  "screenshot": "web-normal-editor.png",
+  "completedDownloadEvents": [
+    {
+      "event": "will-download",
+      "filename": "xml-web-normal.ciff",
+      "at": "2026-10-22T13:03:20.591Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-normal.ciff",
+      "state": "completed",
+      "at": "2026-10-22T13:03:20.716Z"
+    }
+  ],
+  "executable": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\node_modules\\electron\\dist\\electron.exe",
+  "preload": null,
+  "savePath": "Save button -> will-download -> setSavePath -> completed"
+}

@@ -1,0 +1,2 @@
+45444530 MOV ECX,dword ptr [EBP + -0x34]
+45444533 JMP 0x45404cbe

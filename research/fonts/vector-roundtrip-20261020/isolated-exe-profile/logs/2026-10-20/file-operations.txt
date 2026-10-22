@@ -1,0 +1,138 @@
+====================================================================================================
+[2026-10-20 23:27:02.906 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 70,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 53
+    },
+    input: {
+      characterCount: 851,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'exe-vector-save-check',
+    title: 'exe-vector'
+  }
+====================================================================================================
+[2026-10-20 23:27:03.483 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'exe-vector',
+    filename: 'exe-vector.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.484 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 1,
+    fieldCount: 10,
+    filename: 'exe-vector.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 10,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.498 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 10,
+    filename: 'exe-vector.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 9958
+  }
+====================================================================================================
+[2026-10-20 23:27:03.498 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'exe-vector.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+    title: 'exe-vector'
+  }
+====================================================================================================
+[2026-10-20 23:29:10.013 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 1,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 10,
+      heightMillimeters: 70,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 10,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 53
+    },
+    input: {
+      characterCount: 4978,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'exe-vector-save-check',
+    title: 'exe-vector'
+  }

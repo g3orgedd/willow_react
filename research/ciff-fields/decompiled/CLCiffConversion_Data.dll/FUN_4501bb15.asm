@@ -1,0 +1,17 @@
+4501bb15 PUSH 0x4
+4501bb17 MOV EAX,0x4503bfde
+4501bb1c CALL 0x45022ed6
+4501bb21 XOR EAX,EAX
+4501bb23 MOV dword ptr [EBP + -0x10],EAX
+4501bb26 MOV ESI,dword ptr [EBP + 0x8]
+4501bb29 MOV dword ptr [ESI],EAX
+4501bb2b MOV ECX,dword ptr [ECX]
+4501bb2d PUSH ESI
+4501bb2e PUSH ECX
+4501bb2f MOV dword ptr [EBP + -0x4],EAX
+4501bb32 MOV EDX,dword ptr [ECX]
+4501bb34 MOV dword ptr [EBP + -0x10],0x1
+4501bb3b CALL dword ptr [EDX + 0xe4]
+4501bb41 MOV EAX,ESI
+4501bb43 CALL 0x45022ea4
+4501bb48 RET 0x4

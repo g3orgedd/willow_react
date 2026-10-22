@@ -110,6 +110,8 @@ function applyMultiFieldRotation(fields, targetRotation, hasMixedRotation, first
     field.orientation = normalizedTarget;
   });
 
+  constrainCurrentFieldPositionsInternal(fields);
+
   return true;
 }
 
@@ -120,6 +122,60 @@ function supportsFontSizeEditing(field) {
 function normalizeFontSizeValue(value) {
   const next = Math.round(Number(value));
   return Number.isFinite(next) ? Math.max(1, next) : null;
+}
+
+function applyTextPitchChange(field, value) {
+  const pitch = normalizeFontSizeValue(value);
+  if (!field?.text || !field?.geom || pitch == null) return null;
+  field.text.pitch = pitch;
+  if (globalThis.glyphFonts?.render && typeof requestNativeTextPreview === 'function') {
+    field._nativeTextGeometryDirty = true;
+    requestNativeTextPreview(field, makePreviewText(field));
+    return pitch;
+  }
+  field.geom.h = typeof getClarisoftTextFieldHeightInternal === "function"
+    ? getClarisoftTextFieldHeightInternal(pitch)
+    : Math.max(1, mmToInternal(pitch * CLARISOFT_TEXT_FIELD_HEIGHT_MM_PER_PITCH));
+  if (typeof getFieldRenderedBoundsInternal === "function") {
+    const bounds = getFieldRenderedBoundsInternal(field, new Date(), { forceFresh: true });
+    if (bounds && [bounds.x, bounds.y, bounds.w, bounds.h].every(Number.isFinite)) {
+      field.geom.w = Math.max(1, Math.ceil(bounds.x + bounds.w - field.geom.x));
+      field.geom.h = Math.max(field.geom.h, Math.ceil(bounds.y + bounds.h - field.geom.y));
+    }
+  }
+  return pitch;
+}
+
+function applyTextResizeTransform(field, beforeText, scaleX, scaleY) {
+  if (!supportsFontSizeEditing(field) || !field.geom) return null;
+  const basePitch = normalizeFontSizeValue(beforeText?.pitch ?? getEffectiveTextPitch(field, 10));
+  if (basePitch == null) return null;
+  const baseXMag = Number.isFinite(Number(beforeText?.xMag))
+    ? Number(beforeText.xMag)
+    : (Number(field.text.xMag) || 100);
+  const normalizedScaleX = Math.max(0.01, Math.abs(Number(scaleX) || 1));
+  const normalizedScaleY = Math.max(0.01, Math.abs(Number(scaleY) || 1));
+  const pitch = Math.max(1, Math.round(basePitch * normalizedScaleY));
+  const xMag = clamp(X_MAG_MIN, X_MAG_MAX, Math.round(baseXMag * normalizedScaleX / normalizedScaleY));
+
+  field.text.pitch = pitch;
+  field.text.xMag = xMag;
+  if (globalThis.glyphFonts?.render && typeof requestNativeTextPreview === 'function') {
+    field._nativeTextGeometryDirty = true;
+    requestNativeTextPreview(field, makePreviewText(field));
+    return { pitch, xMag };
+  }
+  field.geom.h = typeof getClarisoftTextFieldHeightInternal === "function"
+    ? getClarisoftTextFieldHeightInternal(pitch)
+    : Math.max(1, mmToInternal(pitch * CLARISOFT_TEXT_FIELD_HEIGHT_MM_PER_PITCH));
+  if (typeof getFieldRenderedBoundsInternal === "function") {
+    const bounds = getFieldRenderedBoundsInternal(field, new Date(), { forceFresh: true });
+    if (bounds && [bounds.x, bounds.y, bounds.w, bounds.h].every(Number.isFinite)) {
+      field.geom.w = Math.max(1, Math.ceil(bounds.x + bounds.w - field.geom.x));
+      field.geom.h = Math.max(field.geom.h, Math.ceil(bounds.y + bounds.h - field.geom.y));
+    }
+  }
+  return { pitch, xMag };
 }
 
 function getMultiFontSizeValue(fields) {
@@ -135,45 +191,163 @@ function getMultiFontSizeValue(fields) {
 
 function createMultiFontSizeInput(fields) {
   const current = getMultiFontSizeValue(fields);
-  const inp = document.createElement("input");
-  inp.className = "input";
-  inp.type = "number";
-  inp.step = "1";
-  inp.min = "1";
-  inp.value = current.mixed || current.value == null ? "" : String(current.value);
-  if (current.mixed) inp.placeholder = t("common.mixed");
-
-  let lastEmitted = current.mixed ? null : current.value;
-  const emit = () => {
-    const nextSize = normalizeFontSizeValue(inp.value);
+  const inp = inputNumber(current.value ?? 1, (nextValue) => {
+    const nextSize = normalizeFontSizeValue(nextValue);
     if (nextSize == null) return;
     if (lastEmitted === nextSize && fields.every((field) => normalizeFontSizeValue(getEffectiveTextPitch(field, 10)) === nextSize)) return;
 
     lastEmitted = nextSize;
     inp.value = String(nextSize);
     pushHistory();
-    fields.forEach((field) => {
-      field.text.pitch = nextSize;
-    });
+    fields.forEach((field) => applyTextPitchChange(field, nextSize));
     renderObjects();
     renderUI();
-  };
+  }, { step: 1, integer: true, min: 1, live: true });
+  inp.value = current.mixed || current.value == null ? "" : String(current.value);
+  if (current.mixed) inp.placeholder = t("common.mixed");
 
-  inp.addEventListener("input", emit);
-  inp.addEventListener("change", emit);
+  let lastEmitted = current.mixed ? null : current.value;
   return inp;
+}
+
+function getTextFieldFontStyle(field) {
+  return field.text?.bold ? (field.text.italic ? 'bold italic' : 'bold') : (field.text?.italic ? 'italic' : 'normal');
+}
+
+function applyTextFontChange(fields, change) {
+  const targets = fields.filter(supportsFontSizeEditing);
+  if (!targets.length) return false;
+  const changed = targets.some((field) => Object.entries(change).some(([key, value]) => {
+    const current = key === 'face' ? getEffectiveTextFontFamily(field) : Boolean(field.text[key]);
+    return current !== value;
+  }));
+  if (!changed) return false;
+  pushHistory();
+  targets.forEach((field) => {
+    if (change.face && getEffectiveTextFontFamily(field) !== change.face && globalThis.glyphFonts?.render) {
+      field._nativeTextFontDirty = true;
+    }
+    Object.assign(field.text, change);
+    const storedPitch = field.text.pitch;
+    applyTextPitchChange(field, getEffectiveTextPitch(field, 13));
+    field.text.pitch = storedPitch;
+  });
+  if (state.subImage) state.subImage.usedSizeDirty = true;
+  renderObjects();
+  renderUI();
+  renderSelectionPanels();
+  return true;
+}
+
+function appendTextFontControls(wrap, fields) {
+  const targets = fields.filter(supportsFontSizeEditing);
+  if (!targets.length) return;
+  const faces = targets.map(getEffectiveTextFontFamily);
+  const mixedFace = faces.some((face) => face !== faces[0]);
+  const options = getAvailableTextFontFamilies().map((face) => ({ value: face, label: face }));
+  faces.forEach((face) => {
+    if (!options.some((option) => option.value === face)) {
+      options.push({ value: face, label: `${face} (${t('field.fontUnavailable')})` });
+    }
+  });
+  if (mixedFace) options.unshift({ value: '', label: t('common.mixed') });
+  const faceSelect = createMaterialSelect(options, mixedFace ? '' : faces[0], (face) => {
+    if (face && isTextFontAvailable(face)) applyTextFontChange(targets, { face });
+  });
+  faceSelect.dataset.fontFaceSelect = '1';
+  appendInspectorItem(wrap, 'text', fieldRow(t('field.fontFamily'), faceSelect), { fullWidth: true });
+  if (faces.some((face) => !isTextFontAvailable(face))) {
+    const note = document.createElement('div');
+    note.className = 'note';
+    note.textContent = t('field.fontUnavailablePreview');
+    appendInspectorItem(wrap, 'text', note, { fullWidth: true });
+  }
+  const styles = targets.map(getTextFieldFontStyle);
+  const mixedStyle = styles.some((style) => style !== styles[0]);
+  const styleOptions = [
+    { value: 'normal', label: t('field.fontRegular') },
+    { value: 'bold', label: t('field.fontBold') },
+    { value: 'italic', label: t('field.fontItalic') },
+    { value: 'bold italic', label: t('field.fontBoldItalic') },
+  ];
+  if (mixedStyle) styleOptions.unshift({ value: '', label: t('common.mixed') });
+  appendInspectorItem(wrap, 'text', fieldRow(t('field.fontStyle'), createMaterialSelect(
+    styleOptions, mixedStyle ? '' : styles[0], (style) => {
+      if (style) applyTextFontChange(targets, { bold: style.includes('bold'), italic: style.includes('italic') });
+    }
+  )), { fullWidth: true });
+}
+
+const INSPECTOR_PROPERTY_SECTION_ORDER = ["basic", "geometry", "content", "text", "datamatrix"];
+
+function markInspectorItem(element, group, options = {}) {
+  if (!element) return element;
+  element.dataset.inspectorGroup = group;
+  if (options.fullWidth) element.classList.add("fieldRow--fullWidth");
+  return element;
+}
+
+function appendInspectorItem(container, group, element, options = {}) {
+  container.appendChild(markInspectorItem(element, group, options));
+  return element;
+}
+
+function buildInspectorSections(...propertyGroups) {
+  const itemsBySection = new Map();
+  propertyGroups.filter(Boolean).forEach((group) => {
+    Array.from(group.children).forEach((item) => {
+      const sectionName = item.dataset.inspectorGroup || "basic";
+      if (!itemsBySection.has(sectionName)) itemsBySection.set(sectionName, []);
+      itemsBySection.get(sectionName).push(item);
+    });
+  });
+
+  const sectionList = document.createElement("div");
+  sectionList.className = "inspectorSectionList";
+  const sectionNames = [
+    ...INSPECTOR_PROPERTY_SECTION_ORDER,
+    ...Array.from(itemsBySection.keys()).filter((name) => !INSPECTOR_PROPERTY_SECTION_ORDER.includes(name))
+  ];
+
+  sectionNames.forEach((sectionName) => {
+    const items = itemsBySection.get(sectionName);
+    if (!items?.length) return;
+
+    const section = document.createElement("section");
+    section.className = `inspectorSection inspectorSection--${sectionName}`;
+
+    const title = document.createElement("div");
+    title.className = "inspectorSection__title";
+    title.textContent = t(`inspector.section.${sectionName}`);
+
+    const grid = document.createElement("div");
+    grid.className = "inspectorSection__grid";
+    items.forEach((item) => grid.appendChild(item));
+
+    section.appendChild(title);
+    section.appendChild(grid);
+    sectionList.appendChild(section);
+  });
+
+  return sectionList;
+}
+
+function buildObjectInspectorProps(field) {
+  const typeProps = field.fldType === "Barcode" && field.barcode?.dataMatrix
+    ? buildBarcodeProps(field)
+    : buildTextLikeProps(field);
+  return buildInspectorSections(buildCommonProps(field), typeProps);
+}
+
+function buildMultiSelectionInspectorProps(fields) {
+  return buildInspectorSections(buildMultiSelectionProps(fields));
 }
 
 function buildMultiSelectionProps(fields) {
   const wrap = document.createElement("div");
   wrap.className = "form";
 
-  const note = document.createElement("div");
-  note.className = "note";
   const fontFields = fields.filter(supportsFontSizeEditing);
-  note.innerHTML = `<strong>${t("status.selected")}</strong><br>${t("status.selectedMultiple", { count: fields.length })}`;
-  wrap.appendChild(note);
-  wrap.appendChild(createDeleteControlButton());
 
   const rotations = fields.map((field) => normalizeOrientation(field.orientation));
   const firstRotation = rotations[0] ?? 0;
@@ -182,7 +356,7 @@ function buildMultiSelectionProps(fields) {
     ? [{ value: "", label: t("common.mixed") }, ...ALLOWED_ORIENTATIONS.map((deg) => ({ value: String(deg), label: `${deg}\u00B0` }))]
     : ALLOWED_ORIENTATIONS.map((deg) => ({ value: String(deg), label: `${deg}\u00B0` }));
 
-  wrap.appendChild(fieldRow(t("field.rotation"), createMaterialSelect(
+  appendInspectorItem(wrap, "geometry", fieldRow(t("field.rotation"), createMaterialSelect(
     rotationOptions,
     hasMixedRotation ? "" : String(firstRotation),
     (nextValue) => {
@@ -197,109 +371,63 @@ function buildMultiSelectionProps(fields) {
       renderUI();
       renderSelectionPanels();
     }
-  )));
+  )), { fullWidth: true });
 
   if (fontFields.length) {
-    wrap.appendChild(fieldRow(t("field.fontSize"), createMultiFontSizeInput(fontFields)));
+    appendTextFontControls(wrap, fontFields);
+    appendInspectorItem(wrap, "text", fieldRow(t("field.fontSize"), createMultiFontSizeInput(fontFields)), { fullWidth: true });
   }
 
   return wrap;
 }
 
-function createPrintControlCard(field) {
-  const card = document.createElement("div");
-  card.className = "printControlCard";
-
-  const copy = document.createElement("div");
-  copy.className = "printControlCard__copy";
-
-  const titleRow = document.createElement("div");
-  titleRow.className = "printControlCard__titleRow";
-
-  const title = document.createElement("div");
-  title.className = "printControlCard__title";
-  title.textContent = t("field.printOutput");
-
-  const status = document.createElement("span");
-  status.className = "printControlCard__status";
-
-  const description = document.createElement("div");
-  description.className = "printControlCard__description";
-
-  const syncPrintState = (isPrinted) => {
-    card.dataset.printState = isPrinted ? "printed" : "hidden";
-    // status.textContent = isPrinted ? "Printed" : "Hidden";
-    // description.textContent = isPrinted
-    //   ? "Object is included in the printed output."
-    //   : "Object stays in the template, but is excluded from printing.";
-  };
-
-  const control = inputCheckbox(field.printed, (value) => {
-    pushHistory();
-    field.printed = value;
-    syncPrintState(value);
-    window.setTimeout(renderAll, PRINT_SWITCH_ANIMATION_MS);
-  }, { ariaLabel: t("field.printOutput") });
-
-  titleRow.appendChild(title);
-  // titleRow.appendChild(status);
-  copy.appendChild(titleRow);
-  copy.appendChild(description);
-
-  card.appendChild(copy);
-  card.appendChild(control);
-  syncPrintState(field.printed);
-
-  return card;
-}
-
-function createDeleteControlButton() {
-  const btn = document.createElement("button");
-  btn.type = "button";
-  btn.className = "btn btn--danger deleteControlCard";
-  btn.textContent = t("object.delete");
-  btn.setAttribute("aria-label", t("object.delete"));
-  btn.addEventListener("click", () => deleteSelected());
-  return btn;
-}
-
-function createPropsDivider() {
-  const divider = document.createElement("div");
-  divider.className = "hr1";
-  return divider;
-}
-
 function buildCommonProps(f) {
   const wrap = document.createElement("div");
   wrap.className = "form";
+  const isDataMatrix = f.fldType === "Barcode" && Boolean(f.barcode?.dataMatrix);
 
-  wrap.appendChild(createPrintControlCard(f));
-  wrap.appendChild(createDeleteControlButton());
-  wrap.appendChild(createPropsDivider());
-  wrap.appendChild(fieldRow(t("field.name"), createFieldNameInput(f)));
-  if (f.fldType === "FixedText") {
-    wrap.appendChild(fieldRow(t("field.type"), buildFixedTextEntryModeSelect(f)));
-  } else {
-    wrap.appendChild(fieldRow(t("field.type"), inputText(f.fldType, () => {}, { disabled: true })));
+  appendInspectorItem(wrap, "basic", fieldRow(t("field.name"), createFieldNameInput(f)), { fullWidth: true });
+  if (!isDataMatrix) {
+    appendInspectorItem(wrap, "basic", fieldRow(t("field.maxCharacters"), inputMaxCharacters(f.data?.maxChars, (value) => {
+      if (f.data.maxChars === value) return;
+      pushHistory();
+      f.data.maxChars = value;
+      renderUI();
+    })), { fullWidth: true });
+    const typeControl = f.fldType === "FixedText"
+      ? buildFixedTextEntryModeSelect(f)
+      : inputText(f.fldType, () => {}, { disabled: true });
+    appendInspectorItem(wrap, "basic", fieldRow(t("field.type"), typeControl), { fullWidth: true });
   }
-  wrap.appendChild(fieldRow(t("field.maxCharacters"), inputMaxCharacters(f.data?.maxChars, (value) => {
-    if (f.data.maxChars === value) return;
-    pushHistory();
-    f.data.maxChars = value;
-    renderUI();
-  })));
 
-  wrap.appendChild(fieldRow(t("field.x"), inputNumber(internalToMm(f.geom.x), (v) => { pushHistory(); f.geom.x = mmToInternal(v); renderAll(); })));
-  wrap.appendChild(fieldRow(t("field.y"), inputNumber(internalToMm(f.geom.y), (v) => { pushHistory(); f.geom.y = mmToInternal(v); renderAll(); })));
-  wrap.appendChild(fieldRow(t("field.width"), inputNumber(internalToMm(f.geom.w), (v) => { pushHistory(); f.geom.w = mmToInternal(v); renderAll(); })));
-  wrap.appendChild(fieldRow(t("field.height"), inputNumber(internalToMm(f.geom.h), (v) => { pushHistory(); f.geom.h = mmToInternal(v); renderAll(); })));
-  wrap.appendChild(fieldRow(t("field.rotation"), selectOrientation(f.orientation, (v) => {
+  appendInspectorItem(wrap, "geometry", fieldRow(t("field.x"), inputNumber(internalToMm(f.geom.x), (v) => {
+    pushHistory();
+    setFieldPositionInternal(f, mmToInternal(v), f.geom.y);
+    renderAll();
+  })));
+  appendInspectorItem(wrap, "geometry", fieldRow(t("field.y"), inputNumber(internalToMm(f.geom.y), (v) => {
+    pushHistory();
+    setFieldPositionInternal(f, f.geom.x, mmToInternal(v));
+    renderAll();
+  })));
+  appendInspectorItem(wrap, "geometry", fieldRow(t("field.width"), inputNumber(internalToMm(f.geom.w), (v) => {
+    pushHistory();
+    f.geom.w = Math.max(1, mmToInternal(v));
+    constrainCurrentFieldPositionsInternal([f], { forceFreshTextBounds: true });
+    renderAll();
+  }, { min: 0.01 })));
+  appendInspectorItem(wrap, "geometry", fieldRow(t("field.height"), inputNumber(internalToMm(f.geom.h), (v) => {
+    pushHistory();
+    f.geom.h = Math.max(1, mmToInternal(v));
+    constrainCurrentFieldPositionsInternal([f], { forceFreshTextBounds: true });
+    renderAll();
+  }, { min: 0.01 })));
+  appendInspectorItem(wrap, "geometry", fieldRow(t("field.rotation"), selectOrientation(f.orientation, (v) => {
     pushHistory();
     f.orientation = v;
-    renderObjects();
-    renderUI();
+    constrainCurrentFieldPositionsInternal([f]);
+    renderAll();
   })));
-
   return wrap;
 }
 
@@ -328,18 +456,22 @@ function applyFixedTextEntryMode(field, nextModeRaw) {
 
   field.data.textEntryMode = nextMode;
   field.data.hasVarText = nextMode === "user";
+  const maxChars = Number(field.data.maxChars);
+  field.data.fixedLen = nextMode === "user" && Number.isSafeInteger(maxChars) && maxChars >= 0;
   field.data.defaultValue = currentValue;
   field.calcData = currentValue;
 
   if (nextMode === "user") {
     field.data.staticAttr = "0";
     field.data.userEnterData = currentValue;
+    synchronizeDependentDataMatrices(field.name);
     return;
   }
 
   field.data.staticAttr = null;
   field.data.userEnterData = "";
   field.data.mask = "";
+  synchronizeDependentDataMatrices(field.name);
 }
 
 function setEditableTextFieldValue(field, nextValueRaw) {
@@ -350,6 +482,7 @@ function setEditableTextFieldValue(field, nextValueRaw) {
     field.data.userEnterData = nextValue;
     field.data.defaultValue = field.data.defaultValue || nextValue;
     field.calcData = nextValue;
+    synchronizeDependentDataMatrices(field.name);
     return;
   }
 
@@ -361,6 +494,7 @@ function setEditableTextFieldValue(field, nextValueRaw) {
     field.data.hasVarText = true;
     field.data.staticAttr = "0";
     field.data.userEnterData = nextValue;
+    synchronizeDependentDataMatrices(field.name);
     return;
   }
 
@@ -368,6 +502,80 @@ function setEditableTextFieldValue(field, nextValueRaw) {
   field.data.hasVarText = false;
   field.data.staticAttr = null;
   field.data.userEnterData = "";
+  synchronizeDependentDataMatrices(field.name);
+}
+
+function synchronizeDependentDataMatrices(sourceName = null) {
+  state.fields.forEach((candidate) => {
+    const dm = candidate.barcode?.dataMatrix;
+    if (!dm) return;
+    if (sourceName && !dm.segments.some((segment) => segment.srcField === sourceName)) return;
+    synchronizeDataMatrixEditorState(candidate);
+  });
+}
+
+function synchronizeDataMatrixEditorState(field, now = new Date()) {
+  const changed = synchronizeDataMatrixDerivedState(field, state.fieldByName);
+  if (normalizeDataMatrixSymbolSizeValue(field?.barcode?.dataMatrix?.symbolSize) === "Auto") {
+    syncDataMatrixGeomToModuleSize(field, now);
+  }
+  return changed;
+}
+
+function isCanvasEditableTextField(field) {
+  return field?.fldType === "FixedText";
+}
+
+function startCanvasTextFieldValueEditing(field) {
+  if (!isCanvasEditableTextField(field)) return false;
+
+  // A double click follows two regular click events, each of which rebuilds
+  // the inspector. Select the field first, then resolve the current input.
+  selectField(field.name, { additive: false, toggle: false });
+  renderUI();
+
+  const valueInput = Array.from(
+    elPropsPanel?.querySelectorAll?.("[data-field-value-input='1']") ?? []
+  ).find((input) => input.dataset.fieldName === field.name);
+  if (!valueInput || valueInput.disabled || valueInput.readOnly) return false;
+
+  valueInput.focus({ preventScroll: true });
+  valueInput.select();
+  return true;
+}
+
+function createEditableTextFieldValueInput(field, displayValue) {
+  let editSessionStarted = false;
+
+  const applyValue = (nextValueRaw) => {
+    const nextValue = String(nextValueRaw ?? "");
+    if (nextValue === String(getStoredTextFieldValue(field))) return false;
+
+    if (!editSessionStarted) {
+      pushHistory();
+      editSessionStarted = true;
+    }
+
+    setEditableTextFieldValue(field, nextValue);
+    if (globalThis.glyphFonts?.render) field._nativeTextGeometryDirty = true;
+    if (state.subImage) state.subImage.usedSizeDirty = true;
+    if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+    // Keep the inspector DOM intact so focus, caret position and IME
+    // composition survive while Konva and dependent DataMatrices refresh.
+    renderObjects();
+    renderUI();
+    return true;
+  };
+
+  const input = inputText(displayValue, (nextValue) => {
+    applyValue(nextValue);
+    editSessionStarted = false;
+  });
+  input.addEventListener("input", () => applyValue(input.value));
+  input.addEventListener("blur", () => {
+    editSessionStarted = false;
+  });
+  return input;
 }
 
 function createPanelActionButton(tagName, label, onClick) {
@@ -385,46 +593,59 @@ function createPanelActionButton(tagName, label, onClick) {
 function buildTextLikeProps(f) {
   const wrap = document.createElement("div");
   wrap.className = "form";
+  appendTextFontControls(wrap, [f]);
 
   const displayValue = getFieldDisplayValue(f);
   const isDynamicPreviewField = f.fldType === "TimeText" || f.fldType === "DateText" || f.fldType === "OffsetDateText" || f.fldType === "CounterText";
   const valueInput = isDynamicPreviewField
     ? inputText(displayValue, () => {}, { readOnly: true })
-    : inputText(displayValue, (v) => {
-        pushHistory();
-        setEditableTextFieldValue(f, v);
-        renderObjects();
-        renderUI();
-        renderSelectionPanels();
-      });
+    : createEditableTextFieldValueInput(f, displayValue);
 
-  if (isDynamicPreviewField) valueInput.dataset.dynamicPreviewValue = "1";
-  wrap.appendChild(fieldRow(t("field.value"), valueInput));
+  if (isDynamicPreviewField) {
+    valueInput.dataset.dynamicPreviewValue = "1";
+  } else {
+    valueInput.dataset.fieldValueInput = "1";
+    valueInput.dataset.fieldName = f.name;
+  }
+  const valueRow = fieldRow(t("field.value"), valueInput);
+  appendInspectorItem(wrap, "content", valueRow, { fullWidth: true });
+  const valueCount = document.createElement("span");
+  valueCount.className = "fieldValueCharacterCount";
+  const updateValueCount = () => {
+    const count = Array.from(String(valueInput.value ?? "")).length;
+    valueCount.textContent = `(${count})`;
+    valueCount.setAttribute("aria-label", t("field.characterCount", { count }));
+  };
+  valueInput._updateCharacterCount = updateValueCount;
+  valueInput.addEventListener("input", updateValueCount);
+  valueInput.addEventListener("change", updateValueCount);
+  updateValueCount();
+  valueRow.querySelector("label")?.appendChild(valueCount);
 
   if (f.fldType === "CounterText") {
     const counter = f.data.counter ?? {};
     const noOfChars = Math.max(1, Math.round(parseCounterNumber(counter.noOfChars, 4) ?? 4));
     const maxValue = getCounterMaxValue(noOfChars);
 
-    wrap.appendChild(fieldRow(t("counter.digits"), inputNumber(noOfChars, (v) => {
+    appendInspectorItem(wrap, "content", fieldRow(t("counter.digits"), inputNumber(noOfChars, (v) => {
       applyCounterFieldChange(f, (next) => {
         next.noOfChars = Math.max(1, Math.round(v));
       });
     }, { step: 1, integer: true, min: 1 })));
 
-    wrap.appendChild(fieldRow(t("counter.start"), inputNumber(parseCounterNumber(counter.startVal, 1) ?? 1, (v) => {
+    appendInspectorItem(wrap, "content", fieldRow(t("counter.start"), inputNumber(parseCounterNumber(counter.startVal, 1) ?? 1, (v) => {
       applyCounterFieldChange(f, (next) => {
         next.startVal = String(Math.max(0, Math.round(v)));
       });
     }, { step: 1, integer: true, min: 0, max: maxValue })));
 
-    wrap.appendChild(fieldRow(t("counter.end"), inputNumber(parseCounterNumber(counter.endVal, maxValue) ?? maxValue, (v) => {
+    appendInspectorItem(wrap, "content", fieldRow(t("counter.end"), inputNumber(parseCounterNumber(counter.endVal, maxValue) ?? maxValue, (v) => {
       applyCounterFieldChange(f, (next) => {
         next.endVal = String(Math.max(0, Math.round(v)));
       });
     }, { step: 1, integer: true, min: 0, max: maxValue })));
 
-    wrap.appendChild(fieldRow(t("counter.step"), inputNumber(parseCounterNumber(counter.stepSize, 1) ?? 1, (v) => {
+    appendInspectorItem(wrap, "content", fieldRow(t("counter.step"), inputNumber(parseCounterNumber(counter.stepSize, 1) ?? 1, (v) => {
       applyCounterFieldChange(f, (next) => {
         next.stepSize = Math.max(1, Math.round(v));
       });
@@ -433,21 +654,18 @@ function buildTextLikeProps(f) {
     const note = document.createElement("div");
     note.className = "note";
     note.textContent = t("counter.maxValue", { digits: noOfChars, value: formatCounterValue(maxValue, noOfChars) });
-    wrap.appendChild(note);
+    appendInspectorItem(wrap, "content", note, { fullWidth: true });
 
-    const hr = document.createElement("div");
-    hr.className = "hr";
-    wrap.appendChild(hr);
-
-    wrap.appendChild(fieldRow(t("field.fontSize"), inputNumber(getEffectiveTextPitch(f, 10), (v) => {
+    appendInspectorItem(wrap, "text", fieldRow(t("field.fontSize"), inputNumber(getEffectiveTextPitch(f, 10), (v) => {
       pushHistory();
-      f.text.pitch = Math.max(1, Math.round(v));
+      applyTextPitchChange(f, v);
       refreshFieldCanvasPreview(f);
     }, { step: 1, integer: true, min: 1, live: true })));
 
-    wrap.appendChild(fieldRow(t("field.xMag"), inputNumber(f.text.xMag ?? 100, (v) => {
+    appendInspectorItem(wrap, "text", fieldRow(t("field.xMag"), inputNumber(f.text.xMag ?? 100, (v) => {
       pushHistory();
       f.text.xMag = clamp(X_MAG_MIN, X_MAG_MAX, Math.round(v));
+      if (globalThis.glyphFonts?.render) f._nativeTextGeometryDirty = true;
       refreshFieldCanvasPreview(f);
     }, { step: 1, integer: true, min: X_MAG_MIN, max: X_MAG_MAX, live: true })));
 
@@ -471,7 +689,7 @@ function buildTextLikeProps(f) {
         if (nextType === "OffsetDateText") ensureCalculatedDateOffset(f);
         renderAll();
       });
-      wrap.appendChild(fieldRow(t("field.dateType"), dateTypeSelect));
+      appendInspectorItem(wrap, "content", fieldRow(t("field.dateType"), dateTypeSelect), { fullWidth: true });
     }
 
     if (f.fldType === "TimeText") {
@@ -493,42 +711,43 @@ function buildTextLikeProps(f) {
       );
     }
 
-    wrap.appendChild(fieldRow(f.fldType === "TimeText" ? t("field.timeFormat") : t("field.dateFormat"), formatInput));
+    appendInspectorItem(wrap, "content", fieldRow(f.fldType === "TimeText" ? t("field.timeFormat") : t("field.dateFormat"), formatInput), { fullWidth: true });
 
     if (f.fldType === "TimeText") {
-      wrap.appendChild(fieldRow(t("field.separator"), selectTimeSeparator(getTimeSeparator(f.data.defaultValue || ""), (v) => {
+      appendInspectorItem(wrap, "content", fieldRow(t("field.separator"), selectTimeSeparator(getTimeSeparator(f.data.defaultValue || ""), (v) => {
         pushHistory();
         f.data.defaultValue = buildTimeTemplateFormat(getTimeFormatPreset(f.data.defaultValue || ""), v);
         refreshSelectedDynamicFieldPreview();
-      })));
+      })), { fullWidth: true });
     }
 
     if (f.fldType === "DateText" || f.fldType === "OffsetDateText") {
-      wrap.appendChild(fieldRow(t("field.separator"), selectDateSeparator(getDateSeparator(f.data.defaultValue || ""), (v) => {
+      appendInspectorItem(wrap, "content", fieldRow(t("field.separator"), selectDateSeparator(getDateSeparator(f.data.defaultValue || ""), (v) => {
         pushHistory();
         f.data.defaultValue = buildDateTemplateFormat(getDateFormatPreset(f.data.defaultValue || ""), v);
         refreshSelectedDynamicFieldPreview();
-      })));
+      })), { fullWidth: true });
     }
 
     if (f.fldType === "OffsetDateText") {
-      wrap.appendChild(fieldRow(t("field.offset"), selectOffsetName(f.data.offsetRef, (v) => {
+      appendInspectorItem(wrap, "content", fieldRow(t("field.offset"), selectOffsetName(f.data.offsetRef, (v) => {
         pushHistory();
         f.data.offsetRef = v || null;
         refreshSelectedDynamicFieldPreview();
-      })));
+      })), { fullWidth: true });
     }
   }
 
-  wrap.appendChild(fieldRow(t("field.fontSize"), inputNumber(getEffectiveTextPitch(f, 10), (v) => {
+  appendInspectorItem(wrap, "text", fieldRow(t("field.fontSize"), inputNumber(getEffectiveTextPitch(f, 10), (v) => {
     pushHistory();
-    f.text.pitch = Math.max(1, Math.round(v));
+    applyTextPitchChange(f, v);
     refreshFieldCanvasPreview(f);
   }, { step: 1, integer: true, min: 1, live: true })));
 
-  wrap.appendChild(fieldRow(t("field.xMag"), inputNumber(f.text.xMag ?? 100, (v) => {
+  appendInspectorItem(wrap, "text", fieldRow(t("field.xMag"), inputNumber(f.text.xMag ?? 100, (v) => {
     pushHistory();
     f.text.xMag = clamp(X_MAG_MIN, X_MAG_MAX, Math.round(v));
+    if (globalThis.glyphFonts?.render) f._nativeTextGeometryDirty = true;
     refreshFieldCanvasPreview(f);
   }, { step: 1, integer: true, min: X_MAG_MIN, max: X_MAG_MAX, live: true })));
 
@@ -539,23 +758,39 @@ function buildBarcodeProps(f) {
   const wrap = document.createElement("div");
   wrap.className = "form";
 
-  wrap.appendChild(fieldRow(t("datamatrix.quietMargin"), inputNumber(f.barcode.quietMargin ?? 0, (v) => {
+  appendInspectorItem(wrap, "datamatrix", fieldRow(t("datamatrix.quietMargin"), inputNumber(f.barcode.quietMargin ?? 0, (v) => {
+    const nextQuietMargin = Math.max(0, Math.round(v));
+    if (f.barcode.quietMargin === nextQuietMargin) return;
     pushHistory();
-    f.barcode.quietMargin = Math.max(0, Math.round(v));
-  })));
-
-  wrap.appendChild(fieldRow(t("datamatrix.symbolSize"), selectSymbolSize(f.barcode.dataMatrix.symbolSize, (v) => {
-    pushHistory();
-    const nextSymbolSize = normalizeDataMatrixSymbolSizeValue(v, "22X22");
-    applyDmProfile(f, nextSymbolSize);
+    f.barcode.quietMargin = nextQuietMargin;
     syncDataMatrixGeomToModuleSize(f);
+    constrainCurrentFieldPositionsInternal([f]);
     renderAll();
   })));
 
-  wrap.appendChild(fieldRow(t("datamatrix.moduleSize"), selectDataMatrixModuleSize(f.barcode.dataMatrix.moduleSize, (v) => {
+  appendInspectorItem(wrap, "datamatrix", fieldRow(t("datamatrix.symbolSize"), selectSymbolSize(f.barcode.dataMatrix.symbolSize, (v) => {
+    const nextSymbolSize = normalizeDataMatrixSymbolSizeValue(v, "22X22");
+    const nextComposition = getDataMatrixFieldComposition(f, nextSymbolSize);
+    if (!ensureDataMatrixCompositionCompatible(f, nextComposition)) {
+      renderUI();
+      return;
+    }
+    const historySnapshot = snapshotState();
+    if (!applyDataMatrixProfileSettings(f, nextSymbolSize, { notifyOnConflict: false })) {
+      renderUI();
+      return;
+    }
+    pushHistory(false, historySnapshot);
+    constrainCurrentFieldPositionsInternal([f]);
+    renderAll();
+  })));
+
+  appendInspectorItem(wrap, "datamatrix", fieldRow(t("datamatrix.moduleSize"), selectDataMatrixModuleSize(f.barcode.dataMatrix.moduleSize, (v) => {
     pushHistory();
     f.barcode.dataMatrix.moduleSize = normalizeDataMatrixModuleSizeValue(v);
     syncDataMatrixGeomToModuleSize(f);
+    updateDataMatrixBcHFromSettings(f);
+    constrainCurrentFieldPositionsInternal([f]);
     renderAll();
   })));
 
@@ -565,77 +800,103 @@ function buildBarcodeProps(f) {
 function buildDataMatrixPanel(f) {
   const dm = f.barcode.dataMatrix;
   const wrap = document.createElement("div");
-  wrap.className = "form";
+  wrap.className = "dmEditor";
+
+  const profileSection = document.createElement("section");
+  profileSection.className = "dmEditor__profileSection";
+  const profileTitle = document.createElement("h3");
+  profileTitle.className = "dmEditor__sectionTitle";
+  profileTitle.textContent = t("datamatrix.profile");
+  const profileRow = document.createElement("div");
+  profileRow.className = "dmEditor__profileRow";
 
   const profileSelect = createMaterialSelect([
     { value: "", label: t("common.none") },
     { value: "22X22", label: "22X22" },
     { value: "36X36", label: "36X36" }
   ], "", () => {});
-  wrap.appendChild(fieldRow(t("datamatrix.profile"), profileSelect));
+  profileSelect.setAttribute("aria-label", t("datamatrix.profile"));
+  profileRow.appendChild(profileSelect);
 
   const applyBtn = createPanelActionButton("md-filled-tonal-button", t("datamatrix.applyProfile"), () => {
     const p = profileSelect.value;
     if (!p) return;
-    pushHistory();
-    applyDmProfile(f, p);
-    syncDataMatrixGeomToModuleSize(f);
+    if (!ensureDataMatrixCompositionCompatible(f, getDataMatrixFieldComposition(f, p))) return;
+    const historySnapshot = snapshotState();
+    if (!applyDataMatrixProfileSettings(f, p, { notifyOnConflict: false })) return;
+    pushHistory(false, historySnapshot);
+    constrainCurrentFieldPositionsInternal([f]);
     renderAll();
   });
-  wrap.appendChild(applyBtn);
+  profileRow.appendChild(applyBtn);
+  profileSection.appendChild(profileTitle);
+  profileSection.appendChild(profileRow);
+  wrap.appendChild(profileSection);
 
   const val = validateDmProfile(f, dm.symbolSize);
-  const vcard = document.createElement("div");
-  vcard.className = "card";
-  vcard.innerHTML = `<div class="card__head"><div class="card__title">${t("validation.title")}</div><div class="pill">${val.length ? "!" : "OK"}</div></div>`;
+  const status = document.createElement("div");
+  status.className = `dmValidationStatus dmValidationStatus--${val.length ? "error" : "ok"}`;
+  status.setAttribute("role", "status");
+  const statusIcon = document.createElement("span");
+  statusIcon.className = "dmValidationStatus__icon";
+  statusIcon.setAttribute("aria-hidden", "true");
+  statusIcon.textContent = val.length ? "!" : "";
   const vbody = document.createElement("div");
-  vbody.className = "muted";
-  vbody.style.whiteSpace = "pre-wrap";
-  vbody.textContent = val.length ? val.map((x) => "- " + x).join("\n") : t("datamatrix.validationOk");
-  vcard.appendChild(vbody);
-  wrap.appendChild(vcard);
+  vbody.className = "dmValidationStatus__message";
+  vbody.textContent = val.length ? val.join("\n") : t("datamatrix.validationOk");
+  status.appendChild(statusIcon);
+  status.appendChild(vbody);
+  wrap.appendChild(status);
 
-  const segCard = document.createElement("div");
-  segCard.className = "card";
+  const segSection = document.createElement("section");
+  segSection.className = "dmSegments";
 
   const segHead = document.createElement("div");
-  segHead.className = "card__head";
-  const segTitle = document.createElement("div");
-  segTitle.className = "card__title";
+  segHead.className = "dmSegments__header";
+  const segTitle = document.createElement("h3");
+  segTitle.className = "dmEditor__sectionTitle";
   segTitle.textContent = t("datamatrix.segments");
-  const segActions = document.createElement("div");
-  segActions.className = "smallRow";
+  const segCount = document.createElement("span");
+  segCount.className = "dmSegments__count";
+  segCount.textContent = String(dm.segments.length);
   const segAddBtn = createPanelActionButton("md-filled-tonal-button", t("datamatrix.addSegment"), () => {
     pushHistory();
     dm.segments.push({ index: dm.segments.length, srcField: null, defaultValue: "", dataType: 5 });
     normalizeDmSegments(dm);
+    dm.structureDirty = true;
+    synchronizeDataMatrixEditorState(f);
     renderAll();
   });
-  segActions.appendChild(segAddBtn);
+  const addIcon = document.createElement("img");
+  addIcon.className = "iconButton__icon";
+  addIcon.src = "./resourses/Icons/add_24dp.svg";
+  addIcon.alt = "";
+  addIcon.setAttribute("aria-hidden", "true");
+  segAddBtn.prepend(addIcon);
   segHead.appendChild(segTitle);
-  segHead.appendChild(segActions);
-  segCard.appendChild(segHead);
+  segHead.appendChild(segCount);
+  segHead.appendChild(segAddBtn);
+  segSection.appendChild(segHead);
 
   const segWrap = document.createElement("div");
-  segWrap.style.display = "flex";
-  segWrap.style.flexDirection = "column";
-  segWrap.style.gap = "8px";
+  segWrap.className = "dmSegments__list";
 
   dm.segments.forEach((s, idx) => {
     const row = document.createElement("div");
-    row.className = "card dmSegmentCard";
-    row.style.padding = "15px";
+    row.className = "dmSegmentItem";
     row.innerHTML = `
-      <div class="card__head" style="margin-bottom:6px">
-        <div class="card__title">#${idx}</div>
-        <div class="smallRow">
-          <button class="btn btn--ghost btn--small" type="button" aria-label="Move segment up" data-act="up">
-            <img class="topbarAction__icon" src="./resourses/Icons/arrow_upward_24dp.svg" alt="" aria-hidden="true"/>
-          </button>
-          <button class="btn btn--ghost btn--small" type="button" aria-label="Move segment down" data-act="down">
-            <img class="topbarAction__icon" src="./resourses/Icons/arrow_downward_24dp.svg" alt="" aria-hidden="true"/>
-          </button>
-          <button class="btn btn--danger btn--small" type="button" aria-label="Delete segment" data-act="del">
+      <div class="dmSegmentItem__head">
+        <div class="dmSegmentItem__index">#${idx}</div>
+        <div class="dmSegmentItem__actions">
+          <div class="dmSegmentItem__reorder">
+            <button class="btn btn--ghost dmSegmentItem__action" type="button" data-act="up">
+              <img class="topbarAction__icon" src="./resourses/Icons/arrow_upward_24dp.svg" alt="" aria-hidden="true"/>
+            </button>
+            <button class="btn btn--ghost dmSegmentItem__action" type="button" data-act="down">
+              <img class="topbarAction__icon" src="./resourses/Icons/arrow_downward_24dp.svg" alt="" aria-hidden="true"/>
+            </button>
+          </div>
+          <button class="btn btn--danger dmSegmentItem__action" type="button" data-act="del">
             <img class="topbarAction__icon" src="./resourses/Icons/delete_24dp.svg" alt="" aria-hidden="true"/>
           </button>
         </div>
@@ -643,25 +904,43 @@ function buildDataMatrixPanel(f) {
     `;
 
     const grid = document.createElement("div");
-    grid.className = "card__grid dmSegmentGrid";
+    grid.className = "dmSegmentItem__grid";
 
     const srcSel = createMaterialSelect(
-      [{ value: "", label: "(none)" }, ...state.fields.map((ff) => ({ value: ff.name, label: ff.name }))],
+      [{ value: "", label: t("common.none") }, ...state.fields.map((ff) => ({ value: ff.name, label: ff.name }))],
       s.srcField ?? "",
-      (nextValue) => { pushHistory(); s.srcField = nextValue || null; renderAll(); }
+      (nextValue) => {
+        pushHistory();
+        s.srcField = nextValue || null;
+        dm.structureDirty = true;
+        synchronizeDataMatrixEditorState(f);
+        renderAll();
+      }
     );
 
     const defInp = inputText(s.defaultValue || "", (nextValue) => {
       pushHistory();
       s.defaultValue = nextValue;
+      synchronizeDataMatrixEditorState(f);
       refreshCanvasPreviews();
     });
 
+    srcSel.setAttribute("aria-label", `SrcFieldName #${idx}`);
+    defInp.setAttribute("aria-label", `Default #${idx}`);
+    defInp.classList.add("dmSegmentItem__defaultInput");
     grid.appendChild(labeledMini("SrcFieldName", srcSel));
     grid.appendChild(labeledMini("Default", defInp));
     row.appendChild(grid);
 
     row.querySelectorAll("button[data-act]").forEach((b) => {
+      const actionLabels = {
+        up: "datamatrix.moveSegmentUp",
+        down: "datamatrix.moveSegmentDown",
+        del: "datamatrix.deleteSegment"
+      };
+      b.setAttribute("aria-label", t(actionLabels[b.dataset.act]));
+      b.disabled = (b.dataset.act === "up" && idx === 0) ||
+        (b.dataset.act === "down" && idx === dm.segments.length - 1);
       b.addEventListener("click", () => {
         const act = b.dataset.act;
         pushHistory();
@@ -669,6 +948,8 @@ function buildDataMatrixPanel(f) {
         if (act === "up" && idx > 0) [dm.segments[idx - 1], dm.segments[idx]] = [dm.segments[idx], dm.segments[idx - 1]];
         if (act === "down" && idx < dm.segments.length - 1) [dm.segments[idx + 1], dm.segments[idx]] = [dm.segments[idx], dm.segments[idx + 1]];
         normalizeDmSegments(dm);
+        dm.structureDirty = true;
+        synchronizeDataMatrixEditorState(f);
         renderAll();
       });
     });
@@ -676,47 +957,58 @@ function buildDataMatrixPanel(f) {
     segWrap.appendChild(row);
   });
 
-  segCard.appendChild(segWrap);
-  wrap.appendChild(segCard);
+  segSection.appendChild(segWrap);
+  wrap.appendChild(segSection);
 
   return wrap;
 }
 
 function renderHiddenEditor() {
-  if (!state.xmlDoc) { elHiddenEditor.innerHTML = ""; return; }
+  const count = document.getElementById("hiddenFieldsCount");
+  if (!state.xmlDoc) {
+    if (count) count.textContent = "0";
+    elHiddenEditor.innerHTML = "";
+    return;
+  }
 
   const hidden = state.fields.filter((f) => !f.printed);
+  if (count) count.textContent = String(hidden.length);
   elHiddenEditor.innerHTML = "";
 
+  if (hidden.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "muted hiddenFieldsEditor__empty";
+    empty.textContent = t("hiddenFields.empty");
+    elHiddenEditor.appendChild(empty);
+    return;
+  }
+
   hidden.forEach((f) => {
-    const card = document.createElement("div");
-    card.className = "card";
+    const item = document.createElement("div");
+    item.className = "hiddenFieldItem";
 
     const head = document.createElement("div");
-    head.className = "card__head";
+    head.className = "hiddenFieldItem__header";
     const info = document.createElement("div");
+    info.className = "hiddenFieldItem__identity";
     const title = document.createElement("div");
-    title.className = "card__title";
+    title.className = "hiddenFieldItem__title";
     title.textContent = f.name;
     const meta = document.createElement("div");
-    meta.className = "card__meta";
-    meta.textContent = `${getFieldSubtypeLabel(f)} - Displayed=0`;
+    meta.className = "hiddenFieldItem__meta";
+    meta.textContent = `${getFieldSubtypeLabel(f)} · Displayed=0`;
     info.appendChild(title);
     info.appendChild(meta);
 
-    const actions = document.createElement("div");
-    actions.className = "smallRow";
     const selectBtn = createPanelActionButton("md-text-button", t("common.select"), () => {
       selectField(f.name);
       renderAll();
     });
-    actions.appendChild(selectBtn);
+    selectBtn.classList.add("hiddenFieldItem__select");
+    selectBtn.setAttribute("aria-label", `${t("common.select")}: ${f.name}`);
 
     head.appendChild(info);
-    head.appendChild(actions);
-
-    const grid = document.createElement("div");
-    grid.className = "card__grid";
+    head.appendChild(selectBtn);
 
     const inpVal = inputText(getStoredTextFieldValue(f), (nextValue) => {
       pushHistory();
@@ -724,35 +1016,60 @@ function renderHiddenEditor() {
       refreshCanvasPreviews();
     });
 
-    grid.appendChild(labeledMini(t("field.value"), inpVal));
+    inpVal.setAttribute("aria-label", `${t("field.value")}: ${f.name}`);
+    const value = labeledMini(t("field.value"), inpVal);
+    value.classList.add("hiddenFieldItem__value");
 
-    card.appendChild(head);
-    card.appendChild(grid);
-    elHiddenEditor.appendChild(card);
+    item.appendChild(head);
+    item.appendChild(value);
+    elHiddenEditor.appendChild(item);
   });
 }
 
+function beginDateOffsetsModalResize() {
+  const card = elOffsetsEditor.closest(".dateOffsetsModal");
+  if (!card || typeof card.animate !== "function") return () => {};
+
+  // Start from the visible size even if the previous resize is still running.
+  const previousHeight = card.getBoundingClientRect().height;
+  card.getAnimations().filter((animation) => animation.id === "date-offsets-resize")
+    .forEach((animation) => animation.cancel());
+  if (!previousHeight || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return () => {};
+
+  return () => {
+    const nextHeight = card.getBoundingClientRect().height;
+    if (Math.abs(nextHeight - previousHeight) < 0.5) return;
+    const animation = card.animate(
+      [{ height: `${previousHeight}px` }, { height: `${nextHeight}px` }],
+      { duration: 200, easing: "ease" }
+    );
+    animation.id = "date-offsets-resize";
+  };
+}
+
 function renderOffsetsEditor() {
+  const finishResize = beginDateOffsetsModalResize();
+  const count = document.getElementById("dateOffsetsCount");
+  if (count) count.textContent = String(state.xmlDoc ? state.dateOffsets.length : 0);
   if (!state.xmlDoc) { elOffsetsEditor.innerHTML = ""; return; }
   elOffsetsEditor.innerHTML = "";
 
   if (!state.dateOffsetsLoaded && state.dateOffsets.length === 0) {
     const note = document.createElement("div");
-    note.className = "muted";
+    note.className = "muted dateOffsetsEditor__empty";
     note.textContent = t("offsets.empty");
     elOffsetsEditor.appendChild(note);
+    finishResize();
     return;
   }
 
   state.dateOffsets.forEach((o, idx) => {
-    const card = document.createElement("div");
-    card.className = "card";
+    const item = document.createElement("div");
+    item.className = "dateOffsetItem";
 
     const head = document.createElement("div");
-    head.className = "card__head";
-    const titleWrap = document.createElement("div");
-    titleWrap.className = "dateOffsetName";
-    titleWrap.appendChild(inputText(o.name, (value) => {
+    head.className = "dateOffsetItem__header";
+    const nameInput = inputText(o.name, (value) => {
       if (value === o.name) return;
       pushHistory();
       if (!renameDateOffset(o, value)) {
@@ -761,11 +1078,11 @@ function renderOffsetsEditor() {
         return;
       }
       renderAll();
-    }));
+    });
+    nameInput.classList.add("dateOffsetItem__name");
+    nameInput.setAttribute("aria-label", t("offsets.name"));
 
-    const actions = document.createElement("div");
-    actions.className = "smallRow";
-    const delBtn = createPanelActionButton("md-outlined-button", t("common.delete"), () => {
+    const delBtn = createPanelActionButton("md-outlined-button", "", () => {
       pushHistory();
       state.dateOffsets.splice(idx, 1);
       state.dateOffsetsDirty = true;
@@ -773,15 +1090,21 @@ function renderOffsetsEditor() {
       renderSelectionPanels();
       refreshCanvasPreviews();
     });
-    actions.appendChild(delBtn);
+    delBtn.classList.add("btn--danger", "dateOffsetItem__delete");
+    delBtn.setAttribute("aria-label", `${t("offsets.delete")}: ${o.name}`);
+    const deleteIcon = document.createElement("img");
+    deleteIcon.className = "iconButton__icon";
+    deleteIcon.src = "./resourses/Icons/delete_24dp.svg";
+    deleteIcon.alt = "";
+    deleteIcon.setAttribute("aria-hidden", "true");
+    delBtn.appendChild(deleteIcon);
 
-    head.appendChild(titleWrap);
-    head.appendChild(actions);
-    card.appendChild(head);
-    card.appendChild(document.createElement("div")).className = "hr";
+    head.appendChild(nameInput);
+    head.appendChild(delBtn);
+    item.appendChild(head);
 
     const grid = document.createElement("div");
-    grid.className = "card__grid";
+    grid.className = "dateOffsetItem__grid";
 
     const inY = mkNum(o.default.y ?? 0, (v) => {
       pushHistory();
@@ -815,16 +1138,30 @@ function renderOffsetsEditor() {
     grid.appendChild(labeledMini(t("offsets.month"), inM));
     grid.appendChild(labeledMini(t("offsets.day"), inD));
 
-    card.appendChild(grid);
+    item.appendChild(grid);
 
     const current = getComputedDateOffsetCurrent(o);
-    const note = document.createElement("div");
-    note.className = "note";
-    note.textContent = t("offsets.current", { date: `${pad2(current.d)}.${pad2(current.m)}.${String(current.y)}` });
-    card.appendChild(note);
+    const result = document.createElement("div");
+    result.className = "dateOffsetItem__result";
+    const resultLabel = document.createElement("span");
+    resultLabel.className = "dateOffsetItem__resultLabel";
+    resultLabel.textContent = t("offsets.calculatedDate");
+    const calendarIcon = document.createElement("img");
+    calendarIcon.className = "iconButton__icon";
+    calendarIcon.src = "./resourses/Icons/calendar_month_24dp.svg";
+    calendarIcon.alt = "";
+    calendarIcon.setAttribute("aria-hidden", "true");
+    resultLabel.prepend(calendarIcon);
+    const resultValue = document.createElement("span");
+    resultValue.className = "dateOffsetItem__resultValue";
+    resultValue.textContent = `${pad2(current.d)}.${pad2(current.m)}.${String(current.y)}`;
+    result.appendChild(resultLabel);
+    result.appendChild(resultValue);
+    item.appendChild(result);
 
-    elOffsetsEditor.appendChild(card);
+    elOffsetsEditor.appendChild(item);
   });
+  finishResize();
 }
 
 // ---------- Selection / ops ----------
@@ -838,6 +1175,8 @@ function selectField(name, opts = {}) {
     renderFieldLists();
     return;
   }
+
+  if (state.fieldByName.has(name)) activateInspectorTab("object");
 
   if (!additive) {
     setSelectedNames([name], name);
@@ -910,8 +1249,11 @@ function renameField(field, nextNameRaw, input = null) {
     const dm = f.barcode?.dataMatrix;
     if (!dm) return;
     dm.segments.forEach(s => {
-      if (s.srcField === prevName) s.srcField = nextName;
+      if (s.srcField === prevName) {
+        s.srcField = nextName;
+      }
     });
+    synchronizeDataMatrixEditorState(f);
   });
 
   renderAll();
@@ -927,6 +1269,7 @@ function getNextDateOffsetName() {
 function createDateOffset(name = null, defaultOffset = null) {
   const nextName = name || getNextDateOffsetName();
   const offset = {
+    sourceName: null,
     name: nextName,
     default: {
       y: toInt(defaultOffset?.y, 0),
@@ -982,10 +1325,8 @@ function ensureCalculatedDateOffset(field, options = {}) {
 
   const existing = state.dateOffsets.find((offset) => offset.name === field.data.offsetRef);
   if (existing) return existing;
-  if (state.dateOffsets.length) {
-    field.data.offsetRef = state.dateOffsets[0].name;
-    return state.dateOffsets[0];
-  }
+  // Never silently bind an unresolved named reference to an unrelated offset.
+  if (field.data.offsetRef) return null;
 
   const created = createDateOffset();
   field.data.offsetRef = created.name;
@@ -1016,8 +1357,12 @@ function deleteSelected() {
     const dm = field.barcode?.dataMatrix;
     if (!dm) return;
     dm.segments.forEach((segment) => {
-      if (removed.has(segment.srcField)) segment.srcField = null;
+      if (removed.has(segment.srcField)) {
+        segment.srcField = null;
+        dm.structureDirty = true;
+      }
     });
+    synchronizeDataMatrixEditorState(field);
   });
 
   setSelectedNames([]);
@@ -1032,18 +1377,20 @@ function deleteSelected() {
 
 const FIELD_CATALOG = {
   GTIN: { id: "gtin", name: "GTIN", value: "00000000000000", mode: "user", maxChars: 14, printed: false },
+  GTIN2: { id: "gtin2", name: "GTIN2", value: "00000000000000", mode: "user", maxChars: 14, printed: false },
+  BOX_COUNTER: { id: "box_counter", name: "BOX_COUNTER", value: "00000", mode: "user", maxChars: 5, printed: false },
   KRIPTO: { id: "kripto", name: "KRIPTO", value: "0000", mode: "user", maxChars: 4, printed: false },
   KRIPTO2: { id: "kripto2", name: "KRIPTO2", value: "0".repeat(44), mode: "user", maxChars: 44, printed: false },
-  SN: { id: "sn", name: "SN", values: ["000000", "0000000000000"], mode: "user", maxCharsFromValue: true, printed: false },
-  "\u04211": { id: "c1", name: "\u04211", value: "~101", mode: "fixed", maxChars: 4, printed: false },
-  "\u04212": { id: "c2", name: "\u04212", value: "21", mode: "fixed", maxChars: 2, printed: false },
-  "\u04213": { id: "c3", name: "\u04213", values: ["~d02991", "~d02993"], mode: "fixed", maxChars: 7, printed: false },
+  SN: { id: "sn", name: "SN", values: ["000000", "0000000000000"], mode: "user", maxChars: null, printed: false },
+  C1: { id: "c1", name: "C1", value: "~101", mode: "fixed", maxChars: 4, printed: false },
+  C2: { id: "c2", name: "C2", value: "21", mode: "fixed", maxChars: 2, printed: false },
+  C3: { id: "c3", name: "C3", values: ["~d02991", "~d02993"], mode: "fixed", maxChars: 7, printed: false },
   C4: { id: "c4", name: "C4", value: "~d02992", mode: "fixed", maxChars: 7, printed: false },
   PRODUCT_DATE: { id: "product_date", name: "PRODUCT_DATE", value: "0000000000", mode: "user", maxChars: null, printed: true },
   PACKING_DATE: { id: "packing_date", name: "PACKING_DATE", value: "0000000000", mode: "user", maxChars: null, printed: true },
   EXPIRATION_DATE: { id: "expiration_date", name: "EXPIRATION_DATE", value: "0000000000", mode: "user", maxChars: null, printed: true },
-  PARTY: { id: "party", name: "PARTY", value: "00000", mode: "user", maxChars: null, printed: true },
-  R_NUM: { id: "r_num", name: "R_NUM", value: "00000", mode: "user", maxChars: null, printed: true },
+  PARTY: { id: "party", name: "PARTY", value: "00000000", mode: "user", maxChars: null, printed: true },
+  R_NUM: { id: "r_num", name: "R_NUM", value: "000", mode: "user", maxChars: null, printed: true },
   TEAM: { id: "team", name: "TEAM", value: "00", mode: "user", maxChars: null, printed: true },
   TIME: { id: "time", name: "TIME", value: "", mode: "printer-time", maxChars: null, printed: true }
 };
@@ -1158,32 +1505,46 @@ function resolveTextFieldPresetValue(preset) {
 
 function createBaseField(config = {}) {
   const fldType = config.fldType || "FixedText";
+  const pitch = normalizeTextPitchValue(config.pitch) ?? 10;
+  const defaultValue = String(config.value ?? "");
+  const defaultGeom = {
+    x: mmToInternal(2),
+    y: mmToInternal(2),
+    w: getClarisoftTextFieldWidthInternal(defaultValue, pitch, config.xMag),
+    h: getClarisoftTextFieldHeightInternal(pitch)
+  };
   return {
     sourceName: null,
     name: config.name || "Field",
     fldType,
     printed: config.printed !== false,
-    geom: config.geom ? { ...config.geom } : { x: mmToInternal(2), y: mmToInternal(2), w: mmToInternal(12), h: mmToInternal(4) },
-    ln: 1,
+    geom: config.geom ? { ...config.geom } : defaultGeom,
+    ln: config.ln ?? null,
     orientation: 0,
-    calcData: config.value || "",
+    calcData: defaultValue,
     data: {
       dataType: config.dataType ?? guessDataType(fldType),
-      defaultValue: config.value || "",
+      defaultValue,
       maxChars: config.maxChars ?? null,
-      fixedLen: false,
-      staticAttr: config.staticAttr ?? (fldType === "FixedText" ? null : "0"),
-      parseAttr: config.parseAttr ?? (["DateText", "TimeText", "OffsetDateText"].includes(fldType) ? "1" : null),
+      // ClariSoft fixtures distinguish user-entered fixed-length data from
+      // static text that merely has MaxNoOfChars. Never infer FixedLen from
+      // MaxNoOfChars alone.
+      fixedLen: config.fixedLen ?? (!!config.userEntered && config.maxChars != null),
+      staticAttr: config.staticAttr !== undefined ? config.staticAttr : (fldType === "FixedText" ? null : "0"),
+      parseAttr: config.parseAttr !== undefined ? config.parseAttr : (["DateText", "TimeText", "OffsetDateText"].includes(fldType) ? "1" : null),
+      referenceAttr: config.referenceAttr !== undefined ? config.referenceAttr : "",
+      srcData: config.srcData ? { ...config.srcData } : null,
       hasVarText: !!config.userEntered,
       textEntryMode: fldType === "FixedText" ? (config.userEntered ? "user" : "fixed") : null,
-      userEnterData: config.userEntered ? (config.value || "") : "",
+      userEnterData: config.userEntered ? defaultValue : "",
       mask: "",
       offsetRef: config.offsetRef || null,
       dateLocale: config.dateLocale ?? (["DateText", "OffsetDateText"].includes(fldType) ? "en" : null),
       counter: { noOfChars: null, significance: 0, startVal: null, endVal: null, stepSize: null, clrStCntType: "" }
     },
-    text: { pitch: config.pitch ?? 10, xMag: 100 },
+    text: { pitch, xMag: config.xMag ?? null },
     barcode: config.barcode || null,
+    ...(globalThis.glyphFonts?.render && fldType !== 'Barcode' ? { _nativeTextGeometryDirty: true } : {}),
     _konva: null
   };
 }
@@ -1214,18 +1575,19 @@ function createCurrentTimeField(config = {}) {
 
 function createTextFieldFromPreset(preset, value, stackIndex, position = null) {
   const isUserEntered = preset.mode === "user";
-  const maxChars = preset.maxCharsFromValue ? value.length : preset.maxChars;
+  const maxChars = getDataMatrixHelperMaxChars(preset.name, value) ?? preset.maxChars ?? null;
+  const pitch = 10;
   const geom = {
     x: position?.x ?? mmToInternal(2),
     y: (position?.y ?? mmToInternal(2)) + mmToInternal(stackIndex * 5),
-    w: mmToInternal(12),
-    h: mmToInternal(4)
+    w: getClarisoftTextFieldWidthInternal(value, pitch),
+    h: getClarisoftTextFieldHeightInternal(pitch)
   };
-  applyNewFieldPlacementToGeom(geom, { x: geom.x, y: geom.y });
-
-  return (isUserEntered ? createServerVariableField : createFixedTextField)({
-    name: preset.name, value, printed: preset.printed, maxChars, geom
+  const field = (isUserEntered ? createServerVariableField : createFixedTextField)({
+    name: preset.name, value, printed: preset.printed, maxChars, pitch, geom
   });
+  applyNewFieldPlacementToGeom(field.geom, { x: geom.x, y: geom.y }, field);
+  return field;
 }
 
 function addSelectedTextFieldPresets() {
@@ -1277,6 +1639,7 @@ function addResolvedTextFieldPresetsAt(resolved, position) {
 
   const createdNames = createdFields.map((field) => field.name);
   setSelectedNames(createdNames, createdNames[createdNames.length - 1]);
+  if (createdNames.length) activateInspectorTab("object");
   renderAll();
   appLogger.action("TEXT_PRESET_FIELDS_ADDED", "Группа готовых текстовых полей добавлена в шаблон.", {
     count: createdFields.length,
@@ -1316,6 +1679,12 @@ function syncDataMatrixModalControls() {
   if (!elDataMatrixModal) return;
   const symbolSize = elNewDataMatrixSymbolSize?.value ?? "";
   const snValue = elNewDataMatrixSnValue?.value ?? "";
+  const snLength = String(snValue) === "0000000000000" ? "13" : "6";
+  elDataMatrixModal.querySelectorAll("[data-dm-sn-length]").forEach((button) => {
+    const isActive = button.dataset.dmSnLength === snLength;
+    button.classList.toggle("fieldFilter__button--active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
   if (elBtnConfirmDataMatrix) elBtnConfirmDataMatrix.disabled = !symbolSize || !snValue;
   setDataMatrixModalError();
 }
@@ -1333,8 +1702,7 @@ function openDataMatrixModal() {
     syncCustomSelectControl(elNewDataMatrixSymbolSize);
   }
   if (elNewDataMatrixSnValue) {
-    elNewDataMatrixSnValue.value = "";
-    syncCustomSelectControl(elNewDataMatrixSnValue);
+    elNewDataMatrixSnValue.value = "000000";
   }
   syncDataMatrixModalControls();
   elDataMatrixModal.classList.remove("hidden");
@@ -1372,6 +1740,7 @@ function configureDataMatrixUserField(name, fallbackValue, maxChars, options = {
   ensureFieldExists(name, null);
   const field = state.fieldByName.get(name);
   if (!field) return null;
+  const spec = DM_HELPER_SPECS[name] || null;
 
   const currentValue = getStoredTextFieldValue(field);
   const nextValue = options.forceValue || !currentValue ? String(fallbackValue) : currentValue;
@@ -1380,18 +1749,24 @@ function configureDataMatrixUserField(name, fallbackValue, maxChars, options = {
   field.calcData = nextValue;
   field.data.dataType = 0;
   field.data.defaultValue = nextValue;
-  field.data.maxChars = maxChars;
-  field.data.fixedLen = false;
+  const partyHelper = state.fields.some((candidate) => (
+    getDataMatrixFieldComposition(candidate).startsWith("party")
+    && candidate.barcode?.dataMatrix?.segments?.some((segment) => segment.srcField === name)
+  ));
+  if (field.sourceName == null && !partyHelper) field.data.maxChars = getDataMatrixHelperMaxChars(name, nextValue);
+  field.data.editorMaxChars = maxChars ?? spec?.editorMaxChars ?? null;
+  field.data.fixedLen = field.data.maxChars != null;
   field.data.staticAttr = "0";
   field.data.parseAttr = null;
   field.data.hasVarText = true;
   field.data.textEntryMode = "user";
   field.data.userEnterData = nextValue;
   field.data.mask = "";
+  synchronizeDependentDataMatrices(name);
   return field;
 }
 
-function applyNewFieldPlacementToGeom(geom, position) {
+function applyNewFieldPlacementToGeom(geom, position, field = null) {
   if (!geom || !position) return geom;
 
   let x = Number(position.x);
@@ -1402,6 +1777,13 @@ function applyNewFieldPlacementToGeom(geom, position) {
     const snapStep = Math.max(1, mmToInternal(SNAP_MM));
     x = Math.round(x / snapStep) * snapStep;
     y = Math.round(y / snapStep) * snapStep;
+  }
+
+  if (field) {
+    const constrained = constrainFieldPositionInternal(field, x, y);
+    geom.x = constrained.x;
+    geom.y = constrained.y;
+    return geom;
   }
 
   const maxX = Math.max(0, getCanvasInternalWidth() - geom.w);
@@ -1429,16 +1811,21 @@ function addField(fldType, options = {}) {
     return;
   }
 
+  if (fldType === "Barcode") {
+    const requestedSymbolSize = normalizeDataMatrixSymbolSizeValue(options.symbolSize, "22X22");
+    if (!ensureDataMatrixCompositionCompatible(null, getDataMatrixComposition(requestedSymbolSize))) return;
+  }
+
   pushHistory();
 
   const existingNames = state.fields.map(f => f.name);
-  const base = fldType === "Barcode" ? "FieldDM" : "Field";
-  const name = uniqueName(base, existingNames);
+  const name = getNextClarisoftFieldName(existingNames);
+  const insertionIndex = state.fields.length;
 
   const geom = { x: mmToInternal(2), y: mmToInternal(2), w: mmToInternal(12), h: mmToInternal(4) };
   if (fldType === "Barcode") { geom.w = mmToInternal(12); geom.h = mmToInternal(12); }
 
-  const field = createBaseField({ name, fldType, geom });
+  const field = createBaseField({ name, fldType, geom, ln: fldType === "Barcode" ? 1 : null });
   if (fldType === "CounterText") {
     field.data.counter = { noOfChars: 4, significance: 0, startVal: "1", endVal: "9999", stepSize: 1, clrStCntType: "" };
   }
@@ -1459,10 +1846,17 @@ function addField(fldType, options = {}) {
     field.barcode = {
       clsid: "{7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F}",
       quietMargin: 0,
-      bcH: field.geom.h,
-      dataMatrix: { moduleSize: 0.50, symbolSize, segments: [] }
+      bcH: null,
+      dataMatrix: { moduleSize: 0.50, symbolSize, segments: [], structureDirty: true }
     };
-    applyDmComposition(field, composition, { purgeDisallowedFields: false });
+    if (!applyDmComposition(field, composition, {
+      purgeDisallowedFields: false,
+      notifyOnConflict: false
+    })) {
+      history.undo.pop();
+      updateUndoRedoButtons();
+      return;
+    }
     field.barcode.dataMatrix.symbolSize = symbolSize;
 
     configureDataMatrixUserField("GTIN", "0".repeat(14), 14);
@@ -1470,16 +1864,15 @@ function addField(fldType, options = {}) {
     configureDataMatrixUserField("KRIPTO", "0".repeat(4), 4);
     if (composition === "long") configureDataMatrixUserField("KRIPTO2", "0".repeat(44), 44);
 
-    field.barcode.dataMatrix.segments.forEach((segment) => {
-      const sourceField = state.fieldByName.get(segment.srcField);
-      if (sourceField) segment.defaultValue = getStoredTextFieldValue(sourceField);
-    });
+    synchronizeDataMatrixEditorState(field);
     syncDataMatrixGeomToModuleSize(field);
+    updateDataMatrixBcHFromSettings(field);
   }
 
-  applyNewFieldPlacementToGeom(field.geom, options.position);
-  state.fields.push(field);
+  applyNewFieldPlacementToGeom(field.geom, options.position, field);
+  state.fields.splice(insertionIndex, 0, field);
   state.fieldByName.set(field.name, field);
+  if (field.barcode?.dataMatrix) synchronizeDataMatrixEditorState(field);
 
   selectField(field.name);
   renderAll();
@@ -1513,26 +1906,84 @@ function addField(fldType, options = {}) {
 // ---------- DM profile apply/validate ----------
 function applyDmProfile(dmField, profileName, options = {}) {
   const symbolSize = normalizeDataMatrixSymbolSizeValue(profileName, dmField?.barcode?.dataMatrix?.symbolSize || "22X22");
-  const composition = DM_PROFILES[symbolSize]
-    ? getDataMatrixComposition(DM_PROFILES[symbolSize].symbolSize)
-    : getDataMatrixComposition(symbolSize);
+  const composition = getDataMatrixFieldComposition(dmField, symbolSize);
+  if (composition === "party" || composition === "party-box") {
+    if (!ensureDataMatrixCompositionCompatible(dmField, composition, options)) return false;
+    // Symbol size is independent of a batch-code recipe. Preserve imported
+    // helpers, order, lengths and legacy C5 references rather than rebuilding.
+    dmField.barcode.dataMatrix.symbolSize = symbolSize;
+    return true;
+  }
+  if (!applyDmComposition(dmField, composition, options)) return false;
   if (dmField?.barcode?.dataMatrix) dmField.barcode.dataMatrix.symbolSize = symbolSize;
-  applyDmComposition(dmField, composition, options);
+  return true;
+}
+
+function applyDataMatrixProfileSettings(dmField, profileName, options = {}) {
+  if (!applyDmProfile(dmField, profileName, options)) return false;
+  syncDataMatrixGeomToModuleSize(dmField);
+  updateDataMatrixBcHFromSettings(dmField);
+  return true;
 }
 
 function applyDmComposition(dmField, compositionName, options = {}) {
-  const profile = DM_COMPOSITIONS[compositionName];
-  if (!profile) return;
+  let profile = DM_COMPOSITIONS[compositionName];
+  if (!profile) return false;
   const dm = dmField.barcode?.dataMatrix;
-  if (!dm) return;
+  if (!dm) return false;
+  if (["party", "party-box"].includes(compositionName) && dm.segments.some((segment) => segment.srcField === "GTIN") && !dm.segments.some((segment) => segment.srcField === "GTIN2")) {
+    profile = getPartyCodeComposition(compositionName === "party-box", "GTIN");
+  }
   const actualSymbolSize = dm.symbolSize;
+
+  // Canonical short and long recipes share helper names, but C3 has a
+  // different fixed value. Allowing both compositions to mutate the same
+  // helper bundle would silently invalidate whichever DataMatrix was updated
+  // first. Until CIFF evidence defines a canonical per-barcode helper naming
+  // scheme, reject that ambiguous edit before touching any shared state.
+  if (!ensureDataMatrixCompositionCompatible(dmField, compositionName, options)) return false;
+
+  const namesBefore = new Set(state.fields.map((field) => field.name));
+  const reusableLegacyNames = new Set(profile.requiredSegments.filter((canonicalName) => {
+    const legacyName = DM_LEGACY_HELPER_ALIASES[canonicalName];
+    return legacyName && !state.fieldByName.has(canonicalName) && state.fieldByName.has(legacyName);
+  }));
+  const unavailableNames = profile.requiredSegments.filter((fname) => {
+    if (reusableLegacyNames.has(fname)) return false;
+    return !ensureFieldExists(fname, profile.fixedFields?.[fname] ?? null, { spec: profile.helperSpecs?.[fname] });
+  });
+  if (unavailableNames.length) {
+    const newlyCreatedNames = state.fields
+      .filter((field) => !namesBefore.has(field.name))
+      .map((field) => field.name);
+    purgeFieldsFromTemplate(newlyCreatedNames);
+    openNotificationModal(
+      t("dialog.hiddenFieldSpace.message", { names: unavailableNames.join(", ") }),
+      t("dialog.hiddenFieldSpace.title")
+    );
+    return false;
+  }
+
+  // Perform legacy alias migration only after every other required helper has
+  // been allocated successfully. A SrcFieldName-only rename can be patched
+  // non-invasively, so unrelated imported DataMatrix blocks stay lossless.
+  if (reusableLegacyNames.size) migrateLegacyDataMatrixHelperNames(profile);
 
   if (profile.disallowedFields?.length) {
     dm.segments = dm.segments.filter(s => !profile.disallowedFields.includes(s.srcField));
-    if (options.purgeDisallowedFields !== false) purgeFieldsFromTemplate(profile.disallowedFields);
+    if (options.purgeDisallowedFields !== false) {
+      const referencedByOtherDataMatrices = new Set();
+      state.fields.forEach((field) => {
+        if (field === dmField) return;
+        field.barcode?.dataMatrix?.segments?.forEach((segment) => {
+          if (segment.srcField) referencedByOtherDataMatrices.add(segment.srcField);
+        });
+      });
+      purgeFieldsFromTemplate(
+        profile.disallowedFields.filter((name) => !referencedByOtherDataMatrices.has(name))
+      );
+    }
   }
-
-  profile.requiredSegments.forEach((fname) => ensureFieldExists(fname, profile.fixedFields?.[fname] ?? null));
 
   const newSegs = [];
   profile.requiredSegments.forEach((fname, idx) => {
@@ -1547,6 +1998,7 @@ function applyDmComposition(dmField, compositionName, options = {}) {
 
   dm.segments = newSegs;
   normalizeDmSegments(dm);
+  dm.structureDirty = true;
 
   if (profile.fixedFields) {
     Object.entries(profile.fixedFields).forEach(([fname, value]) => {
@@ -1565,13 +2017,85 @@ function applyDmComposition(dmField, compositionName, options = {}) {
     });
   }
   dm.symbolSize = actualSymbolSize;
+  synchronizeDataMatrixEditorState(dmField);
+  return true;
+}
+
+function getConflictingDataMatrixFields(dmField, compositionName) {
+  return state.fields.filter((field) => {
+    if (field === dmField || !field?.barcode?.dataMatrix) return false;
+    const otherComposition = getDataMatrixFieldComposition(field);
+    if (["party", "party-box"].includes(otherComposition) && ["party", "party-box"].includes(compositionName)) return false;
+    return otherComposition !== compositionName;
+  });
+}
+
+function ensureDataMatrixCompositionCompatible(dmField, compositionName, options = {}) {
+  const conflictingDataMatrices = getConflictingDataMatrixFields(dmField, compositionName);
+  if (conflictingDataMatrices.length) {
+    if (options.notifyOnConflict !== false) {
+      openNotificationModal(
+        t("dialog.dataMatrix.compositionConflictMessage", {
+          names: conflictingDataMatrices.map((field) => field.name).join(", ")
+        }),
+        t("dialog.dataMatrix.compositionConflictTitle")
+      );
+    }
+    return false;
+  }
+  return true;
+}
+
+function migrateLegacyDataMatrixHelperNames(profile) {
+  const aliasesToMigrate = profile?.requiredSegments
+    ?.map((canonicalName) => ({ canonicalName, legacyName: DM_LEGACY_HELPER_ALIASES[canonicalName] }))
+    .filter(({ canonicalName, legacyName }) => (
+      legacyName && !state.fieldByName.has(canonicalName) && state.fieldByName.has(legacyName)
+    )) ?? [];
+  if (!aliasesToMigrate.length) return false;
+
+  const aliasMap = new Map(aliasesToMigrate.map(({ legacyName, canonicalName }) => [legacyName, canonicalName]));
+  aliasesToMigrate.forEach(({ legacyName, canonicalName }) => {
+    const legacyField = state.fieldByName.get(legacyName);
+    legacyField.name = canonicalName;
+    state.fieldByName.delete(legacyName);
+    state.fieldByName.set(canonicalName, legacyField);
+  });
+  if (aliasMap.has(state.selectedName)) state.selectedName = aliasMap.get(state.selectedName);
+  if (Array.isArray(state.selectedNames)) {
+    state.selectedNames = state.selectedNames.map((name) => aliasMap.get(name) ?? name);
+  }
+
+  state.fields.forEach((field) => {
+    const dataMatrix = field.barcode?.dataMatrix;
+    if (!dataMatrix) return;
+    let changed = false;
+    dataMatrix.segments.forEach((segment) => {
+      const canonicalName = aliasMap.get(segment.srcField);
+      if (!canonicalName) return;
+      segment.srcField = canonicalName;
+      changed = true;
+    });
+    if (changed) synchronizeDataMatrixEditorState(field);
+  });
+  return true;
 }
 
 function validateDmProfile(dmField, symbolSize) {
-  const p = DM_COMPOSITIONS[getDataMatrixComposition(symbolSize)];
+  const composition = getDataMatrixFieldComposition(dmField, symbolSize);
+  let p = DM_COMPOSITIONS[composition];
   if (!p) return [];
   const dm = dmField.barcode?.dataMatrix;
   if (!dm) return ["No DataMatrix node."];
+  if (["party", "party-box"].includes(composition) && dm.segments.some((segment) => segment.srcField === "GTIN") && !dm.segments.some((segment) => segment.srcField === "GTIN2")) {
+    p = getPartyCodeComposition(composition === "party-box", "GTIN");
+  }
+  if (composition === "party-box" && !dm.segments.some((segment) => segment.srcField === "C4") && dm.segments.some((segment) => segment.srcField === "C5")) {
+    // The user-provided original calls the barcode C4 and its final helper C5.
+    // Accept that reference in place without renaming the imported document.
+    p = { ...p, requiredSegments: p.requiredSegments.map((name) => name === "C4" ? "C5" : name),
+      fixedFields: Object.fromEntries(Object.entries(p.fixedFields).map(([name, value]) => [name === "C4" ? "C5" : name, value])) };
+  }
 
   const errors = [];
   for (const s of p.requiredSegments) if (!dm.segments.find(x => x.srcField === s)) errors.push(`Missing segment SrcFieldName="${s}"`);
@@ -1581,13 +2105,21 @@ function validateDmProfile(dmField, symbolSize) {
       const f = state.fieldByName.get(fname);
       if (!f) { errors.push(`Missing fixed field "${fname}"`); continue; }
       if ((f.data.defaultValue ?? "") !== value) errors.push(`Field "${fname}" must be "${value}", got "${f.data.defaultValue ?? ""}"`);
-    }
   }
+}
+  validateDataMatrixDerivedState(dmField, state.fieldByName).forEach((issue) => {
+    if (issue.code === "missing-source") errors.push(`Missing segment SrcFieldName="${issue.sourceName}"`);
+    if (issue.code === "segment-default") errors.push(`Segment "${issue.sourceName}" Default must be "${issue.expected}", got "${issue.actual}"`);
+    if (issue.code === "segment-index") errors.push(`Segment #${issue.index} has Index="${issue.actual}", expected "${issue.expected}"`);
+    if (issue.code === "calc-data") errors.push(`DataMatrix CalcData must be "${issue.expected}", got "${issue.actual}"`);
+  });
   return errors;
 }
 
 function purgeFieldsFromTemplate(names) {
-  const namesToRemove = [...new Set((names || []).filter(Boolean))];
+  const namesToRemove = [...new Set((names || []).filter((name) => (
+    !!name && state.fieldByName.has(name)
+  )))];
   if (!namesToRemove.length) return;
 
   const removed = new Set(namesToRemove);
@@ -1597,8 +2129,12 @@ function purgeFieldsFromTemplate(names) {
   state.fields.forEach(f => {
     const dm = f.barcode?.dataMatrix;
     if (!dm) return;
-    dm.segments = dm.segments.filter(s => !removed.has(s.srcField));
+    const retainedSegments = dm.segments.filter(s => !removed.has(s.srcField));
+    if (retainedSegments.length === dm.segments.length) return;
+    dm.segments = retainedSegments;
     normalizeDmSegments(dm);
+    dm.structureDirty = true;
+    synchronizeDataMatrixEditorState(f);
   });
 
   if (state.selectedName && removed.has(state.selectedName)) state.selectedName = null;
@@ -1608,64 +2144,71 @@ function purgeFieldsFromTemplate(names) {
   setSelectedNames(state.selectedNames, state.selectedName);
 }
 
-function getAutoHiddenFieldGeom() {
-  const columnXmm = internalToMm(getCanvasInternalWidth() || mmToInternal(32.67)) + 1.5;
-  const baseYmm = 1.0;
-  const gapYmm = 1.0;
-  const widthMm = 10;
-  const heightMm = 3;
-  let nextYmm = baseYmm;
-
-  state.fields
-    .filter((field) => !field.printed && Math.abs(internalToMm(field.geom.x) - columnXmm) <= 2)
-    .forEach((field) => {
-      const fieldBottomMm = internalToMm(field.geom.y) + internalToMm(field.geom.h) + gapYmm;
-      if (fieldBottomMm > nextYmm) nextYmm = fieldBottomMm;
-    });
-
-  return {
-    x: mmToInternal(columnXmm),
-    y: mmToInternal(nextYmm),
-    w: mmToInternal(widthMm),
-    h: mmToInternal(heightMm)
-  };
-}
-
-function ensureFieldExists(name, fixedValueOrNull) {
-  if (state.fieldByName.has(name)) return;
-
-  const geom = getAutoHiddenFieldGeom();
-  const autoValue = fixedValueOrNull ?? (name === "GTIN" ? "00000000000000" : "");
-  const f = {
-    sourceName: null,
-    name,
+function getAutoHiddenFieldGeom(field = null) {
+  const fallbackGeom = { x: 0, y: 0, w: mmToInternal(10), h: getClarisoftTextFieldHeightInternal(10) };
+  const candidate = field || {
+    name: "__AUTO_HIDDEN__",
     fldType: "FixedText",
     printed: false,
-    geom,
-    ln: 1,
     orientation: 0,
-    calcData: autoValue,
-    data: {
-      dataType: 0,
-      defaultValue: autoValue,
-      maxChars: autoValue ? autoValue.length : null,
-      fixedLen: false,
-      staticAttr: null,
-      parseAttr: null,
-      hasVarText: false,
-      textEntryMode: "fixed",
-      userEnterData: "",
-      mask: "",
-      offsetRef: null,
-      counter: { noOfChars: null, significance: 0 }
-    },
-    text: { pitch: 8, xMag: 100 },
+    geom: fallbackGeom,
+    calcData: "",
+    data: { defaultValue: "", userEnterData: "", textEntryMode: "fixed" },
+    text: { pitch: 10, xMag: null },
     barcode: null,
     _konva: null
   };
+  if (typeof findHiddenFieldEditingPlacementInternal !== "function") return null;
+  return findHiddenFieldEditingPlacementInternal(candidate, state.fields, {
+    canvasWidth: getCanvasInternalWidth()
+  });
+}
+
+function ensureFieldExists(name, fixedValueOrNull, options = {}) {
+  if (state.fieldByName.has(name)) return true;
+
+  const spec = options.spec || DM_HELPER_SPECS[name] || FIELD_CATALOG[name] || { mode: fixedValueOrNull == null ? "user" : "fixed", defaultValue: "", maxChars: null, pitch: 10 };
+  const autoValue = String(fixedValueOrNull ?? spec.defaultValue ?? spec.value ?? "");
+  const pitch = spec.pitch ?? 10;
+  const geom = {
+    x: 0,
+    y: 0,
+    w: getClarisoftTextFieldWidthInternal(autoValue, pitch),
+    h: getClarisoftTextFieldHeightInternal(pitch)
+  };
+  const factory = spec.mode === "user" ? createServerVariableField : createFixedTextField;
+  const f = factory({
+    name,
+    ln: 1, // Established DataMatrix helper recipe; generic text keeps Ln optional.
+    value: autoValue,
+    printed: false,
+    maxChars: options.spec?.maxChars ?? getDataMatrixHelperMaxChars(name, autoValue) ?? spec.maxChars ?? null,
+    pitch,
+    xMag: null,
+    geom
+  });
+  f.data.editorMaxChars = spec.editorMaxChars ?? null;
+
+  const placementGeom = getAutoHiddenFieldGeom(f);
+  if (!placementGeom) {
+    const errorCode = `hidden-field-space:${name}`;
+    state.validation = {
+      ...(state.validation || {}),
+      invalidPrintableFieldNames: state.validation?.invalidPrintableFieldNames || [],
+      invalidHardwareFieldNames: state.validation?.invalidHardwareFieldNames || [],
+      structuralErrors: [...new Set([...(state.validation?.structuralErrors || []), errorCode])]
+    };
+    return false;
+  }
+  f.geom = placementGeom;
+  if (state.validation?.structuralErrors) {
+    state.validation.structuralErrors = state.validation.structuralErrors
+      .filter((error) => error !== `hidden-field-space:${name}`);
+  }
 
   state.fields.push(f);
   state.fieldByName.set(name, f);
+  return true;
 }
 
 function normalizeDmSegments(dm) {
@@ -1681,4 +2224,6 @@ globalThis.createPrinterInputField = createPrinterInputField;
 globalThis.createCurrentDateField = createCurrentDateField;
 globalThis.createOffsetDateField = createOffsetDateField;
 globalThis.createCurrentTimeField = createCurrentTimeField;
+globalThis.applyTextPitchChange = applyTextPitchChange;
+globalThis.applyTextResizeTransform = applyTextResizeTransform;
 globalThis.applyDmComposition = applyDmComposition;

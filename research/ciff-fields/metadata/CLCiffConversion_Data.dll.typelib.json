@@ -1,0 +1,389 @@
+{
+  "file": "CLCiffConversion_Data.dll",
+  "name": "CLCIFFCONVERSION_DATALib",
+  "types": [
+    {
+      "index": 0,
+      "name": "CiffConversion_Data",
+      "documentation": "Claricom CiffConversion_Data Class",
+      "guid": "{A767401C-7615-474B-B683-7DF118556416}",
+      "guidLocations": [
+        "4503f938",
+        "45057b24"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "ICiffConversion_Data",
+          "guid": "{E393E546-72FF-46EF-AB50-D84C53CC4346}"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "ICiffConversion_Data",
+      "documentation": "ICiffConversion_Data Interface",
+      "guid": "{E393E546-72FF-46EF-AB50-D84C53CC4346}",
+      "guidLocations": [
+        "4503f768",
+        "4503f918",
+        "45057b6c"
+      ],
+      "kind": 4,
+      "functions": [
+        {
+          "name": "QueryInterface",
+          "names": [
+            "QueryInterface",
+            "riid",
+            "ppvObj"
+          ],
+          "memid": 1610612736,
+          "invkind": 1,
+          "vtableOffset32": 0,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "AddRef",
+          "names": [
+            "AddRef"
+          ],
+          "memid": 1610612737,
+          "invkind": 1,
+          "vtableOffset32": 4,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "Release",
+          "names": [
+            "Release"
+          ],
+          "memid": 1610612738,
+          "invkind": 1,
+          "vtableOffset32": 8,
+          "documentation": null,
+          "returnType": {
+            "vt": 19
+          },
+          "parameters": []
+        },
+        {
+          "name": "GetTypeInfoCount",
+          "names": [
+            "GetTypeInfoCount",
+            "pctinfo"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTypeInfo",
+          "names": [
+            "GetTypeInfo",
+            "itinfo",
+            "lcid",
+            "pptinfo"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 24
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetIDsOfNames",
+          "names": [
+            "GetIDsOfNames",
+            "riid",
+            "rgszNames",
+            "cNames",
+            "lcid",
+            "rgdispid"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 16
+                  }
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 23
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Invoke",
+          "names": [
+            "Invoke",
+            "dispidMember",
+            "riid",
+            "lcid",
+            "wFlags",
+            "pdispparams",
+            "pvarResult",
+            "pexcepinfo",
+            "puArgErr"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": null,
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 18
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "DISPPARAMS"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "EXCEPINFO"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 23
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Convert",
+          "names": [
+            "Convert",
+            "vtCiffFile"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 28,
+          "documentation": "method Convert",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 3
+            }
+          ]
+        },
+        {
+          "name": "Parameter",
+          "names": [
+            "Parameter",
+            "vtParameter",
+            "vtValue"
+          ],
+          "memid": 2,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "method Parameter",
+          "returnType": {
+            "vt": 24
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 3
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDispatch",
+          "guid": "{00020400-0000-0000-C000-000000000046}"
+        }
+      ]
+    }
+  ]
+}

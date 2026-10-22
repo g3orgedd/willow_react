@@ -1,0 +1,23 @@
+4542f9c7 PUSH EBP
+4542f9c8 MOV EBP,ESP
+4542f9ca ADD ESP,-0x20
+4542f9cd MOV dword ptr [EBP + -0x20],EAX
+4542f9d0 FSTP double ptr [EBP + -0x8]
+4542f9d3 MOV dword ptr [EBP + -0x1c],ECX
+4542f9d6 MOV EAX,dword ptr [EBP + 0x10]
+4542f9d9 MOV ECX,dword ptr [EBP + 0x14]
+4542f9dc MOV dword ptr [EBP + -0x18],EAX
+4542f9df MOV dword ptr [EBP + -0x14],ECX
+4542f9e2 LEA EAX,[EBP + 0x8]
+4542f9e5 LEA ECX,[EBP + -0x20]
+4542f9e8 PUSH EAX
+4542f9e9 PUSH ECX
+4542f9ea PUSH EDX
+4542f9eb CALL 0x4543aa6a
+4542f9f0 ADD ESP,0xc
+4542f9f3 FLD double ptr [EBP + -0x8]
+4542f9f6 CMP word ptr [EBP + 0x8],0x27f
+4542f9fc JZ 0x4542fa01
+4542f9fe FLDCW word ptr [EBP + 0x8]
+4542fa01 LEAVE
+4542fa02 RET

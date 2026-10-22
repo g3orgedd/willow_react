@@ -1,0 +1,26 @@
+41407b94 XOR EDX,EDX
+41407b96 XOR EAX,EAX
+41407b98 PUSH ESI
+41407b99 MOV ESI,ECX
+41407b9b PUSH 0x7
+41407b9d POP ECX
+41407b9e MOV dword ptr [ESI],0x41480e90
+41407ba4 MOV dword ptr [ESI + 0x4],EDX
+41407ba7 MOV dword ptr [ESI + 0x1c],ECX
+41407baa MOV dword ptr [ESI + 0x18],EDX
+41407bad MOV word ptr [ESI + 0x8],AX
+41407bb1 MOV dword ptr [ESI + 0x38],EDX
+41407bb4 MOV dword ptr [ESI + 0x3c],EDX
+41407bb7 MOV dword ptr [ESI + 0x54],ECX
+41407bba MOV dword ptr [ESI + 0x50],EDX
+41407bbd MOV word ptr [ESI + 0x40],AX
+41407bc1 MOV dword ptr [ESI + 0x6c],ECX
+41407bc4 MOV ECX,ESI
+41407bc6 MOV dword ptr [ESI + 0x68],EDX
+41407bc9 MOV word ptr [ESI + 0x58],AX
+41407bcd MOV dword ptr [ESI + 0x94],EDX
+41407bd3 MOV dword ptr [ESI + 0x130],EDX
+41407bd9 CALL 0x414093eb
+41407bde MOV EAX,ESI
+41407be0 POP ESI
+41407be1 RET

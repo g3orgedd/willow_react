@@ -1,0 +1,102 @@
+[
+  {
+    "name": "TNR_Text",
+    "nativeBitmap": "native-web/web-clarisoft-TNR_Text.png",
+    "referenceBitmap": "web-printer-TNR_Text.png",
+    "capturedBitmap": "web-printer-TNR_Text.png",
+    "orientation": 0,
+    "payload": "Abc 0123 АБВГ",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  },
+  {
+    "name": "Arial_Bold",
+    "nativeBitmap": "native-web/web-clarisoft-Arial_Bold.png",
+    "referenceBitmap": "web-printer-Arial_Bold.png",
+    "capturedBitmap": "web-printer-Arial_Bold.png",
+    "orientation": 0,
+    "payload": "Bold 012 АБВ",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  },
+  {
+    "name": "Courier_XMag",
+    "nativeBitmap": "native-web/web-clarisoft-Courier_XMag.png",
+    "referenceBitmap": "web-printer-Courier_XMag.png",
+    "capturedBitmap": "web-printer-Courier_XMag.png",
+    "orientation": 0,
+    "payload": "Wide 0123",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  },
+  {
+    "name": "Tahoma_Date",
+    "nativeBitmap": "native-web/web-clarisoft-Tahoma_Date.png",
+    "referenceBitmap": "web-printer-Tahoma_Date.png",
+    "capturedBitmap": "web-printer-Tahoma_Date.png",
+    "orientation": 0,
+    "payload": "20/10/26",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  },
+  {
+    "name": "Segoe_Offset",
+    "nativeBitmap": "native-web/web-clarisoft-Segoe_Offset.png",
+    "referenceBitmap": "web-printer-Segoe_Offset.png",
+    "capturedBitmap": "web-printer-Segoe_Offset.png",
+    "orientation": 0,
+    "payload": "20/10/26",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  },
+  {
+    "name": "Narrow_Time",
+    "nativeBitmap": "native-web/web-clarisoft-Narrow_Time.png",
+    "referenceBitmap": "native-web/glyph-current-payload-Narrow_Time.png",
+    "capturedBitmap": "web-printer-Narrow_Time.png",
+    "orientation": 0,
+    "payload": "23:29",
+    "clockAdvanced": true,
+    "referenceKind": "separate-regenerated-current-runtime-payload"
+  },
+  {
+    "name": "OCRB_Counter",
+    "nativeBitmap": "native-web/web-clarisoft-OCRB_Counter.png",
+    "referenceBitmap": "web-printer-OCRB_Counter.png",
+    "capturedBitmap": "web-printer-OCRB_Counter.png",
+    "orientation": 0,
+    "payload": "0001",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  },
+  {
+    "name": "TNR_Rot90",
+    "nativeBitmap": "native-web/web-clarisoft-TNR_Rot90.png",
+    "referenceBitmap": "web-printer-TNR_Rot90.png",
+    "capturedBitmap": "web-printer-TNR_Rot90.png",
+    "orientation": 90,
+    "payload": "Rot 90",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  },
+  {
+    "name": "Courier_Rot180",
+    "nativeBitmap": "native-web/web-clarisoft-Courier_Rot180.png",
+    "referenceBitmap": "web-printer-Courier_Rot180.png",
+    "capturedBitmap": "web-printer-Courier_Rot180.png",
+    "orientation": 180,
+    "payload": "Rot 180",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  },
+  {
+    "name": "Tahoma_Rot270",
+    "nativeBitmap": "native-web/web-clarisoft-Tahoma_Rot270.png",
+    "referenceBitmap": "web-printer-Tahoma_Rot270.png",
+    "capturedBitmap": "web-printer-Tahoma_Rot270.png",
+    "orientation": 270,
+    "payload": "Rot 270",
+    "clockAdvanced": false,
+    "referenceKind": "original-captured-printer-bitmap"
+  }
+]

@@ -1,0 +1,16 @@
+6810bba3 PUSH EBP
+6810bba4 MOV EBP,ESP
+6810bba6 MOV EAX,dword ptr [EBP + 0xc]
+6810bba9 MUL dword ptr [EBP + 0x10]
+6810bbac TEST EDX,EDX
+6810bbae JNZ 0x6810bbbe
+6810bbb0 CMP EAX,-0x1
+6810bbb3 JA 0x6810bbbe
+6810bbb5 MOV ECX,dword ptr [EBP + 0x8]
+6810bbb8 MOV dword ptr [ECX],EAX
+6810bbba XOR EAX,EAX
+6810bbbc POP EBP
+6810bbbd RET
+6810bbbe MOV EAX,0x80070216
+6810bbc3 POP EBP
+6810bbc4 RET

@@ -1,0 +1,12 @@
+45401e75 PUSH ESI
+45401e76 MOV ESI,ECX
+45401e78 PUSH dword ptr [ESI + 0xc]
+45401e7b PUSH dword ptr [ESI + 0x8]
+45401e7e CALL dword ptr [0x45447060]
+45401e84 CMP dword ptr [ESI + 0xc],0x0
+45401e88 JZ 0x45401e97
+45401e8a PUSH dword ptr [ESI + 0xc]
+45401e8d CALL dword ptr [0x4544706c]
+45401e93 AND dword ptr [ESI + 0xc],0x0
+45401e97 POP ESI
+45401e98 RET

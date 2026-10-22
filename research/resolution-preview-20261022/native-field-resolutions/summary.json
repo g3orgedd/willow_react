@@ -1,0 +1,873 @@
+﻿{
+    "metricCases":  24,
+    "metricSuccess":  24,
+    "hashComparisons":  [
+                            {
+                                "face":  "Arial",
+                                "case":  "only-file-y-double",
+                                "equal":  true,
+                                "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                            },
+                            {
+                                "face":  "Arial",
+                                "case":  "only-file-x-double",
+                                "equal":  true,
+                                "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                            },
+                            {
+                                "face":  "Arial",
+                                "case":  "only-caps-x-double",
+                                "equal":  true,
+                                "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                            },
+                            {
+                                "face":  "Arial",
+                                "case":  "file-and-caps-x-double",
+                                "equal":  true,
+                                "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                            },
+                            {
+                                "face":  "Arial",
+                                "case":  "only-caps-x-eight",
+                                "equal":  true,
+                                "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                            },
+                            {
+                                "face":  "Times New Roman",
+                                "case":  "only-file-y-double",
+                                "equal":  true,
+                                "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                            },
+                            {
+                                "face":  "Times New Roman",
+                                "case":  "only-file-x-double",
+                                "equal":  true,
+                                "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                            },
+                            {
+                                "face":  "Times New Roman",
+                                "case":  "only-caps-x-double",
+                                "equal":  true,
+                                "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                            },
+                            {
+                                "face":  "Times New Roman",
+                                "case":  "file-and-caps-x-double",
+                                "equal":  true,
+                                "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                            },
+                            {
+                                "face":  "Times New Roman",
+                                "case":  "only-caps-x-eight",
+                                "equal":  true,
+                                "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                            },
+                            {
+                                "face":  "Courier New",
+                                "case":  "only-file-y-double",
+                                "equal":  true,
+                                "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                            },
+                            {
+                                "face":  "Courier New",
+                                "case":  "only-file-x-double",
+                                "equal":  true,
+                                "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                            },
+                            {
+                                "face":  "Courier New",
+                                "case":  "only-caps-x-double",
+                                "equal":  true,
+                                "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                            },
+                            {
+                                "face":  "Courier New",
+                                "case":  "file-and-caps-x-double",
+                                "equal":  true,
+                                "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                            },
+                            {
+                                "face":  "Courier New",
+                                "case":  "only-caps-x-eight",
+                                "equal":  true,
+                                "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                            }
+                        ],
+    "positionCases":  48,
+    "positionSuccess":  48,
+    "rotationChecks":  [
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  90,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  90,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  90,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  180,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  180,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  180,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  270,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  270,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-square",
+                               "orientation":  270,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  90,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  90,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  90,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  180,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  180,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  180,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  270,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  270,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-x-double-caps-y-double",
+                               "orientation":  270,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  90,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  90,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  90,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  180,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  180,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  180,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  270,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  270,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "file-y-double-caps-x-double",
+                               "orientation":  270,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  90,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  90,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  90,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  180,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  180,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  180,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  270,
+                               "x":  4,
+                               "y":  -4,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  270,
+                               "x":  173,
+                               "y":  83,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           },
+                           {
+                               "case":  "half-ties-caps-eighth",
+                               "orientation":  270,
+                               "x":  -13,
+                               "y":  12,
+                               "differentPixels":  0,
+                               "sameDimensions":  true
+                           }
+                       ],
+    "rotationZeroDifference":  36,
+    "layoutCases":  8,
+    "layoutSuccess":  8,
+    "pngHashes":  [
+                      {
+                          "file":  "file-and-caps-x-double-Arial.png",
+                          "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                      },
+                      {
+                          "file":  "file-and-caps-x-double-Courier_New.png",
+                          "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                      },
+                      {
+                          "file":  "file-and-caps-x-double-Times_New_Roman.png",
+                          "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                      },
+                      {
+                          "file":  "file-and-caps-y-double-Arial.png",
+                          "sha256":  "208CB0E730B4444B294FA7BFEB25012C6B653CF70D2AC0E984769DC2C0EE937F"
+                      },
+                      {
+                          "file":  "file-and-caps-y-double-Courier_New.png",
+                          "sha256":  "A6B5317247D76FAD3DE8EDE47138F575954DF3E1E10A877A6967C0933BD4CB9B"
+                      },
+                      {
+                          "file":  "file-and-caps-y-double-Times_New_Roman.png",
+                          "sha256":  "BEB2F8E34E7737332AA2518AEF3EA262E484E69E7D091B0B0445E279AC802F9E"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot0-x-13-y12-origin.png",
+                          "sha256":  "5A3F69D63AAF339D02C7DEEFD9F0A0592E1D40B5FDACDA46E7B287674F5164EA"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot0-x-13-y12-placed.png",
+                          "sha256":  "E5E469C967CDF6032CB01AA2837C4D89D37A1FB89BBFA33E58521309B6F26FAE"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot0-x173-y83-origin.png",
+                          "sha256":  "5A3F69D63AAF339D02C7DEEFD9F0A0592E1D40B5FDACDA46E7B287674F5164EA"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot0-x173-y83-placed.png",
+                          "sha256":  "E1D871C60D63BFB9B6608E04DE26E785CE2A0A3D7C12B6B6AA5594C0AA2A3FC0"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot0-x4-y-4-origin.png",
+                          "sha256":  "5A3F69D63AAF339D02C7DEEFD9F0A0592E1D40B5FDACDA46E7B287674F5164EA"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot0-x4-y-4-placed.png",
+                          "sha256":  "B5BD80A2F1D48A4F6BCF77A6A19FEE4FE8360A9829160A17E6AA9F9337C5E4F0"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot180-x-13-y12-origin.png",
+                          "sha256":  "6F500D1DC7E7F079643ECF6EFB58E60CE8373AE58B0335DDADDF6A3B0C7677CD"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot180-x-13-y12-placed.png",
+                          "sha256":  "FCC44280FC1B3018AE9E24E4937E6624A9CB4BD897B16A54CB5C373404E96C74"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot180-x173-y83-origin.png",
+                          "sha256":  "6F500D1DC7E7F079643ECF6EFB58E60CE8373AE58B0335DDADDF6A3B0C7677CD"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot180-x173-y83-placed.png",
+                          "sha256":  "D2DC6336717AF03D21F4C431388816FCF2D68D710FB15F7419248FD501F356D9"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot180-x4-y-4-origin.png",
+                          "sha256":  "6F500D1DC7E7F079643ECF6EFB58E60CE8373AE58B0335DDADDF6A3B0C7677CD"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot180-x4-y-4-placed.png",
+                          "sha256":  "7108280EF378114D0EADFB68FE01297EF9D44B78377F8ADE08F6D0028812F4B8"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot270-x-13-y12-origin.png",
+                          "sha256":  "31A4687C5C4342044A8C00AE1820A06C6EAD75530A6BD23C568A221FD1743CAA"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot270-x-13-y12-placed.png",
+                          "sha256":  "358B90E7F3E081200F7F4ED8BBB2F81BEFD68239D56279976F9EB375828F295E"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot270-x173-y83-origin.png",
+                          "sha256":  "31A4687C5C4342044A8C00AE1820A06C6EAD75530A6BD23C568A221FD1743CAA"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot270-x173-y83-placed.png",
+                          "sha256":  "985A523FB8CDB5BBE5F723C145A4891D4ED96946B32B77B188766B5C8FC37D0E"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot270-x4-y-4-origin.png",
+                          "sha256":  "31A4687C5C4342044A8C00AE1820A06C6EAD75530A6BD23C568A221FD1743CAA"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot270-x4-y-4-placed.png",
+                          "sha256":  "690757CCB0BB8965925A22CE8C7EB2AA993EE92FA3C1E7015750BA405AA42C3B"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot90-x-13-y12-origin.png",
+                          "sha256":  "42182F4B0EE237762214A3F31FF697C3C2C5A4DF12BD083CE17746A37D17F024"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot90-x-13-y12-placed.png",
+                          "sha256":  "AA2758D5575BEF30AA5DA607A6BD0BF339BB3E6EA89DF10E28AFDEE515D9AB57"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot90-x173-y83-origin.png",
+                          "sha256":  "42182F4B0EE237762214A3F31FF697C3C2C5A4DF12BD083CE17746A37D17F024"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot90-x173-y83-placed.png",
+                          "sha256":  "4B0EE1D43DD79C4747D9A6416FA5B72FC225EF223534BB0F23D36693C58B9166"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot90-x4-y-4-origin.png",
+                          "sha256":  "42182F4B0EE237762214A3F31FF697C3C2C5A4DF12BD083CE17746A37D17F024"
+                      },
+                      {
+                          "file":  "file-x-double-caps-y-double-rot90-x4-y-4-placed.png",
+                          "sha256":  "427BCF562D48727058639D82186885E95FA56B60B4337F012CF76F10CCC439CE"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot0-x-13-y12-origin.png",
+                          "sha256":  "FD9E50AD97DEC77BAC4272DDBF59C2084B4E95BD6745B066F59FE445F5D7D9A8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot0-x-13-y12-placed.png",
+                          "sha256":  "F3D6E83168AC2EE3CB52E13288529496A79C9DE0B0C0904EBF5F3278F1F696E7"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot0-x173-y83-origin.png",
+                          "sha256":  "FD9E50AD97DEC77BAC4272DDBF59C2084B4E95BD6745B066F59FE445F5D7D9A8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot0-x173-y83-placed.png",
+                          "sha256":  "1006BC1F526778DEF445E6937BFFE1FB1B0D710D9293E3EC206051E7A2E0D1A1"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot0-x4-y-4-origin.png",
+                          "sha256":  "FD9E50AD97DEC77BAC4272DDBF59C2084B4E95BD6745B066F59FE445F5D7D9A8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot0-x4-y-4-placed.png",
+                          "sha256":  "FD9E50AD97DEC77BAC4272DDBF59C2084B4E95BD6745B066F59FE445F5D7D9A8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot180-x-13-y12-origin.png",
+                          "sha256":  "8CE8230FB2B3EA857FFA1E7A76ED2BD4E850E55FA933C44F9A2FCED37BD033F8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot180-x-13-y12-placed.png",
+                          "sha256":  "B8F9ED2ECAC8AD42198BD8C3886353EE504DDA930035DA24A151F1DDBC37AB71"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot180-x173-y83-origin.png",
+                          "sha256":  "8CE8230FB2B3EA857FFA1E7A76ED2BD4E850E55FA933C44F9A2FCED37BD033F8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot180-x173-y83-placed.png",
+                          "sha256":  "F40E74337E1497CA67BA174737FE38A65F4BAEB92FF95D08B96EAC9AFDDDC9D5"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot180-x4-y-4-origin.png",
+                          "sha256":  "8CE8230FB2B3EA857FFA1E7A76ED2BD4E850E55FA933C44F9A2FCED37BD033F8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot180-x4-y-4-placed.png",
+                          "sha256":  "8CE8230FB2B3EA857FFA1E7A76ED2BD4E850E55FA933C44F9A2FCED37BD033F8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot270-x-13-y12-origin.png",
+                          "sha256":  "CB90CA373EA5C42A0FAB43BBE3B2AAA21782A6A32CAE885A8AC775325A2A562D"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot270-x-13-y12-placed.png",
+                          "sha256":  "4877F00B207B81F24C9A345E57386E34D3FBE343D63EE5F2DCFE0E29FCDA1453"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot270-x173-y83-origin.png",
+                          "sha256":  "CB90CA373EA5C42A0FAB43BBE3B2AAA21782A6A32CAE885A8AC775325A2A562D"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot270-x173-y83-placed.png",
+                          "sha256":  "D117B7DB3E3EAC42E71F832E115D27C37E934A1A7F3293D305DCD8B908F115A1"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot270-x4-y-4-origin.png",
+                          "sha256":  "CB90CA373EA5C42A0FAB43BBE3B2AAA21782A6A32CAE885A8AC775325A2A562D"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot270-x4-y-4-placed.png",
+                          "sha256":  "CB90CA373EA5C42A0FAB43BBE3B2AAA21782A6A32CAE885A8AC775325A2A562D"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot90-x-13-y12-origin.png",
+                          "sha256":  "A341A97AE54F5CFA39BC71FF96DF093E1D63D29B68B06CC26B527C52F3B49581"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot90-x-13-y12-placed.png",
+                          "sha256":  "25E25157A4884DCAB8AF0A2EB79D5A54B8DBEC03326821D1EC3AD1C238FC764A"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot90-x173-y83-origin.png",
+                          "sha256":  "A341A97AE54F5CFA39BC71FF96DF093E1D63D29B68B06CC26B527C52F3B49581"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot90-x173-y83-placed.png",
+                          "sha256":  "C12B2C4556857F4CA92E1654DA47F81B2D6BF79C1B4CE5C92F08E57106BF1D04"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot90-x4-y-4-origin.png",
+                          "sha256":  "A341A97AE54F5CFA39BC71FF96DF093E1D63D29B68B06CC26B527C52F3B49581"
+                      },
+                      {
+                          "file":  "file-y-double-caps-square-rot90-x4-y-4-placed.png",
+                          "sha256":  "A341A97AE54F5CFA39BC71FF96DF093E1D63D29B68B06CC26B527C52F3B49581"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot0-x-13-y12-origin.png",
+                          "sha256":  "FD9E50AD97DEC77BAC4272DDBF59C2084B4E95BD6745B066F59FE445F5D7D9A8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot0-x-13-y12-placed.png",
+                          "sha256":  "9ECEE957CDEFD0982DD67364F326B63FE36D24DE4F3D35F1795A279ABAB97CB5"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot0-x173-y83-origin.png",
+                          "sha256":  "FD9E50AD97DEC77BAC4272DDBF59C2084B4E95BD6745B066F59FE445F5D7D9A8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot0-x173-y83-placed.png",
+                          "sha256":  "C6F270C65D58845174C95F703BF01A1793BC13743A4C5B11C23D6BAD7BC19D97"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot0-x4-y-4-origin.png",
+                          "sha256":  "FD9E50AD97DEC77BAC4272DDBF59C2084B4E95BD6745B066F59FE445F5D7D9A8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot0-x4-y-4-placed.png",
+                          "sha256":  "C5A344B4BCC8E635B85DFE1F763A175902047F4EEC4A0FCE2561EB98D9619D40"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot180-x-13-y12-origin.png",
+                          "sha256":  "8CE8230FB2B3EA857FFA1E7A76ED2BD4E850E55FA933C44F9A2FCED37BD033F8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot180-x-13-y12-placed.png",
+                          "sha256":  "3E740590369FC6DC230940606322DB72D51E99DFB603C84EDC3B0F83BD91043B"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot180-x173-y83-origin.png",
+                          "sha256":  "8CE8230FB2B3EA857FFA1E7A76ED2BD4E850E55FA933C44F9A2FCED37BD033F8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot180-x173-y83-placed.png",
+                          "sha256":  "2395AD94ED57E19CB9A3DD2152B37733EDE4AD25DC7C65698DDF99503C5ABB1C"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot180-x4-y-4-origin.png",
+                          "sha256":  "8CE8230FB2B3EA857FFA1E7A76ED2BD4E850E55FA933C44F9A2FCED37BD033F8"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot180-x4-y-4-placed.png",
+                          "sha256":  "6E5BA64007F9CF2B446F22162366925C51F88701834910399B25FEC0CCDC1B48"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot270-x-13-y12-origin.png",
+                          "sha256":  "CB90CA373EA5C42A0FAB43BBE3B2AAA21782A6A32CAE885A8AC775325A2A562D"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot270-x-13-y12-placed.png",
+                          "sha256":  "C2B01C683048C15CFFE83BD28EE7369A1ADAC9CDD6B9D19E9518762F2A3B441B"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot270-x173-y83-origin.png",
+                          "sha256":  "CB90CA373EA5C42A0FAB43BBE3B2AAA21782A6A32CAE885A8AC775325A2A562D"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot270-x173-y83-placed.png",
+                          "sha256":  "FDC6F1B04CCE80788F30690B0A85B9145BEAA0F2454E0376B66664FA28672E95"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot270-x4-y-4-origin.png",
+                          "sha256":  "CB90CA373EA5C42A0FAB43BBE3B2AAA21782A6A32CAE885A8AC775325A2A562D"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot270-x4-y-4-placed.png",
+                          "sha256":  "D8247CD07AD0A07340CD1871B7D12CE3ADE10CAF9530A6B033913F30AA67958F"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot90-x-13-y12-origin.png",
+                          "sha256":  "A341A97AE54F5CFA39BC71FF96DF093E1D63D29B68B06CC26B527C52F3B49581"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot90-x-13-y12-placed.png",
+                          "sha256":  "8447A8FF49C02A85C9B3B49F5ADC0678E416F0B3F6EF2E73C6E88FC7DC9AAAB0"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot90-x173-y83-origin.png",
+                          "sha256":  "A341A97AE54F5CFA39BC71FF96DF093E1D63D29B68B06CC26B527C52F3B49581"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot90-x173-y83-placed.png",
+                          "sha256":  "FDC6F1B04CCE80788F30690B0A85B9145BEAA0F2454E0376B66664FA28672E95"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot90-x4-y-4-origin.png",
+                          "sha256":  "A341A97AE54F5CFA39BC71FF96DF093E1D63D29B68B06CC26B527C52F3B49581"
+                      },
+                      {
+                          "file":  "file-y-double-caps-x-double-rot90-x4-y-4-placed.png",
+                          "sha256":  "69EFF58C118C106EF7F0C6B76BFA1885D38687285AE2C7D40A8534DE87B1CDC7"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot0-x-13-y12-origin.png",
+                          "sha256":  "091011A6517D5256339CBF0C3789AEDD68D8847322DC259D13B616F348DA1C6F"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot0-x-13-y12-placed.png",
+                          "sha256":  "DEBA73DCB836436D67882B04655C1B38684F3479F60C1330F25273C9CF1C262E"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot0-x173-y83-origin.png",
+                          "sha256":  "091011A6517D5256339CBF0C3789AEDD68D8847322DC259D13B616F348DA1C6F"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot0-x173-y83-placed.png",
+                          "sha256":  "869808C502224167B3642820ECAAF47C57561A3D5B3503A737BE49DF8B7B3743"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot0-x4-y-4-origin.png",
+                          "sha256":  "091011A6517D5256339CBF0C3789AEDD68D8847322DC259D13B616F348DA1C6F"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot0-x4-y-4-placed.png",
+                          "sha256":  "1E41BB9DE7653D34C58D067C4F42AE1BE5091B9045855ED19BE6B5AF25C10A4F"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot180-x-13-y12-origin.png",
+                          "sha256":  "679978801CD437C550D1C4E1A3E5D813FE74C24D1DE63B24731F29918F253EC5"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot180-x-13-y12-placed.png",
+                          "sha256":  "95CD56337CE7A992E764D16F0CAFA6394A1C7A2F78EC031E019659CF1800807E"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot180-x173-y83-origin.png",
+                          "sha256":  "679978801CD437C550D1C4E1A3E5D813FE74C24D1DE63B24731F29918F253EC5"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot180-x173-y83-placed.png",
+                          "sha256":  "0524227BACE8388B07F6EFBC192730A7E711F7B28F8A78674E70D41737B50600"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot180-x4-y-4-origin.png",
+                          "sha256":  "679978801CD437C550D1C4E1A3E5D813FE74C24D1DE63B24731F29918F253EC5"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot180-x4-y-4-placed.png",
+                          "sha256":  "5C8BB2963F1D4D076472C6E396F8EDE937D148CFFBEE4E57901D147FDDEC4594"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot270-x-13-y12-origin.png",
+                          "sha256":  "3307060FA2A5BF200AAE5BC8FCEA65D971CECE19B8602CDDE583C68CFB8C6165"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot270-x-13-y12-placed.png",
+                          "sha256":  "47919C8C77DE01E0685B3B99321EA2429D488E2E7F164DB27A68A1EE35AFCB36"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot270-x173-y83-origin.png",
+                          "sha256":  "3307060FA2A5BF200AAE5BC8FCEA65D971CECE19B8602CDDE583C68CFB8C6165"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot270-x173-y83-placed.png",
+                          "sha256":  "B2424FC61CCF60F43194B0AC7369AE7B5006CE594D531BD11B7750A95C4773DC"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot270-x4-y-4-origin.png",
+                          "sha256":  "3307060FA2A5BF200AAE5BC8FCEA65D971CECE19B8602CDDE583C68CFB8C6165"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot270-x4-y-4-placed.png",
+                          "sha256":  "A4B61AE73B19296E011F4A324D0863E8D34CB247F591DAFAB6DFD1093A0A2267"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot90-x-13-y12-origin.png",
+                          "sha256":  "2F62F9FF520F571F86DDA74845CC58D60DFF00D455F567F14107F9FAA27ADF31"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot90-x-13-y12-placed.png",
+                          "sha256":  "22D3C68A9DA31C7609F90AA01A3CEF970DD2CD38D201DE0457F7DF25FCFC930A"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot90-x173-y83-origin.png",
+                          "sha256":  "2F62F9FF520F571F86DDA74845CC58D60DFF00D455F567F14107F9FAA27ADF31"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot90-x173-y83-placed.png",
+                          "sha256":  "03B277A7C64B5E09A1A1CAFAF32032A1EBF0792EC55F6E513DAE47FD0FCE215F"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot90-x4-y-4-origin.png",
+                          "sha256":  "2F62F9FF520F571F86DDA74845CC58D60DFF00D455F567F14107F9FAA27ADF31"
+                      },
+                      {
+                          "file":  "half-ties-caps-eighth-rot90-x4-y-4-placed.png",
+                          "sha256":  "E2B0A34BA87CA4BA0F143D80E61178C214E69D072B6D22C967C849A6DA10BC22"
+                      },
+                      {
+                          "file":  "only-caps-x-double-Arial.png",
+                          "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                      },
+                      {
+                          "file":  "only-caps-x-double-Courier_New.png",
+                          "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                      },
+                      {
+                          "file":  "only-caps-x-double-Times_New_Roman.png",
+                          "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                      },
+                      {
+                          "file":  "only-caps-x-eight-Arial.png",
+                          "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                      },
+                      {
+                          "file":  "only-caps-x-eight-Courier_New.png",
+                          "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                      },
+                      {
+                          "file":  "only-caps-x-eight-Times_New_Roman.png",
+                          "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                      },
+                      {
+                          "file":  "only-caps-y-double-Arial.png",
+                          "sha256":  "208CB0E730B4444B294FA7BFEB25012C6B653CF70D2AC0E984769DC2C0EE937F"
+                      },
+                      {
+                          "file":  "only-caps-y-double-Courier_New.png",
+                          "sha256":  "A6B5317247D76FAD3DE8EDE47138F575954DF3E1E10A877A6967C0933BD4CB9B"
+                      },
+                      {
+                          "file":  "only-caps-y-double-Times_New_Roman.png",
+                          "sha256":  "BEB2F8E34E7737332AA2518AEF3EA262E484E69E7D091B0B0445E279AC802F9E"
+                      },
+                      {
+                          "file":  "only-file-x-double-Arial.png",
+                          "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                      },
+                      {
+                          "file":  "only-file-x-double-Courier_New.png",
+                          "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                      },
+                      {
+                          "file":  "only-file-x-double-Times_New_Roman.png",
+                          "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                      },
+                      {
+                          "file":  "only-file-y-double-Arial.png",
+                          "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                      },
+                      {
+                          "file":  "only-file-y-double-Courier_New.png",
+                          "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                      },
+                      {
+                          "file":  "only-file-y-double-Times_New_Roman.png",
+                          "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                      },
+                      {
+                          "file":  "square-baseline-Arial.png",
+                          "sha256":  "AFD5CAAE52BB951D16F365DF01B4100CA7D4A9504F66298C86C5DF829B823724"
+                      },
+                      {
+                          "file":  "square-baseline-Courier_New.png",
+                          "sha256":  "515EC7ED44A1A5856387CA47A2D52A9429E732DDC8267228046B3ECE5001446D"
+                      },
+                      {
+                          "file":  "square-baseline-Times_New_Roman.png",
+                          "sha256":  "23ED33FA3336490B3D134097C25F400DB03BB0D9FEB9EF38067D80A6222176B8"
+                      }
+                  ]
+}

@@ -1,0 +1,80 @@
+00eb296a PUSH 0x4
+00eb296c MOV EAX,0xef8795
+00eb2971 CALL 0x00ec9e5a
+00eb2976 MOV ESI,ECX
+00eb2978 PUSH ECX
+00eb2979 LEA EAX,[EBP + 0x14]
+00eb297c MOV dword ptr [EBP + -0x4],0x3
+00eb2983 MOV ECX,ESP
+00eb2985 PUSH EAX
+00eb2986 CALL 0x00e03ab8
+00eb298b MOV EAX,dword ptr [EBP + 0x10]
+00eb298e PUSH ECX
+00eb298f MOV ECX,ESP
+00eb2991 MOV dword ptr [ECX],EAX
+00eb2993 TEST EAX,EAX
+00eb2995 JZ 0x00eb299d
+00eb2997 MOV ECX,dword ptr [EAX]
+00eb2999 PUSH EAX
+00eb299a CALL dword ptr [ECX + 0x4]
+00eb299d MOV EAX,dword ptr [EBP + 0xc]
+00eb29a0 PUSH ECX
+00eb29a1 MOV ECX,ESP
+00eb29a3 MOV dword ptr [ECX],EAX
+00eb29a5 TEST EAX,EAX
+00eb29a7 JZ 0x00eb29af
+00eb29a9 MOV ECX,dword ptr [EAX]
+00eb29ab PUSH EAX
+00eb29ac CALL dword ptr [ECX + 0x4]
+00eb29af MOV EAX,dword ptr [EBP + 0x8]
+00eb29b2 PUSH ECX
+00eb29b3 MOV ECX,ESP
+00eb29b5 MOV dword ptr [ECX],EAX
+00eb29b7 TEST EAX,EAX
+00eb29b9 JZ 0x00eb29c1
+00eb29bb MOV ECX,dword ptr [EAX]
+00eb29bd PUSH EAX
+00eb29be CALL dword ptr [ECX + 0x4]
+00eb29c1 MOV ECX,ESI
+00eb29c3 CALL 0x00eb4698
+00eb29c8 DEC EAX
+00eb29c9 DEC EAX
+00eb29ca JZ 0x00eb29d6
+00eb29cc DEC EAX
+00eb29cd JNZ 0x00eb29f0
+00eb29cf PUSH 0x93
+00eb29d4 JMP 0x00eb29db
+00eb29d6 PUSH 0x92
+00eb29db MOV ECX,dword ptr [ESI + 0xc]
+00eb29de CALL 0x00e4cac1
+00eb29e3 MOV ECX,dword ptr [ESI + 0x10]
+00eb29e6 PUSH EAX
+00eb29e7 LEA EAX,[EBP + 0x14]
+00eb29ea PUSH EAX
+00eb29eb CALL 0x00eafbc7
+00eb29f0 MOV EAX,dword ptr [EBP + 0x8]
+00eb29f3 MOV byte ptr [EBP + -0x4],0x2
+00eb29f7 TEST EAX,EAX
+00eb29f9 JZ 0x00eb2a01
+00eb29fb MOV ECX,dword ptr [EAX]
+00eb29fd PUSH EAX
+00eb29fe CALL dword ptr [ECX + 0x8]
+00eb2a01 MOV EAX,dword ptr [EBP + 0xc]
+00eb2a04 MOV byte ptr [EBP + -0x4],0x1
+00eb2a08 TEST EAX,EAX
+00eb2a0a JZ 0x00eb2a12
+00eb2a0c MOV ECX,dword ptr [EAX]
+00eb2a0e PUSH EAX
+00eb2a0f CALL dword ptr [ECX + 0x8]
+00eb2a12 MOV EAX,dword ptr [EBP + 0x10]
+00eb2a15 MOV byte ptr [EBP + -0x4],0x0
+00eb2a19 TEST EAX,EAX
+00eb2a1b JZ 0x00eb2a23
+00eb2a1d MOV ECX,dword ptr [EAX]
+00eb2a1f PUSH EAX
+00eb2a20 CALL dword ptr [ECX + 0x8]
+00eb2a23 PUSH dword ptr [EBP + 0x14]
+00eb2a26 CALL dword ptr [0x00efc448]
+00eb2a2c XOR EAX,EAX
+00eb2a2e CALL 0x00ec9e28
+00eb2a33 RET 0x10

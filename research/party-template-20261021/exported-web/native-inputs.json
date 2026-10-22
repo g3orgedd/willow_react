@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Glyph-party-without-counter-20261021.ciff",
+    "kind": "actual-web-ui-download",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\Glyph-party-without-counter-20261021.ciff",
+    "expectedValidation": "00000000",
+    "verifyNativeResolve": true,
+    "originalSource": "C:\\Users\\GigaGeorge\\Downloads\\Glyph-party-without-counter-20261021.ciff",
+    "sourceSHA256": "FE3688AA3F7C318ABD48C98480398BED1AEAB1AB5A489923A3B371B565A684E4"
+  },
+  {
+    "name": "Glyph-party-with-box-counter-20261021.ciff",
+    "kind": "actual-web-ui-download",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\Glyph-party-with-box-counter-20261021.ciff",
+    "expectedValidation": "00000000",
+    "verifyNativeResolve": true,
+    "originalSource": "C:\\Users\\GigaGeorge\\Downloads\\Glyph-party-with-box-counter-20261021.ciff",
+    "sourceSHA256": "7F00BCBADCD69D5C5C06915DD7B3BB7A2E8EEA4DAC4272D7D00586785470CF04"
+  }
+]

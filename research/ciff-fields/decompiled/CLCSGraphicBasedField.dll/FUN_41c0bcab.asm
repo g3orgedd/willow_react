@@ -1,0 +1,29 @@
+41c0bcab PUSH EBP
+41c0bcac MOV EBP,ESP
+41c0bcae MOV EAX,dword ptr [EBP + 0x10]
+41c0bcb1 PUSH EBX
+41c0bcb2 PUSH ESI
+41c0bcb3 PUSH EDI
+41c0bcb4 OR dword ptr [EAX],0xffffffff
+41c0bcb7 MOV EBX,0x80004005
+41c0bcbc XOR EDI,EDI
+41c0bcbe MOV ESI,0x41c43660
+41c0bcc3 PUSH dword ptr [EBP + 0xc]
+41c0bcc6 MOV ECX,ESI
+41c0bcc8 CALL 0x41c01781
+41c0bccd TEST AL,AL
+41c0bccf JNZ 0x41c0bcdf
+41c0bcd1 ADD ESI,0x4
+41c0bcd4 INC EDI
+41c0bcd5 CMP ESI,0x41c43664
+41c0bcdb JL 0x41c0bcc3
+41c0bcdd JMP 0x41c0bce6
+41c0bcdf MOV EAX,dword ptr [EBP + 0x10]
+41c0bce2 XOR EBX,EBX
+41c0bce4 MOV dword ptr [EAX],EDI
+41c0bce6 POP EDI
+41c0bce7 POP ESI
+41c0bce8 MOV EAX,EBX
+41c0bcea POP EBX
+41c0bceb POP EBP
+41c0bcec RET 0xc

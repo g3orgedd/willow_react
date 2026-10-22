@@ -1,0 +1,143 @@
+[
+  {
+    "class": ".?AVCBarcode@@",
+    "typeDescriptor": "414ac158",
+    "locator": "4149b550",
+    "vtable": "41480e90",
+    "functions": [
+      "41407d25",
+      "414084b2",
+      "414095de",
+      "41408e10",
+      "4140932e",
+      "41408395",
+      "414625da",
+      "414625da",
+      "414625da"
+    ]
+  },
+  {
+    "class": ".?AVCBarcodeObjHelperBase@@",
+    "typeDescriptor": "414ac170",
+    "locator": "4149b598",
+    "vtable": "4148102c",
+    "functions": [
+      "4140983a",
+      "4144c1eb",
+      "414625da",
+      "41409a08",
+      "414625da",
+      "414625da",
+      "41409c25",
+      "41409c25",
+      "41409859",
+      "414625da",
+      "41409b16"
+    ]
+  },
+  {
+    "class": ".?AVCAllBarcodeRoot@@",
+    "typeDescriptor": "414ac194",
+    "locator": "4149e6cc",
+    "vtable": "414848f8",
+    "functions": [
+      "4144c1cc",
+      "4144c1eb"
+    ]
+  },
+  {
+    "class": ".?AVCCode128BarcodeObjHelper@@",
+    "typeDescriptor": "414adc9c",
+    "locator": "4149dc44",
+    "vtable": "41482594",
+    "functions": [
+      "414228a3",
+      "4144c1eb",
+      "41423006",
+      "41409a08",
+      "4142295e",
+      "41422c25",
+      "41409c25",
+      "41409c25",
+      "41409859",
+      "41423922",
+      "41409b16"
+    ]
+  },
+  {
+    "class": ".?AVCEAN128BarcodeObjHelper@@",
+    "typeDescriptor": "414adce4",
+    "locator": "4149dce0",
+    "vtable": "4148335c",
+    "functions": [
+      "414271fa",
+      "4144c1eb",
+      "41427d2f",
+      "41427219",
+      "41427604",
+      "414278e8",
+      "41409c25",
+      "41409c25",
+      "41409859",
+      "41428660",
+      "41409b16"
+    ]
+  },
+  {
+    "class": ".?AVCITFBarcodeObjHelper@@",
+    "typeDescriptor": "414adfa4",
+    "locator": "4149e31c",
+    "vtable": "414840a4",
+    "functions": [
+      "4143dedf",
+      "4144c1eb",
+      "4143e770",
+      "41409a08",
+      "4143defe",
+      "4143e333",
+      "4143f4f3",
+      "4143f4fc",
+      "41409859",
+      "4143f3c5",
+      "4143e714"
+    ]
+  },
+  {
+    "class": ".?AVCPDF417BarcodeObjHelper@@",
+    "typeDescriptor": "414adfc8",
+    "locator": "4149e36c",
+    "vtable": "414841d4",
+    "functions": [
+      "4144248d",
+      "4144c1eb",
+      "41442efa",
+      "414424ac",
+      "41442744",
+      "414429cd",
+      "41409c25",
+      "41409c25",
+      "41409859",
+      "414431c3",
+      "41409b16"
+    ]
+  },
+  {
+    "class": ".?AVCRSS14BarcodeObjHelper@@",
+    "typeDescriptor": "414adff0",
+    "locator": "4149e3bc",
+    "vtable": "4148423c",
+    "functions": [
+      "4144342b",
+      "414439de",
+      "41443a68",
+      "4144344a",
+      "414436a8",
+      "414438cd",
+      "41409c25",
+      "41409c25",
+      "41409859",
+      "414443a8",
+      "41443972"
+    ]
+  }
+]

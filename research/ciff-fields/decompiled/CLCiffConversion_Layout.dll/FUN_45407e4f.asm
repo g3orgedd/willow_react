@@ -1,0 +1,14 @@
+45407e4f PUSH ESI
+45407e50 MOV ESI,ECX
+45407e52 MOV EAX,dword ptr [ESI]
+45407e54 PUSH dword ptr [EAX + 0x4]
+45407e57 CALL 0x45407d7a
+45407e5c MOV EAX,dword ptr [ESI]
+45407e5e MOV dword ptr [EAX + 0x4],EAX
+45407e61 MOV EAX,dword ptr [ESI]
+45407e63 MOV dword ptr [EAX],EAX
+45407e65 MOV EAX,dword ptr [ESI]
+45407e67 MOV dword ptr [EAX + 0x8],EAX
+45407e6a AND dword ptr [ESI + 0x4],0x0
+45407e6e POP ESI
+45407e6f RET

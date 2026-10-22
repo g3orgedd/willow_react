@@ -1,0 +1,4 @@
+00ec9e3c MOV ECX,dword ptr [EBP + -0x10]
+00ec9e3f XOR ECX,EBP
+00ec9e41 CALL 0x00ec9db6
+00ec9e46 JMP 0x00ec9e28

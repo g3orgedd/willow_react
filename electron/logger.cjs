@@ -155,7 +155,7 @@ function createFileLogger(options) {
       .then(() => append(entry))
       .catch((error) => {
         lastWriteError = error;
-        console.error("Failed to write Willow log entry:", error);
+        console.error("Failed to write Glyph Studio log entry:", error);
       });
     return writeQueue;
   }

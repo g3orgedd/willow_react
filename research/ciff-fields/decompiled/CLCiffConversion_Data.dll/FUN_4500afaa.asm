@@ -1,0 +1,11 @@
+4500afaa PUSH ESI
+4500afab MOV ESI,ECX
+4500afad MOV EDX,dword ptr [ESI + 0x4]
+4500afb0 TEST EDX,EDX
+4500afb2 JZ 0x4500afba
+4500afb4 MOV EAX,dword ptr [EDX]
+4500afb6 PUSH EDX
+4500afb7 CALL dword ptr [EAX + 0x8]
+4500afba LEA ECX,[ESI + 0x8]
+4500afbd POP ESI
+4500afbe JMP 0x4500574c

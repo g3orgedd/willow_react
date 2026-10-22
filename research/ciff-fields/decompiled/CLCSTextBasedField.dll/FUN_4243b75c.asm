@@ -1,0 +1,34 @@
+4243b75c PUSH EBP
+4243b75d MOV EBP,ESP
+4243b75f MOV EAX,dword ptr [EBP + 0x18]
+4243b762 PUSH ESI
+4243b763 MOV ESI,ECX
+4243b765 XOR ECX,ECX
+4243b767 PUSH 0x1f
+4243b769 PUSH dword ptr [EBP + 0x8]
+4243b76c MOV dword ptr [ESI + 0x5c],EAX
+4243b76f MOV AL,byte ptr [EBP + 0xc]
+4243b772 MOV byte ptr [ESI + 0x67],AL
+4243b775 LEA EAX,[ESI + 0x68]
+4243b778 PUSH 0x20
+4243b77a PUSH EAX
+4243b77b MOV dword ptr [ESI + 0x50],ECX
+4243b77e MOV dword ptr [ESI + 0x54],ECX
+4243b781 MOV dword ptr [ESI + 0x58],ECX
+4243b784 MOV dword ptr [ESI + 0x60],0x1000000
+4243b78b MOV word ptr [ESI + 0x64],0x7
+4243b791 MOV byte ptr [ESI + 0x66],0x1
+4243b795 CALL 0x4246f507
+4243b79a MOVSS XMM0,dword ptr [EBP + 0x1c]
+4243b79f ADD ESP,0x10
+4243b7a2 XOR EAX,EAX
+4243b7a4 MOV word ptr [ESI + 0xa6],AX
+4243b7ab MOV EAX,dword ptr [EBP + 0x14]
+4243b7ae MOV dword ptr [ESI + 0xa8],EAX
+4243b7b4 MOV EAX,dword ptr [EBP + 0x10]
+4243b7b7 MOV dword ptr [ESI + 0xac],EAX
+4243b7bd MOV dword ptr [ESI + 0xb0],0x1
+4243b7c7 MOVSS dword ptr [ESI + 0xcc],XMM0
+4243b7cf POP ESI
+4243b7d0 POP EBP
+4243b7d1 RET 0x18

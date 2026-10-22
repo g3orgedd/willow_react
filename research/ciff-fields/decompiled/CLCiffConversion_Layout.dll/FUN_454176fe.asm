@@ -1,0 +1,2 @@
+454176fe SUB ECX,dword ptr [ECX + -0x4]
+45417701 JMP 0x45417a42

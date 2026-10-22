@@ -1,0 +1,2 @@
+6810e7aa XOR EAX,EAX
+6810e7ac RET 0x4

@@ -1,0 +1,16 @@
+4502deb0 PUSH EBP
+4502deb1 MOV EBP,ESP
+4502deb3 CMP dword ptr [EBP + 0x8],0x0
+4502deb7 JNZ 0x4502dece
+4502deb9 CALL 0x45027e98
+4502debe MOV dword ptr [EAX],0x16
+4502dec4 CALL 0x45027e29
+4502dec9 OR EAX,0xffffffff
+4502decc POP EBP
+4502decd RET
+4502dece PUSH dword ptr [EBP + 0x8]
+4502ded1 PUSH 0x0
+4502ded3 PUSH dword ptr [0x450553e0]
+4502ded9 CALL dword ptr [0x4503d158]
+4502dedf POP EBP
+4502dee0 RET

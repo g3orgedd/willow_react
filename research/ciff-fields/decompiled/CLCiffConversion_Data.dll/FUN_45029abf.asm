@@ -1,0 +1,23 @@
+45029abf PUSH EBP
+45029ac0 MOV EBP,ESP
+45029ac2 MOV EAX,dword ptr [EBP + 0xc]
+45029ac5 TEST byte ptr [EAX + 0xc],0x40
+45029ac9 JZ 0x45029ad1
+45029acb CMP dword ptr [EAX + 0x8],0x0
+45029acf JZ 0x45029aee
+45029ad1 PUSH EAX
+45029ad2 PUSH dword ptr [EBP + 0x8]
+45029ad5 CALL 0x450335a0
+45029ada POP ECX
+45029adb POP ECX
+45029adc MOV ECX,0xffff
+45029ae1 CMP AX,CX
+45029ae4 JNZ 0x45029aee
+45029ae6 MOV EAX,dword ptr [EBP + 0x10]
+45029ae9 OR dword ptr [EAX],0xffffffff
+45029aec POP EBP
+45029aed RET
+45029aee MOV EAX,dword ptr [EBP + 0x10]
+45029af1 INC dword ptr [EAX]
+45029af3 POP EBP
+45029af4 RET

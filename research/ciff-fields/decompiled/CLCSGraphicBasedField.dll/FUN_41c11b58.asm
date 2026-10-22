@@ -1,0 +1,32 @@
+41c11b58 PUSH 0x0
+41c11b5a MOV EAX,0x41c2ef58
+41c11b5f CALL 0x41c1a080
+41c11b64 MOV EAX,dword ptr [EBP + 0x10]
+41c11b67 LEA EDX,[EBP + 0xc]
+41c11b6a AND dword ptr [EBP + -0x4],0x0
+41c11b6e CMP dword ptr [EBP + 0xc],0x1
+41c11b72 PUSH EDX
+41c11b73 MOV ECX,dword ptr [EAX]
+41c11b75 PUSH EAX
+41c11b76 JNZ 0x41c11b7d
+41c11b78 CALL dword ptr [ECX + 0x2c]
+41c11b7b JMP 0x41c11b80
+41c11b7d CALL dword ptr [ECX + 0x34]
+41c11b80 MOVD XMM0,dword ptr [EBP + 0x8]
+41c11b85 CVTDQ2PS XMM0,XMM0
+41c11b88 PUSH ECX
+41c11b89 MULSS XMM0,dword ptr [EBP + 0xc]
+41c11b8e MOVSS dword ptr [ESP],XMM0
+41c11b93 CALL 0x41c10eb0
+41c11b98 OR dword ptr [EBP + -0x4],0xffffffff
+41c11b9c MOV ESI,EAX
+41c11b9e POP ECX
+41c11b9f MOV ECX,dword ptr [EBP + 0x10]
+41c11ba2 TEST ECX,ECX
+41c11ba4 JZ 0x41c11bac
+41c11ba6 MOV EDX,dword ptr [ECX]
+41c11ba8 PUSH ECX
+41c11ba9 CALL dword ptr [EDX + 0x8]
+41c11bac MOV EAX,ESI
+41c11bae CALL 0x41c1a04e
+41c11bb3 RET

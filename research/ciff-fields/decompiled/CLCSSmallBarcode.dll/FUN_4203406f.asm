@@ -1,0 +1,2 @@
+4203406f MOV EAX,dword ptr [ECX + 0xa4]
+42034075 RET

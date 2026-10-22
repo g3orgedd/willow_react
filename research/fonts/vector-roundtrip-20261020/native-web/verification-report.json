@@ -1,0 +1,2159 @@
+{
+  "mode": "web",
+  "generatedUtc": "2026-10-20T20:31:00.155Z",
+  "sourcePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\web-vector.ciff",
+  "sourceSha256": "d6046cd29ccb5200fe80726b4eb22734ef9d236307573018457d30953d0a367e",
+  "originalDownloadSha256": "d6046cd29ccb5200fe80726b4eb22734ef9d236307573018457d30953d0a367e",
+  "sourceUnchanged": true,
+  "capturedPreviewUtc": "2026-10-20T20:23:10.399Z",
+  "nativeStartedUtc": "2026-10-20T20:29:42.1351298Z",
+  "nativeFinishedUtc": "2026-10-20T20:29:43.1268672Z",
+  "expectedFontDefaults": {
+    "face": "Arial",
+    "pitch": 13,
+    "family": 32,
+    "pitchResolution": 1,
+    "xMag": 100,
+    "yMag": 100,
+    "ttSize": 1,
+    "txtDir": 0,
+    "charSpace": 0,
+    "boldWeight": 1,
+    "bold": false,
+    "italic": false
+  },
+  "sourceMethod": "Original installed ICiffManager.load(filename,null validator), original UpdateData/CalculateSize/Draw. No fields reconstructed, no license patches, no GUI screenshot implied.",
+  "designedFor": "DataFlex 6320(53mm) - Continuous",
+  "coder": "Zodiac Continuous",
+  "resolution": {
+    "x": 0.12,
+    "y": 0.12
+  },
+  "nativeFingerprints": [
+    {
+      "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffMgr.dll",
+      "sha256": "F1A3C15E39657C5D8B2A0391660BBA2809702B5B83E368C41584ABDD2955124B",
+      "name": "CiffMgr.dll",
+      "fileVersion": "4.5.0.0"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffHelper.dll",
+      "sha256": "26E0CC9BC69D44B00E9AB482E1A2D13DAF5BB8F801817C717194C5F1B535558A",
+      "name": "CiffHelper.dll",
+      "fileVersion": "4.4.0.7"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSTextBasedField.dll",
+      "sha256": "2B9CEDAA8A9BDC5ECB92F9DC43855650B0698B6F0FF0190237E6C5889232409B",
+      "name": "CLCSTextBasedField.dll",
+      "fileVersion": "4.4.0.7"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\capabilitiesManager.dll",
+      "sha256": "88E7DB2AF7C1C9DB4F98223A88B4623FE1BDBBF14C77C3FA16730373456993FB",
+      "name": "capabilitiesManager.dll",
+      "fileVersion": "4.5.0.0"
+    }
+  ],
+  "glyphSourceFingerprints": [
+    {
+      "path": "electron/fonts.cjs",
+      "sha256": "c803944ecbdb425a188cf02c6ebcfd490cf2662c3c3151b0bf4c22bb0d2bba56"
+    },
+    {
+      "path": "electron/font-renderer.ps1",
+      "sha256": "5ddeab5babbf9b6f19891a466b2ab5ba19231ed3a057ac194e8255b9443abd66"
+    },
+    {
+      "path": "public/modules/04-native-text-preview.js",
+      "sha256": "ed1767a1acc78e5f098b962d1d991ce2cb087072c7d697c4901b52eb35ab30a5"
+    }
+  ],
+  "counts": {
+    "fields": 10,
+    "exactFontGeometryFields": 10,
+    "exactPrinterRasters": 10,
+    "exactCapturedPrinterRasters": 9,
+    "exactCurrentClockPrinterRasters": 1,
+    "clockAdvancedFields": 1
+  },
+  "limitations": [
+    "This verifies original COM loading, native properties and printer raster. It is not a screenshot of the ClariSoft GUI.",
+    "Captured vector outline pixels are antialiased; exact vector-screen/printer-raster equality is neither expected nor asserted.",
+    "Font cell geometry includes whitespace and baseline. Ink bounds are separate and are not used to resize or reposition text."
+  ],
+  "fields": [
+    {
+      "name": "TNR_Text",
+      "type": "FixedText",
+      "expectedFont": {
+        "face": "Times New Roman",
+        "pitch": 6,
+        "xMag": 100,
+        "bold": false,
+        "italic": false,
+        "family": 16,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "Abc 0123 АБВГ",
+      "calculatedDataOnLoad": "Abc 0123 АБВГ",
+      "currentNativeText": "Abc 0123 АБВГ",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 123,
+        "y": 234,
+        "w": 1367,
+        "h": 242
+      },
+      "nativePrinterCell": {
+        "x": 15,
+        "y": 28,
+        "width": 164,
+        "height": 29,
+        "orientation": 0
+      },
+      "previewPrinterCell": {
+        "x": 15,
+        "y": 28,
+        "width": 164,
+        "height": 29
+      },
+      "previewPrinterTransform": [
+        1,
+        0,
+        0,
+        1,
+        15,
+        28
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 164,
+        "capturedHeight": 29,
+        "currentWidth": 164,
+        "currentHeight": 29
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 7387,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "b5198fc558cf76c3c9746042148c4f5cd74d90437e4d31df6ad3c780e09addcf",
+        "request": {
+          "text": "Abc 0123 АБВГ",
+          "face": "Times New Roman",
+          "pitch": 6,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 164,
+          "height": 29,
+          "advanceWidth": 164,
+          "fontHeight": 29,
+          "baseline": 23,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 16,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": 0.2400000000000002,
+          "y": -0.07999999999999652,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            35,
+            48
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 164,
+            "height": 29
+          },
+          "parent": {
+            "className": "Group",
+            "x": 0,
+            "y": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              34.76,
+              48.08
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 14.76,
+            "y": 28.08,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              34.76,
+              48.08
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 35.2031,
+            "y": 53.6406,
+            "width": 163.5938,
+            "height": 17.703200000000002
+          },
+          "cellWorldBounds": {
+            "x": 35,
+            "y": 48,
+            "width": 164,
+            "height": 29
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 163.5938,
+          "height": 17.703200000000002,
+          "x": 0.2031,
+          "y": 5.6406
+        },
+        "fieldPhysicalBounds": {
+          "x": 125,
+          "y": 233,
+          "w": 1367,
+          "h": 242
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 0,
+          "y": 5,
+          "width": 163,
+          "height": 18,
+          "blackPixels": 675,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "TNR_Text",
+        "glyphUnrotatedInkBounds": {
+          "x": 0,
+          "y": 5,
+          "width": 163,
+          "height": 18,
+          "blackPixels": 675,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 164,
+          "nativeHeight": 29,
+          "glyphWidth": 164,
+          "glyphHeight": 29,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "Abc 0123 АБВГ",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 164,
+          "nativeHeight": 29,
+          "glyphWidth": 164,
+          "glyphHeight": 29,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "Arial_Bold",
+      "type": "FixedText",
+      "expectedFont": {
+        "face": "Arial",
+        "pitch": 13,
+        "xMag": 100,
+        "bold": true,
+        "italic": false,
+        "family": 32,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "Bold 012 АБВ",
+      "calculatedDataOnLoad": "Bold 012 АБВ",
+      "currentNativeText": "Bold 012 АБВ",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 377,
+        "y": 900,
+        "w": 3025,
+        "h": 533
+      },
+      "nativePrinterCell": {
+        "x": 45,
+        "y": 108,
+        "width": 363,
+        "height": 64,
+        "orientation": 0
+      },
+      "previewPrinterCell": {
+        "x": 45.00000000000001,
+        "y": 108,
+        "width": 363,
+        "height": 64
+      },
+      "previewPrinterTransform": [
+        1,
+        0,
+        0,
+        1,
+        45.00000000000001,
+        108
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 363,
+        "capturedHeight": 64,
+        "currentWidth": 363,
+        "currentHeight": 64
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 5198,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "2a36679c11630e3aeeae78cda32b8accd3fb3d083a9471ea8ebb955effd9edc1",
+        "request": {
+          "text": "Bold 012 АБВ",
+          "face": "Arial",
+          "pitch": 13,
+          "pitchResolution": 1,
+          "bold": true,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 363,
+          "height": 64,
+          "advanceWidth": 363,
+          "fontHeight": 64,
+          "baseline": 51,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 32,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": -0.2400000000000002,
+          "y": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            65.00000000000001,
+            128
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 363,
+            "height": 64
+          },
+          "parent": {
+            "className": "Group",
+            "x": 0,
+            "y": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              65.24000000000001,
+              128
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 45.24,
+            "y": 108,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              65.24000000000001,
+              128
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 69.03130000000002,
+            "y": 139.4688,
+            "width": 355.9687,
+            "height": 40.203100000000006
+          },
+          "cellWorldBounds": {
+            "x": 65.00000000000001,
+            "y": 128,
+            "width": 363,
+            "height": 64
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 355.9687,
+          "height": 40.2031,
+          "x": 4.0313,
+          "y": 11.4688
+        },
+        "fieldPhysicalBounds": {
+          "x": 375,
+          "y": 900,
+          "w": 3025,
+          "h": 533
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 4,
+          "y": 11,
+          "width": 357,
+          "height": 41,
+          "blackPixels": 6619,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "Arial_Bold",
+        "glyphUnrotatedInkBounds": {
+          "x": 4,
+          "y": 11,
+          "width": 357,
+          "height": 41,
+          "blackPixels": 6619,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 363,
+          "nativeHeight": 64,
+          "glyphWidth": 363,
+          "glyphHeight": 64,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "Bold 012 АБВ",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 363,
+          "nativeHeight": 64,
+          "glyphWidth": 363,
+          "glyphHeight": 64,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "Courier_XMag",
+      "type": "FixedText",
+      "expectedFont": {
+        "face": "Courier New",
+        "pitch": 9,
+        "xMag": 150,
+        "bold": false,
+        "italic": false,
+        "family": 48,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "Wide 0123",
+      "calculatedDataOnLoad": "Wide 0123",
+      "currentNativeText": "Wide 0123",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 111,
+        "y": 1701,
+        "w": 2625,
+        "h": 333
+      },
+      "nativePrinterCell": {
+        "x": 13,
+        "y": 204,
+        "width": 315,
+        "height": 40,
+        "orientation": 0
+      },
+      "previewPrinterCell": {
+        "x": 13,
+        "y": 204,
+        "width": 315,
+        "height": 40
+      },
+      "previewPrinterTransform": [
+        1,
+        0,
+        0,
+        1,
+        13,
+        204
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 315,
+        "capturedHeight": 40,
+        "currentWidth": 315,
+        "currentHeight": 40
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 6340,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "d55dc334f204c99ff1b8588196dc1fb1e6354ff99cc376ad27ed21f778ca208c",
+        "request": {
+          "text": "Wide 0123",
+          "face": "Courier New",
+          "pitch": 9,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 150,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 315,
+          "height": 40,
+          "advanceWidth": 315,
+          "fontHeight": 40,
+          "baseline": 30,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 48,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": -0.32000000000000206,
+          "y": -0.12000000000001876,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            33,
+            224
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 315,
+            "height": 40
+          },
+          "parent": {
+            "className": "Group",
+            "x": 0,
+            "y": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              33.32,
+              224.12
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 13.32,
+            "y": 204.12,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              33.32,
+              224.12
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 34.0469,
+            "y": 229.9375,
+            "width": 307.9844,
+            "height": 24.671899999999994
+          },
+          "cellWorldBounds": {
+            "x": 33,
+            "y": 224,
+            "width": 315,
+            "height": 40
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 307.9844,
+          "height": 24.6719,
+          "x": 1.0469,
+          "y": 5.9375
+        },
+        "fieldPhysicalBounds": {
+          "x": 108,
+          "y": 1700,
+          "w": 2625,
+          "h": 333
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 1,
+          "y": 5,
+          "width": 308,
+          "height": 25,
+          "blackPixels": 1124,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "Courier_XMag",
+        "glyphUnrotatedInkBounds": {
+          "x": 1,
+          "y": 5,
+          "width": 308,
+          "height": 25,
+          "blackPixels": 1124,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 315,
+          "nativeHeight": 40,
+          "glyphWidth": 315,
+          "glyphHeight": 40,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "Wide 0123",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 315,
+          "nativeHeight": 40,
+          "glyphWidth": 315,
+          "glyphHeight": 40,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "Tahoma_Date",
+      "type": "DateText",
+      "expectedFont": {
+        "face": "Tahoma",
+        "pitch": 8,
+        "xMag": 100,
+        "bold": false,
+        "italic": false,
+        "family": 32,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "20/10/26",
+      "calculatedDataOnLoad": "dd/MM/yy",
+      "currentNativeText": "20/10/26",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 197,
+        "y": 2403,
+        "w": 1167,
+        "h": 342
+      },
+      "nativePrinterCell": {
+        "x": 24,
+        "y": 288,
+        "width": 140,
+        "height": 41,
+        "orientation": 0
+      },
+      "previewPrinterCell": {
+        "x": 24,
+        "y": 288,
+        "width": 140,
+        "height": 41
+      },
+      "previewPrinterTransform": [
+        1,
+        0,
+        0,
+        1,
+        24,
+        288
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 140,
+        "capturedHeight": 41,
+        "currentWidth": 140,
+        "currentHeight": 41
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 4757,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "8937eb10bc08fd564f1d3aa9e38aa05fe8a70f3f78cafb46f824e63b5f22400d",
+        "request": {
+          "text": "20/10/26",
+          "face": "Tahoma",
+          "pitch": 8,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 140,
+          "height": 41,
+          "advanceWidth": 140,
+          "fontHeight": 41,
+          "baseline": 34,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 32,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": 0.3600000000000003,
+          "y": -0.36000000000001364,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            44,
+            308
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 140,
+            "height": 41
+          },
+          "parent": {
+            "className": "Group",
+            "x": 0,
+            "y": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              43.64,
+              308.36
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 23.64,
+            "y": 288.36,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              43.64,
+              308.36
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 45.8125,
+            "y": 316.1719,
+            "width": 136.6406,
+            "height": 31.203100000000006
+          },
+          "cellWorldBounds": {
+            "x": 44,
+            "y": 308,
+            "width": 140,
+            "height": 41
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 136.6406,
+          "height": 31.2031,
+          "x": 1.8125,
+          "y": 8.1719
+        },
+        "fieldPhysicalBounds": {
+          "x": 200,
+          "y": 2400,
+          "w": 1167,
+          "h": 342
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 2,
+          "y": 8,
+          "width": 136,
+          "height": 31,
+          "blackPixels": 1145,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "Tahoma_Date",
+        "glyphUnrotatedInkBounds": {
+          "x": 2,
+          "y": 8,
+          "width": 136,
+          "height": 31,
+          "blackPixels": 1145,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 140,
+          "nativeHeight": 41,
+          "glyphWidth": 140,
+          "glyphHeight": 41,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "20/10/26",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 140,
+          "nativeHeight": 41,
+          "glyphWidth": 140,
+          "glyphHeight": 41,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "Segoe_Offset",
+      "type": "OffsetDateText",
+      "expectedFont": {
+        "face": "Segoe UI",
+        "pitch": 7,
+        "xMag": 100,
+        "bold": false,
+        "italic": false,
+        "family": 32,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "20/10/26",
+      "calculatedDataOnLoad": "dd/MM/yy",
+      "currentNativeText": "20/10/26",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 213,
+        "y": 3107,
+        "w": 1000,
+        "h": 342
+      },
+      "nativePrinterCell": {
+        "x": 26,
+        "y": 373,
+        "width": 120,
+        "height": 41,
+        "orientation": 0
+      },
+      "previewPrinterCell": {
+        "x": 25.999999999999996,
+        "y": 373,
+        "width": 120,
+        "height": 41
+      },
+      "previewPrinterTransform": [
+        1,
+        0,
+        0,
+        1,
+        25.999999999999996,
+        373
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 120,
+        "capturedHeight": 41,
+        "currentWidth": 120,
+        "currentHeight": 41
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 4959,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "57eb62150135edfd0c305c372eae1e0c898eab03933989258ae707a798cc7553",
+        "request": {
+          "text": "20/10/26",
+          "face": "Segoe UI",
+          "pitch": 7,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 120,
+          "height": 41,
+          "advanceWidth": 120,
+          "fontHeight": 41,
+          "baseline": 33,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 32,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": 0.4399999999999995,
+          "y": 0.15999999999998238,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            46,
+            393
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 120,
+            "height": 41
+          },
+          "parent": {
+            "className": "Group",
+            "x": 0,
+            "y": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              45.56,
+              392.84000000000003
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 25.56,
+            "y": 372.84000000000003,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              45.56,
+              392.84000000000003
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 47.5938,
+            "y": 404.5313,
+            "width": 117.37499999999999,
+            "height": 24.953100000000006
+          },
+          "cellWorldBounds": {
+            "x": 46,
+            "y": 393,
+            "width": 120,
+            "height": 41
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 117.375,
+          "height": 24.9531,
+          "x": 1.5938,
+          "y": 11.5313
+        },
+        "fieldPhysicalBounds": {
+          "x": 217,
+          "y": 3108,
+          "w": 1000,
+          "h": 342
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 2,
+          "y": 12,
+          "width": 116,
+          "height": 24,
+          "blackPixels": 620,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "Segoe_Offset",
+        "glyphUnrotatedInkBounds": {
+          "x": 2,
+          "y": 12,
+          "width": 116,
+          "height": 24,
+          "blackPixels": 620,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 120,
+          "nativeHeight": 41,
+          "glyphWidth": 120,
+          "glyphHeight": 41,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "20/10/26",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 120,
+          "nativeHeight": 41,
+          "glyphWidth": 120,
+          "glyphHeight": 41,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "Narrow_Time",
+      "type": "TimeText",
+      "expectedFont": {
+        "face": "Arial Narrow",
+        "pitch": 10,
+        "xMag": 100,
+        "bold": false,
+        "italic": false,
+        "family": 32,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "23:23",
+      "calculatedDataOnLoad": "HH:mm",
+      "currentNativeText": "23:29",
+      "clockAdvanced": true,
+      "referenceKind": "separate-regenerated-current-runtime-payload",
+      "rawCiffGeometry": {
+        "x": 319,
+        "y": 3811,
+        "w": 717,
+        "h": 408
+      },
+      "nativePrinterCell": {
+        "x": 38,
+        "y": 457,
+        "width": 86,
+        "height": 49,
+        "orientation": 0
+      },
+      "previewPrinterCell": {
+        "x": 38,
+        "y": 457,
+        "width": 86,
+        "height": 49
+      },
+      "previewPrinterTransform": [
+        1,
+        0,
+        0,
+        1,
+        38,
+        457
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 86,
+        "capturedHeight": 49,
+        "currentWidth": 86,
+        "currentHeight": 49
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 2923,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "61a4650ffaac41714ca9c74b60f1c118e6d3182b20aeaee63d055ef0b4a09e21",
+        "request": {
+          "text": "23:23",
+          "face": "Arial Narrow",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 86,
+          "height": 49,
+          "advanceWidth": 86,
+          "fontHeight": 49,
+          "baseline": 40,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 32,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": -0.28000000000000114,
+          "y": -0.31999999999996476,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            58,
+            477
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 86,
+            "height": 49
+          },
+          "parent": {
+            "className": "Group",
+            "x": 0,
+            "y": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              58.28,
+              477.32
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 38.28,
+            "y": 457.32,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              58.28,
+              477.32
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 58.9688,
+            "y": 486.8125,
+            "width": 83.56249999999999,
+            "height": 30.718799999999987
+          },
+          "cellWorldBounds": {
+            "x": 58,
+            "y": 477,
+            "width": 86,
+            "height": 49
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 83.5625,
+          "height": 30.7188,
+          "x": 0.9688,
+          "y": 9.8125
+        },
+        "fieldPhysicalBounds": {
+          "x": 317,
+          "y": 3808,
+          "w": 717,
+          "h": 408
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "separate-regenerated-current-runtime-payload",
+        "nativeInkBounds": {
+          "x": 1,
+          "y": 10,
+          "width": 83,
+          "height": 30,
+          "blackPixels": 787,
+          "empty": false
+        },
+        "clockAdvanced": true,
+        "name": "Narrow_Time",
+        "glyphUnrotatedInkBounds": {
+          "x": 1,
+          "y": 10,
+          "width": 83,
+          "height": 30,
+          "blackPixels": 787,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 86,
+          "nativeHeight": 49,
+          "glyphWidth": 86,
+          "glyphHeight": 49,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "23:29",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 86,
+          "nativeHeight": 49,
+          "glyphWidth": 86,
+          "glyphHeight": 49,
+          "different": 141,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "OCRB_Counter",
+      "type": "CounterText",
+      "expectedFont": {
+        "face": "OCRB",
+        "pitch": 11,
+        "xMag": 100,
+        "bold": false,
+        "italic": false,
+        "family": 48,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "0001",
+      "calculatedDataOnLoad": "0001",
+      "currentNativeText": "0001",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 421,
+        "y": 4517,
+        "w": 933,
+        "h": 342
+      },
+      "nativePrinterCell": {
+        "x": 51,
+        "y": 542,
+        "width": 112,
+        "height": 41,
+        "orientation": 0
+      },
+      "previewPrinterCell": {
+        "x": 51,
+        "y": 541.9999999999999,
+        "width": 112,
+        "height": 41
+      },
+      "previewPrinterTransform": [
+        1,
+        0,
+        0,
+        1,
+        51,
+        541.9999999999999
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 112,
+        "capturedHeight": 41,
+        "currentWidth": 112,
+        "currentHeight": 41
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 2446,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "33a1252e75364ee1dda2952d57cffaf7d7e48457f84b416458ba6540b411c3bf",
+        "request": {
+          "text": "0001",
+          "face": "OCRB",
+          "pitch": 11,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 112,
+          "height": 41,
+          "advanceWidth": 112,
+          "fontHeight": 41,
+          "baseline": 33,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 48,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": 0.4800000000000004,
+          "y": -0.040000000000048885,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            71,
+            561.9999999999999
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 112,
+            "height": 41
+          },
+          "parent": {
+            "className": "Group",
+            "x": 0,
+            "y": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              70.52,
+              562.04
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 50.519999999999996,
+            "y": 542.04,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              70.52,
+              562.04
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 74.3281,
+            "y": 562.1874999999999,
+            "width": 98.875,
+            "height": 33.17190000000005
+          },
+          "cellWorldBounds": {
+            "x": 71,
+            "y": 561.9999999999999,
+            "width": 112,
+            "height": 41
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 98.875,
+          "height": 33.1719,
+          "x": 3.3281,
+          "y": 0.1875
+        },
+        "fieldPhysicalBounds": {
+          "x": 425,
+          "y": 4517,
+          "w": 933,
+          "h": 342
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 3,
+          "y": 0,
+          "width": 99,
+          "height": 33,
+          "blackPixels": 1145,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "OCRB_Counter",
+        "glyphUnrotatedInkBounds": {
+          "x": 3,
+          "y": 0,
+          "width": 99,
+          "height": 33,
+          "blackPixels": 1145,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 112,
+          "nativeHeight": 41,
+          "glyphWidth": 112,
+          "glyphHeight": 41,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "0001",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 112,
+          "nativeHeight": 41,
+          "glyphWidth": 112,
+          "glyphHeight": 41,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "TNR_Rot90",
+      "type": "FixedText",
+      "expectedFont": {
+        "face": "Times New Roman",
+        "pitch": 6,
+        "xMag": 100,
+        "bold": false,
+        "italic": false,
+        "family": 16,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "Rot 90",
+      "calculatedDataOnLoad": "Rot 90",
+      "currentNativeText": "Rot 90",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 3801,
+        "y": 801,
+        "w": 558,
+        "h": 242
+      },
+      "nativePrinterCell": {
+        "x": 456,
+        "y": 96,
+        "width": 29,
+        "height": 67,
+        "orientation": 90
+      },
+      "previewPrinterCell": {
+        "x": 456.00000000000006,
+        "y": 96.00000000000001,
+        "width": 29,
+        "height": 66.99999999999999
+      },
+      "previewPrinterTransform": [
+        6.123233995736766e-17,
+        1,
+        -1,
+        6.123233995736766e-17,
+        485.00000000000006,
+        96.00000000000001
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 67,
+        "capturedHeight": 29,
+        "currentWidth": 67,
+        "currentHeight": 29
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 3465,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "55b441a0fb597f04af7f8b104d886281db0804d9b7010adccc4c0e83967f0b60",
+        "request": {
+          "text": "Rot 90",
+          "face": "Times New Roman",
+          "pitch": 6,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 67,
+          "height": 29,
+          "advanceWidth": 67,
+          "fontHeight": 29,
+          "baseline": 23,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 16,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": -0.11999999999999744,
+          "y": 0.15999999999997527,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            6.123233995736766e-17,
+            1,
+            -1,
+            6.123233995736766e-17,
+            505.00000000000006,
+            116.00000000000001
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 67,
+            "height": 29
+          },
+          "parent": {
+            "className": "Group",
+            "x": 29.04,
+            "y": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 90,
+            "absoluteMatrix": [
+              6.123233995736766e-17,
+              1,
+              -1,
+              6.123233995736766e-17,
+              505.16,
+              116.12
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 456.12,
+            "y": 96.12,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              476.12,
+              116.12
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 481.65620000000007,
+            "y": 116.42190000000001,
+            "width": 17.234399999999994,
+            "height": 66.18749999999999
+          },
+          "cellWorldBounds": {
+            "x": 476.00000000000006,
+            "y": 116.00000000000001,
+            "width": 29,
+            "height": 66.99999999999999
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 66.1875,
+          "height": 17.2344,
+          "x": 0.4219,
+          "y": 6.1094
+        },
+        "fieldPhysicalBounds": {
+          "x": 3800,
+          "y": 800,
+          "w": 242,
+          "h": 558
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 6,
+          "y": 1,
+          "width": 17,
+          "height": 65,
+          "blackPixels": 292,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "TNR_Rot90",
+        "glyphUnrotatedInkBounds": {
+          "x": 1,
+          "y": 6,
+          "width": 65,
+          "height": 17,
+          "blackPixels": 292,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 29,
+          "nativeHeight": 67,
+          "glyphWidth": 29,
+          "glyphHeight": 67,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "Rot 90",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 29,
+          "nativeHeight": 67,
+          "glyphWidth": 29,
+          "glyphHeight": 67,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "Courier_Rot180",
+      "type": "FixedText",
+      "expectedFont": {
+        "face": "Courier New",
+        "pitch": 8,
+        "xMag": 100,
+        "bold": false,
+        "italic": false,
+        "family": 48,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "Rot 180",
+      "calculatedDataOnLoad": "Rot 180",
+      "currentNativeText": "Rot 180",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 1801,
+        "y": 5203,
+        "w": 1167,
+        "h": 308
+      },
+      "nativePrinterCell": {
+        "x": 216,
+        "y": 624,
+        "width": 140,
+        "height": 37,
+        "orientation": 180
+      },
+      "previewPrinterCell": {
+        "x": 215.99999999999994,
+        "y": 624,
+        "width": 140,
+        "height": 37
+      },
+      "previewPrinterTransform": [
+        -1,
+        1.2246467991473532e-16,
+        -1.2246467991473532e-16,
+        -1,
+        355.99999999999994,
+        661
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 140,
+        "capturedHeight": 37,
+        "currentWidth": 140,
+        "currentHeight": 37
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 4918,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "b3a518f3a416ab27ce069192b520df7c9f91a30cd20ab9fd658dd69295a8be22",
+        "request": {
+          "text": "Rot 180",
+          "face": "Courier New",
+          "pitch": 8,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 140,
+          "height": 37,
+          "advanceWidth": 140,
+          "fontHeight": 37,
+          "baseline": 28,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 48,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": 0.1600000000000108,
+          "y": 0.3200000000000145,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            -1,
+            1.2246467991473532e-16,
+            -1.2246467991473532e-16,
+            -1,
+            375.99999999999994,
+            681
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 140,
+            "height": 37
+          },
+          "parent": {
+            "className": "Group",
+            "x": 140.04,
+            "y": 36.96,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 180,
+            "absoluteMatrix": [
+              -1,
+              1.2246467991473532e-16,
+              -1.2246467991473532e-16,
+              -1,
+              376.15999999999997,
+              681.32
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 216.12,
+            "y": 624.36,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              236.12,
+              644.36
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 239.39059999999995,
+            "y": 652.4531,
+            "width": 135.1406,
+            "height": 21.875000000000114
+          },
+          "cellWorldBounds": {
+            "x": 235.99999999999994,
+            "y": 644,
+            "width": 140,
+            "height": 37
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 135.1406,
+          "height": 21.875,
+          "x": 1.4688,
+          "y": 6.6719
+        },
+        "fieldPhysicalBounds": {
+          "x": 1800,
+          "y": 5200,
+          "w": 1167,
+          "h": 308
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 4,
+          "y": 9,
+          "width": 135,
+          "height": 21,
+          "blackPixels": 301,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "Courier_Rot180",
+        "glyphUnrotatedInkBounds": {
+          "x": 1,
+          "y": 7,
+          "width": 135,
+          "height": 21,
+          "blackPixels": 301,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 140,
+          "nativeHeight": 37,
+          "glyphWidth": 140,
+          "glyphHeight": 37,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "Rot 180",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 140,
+          "nativeHeight": 37,
+          "glyphWidth": 140,
+          "glyphHeight": 37,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    },
+    {
+      "name": "Tahoma_Rot270",
+      "type": "FixedText",
+      "expectedFont": {
+        "face": "Tahoma",
+        "pitch": 6,
+        "xMag": 100,
+        "bold": false,
+        "italic": false,
+        "family": 32,
+        "boldWeight": 1,
+        "yMag": 100,
+        "ttSize": 1,
+        "txtDir": 0,
+        "charSpace": 0,
+        "pitchResolution": 1
+      },
+      "mismatches": [],
+      "capturedPreviewText": "Rot 270",
+      "calculatedDataOnLoad": "Rot 270",
+      "currentNativeText": "Rot 270",
+      "clockAdvanced": false,
+      "referenceKind": "original-captured-printer-bitmap",
+      "rawCiffGeometry": {
+        "x": 4003,
+        "y": 3001,
+        "w": 733,
+        "h": 250
+      },
+      "nativePrinterCell": {
+        "x": 480,
+        "y": 360,
+        "width": 30,
+        "height": 88,
+        "orientation": 270
+      },
+      "previewPrinterCell": {
+        "x": 480,
+        "y": 360,
+        "width": 30,
+        "height": 88
+      },
+      "previewPrinterTransform": [
+        -1.8369701987210297e-16,
+        -1,
+        1,
+        -1.8369701987210297e-16,
+        480,
+        448
+      ],
+      "unrotatedMetrics": {
+        "capturedWidth": 88,
+        "capturedHeight": 30,
+        "currentWidth": 88,
+        "currentHeight": 30
+      },
+      "vectorEvidence": {
+        "nodeClass": "Path",
+        "nodeNative": true,
+        "nodeVector": true,
+        "outlineLength": 3254,
+        "nodeDataMatchesOutline": null,
+        "outlineSha256": "d7a2ab5da754067b4b3e1680da6a24be5f792804c4a3c98bb650e85a3ae32463",
+        "request": {
+          "text": "Rot 270",
+          "face": "Tahoma",
+          "pitch": 6,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "metrics": {
+          "width": 88,
+          "height": 30,
+          "advanceWidth": 88,
+          "fontHeight": 30,
+          "baseline": 25,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fontFamily": 32,
+          "trueType": true
+        },
+        "nodeGeometry": {
+          "className": "Path",
+          "x": 0.08000000000002672,
+          "y": -0.36000000000001364,
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0,
+          "absoluteMatrix": [
+            -1.8369701987210297e-16,
+            -1,
+            1,
+            -1.8369701987210297e-16,
+            500,
+            468
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 88,
+            "height": 30
+          },
+          "parent": {
+            "className": "Group",
+            "x": 0,
+            "y": 87.96000000000001,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 270,
+            "absoluteMatrix": [
+              -1.8369701987210297e-16,
+              -1,
+              1,
+              -1.8369701987210297e-16,
+              500.36,
+              468.08000000000004
+            ]
+          },
+          "fieldGroup": {
+            "className": "Group",
+            "x": 480.36,
+            "y": 360.12,
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              500.36,
+              380.12
+            ]
+          },
+          "inkWorldBounds": {
+            "x": 506.4375,
+            "y": 381.3594,
+            "width": 18.9375,
+            "height": 84.79680000000002
+          },
+          "cellWorldBounds": {
+            "x": 500,
+            "y": 380,
+            "width": 30,
+            "height": 88
+          },
+          "pixelsPerMm": 12
+        },
+        "outlineInkBounds": {
+          "width": 84.7968,
+          "height": 18.9375,
+          "x": 1.8438,
+          "y": 6.4375
+        },
+        "fieldPhysicalBounds": {
+          "x": 4000,
+          "y": 3000,
+          "w": 250,
+          "h": 733
+        },
+        "effectiveGdiBoldWeight": 1
+      },
+      "printerRaster": {
+        "referenceKind": "original-captured-printer-bitmap",
+        "nativeInkBounds": {
+          "x": 6,
+          "y": 1,
+          "width": 19,
+          "height": 85,
+          "blackPixels": 452,
+          "empty": false
+        },
+        "clockAdvanced": false,
+        "name": "Tahoma_Rot270",
+        "glyphUnrotatedInkBounds": {
+          "x": 2,
+          "y": 6,
+          "width": 85,
+          "height": 19,
+          "blackPixels": 452,
+          "empty": false
+        },
+        "comparison": {
+          "nativeWidth": 30,
+          "nativeHeight": 88,
+          "glyphWidth": 30,
+          "glyphHeight": 88,
+          "different": 0,
+          "sameDimensions": true
+        },
+        "payload": "Rot 270",
+        "capturedSnapshotComparison": {
+          "nativeWidth": 30,
+          "nativeHeight": 88,
+          "glyphWidth": 30,
+          "glyphHeight": 88,
+          "different": 0,
+          "sameDimensions": true
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

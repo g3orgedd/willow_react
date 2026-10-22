@@ -1,0 +1,83 @@
+[
+    {
+        "variant":  "normal",
+        "width":  766,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  48258,
+        "height":  63,
+        "face":  "Arial"
+    },
+    {
+        "variant":  "bold",
+        "width":  798,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  51072,
+        "height":  64,
+        "face":  "Arial"
+    },
+    {
+        "variant":  "italic",
+        "width":  766,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  48258,
+        "height":  63,
+        "face":  "Arial"
+    },
+    {
+        "variant":  "xmag150",
+        "width":  1123,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  70749,
+        "height":  63,
+        "face":  "Arial"
+    },
+    {
+        "variant":  "ymag150",
+        "width":  766,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  48258,
+        "height":  63,
+        "face":  "Arial"
+    },
+    {
+        "variant":  "spacing1",
+        "width":  816,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  51408,
+        "height":  63,
+        "face":  "Arial"
+    },
+    {
+        "variant":  "spacing50",
+        "width":  3266,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  205758,
+        "height":  63,
+        "face":  "Arial"
+    },
+    {
+        "variant":  "pitchresolution10",
+        "width":  71,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  426,
+        "height":  6,
+        "face":  "Arial"
+    },
+    {
+        "variant":  "ttsize0",
+        "width":  766,
+        "different":  0,
+        "pitch":  13,
+        "pixels":  48258,
+        "height":  63,
+        "face":  "Arial"
+    }
+]

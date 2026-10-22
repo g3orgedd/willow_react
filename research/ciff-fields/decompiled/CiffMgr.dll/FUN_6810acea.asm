@@ -1,0 +1,2 @@
+6810acea MOV dword ptr [ECX],0x68148694
+6810acf0 RET

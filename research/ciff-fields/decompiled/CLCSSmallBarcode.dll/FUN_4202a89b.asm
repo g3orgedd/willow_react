@@ -1,0 +1,27 @@
+4202a89b PUSH EBP
+4202a89c MOV EBP,ESP
+4202a89e PUSH ESI
+4202a89f PUSH dword ptr [EBP + 0x14]
+4202a8a2 MOV ESI,ECX
+4202a8a4 PUSH dword ptr [EBP + 0x10]
+4202a8a7 CALL 0x4202bab9
+4202a8ac MOV EAX,dword ptr [EBP + 0xc]
+4202a8af LEA ECX,[EBP + 0x14]
+4202a8b2 PUSH dword ptr [EAX + 0x83c]
+4202a8b8 CALL 0x42002eae
+4202a8bd PUSH dword ptr [EBP + 0x14]
+4202a8c0 CALL dword ptr [0x42089268]
+4202a8c6 PUSH dword ptr [EBP + 0x8]
+4202a8c9 PUSH EAX
+4202a8ca PUSH dword ptr [EBP + 0x14]
+4202a8cd PUSH dword ptr [EBP + 0x10]
+4202a8d0 CALL dword ptr [0x420890b8]
+4202a8d6 PUSH dword ptr [EBP + 0x10]
+4202a8d9 MOV ECX,ESI
+4202a8db CALL 0x4202a25a
+4202a8e0 PUSH dword ptr [EBP + 0x14]
+4202a8e3 CALL dword ptr [0x42089264]
+4202a8e9 MOV EAX,dword ptr [EBP + 0x8]
+4202a8ec POP ESI
+4202a8ed POP EBP
+4202a8ee RET 0x10

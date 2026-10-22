@@ -1,0 +1,90 @@
+﻿[
+    {
+        "name":  "normal",
+        "widthCiff":  6383,
+        "path":  "variant_normal.png",
+        "heightCiff":  525,
+        "widthDots":  766,
+        "heightDots":  63
+    },
+    {
+        "name":  "bold",
+        "widthCiff":  6650,
+        "path":  "variant_bold.png",
+        "heightCiff":  533,
+        "widthDots":  798,
+        "heightDots":  64
+    },
+    {
+        "name":  "italic",
+        "widthCiff":  6383,
+        "path":  "variant_italic.png",
+        "heightCiff":  525,
+        "widthDots":  766,
+        "heightDots":  63
+    },
+    {
+        "name":  "xmag150",
+        "widthCiff":  9358,
+        "path":  "variant_xmag150.png",
+        "heightCiff":  525,
+        "widthDots":  1123,
+        "heightDots":  63
+    },
+    {
+        "name":  "ymag150",
+        "widthCiff":  6383,
+        "path":  "variant_ymag150.png",
+        "heightCiff":  525,
+        "widthDots":  766,
+        "heightDots":  63
+    },
+    {
+        "name":  "spacing50",
+        "widthCiff":  27217,
+        "path":  "variant_spacing50.png",
+        "heightCiff":  525,
+        "widthDots":  3266,
+        "heightDots":  63
+    },
+    {
+        "name":  "spacing1",
+        "widthCiff":  6800,
+        "path":  "variant_spacing1.png",
+        "heightCiff":  525,
+        "widthDots":  816,
+        "heightDots":  63
+    },
+    {
+        "name":  "pitchresolution10",
+        "widthCiff":  592,
+        "path":  "variant_pitchresolution10.png",
+        "heightCiff":  50,
+        "widthDots":  71,
+        "heightDots":  6
+    },
+    {
+        "name":  "ttsize0",
+        "widthCiff":  6383,
+        "path":  "variant_ttsize0.png",
+        "heightCiff":  525,
+        "widthDots":  766,
+        "heightDots":  63
+    },
+    {
+        "name":  "ttsize2",
+        "widthCiff":  0,
+        "path":  "variant_ttsize2.png",
+        "heightCiff":  0,
+        "widthDots":  170,
+        "heightDots":  9
+    },
+    {
+        "name":  "double",
+        "widthCiff":  11067,
+        "path":  "variant_double.png",
+        "heightCiff":  525,
+        "widthDots":  1826,
+        "heightDots":  63
+    }
+]

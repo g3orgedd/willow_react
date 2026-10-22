@@ -1,0 +1,14 @@
+00e061b9 PUSH ESI
+00e061ba MOV ESI,ECX
+00e061bc PUSH dword ptr [ESI]
+00e061be CALL dword ptr [0x00efc3fc]
+00e061c4 TEST EAX,EAX
+00e061c6 JZ 0x00e061d9
+00e061c8 PUSH dword ptr [ESI]
+00e061ca CALL dword ptr [0x00efc3fc]
+00e061d0 PUSH EAX
+00e061d1 PUSH dword ptr [ESI]
+00e061d3 CALL dword ptr [0x00efc61c]
+00e061d9 XOR EAX,EAX
+00e061db POP ESI
+00e061dc RET

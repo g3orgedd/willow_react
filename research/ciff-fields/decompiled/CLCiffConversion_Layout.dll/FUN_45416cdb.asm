@@ -1,0 +1,5 @@
+45416cdb MOV EAX,dword ptr [ECX + -0x8]
+45416cde ADD ECX,-0x8
+45416ce1 MOV EAX,dword ptr [EAX + 0x4]
+45416ce4 ADD ECX,EAX
+45416ce6 JMP 0x4541685d

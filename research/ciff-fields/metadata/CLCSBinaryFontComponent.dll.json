@@ -1,0 +1,547 @@
+{
+  "name": "CLCSBinaryFontComponent.dll",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSBinaryFontComponent.dll",
+  "size": 167424,
+  "sha256": "8bc081e2c23fa2dedc8accd0a91dbe02c913581a7aaac2d60c20a451938be675",
+  "imageBase": "10000000",
+  "exports": [
+    {
+      "name": "DllCanUnloadNow",
+      "ordinal": 1,
+      "va": "10008fb5"
+    },
+    {
+      "name": "DllGetClassObject",
+      "ordinal": 2,
+      "va": "10008fc1"
+    },
+    {
+      "name": "DllRegisterServer",
+      "ordinal": 3,
+      "va": "10009011"
+    },
+    {
+      "name": "DllUnregisterServer",
+      "ordinal": 4,
+      "va": "10009020"
+    }
+  ],
+  "imports": [
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "RaiseException",
+        "DisableThreadLibraryCalls",
+        "GetModuleFileNameW",
+        "LoadLibraryExW",
+        "LoadResource",
+        "SizeofResource",
+        "lstrcmpiW",
+        "FindResourceW",
+        "MultiByteToWideChar",
+        "DecodePointer",
+        "CreateFileW",
+        "ReadFile",
+        "SetFilePointer",
+        "WriteFile",
+        "CloseHandle",
+        "GetLocalTime",
+        "WriteConsoleW",
+        "SetStdHandle",
+        "SetFilePointerEx",
+        "GetConsoleMode",
+        "EncodePointer",
+        "GetStringTypeW",
+        "GetLocaleInfoW",
+        "LoadLibraryW",
+        "GetProcAddress",
+        "GetModuleHandleW",
+        "FreeLibrary",
+        "DeleteCriticalSection",
+        "InitializeCriticalSectionAndSpinCount",
+        "LeaveCriticalSection",
+        "EnterCriticalSection",
+        "GetLastError",
+        "GetConsoleCP",
+        "GetCPInfo",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "LCMapStringW",
+        "FlushFileBuffers",
+        "FreeEnvironmentStringsW",
+        "GetEnvironmentStringsW",
+        "GetSystemTimeAsFileTime",
+        "GetCurrentProcessId",
+        "QueryPerformanceCounter",
+        "GetModuleFileNameA",
+        "IsDebuggerPresent",
+        "OutputDebugStringW",
+        "RtlUnwind",
+        "IsProcessorFeaturePresent",
+        "HeapFree",
+        "HeapAlloc",
+        "GetCommandLineA",
+        "GetCurrentThreadId",
+        "ExitProcess",
+        "GetModuleHandleExW",
+        "WideCharToMultiByte",
+        "HeapSize",
+        "SetLastError",
+        "UnhandledExceptionFilter",
+        "SetUnhandledExceptionFilter",
+        "Sleep",
+        "GetCurrentProcess",
+        "TerminateProcess",
+        "TlsAlloc",
+        "TlsGetValue",
+        "TlsSetValue",
+        "TlsFree",
+        "GetStartupInfoW",
+        "GetProcessHeap",
+        "GetStdHandle",
+        "HeapReAlloc",
+        "GetFileType"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "CharNextW"
+      ]
+    },
+    {
+      "library": "GDI32.dll",
+      "names": [
+        "GetCurrentObject",
+        "GetObjectW"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "RegSetValueExW",
+        "RegQueryInfoKeyW",
+        "RegOpenKeyExW",
+        "RegEnumKeyExW",
+        "RegDeleteValueW",
+        "RegDeleteKeyW",
+        "RegCreateKeyExW",
+        "RegCloseKey"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "CoTaskMemFree",
+        "CoTaskMemRealloc",
+        "CoCreateInstance",
+        "StringFromGUID2",
+        "CoTaskMemAlloc"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "SystemTimeToVariantTime",
+        "UnRegisterTypeLib",
+        "RegisterTypeLib",
+        "LoadTypeLib",
+        "VarUI4FromStr",
+        "SysStringLen",
+        "SysAllocStringLen",
+        "VarBstrCmp",
+        "SysAllocStringByteLen",
+        "SysStringByteLen",
+        "SysFreeString",
+        "SysAllocString"
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "1001c56c",
+      "fileOffset": 112492,
+      "encoding": "ascii",
+      "text": "ScriptGetFontProperties"
+    },
+    {
+      "va": "1001de80",
+      "fileOffset": 118912,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "1001def0",
+      "fileOffset": 119024,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "10021280",
+      "fileOffset": 132224,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "10021658",
+      "fileOffset": 133208,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "100216bc",
+      "fileOffset": 133308,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "10023da0",
+      "fileOffset": 143264,
+      "encoding": "ascii",
+      "text": "CLCSBinaryFontComponent.DLL"
+    },
+    {
+      "va": "10023dcc",
+      "fileOffset": 143308,
+      "encoding": "ascii",
+      "text": "DllGetClassObject"
+    },
+    {
+      "va": "10024268",
+      "fileOffset": 144488,
+      "encoding": "ascii",
+      "text": "GetCurrentObject"
+    },
+    {
+      "va": "1002427c",
+      "fileOffset": 144508,
+      "encoding": "ascii",
+      "text": "GetObjectW"
+    },
+    {
+      "va": "100262a8",
+      "fileOffset": 150696,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "100262ec",
+      "fileOffset": 150764,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "100263dc",
+      "fileOffset": 151004,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCBinaryFontUniscribe@@@ATL@@"
+    },
+    {
+      "va": "10026414",
+      "fileOffset": 151060,
+      "encoding": "ascii",
+      "text": ".?AVCBinaryFontUniscribe@@"
+    },
+    {
+      "va": "10026438",
+      "fileOffset": 151096,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCBinaryFontUniscribe@@$1?CLSID_BinaryFontUniscribe@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "10026498",
+      "fileOffset": 151192,
+      "encoding": "ascii",
+      "text": ".?AUIBinaryFontUniscribe@@"
+    },
+    {
+      "va": "1002659c",
+      "fileOffset": 151452,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "100265fc",
+      "fileOffset": 151548,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+    },
+    {
+      "va": "1002663c",
+      "fileOffset": 151612,
+      "encoding": "ascii",
+      "text": ".?AUIBinaryFont@@"
+    },
+    {
+      "va": "10026658",
+      "fileOffset": 151640,
+      "encoding": "ascii",
+      "text": ".?AVCBinaryFont@@"
+    },
+    {
+      "va": "10026678",
+      "fileOffset": 151672,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCBinaryFont@@$1?CLSID_BinaryFont@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "100266c8",
+      "fileOffset": 151752,
+      "encoding": "ascii",
+      "text": ".?AVCZFBFFontPlayer@@"
+    },
+    {
+      "va": "100266e8",
+      "fileOffset": 151784,
+      "encoding": "ascii",
+      "text": ".?AVCZFBFFontUtilities@@"
+    },
+    {
+      "va": "1002670c",
+      "fileOffset": 151820,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCBinaryFont@@@ATL@@"
+    },
+    {
+      "va": "1002a532",
+      "fileOffset": 153906,
+      "encoding": "ascii",
+      "text": "CLBinaryFontComponent.BinaryFont.1 = s 'BinaryFont Class'"
+    },
+    {
+      "va": "1002a5ac",
+      "fileOffset": 154028,
+      "encoding": "ascii",
+      "text": "CLBinaryFontComponent.BinaryFont = s 'BinaryFont Class'"
+    },
+    {
+      "va": "1002a621",
+      "fileOffset": 154145,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLBinaryFontComponent.BinaryFont.1'"
+    },
+    {
+      "va": "1002a66d",
+      "fileOffset": 154221,
+      "encoding": "ascii",
+      "text": "ForceRemove {B261CBA5-9A1F-4132-B65D-E748E241F00C} = s 'BinaryFont Class'"
+    },
+    {
+      "va": "1002a6c0",
+      "fileOffset": 154304,
+      "encoding": "ascii",
+      "text": "ProgID = s 'CLBinaryFontComponent.BinaryFont.1'"
+    },
+    {
+      "va": "1002a6f4",
+      "fileOffset": 154356,
+      "encoding": "ascii",
+      "text": "VersionIndependentProgID = s 'CLBinaryFontComponent.BinaryFont'"
+    },
+    {
+      "va": "1002a7fa",
+      "fileOffset": 154618,
+      "encoding": "ascii",
+      "text": "CCLBinaryFontComponent.BinaryFontUniscribe.1 = s 'BinaryFontUniscribe Class'"
+    },
+    {
+      "va": "1002a887",
+      "fileOffset": 154759,
+      "encoding": "ascii",
+      "text": "CLBinaryFontComponent.BinaryFontUniscribe = s 'BinaryFontUniscribe Class'"
+    },
+    {
+      "va": "1002a90e",
+      "fileOffset": 154894,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLBinaryFontComponent.BinaryFontUniscribe.1'"
+    },
+    {
+      "va": "1002a963",
+      "fileOffset": 154979,
+      "encoding": "ascii",
+      "text": "ForceRemove {3F6D599E-4807-4E71-8953-1C3ECD927B1B} = s 'BinaryFontUniscribe Class'"
+    },
+    {
+      "va": "1002a9bf",
+      "fileOffset": 155071,
+      "encoding": "ascii",
+      "text": "ProgID = s 'CLBinaryFontComponent.BinaryFontUniscribe.1'"
+    },
+    {
+      "va": "1002a9fc",
+      "fileOffset": 155132,
+      "encoding": "ascii",
+      "text": "VersionIndependentProgID = s 'CLBinaryFontComponent.BinaryFontUniscribe'"
+    },
+    {
+      "va": "1002b2ec",
+      "fileOffset": 157420,
+      "encoding": "ascii",
+      "text": "CLCSBINARYFONTCOMPONENTLibWW"
+    },
+    {
+      "va": "1002b313",
+      "fileOffset": 157459,
+      "encoding": "ascii",
+      "text": "6BinaryFontWWd"
+    },
+    {
+      "va": "1002b32c",
+      "fileOffset": 157484,
+      "encoding": "ascii",
+      "text": "IBinaryFontW"
+    },
+    {
+      "va": "1002b344",
+      "fileOffset": 157508,
+      "encoding": "ascii",
+      "text": "IBinaryFontUniscribe"
+    },
+    {
+      "va": "1002b362",
+      "fileOffset": 157538,
+      "encoding": "ascii",
+      "text": "K#SelectBitmapFont"
+    },
+    {
+      "va": "1002b380",
+      "fileOffset": 157568,
+      "encoding": "ascii",
+      "text": "bstrFontName"
+    },
+    {
+      "va": "1002b423",
+      "fileOffset": 157731,
+      "encoding": "ascii",
+      "text": "=DeselectBitmapFontWW"
+    },
+    {
+      "va": "1002b444",
+      "fileOffset": 157764,
+      "encoding": "ascii",
+      "text": "SetObjectLinkWWW"
+    },
+    {
+      "va": "1002b46e",
+      "fileOffset": 157806,
+      "encoding": "ascii",
+      "text": "|6pIObject,"
+    },
+    {
+      "va": "1002b61b",
+      "fileOffset": 158235,
+      "encoding": "ascii",
+      "text": "GAddBinaryFontResourceWWW"
+    },
+    {
+      "va": "1002b63f",
+      "fileOffset": 158271,
+      "encoding": "ascii",
+      "text": "kbstrFontPathd"
+    },
+    {
+      "va": "1002b658",
+      "fileOffset": 158296,
+      "encoding": "ascii",
+      "text": "RemoveBinaryFontResourceX"
+    },
+    {
+      "va": "1002b67c",
+      "fileOffset": 158332,
+      "encoding": "ascii",
+      "text": "BinaryFontUniscribeW$"
+    },
+    {
+      "va": "1002b692",
+      "fileOffset": 158354,
+      "encoding": "ascii",
+      "text": "BinaryFontComponent 1.0 Type LibraryWW"
+    },
+    {
+      "va": "1002b6ba",
+      "fileOffset": 158394,
+      "encoding": "ascii",
+      "text": "BinaryFont ClassWW"
+    },
+    {
+      "va": "1002b6ce",
+      "fileOffset": 158414,
+      "encoding": "ascii",
+      "text": "IBinaryFont InterfaceW"
+    },
+    {
+      "va": "1002b6e6",
+      "fileOffset": 158438,
+      "encoding": "ascii",
+      "text": "IBinaryFontUniscribe Interface"
+    },
+    {
+      "va": "1002b706",
+      "fileOffset": 158470,
+      "encoding": "ascii",
+      "text": "method SelectBitmapFontWWW"
+    },
+    {
+      "va": "1002b722",
+      "fileOffset": 158498,
+      "encoding": "ascii",
+      "text": "method DeselectBitmapFontW"
+    },
+    {
+      "va": "1002b73e",
+      "fileOffset": 158526,
+      "encoding": "ascii",
+      "text": "method SetObjectLinkWW"
+    },
+    {
+      "va": "1002b79e",
+      "fileOffset": 158622,
+      "encoding": "ascii",
+      "text": "method AddBinaryFontResourceWW"
+    },
+    {
+      "va": "1002b7be",
+      "fileOffset": 158654,
+      "encoding": "ascii",
+      "text": "method RemoveBinaryFontResourceWWW"
+    },
+    {
+      "va": "1002b7e2",
+      "fileOffset": 158690,
+      "encoding": "ascii",
+      "text": "BinaryFontUniscribe ClassW"
+    },
+    {
+      "va": "1002a2e8",
+      "fileOffset": 153320,
+      "encoding": "utf-16-le",
+      "text": "CLCSBinaryFontComponent Module"
+    },
+    {
+      "va": "1002a378",
+      "fileOffset": 153464,
+      "encoding": "utf-16-le",
+      "text": "CLCSBinaryFontComponent"
+    },
+    {
+      "va": "1002a414",
+      "fileOffset": 153620,
+      "encoding": "utf-16-le",
+      "text": "CLCSBinaryFontComponent.DLL"
+    },
+    {
+      "va": "1002a46c",
+      "fileOffset": 153708,
+      "encoding": "utf-16-le",
+      "text": "CLCSBinaryFontComponent Module"
+    },
+    {
+      "va": "1002bbd2",
+      "fileOffset": 159698,
+      "encoding": "utf-16-le",
+      "text": "CLCSBinaryFontComponent"
+    }
+  ]
+}

@@ -1,0 +1,3234 @@
+{
+  "name": "CiffMgr.dll",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffMgr.dll",
+  "size": 550400,
+  "sha256": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+  "imageBase": "68100000",
+  "exports": [
+    {
+      "name": "DllCanUnloadNow",
+      "ordinal": 1,
+      "va": "6810f009"
+    },
+    {
+      "name": "DllGetClassObject",
+      "ordinal": 2,
+      "va": "6810f015"
+    },
+    {
+      "name": "DllRegisterServer",
+      "ordinal": 3,
+      "va": "6810f065"
+    },
+    {
+      "name": "DllUnregisterServer",
+      "ordinal": 4,
+      "va": "6810f074"
+    }
+  ],
+  "imports": [
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "GetModuleFileNameW",
+        "EncodePointer",
+        "DecodePointer",
+        "RaiseException",
+        "DisableThreadLibraryCalls",
+        "GetModuleHandleW",
+        "LoadLibraryExW",
+        "LoadResource",
+        "SizeofResource",
+        "lstrcmpiW",
+        "FindResourceW",
+        "MultiByteToWideChar",
+        "GetTickCount",
+        "DeleteCriticalSection",
+        "WriteFile",
+        "CloseHandle",
+        "WideCharToMultiByte",
+        "WriteConsoleW",
+        "SetStdHandle",
+        "SetFilePointerEx",
+        "GetConsoleMode",
+        "GetConsoleCP",
+        "GetStringTypeW",
+        "GetLastError",
+        "InitializeCriticalSectionAndSpinCount",
+        "LeaveCriticalSection",
+        "EnterCriticalSection",
+        "LoadLibraryW",
+        "GetProcAddress",
+        "FreeLibrary",
+        "CreateFileW",
+        "GetSystemDirectoryW",
+        "LCMapStringW",
+        "FreeEnvironmentStringsW",
+        "GetEnvironmentStringsW",
+        "GetSystemTimeAsFileTime",
+        "GetCurrentProcessId",
+        "QueryPerformanceCounter",
+        "GetModuleFileNameA",
+        "GetFileType",
+        "HeapReAlloc",
+        "GetStdHandle",
+        "GetStartupInfoW",
+        "TlsFree",
+        "TlsSetValue",
+        "TlsGetValue",
+        "TlsAlloc",
+        "FlushFileBuffers",
+        "TerminateProcess",
+        "GetCurrentProcess",
+        "Sleep",
+        "SetUnhandledExceptionFilter",
+        "UnhandledExceptionFilter",
+        "GetProcessHeap",
+        "GetCPInfo",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "IsDebuggerPresent",
+        "OutputDebugStringW",
+        "RtlUnwind",
+        "HeapFree",
+        "IsProcessorFeaturePresent",
+        "HeapAlloc",
+        "GetCommandLineA",
+        "GetCurrentThreadId",
+        "ExitProcess",
+        "GetModuleHandleExW",
+        "HeapSize",
+        "SetLastError"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "MessageBoxW",
+        "SetRectEmpty",
+        "SetRect",
+        "CharUpperBuffW",
+        "CharNextW"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "RegQueryInfoKeyW",
+        "RegOpenKeyExW",
+        "RegEnumKeyExW",
+        "RegDeleteValueW",
+        "RegDeleteKeyW",
+        "RegCreateKeyExW",
+        "RegCloseKey",
+        "RegSetValueExW"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "StringFromGUID2",
+        "CoTaskMemAlloc",
+        "CoTaskMemRealloc",
+        "CoTaskMemFree",
+        "CoCreateInstance"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "SafeArrayRedim",
+        "VarBstrCat",
+        "SafeArrayUnaccessData",
+        "SafeArrayAccessData",
+        "SafeArrayGetLBound",
+        "SafeArrayGetUBound",
+        "SafeArrayGetDim",
+        "SafeArrayCreate",
+        "UnRegisterTypeLib",
+        "RegisterTypeLib",
+        "SafeArrayCopy",
+        "SafeArrayDestroy",
+        "LoadRegTypeLib",
+        "LoadTypeLib",
+        "VariantCopy",
+        "VarBstrCmp",
+        "VariantInit",
+        "SysAllocStringByteLen",
+        "SysStringByteLen",
+        "SysStringLen",
+        "SysFreeString",
+        "SysReAllocStringLen",
+        "SysAllocStringLen",
+        "SysAllocString",
+        "VariantClear",
+        "VariantTimeToSystemTime",
+        "SystemTimeToVariantTime",
+        "VarUI4FromStr"
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "6814f898",
+      "fileOffset": 319128,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "6814f908",
+      "fileOffset": 319240,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "68152970",
+      "fileOffset": 331632,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "68152d48",
+      "fileOffset": 332616,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "6815361c",
+      "fileOffset": 334876,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "6815d940",
+      "fileOffset": 376640,
+      "encoding": "ascii",
+      "text": "CiffMgr.DLL"
+    },
+    {
+      "va": "6815d95c",
+      "fileOffset": 376668,
+      "encoding": "ascii",
+      "text": "DllGetClassObject"
+    },
+    {
+      "va": "68161778",
+      "fileOffset": 389496,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "681617bc",
+      "fileOffset": 389564,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "681617fc",
+      "fileOffset": 389628,
+      "encoding": "ascii",
+      "text": ".?AUICiffClipRect@@"
+    },
+    {
+      "va": "68161818",
+      "fileOffset": 389656,
+      "encoding": "ascii",
+      "text": ".?AVCCiffClipRect@@"
+    },
+    {
+      "va": "68161838",
+      "fileOffset": 389688,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffClipRect@@$1?IID_ICiffClipRect@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "681618c8",
+      "fileOffset": 389832,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffClipRect@@@ATL@@"
+    },
+    {
+      "va": "681618f8",
+      "fileOffset": 389880,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubCounter@@"
+    },
+    {
+      "va": "68161918",
+      "fileOffset": 389912,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubCounter2@@"
+    },
+    {
+      "va": "68161938",
+      "fileOffset": 389944,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubCounter3@@"
+    },
+    {
+      "va": "68161958",
+      "fileOffset": 389976,
+      "encoding": "ascii",
+      "text": ".?AVCCiffSubCounter@@"
+    },
+    {
+      "va": "68161978",
+      "fileOffset": 390008,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffSubCounter3@@$1?IID_ICiffSubCounter3@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68161a0c",
+      "fileOffset": 390156,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffSubCounter@@@ATL@@"
+    },
+    {
+      "va": "68161a40",
+      "fileOffset": 390208,
+      "encoding": "ascii",
+      "text": ".?AUICiffEmbeddedFile@@"
+    },
+    {
+      "va": "68161a60",
+      "fileOffset": 390240,
+      "encoding": "ascii",
+      "text": ".?AVCCiffEmbeddedFile@@"
+    },
+    {
+      "va": "68161a80",
+      "fileOffset": 390272,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffEmbeddedFile@@$1?IID_ICiffEmbeddedFile@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68161b18",
+      "fileOffset": 390424,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffEmbeddedFile@@@ATL@@"
+    },
+    {
+      "va": "68161cc0",
+      "fileOffset": 390848,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "68161d04",
+      "fileOffset": 390916,
+      "encoding": "ascii",
+      "text": ".?AUICiffVariableDataList@@"
+    },
+    {
+      "va": "68161d28",
+      "fileOffset": 390952,
+      "encoding": "ascii",
+      "text": ".?AUICiffVariableDataList2@@"
+    },
+    {
+      "va": "68161d50",
+      "fileOffset": 390992,
+      "encoding": "ascii",
+      "text": ".?AUICiffVariableDataList3@@"
+    },
+    {
+      "va": "68161d78",
+      "fileOffset": 391032,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataObject@@"
+    },
+    {
+      "va": "68161d98",
+      "fileOffset": 391064,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataObject2@@"
+    },
+    {
+      "va": "68161db8",
+      "fileOffset": 391096,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataObject3@@"
+    },
+    {
+      "va": "68161dd8",
+      "fileOffset": 391128,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataObject4@@"
+    },
+    {
+      "va": "68161df8",
+      "fileOffset": 391160,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataObject5@@"
+    },
+    {
+      "va": "68161e18",
+      "fileOffset": 391192,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataObject6@@"
+    },
+    {
+      "va": "68161e38",
+      "fileOffset": 391224,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataObject7@@"
+    },
+    {
+      "va": "68161e58",
+      "fileOffset": 391256,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataObject8@@"
+    },
+    {
+      "va": "68161e78",
+      "fileOffset": 391288,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffVariableDataList3@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "68161fac",
+      "fileOffset": 391596,
+      "encoding": "ascii",
+      "text": ".?AVCCiffVariableDataList@@"
+    },
+    {
+      "va": "68161fd0",
+      "fileOffset": 391632,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffVariableDataList3@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffVariableDataList3@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "68162180",
+      "fileOffset": 392064,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffDataObject8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "681622ac",
+      "fileOffset": 392364,
+      "encoding": "ascii",
+      "text": ".?AVCCiffDataObject@@"
+    },
+    {
+      "va": "681622d0",
+      "fileOffset": 392400,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffDataObject8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffDataObject8@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "68162470",
+      "fileOffset": 392816,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffVariableDataList@@@ATL@@"
+    },
+    {
+      "va": "681624a8",
+      "fileOffset": 392872,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffDataObject@@@ATL@@"
+    },
+    {
+      "va": "681624e0",
+      "fileOffset": 392928,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@ATL@@@ATL@@"
+    },
+    {
+      "va": "681625a8",
+      "fileOffset": 393128,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubImage@@"
+    },
+    {
+      "va": "681625c4",
+      "fileOffset": 393156,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubImage2@@"
+    },
+    {
+      "va": "681625e4",
+      "fileOffset": 393188,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubImage3@@"
+    },
+    {
+      "va": "68162604",
+      "fileOffset": 393220,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubImage4@@"
+    },
+    {
+      "va": "68162624",
+      "fileOffset": 393252,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubImage5@@"
+    },
+    {
+      "va": "68162644",
+      "fileOffset": 393284,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubImage6@@"
+    },
+    {
+      "va": "68162664",
+      "fileOffset": 393316,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubImage7@@"
+    },
+    {
+      "va": "68162684",
+      "fileOffset": 393348,
+      "encoding": "ascii",
+      "text": ".?AUICiffSubImage8@@"
+    },
+    {
+      "va": "681626d0",
+      "fileOffset": 393424,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffSubImage8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "681627fc",
+      "fileOffset": 393724,
+      "encoding": "ascii",
+      "text": ".?AVCCiffSubImage@@"
+    },
+    {
+      "va": "68162818",
+      "fileOffset": 393752,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffSubImage8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffSubImage8@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "681629b4",
+      "fileOffset": 394164,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffSubImage@@@ATL@@"
+    },
+    {
+      "va": "681629e4",
+      "fileOffset": 394212,
+      "encoding": "ascii",
+      "text": ".?AUICiffPrintHeadMap@@"
+    },
+    {
+      "va": "68162a04",
+      "fileOffset": 394244,
+      "encoding": "ascii",
+      "text": ".?AVCCiffPrintHeadMap@@"
+    },
+    {
+      "va": "68162a28",
+      "fileOffset": 394280,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffPrintHeadMap@@$1?IID_ICiffPrintHeadMap@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68162ac0",
+      "fileOffset": 394432,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffPrintHeadMap@@@ATL@@"
+    },
+    {
+      "va": "68162af4",
+      "fileOffset": 394484,
+      "encoding": "ascii",
+      "text": ".?AUICiffFile@@"
+    },
+    {
+      "va": "68162b0c",
+      "fileOffset": 394508,
+      "encoding": "ascii",
+      "text": ".?AUICiffFile2@@"
+    },
+    {
+      "va": "68162b28",
+      "fileOffset": 394536,
+      "encoding": "ascii",
+      "text": ".?AUICiffFile3@@"
+    },
+    {
+      "va": "68162b44",
+      "fileOffset": 394564,
+      "encoding": "ascii",
+      "text": ".?AUICiffFile4@@"
+    },
+    {
+      "va": "68162b60",
+      "fileOffset": 394592,
+      "encoding": "ascii",
+      "text": ".?AUICiffFile5@@"
+    },
+    {
+      "va": "68162b7c",
+      "fileOffset": 394620,
+      "encoding": "ascii",
+      "text": ".?AUICiffFile6@@"
+    },
+    {
+      "va": "68162b98",
+      "fileOffset": 394648,
+      "encoding": "ascii",
+      "text": ".?AUICiffFile7@@"
+    },
+    {
+      "va": "68162bb4",
+      "fileOffset": 394676,
+      "encoding": "ascii",
+      "text": ".?AUICiffFile8@@"
+    },
+    {
+      "va": "68162bd0",
+      "fileOffset": 394704,
+      "encoding": "ascii",
+      "text": ".?AUICiffParameters@@"
+    },
+    {
+      "va": "68162c24",
+      "fileOffset": 394788,
+      "encoding": "ascii",
+      "text": ".?AUICiffGenericSettings@@"
+    },
+    {
+      "va": "68162c48",
+      "fileOffset": 394824,
+      "encoding": "ascii",
+      "text": ".?AUICiffGenericSettings2@@"
+    },
+    {
+      "va": "68162c6c",
+      "fileOffset": 394860,
+      "encoding": "ascii",
+      "text": ".?AUICiffEmbeddedFiles@@"
+    },
+    {
+      "va": "68162cc8",
+      "fileOffset": 394952,
+      "encoding": "ascii",
+      "text": ".?AVCMSXMLCiffSerialiser@@"
+    },
+    {
+      "va": "68162e38",
+      "fileOffset": 395320,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UIDateOffsets@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_IDateOffsets@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "68162fd0",
+      "fileOffset": 395728,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffParameters@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "681630fc",
+      "fileOffset": 396028,
+      "encoding": "ascii",
+      "text": ".?AVCCiffParameters@@"
+    },
+    {
+      "va": "68163120",
+      "fileOffset": 396064,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffParameters@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffParameters@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "681632c0",
+      "fileOffset": 396480,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffGenericSettings2@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "681633f4",
+      "fileOffset": 396788,
+      "encoding": "ascii",
+      "text": ".?AVCCiffGenericSettings@@"
+    },
+    {
+      "va": "68163418",
+      "fileOffset": 396824,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffGenericSettings2@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffGenericSettings2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "681635c0",
+      "fileOffset": 397248,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffParameters@@@ATL@@"
+    },
+    {
+      "va": "681635f8",
+      "fileOffset": 397304,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffEmbeddedFiles@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "68163728",
+      "fileOffset": 397608,
+      "encoding": "ascii",
+      "text": ".?AVCCiffEmbeddedFiles@@"
+    },
+    {
+      "va": "68163750",
+      "fileOffset": 397648,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffEmbeddedFiles@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffEmbeddedFiles@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "68163a38",
+      "fileOffset": 398392,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UIPrices@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_IPrices@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "68163d10",
+      "fileOffset": 399120,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UIDataSources@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_IDataSources@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "68163ea8",
+      "fileOffset": 399528,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffFile8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "68163fd0",
+      "fileOffset": 399824,
+      "encoding": "ascii",
+      "text": ".?AVCCiffFile@@"
+    },
+    {
+      "va": "68163fe8",
+      "fileOffset": 399848,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffFile8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffFile8@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "6816417c",
+      "fileOffset": 400252,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCDateOffsets@@@ATL@@"
+    },
+    {
+      "va": "681641ac",
+      "fileOffset": 400300,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffGenericSettings@@@ATL@@"
+    },
+    {
+      "va": "681641e4",
+      "fileOffset": 400356,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffEmbeddedFiles@@@ATL@@"
+    },
+    {
+      "va": "6816421c",
+      "fileOffset": 400412,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCPrices@@@ATL@@"
+    },
+    {
+      "va": "68164248",
+      "fileOffset": 400456,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCDataSources@@@ATL@@"
+    },
+    {
+      "va": "68164278",
+      "fileOffset": 400504,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffFile@@@ATL@@"
+    },
+    {
+      "va": "68164358",
+      "fileOffset": 400728,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "681643b8",
+      "fileOffset": 400824,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+    },
+    {
+      "va": "681643f8",
+      "fileOffset": 400888,
+      "encoding": "ascii",
+      "text": ".?AUICiffManager@@"
+    },
+    {
+      "va": "68164414",
+      "fileOffset": 400916,
+      "encoding": "ascii",
+      "text": ".?AUICiffManager2@@"
+    },
+    {
+      "va": "68164430",
+      "fileOffset": 400944,
+      "encoding": "ascii",
+      "text": ".?AUICiffManager3@@"
+    },
+    {
+      "va": "6816444c",
+      "fileOffset": 400972,
+      "encoding": "ascii",
+      "text": ".?AUICiffManager4@@"
+    },
+    {
+      "va": "68164468",
+      "fileOffset": 401000,
+      "encoding": "ascii",
+      "text": ".?AVCCiffManager@@"
+    },
+    {
+      "va": "68164488",
+      "fileOffset": 401032,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCCiffManager@@$1?CLSID_CiffManager@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "681644d8",
+      "fileOffset": 401112,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffManager4@@$1?IID_ICiffManager4@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68164568",
+      "fileOffset": 401256,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffManager@@@ATL@@"
+    },
+    {
+      "va": "68164598",
+      "fileOffset": 401304,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCCiffManager@@@ATL@@"
+    },
+    {
+      "va": "681645d0",
+      "fileOffset": 401360,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@"
+    },
+    {
+      "va": "68164618",
+      "fileOffset": 401432,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCCiffManager@@@ATL@@"
+    },
+    {
+      "va": "68164650",
+      "fileOffset": 401488,
+      "encoding": "ascii",
+      "text": ".?AUICiffParameterSet@@"
+    },
+    {
+      "va": "68164670",
+      "fileOffset": 401520,
+      "encoding": "ascii",
+      "text": ".?AUICiffParameterSet2@@"
+    },
+    {
+      "va": "68164698",
+      "fileOffset": 401560,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffParameterSet2@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "681647c8",
+      "fileOffset": 401864,
+      "encoding": "ascii",
+      "text": ".?AVCCiffParameterSet@@"
+    },
+    {
+      "va": "681647e8",
+      "fileOffset": 401896,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffParameterSet2@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffParameterSet2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "6816498c",
+      "fileOffset": 402316,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffParameterSet@@@ATL@@"
+    },
+    {
+      "va": "681649c0",
+      "fileOffset": 402368,
+      "encoding": "ascii",
+      "text": ".?AUICiffParameter@@"
+    },
+    {
+      "va": "681649e0",
+      "fileOffset": 402400,
+      "encoding": "ascii",
+      "text": ".?AUICiffParameter2@@"
+    },
+    {
+      "va": "68164a00",
+      "fileOffset": 402432,
+      "encoding": "ascii",
+      "text": ".?AVCCiffParameter@@"
+    },
+    {
+      "va": "68164a20",
+      "fileOffset": 402464,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffParameter2@@$1?IID_ICiffParameter2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68164ab4",
+      "fileOffset": 402612,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffParameter@@@ATL@@"
+    },
+    {
+      "va": "68164ae8",
+      "fileOffset": 402664,
+      "encoding": "ascii",
+      "text": ".?AUICiffFieldData@@"
+    },
+    {
+      "va": "68164b08",
+      "fileOffset": 402696,
+      "encoding": "ascii",
+      "text": ".?AUICiffClipping@@"
+    },
+    {
+      "va": "68164b24",
+      "fileOffset": 402724,
+      "encoding": "ascii",
+      "text": ".?AUICiffField@@"
+    },
+    {
+      "va": "68164b40",
+      "fileOffset": 402752,
+      "encoding": "ascii",
+      "text": ".?AUICiffFieldExtension@@"
+    },
+    {
+      "va": "68164b64",
+      "fileOffset": 402788,
+      "encoding": "ascii",
+      "text": ".?AUICiffFieldExtension2@@"
+    },
+    {
+      "va": "68164b88",
+      "fileOffset": 402824,
+      "encoding": "ascii",
+      "text": ".?AUICiffFieldExtension3@@"
+    },
+    {
+      "va": "68164bac",
+      "fileOffset": 402860,
+      "encoding": "ascii",
+      "text": ".?AUICiffTextField@@"
+    },
+    {
+      "va": "68164bcc",
+      "fileOffset": 402892,
+      "encoding": "ascii",
+      "text": ".?AUICiffTextField2@@"
+    },
+    {
+      "va": "68164bec",
+      "fileOffset": 402924,
+      "encoding": "ascii",
+      "text": ".?AUICiffTextField3@@"
+    },
+    {
+      "va": "68164c0c",
+      "fileOffset": 402956,
+      "encoding": "ascii",
+      "text": ".?AUICiffTextField4@@"
+    },
+    {
+      "va": "68164c2c",
+      "fileOffset": 402988,
+      "encoding": "ascii",
+      "text": ".?AUICiffTextField5@@"
+    },
+    {
+      "va": "68164c4c",
+      "fileOffset": 403020,
+      "encoding": "ascii",
+      "text": ".?AUICiffTextField6@@"
+    },
+    {
+      "va": "68164c6c",
+      "fileOffset": 403052,
+      "encoding": "ascii",
+      "text": ".?AUICiffTextField7@@"
+    },
+    {
+      "va": "68164c8c",
+      "fileOffset": 403084,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField@@"
+    },
+    {
+      "va": "68164cac",
+      "fileOffset": 403116,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField2@@"
+    },
+    {
+      "va": "68164cd0",
+      "fileOffset": 403152,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField3@@"
+    },
+    {
+      "va": "68164cf4",
+      "fileOffset": 403188,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField4@@"
+    },
+    {
+      "va": "68164d18",
+      "fileOffset": 403224,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField5@@"
+    },
+    {
+      "va": "68164d3c",
+      "fileOffset": 403260,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField6@@"
+    },
+    {
+      "va": "68164d60",
+      "fileOffset": 403296,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField7@@"
+    },
+    {
+      "va": "68164d84",
+      "fileOffset": 403332,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField8@@"
+    },
+    {
+      "va": "68164da8",
+      "fileOffset": 403368,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField9@@"
+    },
+    {
+      "va": "68164dcc",
+      "fileOffset": 403404,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField10@@"
+    },
+    {
+      "va": "68164df0",
+      "fileOffset": 403440,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField11@@"
+    },
+    {
+      "va": "68164e14",
+      "fileOffset": 403476,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField12@@"
+    },
+    {
+      "va": "68164e38",
+      "fileOffset": 403512,
+      "encoding": "ascii",
+      "text": ".?AUICiffBarcodeField13@@"
+    },
+    {
+      "va": "68164e5c",
+      "fileOffset": 403548,
+      "encoding": "ascii",
+      "text": ".?AUICiffGfxField@@"
+    },
+    {
+      "va": "68164e78",
+      "fileOffset": 403576,
+      "encoding": "ascii",
+      "text": ".?AUICiffGfxField2@@"
+    },
+    {
+      "va": "68164e98",
+      "fileOffset": 403608,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffFieldData@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "68164fc4",
+      "fileOffset": 403908,
+      "encoding": "ascii",
+      "text": ".?AVCCiffFieldData@@"
+    },
+    {
+      "va": "68164fe8",
+      "fileOffset": 403944,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffFieldData@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffFieldData@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "68165188",
+      "fileOffset": 404360,
+      "encoding": "ascii",
+      "text": ".?AV?$ICollectionOnSTLImpl@UICiffClipping@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@"
+    },
+    {
+      "va": "681652b4",
+      "fileOffset": 404660,
+      "encoding": "ascii",
+      "text": ".?AVCCiffClipping@@"
+    },
+    {
+      "va": "681652d0",
+      "fileOffset": 404688,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffClipping@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffClipping@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@"
+    },
+    {
+      "va": "68165468",
+      "fileOffset": 405096,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffClipping@@@ATL@@"
+    },
+    {
+      "va": "68165498",
+      "fileOffset": 405144,
+      "encoding": "ascii",
+      "text": ".?AVCCiffTextField@@"
+    },
+    {
+      "va": "681654b8",
+      "fileOffset": 405176,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICiffFieldImpl@UICiffTextField7@@@@$1?IID_ICiffTextField7@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68165560",
+      "fileOffset": 405344,
+      "encoding": "ascii",
+      "text": ".?AV?$ICiffFieldImpl@UICiffTextField7@@@@"
+    },
+    {
+      "va": "68165594",
+      "fileOffset": 405396,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffFieldData@@@ATL@@"
+    },
+    {
+      "va": "681655c8",
+      "fileOffset": 405448,
+      "encoding": "ascii",
+      "text": ".?AVCCiffBarcodeField@@"
+    },
+    {
+      "va": "681655e8",
+      "fileOffset": 405480,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICiffFieldImpl@UICiffBarcodeField13@@@@$1?IID_ICiffBarcodeField13@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68165698",
+      "fileOffset": 405656,
+      "encoding": "ascii",
+      "text": ".?AV?$ICiffFieldImpl@UICiffBarcodeField13@@@@"
+    },
+    {
+      "va": "681656d0",
+      "fileOffset": 405712,
+      "encoding": "ascii",
+      "text": ".?AVCCiffGfxField@@"
+    },
+    {
+      "va": "681656f0",
+      "fileOffset": 405744,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@V?$ICiffFieldImpl@UICiffGfxField2@@@@$1?IID_ICiffGfxField2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68165794",
+      "fileOffset": 405908,
+      "encoding": "ascii",
+      "text": ".?AV?$ICiffFieldImpl@UICiffGfxField2@@@@"
+    },
+    {
+      "va": "681657c8",
+      "fileOffset": 405960,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffTextField@@@ATL@@"
+    },
+    {
+      "va": "681657fc",
+      "fileOffset": 406012,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffBarcodeField@@@ATL@@"
+    },
+    {
+      "va": "68165830",
+      "fileOffset": 406064,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffGfxField@@@ATL@@"
+    },
+    {
+      "va": "68165860",
+      "fileOffset": 406112,
+      "encoding": "ascii",
+      "text": ".?AUICiffVariableDataItem@@"
+    },
+    {
+      "va": "68165884",
+      "fileOffset": 406148,
+      "encoding": "ascii",
+      "text": ".?AUICiffVariableDataItem2@@"
+    },
+    {
+      "va": "681658ac",
+      "fileOffset": 406188,
+      "encoding": "ascii",
+      "text": ".?AVCCiffVariableDataItem@@"
+    },
+    {
+      "va": "681658d0",
+      "fileOffset": 406224,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffVariableDataItem2@@$1?IID_ICiffVariableDataItem2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68165970",
+      "fileOffset": 406384,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffVariableDataItem@@@ATL@@"
+    },
+    {
+      "va": "681659e0",
+      "fileOffset": 406496,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UIDataSource@@$1?IID_IDataSource@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68165a6c",
+      "fileOffset": 406636,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCDataSource@@@ATL@@"
+    },
+    {
+      "va": "68165b30",
+      "fileOffset": 406832,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICalendarRule@@$1?IID_ICalendarRule@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68165be0",
+      "fileOffset": 407008,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@U?$ComCollectionImpl@UICalendarRule@@UICalendarRules@@@@$1?IID_ICalendarRules@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "681661d4",
+      "fileOffset": 408532,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCalendarRule@@@ATL@@"
+    },
+    {
+      "va": "68166220",
+      "fileOffset": 408608,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UIDayMonth@@$1?IID_IDayMonth@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "681662c8",
+      "fileOffset": 408776,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@U?$ComCollectionImpl@UIDayMonth@@UIAvoidanceDates@@@@$1?IID_IAvoidanceDates@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68166888",
+      "fileOffset": 410248,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCAvoidDate@@@ATL@@"
+    },
+    {
+      "va": "681668b8",
+      "fileOffset": 410296,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCalendarRules@@@ATL@@"
+    },
+    {
+      "va": "681668ec",
+      "fileOffset": 410348,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCAvoidanceDates@@@ATL@@"
+    },
+    {
+      "va": "68166920",
+      "fileOffset": 410400,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@U?$ComCollectionEnum@UICalendarRule@@@@@ATL@@"
+    },
+    {
+      "va": "68166968",
+      "fileOffset": 410472,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@U?$ComCollectionEnum@UIDayMonth@@@@@ATL@@"
+    },
+    {
+      "va": "681669b0",
+      "fileOffset": 410544,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UICalendarRule@@@@V?$vector@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@"
+    },
+    {
+      "va": "68166af8",
+      "fileOffset": 410872,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDayMonth@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@"
+    },
+    {
+      "va": "68166cd8",
+      "fileOffset": 411352,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UIDateOffset5@@$1?IID_IDateOffset5@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68166d64",
+      "fileOffset": 411492,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCDateOffset@@@ATL@@"
+    },
+    {
+      "va": "68166e0c",
+      "fileOffset": 411660,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCSafeArrayStream@@@ATL@@"
+    },
+    {
+      "va": "68166e88",
+      "fileOffset": 411784,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UIPrice2@@$1?IID_IPrice2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "68166f0c",
+      "fileOffset": 411916,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCPrice@@@ATL@@"
+    },
+    {
+      "va": "6816a502",
+      "fileOffset": 413954,
+      "encoding": "ascii",
+      "text": "ZIPHER.CiffManager.1 = s 'CiffManager Class'"
+    },
+    {
+      "va": "6816a56f",
+      "fileOffset": 414063,
+      "encoding": "ascii",
+      "text": "ZIPHER.CiffManager = s 'CiffManager Class'"
+    },
+    {
+      "va": "6816a5d7",
+      "fileOffset": 414167,
+      "encoding": "ascii",
+      "text": "CurVer = s 'ZIPHER.CiffManager.1'"
+    },
+    {
+      "va": "6816a615",
+      "fileOffset": 414229,
+      "encoding": "ascii",
+      "text": "ForceRemove {024EFE80-15BA-4c1b-9DA0-E5F1F513C13D} = s 'CiffManager Class'"
+    },
+    {
+      "va": "6816a669",
+      "fileOffset": 414313,
+      "encoding": "ascii",
+      "text": "ProgID = s 'ZIPHER.CiffManager.1'"
+    },
+    {
+      "va": "6816a68f",
+      "fileOffset": 414351,
+      "encoding": "ascii",
+      "text": "VersionIndependentProgID = s 'ZIPHER.CiffManager'"
+    },
+    {
+      "va": "681701e7",
+      "fileOffset": 437735,
+      "encoding": "ascii",
+      "text": "8CIFFMGRLibWW"
+    },
+    {
+      "va": "68170200",
+      "fileOffset": 437760,
+      "encoding": "ascii",
+      "text": "CiffManagerWd"
+    },
+    {
+      "va": "68170218",
+      "fileOffset": 437784,
+      "encoding": "ascii",
+      "text": "ICiffManager"
+    },
+    {
+      "va": "68170230",
+      "fileOffset": 437808,
+      "encoding": "ascii",
+      "text": "ICiffDeveloperLicenseValidatorWW"
+    },
+    {
+      "va": "681702c3",
+      "fileOffset": 437955,
+      "encoding": "ascii",
+      "text": "KICiffFileWWW,"
+    },
+    {
+      "va": "681704e0",
+      "fileOffset": 438496,
+      "encoding": "ascii",
+      "text": "pCiffDeveloperLicenseValidatorWW,"
+    },
+    {
+      "va": "681706d8",
+      "fileOffset": 439000,
+      "encoding": "ascii",
+      "text": "ppCiffFileWWd"
+    },
+    {
+      "va": "68170704",
+      "fileOffset": 439044,
+      "encoding": "ascii",
+      "text": "ICiffManager2WWWX"
+    },
+    {
+      "va": "68170734",
+      "fileOffset": 439092,
+      "encoding": "ascii",
+      "text": "pCiffLoadControl"
+    },
+    {
+      "va": "68170750",
+      "fileOffset": 439120,
+      "encoding": "ascii",
+      "text": "ICiffManager3WWW"
+    },
+    {
+      "va": "68170780",
+      "fileOffset": 439168,
+      "encoding": "ascii",
+      "text": "ICiffManager4WWW"
+    },
+    {
+      "va": "6817079c",
+      "fileOffset": 439196,
+      "encoding": "ascii",
+      "text": "ICiffFile8WW"
+    },
+    {
+      "va": "681707b4",
+      "fileOffset": 439220,
+      "encoding": "ascii",
+      "text": "ICiffFile7WWL"
+    },
+    {
+      "va": "681707cc",
+      "fileOffset": 439244,
+      "encoding": "ascii",
+      "text": "ICiffFile6WW"
+    },
+    {
+      "va": "681707e4",
+      "fileOffset": 439268,
+      "encoding": "ascii",
+      "text": "ICiffFile5WW"
+    },
+    {
+      "va": "681707fc",
+      "fileOffset": 439292,
+      "encoding": "ascii",
+      "text": "ICiffFile4WWx"
+    },
+    {
+      "va": "68170814",
+      "fileOffset": 439316,
+      "encoding": "ascii",
+      "text": "ICiffFile3WW"
+    },
+    {
+      "va": "6817082c",
+      "fileOffset": 439340,
+      "encoding": "ascii",
+      "text": "ICiffFile2WW"
+    },
+    {
+      "va": "6817088c",
+      "fileOffset": 439436,
+      "encoding": "ascii",
+      "text": "pCiffValidationControlWW"
+    },
+    {
+      "va": "68170964",
+      "fileOffset": 439652,
+      "encoding": "ascii",
+      "text": "CiffFile"
+    },
+    {
+      "va": "68170978",
+      "fileOffset": 439672,
+      "encoding": "ascii",
+      "text": "CiffSubImage"
+    },
+    {
+      "va": "68170990",
+      "fileOffset": 439696,
+      "encoding": "ascii",
+      "text": "ICiffSubImageWWWl"
+    },
+    {
+      "va": "681709d7",
+      "fileOffset": 439767,
+      "encoding": "ascii",
+      "text": "FFT_BARCODEWWl"
+    },
+    {
+      "va": "681709ed",
+      "fileOffset": 439789,
+      "encoding": "ascii",
+      "text": "0M4FT_GRAPHICWW"
+    },
+    {
+      "va": "68170bc4",
+      "fileOffset": 440260,
+      "encoding": "ascii",
+      "text": "ICiffSubImage2WW"
+    },
+    {
+      "va": "68170c68",
+      "fileOffset": 440424,
+      "encoding": "ascii",
+      "text": "ICiffSubImage3WW4"
+    },
+    {
+      "va": "68170c9c",
+      "fileOffset": 440476,
+      "encoding": "ascii",
+      "text": "ICiffSubImage4WW"
+    },
+    {
+      "va": "68170ccc",
+      "fileOffset": 440524,
+      "encoding": "ascii",
+      "text": "ICiffSubImage5WW"
+    },
+    {
+      "va": "68170d58",
+      "fileOffset": 440664,
+      "encoding": "ascii",
+      "text": "ICiffSubImage6WW`"
+    },
+    {
+      "va": "68170d94",
+      "fileOffset": 440724,
+      "encoding": "ascii",
+      "text": "ICiffSubImage7WW("
+    },
+    {
+      "va": "68170daf",
+      "fileOffset": 440751,
+      "encoding": "ascii",
+      "text": "CECiffCurrentOrientationW("
+    },
+    {
+      "va": "68170e58",
+      "fileOffset": 440920,
+      "encoding": "ascii",
+      "text": "ICiffSubImage8WW"
+    },
+    {
+      "va": "68170eb4",
+      "fileOffset": 441012,
+      "encoding": "ascii",
+      "text": "CiffFieldWWWT"
+    },
+    {
+      "va": "68170ecc",
+      "fileOffset": 441036,
+      "encoding": "ascii",
+      "text": "ICiffFieldWWT"
+    },
+    {
+      "va": "68171018",
+      "fileOffset": 441368,
+      "encoding": "ascii",
+      "text": "ICiffFieldDataWW"
+    },
+    {
+      "va": "68171033",
+      "fileOffset": 441395,
+      "encoding": "ascii",
+      "text": "YEDataTypeWWW"
+    },
+    {
+      "va": "681710b3",
+      "fileOffset": 441523,
+      "encoding": "ascii",
+      "text": "5DT_OFFSETDATEWWW"
+    },
+    {
+      "va": "681710d0",
+      "fileOffset": 441552,
+      "encoding": "ascii",
+      "text": "DT_COUNTERTEXTWW"
+    },
+    {
+      "va": "681712fb",
+      "fileOffset": 442107,
+      "encoding": "ascii",
+      "text": "}ICiffClippingWWW"
+    },
+    {
+      "va": "68171494",
+      "fileOffset": 442516,
+      "encoding": "ascii",
+      "text": "CiffFieldDataWWW"
+    },
+    {
+      "va": "681714b0",
+      "fileOffset": 442544,
+      "encoding": "ascii",
+      "text": "CiffDataObjectWWt"
+    },
+    {
+      "va": "681714cc",
+      "fileOffset": 442572,
+      "encoding": "ascii",
+      "text": "ICiffDataObjectWt"
+    },
+    {
+      "va": "681714e6",
+      "fileOffset": 442598,
+      "encoding": "ascii",
+      "text": "%?DataTypet"
+    },
+    {
+      "va": "68171618",
+      "fileOffset": 442904,
+      "encoding": "ascii",
+      "text": "ClearStyleDataTypeWWt"
+    },
+    {
+      "va": "68171638",
+      "fileOffset": 442936,
+      "encoding": "ascii",
+      "text": "DefaultDataWt"
+    },
+    {
+      "va": "681717a8",
+      "fileOffset": 443304,
+      "encoding": "ascii",
+      "text": "OffsetDateSourceNamet"
+    },
+    {
+      "va": "6817187c",
+      "fileOffset": 443516,
+      "encoding": "ascii",
+      "text": "RMV_USEDEFAULTWW"
+    },
+    {
+      "va": "68171b18",
+      "fileOffset": 444184,
+      "encoding": "ascii",
+      "text": "ICiffDataObject2h"
+    },
+    {
+      "va": "68171c08",
+      "fileOffset": 444424,
+      "encoding": "ascii",
+      "text": "ICiffDataObject30"
+    },
+    {
+      "va": "68171ccc",
+      "fileOffset": 444620,
+      "encoding": "ascii",
+      "text": "ICiffDataObject4\\"
+    },
+    {
+      "va": "68171d4c",
+      "fileOffset": 444748,
+      "encoding": "ascii",
+      "text": "ICiffDataObject5"
+    },
+    {
+      "va": "68171d80",
+      "fileOffset": 444800,
+      "encoding": "ascii",
+      "text": "ICiffDataObject6"
+    },
+    {
+      "va": "68171dfc",
+      "fileOffset": 444924,
+      "encoding": "ascii",
+      "text": "ICiffDataObject7"
+    },
+    {
+      "va": "68171e80",
+      "fileOffset": 445056,
+      "encoding": "ascii",
+      "text": "ICiffDataObject8P"
+    },
+    {
+      "va": "68171eb4",
+      "fileOffset": 445108,
+      "encoding": "ascii",
+      "text": "CiffTextFieldWWW"
+    },
+    {
+      "va": "68171ecd",
+      "fileOffset": 445133,
+      "encoding": "ascii",
+      "text": "8[bICiffTextFieldWW"
+    },
+    {
+      "va": "68171eec",
+      "fileOffset": 445164,
+      "encoding": "ascii",
+      "text": "FontName"
+    },
+    {
+      "va": "68171efe",
+      "fileOffset": 445182,
+      "encoding": "ascii",
+      "text": ";XFontPitchWWW"
+    },
+    {
+      "va": "68171f18",
+      "fileOffset": 445208,
+      "encoding": "ascii",
+      "text": "FontXMag"
+    },
+    {
+      "va": "68171fc0",
+      "fileOffset": 445376,
+      "encoding": "ascii",
+      "text": "BlockMinimumFontSize|"
+    },
+    {
+      "va": "68172070",
+      "fileOffset": 445552,
+      "encoding": "ascii",
+      "text": "FontFamilyWW"
+    },
+    {
+      "va": "681720d4",
+      "fileOffset": 445652,
+      "encoding": "ascii",
+      "text": "FontYMag"
+    },
+    {
+      "va": "681720e8",
+      "fileOffset": 445672,
+      "encoding": "ascii",
+      "text": "FontTrueTypeSize"
+    },
+    {
+      "va": "68172104",
+      "fileOffset": 445700,
+      "encoding": "ascii",
+      "text": "ICiffTextField2W"
+    },
+    {
+      "va": "68172148",
+      "fileOffset": 445768,
+      "encoding": "ascii",
+      "text": "ICiffTextField3W"
+    },
+    {
+      "va": "68172163",
+      "fileOffset": 445795,
+      "encoding": "ascii",
+      "text": "CEFontTextDirectionWW"
+    },
+    {
+      "va": "681721ac",
+      "fileOffset": 445868,
+      "encoding": "ascii",
+      "text": "FontTextDirectionWWW"
+    },
+    {
+      "va": "681721cc",
+      "fileOffset": 445900,
+      "encoding": "ascii",
+      "text": "ICiffTextField4Wp"
+    },
+    {
+      "va": "681721e8",
+      "fileOffset": 445928,
+      "encoding": "ascii",
+      "text": "EFontTypesWWp"
+    },
+    {
+      "va": "68172248",
+      "fileOffset": 446024,
+      "encoding": "ascii",
+      "text": "FontType"
+    },
+    {
+      "va": "6817232c",
+      "fileOffset": 446252,
+      "encoding": "ascii",
+      "text": "ICiffTextField5W8"
+    },
+    {
+      "va": "68172360",
+      "fileOffset": 446304,
+      "encoding": "ascii",
+      "text": "ICiffTextField6W"
+    },
+    {
+      "va": "6817237c",
+      "fileOffset": 446332,
+      "encoding": "ascii",
+      "text": "FontPitchResolutionW"
+    },
+    {
+      "va": "6817239c",
+      "fileOffset": 446364,
+      "encoding": "ascii",
+      "text": "ICiffTextField7W"
+    },
+    {
+      "va": "681723cf",
+      "fileOffset": 446415,
+      "encoding": "ascii",
+      "text": "6ICiffFieldExtensionW"
+    },
+    {
+      "va": "68172590",
+      "fileOffset": 446864,
+      "encoding": "ascii",
+      "text": "ICiffFieldExtension2,"
+    },
+    {
+      "va": "681725c8",
+      "fileOffset": 446920,
+      "encoding": "ascii",
+      "text": "ICiffFieldExtension3"
+    },
+    {
+      "va": "681725fc",
+      "fileOffset": 446972,
+      "encoding": "ascii",
+      "text": "CiffBarcodeFieldX"
+    },
+    {
+      "va": "68172618",
+      "fileOffset": 447000,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeFieldWWW"
+    },
+    {
+      "va": "68172638",
+      "fileOffset": 447032,
+      "encoding": "ascii",
+      "text": "EFieldSubTypeBarcode"
+    },
+    {
+      "va": "681727e0",
+      "fileOffset": 447456,
+      "encoding": "ascii",
+      "text": "FSTB_DATAMATRIXECC200WWW"
+    },
+    {
+      "va": "6817291f",
+      "fileOffset": 447775,
+      "encoding": "ascii",
+      "text": "ZBarcodeTypeWX"
+    },
+    {
+      "va": "68172992",
+      "fileOffset": 447890,
+      "encoding": "ascii",
+      "text": "e9HRFontNameWWX"
+    },
+    {
+      "va": "681729ac",
+      "fileOffset": 447916,
+      "encoding": "ascii",
+      "text": "HRFontFamilyX"
+    },
+    {
+      "va": "681729c4",
+      "fileOffset": 447940,
+      "encoding": "ascii",
+      "text": "HRFontPitchWX"
+    },
+    {
+      "va": "681729db",
+      "fileOffset": 447963,
+      "encoding": "ascii",
+      "text": "0HRFontXMagWWX"
+    },
+    {
+      "va": "68172af4",
+      "fileOffset": 448244,
+      "encoding": "ascii",
+      "text": "HRFontYMagWWX"
+    },
+    {
+      "va": "68172b0b",
+      "fileOffset": 448267,
+      "encoding": "ascii",
+      "text": "eHRFontTTSizeX"
+    },
+    {
+      "va": "68172b38",
+      "fileOffset": 448312,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField2WW"
+    },
+    {
+      "va": "68172b57",
+      "fileOffset": 448343,
+      "encoding": "ascii",
+      "text": "lEBarcodeSubTypeECCWW"
+    },
+    {
+      "va": "68172c34",
+      "fileOffset": 448564,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField3WW"
+    },
+    {
+      "va": "68172c98",
+      "fileOffset": 448664,
+      "encoding": "ascii",
+      "text": "EBarcodeErrorCorrectionPDF417WWWL"
+    },
+    {
+      "va": "68172dac",
+      "fileOffset": 448940,
+      "encoding": "ascii",
+      "text": "EBarcodeTypePDF417WW"
+    },
+    {
+      "va": "68172f40",
+      "fileOffset": 449344,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField4WW"
+    },
+    {
+      "va": "68172f5e",
+      "fileOffset": 449374,
+      "encoding": "ascii",
+      "text": "i8HRFontTextDirectionW@"
+    },
+    {
+      "va": "68172f80",
+      "fileOffset": 449408,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField5WW"
+    },
+    {
+      "va": "68173388",
+      "fileOffset": 450440,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField6WWl "
+    },
+    {
+      "va": "6817341c",
+      "fileOffset": 450588,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField7WW"
+    },
+    {
+      "va": "6817345e",
+      "fileOffset": 450654,
+      "encoding": "ascii",
+      "text": "\"EBarcodeMagnificationRoundingFactorWW4!"
+    },
+    {
+      "va": "68173490",
+      "fileOffset": 450704,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField8WW4!"
+    },
+    {
+      "va": "68173504",
+      "fileOffset": 450820,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField9WW"
+    },
+    {
+      "va": "68173524",
+      "fileOffset": 450852,
+      "encoding": "ascii",
+      "text": "EBarcodePrinting"
+    },
+    {
+      "va": "68173578",
+      "fileOffset": 450936,
+      "encoding": "ascii",
+      "text": "BarcodePrintingW`\""
+    },
+    {
+      "va": "68173594",
+      "fileOffset": 450964,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField10W`\""
+    },
+    {
+      "va": "68173618",
+      "fileOffset": 451096,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField11W(#"
+    },
+    {
+      "va": "68173635",
+      "fileOffset": 451125,
+      "encoding": "ascii",
+      "text": "8j6EBarcodeDataFormatWW(#"
+    },
+    {
+      "va": "6817368c",
+      "fileOffset": 451212,
+      "encoding": "ascii",
+      "text": "BarcodeDataFormatWWW"
+    },
+    {
+      "va": "681736ac",
+      "fileOffset": 451244,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField12W"
+    },
+    {
+      "va": "681736e4",
+      "fileOffset": 451300,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField13WT$"
+    },
+    {
+      "va": "68173701",
+      "fileOffset": 451329,
+      "encoding": "ascii",
+      "text": "8nNCiffGfxField"
+    },
+    {
+      "va": "6817371b",
+      "fileOffset": 451355,
+      "encoding": "ascii",
+      "text": "%ICiffGfxFieldWWW"
+    },
+    {
+      "va": "68173737",
+      "fileOffset": 451383,
+      "encoding": "ascii",
+      "text": "\"GraphicWidth"
+    },
+    {
+      "va": "68173750",
+      "fileOffset": 451408,
+      "encoding": "ascii",
+      "text": "GraphicHeightWWW"
+    },
+    {
+      "va": "681737f2",
+      "fileOffset": 451570,
+      "encoding": "ascii",
+      "text": "N~GraphicSubTypeWW"
+    },
+    {
+      "va": "681739d0",
+      "fileOffset": 452048,
+      "encoding": "ascii",
+      "text": "ICiffGfxField2WW"
+    },
+    {
+      "va": "68173d83",
+      "fileOffset": 452995,
+      "encoding": "ascii",
+      "text": "iDORS_DEFAULTOFFSETWW"
+    },
+    {
+      "va": "68174248",
+      "fileOffset": 454216,
+      "encoding": "ascii",
+      "text": "DefaultW"
+    },
+    {
+      "va": "681742a4",
+      "fileOffset": 454308,
+      "encoding": "ascii",
+      "text": "SrcField"
+    },
+    {
+      "va": "68174350",
+      "fileOffset": 454480,
+      "encoding": "ascii",
+      "text": "DPRS_DEFAULTPRICEWWW|."
+    },
+    {
+      "va": "6817446c",
+      "fileOffset": 454764,
+      "encoding": "ascii",
+      "text": "CiffSubCounterWW81"
+    },
+    {
+      "va": "68174487",
+      "fileOffset": 454791,
+      "encoding": "ascii",
+      "text": "fICiffSubCounterW81"
+    },
+    {
+      "va": "681745e8",
+      "fileOffset": 455144,
+      "encoding": "ascii",
+      "text": "ICiffSubCounter2"
+    },
+    {
+      "va": "6817462c",
+      "fileOffset": 455212,
+      "encoding": "ascii",
+      "text": "ICiffSubCounter3d2"
+    },
+    {
+      "va": "68174648",
+      "fileOffset": 455240,
+      "encoding": "ascii",
+      "text": "CiffGenericSettingsW"
+    },
+    {
+      "va": "68174668",
+      "fileOffset": 455272,
+      "encoding": "ascii",
+      "text": "ICiffGenericSettings"
+    },
+    {
+      "va": "6817474f",
+      "fileOffset": 455503,
+      "encoding": "ascii",
+      "text": "4ICiffGenericSettings2WWW"
+    },
+    {
+      "va": "6817478c",
+      "fileOffset": 455564,
+      "encoding": "ascii",
+      "text": "CiffPrintHeadMapX4"
+    },
+    {
+      "va": "681747a8",
+      "fileOffset": 455592,
+      "encoding": "ascii",
+      "text": "ICiffPrintHeadMapWWWX4"
+    },
+    {
+      "va": "681747c8",
+      "fileOffset": 455624,
+      "encoding": "ascii",
+      "text": "SubImageRefWX4"
+    },
+    {
+      "va": "681747ef",
+      "fileOffset": 455663,
+      "encoding": "ascii",
+      "text": "gCiffVariableDataList 5"
+    },
+    {
+      "va": "6817480d",
+      "fileOffset": 455693,
+      "encoding": "ascii",
+      "text": "8J ICiffVariableDataListWWW"
+    },
+    {
+      "va": "68174848",
+      "fileOffset": 455752,
+      "encoding": "ascii",
+      "text": "ICiffVariableDataList2WW"
+    },
+    {
+      "va": "6817486c",
+      "fileOffset": 455788,
+      "encoding": "ascii",
+      "text": "ICiffVariableDataList3WW"
+    },
+    {
+      "va": "681748b1",
+      "fileOffset": 455857,
+      "encoding": "ascii",
+      "text": "8rOCiffVariableDataItem"
+    },
+    {
+      "va": "681748d4",
+      "fileOffset": 455892,
+      "encoding": "ascii",
+      "text": "ICiffVariableDataItemWWW"
+    },
+    {
+      "va": "6817490b",
+      "fileOffset": 455947,
+      "encoding": "ascii",
+      "text": "FICiffVariableDataItem2WW"
+    },
+    {
+      "va": "6817493f",
+      "fileOffset": 455999,
+      "encoding": "ascii",
+      "text": "}CiffEmbeddedFilesWWW"
+    },
+    {
+      "va": "68174960",
+      "fileOffset": 456032,
+      "encoding": "ascii",
+      "text": "ICiffEmbeddedFilesWW@8"
+    },
+    {
+      "va": "68174a60",
+      "fileOffset": 456288,
+      "encoding": "ascii",
+      "text": "CiffEmbeddedFilel9"
+    },
+    {
+      "va": "68174a7c",
+      "fileOffset": 456316,
+      "encoding": "ascii",
+      "text": "ICiffEmbeddedFileWWWl9"
+    },
+    {
+      "va": "68174ad8",
+      "fileOffset": 456408,
+      "encoding": "ascii",
+      "text": "CiffClipping4:"
+    },
+    {
+      "va": "68174af0",
+      "fileOffset": 456432,
+      "encoding": "ascii",
+      "text": "CiffClipRect"
+    },
+    {
+      "va": "68174b08",
+      "fileOffset": 456456,
+      "encoding": "ascii",
+      "text": "ICiffClipRectWWW"
+    },
+    {
+      "va": "68174f98",
+      "fileOffset": 457624,
+      "encoding": "ascii",
+      "text": "CiffParametersWW"
+    },
+    {
+      "va": "68174fb4",
+      "fileOffset": 457652,
+      "encoding": "ascii",
+      "text": "ICiffParametersW"
+    },
+    {
+      "va": "68174fec",
+      "fileOffset": 457708,
+      "encoding": "ascii",
+      "text": "CiffParameterSetH?"
+    },
+    {
+      "va": "68175008",
+      "fileOffset": 457736,
+      "encoding": "ascii",
+      "text": "ICiffParameterSetWWW"
+    },
+    {
+      "va": "68175028",
+      "fileOffset": 457768,
+      "encoding": "ascii",
+      "text": "ECiffParameterTypeWW"
+    },
+    {
+      "va": "681750dc",
+      "fileOffset": 457948,
+      "encoding": "ascii",
+      "text": "ICiffParameterSet2WW"
+    },
+    {
+      "va": "6817510f",
+      "fileOffset": 457999,
+      "encoding": "ascii",
+      "text": "*CiffParameterWWW"
+    },
+    {
+      "va": "6817512c",
+      "fileOffset": 458028,
+      "encoding": "ascii",
+      "text": "ICiffParameterWW<A"
+    },
+    {
+      "va": "68175148",
+      "fileOffset": 458056,
+      "encoding": "ascii",
+      "text": "ICiffParameter2W<A"
+    },
+    {
+      "va": "6817516e",
+      "fileOffset": 458094,
+      "encoding": "ascii",
+      "text": "CiffMgr 1.0 Type LibraryWW"
+    },
+    {
+      "va": "6817518a",
+      "fileOffset": 458122,
+      "encoding": "ascii",
+      "text": "CiffManager ClassW"
+    },
+    {
+      "va": "6817519e",
+      "fileOffset": 458142,
+      "encoding": "ascii",
+      "text": "ICiffManager Interface("
+    },
+    {
+      "va": "681751b6",
+      "fileOffset": 458166,
+      "encoding": "ascii",
+      "text": "ICiffDeveloperLicenseValidator InterfaceWW$"
+    },
+    {
+      "va": "6817520a",
+      "fileOffset": 458250,
+      "encoding": "ascii",
+      "text": "ICiffFile InterfaceWWW"
+    },
+    {
+      "va": "68175452",
+      "fileOffset": 458834,
+      "encoding": "ascii",
+      "text": "ICiffManager2 InterfaceWWW"
+    },
+    {
+      "va": "6817547e",
+      "fileOffset": 458878,
+      "encoding": "ascii",
+      "text": "ICiffManager3 InterfaceWWW"
+    },
+    {
+      "va": "681754aa",
+      "fileOffset": 458922,
+      "encoding": "ascii",
+      "text": "ICiffManager4 InterfaceWWW"
+    },
+    {
+      "va": "681754c6",
+      "fileOffset": 458950,
+      "encoding": "ascii",
+      "text": "ICiffFile8 InterfaceWW"
+    },
+    {
+      "va": "681754de",
+      "fileOffset": 458974,
+      "encoding": "ascii",
+      "text": "ICiffFile7 InterfaceWW"
+    },
+    {
+      "va": "681754f6",
+      "fileOffset": 458998,
+      "encoding": "ascii",
+      "text": "ICiffFile6 InterfaceWW"
+    },
+    {
+      "va": "6817550e",
+      "fileOffset": 459022,
+      "encoding": "ascii",
+      "text": "ICiffFile5 InterfaceWW"
+    },
+    {
+      "va": "68175526",
+      "fileOffset": 459046,
+      "encoding": "ascii",
+      "text": "ICiffFile4 InterfaceWW"
+    },
+    {
+      "va": "6817553e",
+      "fileOffset": 459070,
+      "encoding": "ascii",
+      "text": "ICiffFile3 InterfaceWW"
+    },
+    {
+      "va": "68175556",
+      "fileOffset": 459094,
+      "encoding": "ascii",
+      "text": "ICiffFile2 InterfaceWW"
+    },
+    {
+      "va": "6817562e",
+      "fileOffset": 459310,
+      "encoding": "ascii",
+      "text": "CiffFile Class"
+    },
+    {
+      "va": "6817563e",
+      "fileOffset": 459326,
+      "encoding": "ascii",
+      "text": "CiffSubImage Class"
+    },
+    {
+      "va": "68175652",
+      "fileOffset": 459346,
+      "encoding": "ascii",
+      "text": "ICiffSubImage InterfaceWWW"
+    },
+    {
+      "va": "681757a6",
+      "fileOffset": 459686,
+      "encoding": "ascii",
+      "text": "ICiffSubImage2 InterfaceWW"
+    },
+    {
+      "va": "681757f2",
+      "fileOffset": 459762,
+      "encoding": "ascii",
+      "text": "ICiffSubImage3 InterfaceWW"
+    },
+    {
+      "va": "68175826",
+      "fileOffset": 459814,
+      "encoding": "ascii",
+      "text": "ICiffSubImage4 InterfaceWW"
+    },
+    {
+      "va": "68175856",
+      "fileOffset": 459862,
+      "encoding": "ascii",
+      "text": "ICiffSubImage5 InterfaceWW"
+    },
+    {
+      "va": "681758e2",
+      "fileOffset": 460002,
+      "encoding": "ascii",
+      "text": "ICiffSubImage6 InterfaceWW"
+    },
+    {
+      "va": "6817591a",
+      "fileOffset": 460058,
+      "encoding": "ascii",
+      "text": "ICiffSubImage7 InterfaceWW"
+    },
+    {
+      "va": "68175956",
+      "fileOffset": 460118,
+      "encoding": "ascii",
+      "text": "ICiffSubImage8 InterfaceWW"
+    },
+    {
+      "va": "681759b2",
+      "fileOffset": 460210,
+      "encoding": "ascii",
+      "text": "CiffField ClassWWW"
+    },
+    {
+      "va": "681759c6",
+      "fileOffset": 460230,
+      "encoding": "ascii",
+      "text": "ICiffField InterfaceWW"
+    },
+    {
+      "va": "68175a9e",
+      "fileOffset": 460446,
+      "encoding": "ascii",
+      "text": "ICiffFieldData InterfaceWW"
+    },
+    {
+      "va": "68175b1e",
+      "fileOffset": 460574,
+      "encoding": "ascii",
+      "text": "ICiffClipping InterfaceWWW"
+    },
+    {
+      "va": "68175c3a",
+      "fileOffset": 460858,
+      "encoding": "ascii",
+      "text": "CiffFieldData ClassWWW"
+    },
+    {
+      "va": "68175c52",
+      "fileOffset": 460882,
+      "encoding": "ascii",
+      "text": "CiffDataObject ClassWW"
+    },
+    {
+      "va": "68175c6a",
+      "fileOffset": 460906,
+      "encoding": "ascii",
+      "text": "ICiffDataObject InterfaceW"
+    },
+    {
+      "va": "68175c86",
+      "fileOffset": 460934,
+      "encoding": "ascii",
+      "text": "property DataTypeW"
+    },
+    {
+      "va": "68175ce2",
+      "fileOffset": 461026,
+      "encoding": "ascii",
+      "text": "property ClearStyleDataTypeWWW"
+    },
+    {
+      "va": "68175d02",
+      "fileOffset": 461058,
+      "encoding": "ascii",
+      "text": "property DefaultDataWW"
+    },
+    {
+      "va": "68175e26",
+      "fileOffset": 461350,
+      "encoding": "ascii",
+      "text": "property OffsetDateSourceNameW"
+    },
+    {
+      "va": "6817600a",
+      "fileOffset": 461834,
+      "encoding": "ascii",
+      "text": "ICiffDataObject2 Interface"
+    },
+    {
+      "va": "681760a6",
+      "fileOffset": 461990,
+      "encoding": "ascii",
+      "text": "ICiffDataObject3 Interface"
+    },
+    {
+      "va": "681760f2",
+      "fileOffset": 462066,
+      "encoding": "ascii",
+      "text": "ICiffDataObject4 Interface"
+    },
+    {
+      "va": "68176126",
+      "fileOffset": 462118,
+      "encoding": "ascii",
+      "text": "ICiffDataObject5 Interface"
+    },
+    {
+      "va": "6817615a",
+      "fileOffset": 462170,
+      "encoding": "ascii",
+      "text": "ICiffDataObject6 Interface"
+    },
+    {
+      "va": "6817618e",
+      "fileOffset": 462222,
+      "encoding": "ascii",
+      "text": "ICiffDataObject7 Interface"
+    },
+    {
+      "va": "6817620e",
+      "fileOffset": 462350,
+      "encoding": "ascii",
+      "text": "ICiffDataObject8 Interface"
+    },
+    {
+      "va": "6817623e",
+      "fileOffset": 462398,
+      "encoding": "ascii",
+      "text": "CiffTextField ClassWWW"
+    },
+    {
+      "va": "68176256",
+      "fileOffset": 462422,
+      "encoding": "ascii",
+      "text": "ICiffTextField InterfaceWW"
+    },
+    {
+      "va": "68176272",
+      "fileOffset": 462450,
+      "encoding": "ascii",
+      "text": "property FontNameW"
+    },
+    {
+      "va": "68176286",
+      "fileOffset": 462470,
+      "encoding": "ascii",
+      "text": "property FontPitch"
+    },
+    {
+      "va": "6817629a",
+      "fileOffset": 462490,
+      "encoding": "ascii",
+      "text": "property FontXMagW"
+    },
+    {
+      "va": "6817633a",
+      "fileOffset": 462650,
+      "encoding": "ascii",
+      "text": "property BlockMinimumFontSizeW"
+    },
+    {
+      "va": "6817637a",
+      "fileOffset": 462714,
+      "encoding": "ascii",
+      "text": "property FontFamilyWWW"
+    },
+    {
+      "va": "681763de",
+      "fileOffset": 462814,
+      "encoding": "ascii",
+      "text": "property FontYMagW"
+    },
+    {
+      "va": "681763f2",
+      "fileOffset": 462834,
+      "encoding": "ascii",
+      "text": "property FontTrueTypeSizeW"
+    },
+    {
+      "va": "6817640e",
+      "fileOffset": 462862,
+      "encoding": "ascii",
+      "text": "ICiffTextField2 InterfaceW#"
+    },
+    {
+      "va": "68176452",
+      "fileOffset": 462930,
+      "encoding": "ascii",
+      "text": "ICiffTextField3 InterfaceW"
+    },
+    {
+      "va": "6817646e",
+      "fileOffset": 462958,
+      "encoding": "ascii",
+      "text": "property FontTextDirection"
+    },
+    {
+      "va": "6817648a",
+      "fileOffset": 462986,
+      "encoding": "ascii",
+      "text": "ICiffTextField4 InterfaceW"
+    },
+    {
+      "va": "681764a6",
+      "fileOffset": 463014,
+      "encoding": "ascii",
+      "text": "property FontTypeW"
+    },
+    {
+      "va": "68176526",
+      "fileOffset": 463142,
+      "encoding": "ascii",
+      "text": "ICiffTextField5 InterfaceW"
+    },
+    {
+      "va": "6817655a",
+      "fileOffset": 463194,
+      "encoding": "ascii",
+      "text": "ICiffTextField6 InterfaceW"
+    },
+    {
+      "va": "68176576",
+      "fileOffset": 463222,
+      "encoding": "ascii",
+      "text": "property FontPitchResolutionWW"
+    },
+    {
+      "va": "68176596",
+      "fileOffset": 463254,
+      "encoding": "ascii",
+      "text": "ICiffTextField7 InterfaceW"
+    },
+    {
+      "va": "681765ca",
+      "fileOffset": 463306,
+      "encoding": "ascii",
+      "text": "ICiffFieldExtension InterfaceW"
+    },
+    {
+      "va": "68176602",
+      "fileOffset": 463362,
+      "encoding": "ascii",
+      "text": "ICiffFieldExtension2 Interface"
+    },
+    {
+      "va": "6817663a",
+      "fileOffset": 463418,
+      "encoding": "ascii",
+      "text": "ICiffFieldExtension3 Interface"
+    },
+    {
+      "va": "6817666e",
+      "fileOffset": 463470,
+      "encoding": "ascii",
+      "text": "CiffBarcodeField Class"
+    },
+    {
+      "va": "68176686",
+      "fileOffset": 463494,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField InterfaceWWW"
+    },
+    {
+      "va": "681766a6",
+      "fileOffset": 463526,
+      "encoding": "ascii",
+      "text": "property BarcodeTypeWW"
+    },
+    {
+      "va": "68176716",
+      "fileOffset": 463638,
+      "encoding": "ascii",
+      "text": "property HRFontNameWWW"
+    },
+    {
+      "va": "6817672e",
+      "fileOffset": 463662,
+      "encoding": "ascii",
+      "text": "property HRFontFamilyW"
+    },
+    {
+      "va": "68176746",
+      "fileOffset": 463686,
+      "encoding": "ascii",
+      "text": "property HRFontPitchWW"
+    },
+    {
+      "va": "6817675e",
+      "fileOffset": 463710,
+      "encoding": "ascii",
+      "text": "property HRFontXMagWWW"
+    },
+    {
+      "va": "6817686e",
+      "fileOffset": 463982,
+      "encoding": "ascii",
+      "text": "property HRFontYMagWWW"
+    },
+    {
+      "va": "68176886",
+      "fileOffset": 464006,
+      "encoding": "ascii",
+      "text": "property HRFontTTSizeW"
+    },
+    {
+      "va": "681768b2",
+      "fileOffset": 464050,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField2 InterfaceWW"
+    },
+    {
+      "va": "68176916",
+      "fileOffset": 464150,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField3 InterfaceWW"
+    },
+    {
+      "va": "681769da",
+      "fileOffset": 464346,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField4 InterfaceWW"
+    },
+    {
+      "va": "681769fa",
+      "fileOffset": 464378,
+      "encoding": "ascii",
+      "text": "property HRFontTextDirectionWW"
+    },
+    {
+      "va": "68176a1a",
+      "fileOffset": 464410,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField5 InterfaceWW"
+    },
+    {
+      "va": "68176a7a",
+      "fileOffset": 464506,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField6 InterfaceWW"
+    },
+    {
+      "va": "68176b0a",
+      "fileOffset": 464650,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField7 InterfaceWW"
+    },
+    {
+      "va": "68176b4a",
+      "fileOffset": 464714,
+      "encoding": "ascii",
+      "text": "property BarcodeMagnificationRoundingFactorWWW"
+    },
+    {
+      "va": "68176b7a",
+      "fileOffset": 464762,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField8 InterfaceWW"
+    },
+    {
+      "va": "68176bee",
+      "fileOffset": 464878,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField9 InterfaceWW"
+    },
+    {
+      "va": "68176c0e",
+      "fileOffset": 464910,
+      "encoding": "ascii",
+      "text": "property BarcodePrintingWW"
+    },
+    {
+      "va": "68176c2a",
+      "fileOffset": 464938,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField10 InterfaceW"
+    },
+    {
+      "va": "68176ca2",
+      "fileOffset": 465058,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField11 InterfaceW"
+    },
+    {
+      "va": "68176cc2",
+      "fileOffset": 465090,
+      "encoding": "ascii",
+      "text": "property BarcodeDataFormat"
+    },
+    {
+      "va": "68176cde",
+      "fileOffset": 465118,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField12 InterfaceW"
+    },
+    {
+      "va": "68176d16",
+      "fileOffset": 465174,
+      "encoding": "ascii",
+      "text": "ICiffBarcodeField13 InterfaceW"
+    },
+    {
+      "va": "68176d36",
+      "fileOffset": 465206,
+      "encoding": "ascii",
+      "text": "CiffGfxField Class"
+    },
+    {
+      "va": "68176d4a",
+      "fileOffset": 465226,
+      "encoding": "ascii",
+      "text": "ICiffGfxField InterfaceWWW"
+    },
+    {
+      "va": "68176d66",
+      "fileOffset": 465254,
+      "encoding": "ascii",
+      "text": "property GraphicWidthW"
+    },
+    {
+      "va": "68176d7e",
+      "fileOffset": 465278,
+      "encoding": "ascii",
+      "text": "property GraphicHeight"
+    },
+    {
+      "va": "68176d96",
+      "fileOffset": 465302,
+      "encoding": "ascii",
+      "text": "property GraphicSubTypeWWW"
+    },
+    {
+      "va": "68176e6e",
+      "fileOffset": 465518,
+      "encoding": "ascii",
+      "text": "ICiffGfxField2 InterfaceWW"
+    },
+    {
+      "va": "681773ba",
+      "fileOffset": 466874,
+      "encoding": "ascii",
+      "text": "property DefaultWW"
+    },
+    {
+      "va": "68177416",
+      "fileOffset": 466966,
+      "encoding": "ascii",
+      "text": "property SrcFieldW"
+    },
+    {
+      "va": "681774d2",
+      "fileOffset": 467154,
+      "encoding": "ascii",
+      "text": "CiffSubCounter ClassWW"
+    },
+    {
+      "va": "681774ea",
+      "fileOffset": 467178,
+      "encoding": "ascii",
+      "text": "ICiffSubCounter InterfaceW"
+    },
+    {
+      "va": "6817763a",
+      "fileOffset": 467514,
+      "encoding": "ascii",
+      "text": "ICiffSubCounter2 Interface"
+    },
+    {
+      "va": "6817767e",
+      "fileOffset": 467582,
+      "encoding": "ascii",
+      "text": "ICiffSubCounter3 Interface"
+    },
+    {
+      "va": "6817769a",
+      "fileOffset": 467610,
+      "encoding": "ascii",
+      "text": "CiffGenericSettings ClassW"
+    },
+    {
+      "va": "681776b6",
+      "fileOffset": 467638,
+      "encoding": "ascii",
+      "text": "ICiffGenericSettings Interface"
+    },
+    {
+      "va": "6817772a",
+      "fileOffset": 467754,
+      "encoding": "ascii",
+      "text": "ICiffGenericSettings2 InterfaceWWW"
+    },
+    {
+      "va": "68177766",
+      "fileOffset": 467814,
+      "encoding": "ascii",
+      "text": "CiffPrintHeadMap Class"
+    },
+    {
+      "va": "6817777e",
+      "fileOffset": 467838,
+      "encoding": "ascii",
+      "text": "ICiffPrintHeadMap InterfaceWWW"
+    },
+    {
+      "va": "6817779e",
+      "fileOffset": 467870,
+      "encoding": "ascii",
+      "text": "property SubImageRefWW"
+    },
+    {
+      "va": "681777c6",
+      "fileOffset": 467910,
+      "encoding": "ascii",
+      "text": "CiffVariableDataList Class"
+    },
+    {
+      "va": "681777e2",
+      "fileOffset": 467938,
+      "encoding": "ascii",
+      "text": "ICiffVariableDataList InterfaceWWW "
+    },
+    {
+      "va": "68177806",
+      "fileOffset": 467974,
+      "encoding": "ascii",
+      "text": "ICiffVariableDataList2 InterfaceWW "
+    },
+    {
+      "va": "6817782a",
+      "fileOffset": 468010,
+      "encoding": "ascii",
+      "text": "ICiffVariableDataList3 InterfaceWW"
+    },
+    {
+      "va": "6817785e",
+      "fileOffset": 468062,
+      "encoding": "ascii",
+      "text": "CiffVariableDataItem Class"
+    },
+    {
+      "va": "6817787a",
+      "fileOffset": 468090,
+      "encoding": "ascii",
+      "text": "ICiffVariableDataItem InterfaceWWW"
+    },
+    {
+      "va": "681778ae",
+      "fileOffset": 468142,
+      "encoding": "ascii",
+      "text": "ICiffVariableDataItem2 InterfaceWW"
+    },
+    {
+      "va": "681778e2",
+      "fileOffset": 468194,
+      "encoding": "ascii",
+      "text": "CiffEmbeddedFiles ClassWWW"
+    },
+    {
+      "va": "681778fe",
+      "fileOffset": 468222,
+      "encoding": "ascii",
+      "text": "ICiffEmbeddedFiles InterfaceWW"
+    },
+    {
+      "va": "6817791e",
+      "fileOffset": 468254,
+      "encoding": "ascii",
+      "text": "CiffEmbeddedFile Class"
+    },
+    {
+      "va": "68177936",
+      "fileOffset": 468278,
+      "encoding": "ascii",
+      "text": "ICiffEmbeddedFile InterfaceWWW"
+    },
+    {
+      "va": "68177992",
+      "fileOffset": 468370,
+      "encoding": "ascii",
+      "text": "CiffClipping Class"
+    },
+    {
+      "va": "681779a6",
+      "fileOffset": 468390,
+      "encoding": "ascii",
+      "text": "CiffClipRect Class"
+    },
+    {
+      "va": "681779ba",
+      "fileOffset": 468410,
+      "encoding": "ascii",
+      "text": "ICiffClipRect InterfaceWWW"
+    },
+    {
+      "va": "68177a5e",
+      "fileOffset": 468574,
+      "encoding": "ascii",
+      "text": "CiffParameters ClassWW"
+    },
+    {
+      "va": "68177a76",
+      "fileOffset": 468598,
+      "encoding": "ascii",
+      "text": "ICiffParameters InterfaceW"
+    },
+    {
+      "va": "68177a92",
+      "fileOffset": 468626,
+      "encoding": "ascii",
+      "text": "CiffParameterSet Class"
+    },
+    {
+      "va": "68177aaa",
+      "fileOffset": 468650,
+      "encoding": "ascii",
+      "text": "ICiffParameterSet InterfaceWWW"
+    },
+    {
+      "va": "68177aca",
+      "fileOffset": 468682,
+      "encoding": "ascii",
+      "text": "ICiffParameterSet2 InterfaceWW"
+    },
+    {
+      "va": "68177b0a",
+      "fileOffset": 468746,
+      "encoding": "ascii",
+      "text": "CiffParameter ClassWWW"
+    },
+    {
+      "va": "68177b22",
+      "fileOffset": 468770,
+      "encoding": "ascii",
+      "text": "ICiffParameter InterfaceWW"
+    },
+    {
+      "va": "68177b3e",
+      "fileOffset": 468798,
+      "encoding": "ascii",
+      "text": "ICiffParameter2 InterfaceW"
+    },
+    {
+      "va": "6814b888",
+      "fileOffset": 302728,
+      "encoding": "utf-16-le",
+      "text": ".ciff"
+    },
+    {
+      "va": "6814ba38",
+      "fileOffset": 303160,
+      "encoding": "utf-16-le",
+      "text": "ResetToDefaultVal"
+    },
+    {
+      "va": "6814bfcc",
+      "fileOffset": 304588,
+      "encoding": "utf-16-le",
+      "text": "UseDefault"
+    },
+    {
+      "va": "6814c1e0",
+      "fileOffset": 305120,
+      "encoding": "utf-16-le",
+      "text": "ImageDesign"
+    },
+    {
+      "va": "6814c208",
+      "fileOffset": 305160,
+      "encoding": "utf-16-le",
+      "text": "SubImage"
+    },
+    {
+      "va": "6814c32c",
+      "fileOffset": 305452,
+      "encoding": "utf-16-le",
+      "text": "DefaultOffset"
+    },
+    {
+      "va": "6814c578",
+      "fileOffset": 306040,
+      "encoding": "utf-16-le",
+      "text": "FldType"
+    },
+    {
+      "va": "6814c65c",
+      "fileOffset": 306268,
+      "encoding": "utf-16-le",
+      "text": "CalcData"
+    },
+    {
+      "va": "6814c6b0",
+      "fileOffset": 306352,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    },
+    {
+      "va": "6814c6c0",
+      "fileOffset": 306368,
+      "encoding": "utf-16-le",
+      "text": "Graphic"
+    },
+    {
+      "va": "6814c6d0",
+      "fileOffset": 306384,
+      "encoding": "utf-16-le",
+      "text": "Object"
+    },
+    {
+      "va": "6814c6e0",
+      "fileOffset": 306400,
+      "encoding": "utf-16-le",
+      "text": "DataType"
+    },
+    {
+      "va": "6814c74c",
+      "fileOffset": 306508,
+      "encoding": "utf-16-le",
+      "text": "Default"
+    },
+    {
+      "va": "6814c770",
+      "fileOffset": 306544,
+      "encoding": "utf-16-le",
+      "text": "SrcField"
+    },
+    {
+      "va": "6814c7b8",
+      "fileOffset": 306616,
+      "encoding": "utf-16-le",
+      "text": "OffsetDate"
+    },
+    {
+      "va": "6814c7d8",
+      "fileOffset": 306648,
+      "encoding": "utf-16-le",
+      "text": "CounterText"
+    },
+    {
+      "va": "6814c9dc",
+      "fileOffset": 307164,
+      "encoding": "utf-16-le",
+      "text": "Font"
+    },
+    {
+      "va": "6814ca8c",
+      "fileOffset": 307340,
+      "encoding": "utf-16-le",
+      "text": "MinFontSize"
+    },
+    {
+      "va": "6814cc94",
+      "fileOffset": 307860,
+      "encoding": "utf-16-le",
+      "text": "HRFont"
+    },
+    {
+      "va": "6814d084",
+      "fileOffset": 308868,
+      "encoding": "utf-16-le",
+      "text": "DataMatrix"
+    },
+    {
+      "va": "6814d4fc",
+      "fileOffset": 310012,
+      "encoding": "utf-16-le",
+      "text": "BarcodePrinting"
+    },
+    {
+      "va": "6814d5b8",
+      "fileOffset": 310200,
+      "encoding": "utf-16-le",
+      "text": "BarcodeDataFormat"
+    },
+    {
+      "va": "6814d7a0",
+      "fileOffset": 310688,
+      "encoding": "utf-16-le",
+      "text": "SrcFieldName"
+    },
+    {
+      "va": "6814d8b0",
+      "fileOffset": 310960,
+      "encoding": "utf-16-le",
+      "text": "SubIMageRef"
+    },
+    {
+      "va": "6814daa8",
+      "fileOffset": 311464,
+      "encoding": "utf-16-le",
+      "text": "default"
+    },
+    {
+      "va": "6814dd74",
+      "fileOffset": 312180,
+      "encoding": "utf-16-le",
+      "text": "ResetToDefaultOffset"
+    },
+    {
+      "va": "6816a250",
+      "fileOffset": 413264,
+      "encoding": "utf-16-le",
+      "text": "CIFF Manager Component"
+    },
+    {
+      "va": "6816a300",
+      "fileOffset": 413440,
+      "encoding": "utf-16-le",
+      "text": "CiffMgr Module"
+    },
+    {
+      "va": "6816a370",
+      "fileOffset": 413552,
+      "encoding": "utf-16-le",
+      "text": "CiffMgr"
+    },
+    {
+      "va": "6816a428",
+      "fileOffset": 413736,
+      "encoding": "utf-16-le",
+      "text": "CiffMgr.dll"
+    },
+    {
+      "va": "6816a460",
+      "fileOffset": 413792,
+      "encoding": "utf-16-le",
+      "text": "CiffMgr Module"
+    },
+    {
+      "va": "6818452a",
+      "fileOffset": 520490,
+      "encoding": "utf-16-le",
+      "text": "CiffMgr"
+    }
+  ]
+}

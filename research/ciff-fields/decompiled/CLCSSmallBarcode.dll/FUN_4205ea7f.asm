@@ -1,0 +1,222 @@
+4205ea7f PUSH 0x6c
+4205ea81 MOV EAX,0x42087612
+4205ea86 CALL 0x4206a66c
+4205ea8b MOV EDI,ECX
+4205ea8d CMP dword ptr [EDI + 0x40],0x0
+4205ea91 MOV EAX,0x80004005
+4205ea96 JZ 0x4205ed61
+4205ea9c MOV EAX,dword ptr [EBP + 0x8]
+4205ea9f LEA EDX,[EBP + -0x28]
+4205eaa2 MOV EBX,dword ptr [EBP + 0x14]
+4205eaa5 PUSH EDX
+4205eaa6 MOV ECX,dword ptr [EAX + 0xc]
+4205eaa9 MOV ESI,dword ptr [EAX + 0x8]
+4205eaac SUB ECX,dword ptr [EAX + 0x4]
+4205eaaf SUB ESI,dword ptr [EAX]
+4205eab1 MOV EAX,dword ptr [EBX]
+4205eab3 MOV dword ptr [EBP + -0x14],ECX
+4205eab6 PUSH EAX
+4205eab7 MOV ECX,dword ptr [EAX]
+4205eab9 CALL dword ptr [ECX + 0xb0]
+4205eabf MOV EAX,dword ptr [EBX]
+4205eac1 PUSH dword ptr [EBP + -0x14]
+4205eac4 PUSH EAX
+4205eac5 MOV ECX,dword ptr [EAX]
+4205eac7 CALL dword ptr [ECX + 0x84]
+4205eacd MOV EBX,dword ptr [EBP + 0x10]
+4205ead0 LEA EDX,[EBP + -0x20]
+4205ead3 MOVD XMM0,ESI
+4205ead7 CVTDQ2PD XMM0,XMM0
+4205eadb PUSH EDX
+4205eadc MOV EAX,dword ptr [EBX]
+4205eade PUSH EAX
+4205eadf MOV ECX,dword ptr [EAX]
+4205eae1 MOVSD qword ptr [EBP + -0x48],XMM0
+4205eae6 CALL dword ptr [ECX + 0x2c]
+4205eae9 MOV EAX,dword ptr [EBP + 0xc]
+4205eaec LEA EDX,[EBP + -0x1c]
+4205eaef MOVSS XMM0,dword ptr [EBP + -0x20]
+4205eaf4 CVTPS2PD XMM0,XMM0
+4205eaf7 PUSH EDX
+4205eaf8 MOV EAX,dword ptr [EAX]
+4205eafa PUSH EAX
+4205eafb MOV ECX,dword ptr [EAX]
+4205eafd MOVSD qword ptr [EBP + -0x38],XMM0
+4205eb02 CALL dword ptr [ECX + 0x54]
+4205eb05 MOVSD XMM0,qword ptr [EBP + -0x48]
+4205eb0a XOR EAX,EAX
+4205eb0c INC EAX
+4205eb0d CMP dword ptr [EBP + -0x1c],EAX
+4205eb10 JNZ 0x4205eb1c
+4205eb12 DIVSD XMM0,qword ptr [EBP + -0x38]
+4205eb17 MOVSD qword ptr [EBP + -0x48],XMM0
+4205eb1c MULSD XMM0,qword ptr [0x42089818]
+4205eb24 DIVSD XMM0,qword ptr [EDI + 0x30]
+4205eb29 COMISD XMM0,qword ptr [0x4209e1b0]
+4205eb31 JBE 0x4205eb46
+4205eb33 PUSH EBX
+4205eb34 MOV ECX,EDI
+4205eb36 CALL 0x42066adf
+4205eb3b FSTP double ptr [EBP + -0x68]
+4205eb3e MOVSD XMM0,qword ptr [EBP + -0x68]
+4205eb43 XOR EAX,EAX
+4205eb45 INC EAX
+4205eb46 MOVSD XMM1,qword ptr [EDI + 0x28]
+4205eb4b LEA EDX,[EBP + 0x8]
+4205eb4e MULSD XMM1,XMM0
+4205eb52 MOV ESI,dword ptr [EBP + 0x14]
+4205eb55 MOVSD XMM2,qword ptr [EBP + -0x38]
+4205eb5a MULSD XMM2,qword ptr [0x42089810]
+4205eb62 PUSH EDX
+4205eb63 DIVSD XMM1,qword ptr [0x42089818]
+4205eb6b MULSD XMM2,XMM1
+4205eb6f DIVSD XMM2,qword ptr [0x42089810]
+4205eb77 CVTTSD2SI EBX,XMM2
+4205eb7b CMP EBX,EAX
+4205eb7d CMOVL EBX,EAX
+4205eb80 MOV EAX,dword ptr [ESI]
+4205eb82 AND dword ptr [EBP + 0x8],0x0
+4205eb86 PUSH EAX
+4205eb87 MOV dword ptr [EBP + -0x10],EBX
+4205eb8a MOV ECX,dword ptr [EAX]
+4205eb8c CALL dword ptr [ECX + 0xc0]
+4205eb92 MOV EAX,dword ptr [ESI]
+4205eb94 LEA EDX,[EBP + -0x24]
+4205eb97 PUSH EDX
+4205eb98 PUSH EAX
+4205eb99 MOV ECX,dword ptr [EAX]
+4205eb9b CALL dword ptr [ECX + 0xe0]
+4205eba1 MOV EAX,dword ptr [EBP + 0x10]
+4205eba4 MOVSD XMM0,qword ptr [EDI + 0x28]
+4205eba9 MULSD XMM0,qword ptr [EBP + -0x38]
+4205ebae MOV ECX,dword ptr [EDI + 0x40]
+4205ebb1 PUSH dword ptr [EAX]
+4205ebb3 MOV EAX,dword ptr [EBP + 0xc]
+4205ebb6 MOVSD qword ptr [EBP + -0x70],XMM0
+4205ebbb XORPS XMM0,XMM0
+4205ebbe MOVSD qword ptr [EBP + -0x60],XMM0
+4205ebc3 PUSH dword ptr [EAX]
+4205ebc5 MOVSD qword ptr [EBP + -0x68],XMM0
+4205ebca PUSH dword ptr [ESI]
+4205ebcc CALL 0x4202bc38
+4205ebd1 PUSH 0x0
+4205ebd3 CALL dword ptr [0x420892b8]
+4205ebd9 AND dword ptr [EBP + 0x14],0x0
+4205ebdd MOV dword ptr [EBP + -0x18],EAX
+4205ebe0 MOV EAX,dword ptr [ESI]
+4205ebe2 LEA EDX,[EBP + 0x14]
+4205ebe5 AND dword ptr [EBP + -0x4],0x0
+4205ebe9 PUSH EDX
+4205ebea PUSH EAX
+4205ebeb MOV ECX,dword ptr [EAX]
+4205ebed CALL dword ptr [ECX + 0x98]
+4205ebf3 MOVD XMM0,EBX
+4205ebf7 LEA EAX,[EBP + -0x50]
+4205ebfa CVTDQ2PD XMM0,XMM0
+4205ebfe AND dword ptr [EBP + -0x50],0x0
+4205ec02 AND dword ptr [EBP + -0x4c],0x0
+4205ec06 CMP dword ptr [EBP + 0x8],0x1
+4205ec0a PUSH EAX
+4205ec0b PUSH dword ptr [EBP + -0x24]
+4205ec0e MULSD XMM0,qword ptr [0x42089818]
+4205ec16 DIVSD XMM0,qword ptr [EBP + -0x70]
+4205ec1b CVTTSD2SI EAX,XMM0
+4205ec1f MOVSD qword ptr [EBP + -0x58],XMM0
+4205ec24 PUSH EAX
+4205ec25 PUSH dword ptr [EBP + -0x18]
+4205ec28 SETZ AL
+4205ec2b MOVZX EAX,AL
+4205ec2e PUSH EAX
+4205ec2f PUSH ECX
+4205ec30 LEA EAX,[EBP + 0x14]
+4205ec33 MOV ECX,ESP
+4205ec35 PUSH EAX
+4205ec36 CALL 0x42002e4a
+4205ec3b PUSH dword ptr [EBP + -0x14]
+4205ec3e MOV ECX,dword ptr [EDI + 0x40]
+4205ec41 PUSH EBX
+4205ec42 PUSH dword ptr [EDI + 0x14]
+4205ec45 CALL 0x4202aa79
+4205ec4a CMP dword ptr [EBP + 0x8],0x1
+4205ec4e MOVSD XMM2,qword ptr [EBP + -0x38]
+4205ec53 MOVD XMM0,EAX
+4205ec57 CVTDQ2PD XMM0,XMM0
+4205ec5b DIVSD XMM0,XMM2
+4205ec5f MOVSD qword ptr [EBP + -0x30],XMM0
+4205ec64 JNZ 0x4205ec81
+4205ec66 MOVD XMM1,dword ptr [EBP + -0x50]
+4205ec6b CVTDQ2PD XMM1,XMM1
+4205ec6f DIVSD XMM1,XMM2
+4205ec73 COMISD XMM1,XMM0
+4205ec77 JBE 0x4205ec81
+4205ec79 MOVAPS XMM0,XMM1
+4205ec7c MOVSD qword ptr [EBP + -0x30],XMM0
+4205ec81 MOVSD XMM1,qword ptr [EBP + -0x48]
+4205ec86 COMISD XMM0,XMM1
+4205ec8a JBE 0x4205ecb7
+4205ec8c MOVSD XMM1,qword ptr [EBP + -0x60]
+4205ec91 COMISD XMM1,qword ptr [0x420923d0]
+4205ec99 JBE 0x4205ecaf
+4205ec9b MOVAPS XMM0,XMM1
+4205ec9e MOVSD qword ptr [EBP + -0x40],XMM0
+4205eca3 MOVSD XMM0,qword ptr [EBP + -0x68]
+4205eca8 MOVSD qword ptr [EBP + -0x58],XMM0
+4205ecad JMP 0x4205ecf6
+4205ecaf CMP EBX,0x1
+4205ecb2 JLE 0x4205ecf1
+4205ecb4 DEC EBX
+4205ecb5 JMP 0x4205ecea
+4205ecb7 COMISD XMM1,XMM0
+4205ecbb JBE 0x4205ecf1
+4205ecbd PUSH dword ptr [EBP + 0x10]
+4205ecc0 MOV ECX,EDI
+4205ecc2 CALL 0x42066adf
+4205ecc7 MOVSD XMM1,qword ptr [EBP + -0x58]
+4205eccc FSTP double ptr [EBP + -0x78]
+4205eccf MOVSD XMM0,qword ptr [EBP + -0x78]
+4205ecd4 COMISD XMM0,XMM1
+4205ecd8 MOVSD XMM0,qword ptr [EBP + -0x30]
+4205ecdd JBE 0x4205ecf1
+4205ecdf INC EBX
+4205ece0 MOVSD qword ptr [EBP + -0x60],XMM0
+4205ece5 MOVSD qword ptr [EBP + -0x68],XMM1
+4205ecea MOV dword ptr [EBP + -0x10],EBX
+4205eced MOV BL,0x1
+4205ecef JMP 0x4205ecf8
+4205ecf1 MOVSD qword ptr [EBP + -0x40],XMM0
+4205ecf6 XOR BL,BL
+4205ecf8 PUSH dword ptr [EBP + -0x18]
+4205ecfb PUSH 0x0
+4205ecfd CALL dword ptr [0x420892bc]
+4205ed03 PUSH dword ptr [EBP + 0x14]
+4205ed06 OR dword ptr [EBP + -0x4],0xffffffff
+4205ed0a CALL dword ptr [0x42089264]
+4205ed10 TEST BL,BL
+4205ed12 MOV EBX,dword ptr [EBP + -0x10]
+4205ed15 JNZ 0x4205ebd1
+4205ed1b MOV ECX,dword ptr [EDI + 0x40]
+4205ed1e CALL 0x4202aea0
+4205ed23 CMP dword ptr [EBP + -0x1c],0x1
+4205ed27 MOVSD XMM0,qword ptr [EBP + -0x40]
+4205ed2c JNZ 0x4205ed33
+4205ed2e MULSD XMM0,qword ptr [EBP + -0x38]
+4205ed33 MOV ECX,dword ptr [ESI]
+4205ed35 CVTTSD2SI EAX,XMM0
+4205ed39 MOV EDX,dword ptr [ECX]
+4205ed3b PUSH EAX
+4205ed3c PUSH ECX
+4205ed3d CALL dword ptr [EDX + 0x7c]
+4205ed40 CVTTSD2SI EAX,qword ptr [EBP + -0x58]
+4205ed45 MOV ECX,dword ptr [ESI]
+4205ed47 MOV EDX,dword ptr [ECX]
+4205ed49 PUSH EAX
+4205ed4a PUSH ECX
+4205ed4b CALL dword ptr [EDX + 0xb4]
+4205ed51 PUSH ESI
+4205ed52 PUSH dword ptr [EBP + 0x10]
+4205ed55 MOV ECX,EDI
+4205ed57 PUSH dword ptr [EBP + 0xc]
+4205ed5a CALL 0x4205ed69
+4205ed5f XOR EAX,EAX
+4205ed61 CALL 0x4206a63a
+4205ed66 RET 0x10

@@ -1,0 +1,151 @@
+{
+  "url": "glyph://app/index.html",
+  "width": 1440,
+  "height": 1100,
+  "zoom": 100,
+  "capturedAt": "2026-10-20T20:38:45.593Z",
+  "fields": [
+    {
+      "name": "TNR_Text",
+      "type": "FixedText",
+      "face": "Times New Roman",
+      "geom": {
+        "x": 123,
+        "y": 234,
+        "w": 1367,
+        "h": 242
+      },
+      "preview": "Path",
+      "previewText": "Abc 0123 АБВГ"
+    },
+    {
+      "name": "Arial_Bold",
+      "type": "FixedText",
+      "face": "Arial",
+      "geom": {
+        "x": 377,
+        "y": 900,
+        "w": 3025,
+        "h": 533
+      },
+      "preview": "Path",
+      "previewText": "Bold 012 АБВ"
+    },
+    {
+      "name": "Courier_XMag",
+      "type": "FixedText",
+      "face": "Courier New",
+      "geom": {
+        "x": 111,
+        "y": 1701,
+        "w": 2625,
+        "h": 333
+      },
+      "preview": "Path",
+      "previewText": "Wide 0123"
+    },
+    {
+      "name": "Tahoma_Date",
+      "type": "DateText",
+      "face": "Tahoma",
+      "geom": {
+        "x": 197,
+        "y": 2403,
+        "w": 1167,
+        "h": 342
+      },
+      "preview": "Path",
+      "previewText": "20/10/26"
+    },
+    {
+      "name": "Segoe_Offset",
+      "type": "OffsetDateText",
+      "face": "Segoe UI",
+      "geom": {
+        "x": 213,
+        "y": 3107,
+        "w": 1000,
+        "h": 342
+      },
+      "preview": "Path",
+      "previewText": "20/10/26"
+    },
+    {
+      "name": "Narrow_Time",
+      "type": "TimeText",
+      "face": "Arial Narrow",
+      "geom": {
+        "x": 319,
+        "y": 3811,
+        "w": 717,
+        "h": 408
+      },
+      "preview": "Path",
+      "previewText": "23:38"
+    },
+    {
+      "name": "OCRB_Counter",
+      "type": "CounterText",
+      "face": "OCRB",
+      "geom": {
+        "x": 421,
+        "y": 4517,
+        "w": 933,
+        "h": 342
+      },
+      "preview": "Path",
+      "previewText": "0001"
+    },
+    {
+      "name": "TNR_Rot90",
+      "type": "FixedText",
+      "face": "Times New Roman",
+      "geom": {
+        "x": 3801,
+        "y": 801,
+        "w": 558,
+        "h": 242
+      },
+      "preview": "Path",
+      "previewText": "Rot 90"
+    },
+    {
+      "name": "Courier_Rot180",
+      "type": "FixedText",
+      "face": "Courier New",
+      "geom": {
+        "x": 1801,
+        "y": 5203,
+        "w": 1167,
+        "h": 308
+      },
+      "preview": "Path",
+      "previewText": "Rot 180"
+    },
+    {
+      "name": "Tahoma_Rot270",
+      "type": "FixedText",
+      "face": "Tahoma",
+      "geom": {
+        "x": 4003,
+        "y": 3001,
+        "w": 733,
+        "h": 250
+      },
+      "preview": "Path",
+      "previewText": "Rot 270"
+    }
+  ],
+  "filename": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\exe-vector-editor-full.png",
+  "ciff": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\exe-vector.ciff",
+  "ciffSha256": "d6046cd29ccb5200fe80726b4eb22734ef9d236307573018457d30953d0a367e",
+  "method": "Page.captureScreenshot of the actual packaged EXE after read-only reopen; viewport 1440x1100 via CDP Emulation, no Save, no CIFF write.",
+  "ownedProcess": {
+    "executable": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\Glyph Studio.exe",
+    "pid": 27196,
+    "startedAt": "2026-10-20T20:38:43.924Z",
+    "profile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-screenshot-exe-profile",
+    "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-screenshot-exe-profile\\logs",
+    "debuggingPort": 59863
+  }
+}

@@ -1,0 +1,4220 @@
+{
+  "direct": [
+    {
+      "kind": "supported",
+      "input": "\u411f\u0b37\u95c4\u9d4a\ua5c4\u4b06\u34b4\u53da\ua9e3\u8320\u02be\uc2e4\u4544\u3c64\u95a4\ub73a\uc253\u97a8\u14c0",
+      "key": "\u350a\u4943\u3cfd\ubde2\ud5c7\u3f71\u1864",
+      "native": {
+        "output": "ExACQCVnFGNIBAEAsAIMDQ2T8pR0_7A3EAoKAdF31KOJNGpV04PL10VxR",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u628b\u66a6\u192e\u8923\u9fe1\u32d5\u703f\u4190\u5011\u872b\u5fab\ub458\ucac8\uc6ab\u6db3\u93f2\u3ead\uaf6c\uc559\u8344\u55fc\u81be\u2f45\u0fee\u7276\u4167\u9004\u853d\u1f1c\ua4a6\u74cd\u393c",
+      "key": "\ub108\uab9c",
+      "native": {
+        "output": "JqC1WRTp4QbUFmRRv3MyGNGIUsSQdLC71QC6Df3UBI5eHVA8LKCFt6IhGDtV3yM2kDPkDLvRO2S2QQ6tPDjC61HC405w38uO",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4a30",
+      "key": "\u014d\u6d47\u5e32\u8d19\u17fb\u2efd\ua851",
+      "native": {
+        "output": "FY5",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2f11\u961e\u7050\u88e2\u02e0\u0bad\u8a66\u15cf\ubca5\u16f4\u47e7\u2f64\u2a5f\u3c22\uc16a\ub7af\u07e3\ua813\ucd59\u0bc7\u5b7d\u32a2\u3900\u71f4\u7b1c\u0dec\u280f\u9cac\u4c0f\u19e1\u42d0\u604e\u3dcf\uc9c3\u4ccb\uca98\uc62e\u94dc\uc0c5\u6044\ud550\u75f6\ub3c5\u7fed\u6779\u48ef\u5054\u87bd\u16ee\ub7df\u8ef9\u1df0\u9e97\u7d04\u44c8\u8138\u24a9\u4560\u5127",
+      "key": "\u9b51",
+      "native": {
+        "output": "Q7E7oDGkLIWTUBVAmAIvSF2IJp0SLCBkRPQKADP5P66a9BJHHKQ23CCXQNC69DN7CR9IMI9J1EBBLQN5H8mO7JHF1TVsS0J0O5GVZTE3NM_OGL761NPd52RPQG5FbLGpHFdB6SHDq7HJABhH1e10_2MZ27KCKQSGxJCx79lNKcKFeQ3I0",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4690\u77f1\u5142\u5f6d\u422c\u2dc3",
+      "key": "\ud230\u5d88\u3139\ud6ea",
+      "native": {
+        "output": "DuH9REMz51QJGh98UF",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "",
+      "key": "\u86a2\u26bd\u0b38\u0901\ubac7\u3188\u98d3\ud658\u5d84\u4069\ub4ec\u2275\u93d4\u5545",
+      "native": {
+        "output": "",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9a08\u5296\u1bfd\u4644\u670c\ua297\u2a41\u1637\u3f80\u7d01\uc4e6\ua218\u445e\ua638\u3553\uc787\u57c1\u4cc0\u8fa2\u51f0\u5ba3\uc62f\u9bd6\u6d52\u96e9\u78b0\uadec\u340e\u1e0e\ub989\u5d4c\u27d0\u189d\u573e\ua1b8\uccec\u9772\uacef\u4b00\u94dd\u06b2\u8145\u1a8f\u6ffc\u6576\u457e\ucf63\u62cd\uaa8b\u2ce3\u2a76\uaabe\u4f1e\u07b3\uafd9\u69e6\ucf34\u2187",
+      "key": "\u3402\u5266\ubca3\u4d55\ud3a2\u3a57\u2a29\ub3d9\ud32b\uabcc\ucd53\u3a99",
+      "native": {
+        "output": "SV5RGE7kPUwS9d52T865DRK3InGVtDI!43XSASFKmJ8YUC9A3nCAeMHv3Oe77zS4zDNm8HL30oRTF797HJwNLP99SGMqFKH0B!144GPu52bV7mN3uMT_7B1H7qU2bKVZPIF31734W0K4CEPLJhRPm0TFGPBI7G1MEB1l1VpN8846CC",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub999\u6945\u51e5\u8fd9\u28f8\u5532\u9e06\u2e0a\u26a2\u9738\ub581\u79cc\u432d\u9e8f\u973d",
+      "key": "\u8bcb",
+      "native": {
+        "output": "8p6AeALHB4SKQcJKsDQ2BAGH908O_OMvPSmMIYJO3GCMV",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u85c2\ua858\u52f1\u5525\u73fb\u107a\ua929\u2761\ucd3e\ua020\u32df\u316c\u9eab\u4f03\u2c7e\u0ff5\u07b5\u53fb",
+      "key": "\u5b55\u2ac3\u908f\u1aad\u8ec0",
+      "native": {
+        "output": "F1H1gQ6WFH_JIX8MaVVjQA88UMRR70QjE1mV5hS0d4FG0VE0Lp3Va3",
+        "hresult": 0,
+        "effectiveKeyLength": 5,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u81bd\u844d\ucc5f\u5fc1\u637c\u01eb\uadca\ucdcc\u8fb9\ub8fa\u43d2\u8cc3\u69e4\u0c9c\ud1df\u3fb3\u3fac\u4b51\u51ac\u76ab\u57d0\ua0cb\u5b47\u26c1\ua4ae\u2c3a\ua7fa\u05ee\ua3bc\ubb6a\u4c27\u57ad\u414e\u4f78\ucae2\uae83\u93c5\ua6f3\ub876\u8ead\u700f\u34d7\u9444\u80f7\u9a82\ub947\u161c\u77e7\u17e6\u8840\u2dd8\u7656",
+      "key": "\u413a\ubd5d\u896a\u936e\u55ec\u5e2d\uabf3\uc486\u217f\u627c\u159c\ub018",
+      "native": {
+        "output": "V2G1GM4Y2MTGQm0HWQ5M8RaOEiUS3NSTK40KSWLPm31!6497KOGB4N9iB6wOEGUKLA306J0S8ZDSV4CxPJ1DJzAMY766LKu0FlS6dJ8z9GRS2L7OH0FlOPH09d4QAD7pGBsAUIEQZV7U48VRNhGANEU2OO_2",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u150f\uce49\ub19d\u7c17\ua74f\u3d1a\u593a\ubc3a\ua976\u8da9\uc32b\u88bf\ua979\u3b25\ubd9b\ubd6c\u3a99\u4bcb\uc10a\u76a7\u5ac6\u8ef4\u3b99\u32bf\u989c\u0f7d\uc10c\ua482\ub13c",
+      "key": "\ua3d8\ucb4d\u59d0\u0b9d\ub711\u804f\u6981\u8390\u5e0b\u23a8\u36de\u4638",
+      "native": {
+        "output": "Dd2MC7HqA99MCXH7Y1Ml6BdE2jSPwQ09PH62CC9LZ4M3HCCL1OGIK6MeRElS0_D2R2Kz8N!76q87LJT71TEIGcA",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3217\u7d4d\ua78b\u196e\u496b\u4c87\u9a13\u1107\u18f4\u0786\u7b29\u36f9\u7006\u63a7\u1ccb\u4476\u19a2\u108b\u0cb7\uca60\uacc6\u7e53\u6c64\u2eb9\u5998\u5568\u213c\u8366\u3970\u3e17\u534e\u3ba9\ub8ce\uaa77",
+      "key": "\uce6b\u701b\u8dd5\u8099\u31fa\u6d29\uab68",
+      "native": {
+        "output": "0Z2MaGDtI454JnSEFI3eHOyFHOC2J35y0NMJ2JU1uQ1R0MsI781IhHUR4FXSKhGEBL3xM8tM69RFyC24PIpQ9MFLS45uJ3!RDH4MaQ",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9765\u6d3f\u842c\u477c\ubc42\u7296\ua171\u1926\ucf5b\u2853\ud102\u4216\u543e\u59c9\u97b6\u3242\u8083\u32e9\u9b20\u7305\ud339\u7a9b\u5aeb\u365f\ubeed\u49af\u8d37\u64e7\u3c53\u4774\u05b0\ub89d\u4029\u51ae\u6d00\u97e1\u3572\uc947\u34d6\u969b\u67cb\u577a\u65ab\u6bc6\u0184\u2dfc\uba13\ud525\u195f\u8b90\uce81\ub5eb\u761c",
+      "key": "\u722c\u51af\u6c6d\uc556\u31cc\u84e6",
+      "native": {
+        "output": "4Q22G1E85UaBDKFTwGDESEPLKu26QROkJAZCNdGDDSTjL8kAPXDQM6E57NeOGM3JNJNHPS9PC6I0tFTnMBwU90FSU039SG3QFHTDCDJ575fQP2L0kO8X0R540fOMN3Mq7TsPVJBUoMGuV5T6GV6A4G9fL7EJSwI",
+        "hresult": 0,
+        "effectiveKeyLength": 6,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2f2b\u1955\u678d\u2f5e\ub409\ud396\u4b60\u38d0\uceb4\ubf30\u9e29\u04cc\u5342\u8ceb\u9c1a\u9e15\u3a3e\u7c36\u3e2c\u6bcc\u9148\ub181\uce1d\u471d\u7c5d\u8f44\u2d34\ua449\u92fa\u85f1\u3985",
+      "key": "\uc219\ud005\u14fa\u610c\u2502\uce63\u9958\u6026\u6399\u9a5f",
+      "native": {
+        "output": "S7UL6T175AXJ7s57qK72BIxDOjVAq6RJQ0sILVDO!7V7AAPEMwKTKG8t5GQBFp5FHKDv3AhGOzCN1NQsE1!GVfIRW6P!J",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u677b\u967e\u283a\uc96c\u7909\u198f\uc6bc\u074a\uc17c\u2305\u351c\u5baf\u41f0\u3cac\u019a\u3f91\u571c\u9711\u240d\ubd22\u1464\u1fe1\u6fae\u5941\u878e\u55aa\u4525\ua19e\u405c\u729c",
+      "key": "\uaef7\u0a90\u713b\u115b\u87a2\u07f8\u9be3\ua433",
+      "native": {
+        "output": "Hs3V33Cn7CfDHM41wHN94QrE8a66jC1TSVa4BKALXJ2oRKkRNZQQGN8H10BMVNNHINH7UFM08!R0b43SBGwT6MAOfO",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4ad8\ub7b3\u59ae\ud101\u1f4a\u431c\u816f\u01ee\u9fdb\u8a00\u41b8\uae8c\u71d1\u8655\u064d\u898e\u78ad\u2bc6\u6f16\ua60e\u8db1\u0734\u8fd2\u5a50\u3fee\u7895\ua467\u760b\u85dc\ua948\uc490\u9bcf\ube8a\u1fff\u1ff7\u19cb\uc1d3\u9d2e\u4411\ubf46\uc701\u0b2b\u0cbd\u0c48\u7287\ucaed\u21c9\u7e02\ubf96\u95e4\u16f2\u8f25\u5693\ua253\u4e8e\u3d83\u39af\u125b\u01a9",
+      "key": "\u779e\u22af\u1e77\u28bc\u0df1\u3b5a\u5692\u5b83\ub62c\u625e",
+      "native": {
+        "output": "GeD8PP5mJOuO7jHJdS8YUL2IM54GdP19J3ILV5SHrF7R4FR1K019RE5QKKnFQHEUgU0FDQQQVCSCL2C8PTfL3yR3U0AFCSpLFEIQ5BMT18OMKbNIPBR2KVKKO77FI9FsCL_CKkB7ZVS5LLIG8b91t94E3CVU2ZHOLKEyC4K6PY8AfETxV",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9824\u027d\ua23e\uae76\u7b2c\ucfcb\u6a0a\ud55c\uc5df\u3435\uc28e\ud04e",
+      "key": "\u0c49",
+      "native": {
+        "output": "C!RCR1Pm61DHIAH5fV6VUS0MBgH0NF3sH7CD",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u645e\u6c90\uae8d\u95aa\ucc49\uccb4\u065a\u76bd\u8bb0\ua5bf\u1857\u3dae\u2fa7\uaec7\u5ad5\u73ae\u9693\u0f0e\uab15",
+      "key": "\u563d\ub3d4\u094c\u4e2d\u55d0\u444e\u6ed1\u0d6d\ubbe2\u9318",
+      "native": {
+        "output": "LSBDgJS1M8NNFES6P00KH4ITLw0Dy6Mi3PaK8MAJE81xO0gKCJBSFSRM5",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u210f\u6876\ua979\u70b5\u7ed4\ucc04\u4ad9\uaf2d\uc022\u3221\ub40b\u55b9\u5f34\u612c\u6179\ud71a\u9b0f\u25ea\u98ad\u60bf\u96e8\u2343\u9825\u892b\uc780\u4967\u7221\u7eb9\u3ffd\uaaea\u8d2a\u54d0\uaee9\u1a59\uc82b\u15aa\ud57c\u73b8\u743d",
+      "key": "\u2a57\ua725\u7e25",
+      "native": {
+        "output": "RQNA9E14TS_SDcA4fUQrAIgVSM3L8C5zNS9J7x2IAVOg07e66iFRSKTcQJiVS22JX6JV17TM5jE2HJ4_KKmQVUTRJICTGCrECKR8ABFVM50L8RHET0DI1",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "",
+      "key": "\u5bf4\u4ec4\u6fc0\u24d0\u15c1\u987b\uafba\u6ff7\u1971",
+      "native": {
+        "output": "",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u76dd\u9c5b\u66fc\ub4b2\u024c\u15c5\u4e0c\u4871\u6ae8\u87e9\u2b90\ud5b9\u532a\ub08a\ubfe1\u28af\u95ef\u12d5\u71a4\ud247\u7b27\ucf98\u625e\u07aa\u8f38\u1916\u9555\u4f38\u147b\uae5d\u88cd\u213f\u9767\u2715\ua1fa\u37a6",
+      "key": "\u2526\u3135\ubf63\ucd1f\u8cfa\uc661",
+      "native": {
+        "output": "ONQD!IU0IBH9L_JUPS4d2GO759CMqF06VDlRGc73bIFWHKC9NuM3ANJMUVLS73PVmD05GVxJ8!PJ9FJc9Hy0Fe4GX3T47M54LXT5kEVD36Z2",
+        "hresult": 0,
+        "effectiveKeyLength": 6,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3e2e\u0f53\u4190\u17ce\u2887\u855e\ucdac\u097d\u708b\ucde7\ud156",
+      "key": "\uabdc\u9b9a\u7454\ub3ff",
+      "native": {
+        "output": "2zF6GV7RKKxDB2BOtEAH411MNeV2N4KQQ",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uc9be\u045d\u905b\u6d8d\ub8aa\u0489\uc1ef\u6182\u29fd\u59c1",
+      "key": "\u98fa\u8e90\u2d15\u60b5\u563c",
+      "native": {
+        "output": "6YDS8KIxNQsURJC6ZDBSFIXBDXSSwC",
+        "hresult": 0,
+        "effectiveKeyLength": 5,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u977f\u7ddc\u277a\u9d17\u17ad\u0832\u6e3a\u8172W\u0fe5\u095c\u258a\u25ab\u76a8\u81c9\u00cc\u25d3\uc96f\u6d5e\ub090\u13cc\ud6d1\u544a\u0226\ubb3d\u5491\ub34a\u7182\u6375\u2eda\u178a\u4e0f\u8984\ud6ba\u4a62\u8ceb\u791a\u180e\u86d9\u8a8b\u0e8b\ub77b\ub9fe\u0fee\u1e83",
+      "key": "\u2136\u2690\u7f08\ube5a\ud4d2\ub69c\u511c\u0b50\u7f0a\u59bb\u6efe\u686e",
+      "native": {
+        "output": "TqIASHNjOSaG5QT1CSHz97pC4SUR9UBdJRKO8iQMG4U12VR4TNGD8G27REuPIv6T37JlOHbHK8RPLTB7DLSP3H6MZCUuB1VTVf85h2Tq9EmNIEORJ7RC6LEUK251JOHxPNMLQ7E",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u1f32\u7d96\u330f\u373f\u90fa\u82df\u0cf9\ud5ec\ua3e3\u9f34",
+      "key": "\u8fec\u7379\u7691\u724e\u2fb2\u223c\u4dd1\u11b0",
+      "native": {
+        "output": "UqAK!R9bO5hKSO03PV0mU4iK1SGOs0",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub83b\u2570\u15ca\u0a64\u85b8\u9f68\u6ce5\u76d1\u1365\u7b9c\u0eb2\u52a6\ua94d\u7689\u0b60\u0bd9\ucb3a\u139c\u44c5\u0cda\u8220\u458d\u6cb2\ua00c\ub217\u9029\u5c94\u30d5\u66fe",
+      "key": "\u459e",
+      "native": {
+        "output": "8!429B9JDPIUF!DDv8BUA1LBBeAOs5I3HI83B2L3WJSSVIz5PBCHePI_FFT43TMVS4A6B3eAUjL0UU6uE9lVQaA",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ua13f\u0f14\u0585\u43b2\u90c7\u6388\u8bf6\ub4ac\uc954\u3f7e\u7521\u2cbb\u26a2\uae47\u526f\ua6aa\u233c\uc62e\u366b\uc7ce\u7619\u4b80\u50ff\ubdaf\ud53c\u1b36\u7c56\u8978\u1e19\ucc83\u07b1\ucf75\ua6ff\uc73b\u7954\u7166\u7582\u5c19\uce6d\u647a\ud052\u487f\u70a5\ub09a\u2b2e\u70d0\u485d\u395e\u605c\u2622\uc946\ub2f9\u7395\ubfa3\uc115\u50c2\ua8a8",
+      "key": "\u1129\ub806\u5187\uad1d\u0ad4\uc387\u82f2\u3426\u6ad7\u4c1c\u5b62\ub55a\u063c",
+      "native": {
+        "output": "BwV5eJV!87XPFfAV8GIqINC65117B5IHTVLRJKISa6J8SA_6759LE49l9BUPUhAQ!LUH50U12t0S4QOH2DTRTRS3zB0Q0RVI3U4V6D2QNJW32F4F!FH6S4OJ41D5xQHq5TzN1s5IpOJt7DOH032H7D7S8Kz1KpFCUVCB3JO7VnV",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9a3f\ubbcb\u9d9a\u10b2\uac01\u3d0e\u87ec\u47c6\uad24\u0cab\u2e8f\u6c2e\u394f\u281e\u7ea0\ucf07",
+      "key": "\u388d\u69b0\u10c0\u6831\u7534\u38f1\ub855",
+      "native": {
+        "output": "LYA7SN1oGQZI0pVDE0IFNU47MD2BBQ9aEG8G3lVQV8IpQ3v9",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9daa\u3a89\u4f17\u80d6\u7f37\ua360\u69f5\ud3bc\uc4a5\u3f6d\u1051\uadb7\ucb53\u293a!\u45cf\u1cdf\u2a81\u81ed\u4576\u0955\u5724\u1d16\u877c\u991f\ub8a6\ua8d6\ucfa9\u8c1c\ua13d\u4e06\u6ea4\u01f7\u4b4b\u2de7\u1e86\ucbfd",
+      "key": "\u4922\ub682\u7213\u4543\u953e\u70c8\u7eb0\u7dc1\u0397",
+      "native": {
+        "output": "EnEIZBSr8JlRBTRF5CAv7Tf1O!C4W13i7NSHBqU68QNm3EXO6qDFHCCfFBeBGD3SVVHr4MNGSUHStVI106W9JBSSFU3a4Ep0P3DMZHS4OHKL369",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2624\u2afc\u84c7\u09d8\u080a\u4e9a\u73f4\u01c0\u17c6\ua8c4\u6cbe\u462f\u6417\uc696\u25d7\u4af6\u9d83\ubd9c\u6dc1\u90a1\u5da3\u8a5a\u3bc7\u1768\u4e0a\uc2de\u5c98\u157d\u10c9\u357f\ua055\u3052\u00a5\u7f75\u9d90\u28bb",
+      "key": "\u7aab\u7601",
+      "native": {
+        "output": "RH38jDOJHRvUN7UKP24gTKO0TaFM0T0YSBP9JvG875IoTGY8T221gVEvFPfLN1FGV0SOQPU4OxBM!JDiQ719OC4L6U3kB3vPITOQUETeHBIJ",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ua68f\u5075\u9a3e\u1b62\u6db2\u554c\u2e1c\ua427\u1f32\u590e\uc2b5\u5f30\u8ee0\u5758\ub2cf\u27bc\u1ad2\u4b02\ud0e6\uc1da\ub1d7\u8e64\ubf9b\u9351\uacc1\u9faa\uabc2\ua409\uc5eb\u22fd\u9869\u67ab\u061b\u37db\u3cf0\u300d\u0ff5\u5133\u1289\u5088\u9817\u6b72\ub6f8\ua5ee\u27c7\u543b\u2e97\u5888\u2663\uc11a\u8675",
+      "key": "\ua618\u2c55\u4be5\u9771\ua9ae\u0eb0\u791b\u4405\u6de4\u573f\u21bd\u9bb1\u6d00\ucba6",
+      "native": {
+        "output": "Ie9EsBCC3AxKRXQ9GLMiEJL4I3ILqP5F86aKFm6KTL9CQ4nVLnPOo8CcPKWVErDTHTFS4AV8IMH67CDZADkETa7B7PNV74p45DD2hO00NLjIQdA7F7HV69vS5r84YBAtDL!RUs7D46KB9KlDGGK3fSNkF",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4077\u1c61\u9eaa\uc215\u2082\u2a7e\u667b",
+      "key": "\u0b41\u5d81\u1983\ube2b\u643d\ubc2b\u725a\u8fde\u7fa7",
+      "native": {
+        "output": "LVJ8POUz90iP8I6VC7F!6",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u6366\u3fa7\u9506\u8862\ub08c\uc487\ubde2\uc28e\u5e64\u220b\u5087\u5cda\u42b1",
+      "key": "\ud561\u80e9\uc472\u4cd7\u773b\u2a7b\ub80b\u688b\ub484\ud6d6\u7c12\u17c9",
+      "native": {
+        "output": "3KBQI25PTLC8TeKHhMSW9B_L49N1nT7!0H7JTGK",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ua666\u0760\u7b12\u69c7\u7de6\ucde8\u8ea6\u3f8b\uccc3\u97ea\u9cc7\u1743\u7d60\u1df8\u5523\u4171\u919d\uae28\u4943\u258e",
+      "key": "\u81fb\u05e9\u24ff\u4ba1\u3217\u8384\ud4dd\ub815\ua338\ua284\u956f\u6a97\u26d4\u8cdf",
+      "native": {
+        "output": "Il0KARTnAPB38QCQT1B63KkIQeN0b41jSTSNMqQQQ0Oc5Ns5KwHTA4J02GHJ",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2472\u0acd\u589a\uc435\u5158\u4651\u512e\u1847\ucfe1\ucb2d\u594a\u3a44\u2bc7\uc282\u3167",
+      "key": "\u6fe7\u1f99\uc7ca\u4781\u6db8\u85f0\u95aa\u9d78\u28df\u916b\u90d0\u906b",
+      "native": {
+        "output": "BiVM1O2WA2t209A4rNRF33v3N38J479I3QKVQhACK28CP",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uaddc\uac8b\u3bf9\u16ed\u9473\u8408\ub1e2\ub247\u7be2\u9908\u9772\u23c0\u6026\u9794\u3521\u9c0c\u5905\ua8c6\u8a6a\u0cef\ub3d4\u349c\u1f54\uc79a\u3dce\u0eb3\u1c90\uaeb0\u64cc\u6bd6\u59c1\u0f5f\uaf60\u6777\u71cb\u5991\ua622\u1d7e",
+      "key": "\u4579\ubd6c\u4666\u6241",
+      "native": {
+        "output": "GYTK60HvOAOL61CEzRAcLP2BQ776u2OhVAu62gG6EP8VHGb370AU81KbLA99PKT0PC5YDU91A980IKUfV5jB6U3HT3M9027T593Up9Kz4Hx24ILPnC",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uc209\u406a",
+      "key": "\ubd71\u52d0\ua4ed\u0681\u8697\u20d3\u7c65\u792a\u3028\ucb0c\u7c2c\ua914\u439c\uae5b",
+      "native": {
+        "output": "UCFU!B",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u80af\u85af\u1a55\u6019\ud5e3\u6e0a\u72ce\u8b2f\ub653\uae72\ud09f\u2064\u099b\uaa34\u5972\ucce2\ub957\u46dc\uba7f\u96bd\u7bf9\u163a\uc9bf\u92eb\u9fb8\u39de\u2419\u79f8\u0638\u8d54\u6c00\u23a6\u3add\ud617\uc4fe",
+      "key": "\u51ce\u190a\u0815\u1cbf\u44e1\u4677",
+      "native": {
+        "output": "6a8VTO9_TJ_5LqPC9F9w1EfERmMLBNRo0QQRL882w85J48vHMOBU4GUTIGH0PQH9kBHWC0g82wECH1JxHPc7CePEPBBs3SDDGWH270Il3",
+        "hresult": 0,
+        "effectiveKeyLength": 6,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ua625\u024e\uc786\u1057\u254d\u601f\ucc20\u3fab\u0773\uaa3c\u8b1b\u00ee\ua486\u1bf5\u6b80",
+      "key": "\u7918\uc5e9\u9f4a\u5ef7\uc376\ubfea\u062c\u0b5a\u224b",
+      "native": {
+        "output": "9j1F0IV95Qy9QY0A_ADFU7pNLUU8b2ONC3xAADTEZ2J3A",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u51f2\uc1f9\u1ad6\u3490\uc73f\ub42d\u0ef6\ua8af\u724c\u657a",
+      "key": "\uca3e\u6516\u8e8d\ub367\u7d26\u92d2\u85c0\u1366\u6726\u0c23",
+      "native": {
+        "output": "Jn7IMET5JD26NYEQ59IIQIPNB1EJVR",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u89e4\u7d9b\u2351\u67a5\u5256\u0af6\ubf10\u0c1c\uc93a\u67fd\u4084\u4a29\u20f6\u9d19\ub693\u6455\u8990\u23e4\u1194\ud297\u5b9e\ud2ac\u951a\u2e9f\uae40\ud5ca\u3a69\ucc4c\u496a\u63d7\u2f27\u27de\u6700\u7980\u10ce\u16f5\u3497\u4692\ud053\u13ac\u1948",
+      "key": "\uc249\ua6e9\u41a5",
+      "native": {
+        "output": "ETSE2AKuPB9TCf8N08C9C4NM2z3OMEScQSqGQIBSXOBQEA95MDEHAGONI6_VIrLS0RMx5EZNAI7JOUNgTDpV9PNPiGCJALxUU_URN0VuSJN34OAOA2PXH6qJQrE",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4486\u0704\ub971\ubcb1\u77f0",
+      "key": "\u1d5d\ua624\ud176\uafaa",
+      "native": {
+        "output": "De7TUNMSJRZGLFM",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u892e",
+      "key": "\ucf60\u85c4\u3470",
+      "native": {
+        "output": "ERM",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u6819\u858f\u3266\uc0fc\u2236\u30bf\u2a36\u5f84\u7f2c\ub22d\u51ac\u140c\u33ed\u43bc\u57db\uad9e\u89b5\u9bb7\u0b8e\u11b3\uac4e\u88c8\u1815\uae96\u3c14\u3ea3\u3028\u4d04\u32df\u840d\u3d88\ua46f\u4d51\u1ff0\ub76f\u5d90\u145c\u6d47\uaef8\ud481\u624d\u686d\u0d10\u615e\u9a16\u6ef2\u4832\ub7cf\u2a12\u4426",
+      "key": "\u079b\u3c2d\uc174\ud764\u975d\u83bb\ub92f\u846f\u217d\u21d2\u58f8",
+      "native": {
+        "output": "NuP5b9J6FDN51cJAnGKm1Ef224TG6M7V2TE0VdBIfCVr3EVGQ9QDTHOjH0vLRv0V63FxVCgAVh32CEV0UHjJODUG3BKV53Z9M8A0dBAbSA!OS!J6O1H4NSnMOIHGzFK9VVj2NVFMZPKJ6DQJOz25E8",
+        "hresult": 0,
+        "effectiveKeyLength": 11,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u02b3\u36c1\u97f2\u2deb\u5edf\u2c76\uad1e\u3c6e\u88cc\uca17\u488a\u723e\uce80\ua26b\u9595\u3ae7",
+      "key": "\ubee3\u04a0\u2448\u08dc\ua42f\u4b96\u2f8d\u2795\u469d\u5b7e\u8a43\u15ab\u6833",
+      "native": {
+        "output": "VcJ4n1K5Q8wC7z70PE6sH6nUP3Q9NT3T2NyT4m43gJ6p1KqJ",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0725\ua0e2\uc833\u95cd\u1ef9\u10b3\u671e\ub9c6\u24a0\uc140\u20b2\u5f55\ub107\u8d02\ucccd\u0989\u6254\u8c0e\u54f4\u2d28\ub335\uab7b\u285e\u235c\u183c\uc863\u922f\u230b\ucc83",
+      "key": "\u6ce3\uad97\u29dd\u1f9d\u166e\u9a87\u7d70\u62af\u2e13\u7fa1\uc046\u2331\u9b8d\u87f8",
+      "native": {
+        "output": "6b3MyCUH35u8NT10oFKjEUNIFUK4L1UJIIr6LxQTON15QBLUPJ203HMf3FSTPJG7X4CPBVW8EtU0!A5RB4nC7aK",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u81cf\u26ed\u9d9b\u2af1\u998c\u713b\u5e5e\ub079\ub105\u301f\u1b3a\u4033\u8b14\u9d81\ud538\u014f\u43c6\u8f21\u3138\u23ad\ud787\u9186\u9475\uc6de\u704d\ud14f\u97bd\ub292\u307d\u8b80\u6302\u96cc\uae51\u650b\u8ef0\u18e2\ubd13",
+      "key": "\u92b6\ud23e\u8e94\u63d8\u8e57\ua6f8\uae3c\u9496\u9c08\u92a7",
+      "native": {
+        "output": "9mQOB9Qk7ML4EzUAl5QeE2E5JM4Ue0OW0IHEHxIL!2MZD0TAU4CNSUBo1P8QN290FUVLRUAFRzL1_NUHLPc9INPJEV0MLJrKBeH5sOPAMHe3PFG",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u71a0\uc6c5\u75a5\u7807\u612a\u2a90\ua848\u66ee\u57bd\u78b7\u0d93\ud219\u1185\u4437\u3503\u4455\u5a89\u66db\u56e5\u021a\u307b\u52dc\u8dc8",
+      "key": "\u0d5f\u42c9",
+      "native": {
+        "output": "Hj7LWF3rSUzFNDIQoIUuJJ8GE_ORKO8XEJ!4IvGUyQJmCJK1Vw1JfBS78FT7LaG0QV1bO",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u602f\u7260\uca23\u1a01\u9c09\uc3c2\u2d8b\uc29d\ub942\uc0ec\u0010\u851b\uaf63\u8ed1\u4557",
+      "key": "\u50aa\u1b18\u44ce\u1d79\u2044\u1a58\u80aa",
+      "native": {
+        "output": "AoQ0mEKX5F4C7tK5M1LlJOC74uD3QLHrHE6C3b3Hf46RV",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0711\u2218\u28b6\u8833\u2299\ub570\ub571\ua8b9\u9423\u8e58\u17f7\u6b01\u8da5\u2a85\u8e41\uce22\u109f\u67b6\u5ee1\u6aa9\u02fc\uc708\u7b7a\u5dc2\u81b0\ud6c0",
+      "key": "\u16f8\u5591\ua8cb\uc5f4\ua01f",
+      "native": {
+        "output": "VN2SnPII9OPBSyLO370nMT7I1BC3US2P2UFI9h7D73Tb4PuT8o0B9ATHII7VStUFnUEzQGh9FROC38",
+        "hresult": 0,
+        "effectiveKeyLength": 5,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4e02\u9398\u6c38\u3edb\u2ab6\u5165\ub87a\u3144\u6d14\u3eb2\u2786\u1112\u2997\u9727\u4fcd\u78c6\u0fbf\u8570\u5465\u0b96\u9663\u9ed3\ud4d1\uc2dc\u2a56\u2598\ub30d\u82b2\ud5c3\ua151\u05fb\u6713\u630a\u3681\uc24b\uc9e2\u2e13\uc4c8\u1d8c\uca47\u23e6\u59a8\u87b6\u45a9",
+      "key": "\u54fc\u08af\u2f79\u8a30\uba88\u7447\u4df8\u3b34\u0407\ub3d3\u3fe9\u3c40\u8f09",
+      "native": {
+        "output": "M320ISEoNG24Ue06tI9_JMt67pMIaUMcLVD1VCSVH3JY7G1AVqHBx15H4KPVVuQQS96oANi2HQ46WL1xAJf3Nr2DaF7zD4Q2NlKRvKQW7FFDC16CmBAsHCRN5hG0g9B83G_6",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4d93\u444c\ubc60\u2422\u742b\u7031\ud6d8\ua3c1\u695a\u487b\u1fe4\uc606\u3c19\ucc1f\u20d0\u400b\uadc7\u5f74\u547f\u692a\ud578\u80b7\u4d23\uc023\u57d2\u9c31\uc469\u990b\u6244\u4721\uc4ba\ud7c4\u34d6\u0e4d\u09b5\ud7ee\u0abe\u29fa\ub238\u68ad\u44cc\u1c34\u0d5c\u6481\ub35a\u7176\u83cb\u434c\ua8f3\uaefb",
+      "key": "\u2f46\u2936\u1665\u59ed\ubfe2\u8cf5\u33d4\u7ccb",
+      "native": {
+        "output": "KXB9TU4jSTGTEbS2HFD65RAEQuCUd38cM6E6RxD0GUM64Lt1FkINgBHV2CSK21LRWMA6BGk19cL3eJEH7P942j9FVVI21GBV8nKUPEGT8332BqDQAHCzQSfUT0V62OOkP7I5Ob4BmCT81JUQNyUIcN",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub60b\u98f7\ubc03\u290c\ud564\u92a7\ua803\u5795\ucad0\u3816\u4534\u1347\u66a3\u7f4d\u02af",
+      "key": "\u03c3\u33cb\uc559\u7eda\uc8f3\ucdd4\u45d5",
+      "native": {
+        "output": "G3UUV1SNUOLUAs7Ts2EPIVaL0PATC5N8QQwG2lQGQER5J",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4998\u88ae\u660a\u55a9\u5484\u1584\u4e88\ua91c\u3e9d\u94a5\u9f28\uc71c\u080d\ua89d\u1796\u09c6\u8a0c\u2db2\u3e10\u20fe\u422c\u8355\u3e0d\u8092\u1c9b\u1272\u1ff4\u1948\u873d\u31d6\u4a2b\u0411\uaa32\ub29e\ubdb4\u437c",
+      "key": "\u93b4\u45c5\u6a09\u0459\u0fc7\uabcf\ub7cc\u657b",
+      "native": {
+        "output": "K100GE2rBPZFSPJLH4DC13O78dRPR5CcKONAEQ4Am1Ba7GLQPMCBqMAkFBuTNfJ0GB1FG7rBQFO2UNSJ8TD3VDB7q4JjGDF6BM5OI52YBUSB",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u6e6f\ubc81\u5024\u1174\u0c56\u5a89\u1b64\ua399\u225d\u2eaa\u4232",
+      "key": "\u61f1\ua4b0\ua765\u07b5\u087e\u3b1d\u319a\u2aff\u71f9\u72fb",
+      "native": {
+        "output": "KDQ3g3H1ARz1Bp2Ih1UePQeKPG7F91EOC",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u731b\u63b6\u2167\u80c1\u4660\u3226\u6e6e\u36da\ub59d\u4a16\u6d60\u8aec\u8c63\ub97e\ud649\u18a5\u4e8d\u6f59\u66eb\u9508\u6453\u01c5\u4615\ua424\u4d7f\ud4de\u0730\u432c\u9835\u10e9\u2f69\u221d\u2bf2\u9214\uaae6\u4a43\u7cdb\u2afd\u1b54\u5cad\u2a3c\u76a6\u8c90",
+      "key": "\u4658",
+      "native": {
+        "output": "Hd43lLSTAVv8TWCBXKOXEBl37JBBR5O9OIW79pAJXAOSIU1O3KCHu70uQTeRAPONz2DOO6lMQg69f2VrBRT7ExM8jSP13NJHM8LAVM3tKJEMLT03aQDuASDP2K1QDD7E7",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ucd43\ua972\u5e12\ub6e0\u8e05\u4cd8\u36b6\u62e9\u6f0e",
+      "key": "\u746d\u3959\u766b\u9d48\ua28f\u3ac4\u87d7\u2ae0\u24c9\u31ef\u086d\ud074\u21ca\uba12",
+      "native": {
+        "output": "Vs5V8F4nEFPC5UGCjA0OBUDIMjQ",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u174c\u2c0f\u1ac4\u2c87\u7d23\u0849\u94a7\u7b46",
+      "key": "\u1169\ub272\ud674\u397a\ud4e0\ud774\u02c4\u4778\ub5da\u0311\u257a\ud3ca\u3f9c\u2700",
+      "native": {
+        "output": "4cANR18bB9tHNFFGVBF8CCnR",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0cb9\uc4f9\uc2fe\u836a\u908a\u2074\uc3c4\u97f7\ubbcd\ub585\u7c56\ub928\u4c9d\ucb9d\uc2dc\u0f88\u61d5\ub8d5\uae1f\u3a4c\u5037\u98f8\u87c9\u6efd\u3c71\u8c3d\u63e4\u09ab\u4f89\u7484\u4035",
+      "key": "\ua679\u20be\u4f08\u2402\ua16d\u22f8\u57a1\ud53c\u79ab\u3dd0\u406f\u6597",
+      "native": {
+        "output": "EgKVtMN_V1DKLgEGBL3GD7fJ5eDMd3IS587IKFCVFHK49Ph64u42w9KETPsTOZN4J6Fx5655Ku3LmV3K8MlGHHFDNDFu6",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8f1c\u261e\ucd07\u8f5c\u8cbe\u07a6\u3429\uae44\ud655\u834e\u5a85\u3c91\u0e74\uce39\u3b44\u1c6d\u1cf6\u55f3\u12d3\u8f58\u70f0\u7b38\u3b5c\u2420\u298b\u2c4a\u9e2e\ua6a3\u3587\ud7f9",
+      "key": "\u7421\ubf6c\u25b6\uccda",
+      "native": {
+        "output": "KqT5pKQTFGNP3M1TmQF0P5BAQJA2V61mVUjH2oHTNDFj8G!7DeO9dVMSC46FNWQKEBQSF2FNRVDQTPPJ5UXC9nOM5L",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3512\uc4ee\u637f\ua098\u820d\u3642\ubb54\u87a1\ua60f\u831e\u0158\u7f6c\u2bc9\ucb79\u7ab5\u6f73\u514d\u2434\u7d02\ud02b",
+      "key": "\u3733\u3c14\u215f\u8229\u15ad",
+      "native": {
+        "output": "P7143C6I4AEFNfNGKL8x7AjRH3D9KPFo1V51JoGRARFPVUjBIFK9!4HoFK1U",
+        "hresult": 0,
+        "effectiveKeyLength": 5,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u1d47\u4cc5\uc8c4\u45d7\u3c82\u9197\u15af\ub4ea",
+      "key": "\u9c9b",
+      "native": {
+        "output": "SLOIYCUvA76B7G9PJ97z5MHS",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3621\u5648\u8f5a\u6e39\u1846\ub098\ud645\u0aee\u8a4a\u9dff\u3dd6\uaab6\u7575\u12df\uca5f\u8ecb\u6aac",
+      "key": "\ubc65\u9743\uae87",
+      "native": {
+        "output": "PZPVN0Fj47YQEo3PH9TBUS3JEd8DxKUOAIM87YHKoM3U1VSDD4B",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ubf9f\u2d67\u4906\u5d34\u20ba\ua2db\u1e3a\ucf26\ud5a2\u5052\u2c40\u02c1\u09fb\u3f7d\u8327\u9c43\u5ad4\uc8d2\u7ae8\u446c\u9b40\u3f4c\u19c2\u585c\u0cf3\u2b37\u2127\u08b4\ud3b7\u5669\u1fc2\u40ff\ua4d4\u9783\ud0f2\u1f2c\ub173\ucf25\ua064\u681c\u83b7\u37ed\ud06d\u2bdb",
+      "key": "\u9874\u28fc\u0ae8\u2577\u93fc\ua4ec\u5d73\u779c\u7385",
+      "native": {
+        "output": "AWRUU4MiDNn5LQ85pKKETH9N1KTBwOIcVR46EBVHLEI5DM4EIRC1GVMa2Dl92fSN!45kG6E2QyHPvF7Q8KmV6mBKvRBFCJX9Ff0ImUUF1GB86M8VbIP0A05H9Y9GHK7qM30M",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u96bb\u7fa8\u0c0f\u994d\u941d\u37b1\u6597\u7c01\u91d9\u4542\ub6de\u72e3\ub9da\ud666\u4b54\u6d25\u64d7\u2a47\ub68d\ud196\u28f1\u4831\ubab0\u8b5d\u51ae\u78f2\u1dce\u0f8f\u04af\u96b6\u8347\ub54a\u162f\u9e9f\u2206\ua1ec\u5d7b\u1fa1\u4641\u661a\u26b1",
+      "key": "\u3401\uaa4c\u75c0\u4832\uc9ad\u33b5",
+      "native": {
+        "output": "4KS2FU0FH9F2QAD2dA7BQIR3Va2NH5QO8I!DAQ65sTC!RHEBK4BJJBDh981UAGVAv7Gi76hSJMJMIMUaVFUIUPM6ES0e8Pq3GyRSv7SlNMQAUuEUw5C!3RUV6fE",
+        "hresult": 0,
+        "effectiveKeyLength": 6,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4cfb\u6dfd\uc73d\u688f\ua1ec\u436a\ua1b0\u2a64\ucdd9\u416a\u5396\ud3fd\u8c70\ua2bc\u6fb8\u2070\u76f1\u6f6d",
+      "key": "\u85e3\u91d1\u14fd\u9cc1\u846f\ub5d1\u759d\u01d4\u0415\ubb40\u9677\u5b60",
+      "native": {
+        "output": "6eMAp6BnS3Y6BG0Q9QDiDJ862JU7fKJQ45g142MNOO6GVPbJ0GADw9",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u7220\ubc57\u8385\u4b0d\u3573\u8537\ub45a\u5889\u5e13\u63f4\u4a8c\u6033\u41f5\ua575\u6548\ub780\u16e7\u382a\u3f16\u8833\ubc88\ud0df\u66d7\u1c92\u0083\ub141",
+      "key": "\u3dae\u39f4\u1b8c\u8327",
+      "native": {
+        "output": "BT1GKTDuQTe0MxHHOCP5K5OGLdP0NBQxA4a97q60RQBmT4B78gROn0RL03hQ6_NSDLNvHS4DHVCGDS",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u92dd\u170e\u10fd\ua0e4\u37a0\u2596\u5ab6\uceeb\ud0e4\u4bb2\u9358\u7956\u28c3\u7367\u7fb9\u5163\u81bf\uaa14\u15c1\ub388\u6c00\u06a6\ua7b8\u27c0\u6cac\u6c7a\u1c5f\uc7a0\u6304\u31f7\u4c8f",
+      "key": "\u2c44\u7683\u33c0\u165e",
+      "native": {
+        "output": "NQS321V1AKhO1pF8RFUa8HXSNj2MJEL_33qEOBK1F4V172m6TNOTy8BzOBdPL0IRI1AxBS345Q1NL3R2DE8OGDMSbCFZ6",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0e1b\u745e\u6c6e\u8410\u5c76\u7d5a\ud1ae\uc0fc\u8ab3\u4a30\u16a0\u8fd6\u15e1\u2458\u2f95\ua725\u8843\u6e9c\u138a\ub51b\u8df5\u75a3\u682d",
+      "key": "\ua359\u12b6",
+      "native": {
+        "output": "UGSRKFL5CN3U9a3Ib2H4GMEK6RROb6Ao8A8QTZRF48I95R6DUuBAn29dUDJQEpBC5F5fV",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ubdec\u3d2f\u7204\ucbb8\u02d9\u07dd\uc7b1\u2732\u7084",
+      "key": "\u04ce",
+      "native": {
+        "output": "8GJBh39PJH8IL9ATdR0348ZM3xN",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2374\u865c\ub679\u7b9c\u978b\u5971\u69dc\uaba1\ubd34\u4e93\u12e6\u08dc\u77bb\u8818\u0d24\u9fd8\u0240\u944a\u8b3c\u12b7\u47e8\ub1ec\u0da6\u407e\u0e3e\ua30d\u222c\u6f5d\u0a5e\u9a0e\u0d20\u0dd5\u2f1b\u7151\u20c2\ubeb7\u6723\u11ec\u0ff7\u18da\u2f3c\u19d0\u8b94",
+      "key": "\uc8aa\u9c13\u23f2\u5d09\u04eb\u39fa\ub787\u0c9f\u42fc\u4e3c\ub270\ub62c",
+      "native": {
+        "output": "BKP5HFGpODR6KBU76JSzH4ZNC23FcU0F95IU7uKOr2EAR9rS0rSOk4LI2LA05aJFbTJNHEcFKqH0ET8W3LKIJK7Np6UJESFGNp3NIU2oPCUQ2v7SvP2r26CUPC9M13FtO",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3774\ua48a\u52ae\u4106\uccda\ub38e\uaa6a\ub147\uc9a6\u3bfa\u66f6\u29cf\u9547\u7e9b\u490e\u05cf\u00b5\u2cdf",
+      "key": "\u9075\u555e\ua36b\u5bb4\u7c19\u823f\uc162\ua973",
+      "native": {
+        "output": "RsCBOVMPVVeS7tCPx8FaM8HKKM8A36Km1NRG8aF0x1NxG9h2FlJ9k3",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2cf1\u66c8\u5091\u44c3\u5645\u6ce4\u3d9c\u9455\u029c\u6996\ub133\u8d85\ucacd\u05e3\ube88\u149f\uc8da\ud5bc\u20a2",
+      "key": "\u5590\ucd4c\u67b6\ub1d7\u59d6\u7968\u3f36\u6c6c\u528e\u4212\u6dc5\u0204\u6e67\u3047",
+      "native": {
+        "output": "3xNAH65o4U1OSfJCFBSvTT30MJG5rODBUMoELyPJNV2t03HL5tD2gRF5Q",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2f74\u71b3\u1c72\ua16d\u6b56f\u5d9d\u47c5\ub4e9\ud7bb\u8ec5\uc1b2\uc2d7\u680e\ua97b\u496e\u2d0e\u339d\u0763\u7b7f\ud764\u426f\u2ad2\u6db7\u68fa\u044a\ubc2a\u7734\uac42\uc3e1\u2acd\u07cf\u11d3\ua917\u2e05\u36be\u6cea\ub8dd\u5649\u5de2\u8b11\u88c1\u34a4\ud04d\u5f31\u95ba\u4c28\u4a67\u96df\u4b7d\u83a2\u4536",
+      "key": "\u748b\uc5ab\ubb8a\u8255",
+      "native": {
+        "output": "0tLBgPEr6HFRGwE97U5o0348GjE6aDDUK1eUEgLL1O8D4DbS9QKPk2148TcUPqKR!C8aS6HC2RIJ015sOHLN4AB0V2GrC74O9MUIS03SMHj0Ku52e3N9LGEETJ435KQIFC4DRkDQg93_PJy8PP29_GD224vC",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0d69\uacb1\u90b1\uac05\u506a\ucc0c\u31dc\ub281\u8a85\uc591\uab47\u1f74\ua87e\u55c3\u591e\u21e0\u40d2\u6094\u6376\ua3b2\u8ee0\u74ec\u2dde",
+      "key": "\u3fdf\u3585\u5deb\u1950\ud434\ub7f4\u384d\u0ca1\ub973",
+      "native": {
+        "output": "StD0zNVe6LlOAUJNO7THA0NOTk2B0A8tM6lG3t4M1T2IPIrBNW3J8ITFI8iJLGL6S5PpT",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4615\u595a\u5660\u75ea\u245c\u23ac\u39dd\ub7e9\u3602\u616a\u2885\u4c23\u2a6a\u9d80\u691e\u8707\u8d4f\u18e8\ub6b8\u6f94\u0c57\ub544\u48d2\u1bf3\u3034\u0e3e\u32e1\u959b\ua5d3\ub9c3\u4add\u03a6\u173a\uc36f\u54ec\uc285\u29e2\u7a13\ubab6\uabd7\u6a4c\u078b\ua6bc\u8e10\u38b9\u5db9",
+      "key": "\uc7c6\u293f\u9fd4\u7373\u7d03\u5149\u3a0f\u6190\ud42e\u8e58\u4ecc\u23e3",
+      "native": {
+        "output": "7_OSRILqMIYFNJ8M_OUdA4YMDnEVsDQqJLPAI109R1Sb1V6JH7ORa7GB46FNL6J4U3IULGmTQgTTGH5OPFZVJEH8nG5i7FfVUs45W8PEGUKOFGDOWUO3COv15A7J24JMAMm9If5U02",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ud283\u9823\u5324\u1240\u259f\ud026\u3184\u89cc\u3c88\u7c79\u40de\u70ed\u7533,\u44ff\u6664\u1615\u0b71\u4d2d\u40e8\u751c\u844e\u9aa7\ub57c\u5da1\ud244\ud60a\u0230\u5d1d\u5ee8\u6e1f\ud6be\u3eb5\u2e4a\u960e\u9c27\u71f5",
+      "key": "\ucac7\u0790\u33ab\u02ec",
+      "native": {
+        "output": "VO2O_9D358bTP0FIISLoLPtROLG9bT6RGJGRVnFTGQQSQB9A5WIIBAIJQCqCQqT2DT7lE1PF7LM3A210EH0IAKO3kEQtV0RUPBGKHKUR3M8MFCJ",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u51e5\u2622\u1142\u6a64\ub1ec\u056a\u7814\u44af\uc858\u2205\u6ff4\u7439\u21e4\u266a\u8720\u7c86\u424f\u2e5b\u0f9f\u9b68\u55f7\u7ea8\uadfc\u6a88\u00a0\u9958\u391a\ucc57\u9ff8\u6656\u98d4\u9990\u42d9\uc7b6\u55b7\uced0\u6602\ua4c3\u2c44\uc2be\u914b\ud025\u010a\ub08f\u8fbd\u1159\ua026\u8077\u31ee\u194a",
+      "key": "\u80cd\u1129\uc22f\u1da3\u3324\ub17f\u4ebf\uc541\ua662\u07d7\u846b",
+      "native": {
+        "output": "Gt5HQ12UC30I3pJCO7P7OVwO6wF0CP4J70u6C_5TBRShFAhNJzFFRRBJ9DDJJdIHK21rI566O2M1j03M5AvUQGDCP8HE2CP8IiCI63Ps9KJ3SSF0zDDIRLwNVhCRp2N555K8V!L3DJNJKJR0GtGNvC",
+        "hresult": 0,
+        "effectiveKeyLength": 11,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u75c5\u3b02\uc695\uaca1\u34d6\u8999\u7bea\u55e5\uc5b2\ua4ca\u1945\ud288\u88a9\u41ac\u4fba\ub347\u46d4\u4f44\u0abf\u5536\u5ff6\u4924\u25a4\ua3aa\u609c\u79f7\u4721\u0ea2\ucbe6\ubd79\u8ba4\u84b1\ub52f\u7adb\u120a\u09b3\u7738\u24e7\u97be\ud0c7\u03b3\u2e0a\u2085\ud7b2\u7920\u00bb\u2b1b\uc815\u19b4\ube0e\ubfbd\ua080\u85a0\u140a\u9819\u55cf",
+      "key": "\u7a5a\u5902\uca17\uc754\u8a52\u3b90\u1d68",
+      "native": {
+        "output": "8TG86OIZ7Iu7ECO6w48CUTI4VpBDoVSsM4M14SM7!5DlUIVM4iRK_1HAT7z8CK2R!UQS9Bw1D1F4ePJQRJkVDYPMoQAy8M2CLK5SG8St9JhALeUOB68lT4u0FW13dIOp7IWBNwFCVUCzHPlC9q83U66VP33I0PTVX50N2731",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u1859\u80b8\u70c9\u2dba\u10a7\u3db5",
+      "key": "\u04bc\u6cfa\u38b5",
+      "native": {
+        "output": "SG1FgHVwFF4PBlJEGB",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u7a3c\ucd77\ubb4d\u9ee4\u3fbd\ucb96\u7511\u3509\u6f53\u8000\u6dde\u6db2\u7bb3\uaf02\u4b16\u50e5\ubda2\u36de\ud329\u7582\u0272\u8c92\u0ceb\ucb75\u2db2\u5dbe\uc741\u5bfc\uaf62\ud65e\u158a\u8b71\u3fc7\u9c4c\u6c3d\u5ab0\u9e72\u3081\ucceb\u4e01\u0a5d\u1436\u44c2\u6304\u9c60\ua283\u675b\u6332\u849b\u2456\uc13f\ua04a\u633a\ud7c7\u4226\u82e5",
+      "key": "\u702f\u5592\ua4e8",
+      "native": {
+        "output": "G344yLVrHP!6AC4C_MCvV1HGNiON27FFH92CR2G8vKIbSHlMIdVMaUSKAN!LAq1EhJ3180u9QlJVh96d0D9Q1QAOnGFhUAdH0oV5P80LPRf6Q3L5E3F2CQcCH_C4PPUw3VYDMOECzBRc05k0ONCU7R7iIKGH5T7CHUNtUA32",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2b28\u954e\u02d0\u1caa\u2597\u2cf6\u8550\u836c\u77c9\u0947\u7af0\u3969\u59c5\u59a0\ub792\u4ff2\ubb04\u8473\u85da\u3a34\uca8b\u620b\u5c31\u06e9\u763c\u19f8\u0d1d\u0416\u84dc\ucb04\u4dd9\u7ec1\ub3bf\u5439\ub853\u899a\u4756\u5f53\u1462\u5694\u2a55\uabb8\u0fb0\u430e\u514b\u7b55\u497e\u6fef\u45e1\u3081\u8cf7\u355f\ud429\u2e1c\u4724\ub0d3\u8fca\u8e7e\u137f",
+      "key": "\u7ee4\u7f59\uc122\u0218\u2785\u5943\u5345\u07c8\u92b2\u5456\u9446\u3888",
+      "native": {
+        "output": "AM591L2oGFYKFO18O2FpQDXGJyE9qGOUEAIJBXQEI48kR3p55ZE9AJJZNJv01gS0gEFIATGCM!KQQL1n8TMD9CTCQ8BE0L84Ej58f15V5655DD00EOCAC1_R0kRUr7NoN6w6QlPFgIK6MNyBRKSMZ31Z4533Qt5OjBSN3AW1GfB0eJ7P5",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9943\u8f60\u7165\ua51f\ua1b4\u46a7\ub7b3\ub6cb\u493a\ucb10",
+      "key": "\u7781\ubd12\u26c2\u0ee4\uc5b6\u17a2\u15b1\uc9b6",
+      "native": {
+        "output": "E7R4b7L3LET4JaHJBC1PTExNMa18u1",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ua897\u908f\u2593\u610e\u5bd1\u4504\u4855\u238c\u8788\u2a3a",
+      "key": "\u6e2e\u785d\u6ea3\u6a36\ub44f\uca10\u5a00\u9120",
+      "native": {
+        "output": "89FLL7PXE1ZDHd2Rq7JSDKjFRdVJD0",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u51d3\u2ea2\u35c6\u04d8\ua8ac\u9e8b\u70eb\u1909\u17c5\uccb1\u4a90\u3999\u4d32\u16fa\u7d38\ua76f\u118f\uc182\ucaa2\u26ec\u5427",
+      "key": "\u535b\u15ab\u95ec",
+      "native": {
+        "output": "LSBGNPKX1VYO1pB3OC8zONvHRcSBU73y6Hm5064OoNTNEOjC4G4TVKKCO9xIR6B",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3e0c\u72e0\ub668\u0cf4\u4cf1\ua9c0\u2fad\ube7a\ua6be\u71e4\ud6a4\u69a6\ud5a3\uc177\u29ed\ub933",
+      "key": "\u7783\u17fa",
+      "native": {
+        "output": "OGB36AE0EA_I51SFw6BC9PZQ3eSTt8VUM4gPDI2AWB3q05v3",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u68e3\u11ac\u0b47\u69a9\u9034\u8cef\u5509\ub85c\u06f1\u05bd\u181a\uc511\u4777\u0f68\uccd2\uc1e4\u9857\ucd40",
+      "key": "\u7aff\u57b5\u1966\u9b95\u4b1d",
+      "native": {
+        "output": "IeGS9A3kQB8G9d2AjILlCS4U9WPEoDVlCC3ALG59OHLL90vJM93EtF",
+        "hresult": 0,
+        "effectiveKeyLength": 5,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u6f05\u0001\u9e25\uab20\ua63f\u3d33\u9da3\u30c0\u37ca\ucfe5\u513b\u8d10\u2c90\u2322\u2f00\u1f4d\u22e3\u98a7\u89c8\u8c8b\u565a\ud102\u57d0\ud3df\u46dc\uabdd\u9b8c\ud01b\u735e\u6bfc\u8825\u214c\u726e\u8e3e\u4ebf\u3406",
+      "key": "\u81bf\u61d5\u7513\u8afe\uc536\uce5a\u4132\u2a28\u279c\u10e8\u934a\u4b6d\u2417\u9757",
+      "native": {
+        "output": "Ba38p6DZOKeJ7EJ5iFS8PVA25JPHlNOd3KFBURRB68G5BA5AEXOOkDMX2NRVVq2CH85ZJ3AVNK7FgP8bE1eR9V0AjH5VFVHAJHA1mL2DJEO2",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub2f4\ub0e7\u4eb7\u1765\u0165\u6e51\ud636",
+      "key": "\u4ff4\u1427\u1e27\u5c89\u0121\u46d6\ud597\ud28f\ubcd8\u578e\u55e3\ubea9\ub137",
+      "native": {
+        "output": "9aK6WH0T4OQITD31XTIML",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ubfce\u534f\u155a\u9763\u4ce4\u26a9\ub8e7\ua274\ud7e0\u2d58\u14f0",
+      "key": "\ucea3\u5457\u3cb4\u7277\u2d37\u54aa\u56f9\ubea4\u7d07",
+      "native": {
+        "output": "AYA1j44cJLA73!BJ887LLMSHPTFBtJKE4",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3664\u1807\u1bf9\u69c9\u5f2a\u0131\ub082\u9979\u29c7\u0c88\uc108\u28b4\ud71e\ub499\ua2d2\u24f5\u10d1\ua04d\u5031\uc462\uc815\u4983\u74ed\u1344\ud2f6\u6dde\uc3c3\u1b92\uab4b\u01c0\u8fa1\u2c75\u606a\u9378\u95ae\u1503\ube44\u9e52",
+      "key": "\u1049\uab39\u638f\u2d1b",
+      "native": {
+        "output": "3_54k7NX5UmE40MJy52x96Y1AHVS1OUN3Vs888Q2FFDrHAZK7RB0n8C3GQST9FHUNM3_IM!RBQM61TEVP7v1JMISf0E7GK!A7h265SPnP1KOUc10wE",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u7c16\u4908\u67d8\u5f4d\u474d\u301d\u49be\u9714\ubdcd\u6e1e\u7d57\u5fb2\u972e\ud33b",
+      "key": "\uc58a\u6e33",
+      "native": {
+        "output": "G0HQHPHxRNdH23QHj6RPLCMSOQMGAIAYU22CPsD3pU",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3cec\ubea0\u89f7\u2477\u8be0\ubbed\u507d\u8ad0\u5d54\ub5d4\u4a9f\u1aa0\u2c9a\u809d\u54ec\u8fe7\u9197\ub13f\u6189\ub52a\ud60c\ua031\u5f06\u28d4\u7357\u8138\u905f\u958b\ua62f\ub3da",
+      "key": "\u0d20\u836e\u7cb2\u1270\u7839\u39a0\u68df\uac5a\u8a73\u9828\u2537\u12a2\u40b5\u1462",
+      "native": {
+        "output": "1xAPOFO7AK8Q5vLQNGAp5STRR730Y75UP7gFRsRF5FGzM0MGQVNQuTAMMUwUM2I8TS0A9P6IPcDEs15lD2zGOyQMt4",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3501\u9e18\ub52a\u684f\u68e5\u1e39\u9ac5\u26ba\u1972\u3457\u67b1\ucbfb\u9ef1\u97d4\u2d27\u0d6f\u9df4\u88c3\u621e\u8064\u5175\ub77f\uc4cb\u3509\u7040\u78ba\u8b91\ub80d\ub3aa\u3590\u6e74\ub867\uc2ff\u03f3\uafd0\u49ea\u0809\u3e6d\uba1a",
+      "key": "\ub24b\u3715",
+      "native": {
+        "output": "P86ShLLD42ZSAu7VD7ALSK54MgOS39IqAQoEG3D6oCG7OGeCRF0SSJK!6ToFAkDJr6I_GMHHNm23mL1oNCgIJzSGJ035PHCGK2H6UHOTUQPTSC2UU70yP",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3a72\u7f2b\ub5cf\u640f\u97aa\u7b48\u41bf\u5bf5\u4efa\u505b\u3133\u6269\ua24e\u2218\u1a20\u7fb2\u9d57\u958d\u41b1\u0214\u41cd\u5856\u20d8\ub1c9",
+      "key": "\u2899\u8208",
+      "native": {
+        "output": "OpLIeO3U8LCLLs71dJK20L53U0RCRRNbAUbJPwRDFQBf6DAM5hK7jUVsG2hGEjA48JRt5BRU",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub195\u322c\u43bc\u6831\u390d\ubc35\u4925\u10ac\u23a6\u8ca3\u9290\u399e\ucfd1\u8998\u8666\ub37f",
+      "key": "\u6e4e\u3cad\u2758",
+      "native": {
+        "output": "9UD1V5S4VGcU7dQLtIVjDUUGPIA4F47340!EDk5IsH77801B",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8b2b\u53ee\u4732\u3761\ud079\uc425\ubae6\u10ad\u6834\ubf61\u889d\uc978\u0605\ua2f0\uae5c\u5c7e\u9ae0\u315f\u53ac\u30ab\u13f1\uc374\u9f82\uafe0\ud7dd\u34ef\ubc57\ua9dd\u809f\u46ab\uc041\ubef1\u0267\u4890\u7824",
+      "key": "\u8e30\u86bc\u61f2",
+      "native": {
+        "output": "EBJFbKLS5OdGPyPU53RaPH4VV68A57Cd2SHHNlG0g1SDM7oQ7f57p0UPHKQ1HO62qI8FJMv6MjM8XGVtCFw39dO2_2MXIRw43j5RSTOm2",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u94d8\u9dad\ub10a\u274d\ub211\ua769\u1342\u9159\u5287\u8659\u6f58\u8df5\ube1f",
+      "key": "\u0e72\u2aba\u4c83\u0581\ub425\ubbc0\u93ad\u63aa\u25c4",
+      "native": {
+        "output": "FwS2KO7ZE423N7UQdOE55UCGAzIOL8FtSQpKOdP",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u7b46\u94ea\u013f\u2f0d\ucb0f\u2744\u97ea\u252e\ud0fd\u646a\u5921\u15ad\u089c\u9449\u517b\u24cc\u2bdc\u35c9S\u962c\u5413\u8ff2\ucb3e\uc489\u9878\ud592\u3511\ua135\uaf77\uc2fb\u057c\u0719\u5c98\ubae5\u9e02\u71ec\u7ee4\ub936",
+      "key": "\u30ac\u3e0e",
+      "native": {
+        "output": "Gw1D!6IaO60A46O6LMOi9RsD2a22p6SUADSG7bJFvM5YT5K9RtAPLUUtQVCASONQWQSwGNp3TfSRGE3h80sAHZ2TlRVfKHU5TMQ90H8l6RlQ5435rJ",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "",
+      "key": "\u4503\uab71\u5c04\u19ca",
+      "native": {
+        "output": "",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "@\u815f\u935c\u33a4\u04d2\u7677\uc389\ud002\u1974\uba75\u9273\ubca6\u4a22\u18e2\u6e0d\u6cc2\u8632\uc467\u781e\u126c\ud3ed\u6469\ua3d9\u8085\u2178\u3d10\u6d5c\u1bd9\u3a71\ua198\u08c9\u3200\u59bd\u68f9\u38e8\ud4f7\u29bb\ud04b\ubef3\ua9e5\uc74c\u3406\u9b73\uc966\u1952\u5fdc\u2c98\ua271\u5eeb\u5895\u1219\u3d2d\u0c9d\u6d54",
+      "key": "\u73b6\ud7a8\u2a15\ua44b\ub67f\u4198\u56bf\u7d13",
+      "native": {
+        "output": "TFODMR1oH5vNQnV98RL43LzS8THKsNCOGHxKPIVJqF6FEHp3H6JGGPQxORr20MLOz4AqL7B22B93YKJM687QNfFF7SI3AQe3NlSDVL7XUEp2RZG5bKNZMN3PSzM7ESTw7TO2DGKTDSDZAQbLUuSVvB87DG8CMw8HML",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u305d\ua786\ubc49\u31ee\u29b8\u5006\ubddf\u1048\ua511\u4dd6\u397b\uc2e8\u755c\u34f9\u240b\u0c3e\u6730\ub0f2\u56bc",
+      "key": "\u6968",
+      "native": {
+        "output": "Pz29KR3YH75LDvA4DJK1JObILB8Jt6LgBKy64WAG1KTNV87EMUOSiA9d2",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ua4a6\ub10a\u7a31\u1e7a\u7060\ub747\u1678\u80fb\u0885\u0608\u4332\u174d\u6d09\u438c\u7085\u43e8\u15e9\ud593\u1026\u7267\u8d8a\u8c92\u1b6d\u5e8f\ub2ca\u2945\u033b\u2f32\ud37c\u4992\u30e1\u4947\u81fe\u4da9\ucfda\u8ec3\u7ffa\u11af\ud11c\uce85\ub9c2\u601a\ubc5a\u1a03\uc0b4\u4185\u9e15\u3753\u723d\u1ff0\u3fe8\u8ec3\u9001\ub222\ua5c5\u4cf3\u3ccc\ud158\ua1d7",
+      "key": "\u888c\ud24e\u02ea\u9f63\u243c\ucd13\u3c6e",
+      "native": {
+        "output": "IMJQM9VgSMIJQJDTi9NA9DuGQaNFnJ3YSN3AJUKR!811U1w44iULNCLeTCPLBJJMPAAnKBTJJv6MvT8y8V!NOaLTOOBW6M_GLsVGSU2y1AaHAdSHu65d2MKDUo13_L3M6CMQ5fGI9F5kHI2PAtIRxBMb6AdR74UJ6GOY14TOFa2K9L8GE",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub526\u145e\ua575\u8ed3\u6c5a",
+      "key": "\u5de7\u8870\u66a8\u93a7\u6d30\u5e06\u0a70\u1756\ucce4\u6489\u7157",
+      "native": {
+        "output": "CH65T96YDUIARBJ",
+        "hresult": 0,
+        "effectiveKeyLength": 11,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub19a\u0477\ub211\u20fe\u0b42\u11f5\u4208\u0907",
+      "key": "\u116d\uae07",
+      "native": {
+        "output": "9iTLVU92NQ298DNQe4LrKVL6",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u45ef\uaba8\u700b\u9b63\u26ff\u838a\uae79\u209d\u4aba\u3edb\u102b\u60c2\u7e01\ucacc\u0e10\u125f\u3b86\u3fb5\u5b11\u52c9\ud7b4",
+      "key": "\u6423",
+      "native": {
+        "output": "NGG3n0I!JKeV1p0U1CSm4DM9256Nw41NDLRHUrEQh9F0C0484fQKuTLcMIgBKQC",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u7fd0\u90ba\u070c\u92ee\uac67\u4ac9\u44b2\u313a\u2bff\u406b\u6a4d\u7c8f\uc747\u40d3\u5002\u5857\u7ce4\u7a04\u4fea\u5362\u8bbb\u6844\u858c\u4ff0\u00d9\u6399\u4aa1\ub241",
+      "key": "\u4654\ub1e7\uaaca\u5524\u9291\uaf59\u9bfd\u0114\u915e\u9565",
+      "native": {
+        "output": "M05CYG9_J5GKH4S9SV7J2HYOIhI0KJIT73mP2lM8I977CLuDC19PU152K3M3On7U414HIOCS3PTE9ERtSIOV",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4c69\ua787\u2136\u7358\u3eed\ua7ae\u03b2\uaa77\u46e5\u4a7d\u8f30\u3576\u4586\u181e\ua8f1\u7e9e\ub1a7\uc6c3\u3bc0\ub680\u98cb",
+      "key": "\u0c45\u9a1c\u3e3e\u8cb5",
+      "native": {
+        "output": "Cl8JRVLHGTIEUUHC7UBLBHuQTvKM06Q1VSP5KPNO2K7W5FfMFnNGBMFt28!OMBL",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0300\u4197\u7399\u630f\u3af5\u78f0\u6e10\u16c4\u6492\u7a1a\u242b\u2e50\u5c1e\u6f47\u9e98\u5a7c\u9b41\u7bdb\u04c1\u14b4\u2df8\u5c81\u964b\u748a\u7243\u6781\u9c94\u896e\uc81e\ud6bc\ub6dd\u595c\u9529\uabb0\u393e\u2311\u5278\u06cc\ua6da\u670c\u2666\uc5e2\ub5ad\uac3d\u83b4\u8b88\ub0fd\u579c\u11d8\uc5b8\ucdf8\u9e66\uc3d5\u1f05\u5de4\u5c5e\uafec",
+      "key": "\ud05f\u06ba\u200e\u5aca\uaee3\u0ae1\uc430",
+      "native": {
+        "output": "6hLH315R1In0GlVHqEKkSQIIEqTO84SH3FE0TcF93A9O18uTLC5VYP3P0LXAEQT9vNNvQVTU7oLJD40BHQoK9s6Hx44xU5G7GT71W2FzB3g10q0334MKVNz6JGSMEOUODDU915SHoV5423c9Jj7F7GDvIUg2NkO5j2E0486V2IL",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u95d6\u7a07\u63b6\u3b89\u5939\ubac9\u6898\u2cad\ub959\u54a2\u9468\u21f7\u15d9\u7384\u46c3\ub83a\u107f\u8bc5\ub746\uaef1\u7cf4\ucf4b\uc66a\ud274\u0b6c\u9787\u8589\ub0b1\u0669\u4ef1\u3dc6\ub8f8\ua493\u41a6\ub0dd\u75f4\u1348\u6a2c\u2879\ud198",
+      "key": "\u8400\ub358",
+      "native": {
+        "output": "DEH88EA97QE8LM14kOEd9APO01PCX5F574c13h1R_QK4PAtM0LGD3FSAG0GVDaTUNIK7C2_SFEHCVUTdGEc9L3RC11K42GX38vCEa7RVM62PVFFI9JKHQ220",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0c9a\u3972\u7f58\u629a\u7261\u2e58\ucc20\u811c\u9944\u5465\u40a4\u0384\u8a44\u6637\u71da\u3dba\u1f76\u5113\u9adc\u2692\u703d\u2cd3\u975d\u9b3d\u14e2\u2623",
+      "key": "\u9afd\u867c",
+      "native": {
+        "output": "U4TMyD5mN3oK6dTI52O1SKgA7vOQ!Q3UPRn5BbRCp83VH98TOFNHLLEJATLCSi2Ik5FFBRHM9rE7oO",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u566f\u3342\uc9b9\u9fbb\u0f99\ubb71\ubfd1\u24fd\u126b\u0dc7\u6215\u7b02\u507c\u37d4\ud5d7\u9c4d\u82a1\u4b25\u3882\u50af\uc1e4\u32ac\uc385\u2cb9\u38fa\ucd9f\u22a5\u7a17\u82e4\u3fe6\u2fcc\u48e7\u05cb",
+      "key": "\u454e\u0457\u7c49\u1ddf",
+      "native": {
+        "output": "F_E3uE2K781Q5VVHD4MoAKgP4p2VsTOQHQlMH!CIxSE5BBLMDF8KWBPuN6pV2YKTQ3JZ65D53I2AKFEJ0TSFGe5V9TU8VMwN6PB",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0e83\ub12a\u46d0\u54db\u78d1\u8af2\uc3e7\u0985\u6433\ud4a1\u5039\u9723\ucfbc\uc71d\u12b5\u1c09\u6cad\u109f\u4117\ub952\u84c7\u8c2a\u41ea\u2444\u94ce\u04df\ub6ff\ud694\u0559\u417f\u7bcc\ub637\u600a",
+      "key": "\u2c03\u4ea5\u96e0\u2a7e\u10f2\ubf92\u2b8f\uac38\uc1c3\uc8a0\u7481",
+      "native": {
+        "output": "RC356PMSNM67T82TnSStO83JR092c6GFG52AS73JOU9u205TNGPQbFQHAQVTSc8285J1CJINMKKOvOF358TFF3DDi4ON6Lw4Ae9",
+        "hresult": 0,
+        "effectiveKeyLength": 11,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8d1c\u8021\ud0eb\u9f20\uaa3a\uabbf\u2f2d\ubf21\u7cf4\ua360\u50cf\ucae2\ua1fe\u4cb4\u1d3d\u33b9\u4976\ub72c\ub64d\u90c4\u0bb8\uabfa\u9804\uab0f\u8560\u50a7\u5062\u1d60\u1765\u27de\ub3eb\u1d2b\ub68d\u7512\u2405\u817e\u6956\u2660",
+      "key": "\u36d7\u6118\u13c0\u3c87\u04e6\u92a1\u770d\u14de\u167a\ua39c\u4218\ud55d\u429b\u9905",
+      "native": {
+        "output": "NqQ26CJG4O7M3B2J9AJE4HAPIwHVRKMi4FWPTMD1BKNcFQfGQmDDCHQuNA6PCqSH!7OsD6FETOG6FKEvLB782vQRwT4WNKSHSw01!SHxT7KQ1BCVTC",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9f11\u0fc4\uc0b0\ucf7a\u87bc",
+      "key": "\u9f14",
+      "native": {
+        "output": "C7E2U7DU9KvNTXH",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u115f\u1aed\u3a4e\u1470\u5eb8\u2858",
+      "key": "\u7b5a\u225a\u052d\u3499\u1350\u4a13\u8fa5\u5a3f\u8850\u948b\ua61d\u2265\u4e7b\u0f25",
+      "native": {
+        "output": "4MPN6ISBHRv3Ud4N9D",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9808\u27c2\ua1fa\u934f\u0d3b\uae7e\u1294\u7b45\u8195\ube32\u729f\u09b2\u35a1\ubc72\u0503\u0462\ubcbf\u58da\u61eb\u22fd\u9501\uc7a6\u099e\u2430\uc17c\u202b\u7bf9\u9dcb\u4719\u02c4\u79d2\uc6c1\u866a\u1b26\u8dd2\ud160\u5c85",
+      "key": "\u9bb5\u849c\uc962\u60e3\u7ea9\u201e\u691a\u5db1\u9bc5\uacc3\u175c\u6e6e\uc006",
+      "native": {
+        "output": "Cp8IaSFCHOy0LPE2B3ON48h9AQ38MUBH16w2Gv1IP8SD93d5OX6T3UQDU8a1PC77NL12TPG95lVIgIRuGLnATH9Be3LQA1qQSvCUNL6U0MLORW7",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ube5c\uc8c8\u0f5e\uc13b\u9308\u578f\uc03c\u256c\uc943\u9cd1\u8cff\u30fe\u2959\ub279\ud310\u6e42\u5833\u141e\ub9e4\u1086\ud14f\u0fae\uc8b6\u948b\u86a6\u0451\u7b91\u1aa1\u42c4\u3175\u7764\u76d0\u6bc8\uc827\u1ab7\u206a\ud481\u607b\uc9c3\u697f\u961e\ub8da\u8085\u0e3f\ub95b\u679a",
+      "key": "\u3aa4\u4a01\u1b1d\ubde5",
+      "native": {
+        "output": "I!T862CKPD7V3tHU5HBz1IzENE2SQ572EAIMCZIUU5ErUGGHVc0UGGVnUSwPCbT06CLY05cN49NDPOUKN7lMKa6SUFHmQQFTHWEFw01xP6yN6UQGuC9S86d8KnJQTCPSE3N2HrLRsA",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2bf1\u6cd2\u1556\u396b\u203c\ud597\ubfb8\uab73\u116d\u5b2c",
+      "key": "\u5b5c\u8ce3\u6f9b\u7c8d",
+      "native": {
+        "output": "0JGAOPNl84C1BtPFU77pACWLO9UFLL",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u73f9\ub8b3\ua5c9\u2237\u0592\u7aa2\u2f18\u20fa\u2aae\u3e38\ua10e\u3763\ub4e9\u01c8\ud5c9\u6bda\ubbd9\u29a1\u4d4b\u3eb2\u63ff\ucb82\u4b47\u2483\ua443\ube7d\ub37a\ua9f4\u471b\ua802\uc7c8\u19e8\ucd02\u7249\u9b8b\u45d4\u026b\u01f2\u66dd\u2bfe\u62ec\u6c98\uaf50\u97e2\u5b48\u2ffd\u8f29\ub9c2\u07ad\ubb36\u2540\ucb15\u2342",
+      "key": "\ua54f\u8049\u64d1\u21bc\u37a5\u3bc6\u3548\u1530\uc174",
+      "native": {
+        "output": "J3TCi8OXACGO8SQO!UUF4NjRFaDILPFKKO9GEIILs3NRDIh1D1AI!7MhF2nCSAGU2AFc7THHSE6UyV3jE05KHv2MVKNaCQXPS17Hh9FGK8C14_VGw0E8UNTEPWUQjUO2B8r50XKL0TMa8JwV0RI9xI8d6T6N8X7",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u22b5\uc193\u7c1c\uad64\u33b6\ud1aa\u3d1d\uc756\u27f7\u7840\u3715\u245b\u4168\ua3f7\ucdf0\u336a\u9311\ub6fe\u2d02\u5b26\ub3ea\u4cde\u4342\u4ade\u3a4d\u5807\u0202\ua58e\uc4df\ud4bf\u5e58\ua744\u744c\ub7eb\ua73a\u43f7\u052c\uc1d6\u2ab6\uc785\u92f2\u132c",
+      "key": "\u727a\u66f5\uc11a\u9f30\u84f9\ua5a4\uccae\u7d5b\ubd91\u532f\ub21f\u3169\u0c66",
+      "native": {
+        "output": "RcLQhT0jVK042aE03J2zB47D27BC96RWCKeVRA26m43u9JqKKi5LMU5MGRS7RBNKpEDN2N0D1pHGxDUyRUdS7h4KfK5cM027Ff3TJD1nSI6KDM6D84Ai02XJRbSHnN",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u752d\u47dc\u661d\u7e25\u0859\u6855\u057c\u9666\u3041\u7035\ud474\u3d88\u231f\u4411\ua8c5\u3398\u749d\u7056\u3d7f\ua337\ua2ef\u5e4a\u38fc\uafaf\u5b16\u2364\u7ad3\u71ba\ub893\u145b\u605b\u7990\u3027\u7234\u5d13\u5732\u5b02\u597b\ua2d9\u2341\u24d5\u043f\u77e2\ub8ea\u6f5e\u4f71\u0809\ub205\ud715\u5a8f\u53fc\u4887\u5a5c\u95a9\uab16\u1533\u24ae\uc5e2",
+      "key": "\u3fb4\ub0a7\u4b9b\ub260\u1b0c\u2e4a\u2c65\u91bd",
+      "native": {
+        "output": "JaLF40RkFOa96K85oNPk3SzKAUQLWAI0UQtMD!CA962!MJgF631BG8OST9VS7g6SAORV2EG44sCBfMTTSO6SME6RJKG2QRjA7_GKP851TPt9VZVJyI6_ATW4BQ50w12jO78SVgUIMTQhL9cHBjDMB09gR19COES8SNA1TH!8BXA7W9",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u7dbb\u259d\u1532\u38f6\ubee5\u0bfb\u8157\uadb1\u980b\uc905\u9a4b\uc223\u0eaa\uaaae\u4f53\u4b41\u6f67\u4795\u42b2\u2ba6\u230b\u8f21\u2bb0\u4af8\u77cc\u8bf8\u880d\u4139\u7014\u8843\u3898\u1bd5\u79e8\ub7f8\u39a4\u40d8\u0b3b\ucc16\u45cf\u1feb\u7c0b\u4879\u8b2b\uada1\u5817\u40b3\u3f6f\u8e66\u94a5\u6fb6\u9f3b\u9303\u6cec\u29ae\u1b53",
+      "key": "\u8785\uc71a\u08c2\u4c35\ucd1a\u04bf\u6ed3\u4adf\u2ac9\ua5ae",
+      "native": {
+        "output": "MJEIDAIUNP0V8BP7sB67R9PO4w1Oo1TyQSYJTZ7Ip4MtUBY0BEDN8GPx0GdEIfKQ_3D3QECVKgB4o6HH02G45c3VK2Ih6NX9KuE9hRLNSSb76iVRvVFHBMETTpFExKTY2G3ORlOPb66g9THFM55GcU3dIQQC3UM8uPTsP",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4953\uac6e\u9ce1\ub5ff\u317d\ub710\u0694\u371f\u5172\ua0b6\ua75e\u0e0c\ub753\u6c3c\u2472\u7cd5\u9243\ua998\u1ea9\u9389\ua2f9\ubca1\ucb3b\u1a78\u6e46\ua4a9\u6aa0\u269b\u5596\u2650\u2636",
+      "key": "\uabd8\u0204\u2810\uaf16",
+      "native": {
+        "output": "C6I20HEWU3sBHGIEnDDn5JTF9QD6gP5oRH66H!S8uROe9TyIH1R9eE9FVQyVBa5GqT1X49DVBUJJv44RD7zHE_COL51MK",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9e02\u3c51\u39dc\u1ac8\u4c4d\u2fd4\ubfa2\u59a5\uccfb\u4438\u98fc\u2f3a\ua6aa\u5004\ud104",
+      "key": "\u7631\ub504\u684f",
+      "native": {
+        "output": "CYQ27KOs21i4A2RAUOHBIN76QV07ZGKlA802M79LD6DWT",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8107\u736e\uac3c\u57cd\u941a\u8054\u28b2\u553f\u4969\u3546\u8fee\ucbea\ub985\u858c\u5515\uc492\u1adb\u617f\u420a\u3a96\u2a6d\u173f\u282a\ud77b\u36ad\u1954\u79b2\ub18e\u433f\ub466\u0518",
+      "key": "\u13ee\u0c51\u2e6f",
+      "native": {
+        "output": "FQVRzM2M36i0RdJ98JMUMSt038924VODG8n8OpQTbE4JFBqR2XBQH5AG0RW2P9UEVHQ3LAS40vEIe56OBH!CKE0LRMVgV",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ube7b\ud204\uc747\u23bb\ub678\uc758\u99dc\u8c04\u06ba\u80b9\uce1a\ua662\u2345\u0541\u126e\uc3f0\u2c0a\u9cf5\u92c0\u67b2\u6455\uc906",
+      "key": "\u7623",
+      "native": {
+        "output": "8C4OINEJOB0PT5U9F9PKBNpMSLMUpHTh6CBIQWAH5E9XVTWDO!68bJCmD5K57EVD8R",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u75e5\u0536\u22bf\u0e55\u9c38\u9531\u07eb\u75d2\u71e7\uc8f6\u361e\u6611\u2b43\u879e\u3dd4\ub9c0\uc490\u9483\u4a55\u3689\u5066\u55dc\u86d1\u3b6e\u98f0\ub3d0\u1510\u6e08\u2fcd\u5b38\u1e79\ua2ef\u200d\u8456\u4881\u6a74",
+      "key": "\u8ab1\u8811\u901e\ube95\u1cfe\u6553\uc12d",
+      "native": {
+        "output": "8SGEtD1qQ6BH7fCDNS94GNOHMf6Uu53xTV5PNaVL9UTS75DKLm8KBHHi5788ThN1EIKLGBwMTU775IJFPPyBU00SNOHRMT329g2UGFBZ51AA",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3f1c\u8e6b\u57db\u29a1\uab3a\u825b\ua565\ua997",
+      "key": "\u415d\u24b8\ua989",
+      "native": {
+        "output": "Og4ESC3ERGYR3eTPcQ5XCESD",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u3e91\u8a3f\u562f\u0b59\u9ebb\u7028\u2253\uba1d\u8a48\ub16a\u7a66R",
+      "key": "\u8f6f\u22f9\ud098\ube1f\u6ff1\u01ce\u3719\u5d09\u2d1f\uad00\u03ec\u0cc9\u5fae\u958b",
+      "native": {
+        "output": "1eNJcPSi26j31jASdMPkDVyORHNBU6OxN1u6",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ua5fc\u5e28\u8ffc\u78c1\u57e3\u06cb\u2b95\u4625\u351b\u60be\u8d35\u75f1\u9bf3\ud7d4\u1f27\u1700\ub9e3\u6082\u1bcf\u72dc",
+      "key": "\u24f0\u5f49",
+      "native": {
+        "output": "BFRKA13tBKW9AIT9mGFOH3_E94G2q5LSLCVT3mHTCN128RqRBjB568M3HLVI",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u10af\u0482\ucd88\u6bd7\u7f86",
+      "key": "\u761e\u7598\u919e\ua663\u78b5\u4261\u59d2\uc063\u1b7f\ud468\u4c9f\u9669\u8a6b\ud278",
+      "native": {
+        "output": "4P9MxTV0TRLFVV1",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u0ffa\ud572\u663a\u5f03\u6972\u1e4a\u7f11\u1b3d\u9e4e\u05da\ud004\u6f2b\u7d00\u6591\u70aa\u72bc\u8819\u413f\uacd6\u7ab5\u91f1\u18c3\u9a7a\u2ab0\u4db8\u6b65\u732d\ub2df\u54b9\ubea5\ua5bf\ubd19\u4ec2\u5f61\u19dc\u1447\uc276\u778f\u4fa7\u780c\u3b5d\ucaf4\u1344\ubaf8\u0349\u7638",
+      "key": "\u90b4",
+      "native": {
+        "output": "U05EDJC9MNe01uJ66VGTOL7MOBAPR75I6Kp2A0IDGAJ6D6XCTpJ1RL0GFI25EJIOuF5GBUcCDQQ8UK0!3BRKDrFGmKOQP1s6BH1T1F6eO4H76s81V7PeJB0EGW3OE3GMRG!CMY6I8V",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u63a4\ub448\ua9c8\ucace\u4654\u53b0\u34cf\u0e72\u7e40\u0f99\u69c2\u3da5\u8f07\u992e\u2dad\u359c\u8a0b\u6e2e\uc76d\u9c71\uc9ff\u3038\uc372\u6218\u3871\ube18\u8002\u2f39\u2db5\u2eb4\u40ee\u75f0\ub715\ub6c6\u2555\u77b5\u3e8b\u1cbb\u4ec3\u54e9\u97cd\u183d\ud366",
+      "key": "\uc4eb\u44de",
+      "native": {
+        "output": "Jz39rACqL7kIVx1G4ELpJBYAQV67191OEHlFG0LOLVRnS5HUMJ2NWR3m3CPFIgG4jKAC404P8I39DFQnTH87C!0JKHDw6O4H3M5RL1Et29l6EZ2LSNAa3GKIKjLVUC48J",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u59cc\u2d03\uca35\ua662\u4191\u00aa\u13ea\u225e\u728a\u74ee\u287d\u07cb\u97e6\u9627\u0876\u9582\ubd5b\ud355\uacd8\u9ca2\u2155\u009f",
+      "key": "\u7c53\u9c37\ua1e5\ua8a3\u8e59\uc4fb\ua73a\u8264\u7179\u2de8\u23ae\u7a32\u20e6",
+      "native": {
+        "output": "KzCHVBOdH2PMHtE5cBC0DL2D0r12CGTy286H1O5Il9QRR6IKB3U1bG2fQSVP3HR0s2",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub6a2\ub90c",
+      "key": "\u88b3\u129a\ua473\u8f3c\ub1b9\u84fa\ua94b\u841f\u3b50\u6d73\u95ba\u48ea\u07e0",
+      "native": {
+        "output": "962TFV",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u5d74\ua7a3\u4d17\u9b6e\u1959\u1c6a\ud4bc\u0510\u1543",
+      "key": "\u1252\ua64e\u419d\u8acf\u02be\u1d25\u7267",
+      "native": {
+        "output": "DO10XVKDTQO35EVUo691RFhBPX5",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8da1\u88dc\u6771\u654a\u659b\u4611\ua021\u5a20\u1a58\u151e\u904d\u3666\u9d0b\u83fe\u74d3\u062f\ua4ec\u3977\u5292\u7a50",
+      "key": "\u6b4a\u1b6d\u0bf7",
+      "native": {
+        "output": "E_P0062I1CVJEo0R4BGWI42U2lDT64VYTB!QACSRXI09N3rQKf09Q9TfUD5E",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u77ab\u51d1\uad6a\uc163\ua0c3",
+      "key": "\ua450\u26db\u5cda\uacaf\u400a\u87c6\ua854\u5322\u9c00",
+      "native": {
+        "output": "JXF1PR8DQTSSSV0",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u7dec\u72c3\u7665\uc03f\u1f5b\ubcaf",
+      "key": "\u23e4\u8ab5\ua931\u4fc3\u67ab\u3862\u0d0d\u42ad\u8e4e",
+      "native": {
+        "output": "Ip8R5P2506G6EvH6K2",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u155e\u99c8\u01cb\u50ff\u8508\u91be\u9793\u22be\u694b\ua845\u741f\ua265\u2bfa\u9c3b\u04c6\u25c6\u8c26\u9707\ubb0a\u75fc\ub124\u4fa8\u6a12\ube13\u04a6\u7cd2\u6a42\u1d62\u9655\u6348\u09ef\u198d\ua592\ud535\u33da\u8b71\u22b5\uc9f3\ua4ed\u4e04\u3dc7\u8058\u3ce4\uaf0d\u11b0\u58c8\u37d5\u6837\u1fe7",
+      "key": "\u12b9\u673b\ube39\u1db2\u3ad7\u94b5",
+      "native": {
+        "output": "KBPTHURIP1z8LR5BNO0BTVyDSi57bK0yC3hK5ZHFkJBN9Jc06099sBFxOM3V1lG0f7B5S6L2D7HGGLOAUKxND4DIsL348IP8Ec63ZRQr4Sq3J5SMvKOnIKmQRB62O2BVIQT64!5EXINfG2RLNnP",
+        "hresult": 0,
+        "effectiveKeyLength": 6,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ud392\u2ed4\u703d\u948b\u88b6\u84a1\u141c\u096b\u0946\ubaff\u08d1\u861b\u33ff\u6d97\u866a\u70da\ua1de\u3761\u25b6\u3cd7\ud5b3\uc6dd\u51f8",
+      "key": "\u65b4\u67e3\ud57b\u2e40\u99c2\u3908\u02aa",
+      "native": {
+        "output": "Sl7Ow67jTTWK98SPLOQ9E1RNDNPAkV1R5RbG2X8KvEKSOQEU8fU1cTPJERZ9Rp5LoD6WO",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2122\u8815\ua05c\uc442\u47d2\u4e84\u0a00\ub2f4\u7405\u460d\u59c7\u864e\u14f5\u3a7a\u07c1\u9d64\ub855\ud59f\u2ec4\u75a4\u3474\u8e35\u3eda\u2af0\u8355\ucfcf\u6c58\uc14c\u22eb\u1a05\uc3de\uac5e\u4d4d\u73e4\ua829\uaadb",
+      "key": "\u8577\u1fcc\u0e5c\ua5f9\u4f4d\u9c9c\u4eb7\ua92d\u3620\u5351\u41ad\u087a\u73bf",
+      "native": {
+        "output": "Rw2VyIJILMD5HsLRf9AOSLx90fTB4HMV97lIVA56J1VNE7LHNu437CBRNDH2MSANC244VIZ05CCEU93o4H5MCCRTx19jBUX6VX0TWP3y7Mi8",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uaa08\u4a51\u06ac\u6930\u7a72\u7cd5\u4600\ua5dc\u5aaa\u433a\u8a81\u5aa4\u5cca\uc572\u24ed\u8136\u06e9\u735b\u568b\ubceb\u62cb\u70be\u668e\u9ea4\ub30e\u875d\u41f9\u0553\u2c8e\u6cf8\u4cc2\u1bab\ud256\u7b78\u8dab\ucb74",
+      "key": "\uab5b\u3137\u8da2\ub47d\u4b8c\u1db0\u2115\u70a8\ucc62\u67a2\u47c7\u9eb4",
+      "native": {
+        "output": "QV58rR3zFLyKS4BE8U3JHTWGN!4OyLEb8O1PIk6T964LCTtSF_43j6EE42xSTlNAuH0h9LgEVWH6_47v5HcL27F7TERXNLyREgVML3QEK7Z1",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uac1e\ua62a\u8541\u33e0\u2be4\ub700\u4fff\ua437\u68f2\u6a8a\u6fb4\u7254\uc5ec\u1bdd\ud639\u374b\u6a23\u1480\u125e\uc7bb\u7fbe\u438b\u0ddf\u89c3\u431a\u5448\u8e69\u73f6\u2c7c\u7cd5\u6bd9\u6fb4\u8ae3\u049d\u6a3f\ua22a\u4033\u80a0\ua02a\ub1cb\uaa31\uae00\u9ca5\u1654\ucd99\u9e03\uaeb9\u344a",
+      "key": "\u5892",
+      "native": {
+        "output": "AV11p0TFKEvCHJR1XEHl8T3CDD9OJC2x114L9HMBVG8R1QL1It2916BcEEjU0B9VVEPRCF5A988GaLBX57KMVv9PSTHiJCMFFMP29UTAN3eTQLQ3mUAt12178nSRpHEvUNC24REQs8JrE2hB",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8b09\u8219\u5f5f\u1252\uba27\u577f\ud375\u792c\u743b\u94ea\u20d8\u2168\u4e32\ucd31\u90d5\u3f12\u6dd8\u22eb\u0a84\u375b\u44cc\u94d4\ub95d\uadaf\ua452\u4a26\u0ec3\u6305\u7a5d\u1eb1\u5eaf\u50f7\ucb97\u1454\u59b6\u73f6\u2a89\u1cd1\u4fc5\u60af",
+      "key": "\u878f\u9081\u4cc7\u8b8a\u7dab\u25eb",
+      "native": {
+        "output": "7vE8Z5KY02SBKdJSd984B82H3x6F1PGfUFMP4V3Dt9M2LCtAN5N2dVPzUBHTOXLCKCPUGSa9R5PHN9DtFMaPDRGTmS5P6CKRCnT8aD0VTOIOG0CDER8eRKQC",
+        "hresult": 0,
+        "effectiveKeyLength": 6,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uc6c6\u60ad\ua0d3\ua0e2\ube55\u44dcZ\u0288\u76fb\u5033\u5e06\u1ad1\u7ae3\u413d",
+      "key": "\u3e53\u3e40\u68b9\u06c6\u2769",
+      "native": {
+        "output": "7PLSj3LtHQwNAl42bRJ1B1XU5w6D!1SbNCBDOt0PU2",
+        "hresult": 0,
+        "effectiveKeyLength": 5,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u84dd\u75f6\u576f\u937b\u9fbd\u386e",
+      "key": "\ua760\u1f88\u296e\u4cc6\u8039\u0eb1\u24d0\ucba4\u09ab\u33d1\u52fc\u2091\u9071",
+      "native": {
+        "output": "FLTIWH6A88b0FS8ARE",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u903d\u05d2\u876d\u7205\u0622\u4b0b\u9840\u41c5\u6e1b\ua03f\u774d\uc398\u886f\u13b7\u0d43\uc267",
+      "key": "\uc955\u3a4b\u9f14\u63a3\u67e9\uc9cd\u6601\u062e\u67e1\ubff1\u5d76",
+      "native": {
+        "output": "8vT515Ei1QcU80VFb3VN4DlG1dMBW10iH6G44GHP5SU8DNPS",
+        "hresult": 0,
+        "effectiveKeyLength": 11,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8bf4\u703f\uac51\u5f35\ub40b\uc3a7\ud176\u6926\u197a\ud4a4\u021a\u6f4e\u5f53\u6c32\ub19d\ua43f\u8cbb\ua2b2\u684b\u10ae\ub2fe\u42c5\ucdd1\u5808\ua8bc\u78c5\u4d32\u02f7\uc1c6\u71e6\u4842\u20ec\u60a6\u49bf\u7add\u4c48\ud6f5\uab1e\u339f\ucb7d",
+      "key": "\u4e75\uc080\ud2b6",
+      "native": {
+        "output": "EDC1rDIp56FI0kVLaN1qCJIR031IfQNjKBP0HBN5w45OP3v85tLTHFP!0NtFTFDNhBLKNLl1Iw8709GDR3W7UQ6I8FC12O8BVuE9mI6a1OzURPLACDUF53n6",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub73c\u6985\u249a\ud1f6\ub4eb\u35e5\u91b1\ub3f7\u1eaf\u7467\u6529\u5ad9\u32c9\u6ebf\u3bec\ub16b\u7199\u2c57\u1adb\u198c\u3174\u09f5\ub647\u5321\ub53a\u5b0f\u714c\ua376\u001c\ub933\uc6d3\u6cbe\uc113\u8588\u6050\u9c97\u351d\u9377\u6618\u7aa1\u15e6\u55e4\u9e11\uac79",
+      "key": "\u602e\u6754\u715b\u8e81\u4592\u17d0\ua3f9\ua95b\u938d\u9b3c\u9e07",
+      "native": {
+        "output": "C1SOf4Lr1CM9OAEVZTN9VQO7IxDPSDR0DL00QG4GHQK!5SyATTJ8b5Qq2RC1KAEEUQ4SI9mFAPULfME0K8h53pED9SJnECdJ28SPB35SA4nADECOuVQB9N2JUhKOvQHRE5H4",
+        "hresult": 0,
+        "effectiveKeyLength": 11,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8e3c\u4945\ub043\ua712\u2d0c\u0ee0\u3a17\u9488\uca75\u35f7\u1fee\u7d06\u3ab3\u75af\u604c\uc449\ubddb\uc21c\u6bf8",
+      "key": "\uc124\u7355\u4e93\ua95e\u5e91\u3004\u476f",
+      "native": {
+        "output": "N299rV5aQPt8OkHMiG2Z0QC9TXNHXP6TGU_LALEHQ83FJ2WDS!OELMAUT",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4f55\uaccf\u97ab\u1762\u5d48\u0ac6\u66d4\u99d5\u479a\ucb77\u24cc\u6965\u0b64\u7495\u8d7d\u5e9e\ubcd4\u3d36\u77e9\uaa33\u57e9\u808b\u6725\u229e\u9926\u7c14\ua756\ub276\uc531\u456a\u9e9e\u8196\u02e2\u5d90\u22b4\u7fa4\u3c82\u8567\u8bce\u3f99\ud1d9\ucfe8\ub0a5\u3c00\u3adb\u3583\ud37d\ud5bb\u500b\uc33a\u76c2\uc73f\u4ab2\uc865",
+      "key": "\ua29f\u70a6\u2bd3\ubd1f\u79fa\u394f\u5995\uc7e6\u99a0\u15f7\u9861\u1f3e",
+      "native": {
+        "output": "6rOEzLLc5NK5Pk0En8TqIO9OARDBX7Nd01x8AjC5BPL_099I2zUIuCNW0FU7SlIPJMHjFKxJ4mADkBIOQJ8H3iOQ4O3D22dQDwQ291P_JR0RULENWSEZK7YF0X2JKM3F12N8MJDG3F6n7SCCNrV2HCJPIQ1SIz9U4H",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub001\u2c08\ud18a\ud6cb\u5717\u43bb\u403f\u1fe8\ud37c\u2944\u609c\u313e\u8f04\u74ab\ub21b\ucf75\ub91d",
+      "key": "\u48da\u1925\ua8be\ua1b0\u23d8\u0708\u835c\u4eaf\u68cf\ua9e5\u5352\u5e11\u3f6f",
+      "native": {
+        "output": "9p13UM56T7AMT5KJBJ3h7GI56JGAdTSE2Ia5SmNElSGyGCXEVAH",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ud70f\u5845\u2c72\ua296\u605c\u8f44\uaf71\u1d2f\u8dcc\ucb08\u1f3f\u7a59\uca64\uad42\u7b92\u29f0\u6d9c\u9a72\u9059\u9b33\u32ce\ua9da\ubfc9\uafd9",
+      "key": "\u29c6\u7fba\u4e3c\u58d8\ud459\u9024\u9cae\u6281\ubff5\u2805\u026a\u20c0\u519e",
+      "native": {
+        "output": "5BFPABVAK95HF8R6d281NDA1CJP349FkV83C4ZVEG00TSRtQKHPOPMHL3Ab5CWAQ4UEfB2VC",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uac19\ucf59\u9eb5\ub291\uc8af\u63a9\u6dc3\u9bec\u00c2\u5034\u666d\ucfdd\ua878\uadde\u5d36\u227f\u9391",
+      "key": "\u40bf\u9014\uab08\u1ed0\uad74\uab2f\u6e92",
+      "native": {
+        "output": "JJCSbAJFH7J3BJL5cK1SCABUGSIRfQ2JTOG06mSAsK8d8NC8IiT",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2ad9\u154a\u920a\u23a8\u4074\u7291\ua778\\\u3f64\uc372\u2f1d\u7b4e\u799d\u46cd\u76a0\u4032\u7c1c\uc001\u205d\u77d3\u0e65\uc0b3\ucee4\u0ea6\u995f\uc029\u1fd8\u100b\uc084\u45a9\u6b11\u46bd\ub3d1\u8101\uae70\u77f1\u85e6\u0e61\u211c\uc115\u0865\ub36b\u33b7\u341e\u7ef5\u6658\u8c26\u704d\u8eb9\ub38f\ua5b7",
+      "key": "\u2523\u06c5\u8c56\ud0ff\ucea4\ub104\u50fc\ubb63\u4b8b\u8b74\u61e3\u2900",
+      "native": {
+        "output": "APKP2DCTL1z5SfNHvL6wJVwLGF127VGOV3iP1S8H93BLJGd8QYN8NC7IG30GTMG4O15HQ1w0DTR7Z52Z1SUV1fIQmLQ4F5WV1uTKPJFZB7uONRVNF2T_C2hU3QI0fGCEC01GQ0CL!FT6FHh5AeKJvUEXB",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uc726\u66db\ub290\uab1b\u68c3\ua54a\ub467\u16aa\u57a2\u8d85\uc51a\u29b8\u66a9\ud54a\u7902\u11d8\u6c6a\uc111\ubd4b\ua77c\u7dae\ub796\u3ec9\ub0c3\u28e9\u3a26\u0a88\u87d4\u5a64\u360d\u3ea3\u2c9e\u0096\u12e9\u84f9\u1558\u6704\ua15b\u2a24\u2030\u3b4b\u7add\u6061\uadd8\u0eef\ub41a\u0bba\u319a\u30a4\u7ec0\ua80d\u5cde\u254d\u982c",
+      "key": "\u873b\u131d\ua131\u0931\u08b5\uc80a\ua430\u6f77",
+      "native": {
+        "output": "5qUT8E4L2L5VKMJC955jOLv7QLP3dNN989WGRwRVnDCmNMUE6N87sH6IJ1C1LhMTdCLCP9XPGaJMEFM!267I01DArUU03Pz9IWL7L5995NxL4HGFx31xBOlEQaK4P6RJE94PR7TO00HmJQ_MV44POC6THMoG984SjB",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u68f7\u41ea\u499e\u9bda\u7957\uc840\u46c0\ud488",
+      "key": "\u3ac5\u7152\u8f40\uc23e\u8356\u430f",
+      "native": {
+        "output": "RcG3NSUi4CD0PtNNMUIfAH8O",
+        "hresult": 0,
+        "effectiveKeyLength": 6,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9ddd\u9d25\u5a2c\u156b\u8ff2\u8093\u13be\u63e3\u51fc\u7407\uc1e0\u0be3\ua194\uae35\u092a\ub1c6\ub647\u19e3\u3e4a\u59e4\ucfa7\u410f\u9b90\uc75a\uce04\uc341\u6f8d\ub87c\u9cb2\u0f1a\u22ec\u896c\u1d68\u9afa\ud6e9\ua574\u34a8\u9502\u79d9\u512d\u5cef\u292e\ub1b3\u9a26",
+      "key": "\u7dc6\u28eb",
+      "native": {
+        "output": "CEQ0n6OvI89B3eN0tRD6DS2915E1MUBfJ4CS385H9GGl1DVCB40BlCL_IPGOD9QG07OsS0T3Fq50bDG65CGV9XFSRN9N6Gz3Tu8L0RBgMOW66lHK10J!LQwEVU2GDNNqPUPI",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u08f8\u3b55\u541d",
+      "key": "\u173e\u8b32\uc7ba\u54b1\u3bf3\u9985\ua03c\u7337\u6eb9",
+      "native": {
+        "output": "SRSIY059R",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ua609\u323f\uaf8d\u565b\ua9ab\u8023\u4ee1\u7cad\u249e\u26cf\u945f\u0f52\ub625\u80ff\u0de6\u114a\u6eba\ua3bf\u1323\u6dc2\ubb56\ua720\u5a9b\u3e0f\u59b6\ub579\u928e\ub9ab\uc009\u19ca\ud77f\u5190\u5ae6\ub6f4\u1258\u6c83\u1a4f\u76dc\u4b89\u2d0f\u49fc\u2a49\ua2f2\u6add\u890e\u2532\u491a\u4276\u2128\u9e0e\uc8ea\u927b\u42b5",
+      "key": "\u092b\u254e\u982d",
+      "native": {
+        "output": "BYH3zN0C12IP6iLD5B8wEHLVSo4QjDCGNIgRTEJNF27OQRvF7TLBFNDdOEKH91C2!AOkC6tALyNRUP9KC6u6MMKCH0LgHTQTH0LAMNFMD9hTEDM0cVOTLGZRAa2IkQRf0Pk8VnHBM2K2MMhJKBU8c9MgCRyEP81",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u80bb\u0388\u7367\uaca9\u5ea4\u7ad0\u611d\u5385\u5e2a\u564f\ud3e7\u6434\ud388\ub4ed\u20cc\u6920\ucaad\u2edd\uc8dc\u65a4\u6e48",
+      "key": "\u6313\u10bc\u39e7",
+      "native": {
+        "output": "FN3Tm3G5S66GLsVU7ULn1TxDHLONKHTVFAwNU0F9GEIEIIKA6BMES0L6BVqPQPP",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4a8b",
+      "key": "\u2835\u918b\u856f\u9099\u78f2\ubcaf\uc83a",
+      "native": {
+        "output": "FdU",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u2803\u75c6\ua403\u23c9\u7c1f\uc7e8\u6286\u6772\u0c62\u73d0\u4abb\u3369\ucdb4\u4adb\u7bb7\ubab6\u5c07\u3234\u095c\u61ae\u5564\u7f44\u79c7\u9e9d\u645f\ud177\uafd4\ua0fd\ub7a2\u760c\u391a\ua029\u710d\ub1e1\u6a0f\ua8e1\uc940\u7d92\uaab6\u5f1d\u4beb\uc527\u27dc\u7f74\u2b11\u77bc\ud2a0\u07bd\ua8e8\ud7a3\u729c\u6adf",
+      "key": "\u8cf6\u47bb\u012f\ubf83\u058a",
+      "native": {
+        "output": "QlGOh55XI9e6NMQOi3IFK0rCQ11SyC3l3AY5TZRNcA4IA2AUB!AEP53rBU_70ELJL7HgPSnBJoIL3OQQTEsVSWB2Q3OtJPsULAUKWBEgDQY5RaM2t56cDHtOHWFT9AU0H0gHHdTKR60CLHXKJXCRk0CDOVpJ",
+        "hresult": 0,
+        "effectiveKeyLength": 5,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u4f3f\u6e5e\u15d2\u535d\u392a\u8962\u40ed\u9475\u44a8\u01b9\ud5b0\u10c6\u22a3\u0210\u52a1\ua33c\uad65\u7f62\ud033\u5767\u302a\u1741\u2b9f\u38f7\u7e2f\uc2ad\u3deb\u03a1\uabc4\u9cc3\uba81\u1d79\u03c7\u06de\u4450\ud67a\u2d0e\u788d\u87b2\u58ff\ua74e\u8c44\ub13c\u5c10\u7008\u0491\u4220\u1ec9",
+      "key": "\u11d8\u3967\u1fcd",
+      "native": {
+        "output": "Mh7Gw7O5E6z07x47SK1rEOSPNOFQiMN8RR8MM_B3hIQv75e7MbR6nARzR5AJ3sLCN1RZ9849JTHQnO4iNHuBOgVRW45AC273JBMNVUKO38612vQLgIBKIH3PAbIDTGOs8Ts20NDI7T7SAPT2",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u24e2\u7b70\ua6d1\u6606\u9efc\u5c59\u331c\u5319\u3efe\uad58\u5366\u929c\u724c\u36fb\u745d\u0968\ub76b\ua742\ud2c6\u1fec\uc31c\u5e10\ubcc4\uc0fc\u8a32\ua3be",
+      "key": "\u9ef6\ub02e\u6a61\u7754\uab80\u2754\u5994\u7f68\u1acd\ubfe9\u0a1c",
+      "native": {
+        "output": "UV2O480WNEQPDWKCqQQV18T6RxKCgCJP34vRObABkMI5FRU5P!Q9GD7O9B737NBPq17X9Cv4KKBENG",
+        "hresult": 0,
+        "effectiveKeyLength": 11,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u41dd\u1511\ub0ed\u5653\u483f\u3f6e\u2f1b\u940a",
+      "key": "\u10b7\u858d\u7d0a\u1813",
+      "native": {
+        "output": "D2SL6O5wHU!0EjC1BHHhASS5",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u7b70\u5fc3\u69ed\u0439\u545b\u197e\u2867\u4c69\u2828\u2899\u99be\u2cd6\u254d\u62c8\u7904\u7caf\u9add\u1197\uab50\u1469\u1858\u86a6\ud474\u1bb0\u071f\u977c\u5cf4\u8a20\u1aaf\u1d84\u1924\u8cd2\u437c",
+      "key": "\u92a7\u71e3\u0261\u5bbd\u5eca\ub0e7\ubdc3\ua763\u106b\u0c75",
+      "native": {
+        "output": "Mb5T!D0_PAOQIlC3LMJfUN828kLHnATO9PgB1N6QmJQhIHVK8d5Nr6CT99n38JSFSKKsE1JH2BGCzFJT56tR157LXD8GSHB9IuA",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9909\u3bc9\u04d5\uc04e\u5de7\u6c88\u58a1\u3800\ub43c\u6b5b\u7ed2\u7394\u5d3b\u4d18\ucb58\u1ad5\u2f62\uca8f\ubd9d\u7d76\u419d\u3171\u92f0\uc157\ua284\u0b77\u91eb\u8299\u62ef\u7f3c\u91a8",
+      "key": "\u3edd\u31bc",
+      "native": {
+        "output": "CeEED4VLBU6D0YMVZO9eVUWFCq3UqOF0H0QBLc93HJDv6I98IJQ59IF1EFJ1Kh38PT0pNGcCFCB0oSC2CDaN3s8L1U2T7",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub4cc\u011d\ube65\u820d\u83b6\ubac1\u54d4\ua03e\u56a4\u528d\u057e\u42f5\u218b\ub7e7\u35a1\uad94\uc96a\u42d1\u5c29\ua229\uadb6\uae50\u624b\u8595\u929f\u97e7\u2af1\u6216\ubef9\u6453\u4adc\u0d2e\u053f\u4d39\u80c6\u054e\u03b5\ucd60\u095d\u226d\u8600\u8b21\u953e\u3a0a\u2764\u8f7b\u94a1\u63df\u56fc\u80e1\uab74\u1608\u27d6\u7336\ucd08\u6918",
+      "key": "\u54b6\ud279\u43b8\uc561\uc3a0\u3b00\u4fbe\u1edf\u5b92\ua354",
+      "native": {
+        "output": "FOPSfS5yIP97OAH3TK7J2EyJTwMSh2RE6ThVKt21s1GpQQhUGIOSA4OL5OTK12KRXP274F0HT2L5FD05DT7GTWCA9FO11G0721H7QB0N1UQ8SgIUrS24VHZ5E8RF2KJ6MOu8UIREm43M0MI1SiV1kJNME5RHSdAPiL721TNU",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ucf98\ucd63\u33ea\u1d5f\u376c\u5993",
+      "key": "\u4998\u4adc\u96e9\u7a0d\u08ee\u88be\u3498\u318c\u7d94",
+      "native": {
+        "output": "4WSGPA0bATK4M1HGEA",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uc825\u68dd\ucf6f\u0a25\u0bf4\u298d\u5e02\u77e0\ub2da\u536f\uc9c6\u4bee\u8c63\u353b\u2166\u91eb\ubf79\u01aa\u1963\uaeef\u3de0\u7a6b\u8299\u40f3\u357f\u7ba0\u36b4\u92fe\u3834\uc22a\u784e\u231a\ua422\u99e1\ua1fe\uae04\u9248\u3a55\u4e65\u5d99",
+      "key": "\u9a3e\u7c8a\u34e2\u53dc\u3f0b\u4379\uae8b\u6710\u4f3d\u5d5a\u34a9\u3fb7",
+      "native": {
+        "output": "ME8GzUOzIBwDCg867LFLDQSOJAPOB76pHMJ6AHFN5URH4NZ8Bm23ADCuCDDI4GBJT42ZU4LPJECS3VV4H66JG!3KW65VBDsEKBD0nBDo8Kl7PQQOo1T1GMv2",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u6163\u3fa0\u2816\ua19e\u8286\uc00b\u510b\u0b38\u2cfe\ub239\ubd58\ub046\ub315\u6c32\ub3f3\ube30\ua8b0\u7446\uc365\u03b5\u79a3\u6f10\u77f1\u8660\uac80\u32c3",
+      "key": "\uc970\u179b\u9955\u268b\u1f8b\u8178\ua33c\u350e\u8f8a\u218f\uae7f\u6f5a\u0cfe\u67bb",
+      "native": {
+        "output": "AN5J2KIe7UA3Qg8EN43MTPqVU9751KHXSEb81W9AVC19SQk1EZJMMV1jK8NG1l2QsMN1Q2IJ4WFTpA",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u8cee\u094e\ub713\u13ed\u2823\ud33c\u484e\u8fc5\u79d8\u5e26\u1786\u0972\u4810\u4492\u36dc\u312f\u88d0\u7b58\u5634\ud262\u7ffe\u86a1\u7445\u8baa\uc92b\u0e35\u0e3a\u33cd\u8493\u8ed2\u2b12",
+      "key": "\u5a0a\u7ae0\u8310\u92a0\u225e\uc44c\u67a3\u7ce2\u99c2\u409f\u5dc9\u9b8b\u9ca8",
+      "native": {
+        "output": "EKEFF79TBM6C8_7NWJ7X2BnLDeETZ0P5PVAT2BD0eN1SK1xM5EB8a5V0A81MN_VVVQGGG4LC8o6JFQPNVKfIQfPKHLUD8",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uca8f\uabc9\u15ec\u5716\uc566\u2944\u3c39\ub3d3\u6ed4\u6ff1\u480c\u5cd8\u7fb7\u10bc\u97e1\u237d\u17fa\u71f3\u3162\ud778\ua9bb\u6457\u95d3\u86a9\ubad9\ua08f\uc3be\u4581\u0777\u361b\u7953\ua534\u3611\ub854\u833c\u4c64\uc9fc\ucb0d\uc3ee\ub679\u02b1\u4093\u5d27\u8486",
+      "key": "\u97c1\u8c87\u1871",
+      "native": {
+        "output": "66NGY0M4K91VFjQ3SVNoRRn4VhL408RiLIvKL6SPnFDWGK6HDrBEUO3_53ZCPvAES05eUON8NnDMG5ExGLtMPI83VO1QEFCN9x25oH8FIDHF2s12LVRqVNADE188f14k0Sq3",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u19b4\ud744\u09ba\u684b\ud31a\ucc8a\u4504\u7043\u0ffb\u94dd\u3748\uce35\ub2b3\u0125\u36d4\u9328\ub088\u71aa\ub56c\uabcc\ub5c4\u73a0\u4593\u89c8\u97ad\u8a1a\u7a52\ud478\u426d\u19e2\u0b8c",
+      "key": "\u076c\ud13f",
+      "native": {
+        "output": "SjJHk52gKQH26jVK67IA6VTVRV8R5EJcD6u7L5QEN6JLH18KIeRA_KRnTLSU4z8Aj4KZ0Lc1Pc5Cf5C27222VH1Q25ITO",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u249a\u968b\u87a7\u16a1\u42d0\ua634\uc7c3\uc868",
+      "key": "\u2ce6",
+      "native": {
+        "output": "RR5VmDAW36w3NtE15JV2UDqQ",
+        "hresult": 0,
+        "effectiveKeyLength": 1,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u17a1\ua8a7\u35e9\u371d\ub620\u02c5\u82b7\u32aa\ud584\u23c1\u2a20\u8bee\u7a7a\u56bc\u2857\u355c\u7526\ucc8e\u7d37\u7ee7\u8940\u382c\u2eba\u73e6\u7869\u943d\u6eed\u2854\ucc4d\u6dab\u6c0a\u2869",
+      "key": "\ucb7c\u9649\u79e6\ua050\u0a3e\u8216\ua3d7\ub137",
+      "native": {
+        "output": "VmPGKVBcHA4J3451!VRaPHsS5mGLoP0ADDnHFZJEM1JrPQmVUB11wOAqBL8GNlTRST4XA8LK2KGC2E1DQKD49o6BFL10K4pM",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u1c7e\ua4c1\u82a4\u9f53\u77b5\u1abf\u8a33\u8577\u8e24\ub7d0\ua5af\u7fcf\u34ce\u2556\u7b51\u4193\u4df2\ub5ec\uba02\u420c\u4a2c\u243b\uc74f\u3afa\ua375\ubddf\u7f9e\u688e\u5315\u2f2c\u590f\ua137\uba2b\ub940\u2bed",
+      "key": "\u8efe\uba04\u24dc\u17be\ud1aa\uad9b\uc6cc\u2992\u458d\u22fc\u1eeb\u3aad",
+      "native": {
+        "output": "CiJHISSjDUbU7BPPG89QFHq1UyQU4L8AN6hLR17Pe90VACyIL2DP47FB61vPMCP7dQVf4997G8UJn06BG779UPU8jJJVE7XDHj46z7GqI",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\uaf9c\uae77\u62e7\ua89f\u899a\u25f5\uae9b\ud6c2\u2d49\u83eb\u4366\u5bd6\u533d\u76e2\u112e\u5130\uc73b\u4872\uc636\u1148\u4056\u6198\u5fac\u07e6\u6cb0\u8057\ub23e\uc2aa\uca51\u4d64\u18b0\u49ba",
+      "key": "\ubbbe\u5c4a",
+      "native": {
+        "output": "ASR68S7GMNAFVx3JvLKW20p13rMB9P3jFFdQGhLAYRPWQF0VE55LTTHB8CCQMyTUl8HeMPgPUx2Fm1M4VIRLTt4PfLQfCICO",
+        "hresult": 0,
+        "effectiveKeyLength": 2,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ubba8\u30a2\u049b\ua00e\u994f\u72fe\u8a98\u4c42\u3de5\u3352\ub991\u54df\u64ba\uc86d\u7b50\u743f\u891e\u8a46\u0da3\u978d\u79f7\u5e26",
+      "key": "\u0ef8\u0ef0\u4e61\u1228\uade2\u1f78\u14a5\u1a29\uaee0\uc848\u7ac0\u4873\u38e7",
+      "native": {
+        "output": "8k8Sg169DMgQ0z3FN6Lq5B_MS2N8y9R6H7136S6BrR34T15H6OH3iQQc7TOO1E5MI8",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9e75\u02dd\u75c2\u39f2\u35ca\u01e4\u44b5",
+      "key": "\u6e96\ub31a\u9726\u339f\u7136\uac9f\u9b83",
+      "native": {
+        "output": "L000ANLPQH80PiM8GPNfI",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u6bc2\u2792\uc3c1\uaeeb\u4481\u9381\u2a43\ucefb\ua6ce\u2454\u6956",
+      "key": "\u61a4\u5a21\u67dc\u1d8c\u5bd6\ua10b\u61ff",
+      "native": {
+        "output": "BjNRSALiNClETJPPIHPKJVcD111FzQRGU",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9a42\u6bd2\u55e3\u4607\ua00a\ubb60\u30bc\u0d61\u9014\u6161\ub042\uae60\u2764\uae6f\u5698\u76f5\u6808\u5760\u7f34\u8c0d\u3593\u8ca1\ua053\u0539\ua90e\u9a88\uad70\u4cc5\ub179\uc538\u03e8\u9082\u85c7\ud225\u893c\uad57\u4c11\u249c\u2533",
+      "key": "\u47c5\u90ff\u4866\u5060\u1227\u4ffb\u6fdc\u8f70\u37f5\u0f84\u66ef\u0fc0\uae81\uabff",
+      "native": {
+        "output": "LE43b2CS1GhV2q0Vy1UsN3Z6OuUB1T7OT873M!U3xM2DLUJ1TaRJW7QGP5R8GH6E4AUD7IcMShMT76S2LEMM3lSSu8Vp77ETFt3IvQ5gHDvADJVCOTFwH",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u5bd8\u8669\u532d\uc454\ub6a2\ua496\ub169\u2557\ucbdd\u32cf\uc12c\u58ed\u6a3c\u082c\u99e0\u30e4\u1275\u1849\u38d2\u1a8a\u1c35\uaa3d\u4df2\u260c\ua764\u0732\u954b\u8966\u7fb4\u8dab\u6c92\u439b\u146d\u1065\u42b8\u25be\u8f88\u4bf2\u8463\ubd55\u25d9\u4bb3\uada1",
+      "key": "\ub698\ub408\u6434\u40a6\u758c\u1eef\ua150\u9f29\u3c69\uc33f\u6a18\ucf9a",
+      "native": {
+        "output": "4HLRnG2GK7UK5PDBCPV3FQfG99L4oQ4p6MT9FeC69F8!LBu1FM2EN90MP2zMOMVQ36FsFD3DA38Ko3T74BlJQ2FE1AKQ0NIDENSLwFPEDRqP7CGD1ME1IN7QIdODtH4O0",
+        "hresult": 0,
+        "effectiveKeyLength": 12,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u670c\u07ae",
+      "key": "\u07f7\u902a\u665b\u5e8a",
+      "native": {
+        "output": "9qDDQF",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub1a7\u3a6b\u3852\u8c47\u3520\u89d7\u59d1\ud5e2\uac74\ud5ab\u41fb\ua517\u5b02\ua7c5\u6715\ud69a\ua262\u4440\u1d5a\u3a19\u2b1c\u5aeb\uc88d\u3cd2\ud4ec",
+      "key": "\u07dd\ub632\ucffd\ud144\u263e\u1804\u1f8d\u7bd8\u7b35\uadff\ucf6f\ud7bf\u1100",
+      "native": {
+        "output": "9!79i9I0TQcAANDDr42XSHu6RfBSSSTAVNxV7TFQV2LF82Q03XN0z5KZNG68OcL3p6ILV3aCDf9",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ub43f\u6cb3\u5e3c\u36a4\ub9c4\u09e5\u293e\ubb7b\u0b20\u3a76\u1703\u78c6\u2bda\u81c1\uaab7\uc00c\uac3d\uafd7\u360a\u64e1\u37d8\u499e\u1ae9\u8d07\u87ad\ucce3\u963f\uba4f\ud48b\u7728\ub369\u812b\u50d2\ud1af\ub385\u4af4\u9357\u9095\u019c\u02d1\u918f\u056c\u98ee\uc05a\u318a\u6ac5\ud026",
+      "key": "\u0afd\u73ed\u6f15\uaa6b\ua0d3\u8a40",
+      "native": {
+        "output": "00O2q0EvHIv36RS1xQA!73lDREFSn7N5UKmI1!97pUF5PNbJ12QV!62qGNX39sPOjEAy52RNNW8I878pBEpH2rEHkAOrSSbSFIBS1LBkKGCMTCIHwF3zBNPJOT1LDH0Z3QvM73K4J71hD",
+        "hresult": 0,
+        "effectiveKeyLength": 6,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u532b\ubf05\ub153\ucc3a\u24d9\u7f4f\u5468\u963b\ubc86\u2bc2\ua98b\u0b2b\u693a\u7001\u7032\u6866\u9add\u15bb\u7c18\u85e7\u87c0\u5235\uaa5a\u9e7d",
+      "key": "\uaf1b\u93e5\ubcf2\uc0ba\u377f\u3fb5\u74f2\u1cc6\u672b\u674d\u23d4\u68d3\u9825\u1917",
+      "native": {
+        "output": "C5D7XJVpNNhG7p6BdPA4T5bNC6PSGHQ51RJ53w9KrI3f58sK0aJC8ETNG7Y2J5R9ST0u8Pe1",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u404f\uafbb\u3e57\u9f9d\u6fa8\u13cb\ubda0\ub4d6\u05d2\u0a13\u46c4\ua4e8\u1351\u5d56\u334b\u3ad0\ua6e7\u3f4c\ubd8a",
+      "key": "\u3887\u0d9c\uba03\u70b1\ucd9f\ud657\u2b66\u6827\u3257\ud614",
+      "native": {
+        "output": "HyQTBR729C9PJNBBGK59IBO4G0U3bB7r8JXOIIHC4QUNRK7FU!9ABISQP",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9b4d\u7cd1\ub89d\u65ca\ub7f9\u9458\u323b\u0e19\u0fb2\u9d4e\u7440\u5b5e\u701a\u53b1\u8439\uc8b4\ub64d\ua623\ua304\u03f8\uaaa3\u5226\u1428\ua2c9\u3cd4\u99ae\u8f4f\u2df0\uc45a\u896d\u0fd7\u2f9e\u2ddf\uccb1\u754b",
+      "key": "\u5158\u8271\u1610",
+      "native": {
+        "output": "C8LQxV7v3HpK3COR_25tG7zAA83I9HVEHLjQN_O9p7275V3QSw0Jl8HYMEiF42OPh4JFULtRAr18pAJB000NU4SSeN4zEA_UBTN5L6MkR",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u404b\uc374\uaa78\u8239\u5083\u1556\u9024\uba79\u1c29\u758a",
+      "key": "\u304a\ub6c4\uaad0\u0f45",
+      "native": {
+        "output": "DEA7u1S49M1JEsSE3MCE8GAIFFIHu6",
+        "hresult": 0,
+        "effectiveKeyLength": 4,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u9b01\uabf9\u4b54\uc849\u9da2\u9b48\u4057\u5d65\u5616\u42fc\u7df7\u2043\u7062\u5bfa\ua899\ua897\u9beb\uc52d\u44e6\ub375\u1f9b\u1f77\u4e11\ubb02\u7153\u016a\u16f3\u02f9\u1112\u4c8e\u58c6\ud636",
+      "key": "\u1507\u4561\u3b45\ub102\u6e91\uaacd\u823a\u584e",
+      "native": {
+        "output": "ELPKHC8XA2XDKxMBQ5OzEQ98Ky7OaHCw4MhRQdE9WVRKHC_LTS2THCOvRAqEJT4IY444VQvN6GDTTLTN8RVDFmMVwVPbKNIQ",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\ud399\u3372\ua97d\u6a60\u52bc\u108f\u79c6\u7ea9\uc728\u6ddf\u3199\u9b5a\ud264\u96b4\u9c73\u3b2e\u026c\u7daf\u4681\u3389\u6fc9\u4011\ubfb9\u099f\u53c1\ube49\u36e2\u48df\u2a31\u42c1\ubc24\ub60b\u2f6b\uc8b2\u2b09\u500a\ua81b\u7de6\uc200\ub34e",
+      "key": "\u7d64\u20d0\u1791\u6d67\u5c6d",
+      "native": {
+        "output": "5pAE0NBD4IwDMWJ748ITBKk9P27HhHFq2SBD946TF3LxE32MP37Q62QR9VL33v6MfBCIEAES1mL9RDVIL4T4OLKOp2J!NM934j0M78M269x47wLSp99xRJWH",
+        "hresult": 0,
+        "effectiveKeyLength": 5,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u19b0\uafce\uc046\u9d0e\ubd42\u91d4\u198f\u6a66\u10fc\uc2a7\u2d1e\u8388\u7981\uafde\u85fd\ubb6c\u41e6\u7717D\u7c47\u0150\u7d7d\u3b1a\u87af\u7cf3\u0215\u46d8\u5419\u91a9\u76e9\u9f80",
+      "key": "\u850f\uac29\u8277\u2b2a\u4cb4\u6c8e\uacff\u63ee\u0758\u5140",
+      "native": {
+        "output": "Qp5Jf7DV7MITSW9L464DN29V7PHHv2Cb36962!HPhGRN2EVLJMAS0IHPR9bQBcS80TILHFo3QW05dJ4u2TUS9!9NeJEy8",
+        "hresult": 0,
+        "effectiveKeyLength": 10,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u840c\u783c\ud52a\ud7f6\u60e1\u3d8b\u580c\u2ef5\u688a\u1371\ua454\u0839\ua9a1\u493b\u9675\ua826\u450b\u8e77\u0db7\u6c83\uc4ef\u8830\u398d\u7797\u73e8\u5112\u08d3\uc449\u0fbf\u57ea\u16c3\u50b5\u6f04\u2693\u4d60\u5f20\u0e88\u25c2\u85e4\u5cd0\u522a\u7bf9\u0f0b\uc2a0\u3f09\u5183\ubec9\u793f\u4aff\u7b66\u6c0b\u7cf4\ubb1a\u5bce\uc80f",
+      "key": "\u40ae\u0426\ua748\u6849\u95fc\u63ef\u20ed\u98d6",
+      "native": {
+        "output": "DjKMvGOBH7gFPeA1FU7KB9zAAW38gG6dNNlFUkSET7LZ4NCT6LSS8KO!QS3IAS5EeRN5C4_T7r6Ej7CKU9JMVq0FqIFM1BuTGET7GBM52KVRSt8J5A0W7TFKD98BKMUYMHdMBqSEo5HMD4u05aKBNQQkVC8P3L7HCIFLG",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u6852\uabfb\u6d94\u7fde\ube28\u7574\ucdd7\u24be\ub092\u3804\u0080\u6956\u421e\ucf80",
+      "key": "\u8378\ub997\u1a40\u6e63\u7f0f\u018d\u947b\u67ce",
+      "native": {
+        "output": "GFA4DQQLPO2PCiOCk4T1O3iTCTL2FUIRKMVNGtFTZB",
+        "hresult": 0,
+        "effectiveKeyLength": 8,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u54e0\u120b\u27db\u9541\u6f3f\u4923\u47af\ub2b2\ucff1\u1753\u00bc\u725d\u0aca\u676f\u3dc7\u61b9\ud795\uae1a\u40e3\ub39d\u956a\ubde9\uacc7\u2cd0\u54bd\u0a6e\ud753\u05e4\u20d2\u6d41\uab9d\ub1bc\u01d8\u9b65\u665b\u3382\u9acc\u10bf\u1447\u4a1a\u18df\u9fae\uafd0\uab4f\u71c2\u9a42\u17e7\u05ae\u477d\u52fe\u9170\u9855\ua258\u5d4e\u6a8b\u0153",
+      "key": "\ua11f\u8370\u0f2d\u7d21\u891e\u0bb0\u6459\u97b1\u5462",
+      "native": {
+        "output": "Nx4PZVJ6BRmENnA5qKU5D4fCFO6Rh8JZRMdEAe5GfD0xIIbD9x6MgEEHM9f2EW5CdG2tR8UL4ZTIU01oI469VuPIIB8U3P!NASJE_B6GD2HPTC5H5N1QTO5C3oU0h238BETQ7DIAcGOVP3eK2ESRe50yHP9NEFU6t0EP3NMF",
+        "hresult": 0,
+        "effectiveKeyLength": 9,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "supported",
+      "input": "\u55a2\uc38d\u63c7\u664c\ucdbb\ua22a\u22a3\ud5e6\ucf51\u8324\u4109\u7969\u76e1\u9448\u90a4\u18d5\u0a44\u3848",
+      "key": "\u8037\ub336\u4e85\u8517\u98f2\ubba4\u845e\u74aa\uc57c\u872a\u0254\ub3bb\u5508",
+      "native": {
+        "output": "LU26REP7VGeMTq6K!Q8F86uGBYNJwKEFAMq0OV3EnCET9AhDUe6NcT",
+        "hresult": 0,
+        "effectiveKeyLength": 13,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "edge",
+      "input": "emoji \ud83d\ude00",
+      "key": "TagData",
+      "native": {
+        "output": "6mGCELMi26vUUUIJ!GBuSVsL",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "edge",
+      "input": "binary\u0000text",
+      "key": "TagData",
+      "native": {
+        "output": "6mNSC7K0F2z74IOMlA14SVFVO!U7zHEIK",
+        "hresult": 0,
+        "effectiveKeyLength": 7,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "edge",
+      "input": "audit",
+      "key": "12345678901234567890",
+      "native": {
+        "output": "6V7KwNAmOP68PyE",
+        "hresult": 0,
+        "effectiveKeyLength": 14,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    },
+    {
+      "kind": "edge",
+      "input": "audit",
+      "key": "abc\u0000def",
+      "native": {
+        "output": "VHP5FTTwPCjOF2A",
+        "hresult": 0,
+        "effectiveKeyLength": 3,
+        "networkDimensions": [
+          25,
+          10,
+          1024,
+          16
+        ]
+      }
+    }
+  ],
+  "knownVectors": [
+    {
+      "input": "00000001",
+      "key": "000101",
+      "actual": "MWNDu5BBD5YND7UFBSMsIQv2",
+      "expected": "MWNDu5BBD5YND7UFBSMsIQv2",
+      "matched": true
+    },
+    {
+      "input": "21:22",
+      "key": "TagData",
+      "actual": "6o7UEV2GF5uKVqU",
+      "expected": "6o7UEV2GF5uKVqU",
+      "matched": true
+    },
+    {
+      "input": "MWNDu5BBD5YND7UFBSMsIQv26nHTELGTVEh47lGLjGRv9KoKQVOMgH7sB",
+      "key": "TpyRcNeyeK",
+      "actual": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnVSVSNLLLnTAS2NyCJtJUD3VGHDbN6K76iHU!QGk8UrNGi8Uz9Tc9QVCIr2TyL6eAUTMUCVHm8EcI0yABuRMv7N4LVz1",
+      "expected": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnVSVSNLLLnTAS2NyCJtJUD3VGHDbN6K76iHU!QGk8UrNGi8Uz9Tc9QVCIr2TyL6eAUTMUCVHm8EcI0yABuRMv7N4LVz1",
+      "matched": true
+    }
+  ],
+  "basic": [
+    {
+      "description": "empty document collections",
+      "input": {
+        "fieldValues": [],
+        "subImageCount": 0,
+        "mask": 0
+      },
+      "native": {
+        "maskHex": "00000000",
+        "counts6": "000000",
+        "tagData": "",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "tagFragment": "",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A"
+      }
+    },
+    {
+      "description": "one SubImage with zero fields",
+      "input": {
+        "fieldValues": [],
+        "mask": 0
+      },
+      "native": {
+        "maskHex": "00000000",
+        "counts6": "000100",
+        "tagData": "",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "tagFragment": "",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A"
+      }
+    },
+    {
+      "description": "one field selected with empty payload",
+      "input": {
+        "fieldValues": [
+          ""
+        ],
+        "mask": 1
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!B"
+      }
+    },
+    {
+      "description": "one fixed ASCII character",
+      "input": {
+        "fieldValues": [
+          "A"
+        ],
+        "mask": 1
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "A",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6nK",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26nK",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26nK",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnS"
+      }
+    },
+    {
+      "description": "one TimeText field from confirmed vector",
+      "input": {
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": 1
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "21:22",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6o7UEV2GF5uKVqU",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFo91NG7lLLSELsTMvM2jQA_3K2CTVVIeRTpAJ6L"
+      }
+    },
+    {
+      "description": "barcode logical payload clipped to 20 UTF16 units",
+      "input": {
+        "fieldValues": [
+          "~1010000000000000021000000~d029930000",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored"
+        ],
+        "mask": 1
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000115",
+        "tagData": "~1010000000000000021",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6mBSANSFMRqS3lSI0ASe8Iq5R8QHSJR77SoHM79LqHRLPBzLUr4022L4PFPJ",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26mBSANSFMRqS3lSI0ASe8Iq5R8QHSJR77SoHM79LqHRLPBzLUr4022L4PFPJ",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26mBSANSFMRqS3lSI0ASe8Iq5R8QHSJR77SoHM79LqHRLPBzLUr4022L4PFPJ",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFtEFE14tJB8QHyE4c51D13SR5m2JC4C!HReJIzNMv7EaRC14TVSJX1Ti6D_S6QHLuGOoN2BIHtEKkTPwVMq4RaLNP4UrOELUSs51e139EUN1QgGBt63L0QEVRvKL!22pG2THF14PjEMl1UuEIqUQj16i9A2K4l7S_GUrLALTBXKI78"
+      }
+    },
+    {
+      "description": "two-bit collection concatenation",
+      "input": {
+        "fieldValues": [
+          "left",
+          "right"
+        ],
+        "mask": 3
+      },
+      "native": {
+        "maskHex": "00000003",
+        "counts6": "000102",
+        "tagData": "leftright",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv0",
+        "tagFragment": "6mPSELG5F7VFBsRMVBAjR3v0RF9",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv06mPSELG5F7VFBsRMVBAjR3v0RF9",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv06mPSELG5F7VFBsRMVBAjR3v0RF9",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!9Mm2KE32q4MLVGd9AVI2CANyQFx3Kx38aQBnPHUGRX89K1UyEErJ45I8_CA9KQfD9gHOvGFqCIKEMjFHwB"
+      }
+    },
+    {
+      "description": "three-bit collection concatenation",
+      "input": {
+        "fieldValues": [
+          "ab",
+          "cd",
+          "ef"
+        ],
+        "mask": 7
+      },
+      "native": {
+        "maskHex": "00000007",
+        "counts6": "000103",
+        "tagData": "abcdef",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv4",
+        "tagFragment": "6mKCEQTxA9DDIxIJ0J",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv46mKCEQTxA9DDIxIJ0J",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv46mKCEQTxA9DDIxIJ0J",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!DMm27E1DB7FBAVlIJnLEHPKMQ6E68s0A6EMZCMi5EmCCILNxNVtHK2S"
+      }
+    },
+    {
+      "description": "three nonadjacent bits",
+      "input": {
+        "fieldValues": [
+          "ab",
+          "ignored",
+          "cd",
+          "ignored",
+          "ef"
+        ],
+        "mask": 21
+      },
+      "native": {
+        "maskHex": "00000015",
+        "counts6": "000105",
+        "tagData": "abcdef",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsJAvE",
+        "tagFragment": "6mKCEQTxA9DDIxIJ0J",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsJAvE6mKCEQTxA9DDIxIJ0J",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsJAvE6mKCEQTxA9DDIxIJ0J",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUWB5V7MzGSi01vATlQ1L6QwA6D778KKmHSq5Qd1AUR6ESOf47v5ChFMiN3aS4rN7aH"
+      }
+    },
+    {
+      "description": "ASCII clipping after concatenation",
+      "input": {
+        "fieldValues": [
+          "abcdefghijklmnopqr",
+          "STUVW"
+        ],
+        "mask": 3
+      },
+      "native": {
+        "maskHex": "00000003",
+        "counts6": "000102",
+        "tagData": "abcdefghijklmnopqrST",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv0",
+        "tagFragment": "6mKCEQTxA9DDIxIJ0JQ!0E_B7qT6E1UuOIoFLrALmQAvBSvL9i8Qs2MDSI99",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv06mKCEQTxA9DDIxIJ0JQ!0E_B7qT6E1UuOIoFLrALmQAvBSvL9i8Qs2MDSI99",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv06mKCEQTxA9DDIxIJ0JQ!0E_B7qT6E1UuOIoFLrALmQAvBSvL9i8Qs2MDSI99",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!9Mm2KE32qVUHLPXQD74Ll4H_HVM7FtSMC8K_OSzGD!GSyD0!SGm2JICRqFL8GHgHAW6CxBHR7UjK1N1A5UVxUNa57i9Ad9ATDBYUPK5Gf2Nx0CwU4!1FYUR5ANg5QaPHZFIbJ6NPQnRVa0PQ3HgGUZBDCAGyHMZ49JVQqABrCQANFr65RSVX1"
+      }
+    },
+    {
+      "description": "Unicode clipping preserves a full surrogate pair",
+      "input": {
+        "fieldValues": [
+          "abcabcabcabcabcabc",
+          "\ud83d\ude00x"
+        ],
+        "mask": 3
+      },
+      "native": {
+        "maskHex": "00000003",
+        "counts6": "000102",
+        "tagData": "abcabcabcabcabcabc\ud83d\ude00",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv0",
+        "tagFragment": "6mKCEQTxA9D82xNFyS6n4DePUr1DTESf6LqA6o4CEUNh8JPV9oKMI1KJ6DEA",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv06mKCEQTxA9D82xNFyS6n4DePUr1DTESf6LqA6o4CEUNh8JPV9oKMI1KJ6DEA",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv06mKCEQTxA9D82xNFyS6n4DePUr1DTESf6LqA6o4CEUNh8JPV9oKMI1KJ6DEA",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!9Mm2KE32qVUHLPXQD74Ll4H_HVM7FtSMC8Ky4K!01uBEk8LvRLvECn4E8OUOKD0LNhTThL3zCJ!2UvP4xGBtDE8GGr42MVDS8Vf0IvJBsNEAGV_TFr6ElGCqVEuVRxR3hBUjRNuACyRUSVRjEGYLEG5KFMSy0SiNFzI5wUCuGLQJSLNDcGFPT"
+      }
+    },
+    {
+      "description": "Unicode clipping splits a surrogate pair",
+      "input": {
+        "fieldValues": [
+          "0123456789abcdefghi",
+          "\ud83d\ude00"
+        ],
+        "mask": 3
+      },
+      "native": {
+        "maskHex": "00000003",
+        "counts6": "000102",
+        "tagData": "0123456789abcdefghi\ud83d",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv0",
+        "tagFragment": "6o5UE95GQVv69!FEyK876JEB9K36a2QNHFy6SvACu37tL8TUFlJGjGNwIHsJ",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv06o5UE95GQVv69!FEyK876JEB9K36a2QNHFy6SvACu37tL8TUFlJGjGNwIHsJ",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv06o5UE95GQVv69!FEyK876JEB9K36a2QNHFy6SvACu37tL8TUFlJGjGNwIHsJ",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!9Mm2KE12pJSOAS_T4hRNj21dNFSVBXIKKT7!H7_ODGUEwNIvVEoS6P39MRKKCLI4Hq2G!7QLTFW7JHEMxF0nRRfA2i540EJA35lBUm8VzCMZQKaRJIUTL98k6LzRNx61c9NHUOA5FwPVs13CK2oEFy2L!6Gz77uUE!0CrIJSTH8VJsJQ88J95"
+      }
+    },
+    {
+      "description": "embedded NUL in selected BSTR",
+      "input": {
+        "fieldValues": [
+          "abc\u0000def"
+        ],
+        "mask": 1
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "abc\u0000def",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6mKCEQTxA9E9IxH1SJR_8",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEQTxA9E9IxH1SJR_8",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsIQv26mKCEQTxA9E9IxH1SJR_8",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LKHyPNhDL7LQ_A3x64R5FsBKx9FNLGuTEpOKSLFxDP5CQhV"
+      }
+    },
+    {
+      "description": "high mask bit 31",
+      "input": {
+        "fieldValues": [
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "last32"
+        ],
+        "mask": 2147483648
+      },
+      "native": {
+        "maskHex": "80000000",
+        "counts6": "000132",
+        "tagData": "last32",
+        "maskFragment": "MWVDu5C7LKqSOkU1vHRf70JT",
+        "tagFragment": "6mPSEHG5QVHVUrUICU",
+        "normalIntermediate": "MWVDu5C7LKqSOkU1vHRf70JT6mPSEHG5QVHVUrUICU",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWVDu5C7LKqSOkU1vHRf70JT6mPSEHG5QVHVUrUICU",
+        "clStVersionInfo": "PyOA!LMeR5fENkGU!93sF7yOUOJUwBNTV7c7O_FAXNBE24uOFAV5G2USPNzOLdCFIJNt3GDU2SSVNACa9SdOAyQQ598uP5RAUnLTrPTPVCFUNh9CyFUq37uM5A1InJ"
+      }
+    },
+    {
+      "description": "three bits including bit31",
+      "input": {
+        "fieldValues": [
+          "alpha",
+          "beta",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "omega"
+        ],
+        "mask": 2147483651
+      },
+      "native": {
+        "maskHex": "80000003",
+        "counts6": "000132",
+        "tagData": "alphabetaomega",
+        "maskFragment": "MWVDu5C7LKqSOkU1vHRf70JU",
+        "tagFragment": "6mKCEKVxV4R7OlK0PFUzUMlVUIGPuLDs9EFAUv88a5",
+        "normalIntermediate": "MWVDu5C7LKqSOkU1vHRf70JU6mKCEKVxV4R7OlK0PFUzUMlVUIGPuLDs9EFAUv88a5",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWVDu5C7LKqSOkU1vHRf70JU6mKCEKVxV4R7OlK0PFUzUMlVUIGPuLDs9EFAUv88a5",
+        "clStVersionInfo": "PyOA!LMeR5fENkGU!93sF7yOUOJUwBNTV7c7O_FAXNBE24uOFAV5G2USPNzOLdCFIJNt3GDV2SLMNQRfB3fO4rICRMQvFVaRPgQNJOM5EGnP2C0NwQImRKO6PJ3OpAPB6P_NSuMOhK6nN0534s3Ms8AF9MW9KI6NvS7!CLwEFuFEOK5_QFUG5i97dE1TMSoJ0xDVjF"
+      }
+    },
+    {
+      "description": "counter saturation at 99 with bit31",
+      "input": {
+        "fieldValues": [
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "capped",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored",
+          "ignored"
+        ],
+        "dateOffsetCount": 120,
+        "subImageCount": 100,
+        "mask": 2147483648
+      },
+      "native": {
+        "maskHex": "80000000",
+        "counts6": "999999",
+        "tagData": "capped",
+        "maskFragment": "MWVDu5C7LKqSOkU1vHRf70JT",
+        "tagFragment": "6mMCCFSaH8s5UED7zP",
+        "normalIntermediate": "MWVDu5C7LKqSOkU1vHRf70JT6mMCCFSaH8s5UED7zP",
+        "fileMetadata": null,
+        "metadataFragment": "",
+        "metadataLengthFragment": "",
+        "intermediate": "MWVDu5C7LKqSOkU1vHRf70JT6mMCCFSaH8s5UED7zP",
+        "clStVersionInfo": "PyOA!LMeR5fENkGU!93sF7yOUOJUwBNTV7c7O_FAXNBE24uOFAV5G2USPNzOLdCFIJNt3GDU2SSVNACaKCb3DLNPMTFzEHqLGwLNl2GwQBvONgP9yOEw28uJUESUPR"
+      }
+    }
+  ],
+  "optional": [
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [],
+        "mask": "0",
+        "sourcePath": "C:\\labels\\Report.ciff",
+        "includeFileMetadata": true
+      },
+      "native": {
+        "maskHex": "00000000",
+        "counts6": "000100",
+        "tagData": "",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "tagFragment": "",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "fileMetadata": "Report.ciff",
+        "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv3",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn8"
+      }
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [],
+        "mask": "0",
+        "sourcePath": "C:\\labels\\Report.ciff.new",
+        "includeFileMetadata": true
+      },
+      "native": {
+        "maskHex": "00000000",
+        "counts6": "000100",
+        "tagData": "",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "tagFragment": "",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+        "fileMetadata": "Report.ciff",
+        "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv3",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn8"
+      }
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "C:\\labels\\Report.ciff",
+        "includeFileMetadata": true
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "21:22",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6o7UEV2GF5uKVqU",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "fileMetadata": "Report.ciff",
+        "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn9NJORD23yC6sRHC8VYRIS9Au8TCKR_9LrN3QAJjKSiBTgG"
+      }
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "D:\\other\\Report.ciff",
+        "includeFileMetadata": true
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "21:22",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6o7UEV2GF5uKVqU",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "fileMetadata": "Report.ciff",
+        "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn9NJORD23yC6sRHC8VYRIS9Au8TCKR_9LrN3QAJjKSiBTgG"
+      }
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "Report.CIFF.NEW",
+        "includeFileMetadata": true
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "21:22",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6o7UEV2GF5uKVqU",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "fileMetadata": "Report.CIFF.NEW",
+        "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3C0NtO6vUIiH3tBVdDD!QKjM",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQzH",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsGQzH6n7VCAEJC1R2Un4Ss3HcQ3C0NtO6vUIiH3tBVdDD!QKjMMWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVILB77VMeQVt0EKIL!D5LPEgG6vTIxBRz9FoMD85Kl84xIRjMNiC4_QIr6VaJ4R1QHSQ03EK6N!88U3DOFVX7R_CAhLMeR2bP3LN9V9EuOUeTUyN1k1TxS3iLN!5Ts0SFL2j55gHVvRIsEF93UUAVr25t93THVqA8SPHW4Bz57hHMn1Rr8EbTBSB1CADeUE51UOQQr2FAUMD312KIEP3dDSIR5rFE4K0pS1MQQ0TJx6Hs9UA1NiV6mO7LQM3FM!HCl2"
+      }
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "\u0418\u043c\u044f \u0448\u0430\u0431\u043b\u043e\u043d\u0430.ciff",
+        "includeFileMetadata": true
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "21:22",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6o7UEV2GF5uKVqU",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "fileMetadata": "\u0418\u043c\u044f \u0448\u0430\u0431\u043b\u043e\u043d\u0430.ciff",
+        "metadataFragment": "6JDFU70oA6BDEQD6LCHCPJD50WSFFJHZQOa5MH9DNKKlFKO9",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsHA_D",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsHA_D6JDFU70oA6BDEQD6LCHCPJD50WSFFJHZQOa5MH9DNKKlFKO9MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW95PLIzLMe3Gk6Pe63v2Vh3RiL7aFGTQPo83bDCFG4hTTn3PeI5dC5TF3TBGvFA!26y24Q0Vy1Os88HMQCKVj5TRN14NVNS992QHJJkNOSH5qQVV9TOG8VFEaK6FSUQBNJPNvRRi9Lw9NSBLUJI_RKz01dI0kVFtL0SBEwEFg0OdD2tQJEALuCRtK6I97PVJgJAACP8SLuDPkTCOSUgNCm53BMOS6PnFOtJQLKMoUEsS6T9HdLASQ3Z3LLHR!4VqAOT6KhAGX6IN2ToV"
+      }
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\ud83d\ude00.ciff",
+        "includeFileMetadata": true
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "21:22",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6o7UEV2GF5uKVqU",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "fileMetadata": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\ud83d.ciff",
+        "metadataFragment": "6mKCEPT_DO1SDxBVnK9xQLW7Vm55PTVz83lTRgIDW6C7PV!43wGD!AET6MlMNm0BFUAuM6cOB1RAB6AcS8D1NwL0w0JjS9uB7xLT!K9fP5QP5V3Nz7Nn58BMMpK0UVRGQDzM624KaOCd85SSU_TK8QKMERP57lT9XF7NHMLNFFMEsKVU9L9H8tR0DTFZ2CP0UlNEw5TPH8dBA25M!PGwL8l7IpK4EJ39HNzBFnKCVQIbC2RCUuR9cCAEL0DCKxQQbD5sQ6P5DkL7lCKl12jC4TR7ZQATV2wE7m6EHKSAAKR8TKSHGEVkC0uGGuO",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBT6sOUTV",
+        "intermediate": "MWNDu5BBD5YND7UFBT6sOUTV6mKCEPT_DO1SDxBVnK9xQLW7Vm55PTVz83lTRgIDW6C7PV!43wGD!AET6MlMNm0BFUAuM6cOB1RAB6AcS8D1NwL0w0JjS9uB7xLT!K9fP5QP5V3Nz7Nn58BMMpK0UVRGQDzM624KaOCd85SSU_TK8QKMERP57lT9XF7NHMLNFFMEsKVU9L9H8tR0DTFZ2CP0UlNEw5TPH8dBA25M!PGwL8l7IpK4EJ39HNzBFnKCVQIbC2RCUuR9cCAEL0DCKxQQbD5sQ6P5DkL7lCKl12jC4TR7ZQATV2wE7m6EHKSAAKR8TKSHGEVkC0uGGuOMWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzIG!GBjM4bLA3NCZTKTJ0HKU7Q6v0Eo7SqF8IVPiBJsE7UKGz7Mz7DeS4a3SRC1_F6DCHzMEeCAo6DKJC_4LcIKM3Ay1UJNECTM98Fn0Lv9Ts3QO3PqC3o2P8SDJUQD1V1BRj03jOCkUBkBH!TGuC3oOE8VFpU1FKIiF7ZQ6bQ4a3FKEUq5UlL2kH0uCLL4GeDUlHTkCUTKTQTB_8BkGTzPC!D7sFTm6MgIAwM1q93DDAu0U0NOW75639LLRIDTiQBo666CTX4EDLIiTAhOOeRVoKQPILYM2xTVH0RkLJgDHmE6DGQ!79KTHd9EETHjC5jADl8SbRB7NEV9GeU1eKE4CHLLBiHMYI014LpLNP33zNMxANuKJz82NKN!EFzG5z8SsDR7RUkA54ALs2PUBM!S1TOUvVMZAGIEEZ5LL3Jo66TLUb4Lq0OX38TSP!FV_JMeL7aICuQEOVDpBEDUJx28q8AsM7TBPsRUK767CIKIJSJUGPMr0TB2Vd1IFIRWVOd4Bz76iDFTQIuCPjIJy5FyPGDRJZEUFTQDR9055v4Mi4TfGRk1NcGKSUPdCDd6KK4RMAE!83qMVS79y2OzRTITFj5Cw6HwBKk63fNFhBLnL9MFUs03a6UVENuVQn6TNR1V1MhOO!CNzQTvT2lDNx7Gt1VPGH!NAj7THOUuLIs9UTCP20QuE7gJGfO8hH4f40nDTDPP_ONjHJyNIyMFxN3SNEQ4Vs0ROVN!4JK74NKVS7VcAEh6Sd01e06PUHKGMzSKRQUr2CtLF3JKnS2KVVqTN46J94PmMIOQP!D6eTNsHKt8BuAEe76NF0SRNt4QkE6IANs0PzQEVP6dOQIDJZ8EwF7o9A41GG6RS6U!0ORKJ3N7NLCbLPEDCSHNgL2k42iQQNGR41HlI9bKSLHUmO7VAMY9PSI9ePSuN7W2KSQPvRMtTAMCL0FLtA5CQ6uSBfNNxIClQBvNMq0Pb7R70NiSC_UTjTQyKPy9Eg87l1MBJ6ZB17T7qBFw4IsPG3SPUJNEQUo4NDE2fTKy9Ht835SSJ2Q0PCLVS6MPr9B876hSL6G3uI3CAIZIP6E"
+      }
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "C:/folder/a:b.ciff",
+        "includeFileMetadata": true
+      },
+      "native": {
+        "maskHex": "00000001",
+        "counts6": "000101",
+        "tagData": "21:22",
+        "maskFragment": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "tagFragment": "6o7UEV2GF5uKVqU",
+        "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "fileMetadata": "a:b.ciff",
+        "metadataFragment": "6mKCC2VvB4pFI_K3WBA61Vs5",
+        "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsJAv3",
+        "intermediate": "MWNDu5BBD5YND7UFBSMsJAv36mKCC2VvB4pFI_K3WBA61Vs5MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+        "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUWB5V7MzGSlM9pCTXH2_7RjLHyLBlLPiTHnQQcHMCNO85PNBFQ81yFAa0EkK7yL2kLKoEBJBRrHGU6Ry57c6NQ4RzJUXMQVDVuT1rPECEUvCVwGMzDC_O7IBKx3Tv6RaLF6QJ5EK!18k6AyEAdAF3GKsRJN8RTDTaUGMPGpPOzIBxBGwMJX00y4UqKME9QwMDx9APAHd8"
+      }
+    }
+  ],
+  "paths": [
+    {
+      "sourcePath": "C:\\labels\\Report.ciff",
+      "nativeName": "Report",
+      "nativeExtension": ".ciff",
+      "native": "Report.ciff"
+    },
+    {
+      "sourcePath": "C:\\labels\\Report.ciff.new",
+      "nativeName": "Report.ciff",
+      "nativeExtension": ".new",
+      "native": "Report.ciff"
+    },
+    {
+      "sourcePath": "D:\\other\\Report.ciff",
+      "nativeName": "Report",
+      "nativeExtension": ".ciff",
+      "native": "Report.ciff"
+    },
+    {
+      "sourcePath": "Report.CIFF.NEW",
+      "nativeName": "Report.CIFF",
+      "nativeExtension": ".NEW",
+      "native": "Report.CIFF.NEW"
+    },
+    {
+      "sourcePath": "Report.CIFF.new",
+      "nativeName": "Report.CIFF",
+      "nativeExtension": ".new",
+      "native": "Report.CIFF"
+    },
+    {
+      "sourcePath": "Report.new",
+      "nativeName": "Report",
+      "nativeExtension": ".new",
+      "native": "Report"
+    },
+    {
+      "sourcePath": "Report",
+      "nativeName": "Report",
+      "nativeExtension": "",
+      "native": "Report"
+    },
+    {
+      "sourcePath": ".ciff",
+      "nativeName": "",
+      "nativeExtension": ".ciff",
+      "native": ".ciff"
+    },
+    {
+      "sourcePath": ".new",
+      "nativeName": "",
+      "nativeExtension": ".new",
+      "native": ""
+    },
+    {
+      "sourcePath": "a.b.ciff",
+      "nativeName": "a.b",
+      "nativeExtension": ".ciff",
+      "native": "a.b.ciff"
+    },
+    {
+      "sourcePath": "C:\\dotted.folder\\plain",
+      "nativeName": "plain",
+      "nativeExtension": "",
+      "native": "plain"
+    },
+    {
+      "sourcePath": "C:\\dotted.folder\\Report.ciff",
+      "nativeName": "Report",
+      "nativeExtension": ".ciff",
+      "native": "Report.ciff"
+    },
+    {
+      "sourcePath": "dir/Report.ciff",
+      "nativeName": "Report",
+      "nativeExtension": ".ciff",
+      "native": "Report.ciff"
+    },
+    {
+      "sourcePath": "C:Report.ciff",
+      "nativeName": "Report",
+      "nativeExtension": ".ciff",
+      "native": "Report.ciff"
+    },
+    {
+      "sourcePath": "\u0418\u043c\u044f \u0448\u0430\u0431\u043b\u043e\u043d\u0430.ciff",
+      "nativeName": "\u0418\u043c\u044f \u0448\u0430\u0431\u043b\u043e\u043d\u0430",
+      "nativeExtension": ".ciff",
+      "native": "\u0418\u043c\u044f \u0448\u0430\u0431\u043b\u043e\u043d\u0430.ciff"
+    },
+    {
+      "sourcePath": "Report.",
+      "nativeName": "Report",
+      "nativeExtension": ".",
+      "native": "Report."
+    },
+    {
+      "sourcePath": ".",
+      "nativeName": "",
+      "nativeExtension": ".",
+      "native": "."
+    },
+    {
+      "sourcePath": "..",
+      "nativeName": ".",
+      "nativeExtension": ".",
+      "native": ".."
+    },
+    {
+      "sourcePath": "a..",
+      "nativeName": "a.",
+      "nativeExtension": ".",
+      "native": "a.."
+    },
+    {
+      "sourcePath": "C:",
+      "nativeName": "",
+      "nativeExtension": "",
+      "native": ""
+    },
+    {
+      "sourcePath": "C:/",
+      "nativeName": "",
+      "nativeExtension": "",
+      "native": ""
+    },
+    {
+      "sourcePath": "C:/labels/",
+      "nativeName": "",
+      "nativeExtension": "",
+      "native": ""
+    },
+    {
+      "sourcePath": "C:Report",
+      "nativeName": "Report",
+      "nativeExtension": "",
+      "native": "Report"
+    },
+    {
+      "sourcePath": "X:.ciff",
+      "nativeName": "",
+      "nativeExtension": ".ciff",
+      "native": ".ciff"
+    },
+    {
+      "sourcePath": ":Report.ciff",
+      "nativeName": ":Report",
+      "nativeExtension": ".ciff",
+      "native": ":Report.ciff"
+    },
+    {
+      "sourcePath": "ab:ciff",
+      "nativeName": "ab:ciff",
+      "nativeExtension": "",
+      "native": "ab:ciff"
+    },
+    {
+      "sourcePath": "1:Report.ciff",
+      "nativeName": "Report",
+      "nativeExtension": ".ciff",
+      "native": "Report.ciff"
+    },
+    {
+      "sourcePath": "C:/folder/a:b.ciff",
+      "nativeName": "a:b",
+      "nativeExtension": ".ciff",
+      "native": "a:b.ciff"
+    },
+    {
+      "sourcePath": "C:/folder/1:Report.ciff",
+      "nativeName": "1:Report",
+      "nativeExtension": ".ciff",
+      "native": "1:Report.ciff"
+    },
+    {
+      "sourcePath": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ciff",
+      "nativeName": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "nativeExtension": ".ciff",
+      "native": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ciff"
+    },
+    {
+      "sourcePath": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\ud83d\ude00.ciff",
+      "nativeName": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\ud83d\ude00",
+      "nativeExtension": ".ciff",
+      "native": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\ud83d.ciff"
+    }
+  ]
+}

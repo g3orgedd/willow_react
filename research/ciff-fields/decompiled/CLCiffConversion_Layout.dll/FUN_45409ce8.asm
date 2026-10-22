@@ -1,0 +1,8 @@
+45409ce8 PUSH EBP
+45409ce9 MOV EBP,ESP
+45409ceb MOV EAX,dword ptr [EBP + 0x8]
+45409cee MOV EDX,dword ptr [EBP + 0xc]
+45409cf1 MOV dword ptr [EAX],EDX
+45409cf3 MOV dword ptr [EAX + 0x4],ECX
+45409cf6 POP EBP
+45409cf7 RET 0x8

@@ -1,0 +1,222 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/CanvasWorkspace.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=a8bfbb4b"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { TemplateTabs } from "/src/components/TemplateTabs.tsx";
+export function CanvasWorkspace() {
+  return /* @__PURE__ */ jsxDEV("section", { className: "canvasWrap editorWorkspace", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "templateDropPrompt", "aria-hidden": "true", children: [
+      /* @__PURE__ */ jsxDEV("span", { className: "templateDropPrompt__icon", "aria-hidden": "true", children: /* @__PURE__ */ jsxDEV("img", { src: "/resourses/Icons/upload_file_24dp.svg", alt: "" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 27,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 26,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("span", { className: "templateDropPrompt__text", children: "Drop the file to open the template" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 29,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+      lineNumber: 25,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(TemplateTabs, {}, void 0, false, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+      lineNumber: 31,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "canvasViewport", id: "canvasViewport", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "rulerCorner", "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 33,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("canvas", { className: "rulerCanvas rulerCanvas--top", id: "rulerTop", "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 34,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("canvas", { className: "rulerCanvas rulerCanvas--left", id: "rulerLeft", "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 35,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "canvasHost", id: "canvasHost" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 36,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "precisionMovePanel", id: "precisionMovePanel", role: "group", "aria-label": "Precise object movement", "aria-hidden": "true", children: [
+        /* @__PURE__ */ jsxDEV(
+          "button",
+          {
+            className: "precisionMoveButton precisionMoveButton--up",
+            id: "precisionMoveUp",
+            type: "button",
+            "data-precision-move": "up",
+            "aria-label": "Move selected object up 0.1 mm",
+            disabled: true,
+            children: /* @__PURE__ */ jsxDEV("img", { src: "/resourses/Icons/arrow_upward_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+              lineNumber: 46,
+              columnNumber: 13
+            }, this)
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+            lineNumber: 38,
+            columnNumber: 11
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          "button",
+          {
+            className: "precisionMoveButton precisionMoveButton--left",
+            id: "precisionMoveLeft",
+            type: "button",
+            "data-precision-move": "left",
+            "aria-label": "Move selected object left 0.1 mm",
+            disabled: true,
+            children: /* @__PURE__ */ jsxDEV("img", { src: "/resourses/Icons/arrow_back_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+              lineNumber: 56,
+              columnNumber: 13
+            }, this)
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+            lineNumber: 48,
+            columnNumber: 11
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV("div", { className: "precisionMoveStep", children: /* @__PURE__ */ jsxDEV("select", { id: "precisionMoveStep", className: "select", "aria-label": "Move step (mm)" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+          lineNumber: 59,
+          columnNumber: 13
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+          lineNumber: 58,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          "button",
+          {
+            className: "precisionMoveButton precisionMoveButton--right",
+            id: "precisionMoveRight",
+            type: "button",
+            "data-precision-move": "right",
+            "aria-label": "Move selected object right 0.1 mm",
+            disabled: true,
+            children: /* @__PURE__ */ jsxDEV("img", { src: "/resourses/Icons/arrow_forward_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+              lineNumber: 69,
+              columnNumber: 13
+            }, this)
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+            lineNumber: 61,
+            columnNumber: 11
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV(
+          "button",
+          {
+            className: "precisionMoveButton precisionMoveButton--down",
+            id: "precisionMoveDown",
+            type: "button",
+            "data-precision-move": "down",
+            "aria-label": "Move selected object down 0.1 mm",
+            disabled: true,
+            children: /* @__PURE__ */ jsxDEV("img", { src: "/resourses/Icons/arrow_downward_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+              lineNumber: 79,
+              columnNumber: 13
+            }, this)
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+            lineNumber: 71,
+            columnNumber: 11
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 37,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+      lineNumber: 32,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "statusbar", children: [
+      /* @__PURE__ */ jsxDEV("div", { id: "statusLeft", className: "statusbar__item", children: "Open a CIFF file (.ciff/.xml)." }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 85,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { id: "statusRight", className: "statusbar__item", children: "-" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+        lineNumber: 86,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+      lineNumber: 84,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx",
+    lineNumber: 24,
+    columnNumber: 5
+  }, this);
+}
+_c = CanvasWorkspace;
+var _c;
+$RefreshReg$(_c, "CanvasWorkspace");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/CanvasWorkspace.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QVU7QUFBQSxZQUNWLElBQUc7QUFBQSxZQUNILE1BQUs7QUFBQSxZQUNMLHVCQUFvQjtBQUFBLFlBQ3BCLGNBQVc7QUFBQSxZQUNYLFVBQVE7QUFBQSxZQUVSLGlDQUFDLFNBQUksS0FBSSw0Q0FBMkMsS0FBSSxJQUFHLGVBQVksVUFBdkU7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkFBNkU7QUFBQTtBQUFBLFVBUi9FO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxRQVNBO0FBQUEsV0EzQ0Y7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQTRDQTtBQUFBLFNBakRGO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FrREE7QUFBQSxJQUVBLHVCQUFDLFNBQUksV0FBVSxhQUNiO0FBQUEsNkJBQUMsU0FBSSxJQUFHLGNBQWEsV0FBVSxtQkFBa0IsOENBQWpEO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBK0U7QUFBQSxNQUMvRSx1QkFBQyxTQUFJLElBQUcsZUFBYyxXQUFVLG1CQUFrQixpQkFBbEQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFtRDtBQUFBLFNBRnJEO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FHQTtBQUFBLE9BL0RGO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0FnRUE7QUFFSjtBQUFDQyxLQXBFZUQ7QUFBZSxJQUFBQztBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJUZW1wbGF0ZVRhYnMiLCJDYW52YXNXb3Jrc3BhY2UiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJDYW52YXNXb3Jrc3BhY2UudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFRlbXBsYXRlVGFicyB9IGZyb20gJy4vVGVtcGxhdGVUYWJzJztcblxuZXhwb3J0IGZ1bmN0aW9uIENhbnZhc1dvcmtzcGFjZSgpIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJjYW52YXNXcmFwIGVkaXRvcldvcmtzcGFjZVwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0ZW1wbGF0ZURyb3BQcm9tcHRcIiBhcmlhLWhpZGRlbj1cInRydWVcIj5cbiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGVtcGxhdGVEcm9wUHJvbXB0X19pY29uXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+XG4gICAgICAgICAgPGltZyBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL3VwbG9hZF9maWxlXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgLz5cbiAgICAgICAgPC9zcGFuPlxuICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZW1wbGF0ZURyb3BQcm9tcHRfX3RleHRcIj5Ecm9wIHRoZSBmaWxlIHRvIG9wZW4gdGhlIHRlbXBsYXRlPC9zcGFuPlxuICAgICAgPC9kaXY+XG4gICAgICA8VGVtcGxhdGVUYWJzIC8+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNhbnZhc1ZpZXdwb3J0XCIgaWQ9XCJjYW52YXNWaWV3cG9ydFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJ1bGVyQ29ybmVyXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+PC9kaXY+XG4gICAgICAgIDxjYW52YXMgY2xhc3NOYW1lPVwicnVsZXJDYW52YXMgcnVsZXJDYW52YXMtLXRvcFwiIGlkPVwicnVsZXJUb3BcIiBhcmlhLWhpZGRlbj1cInRydWVcIj48L2NhbnZhcz5cbiAgICAgICAgPGNhbnZhcyBjbGFzc05hbWU9XCJydWxlckNhbnZhcyBydWxlckNhbnZhcy0tbGVmdFwiIGlkPVwicnVsZXJMZWZ0XCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+PC9jYW52YXM+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2FudmFzSG9zdFwiIGlkPVwiY2FudmFzSG9zdFwiPjwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInByZWNpc2lvbk1vdmVQYW5lbFwiIGlkPVwicHJlY2lzaW9uTW92ZVBhbmVsXCIgcm9sZT1cImdyb3VwXCIgYXJpYS1sYWJlbD1cIlByZWNpc2Ugb2JqZWN0IG1vdmVtZW50XCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+XG4gICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgY2xhc3NOYW1lPVwicHJlY2lzaW9uTW92ZUJ1dHRvbiBwcmVjaXNpb25Nb3ZlQnV0dG9uLS11cFwiXG4gICAgICAgICAgICBpZD1cInByZWNpc2lvbk1vdmVVcFwiXG4gICAgICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgICAgIGRhdGEtcHJlY2lzaW9uLW1vdmU9XCJ1cFwiXG4gICAgICAgICAgICBhcmlhLWxhYmVsPVwiTW92ZSBzZWxlY3RlZCBvYmplY3QgdXAgMC4xIG1tXCJcbiAgICAgICAgICAgIGRpc2FibGVkXG4gICAgICAgICAgPlxuICAgICAgICAgICAgPGltZyBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL2Fycm93X3Vwd2FyZF8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgY2xhc3NOYW1lPVwicHJlY2lzaW9uTW92ZUJ1dHRvbiBwcmVjaXNpb25Nb3ZlQnV0dG9uLS1sZWZ0XCJcbiAgICAgICAgICAgIGlkPVwicHJlY2lzaW9uTW92ZUxlZnRcIlxuICAgICAgICAgICAgdHlwZT1cImJ1dHRvblwiXG4gICAgICAgICAgICBkYXRhLXByZWNpc2lvbi1tb3ZlPVwibGVmdFwiXG4gICAgICAgICAgICBhcmlhLWxhYmVsPVwiTW92ZSBzZWxlY3RlZCBvYmplY3QgbGVmdCAwLjEgbW1cIlxuICAgICAgICAgICAgZGlzYWJsZWRcbiAgICAgICAgICA+XG4gICAgICAgICAgICA8aW1nIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvYXJyb3dfYmFja18yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwcmVjaXNpb25Nb3ZlU3RlcFwiPlxuICAgICAgICAgICAgPHNlbGVjdCBpZD1cInByZWNpc2lvbk1vdmVTdGVwXCIgY2xhc3NOYW1lPVwic2VsZWN0XCIgYXJpYS1sYWJlbD1cIk1vdmUgc3RlcCAobW0pXCIgLz5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICBjbGFzc05hbWU9XCJwcmVjaXNpb25Nb3ZlQnV0dG9uIHByZWNpc2lvbk1vdmVCdXR0b24tLXJpZ2h0XCJcbiAgICAgICAgICAgIGlkPVwicHJlY2lzaW9uTW92ZVJpZ2h0XCJcbiAgICAgICAgICAgIHR5cGU9XCJidXR0b25cIlxuICAgICAgICAgICAgZGF0YS1wcmVjaXNpb24tbW92ZT1cInJpZ2h0XCJcbiAgICAgICAgICAgIGFyaWEtbGFiZWw9XCJNb3ZlIHNlbGVjdGVkIG9iamVjdCByaWdodCAwLjEgbW1cIlxuICAgICAgICAgICAgZGlzYWJsZWRcbiAgICAgICAgICA+XG4gICAgICAgICAgICA8aW1nIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvYXJyb3dfZm9yd2FyZF8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgY2xhc3NOYW1lPVwicHJlY2lzaW9uTW92ZUJ1dHRvbiBwcmVjaXNpb25Nb3ZlQnV0dG9uLS1kb3duXCJcbiAgICAgICAgICAgIGlkPVwicHJlY2lzaW9uTW92ZURvd25cIlxuICAgICAgICAgICAgdHlwZT1cImJ1dHRvblwiXG4gICAgICAgICAgICBkYXRhLXByZWNpc2lvbi1tb3ZlPVwiZG93blwiXG4gICAgICAgICAgICBhcmlhLWxhYmVsPVwiTW92ZSBzZWxlY3RlZCBvYmplY3QgZG93biAwLjEgbW1cIlxuICAgICAgICAgICAgZGlzYWJsZWRcbiAgICAgICAgICA+XG4gICAgICAgICAgICA8aW1nIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvYXJyb3dfZG93bndhcmRfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInN0YXR1c2JhclwiPlxuICAgICAgICA8ZGl2IGlkPVwic3RhdHVzTGVmdFwiIGNsYXNzTmFtZT1cInN0YXR1c2Jhcl9faXRlbVwiPk9wZW4gYSBDSUZGIGZpbGUgKC5jaWZmLy54bWwpLjwvZGl2PlxuICAgICAgICA8ZGl2IGlkPVwic3RhdHVzUmlnaHRcIiBjbGFzc05hbWU9XCJzdGF0dXNiYXJfX2l0ZW1cIj4tPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG4iXSwiZmlsZSI6IkM6L1VzZXJzL0dpZ2FHZW9yZ2UvRGVza3RvcC93aWxsb3ctcmVhY3Qtdml0ZS10ZXN0XzEuNC4wL3NyYy9jb21wb25lbnRzL0NhbnZhc1dvcmtzcGFjZS50c3gifQ==

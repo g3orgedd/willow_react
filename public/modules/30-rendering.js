@@ -1,17 +1,17 @@
 // ---------- Rendering ----------
 function updateHiddenCanvasToggleButton() {
-  const btn = $("btnShowHiddenOnCanvas");
-  if (!btn) return;
-
   const showHidden = !!state.showHiddenOnCanvas;
   const label = showHidden ? t("panel.hideHidden") : t("panel.showHidden");
-  const icon = showHidden ? "./resourses/Icons/visibility_off_24dp.svg" : "./resourses/Icons/visibility_24dp.svg";
 
-  btn.innerHTML = `<img class="btnIcon" src="${icon}" alt="" aria-hidden="true" />`;
-  btn.title = label;
-  btn.setAttribute("aria-label", label);
-  btn.toggle = true;
-  btn.selected = showHidden;
+  ["btnShowHiddenOnCanvas", "btnShowHiddenOnCanvasCollapsed"].forEach((id) => {
+    const btn = $(id);
+    if (!btn) return;
+    btn.setAttribute("aria-label", label);
+    btn.setAttribute("title", label);
+    btn.setAttribute("aria-pressed", String(showHidden));
+    btn.toggle = true;
+    btn.selected = showHidden;
+  });
 }
 
 const MULTI_FIELD_DRAG_EVENT_NS = ".ciffMultiFieldDrag";
@@ -28,7 +28,7 @@ function getPrintableAreaBoundsInternal() {
   };
 }
 
-function getFieldRenderedBoundsInternal(field) {
+function getFieldNominalBoundsInternal(field) {
   const orientation = normalizeOrientation(field?.orientation);
   const x = Number(field?.geom?.x ?? 0);
   const y = Number(field?.geom?.y ?? 0);
@@ -44,6 +44,147 @@ function getFieldRenderedBoundsInternal(field) {
   };
 }
 
+function getHardwareAreaBoundsInternal(options = {}) {
+  const printerModel = options.printerModel ?? state?.docMeta?.printerModel;
+  const capabilities = typeof getKnownPrinterCapabilities === "function"
+    ? getKnownPrinterCapabilities(printerModel)
+    : null;
+  return {
+    x: 0,
+    y: 0,
+    // Zero means unknown: file MaxImage* cannot prove a printer capability.
+    w: Math.max(0, Number(options.maxWidth ?? capabilities?.maxImageWidth) || 0),
+    h: Math.max(0, Number(options.maxHeight ?? capabilities?.maxImageHeight) || 0)
+  };
+}
+
+const TEMPLATE_HARDWARE_LIMIT_ERROR_PREFIX = "Template size exceeds selected printer hardware limits:";
+
+function getTemplateHardwareLimitStatus(options = {}) {
+  const subImage = options.subImage || state?.subImage || {};
+  const printerModel = options.printerModel ?? state?.docMeta?.printerModel;
+  const capabilities = typeof getKnownPrinterCapabilities === "function"
+    ? getKnownPrinterCapabilities(printerModel)
+    : null;
+  const width = Math.max(0, Number(options.width ?? subImage.workspaceWidth) || 0);
+  const height = Math.max(0, Number(options.height ?? subImage.workspaceHeight) || 0);
+  const maxWidth = Math.max(0, Number(options.maxWidth ?? capabilities?.maxImageWidth) || 0);
+  const maxHeight = Math.max(0, Number(options.maxHeight ?? capabilities?.maxImageHeight) || 0);
+  const widthExceeded = width > 0 && maxWidth > 0 && width > maxWidth;
+  const heightExceeded = height > 0 && maxHeight > 0 && height > maxHeight;
+
+  return {
+    width,
+    height,
+    maxWidth,
+    maxHeight,
+    widthExceeded,
+    heightExceeded,
+    exceeded: widthExceeded || heightExceeded
+  };
+}
+
+function getTemplateHardwareLimitValidationErrors(options = {}) {
+  const status = getTemplateHardwareLimitStatus(options);
+  if (!status.exceeded) return [];
+  return [
+    `${TEMPLATE_HARDWARE_LIMIT_ERROR_PREFIX} ` +
+    `${internalToMm(status.width).toFixed(2)} x ${internalToMm(status.height).toFixed(2)} mm > ` +
+    `${internalToMm(status.maxWidth).toFixed(2)} x ${internalToMm(status.maxHeight).toFixed(2)} mm.`
+  ];
+}
+
+function validateTemplateSizeInsideHardware(options = {}) {
+  const existingErrors = Array.isArray(state.validation?.structuralErrors)
+    ? state.validation.structuralErrors.filter((error) => !String(error).startsWith(TEMPLATE_HARDWARE_LIMIT_ERROR_PREFIX))
+    : [];
+  state.validation = {
+    ...(state.validation || {}),
+    invalidPrintableFieldNames: state.validation?.invalidPrintableFieldNames || [],
+    invalidHardwareFieldNames: state.validation?.invalidHardwareFieldNames || [],
+    structuralErrors: [...existingErrors, ...getTemplateHardwareLimitValidationErrors(options)]
+  };
+  return state.validation;
+}
+
+function transformLocalBoundsForOrientationInternal(bounds, fieldWidth, fieldHeight, orientationValue) {
+  const orientation = normalizeOrientation(orientationValue);
+  const x = Number(bounds?.x ?? 0);
+  const y = Number(bounds?.y ?? 0);
+  const w = Math.max(0, Number(bounds?.w ?? 0));
+  const h = Math.max(0, Number(bounds?.h ?? 0));
+  const width = Math.max(0, Number(fieldWidth ?? 0));
+  const height = Math.max(0, Number(fieldHeight ?? 0));
+
+  if (orientation === 90) return { x: height - y - h, y: x, w: h, h: w };
+  if (orientation === 180) return { x: width - x - w, y: height - y - h, w, h };
+  if (orientation === 270) return { x: y, y: width - x - w, w: h, h: w };
+  return { x, y, w, h };
+}
+
+function getTextFieldLocalRenderedBoundsInternal(field, now = new Date(), options = {}) {
+  if (!field || !isTextSelectionBoundsField(field)) return null;
+
+  try {
+    const existingBounds = options.forceFresh ? null : field._konva?.findOne?.(".SelectionBounds");
+    let rect = existingBounds
+      ? {
+          x: existingBounds.x(),
+          y: existingBounds.y(),
+          width: existingBounds.width(),
+          height: existingBounds.height()
+        }
+      : null;
+
+    if (!rect) {
+      const wPx = mmToPx(internalToMm(field.geom?.w ?? 0));
+      const hPx = mmToPx(internalToMm(field.geom?.h ?? 0));
+      const previewNode = makePreviewNode(field, wPx, hPx, now);
+      rect = getTextPreviewSelectionRect(previewNode, previewNode?._ciffPreviewTextStyle);
+      previewNode?.destroy?.();
+    }
+
+    if (
+      !Number.isFinite(rect?.x) ||
+      !Number.isFinite(rect?.y) ||
+      !Number.isFinite(rect?.width) ||
+      !Number.isFinite(rect?.height) ||
+      rect.width <= 0 ||
+      rect.height <= 0
+    ) {
+      return null;
+    }
+
+    return {
+      x: mmToInternal(pxToMm(rect.x)),
+      y: mmToInternal(pxToMm(rect.y)),
+      w: Math.max(1, mmToInternal(pxToMm(rect.width))),
+      h: Math.max(1, mmToInternal(pxToMm(rect.height)))
+    };
+  } catch {
+    return null;
+  }
+}
+
+function getFieldRenderedBoundsInternal(field, now = new Date(), options = {}) {
+  const nominal = getFieldNominalBoundsInternal(field);
+  const localTextBounds = getTextFieldLocalRenderedBoundsInternal(field, now, options);
+  if (!localTextBounds) return nominal;
+
+  const oriented = transformLocalBoundsForOrientationInternal(
+    localTextBounds,
+    Number(field?.geom?.w ?? 0),
+    Number(field?.geom?.h ?? 0),
+    field?.orientation
+  );
+  return {
+    x: Number(field?.geom?.x ?? 0) + oriented.x,
+    y: Number(field?.geom?.y ?? 0) + oriented.y,
+    w: oriented.w,
+    h: oriented.h
+  };
+}
+
 function isBoundsInsideArea(bounds, area) {
   const epsilon = 0.001;
   return bounds.x >= area.x - epsilon &&
@@ -52,24 +193,333 @@ function isBoundsInsideArea(bounds, area) {
     bounds.y + bounds.h <= area.y + area.h + epsilon;
 }
 
-function validatePrintableFieldsInsideArea() {
+function clampToRange(value, min, max) {
+  if (!Number.isFinite(value)) return min;
+  return Math.max(min, Math.min(max, value));
+}
+
+function constrainAxisDeltaInternal(requestedDelta, boundsStart, boundsSize, originStart, areaStart, areaSize) {
+  const minDelta = Math.max(areaStart - boundsStart, areaStart - originStart);
+  const maxDelta = areaStart + areaSize - (boundsStart + boundsSize);
+  if (boundsSize > areaSize || minDelta > maxDelta) return Math.round(minDelta);
+  return Math.round(clampToRange(requestedDelta, minDelta, maxDelta));
+}
+
+function constrainFieldPositionInternal(field, xInternal, yInternal, area = getPrintableAreaBoundsInternal(), options = {}) {
+  const requested = {
+    x: Math.round(Number(xInternal) || 0),
+    y: Math.round(Number(yInternal) || 0)
+  };
+  if (!field?.printed || !field?.geom || area.w <= 0 || area.h <= 0) return requested;
+
+  const candidate = {
+    ...field,
+    geom: { ...field.geom, x: requested.x, y: requested.y }
+  };
+  const bounds = getFieldRenderedBoundsInternal(candidate, options.now || new Date(), {
+    forceFresh: !!options.forceFreshTextBounds
+  });
+  const correctionX = constrainAxisDeltaInternal(0, bounds.x, bounds.w, requested.x, area.x, area.w);
+  const correctionY = constrainAxisDeltaInternal(0, bounds.y, bounds.h, requested.y, area.y, area.h);
+
+  return {
+    x: Math.max(Math.round(area.x), Math.round(requested.x + correctionX)),
+    y: Math.max(Math.round(area.y), Math.round(requested.y + correctionY))
+  };
+}
+
+function getFieldsRenderedUnionInternal(fields, now = new Date(), options = {}) {
+  const bounds = (fields || [])
+    .filter((field) => field?.printed)
+    .map((field) => getFieldRenderedBoundsInternal(field, now, options));
+  if (!bounds.length) return null;
+
+  const minX = Math.min(...bounds.map((box) => box.x));
+  const minY = Math.min(...bounds.map((box) => box.y));
+  const maxX = Math.max(...bounds.map((box) => box.x + box.w));
+  const maxY = Math.max(...bounds.map((box) => box.y + box.h));
+  return { x: minX, y: minY, w: maxX - minX, h: maxY - minY };
+}
+
+function constrainFieldsMovementDeltaInternal(fields, dxInternal, dyInternal, area = getPrintableAreaBoundsInternal(), options = {}) {
+  const requested = {
+    x: Math.round(Number(dxInternal) || 0),
+    y: Math.round(Number(dyInternal) || 0)
+  };
+  const printedFields = (fields || []).filter((field) => field?.printed && field?.geom);
+  const bounds = getFieldsRenderedUnionInternal(printedFields, options.now || new Date(), {
+    forceFresh: !!options.forceFreshTextBounds
+  });
+  if (!bounds || area.w <= 0 || area.h <= 0) return requested;
+
+  const minOriginX = Math.min(...printedFields.map((field) => Number(field.geom.x) || 0));
+  const minOriginY = Math.min(...printedFields.map((field) => Number(field.geom.y) || 0));
+
+  return {
+    x: constrainAxisDeltaInternal(requested.x, bounds.x, bounds.w, minOriginX, area.x, area.w),
+    y: constrainAxisDeltaInternal(requested.y, bounds.y, bounds.h, minOriginY, area.y, area.h)
+  };
+}
+
+function constrainCurrentFieldPositionsInternal(fields, options = {}) {
+  const items = (fields || []).filter((field) => field?.geom);
+  if (!items.length) return { x: 0, y: 0 };
+  const area = options.area || getPrintableAreaBoundsInternal();
+  const delta = constrainFieldsMovementDeltaInternal(items, 0, 0, area, options);
+  if (delta.x === 0 && delta.y === 0) return delta;
+
+  items.forEach((field) => {
+    field.geom.x = Math.round(Number(field.geom.x || 0) + delta.x);
+    field.geom.y = Math.round(Number(field.geom.y || 0) + delta.y);
+  });
+  return delta;
+}
+
+function getSourceDirectChildText(parent, tagName) {
+  if (!parent) return "";
+  const child = Array.from(parent.children || []).find((node) => node.tagName === tagName);
+  return child?.textContent ?? "";
+}
+
+function getSourcePrintableGeometrySnapshot() {
+  const subImage = state?.xmlDoc?.querySelector?.("SubImage");
+  if (!subImage) return null;
+
+  const directChildren = Array.from(subImage.children || []);
+  const subHeader = directChildren.find((node) => node.tagName === "SubHeader") || null;
+  const readInteger = (parent, tagName, fallback = 0) => {
+    const value = Number.parseInt(String(getSourceDirectChildText(parent, tagName)).trim(), 10);
+    return Number.isFinite(value) ? value : fallback;
+  };
+  const fields = directChildren
+    .filter((node) => node.tagName === "Field")
+    .map((node) => {
+      const displayed = getSourceDirectChildText(node, "Displayed").trim();
+      return {
+        name: String(node.getAttribute?.("Name") ?? ""),
+        printed: displayed !== "0",
+        orientation: normalizeOrientation(getSourceDirectChildText(node, "Orientation")),
+        geom: {
+          x: readInteger(node, "X"),
+          y: readInteger(node, "Y"),
+          w: readInteger(node, "W"),
+          h: readInteger(node, "H")
+        }
+      };
+    });
+
+  const width = readInteger(subHeader, "ImageWidth", null);
+  const height = readInteger(subHeader, "ImageHeight", null);
+  return {
+    width,
+    height,
+    workspaceWidth: readInteger(subHeader, "MaxImageWidth", null) ?? width,
+    workspaceHeight: readInteger(subHeader, "MaxImageHeight", null) ?? height,
+    hasImageSize: Number.isFinite(width) && width >= 0 && Number.isFinite(height) && height >= 0,
+    fields
+  };
+}
+
+function getPrintableGeometrySourceDiff(fields = state?.fields) {
+  const source = getSourcePrintableGeometrySnapshot();
+  if (!source) {
+    return {
+      sourceAvailable: false,
+      changed: true,
+      reasons: ["source-unavailable"],
+      sourceWidth: null,
+      sourceHeight: null,
+      hasSourceImageSize: false
+    };
+  }
+
+  const currentFields = Array.isArray(fields) ? fields : [];
+  const sourceByName = new Map(source.fields.map((field) => [field.name, field]));
+  const currentBySourceName = new Map();
+  const resolveCurrentSourceName = (field) => {
+    if (field?.sourceName == null) return null;
+    const originalSourceName = String(field.sourceName);
+    if (sourceByName.has(originalSourceName)) return originalSourceName;
+    const currentName = String(field.name ?? "");
+    return sourceByName.has(currentName) ? currentName : originalSourceName;
+  };
+  currentFields.forEach((field) => {
+    const sourceName = resolveCurrentSourceName(field);
+    if (sourceName == null) return;
+    const matches = currentBySourceName.get(sourceName) || [];
+    matches.push(field);
+    currentBySourceName.set(sourceName, matches);
+  });
+
+  const reasons = [];
+  source.fields.forEach((sourceField) => {
+    const matches = currentBySourceName.get(sourceField.name) || [];
+    const currentField = matches[0] || null;
+    if (matches.length > 1) reasons.push(`topology:duplicate:${sourceField.name}`);
+
+    if (!currentField) {
+      if (sourceField.printed) reasons.push(`topology:removed:${sourceField.name}`);
+      return;
+    }
+    if (!!currentField.printed !== sourceField.printed) {
+      reasons.push(`visibility:${sourceField.name}`);
+      return;
+    }
+    if (!sourceField.printed) return;
+
+    const currentOrientation = normalizeOrientation(currentField.orientation);
+    if (currentOrientation !== sourceField.orientation) {
+      reasons.push(`orientation:${sourceField.name}`);
+    }
+    const currentGeom = currentField.geom || {};
+    if (["x", "y", "w", "h"].some((key) => Number(currentGeom[key]) !== sourceField.geom[key])) {
+      reasons.push(`geometry:${sourceField.name}`);
+    }
+  });
+
+  currentFields.forEach((field, index) => {
+    if (!field?.printed) return;
+    const sourceName = resolveCurrentSourceName(field);
+    if (sourceName == null || !sourceByName.has(sourceName)) {
+      reasons.push(`topology:added:${field.name || index}`);
+    }
+  });
+
+  return {
+    sourceAvailable: true,
+    changed: reasons.length > 0,
+    reasons,
+    sourceWidth: source.width,
+    sourceHeight: source.height,
+    hasSourceImageSize: source.hasImageSize
+  };
+}
+
+function hasPrintableGeometryChangedFromSourceXml(fields = state?.fields) {
+  const diff = getPrintableGeometrySourceDiff(fields);
+  return diff.sourceAvailable ? diff.changed : null;
+}
+
+function calculateImageBounds(fields) {
+  const extents = (fields || [])
+    // parseFieldNode maps an absent/non-zero Displayed tag to printed=true and
+    // Displayed=0 to printed=false.  Only the former contributes to Image*.
+    .filter((field) => field?.printed !== false && field?.geom)
+    .map((field) => {
+      const x = Number(field.geom.x);
+      const y = Number(field.geom.y);
+      const w = Number(field.geom.w);
+      const h = Number(field.geom.h);
+      if (![x, y, w, h].every(Number.isFinite)) return null;
+      const orientation = normalizeOrientation(field.orientation);
+      const isSideways = orientation === 90 || orientation === 270;
+      // ClariSoft!00E61D8E adds 1000 before rotating RSS14..RSSLimited.
+      // Apply only to a positively identified native barcode subtype.
+      const barcodeType = field.fldType === "Barcode" ? field.barcode?.nativeType : null;
+      const barcodeHeight = Number.isInteger(barcodeType) && barcodeType >= 10 && barcodeType <= 14 ? h + 1000 : h;
+      return {
+        right: x + (isSideways ? barcodeHeight : w),
+        bottom: y + (isSideways ? w : barcodeHeight)
+      };
+    })
+    .filter(Boolean);
+
+  return {
+    width: Math.max(0, ...extents.map((extent) => extent.right)),
+    height: Math.max(0, ...extents.map((extent) => extent.bottom))
+  };
+}
+
+// Kept as the internal compatibility name used by existing callers/tests.
+// CIFF ImageWidth/ImageHeight must be derived from serialized field geometry,
+// never from browser/Konva glyph measurement.
+function calculateUsedImageSizeInternal(fields) {
+  return calculateImageBounds(fields);
+}
+
+function syncUsedImageSizeFromPrintableFields(now = new Date(), options = {}) {
+  if (!state?.subImage) return { width: 0, height: 0 };
+  const sourceDiff = options.sourceDiff || getPrintableGeometrySourceDiff(state.fields);
+  if (sourceDiff.sourceAvailable && !sourceDiff.changed && sourceDiff.hasSourceImageSize) {
+    state.subImage.width = sourceDiff.sourceWidth;
+    state.subImage.height = sourceDiff.sourceHeight;
+    state.subImage.usedSizeDirty = false;
+    return { width: state.subImage.width, height: state.subImage.height };
+  }
+  const size = calculateImageBounds(state.fields);
+  state.subImage.width = size.width;
+  state.subImage.height = size.height;
+  // Native 00E2B99E expands MaxWidth only for the exact Line printer type.
+  // No general head-size substitution or symmetric MaxHeight rule is implied.
+  if (state.subImage.printerType === "Line" && Number.isFinite(state.subImage.maxWidth) && size.width > state.subImage.maxWidth) {
+    state.subImage.maxWidth = size.width;
+    state.subImage.workspaceWidth = size.width;
+  }
+  state.subImage.usedSizeDirty = false;
+  return size;
+}
+
+function validatePrintableFieldsInsideArea(now = new Date(), options = {}) {
   const area = getPrintableAreaBoundsInternal();
   const invalidNames = [];
+  const source = getSourcePrintableGeometrySnapshot();
+  const sourceFields = new Map((source?.fields || []).map((field) => [field.name, field]));
+  const sourceAreaUnchanged = source?.workspaceWidth === area.w && source?.workspaceHeight === area.h;
 
-  if (state.xmlDoc && area.w > 0 && area.h > 0) {
+  if (state.xmlDoc && Number.isFinite(area.w) && area.w >= 0 && Number.isFinite(area.h) && area.h >= 0) {
     state.fields.forEach((field) => {
       if (!field.printed) return;
-      if (isBoundsInsideArea(getFieldRenderedBoundsInternal(field), area)) return;
+      if (isBoundsInsideArea(getFieldRenderedBoundsInternal(field, now, options), area)) return;
+      // Valid ClariSoft files can retain off-area objects (e.g. registration
+      // dots) in Image* bounds. Keep a lossless import saveable; a changed area,
+      // newly visible object or geometry edit must still pass containment.
+      const original = field.sourceName != null ? sourceFields.get(field.sourceName) : null;
+      if (sourceAreaUnchanged && original?.printed &&
+        !isBoundsInsideArea(getFieldNominalBoundsInternal(original), area) &&
+        normalizeOrientation(field.orientation) === original.orientation &&
+        ["x", "y", "w", "h"].every((key) => Number(field.geom?.[key]) === original.geom[key])) return;
       invalidNames.push(field.name);
     });
   }
 
-  state.validation = { invalidPrintableFieldNames: invalidNames };
+  state.validation = {
+    ...(state.validation || {}),
+    invalidPrintableFieldNames: invalidNames,
+    invalidHardwareFieldNames: state.validation?.invalidHardwareFieldNames || [],
+    structuralErrors: state.validation?.structuralErrors || []
+  };
+  return state.validation;
+}
+
+function validateHardwareFieldsInsideArea(now = new Date(), options = {}) {
+  const area = getHardwareAreaBoundsInternal(options);
+  const invalidNames = [];
+
+  if (state.xmlDoc && area.w > 0 && area.h > 0) {
+    state.fields.forEach((field) => {
+      // Hidden fields are editor-side data sources and are intentionally kept
+      // in a selectable column outside the printer workspace.
+      if (!field?.printed || !field?.geom) return;
+      if (isBoundsInsideArea(getFieldRenderedBoundsInternal(field, now, options), area)) return;
+      invalidNames.push(field.name);
+    });
+  }
+
+  state.validation = {
+    ...(state.validation || {}),
+    invalidPrintableFieldNames: state.validation?.invalidPrintableFieldNames || [],
+    invalidHardwareFieldNames: invalidNames,
+    structuralErrors: state.validation?.structuralErrors || []
+  };
   return state.validation;
 }
 
 function getInvalidPrintableFieldNames() {
   return state.validation?.invalidPrintableFieldNames ?? [];
+}
+
+function getInvalidHardwareFieldNames() {
+  return state.validation?.invalidHardwareFieldNames ?? [];
 }
 
 function isInvalidPrintableField(field) {
@@ -78,25 +528,36 @@ function isInvalidPrintableField(field) {
 
 function renderPrintableValidationWarning() {
   const invalidNames = getInvalidPrintableFieldNames();
-  const hasInvalid = invalidNames.length > 0;
+  const invalidHardwareNames = getInvalidHardwareFieldNames();
+  const structuralErrors = state.validation?.structuralErrors || [];
+  const hasInvalid = invalidNames.length > 0 || invalidHardwareNames.length > 0 || structuralErrors.length > 0;
 
   if (elBtnSave) {
     elBtnSave.disabled = hasInvalid;
-    elBtnSave.title = hasInvalid
-      ? "Move printable fields back inside the printable area before saving."
-      : "";
+    elBtnSave.setAttribute("aria-description", invalidHardwareNames.length
+      ? "Move fields back inside the printer hardware limits before saving."
+      : invalidNames.length
+        ? "Move printable fields back inside the printable area before saving."
+        : structuralErrors.length
+          ? "Fix CIFF compatibility errors before saving."
+          : "");
   }
 
 }
 
-function updatePrintableValidation() {
-  const result = validatePrintableFieldsInsideArea();
+function updatePrintableValidation(now = new Date()) {
+  if (state.subImage?.usedSizeDirty) {
+    const sourceDiff = getPrintableGeometrySourceDiff(state.fields);
+    syncUsedImageSizeFromPrintableFields(now, { forceFresh: true, sourceDiff });
+  }
+  validatePrintableFieldsInsideArea(now, { forceFresh: true });
+  validateHardwareFieldsInsideArea(now, { forceFresh: true });
+  const result = validateTemplateSizeInsideHardware();
   renderPrintableValidationWarning();
   return result;
 }
 
 function renderAll() {
-  updatePrintableValidation();
   renderGrid();
   renderObjects();
   renderFieldLists();
@@ -173,21 +634,25 @@ function colorWithAlpha(color, alpha) {
 
 function getRulerTheme() {
   const surfaceContainerHighest = getCssColorVar("--md-sys-color-surface-container-highest", "#33353d");
+  const workspaceBackground = getCssColorVar("--workspace-background", "#191b20");
   const outline = getCssColorVar("--md-sys-color-outline", "#8f909a");
   const outlineVariant = getCssColorVar("--md-sys-color-outline-variant", "#45464f");
   const onSurface = getCssColorVar("--md-sys-color-on-surface", "#e4e2e8");
   const onSurfaceVariant = getCssColorVar("--md-sys-color-on-surface-variant", "#c6c6d0");
+  // Match the corner's CSS surface; resolve theme tokens before painting canvas.
+  const background = `color-mix(in srgb, ${surfaceContainerHighest} 82%, ${workspaceBackground} 18%)`;
 
   return {
-    background: colorWithAlpha(surfaceContainerHighest, 0.7),
-    divider: colorWithAlpha(outlineVariant, 0.9),
+    backgroundStart: background,
+    backgroundEnd: `color-mix(in srgb, ${background} 96%, black 4%)`,
+    divider: colorWithAlpha(outlineVariant, 0.88),
     edgeHighlight: colorWithAlpha(onSurface, 0.05),
-    tickMinor: colorWithAlpha(outlineVariant, 0.58),
-    tickMedium: colorWithAlpha(outline, 0.54),
-    tickMajor: colorWithAlpha(outline, 0.78),
+    tickMinor: colorWithAlpha(outline, 0.32),
+    tickMedium: colorWithAlpha(outline, 0.46),
+    tickMajor: colorWithAlpha(outline, 0.68),
     tickZero: colorWithAlpha(onSurface, 0.72),
-    label: colorWithAlpha(onSurfaceVariant, 0.92),
-    labelStrong: colorWithAlpha(onSurface, 0.88)
+    label: colorWithAlpha(onSurfaceVariant, 0.76),
+    labelStrong: colorWithAlpha(onSurface, 0.82)
   };
 }
 
@@ -209,7 +674,10 @@ function renderRulers() {
 function drawRulerSurface(ctx, width, height, theme, axis) {
   ctx.clearRect(0, 0, width, height);
 
-  ctx.fillStyle = theme.background;
+  const surface = ctx.createLinearGradient(0, 0, axis === "x" ? 0 : width, axis === "x" ? height : 0);
+  surface.addColorStop(0, theme.backgroundStart);
+  surface.addColorStop(1, theme.backgroundEnd);
+  ctx.fillStyle = surface;
   ctx.fillRect(0, 0, width, height);
 
   ctx.lineCap = "butt";
@@ -242,12 +710,12 @@ function drawTopRuler(ctx, width, height, cfg, pxPerMm, theme) {
 
   const startMm = Math.floor(pxToMm(-stage.x()) / cfg.minorStep) * cfg.minorStep;
   const endMm = Math.ceil(pxToMm(width - stage.x()) / cfg.minorStep) * cfg.minorStep;
-  const majorTick = Math.min(14, Math.max(8, height - 16));
-  const mediumTick = Math.max(6, Math.round(majorTick * 0.72));
-  const minorTick = Math.max(4, Math.round(majorTick * 0.45));
+  const majorTick = 12;
+  const mediumTick = 8;
+  const minorTick = 4;
 
-  ctx.font = '500 10px "Google Sans Flex", "Segoe UI", Arial, sans-serif';
-  ctx.lineCap = "round";
+  ctx.font = '500 10px "Geist", sans-serif';
+  ctx.lineCap = "butt";
   ctx.textBaseline = "top";
 
   for (let mm = startMm; mm <= endMm; mm += cfg.minorStep) {
@@ -267,7 +735,8 @@ function drawTopRuler(ctx, width, height, cfg, pxPerMm, theme) {
     ctx.lineTo(lineX, height - tickHeight);
     ctx.stroke();
 
-    if (!isMajor) continue;
+    // Offscreen labels must not be clamped onto the first/last visible label.
+    if (!isMajor || x < 0 || x > width) continue;
 
     const label = String(mm);
     const labelWidth = ctx.measureText(label).width;
@@ -284,13 +753,13 @@ function drawLeftRuler(ctx, width, height, cfg, pxPerMm, theme) {
 
   const startMm = Math.floor(pxToMm(-stage.y()) / cfg.minorStep) * cfg.minorStep;
   const endMm = Math.ceil(pxToMm(height - stage.y()) / cfg.minorStep) * cfg.minorStep;
-  const majorTick = Math.min(14, Math.max(8, width - 16));
-  const mediumTick = Math.max(6, Math.round(majorTick * 0.72));
-  const minorTick = Math.max(4, Math.round(majorTick * 0.45));
-  const labelOffset = Math.max(9, Math.min(12, width * 0.36));
+  const majorTick = 12;
+  const mediumTick = 8;
+  const minorTick = 4;
+  const labelOffset = 10;
 
-  ctx.font = '500 10px "Google Sans Flex", "Segoe UI", Arial, sans-serif';
-  ctx.lineCap = "round";
+  ctx.font = '500 10px "Geist", sans-serif';
+  ctx.lineCap = "butt";
   ctx.textBaseline = "middle";
 
   for (let mm = startMm; mm <= endMm; mm += cfg.minorStep) {
@@ -310,7 +779,7 @@ function drawLeftRuler(ctx, width, height, cfg, pxPerMm, theme) {
     ctx.lineTo(width - tickWidth, lineY);
     ctx.stroke();
 
-    if (!isMajor) continue;
+    if (!isMajor || y < 0 || y > height) continue;
 
     const label = String(mm);
     const labelWidth = ctx.measureText(label).width;
@@ -447,6 +916,17 @@ function resolveMultiDragDelta(rawDx, rawDy, dragState) {
     clearAlignmentGuides();
   }
 
+  const selectedFields = [...dragState.names]
+    .map((name) => state.fieldByName.get(name))
+    .filter(Boolean);
+  const constrained = constrainFieldsMovementDeltaInternal(
+    selectedFields,
+    mmToInternal(pxToMm(dx)),
+    mmToInternal(pxToMm(dy))
+  );
+  dx = mmToPx(internalToMm(constrained.x));
+  dy = mmToPx(internalToMm(constrained.y));
+
   return { dx, dy };
 }
 
@@ -517,20 +997,35 @@ function finishMultiFieldDrag() {
   if (!dragState) return false;
 
   clearAlignmentGuides();
-  pushHistory();
 
-  const dxInternal = mmToInternal(pxToMm(dragState.delta.dx));
-  const dyInternal = mmToInternal(pxToMm(dragState.delta.dy));
+  const selectedFields = [...dragState.names]
+    .map((name) => state.fieldByName.get(name))
+    .filter(Boolean);
+  const constrainedDelta = constrainFieldsMovementDeltaInternal(
+    selectedFields,
+    mmToInternal(pxToMm(dragState.delta.dx)),
+    mmToInternal(pxToMm(dragState.delta.dy))
+  );
+  const dxInternal = constrainedDelta.x;
+  const dyInternal = constrainedDelta.y;
+  if (dxInternal === 0 && dyInternal === 0) {
+    multiFieldDragState = null;
+    multiFieldDragStartPointer = null;
+    renderAfterFieldPositionChange();
+    return false;
+  }
+
   const before = [...dragState.names].map((name) => ({
     name,
     position: dragState.internalPositions.get(name)
   }));
+  pushHistory();
 
   dragState.names.forEach((name) => {
     const field = state.fieldByName.get(name);
     const start = dragState.internalPositions.get(name);
     if (!field || !start) return;
-    setFieldPositionInternal(field, start.x + dxInternal, start.y + dyInternal);
+    setFieldPositionInternal(field, start.x + dxInternal, start.y + dyInternal, { constrainPrintable: false });
   });
 
   multiFieldDragState = null;
@@ -550,10 +1045,16 @@ function finishMultiFieldDrag() {
   return true;
 }
 
-function setFieldPositionInternal(field, xInternal, yInternal) {
+function setFieldPositionInternal(field, xInternal, yInternal, options = {}) {
   if (!field?.geom) return false;
-  field.geom.x = Math.round(Number(xInternal) || 0);
-  field.geom.y = Math.round(Number(yInternal) || 0);
+  const position = options.constrainPrintable === false
+    ? {
+        x: Math.round(Number(xInternal) || 0),
+        y: Math.round(Number(yInternal) || 0)
+      }
+    : constrainFieldPositionInternal(field, xInternal, yInternal);
+  field.geom.x = position.x;
+  field.geom.y = position.y;
   return true;
 }
 
@@ -562,20 +1063,24 @@ function renderAfterFieldPositionChange() {
   renderUI();
   renderFieldLists();
   renderSelectionPanels();
+  renderTemplateSizePanel();
 }
 
 function moveSelectedFieldsByMm(dxMm, dyMm, options = {}) {
   const fields = getSelectedFields();
   if (!fields.length) return false;
 
-  const dxInternal = mmToInternal(dxMm);
-  const dyInternal = mmToInternal(dyMm);
+  const requestedDx = mmToInternal(dxMm);
+  const requestedDy = mmToInternal(dyMm);
+  const constrainedDelta = constrainFieldsMovementDeltaInternal(fields, requestedDx, requestedDy);
+  const dxInternal = constrainedDelta.x;
+  const dyInternal = constrainedDelta.y;
   if (dxInternal === 0 && dyInternal === 0) return false;
 
   if (!options.skipHistory) pushHistory();
 
   fields.forEach((field) => {
-    setFieldPositionInternal(field, field.geom.x + dxInternal, field.geom.y + dyInternal);
+    setFieldPositionInternal(field, field.geom.x + dxInternal, field.geom.y + dyInternal, { constrainPrintable: false });
   });
 
   renderAfterFieldPositionChange();
@@ -631,6 +1136,33 @@ function syncTransformerBackProxyForSelection(nodes) {
     e.cancelBubble = true;
     finishMultiFieldDrag();
   });
+}
+
+function constrainFieldGroupPositionToPrintableArea(field, group) {
+  if (!field?.printed || !group) return false;
+  const requestedX = mmToInternal(pxToMm(group.x()));
+  const requestedY = mmToInternal(pxToMm(group.y()));
+  const constrained = constrainFieldPositionInternal(field, requestedX, requestedY);
+  if (constrained.x === requestedX && constrained.y === requestedY) return false;
+  group.position({
+    x: mmToPx(internalToMm(constrained.x)),
+    y: mmToPx(internalToMm(constrained.y))
+  });
+  return true;
+}
+
+function installCanvasTextFieldValueEditing(group, field) {
+  if (!group || field?.fldType !== "FixedText") return false;
+
+  group.on("dblclick", (event) => {
+    const button = event.evt?.button;
+    if (isMobilePanMode || (button != null && button !== 0)) return;
+
+    event.cancelBubble = true;
+    event.evt?.preventDefault?.();
+    startCanvasTextFieldValueEditing(field);
+  });
+  return true;
 }
 
 function makeFieldGroup(field, options = {}) {
@@ -691,6 +1223,18 @@ function makeFieldGroup(field, options = {}) {
   };
 
   group.on("click tap", selectFieldFromCanvasEvent);
+  installCanvasTextFieldValueEditing(group, field);
+
+  group.on("contextmenu", (event) => {
+    if (selectionOnly || isMobilePanMode) return;
+    event.cancelBubble = true;
+    event.evt?.preventDefault?.();
+    if (!isFieldSelected(field.name)) {
+      selectField(field.name, { additive: false, toggle: false });
+      renderUI();
+    }
+    openInspectorObjectMenuAt(event.evt?.clientX, event.evt?.clientY);
+  });
 
   group.on("mousedown touchstart", () => {
     if (isMobilePanMode) return;
@@ -716,6 +1260,7 @@ function makeFieldGroup(field, options = {}) {
       group.position(snapped);
     }
     snapGroupToElementAlignment(group);
+    constrainFieldGroupPositionToPrintableArea(field, group);
   });
 
   group.on("dragend", () => {
@@ -726,9 +1271,15 @@ function makeFieldGroup(field, options = {}) {
 
     clearAlignmentGuides();
     const previousPosition = { x: field.geom.x, y: field.geom.y };
-    pushHistory();
     const geomNew = pxGeomToInternal(group.x(), group.y(), rect.width(), rect.height());
-    setFieldPositionInternal(field, geomNew.x, geomNew.y);
+    const nextPosition = constrainFieldPositionInternal(field, geomNew.x, geomNew.y);
+    if (nextPosition.x === previousPosition.x && nextPosition.y === previousPosition.y) {
+      renderAfterFieldPositionChange();
+      return;
+    }
+
+    pushHistory();
+    setFieldPositionInternal(field, nextPosition.x, nextPosition.y, { constrainPrintable: false });
     renderAfterFieldPositionChange();
     appLogger.action("FIELD_MOVED", "Пользователь переместил поле на шаблоне.", {
       fieldName: field.name,
@@ -746,7 +1297,6 @@ function makeFieldGroup(field, options = {}) {
   return group;
 }
 
-const PREVIEW_TEXT_FONT_FAMILY = `Arial, "Liberation Sans", Helvetica, sans-serif`;
 const PREVIEW_TEXT_PROBE_FONT_SIZE = 100;
 const PREVIEW_TEXT_MIN_FONT_SIZE = 1;
 const PREVIEW_TEXT_FONT_MM_PER_PITCH = 0.33;
@@ -764,6 +1314,7 @@ function measurePreviewTextBounds(text, options) {
     text: String(text || "0"),
     fontSize: options.fontSize,
     fontFamily: options.fontFamily,
+    fontStyle: options.fontStyle,
     lineHeight: options.lineHeight,
     letterSpacing: options.letterSpacing,
     padding: 0,
@@ -843,12 +1394,16 @@ function getPreviewTextStyle(field, wPx, hPx, previewText = "") {
   const availableWidth = Math.max(0, wPx - paddingX * 2);
   const availableHeight = Math.max(0, hPx);
   const scaleX = (xMag / 100) * PREVIEW_TEXT_CLARISOFT_WIDTH_SCALE;
+  const scaleY = getTextVerticalMagnification(field);
   const letterSpacing = 0;
   const lineHeight = 1;
   const fontSize = clarisoftFontSizeToCanvasPx(pitch);
+  const fontFamily = getTextCanvasFontFamily(field);
+  const fontStyle = getTextCanvasFontStyle(field);
   const measuredTextBounds = measurePreviewTextBounds(previewText, {
     fontSize,
-    fontFamily: PREVIEW_TEXT_FONT_FAMILY,
+    fontFamily,
+    fontStyle,
     lineHeight,
     letterSpacing
   });
@@ -872,9 +1427,11 @@ function getPreviewTextStyle(field, wPx, hPx, previewText = "") {
     fontSize,
     lineHeight,
     scaleX,
+    scaleY,
     padding: 0,
     verticalAlign: "top",
-    fontFamily: PREVIEW_TEXT_FONT_FAMILY,
+    fontFamily,
+    fontStyle,
     letterSpacing,
     paddingX,
     contentOffsetX: mmToPx(PREVIEW_TEXT_CLARISOFT_OFFSET_X_MM),
@@ -954,6 +1511,24 @@ function addPrintableAreaError(content, selectionBounds, fieldWidth, fieldHeight
   return error;
 }
 
+function syncPrintableAreaErrorForField(field) {
+  const content = field?._konva?.findOne?.(".PreviewContent");
+  const rect = field?._konva?.findOne?.("Rect");
+  if (!content || !rect) return false;
+
+  clearPrintableAreaError(content);
+  if (isSelectionOnlyHiddenField(field) || !isInvalidPrintableField(field)) return true;
+  const selectionBounds = isTextSelectionBoundsField(field)
+    ? content.findOne?.(".SelectionBounds")
+    : null;
+  addPrintableAreaError(content, selectionBounds, rect.width(), rect.height());
+  return true;
+}
+
+function syncPrintableAreaErrorsOnCanvas() {
+  state.fields.forEach((field) => syncPrintableAreaErrorForField(field));
+}
+
 function addHiddenTextBacking(content, node, textStyle) {
   if (!content || !node || !textStyle?.measuredTextBounds) return null;
 
@@ -1019,7 +1594,12 @@ function makePreviewNode(field, wPx, hPx, now = new Date()) {
   const isDM = field.fldType === "Barcode" && field.barcode?.dataMatrix;
   if (isDM) return makeDataMatrixPreviewNode(field, wPx, hPx, now);
 
+  trackNativeDynamicTextGeometry(field);
   const previewText = makePreviewText(field, now);
+  if (typeof makeNativeTextPreviewNode === 'function') {
+    const nativeNode = makeNativeTextPreviewNode(field, previewText, wPx, hPx);
+    if (nativeNode) return nativeNode;
+  }
   const textStyle = getPreviewTextStyle(field, wPx, hPx, previewText);
   const node = new Konva.Text({
     name: "PreviewValue",
@@ -1030,11 +1610,13 @@ function makePreviewNode(field, wPx, hPx, now = new Date()) {
     text: previewText,
     fontSize: textStyle.fontSize,
     fontFamily: textStyle.fontFamily,
+    fontStyle: textStyle.fontStyle,
     lineHeight: textStyle.lineHeight,
     verticalAlign: textStyle.verticalAlign,
     padding: textStyle.padding,
     letterSpacing: textStyle.letterSpacing,
     scaleX: textStyle.scaleX,
+    scaleY: textStyle.scaleY,
     fill: "#111",
     wrap: "none",
     ellipsis: false,
@@ -1063,7 +1645,9 @@ function makeDataMatrixPreviewNode(field, wPx, hPx, now = new Date()) {
   const quietModules = getDataMatrixQuietZoneModules(field);
   const paddedRows = rows + quietModules * 2;
   const paddedCols = cols + quietModules * 2;
-  const moduleSize = mmToPx(getDataMatrixEffectiveModuleSize(field, null, now));
+  const moduleSize = mmToPx(getDataMatrixGeometryModuleSizeMm(
+    getDataMatrixEffectiveModuleSize(field, null, now)
+  ));
   if (!Number.isFinite(moduleSize) || moduleSize <= 0) {
     return makeDataMatrixFallbackNode(field, wPx, hPx, "Preview too small");
   }
@@ -1117,9 +1701,14 @@ function makeDataMatrixFallbackNode(field, wPx, hPx, message) {
   });
 }
 
+function parseDataMatrixModuleSizeValue(value, fallback = null) {
+  const numericValue = Number.parseFloat(String(value ?? "").trim());
+  if (!Number.isFinite(numericValue) || numericValue <= 0) return fallback;
+  return numericValue > 5 ? numericValue / INTERNAL_PER_MM : numericValue;
+}
+
 function normalizeDataMatrixModuleSizeValue(value) {
-  let size = toFloat(value, 0.5);
-  if (size > 5) size /= 100;
+  let size = parseDataMatrixModuleSizeValue(value, 0.5);
   size = clamp(DATA_MATRIX_MODULE_SIZES[0], DATA_MATRIX_MODULE_SIZES[DATA_MATRIX_MODULE_SIZES.length - 1], size);
 
   let nearest = DATA_MATRIX_MODULE_SIZES[0];
@@ -1139,8 +1728,25 @@ function formatDataMatrixModuleSize(value) {
   return normalizeDataMatrixModuleSizeValue(value).toFixed(2);
 }
 
+function getDataMatrixModuleDotCount(value) {
+  const moduleSizeMm = parseDataMatrixModuleSizeValue(value, null);
+  if (!Number.isFinite(moduleSizeMm) || moduleSizeMm <= 0) return null;
+  const optionIndex = DATA_MATRIX_MODULE_SIZES.findIndex(
+    (option) => Math.abs(Number(option) - moduleSizeMm) < 0.000001
+  );
+  return optionIndex >= 0 ? optionIndex + 1 : null;
+}
+
+function getDataMatrixGeometryModuleSizeMm(value) {
+  const moduleSizeMm = parseDataMatrixModuleSizeValue(value, null);
+  if (!Number.isFinite(moduleSizeMm) || moduleSizeMm <= 0) return null;
+  const dotCount = getDataMatrixModuleDotCount(moduleSizeMm);
+  return dotCount == null ? moduleSizeMm : dotCount / 12;
+}
+
 function serializeDataMatrixModuleSize(value) {
-  return String(Math.round(normalizeDataMatrixModuleSizeValue(value) * 100));
+  const moduleSizeMm = parseDataMatrixModuleSizeValue(value, 0.5);
+  return String(Math.round(moduleSizeMm * INTERNAL_PER_MM));
 }
 
 function getDataMatrixQuietZoneModules(field = null) {
@@ -1154,7 +1760,8 @@ function getDataMatrixEffectiveSymbolInfo(field, now = new Date()) {
   if (!dm) return null;
   const tokens = getDataMatrixValueTokens(field, now);
   const dataCodewords = encodeDataMatrixAscii(tokens);
-  return resolveDataMatrixSymbolInfo(dm.symbolSize, dataCodewords.length);
+  return resolveDataMatrixSymbolInfo(dm.symbolSize, dataCodewords.length)
+    ?? parseDataMatrixSymbolDimensions(dm.symbolSize);
 }
 
 function getDataMatrixTotalModules(field, now = new Date()) {
@@ -1174,10 +1781,14 @@ function getDataMatrixFieldSizeMm(field, moduleSize = null, now = new Date()) {
   if (!totalModules) return null;
 
   const moduleSizeMm = getDataMatrixEffectiveModuleSize(field, moduleSize, now);
+  const geometryModuleSizeMm = getDataMatrixGeometryModuleSizeMm(moduleSizeMm);
+  if (!Number.isFinite(geometryModuleSizeMm) || geometryModuleSizeMm <= 0) return null;
   return {
-    w: totalModules.cols * moduleSizeMm,
-    h: totalModules.rows * moduleSizeMm,
+    w: totalModules.cols * geometryModuleSizeMm,
+    h: totalModules.rows * geometryModuleSizeMm,
     moduleSize: moduleSizeMm,
+    geometryModuleSize: geometryModuleSizeMm,
+    moduleDots: getDataMatrixModuleDotCount(moduleSizeMm),
     symbolInfo: totalModules.symbolInfo
   };
 }
@@ -1195,12 +1806,66 @@ function getDataMatrixModuleSizeFromGeom(field, now = new Date()) {
 }
 
 function getDataMatrixEffectiveModuleSize(field, moduleSize = null, now = new Date()) {
-  if (moduleSize != null && moduleSize !== "") return normalizeDataMatrixModuleSizeValue(moduleSize);
+  if (moduleSize != null && moduleSize !== "") {
+    return parseDataMatrixModuleSizeValue(moduleSize, null);
+  }
 
   const storedModuleSize = field?.barcode?.dataMatrix?.moduleSize;
-  if (storedModuleSize != null && storedModuleSize !== "") return normalizeDataMatrixModuleSizeValue(storedModuleSize);
+  if (storedModuleSize != null && storedModuleSize !== "") {
+    return parseDataMatrixModuleSizeValue(storedModuleSize, null);
+  }
 
   return getDataMatrixModuleSizeFromGeom(field, now) ?? normalizeDataMatrixModuleSizeValue(0.5);
+}
+
+function parseDataMatrixSymbolDimensions(symbolSize) {
+  const match = String(symbolSize ?? "")
+    .trim()
+    .toUpperCase()
+    .match(/^(\d+)X(\d+)$/);
+  if (!match) return null;
+
+  const symbolRows = Number(match[1]);
+  const symbolCols = Number(match[2]);
+  if (
+    !Number.isFinite(symbolRows) || symbolRows <= 0 ||
+    !Number.isFinite(symbolCols) || symbolCols <= 0
+  ) {
+    return null;
+  }
+
+  return { name: `${symbolRows}X${symbolCols}`, symbolRows, symbolCols };
+}
+
+function calculateDataMatrixBcH(fieldOrSymbolSize, moduleSize = null, now = new Date()) {
+  const isField = !!fieldOrSymbolSize && typeof fieldOrSymbolSize === "object";
+  if (isField && (
+    fieldOrSymbolSize.fldType !== "Barcode" ||
+    !fieldOrSymbolSize.barcode?.dataMatrix
+  )) {
+    return null;
+  }
+
+  const symbolSize = isField
+    ? fieldOrSymbolSize.barcode.dataMatrix.symbolSize
+    : fieldOrSymbolSize;
+  const explicitDimensions = parseDataMatrixSymbolDimensions(symbolSize);
+  const symbolRows = explicitDimensions?.symbolRows
+    ?? (isField ? getDataMatrixEffectiveSymbolInfo(fieldOrSymbolSize, now)?.symbolRows : null);
+  const moduleSizeMm = isField
+    ? getDataMatrixEffectiveModuleSize(fieldOrSymbolSize, moduleSize, now)
+    : parseDataMatrixModuleSizeValue(moduleSize, null);
+  if (!Number.isFinite(symbolRows) || symbolRows <= 0 || !Number.isFinite(moduleSizeMm) || moduleSizeMm <= 0) {
+    return null;
+  }
+
+  return Math.round(symbolRows * moduleSizeMm * INTERNAL_PER_MM);
+}
+
+function updateDataMatrixBcHFromSettings(field, moduleSize = null, now = new Date()) {
+  const bcH = calculateDataMatrixBcH(field, moduleSize, now);
+  if (bcH != null) field.barcode.bcH = bcH;
+  return bcH;
 }
 
 function syncDataMatrixGeomToModuleSize(field, now = new Date()) {
@@ -1210,7 +1875,6 @@ function syncDataMatrixGeomToModuleSize(field, now = new Date()) {
   field.barcode.dataMatrix.moduleSize = size.moduleSize;
   field.geom.w = mmToInternal(size.w);
   field.geom.h = mmToInternal(size.h);
-  if (field.barcode) field.barcode.bcH = field.geom.h;
 }
 
 function getNearestDataMatrixModuleSizeForGeom(field, wPx, hPx, now = new Date()) {
@@ -1221,6 +1885,20 @@ function getNearestDataMatrixModuleSizeForGeom(field, wPx, hPx, now = new Date()
   const heightModule = pxToMm(hPx) / Math.max(1, totalModules.rows);
   return normalizeDataMatrixModuleSizeValue((widthModule + heightModule) / 2);
 }
+
+function getDataMatrixResizeMetrics(field, wPx, hPx, now = new Date()) {
+  const moduleSize = getNearestDataMatrixModuleSizeForGeom(field, wPx, hPx, now);
+  const size = getDataMatrixFieldSizeMm(field, moduleSize, now);
+  if (!size) return null;
+
+  return {
+    moduleSize,
+    widthPx: mmToPx(size.w),
+    heightPx: mmToPx(size.h),
+    bcH: calculateDataMatrixBcH(field, moduleSize, now)
+  };
+}
+
 function normalizeDataMatrixSymbolSizeName(symbolSize) {
   return normalizeDataMatrixSymbolSizeValue(symbolSize, "Auto");
 }
@@ -1263,22 +1941,15 @@ function buildDataMatrixPreview(field, now = new Date()) {
 }
 
 function getDataMatrixValueTokens(field, now = new Date()) {
-  const dm = field.barcode?.dataMatrix;
-  if (!dm) return [];
-
-  const segments = [...(dm.segments || [])].sort((a, b) => (a.index ?? 0) - (b.index ?? 0));
-  const tokens = [];
-
-  segments.forEach((segment) => {
-    let value = segment.defaultValue ?? "";
-    if (segment.srcField) {
-      const sourceField = state.fieldByName.get(segment.srcField);
-      if (sourceField) value = getFieldDisplayValue(sourceField, now);
-    }
-    tokens.push(...tokenizeDataMatrixValue(value));
-  });
-
-  return tokens;
+  const values = typeof resolveCiffDataMatrixSegmentValues === "function"
+    ? resolveCiffDataMatrixSegmentValues(field, now, { fieldByName: state.fieldByName })
+    : getDataMatrixRuntimeSegmentValues(field, now, {
+        fieldByName: state.fieldByName,
+        resolveFieldValue: (sourceField) => getFieldDisplayValue(sourceField, now)
+      });
+  return Array.isArray(values)
+    ? values.flatMap((value) => tokenizeDataMatrixValue(value))
+    : [];
 }
 
 function tokenizeDataMatrixValue(value) {
@@ -1608,6 +2279,8 @@ function refreshSelectionBoundsForField(field) {
 
 function refreshFieldCanvasPreview(field, now = new Date()) {
   if (!rebuildFieldPreviewNode(field, now)) return;
+  updatePrintableValidation(now);
+  syncPrintableAreaErrorsOnCanvas();
   refreshSelectionBoundsForField(field);
   objLayer.batchDraw();
 }
@@ -1628,7 +2301,11 @@ function refreshCanvasPreviews(now = new Date()) {
     }
   });
 
-  if (changed) objLayer.batchDraw();
+  if (changed) {
+    updatePrintableValidation(now);
+    syncPrintableAreaErrorsOnCanvas();
+    objLayer.batchDraw();
+  }
 }
 function getTimeFormatTokens(value) {
   return normalizeTimeFormat(value).match(/HH|hh|h|mm|m|ss|s/g) || [];
@@ -1777,13 +2454,41 @@ function syncDynamicFieldCalcData(now = new Date()) {
   return;
 }
 
+function trackNativeDynamicTextGeometry(field) {
+  if (!globalThis.glyphFonts?.render || !field?.text ||
+      !["DateText", "OffsetDateText", "TimeText", "CounterText"].includes(field.fldType)) return false;
+  const offset = field.fldType === "OffsetDateText"
+    ? state.dateOffsets?.find((item) => item.name === field.data?.offsetRef)
+    : null;
+  // Track explicit editing configuration, not the live date/time value. A clock
+  // tick must not rewrite the dimensions of an otherwise untouched imported CIFF.
+  const signature = JSON.stringify({
+    type: field.fldType,
+    format: field.data?.defaultValue,
+    locale: field.data?.dateLocale,
+    offset: field.data?.offsetRef,
+    delta: offset?.delta,
+    counter: field.fldType === "CounterText" ? field.data?.counter : null,
+  });
+  const previous = field._nativeDynamicTextLayoutSignature;
+  field._nativeDynamicTextLayoutSignature = signature;
+  if (previous == null || previous === signature) return false;
+  field._nativeTextGeometryDirty = true;
+  if (state.subImage) state.subImage.usedSizeDirty = true;
+  return true;
+}
+
 function refreshSelectedDynamicFieldPreview(now = new Date()) {
   const field = state.selectedName ? state.fieldByName.get(state.selectedName) : null;
   if (field) {
+    trackNativeDynamicTextGeometry(field);
     const value = getDynamicFieldValue(field, now);
     if (value != null) {
       const valueInput = elPropsPanel.querySelector('[data-dynamic-preview-value="1"]');
-      if (valueInput && document.activeElement !== valueInput) valueInput.value = value;
+      if (valueInput && document.activeElement !== valueInput) {
+        valueInput.value = value;
+        valueInput._updateCharacterCount?.();
+      }
     }
   }
 
@@ -1796,10 +2501,21 @@ function startDynamicFieldValueTicker() {
   }, 1000);
 }
 
-function makePreviewText(field, now = new Date()) {
+function makePreviewText(field, now = new Date(), options = {}) {
   const t = field.fldType;
   if (t === "Barcode" && field.barcode?.dataMatrix) {
     return `DataMatrix ${field.barcode.dataMatrix.symbolSize || "DM"}`;
+  }
+  // Canvas and native measurement must consume the same resolved text as
+  // CalcData/ClSt: user input can remain shorter than its native FixedLen cell.
+  // Keep getFieldDisplayValue/getStoredTextFieldValue raw for editable inputs.
+  if (typeof resolveCiffCalculatedData === "function") {
+    const value = resolveCiffCalculatedData(field, now, {
+      fieldByName: state.fieldByName,
+      resolveDynamicValue: getDynamicFieldValue,
+      ...options
+    });
+    if (value != null) return value;
   }
   if (t === "TimeText") return getTimeTextValue(field, now);
   if (t === "DateText" || t === "OffsetDateText") return getDateTextValue(field, now);
@@ -1865,9 +2581,11 @@ function normalizeCounterField(field, options = {}) {
 
 function applyCounterFieldChange(field, updater, options = {}) {
   if (!field || field.fldType !== "CounterText") return;
+  trackNativeDynamicTextGeometry(field);
   pushHistory();
   updater(field.data.counter ?? (field.data.counter = {}));
   normalizeCounterField(field, { preserveCurrent: options.preserveCurrent ?? false });
+  trackNativeDynamicTextGeometry(field);
   renderSelectionPanels();
   refreshFieldCanvasPreview(field);
 }
@@ -1916,6 +2634,88 @@ function renderUI() {
   if (typeof syncPendingCanvasPlacementUI === "function") syncPendingCanvasPlacementUI();
 }
 
+function getFieldListPresentation(field) {
+  if (field?.fldType === "Barcode" && field.barcode?.dataMatrix) {
+    const symbolSize = String(field.barcode.dataMatrix.symbolSize || "").trim();
+    const symbolMatch = symbolSize.match(/^(\d+)\s*[xX×]\s*(\d+)$/);
+    const symbolLabel = symbolMatch ? `${symbolMatch[1]}×${symbolMatch[2]}` : symbolSize;
+    return {
+      icon: "/resourses/Icons/datamatrix_24dp.svg",
+      label: symbolLabel ? `${t("tool.datamatrix")} · ${symbolLabel}` : t("tool.datamatrix")
+    };
+  }
+
+  const presentationByType = {
+    FixedText: {
+      icon: "/resourses/Icons/text_fields_24dp.svg",
+      label: t(isUserEnteredTextField(field) ? "field.userEnteredText" : "field.fixedText")
+    },
+    DateText: {
+      icon: "/resourses/Icons/calendar_month_24dp.svg",
+      label: t("tool.date")
+    },
+    OffsetDateText: {
+      icon: "/resourses/Icons/calendar_month_24dp.svg",
+      label: t("field.offsetDate")
+    },
+    TimeText: {
+      icon: "/resourses/Icons/clock_loader_24dp.svg",
+      label: t("tool.time")
+    },
+    CounterText: {
+      icon: "/resourses/Icons/decimal_increase_24dp.svg",
+      label: t("tool.counter")
+    }
+  };
+
+  return presentationByType[field?.fldType] || {
+    icon: "/resourses/Icons/text_fields_24dp.svg",
+    label: getFieldSubtypeLabel(field)
+  };
+}
+
+function selectFieldFromList(field, visibleNames = [], event = null, options = {}) {
+  if (event?.shiftKey) {
+    const fallbackAnchor = visibleNames.includes(state.selectedName) ? state.selectedName : null;
+    const anchorName = visibleNames.includes(fieldListSelectionAnchorName)
+      ? fieldListSelectionAnchorName
+      : fallbackAnchor;
+    const anchorIndex = visibleNames.indexOf(anchorName);
+    const targetIndex = visibleNames.indexOf(field.name);
+
+    if (anchorIndex >= 0 && targetIndex >= 0) {
+      const rangeStart = Math.min(anchorIndex, targetIndex);
+      const rangeEnd = Math.max(anchorIndex, targetIndex);
+      setSelectedNames(visibleNames.slice(rangeStart, rangeEnd + 1), field.name);
+    } else {
+      setSelectedNames([field.name], field.name);
+      fieldListSelectionAnchorName = field.name;
+    }
+  } else {
+    fieldListSelectionAnchorName = field.name;
+    setSelectedNames([field.name], field.name);
+  }
+
+  activateInspectorTab("object");
+  if (options.center !== false) centerOnField(field);
+  renderAll();
+}
+
+function findFieldListMenuButton(fieldName) {
+  return Array.from(elFieldsList.querySelectorAll("[data-field-menu]")).find((button) => (
+    button.dataset.fieldMenu === fieldName
+  )) || null;
+}
+
+function selectFieldForListMenu(field) {
+  if (isFieldSelected(field.name)) return false;
+  fieldListSelectionAnchorName = field.name;
+  setSelectedNames([field.name], field.name);
+  activateInspectorTab("object");
+  renderAll();
+  return true;
+}
+
 function renderFieldLists() {
   const q = (elSearch.value || "").trim().toLowerCase();
   const counts = {
@@ -1937,6 +2737,8 @@ function renderFieldLists() {
     const isActive = button.dataset.fieldFilter === activeFieldFilter;
     button.classList.toggle("fieldFilter__button--active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
+    button.setAttribute("aria-selected", String(isActive));
+    button.tabIndex = isActive ? 0 : -1;
   });
 
   elFieldsList.innerHTML = "";
@@ -1945,10 +2747,24 @@ function renderFieldLists() {
 }
 
 function makeListItem(field, visibleNames = []) {
-  const item = document.createElement("button");
+  const selected = isFieldSelected(field.name);
+  const presentation = getFieldListPresentation(field);
+  const item = document.createElement("div");
   item.className = "listItem" + (isFieldSelected(field.name) ? " listItem--active" : "");
-  item.type = "button";
-  item.setAttribute("aria-pressed", String(isFieldSelected(field.name)));
+  item.setAttribute("role", "listitem");
+  item.dataset.fieldName = field.name;
+
+  const selectButton = document.createElement("button");
+  selectButton.className = "listItem__select";
+  selectButton.type = "button";
+  selectButton.setAttribute("aria-label", `${field.name}, ${presentation.label}`);
+  selectButton.setAttribute("aria-pressed", String(selected));
+
+  const icon = document.createElement("img");
+  icon.className = "buttonIcon listItem__icon";
+  icon.src = presentation.icon;
+  icon.alt = "";
+  icon.setAttribute("aria-hidden", "true");
 
   const main = document.createElement("div");
   main.className = "listItem__main";
@@ -1959,40 +2775,45 @@ function makeListItem(field, visibleNames = []) {
 
   const supporting = document.createElement("div");
   supporting.className = "listItem__supporting";
-  supporting.textContent = getFieldSubtypeLabel(field);
+  supporting.textContent = presentation.label;
 
-  const trailing = document.createElement("span");
-  trailing.className = "badge";
-  trailing.textContent = field.printed ? t("panel.printed.title") : t("panel.hidden.title");
+  const menuButton = document.createElement("button");
+  menuButton.className = "btn btn--ghost listItem__menu";
+  menuButton.type = "button";
+  menuButton.dataset.fieldMenu = field.name;
+  menuButton.setAttribute("aria-label", t("panel.objectActions", { name: field.name }));
+  menuButton.setAttribute("aria-haspopup", "menu");
+  menuButton.setAttribute("aria-expanded", "false");
+
+  const menuIcon = document.createElement("img");
+  menuIcon.className = "btnIcon";
+  menuIcon.src = "/resourses/Icons/more_vert_24dp.svg";
+  menuIcon.alt = "";
+  menuIcon.setAttribute("aria-hidden", "true");
+  menuButton.appendChild(menuIcon);
 
   main.appendChild(headline);
   main.appendChild(supporting);
-  item.appendChild(main);
-  item.appendChild(trailing);
-  item.addEventListener("click", (event) => {
-    if (event.shiftKey) {
-      const fallbackAnchor = visibleNames.includes(state.selectedName) ? state.selectedName : null;
-      const anchorName = visibleNames.includes(fieldListSelectionAnchorName)
-        ? fieldListSelectionAnchorName
-        : fallbackAnchor;
-      const anchorIndex = visibleNames.indexOf(anchorName);
-      const targetIndex = visibleNames.indexOf(field.name);
+  selectButton.appendChild(icon);
+  selectButton.appendChild(main);
+  item.appendChild(selectButton);
+  item.appendChild(menuButton);
 
-      if (anchorIndex >= 0 && targetIndex >= 0) {
-        const rangeStart = Math.min(anchorIndex, targetIndex);
-        const rangeEnd = Math.max(anchorIndex, targetIndex);
-        setSelectedNames(visibleNames.slice(rangeStart, rangeEnd + 1), field.name);
-      } else {
-        setSelectedNames([field.name], field.name);
-        fieldListSelectionAnchorName = field.name;
-      }
-    } else {
-      fieldListSelectionAnchorName = field.name;
-      setSelectedNames([field.name], field.name);
-    }
-
-    centerOnField(field);
-    renderAll();
+  selectButton.addEventListener("click", (event) => {
+    selectFieldFromList(field, visibleNames, event);
+  });
+  menuButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    selectFieldForListMenu(field);
+    const trigger = findFieldListMenuButton(field.name) || menuButton;
+    openInspectorObjectMenuAt(null, null, trigger, trigger);
+  });
+  item.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    selectFieldForListMenu(field);
+    const trigger = findFieldListMenuButton(field.name) || menuButton;
+    openInspectorObjectMenuAt(event.clientX, event.clientY, trigger);
   });
   return item;
 }
@@ -2012,6 +2833,7 @@ function centerOnField(field) {
 function renderSelectionPanels() {
   const selectedFields = getSelectedFields();
   const f = selectedFields.length === 1 ? selectedFields[0] : null;
+  syncInspectorShell(selectedFields);
 
   if (!selectedFields.length) {
     elPropsEmpty.classList.remove("hidden");
@@ -2031,7 +2853,7 @@ function renderSelectionPanels() {
     elPropsEmpty.classList.add("hidden");
     elPropsPanel.classList.remove("hidden");
     elPropsPanel.innerHTML = "";
-    elPropsPanel.appendChild(buildMultiSelectionProps(selectedFields));
+    elPropsPanel.appendChild(buildMultiSelectionInspectorProps(selectedFields));
 
     elDmEmpty.classList.remove("hidden");
     elDmPanel.classList.add("hidden");
@@ -2045,14 +2867,7 @@ function renderSelectionPanels() {
   elPropsPanel.classList.remove("hidden");
   elPropsPanel.innerHTML = "";
 
-  elPropsPanel.appendChild(buildCommonProps(f));
-  elPropsPanel.appendChild(document.createElement("div")).className = "hr1";
-
-  if (f.fldType === "Barcode" && f.barcode?.dataMatrix) {
-    elPropsPanel.appendChild(buildBarcodeProps(f));
-  } else {
-    elPropsPanel.appendChild(buildTextLikeProps(f));
-  }
+  elPropsPanel.appendChild(buildObjectInspectorProps(f));
 
   if (f.fldType === "Barcode" && f.barcode?.dataMatrix) {
     elDmEmpty.classList.add("hidden");
@@ -2079,26 +2894,239 @@ function updateStatusSelectionMulti(fields) {
   elStatusLeft.textContent = t("status.selectedMultiple", { count: fields.length });
 }
 
-function updateTemplateSize(widthMm, heightMm) {
+function boundsOverlapWithGapInternal(a, b, gap = 0) {
+  return a.x < b.x + b.w + gap &&
+    a.x + a.w + gap > b.x &&
+    a.y < b.y + b.h + gap &&
+    a.y + a.h + gap > b.y;
+}
+
+function getHiddenFieldPlacementMetricsInternal(field, now = new Date()) {
+  const candidate = {
+    ...field,
+    geom: { ...(field?.geom || {}), x: 0, y: 0 },
+    _konva: null
+  };
+  const bounds = getFieldRenderedBoundsInternal(candidate, now, { forceFresh: true });
+  return {
+    offsetX: Number(bounds.x) || 0,
+    offsetY: Number(bounds.y) || 0,
+    w: Math.max(1, Math.ceil(Number(bounds.w) || 0)),
+    h: Math.max(1, Math.ceil(Number(bounds.h) || 0))
+  };
+}
+
+function getHiddenPlacementRegionsInternal(options = {}) {
+  const imageWidth = Math.max(0, Number(options.imageWidth ?? state.subImage?.width) || 0);
+  const imageHeight = Math.max(0, Number(options.imageHeight ?? state.subImage?.height) || 0);
+  const hardware = getHardwareAreaBoundsInternal(options);
+  const outerGap = Math.max(0, Number(options.outerGap ?? mmToInternal(1.5)) || 0);
+  const regions = [];
+  const rightX = Math.min(hardware.w, imageWidth + outerGap);
+  const belowY = Math.min(hardware.h, imageHeight + outerGap);
+
+  if (rightX < hardware.w) {
+    regions.push({ id: "right", x: rightX, y: 0, w: hardware.w - rightX, h: hardware.h });
+  }
+  if (belowY < hardware.h) {
+    regions.push({ id: "below", x: 0, y: belowY, w: hardware.w, h: hardware.h - belowY });
+  }
+  regions.push({ id: "hardware", ...hardware });
+  return regions.filter((region, index, all) => region.w > 0 && region.h > 0 &&
+    all.findIndex((candidate) => candidate.x === region.x && candidate.y === region.y && candidate.w === region.w && candidate.h === region.h) === index);
+}
+
+function findHiddenFieldPlacementInternal(field, occupiedFields = [], options = {}) {
+  if (!field?.geom) return null;
+  const now = options.now || new Date();
+  const gap = Math.max(0, Number(options.gap ?? mmToInternal(1)) || 0);
+  const metrics = getHiddenFieldPlacementMetricsInternal(field, now);
+  const occupiedBounds = (occupiedFields || [])
+    .filter((item) => item && item !== field && item.geom)
+    .map((item) => getFieldRenderedBoundsInternal(item, now, { forceFresh: true }))
+    .filter((bounds) => bounds && [bounds.x, bounds.y, bounds.w, bounds.h].every(Number.isFinite));
+
+  for (const region of getHiddenPlacementRegionsInternal(options)) {
+    if (metrics.w > region.w || metrics.h > region.h) continue;
+    // Text selection bounds have a small positive inset relative to field.geom.
+    // Seed the search so geom starts at the region origin instead of becoming
+    // negative after the rendered-bounds offset is subtracted below.
+    const xCandidates = new Set([region.x + Math.max(0, metrics.offsetX)]);
+    const yCandidates = new Set([region.y + Math.max(0, metrics.offsetY)]);
+    occupiedBounds.forEach((bounds) => {
+      xCandidates.add(Math.round(bounds.x + bounds.w + gap));
+      xCandidates.add(Math.round(bounds.x - metrics.w - gap));
+      yCandidates.add(Math.round(bounds.y + bounds.h + gap));
+      yCandidates.add(Math.round(bounds.y - metrics.h - gap));
+    });
+    const xs = [...xCandidates].filter((value) => value >= region.x && value + metrics.w <= region.x + region.w).sort((a, b) => a - b);
+    const ys = [...yCandidates].filter((value) => value >= region.y && value + metrics.h <= region.y + region.h).sort((a, b) => a - b);
+
+    for (const y of ys) {
+      for (const x of xs) {
+        const geomX = Math.round(x - metrics.offsetX);
+        const geomY = Math.round(y - metrics.offsetY);
+        if (geomX < 0 || geomY < 0) continue;
+        const candidate = {
+          ...field,
+          geom: { ...field.geom, x: geomX, y: geomY },
+          _konva: null
+        };
+        const bounds = getFieldRenderedBoundsInternal(candidate, now, { forceFresh: true });
+        if (!isBoundsInsideArea(bounds, region)) continue;
+        if (occupiedBounds.some((other) => boundsOverlapWithGapInternal(bounds, other, gap))) continue;
+        return { ...field.geom, x: geomX, y: geomY };
+      }
+    }
+  }
+  return null;
+}
+
+function repackHiddenFieldsWithinHardwareBounds(fields, options = {}) {
+  const allFields = (fields || []).filter((field) => field?.geom);
+  const hardware = getHardwareAreaBoundsInternal(options);
+  const requestedNames = options.fieldNames ? new Set(options.fieldNames) : null;
+  const hiddenFields = allFields.filter((field) => {
+    if (field.printed) return false;
+    if (requestedNames && !requestedNames.has(field.name)) return false;
+    if (options.forceAll) return true;
+    return !isBoundsInsideArea(
+      getFieldRenderedBoundsInternal(field, options.now || new Date(), { forceFresh: true }),
+      hardware
+    );
+  });
+  const targets = new Set(hiddenFields);
+  const occupied = allFields.filter((field) => !targets.has(field));
+  const failedFieldNames = [];
+  let placedCount = 0;
+
+  hiddenFields.forEach((field) => {
+    const placement = findHiddenFieldPlacementInternal(field, occupied, options);
+    if (!placement) {
+      failedFieldNames.push(field.name);
+      return;
+    }
+    field.geom = placement;
+    field._konva = null;
+    occupied.push(field);
+    placedCount += 1;
+  });
+
+  return { placedCount, failedFieldNames };
+}
+
+function findHiddenFieldEditingPlacementInternal(field, occupiedFields = [], options = {}) {
+  if (!field?.geom) return null;
+  const now = options.now || new Date();
+  const canvasWidth = Math.max(0, Number(
+    options.canvasWidth ?? options.imageWidth ?? getCanvasInternalWidth()
+  ) || 0);
+  const columnGap = Math.max(1, Number(options.columnGap ?? mmToInternal(1.5)) || 0);
+  const rowGap = Math.max(0, Number(options.rowGap ?? mmToInternal(1)) || 0);
+  const columnX = Math.round(canvasWidth + columnGap);
+  const columnTolerance = Math.max(1, Number(options.columnTolerance ?? mmToInternal(0.1)) || 0);
+  const metrics = getHiddenFieldPlacementMetricsInternal(field, now);
+  const columnBounds = (occupiedFields || [])
+    .filter((item) => item && item !== field && !item.printed && item.geom)
+    .filter((item) => Math.abs(Number(item.geom.x) - columnX) <= columnTolerance)
+    .map((item) => getFieldRenderedBoundsInternal(item, now, { forceFresh: true }))
+    .filter((bounds) => bounds && [bounds.x, bounds.y, bounds.w, bounds.h].every(Number.isFinite));
+  const renderedTop = columnBounds.length
+    ? Math.max(...columnBounds.map((bounds) => bounds.y + bounds.h)) + rowGap
+    : Math.max(0, metrics.offsetY);
+
+  return {
+    ...field.geom,
+    x: columnX,
+    y: Math.max(0, Math.round(renderedTop - metrics.offsetY))
+  };
+}
+
+function stackHiddenFieldsOutsideTemplate(fields, canvasWidthInternal, options = {}) {
+  const columnGap = Math.max(1, Number(options.columnGap ?? mmToInternal(1.5)));
+  const previousCanvasWidth = Number(options.previousCanvasWidthInternal);
+  const previousColumnX = Number.isFinite(previousCanvasWidth) ? previousCanvasWidth + columnGap : null;
+  const autoColumnTolerance = Math.max(1, Number(options.autoColumnTolerance ?? mmToInternal(0.1)));
+  const targets = (fields || [])
+    .filter((field) => field && !field.printed && field.geom)
+    .filter((field) => !options.autoColumnOnly ||
+      (previousColumnX != null && Math.abs(Number(field.geom.x) - previousColumnX) <= autoColumnTolerance));
+  const targetSet = new Set(targets);
+  const occupied = (fields || []).filter((field) => field?.geom && !targetSet.has(field));
+
+  targets.forEach((field) => {
+    field.geom = findHiddenFieldEditingPlacementInternal(field, occupied, {
+      ...options,
+      canvasWidth: Math.max(0, Number(canvasWidthInternal) || 0)
+    });
+    field._konva = null;
+    occupied.push(field);
+  });
+  return targets.length;
+}
+
+function updateTemplateSize(widthMm, heightMm, options = {}) {
   if (!state.xmlDoc) return;
 
-  const limitWidthInternal = EMPTY_TEMPLATE_SUBIMAGE.maxImageWidth;
-  const limitHeightInternal = EMPTY_TEMPLATE_SUBIMAGE.maxImageHeight;
-  const currentWidthInternal = state.subImage.maxWidth || state.subImage.width || limitWidthInternal;
-  const currentHeightInternal = state.subImage.maxHeight || state.subImage.height || limitHeightInternal;
-  const nextWidthMm = normalizeEmptyTemplateDimensionMm(widthMm, limitWidthInternal, currentWidthInternal);
-  const nextHeightMm = normalizeEmptyTemplateDimensionMm(heightMm, limitHeightInternal, currentHeightInternal);
-  const nextWidthInternal = Math.min(limitWidthInternal, mmToInternal(nextWidthMm));
-  const nextHeightInternal = Math.min(limitHeightInternal, mmToInternal(nextHeightMm));
+  const capabilities = getKnownPrinterCapabilities(state.docMeta.printerModel);
+  const limitWidthInternal = capabilities?.maxImageWidth || Infinity;
+  const limitHeightInternal = capabilities?.maxImageHeight || Infinity;
+  const currentWidthInternal = state.subImage.workspaceWidth || getCanvasInternalWidth();
+  const currentHeightInternal = state.subImage.workspaceHeight || getCanvasInternalHeight();
+  const changedDimension = String(options.changedDimension ?? "both");
+  const updatesWidth = changedDimension !== "height";
+  const updatesHeight = changedDimension !== "width";
+  const nextWidthMm = updatesWidth
+    ? normalizeEmptyTemplateDimensionMm(widthMm, limitWidthInternal, currentWidthInternal)
+    : internalToMm(currentWidthInternal);
+  const nextHeightMm = updatesHeight
+    ? normalizeEmptyTemplateDimensionMm(heightMm, limitHeightInternal, currentHeightInternal)
+    : internalToMm(currentHeightInternal);
+  const nextWidthInternal = updatesWidth
+    ? Math.min(limitWidthInternal, mmToInternal(nextWidthMm))
+    : currentWidthInternal;
+  const nextHeightInternal = updatesHeight
+    ? Math.min(limitHeightInternal, mmToInternal(nextHeightMm))
+    : currentHeightInternal;
 
-  if (nextWidthInternal === state.subImage.maxWidth && nextHeightInternal === state.subImage.maxHeight) return;
+  if (nextWidthInternal === currentWidthInternal && nextHeightInternal === currentHeightInternal) return;
 
   pushHistory();
+  const previousWidthInternal = currentWidthInternal;
+  const widthChanged = nextWidthInternal !== previousWidthInternal;
+  state.subImage.workspaceWidth = nextWidthInternal;
+  state.subImage.workspaceHeight = nextHeightInternal;
+  // Persist the configured area, independently of the used Image* bounds.
   state.subImage.maxWidth = nextWidthInternal;
   state.subImage.maxHeight = nextHeightInternal;
-  if (!state.subImage.width) state.subImage.width = nextWidthInternal;
-  if (!state.subImage.height) state.subImage.height = nextHeightInternal;
+  if (widthChanged) {
+    stackHiddenFieldsOutsideTemplate(state.fields, nextWidthInternal, {
+      previousCanvasWidthInternal: previousWidthInternal,
+      autoColumnOnly: true
+    });
+  }
   renderAll();
+}
+
+function getTemplateSizePanelModel() {
+  const capabilities = getKnownPrinterCapabilities(state.docMeta.printerModel);
+  const limitWidthInternal = capabilities?.maxImageWidth || 0;
+  const limitHeightInternal = capabilities?.maxImageHeight || 0;
+  const currentWidthInternal = state.subImage.workspaceWidth || getCanvasInternalWidth();
+  const currentHeightInternal = state.subImage.workspaceHeight || getCanvasInternalHeight();
+
+  return {
+    currentWidthMm: Number(internalToMm(currentWidthInternal).toFixed(2)),
+    currentHeightMm: Number(internalToMm(currentHeightInternal).toFixed(2)),
+    maxWidthMm: limitWidthInternal > 0 ? Number(internalToMm(limitWidthInternal).toFixed(2)) : null,
+    maxHeightMm: limitHeightInternal > 0 ? Number(internalToMm(limitHeightInternal).toFixed(2)) : null,
+    limitStatus: getTemplateHardwareLimitStatus({
+      width: currentWidthInternal,
+      height: currentHeightInternal,
+      maxWidth: limitWidthInternal,
+      maxHeight: limitHeightInternal
+    })
+  };
 }
 
 function renderTemplateSizePanel() {
@@ -2113,52 +3141,94 @@ function renderTemplateSizePanel() {
     return;
   }
 
-  const limitWidthInternal = EMPTY_TEMPLATE_SUBIMAGE.maxImageWidth;
-  const limitHeightInternal = EMPTY_TEMPLATE_SUBIMAGE.maxImageHeight;
-  const currentWidthInternal = state.subImage.maxWidth || state.subImage.width || limitWidthInternal;
-  const currentHeightInternal = state.subImage.maxHeight || state.subImage.height || limitHeightInternal;
-  const currentWidthMm = normalizeEmptyTemplateDimensionMm(internalToMm(currentWidthInternal), limitWidthInternal, currentWidthInternal);
-  const currentHeightMm = normalizeEmptyTemplateDimensionMm(internalToMm(currentHeightInternal), limitHeightInternal, currentHeightInternal);
-  const maxWidthMm = internalToMm(limitWidthInternal);
-  const maxHeightMm = internalToMm(limitHeightInternal);
+  const {
+    currentWidthMm,
+    currentHeightMm,
+    maxWidthMm,
+    maxHeightMm,
+    limitStatus
+  } = getTemplateSizePanelModel();
 
   const wrap = document.createElement("div");
-  wrap.className = "form";
-  wrap.appendChild(fieldRow(t("template.width"), inputNumber(currentWidthMm, (v) => updateTemplateSize(v, currentHeightMm), { min: 0.01, max: maxWidthMm, step: 0.01 })));
-  wrap.appendChild(fieldRow(t("template.height"), inputNumber(currentHeightMm, (v) => updateTemplateSize(currentWidthMm, v), { min: 0.01, max: maxHeightMm, step: 0.01 })));
+  wrap.className = "inspectorSection__grid";
+  wrap.appendChild(fieldRow(t("template.width"), inputNumber(currentWidthMm, (v) => updateTemplateSize(v, currentHeightMm, { changedDimension: "width" }), { min: 0.01, max: maxWidthMm, step: 0.01 })));
+  wrap.appendChild(fieldRow(t("template.height"), inputNumber(currentHeightMm, (v) => updateTemplateSize(currentWidthMm, v, { changedDimension: "height" }), { min: 0.01, max: maxHeightMm, step: 0.01 })));
 
   const note = document.createElement("div");
-  note.className = "note";
+  note.className = "note templateSizeNote";
   note.textContent = t("template.sizeLimit", {
-    maxWidth: maxWidthMm.toFixed(2),
-    maxHeight: maxHeightMm.toFixed(2),
-    usedWidth: internalToMm(getUsedImageInternalWidth()).toFixed(2),
-    usedHeight: internalToMm(getUsedImageInternalHeight()).toFixed(2)
+    maxWidth: maxWidthMm?.toFixed(2) ?? "—",
+    maxHeight: maxHeightMm?.toFixed(2) ?? "—",
+    usedWidth: currentWidthMm.toFixed(2),
+    usedHeight: currentHeightMm.toFixed(2)
   });
 
   elTemplateSizePanel.appendChild(wrap);
   elTemplateSizePanel.appendChild(note);
+  if (limitStatus.exceeded) {
+    const warning = document.createElement("div");
+    warning.className = "note note--error";
+    warning.textContent = t("template.sizeLimitExceeded", {
+      width: currentWidthMm.toFixed(2),
+      height: currentHeightMm.toFixed(2),
+      maxWidth: maxWidthMm.toFixed(2),
+      maxHeight: maxHeightMm.toFixed(2)
+    });
+    elTemplateSizePanel.appendChild(warning);
+  }
 }
 
 function updateTemplateTarget(printerModel, printMode) {
   if (!state.xmlDoc) return;
 
-  const nextPrinterModel = normalizePrinterModel(printerModel);
+  const currentPrinterModel = String(state.docMeta.printerModel ?? "").trim();
+  const nextPrinterModel = String(printerModel ?? "").trim() || currentPrinterModel;
   const nextPrintMode = normalizePrintMode(printMode);
-  const nextDesignedFor = buildDesignedForLabel(nextPrinterModel, nextPrintMode);
+  const nextDesignedFor = nextPrinterModel
+    ? buildDesignedForLabel(nextPrinterModel, nextPrintMode)
+    : String(state.docMeta.designedFor ?? "").trim();
+  const capabilities = getKnownPrinterCapabilities(nextPrinterModel);
+  const targetChanged = nextPrinterModel !== currentPrinterModel;
+  const hasValidMaxWidth = Number.isFinite(state.subImage.maxWidth) && state.subImage.maxWidth >= 0;
+  const hasValidMaxHeight = Number.isFinite(state.subImage.maxHeight) && state.subImage.maxHeight >= 0;
+  const hasValidXRes = Number.isFinite(Number(state.subImage.xRes)) && Number(state.subImage.xRes) > 0;
+  const hardwareNeedsUpdate = !!capabilities && (
+    targetChanged || !hasValidMaxWidth || !hasValidMaxHeight || !hasValidXRes
+  );
+  const currentWorkspaceWidth = state.subImage.workspaceWidth ?? getCanvasInternalWidth();
+  const currentWorkspaceHeight = state.subImage.workspaceHeight ?? getCanvasInternalHeight();
 
   if (
-    nextPrinterModel === normalizePrinterModel(state.docMeta.printerModel) &&
+    nextPrinterModel === currentPrinterModel &&
     nextPrintMode === normalizePrintMode(state.docMeta.printMode) &&
-    nextDesignedFor === String(state.docMeta.designedFor ?? "").trim()
+    nextDesignedFor === String(state.docMeta.designedFor ?? "").trim() &&
+    !hardwareNeedsUpdate
   ) {
     return;
   }
 
+  const usedSizeWasDirty = !!state.subImage.usedSizeDirty;
   pushHistory();
+  state.subImage.usedSizeDirty = usedSizeWasDirty;
+  if (!(Number(state.subImage.workspaceWidth) > 0) && currentWorkspaceWidth > 0) {
+    state.subImage.workspaceWidth = currentWorkspaceWidth;
+  }
+  if (!(Number(state.subImage.workspaceHeight) > 0) && currentWorkspaceHeight > 0) {
+    state.subImage.workspaceHeight = currentWorkspaceHeight;
+  }
   state.docMeta.printerModel = nextPrinterModel;
   state.docMeta.printMode = nextPrintMode;
   state.docMeta.designedFor = nextDesignedFor;
+  if (capabilities) {
+    // Changing the head changes validation limits, not the document's size.
+    if (!hasValidMaxWidth) state.subImage.maxWidth = currentWorkspaceWidth ?? capabilities.maxImageWidth;
+    if (!hasValidMaxHeight) state.subImage.maxHeight = currentWorkspaceHeight ?? capabilities.maxImageHeight;
+    if (targetChanged || !hasValidXRes) state.subImage.xRes = capabilities.xRes;
+    if (targetChanged) {
+      state.subImage.yRes = capabilities.yRes ?? capabilities.xRes;
+      state.subImage.printerType = nextPrinterModel;
+    }
+  }
   renderAll();
 }
 
@@ -2174,14 +3244,18 @@ function renderTemplateTargetPanel() {
     return;
   }
 
-  const currentPrinterModel = normalizePrinterModel(state.docMeta.printerModel);
+  const currentPrinterModel = String(state.docMeta.printerModel ?? "").trim();
   const currentPrintMode = normalizePrintMode(state.docMeta.printMode);
 
   const wrap = document.createElement("div");
-  wrap.className = "form";
+  wrap.className = "inspectorSection__grid inspectorSection__grid--singleColumn";
   wrap.appendChild(fieldRow(
     t("template.printerModel"),
-    selectStringOptions(currentPrinterModel, TEMPLATE_TARGET_PRINTER_MODELS, (value) => updateTemplateTarget(value, currentPrintMode))
+    createMaterialSelect(
+      getPrinterModelSelectOptions(currentPrinterModel),
+      currentPrinterModel,
+      (value) => updateTemplateTarget(value, currentPrintMode)
+    )
   ));
   wrap.appendChild(fieldRow(
     t("template.printMode"),
@@ -2194,7 +3268,10 @@ function renderTemplateTargetPanel() {
 
   const note = document.createElement("div");
   note.className = "note";
-  note.textContent = t("template.designedFor", { value: buildDesignedForLabel(currentPrinterModel, currentPrintMode) });
+  const currentDesignedFor = currentPrinterModel
+    ? buildDesignedForLabel(currentPrinterModel, currentPrintMode)
+    : String(state.docMeta.designedFor ?? "").trim();
+  note.textContent = t("template.designedFor", { value: currentDesignedFor });
 
   elTemplateTargetPanel.appendChild(wrap);
   elTemplateTargetPanel.appendChild(note);

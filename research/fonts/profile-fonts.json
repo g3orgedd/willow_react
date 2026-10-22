@@ -1,0 +1,326 @@
+﻿[
+    {
+        "coder":  "Nimitz Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6530(53mm) - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Nimitz Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6530(53mm) - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6420(53mm) - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6420(53mm) - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac(107mm) Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6420(107mm) - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac(107mm) Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6420(107mm) - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Forrester Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6330(53mm) - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Forrester Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6330(53mm) - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6320(53mm) - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6320(53mm) - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac(32mm) Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6320(32mm) - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac(32mm) Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6320(32mm) - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Independence(32mm) Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6230(32mm) - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Independence(32mm) Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex 6230(32mm) - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac(107mm) Continuous",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex(107mm) - Continuous",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    },
+    {
+        "coder":  "Zodiac(107mm) Intermittent",
+        "useZFBF":  0,
+        "pitchResolution":  1,
+        "profile":  "DataFlex(107mm) - Intermittent",
+        "faces":  [
+                      "Arial",
+                      "Arial Black",
+                      "Times New Roman",
+                      "Courier New",
+                      "Symbol",
+                      "OCRB",
+                      "Tahoma",
+                      "Arabic Transparent",
+                      "MS Gothic"
+                  ],
+        "useTTFFonts":  1
+    }
+]

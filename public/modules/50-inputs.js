@@ -151,44 +151,12 @@ function setControlAriaLabel(control, label) {
   if (!control.hasAttribute("aria-label")) control.setAttribute("aria-label", label);
 }
 
-function getControlValueTooltip(control) {
-  if (!control) return "";
-  if (control.tagName === "SELECT") return getSelectDisplayLabel(control);
-  if (control.type === "checkbox" || control.type === "radio") return "";
-  return String(control.value ?? "");
-}
-
-function syncControlValueTooltip(control) {
-  if (!control || typeof control.setAttribute !== "function") return;
-  const tooltip = getControlValueTooltip(control).trim();
-  if (tooltip) control.setAttribute("title", tooltip);
-  else control.removeAttribute("title");
-
-  const customSelectButton = control._customSelectButton;
-  if (!customSelectButton) return;
-  if (tooltip) customSelectButton.setAttribute("title", tooltip);
-  else customSelectButton.removeAttribute("title");
-}
-
-function enableControlValueTooltip(control) {
-  if (!control || control.dataset?.valueTooltipEnabled === "1") {
-    syncControlValueTooltip(control);
-    return;
-  }
-
-  control.dataset.valueTooltipEnabled = "1";
-  control.addEventListener("input", () => syncControlValueTooltip(control));
-  control.addEventListener("change", () => syncControlValueTooltip(control));
-  syncControlValueTooltip(control);
-}
-
 function fieldRow(label, inputEl) {
   const row = document.createElement("div");
   row.className = "fieldRow";
   const lab = document.createElement("label");
   lab.textContent = label;
   setControlAriaLabel(inputEl, label);
-  enableControlValueTooltip(inputEl);
   row.appendChild(lab);
   row.appendChild(inputEl);
   return row;
@@ -204,7 +172,6 @@ function labeledMini(label, el) {
   lab.textContent = label;
   wrap.appendChild(lab);
   setControlAriaLabel(el, label);
-  enableControlValueTooltip(el);
   wrap.appendChild(el);
   return wrap;
 }
@@ -249,18 +216,37 @@ function positionCustomSelectMenu(selectEl) {
   const rect = button.getBoundingClientRect();
   const gap = 4;
   const viewportGap = 8;
-  const width = Math.max(rect.width, 120);
-  const below = window.innerHeight - rect.bottom - gap - viewportGap;
-  const above = rect.top - gap - viewportGap;
-  const openAbove = below < 180 && above > below;
-  const maxHeight = Math.max(120, Math.min(280, openAbove ? above : below));
-  const left = Math.max(viewportGap, Math.min(rect.left, window.innerWidth - width - viewportGap));
-  const top = openAbove
-    ? Math.max(viewportGap, rect.top - gap - maxHeight)
-    : Math.min(rect.bottom + gap, window.innerHeight - viewportGap - maxHeight);
+  const maxMenuHeight = 280;
+  const viewport = window.visualViewport;
+  const viewportLeft = viewport?.offsetLeft || 0;
+  const viewportTop = viewport?.offsetTop || 0;
+  const viewportWidth = viewport?.width || window.innerWidth;
+  const viewportHeight = viewport?.height || window.innerHeight;
+  const minLeft = viewportLeft + viewportGap;
+  const minTop = viewportTop + viewportGap;
+  const maxRight = viewportLeft + viewportWidth - viewportGap;
+  const maxBottom = viewportTop + viewportHeight - viewportGap;
+  const width = Math.min(Math.max(rect.width, 120), Math.max(0, viewportWidth - viewportGap * 2));
+  const below = maxBottom - rect.bottom - gap;
+  const above = rect.top - gap - minTop;
 
-  menu.style.width = `${Math.round(width)}px`;
-  menu.style.maxHeight = `${Math.round(maxHeight)}px`;
+  // Measure the rendered menu before choosing a direction. Short menus must use
+  // their real height; positioning them with maxMenuHeight leaves a large gap
+  // between the menu and its button when they open upwards.
+  menu.style.width = `${Math.floor(width)}px`;
+  menu.style.maxHeight = `${maxMenuHeight}px`;
+  const preferredHeight = menu.offsetHeight;
+  const openAbove = below < preferredHeight && above > below;
+  const availableHeight = Math.max(0, openAbove ? above : below);
+  menu.style.maxHeight = `${Math.floor(Math.min(maxMenuHeight, availableHeight, Math.max(0, viewportHeight - viewportGap * 2)))}px`;
+  const renderedHeight = menu.offsetHeight;
+  const preferredLeft = selectEl.id === "precisionMoveStep"
+    ? rect.left + (rect.width - width) / 2
+    : rect.left;
+  const left = Math.max(minLeft, Math.min(preferredLeft, maxRight - width));
+  const preferredTop = openAbove ? rect.top - gap - renderedHeight : rect.bottom + gap;
+  const top = Math.max(minTop, Math.min(preferredTop, maxBottom - renderedHeight));
+
   menu.style.left = `${Math.round(left)}px`;
   menu.style.top = `${Math.round(top)}px`;
 }
@@ -276,20 +262,20 @@ function syncCustomSelectControl(selectEl) {
   if (selectEl.getAttribute("aria-label")) button.setAttribute("aria-label", selectEl.getAttribute("aria-label"));
   button.setAttribute("aria-disabled", String(!!selectEl.disabled));
   root.classList.toggle("is-disabled", !!selectEl.disabled);
-  syncControlValueTooltip(selectEl);
 }
 
 function buildCustomSelectMenu(selectEl) {
   const menu = getCustomSelectMenu();
   menu.innerHTML = "";
 
-  Array.from(selectEl.options).forEach((option) => {
+  const appendOptionButton = (option, parent) => {
     const optionButton = document.createElement("button");
     optionButton.type = "button";
     optionButton.className = "customSelectOption";
     optionButton.setAttribute("role", "option");
     optionButton.setAttribute("aria-selected", String(option.selected));
-    optionButton.textContent = option.textContent;
+    optionButton.textContent = option.dataset.menuLabel || option.textContent;
+    if (option.dataset.menuLabel) optionButton.setAttribute("aria-label", option.textContent);
     if (option.selected) optionButton.classList.add("is-active");
 
     optionButton.addEventListener("click", (event) => {
@@ -306,7 +292,27 @@ function buildCustomSelectMenu(selectEl) {
       }
     });
 
-    menu.appendChild(optionButton);
+    parent.appendChild(optionButton);
+  };
+
+  Array.from(selectEl.children).forEach((child) => {
+    if (child.tagName !== "OPTGROUP") {
+      if (child.tagName === "OPTION") appendOptionButton(child, menu);
+      return;
+    }
+
+    const group = document.createElement("div");
+    group.className = "customSelectGroup";
+    group.setAttribute("role", "group");
+    group.setAttribute("aria-label", child.label);
+
+    const groupLabel = document.createElement("div");
+    groupLabel.className = "customSelectGroup__label";
+    groupLabel.setAttribute("aria-hidden", "true");
+    groupLabel.textContent = child.label;
+    group.appendChild(groupLabel);
+    Array.from(child.children).forEach((option) => appendOptionButton(option, group));
+    menu.appendChild(group);
   });
 }
 
@@ -348,6 +354,12 @@ function ensureCustomSelectListeners() {
   });
 
   window.addEventListener("resize", closeCustomSelect);
+  window.visualViewport?.addEventListener("resize", () => {
+    if (activeCustomSelect?.selectEl) positionCustomSelectMenu(activeCustomSelect.selectEl);
+  });
+  window.visualViewport?.addEventListener("scroll", () => {
+    if (activeCustomSelect?.selectEl) positionCustomSelectMenu(activeCustomSelect.selectEl);
+  });
   document.addEventListener("scroll", () => {
     if (activeCustomSelect?.selectEl) positionCustomSelectMenu(activeCustomSelect.selectEl);
   }, true);
@@ -498,17 +510,7 @@ function createMaterialSelect(items, currentValue, onChange, opts = {}) {
   if (opts.disabled) sel.disabled = true;
 
   const current = String(currentValue ?? "");
-  items.forEach((item) => {
-    const opt = document.createElement("option");
-    const value = String(item.value ?? "");
-    const label = String(item.label ?? value);
-    opt.value = value;
-    opt.textContent = label;
-    if (value === current) opt.selected = true;
-    sel.appendChild(opt);
-  });
-
-  sel.value = current;
+  populateSelectOptions(sel, items, current);
   sel.addEventListener("change", () => onChange(sel.value));
   scheduleEnhanceSelectControl(sel);
   return sel;

@@ -1,0 +1,92 @@
+[
+    {
+        "profile":  "DataFlex 6530(53mm) - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6530_53mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6530(53mm) - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6530_53mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6420(53mm) - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6420_53mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6420(53mm) - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6420_53mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6420(107mm) - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6420_107mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6420(107mm) - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6420_107mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6330(53mm) - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6330_53mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6330(53mm) - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6330_53mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6320(53mm) - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6320_53mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6320(53mm) - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6320_53mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6320(32mm) - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6320_32mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6320(32mm) - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6320_32mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6230(32mm) - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6230_32mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6230(32mm) - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_6230_32mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex(107mm) - Continuous",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_107mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex(107mm) - Intermittent",
+        "status":  "ok",
+        "file":  "header-only-DataFlex_107mm_Intermittent.ciff"
+    }
+]

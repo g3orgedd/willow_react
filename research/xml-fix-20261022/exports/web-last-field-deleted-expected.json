@@ -1,0 +1,198 @@
+{
+  "mode": "web",
+  "caseId": "last-field-deleted",
+  "filename": "xml-web-last-field-deleted.ciff",
+  "actualLocation": "http://127.0.0.1:5173/",
+  "transport": "HTTP Vite without preload/IPC",
+  "fixtureConstruction": "Research fixture prepared inside actual renderer; production Save dialog button clicked",
+  "sourceXml": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<ImageDesign Version=\"23\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6320(53mm) - Continuous\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEHQEPJ39CCAQw6EP4VyHLiU</ClStVersionInfo></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>1033</ImageWidth><ImageHeight>1808</ImageHeight><MaxImageWidth>1600</MaxImageWidth><MaxImageHeight>2400</MaxImageHeight><XRes>0.120000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader><Field Name=\"Arial10\"><FldType>FixedText</FldType><X>125</X><Y>100</Y><W>717</W><H>392</H><CalcData><![CDATA[ABC]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[ABC]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"Times13\"><FldType>FixedText</FldType><X>150</X><Y>700</Y><W>700</W><H>517</H><CalcData><![CDATA[123]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[123]]></Default></Object></Data><Text><Font><Face><![CDATA[Times New Roman]]></Face><Family>Roman</Family></Font></Text></Field><Field Name=\"Courier8\"><FldType>FixedText</FldType><X>200</X><Y>1500</Y><W>833</W><H>308</H><CalcData><![CDATA[SN01]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[SN01]]></Default></Object></Data><Text><Font><Face><![CDATA[Courier New]]></Face><Family>Modern</Family><Pitch>8</Pitch><XMag>125</XMag></Font></Text></Field></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>\r\n",
+  "beforeAction": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1033,
+      "height": 1808,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "fields": [
+      {
+        "name": "Arial10",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 125,
+          "y": 100,
+          "w": 717,
+          "h": 392
+        }
+      },
+      {
+        "name": "Times13",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 150,
+          "y": 700,
+          "w": 700,
+          "h": 517
+        }
+      },
+      {
+        "name": "Courier8",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 200,
+          "y": 1500,
+          "w": 833,
+          "h": 308
+        }
+      }
+    ]
+  },
+  "preSave": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 0,
+      "height": 0,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "canvas": {
+      "width": 1600,
+      "height": 2400,
+      "pixelsPerMm": 12
+    },
+    "fields": []
+  },
+  "aggregate": {
+    "width": 0,
+    "height": 0
+  },
+  "expectedImage": {
+    "width": 0,
+    "height": 0
+  },
+  "expectedMax": {
+    "width": 1600,
+    "height": 2400
+  },
+  "postSave": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 0,
+      "height": 0,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "fields": [],
+    "validation": {
+      "invalidPrintableFieldNames": [],
+      "invalidHardwareFieldNames": [],
+      "structuralErrors": []
+    }
+  },
+  "expectedResolution": {
+    "xRes": 0.12,
+    "yRes": 0.12
+  },
+  "xmlAfterSave": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<ImageDesign Version=\"23\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6320(53mm) - Continuous\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A</ClStVersionInfo></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>0</ImageWidth><ImageHeight>0</ImageHeight><MaxImageWidth>1600</MaxImageWidth><MaxImageHeight>2400</MaxImageHeight><XRes>0.120000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>",
+  "saveStartedAt": "2026-10-22T08:58:56.274Z",
+  "saveEndedAt": "2026-10-22T08:58:56.303Z",
+  "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-web-last-field-deleted.ciff",
+  "bytes": 1336,
+  "sha256": "66489945474553087d3594ef73d215da3f6d605ca60df64675bb93bea9aa96ca",
+  "screenshot": "web-last-field-deleted-editor.png",
+  "completedDownloadEvents": [
+    {
+      "event": "will-download",
+      "filename": "xml-web-normal.ciff",
+      "at": "2026-10-22T08:58:55.125Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-normal.ciff",
+      "state": "completed",
+      "at": "2026-10-22T08:58:55.482Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-no-op-import.ciff",
+      "at": "2026-10-22T08:58:55.503Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-no-op-import.ciff",
+      "state": "completed",
+      "at": "2026-10-22T08:58:55.526Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-rotation.ciff",
+      "at": "2026-10-22T08:58:55.701Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-rotation.ciff",
+      "state": "completed",
+      "at": "2026-10-22T08:58:55.734Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-hidden-outlier.ciff",
+      "at": "2026-10-22T08:58:55.906Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-hidden-outlier.ciff",
+      "state": "completed",
+      "at": "2026-10-22T08:58:55.928Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-all-hidden.ciff",
+      "at": "2026-10-22T08:58:56.096Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-all-hidden.ciff",
+      "state": "completed",
+      "at": "2026-10-22T08:58:56.118Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-last-field-deleted.ciff",
+      "at": "2026-10-22T08:58:56.275Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-last-field-deleted.ciff",
+      "state": "completed",
+      "at": "2026-10-22T08:58:56.300Z"
+    }
+  ],
+  "executable": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\node_modules\\electron\\dist\\electron.exe",
+  "preload": null,
+  "savePath": "Save button -> will-download -> setSavePath -> completed"
+}

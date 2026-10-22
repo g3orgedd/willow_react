@@ -1,0 +1,3 @@
+45423f0d PUSH dword ptr [ECX + 0x8]
+45423f10 CALL dword ptr [0x454472d8]
+45423f16 RET

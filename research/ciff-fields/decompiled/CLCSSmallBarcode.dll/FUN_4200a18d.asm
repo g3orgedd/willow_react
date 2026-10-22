@@ -1,0 +1,4 @@
+4200a18d AND dword ptr [ECX + 0x8],0x0
+4200a191 XOR EAX,EAX
+4200a193 AND dword ptr [ECX + 0xc],0x0
+4200a197 RET

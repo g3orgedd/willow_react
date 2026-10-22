@@ -1,0 +1,2 @@
+4543acc4 CALL EAX
+4543acc6 RET

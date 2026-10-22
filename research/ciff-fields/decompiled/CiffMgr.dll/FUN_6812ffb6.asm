@@ -1,0 +1,13 @@
+6812ffb6 PUSH EBP
+6812ffb7 MOV EBP,ESP
+6812ffb9 MOV ECX,dword ptr [EBP + 0xc]
+6812ffbc TEST ECX,ECX
+6812ffbe JNZ 0x6812ffc7
+6812ffc0 MOV EAX,0x80004003
+6812ffc5 JMP 0x6812ffd1
+6812ffc7 MOV EAX,dword ptr [EBP + 0x8]
+6812ffca MOV EAX,dword ptr [EAX + 0x48]
+6812ffcd MOV dword ptr [ECX],EAX
+6812ffcf XOR EAX,EAX
+6812ffd1 POP EBP
+6812ffd2 RET 0x8

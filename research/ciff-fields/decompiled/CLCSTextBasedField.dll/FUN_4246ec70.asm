@@ -1,0 +1,4 @@
+4246ec70 CMP ECX,dword ptr [0x424ba210]
+4246ec76 JNZ 0x4246ec7a
+4246ec78 RET
+4246ec7a JMP 0x4246fbcb

@@ -1,0 +1,2 @@
+68111d5f SUB dword ptr [ESP + 0x4],0x4
+68111d64 JMP 0x68111d45

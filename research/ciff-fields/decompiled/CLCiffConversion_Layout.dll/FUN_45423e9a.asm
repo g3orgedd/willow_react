@@ -1,0 +1,19 @@
+45423e9a PUSH 0x4
+45423e9c MOV EAX,0x45446101
+45423ea1 CALL 0x4542a975
+45423ea6 MOV ESI,ECX
+45423ea8 MOV dword ptr [EBP + -0x10],ESI
+45423eab MOV dword ptr [ESI],0x4544ac04
+45423eb1 MOV dword ptr [ESI + 0x4],0x4544ac20
+45423eb8 MOV dword ptr [ESI + 0x8],0x4544ac38
+45423ebf AND dword ptr [EBP + -0x4],0x0
+45423ec3 MOV dword ptr [ESI + 0xc],0xc0000001
+45423eca CALL 0x4541b7d0
+45423ecf MOV ECX,dword ptr [0x4545fba8]
+45423ed5 MOV EAX,dword ptr [ECX]
+45423ed7 CALL dword ptr [EAX + 0x8]
+45423eda OR dword ptr [EBP + -0x4],0xffffffff
+45423ede MOV ECX,ESI
+45423ee0 CALL 0x45413006
+45423ee5 CALL 0x4542a943
+45423eea RET

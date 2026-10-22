@@ -1,0 +1,161 @@
+{
+  "verifiedAt": "2026-10-22T09:10:07.768Z",
+  "cases": [
+    {
+      "name": "web-party-gtin2",
+      "caseId": "party-gtin2",
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "fields": 7,
+      "gtinFieldName": "GTIN2",
+      "segmentOrder": [
+        "C1",
+        "GTIN2",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN"
+      ],
+      "allHelperFontPitch": 10,
+      "fixedLengthPaddingExact": true,
+      "nativeResolvedValuesExact": true,
+      "nativeCanonicalPropertiesExact": true,
+      "allPreviewMetricsExact": false,
+      "previewMetricDifferences": [
+        "SN.Native metrics mismatch: 254x47 vs 230x47"
+      ],
+      "image": {
+        "width": 1300,
+        "height": 1300
+      },
+      "max": {
+        "width": 1600,
+        "height": 2400
+      },
+      "dataMatrixDots": {
+        "width": 132,
+        "height": 132
+      },
+      "unchangedSha256": "CE22161EAC7F9077E6018A8909E0EFDFB2ED5C2255B85FAEC8B794F2827876D3"
+    },
+    {
+      "name": "web-party-box-gtin",
+      "caseId": "party-box-gtin",
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "fields": 9,
+      "gtinFieldName": "GTIN",
+      "segmentOrder": [
+        "C1",
+        "GTIN",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN",
+        "C4",
+        "BOX_COUNTER"
+      ],
+      "allHelperFontPitch": 10,
+      "fixedLengthPaddingExact": true,
+      "nativeResolvedValuesExact": true,
+      "nativeCanonicalPropertiesExact": true,
+      "allPreviewMetricsExact": false,
+      "previewMetricDifferences": [
+        "SN.Native metrics mismatch: 254x47 vs 230x47"
+      ],
+      "image": {
+        "width": 1300,
+        "height": 1300
+      },
+      "max": {
+        "width": 1600,
+        "height": 2400
+      },
+      "dataMatrixDots": {
+        "width": 132,
+        "height": 132
+      },
+      "unchangedSha256": "488D87D95CE89C12C7A14A292B74CF65D92ED6C9086C69196D0B39D93B068462"
+    },
+    {
+      "name": "exe-party-gtin2",
+      "caseId": "party-gtin2",
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "fields": 7,
+      "gtinFieldName": "GTIN2",
+      "segmentOrder": [
+        "C1",
+        "GTIN2",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN"
+      ],
+      "allHelperFontPitch": 10,
+      "fixedLengthPaddingExact": true,
+      "nativeResolvedValuesExact": true,
+      "nativeCanonicalPropertiesExact": true,
+      "allPreviewMetricsExact": false,
+      "previewMetricDifferences": [
+        "SN.Native metrics mismatch: 254x47 vs 230x47"
+      ],
+      "image": {
+        "width": 1300,
+        "height": 1300
+      },
+      "max": {
+        "width": 1600,
+        "height": 2400
+      },
+      "dataMatrixDots": {
+        "width": 132,
+        "height": 132
+      },
+      "unchangedSha256": "DE70FC29BC1440B19031C7FD19D6CA151670F5E19629F8AF40DAC66B71B4E09A"
+    },
+    {
+      "name": "exe-party-box-gtin",
+      "caseId": "party-box-gtin",
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "fields": 9,
+      "gtinFieldName": "GTIN",
+      "segmentOrder": [
+        "C1",
+        "GTIN",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN",
+        "C4",
+        "BOX_COUNTER"
+      ],
+      "allHelperFontPitch": 10,
+      "fixedLengthPaddingExact": true,
+      "nativeResolvedValuesExact": true,
+      "nativeCanonicalPropertiesExact": true,
+      "allPreviewMetricsExact": false,
+      "previewMetricDifferences": [
+        "SN.Native metrics mismatch: 254x47 vs 230x47"
+      ],
+      "image": {
+        "width": 1300,
+        "height": 1300
+      },
+      "max": {
+        "width": 1600,
+        "height": 2400
+      },
+      "dataMatrixDots": {
+        "width": 132,
+        "height": 132
+      },
+      "unchangedSha256": "3C78A94394526F7F32209A41877F15F275905546B5C29A279D64BBF01F29901F"
+    }
+  ]
+}

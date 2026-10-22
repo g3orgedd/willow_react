@@ -1,0 +1,21 @@
+4080ebb9 PUSH 0x4
+4080ebbb MOV EAX,0x408460d8
+4080ebc0 CALL 0x4082d4e4
+4080ebc5 MOV ESI,ECX
+4080ebc7 MOV dword ptr [EBP + -0x10],ESI
+4080ebca LEA ECX,[ESI + 0x4]
+4080ebcd XOR EBX,EBX
+4080ebcf XOR EAX,EAX
+4080ebd1 MOV dword ptr [ECX + 0x14],0x7
+4080ebd8 MOV dword ptr [ECX + 0x10],EBX
+4080ebdb MOV word ptr [ECX],AX
+4080ebde MOV dword ptr [EBP + -0x4],EBX
+4080ebe1 MOV dword ptr [ESI + 0x20],EBX
+4080ebe4 PUSH EBX
+4080ebe5 PUSH 0x4084a5b8
+4080ebea MOV byte ptr [EBP + -0x4],0x1
+4080ebee CALL 0x408068cc
+4080ebf3 MOV byte ptr [ESI + 0x1c],BL
+4080ebf6 MOV EAX,ESI
+4080ebf8 CALL 0x4082d4b2
+4080ebfd RET

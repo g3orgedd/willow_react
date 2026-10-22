@@ -1,0 +1,23 @@
+4206ac4d PUSH 0x10
+4206ac4f PUSH 0x420b50e0
+4206ac54 CALL 0x420712c0
+4206ac59 XOR ESI,ESI
+4206ac5b MOV dword ptr [EBP + -0x1c],ESI
+4206ac5e MOV dword ptr [EBP + -0x20],ESI
+4206ac61 MOV dword ptr [EBP + -0x4],ESI
+4206ac64 CMP ESI,dword ptr [EBP + 0x10]
+4206ac67 JGE 0x4206ac7b
+4206ac69 MOV ECX,dword ptr [EBP + 0x8]
+4206ac6c CALL dword ptr [EBP + 0x14]
+4206ac6f MOV EAX,dword ptr [EBP + 0xc]
+4206ac72 ADD dword ptr [EBP + 0x8],EAX
+4206ac75 INC ESI
+4206ac76 MOV dword ptr [EBP + -0x1c],ESI
+4206ac79 JMP 0x4206ac64
+4206ac7b XOR EAX,EAX
+4206ac7d INC EAX
+4206ac7e MOV dword ptr [EBP + -0x20],EAX
+4206ac81 MOV dword ptr [EBP + -0x4],0xfffffffe
+4206ac88 CALL 0x4206ac9b
+4206ac8d CALL 0x42071305
+4206ac92 RET 0x14

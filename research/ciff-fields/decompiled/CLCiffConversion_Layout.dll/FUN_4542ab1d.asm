@@ -1,0 +1,31 @@
+4542ab1d PUSH EBP
+4542ab1e MOV EBP,ESP
+4542ab20 SUB ESP,0x18
+4542ab23 MOV EAX,[0x4545d9f0]
+4542ab28 LEA ECX,[EBP + -0x18]
+4542ab2b AND dword ptr [EBP + -0x18],0x0
+4542ab2f XOR EAX,ECX
+4542ab31 MOV ECX,dword ptr [EBP + 0x8]
+4542ab34 MOV dword ptr [EBP + -0x10],EAX
+4542ab37 MOV EAX,dword ptr [EBP + 0xc]
+4542ab3a MOV dword ptr [EBP + -0xc],EAX
+4542ab3d MOV EAX,dword ptr [EBP + 0x14]
+4542ab40 INC EAX
+4542ab41 MOV dword ptr [EBP + -0x14],0x4542aa4d
+4542ab48 MOV dword ptr [EBP + -0x8],ECX
+4542ab4b MOV dword ptr [EBP + -0x4],EAX
+4542ab4e MOV EAX,FS:[0x0]
+4542ab54 MOV dword ptr [EBP + -0x18],EAX
+4542ab57 LEA EAX,[EBP + -0x18]
+4542ab5a MOV FS:[0x0],EAX
+4542ab60 PUSH dword ptr [EBP + 0x18]
+4542ab63 PUSH ECX
+4542ab64 PUSH dword ptr [EBP + 0x10]
+4542ab67 CALL 0x454302b0
+4542ab6c MOV ECX,EAX
+4542ab6e MOV EAX,dword ptr [EBP + -0x18]
+4542ab71 MOV FS:[0x0],EAX
+4542ab77 MOV EAX,ECX
+4542ab79 MOV ESP,EBP
+4542ab7b POP EBP
+4542ab7c RET

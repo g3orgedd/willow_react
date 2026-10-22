@@ -1,0 +1,2 @@
+45439cd2 AND dword ptr [0x454626ec],0x0
+45439cd9 RET

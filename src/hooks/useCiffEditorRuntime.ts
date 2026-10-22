@@ -10,12 +10,12 @@ export interface RuntimeState {
 }
 
 function logRuntime(
-  level: WillowLogPayload['level'],
+  level: GlyphLogPayload['level'],
   event: string,
   message: string,
   details: unknown = null,
 ): void {
-  window.willowLogger?.log({
+  window.glyphLogger?.log({
     category: level === 'ERROR' || level === 'FATAL' ? 'errors' : 'application',
     level,
     event,
@@ -34,7 +34,7 @@ function ensureGlobalSymbols(moduleKey: string, checks: readonly string[]): void
 }
 
 async function bootRuntime(): Promise<void> {
-  if (window.__WILLOW_CIFF_RUNTIME_READY__) return;
+  if (window.__GLYPH_CIFF_RUNTIME_READY__) return;
   logRuntime('INFO', 'RUNTIME_BOOT_STARTED', 'Начата загрузка модулей редактора.', {
     moduleCount: CIFF_EDITOR_MODULES.length,
   });
@@ -64,7 +64,7 @@ async function bootRuntime(): Promise<void> {
     });
   }
 
-  window.__WILLOW_CIFF_RUNTIME_READY__ = true;
+  window.__GLYPH_CIFF_RUNTIME_READY__ = true;
   logRuntime('INFO', 'RUNTIME_BOOT_COMPLETED', 'Все модули редактора успешно загружены.');
 }
 
@@ -75,8 +75,8 @@ export function useCiffEditorRuntime(): RuntimeState {
     let cancelled = false;
     setState({ status: 'loading', error: null });
 
-    const runtimePromise = window.__WILLOW_CIFF_RUNTIME_PROMISE__ ?? bootRuntime();
-    window.__WILLOW_CIFF_RUNTIME_PROMISE__ = runtimePromise;
+    const runtimePromise = window.__GLYPH_CIFF_RUNTIME_PROMISE__ ?? bootRuntime();
+    window.__GLYPH_CIFF_RUNTIME_PROMISE__ = runtimePromise;
 
     runtimePromise
       .then(() => {

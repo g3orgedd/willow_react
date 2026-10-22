@@ -1,0 +1,561 @@
+{
+    "method":  "Original CiffHelper.ResolveField and CiffMgr properties/GetXml/Validate",
+    "processBits":  32,
+    "cases":  [
+                  {
+                      "name":  "partial-source",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "SOURCE",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     67,
+                                                                     68,
+                                                                     69
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  2,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "BCD",
+                                         "calculatedDataUnits":  [
+                                                                     66,
+                                                                     67,
+                                                                     68
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  3,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "CD",
+                                         "calculatedDataUnits":  [
+                                                                     67,
+                                                                     68
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  4,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "BCDE",
+                                         "calculatedDataUnits":  [
+                                                                     66,
+                                                                     67,
+                                                                     68,
+                                                                     69
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  5,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "zero-count-back",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     67,
+                                                                     68
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  6,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "suffix",
+                                         "calculatedDataUnits":  [
+                                                                     68,
+                                                                     69
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   67,
+                                                                   68,
+                                                                   69
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   67,
+                                                                   68,
+                                                                   69
+                                                               ],
+                                          "padChar":  null,
+                                          "padMode":  null,
+                                          "fixedLength":  0,
+                                          "maximum":  0
+                                      },
+                                      {
+                                          "currentDataUnits":  [
+                                                                   66,
+                                                                   67,
+                                                                   68
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   66,
+                                                                   67,
+                                                                   68
+                                                               ],
+                                          "padChar":  null,
+                                          "padMode":  null,
+                                          "fixedLength":  0,
+                                          "maximum":  0
+                                      },
+                                      {
+                                          "currentDataUnits":  [
+                                                                   67,
+                                                                   68
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   67,
+                                                                   68
+                                                               ],
+                                          "padChar":  null,
+                                          "padMode":  null,
+                                          "fixedLength":  0,
+                                          "maximum":  0
+                                      },
+                                      {
+                                          "currentDataUnits":  [
+                                                                   66,
+                                                                   67,
+                                                                   68,
+                                                                   69
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   66,
+                                                                   67,
+                                                                   68,
+                                                                   69
+                                                               ],
+                                          "padChar":  null,
+                                          "padMode":  null,
+                                          "fixedLength":  0,
+                                          "maximum":  0
+                                      },
+                                      {
+                                          "currentDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   67,
+                                                                   68
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   67,
+                                                                   68
+                                                               ],
+                                          "padChar":  null,
+                                          "padMode":  null,
+                                          "fixedLength":  0,
+                                          "maximum":  0
+                                      },
+                                      {
+                                          "currentDataUnits":  [
+                                                                   68,
+                                                                   69
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   68,
+                                                                   69
+                                                               ],
+                                          "padChar":  null,
+                                          "padMode":  null,
+                                          "fixedLength":  0,
+                                          "maximum":  0
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTBLsP8OSC!3Ny1",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "dynamic-pad-mode0",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     48,
+                                                                     48,
+                                                                     48
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   48,
+                                                                   48,
+                                                                   48
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   65,
+                                                                   66
+                                                               ],
+                                          "padChar":  48,
+                                          "padMode":  0,
+                                          "fixedLength":  1,
+                                          "maximum":  5
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PNSoHUKQQFSJh9D!A8iU6O8",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "dynamic-pad-mode1",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     48,
+                                                                     48,
+                                                                     48,
+                                                                     65,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   48,
+                                                                   48,
+                                                                   48,
+                                                                   65,
+                                                                   66
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   65,
+                                                                   66
+                                                               ],
+                                          "padChar":  48,
+                                          "padMode":  1,
+                                          "fixedLength":  1,
+                                          "maximum":  5
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoB1H4E6GLsOLT3IiM6_CCqOClODoET6OVm2Al7",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "dynamic-pad-defaults",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     32,
+                                                                     32,
+                                                                     32
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   32,
+                                                                   32,
+                                                                   32
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   65,
+                                                                   66
+                                                               ],
+                                          "padChar":  32,
+                                          "padMode":  0,
+                                          "fixedLength":  1,
+                                          "maximum":  5
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PNSnEEUHDMOSqRQR6PV8Rq5",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "dynamic-pad-nul",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   65,
+                                                                   66
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   65,
+                                                                   66
+                                                               ],
+                                          "padChar":  0,
+                                          "padMode":  0,
+                                          "fixedLength":  1,
+                                          "maximum":  5
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "static-no-padding",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   65,
+                                                                   66
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   65,
+                                                                   66
+                                                               ],
+                                          "padChar":  48,
+                                          "padMode":  1,
+                                          "fixedLength":  1,
+                                          "maximum":  5
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "dynamic-no-truncation",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     67,
+                                                                     68,
+                                                                     69
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   67,
+                                                                   68,
+                                                                   69
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   67,
+                                                                   68,
+                                                                   69
+                                                               ],
+                                          "padChar":  48,
+                                          "padMode":  0,
+                                          "fixedLength":  1,
+                                          "maximum":  2
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PIUnBM9FJE9IW1PT6FUD7wA",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "user-empty-override",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "USER",
+                                         "calculatedDataUnits":  null
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   68,
+                                                                   69,
+                                                                   70,
+                                                                   65,
+                                                                   85,
+                                                                   76,
+                                                                   84
+                                                               ],
+                                          "padChar":  null,
+                                          "padMode":  null,
+                                          "fixedLength":  0,
+                                          "maximum":  0
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!B",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "user-value-override",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "USER",
+                                         "calculatedDataUnits":  [
+                                                                     79,
+                                                                     80,
+                                                                     69,
+                                                                     82,
+                                                                     65,
+                                                                     84,
+                                                                     79,
+                                                                     82
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   79,
+                                                                   80,
+                                                                   69,
+                                                                   82,
+                                                                   65,
+                                                                   84,
+                                                                   79,
+                                                                   82
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   68,
+                                                                   69,
+                                                                   70,
+                                                                   65,
+                                                                   85,
+                                                                   76,
+                                                                   84
+                                                               ],
+                                          "padChar":  null,
+                                          "padMode":  null,
+                                          "fixedLength":  0,
+                                          "maximum":  0
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFn6EH5Aj06gVJi1FmBQ0NLF2EzDOoI23J1PJDjLFaDCdH7KE0W4EnTStLAV4KoNM79",
+                      "validate":  "00000000"
+                  },
+                  {
+                      "name":  "user-pad-default",
+                      "status":  "ok",
+                      "fields":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "USER",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     32,
+                                                                     32,
+                                                                     32
+                                                                 ]
+                                     }
+                                 ],
+                      "objects":  [
+                                      {
+                                          "currentDataUnits":  [
+                                                                   65,
+                                                                   66,
+                                                                   32,
+                                                                   32,
+                                                                   32
+                                                               ],
+                                          "defaultDataUnits":  [
+                                                                   68,
+                                                                   69,
+                                                                   70,
+                                                                   65,
+                                                                   85,
+                                                                   76,
+                                                                   84
+                                                               ],
+                                          "padChar":  32,
+                                          "padMode":  0,
+                                          "fixedLength":  1,
+                                          "maximum":  5
+                                      }
+                                  ],
+                      "nativeToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PNSnEEUHDMOSqRQR6PV8Rq5",
+                      "validate":  "00000000"
+                  }
+              ]
+}

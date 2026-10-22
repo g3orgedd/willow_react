@@ -1,0 +1,2 @@
+4543202e AND dword ptr [0x45460b9c],0x0
+45432035 RET

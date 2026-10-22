@@ -1,0 +1,50 @@
+414093eb PUSH EBX
+414093ec PUSH ESI
+414093ed MOV ESI,dword ptr [0x414802b8]
+414093f3 PUSH EDI
+414093f4 MOV EDI,ECX
+414093f6 PUSH dword ptr [EDI + 0x3c]
+414093f9 CALL ESI
+414093fb XOR EBX,EBX
+414093fd MOV dword ptr [EDI + 0x3c],EBX
+41409400 PUSH dword ptr [EDI + 0x38]
+41409403 CALL ESI
+41409405 MOV dword ptr [EDI + 0x38],EBX
+41409408 AND dword ptr [EDI + 0x30],EBX
+4140940b AND dword ptr [EDI + 0x34],EBX
+4140940e MOV dword ptr [EDI + 0xbc],EBX
+41409414 MOV dword ptr [EDI + 0xc0],EBX
+4140941a MOV dword ptr [EDI + 0x28],EBX
+4140941d MOV dword ptr [EDI + 0x2c],EBX
+41409420 MOV dword ptr [EDI + 0x80],EBX
+41409426 MOV dword ptr [EDI + 0x84],EBX
+4140942c MOV dword ptr [EDI + 0x88],EBX
+41409432 MOV dword ptr [EDI + 0x8c],0x1
+4140943c MOV dword ptr [EDI + 0x90],EBX
+41409442 PUSH dword ptr [EDI + 0x94]
+41409448 CALL ESI
+4140944a MOV dword ptr [EDI + 0x94],EBX
+41409450 MOV dword ptr [EDI + 0x98],EBX
+41409456 MOV dword ptr [EDI + 0x9c],EBX
+4140945c MOV dword ptr [EDI + 0xa0],EBX
+41409462 MOV dword ptr [EDI + 0x70],EBX
+41409465 MOV dword ptr [EDI + 0x74],EBX
+41409468 MOV dword ptr [EDI + 0x78],EBX
+4140946b MOV dword ptr [EDI + 0xa4],EBX
+41409471 MOV dword ptr [EDI + 0xa8],EBX
+41409477 MOV dword ptr [EDI + 0xac],EBX
+4140947d MOV dword ptr [EDI + 0xb0],EBX
+41409483 MOV dword ptr [EDI + 0xb4],EBX
+41409489 MOV dword ptr [EDI + 0xc4],EBX
+4140948f MOV dword ptr [EDI + 0xc8],EBX
+41409495 MOV dword ptr [EDI + 0xcc],EBX
+4140949b MOV dword ptr [EDI + 0xd0],EBX
+414094a1 MOV dword ptr [EDI + 0x12c],EBX
+414094a7 PUSH dword ptr [EDI + 0x130]
+414094ad CALL ESI
+414094af MOV dword ptr [EDI + 0x130],EBX
+414094b5 MOV dword ptr [EDI + 0x20],EBX
+414094b8 POP EDI
+414094b9 POP ESI
+414094ba POP EBX
+414094bb RET

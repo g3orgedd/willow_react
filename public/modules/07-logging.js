@@ -1,4 +1,4 @@
-/* Detailed renderer logging for Willow CIFF Editor. */
+/* Detailed renderer logging for Glyph Studio. */
 (() => {
   const MAX_FALLBACK_ENTRIES = 500;
   const fallbackEntries = [];
@@ -61,14 +61,14 @@
       timestamp: new Date().toISOString()
     };
     try {
-      if (globalThis.willowLogger?.log) {
-        globalThis.willowLogger.log(payload);
+      if (globalThis.glyphLogger?.log) {
+        globalThis.glyphLogger.log(payload);
       } else {
         fallbackEntries.push(payload);
         if (fallbackEntries.length > MAX_FALLBACK_ENTRIES) fallbackEntries.shift();
       }
     } catch (error) {
-      originalConsoleError?.("Failed to send Willow log entry:", error);
+      originalConsoleError?.("Failed to send Glyph Studio log entry:", error);
     }
   }
 
@@ -433,16 +433,16 @@
 
     let bridgeInfo = null;
     try {
-      bridgeInfo = await globalThis.willowLogger?.getInfo?.();
-      if (globalThis.willowLogger?.log && fallbackEntries.length) {
-        fallbackEntries.splice(0).forEach((entry) => globalThis.willowLogger.log(entry));
+      bridgeInfo = await globalThis.glyphLogger?.getInfo?.();
+      if (globalThis.glyphLogger?.log && fallbackEntries.length) {
+        fallbackEntries.splice(0).forEach((entry) => globalThis.glyphLogger.log(entry));
       }
     } catch (error) {
-      originalConsoleWarn?.("Willow file logging bridge is unavailable:", error);
+      originalConsoleWarn?.("Glyph Studio file logging bridge is unavailable:", error);
     }
 
     emitLog("application", "RENDERER_LOGGING_INITIALIZED", "Система логирования интерфейса инициализирована.", {
-      loggingBridgeAvailable: !!globalThis.willowLogger?.log,
+      loggingBridgeAvailable: !!globalThis.glyphLogger?.log,
       logInfo: bridgeInfo,
       runtime: {
         userAgent: navigator.userAgent,
@@ -482,7 +482,7 @@
     scheduleState: scheduleApplicationStateLog,
     collectState: collectApplicationState,
     flush() {
-      return globalThis.willowLogger?.flush?.() ?? Promise.resolve(null);
+      return globalThis.glyphLogger?.flush?.() ?? Promise.resolve(null);
     }
   });
   globalThis.initAppLogging = initAppLogging;

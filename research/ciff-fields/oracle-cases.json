@@ -1,0 +1,2478 @@
+[
+  {
+    "name": "field-family-0-defaults",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "field-family-1-defaults",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "field-family-2-defaults",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldDisplayed",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldDisplayed": 0
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldXPos",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldXPos": -100
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldYPos",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldYPos": 123
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldWidth",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldWidth": 456
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldHeight",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldHeight": 789
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldLine",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLine": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldOrientation",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldOrientation": 90
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-OverrideThis",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "OverrideThis": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldInverse",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldInverse": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldMirror",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldMirror": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldRenderMode",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldRenderMode": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-CalculatedData",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "CalculatedData": "A\u0001B\tC\nD\rE\u001fF<&>"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldLogged",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLogged": "custom-log"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-ClearStyleFieldType",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "logged-0",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLogged": ""
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "logged-1",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLogged": null
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "logged-2",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLogged": "Not Logged"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontName",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontName": "OCRB"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontFamily",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontFamily": 16
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontPitch",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontPitch": 8
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontXMag",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontXMag": 125
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontYMag",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontYMag": 150
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontTrueTypeSize",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontTrueTypeSize": 2
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-BoldText",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BoldText": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-BoldWeight",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BoldWeight": 700
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-ItalicText",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ItalicText": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-DoubleSpace",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "DoubleSpace": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-BlockWidth",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BlockWidth": 200
+        },
+        "objects": []
+      }
+    ],
+    "expectedError": "E_ACCESSDENIED"
+  },
+  {
+    "name": "text-BlockHeight",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BlockHeight": 300
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-BlockMaximumLines",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BlockMaximumLines": 2
+        },
+        "objects": []
+      }
+    ],
+    "expectedError": "E_ACCESSDENIED"
+  },
+  {
+    "name": "text-BlockMinimumFontSize",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BlockMinimumFontSize": 6
+        },
+        "objects": []
+      }
+    ],
+    "expectedError": "E_ACCESSDENIED"
+  },
+  {
+    "name": "text-BlockJustification",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BlockJustification": 2
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-BlockHyphenation",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BlockHyphenation": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontPitchResolution",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontPitchResolution": 2
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "block-default",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 1,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "block-complete",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 1,
+        "name": "Field00",
+        "properties": {
+          "BlockWidth": 2000,
+          "BlockHeight": 1200,
+          "BlockMaximumLines": 3,
+          "BlockMinimumFontSize": 6,
+          "BlockJustification": 2,
+          "BlockHyphenation": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-00",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-01",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 1,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-02",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 2,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-03",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 3,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-04",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 4,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-05",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 5,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-06",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 6,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-07",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 7,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-08",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 8,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-09",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 9,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-10",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 10,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-11",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 11,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-12",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 12,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-13",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 13,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-14",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 14,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-15",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 15,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-16",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 16,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-17",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 17,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-18",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 18,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-19",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 19,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-20",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 20,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-21",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 21,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-22",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 22,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-23",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 23,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-24",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 24,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-25",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 25,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-26",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 26,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-Magnification",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "Magnification": 1250
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-Height",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "Height": 1200
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-HRDisplayed",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "HRDisplayed": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-HRAbove",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "HRAbove": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-HRFontName",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "HRFontName": "Arial"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-HRFontPitch",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "HRFontPitch": 8
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-HRFontXMag",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "HRFontXMag": 125
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-HRFontYMag",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "HRFontYMag": 150
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-HRFontTTSize",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "HRFontTTSize": 2
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-CheckDigit",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "CheckDigit": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-QuietMargins",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "QuietMargins": 0
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-XOffset",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "XOffset": 15
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-BarcodePrinting",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BarcodePrinting": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-HRPrintCheckDigit",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "HRPrintCheckDigit": 0
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-BarcodeMagnificationRoundingFactor",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "BarcodeMagnificationRoundingFactor": 25
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-itf-extensions",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ThickToThinRatio": 300,
+          "BearerBars": 1,
+          "BearerBox": 1,
+          "HGauge": 20
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-datamatrix-extensions",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 15,
+        "name": "Field00",
+        "properties": {
+          "ECCType": 3,
+          "ModuleSize": 50,
+          "SymbolSize": 7,
+          "ClearStyleFieldType": "Barcode"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-qr-extensions",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 18,
+        "name": "Field00",
+        "properties": {
+          "ModuleSize": 50,
+          "QRVersion": 3,
+          "QRErrLevel": 2,
+          "QRMirror": 1,
+          "ClearStyleFieldType": "Barcode"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-pdf417-extensions",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 16,
+        "name": "Field00",
+        "properties": {
+          "ModuleSize": 50,
+          "RowHeight": 4,
+          "Columns": 5,
+          "MaximumRows": 6,
+          "ErrorCorrection": 2,
+          "PDF417Type": 1,
+          "PDF417Encoding": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-subtype-0",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-subtype-1",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 1,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-subtype-2",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 2,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-subtype-3",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 3,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-shape-0",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "PrimitiveShape": 0,
+          "LineWidth": 10
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-shape-1",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "PrimitiveShape": 1,
+          "LineWidth": 10
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-shape-2",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "PrimitiveShape": 2,
+          "LineWidth": 10
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-shape-3",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "PrimitiveShape": 3,
+          "LineWidth": 10
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-shape-4",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "PrimitiveShape": 4,
+          "LineWidth": 10
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-shape-5",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "PrimitiveShape": 5,
+          "LineWidth": 10
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-shape-6",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "PrimitiveShape": 6,
+          "LineWidth": 10
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-shape-7",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "PrimitiveShape": 7,
+          "LineWidth": 10
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "graphic-static-options",
+    "fields": [
+      {
+        "type": 2,
+        "subtype": 1,
+        "name": "Field00",
+        "properties": {
+          "GraphicWidth": 128,
+          "GraphicHeight": 64,
+          "MaintainAspectRatio": 0,
+          "ResizeFrame": 1,
+          "LogoReferencePrinter": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "data-branch-0",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-branch-1",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-branch-2",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 2,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-branch-3",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-branch-4",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 4,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 4
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-branch-5",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 5,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-branch-6",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 6,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-branch-7",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 7,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 7
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-branch-8",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 8,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Sample<&>",
+              "ClearStyleDataType": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-flags-0",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-flags-1",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 1,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-flags-2",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 2,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "DefaultData": "value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-flags-3",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 3,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "DefaultData": "value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-FixedLength",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "FixedLength": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-FixedLengthPadCharacter",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "FixedLengthPadCharacter": 48
+            }
+          }
+        ]
+      }
+    ],
+    "expectedError": "E_ACCESSDENIED"
+  },
+  {
+    "name": "object-FixedLengthPadMode",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "FixedLengthPadMode": 1
+            }
+          }
+        ]
+      }
+    ],
+    "expectedError": "E_ACCESSDENIED"
+  },
+  {
+    "name": "object-Locale",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "Locale": "RU-RU"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-Calendar",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "Calendar": 2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-Encryption",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "Encryption": "Example.Component"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-MaximumCharacters",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "MaximumCharacters": 31
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-DefaultData",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Default<&>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-Reference",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "Reference": "source-key"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-fixed-padding",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "FixedLength": 1,
+              "FixedLengthPadCharacter": 48,
+              "FixedLengthPadMode": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "source-field",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "SourceFieldName": "SRC",
+              "StartCharacter": 2,
+              "NumberOfCharacters": 5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "source-data",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 2,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "ConnStr": "example-connection-string",
+              "SourceSQL": "SELECT code\nFROM sample",
+              "ClearStyleDataType": 6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "user-text",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText"
+        },
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "DefaultData": "DEFAULT",
+              "VariableTextPrompt": "Enter code",
+              "VariableTextInputMask": "NNNN",
+              "VariableTextUserEnteredData": "1234",
+              "VariableTextPromptAtCoder": 1,
+              "VariableTextResetOnSelect": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "offset-date",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "OffsetDateText"
+        },
+        "objects": [
+          {
+            "type": 4,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "ClearStyleDataType": 3,
+              "DefaultData": "dd'/'MM'/'yyyy",
+              "OffsetDateSourceName": "ShelfLife"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "counter",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "CounterText"
+        },
+        "objects": [
+          {
+            "type": 5,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 4,
+              "DefaultData": "0001",
+              "PrintsPerCount": 3,
+              "ResetOnSelect": 1,
+              "Rollover": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-collection-order",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 9,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "first"
+            }
+          },
+          {
+            "type": 0,
+            "index": 1,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "second"
+            }
+          },
+          {
+            "type": 0,
+            "index": 5,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "third"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "field-collection-order",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Z",
+        "properties": {},
+        "objects": []
+      },
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "A",
+        "properties": {},
+        "objects": []
+      },
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "M",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "duplicate-field-name",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "SAME",
+        "properties": {
+          "FieldXPos": 100
+        },
+        "objects": []
+      },
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "SAME",
+        "properties": {
+          "FieldXPos": 200
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "duplicate-data-index",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "first"
+            }
+          },
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "second"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "runtime-fixed",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "Hello<&>"
+            }
+          }
+        ]
+      }
+    ],
+    "resolve": true
+  },
+  {
+    "name": "runtime-time",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "ClearStyleDataType": 1,
+              "DefaultData": "HH':'mm"
+            }
+          }
+        ]
+      }
+    ],
+    "resolve": true
+  },
+  {
+    "name": "runtime-date",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "ClearStyleDataType": 2,
+              "DefaultData": "dd'/'MM'/'yyyy"
+            }
+          }
+        ]
+      }
+    ],
+    "resolve": true
+  },
+  {
+    "name": "runtime-user",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "DEFAULT",
+              "VariableTextUserEnteredData": "OPERATOR"
+            }
+          }
+        ]
+      }
+    ],
+    "resolve": true
+  },
+  {
+    "name": "runtime-fixed-pad",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "abc",
+              "MaximumCharacters": 6,
+              "FixedLength": 1,
+              "FixedLengthPadCharacter": 48,
+              "FixedLengthPadMode": 1
+            }
+          }
+        ]
+      }
+    ],
+    "resolve": true
+  },
+  {
+    "name": "counter-subcounter",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 5,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "ClearStyleDataType": 4,
+              "PrintsPerCount": 3
+            },
+            "subCounters": [
+              {
+                "significance": 0,
+                "alphaNumeric": false,
+                "leadCharacter": 48,
+                "order": 0,
+                "properties": {
+                  "Used": 1,
+                  "NumberOfCharacters": 4,
+                  "LeadingCharacters": 1,
+                  "StartValue": "0",
+                  "EndValue": "9999",
+                  "CurrentValue": "42",
+                  "StepSize": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "runtime-counter",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 5,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "ClearStyleDataType": 4,
+              "PrintsPerCount": 3
+            },
+            "subCounters": [
+              {
+                "significance": 0,
+                "alphaNumeric": false,
+                "leadCharacter": 48,
+                "order": 0,
+                "properties": {
+                  "Used": 1,
+                  "NumberOfCharacters": 4,
+                  "LeadingCharacters": 1,
+                  "StartValue": "0",
+                  "EndValue": "9999",
+                  "CurrentValue": "42",
+                  "StepSize": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "resolve": true
+  },
+  {
+    "name": "with-native-clst",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText",
+          "CalculatedData": "Hello"
+        },
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "Hello"
+            }
+          }
+        ]
+      }
+    ],
+    "generateClSt": true
+  },
+  {
+    "name": "with-native-clst-empty",
+    "fields": [],
+    "generateClSt": true
+  },
+  {
+    "name": "runtime-source-field",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "SOURCE",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "ABCDE"
+            }
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "TARGET",
+        "properties": {},
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 5,
+              "SourceFieldName": "SOURCE",
+              "StartCharacter": 1,
+              "NumberOfCharacters": 3
+            }
+          }
+        ]
+      }
+    ],
+    "resolve": true
+  },
+  {
+    "name": "native-time-recipe",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "TimeText",
+          "FieldLine": 1,
+          "FontPitch": 8
+        },
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "ClearStyleDataType": 1,
+              "DefaultData": "HH':'mm"
+            }
+          }
+        ]
+      }
+    ],
+    "resolve": true,
+    "generateClSt": true
+  },
+  {
+    "name": "native-dm-template",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 15,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "Barcode",
+          "ModuleSize": 50,
+          "SymbolSize": 6,
+          "QuietMargins": 0,
+          "FieldWidth": 1100,
+          "FieldHeight": 1100,
+          "Height": 1100,
+          "CalculatedData": "~1010123456789012821ABC123"
+        },
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "~101"
+            }
+          },
+          {
+            "type": 0,
+            "index": 1,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "01234567890128"
+            }
+          },
+          {
+            "type": 0,
+            "index": 2,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "21"
+            }
+          },
+          {
+            "type": 0,
+            "index": 3,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "ABC123"
+            }
+          }
+        ]
+      }
+    ],
+    "generateClSt": true
+  }
+]

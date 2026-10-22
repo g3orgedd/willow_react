@@ -1,0 +1,12 @@
+4542d6db PUSH EBP
+4542d6dc MOV EBP,ESP
+4542d6de PUSH dword ptr [EBP + 0x18]
+4542d6e1 PUSH 0x0
+4542d6e3 PUSH dword ptr [EBP + 0x14]
+4542d6e6 PUSH dword ptr [EBP + 0x10]
+4542d6e9 PUSH dword ptr [EBP + 0xc]
+4542d6ec PUSH dword ptr [EBP + 0x8]
+4542d6ef CALL 0x4542d6f9
+4542d6f4 ADD ESP,0x18
+4542d6f7 POP EBP
+4542d6f8 RET

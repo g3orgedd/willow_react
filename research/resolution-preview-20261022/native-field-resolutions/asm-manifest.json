@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "module": "CLCSTextBasedField.dll",
+      "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSTextBasedField.dll",
+      "sha256": "2b9cedaa8a9bdc5ecb92f9dc43855650b0698b6f0ff0190237e6c5889232409b",
+      "functions": [
+        {
+          "va": "42458960",
+          "size": 122,
+          "asm": "CLCSTextBasedField.dll-42458960.asm"
+        },
+        {
+          "va": "424264fb",
+          "size": 41,
+          "asm": "CLCSTextBasedField.dll-424264fb.asm"
+        },
+        {
+          "va": "42458843",
+          "size": 92,
+          "asm": "CLCSTextBasedField.dll-42458843.asm"
+        }
+      ]
+    },
+    {
+      "module": "CLARiSOFT.exe",
+      "path": "C:\\Program Files (x86)\\CLARICOM\\CLARiSOFT\\CLARiSOFT.exe",
+      "sha256": "28aebc9c30c68e85175be90580195d6e4f3180a994ecdc8215e9b93c26304e1a",
+      "functions": [
+        {
+          "va": "00e62f49",
+          "size": 653,
+          "asm": "CLARiSOFT.exe-00e62f49.asm"
+        }
+      ]
+    }
+  ],
+  "constants": {
+    "424983e0": 0.5,
+    "424983f4": -0.5,
+    "424983f0": 10000.0,
+    "45447a24": 1.0,
+    "00efe90c": 2540.0,
+    "00f02e30": 100.0,
+    "00f017c8": 0.9
+  }
+}

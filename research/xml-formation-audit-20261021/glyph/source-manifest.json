@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-21",
+  "version": "2.3.0",
+  "files": [
+    {
+      "file": "package.json",
+      "sha256": "b4153f0e999b4860e1c49a3e677563b62edba1fcc6c6d95cd5457e49bc92580a"
+    },
+    {
+      "file": "public/modules/00-core.js",
+      "sha256": "bde205d62a66c959f157c25b098971d089bf61e716dd7614f14cfb71dab1653b"
+    },
+    {
+      "file": "public/modules/01-ciff-compatibility.js",
+      "sha256": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91"
+    },
+    {
+      "file": "public/modules/04-native-text-preview.js",
+      "sha256": "ed1767a1acc78e5f098b962d1d991ce2cb087072c7d697c4901b52eb35ab30a5"
+    },
+    {
+      "file": "public/modules/10-canvas-ui.js",
+      "sha256": "ee2c0f161a4eee2fc5e773ea270dc8637a8dd630fbd39714f5db0662dddb8602"
+    },
+    {
+      "file": "public/modules/20-xml-load.js",
+      "sha256": "b7ddcdd964d29f787254cd19ae825902067b9930dda6f0435ff1db98e6819216"
+    },
+    {
+      "file": "public/modules/30-rendering.js",
+      "sha256": "1b31b6d3ad8772ad7ece11ddb784cee5237e862b3e389b372396e6790dad862c"
+    },
+    {
+      "file": "public/modules/40-editor.js",
+      "sha256": "8f31962f34544c314d410a3df01f2b4bb2792d8fc77c0e4b9b346bf52416438a"
+    },
+    {
+      "file": "public/modules/45-template-preset.js",
+      "sha256": "6821c7d6ad8355e65759727f8e01ba0682ae4eb47d36c894d14b58937f8f74f6"
+    },
+    {
+      "file": "public/modules/60-history-save.js",
+      "sha256": "41c4bafef829a84ae5632d94c4cfcdcdfa045f63efb8d60c0d31700a9fea5309"
+    },
+    {
+      "file": "public/modules/70-template-tabs.js",
+      "sha256": "5a5cbfa1b985b2fa814bdc21e70fe918077bf59dbef4413fc8e331e366d3d65b"
+    },
+    {
+      "file": "public/modules/clst/encryption.js",
+      "sha256": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d"
+    },
+    {
+      "file": "public/modules/clst/tag-data.js",
+      "sha256": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d"
+    },
+    {
+      "file": "public/modules/clst/calculated-data.js",
+      "sha256": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb"
+    },
+    {
+      "file": "public/modules/clst/version-info.js",
+      "sha256": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5"
+    },
+    {
+      "file": "electron/fonts.cjs",
+      "sha256": "c803944ecbdb425a188cf02c6ebcfd490cf2662c3c3151b0bf4c22bb0d2bba56"
+    },
+    {
+      "file": "electron/font-renderer.ps1",
+      "sha256": "5ddeab5babbf9b6f19891a466b2ab5ba19231ed3a057ac194e8255b9443abd66"
+    }
+  ]
+}

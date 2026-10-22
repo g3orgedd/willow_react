@@ -1,0 +1,5058 @@
+{
+  "finishedAt": "2026-10-22T13:06:59.136Z",
+  "status": "pass",
+  "sourceVersion": "2.3.1",
+  "output": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final",
+  "executable": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-resolution-fix-20261022\\win-unpacked\\Glyph Studio.exe",
+  "archiveSha256": "a29577512aa370ee07f99197500859fddf02790b368fba5e9cd775b60b58753f",
+  "contract": "Selected real coder capabilities control text CalculateSize/Draw, dot rounding, physical cell and Path scales. Source SubHeader XRes/YRes remain independently preserved file metadata. No X/Y bitmap aspect correction; quarter-turn Path local axes follow native global-axis scale times bitmap rotation.",
+  "counts": {
+    "actualSavedFiles": 20,
+    "realLoadedFields": 80,
+    "exactNativeTextMetrics": 76,
+    "exactOriginalDrawWorkerRasters": 76,
+    "exactPrintedTextPathTransforms": 48,
+    "exactControlledPathTransforms": 96,
+    "exactControlledWorkerRasters": 144,
+    "webExeSemanticPairs": 10,
+    "partyCases": 4
+  },
+  "covered": [
+    "Real HTTP Save/download and real isolated packaged-EXE Save/download",
+    "Normal6320, file ratios2 and0.5 in both directions, non-integer ratios with90/270rotation and non-dot-aligned origins",
+    "Real6230(32mm) Continuous with800/800 native request and original Independence(32mm) Continuous capabilities",
+    "PartyGTIN2 and PartyGTIN+BOX_COUNTER, maximum lengths, font10, ordered native objects, SNFixedLenpadding",
+    "Controlled custom cap axes .12/.24, .24/.12, .125/.125 with all four orientations and signed origins;24metric references also .08/.12 and three font families"
+  ],
+  "limits": [
+    "Original Draw PNGs are original COM renders and are not ClariSoft GUI screenshots.",
+    "One-bit native/worker printer rasters are compared exactly. Antialiased vector screen ink is verified through native Path data and all six transforms, not asserted pixel-identical to the one-bit printer bitmap.",
+    "Custom anisotropic-capability fallback/API tests do not claim a registered physical printer with those capabilities.",
+    "GUI open/Ready results are recorded separately by root; no physical printer run or exhaustive all-printer/barcode coverage is claimed."
+  ],
+  "sourceFingerprints": {
+    "before": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\runtime-fingerprints-resolution.json",
+    "after": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\runtime-fingerprints-resolution-after.json",
+    "identicalFiles": 26
+  },
+  "evidence": [
+    "native-validation.json",
+    "affine-verification.json",
+    "custom-raster-verification.json",
+    "web-exe-comparison.json",
+    "party-properties-summary.json",
+    "gui-queue-both.json"
+  ],
+  "downloads": [
+    {
+      "mode": "web",
+      "caseId": "normal",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-normal.ciff",
+      "sha256": "99d6c6a7669b2258f8f5a266a089867fe4e7b94730b312996108a79dab2323ef",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-normal-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:20.584Z",
+        "saveEndedAt": "2026-10-22T13:03:20.617Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "anisotropic-yres",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-anisotropic-yres.ciff",
+      "sha256": "ad6cc4ae37c5e99fb2510b27b0485534e1aef7e9c694947ebbc24ae9c72850a7",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.24,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.24,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-anisotropic-yres-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:20.849Z",
+        "saveEndedAt": "2026-10-22T13:03:20.882Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "anisotropic-xres",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-anisotropic-xres.ciff",
+      "sha256": "41d9bf9b4e86faa98885f2bbf9553d2912f3807407c918010e76470cb06486e5",
+      "sourceXRes": 0.24,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.24,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-anisotropic-xres-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:21.049Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.072Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:21.046Z",
+        "saveEndedAt": "2026-10-22T13:03:21.077Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "lower-yres",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-lower-yres.ciff",
+      "sha256": "09887c4774626d795315a6febb0dfbfe0d20548c61245595aabe7dc96571601f",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.06,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.06,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-lower-yres-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:21.049Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.072Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-yres.ciff",
+            "at": "2026-10-22T13:03:21.247Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.270Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:21.244Z",
+        "saveEndedAt": "2026-10-22T13:03:21.277Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "lower-xres",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-lower-xres.ciff",
+      "sha256": "b2f8cc4a2d923bafe8d2e08146865c2f330f751b42c93094dfc1092b8a750e63",
+      "sourceXRes": 0.06,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.06,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-lower-xres-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:21.049Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.072Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-yres.ciff",
+            "at": "2026-10-22T13:03:21.247Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.270Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-xres.ciff",
+            "at": "2026-10-22T13:03:21.452Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.476Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:21.449Z",
+        "saveEndedAt": "2026-10-22T13:03:21.481Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "fractional-rotation90",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-fractional-rotation90.ciff",
+      "sha256": "e74c45fef1464c232033c0038303c561773708ce05106033b1bc0f6498ed5ca0",
+      "sourceXRes": 0.09,
+      "sourceYRes": 0.135,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1393,
+        "ImageHeight": 1970,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.09,
+        "YRes": 0.135,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-fractional-rotation90-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:21.049Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.072Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-yres.ciff",
+            "at": "2026-10-22T13:03:21.247Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.270Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-xres.ciff",
+            "at": "2026-10-22T13:03:21.452Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.476Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:21.657Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.681Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:21.654Z",
+        "saveEndedAt": "2026-10-22T13:03:21.686Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "fractional-rotation270",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-fractional-rotation270.ciff",
+      "sha256": "e3e8e79b219818f9cf88b61281a6646225e89001a27d34ab1659ddcad78c0052",
+      "sourceXRes": 0.135,
+      "sourceYRes": 0.09,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1393,
+        "ImageHeight": 1970,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.135,
+        "YRes": 0.09,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-fractional-rotation270-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:21.049Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.072Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-yres.ciff",
+            "at": "2026-10-22T13:03:21.247Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.270Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-xres.ciff",
+            "at": "2026-10-22T13:03:21.452Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.476Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:21.657Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.681Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:21.857Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation270.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.882Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:21.853Z",
+        "saveEndedAt": "2026-10-22T13:03:21.886Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "profile6230",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-profile6230.ciff",
+      "sha256": "688eec987bbfb4d09be97da2b6e0336a950b2d3666671f06a06e23f192da7c4e",
+      "sourceXRes": 0.08,
+      "sourceYRes": 0.08,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 800,
+          "yRes": 800
+        },
+        {
+          "name": "Times13",
+          "xRes": 800,
+          "yRes": 800
+        },
+        {
+          "name": "Courier8",
+          "xRes": 800,
+          "yRes": 800
+        }
+      ],
+      "designedFor": "DataFlex 6230(32mm) - Continuous",
+      "coder": "Independence(32mm) Continuous",
+      "capsXRes": 0.08,
+      "capsYRes": 0.08,
+      "image": {
+        "ImageWidth": 1100,
+        "ImageHeight": 1813,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.08,
+        "YRes": 0.08,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-profile6230-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:21.049Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.072Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-yres.ciff",
+            "at": "2026-10-22T13:03:21.247Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.270Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-xres.ciff",
+            "at": "2026-10-22T13:03:21.452Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.476Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:21.657Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.681Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:21.857Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation270.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.882Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-profile6230.ciff",
+            "at": "2026-10-22T13:03:22.087Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-profile6230.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:22.111Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:22.085Z",
+        "saveEndedAt": "2026-10-22T13:03:22.115Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "party-gtin2",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-party-gtin2.ciff",
+      "sha256": "c57f5c8eb711035b4c01e223e9caa3f2270e0bdd860ba678b576bf3de94f5329",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "C1",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "GTIN2",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C3",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "PRODUCT_DATE",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C2",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "SN",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1300,
+        "ImageHeight": 1300,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 7
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-party-gtin2-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:21.049Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.072Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-yres.ciff",
+            "at": "2026-10-22T13:03:21.247Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.270Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-xres.ciff",
+            "at": "2026-10-22T13:03:21.452Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.476Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:21.657Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.681Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:21.857Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation270.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.882Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-profile6230.ciff",
+            "at": "2026-10-22T13:03:22.087Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-profile6230.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:22.111Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-party-gtin2.ciff",
+            "at": "2026-10-22T13:03:22.335Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-party-gtin2.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:22.359Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:22.332Z",
+        "saveEndedAt": "2026-10-22T13:03:22.365Z"
+      }
+    },
+    {
+      "mode": "web",
+      "caseId": "party-box-gtin",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-party-box-gtin.ciff",
+      "sha256": "0369bae7fba8843c34ded498e5ead27d02e1288a71c386cbe2a98e18f6051caa",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "C1",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "GTIN",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C3",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "PRODUCT_DATE",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C2",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "SN",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C4",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "BOX_COUNTER",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1300,
+        "ImageHeight": 1300,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 9
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-party-box-gtin-expected.json",
+      "provenance": {
+        "actualLocation": "http://127.0.0.1:5173/",
+        "transport": "HTTP Vite without preload/IPC",
+        "savePath": "Save button -> will-download -> setSavePath -> completed",
+        "actualExeProcess": null,
+        "completedDownloadEvents": [
+          {
+            "event": "will-download",
+            "filename": "xml-web-normal.ciff",
+            "at": "2026-10-22T13:03:20.591Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-normal.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.716Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:20.855Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:20.879Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:21.049Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-anisotropic-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.072Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-yres.ciff",
+            "at": "2026-10-22T13:03:21.247Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-yres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.270Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-lower-xres.ciff",
+            "at": "2026-10-22T13:03:21.452Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-lower-xres.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.476Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:21.657Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation90.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.681Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:21.857Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-fractional-rotation270.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:21.882Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-profile6230.ciff",
+            "at": "2026-10-22T13:03:22.087Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-profile6230.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:22.111Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-party-gtin2.ciff",
+            "at": "2026-10-22T13:03:22.335Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-party-gtin2.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:22.359Z"
+          },
+          {
+            "event": "will-download",
+            "filename": "xml-web-party-box-gtin.ciff",
+            "at": "2026-10-22T13:03:22.576Z"
+          },
+          {
+            "event": "done",
+            "filename": "xml-web-party-box-gtin.ciff",
+            "state": "completed",
+            "at": "2026-10-22T13:03:22.616Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:22.573Z",
+        "saveEndedAt": "2026-10-22T13:03:22.606Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "normal",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+      "sha256": "ad7db1c27a62af801935f39b82dbf9b07bbe71681a9433ae7c4e07a375cb3b72",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-normal-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:26.177Z",
+        "saveEndedAt": "2026-10-22T13:03:26.210Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "anisotropic-yres",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+      "sha256": "ad6cc4ae37c5e99fb2510b27b0485534e1aef7e9c694947ebbc24ae9c72850a7",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.24,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.24,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-anisotropic-yres-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:26.466Z",
+        "saveEndedAt": "2026-10-22T13:03:26.499Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "anisotropic-xres",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+      "sha256": "41d9bf9b4e86faa98885f2bbf9553d2912f3807407c918010e76470cb06486e5",
+      "sourceXRes": 0.24,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.24,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-anisotropic-xres-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+            "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.685Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.701Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.720Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:26.678Z",
+        "saveEndedAt": "2026-10-22T13:03:26.711Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "lower-yres",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+      "sha256": "09887c4774626d795315a6febb0dfbfe0d20548c61245595aabe7dc96571601f",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.06,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.06,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-lower-yres-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+            "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.685Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.701Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.720Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "url": "blob:glyph://app/ed0a3e7d-f704-4a04-b941-6e8ff4dfb561",
+            "suggestedFilename": "xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.907Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.910Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.931Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.950Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:26.902Z",
+        "saveEndedAt": "2026-10-22T13:03:26.934Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "lower-xres",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+      "sha256": "2fdc485342cdff18ee3e2c35166ebb3fe8dbb19baab2216a29d8f15ff73f7463",
+      "sourceXRes": 0.06,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1033,
+        "ImageHeight": 1808,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.06,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-lower-xres-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+            "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.685Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.701Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.720Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "url": "blob:glyph://app/ed0a3e7d-f704-4a04-b941-6e8ff4dfb561",
+            "suggestedFilename": "xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.907Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.910Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.931Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.950Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "url": "blob:glyph://app/1978743c-ae27-40a1-900b-15e557702f5a",
+            "suggestedFilename": "xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.120Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.123Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.140Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.159Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:27.115Z",
+        "saveEndedAt": "2026-10-22T13:03:27.148Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "fractional-rotation90",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation90.ciff",
+      "sha256": "4148531de8aac52e021bdcb7d4833f5a61f01d4ab3b5c98b8bccc3f8cd3e7a37",
+      "sourceXRes": 0.09,
+      "sourceYRes": 0.135,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1393,
+        "ImageHeight": 1970,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.09,
+        "YRes": 0.135,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-fractional-rotation90-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+            "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.685Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.701Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.720Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "url": "blob:glyph://app/ed0a3e7d-f704-4a04-b941-6e8ff4dfb561",
+            "suggestedFilename": "xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.907Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.910Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.931Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.950Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "url": "blob:glyph://app/1978743c-ae27-40a1-900b-15e557702f5a",
+            "suggestedFilename": "xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.120Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.123Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.140Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.159Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "url": "blob:glyph://app/2b502a02-9e56-4abf-8bc1-e36545a72764",
+            "suggestedFilename": "xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.349Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.366Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.386Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:27.342Z",
+        "saveEndedAt": "2026-10-22T13:03:27.374Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "fractional-rotation270",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation270.ciff",
+      "sha256": "e3e8e79b219818f9cf88b61281a6646225e89001a27d34ab1659ddcad78c0052",
+      "sourceXRes": 0.135,
+      "sourceYRes": 0.09,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Times13",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "Courier8",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1393,
+        "ImageHeight": 1970,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.135,
+        "YRes": 0.09,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-fractional-rotation270-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+            "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.685Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.701Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.720Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "url": "blob:glyph://app/ed0a3e7d-f704-4a04-b941-6e8ff4dfb561",
+            "suggestedFilename": "xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.907Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.910Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.931Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.950Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "url": "blob:glyph://app/1978743c-ae27-40a1-900b-15e557702f5a",
+            "suggestedFilename": "xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.120Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.123Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.140Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.159Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "url": "blob:glyph://app/2b502a02-9e56-4abf-8bc1-e36545a72764",
+            "suggestedFilename": "xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.349Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.366Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.386Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "url": "blob:glyph://app/f592c8f8-6255-4748-a1f1-2c70600d534d",
+            "suggestedFilename": "xml-exe-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:27.592Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.592Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.593Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.593Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.595Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.617Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:27.638Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:27.587Z",
+        "saveEndedAt": "2026-10-22T13:03:27.620Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "profile6230",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-profile6230.ciff",
+      "sha256": "118e3788bbbeb9750b9747f4b924a5b440748e60362101956f196b98391bca5e",
+      "sourceXRes": 0.08,
+      "sourceYRes": 0.08,
+      "actualRequest": [
+        {
+          "name": "Arial10",
+          "xRes": 800,
+          "yRes": 800
+        },
+        {
+          "name": "Times13",
+          "xRes": 800,
+          "yRes": 800
+        },
+        {
+          "name": "Courier8",
+          "xRes": 800,
+          "yRes": 800
+        }
+      ],
+      "designedFor": "DataFlex 6230(32mm) - Continuous",
+      "coder": "Independence(32mm) Continuous",
+      "capsXRes": 0.08,
+      "capsYRes": 0.08,
+      "image": {
+        "ImageWidth": 1100,
+        "ImageHeight": 1813,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.08,
+        "YRes": 0.08,
+        "CurrentOrientation": 1,
+        "FieldCount": 3
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-profile6230-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+            "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.685Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.701Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.720Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "url": "blob:glyph://app/ed0a3e7d-f704-4a04-b941-6e8ff4dfb561",
+            "suggestedFilename": "xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.907Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.910Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.931Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.950Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "url": "blob:glyph://app/1978743c-ae27-40a1-900b-15e557702f5a",
+            "suggestedFilename": "xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.120Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.123Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.140Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.159Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "url": "blob:glyph://app/2b502a02-9e56-4abf-8bc1-e36545a72764",
+            "suggestedFilename": "xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.349Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.366Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.386Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "url": "blob:glyph://app/f592c8f8-6255-4748-a1f1-2c70600d534d",
+            "suggestedFilename": "xml-exe-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:27.592Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.592Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.593Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.593Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.595Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.617Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:27.638Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "url": "blob:glyph://app/ba68aa8d-a1cc-46d6-85be-24f9a966ac7f",
+            "suggestedFilename": "xml-exe-profile6230.ciff",
+            "at": "2026-10-22T13:03:27.806Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.809Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.826Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-profile6230.ciff",
+            "at": "2026-10-22T13:03:27.845Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:27.802Z",
+        "saveEndedAt": "2026-10-22T13:03:27.833Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "party-gtin2",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-party-gtin2.ciff",
+      "sha256": "e732b4a76604d37b9deb54b34117246c08dbd422646068b23511a141decbf1b4",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "C1",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "GTIN2",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C3",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "PRODUCT_DATE",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C2",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "SN",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1300,
+        "ImageHeight": 1300,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 7
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-party-gtin2-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+            "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.685Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.701Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.720Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "url": "blob:glyph://app/ed0a3e7d-f704-4a04-b941-6e8ff4dfb561",
+            "suggestedFilename": "xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.907Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.910Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.931Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.950Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "url": "blob:glyph://app/1978743c-ae27-40a1-900b-15e557702f5a",
+            "suggestedFilename": "xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.120Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.123Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.140Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.159Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "url": "blob:glyph://app/2b502a02-9e56-4abf-8bc1-e36545a72764",
+            "suggestedFilename": "xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.349Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.366Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.386Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "url": "blob:glyph://app/f592c8f8-6255-4748-a1f1-2c70600d534d",
+            "suggestedFilename": "xml-exe-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:27.592Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.592Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.593Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.593Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.595Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.617Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:27.638Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "url": "blob:glyph://app/ba68aa8d-a1cc-46d6-85be-24f9a966ac7f",
+            "suggestedFilename": "xml-exe-profile6230.ciff",
+            "at": "2026-10-22T13:03:27.806Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.809Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.826Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-profile6230.ciff",
+            "at": "2026-10-22T13:03:27.845Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "url": "blob:glyph://app/90db1e4d-d81d-4075-8894-365a0232f8ca",
+            "suggestedFilename": "xml-exe-party-gtin2.ciff",
+            "at": "2026-10-22T13:03:28.086Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.086Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.087Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.087Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.090Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.110Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-party-gtin2.ciff",
+            "at": "2026-10-22T13:03:28.129Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:28.081Z",
+        "saveEndedAt": "2026-10-22T13:03:28.119Z"
+      }
+    },
+    {
+      "mode": "exe",
+      "caseId": "party-box-gtin",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-party-box-gtin.ciff",
+      "sha256": "0369bae7fba8843c34ded498e5ead27d02e1288a71c386cbe2a98e18f6051caa",
+      "sourceXRes": 0.12,
+      "sourceYRes": 0.12,
+      "actualRequest": [
+        {
+          "name": "C1",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "GTIN",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C3",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "PRODUCT_DATE",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C2",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "SN",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "C4",
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        {
+          "name": "BOX_COUNTER",
+          "xRes": 1200,
+          "yRes": 1200
+        }
+      ],
+      "designedFor": "DataFlex 6320(53mm) - Continuous",
+      "coder": "Zodiac Continuous",
+      "capsXRes": 0.12,
+      "capsYRes": 0.12,
+      "image": {
+        "ImageWidth": 1300,
+        "ImageHeight": 1300,
+        "MaxImageWidth": 1600,
+        "MaxImageHeight": 2400,
+        "AutoSize": 0,
+        "ImageRotation": 0,
+        "XRes": 0.12,
+        "YRes": 0.12,
+        "CurrentOrientation": 1,
+        "FieldCount": 9
+      },
+      "nativeStatus": "ok",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-party-box-gtin-expected.json",
+      "provenance": {
+        "actualLocation": "glyph://app/index.html",
+        "transport": "Packaged glyph:// main/preload/IPC",
+        "savePath": "Actual packaged EXE Save button -> browser download",
+        "actualExeProcess": {
+          "pid": 38460,
+          "startedAt": "2026-10-22T13:03:23.720Z",
+          "arguments": [
+            "--remote-debugging-address=127.0.0.1",
+            "--remote-debugging-port=52539",
+            "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+            "--disable-gpu",
+            "--window-position=-32000,-32000"
+          ],
+          "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+          "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+          "debuggingPort": 52539
+        },
+        "completedDownloadEvents": [
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+            "suggestedFilename": "xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.188Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.189Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.193Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.238Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+            "totalBytes": 3322,
+            "receivedBytes": 3322,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+            "at": "2026-10-22T13:03:26.256Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+            "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.474Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.475Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.476Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.494Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+            "at": "2026-10-22T13:03:26.512Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+            "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.683Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.684Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.685Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.701Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "09206921-5050-41b6-ac11-b0544921838c",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+            "at": "2026-10-22T13:03:26.720Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "url": "blob:glyph://app/ed0a3e7d-f704-4a04-b941-6e8ff4dfb561",
+            "suggestedFilename": "xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.906Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.907Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.910Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:26.931Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+            "totalBytes": 3346,
+            "receivedBytes": 3346,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+            "at": "2026-10-22T13:03:26.950Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "url": "blob:glyph://app/1978743c-ae27-40a1-900b-15e557702f5a",
+            "suggestedFilename": "xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.120Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.121Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.123Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.140Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+            "totalBytes": 3364,
+            "receivedBytes": 3364,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+            "at": "2026-10-22T13:03:27.159Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "url": "blob:glyph://app/2b502a02-9e56-4abf-8bc1-e36545a72764",
+            "suggestedFilename": "xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.346Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.349Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.366Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+            "totalBytes": 3408,
+            "receivedBytes": 3408,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation90.ciff",
+            "at": "2026-10-22T13:03:27.386Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "url": "blob:glyph://app/f592c8f8-6255-4748-a1f1-2c70600d534d",
+            "suggestedFilename": "xml-exe-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:27.592Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.592Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.593Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.593Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.595Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.617Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+            "totalBytes": 3410,
+            "receivedBytes": 3410,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation270.ciff",
+            "at": "2026-10-22T13:03:27.638Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "url": "blob:glyph://app/ba68aa8d-a1cc-46d6-85be-24f9a966ac7f",
+            "suggestedFilename": "xml-exe-profile6230.ciff",
+            "at": "2026-10-22T13:03:27.806Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.807Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.809Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:27.826Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+            "totalBytes": 3304,
+            "receivedBytes": 3304,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-profile6230.ciff",
+            "at": "2026-10-22T13:03:27.845Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "url": "blob:glyph://app/90db1e4d-d81d-4075-8894-365a0232f8ca",
+            "suggestedFilename": "xml-exe-party-gtin2.ciff",
+            "at": "2026-10-22T13:03:28.086Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.086Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.087Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.087Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.090Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.110Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "d99c97b6-5d61-4fa7-be06-3bd4bcfdd371",
+            "totalBytes": 8722,
+            "receivedBytes": 8722,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-party-gtin2.ciff",
+            "at": "2026-10-22T13:03:28.129Z"
+          },
+          {
+            "method": "Browser.downloadWillBegin",
+            "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+            "guid": "80f5e54d-6819-4448-9a49-800832b5d7cf",
+            "url": "blob:glyph://app/a12f083c-0b62-4be4-9de6-3e368e26c877",
+            "suggestedFilename": "xml-exe-party-box-gtin.ciff",
+            "at": "2026-10-22T13:03:28.357Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "80f5e54d-6819-4448-9a49-800832b5d7cf",
+            "totalBytes": 10600,
+            "receivedBytes": 0,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.357Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "80f5e54d-6819-4448-9a49-800832b5d7cf",
+            "totalBytes": 10600,
+            "receivedBytes": 10600,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.357Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "80f5e54d-6819-4448-9a49-800832b5d7cf",
+            "totalBytes": 10600,
+            "receivedBytes": 10600,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.357Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "80f5e54d-6819-4448-9a49-800832b5d7cf",
+            "totalBytes": 10600,
+            "receivedBytes": 10600,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.361Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "80f5e54d-6819-4448-9a49-800832b5d7cf",
+            "totalBytes": 10600,
+            "receivedBytes": 10600,
+            "state": "inProgress",
+            "at": "2026-10-22T13:03:28.382Z"
+          },
+          {
+            "method": "Browser.downloadProgress",
+            "guid": "80f5e54d-6819-4448-9a49-800832b5d7cf",
+            "totalBytes": 10600,
+            "receivedBytes": 10600,
+            "state": "completed",
+            "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-party-box-gtin.ciff",
+            "at": "2026-10-22T13:03:28.399Z"
+          }
+        ],
+        "saveStartedAt": "2026-10-22T13:03:28.352Z",
+        "saveEndedAt": "2026-10-22T13:03:28.384Z"
+      }
+    }
+  ]
+}

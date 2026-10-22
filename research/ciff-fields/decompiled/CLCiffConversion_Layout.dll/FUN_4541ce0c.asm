@@ -1,0 +1,25 @@
+4541ce0c PUSH 0x8
+4541ce0e MOV EAX,0x45443e64
+4541ce13 CALL 0x4542a975
+4541ce18 PUSH dword ptr [ECX + 0x4]
+4541ce1b LEA ECX,[EBP + -0x14]
+4541ce1e CALL 0x45401b90
+4541ce23 MOV EAX,dword ptr [EBP + -0x14]
+4541ce26 LEA EDX,[EBP + -0x10]
+4541ce29 AND dword ptr [EBP + -0x10],0x0
+4541ce2d AND dword ptr [EBP + -0x4],0x0
+4541ce31 PUSH EDX
+4541ce32 MOV ECX,dword ptr [EAX]
+4541ce34 PUSH EAX
+4541ce35 CALL dword ptr [ECX + 0x168]
+4541ce3b OR dword ptr [EBP + -0x4],0xffffffff
+4541ce3f MOV ECX,dword ptr [EBP + -0x14]
+4541ce42 MOV ESI,dword ptr [EBP + -0x10]
+4541ce45 TEST ECX,ECX
+4541ce47 JZ 0x4541ce4f
+4541ce49 MOV EDX,dword ptr [ECX]
+4541ce4b PUSH ECX
+4541ce4c CALL dword ptr [EDX + 0x8]
+4541ce4f MOV EAX,ESI
+4541ce51 CALL 0x4542a943
+4541ce56 RET

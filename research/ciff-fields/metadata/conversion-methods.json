@@ -1,0 +1,38 @@
+[
+    {
+        "module":  "CLCiffConversion_Data.dll",
+        "method":  "Convert",
+        "offset":  28,
+        "address":  "4500d9dc"
+    },
+    {
+        "module":  "CLCiffConversion_Data.dll",
+        "method":  "Parameter",
+        "offset":  32,
+        "address":  "45010847"
+    },
+    {
+        "module":  "CLCiffConversion_Layout.dll",
+        "method":  "Convert",
+        "offset":  28,
+        "address":  "454180c3"
+    },
+    {
+        "module":  "CLCiffConversion_Layout.dll",
+        "method":  "Parameter",
+        "offset":  32,
+        "address":  "4541f219"
+    },
+    {
+        "module":  "CLCiffConversion_Layout.dll",
+        "method":  "Initialise",
+        "offset":  36,
+        "address":  "4541dc6a"
+    },
+    {
+        "module":  "CLCiffConversion_Layout.dll",
+        "method":  "InitialiseCaps",
+        "offset":  40,
+        "address":  "4541e269"
+    }
+]

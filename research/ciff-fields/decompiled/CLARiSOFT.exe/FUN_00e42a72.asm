@@ -1,0 +1,25 @@
+00e42a72 PUSH EBP
+00e42a73 MOV EBP,ESP
+00e42a75 MOV EAX,dword ptr [EBP + 0xc]
+00e42a78 PUSH ESI
+00e42a79 PUSH EDI
+00e42a7a MOV EDI,ECX
+00e42a7c MOV EDX,dword ptr [EAX]
+00e42a7e MOV dword ptr [EBP + 0xc],EDX
+00e42a81 MOV ESI,dword ptr [EAX + 0x4]
+00e42a84 MOV EDX,dword ptr [EAX]
+00e42a86 PUSH EAX
+00e42a87 MOV dword ptr [ESI],EDX
+00e42a89 MOV EDX,dword ptr [EAX]
+00e42a8b MOV ECX,dword ptr [EAX + 0x4]
+00e42a8e MOV dword ptr [EDX + 0x4],ECX
+00e42a91 DEC dword ptr [EDI + 0x4]
+00e42a94 CALL 0x00ec99ef
+00e42a99 MOV EAX,dword ptr [EBP + 0x8]
+00e42a9c POP ECX
+00e42a9d MOV ECX,dword ptr [EBP + 0xc]
+00e42aa0 POP EDI
+00e42aa1 MOV dword ptr [EAX],ECX
+00e42aa3 POP ESI
+00e42aa4 POP EBP
+00e42aa5 RET 0x8

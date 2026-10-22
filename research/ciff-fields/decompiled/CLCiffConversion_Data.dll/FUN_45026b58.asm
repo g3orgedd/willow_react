@@ -1,0 +1,2 @@
+45026b58 MOV dword ptr [ECX],0x4504273c
+45026b5e JMP 0x45026bf9

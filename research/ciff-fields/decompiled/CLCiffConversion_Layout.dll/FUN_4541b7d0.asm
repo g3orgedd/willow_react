@@ -1,0 +1,8 @@
+4541b7d0 MOV EDX,dword ptr [ECX + 0x2c]
+4541b7d3 TEST EDX,EDX
+4541b7d5 JZ 0x4541b7e1
+4541b7d7 AND dword ptr [ECX + 0x2c],0x0
+4541b7db MOV EAX,dword ptr [EDX]
+4541b7dd PUSH EDX
+4541b7de CALL dword ptr [EAX + 0x8]
+4541b7e1 RET

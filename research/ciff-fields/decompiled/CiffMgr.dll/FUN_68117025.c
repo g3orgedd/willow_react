@@ -1,0 +1,12 @@
+// Source: CiffMgr.dll @ 68117025; FUN_68117025
+
+undefined4 FUN_68117025(int param_1,OLECHAR *param_2)
+
+{
+  EnterCriticalSection((LPCRITICAL_SECTION)(param_1 + 200));
+  FUN_68102644((void *)(param_1 + 0x7c),param_2);
+  LeaveCriticalSection((LPCRITICAL_SECTION)(param_1 + 200));
+  return 0;
+}
+
+

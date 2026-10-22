@@ -1,0 +1,2 @@
+4500ffc2 XOR EAX,EAX
+4500ffc4 RET

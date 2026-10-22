@@ -1,5 +1,7 @@
-const TEMPLATE_TABS_STORAGE_KEY = "willowXml.templateTabs.v1";
-const TEMPLATE_TABS_STORAGE_VERSION = 1;
+const TEMPLATE_TABS_STORAGE_KEY = "glyphXml.templateTabs.v1";
+const TEMPLATE_TABS_STORAGE_VERSION = 4;
+const TEMPLATE_TABS_LEGACY_STORAGE_VERSION = 1;
+const TEMPLATE_TABS_CIFF_MODEL_LEGACY_STORAGE_VERSION = 2;
 const TEMPLATE_TAB_PERSIST_DELAY_MS = 40;
 
 let tabsState = { tabs: [], activeTabId: null };
@@ -9,12 +11,411 @@ let templateTabPersistTimer = null;
 let templateTabsResizeObserver = null;
 let templateTabsDragState = null;
 let templateTabsSuppressClick = false;
-let pendingCloseTemplateTabId = null;
-let closeTemplateTabAfterSaveId = null;
+let templateTabMenuState = null;
+let pendingCloseTemplateTabsOperation = null;
+let pendingSaveAndCloseTemplateTabs = null;
+
+function getTemplateTabCloseIds(action, referenceTabId, tabs = tabsState.tabs) {
+  const index = tabs.findIndex((tab) => tab.id === referenceTabId);
+  if (action === "close-all") return tabs.map((tab) => tab.id);
+  if (index < 0) return [];
+  if (action === "close") return [referenceTabId];
+  if (action === "close-others") return tabs.filter((tab) => tab.id !== referenceTabId).map((tab) => tab.id);
+  if (action === "close-right") return tabs.slice(index + 1).map((tab) => tab.id);
+  return [];
+}
+
+function getNextActiveTemplateTabIdAfterClose(tabs, activeTabId, tabIds) {
+  const closeIds = new Set(tabIds);
+  if (!closeIds.has(activeTabId)) {
+    return tabs.some((tab) => tab.id === activeTabId) ? activeTabId : null;
+  }
+
+  const activeIndex = tabs.findIndex((tab) => tab.id === activeTabId);
+  for (let index = activeIndex + 1; index < tabs.length; index += 1) {
+    if (!closeIds.has(tabs[index].id)) return tabs[index].id;
+  }
+  for (let index = activeIndex - 1; index >= 0; index -= 1) {
+    if (!closeIds.has(tabs[index].id)) return tabs[index].id;
+  }
+  return null;
+}
 
 function cloneTemplateTabValue(value) {
   if (typeof structuredClone === "function") return structuredClone(value);
   return JSON.parse(JSON.stringify(value));
+}
+
+function upgradeTemplateSnapshotXmlGeometry(snapshot, raw) {
+  if (!snapshot?.subImage || !raw?.line2) return;
+  const sourceLine2 = String(snapshot.sourceXml?.line2 ?? raw.line2);
+  const subHeader = sourceLine2.match(/<SubHeader\b[^>]*>[\s\S]*?<\/SubHeader>/i)?.[0];
+  if (!subHeader) return;
+  const legacyResolution = !Object.prototype.hasOwnProperty.call(snapshot.subImage, "yRes");
+  if (legacyResolution) {
+    const yRes = getPersistedTemplateNumber(subHeader, "YRes");
+    snapshot.subImage.yRes = yRes != null && yRes > 0 ? yRes : null;
+    // Older imports treated a literal Max=0 as missing and substituted Image.
+    // Repair only that recognizable legacy fallback, retaining user resizes.
+    for (const [axis, imageKey] of [["Width", "width"], ["Height", "height"]]) {
+      const rawMax = getPersistedTemplateNumber(subHeader, `MaxImage${axis}`);
+      const rawImage = getPersistedTemplateNumber(subHeader, `Image${axis}`);
+      const workspaceKey = `workspace${axis}`;
+      const maxKey = `max${axis}`;
+      const workspace = snapshot.subImage[workspaceKey] ?? snapshot.subImage[maxKey];
+      if (rawMax === 0 && (Number(workspace) === rawImage || Number(workspace) === 0)) {
+        snapshot.subImage[workspaceKey] = 0;
+        snapshot.subImage[maxKey] = 0;
+      }
+    }
+  }
+  if (snapshot.docMeta && snapshot.docMeta.units == null) snapshot.docMeta.units = 0;
+}
+
+function attachTemplateSnapshotSourceXml(snapshotText, raw) {
+  if (typeof snapshotText !== "string" || typeof raw?.line1 !== "string" || typeof raw?.line2 !== "string") {
+    return snapshotText;
+  }
+  try {
+    const snapshot = JSON.parse(snapshotText);
+    if (!snapshot || typeof snapshot !== "object") return snapshotText;
+    upgradeTemplateSnapshotXmlGeometry(snapshot, raw);
+    if (snapshot.sourceXml != null) return JSON.stringify(snapshot);
+    if (typeof DOMParser === "function" && Array.isArray(snapshot.fields) && raw.line2) {
+      const doc = new DOMParser().parseFromString(`${raw.line1}\n${raw.line2}`, "text/xml");
+      if (!doc.querySelector("parsererror")) {
+        const subImage = doc.querySelector("ImageDesign > SubImage");
+        const sourceFields = new Map(Array.from(subImage?.children || [])
+          .filter(node => node.tagName === "Field")
+          .map(node => [node.getAttribute("Name"), node]));
+        snapshot.fields.forEach(field => {
+          if (field.sourceName === null) return;
+          const source = sourceFields.get(field.sourceName ?? field.name);
+          // The legacy importer invented Ln=1; there was no Ln editor. Restore
+          // source absence without touching explicit source values or new data.
+          if (source && !Array.from(source.children || []).some(node => node.tagName === "Ln")) {
+            field.ln = null;
+          }
+        });
+      }
+    }
+    // Legacy histories shared the tab's raw document. Record that baseline
+    // before a later save replaces it; newer entries retain their own source.
+    snapshot.sourceXml = { line1: raw.line1, line2: raw.line2 };
+    return JSON.stringify(snapshot);
+  } catch {
+    return snapshotText;
+  }
+}
+
+function attachTemplateStateSnapshotSources(templateState) {
+  if (!templateState) return templateState;
+  const history = { ...(templateState.history || {}) };
+  for (const branch of ["undo", "redo"]) {
+    if (Array.isArray(history[branch])) {
+      history[branch] = history[branch].map(snapshot => attachTemplateSnapshotSourceXml(snapshot, templateState.raw));
+    }
+  }
+  return {
+    ...templateState,
+    editorSnapshot: attachTemplateSnapshotSourceXml(templateState.editorSnapshot, templateState.raw),
+    history
+  };
+}
+
+function getPersistedTemplateNumber(line2, tagName) {
+  const match = String(line2 ?? "").match(new RegExp(`<${tagName}(?:\\s[^>]*)?>([^<]*)<\\/${tagName}>`, "i"));
+  if (!match || !match[1].trim()) return null;
+  const value = Number(match?.[1]?.trim());
+  return Number.isFinite(value) && value >= 0 ? value : null;
+}
+
+function getPersistedDesignedFor(line2) {
+  const header = String(line2 ?? "").match(/<Header\b[^>]*>/i)?.[0] ?? "";
+  return String(header.match(/\sDesignedFor\s*=\s*(["'])([\s\S]*?)\1/i)?.[2] ?? "").trim();
+}
+
+function getPrinterModelFromDesignedFor(value) {
+  return String(value ?? "")
+    .replace(/\s*-\s*(Intermittent|Continuous)\s*$/i, "")
+    .trim();
+}
+
+function migrateLegacyTemplateSnapshotDimensions(snapshotText, rawLine2, { version = 3 } = {}) {
+  if (typeof snapshotText !== "string" || !snapshotText) {
+    return { snapshot: snapshotText, changed: false };
+  }
+  if (!/<SubImage\b/i.test(String(rawLine2 ?? ""))) {
+    return { snapshot: snapshotText, changed: false };
+  }
+
+  let snapshot;
+  try {
+    snapshot = JSON.parse(snapshotText);
+  } catch {
+    return { snapshot: snapshotText, changed: false };
+  }
+  if (!snapshot?.subImage || typeof snapshot.subImage !== "object") {
+    return { snapshot: snapshotText, changed: false };
+  }
+
+  // Undo entries may predate a save and retain a different source document.
+  // Resolve dimensions against that entry's own baseline, not the active tab.
+  const sourceLine2 = String(snapshot.sourceXml?.line2 ?? rawLine2);
+  if (!/<SubHeader\b/i.test(sourceLine2)) return { snapshot: snapshotText, changed: false };
+  const rawDesignedFor = getPersistedDesignedFor(sourceLine2);
+  const snapshotDesignedFor = String(snapshot.docMeta?.designedFor ?? "").trim();
+  const effectiveDesignedFor = snapshotDesignedFor || rawDesignedFor;
+  const printerModel = getPrinterModelFromDesignedFor(effectiveDesignedFor);
+  const capabilities = typeof getKnownPrinterCapabilities === "function"
+    ? getKnownPrinterCapabilities(printerModel)
+    : null;
+  const subImage = snapshot.subImage;
+  const previous = JSON.stringify(subImage);
+  const targetChanged = !!snapshotDesignedFor && !!rawDesignedFor && snapshotDesignedFor !== rawDesignedFor;
+  const positiveDimension = value => value != null && value !== "" &&
+    Number.isSafeInteger(Number(value)) && Number(value) >= 0 ? Number(value) : null;
+  let contentChanged = false;
+  for (const [axis, imageTag, maxTag, capabilityKey] of [
+    ["Width", "ImageWidth", "MaxImageWidth", "maxImageWidth"],
+    ["Height", "ImageHeight", "MaxImageHeight", "maxImageHeight"]
+  ]) {
+    const rawImage = getPersistedTemplateNumber(sourceLine2, imageTag);
+    const rawMax = getPersistedTemplateNumber(sourceLine2, maxTag);
+    const workspaceKey = `workspace${axis}`;
+    const maxKey = `max${axis}`;
+    const imageKey = axis.toLowerCase();
+    const workspace = positiveDimension(subImage[workspaceKey]);
+    const snapshotMax = positiveDimension(subImage[maxKey]);
+    // v2/v3 initialized workspace from Image*. A matching value is derived
+    // content size, not evidence of a user resize. Preserve independent edits.
+    const explicitWorkspace = workspace != null && workspace !== rawImage;
+    const legacyMaxEdit = version === TEMPLATE_TABS_LEGACY_STORAGE_VERSION &&
+      !targetChanged && rawMax != null && snapshotMax != null && snapshotMax !== rawMax;
+    const editedSize = explicitWorkspace ? workspace : (legacyMaxEdit ? snapshotMax : null);
+    const physicalSize = editedSize ?? rawMax ?? rawImage ?? snapshotMax ??
+      positiveDimension(subImage[imageKey]) ?? positiveDimension(capabilities?.[capabilityKey]);
+    if (physicalSize == null) continue;
+    subImage[workspaceKey] = physicalSize;
+    // Persist an Image* fallback as well; retaining an old profile repair here
+    // would enlarge this workspace again after saving and reopening the file.
+    subImage[maxKey] = physicalSize;
+    contentChanged ||= editedSize != null && editedSize !== rawMax;
+    contentChanged ||= rawMax == null && snapshotMax !== physicalSize;
+  }
+  const changed = JSON.stringify(subImage) !== previous;
+  return { snapshot: changed ? JSON.stringify(snapshot) : snapshotText, changed, contentChanged };
+}
+
+function decodePersistedXmlAttribute(value) {
+  return String(value ?? "")
+    .replace(/&#x([0-9a-f]+);/gi, (_match, code) => String.fromCodePoint(parseInt(code, 16)))
+    .replace(/&#(\d+);/g, (_match, code) => String.fromCodePoint(parseInt(code, 10)))
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&");
+}
+
+function getPersistedXmlAttribute(openTag, name) {
+  const escapedName = String(name).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = String(openTag ?? "").match(new RegExp(`\\s${escapedName}\\s*=\\s*(["'])([\\s\\S]*?)\\1`, "i"));
+  return match ? decodePersistedXmlAttribute(match[2]) : null;
+}
+
+function collectPersistedNamedBlocks(rawLine2, tagName) {
+  const escapedTag = String(tagName).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const expression = new RegExp(`<${escapedTag}\\b[^>]*>[\\s\\S]*?<\\/${escapedTag}>`, "g");
+  const result = new Map();
+  for (const block of String(rawLine2 ?? "").match(expression) || []) {
+    const openTag = block.match(new RegExp(`^<${escapedTag}\\b[^>]*>`))?.[0] || "";
+    const name = getPersistedXmlAttribute(openTag, "Name");
+    if (name != null && !result.has(name)) result.set(name, block);
+  }
+  return result;
+}
+
+function inferLegacySnapshotDataMatrixStructureDirty(field, sourceBlock) {
+  const segments = field?.barcode?.dataMatrix?.segments;
+  if (!Array.isArray(segments) || !sourceBlock) return !!field?.barcode?.dataMatrix;
+  const dataBlock = sourceBlock.match(/<Data(?:\s[^>]*)?>[\s\S]*?<\/Data>/)?.[0] || "";
+  if (!dataBlock) return true;
+  const sourceSegments = (dataBlock.match(/<Object\b[^>]*>[\s\S]*?<\/Object>/g) || [])
+    .map((objectBlock, position) => {
+      const openTag = objectBlock.match(/^<Object\b[^>]*>/)?.[0] || "";
+      const rawIndex = getPersistedXmlAttribute(openTag, "Index");
+      const parsedIndex = rawIndex == null ? position : Number.parseInt(rawIndex, 10);
+      const sourceTag = objectBlock.match(/<SrcField\b[^>]*>/)?.[0] || "";
+      return {
+        order: Number.isFinite(parsedIndex) ? parsedIndex : position,
+        position,
+        srcField: sourceTag ? String(getPersistedXmlAttribute(sourceTag, "SrcFieldName") ?? "") : null
+      };
+    })
+    .sort((left, right) => (left.order - right.order) || (left.position - right.position));
+  if (sourceSegments.length !== segments.length) return true;
+  return sourceSegments.some((sourceSegment, index) => (
+    sourceSegment.srcField !== (segments[index]?.srcField ?? null)
+  ));
+}
+
+function migrateLegacyTemplateSnapshotCiffModel(snapshotText, rawLine2) {
+  if (typeof snapshotText !== "string" || !snapshotText) {
+    return { snapshot: snapshotText, changed: false };
+  }
+  let snapshot;
+  try {
+    snapshot = JSON.parse(snapshotText);
+  } catch {
+    return { snapshot: snapshotText, changed: false };
+  }
+
+  let changed = false;
+  const rawFields = collectPersistedNamedBlocks(rawLine2, "Field");
+  (snapshot.fields || []).forEach((field) => {
+    if (field.sourceName === undefined) {
+      field.sourceName = rawFields.has(field.name) ? field.name : null;
+      changed = true;
+    }
+    const dataMatrix = field.barcode?.dataMatrix;
+    if (dataMatrix && typeof dataMatrix.structureDirty !== "boolean") {
+      const sourceBlock = rawFields.get(field.sourceName ?? field.name) || null;
+      dataMatrix.structureDirty = inferLegacySnapshotDataMatrixStructureDirty(field, sourceBlock);
+      changed = true;
+    }
+  });
+
+  const rawOffsets = collectPersistedNamedBlocks(rawLine2, "DateOffset");
+  (snapshot.dateOffsets || []).forEach((offset) => {
+    if (offset.sourceName !== undefined) return;
+    offset.sourceName = rawOffsets.has(offset.name) ? offset.name : null;
+    changed = true;
+  });
+  return { snapshot: changed ? JSON.stringify(snapshot) : snapshotText, changed };
+}
+
+function createPersistedTemplateFingerprint(templateState) {
+  const raw = templateState?.raw || {};
+  if (!raw.line1 || !raw.line2 || !templateState?.editorSnapshot) return null;
+  try {
+    const restored = JSON.parse(templateState.editorSnapshot);
+    // Match snapshotState() property order and restore defaults exactly. The
+    // fingerprint is a JSON string, so semantically equal objects with legacy
+    // key order would otherwise be reported as dirty.
+    const editorState = {
+      docMeta: restored.docMeta,
+      subImage: restored.subImage,
+      dateOffsets: Array.isArray(restored.dateOffsets) ? restored.dateOffsets : [],
+      dateOffsetsLoaded: !!restored.dateOffsetsLoaded,
+      dateOffsetsDirty: !!restored.dateOffsetsDirty,
+      fields: (restored.fields || []).map((field) => ({
+        sourceName: field.sourceName ?? null,
+        name: field.name,
+        fldType: field.fldType,
+        printed: field.printed,
+        geom: field.geom,
+        orientation: [0, 90, 180, 270].includes(Number(field.orientation)) ? Number(field.orientation) : 0,
+        ln: field.ln,
+        calcData: field.calcData,
+        data: field.data,
+        text: field.text,
+        barcode: field.barcode
+      })),
+      selectedName: restored.selectedName,
+      selectedNames: Array.isArray(restored.selectedNames)
+        ? restored.selectedNames.slice()
+        : (restored.selectedName ? [restored.selectedName] : []),
+      showHiddenOnCanvas: restored.showHiddenOnCanvas,
+      gridMm: [1, 3, 5, 10].includes(Number(restored.gridMm)) ? Number(restored.gridMm) : 1,
+      validation: restored.validation
+    };
+    delete editorState.selectedName;
+    delete editorState.selectedNames;
+    delete editorState.showHiddenOnCanvas;
+    delete editorState.validation;
+    return JSON.stringify({
+      line1: String(raw.line1),
+      line2: String(raw.line2),
+      editorState
+    });
+  } catch {
+    return null;
+  }
+}
+
+function migrateLegacyTemplateStateDimensions(templateState, { version = 3 } = {}) {
+  const migrated = cloneTemplateTabValue(templateState);
+  const rawLine2 = String(migrated?.raw?.line2 ?? "");
+  const editorDimensions = migrateLegacyTemplateSnapshotDimensions(migrated?.editorSnapshot, rawLine2, { version });
+  const editorModel = migrateLegacyTemplateSnapshotCiffModel(editorDimensions.snapshot, rawLine2);
+  if (editorModel.snapshot !== undefined) migrated.editorSnapshot = editorModel.snapshot;
+
+  let historyChanged = false;
+  for (const branch of ["undo", "redo"]) {
+    if (!Array.isArray(migrated?.history?.[branch])) continue;
+    migrated.history[branch] = migrated.history[branch].map((snapshot) => {
+      const dimensions = migrateLegacyTemplateSnapshotDimensions(snapshot, rawLine2, { version });
+      const model = migrateLegacyTemplateSnapshotCiffModel(dimensions.snapshot, rawLine2);
+      historyChanged ||= dimensions.changed || model.changed;
+      return model.snapshot;
+    });
+  }
+  const withSources = attachTemplateStateSnapshotSources(migrated);
+  const sourceModelChanged = createPersistedTemplateFingerprint(migrated) !== createPersistedTemplateFingerprint(withSources);
+  return {
+    templateState: withSources,
+    currentChanged: !!editorDimensions.contentChanged,
+    schemaChanged: editorDimensions.changed || editorModel.changed || sourceModelChanged,
+    changed: editorDimensions.changed || editorModel.changed || historyChanged || sourceModelChanged
+  };
+}
+
+function migrateStoredTemplateTabsPayload(stored) {
+  if (!stored || typeof stored !== "object") return null;
+  if (stored.version === TEMPLATE_TABS_STORAGE_VERSION) {
+    if (!Array.isArray(stored.tabs)) return stored;
+    return {
+      ...stored,
+      tabs: stored.tabs.map(tab => {
+        if (!tab?.templateState) return tab;
+        const templateState = attachTemplateStateSnapshotSources(tab.templateState);
+        const before = createPersistedTemplateFingerprint(tab.templateState);
+        const after = createPersistedTemplateFingerprint(templateState);
+        return {
+          ...tab,
+          templateState,
+          savedFingerprint: !tab.isDirty && before !== after ? (after ?? tab.savedFingerprint) : tab.savedFingerprint
+        };
+      })
+    };
+  }
+  if (
+    ![TEMPLATE_TABS_LEGACY_STORAGE_VERSION, TEMPLATE_TABS_CIFF_MODEL_LEGACY_STORAGE_VERSION, 3].includes(stored.version) ||
+    !Array.isArray(stored.tabs)
+  ) return null;
+
+  return {
+    ...stored,
+    version: TEMPLATE_TABS_STORAGE_VERSION,
+    tabs: stored.tabs.map((tab) => {
+      if (!tab?.templateState) return tab;
+      const migration = migrateLegacyTemplateStateDimensions(tab.templateState, {
+        version: stored.version
+      });
+      const migratedFingerprint = (
+        !migration.currentChanged && migration.schemaChanged && !tab.isDirty
+      ) ? createPersistedTemplateFingerprint(migration.templateState) : null;
+      return {
+        ...tab,
+        templateState: migration.templateState,
+        isDirty: migration.currentChanged ? true : !!tab.isDirty,
+        savedFingerprint: migration.currentChanged
+          ? null
+          : (migratedFingerprint ?? tab.savedFingerprint)
+      };
+    })
+  };
 }
 
 function createTemplateTabId() {
@@ -41,9 +442,53 @@ function getActiveTemplateTab() {
   return tabsState.tabs.find((tab) => tab.id === tabsState.activeTabId) ?? null;
 }
 
+function getTopbarPrinterDetails(docMeta = state.docMeta) {
+  const designedFor = String(docMeta?.designedFor ?? "").trim();
+  const designedForMatch = designedFor.match(/^(.*?)(?:\s*-\s*(Intermittent|Continuous))$/i);
+  const rawPrinterModel = String(docMeta?.printerModel || designedForMatch?.[1] || designedFor).trim();
+  const headWidthMatch = (rawPrinterModel || designedFor).match(/\(\s*([\d.,]+)\s*mm\s*\)/i);
+  const printerModel = rawPrinterModel
+    .replace(/\(\s*[\d.,]+\s*mm\s*\)/i, "")
+    .trim();
+  const headWidth = headWidthMatch
+    ? `${headWidthMatch[1].replace(",", ".")} mm`
+    : "";
+  const rawPrintMode = String(docMeta?.printMode || designedForMatch?.[2] || "").trim();
+  const printMode = EMPTY_TEMPLATE_PRINT_MODES.find(
+    (mode) => mode.toLowerCase() === rawPrintMode.toLowerCase()
+  ) || "";
+  return { printerModel, headWidth, printMode };
+}
+
+function updateTopbarDocumentInfo() {
+  const titleElement = document.getElementById("topbarDocumentTitle");
+  const dirtyElement = document.getElementById("topbarDocumentDirty");
+  const metaElement = document.getElementById("topbarDocumentMeta");
+  if (!titleElement || !dirtyElement || !metaElement) return;
+
+  const activeTab = getActiveTemplateTab();
+  const title = String(activeTab?.title ?? t("tabs.untitled")).trim() || t("tabs.untitled");
+  const dirty = !!activeTab?.isDirty;
+  const printerDetails = getTopbarPrinterDetails();
+  const metaParts = [
+    printerDetails.printerModel,
+    printerDetails.headWidth,
+    printerDetails.printMode
+  ].filter(Boolean);
+
+  titleElement.textContent = title;
+  dirtyElement.hidden = !dirty;
+  dirtyElement.setAttribute("aria-hidden", String(!dirty));
+  dirtyElement.setAttribute("aria-label", dirty ? t("tabs.unsaved") : "");
+  metaElement.textContent = metaParts.join(" · ") || "—";
+}
+
 function createCurrentTemplateContentFingerprint() {
   if (!state.xmlDoc || !state.line1 || !state.line2) return "__empty_template__";
   const editorState = JSON.parse(snapshotState());
+  // Raw XML is already included below. Snapshot bookkeeping must not change
+  // the content fingerprint of a saved tab restored from an older session.
+  delete editorState.sourceXml;
   delete editorState.selectedName;
   delete editorState.selectedNames;
   delete editorState.showHiddenOnCanvas;
@@ -61,6 +506,7 @@ function captureCurrentTemplateView() {
     stageX: stage ? Number(stage.x()) : 20,
     stageY: stage ? Number(stage.y()) : 20,
     gridMm: GRID_SIZE_OPTIONS.includes(Number(state.gridMm)) ? Number(state.gridMm) : GRID_MM,
+    moveStep: normalizeMoveStep(state.moveStep),
     gridEnabled: !!elToggleGrid?.checked,
     snapEnabled: !!elToggleSnap?.checked,
     alignEnabled: !!elToggleAlign?.checked,
@@ -69,7 +515,7 @@ function captureCurrentTemplateView() {
 }
 
 function captureCurrentTemplateState() {
-  return {
+  return attachTemplateStateSnapshotSources({
     raw: {
       xmlText: state.xmlText ?? "",
       line1: state.line1 ?? "",
@@ -82,7 +528,7 @@ function captureCurrentTemplateState() {
       redo: Array.isArray(history.redo) ? history.redo.slice() : []
     },
     view: captureCurrentTemplateView()
-  };
+  });
 }
 
 function captureActiveTemplateTab() {
@@ -108,6 +554,9 @@ function parseTemplateTabXmlDocument(raw) {
 
 function restoreTemplateTabState(tab) {
   if (!tab?.templateState) return false;
+  const restoredDocument = parseTemplateTabXmlDocument(tab.templateState.raw ?? {});
+  if (restoredDocument && typeof validateCiffGeometryForLoad === "function" &&
+      !validateCiffGeometryForLoad(restoredDocument, { source: "tab" })) return false;
   if (typeof clearPendingCanvasPlacement === "function") {
     clearPendingCanvasPlacement({ restoreStatus: false });
   }
@@ -120,7 +569,7 @@ function restoreTemplateTabState(tab) {
     state.line1 = String(raw.line1 ?? "");
     state.line2 = String(raw.line2 ?? "");
     state.lineEnding = String(raw.lineEnding ?? "\r\n");
-    state.xmlDoc = parseTemplateTabXmlDocument(raw);
+    state.xmlDoc = restoredDocument;
 
     restoreFromSnapshot(templateState.editorSnapshot, { render: false });
     history = {
@@ -131,6 +580,8 @@ function restoreTemplateTabState(tab) {
 
     const view = templateState.view ?? {};
     state.gridMm = GRID_SIZE_OPTIONS.includes(Number(view.gridMm)) ? Number(view.gridMm) : GRID_MM;
+    state.moveStep = normalizeMoveStep(view.moveStep);
+    if (typeof syncPrecisionMoveControls === "function") syncPrecisionMoveControls();
     if (elGridSizeSelect) {
       elGridSizeSelect.value = String(state.gridMm);
       if (typeof syncCustomSelectControl === "function") syncCustomSelectControl(elGridSizeSelect);
@@ -142,6 +593,7 @@ function restoreTemplateTabState(tab) {
     zoomPct = clamp(25, 400, Number(view.zoomPct) || 100);
     if (elZoomRange) elZoomRange.value = String(zoomPct);
     if (elZoomLabel) elZoomLabel.textContent = `${zoomPct}%`;
+    if (typeof syncZoomSliderUI === "function") syncZoomSliderUI();
     if (stage) {
       stage.position({
         x: Number.isFinite(Number(view.stageX)) ? Number(view.stageX) : 20,
@@ -305,30 +757,122 @@ function initTemplateTabsMouseDrag() {
   });
 }
 
-function updateCloseTemplateTabModalContent() {
-  if (!pendingCloseTemplateTabId) return;
-  const tab = tabsState.tabs.find((item) => item.id === pendingCloseTemplateTabId);
-  if (!tab) return;
-  if (elCloseTabModalTitle) {
-    elCloseTabModalTitle.textContent = t("dialog.closeTab.title", { title: tab.title });
+function updateTemplateTabMenuContent() {
+  if (!elTemplateTabMenu) return;
+  const source = templateTabMenuState?.source ?? "toolbar";
+  const labels = {
+    close: source === "context" ? t("tabs.closePlain") : t("tabs.closeCurrent"),
+    "close-others": t("tabs.closeOthers"),
+    "close-right": t("tabs.closeRight"),
+    "close-all": t("tabs.closeAll")
+  };
+  Object.entries(labels).forEach(([action, label]) => {
+    const element = elTemplateTabMenu.querySelector(`[data-template-tab-menu-label="${action}"]`);
+    if (element) element.textContent = label;
+  });
+
+  const referenceTabId = templateTabMenuState?.referenceTabId ?? tabsState.activeTabId;
+  elTemplateTabMenu.querySelectorAll("[data-template-tab-action]").forEach((button) => {
+    const action = button.dataset.templateTabAction;
+    button.disabled = getTemplateTabCloseIds(action, referenceTabId).length === 0;
+  });
+}
+
+function closeTemplateTabMenu({ restoreFocus = false } = {}) {
+  if (!elTemplateTabMenu || elTemplateTabMenu.classList.contains("hidden")) return;
+  const source = templateTabMenuState?.source;
+  templateTabMenuState = null;
+  elTemplateTabMenu.classList.add("hidden");
+  elTemplateTabMenu.setAttribute("aria-hidden", "true");
+  elBtnTemplateTabsMenu?.setAttribute("aria-expanded", "false");
+  if (restoreFocus && source === "toolbar") elBtnTemplateTabsMenu?.focus();
+}
+
+function positionTemplateTabMenu(anchor) {
+  if (!elTemplateTabMenu) return;
+  const margin = 8;
+  const gap = 5;
+  const menuRect = elTemplateTabMenu.getBoundingClientRect();
+  let left;
+  let top;
+
+  if (anchor.type === "point") {
+    left = anchor.x;
+    top = anchor.y;
+    if (top + menuRect.height > window.innerHeight - margin) top = anchor.y - menuRect.height;
+  } else {
+    const rect = anchor.element.getBoundingClientRect();
+    left = rect.right - menuRect.width;
+    top = rect.bottom + gap;
+    if (top + menuRect.height > window.innerHeight - margin) top = rect.top - menuRect.height - gap;
   }
-  if (elCloseTabModalMessage) {
-    elCloseTabModalMessage.textContent = t("dialog.closeTab.message");
+
+  left = clamp(margin, Math.max(margin, window.innerWidth - menuRect.width - margin), left);
+  top = clamp(margin, Math.max(margin, window.innerHeight - menuRect.height - margin), top);
+  elTemplateTabMenu.style.left = `${Math.round(left)}px`;
+  elTemplateTabMenu.style.top = `${Math.round(top)}px`;
+}
+
+function openTemplateTabMenu(referenceTabId, anchor, source = "toolbar") {
+  if (!elTemplateTabMenu || !tabsState.tabs.some((tab) => tab.id === referenceTabId)) return false;
+  templateTabMenuState = { referenceTabId, source };
+  updateTemplateTabMenuContent();
+  elTemplateTabMenu.style.visibility = "hidden";
+  elTemplateTabMenu.classList.remove("hidden");
+  elTemplateTabMenu.setAttribute("aria-hidden", "false");
+  positionTemplateTabMenu(anchor);
+  elTemplateTabMenu.style.visibility = "";
+  elBtnTemplateTabsMenu?.setAttribute("aria-expanded", String(source === "toolbar"));
+  window.setTimeout(() => {
+    elTemplateTabMenu.querySelector("[data-template-tab-action]:not(:disabled)")?.focus();
+  }, 0);
+  return true;
+}
+
+function updateCloseTemplateTabModalContent() {
+  const operation = pendingCloseTemplateTabsOperation;
+  if (!operation) return;
+  const dirtyTabs = operation.tabIds
+    .map((tabId) => tabsState.tabs.find((tab) => tab.id === tabId))
+    .filter((tab) => tab?.isDirty);
+  const isBatch = operation.tabIds.length > 1;
+
+  if (isBatch) {
+    if (elCloseTabModalTitle) elCloseTabModalTitle.textContent = t("dialog.closeTabs.title");
+    if (elCloseTabModalMessage) {
+      const count = dirtyTabs.length;
+      const language = typeof getCurrentUiLanguage === "function" ? getCurrentUiLanguage() : "en";
+      const useSingular = language === "ru"
+        ? count % 10 === 1 && count % 100 !== 11
+        : count === 1;
+      const messageKey = useSingular ? "dialog.closeTabs.messageOne" : "dialog.closeTabs.message";
+      elCloseTabModalMessage.textContent = t(messageKey, { count: dirtyTabs.length });
+    }
+    if (elBtnSaveAndCloseTab) elBtnSaveAndCloseTab.textContent = t("dialog.closeTabs.saveAllAndClose");
+  } else {
+    const tab = tabsState.tabs.find((item) => item.id === operation.tabIds[0]);
+    if (elCloseTabModalTitle) {
+      elCloseTabModalTitle.textContent = t("dialog.closeTab.title", { title: tab?.title ?? "" });
+    }
+    if (elCloseTabModalMessage) elCloseTabModalMessage.textContent = t("dialog.closeTab.message");
+    if (elBtnSaveAndCloseTab) elBtnSaveAndCloseTab.textContent = t("dialog.save");
   }
 }
 
-function closeTemplateTabWarningModal() {
+function closeTemplateTabWarningModal({ clearPending = true } = {}) {
   if (!elCloseTabModal) return;
-  pendingCloseTemplateTabId = null;
+  if (clearPending) pendingCloseTemplateTabsOperation = null;
   elCloseTabModal.classList.add("hidden");
   elCloseTabModal.setAttribute("aria-hidden", "true");
   document.body.classList.toggle("modal-open", Boolean(document.querySelector(".modal:not(.hidden)")));
 }
 
-function openTemplateTabWarningModal(tabId) {
-  const tab = tabsState.tabs.find((item) => item.id === tabId);
-  if (!tab || !elCloseTabModal) return false;
-  pendingCloseTemplateTabId = tab.id;
+function openTemplateTabWarningModal(operation) {
+  if (!operation?.tabIds?.length || !elCloseTabModal) return false;
+  pendingCloseTemplateTabsOperation = {
+    ...operation,
+    tabIds: operation.tabIds.slice()
+  };
   updateCloseTemplateTabModalContent();
   elCloseTabModal.classList.remove("hidden");
   elCloseTabModal.setAttribute("aria-hidden", "false");
@@ -337,35 +881,80 @@ function openTemplateTabWarningModal(tabId) {
   return true;
 }
 
+function requestCloseTemplateTabs(tabIds, options = {}) {
+  captureActiveTemplateTab();
+  const existingIds = new Set(tabsState.tabs.map((tab) => tab.id));
+  const normalizedIds = [...new Set(tabIds)].filter((tabId) => existingIds.has(tabId));
+  if (!normalizedIds.length) return false;
+  const operation = {
+    tabIds: normalizedIds,
+    action: options.action ?? "close",
+    referenceTabId: options.referenceTabId ?? normalizedIds[0],
+    activeTabIdBeforeClose: tabsState.activeTabId
+  };
+  const hasDirtyTabs = tabsState.tabs.some((tab) => normalizedIds.includes(tab.id) && tab.isDirty);
+  if (!hasDirtyTabs) return closeTemplateTabs(normalizedIds);
+  return openTemplateTabWarningModal(operation);
+}
+
 function requestCloseTemplateTab(tabId) {
-  const tab = tabsState.tabs.find((item) => item.id === tabId);
-  if (!tab) return false;
-  if (tab.id === tabsState.activeTabId) captureActiveTemplateTab();
-  if (!tab.isDirty) return closeTemplateTab(tab.id);
-  return openTemplateTabWarningModal(tab.id);
+  return requestCloseTemplateTabs([tabId], { action: "close", referenceTabId: tabId });
 }
 
-function closePendingTemplateTabWithoutSaving() {
-  const tabId = pendingCloseTemplateTabId;
+function closePendingTemplateTabsWithoutSaving() {
+  const operation = pendingCloseTemplateTabsOperation;
+  const tabIds = operation?.tabIds.slice() ?? [];
   closeTemplateTabWarningModal();
-  if (tabId) closeTemplateTab(tabId);
+  if (tabIds.length) {
+    closeTemplateTabs(tabIds, { activeTabIdBeforeClose: operation.activeTabIdBeforeClose });
+  }
 }
 
-function saveAndClosePendingTemplateTab() {
-  const tabId = pendingCloseTemplateTabId;
-  if (!tabId) return;
-  closeTemplateTabWarningModal();
+function continueSaveAndCloseTemplateTabs() {
+  const operation = pendingSaveAndCloseTemplateTabs;
+  if (!operation || operation.currentTabId) return;
+  const nextTabId = operation.dirtyTabIds.find((tabId) => (
+    tabsState.tabs.some((tab) => tab.id === tabId && tab.isDirty)
+  ));
 
-  if (tabsState.activeTabId !== tabId && !switchTemplateTab(tabId)) return;
-  closeTemplateTabAfterSaveId = tabId;
-  if (!openSaveTemplateModal()) closeTemplateTabAfterSaveId = null;
+  if (!nextTabId) {
+    const tabIds = operation.tabIds.slice();
+    pendingSaveAndCloseTemplateTabs = null;
+    closeTemplateTabs(tabIds, { activeTabIdBeforeClose: operation.activeTabIdBeforeClose });
+    return;
+  }
+
+  if (tabsState.activeTabId !== nextTabId && !switchTemplateTab(nextTabId)) {
+    pendingSaveAndCloseTemplateTabs = null;
+    return;
+  }
+  operation.currentTabId = nextTabId;
+  if (!openSaveTemplateModal()) pendingSaveAndCloseTemplateTabs = null;
+}
+
+function saveAndClosePendingTemplateTabs() {
+  const operation = pendingCloseTemplateTabsOperation;
+  if (!operation) return;
+  const dirtyTabIds = operation.tabIds.filter((tabId) => (
+    tabsState.tabs.some((tab) => tab.id === tabId && tab.isDirty)
+  ));
+  closeTemplateTabWarningModal({ clearPending: false });
+  pendingCloseTemplateTabsOperation = null;
+  pendingSaveAndCloseTemplateTabs = {
+    tabIds: operation.tabIds.slice(),
+    dirtyTabIds,
+    activeTabIdBeforeClose: operation.activeTabIdBeforeClose,
+    currentTabId: null
+  };
+  continueSaveAndCloseTemplateTabs();
 }
 
 function cancelPendingTemplateTabCloseAfterSave() {
-  closeTemplateTabAfterSaveId = null;
+  pendingSaveAndCloseTemplateTabs = null;
 }
 
 function renderTemplateTabs() {
+  updateTopbarDocumentInfo();
   if (!elTemplateTabsList) return;
   elTemplateTabsList.innerHTML = "";
 
@@ -379,7 +968,6 @@ function renderTemplateTabs() {
     activate.className = "templateTab__activate";
     activate.setAttribute("role", "tab");
     activate.setAttribute("aria-selected", String(tab.id === tabsState.activeTabId));
-    activate.title = tab.title;
 
     const title = document.createElement("span");
     title.className = "templateTab__title";
@@ -389,7 +977,6 @@ function renderTemplateTabs() {
     if (tab.isDirty) {
       const dirty = document.createElement("span");
       dirty.className = "templateTab__dirty";
-      dirty.title = t("tabs.unsaved");
       dirty.setAttribute("aria-label", t("tabs.unsaved"));
       activate.appendChild(dirty);
     }
@@ -400,7 +987,6 @@ function renderTemplateTabs() {
     close.type = "button";
     close.className = "templateTab__close";
     close.setAttribute("aria-label", t("tabs.close", { title: tab.title }));
-    close.title = t("tabs.close", { title: tab.title });
     close.innerHTML = `
       <svg class="templateTab__closeIcon" viewBox="0 -960 960 960" aria-hidden="true" focusable="false">
         <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path>
@@ -409,6 +995,17 @@ function renderTemplateTabs() {
     close.addEventListener("click", (event) => {
       event.stopPropagation();
       requestCloseTemplateTab(tab.id);
+    });
+
+    item.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      finishTemplateTabsDrag({ snap: false });
+      openTemplateTabMenu(tab.id, {
+        type: "point",
+        x: event.clientX,
+        y: event.clientY
+      }, "context");
     });
 
     item.appendChild(activate);
@@ -423,6 +1020,12 @@ function renderTemplateTabs() {
 
   updateTemplateTabsScrollTail();
   ensureActiveTemplateTabVisible();
+  if (elBtnTemplateTabsMenu) elBtnTemplateTabsMenu.disabled = tabsState.tabs.length === 0;
+  if (templateTabMenuState && !tabsState.tabs.some((tab) => tab.id === templateTabMenuState.referenceTabId)) {
+    closeTemplateTabMenu();
+  } else if (templateTabMenuState) {
+    updateTemplateTabMenuContent();
+  }
 }
 
 function writeTemplateTabsToStorage() {
@@ -478,7 +1081,11 @@ function switchTemplateTab(tabId) {
   const previousTab = getActiveTemplateTab();
   captureActiveTemplateTab();
   tabsState.activeTabId = nextTab.id;
-  if (!restoreTemplateTabState(nextTab)) return false;
+  if (!restoreTemplateTabState(nextTab)) {
+    tabsState.activeTabId = previousTab?.id ?? null;
+    renderTemplateTabs();
+    return false;
+  }
   persistTemplateTabsNow({ capture: false });
   appLogger.action("TEMPLATE_TAB_SWITCHED", "Пользователь переключил активную вкладку шаблона.", {
     previous: previousTab ? { id: previousTab.id, title: previousTab.title, dirty: !!previousTab.isDirty } : null,
@@ -489,38 +1096,52 @@ function switchTemplateTab(tabId) {
   return true;
 }
 
-function closeTemplateTab(tabId) {
-  const index = tabsState.tabs.findIndex((tab) => tab.id === tabId);
-  if (index < 0) return false;
-  const closingTab = tabsState.tabs[index];
-  const wasActive = tabId === tabsState.activeTabId;
-  captureActiveTemplateTab();
-  tabsState.tabs.splice(index, 1);
+function restoreEmptyTemplateWorkspace() {
+  const restored = restoreTemplateTabState({ templateState: createEmptyTemplateTabState() });
+  if (elStatusLeft) elStatusLeft.textContent = t("status.noTemplate");
+  return restored;
+}
 
-  if (!tabsState.tabs.length) {
-    const replacement = createTemplateTabRecord();
-    tabsState.tabs.push(replacement);
-    tabsState.activeTabId = replacement.id;
-    restoreTemplateTabState(replacement);
-  } else if (wasActive) {
-    const nextTab = tabsState.tabs[Math.min(index, tabsState.tabs.length - 1)];
-    tabsState.activeTabId = nextTab.id;
-    restoreTemplateTabState(nextTab);
+function closeTemplateTabs(tabIds, options = {}) {
+  captureActiveTemplateTab();
+  const currentTabs = tabsState.tabs.slice();
+  const existingIds = new Set(currentTabs.map((tab) => tab.id));
+  const closeIds = new Set([...new Set(tabIds)].filter((tabId) => existingIds.has(tabId)));
+  if (!closeIds.size) return false;
+
+  const renderedActiveTabId = tabsState.activeTabId;
+  const requestedActiveTabId = options.activeTabIdBeforeClose;
+  const previousActiveTabId = currentTabs.some((tab) => tab.id === requestedActiveTabId)
+    ? requestedActiveTabId
+    : renderedActiveTabId;
+  const nextActiveTabId = getNextActiveTemplateTabIdAfterClose(currentTabs, previousActiveTabId, closeIds);
+  const closedTabs = currentTabs.filter((tab) => closeIds.has(tab.id));
+  tabsState.tabs = currentTabs.filter((tab) => !closeIds.has(tab.id));
+  tabsState.activeTabId = nextActiveTabId;
+
+  if (!nextActiveTabId) {
+    restoreEmptyTemplateWorkspace();
+  } else if (nextActiveTabId !== renderedActiveTabId) {
+    restoreTemplateTabState(getActiveTemplateTab());
   }
 
   persistTemplateTabsNow({ capture: false });
-  appLogger.action("TEMPLATE_TAB_CLOSED", "Вкладка шаблона закрыта.", {
-    closed: {
-      id: closingTab.id,
-      title: closingTab.title,
-      dirty: !!closingTab.isDirty,
-      wasActive
-    },
+  appLogger.action("TEMPLATE_TABS_CLOSED", "Вкладки шаблонов закрыты.", {
+    closed: closedTabs.map((tab) => ({
+      id: tab.id,
+      title: tab.title,
+      dirty: !!tab.isDirty,
+      wasActive: tab.id === previousActiveTabId
+    })),
     nextActiveTabId: tabsState.activeTabId,
     remainingTabCount: tabsState.tabs.length
   });
-  appLogger.state("APPLICATION_STATE_AFTER_TAB_CLOSE", "Состояние после закрытия вкладки.");
+  appLogger.state("APPLICATION_STATE_AFTER_TAB_CLOSE", "Состояние после закрытия вкладок.");
   return true;
+}
+
+function closeTemplateTab(tabId) {
+  return closeTemplateTabs([tabId]);
 }
 
 function isReusableEmptyTemplateTab(tab) {
@@ -545,6 +1166,7 @@ function createTemplateInNewTab(xmlText, title, options = {}) {
 
   const loaded = loadXml(xmlText, {
     title: title || tab.title,
+    sourceFileName: options.sourceFileName,
     markDirty: options.markDirty !== false,
     source: options.source || "new-tab"
   });
@@ -573,6 +1195,7 @@ function createTemplateInNewTab(xmlText, title, options = {}) {
 
 function openXmlInNewTemplateTab(xmlText, filename) {
   return createTemplateInNewTab(xmlText, normalizeTemplateTabTitle(filename), {
+    sourceFileName: filename,
     markDirty: false,
     source: "file"
   });
@@ -606,9 +1229,9 @@ function markActiveTemplateTabSaved(filename) {
     filename: filename || null
   });
   persistTemplateTabsNow();
-  if (closeTemplateTabAfterSaveId === tab.id) {
-    closeTemplateTabAfterSaveId = null;
-    closeTemplateTab(tab.id);
+  if (pendingSaveAndCloseTemplateTabs?.currentTabId === tab.id) {
+    pendingSaveAndCloseTemplateTabs.currentTabId = null;
+    window.setTimeout(() => continueSaveAndCloseTemplateTabs(), 0);
   }
 }
 
@@ -620,8 +1243,8 @@ function restoreTemplateTabsFromStorage() {
   try {
     const raw = globalThis.localStorage?.getItem(TEMPLATE_TABS_STORAGE_KEY);
     if (!raw) return false;
-    const stored = JSON.parse(raw);
-    if (stored?.version !== TEMPLATE_TABS_STORAGE_VERSION || !Array.isArray(stored.tabs)) return false;
+    const stored = migrateStoredTemplateTabsPayload(JSON.parse(raw));
+    if (!stored || !Array.isArray(stored.tabs)) return false;
 
     const tabs = stored.tabs.filter((tab) => (
       tab && typeof tab.id === "string" && typeof tab.title === "string" &&
@@ -634,7 +1257,12 @@ function restoreTemplateTabsFromStorage() {
       isDirty: !!tab.isDirty,
       savedFingerprint: typeof tab.savedFingerprint === "string" ? tab.savedFingerprint : null
     }));
-    if (!tabs.length) return false;
+    if (!tabs.length) {
+      tabsState.tabs = [];
+      tabsState.activeTabId = null;
+      restoreEmptyTemplateWorkspace();
+      return true;
+    }
 
     tabsState.tabs = tabs;
     tabsState.activeTabId = tabs.some((tab) => tab.id === stored.activeTabId)
@@ -668,14 +1296,46 @@ function initTemplateTabs() {
   }
 
   elBtnAddTemplateTab?.addEventListener("click", () => openNewTemplateModal());
+  elBtnTemplateTabsMenu?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (templateTabMenuState?.source === "toolbar") {
+      closeTemplateTabMenu({ restoreFocus: true });
+      return;
+    }
+    const activeTabId = tabsState.activeTabId;
+    if (activeTabId) {
+      openTemplateTabMenu(activeTabId, { type: "element", element: elBtnTemplateTabsMenu }, "toolbar");
+    }
+  });
+  elTemplateTabMenu?.addEventListener("click", (event) => {
+    const item = event.target.closest("[data-template-tab-action]");
+    if (!item || item.disabled || !templateTabMenuState) return;
+    const { referenceTabId } = templateTabMenuState;
+    const action = item.dataset.templateTabAction;
+    const tabIds = getTemplateTabCloseIds(action, referenceTabId);
+    closeTemplateTabMenu();
+    requestCloseTemplateTabs(tabIds, { action, referenceTabId });
+  });
+  document.addEventListener("pointerdown", (event) => {
+    if (!templateTabMenuState) return;
+    if (elTemplateTabMenu?.contains(event.target) || elBtnTemplateTabsMenu?.contains(event.target)) return;
+    closeTemplateTabMenu();
+  });
+  window.addEventListener("resize", () => closeTemplateTabMenu());
+  window.addEventListener("scroll", () => closeTemplateTabMenu(), true);
+  window.addEventListener("blur", () => closeTemplateTabMenu());
   initTemplateTabsMouseDrag();
   elBtnCancelCloseTab?.addEventListener("click", () => closeTemplateTabWarningModal());
-  elBtnCloseTabWithoutSaving?.addEventListener("click", () => closePendingTemplateTabWithoutSaving());
-  elBtnSaveAndCloseTab?.addEventListener("click", () => saveAndClosePendingTemplateTab());
+  elBtnCloseTabWithoutSaving?.addEventListener("click", () => closePendingTemplateTabsWithoutSaving());
+  elBtnSaveAndCloseTab?.addEventListener("click", () => saveAndClosePendingTemplateTabs());
   elCloseTabModal?.addEventListener("click", (event) => {
     if (event.target?.dataset?.closeTabCancel === "1") closeTemplateTabWarningModal();
   });
   window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && templateTabMenuState) {
+      closeTemplateTabMenu({ restoreFocus: true });
+      return;
+    }
     if (event.key === "Escape" && elCloseTabModal && !elCloseTabModal.classList.contains("hidden")) {
       closeTemplateTabWarningModal();
     }
@@ -683,6 +1343,7 @@ function initTemplateTabs() {
   if (typeof onUiLanguageChange === "function") {
     onUiLanguageChange(() => {
       renderTemplateTabs();
+      updateTemplateTabMenuContent();
       updateCloseTemplateTabModalContent();
     });
   }
@@ -720,7 +1381,11 @@ globalThis.initTemplateTabs = initTemplateTabs;
 globalThis.getTemplateTabsState = getTemplateTabsState;
 globalThis.switchTemplateTab = switchTemplateTab;
 globalThis.closeTemplateTab = closeTemplateTab;
+globalThis.closeTemplateTabs = closeTemplateTabs;
 globalThis.requestCloseTemplateTab = requestCloseTemplateTab;
+globalThis.requestCloseTemplateTabs = requestCloseTemplateTabs;
+globalThis.getTemplateTabCloseIds = getTemplateTabCloseIds;
+globalThis.getNextActiveTemplateTabIdAfterClose = getNextActiveTemplateTabIdAfterClose;
 globalThis.createTemplateInNewTab = createTemplateInNewTab;
 globalThis.openXmlInNewTemplateTab = openXmlInNewTemplateTab;
 globalThis.schedulePersistActiveTemplateTab = schedulePersistActiveTemplateTab;

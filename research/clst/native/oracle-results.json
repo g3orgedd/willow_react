@@ -1,0 +1,155 @@
+{
+  "sourceDll": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffMgr.dll",
+  "sha256": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+  "architecture": "x86 machine code executed in Unicorn",
+  "nativeRoutines": [
+    "6810A989",
+    "68117D03",
+    "68117DE2",
+    "68117E37",
+    "681180D7",
+    "68117F62",
+    "68117CE1",
+    "68117B8E"
+  ],
+  "emulatedHelpers": [
+    "OLE BSTR allocation/length/free",
+    "CRT wchar copy/length",
+    "BSTR copy 681026D0"
+  ],
+  "results": [
+    {
+      "text": "00000001",
+      "key": "000101",
+      "output": "MWNDu5BBD5YND7UFBSMsIQv2",
+      "hresult": 0,
+      "effectiveKeyLength": 6,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ],
+      "matchesKnownVector": true
+    },
+    {
+      "text": "21:22",
+      "key": "TagData",
+      "output": "6o7UEV2GF5uKVqU",
+      "hresult": 0,
+      "effectiveKeyLength": 7,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ],
+      "matchesKnownVector": true
+    },
+    {
+      "text": "MWNDu5BBD5YND7UFBSMsIQv26nHTELGTVEh47lGLjGRv9KoKQVOMgH7sB",
+      "key": "TpyRcNeyeK",
+      "output": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnVSVSNLLLnTAS2NyCJtJUD3VGHDbN6K76iHU!QGk8UrNGi8Uz9Tc9QVCIr2TyL6eAUTMUCVHm8EcI0yABuRMv7N4LVz1",
+      "hresult": 0,
+      "effectiveKeyLength": 10,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ],
+      "matchesKnownVector": true
+    },
+    {
+      "text": "audit 123",
+      "key": "000101",
+      "output": "MY6Fm91TTDaA17LIyQGz7Gf9SWL",
+      "hresult": 0,
+      "effectiveKeyLength": 6,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ]
+    },
+    {
+      "text": "audit 123",
+      "key": "999999",
+      "output": "MY6Fm91TTDaA17LIyQGz7Gf9SWL",
+      "hresult": 0,
+      "effectiveKeyLength": 6,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ]
+    },
+    {
+      "text": "audit 123",
+      "key": "TpyRcNeyeK",
+      "output": "PzKAxTAcJURUHoPKdLO_TEtF4a9",
+      "hresult": 0,
+      "effectiveKeyLength": 10,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ]
+    },
+    {
+      "text": "audit 123",
+      "key": "abcdefghij",
+      "output": "PzKAxTAcJURUHoPKdLO_TEtF4a9",
+      "hresult": 0,
+      "effectiveKeyLength": 10,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ]
+    },
+    {
+      "text": "audit 123",
+      "key": "12345678901234",
+      "output": "6V7KwNAmOP68PyE4iLExG8r6Ql1",
+      "hresult": 0,
+      "effectiveKeyLength": 14,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ]
+    },
+    {
+      "text": "audit 123",
+      "key": "12345678901234567890",
+      "output": "6V7KwNAmOP68PyE4iLExG8r6Ql1",
+      "hresult": 0,
+      "effectiveKeyLength": 14,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ]
+    },
+    {
+      "text": "audit 123",
+      "key": "a\u0000bc",
+      "output": "VyUMZID04VT13pLKeMJsT3KGTi8",
+      "hresult": 0,
+      "effectiveKeyLength": 1,
+      "networkDimensions": [
+        25,
+        10,
+        1024,
+        16
+      ]
+    }
+  ]
+}

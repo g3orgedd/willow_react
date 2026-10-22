@@ -1,0 +1,4 @@
+{
+  "error": "Error: ENOENT,  not found in C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\resources\\app.asar\n    at createError (node:electron/js2c/node_init:2:2068)\n    at readFileFromArchiveSync (node:electron/js2c/node_init:2:10234)\n    at Object.readFileSync (node:electron/js2c/node_init:2:11018)\n    at exportExe (C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\export-both.cjs:349:41)\n    at async C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\export-both.cjs:375:15",
+  "time": "2026-10-20T20:27:04.182Z"
+}

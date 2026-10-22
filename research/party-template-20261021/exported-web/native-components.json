@@ -1,0 +1,877 @@
+{
+    "method":  "Original installed COM load, text/small-barcode UpdateData/CalculateSize/Draw with real printer capabilities; component bitmaps are not GUI screenshots.",
+    "processBits":  32,
+    "finishedUTC":  "2026-10-21T04:50:35.9707377Z",
+    "cases":  [
+                  {
+                      "name":  "Glyph-party-without-counter-20261021.ciff",
+                      "file":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\Glyph-party-without-counter-20261021.ciff",
+                      "designedFor":  "DataFlex 6530(53mm) - Continuous",
+                      "sourceSHA256":  "FE3688AA3F7C318ABD48C98480398BED1AEAB1AB5A489923A3B371B565A684E4",
+                      "sourceSHA256After":  "FE3688AA3F7C318ABD48C98480398BED1AEAB1AB5A489923A3B371B565A684E4",
+                      "fields":  [
+                                     {
+                                         "status":  "ok",
+                                         "name":  "Field00",
+                                         "before":  {
+                                                        "name":  "Field00",
+                                                        "type":  "Barcode",
+                                                        "x":  200,
+                                                        "y":  200,
+                                                        "w":  1100,
+                                                        "h":  1100,
+                                                        "orientation":  0,
+                                                        "calcData":  "~1010000000000000011000000100000000000  "
+                                                    },
+                                         "font":  null,
+                                         "afterUpdate":  {
+                                                             "name":  "Field00",
+                                                             "type":  "Barcode",
+                                                             "x":  200,
+                                                             "y":  200,
+                                                             "w":  1100,
+                                                             "h":  1100,
+                                                             "orientation":  0,
+                                                             "calcData":  "~1010000000000000011000000100000000000  "
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "Field00",
+                                                           "type":  "Barcode",
+                                                           "x":  200,
+                                                           "y":  200,
+                                                           "w":  1100,
+                                                           "h":  1100,
+                                                           "orientation":  0,
+                                                           "calcData":  "~1010000000000000011000000100000000000  "
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "Field00",
+                                                           "type":  "Barcode",
+                                                           "x":  200,
+                                                           "y":  200,
+                                                           "w":  1100,
+                                                           "h":  1100,
+                                                           "orientation":  0,
+                                                           "calcData":  "~1010000000000000011000000100000000000  "
+                                                       },
+                                         "widthDots":  132,
+                                         "heightDots":  132,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-without-counter-20261021\\Field00.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "C1",
+                                         "before":  {
+                                                        "name":  "C1",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  0,
+                                                        "w":  783,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "~101"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "C1",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  0,
+                                                             "w":  783,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "~101"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "C1",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  0,
+                                                           "w":  783,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "~101"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "C1",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  0,
+                                                           "w":  783,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "~101"
+                                                       },
+                                         "widthDots":  94,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-without-counter-20261021\\C1.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "GTIN2",
+                                         "before":  {
+                                                        "name":  "GTIN2",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  430,
+                                                        "w":  2683,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "00000000000000"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "GTIN2",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  430,
+                                                             "w":  2683,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "00000000000000"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "GTIN2",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  430,
+                                                           "w":  2683,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "00000000000000"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "GTIN2",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  430,
+                                                           "w":  2683,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "00000000000000"
+                                                       },
+                                         "widthDots":  322,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-without-counter-20261021\\GTIN2.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "C3",
+                                         "before":  {
+                                                        "name":  "C3",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  860,
+                                                        "w":  383,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "11"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "C3",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  860,
+                                                             "w":  383,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "11"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "C3",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  860,
+                                                           "w":  383,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "11"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "C3",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  860,
+                                                           "w":  358,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "11"
+                                                       },
+                                         "widthDots":  43,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-without-counter-20261021\\C3.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "PRODUCT_DATE",
+                                         "before":  {
+                                                        "name":  "PRODUCT_DATE",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  1290,
+                                                        "w":  345,
+                                                        "h":  133,
+                                                        "orientation":  0,
+                                                        "calcData":  "000000"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  3,
+                                                      "xMag":  108,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "PRODUCT_DATE",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  1290,
+                                                             "w":  345,
+                                                             "h":  133,
+                                                             "orientation":  0,
+                                                             "calcData":  "000000"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "PRODUCT_DATE",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1290,
+                                                           "w":  345,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "000000"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "PRODUCT_DATE",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1290,
+                                                           "w":  350,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "000000"
+                                                       },
+                                         "widthDots":  42,
+                                         "heightDots":  16,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-without-counter-20261021\\PRODUCT_DATE.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "C2",
+                                         "before":  {
+                                                        "name":  "C2",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  1489,
+                                                        "w":  383,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "10"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "C2",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  1489,
+                                                             "w":  383,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "10"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "C2",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1489,
+                                                           "w":  383,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "10"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "C2",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1489,
+                                                           "w":  383,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "10"
+                                                       },
+                                         "widthDots":  46,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-without-counter-20261021\\C2.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "SN",
+                                         "before":  {
+                                                        "name":  "SN",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  1919,
+                                                        "w":  575,
+                                                        "h":  133,
+                                                        "orientation":  0,
+                                                        "calcData":  "0000000000  "
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  3,
+                                                      "xMag":  75,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "SN",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  1919,
+                                                             "w":  575,
+                                                             "h":  133,
+                                                             "orientation":  0,
+                                                             "calcData":  "0000000000  "
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "SN",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1919,
+                                                           "w":  575,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "0000000000  "
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "SN",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1919,
+                                                           "w":  550,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "0000000000  "
+                                                       },
+                                         "widthDots":  66,
+                                         "heightDots":  16,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-without-counter-20261021\\SN.png"
+                                     }
+                                 ]
+                  },
+                  {
+                      "name":  "Glyph-party-with-box-counter-20261021.ciff",
+                      "file":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\Glyph-party-with-box-counter-20261021.ciff",
+                      "designedFor":  "DataFlex 6530(53mm) - Continuous",
+                      "sourceSHA256":  "7F00BCBADCD69D5C5C06915DD7B3BB7A2E8EEA4DAC4272D7D00586785470CF04",
+                      "sourceSHA256After":  "7F00BCBADCD69D5C5C06915DD7B3BB7A2E8EEA4DAC4272D7D00586785470CF04",
+                      "fields":  [
+                                     {
+                                         "status":  "ok",
+                                         "name":  "Field00",
+                                         "before":  {
+                                                        "name":  "Field00",
+                                                        "type":  "Barcode",
+                                                        "x":  200,
+                                                        "y":  200,
+                                                        "w":  1100,
+                                                        "h":  1100,
+                                                        "orientation":  0,
+                                                        "calcData":  "~1010000000000000011000000100000000000  2100000"
+                                                    },
+                                         "font":  null,
+                                         "afterUpdate":  {
+                                                             "name":  "Field00",
+                                                             "type":  "Barcode",
+                                                             "x":  200,
+                                                             "y":  200,
+                                                             "w":  1100,
+                                                             "h":  1100,
+                                                             "orientation":  0,
+                                                             "calcData":  "~1010000000000000011000000100000000000  2100000"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "Field00",
+                                                           "type":  "Barcode",
+                                                           "x":  200,
+                                                           "y":  200,
+                                                           "w":  1100,
+                                                           "h":  1100,
+                                                           "orientation":  0,
+                                                           "calcData":  "~1010000000000000011000000100000000000  2100000"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "Field00",
+                                                           "type":  "Barcode",
+                                                           "x":  200,
+                                                           "y":  200,
+                                                           "w":  1100,
+                                                           "h":  1100,
+                                                           "orientation":  0,
+                                                           "calcData":  "~1010000000000000011000000100000000000  2100000"
+                                                       },
+                                         "widthDots":  132,
+                                         "heightDots":  132,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\Field00.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "C1",
+                                         "before":  {
+                                                        "name":  "C1",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  0,
+                                                        "w":  783,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "~101"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "C1",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  0,
+                                                             "w":  783,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "~101"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "C1",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  0,
+                                                           "w":  783,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "~101"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "C1",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  0,
+                                                           "w":  783,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "~101"
+                                                       },
+                                         "widthDots":  94,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\C1.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "GTIN2",
+                                         "before":  {
+                                                        "name":  "GTIN2",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  430,
+                                                        "w":  2683,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "00000000000000"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "GTIN2",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  430,
+                                                             "w":  2683,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "00000000000000"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "GTIN2",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  430,
+                                                           "w":  2683,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "00000000000000"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "GTIN2",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  430,
+                                                           "w":  2683,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "00000000000000"
+                                                       },
+                                         "widthDots":  322,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\GTIN2.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "C3",
+                                         "before":  {
+                                                        "name":  "C3",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  860,
+                                                        "w":  383,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "11"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "C3",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  860,
+                                                             "w":  383,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "11"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "C3",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  860,
+                                                           "w":  383,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "11"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "C3",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  860,
+                                                           "w":  358,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "11"
+                                                       },
+                                         "widthDots":  43,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\C3.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "PRODUCT_DATE",
+                                         "before":  {
+                                                        "name":  "PRODUCT_DATE",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  1290,
+                                                        "w":  345,
+                                                        "h":  133,
+                                                        "orientation":  0,
+                                                        "calcData":  "000000"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  3,
+                                                      "xMag":  108,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "PRODUCT_DATE",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  1290,
+                                                             "w":  345,
+                                                             "h":  133,
+                                                             "orientation":  0,
+                                                             "calcData":  "000000"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "PRODUCT_DATE",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1290,
+                                                           "w":  345,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "000000"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "PRODUCT_DATE",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1290,
+                                                           "w":  350,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "000000"
+                                                       },
+                                         "widthDots":  42,
+                                         "heightDots":  16,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\PRODUCT_DATE.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "C2",
+                                         "before":  {
+                                                        "name":  "C2",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  1489,
+                                                        "w":  383,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "10"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "C2",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  1489,
+                                                             "w":  383,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "10"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "C2",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1489,
+                                                           "w":  383,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "10"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "C2",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1489,
+                                                           "w":  383,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "10"
+                                                       },
+                                         "widthDots":  46,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\C2.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "SN",
+                                         "before":  {
+                                                        "name":  "SN",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  1919,
+                                                        "w":  575,
+                                                        "h":  133,
+                                                        "orientation":  0,
+                                                        "calcData":  "0000000000  "
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  3,
+                                                      "xMag":  75,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "SN",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  1919,
+                                                             "w":  575,
+                                                             "h":  133,
+                                                             "orientation":  0,
+                                                             "calcData":  "0000000000  "
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "SN",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1919,
+                                                           "w":  575,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "0000000000  "
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "SN",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  1919,
+                                                           "w":  550,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "0000000000  "
+                                                       },
+                                         "widthDots":  66,
+                                         "heightDots":  16,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\SN.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "C4",
+                                         "before":  {
+                                                        "name":  "C4",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  2118,
+                                                        "w":  383,
+                                                        "h":  392,
+                                                        "orientation":  0,
+                                                        "calcData":  "21"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  10,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "C4",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  2118,
+                                                             "w":  383,
+                                                             "h":  392,
+                                                             "orientation":  0,
+                                                             "calcData":  "21"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "C4",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  2118,
+                                                           "w":  383,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "21"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "C4",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  2118,
+                                                           "w":  383,
+                                                           "h":  392,
+                                                           "orientation":  0,
+                                                           "calcData":  "21"
+                                                       },
+                                         "widthDots":  46,
+                                         "heightDots":  47,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\C4.png"
+                                     },
+                                     {
+                                         "status":  "ok",
+                                         "name":  "BOX_COUNTER",
+                                         "before":  {
+                                                        "name":  "BOX_COUNTER",
+                                                        "type":  "FixedText",
+                                                        "x":  5483,
+                                                        "y":  2548,
+                                                        "w":  288,
+                                                        "h":  133,
+                                                        "orientation":  0,
+                                                        "calcData":  "00000"
+                                                    },
+                                         "font":  {
+                                                      "face":  "Arial",
+                                                      "pitch":  3,
+                                                      "xMag":  100,
+                                                      "bold":  0,
+                                                      "italic":  0
+                                                  },
+                                         "afterUpdate":  {
+                                                             "name":  "BOX_COUNTER",
+                                                             "type":  "FixedText",
+                                                             "x":  5483,
+                                                             "y":  2548,
+                                                             "w":  288,
+                                                             "h":  133,
+                                                             "orientation":  0,
+                                                             "calcData":  "00000"
+                                                         },
+                                         "afterSize":  {
+                                                           "name":  "BOX_COUNTER",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  2548,
+                                                           "w":  288,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "00000"
+                                                       },
+                                         "afterDraw":  {
+                                                           "name":  "BOX_COUNTER",
+                                                           "type":  "FixedText",
+                                                           "x":  5483,
+                                                           "y":  2548,
+                                                           "w":  292,
+                                                           "h":  133,
+                                                           "orientation":  0,
+                                                           "calcData":  "00000"
+                                                       },
+                                         "widthDots":  35,
+                                         "heightDots":  16,
+                                         "bitmap":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\native-draw-Glyph-party-with-box-counter-20261021\\BOX_COUNTER.png"
+                                     }
+                                 ]
+                  }
+              ]
+}

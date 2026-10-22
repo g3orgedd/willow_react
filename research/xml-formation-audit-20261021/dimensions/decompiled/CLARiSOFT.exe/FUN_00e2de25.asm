@@ -1,0 +1,17 @@
+00e2de25 PUSH EBP
+00e2de26 MOV EBP,ESP
+00e2de28 PUSH ECX
+00e2de29 XOR EAX,EAX
+00e2de2b CMP dword ptr [ECX + 0x15c],EAX
+00e2de31 JZ 0x00e2de4a
+00e2de33 MOV EAX,dword ptr [ECX + 0x15c]
+00e2de39 LEA EDX,[EBP + -0x4]
+00e2de3c PUSH EDX
+00e2de3d PUSH EAX
+00e2de3e MOV ECX,dword ptr [EAX]
+00e2de40 CALL dword ptr [ECX + 0x74]
+00e2de43 CMP dword ptr [EBP + -0x4],0x1
+00e2de47 SETZ AL
+00e2de4a MOV ESP,EBP
+00e2de4c POP EBP
+00e2de4d RET

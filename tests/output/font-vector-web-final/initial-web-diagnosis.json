@@ -1,0 +1,11 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "noElectronPreload": true,
+  "bridgeUsesHttp": true,
+  "catalogCount": 158,
+  "httpStatus": 200,
+  "outlineAvailable": true,
+  "outlineLength": 5309,
+  "responseWidth": 171,
+  "responseHeight": 28
+}

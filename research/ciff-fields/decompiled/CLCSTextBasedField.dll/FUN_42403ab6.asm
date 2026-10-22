@@ -1,0 +1,2 @@
+42403ab6 MOV dword ptr [ECX],0x42495ac0
+42403abc RET

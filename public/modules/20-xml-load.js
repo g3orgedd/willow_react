@@ -95,32 +95,53 @@ function findDirectChildTagContentRange(xml, tagName) {
 }
 
 function getEmptyTemplateDimensionsFromDialog() {
+  const printerModel = normalizeTemplateTargetPrinterModel(elNewTemplatePrinterModel?.value);
+  const maxWidthInternal = getTemplateMaxImageWidthInternal(printerModel);
+  const maxHeightInternal = getTemplateMaxImageHeightInternal(printerModel);
   return {
-    widthMm: normalizeEmptyTemplateDimensionMm(elNewTemplateWidth?.value, EMPTY_TEMPLATE_SUBIMAGE.maxImageWidth, EMPTY_TEMPLATE_SUBIMAGE.maxImageWidth),
-    heightMm: normalizeEmptyTemplateDimensionMm(elNewTemplateHeight?.value, EMPTY_TEMPLATE_SUBIMAGE.maxImageHeight, EMPTY_TEMPLATE_SUBIMAGE.maxImageHeight)
+    widthMm: normalizeEmptyTemplateDimensionMm(elNewTemplateWidth?.value, maxWidthInternal, maxWidthInternal),
+    heightMm: normalizeEmptyTemplateDimensionMm(elNewTemplateHeight?.value, maxHeightInternal, maxHeightInternal)
   };
+}
+
+function syncNewTemplatePrinterWidthLimit() {
+  const printerModel = normalizeTemplateTargetPrinterModel(elNewTemplatePrinterModel?.value);
+  const maxWidthInternal = getTemplateMaxImageWidthInternal(printerModel);
+  const maxHeightInternal = getTemplateMaxImageHeightInternal(printerModel);
+  const maxWidthMm = internalToMm(maxWidthInternal);
+  const maxHeightMm = internalToMm(maxHeightInternal);
+  const widthMm = normalizeEmptyTemplateDimensionMm(elNewTemplateWidth?.value, maxWidthInternal, maxWidthInternal);
+  const heightMm = normalizeEmptyTemplateDimensionMm(elNewTemplateHeight?.value, maxHeightInternal, maxHeightInternal);
+  if (elNewTemplateWidth) {
+    elNewTemplateWidth.max = maxWidthMm.toFixed(2);
+    elNewTemplateWidth.value = widthMm.toFixed(2);
+  }
+  if (elNewTemplateHeight) {
+    elNewTemplateHeight.max = maxHeightMm.toFixed(2);
+    elNewTemplateHeight.value = heightMm.toFixed(2);
+  }
+  const sizeHint = elNewTemplateModal?.querySelector('[data-builder-step="1"] > .note');
+  if (sizeHint) {
+    const sizeHintKey = maxWidthInternal === TEMPLATE_32MM_MAX_IMAGE_WIDTH
+      ? "dialog.createTemplate.sizeHint32"
+      : maxWidthInternal === TEMPLATE_107MM_MAX_IMAGE_WIDTH
+        ? "dialog.createTemplate.sizeHint107"
+        : "dialog.createTemplate.sizeHint";
+    sizeHint.textContent = t(sizeHintKey);
+  }
+  return { printerModel, maxWidthInternal, maxHeightInternal, widthMm, heightMm };
 }
 
 function populateMaterialSelect(el, items, currentValue) {
   if (!el) return;
-  el.innerHTML = "";
-  items.forEach((item) => {
-    const opt = document.createElement("option");
-    opt.value = String(item.value);
-    opt.textContent = String(item.label);
-    if (String(item.value) === String(currentValue)) opt.selected = true;
-    el.appendChild(opt);
-  });
-  el.value = String(currentValue);
+  populateSelectOptions(el, items, currentValue);
   if (typeof enhanceSelectControl === "function") enhanceSelectControl(el);
 }
 
 function populateNewTemplateOptions() {
   if (!elNewTemplatePrinterModel || !elNewTemplatePrintMode) return;
 
-  const currentModel = EMPTY_TEMPLATE_PRINTER_MODELS.includes(elNewTemplatePrinterModel.value)
-    ? elNewTemplatePrinterModel.value
-    : EMPTY_TEMPLATE_PRINTER_MODELS[0];
+  const currentModel = normalizeTemplateTargetPrinterModel(elNewTemplatePrinterModel.value);
   const currentMode = EMPTY_TEMPLATE_PRINT_MODES.includes(elNewTemplatePrintMode.value)
     ? elNewTemplatePrintMode.value
     : EMPTY_TEMPLATE_PRINT_MODES[0];
@@ -128,7 +149,7 @@ function populateNewTemplateOptions() {
 
   populateMaterialSelect(
     elNewTemplatePrinterModel,
-    EMPTY_TEMPLATE_PRINTER_MODELS.map((model) => ({ value: model, label: model })),
+    getPrinterModelSelectOptions(currentModel),
     currentModel
   );
   populateMaterialSelect(
@@ -138,6 +159,7 @@ function populateNewTemplateOptions() {
   );
   if (elNewTemplateWidth) elNewTemplateWidth.value = widthMm.toFixed(2);
   if (elNewTemplateHeight) elNewTemplateHeight.value = heightMm.toFixed(2);
+  syncNewTemplatePrinterWidthLimit();
 }
 
 function openNewTemplateModal() {
@@ -157,9 +179,7 @@ function closeNewTemplateModal() {
 }
 
 function createNewTemplateFromDialog() {
-  const printerModel = EMPTY_TEMPLATE_PRINTER_MODELS.includes(elNewTemplatePrinterModel?.value)
-    ? elNewTemplatePrinterModel.value
-    : EMPTY_TEMPLATE_PRINTER_MODELS[0];
+  const printerModel = normalizeTemplateTargetPrinterModel(elNewTemplatePrinterModel?.value);
   const printMode = EMPTY_TEMPLATE_PRINT_MODES.includes(elNewTemplatePrintMode?.value)
     ? elNewTemplatePrintMode.value
     : EMPTY_TEMPLATE_PRINT_MODES[0];
@@ -184,29 +204,143 @@ function createNewTemplateFromDialog() {
 }
 
 function buildEmptyTemplateXml(printerModel, printMode, imageWidthMm, imageHeightMm) {
-  const model = EMPTY_TEMPLATE_PRINTER_MODELS.includes(String(printerModel))
-    ? String(printerModel)
-    : EMPTY_TEMPLATE_PRINTER_MODELS[0];
+  const model = normalizeTemplateTargetPrinterModel(printerModel);
   const mode = EMPTY_TEMPLATE_PRINT_MODES.includes(String(printMode))
     ? String(printMode)
     : EMPTY_TEMPLATE_PRINT_MODES[0];
-  const designedFor = `DataFlex ${model}(53mm) - ${mode}`;
-  const widthMm = normalizeEmptyTemplateDimensionMm(imageWidthMm, EMPTY_TEMPLATE_SUBIMAGE.maxImageWidth, EMPTY_TEMPLATE_SUBIMAGE.imageWidth);
-  const heightMm = normalizeEmptyTemplateDimensionMm(imageHeightMm, EMPTY_TEMPLATE_SUBIMAGE.maxImageHeight, EMPTY_TEMPLATE_SUBIMAGE.imageHeight);
-  const overallWidth = Math.min(EMPTY_TEMPLATE_SUBIMAGE.maxImageWidth, mmToInternal(widthMm));
-  const overallHeight = Math.min(EMPTY_TEMPLATE_SUBIMAGE.maxImageHeight, mmToInternal(heightMm));
+  const capabilities = getPrinterCapabilities(model);
+  const maxWidthInternal = capabilities?.maxImageWidth ?? getTemplateMaxImageWidthInternal(model);
+  const maxHeightInternal = capabilities?.maxImageHeight ?? getTemplateMaxImageHeightInternal(model);
+  const xRes = capabilities?.xResText ?? Number(capabilities?.xRes ?? EMPTY_TEMPLATE_SUBIMAGE.xRes).toFixed(6);
+  const designedFor = buildDesignedForLabel(model, mode);
+  const widthMm = normalizeEmptyTemplateDimensionMm(imageWidthMm, maxWidthInternal, maxWidthInternal);
+  const heightMm = normalizeEmptyTemplateDimensionMm(imageHeightMm, maxHeightInternal, maxHeightInternal);
+  const imageWidth = Math.min(maxWidthInternal, mmToInternal(widthMm));
+  const imageHeight = Math.min(maxHeightInternal, mmToInternal(heightMm));
+  const clStVersionInfo = resolveClStVersionInfo({ designedFor });
 
   return (
     `<?xml version="1.0" encoding="UTF-16"?>\r\n` +
-    `<ImageDesign Version="23" xml:space="default"><Header DesignedFor="${escapeAttr(designedFor)}"><ClStVersionInfo>${EMPTY_TEMPLATE_CLST_VERSION_INFO}</ClStVersionInfo></Header><SubImage ImageReference="1"><SubHeader FormatName="Default" PrinterFormatName="Default"><ImageWidth>${overallWidth}</ImageWidth><ImageHeight>${overallHeight}</ImageHeight><MaxImageWidth>${overallWidth}</MaxImageWidth><MaxImageHeight>${overallHeight}</MaxImageHeight><XRes>${EMPTY_TEMPLATE_SUBIMAGE.xRes}</XRes><CurrentOrientation>${EMPTY_TEMPLATE_SUBIMAGE.currentOrientation}</CurrentOrientation></SubHeader></SubImage><GenericSettings><ImageMapping><Map SubIMageRef="1">1</Map></ImageMapping></GenericSettings></ImageDesign>`
+    `<ImageDesign Version="23" xml:space="default"><Header DesignedFor="${escapeAttr(designedFor)}"><ClStVersionInfo>${clStVersionInfo}</ClStVersionInfo></Header><SubImage ImageReference="1"><SubHeader FormatName="Default" PrinterFormatName="Default"><ImageWidth>${imageWidth}</ImageWidth><ImageHeight>${imageHeight}</ImageHeight><MaxImageWidth>${imageWidth}</MaxImageWidth><MaxImageHeight>${imageHeight}</MaxImageHeight><XRes>${xRes}</XRes><CurrentOrientation>${EMPTY_TEMPLATE_SUBIMAGE.currentOrientation}</CurrentOrientation></SubHeader></SubImage><GenericSettings><ImageMapping><Map SubIMageRef="1">1</Map></ImageMapping></GenericSettings></ImageDesign>`
   );
+}
+
+function repairLoadedKnownPrinterProfile() {
+  const printerModel = String(state.docMeta?.printerModel ?? "").trim();
+  if (!TEMPLATE_TARGET_PRINTER_MODELS.includes(printerModel)) {
+    return { changed: false, printerModel, knownProfile: false, changes: [] };
+  }
+
+  const capabilities = PRINTER_CAPABILITIES[printerModel];
+  if (!capabilities) {
+    return { changed: false, printerModel, knownProfile: false, changes: [] };
+  }
+
+  const changes = [];
+  const preservedDifferences = [];
+  const fillInvalidCapability = (key, value, allowZero = false) => {
+    const sourceValue = state.subImage[key];
+    if (Number.isFinite(sourceValue) && (allowZero ? sourceValue >= 0 : sourceValue > 0)) {
+      if (sourceValue !== Number(value)) {
+        preservedDifferences.push({ key, sourceValue, capabilityValue: Number(value) });
+      }
+      return;
+    }
+    state.subImage[key] = value;
+    changes.push(key);
+  };
+  const dimensions = resolveTemplateWorkspaceDimensions(state.subImage, capabilities);
+  fillInvalidCapability("maxWidth", dimensions.width, true);
+  fillInvalidCapability("maxHeight", dimensions.height, true);
+  fillInvalidCapability("xRes", capabilities.xRes);
+
+  return {
+    changed: changes.length > 0,
+    printerModel,
+    knownProfile: true,
+    changes,
+    preservedDifferences
+  };
+}
+
+function parseCiffDimensionUnits(value) {
+  const text = String(value ?? "").trim();
+  if (!/^\d+$/.test(text)) return null;
+  const units = Number(text);
+  return Number.isSafeInteger(units) && units >= 0 ? units : null;
+}
+
+function resolveTemplateWorkspaceDimensions(subImage, capabilities = null) {
+  // MaxImage* is the document's configured physical area, which can be smaller
+  // than the head. Image* describes used content (even outside that area).
+  // Only missing/invalid values fall back per axis; an explicit MaxImage*=0
+  // remains zero in the ClariSoft editor (print preview has a different rule).
+  // field geometry, DPI, orientation and viewport scale never determine size.
+  return {
+    width: parseCiffDimensionUnits(subImage?.maxWidth) ??
+      parseCiffDimensionUnits(subImage?.width) ?? parseCiffDimensionUnits(capabilities?.maxImageWidth) ?? 0,
+    height: parseCiffDimensionUnits(subImage?.maxHeight) ??
+      parseCiffDimensionUnits(subImage?.height) ?? parseCiffDimensionUnits(capabilities?.maxImageHeight) ?? 0
+  };
+}
+
+function initializeTemplateWorkspaceDimensions(options = {}) {
+  const source = String(options.source ?? "").trim().toLowerCase();
+  const knownCapabilities = typeof getKnownPrinterCapabilities === "function"
+    ? getKnownPrinterCapabilities(state.docMeta?.printerModel)
+    : null;
+  const dimensions = resolveTemplateWorkspaceDimensions(state.subImage, knownCapabilities);
+  state.subImage.workspaceWidth = dimensions.width;
+  state.subImage.workspaceHeight = dimensions.height;
+
+  return {
+    width: state.subImage.workspaceWidth,
+    height: state.subImage.workspaceHeight,
+    source
+  };
+}
+
+function parseCiffMeasurementUnits(value) {
+  const text = String(value ?? "").trim().toLowerCase();
+  // Original CiffMgr string table 681601A8: U_HMM="hmm", U_DOTS="dots".
+  // Numeric aliases also make previously generated documents explicit.
+  if (text === "" || text === "hmm" || text === "0") return 0;
+  if (text === "dots" || text === "1") return 1;
+  return null;
+}
+
+function getCiffGeometryLoadError(doc) {
+  const unitsText = getDirectChildText(doc?.querySelector("ImageDesign > Header"), "Units").trim();
+  const units = parseCiffMeasurementUnits(unitsText);
+  const subHeaders = [...(doc?.querySelectorAll("ImageDesign > SubImage > SubHeader") ?? [])];
+  const invalidDimensions = !subHeaders.length || subHeaders.some((header) => (
+    parseCiffDimensionUnits(getDirectChildText(header, "ImageWidth")) == null ||
+    parseCiffDimensionUnits(getDirectChildText(header, "ImageHeight")) == null ||
+    ["MaxImageWidth", "MaxImageHeight"].some((tag) => {
+      const node = header.querySelector(`:scope > ${tag}`);
+      return node != null && parseCiffDimensionUnits(node.textContent) == null;
+    })
+  ));
+  if (units === 0 && !invalidDimensions) return null;
+  return {
+    key: units !== 0 ? "dialog.fileOpenError.unsupportedUnits" : "dialog.fileOpenError.invalidDimensions",
+    units: unitsText || "hmm",
+    invalidDimensions
+  };
+}
+
+function validateCiffGeometryForLoad(doc, options = {}) {
+  const error = getCiffGeometryLoadError(doc);
+  if (!error) return true;
+  appLogger.file("TEMPLATE_UNSUPPORTED_GEOMETRY", "Шаблон содержит неподдерживаемые единицы или некорректные обязательные размеры.", {
+    source: options.source || "unknown", units: error.units, invalidDimensions: error.invalidDimensions
+  }, "ERROR");
+  openNotificationModal(t(error.key), t("dialog.fileOpenError.title"));
+  return false;
 }
 
 // ---------- XML load / parse ----------
 function loadXml(xmlText, options = {}) {
-  if (typeof clearPendingCanvasPlacement === "function") {
-    clearPendingCanvasPlacement({ restoreStatus: false });
-  }
   // keep original line ending for diagnostics, but we will OUTPUT CRLF always
   const hasCRLF = /\r\n/.test(xmlText);
 
@@ -230,15 +364,29 @@ function loadXml(xmlText, options = {}) {
     return false;
   }
 
+  // The editor's geometry, drag controls and barcode modules use U_HMM.
+  // Reject U_DOTS before touching the current document rather than silently
+  // interpreting printer dots as hundredths of a millimetre.
+  if (!validateCiffGeometryForLoad(doc, options)) return false;
+
+  if (typeof clearPendingCanvasPlacement === "function") {
+    clearPendingCanvasPlacement({ restoreStatus: false });
+  }
+
   state.lineEnding = "\r\n";
   state.line1 = line1;
   state.line2 = line2;
   state.xmlText = line1 + "\n" + line2; // internal store (we'll output CRLF later)
   state.xmlDoc = doc;
 
-  parseHeader(doc);
+  parseHeader(doc, options);
   parseSubHeader(doc);
   parseFields(doc);
+  initializeTemplateWorkspaceDimensions(options);
+  const compatibilityRepair = repairLoadedKnownPrinterProfile();
+  if (compatibilityRepair.changed) {
+    options = { ...options, markDirty: true, compatibilityRepair };
+  }
   setSelectedNames([]);
 
   pushHistory(true);
@@ -271,6 +419,7 @@ function loadXml(xmlText, options = {}) {
       printMode: state.docMeta.printMode,
       widthMillimeters: Number(internalToMm(getCanvasInternalWidth()).toFixed(2)),
       heightMillimeters: Number(internalToMm(getCanvasInternalHeight()).toFixed(2)),
+      compatibilityRepair,
       fieldCount: state.fields.length,
       printedFieldCount: state.fields.filter((field) => field.printed).length,
       hiddenFieldCount: state.fields.filter((field) => !field.printed).length,
@@ -284,35 +433,42 @@ function loadXml(xmlText, options = {}) {
   return true;
 }
 
-function parseHeader(doc) {
+function parseHeader(doc, options = {}) {
   const root = doc.querySelector("ImageDesign");
   state.docMeta.version = root?.getAttribute("Version") ?? null;
 
   const header = doc.querySelector("ImageDesign > Header");
-  const designedFor = header?.getAttribute("DesignedFor") ?? "";
-  const parsedTarget = parseDesignedForMeta(designedFor);
-  state.docMeta.designedFor = designedFor || parsedTarget.designedFor;
-  state.docMeta.clStVersionInfo = header?.querySelector("ClStVersionInfo")?.textContent ?? "";
-  state.docMeta.printerModel = parsedTarget.printerModel;
-  state.docMeta.printMode = parsedTarget.printMode;
+  state.docMeta.units = parseCiffMeasurementUnits(getDirectChildText(header, "Units"));
+  const designedFor = String(header?.getAttribute("DesignedFor") ?? "").trim();
+  const targetMatch = designedFor.match(/^(.*?)(?:\s*-\s*(Intermittent|Continuous))$/i);
+  state.docMeta.designedFor = designedFor;
+  state.docMeta.clStVersionInfo = getDirectChildText(header, "ClStVersionInfo");
+  state.docMeta.sourceFileName = String(options.sourceFileName ?? options.sourcePath ??
+    (options.source === "file" ? options.title : "") ?? "");
+  state.docMeta.clStIncludeFileMetadata = recognizeClStFileMetadataMode(
+    state.docMeta.clStVersionInfo, state.docMeta.sourceFileName
+  );
+  state.docMeta.printerModel = targetMatch ? targetMatch[1].trim() : designedFor;
+  state.docMeta.printMode = targetMatch ? normalizePrintMode(targetMatch[2]) : "";
 
   state.dateOffsets = [];
-  header?.querySelectorAll("DateOffset").forEach(node => {
+  header?.querySelectorAll(":scope > DateOffset").forEach(node => {
     const name = node.getAttribute("Name") || "";
-    const def = node.querySelector("DefaultOffset");
-    const cur = node.querySelector("CurrentOffset");
+    const def = node.querySelector(":scope > DefaultOffset");
+    const cur = node.querySelector(":scope > CurrentOffset");
 
     state.dateOffsets.push({
+      sourceName: name,
       name,
       default: {
-        y: toInt(def?.querySelector("Year")?.textContent, 0),
-        m: toInt(def?.querySelector("Month")?.textContent, 0),
-        d: toInt(def?.querySelector("Day")?.textContent, 0)
+        y: toInt(getDirectChildText(def, "Year"), 0),
+        m: toInt(getDirectChildText(def, "Month"), 0),
+        d: toInt(getDirectChildText(def, "Day"), 0)
       },
       current: cur ? {
-        y: toInt(cur.querySelector("Year")?.textContent, 0),
-        m: toInt(cur.querySelector("Month")?.textContent, 0),
-        d: toInt(cur.querySelector("Day")?.textContent, 0)
+        y: toInt(getDirectChildText(cur, "Year"), 0),
+        m: toInt(getDirectChildText(cur, "Month"), 0),
+        d: toInt(getDirectChildText(cur, "Day"), 0)
       } : null
     });
   });
@@ -322,28 +478,27 @@ function parseHeader(doc) {
 }
 
 function parseSubHeader(doc) {
-  const sub = doc.querySelector("SubImage");
-  const sh = sub?.querySelector("SubHeader");
+  const sub = doc.querySelector("ImageDesign > SubImage");
+  const sh = sub?.querySelector(":scope > SubHeader");
 
   state.subImage.imageReference = sub?.getAttribute("ImageReference") ?? "1";
-  state.subImage.width = toInt(getDirectChildText(sh, "ImageWidth"), 0);
-  state.subImage.height = toInt(getDirectChildText(sh, "ImageHeight"), 0);
-  state.subImage.maxWidth = toInt(getDirectChildText(sh, "MaxImageWidth"), 0);
-  state.subImage.maxHeight = toInt(getDirectChildText(sh, "MaxImageHeight"), 0);
-  state.subImage.xRes = toFloat(getDirectChildText(sh, "XRes"), 0.12);
+  state.subImage.width = parseCiffDimensionUnits(getDirectChildText(sh, "ImageWidth"));
+  state.subImage.height = parseCiffDimensionUnits(getDirectChildText(sh, "ImageHeight"));
+  state.subImage.maxWidth = parseCiffDimensionUnits(getDirectChildText(sh, "MaxImageWidth")) ?? state.subImage.width;
+  state.subImage.maxHeight = parseCiffDimensionUnits(getDirectChildText(sh, "MaxImageHeight")) ?? state.subImage.height;
+  state.subImage.xRes = toFloat(getDirectChildText(sh, "XRes"), 0);
+  const yRes = toFloat(getDirectChildText(sh, "YRes"), 0);
+  state.subImage.yRes = Number.isFinite(yRes) && yRes > 0 ? yRes : null;
+  state.subImage.printerType = String(sh?.getAttribute("PrinterType") ?? state.docMeta.printerModel ?? "").trim();
   state.subImage.orientation = toInt(getDirectChildText(sh, "CurrentOrientation"), 0);
-
-  if (!state.subImage.maxWidth) state.subImage.maxWidth = state.subImage.width;
-  if (!state.subImage.maxHeight) state.subImage.maxHeight = state.subImage.height;
-  if (!state.subImage.width) state.subImage.width = state.subImage.maxWidth;
-  if (!state.subImage.height) state.subImage.height = state.subImage.maxHeight;
+  state.subImage.usedSizeDirty = false;
 }
 
 function parseFields(doc) {
   state.fields = [];
   state.fieldByName = new Map();
 
-  const sub = doc.querySelector("SubImage");
+  const sub = doc.querySelector("ImageDesign > SubImage");
   const fieldNodes = [...(sub?.querySelectorAll(":scope > Field") ?? [])];
 
   fieldNodes.forEach(node => {
@@ -363,64 +518,79 @@ function parseMaxNoOfChars(node) {
 
 function parseFieldNode(node) {
   const name = node.getAttribute("Name") || "";
-  const fldType = node.querySelector("FldType")?.textContent || "FixedText";
+  const fldType = getDirectChildText(node, "FldType") || "FixedText";
 
-  const displayedNode = node.querySelector("Displayed");
+  const displayedNode = node.querySelector(":scope > Displayed");
   const printed = !(displayedNode && displayedNode.textContent.trim() === "0");
 
   const geom = {
-    x: toInt(node.querySelector("X")?.textContent, 0),
-    y: toInt(node.querySelector("Y")?.textContent, 0),
-    w: toInt(node.querySelector("W")?.textContent, 0),
-    h: toInt(node.querySelector("H")?.textContent, 0)
+    x: toInt(getDirectChildText(node, "X"), 0),
+    y: toInt(getDirectChildText(node, "Y"), 0),
+    w: toInt(getDirectChildText(node, "W"), 0),
+    h: toInt(getDirectChildText(node, "H"), 0)
   };
 
-  const calcData = node.querySelector("CalcData")?.textContent ?? "";
-  const ln = toInt(node.querySelector("Ln")?.textContent, 1);
-  const orientation = normalizeOrientation(node.querySelector("Orientation")?.textContent);
+  const calcData = getDirectChildText(node, "CalcData").replace(/\r\n?/g, "\n");
+  // An absent Ln is a distinct source state, not an implicit line count of 1.
+  const ln = toInt(getDirectChildText(node, "Ln"), null);
+  const orientation = normalizeOrientation(getDirectChildText(node, "Orientation"));
 
-  const objNode = node.querySelector("Data > Object");
-  const dataType = toInt(objNode?.querySelector("DataType")?.textContent, null);
-  const defVal = objNode?.querySelector("Default")?.textContent ?? "";
-  const maxChars = parseMaxNoOfChars(objNode?.querySelector("MaxNoOfChars"));
-  const fixedLen = !!objNode?.querySelector("FixedLen");
+  const objNode = node.querySelector(":scope > Data > Object");
+  const dataType = toInt(getDirectChildText(objNode, "DataType"), null);
+  const defVal = getDirectChildText(objNode, "Default").replace(/\r\n?/g, "\n");
+  const maxChars = parseMaxNoOfChars(objNode?.querySelector(":scope > MaxNoOfChars"));
+  const fixedLen = !!objNode?.querySelector(":scope > FixedLen");
   const staticAttr = objNode?.getAttribute("Static") ?? null;
   const parseAttr = objNode?.getAttribute("Parse") ?? null;
-  const hasVarText = !!objNode?.querySelector("VarText");
-  const userEnter = objNode?.querySelector("VarText > UserEnterData")?.textContent ?? "";
-  const mask = objNode?.querySelector("VarText > Mask")?.textContent ?? "";
+  const referenceAttr = objNode?.getAttribute("Reference") ?? null;
+  const hasVarText = !!objNode?.querySelector(":scope > VarText");
+  const userEnter = (objNode?.querySelector(":scope > VarText > UserEnterData")?.textContent ?? "").replace(/\r\n?/g, "\n");
+  const mask = objNode?.querySelector(":scope > VarText > Mask")?.textContent ?? "";
+  const srcDataNode = objNode?.querySelector(":scope > SrcData");
+  // Keep source configuration separate from the calculated preview. Original
+  // CDATA, unknown children and attribute spelling remain in state.line2.
+  const srcData = srcDataNode ? {
+    connStr: srcDataNode.querySelector(":scope > ConnStr")?.textContent ?? null,
+    srcSQL: srcDataNode.querySelector(":scope > SrcSQL")?.textContent ?? null
+  } : null;
 
-  const pitch = node.querySelector("Text > Font > Pitch") ? toInt(node.querySelector("Text > Font > Pitch")?.textContent, null) : null;
-  const xMag = node.querySelector("Text > Font > XMag") ? toInt(node.querySelector("Text > Font > XMag")?.textContent, null) : null;
+  const textNode = node.querySelector(":scope > Text");
+  const fontNode = textNode?.querySelector(":scope > Font");
+  const pitch = toInt(fontNode?.querySelector(":scope > Pitch")?.textContent, null);
+  const xMag = toInt(fontNode?.querySelector(":scope > XMag")?.textContent, null);
+  const boldNode = textNode?.querySelector(":scope > Bold");
+  const italicNode = textNode?.querySelector(":scope > Italic");
 
-  const clsid = node.querySelector("CLSID")?.textContent ?? "";
+  const clsid = getDirectChildText(node, "CLSID");
   const quietMargin = node.querySelector("Barcode > QuietMargin") ? toInt(node.querySelector("Barcode > QuietMargin")?.textContent, 0) : null;
   const bcH = node.querySelector("Barcode > BcH") ? toInt(node.querySelector("Barcode > BcH")?.textContent, null) : null;
 
   const dmNode = node.querySelector("Barcode > DataMatrix");
   const explicitModuleSize = dmNode?.querySelector("ModuleSize")
-    ? normalizeDataMatrixModuleSizeValue(toFloat(dmNode.querySelector("ModuleSize")?.textContent, 0.5))
+    ? parseDataMatrixModuleSizeValue(toFloat(dmNode.querySelector("ModuleSize")?.textContent, 0.5), 0.5)
     : null;
   const dm = dmNode ? {
     moduleSize: explicitModuleSize,
     symbolSize: normalizeDataMatrixSymbolSizeValue(dmNode.querySelector("SymbolSize")?.textContent, "22X22"),
-    segments: parseDataMatrixSegments(node)
+    segments: parseDataMatrixSegments(node),
+    structureDirty: false
   } : null;
+  const nativeBarcodeType = getNativeBarcodeTypeFromNode(node);
 
-  const offsetRef = objNode?.querySelector("OffsetDate")?.getAttribute("SrcOffset") ?? null;
+  const offsetRef = objNode?.querySelector(":scope > OffsetDate")?.getAttribute("SrcOffset") ?? null;
 
-  const cntNoChars = objNode?.querySelector("CounterText > SubCnt > NoOfChars")
-    ? toInt(objNode.querySelector("CounterText > SubCnt > NoOfChars")?.textContent, null)
+  const cntNoChars = objNode?.querySelector(":scope > CounterText > SubCnt > NoOfChars")
+    ? toInt(objNode.querySelector(":scope > CounterText > SubCnt > NoOfChars")?.textContent, null)
     : null;
-  const cntSignificance = objNode?.querySelector("CounterText > SubCnt")
-    ? toInt(objNode.querySelector("CounterText > SubCnt")?.getAttribute("Significance"), null)
+  const cntSignificance = objNode?.querySelector(":scope > CounterText > SubCnt")
+    ? toInt(objNode.querySelector(":scope > CounterText > SubCnt")?.getAttribute("Significance"), null)
     : null;
-  const cntStartVal = objNode?.querySelector("CounterText > SubCnt > StartVal")?.textContent ?? null;
-  const cntEndVal = objNode?.querySelector("CounterText > SubCnt > EndVal")?.textContent ?? null;
-  const cntStepSize = objNode?.querySelector("CounterText > SubCnt > StepSize")
-    ? toInt(objNode.querySelector("CounterText > SubCnt > StepSize")?.textContent, null)
+  const cntStartVal = objNode?.querySelector(":scope > CounterText > SubCnt > StartVal")?.textContent ?? null;
+  const cntEndVal = objNode?.querySelector(":scope > CounterText > SubCnt > EndVal")?.textContent ?? null;
+  const cntStepSize = objNode?.querySelector(":scope > CounterText > SubCnt > StepSize")
+    ? toInt(objNode.querySelector(":scope > CounterText > SubCnt > StepSize")?.textContent, null)
     : null;
-  const cntClrStCntType = objNode?.querySelector("CounterText > SubCnt > ClrStCntType")?.textContent ?? "";
+  const cntClrStCntType = objNode?.querySelector(":scope > CounterText > SubCnt > ClrStCntType")?.textContent ?? "";
 
   const field = {
     sourceName: name,
@@ -437,8 +607,20 @@ function parseFieldNode(node) {
       defaultValue: defVal,
       maxChars,
       fixedLen,
+      padChar: objNode?.querySelector(":scope > FixedLen > PadChar")?.textContent ?? null,
+      padMode: objNode?.querySelector(":scope > FixedLen > PadMode")?.textContent ?? null,
+      srcField: objNode?.querySelector(":scope > SrcField")?.getAttribute("SrcFieldName") ?? null,
+      startChar: toInt(objNode?.querySelector(":scope > SrcField > StartChar")?.textContent, null),
+      noOfChars: toInt(objNode?.querySelector(":scope > SrcField > NoOfChars")?.textContent, null),
+      selectMode: objNode?.querySelector(":scope > SrcField > SelectMode")?.textContent ?? null,
+      hasMultipleDataObjects: node.querySelectorAll(":scope > Data > Object").length > 1,
+      calendar: objNode?.querySelector(":scope > Calendar")?.textContent ?? null,
+      locale: objNode?.querySelector(":scope > Locale")?.textContent ?? null,
+      encryption: objNode?.querySelector(":scope > Encryption")?.textContent ?? null,
       staticAttr,
       parseAttr,
+      referenceAttr,
+      srcData,
       hasVarText,
       textEntryMode: (fldType === "FixedText" ? (hasVarText ? "user" : "fixed") : null),
       userEnterData: userEnter,
@@ -455,8 +637,23 @@ function parseFieldNode(node) {
       }
     },
 
-    text: { pitch, xMag },
-    barcode: dm ? { clsid, quietMargin, bcH, dataMatrix: dm } : null,
+    text: {
+      pitch, xMag,
+      // An omitted native Pitch means 13 points, regardless of saved geometry.
+      // Keep the tag absent in the model for lossless export.
+      defaultPitch: 13,
+      face: fontNode?.querySelector(":scope > Face")?.textContent ?? null,
+      family: fontNode?.querySelector(":scope > Family")?.textContent ?? null,
+      pitchResolution: toInt(fontNode?.querySelector(":scope > PitchResolution")?.textContent, null),
+      yMag: toInt(fontNode?.querySelector(":scope > YMag")?.textContent, null),
+      ttSize: toInt(fontNode?.querySelector(":scope > TTSize")?.textContent, null),
+      txtDir: fontNode?.querySelector(":scope > TxtDir")?.textContent ?? null,
+      charSpace: toInt(fontNode?.querySelector(":scope > CharSpace")?.textContent, null),
+      bold: boldNode ? toInt(boldNode.textContent, 0) : null,
+      boldWeight: boldNode?.getAttribute("Weight") ?? null,
+      italic: italicNode ? toInt(italicNode.textContent, 0) : null
+    },
+    barcode: dm || nativeBarcodeType != null ? { clsid, quietMargin, bcH, nativeType: nativeBarcodeType, dataMatrix: dm } : null,
 
     _konva: null
   };
@@ -468,6 +665,18 @@ function parseFieldNode(node) {
   return field;
 }
 
+function getNativeBarcodeTypeFromNode(node) {
+  if (!node?.querySelector) return null;
+  const types = [
+    ["RSS14", 10], ["RSS14Truncated", 11], ["RSS14Stacked", 12],
+    ["RSS14StackedOmni", 13], ["RSSLimited", 14], ["DataMatrix", 15]
+  ];
+  for (const [tag, type] of types) {
+    if (node.querySelector(`:scope > Barcode > ${tag}`)) return type;
+  }
+  return null;
+}
+
 function parseDataMatrixSegments(fieldNode) {
   const objects = [...fieldNode.querySelectorAll("Data > Object")];
   const segs = [];
@@ -475,9 +684,25 @@ function parseDataMatrixSegments(fieldNode) {
     const idxAttr = o.getAttribute("Index");
     const idx = idxAttr != null ? toInt(idxAttr, i) : i;
     const src = o.querySelector("SrcField")?.getAttribute("SrcFieldName") ?? null;
-    const defVal = o.querySelector("Default")?.textContent ?? "";
+    const defVal = (o.querySelector("Default")?.textContent ?? "").replace(/\r\n?/g, "\n");
     const dataType = toInt(o.querySelector("DataType")?.textContent, 5);
-    segs.push({ index: idx, srcField: src, defaultValue: defVal, dataType });
+    segs.push({ index: idx, sourceObjectIndex: i, srcField: src, defaultValue: defVal, dataType,
+      startChar: toInt(o.querySelector(":scope > SrcField > StartChar")?.textContent, null),
+      noOfChars: toInt(o.querySelector(":scope > SrcField > NoOfChars")?.textContent, null),
+      selectMode: o.querySelector(":scope > SrcField > SelectMode")?.textContent ?? null,
+      staticAttr: o.getAttribute("Static"),
+      fixedLen: !!o.querySelector(":scope > FixedLen"),
+      maxChars: parseMaxNoOfChars(o.querySelector(":scope > MaxNoOfChars")),
+      padChar: o.querySelector(":scope > FixedLen > PadChar")?.textContent ?? null,
+      padMode: o.querySelector(":scope > FixedLen > PadMode")?.textContent ?? null,
+      hasVarText: !!o.querySelector(":scope > VarText"),
+      userEnterData: o.querySelector(":scope > VarText > UserEnterData")?.textContent?.replace(/\r\n?/g, "\n") ?? null,
+      calendar: o.querySelector(":scope > Calendar")?.textContent ?? null,
+      locale: o.querySelector(":scope > Locale")?.textContent ?? null,
+      encryption: o.querySelector(":scope > Encryption")?.textContent ?? null,
+      offsetRef: o.querySelector(":scope > OffsetDate")?.getAttribute("SrcOffset") ?? null,
+      dateLocale: inferDateLocale(dataType === 2 ? "DateText" : dataType === 3 ? "OffsetDateText" : "", defVal, "")
+    });
   });
   segs.sort((a,b) => a.index - b.index);
   segs.forEach((s, j) => s.index = j);

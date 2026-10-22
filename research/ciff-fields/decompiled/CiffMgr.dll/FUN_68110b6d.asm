@@ -1,0 +1,40 @@
+68110b6d PUSH 0x4
+68110b6f MOV EAX,0x68143584
+68110b74 CALL 0x681320f5
+68110b79 MOV ESI,ECX
+68110b7b MOV dword ptr [EBP + -0x10],ESI
+68110b7e XOR EDI,EDI
+68110b80 MOV dword ptr [ESI],0x6814a060
+68110b86 MOV dword ptr [ESI + 0x4],0x6814a088
+68110b8d MOV dword ptr [ESI + 0x8],EDI
+68110b90 MOV dword ptr [EBP + -0x4],EDI
+68110b93 MOV dword ptr [ESI + 0xc],EDI
+68110b96 LEA ECX,[ESI + 0x10]
+68110b99 MOV byte ptr [EBP + -0x4],0x1
+68110b9d CALL 0x68103cb6
+68110ba2 MOV dword ptr [ESI + 0x28],EDI
+68110ba5 MOV dword ptr [ESI + 0x2c],EDI
+68110ba8 MOV dword ptr [ESI + 0x30],EDI
+68110bab MOV dword ptr [ESI + 0x34],EDI
+68110bae MOV dword ptr [ESI + 0x38],EDI
+68110bb1 MOV dword ptr [ESI + 0x3c],EDI
+68110bb4 MOV dword ptr [ESI + 0x40],EDI
+68110bb7 MOV dword ptr [ESI + 0x44],EDI
+68110bba PUSH 0x6814af18
+68110bbf LEA ECX,[ESI + 0x48]
+68110bc2 MOV byte ptr [EBP + -0x4],0x5
+68110bc6 CALL 0x6810210e
+68110bcb PUSH 0x6814af68
+68110bd0 LEA ECX,[ESI + 0x4c]
+68110bd3 MOV byte ptr [EBP + -0x4],0x6
+68110bd7 CALL 0x6810210e
+68110bdc MOV dword ptr [ESI + 0x50],EDI
+68110bdf MOV EAX,ESI
+68110be1 MOV dword ptr [ESI + 0x54],EDI
+68110be4 MOV dword ptr [ESI + 0x58],0x1
+68110beb MOV dword ptr [ESI + 0x5c],EDI
+68110bee MOV dword ptr [ESI + 0x60],EDI
+68110bf1 MOV dword ptr [ESI + 0x64],EDI
+68110bf4 MOV dword ptr [ESI + 0x68],EDI
+68110bf7 CALL 0x681320c3
+68110bfc RET

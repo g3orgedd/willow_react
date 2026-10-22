@@ -1,0 +1,6 @@
+4243b7d4 PUSH EBP
+4243b7d5 MOV EBP,ESP
+4243b7d7 MOV AL,byte ptr [EBP + 0x8]
+4243b7da MOV byte ptr [ECX + 0x4],AL
+4243b7dd POP EBP
+4243b7de RET 0x4

@@ -1,0 +1,10 @@
+00e992a5 MOV ECX,dword ptr [EBP + 0xffffff38]
+00e992ab CALL 0x00e2e16d
+00e992b0 MOV ECX,dword ptr [EBP + -0x54]
+00e992b3 PUSH 0x10
+00e992b5 PUSH EAX
+00e992b6 PUSH 0xf0563c
+00e992bb PUSH dword ptr [ECX + 0x4]
+00e992be CALL dword ptr [0x00efc624]
+00e992c4 MOV EAX,0xe992ca
+00e992c9 RET

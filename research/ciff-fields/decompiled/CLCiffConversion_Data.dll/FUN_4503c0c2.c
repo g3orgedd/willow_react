@@ -1,0 +1,12 @@
+// Source: CLCiffConversion_Data.dll @ 4503c0c2; Unwind@4503c0c2
+
+void Unwind_4503c0c2(void)
+
+{
+  int unaff_EBP;
+  
+  FUN_45002224((int *)(unaff_EBP + 0xc));
+  return;
+}
+
+

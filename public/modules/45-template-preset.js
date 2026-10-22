@@ -1,9 +1,9 @@
 /* Pure template-preset model, generator, layout and builder UI. */
 const TEMPLATE_PRESET_FIELD_ORDER = [
-  ["party", "PARTY"],
-  ["team", "TEAM"],
   ["productDate", "PRODUCT_DATE"],
   ["expirationDate", "EXPIRATION_DATE"],
+  ["party", "PARTY"],
+  ["team", "TEAM"],
   ["rNum", "R_NUM"],
   ["packingDate", "PACKING_DATE"],
   ["time", "TIME"]
@@ -11,6 +11,13 @@ const TEMPLATE_PRESET_FIELD_ORDER = [
 const TEMPLATE_PRESET_DATE_KEYS = ["productDate", "expirationDate", "packingDate"];
 const TEMPLATE_PRESET_DEFAULT_PRINT_MODE = "Continuous";
 const TEMPLATE_PRESET_PRINTER_FIELD_KEYS = new Set(["productDate", "expirationDate", "time"]);
+const TEMPLATE_PRESET_MIN_TEXT_PITCH = 1;
+const TEMPLATE_PRESET_LAYOUT_MARGIN_MM = 2;
+const TEMPLATE_PRESET_LAYOUT_GAP_MM = 1;
+const TEMPLATE_PRESET_MIN_FIELD_WIDTH_MM = 8;
+const TEMPLATE_PRESET_ADAPTIVE_MIN_MARGIN_MM = 0.5;
+const TEMPLATE_PRESET_ADAPTIVE_MIN_DM_GAP_MM = 0.25;
+const TEMPLATE_PRESET_ADAPTIVE_FIELD_GAP_MM = 0.5;
 
 function isTemplatePresetFieldAvailable(key, sourceMode) {
   return sourceMode === "server-dm-printer-rest"
@@ -27,6 +34,9 @@ function getTemplatePresetFieldName(key, sourceMode, fallbackName = "") {
 }
 
 function createDefaultTemplatePresetDraft() {
+  const printerModel = DEFAULT_TEMPLATE_TARGET_PRINTER_MODEL;
+  const widthMm = internalToMm(getTemplateMaxImageWidthInternal(printerModel));
+  const heightMm = internalToMm(getTemplateMaxImageHeightInternal(printerModel));
   const dateField = (generation, days = 0) => ({
     enabled: false,
     generation,
@@ -44,13 +54,14 @@ function createDefaultTemplatePresetDraft() {
   return {
     version: 1,
     creationKind: null,
-    base: { printerModel: "6530", printMode: TEMPLATE_PRESET_DEFAULT_PRINT_MODE, widthMm: 53.33, heightMm: 75 },
+    base: { printerModel, printMode: TEMPLATE_PRESET_DEFAULT_PRINT_MODE, widthMm, heightMm },
     dataSourceMode: null,
+    partyCode: { withBoxCounter: false, gtinFieldName: "GTIN2" },
     dataMatrix: { symbolSize: "22X22", snValue: "000000", moduleSize: 0.5 },
     fields: {
-      party: textField("00000", null),
+      party: textField("00000000", null),
       team: textField("00", null),
-      rNum: textField("00000", null),
+      rNum: textField("000", null),
       productDate: dateField("printer-current"),
       expirationDate: dateField("printer-offset", 30),
       packingDate: dateField("printer-current"),
@@ -66,6 +77,10 @@ function normalizeTemplatePresetDraft(raw = {}) {
     ...raw,
     base: { ...defaults.base, ...(raw.base || {}) },
     dataMatrix: { ...defaults.dataMatrix, ...(raw.dataMatrix || {}) },
+    partyCode: {
+      withBoxCounter: raw.partyCode?.withBoxCounter === true,
+      gtinFieldName: raw.partyCode?.gtinFieldName === "GTIN" ? "GTIN" : "GTIN2"
+    },
     fields: {}
   };
   Object.keys(defaults.fields).forEach((key) => {
@@ -75,14 +90,15 @@ function normalizeTemplatePresetDraft(raw = {}) {
       ...(defaults.fields[key].offset ? { offset: { ...defaults.fields[key].offset, ...(raw.fields?.[key]?.offset || {}) } } : {})
     };
   });
-  draft.base.printerModel = EMPTY_TEMPLATE_PRINTER_MODELS.includes(String(draft.base.printerModel))
-    ? String(draft.base.printerModel) : EMPTY_TEMPLATE_PRINTER_MODELS[0];
+  draft.base.printerModel = normalizeTemplateTargetPrinterModel(draft.base.printerModel);
   draft.base.printMode = EMPTY_TEMPLATE_PRINT_MODES.includes(String(draft.base.printMode))
     ? String(draft.base.printMode) : TEMPLATE_PRESET_DEFAULT_PRINT_MODE;
   draft.base.widthMm = Number(draft.base.widthMm);
   draft.base.heightMm = Number(draft.base.heightMm);
   draft.dataMatrix.symbolSize = normalizeDataMatrixSymbolSizeValue(draft.dataMatrix.symbolSize, "");
-  draft.dataMatrix.snValue = draft.dataMatrix.snValue === "0000000000000" ? "0000000000000" : "000000";
+  draft.dataMatrix.snValue = draft.dataSourceMode === "party-code"
+    ? "0000000000"
+    : draft.dataMatrix.snValue === "0000000000000" ? "0000000000000" : "000000";
   draft.dataMatrix.moduleSize = Number(draft.dataMatrix.moduleSize);
   if (draft.dataSourceMode === "server-full") {
     TEMPLATE_PRESET_DATE_KEYS.forEach((key) => { draft.fields[key].generation = "server"; });
@@ -94,6 +110,21 @@ function normalizeTemplatePresetDraft(raw = {}) {
   return draft;
 }
 
+function synchronizeTemplatePresetDraftPrinter(input, printerModel) {
+  const draft = normalizeTemplatePresetDraft(input);
+  const normalizedPrinterModel = normalizeTemplateTargetPrinterModel(printerModel);
+  const maxWidthInternal = getTemplateMaxImageWidthInternal(normalizedPrinterModel);
+  const maxHeightInternal = getTemplateMaxImageHeightInternal(normalizedPrinterModel);
+  draft.base.printerModel = normalizedPrinterModel;
+  draft.base.widthMm = Number(internalToMm(maxWidthInternal).toFixed(2));
+  draft.base.heightMm = normalizeEmptyTemplateDimensionMm(
+    draft.base.heightMm,
+    maxHeightInternal,
+    maxHeightInternal
+  );
+  return draft;
+}
+
 function createPresetIssue(code, field, severity = "error", details = null) {
   return { code, field, severity, messageKey: `builder.validation.${code}`, details };
 }
@@ -102,14 +133,16 @@ function validateTemplatePresetDraft(input, options = {}) {
   const draft = normalizeTemplatePresetDraft(input);
   const issues = [];
   if (!["preset-builder", "empty"].includes(draft.creationKind)) issues.push(createPresetIssue("creationKindRequired", "creationKind"));
-  if (!EMPTY_TEMPLATE_PRINTER_MODELS.includes(draft.base.printerModel)) issues.push(createPresetIssue("printerRequired", "base.printerModel"));
+  if (!TEMPLATE_TARGET_PRINTER_MODELS.includes(draft.base.printerModel)) issues.push(createPresetIssue("printerRequired", "base.printerModel"));
   if (!EMPTY_TEMPLATE_PRINT_MODES.includes(draft.base.printMode)) issues.push(createPresetIssue("printModeRequired", "base.printMode"));
-  if (!(draft.base.widthMm > 0 && draft.base.widthMm <= 53.33)) issues.push(createPresetIssue("invalidWidth", "base.widthMm"));
-  if (!(draft.base.heightMm > 0 && draft.base.heightMm <= 75)) issues.push(createPresetIssue("invalidHeight", "base.heightMm"));
+  const maxWidthMm = getTemplateMaxImageWidthInternal(draft.base.printerModel) / 100;
+  const maxHeightMm = getTemplateMaxImageHeightInternal(draft.base.printerModel) / 100;
+  if (!(draft.base.widthMm > 0 && draft.base.widthMm <= maxWidthMm)) issues.push(createPresetIssue("invalidWidth", "base.widthMm"));
+  if (!(draft.base.heightMm > 0 && draft.base.heightMm <= maxHeightMm)) issues.push(createPresetIssue("invalidHeight", "base.heightMm"));
   if (draft.creationKind === "empty") return issues;
-  if (!["server-full", "server-dm-printer-rest"].includes(draft.dataSourceMode)) issues.push(createPresetIssue("sourceRequired", "dataSourceMode"));
+  if (!["server-full", "server-dm-printer-rest", "party-code"].includes(draft.dataSourceMode)) issues.push(createPresetIssue("sourceRequired", "dataSourceMode"));
   if (!DATA_MATRIX_SYMBOLS_BY_NAME.has(draft.dataMatrix.symbolSize)) issues.push(createPresetIssue("symbolRequired", "dataMatrix.symbolSize"));
-  if (!["000000", "0000000000000"].includes(draft.dataMatrix.snValue)) issues.push(createPresetIssue("snRequired", "dataMatrix.snValue"));
+  if (draft.dataSourceMode !== "party-code" && !["000000", "0000000000000"].includes(draft.dataMatrix.snValue)) issues.push(createPresetIssue("snRequired", "dataMatrix.snValue"));
   if (!(draft.dataMatrix.moduleSize > 0)) issues.push(createPresetIssue("invalidModuleSize", "dataMatrix.moduleSize"));
   TEMPLATE_PRESET_DATE_KEYS.forEach((key) => {
     const field = draft.fields[key];
@@ -124,15 +157,26 @@ function validateTemplatePresetDraft(input, options = {}) {
   return issues;
 }
 
-function createPresetHelperField(name, value, maxChars, userEntered) {
-  const factory = userEntered ? createServerVariableField : createFixedTextField;
+function createPresetHelperField(name, value) {
+  const spec = DM_HELPER_SPECS[name] || { mode: "fixed", maxChars: null, pitch: 10 };
+  const factory = spec.mode === "user" ? createServerVariableField : createFixedTextField;
+  const pitch = spec.pitch ?? 10;
   return factory({
     name,
     value,
-    maxChars,
+    // This established recipe has Ln=1 in Clarisoft_test_1.ciff; the
+    // ciff-reference-generation oracle test covers it. Generic text omits Ln.
+    ln: 1,
+    maxChars: getDataMatrixHelperMaxChars(name, value),
     printed: false,
-    pitch: 8,
-    geom: { x: 0, y: 0, w: mmToInternal(12), h: mmToInternal(3.2) }
+    pitch,
+    xMag: null,
+    geom: {
+      x: 0,
+      y: 0,
+      w: getClarisoftTextFieldWidthInternal(value, pitch),
+      h: getClarisoftTextFieldHeightInternal(pitch)
+    }
   });
 }
 
@@ -145,13 +189,28 @@ function createDataMatrixHelperFields(config) {
     KRIPTO: "0".repeat(4),
     KRIPTO2: "0".repeat(44)
   };
-  const maxChars = { "\u04211": 4, GTIN: 14, "\u04212": 2, SN: config.snValue.length, "\u04213": 7, KRIPTO: 4, C4: 7, KRIPTO2: 44 };
-  const userFields = new Set(["GTIN", "SN", "KRIPTO", "KRIPTO2"]);
-  return composition.requiredSegments.map((name) => createPresetHelperField(name, values[name] || "", maxChars[name], userFields.has(name)));
+  return composition.requiredSegments.map((name) => createPresetHelperField(name, values[name] || ""));
 }
 
-function createDataMatrixField(config, fieldMap) {
-  const composition = DM_COMPOSITIONS[getDataMatrixComposition(config.symbolSize)];
+function createPartyCodeHelperFields(withBoxCounter = false, gtinFieldName = "GTIN2") {
+  const composition = getPartyCodeComposition(withBoxCounter, gtinFieldName);
+  return composition.requiredSegments.map((name) => {
+    const spec = composition.helperSpecs[name];
+    const value = spec.defaultValue;
+    const pitch = spec.pitch;
+    const field = (spec.mode === "user" ? createPrinterInputField : createFixedTextField)({
+      name, value, printed: false, ln: name === "BOX_COUNTER" ? null : 1, pitch,
+      maxChars: spec.maxChars,
+      xMag: 100,
+      geom: { x: 0, y: 0, w: getClarisoftTextFieldWidthInternal(value, pitch), h: getClarisoftTextFieldHeightInternal(pitch) }
+    });
+    if (name === "SN") field.data.mask = "0-9,A-Z,a-z";
+    return field;
+  });
+}
+
+function createDataMatrixField(config, fieldMap, compositionOverride = null) {
+  const composition = compositionOverride || DM_COMPOSITIONS[getDataMatrixComposition(config.symbolSize)];
   const segments = composition.requiredSegments.map((name, index) => ({
     index,
     srcField: name,
@@ -159,18 +218,22 @@ function createDataMatrixField(config, fieldMap) {
     dataType: 5
   }));
   const field = createBaseField({
-    name: "FieldDM",
+    name: getNextClarisoftFieldName(fieldMap.keys()),
     fldType: "Barcode",
+    // Preserve the DataMatrix recipe signature checked against ClariSoft.
+    ln: 1,
     printed: true,
     geom: { x: 0, y: 0, w: mmToInternal(12), h: mmToInternal(12) },
     barcode: {
       clsid: "{7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F}",
       quietMargin: 0,
-      bcH: mmToInternal(12),
-      dataMatrix: { moduleSize: config.moduleSize, symbolSize: config.symbolSize, segments }
+      bcH: null,
+      dataMatrix: { moduleSize: config.moduleSize, symbolSize: config.symbolSize, segments, structureDirty: true }
     }
   });
+  synchronizeDataMatrixDerivedState(field, fieldMap);
   syncDataMatrixGeomToModuleSize(field);
+  updateDataMatrixBcHFromSettings(field);
   return field;
 }
 
@@ -180,40 +243,218 @@ function createPresetDateOffset(fieldName, offset) {
     m: Number(offset?.months) || 0,
     d: Number(offset?.days) || 0
   };
-  return { name: `${fieldName}_OFFSET`, default: normalized, current: getComputedDateOffsetCurrent({ default: normalized }) };
+  return {
+    sourceName: null,
+    name: `${fieldName}_OFFSET`,
+    default: normalized,
+    current: getComputedDateOffsetCurrent({ default: normalized })
+  };
 }
 
 function createPresetAdditionalField(key, name, config, sourceMode, dateOffsets) {
   const catalog = FIELD_CATALOG[name];
+  // Ln is explicit recipe configuration, as in Clarisoft_test_1.ciff and
+  // 22x22_reference_270days.ciff, not a default of the general field factory.
+  const recipeConfig = { name, printed: true, ln: 1 };
   if (key === "time") {
-    return createCurrentTimeField({ name, printed: true, format: config.format, separator: config.separator });
+    return createCurrentTimeField({ ...recipeConfig, format: config.format, separator: config.separator });
   }
   if (TEMPLATE_PRESET_DATE_KEYS.includes(key) && sourceMode === "server-dm-printer-rest") {
     if (config.generation === "printer-offset") {
       const offset = createPresetDateOffset(name, config.offset);
       dateOffsets.push(offset);
-      return createOffsetDateField({ name, printed: true, format: config.format, separator: config.separator, locale: config.locale }, offset.name);
+      return createOffsetDateField({ ...recipeConfig, format: config.format, separator: config.separator, locale: config.locale }, offset.name);
     }
     if (config.generation === "printer-current") {
-      return createCurrentDateField({ name, printed: true, format: config.format, separator: config.separator, locale: config.locale });
+      return createCurrentDateField({ ...recipeConfig, format: config.format, separator: config.separator, locale: config.locale });
     }
   }
-  const fieldConfig = { name, printed: true, value: catalog?.value || config.defaultValue || "", maxChars: config.maxChars ?? catalog?.maxChars };
+  const fieldConfig = { ...recipeConfig, value: catalog?.value || config.defaultValue || "", maxChars: config.maxChars ?? catalog?.maxChars };
   return sourceMode === "server-full"
     ? createServerVariableField(fieldConfig)
     : createPrinterInputField(fieldConfig);
 }
 
-function calculatePresetLayout(config, fields) {
-  const margin = mmToInternal(2);
-  const gap = mmToInternal(1);
+function getPresetFieldLayoutBounds(field, geom, pitch = null) {
+  const nominal = { x: geom.x, y: geom.y, w: geom.w, h: geom.h };
+  if (field.barcode?.dataMatrix || typeof getFieldRenderedBoundsInternal !== "function") return nominal;
+  try {
+    const candidate = {
+      ...field,
+      geom: { ...geom },
+      text: { ...(field.text || {}), ...(pitch == null ? {} : { pitch }) },
+      _konva: null
+    };
+    const rendered = getFieldRenderedBoundsInternal(candidate, new Date(), { forceFresh: true });
+    return rendered && [rendered.x, rendered.y, rendered.w, rendered.h].every(Number.isFinite)
+      ? rendered
+      : nominal;
+  } catch {
+    return nominal;
+  }
+}
+
+function presetBoundsOverlap(a, b) {
+  return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+}
+
+function getPresetLayoutOverflowFieldNames(config, fields, geometryByFieldName, pitchByFieldName = {}) {
+  const maxWidth = mmToInternal(config.widthMm);
+  const maxHeight = mmToInternal(config.heightMm);
+  const placed = fields
+    .filter((field) => field.printed && geometryByFieldName[field.name])
+    .map((field) => ({
+      field,
+      bounds: getPresetFieldLayoutBounds(field, geometryByFieldName[field.name], pitchByFieldName[field.name])
+    }));
+  const overflow = new Set();
+  placed.forEach(({ field, bounds }) => {
+    if (bounds.x < 0 || bounds.y < 0 || bounds.x + bounds.w > maxWidth || bounds.y + bounds.h > maxHeight) {
+      overflow.add(field.name);
+    }
+  });
+  for (let index = 0; index < placed.length; index += 1) {
+    for (let otherIndex = index + 1; otherIndex < placed.length; otherIndex += 1) {
+      if (!presetBoundsOverlap(placed[index].bounds, placed[otherIndex].bounds)) continue;
+      overflow.add(placed[index].field.name);
+      overflow.add(placed[otherIndex].field.name);
+    }
+  }
+  fields.filter((field) => field.printed && !geometryByFieldName[field.name]).forEach((field) => overflow.add(field.name));
+  return [...overflow];
+}
+
+function createAdaptivePresetLayoutItem(field, scale, basePitch) {
+  const normalizedBasePitch = Number.isFinite(Number(basePitch))
+    ? Number(basePitch)
+    : getEffectiveTextPitch(field, 10);
+  const pitch = Math.max(TEMPLATE_PRESET_MIN_TEXT_PITCH, Math.round(normalizedBasePitch * scale));
+  const nominal = {
+    x: 0,
+    y: 0,
+    w: Math.max(1, mmToInternal(TEMPLATE_PRESET_MIN_FIELD_WIDTH_MM * scale)),
+    h: getClarisoftTextFieldHeightInternal(pitch)
+  };
+  const rendered = getPresetFieldLayoutBounds(field, nominal, pitch);
+  const minX = Math.min(0, rendered.x);
+  const minY = Math.min(0, rendered.y);
+  const maxX = Math.max(nominal.w, rendered.x + rendered.w);
+  const maxY = Math.max(nominal.h, rendered.y + rendered.h);
+  return {
+    field,
+    pitch,
+    w: Math.max(1, Math.ceil(maxX - minX)),
+    h: Math.max(1, Math.ceil(maxY - minY))
+  };
+}
+
+function packPresetLayoutItems(items, region, gap) {
+  if (!items.length) return {};
+  if (!region || region.w <= 0 || region.h <= 0) return null;
+  const geometry = {};
+  let x = region.x;
+  let y = region.y;
+  let rowHeight = 0;
+  for (const item of items) {
+    if (item.w > region.w || item.h > region.h) return null;
+    if (x > region.x && x + item.w > region.x + region.w) {
+      x = region.x;
+      y += rowHeight + gap;
+      rowHeight = 0;
+    }
+    if (y + item.h > region.y + region.h) return null;
+    geometry[item.field.name] = { x, y, w: item.w, h: item.h };
+    x += item.w + gap;
+    rowHeight = Math.max(rowHeight, item.h);
+  }
+  return geometry;
+}
+
+function calculateAdaptivePresetLayout(config, fields, options) {
+  const spacingScale = options.scale * options.scale;
+  const margin = Math.max(
+    mmToInternal(TEMPLATE_PRESET_ADAPTIVE_MIN_MARGIN_MM),
+    Math.round(mmToInternal(TEMPLATE_PRESET_LAYOUT_MARGIN_MM) * spacingScale)
+  );
+  const dmGap = Math.max(
+    mmToInternal(TEMPLATE_PRESET_ADAPTIVE_MIN_DM_GAP_MM),
+    Math.round(mmToInternal(TEMPLATE_PRESET_LAYOUT_GAP_MM) * spacingScale)
+  );
+  const gap = Math.max(1, Math.round(mmToInternal(TEMPLATE_PRESET_ADAPTIVE_FIELD_GAP_MM) * options.scale));
+  const maxWidth = mmToInternal(config.widthMm);
+  const maxHeight = mmToInternal(config.heightMm);
+  const dm = fields.find((field) => field.barcode?.dataMatrix);
+  const hiddenFields = fields.filter((field) => !field.printed);
+  const printedText = fields.filter((field) => field.printed && field !== dm);
+  const fixedGeometry = {};
+  const pitchByFieldName = {};
+  const hiddenColumnX = maxWidth + mmToInternal(1.5);
+  let hiddenY = mmToInternal(1);
+  hiddenFields.forEach((field) => {
+    fixedGeometry[field.name] = { ...field.geom, x: hiddenColumnX, y: hiddenY };
+    hiddenY += field.geom.h + dmGap;
+  });
+  if (dm) fixedGeometry[dm.name] = { ...dm.geom, x: margin, y: margin };
+
+  const items = printedText.map((field) => {
+    const item = createAdaptivePresetLayoutItem(field, options.scale, options.basePitches[field.name]);
+    pitchByFieldName[field.name] = item.pitch;
+    return item;
+  });
+  const inner = {
+    x: margin,
+    y: margin,
+    w: Math.max(0, maxWidth - margin * 2),
+    h: Math.max(0, maxHeight - margin * 2)
+  };
+  const dmRight = dm ? margin + dm.geom.w + dmGap : margin;
+  const dmBottom = dm ? margin + dm.geom.h + dmGap : margin;
+  const decompositions = dm ? [
+    [
+      { x: dmRight, y: margin, w: Math.max(0, maxWidth - margin - dmRight), h: inner.h },
+      { x: margin, y: dmBottom, w: Math.max(0, dm.geom.w), h: Math.max(0, maxHeight - margin - dmBottom) }
+    ],
+    [
+      { x: margin, y: dmBottom, w: inner.w, h: Math.max(0, maxHeight - margin - dmBottom) },
+      { x: dmRight, y: margin, w: Math.max(0, maxWidth - margin - dmRight), h: Math.max(0, dm.geom.h) }
+    ]
+  ] : [[inner, null]];
+
+  for (const regions of decompositions) {
+    for (let split = items.length; split >= 0; split -= 1) {
+      const first = packPresetLayoutItems(items.slice(0, split), regions[0], gap);
+      const second = packPresetLayoutItems(items.slice(split), regions[1], gap);
+      if (!first || !second) continue;
+      const geometryByFieldName = { ...fixedGeometry, ...first, ...second };
+      const overflowFieldNames = getPresetLayoutOverflowFieldNames(config, fields, geometryByFieldName, pitchByFieldName);
+      if (!overflowFieldNames.length) {
+        return { geometryByFieldName, overflowFieldNames, pitchByFieldName, fieldScale: options.scale, adapted: true };
+      }
+    }
+  }
+
+  const fallbackOverflow = printedText.map((field) => field.name);
+  if (dm && (margin + dm.geom.w > maxWidth || margin + dm.geom.h > maxHeight)) fallbackOverflow.unshift(dm.name);
+  return {
+    geometryByFieldName: fixedGeometry,
+    overflowFieldNames: [...new Set(fallbackOverflow)],
+    pitchByFieldName,
+    fieldScale: options.scale,
+    adapted: true
+  };
+}
+
+function calculatePresetLayout(config, fields, options = {}) {
+  if (options.adaptive) return calculateAdaptivePresetLayout(config, fields, options);
+  const margin = mmToInternal(TEMPLATE_PRESET_LAYOUT_MARGIN_MM);
+  const gap = mmToInternal(TEMPLATE_PRESET_LAYOUT_GAP_MM);
   const maxWidth = mmToInternal(config.widthMm);
   const maxHeight = mmToInternal(config.heightMm);
   const dm = fields.find((field) => field.barcode?.dataMatrix);
   const hiddenFields = fields.filter((field) => !field.printed);
   const printedText = fields.filter((field) => field.printed && field !== dm);
   const geometryByFieldName = {};
-  const overflowFieldNames = [];
+  const pitchByFieldName = {};
   const hiddenColumnX = maxWidth + mmToInternal(1.5);
   let hiddenY = mmToInternal(1);
   hiddenFields.forEach((field) => {
@@ -230,14 +471,33 @@ function calculatePresetLayout(config, fields) {
   }
   printedText.forEach((field) => {
     const pitch = getEffectiveTextPitch(field, 10);
-    const h = mmToInternal(pitch * CLARISOFT_TEXT_FIELD_HEIGHT_MM_PER_PITCH);
-    const geom = { x, y, w: Math.max(mmToInternal(8), Math.min(stackWidth, maxWidth - x - margin)), h };
+    pitchByFieldName[field.name] = pitch;
+    const h = getClarisoftTextFieldHeightInternal(pitch);
+    const availableWidth = Math.max(1, Math.min(stackWidth, maxWidth - x - margin));
+    const canonicalWidth = Math.max(1, Number(field.geom?.w) || availableWidth);
+    const geom = { x, y, w: Math.min(canonicalWidth, availableWidth), h };
     geometryByFieldName[field.name] = geom;
-    if (geom.x < 0 || geom.y < 0 || geom.x + geom.w > maxWidth || geom.y + geom.h > maxHeight) overflowFieldNames.push(field.name);
     y += h + gap;
   });
-  if (dm && (margin + dm.geom.w > maxWidth || margin + dm.geom.h > maxHeight)) overflowFieldNames.unshift(dm.name);
-  return { geometryByFieldName, overflowFieldNames: [...new Set(overflowFieldNames)] };
+  const overflowFieldNames = getPresetLayoutOverflowFieldNames(config, fields, geometryByFieldName, pitchByFieldName);
+  return { geometryByFieldName, overflowFieldNames, pitchByFieldName, fieldScale: 1, adapted: false };
+}
+
+function fitFieldsIntoTemplate(config, fields) {
+  const defaultLayout = calculatePresetLayout(config, fields);
+  if (!defaultLayout.overflowFieldNames.length) return defaultLayout;
+  const printedText = fields.filter((field) => field.printed && !field.barcode?.dataMatrix);
+  if (!printedText.length) return defaultLayout;
+  const basePitches = Object.fromEntries(printedText.map((field) => [field.name, getEffectiveTextPitch(field, 10)]));
+  const maxPitch = Math.max(...Object.values(basePitches));
+  let minimumLayout = defaultLayout;
+  for (let pitch = maxPitch - 1; pitch >= TEMPLATE_PRESET_MIN_TEXT_PITCH; pitch -= 1) {
+    const scale = pitch / maxPitch;
+    const layout = calculatePresetLayout(config, fields, { adaptive: true, scale, basePitches });
+    minimumLayout = layout;
+    if (!layout.overflowFieldNames.length) return layout;
+  }
+  return minimumLayout;
 }
 
 function generateTemplatePreset(input) {
@@ -246,12 +506,16 @@ function generateTemplatePreset(input) {
   if (initialIssues.some((issue) => issue.severity === "error")) {
     return { ok: false, draft, issues: initialIssues, warnings: [], fields: [], dateOffsets: [], layout: null, xml: "" };
   }
-  const helperFields = createDataMatrixHelperFields(draft.dataMatrix);
+  const partyCode = draft.dataSourceMode === "party-code";
+  const helperFields = partyCode
+    ? createPartyCodeHelperFields(draft.partyCode.withBoxCounter, draft.partyCode.gtinFieldName)
+    : createDataMatrixHelperFields(draft.dataMatrix);
   const fieldMap = new Map(helperFields.map((field) => [field.name, field]));
-  const dmField = createDataMatrixField(draft.dataMatrix, fieldMap);
+  const dmField = createDataMatrixField(draft.dataMatrix, fieldMap, partyCode ? getPartyCodeComposition(draft.partyCode.withBoxCounter, draft.partyCode.gtinFieldName) : null);
+  if (partyCode && draft.fields.productDate.enabled) fieldMap.get("PRODUCT_DATE").printed = true;
   const dateOffsets = [];
   const additionalFields = TEMPLATE_PRESET_FIELD_ORDER
-    .filter(([key]) => isTemplatePresetFieldAvailable(key, draft.dataSourceMode) && draft.fields[key]?.enabled)
+    .filter(([key]) => isTemplatePresetFieldAvailable(key, draft.dataSourceMode) && draft.fields[key]?.enabled && !(partyCode && key === "productDate"))
     .map(([key, name]) => createPresetAdditionalField(
       key,
       getTemplatePresetFieldName(key, draft.dataSourceMode, name),
@@ -259,13 +523,18 @@ function generateTemplatePreset(input) {
       draft.dataSourceMode,
       dateOffsets
     ));
-  const fields = [...helperFields, dmField, ...additionalFields];
-  const layout = calculatePresetLayout(draft.base, fields);
+  const fields = [dmField, ...additionalFields, ...helperFields];
+  const layout = fitFieldsIntoTemplate(draft.base, fields);
   fields.forEach((field) => {
     const geom = layout.geometryByFieldName[field.name];
     if (geom) field.geom = { ...geom };
-    if (field.barcode) field.barcode.bcH = field.geom.h;
+    if (layout.pitchByFieldName?.[field.name] != null && field.text) field.text.pitch = layout.pitchByFieldName[field.name];
   });
+  if (typeof stackHiddenFieldsOutsideTemplate === "function") {
+    const placedCount = stackHiddenFieldsOutsideTemplate(fields, mmToInternal(draft.base.widthMm));
+    const hiddenPacking = { placedCount, failedFieldNames: [] };
+    layout.hiddenPacking = hiddenPacking;
+  }
   const issues = validateTemplatePresetDraft(draft, { layout });
   const xml = buildEmptyTemplateXml(draft.base.printerModel, draft.base.printMode, draft.base.widthMm, draft.base.heightMm);
   return {
@@ -299,7 +568,11 @@ function commitGeneratedTemplatePreset(result, options = {}) {
   state.dateOffsetsDirty = state.dateOffsets.length > 0;
   const dm = state.fields.find((field) => field.barcode?.dataMatrix);
   setSelectedNames(dm ? [dm.name] : []);
-  state.validation = { invalidPrintableFieldNames: [] };
+  state.validation = { invalidPrintableFieldNames: [], invalidHardwareFieldNames: [], structuralErrors: [] };
+  state.subImage.usedSizeDirty = true;
+  if (typeof syncUsedImageSizeFromPrintableFields === "function") {
+    syncUsedImageSizeFromPrintableFields(new Date(), { forceFresh: true });
+  }
   pushHistory(true);
   renderAll();
   markActiveTemplateTabDirty();
@@ -318,9 +591,21 @@ const BUILDER_COPY = {
     kindPreset: "Template builder", kindPresetDescription: "Create a template with DataMatrix and fields.",
     sourceServerFull: "All data from server", sourceServerFullDescription: "DataMatrix and every selected variable field are supplied by the server.",
     sourcePrinterRest: "Only DataMatrix from server", sourcePrinterRestDescription: "The server supplies DataMatrix; dates, time and operator fields are generated on the printer.",
+    sourcePartyCode: "Batch code", sourcePartyCodeDescription: "DataMatrix with GTIN or GTIN2, production date and batch number entered on the printer.",
+    partyGtinField: "GTIN field",
+    partyBoxCounter: "Box counter", partyCounterOff: "No counter", partyCounterOn: "With counter",
+    partyWithCounter: "Batch code with box counter", partyWithoutCounter: "Batch code without box counter",
+    partyDataHint: "SN: up to 12 characters (initial value: 10 zeros). Production date: 6 characters.",
+    partyCounterHint: "SN: up to 12 characters (initial value: 10 zeros). Production date: 6 characters. Box counter: 5 characters.",
+    partySerialNumber: "SN: up to 12 characters, initial value 0000000000",
     fieldDateMode: "Date mode", dateCurrent: "Current date", dateCalculated: "Calculated date",
     fieldFormat: "Format", fieldSeparator: "Separator", offsetYears: "Years", offsetMonths: "Months", offsetDays: "Days",
-    dmSymbol: "Symbol size", dmSn: "SN value", dmModuleSize: "Module size"
+    dmSymbol: "Code format", dmSn: "SN value", dmModuleSize: "Module size",
+    fieldParty: "Party", fieldTeam: "Team", fieldProductDate: "Production date",
+    fieldExpirationDate: "Expiration date", fieldRNum: "Device number", fieldPackingDate: "Packing date", fieldTime: "Time",
+    summaryTemplate: "Template", summaryPrinter: "Printer", summaryPrintMode: "Print mode", summarySize: "Size",
+    summaryDataMatrix: "DataMatrix", summaryCodeFormat: "Code format", summaryModuleSize: "Module size",
+    summarySerialNumber: "Serial number", summaryDataSource: "Data source", summaryAdditionalFields: "Additional fields"
   },
   ru: {
     choose: "Выберите способ создания шаблона.", base: "Настройки шаблона", source: "Источник данных", dm: "Настройки DataMatrix",
@@ -332,10 +617,31 @@ const BUILDER_COPY = {
     kindPreset: "Конструктор шаблона", kindPresetDescription: "Создать готовый с DataMatrix и полями.",
     sourceServerFull: "Все данные с сервера", sourceServerFullDescription: "DataMatrix и все выбранные переменные поля передаются сервером.",
     sourcePrinterRest: "Только DataMatrix с сервера", sourcePrinterRestDescription: "Сервер передаёт DataMatrix, а даты, время и операторские поля формируются принтером.",
+    sourcePartyCode: "Партионный код", sourcePartyCodeDescription: "DataMatrix с GTIN или GTIN2, датой производства и номером партии, вводимыми на принтере.",
+    partyGtinField: "Поле GTIN",
+    partyBoxCounter: "Счётчик коробов", partyCounterOff: "Без счётчика", partyCounterOn: "Со счётчиком",
+    partyWithCounter: "Партионный код со счётчиком коробов", partyWithoutCounter: "Партионный код без счётчика коробов",
+    partyDataHint: "SN: до 12 символов (начальное значение — 10 нулей). Дата производства: 6 символов.",
+    partyCounterHint: "SN: до 12 символов (начальное значение — 10 нулей). Дата производства: 6 символов. Счётчик коробов: 5 символов.",
+    partySerialNumber: "SN: до 12 символов, начальное значение 0000000000",
     fieldDateMode: "Режим даты", dateCurrent: "Текущая дата", dateCalculated: "Расчётная дата",
     fieldFormat: "Формат", fieldSeparator: "Сепаратор", offsetYears: "Годы", offsetMonths: "Месяцы", offsetDays: "Дни",
-    dmSymbol: "Размер символа", dmSn: "Значение SN", dmModuleSize: "Размер модуля"
+    dmSymbol: "Формат кода", dmSn: "Значение SN", dmModuleSize: "Размер модуля",
+    fieldParty: "Партия", fieldTeam: "Смена", fieldProductDate: "Дата производства",
+    fieldExpirationDate: "Срок годности", fieldRNum: "Номер устройства", fieldPackingDate: "Дата упаковки", fieldTime: "Время",
+    summaryTemplate: "Шаблон", summaryPrinter: "Принтер", summaryPrintMode: "Режим печати", summarySize: "Размер",
+    summaryDataMatrix: "DataMatrix", summaryCodeFormat: "Формат кода", summaryModuleSize: "Размер модуля",
+    summarySerialNumber: "Серийный номер", summaryDataSource: "Источник данных", summaryAdditionalFields: "Дополнительные поля"
   }
+};
+const TEMPLATE_PRESET_FIELD_LABEL_KEYS = {
+  party: "fieldParty",
+  team: "fieldTeam",
+  productDate: "fieldProductDate",
+  expirationDate: "fieldExpirationDate",
+  rNum: "fieldRNum",
+  packingDate: "fieldPackingDate",
+  time: "fieldTime"
 };
 const BUILDER_I18N_KEYS = {
   "builder.kind.empty": "kindEmpty",
@@ -346,6 +652,13 @@ const BUILDER_I18N_KEYS = {
   "builder.source.serverFullDescription": "sourceServerFullDescription",
   "builder.source.printerRest": "sourcePrinterRest",
   "builder.source.printerRestDescription": "sourcePrinterRestDescription",
+  "builder.source.partyCode": "sourcePartyCode",
+  "builder.source.partyCodeDescription": "sourcePartyCodeDescription",
+  "builder.party.gtinField": "partyGtinField",
+  "builder.party.boxCounter": "partyBoxCounter",
+  "builder.party.counterOff": "partyCounterOff",
+  "builder.party.counterOn": "partyCounterOn",
+  "builder.party.dataHint": "partyDataHint",
   "builder.field.dateMode": "fieldDateMode",
   "builder.date.current": "dateCurrent",
   "builder.date.calculated": "dateCalculated",
@@ -361,6 +674,20 @@ const BUILDER_I18N_KEYS = {
 
 let templateBuilderDraft = createDefaultTemplatePresetDraft();
 let templateBuilderStep = 0;
+
+function writeTemplateBuilderBaseControls(base = templateBuilderDraft.base) {
+  if (elNewTemplatePrinterModel) elNewTemplatePrinterModel.value = base.printerModel;
+  if (elNewTemplatePrintMode) elNewTemplatePrintMode.value = base.printMode;
+  if (elNewTemplateWidth) elNewTemplateWidth.value = Number(base.widthMm).toFixed(2);
+  if (elNewTemplateHeight) elNewTemplateHeight.value = Number(base.heightMm).toFixed(2);
+}
+
+function synchronizeTemplateBuilderPrinterModel(printerModel = elNewTemplatePrinterModel?.value) {
+  const currentDraft = readTemplateBuilderDraft();
+  templateBuilderDraft = synchronizeTemplatePresetDraftPrinter(currentDraft, printerModel);
+  writeTemplateBuilderBaseControls(templateBuilderDraft.base);
+  return templateBuilderDraft;
+}
 
 function builderCopy(key, values = {}) {
   const lang = typeof getCurrentUiLanguage === "function" ? getCurrentUiLanguage() : "en";
@@ -408,6 +735,15 @@ function readTemplateBuilderDraft() {
   return templateBuilderDraft;
 }
 
+function syncTemplateBuilderSnLengthControl(snValue = $("builderSnValue")?.value) {
+  const length = String(snValue) === "0000000000000" ? "13" : "6";
+  document.querySelectorAll("[data-builder-sn-length]").forEach((button) => {
+    const isActive = button.dataset.builderSnLength === length;
+    button.classList.toggle("fieldFilter__button--active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+}
+
 function setTemplateBuilderRevealState(element, expanded) {
   if (!element) return;
   element.hidden = false;
@@ -418,6 +754,24 @@ function setTemplateBuilderRevealState(element, expanded) {
 
 function syncTemplateBuilderConditionalControls() {
   const draft = readTemplateBuilderDraft();
+  const partyCode = draft.dataSourceMode === "party-code";
+  if ($("builderPartyGtinRow")) $("builderPartyGtinRow").hidden = !partyCode;
+  document.querySelectorAll("[data-builder-party-gtin]").forEach((button) => {
+    const isActive = button.dataset.builderPartyGtin === draft.partyCode.gtinFieldName;
+    button.classList.toggle("fieldFilter__button--active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+  if ($("builderPartyOptions")) $("builderPartyOptions").hidden = !partyCode;
+  document.querySelectorAll("[data-builder-box-counter]").forEach((button) => {
+    const isActive = (button.dataset.builderBoxCounter === "true") === draft.partyCode.withBoxCounter;
+    button.classList.toggle("fieldFilter__button--active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+  if ($("builderSnLengthRow")) $("builderSnLengthRow").hidden = partyCode;
+  if ($("builderPartyDataHint")) {
+    $("builderPartyDataHint").hidden = !partyCode;
+    $("builderPartyDataHint").textContent = builderCopy(draft.partyCode.withBoxCounter ? "partyCounterHint" : "partyDataHint");
+  }
   TEMPLATE_PRESET_FIELD_ORDER.forEach(([key, defaultName]) => {
     const checkbox = document.querySelector(`[data-builder-field="${key}"]`);
     const choice = checkbox?.closest(".builderFieldChoice");
@@ -427,7 +781,7 @@ function syncTemplateBuilderConditionalControls() {
       checkbox.disabled = !available;
       if (!available) checkbox.checked = false;
     }
-    const displayName = getTemplatePresetFieldName(key, draft.dataSourceMode, defaultName);
+    const displayName = builderCopy(TEMPLATE_PRESET_FIELD_LABEL_KEYS[key] || defaultName);
     const label = document.querySelector(`[data-builder-field-label="${key}"]`);
     const settingsTitle = document.querySelector(`[data-builder-settings-title="${key}"]`);
     if (label) label.textContent = displayName;
@@ -436,7 +790,7 @@ function syncTemplateBuilderConditionalControls() {
   TEMPLATE_PRESET_DATE_KEYS.forEach((key) => {
     const settings = document.querySelector(`[data-builder-settings="${key}"]`);
     const enabled = !!draft.fields[key].enabled;
-    const serverFull = draft.dataSourceMode === "server-full";
+    const serverFull = draft.dataSourceMode === "server-full" || partyCode;
     setTemplateBuilderRevealState(settings, enabled && !serverFull);
     const generation = document.querySelector(`[data-builder-date-generation="${key}"]`);
     if (generation) {
@@ -454,6 +808,16 @@ function syncTemplateBuilderConditionalControls() {
   setTemplateBuilderRevealState(timeSettings, !!timeCheckbox?.checked && !timeCheckbox?.disabled);
 }
 
+function escapeTemplateBuilderSummaryHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    "\"": "&quot;",
+    "'": "&#39;"
+  })[character]);
+}
+
 function renderTemplateBuilderSummary() {
   const draft = readTemplateBuilderDraft();
   const preview = generateTemplatePreset(draft);
@@ -463,10 +827,43 @@ function renderTemplateBuilderSummary() {
     const selected = TEMPLATE_PRESET_FIELD_ORDER.filter(([key]) => (
       isTemplatePresetFieldAvailable(key, draft.dataSourceMode) && draft.fields[key].enabled
     ));
+    const summaryText = escapeTemplateBuilderSummaryHtml;
+    const symbolSize = String(draft.dataMatrix.symbolSize || "").replace(/X/i, " × ");
+    const sourceLabel = draft.dataSourceMode === "party-code"
+      ? builderCopy(draft.partyCode.withBoxCounter ? "partyWithCounter" : "partyWithoutCounter")
+      : draft.dataSourceMode === "server-full"
+      ? builderCopy("sourceServerFull")
+      : builderCopy("sourcePrinterRest");
+    const additionalFields = selected.length ? `
+      <section class="builderSummary__section">
+        <h3 class="builderSummary__sectionTitle">${summaryText(builderCopy("summaryAdditionalFields"))}</h3>
+        <div class="builderSummary__fields">
+          ${selected.map(([key, name]) => `<span>${summaryText(builderCopy(TEMPLATE_PRESET_FIELD_LABEL_KEYS[key] || name))}</span>`).join("")}
+        </div>
+      </section>` : "";
     summary.innerHTML = `
-      <div class="builderSummary__row"><strong>${draft.base.printerModel} / ${draft.base.printMode}</strong><span>${draft.base.widthMm.toFixed(2)} × ${draft.base.heightMm.toFixed(2)} mm</span></div>
-      <div class="builderSummary__row"><strong>DataMatrix ${draft.dataMatrix.symbolSize}</strong><span>SN ${draft.dataMatrix.snValue}</span></div>
-      <div class="builderSummary__fields">${selected.map(([key, name]) => `<span>${getTemplatePresetFieldName(key, draft.dataSourceMode, name)} · ${draft.dataSourceMode === "server-full" ? builderCopy("server") : builderCopy("printer")}</span>`).join("") || "DataMatrix only"}</div>`;
+      <section class="builderSummary__section">
+        <h3 class="builderSummary__sectionTitle">${summaryText(builderCopy("summaryTemplate"))}</h3>
+        <dl class="builderSummary__rows">
+          <div class="builderSummary__row"><dt>${summaryText(builderCopy("summaryPrinter"))}</dt><dd>${summaryText(formatPrinterModelDisplayLabel(draft.base.printerModel))}</dd></div>
+          <div class="builderSummary__row"><dt>${summaryText(builderCopy("summaryPrintMode"))}</dt><dd>${summaryText(draft.base.printMode)}</dd></div>
+          <div class="builderSummary__row"><dt>${summaryText(builderCopy("summarySize"))}</dt><dd>${summaryText(`${draft.base.widthMm.toFixed(2)} × ${draft.base.heightMm.toFixed(2)} mm`)}</dd></div>
+        </dl>
+      </section>
+      <section class="builderSummary__section">
+        <h3 class="builderSummary__sectionTitle">${summaryText(builderCopy("summaryDataMatrix"))}</h3>
+        <dl class="builderSummary__rows">
+          <div class="builderSummary__row"><dt>${summaryText(builderCopy("summaryCodeFormat"))}</dt><dd>${summaryText(symbolSize)}</dd></div>
+          <div class="builderSummary__row"><dt>${summaryText(builderCopy("summaryModuleSize"))}</dt><dd>${summaryText(formatDataMatrixModuleSize(draft.dataMatrix.moduleSize))}</dd></div>
+          <div class="builderSummary__row"><dt>${summaryText(builderCopy("summarySerialNumber"))}</dt><dd>${summaryText(draft.dataSourceMode === "party-code" ? builderCopy("partySerialNumber") : `SN ${draft.dataMatrix.snValue.length}`)}</dd></div>
+        </dl>
+      </section>
+      <section class="builderSummary__section">
+        <h3 class="builderSummary__sectionTitle">${summaryText(builderCopy("summaryDataSource"))}</h3>
+        <div class="builderSummary__source">${summaryText(sourceLabel)}</div>
+        ${draft.dataSourceMode === "party-code" ? `<p class="note">${summaryText(getPartyCodeComposition(draft.partyCode.withBoxCounter, draft.partyCode.gtinFieldName).requiredSegments.join(" → "))}</p>` : ""}
+      </section>
+      ${additionalFields}`;
   }
   if (validation) {
     validation.textContent = preview.layout?.overflowFieldNames?.length
@@ -479,7 +876,11 @@ function renderTemplateBuilderSummary() {
 function getTemplateBuilderStepValidity() {
   const draft = readTemplateBuilderDraft();
   if (templateBuilderStep === 0) return !!draft.creationKind;
-  if (templateBuilderStep === 1) return draft.base.widthMm > 0 && draft.base.widthMm <= 53.33 && draft.base.heightMm > 0 && draft.base.heightMm <= 75;
+  if (templateBuilderStep === 1) {
+    const maxWidthMm = getTemplateMaxImageWidthInternal(draft.base.printerModel) / 100;
+    const maxHeightMm = getTemplateMaxImageHeightInternal(draft.base.printerModel) / 100;
+    return draft.base.widthMm > 0 && draft.base.widthMm <= maxWidthMm && draft.base.heightMm > 0 && draft.base.heightMm <= maxHeightMm;
+  }
   if (templateBuilderStep === 2) return !!draft.dataSourceMode;
   if (templateBuilderStep === 3) return DATA_MATRIX_SYMBOLS_BY_NAME.has(draft.dataMatrix.symbolSize) && draft.dataMatrix.moduleSize > 0;
   if (templateBuilderStep === 5) return renderTemplateBuilderSummary().ok;
@@ -487,12 +888,22 @@ function getTemplateBuilderStepValidity() {
 }
 
 function renderTemplateBuilderStep() {
+  if (typeof syncNewTemplatePrinterWidthLimit === "function") syncNewTemplatePrinterWidthLimit();
   const draft = readTemplateBuilderDraft();
+  syncTemplateBuilderSnLengthControl(draft.dataMatrix.snValue);
   document.querySelectorAll("[data-builder-step]").forEach((element) => {
     element.hidden = Number(element.dataset.builderStep) !== templateBuilderStep;
   });
-  document.querySelectorAll("[data-builder-kind]").forEach((element) => element.classList.toggle("is-selected", element.dataset.builderKind === draft.creationKind));
-  document.querySelectorAll("[data-builder-source]").forEach((element) => element.classList.toggle("is-selected", element.dataset.builderSource === draft.dataSourceMode));
+  document.querySelectorAll("[data-builder-kind]").forEach((element) => {
+    const isSelected = element.dataset.builderKind === draft.creationKind;
+    element.classList.toggle("is-selected", isSelected);
+    element.setAttribute("aria-checked", String(isSelected));
+  });
+  document.querySelectorAll("[data-builder-source]").forEach((element) => {
+    const isSelected = element.dataset.builderSource === draft.dataSourceMode;
+    element.classList.toggle("is-selected", isSelected);
+    element.setAttribute("aria-checked", String(isSelected));
+  });
   document.querySelectorAll("[data-builder-i18n]").forEach((element) => {
     element.textContent = builderCopy(BUILDER_I18N_KEYS[element.dataset.builderI18n] || element.dataset.builderI18n);
   });
@@ -503,7 +914,7 @@ function renderTemplateBuilderStep() {
   });
   const titles = ["choose", "base", "source", "dm", "fields", "summary"];
   if ($("templateBuilderSubtitle")) $("templateBuilderSubtitle").textContent = builderCopy(titles[templateBuilderStep]);
-  if ($("templateBuilderProgress")) $("templateBuilderProgress").textContent = templateBuilderStep ? `${templateBuilderStep}/${draft.creationKind === "empty" ? 1 : 5}` : "";
+  if ($("templateBuilderProgress")) $("templateBuilderProgress").textContent = templateBuilderStep ? `${templateBuilderStep} / ${draft.creationKind === "empty" ? 1 : 5}` : "";
   if ($("btnBuilderBack")) $("btnBuilderBack").hidden = templateBuilderStep === 0;
   const isEmptyReady = draft.creationKind === "empty" && templateBuilderStep === 1;
   if ($("btnBuilderNext")) {
@@ -529,7 +940,7 @@ function renderTemplateBuilderStep() {
 function resetTemplateBuilder() {
   templateBuilderDraft = createDefaultTemplatePresetDraft();
   templateBuilderStep = 0;
-  if (elNewTemplatePrintMode) elNewTemplatePrintMode.value = TEMPLATE_PRESET_DEFAULT_PRINT_MODE;
+  writeTemplateBuilderBaseControls(templateBuilderDraft.base);
   populateNewTemplateOptions();
   const symbolSelect = $("builderSymbolSize");
   if (symbolSelect) populateMaterialSelect(symbolSelect, DATA_MATRIX_SYMBOLS.map((item) => ({ value: item.name, label: item.name })), "22X22");
@@ -561,7 +972,24 @@ function initTemplatePresetBuilder() {
     templateBuilderDraft.dataSourceMode = button.dataset.builderSource;
     renderTemplateBuilderStep();
   }));
-  modal.querySelectorAll("input, select").forEach((control) => control.addEventListener("change", () => renderTemplateBuilderStep()));
+  modal.querySelectorAll("[data-builder-sn-length]").forEach((button) => button.addEventListener("click", () => {
+    const snValue = $("builderSnValue");
+    if (!snValue) return;
+    snValue.value = button.dataset.builderSnLength === "13" ? "0000000000000" : "000000";
+    renderTemplateBuilderStep();
+  }));
+  modal.querySelectorAll("[data-builder-box-counter]").forEach((button) => button.addEventListener("click", () => {
+    templateBuilderDraft.partyCode.withBoxCounter = button.dataset.builderBoxCounter === "true";
+    renderTemplateBuilderStep();
+  }));
+  modal.querySelectorAll("[data-builder-party-gtin]").forEach((button) => button.addEventListener("click", () => {
+    templateBuilderDraft.partyCode.gtinFieldName = button.dataset.builderPartyGtin;
+    renderTemplateBuilderStep();
+  }));
+  modal.querySelectorAll("input, select").forEach((control) => control.addEventListener("change", () => {
+    if (control === elNewTemplatePrinterModel) synchronizeTemplateBuilderPrinterModel(control.value);
+    renderTemplateBuilderStep();
+  }));
   $("btnBuilderNext")?.addEventListener("click", () => {
     if (!getTemplateBuilderStepValidity()) return;
     templateBuilderStep += 1;
@@ -592,9 +1020,11 @@ function createTemplateFromBuilderDialog() {
 
 globalThis.createDefaultTemplatePresetDraft = createDefaultTemplatePresetDraft;
 globalThis.normalizeTemplatePresetDraft = normalizeTemplatePresetDraft;
+globalThis.synchronizeTemplatePresetDraftPrinter = synchronizeTemplatePresetDraftPrinter;
 globalThis.validateTemplatePresetDraft = validateTemplatePresetDraft;
 globalThis.generateTemplatePreset = generateTemplatePreset;
 globalThis.calculatePresetLayout = calculatePresetLayout;
+globalThis.fitFieldsIntoTemplate = fitFieldsIntoTemplate;
 globalThis.commitGeneratedTemplatePreset = commitGeneratedTemplatePreset;
 globalThis.createDataMatrixHelperFields = createDataMatrixHelperFields;
 globalThis.createDataMatrixField = createDataMatrixField;

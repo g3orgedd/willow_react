@@ -1,0 +1,48 @@
+{
+  "completedAt": "2026-10-22T09:08:57.140Z",
+  "suite": "party",
+  "webUrl": "http://127.0.0.1:5173/",
+  "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-xml-fix-20261022\\win-unpacked\\Glyph Studio.exe",
+  "cases": [
+    {
+      "name": "web-party-gtin2",
+      "mode": "web",
+      "caseId": "party-gtin2",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\xml-web-party-gtin2.ciff",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\web-party-gtin2-expected.json",
+      "expectedValidation": "00000000",
+      "bytes": 8578,
+      "sha256": "ce22161eac7f9077e6018a8909e0efdfb2ed5c2255b85faec8b794f2827876d3"
+    },
+    {
+      "name": "web-party-box-gtin",
+      "mode": "web",
+      "caseId": "party-box-gtin",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\xml-web-party-box-gtin.ciff",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\web-party-box-gtin-expected.json",
+      "expectedValidation": "00000000",
+      "bytes": 10924,
+      "sha256": "488d87d95ce89c12c7a14a292b74cf65d92ed6c9086c69196d0b39d93b068462"
+    },
+    {
+      "name": "exe-party-gtin2",
+      "mode": "exe",
+      "caseId": "party-gtin2",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\xml-exe-party-gtin2.ciff",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\exe-party-gtin2-expected.json",
+      "expectedValidation": "00000000",
+      "bytes": 8722,
+      "sha256": "de70fc29bc1440b19031c7fd19d6ca151670f5e19629f8af40dac66b71b4e09a"
+    },
+    {
+      "name": "exe-party-box-gtin",
+      "mode": "exe",
+      "caseId": "party-box-gtin",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\xml-exe-party-box-gtin.ciff",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\exe-party-box-gtin-expected.json",
+      "expectedValidation": "00000000",
+      "bytes": 10600,
+      "sha256": "3c78a94394526f7f32209a41877f15f275905546b5c29a279d64bbf01f29901f"
+    }
+  ]
+}

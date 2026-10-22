@@ -1,0 +1,178 @@
+====================================================================================================
+[2026-10-22 12:08:55.655 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_TAB_CREATED
+Message: Для шаблона создана новая вкладка.
+Source: renderer-action
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    reusedEmptyTab: false,
+    source: 'preset-builder',
+    tabCount: 2,
+    tabId: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+    title: 'XML party fixture party-gtin2'
+  }
+====================================================================================================
+[2026-10-22 12:08:56.061 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.072 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.336 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_TAB_CREATED
+Message: Для шаблона создана новая вкладка.
+Source: renderer-action
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    reusedEmptyTab: false,
+    source: 'preset-builder',
+    tabCount: 3,
+    tabId: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+    title: 'XML party fixture party-box-gtin'
+  }
+====================================================================================================
+[2026-10-22 12:08:56.376 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «Save».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: false,
+      id: 'btnConfirmSaveTemplate',
+      label: 'Save',
+      role: null,
+      tagName: 'BUTTON',
+      type: 'button'
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.380 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }

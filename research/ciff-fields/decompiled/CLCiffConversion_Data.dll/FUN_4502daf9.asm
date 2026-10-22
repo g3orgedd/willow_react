@@ -1,0 +1,7 @@
+4502daf9 PUSH EBP
+4502dafa MOV EBP,ESP
+4502dafc PUSH dword ptr [EBP + 0x8]
+4502daff CALL 0x4502dac5
+4502db04 POP ECX
+4502db05 PUSH dword ptr [EBP + 0x8]
+4502db08 CALL dword ptr [0x4503d160]

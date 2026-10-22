@@ -1,0 +1,33 @@
+41c0bcef PUSH EBP
+41c0bcf0 MOV EBP,ESP
+41c0bcf2 PUSH ECX
+41c0bcf3 PUSH ESI
+41c0bcf4 LEA EAX,[EBP + -0x4]
+41c0bcf7 XOR ESI,ESI
+41c0bcf9 PUSH EAX
+41c0bcfa PUSH 0x41c317ac
+41c0bcff PUSH 0x15
+41c0bd01 PUSH ESI
+41c0bd02 PUSH 0x41c30df4
+41c0bd07 MOV dword ptr [EBP + -0x4],ESI
+41c0bd0a CALL dword ptr [0x41c30320]
+41c0bd10 TEST EAX,EAX
+41c0bd12 JNZ 0x41c0bd25
+41c0bd14 MOV EAX,dword ptr [EBP + -0x4]
+41c0bd17 PUSH dword ptr [EBP + 0x8]
+41c0bd1a PUSH 0x41c317bc
+41c0bd1f MOV ECX,dword ptr [EAX]
+41c0bd21 PUSH EAX
+41c0bd22 CALL dword ptr [ECX]
+41c0bd24 INC ESI
+41c0bd25 MOV ECX,dword ptr [EBP + -0x4]
+41c0bd28 TEST ECX,ECX
+41c0bd2a JZ 0x41c0bd32
+41c0bd2c MOV EDX,dword ptr [ECX]
+41c0bd2e PUSH ECX
+41c0bd2f CALL dword ptr [EDX + 0x8]
+41c0bd32 MOV EAX,ESI
+41c0bd34 POP ESI
+41c0bd35 MOV ESP,EBP
+41c0bd37 POP EBP
+41c0bd38 RET

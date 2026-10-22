@@ -1,0 +1,4 @@
+41c19fdc CMP ECX,dword ptr [0x41c3f5d0]
+41c19fe2 JNZ 0x41c19fe6
+41c19fe4 RET
+41c19fe6 JMP 0x41c1ab05

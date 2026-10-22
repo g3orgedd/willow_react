@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "cipherSource": "public/modules/clst/encryption.js",
+    "cipherSourceSha256Utf8": "27ebecd7ca39eeca0c1d2e969bc1db72cb8e9820f1cc4ba9f50261c071b5f755",
+    "cipherParameters": {
+      "seed": "0x26E20115",
+      "useKeyInputs": false,
+      "finalKey": "TpyRcNeyeK",
+      "tagDataKey": "TagData"
+    },
+    "validationScope": "Workspace implementation plus independent stored XML payload observations; no native DLL execution is performed.",
+    "limitations": [
+      "Decrypt then re-encrypt is a reversibility check and does not independently prove equivalence with ClariSoft.",
+      "A layout match is a structural interpretation; optional branches are tested as candidates rather than assumed absent.",
+      "CalcData comparison uses the stored XML value. Date/time/counter values can differ from their native runtime values.",
+      "This false-key-input path depends on key length, not key contents; decoded masks cannot validate the DDSSFF counter values.",
+      "A token matching the constant named EMPTY_TEMPLATE_CLST_VERSION_INFO does not prove that it came from an empty template."
+    ]
+  },
+  "summary": {
+    "files": 13,
+    "decoded": 8,
+    "mainLayoutConsistent": 8,
+    "optionalLayoutPlausible": 0,
+    "selectedStoredCalcDataMatches": 5,
+    "selectedStoredCalcDataMismatches": 3,
+    "missingTokens": 5,
+    "errors": 0
+  },
+  "emptyTemplateConstantEvidence": [
+    {
+      "file": "tests/fixtures/clarisoft/Clarisoft_test_1.ciff",
+      "sourceFieldCount": 12,
+      "maskHex": "00000001",
+      "tagData": "~1010000000000000021",
+      "matchesSelectedStoredCalcData": true,
+      "conclusion": "The decoded constant carries a nonzero selection mask or selected payload; its name does not establish an empty-template branch."
+    }
+  ],
+  "files": [
+    {
+      "file": "tests/fixtures/ciff/16x16_1.5Y.ciff",
+      "sha256": "2f65c419deac00843c3cc6feb95bbfd7f3123981879de4baedce8ac8083c3de2",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6320(32mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 1,
+          "subImageCount": 1,
+          "fieldCount": 12
+        },
+        "structureKey": "010112"
+      },
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLMzRS!KRrPJJCJN9MyNGo0PKS7s0LA58uKQT3IOMQbB3wQNxU2u57MPA!T",
+      "tokenLength": 126,
+      "tokenSha256Utf16LE": "a73f1da9762deee83c4b1b5848aee889838e012772cb9904d1c85f3096a18b88",
+      "matchesEmptyTemplateConstant": false,
+      "outerDecoded": "MWNDu5BBD5YND7UFBSMsIQvB6o5UE85GOV_JLmCUgN",
+      "outerDecodedLength": 42,
+      "outerContainsOnlyEncodedAlphabet": true,
+      "reencryptExact": true,
+      "mainLayout": {
+        "consistent": true,
+        "headerEncoded": "MWNDu5BBD5YND7UFBSMsIQvB",
+        "maskHex": "00000008",
+        "mask": 8,
+        "tagDataEncoded": "6o5UE85GOV_JLmCUgN",
+        "tagData": "000000",
+        "selectedFieldIndices": [
+          3
+        ],
+        "selectedFieldSnapshots": [
+          {
+            "index": 3,
+            "name": "SN",
+            "fieldType": "FixedText",
+            "calcData": "000000"
+          }
+        ],
+        "selectedCalcDataPrefix": "000000",
+        "matchesSelectedCalcData": true
+      },
+      "optionalLayout": {
+        "plausible": false,
+        "fileDecodeKeyAssumption": "TagData; matches the selected-data transform slot in the supplied pseudocode.",
+        "reason": "Optional layout needs a length block plus a core mask block."
+      },
+      "branchAssessment": "consistent-with-main-layout",
+      "status": "decoded-with-workspace-cipher"
+    },
+    {
+      "file": "tests/fixtures/ciff/22x22_1_broken.ciff",
+      "sha256": "4854b2597104a2c0b17ba15846b9cda21ac95037644fd60d7cd03edb033bab12",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 1,
+          "subImageCount": 1,
+          "fieldCount": 17
+        },
+        "structureKey": "010117"
+      },
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93HlH2lAMuURiS3wF7yEGMKUj7Oz8QdQ2qA3UL3PQMgDVECDl4Ea54RFMl6NsLOT4M9N2275SEDOPCyCMC6VP0RQ4Uu2F!8LuI9f4CUG",
+      "tokenLength": 144,
+      "tokenSha256Utf16LE": "047282b33ef699b222cd6275807c8bfb75a13580ca31d12b6c877cc62977458c",
+      "matchesEmptyTemplateConstant": false,
+      "outerDecoded": "MWNDu5BBD5YND7MFBSMYIOv76o5UE85G6N_ERpTIbAMOANq1",
+      "outerDecodedLength": 48,
+      "outerContainsOnlyEncodedAlphabet": true,
+      "reencryptExact": true,
+      "mainLayout": {
+        "consistent": true,
+        "headerEncoded": "MWNDu5BBD5YND7MFBSMYIOv7",
+        "maskHex": "00008000",
+        "mask": 32768,
+        "tagDataEncoded": "6o5UE85G6N_ERpTIbAMOANq1",
+        "tagData": "00.00.00",
+        "selectedFieldIndices": [
+          15
+        ],
+        "selectedFieldSnapshots": [
+          {
+            "index": 15,
+            "name": "Copy of Field01",
+            "fieldType": "TimeText",
+            "calcData": "17:05"
+          }
+        ],
+        "selectedCalcDataPrefix": "17:05",
+        "matchesSelectedCalcData": false
+      },
+      "optionalLayout": {
+        "plausible": false,
+        "fileDecodeKeyAssumption": "TagData; matches the selected-data transform slot in the supplied pseudocode.",
+        "lengthHeaderEncoded": "MWNDu5BBD5YND7MFBSMYIOv7",
+        "fileLengthHex": "00008000",
+        "fileBlockEncodedLength": 32768,
+        "reason": "File block length is not divisible by 3."
+      },
+      "branchAssessment": "consistent-with-main-layout",
+      "status": "decoded-with-workspace-cipher"
+    },
+    {
+      "file": "tests/fixtures/ciff/22x22_1_fixed.ciff",
+      "sha256": "1528d4d33ae896c3dcbb06dbb31ea590ba13a9a886b437cd07cf9f8d83f1fa9d",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 1,
+          "subImageCount": 1,
+          "fieldCount": 17
+        },
+        "structureKey": "010117"
+      },
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93HlH2lAMuURiS3wF7yEGMKUj7Oz8QdQ2qA3UL3PQMgDVECDl4Ea54RFMl6NsLOT4M9N2275SEDOPCyCMC6VP0RQ4Uu2F!8LuI9f4CUG",
+      "tokenLength": 144,
+      "tokenSha256Utf16LE": "047282b33ef699b222cd6275807c8bfb75a13580ca31d12b6c877cc62977458c",
+      "matchesEmptyTemplateConstant": false,
+      "outerDecoded": "MWNDu5BBD5YND7MFBSMYIOv76o5UE85G6N_ERpTIbAMOANq1",
+      "outerDecodedLength": 48,
+      "outerContainsOnlyEncodedAlphabet": true,
+      "reencryptExact": true,
+      "mainLayout": {
+        "consistent": true,
+        "headerEncoded": "MWNDu5BBD5YND7MFBSMYIOv7",
+        "maskHex": "00008000",
+        "mask": 32768,
+        "tagDataEncoded": "6o5UE85G6N_ERpTIbAMOANq1",
+        "tagData": "00.00.00",
+        "selectedFieldIndices": [
+          15
+        ],
+        "selectedFieldSnapshots": [
+          {
+            "index": 15,
+            "name": "Copy of Field01",
+            "fieldType": "TimeText",
+            "calcData": "17:05"
+          }
+        ],
+        "selectedCalcDataPrefix": "17:05",
+        "matchesSelectedCalcData": false
+      },
+      "optionalLayout": {
+        "plausible": false,
+        "fileDecodeKeyAssumption": "TagData; matches the selected-data transform slot in the supplied pseudocode.",
+        "lengthHeaderEncoded": "MWNDu5BBD5YND7MFBSMYIOv7",
+        "fileLengthHex": "00008000",
+        "fileBlockEncodedLength": 32768,
+        "reason": "File block length is not divisible by 3."
+      },
+      "branchAssessment": "consistent-with-main-layout",
+      "status": "decoded-with-workspace-cipher"
+    },
+    {
+      "file": "tests/fixtures/ciff/22x22_reference_270days.ciff",
+      "sha256": "f3d8a3c250d770e9c3db1b78a6d2a88af34bc901c02c0d064ec87492be6d0c82",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 1,
+          "subImageCount": 1,
+          "fieldCount": 14
+        },
+        "structureKey": "010114"
+      },
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEHQEOJ3P0FAQXPJCRH7C7w5AW9R7PKm2RE3Ny94_MTwPNKB4yDUUDFuPNh1DnAK48KVGO_PRn5Sk81LRMx08aE8vF7bVMzIQm9JDLALKMiCFXI5PCQM2IsT2HC",
+      "tokenLength": 198,
+      "tokenSha256Utf16LE": "6bbaab6391e36685621357f3da049c0484e27c9a6be1812a921dd3e3790c50f4",
+      "matchesEmptyTemplateConstant": false,
+      "outerDecoded": "MWNDu5BBD5YND7UFBSMsIQv16o5UE85GOV_JLmCUgNKn14TPOzS97KM64HYBKOUOpH",
+      "outerDecodedLength": 66,
+      "outerContainsOnlyEncodedAlphabet": true,
+      "reencryptExact": true,
+      "mainLayout": {
+        "consistent": true,
+        "headerEncoded": "MWNDu5BBD5YND7UFBSMsIQv1",
+        "maskHex": "00000002",
+        "mask": 2,
+        "tagDataEncoded": "6o5UE85GOV_JLmCUgNKn14TPOzS97KM64HYBKOUOpH",
+        "tagData": "00000000000000",
+        "selectedFieldIndices": [
+          1
+        ],
+        "selectedFieldSnapshots": [
+          {
+            "index": 1,
+            "name": "GTIN",
+            "fieldType": "FixedText",
+            "calcData": "00000000000000"
+          }
+        ],
+        "selectedCalcDataPrefix": "00000000000000",
+        "matchesSelectedCalcData": true
+      },
+      "optionalLayout": {
+        "plausible": false,
+        "fileDecodeKeyAssumption": "TagData; matches the selected-data transform slot in the supplied pseudocode.",
+        "lengthHeaderEncoded": "MWNDu5BBD5YND7UFBSMsIQv1",
+        "fileLengthHex": "00000002",
+        "fileBlockEncodedLength": 2,
+        "reason": "File block length is not divisible by 3."
+      },
+      "branchAssessment": "consistent-with-main-layout",
+      "status": "decoded-with-workspace-cipher"
+    },
+    {
+      "file": "tests/fixtures/ciff/ZDRAVA2.ciff",
+      "sha256": "62c7db475b5c4b5af7b779cbace0cb3372d05ae6ff7025fa62a536ed5e9ab42c",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 0,
+          "subImageCount": 1,
+          "fieldCount": 13
+        },
+        "structureKey": "000113"
+      },
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEHQEOJ3P0FAQXPJCRH7C7w5AW9R7PKm2RE3Ny94_MTwPNKB4yDUUDFuPNh1DnAK48KVGO_PRn5Sk81LRMx08aE8vF7bVMzIQm9JDLALKMiCFXI5PCQM2IsT2HC",
+      "tokenLength": 198,
+      "tokenSha256Utf16LE": "6bbaab6391e36685621357f3da049c0484e27c9a6be1812a921dd3e3790c50f4",
+      "matchesEmptyTemplateConstant": false,
+      "outerDecoded": "MWNDu5BBD5YND7UFBSMsIQv16o5UE85GOV_JLmCUgNKn14TPOzS97KM64HYBKOUOpH",
+      "outerDecodedLength": 66,
+      "outerContainsOnlyEncodedAlphabet": true,
+      "reencryptExact": true,
+      "mainLayout": {
+        "consistent": true,
+        "headerEncoded": "MWNDu5BBD5YND7UFBSMsIQv1",
+        "maskHex": "00000002",
+        "mask": 2,
+        "tagDataEncoded": "6o5UE85GOV_JLmCUgNKn14TPOzS97KM64HYBKOUOpH",
+        "tagData": "00000000000000",
+        "selectedFieldIndices": [
+          1
+        ],
+        "selectedFieldSnapshots": [
+          {
+            "index": 1,
+            "name": "GTIN",
+            "fieldType": "FixedText",
+            "calcData": "00000000000000"
+          }
+        ],
+        "selectedCalcDataPrefix": "00000000000000",
+        "matchesSelectedCalcData": true
+      },
+      "optionalLayout": {
+        "plausible": false,
+        "fileDecodeKeyAssumption": "TagData; matches the selected-data transform slot in the supplied pseudocode.",
+        "lengthHeaderEncoded": "MWNDu5BBD5YND7UFBSMsIQv1",
+        "fileLengthHex": "00000002",
+        "fileBlockEncodedLength": 2,
+        "reason": "File block length is not divisible by 3."
+      },
+      "branchAssessment": "consistent-with-main-layout",
+      "status": "decoded-with-workspace-cipher"
+    },
+    {
+      "file": "tests/fixtures/clarisoft/Clarisoft_test_1.ciff",
+      "sha256": "5221dc212883631146e4d26e2bb5af3d38e440d0ea458c73bf4b18e5175bb63d",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 0,
+          "subImageCount": 1,
+          "fieldCount": 12
+        },
+        "structureKey": "000112"
+      },
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFtEFE14tJB8QHyE4c51D13SR5m2JC4C!HReJIzNMv7EaRC14TVSJX1Ti6D_S6QHLuGOoN2BIHtEKkTPwVMq4RaLNP4UrOELUSs51e139EUN1QgGBt63L0QEVRvKL!22pG2THF14PjEMl1UuEIqUQj16i9A2K4l7S_GUrLALTBXKI78",
+      "tokenLength": 252,
+      "tokenSha256Utf16LE": "455267c177add1c86aa240d0c5b99f64358c114439fe5d36fa4c73719cfb1423",
+      "matchesEmptyTemplateConstant": true,
+      "outerDecoded": "MWNDu5BBD5YND7UFBSMsIQv26mBSANSFMRqS3lSI0ASe8Iq5R8QHSJR77SoHM79LqHRLPBzLUr4022L4PFPJ",
+      "outerDecodedLength": 84,
+      "outerContainsOnlyEncodedAlphabet": true,
+      "reencryptExact": true,
+      "mainLayout": {
+        "consistent": true,
+        "headerEncoded": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "maskHex": "00000001",
+        "mask": 1,
+        "tagDataEncoded": "6mBSANSFMRqS3lSI0ASe8Iq5R8QHSJR77SoHM79LqHRLPBzLUr4022L4PFPJ",
+        "tagData": "~1010000000000000021",
+        "selectedFieldIndices": [
+          0
+        ],
+        "selectedFieldSnapshots": [
+          {
+            "index": 0,
+            "name": "Field00",
+            "fieldType": "Barcode",
+            "calcData": "~10100000000000000210000000000000~d029930000"
+          }
+        ],
+        "selectedCalcDataPrefix": "~1010000000000000021",
+        "matchesSelectedCalcData": true
+      },
+      "optionalLayout": {
+        "plausible": false,
+        "fileDecodeKeyAssumption": "TagData; matches the selected-data transform slot in the supplied pseudocode.",
+        "lengthHeaderEncoded": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "fileLengthHex": "00000001",
+        "fileBlockEncodedLength": 1,
+        "reason": "File block length is not divisible by 3."
+      },
+      "branchAssessment": "consistent-with-main-layout",
+      "status": "decoded-with-workspace-cipher"
+    },
+    {
+      "file": "tests/fixtures/clarisoft/Glyph_test_1.ciff",
+      "sha256": "112420e4053c789f591efd3ad44bab9ac7eb76f1e477e14df4ab5bda5e1fdc52",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 0,
+          "subImageCount": 1,
+          "fieldCount": 12
+        },
+        "structureKey": "000112"
+      },
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnVSVSNLLLnTAS2NyCJtJUD3VGHDbN6K76iHU!QGk8UrNGi8Uz9Tc9QVCIr2TyL6eAUTMUCVHm8EcI0yABuRMv7N4LVz1",
+      "tokenLength": 171,
+      "tokenSha256Utf16LE": "c23770d3feb7bafa47ced4c8e2de071f4633ffa66ae170fb45f37c8ef7c988a4",
+      "matchesEmptyTemplateConstant": false,
+      "outerDecoded": "MWNDu5BBD5YND7UFBSMsIQv26nHTELGTVEh47lGLjGRv9KoKQVOMgH7sB",
+      "outerDecodedLength": 57,
+      "outerContainsOnlyEncodedAlphabet": true,
+      "reencryptExact": true,
+      "mainLayout": {
+        "consistent": true,
+        "headerEncoded": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "maskHex": "00000001",
+        "mask": 1,
+        "tagDataEncoded": "6nHTELGTVEh47lGLjGRv9KoKQVOMgH7sB",
+        "tagData": "DefaultText",
+        "selectedFieldIndices": [
+          0
+        ],
+        "selectedFieldSnapshots": [
+          {
+            "index": 0,
+            "name": "С1",
+            "fieldType": "FixedText",
+            "calcData": "~101"
+          }
+        ],
+        "selectedCalcDataPrefix": "~101",
+        "matchesSelectedCalcData": false
+      },
+      "optionalLayout": {
+        "plausible": false,
+        "fileDecodeKeyAssumption": "TagData; matches the selected-data transform slot in the supplied pseudocode.",
+        "lengthHeaderEncoded": "MWNDu5BBD5YND7UFBSMsIQv2",
+        "fileLengthHex": "00000001",
+        "fileBlockEncodedLength": 1,
+        "reason": "File block length is not divisible by 3."
+      },
+      "branchAssessment": "consistent-with-main-layout",
+      "status": "decoded-with-workspace-cipher"
+    },
+    {
+      "file": "tests/fixtures/clarisoft/clarisoft_fix6.reference.xml",
+      "sha256": "acb671f9bf0e7475dd9ac609b435126e0dea2ec9cb15db3d933fe6f6a55264d1",
+      "encoding": "UTF-8",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6320(32mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 0,
+          "subImageCount": 1,
+          "fieldCount": 8
+        },
+        "structureKey": "000108"
+      },
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUWGTJCN9OLx0VwH0b26VP",
+      "tokenLength": 81,
+      "tokenSha256Utf16LE": "d081a22dd975f4a9c065f2a7865054bdc40b249c58c4ff6c57e474fa478bbaf2",
+      "matchesEmptyTemplateConstant": false,
+      "outerDecoded": "MWNDu5BBD5YND7UFBSMsQQz36oR",
+      "outerDecodedLength": 27,
+      "outerContainsOnlyEncodedAlphabet": true,
+      "reencryptExact": true,
+      "mainLayout": {
+        "consistent": true,
+        "headerEncoded": "MWNDu5BBD5YND7UFBSMsQQz3",
+        "maskHex": "00000080",
+        "mask": 128,
+        "tagDataEncoded": "6oR",
+        "tagData": ".",
+        "selectedFieldIndices": [
+          7
+        ],
+        "selectedFieldSnapshots": [
+          {
+            "index": 7,
+            "name": "Field02",
+            "fieldType": "FixedText",
+            "calcData": "."
+          }
+        ],
+        "selectedCalcDataPrefix": ".",
+        "matchesSelectedCalcData": true
+      },
+      "optionalLayout": {
+        "plausible": false,
+        "fileDecodeKeyAssumption": "TagData; matches the selected-data transform slot in the supplied pseudocode.",
+        "reason": "Optional layout needs a length block plus a core mask block."
+      },
+      "branchAssessment": "consistent-with-main-layout",
+      "status": "decoded-with-workspace-cipher"
+    },
+    {
+      "file": "tests/fixtures/conservative/constant-text.ciff",
+      "sha256": "647fb55ec0481979af0e3217cde1af8224b9be7475e89056718ed5f7d6df373f",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 0,
+          "subImageCount": 1,
+          "fieldCount": 1
+        },
+        "structureKey": "000101"
+      },
+      "status": "missing-token"
+    },
+    {
+      "file": "tests/fixtures/conservative/date.ciff",
+      "sha256": "3829bb32b0495d7cd97740bc547a641f31b39fdefc4196f1ae308e6c95986104",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 0,
+          "subImageCount": 1,
+          "fieldCount": 1
+        },
+        "structureKey": "000101"
+      },
+      "status": "missing-token"
+    },
+    {
+      "file": "tests/fixtures/conservative/external-text.ciff",
+      "sha256": "fb1190e54d0ba7c1225653d28260f2e9bfd446e8e95279f43ae51eb7891d7af8",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 0,
+          "subImageCount": 1,
+          "fieldCount": 1
+        },
+        "structureKey": "000101"
+      },
+      "status": "missing-token"
+    },
+    {
+      "file": "tests/fixtures/conservative/field-order.ciff",
+      "sha256": "6977a0f9f1a5b0dc5688a3ad2739052390afcf0ba0b8e9232e0238bd9971bf51",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 0,
+          "subImageCount": 1,
+          "fieldCount": 4
+        },
+        "structureKey": "000104"
+      },
+      "status": "missing-token"
+    },
+    {
+      "file": "tests/fixtures/conservative/offset-date.ciff",
+      "sha256": "502a538390c6c2806bb309ef2be964933620a125d8411a0a6a566d7fc03b462c",
+      "encoding": "UTF-16LE BOM",
+      "sourceEvidence": {
+        "designedFor": "DataFlex 6330(53mm) - Continuous",
+        "counts": {
+          "dateOffsetCount": 2,
+          "subImageCount": 1,
+          "fieldCount": 1
+        },
+        "structureKey": "020101"
+      },
+      "status": "missing-token"
+    }
+  ]
+}

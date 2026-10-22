@@ -1,0 +1,232 @@
+[
+    {
+        "method":  "ResolveData",
+        "offset":  28,
+        "address":  "40816712"
+    },
+    {
+        "method":  "ResolveDateOffsets",
+        "offset":  32,
+        "address":  "40816c1e"
+    },
+    {
+        "method":  "ReOrderDateOffsets",
+        "offset":  36,
+        "address":  "40816672"
+    },
+    {
+        "method":  "GetNextVariableData",
+        "offset":  40,
+        "address":  "40815cb2"
+    },
+    {
+        "method":  "GetNextDateOffset",
+        "offset":  44,
+        "address":  "4081489e"
+    },
+    {
+        "method":  "GetNextSerialNumber",
+        "offset":  48,
+        "address":  "40815422"
+    },
+    {
+        "method":  "SetVariableData",
+        "offset":  52,
+        "address":  "408190ee"
+    },
+    {
+        "method":  "SetDateOffset",
+        "offset":  56,
+        "address":  "408184a3"
+    },
+    {
+        "method":  "SetSerialNumber",
+        "offset":  60,
+        "address":  "40818c46"
+    },
+    {
+        "method":  "SetGraphicSizes",
+        "offset":  64,
+        "address":  "40818540"
+    },
+    {
+        "method":  "ClarisoftDBConnectString",
+        "offset":  68,
+        "address":  "408195f9"
+    },
+    {
+        "method":  "ClarisoftDBConnectString",
+        "offset":  72,
+        "address":  "40819621"
+    },
+    {
+        "method":  "UniqueProductCode",
+        "offset":  76,
+        "address":  "4081960d"
+    },
+    {
+        "method":  "UniqueProductCode",
+        "offset":  80,
+        "address":  "40819638"
+    },
+    {
+        "method":  "ResolveField",
+        "offset":  84,
+        "address":  "40816d91"
+    },
+    {
+        "method":  "ResolveFile",
+        "offset":  88,
+        "address":  "4081704a"
+    },
+    {
+        "method":  "FindReference",
+        "offset":  92,
+        "address":  "40813dab"
+    },
+    {
+        "method":  "CopyFieldtoSubImage",
+        "offset":  96,
+        "address":  "40813086"
+    },
+    {
+        "method":  "CopyDataObjecttoField",
+        "offset":  100,
+        "address":  "408126c2"
+    },
+    {
+        "method":  "ResolveFields",
+        "offset":  104,
+        "address":  "40816f1f"
+    },
+    {
+        "method":  "GetNextVariableData2",
+        "offset":  108,
+        "address":  "408157ed"
+    },
+    {
+        "method":  "GetNextDateOffset2",
+        "offset":  112,
+        "address":  "408143a1"
+    },
+    {
+        "method":  "GetNextSerialNumber2",
+        "offset":  116,
+        "address":  "40815028"
+    },
+    {
+        "method":  "SetVariableData2",
+        "offset":  120,
+        "address":  "40818ef7"
+    },
+    {
+        "method":  "SetDateOffset2",
+        "offset":  124,
+        "address":  "408183c9"
+    },
+    {
+        "method":  "SetSerialNumber2",
+        "offset":  128,
+        "address":  "408189d5"
+    },
+    {
+        "method":  "CopyDateOffsetToClipboard",
+        "offset":  132,
+        "address":  "40819b9d"
+    },
+    {
+        "method":  "FindFieldByName",
+        "offset":  136,
+        "address":  "408139f8"
+    },
+    {
+        "method":  "GetNextPrice",
+        "offset":  140,
+        "address":  "40814c58"
+    },
+    {
+        "method":  "SetPrice",
+        "offset":  144,
+        "address":  "408188d5"
+    },
+    {
+        "method":  "CopyPriceFieldToClipboard",
+        "offset":  148,
+        "address":  "4081323a"
+    },
+    {
+        "method":  "SetCurrentPrintCount",
+        "offset":  152,
+        "address":  "408183b7"
+    },
+    {
+        "method":  "ResolveData",
+        "offset":  156,
+        "address":  "4081673a"
+    },
+    {
+        "method":  "ResolveField",
+        "offset":  160,
+        "address":  "40816db9"
+    },
+    {
+        "method":  "ResolveFields",
+        "offset":  164,
+        "address":  "40816f44"
+    },
+    {
+        "method":  "SetDateOffset3",
+        "offset":  168,
+        "address":  "40818425"
+    },
+    {
+        "method":  "InitialiseDataValues",
+        "offset":  172,
+        "address":  "4081625c"
+    },
+    {
+        "method":  "RemoveUnreferencedDataObjects",
+        "offset":  176,
+        "address":  "408166ea"
+    },
+    {
+        "method":  "ValidateDateOffsetCalculations",
+        "offset":  180,
+        "address":  "408193d0"
+    },
+    {
+        "method":  "FindParentMergeReference",
+        "offset":  184,
+        "address":  "40813b94"
+    },
+    {
+        "method":  "UpgradeCiff",
+        "offset":  188,
+        "address":  "40819383"
+    },
+    {
+        "method":  "AddPreferredMarkset",
+        "offset":  192,
+        "address":  "408121ae"
+    },
+    {
+        "method":  "UpdateMarksets",
+        "offset":  196,
+        "address":  "40819336"
+    },
+    {
+        "method":  "GetPreferredMarkset",
+        "offset":  200,
+        "address":  "408160be"
+    },
+    {
+        "method":  "SetFieldsToUsePreferredMarkset",
+        "offset":  204,
+        "address":  "408184f3"
+    },
+    {
+        "method":  "IsFieldEAN13PriceVerifier",
+        "offset":  208,
+        "address":  "4081640e"
+    }
+]

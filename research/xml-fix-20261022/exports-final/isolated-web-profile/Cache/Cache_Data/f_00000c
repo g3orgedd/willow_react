@@ -1,0 +1,697 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/LeftPanel.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=a8bfbb4b"; const Fragment = __vite__cjsImport0_react_jsxDevRuntime["Fragment"]; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=a8bfbb4b"; const useId = __vite__cjsImport3_react["useId"];
+function HiddenCanvasToggleIcon() {
+  _s();
+  const maskId = useId();
+  return /* @__PURE__ */ jsxDEV("svg", { className: "btnIcon hiddenCanvasToggleIcon", viewBox: "0 -960 960 960", fill: "none", "aria-hidden": "true", focusable: "false", children: [
+    /* @__PURE__ */ jsxDEV("defs", { children: /* @__PURE__ */ jsxDEV("mask", { id: maskId, maskUnits: "userSpaceOnUse", x: "0", y: "-960", width: "960", height: "960", children: [
+      /* @__PURE__ */ jsxDEV("rect", { x: "0", y: "-960", width: "960", height: "960", fill: "white" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+        lineNumber: 29,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("path", { className: "hiddenCanvasToggleIcon__slash", d: "M112 -848 L848 -112", pathLength: "1", stroke: "black", strokeWidth: "160", strokeLinecap: "round" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+        lineNumber: 30,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+      lineNumber: 28,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+      lineNumber: 27,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      "path",
+      {
+        fill: "currentColor",
+        mask: `url(#${maskId})`,
+        d: "M607.5-372.5Q660-425 660-500t-52.5-127.5Q555-680 480-680t-127.5 52.5Q300-575 300-500t52.5 127.5Q405-320 480-320t127.5-52.5Zm-204-51Q372-455 372-500t31.5-76.5Q435-608 480-608t76.5 31.5Q588-545 588-500t-31.5 76.5Q525-392 480-392t-76.5-31.5ZM214-281.5Q94-363 40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200q-146 0-266-81.5ZM480-500Zm207.5 160.5Q782-399 832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280q113 0 207.5-59.5Z"
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+        lineNumber: 33,
+        columnNumber: 7
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV("path", { className: "hiddenCanvasToggleIcon__slash", d: "M112 -848 L848 -112", pathLength: "1", stroke: "currentColor", strokeWidth: "80", strokeLinecap: "round" }, void 0, false, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+      lineNumber: 38,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+    lineNumber: 26,
+    columnNumber: 5
+  }, this);
+}
+_s(HiddenCanvasToggleIcon, "JMYUwB2sSvpFYKefLVCA+RLS5aQ=");
+_c = HiddenCanvasToggleIcon;
+export function LeftPanel() {
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV(
+      "aside",
+      {
+        id: "leftPanel",
+        className: "panel panel--left leftPanel surface-card",
+        "aria-labelledby": "fieldBrowserTitle",
+        "data-collapsed": "false",
+        children: [
+          /* @__PURE__ */ jsxDEV("div", { id: "leftPanelExpanded", className: "leftPanel__expanded", children: [
+            /* @__PURE__ */ jsxDEV("header", { className: "leftPanel__header", children: [
+              /* @__PURE__ */ jsxDEV("h2", { id: "fieldBrowserTitle", className: "leftPanel__title", children: "Objects" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 54,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "leftPanel__headerActions", children: [
+                /* @__PURE__ */ jsxDEV(
+                  "button",
+                  {
+                    id: "btnToggleFieldSearch",
+                    className: "btn btn--ghost leftPanelIconButton",
+                    type: "button",
+                    "aria-label": "Search objects",
+                    "aria-expanded": "false",
+                    "aria-controls": "leftPanelSearch",
+                    children: /* @__PURE__ */ jsxDEV("img", { className: "btnIcon", src: "/resourses/Icons/search_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                      lineNumber: 64,
+                      columnNumber: 17
+                    }, this)
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                    lineNumber: 56,
+                    columnNumber: 15
+                  },
+                  this
+                ),
+                /* @__PURE__ */ jsxDEV(
+                  "button",
+                  {
+                    id: "btnCollapseLeftPanel",
+                    className: "btn btn--ghost leftPanelIconButton",
+                    type: "button",
+                    "aria-label": "Collapse objects panel",
+                    "aria-controls": "leftPanel",
+                    "aria-expanded": "true",
+                    children: /* @__PURE__ */ jsxDEV("img", { className: "btnIcon", src: "/resourses/Icons/chevron_backward.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                      lineNumber: 74,
+                      columnNumber: 17
+                    }, this)
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                    lineNumber: 66,
+                    columnNumber: 15
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 55,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 53,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { id: "leftPanelSearch", className: "leftPanelSearch", "aria-hidden": "true", children: [
+              /* @__PURE__ */ jsxDEV("label", { className: "srOnly", id: "searchField", htmlFor: "fieldSearch", children: "Search objects" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 80,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "panelSearchSlot leftPanelSearch__field", children: [
+                /* @__PURE__ */ jsxDEV("img", { className: "panelSearchIcon", src: "/resourses/Icons/search_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 82,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("input", { id: "fieldSearch", className: "input panelSearch", type: "search", placeholder: "Search objects", tabIndex: -1 }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 83,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV(
+                  "button",
+                  {
+                    id: "btnCloseFieldSearch",
+                    className: "btn btn--ghost leftPanelSearch__close",
+                    type: "button",
+                    "aria-label": "Clear and close search",
+                    tabIndex: -1,
+                    children: /* @__PURE__ */ jsxDEV("img", { className: "btnIcon", src: "/resourses/Icons/close_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                      lineNumber: 91,
+                      columnNumber: 17
+                    }, this)
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                    lineNumber: 84,
+                    columnNumber: 15
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 81,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 79,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "leftPanel__filterRow", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "fieldFilter fieldFilter--fieldBrowser leftPanelTabs", role: "tablist", "aria-label": "Filter objects", children: [
+                /* @__PURE__ */ jsxDEV(
+                  "button",
+                  {
+                    className: "fieldFilter__button fieldFilter__button--active",
+                    type: "button",
+                    role: "tab",
+                    "data-field-filter": "printed",
+                    "aria-controls": "fieldsList",
+                    "aria-selected": "true",
+                    "aria-pressed": "true",
+                    children: [
+                      /* @__PURE__ */ jsxDEV("span", { "data-field-filter-label": "printed", children: "Printed" }, void 0, false, {
+                        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                        lineNumber: 107,
+                        columnNumber: 17
+                      }, this),
+                      /* @__PURE__ */ jsxDEV("span", { className: "fieldFilter__count", "data-field-filter-count": "printed", children: "0" }, void 0, false, {
+                        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                        lineNumber: 108,
+                        columnNumber: 17
+                      }, this)
+                    ]
+                  },
+                  void 0,
+                  true,
+                  {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                    lineNumber: 98,
+                    columnNumber: 15
+                  },
+                  this
+                ),
+                /* @__PURE__ */ jsxDEV(
+                  "button",
+                  {
+                    className: "fieldFilter__button",
+                    type: "button",
+                    role: "tab",
+                    "data-field-filter": "hidden",
+                    "aria-controls": "fieldsList",
+                    "aria-selected": "false",
+                    "aria-pressed": "false",
+                    tabIndex: -1,
+                    children: [
+                      /* @__PURE__ */ jsxDEV("span", { "data-field-filter-label": "hidden", children: "Hidden" }, void 0, false, {
+                        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                        lineNumber: 120,
+                        columnNumber: 17
+                      }, this),
+                      /* @__PURE__ */ jsxDEV("span", { className: "fieldFilter__count", "data-field-filter-count": "hidden", children: "0" }, void 0, false, {
+                        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                        lineNumber: 121,
+                        columnNumber: 17
+                      }, this)
+                    ]
+                  },
+                  void 0,
+                  true,
+                  {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                    lineNumber: 110,
+                    columnNumber: 15
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 97,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV(
+                "button",
+                {
+                  id: "btnShowHiddenOnCanvas",
+                  className: "btn btn--ghost leftPanelIconButton",
+                  type: "button",
+                  "aria-label": "Show hidden fields",
+                  "aria-pressed": "false",
+                  children: /* @__PURE__ */ jsxDEV(HiddenCanvasToggleIcon, {}, void 0, false, {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                    lineNumber: 131,
+                    columnNumber: 15
+                  }, this)
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 124,
+                  columnNumber: 13
+                },
+                this
+              )
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 96,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+            lineNumber: 52,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { id: "leftPanelCollapsedActions", className: "leftPanel__collapsedActions", "aria-hidden": "true", children: [
+            /* @__PURE__ */ jsxDEV(
+              "button",
+              {
+                id: "btnAddObjectCollapsed",
+                className: "btn btn--ghost leftPanelIconButton",
+                type: "button",
+                "aria-label": "Add object",
+                "aria-haspopup": "dialog",
+                "aria-expanded": "false",
+                "aria-controls": "leftAddObjectPopover",
+                tabIndex: -1,
+                children: /* @__PURE__ */ jsxDEV("img", { className: "btnIcon", src: "/resourses/Icons/add_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 147,
+                  columnNumber: 13
+                }, this)
+              },
+              void 0,
+              false,
+              {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 137,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV("div", { className: "leftPanel__collapsedTopActions", children: [
+              /* @__PURE__ */ jsxDEV(
+                "button",
+                {
+                  id: "btnToggleFieldSearchCollapsed",
+                  className: "btn btn--ghost leftPanelIconButton",
+                  type: "button",
+                  "aria-label": "Search objects",
+                  "aria-controls": "leftPanelSearch",
+                  "aria-expanded": "false",
+                  tabIndex: -1,
+                  children: /* @__PURE__ */ jsxDEV("img", { className: "btnIcon", src: "/resourses/Icons/search_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                    lineNumber: 159,
+                    columnNumber: 15
+                  }, this)
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 150,
+                  columnNumber: 13
+                },
+                this
+              ),
+              /* @__PURE__ */ jsxDEV(
+                "button",
+                {
+                  id: "btnShowHiddenOnCanvasCollapsed",
+                  className: "btn btn--ghost leftPanelIconButton",
+                  type: "button",
+                  "aria-label": "Show hidden fields",
+                  "aria-pressed": "false",
+                  tabIndex: -1,
+                  children: /* @__PURE__ */ jsxDEV(HiddenCanvasToggleIcon, {}, void 0, false, {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                    lineNumber: 169,
+                    columnNumber: 15
+                  }, this)
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 161,
+                  columnNumber: 13
+                },
+                this
+              )
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 149,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+            lineNumber: 136,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { id: "fieldsList", className: "list leftPanel__list", role: "list", "aria-labelledby": "fieldBrowserTitle" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+            lineNumber: 174,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("section", { className: "leftPanel__addSection", "aria-labelledby": "leftPanelAddSectionTitle", children: [
+            /* @__PURE__ */ jsxDEV("h3", { id: "leftPanelAddSectionTitle", className: "leftPanel__addSectionTitle", children: "Add" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 177,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "toolgrid leftPanelAddGrid", "aria-label": "Add object", children: [
+              /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", id: "addDataMatrix", type: "button", children: [
+                /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/datamatrix_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 180,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { children: "DataMatrix" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 181,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 179,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", id: "addFixedText", type: "button", children: [
+                /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/text_fields_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 185,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { children: "Text" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 186,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 184,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", id: "addDateText", type: "button", children: [
+                /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/calendar_month_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 190,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { children: "Date" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 191,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 189,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", id: "addTimeText", type: "button", children: [
+                /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/clock_loader_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 195,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { children: "Time" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 196,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 194,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", id: "addOffsetDateText", type: "button", children: [
+                /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/move_up_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 200,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { children: "Offset" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 201,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 199,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", id: "addCounterText", type: "button", children: [
+                /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/decimal_increase_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 205,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { children: "Counter" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                  lineNumber: 206,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 204,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 178,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+            lineNumber: 176,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV(
+            "button",
+            {
+              id: "btnExpandLeftPanel",
+              className: "btn btn--ghost leftPanelIconButton leftPanel__expandButton",
+              type: "button",
+              "aria-label": "Expand objects panel",
+              "aria-controls": "leftPanel",
+              "aria-expanded": "false",
+              tabIndex: -1,
+              children: /* @__PURE__ */ jsxDEV("img", { className: "btnIcon", src: "/resourses/Icons/chevron_forward.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 220,
+                columnNumber: 11
+              }, this)
+            },
+            void 0,
+            false,
+            {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 211,
+              columnNumber: 9
+            },
+            this
+          )
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+        lineNumber: 46,
+        columnNumber: 7
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV(
+      "div",
+      {
+        id: "leftAddObjectPopover",
+        className: "leftPanelAddPopover hidden",
+        role: "dialog",
+        "aria-modal": "false",
+        "aria-labelledby": "leftAddObjectPopoverTitle",
+        "aria-hidden": "true",
+        children: [
+          /* @__PURE__ */ jsxDEV("div", { id: "leftAddObjectPopoverTitle", className: "leftPanelAddPopover__header", children: "Add object" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+            lineNumber: 232,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "toolgrid leftPanelAddGrid", "aria-label": "Add object", children: [
+            /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", "data-add-object-target": "addDataMatrix", type: "button", children: [
+              /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/datamatrix_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 235,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { children: "DataMatrix" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 236,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 234,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", "data-add-object-target": "addFixedText", type: "button", children: [
+              /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/text_fields_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 240,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { children: "Text" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 241,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 239,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", "data-add-object-target": "addDateText", type: "button", children: [
+              /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/calendar_month_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 245,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { children: "Date" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 246,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 244,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", "data-add-object-target": "addTimeText", type: "button", children: [
+              /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/clock_loader_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 250,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { children: "Time" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 251,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 249,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", "data-add-object-target": "addOffsetDateText", type: "button", children: [
+              /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/move_up_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 255,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { children: "Offset" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 256,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 254,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("button", { className: "btn btn--ghost toolButton", "data-add-object-target": "addCounterText", type: "button", children: [
+              /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/decimal_increase_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 260,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { children: "Counter" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+                lineNumber: 261,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+              lineNumber: 259,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+            lineNumber: 233,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+        lineNumber: 224,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, true, {
+    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx",
+    lineNumber: 45,
+    columnNumber: 5
+  }, this);
+}
+_c2 = LeftPanel;
+var _c, _c2;
+$RefreshReg$(_c, "HiddenCanvasToggleIcon");
+$RefreshReg$(_c2, "LeftPanel");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/LeftPanel.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUM3Rix1QkFBQyxVQUFLLHNCQUFOO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBQVk7QUFBQSxpQkFGZDtBQUFBO0FBQUE7QUFBQTtBQUFBLG1CQUdBO0FBQUEsWUFFQSx1QkFBQyxZQUFPLFdBQVUsNkJBQTRCLDBCQUF1QixrQkFBaUIsTUFBSyxVQUN6RjtBQUFBLHFDQUFDLFNBQUksV0FBVSxjQUFhLEtBQUksOENBQTZDLEtBQUksSUFBRyxlQUFZLFVBQWhHO0FBQUE7QUFBQTtBQUFBO0FBQUEscUJBQXNHO0FBQUEsY0FDdEcsdUJBQUMsVUFBSyx1QkFBTjtBQUFBO0FBQUE7QUFBQTtBQUFBLHFCQUFhO0FBQUEsaUJBRmY7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkFHQTtBQUFBLGVBN0JGO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBOEJBO0FBQUE7QUFBQTtBQUFBLE1BdkNGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxJQXdDQTtBQUFBLE9BM05GO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0E0TkE7QUFFSjtBQUFDQyxNQWhPZUQ7QUFBUyxJQUFBRSxJQUFBRDtBQUFBLGFBQUFDLElBQUE7QUFBQSxhQUFBRCxLQUFBIiwibmFtZXMiOlsidXNlSWQiLCJIaWRkZW5DYW52YXNUb2dnbGVJY29uIiwiX3MiLCJtYXNrSWQiLCJMZWZ0UGFuZWwiLCJfYzIiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJMZWZ0UGFuZWwudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZUlkIH0gZnJvbSAncmVhY3QnO1xuXG5mdW5jdGlvbiBIaWRkZW5DYW52YXNUb2dnbGVJY29uKCkge1xuICBjb25zdCBtYXNrSWQgPSB1c2VJZCgpO1xuXG4gIHJldHVybiAoXG4gICAgPHN2ZyBjbGFzc05hbWU9XCJidG5JY29uIGhpZGRlbkNhbnZhc1RvZ2dsZUljb25cIiB2aWV3Qm94PVwiMCAtOTYwIDk2MCA5NjBcIiBmaWxsPVwibm9uZVwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIGZvY3VzYWJsZT1cImZhbHNlXCI+XG4gICAgICA8ZGVmcz5cbiAgICAgICAgPG1hc2sgaWQ9e21hc2tJZH0gbWFza1VuaXRzPVwidXNlclNwYWNlT25Vc2VcIiB4PVwiMFwiIHk9XCItOTYwXCIgd2lkdGg9XCI5NjBcIiBoZWlnaHQ9XCI5NjBcIj5cbiAgICAgICAgICA8cmVjdCB4PVwiMFwiIHk9XCItOTYwXCIgd2lkdGg9XCI5NjBcIiBoZWlnaHQ9XCI5NjBcIiBmaWxsPVwid2hpdGVcIiAvPlxuICAgICAgICAgIDxwYXRoIGNsYXNzTmFtZT1cImhpZGRlbkNhbnZhc1RvZ2dsZUljb25fX3NsYXNoXCIgZD1cIk0xMTIgLTg0OCBMODQ4IC0xMTJcIiBwYXRoTGVuZ3RoPVwiMVwiIHN0cm9rZT1cImJsYWNrXCIgc3Ryb2tlV2lkdGg9XCIxNjBcIiBzdHJva2VMaW5lY2FwPVwicm91bmRcIiAvPlxuICAgICAgICA8L21hc2s+XG4gICAgICA8L2RlZnM+XG4gICAgICA8cGF0aFxuICAgICAgICBmaWxsPVwiY3VycmVudENvbG9yXCJcbiAgICAgICAgbWFzaz17YHVybCgjJHttYXNrSWR9KWB9XG4gICAgICAgIGQ9XCJNNjA3LjUtMzcyLjVRNjYwLTQyNSA2NjAtNTAwdC01Mi41LTEyNy41UTU1NS02ODAgNDgwLTY4MHQtMTI3LjUgNTIuNVEzMDAtNTc1IDMwMC01MDB0NTIuNSAxMjcuNVE0MDUtMzIwIDQ4MC0zMjB0MTI3LjUtNTIuNVptLTIwNC01MVEzNzItNDU1IDM3Mi01MDB0MzEuNS03Ni41UTQzNS02MDggNDgwLTYwOHQ3Ni41IDMxLjVRNTg4LTU0NSA1ODgtNTAwdC0zMS41IDc2LjVRNTI1LTM5MiA0ODAtMzkydC03Ni41LTMxLjVaTTIxNC0yODEuNVE5NC0zNjMgNDAtNTAwcTU0LTEzNyAxNzQtMjE4LjVUNDgwLTgwMHExNDYgMCAyNjYgODEuNVQ5MjAtNTAwcS01NCAxMzctMTc0IDIxOC41VDQ4MC0yMDBxLTE0NiAwLTI2Ni04MS41Wk00ODAtNTAwWm0yMDcuNSAxNjAuNVE3ODItMzk5IDgzMi01MDBxLTUwLTEwMS0xNDQuNS0xNjAuNVQ0ODAtNzIwcS0xMTMgMC0yMDcuNSA1OS41VDEyOC01MDBxNTAgMTAxIDE0NC41IDE2MC41VDQ4MC0yODBxMTEzIDAgMjA3LjUtNTkuNVpcIlxuICAgICAgLz5cbiAgICAgIDxwYXRoIGNsYXNzTmFtZT1cImhpZGRlbkNhbnZhc1RvZ2dsZUljb25fX3NsYXNoXCIgZD1cIk0xMTIgLTg0OCBMODQ4IC0xMTJcIiBwYXRoTGVuZ3RoPVwiMVwiIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiIHN0cm9rZVdpZHRoPVwiODBcIiBzdHJva2VMaW5lY2FwPVwicm91bmRcIiAvPlxuICAgIDwvc3ZnPlxuICApO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gTGVmdFBhbmVsKCkge1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8YXNpZGVcbiAgICAgICAgaWQ9XCJsZWZ0UGFuZWxcIlxuICAgICAgICBjbGFzc05hbWU9XCJwYW5lbCBwYW5lbC0tbGVmdCBsZWZ0UGFuZWwgc3VyZmFjZS1jYXJkXCJcbiAgICAgICAgYXJpYS1sYWJlbGxlZGJ5PVwiZmllbGRCcm93c2VyVGl0bGVcIlxuICAgICAgICBkYXRhLWNvbGxhcHNlZD1cImZhbHNlXCJcbiAgICAgID5cbiAgICAgICAgPGRpdiBpZD1cImxlZnRQYW5lbEV4cGFuZGVkXCIgY2xhc3NOYW1lPVwibGVmdFBhbmVsX19leHBhbmRlZFwiPlxuICAgICAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPVwibGVmdFBhbmVsX19oZWFkZXJcIj5cbiAgICAgICAgICAgIDxoMiBpZD1cImZpZWxkQnJvd3NlclRpdGxlXCIgY2xhc3NOYW1lPVwibGVmdFBhbmVsX190aXRsZVwiPk9iamVjdHM8L2gyPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZWZ0UGFuZWxfX2hlYWRlckFjdGlvbnNcIj5cbiAgICAgICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgICAgIGlkPVwiYnRuVG9nZ2xlRmllbGRTZWFyY2hcIlxuICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IGxlZnRQYW5lbEljb25CdXR0b25cIlxuICAgICAgICAgICAgICAgIHR5cGU9XCJidXR0b25cIlxuICAgICAgICAgICAgICAgIGFyaWEtbGFiZWw9XCJTZWFyY2ggb2JqZWN0c1wiXG4gICAgICAgICAgICAgICAgYXJpYS1leHBhbmRlZD1cImZhbHNlXCJcbiAgICAgICAgICAgICAgICBhcmlhLWNvbnRyb2xzPVwibGVmdFBhbmVsU2VhcmNoXCJcbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiYnRuSWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvc2VhcmNoXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICBpZD1cImJ0bkNvbGxhcHNlTGVmdFBhbmVsXCJcbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCBsZWZ0UGFuZWxJY29uQnV0dG9uXCJcbiAgICAgICAgICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgICAgICAgICBhcmlhLWxhYmVsPVwiQ29sbGFwc2Ugb2JqZWN0cyBwYW5lbFwiXG4gICAgICAgICAgICAgICAgYXJpYS1jb250cm9scz1cImxlZnRQYW5lbFwiXG4gICAgICAgICAgICAgICAgYXJpYS1leHBhbmRlZD1cInRydWVcIlxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidG5JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy9jaGV2cm9uX2JhY2t3YXJkLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9oZWFkZXI+XG5cbiAgICAgICAgICA8ZGl2IGlkPVwibGVmdFBhbmVsU2VhcmNoXCIgY2xhc3NOYW1lPVwibGVmdFBhbmVsU2VhcmNoXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+XG4gICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPVwic3JPbmx5XCIgaWQ9XCJzZWFyY2hGaWVsZFwiIGh0bWxGb3I9XCJmaWVsZFNlYXJjaFwiPlNlYXJjaCBvYmplY3RzPC9sYWJlbD5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFuZWxTZWFyY2hTbG90IGxlZnRQYW5lbFNlYXJjaF9fZmllbGRcIj5cbiAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJwYW5lbFNlYXJjaEljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL3NlYXJjaF8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgIDxpbnB1dCBpZD1cImZpZWxkU2VhcmNoXCIgY2xhc3NOYW1lPVwiaW5wdXQgcGFuZWxTZWFyY2hcIiB0eXBlPVwic2VhcmNoXCIgcGxhY2Vob2xkZXI9XCJTZWFyY2ggb2JqZWN0c1wiIHRhYkluZGV4PXstMX0gLz5cbiAgICAgICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgICAgIGlkPVwiYnRuQ2xvc2VGaWVsZFNlYXJjaFwiXG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiYnRuIGJ0bi0tZ2hvc3QgbGVmdFBhbmVsU2VhcmNoX19jbG9zZVwiXG4gICAgICAgICAgICAgICAgdHlwZT1cImJ1dHRvblwiXG4gICAgICAgICAgICAgICAgYXJpYS1sYWJlbD1cIkNsZWFyIGFuZCBjbG9zZSBzZWFyY2hcIlxuICAgICAgICAgICAgICAgIHRhYkluZGV4PXstMX1cbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiYnRuSWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvY2xvc2VfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZWZ0UGFuZWxfX2ZpbHRlclJvd1wiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmaWVsZEZpbHRlciBmaWVsZEZpbHRlci0tZmllbGRCcm93c2VyIGxlZnRQYW5lbFRhYnNcIiByb2xlPVwidGFibGlzdFwiIGFyaWEtbGFiZWw9XCJGaWx0ZXIgb2JqZWN0c1wiPlxuICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiZmllbGRGaWx0ZXJfX2J1dHRvbiBmaWVsZEZpbHRlcl9fYnV0dG9uLS1hY3RpdmVcIlxuICAgICAgICAgICAgICAgIHR5cGU9XCJidXR0b25cIlxuICAgICAgICAgICAgICAgIHJvbGU9XCJ0YWJcIlxuICAgICAgICAgICAgICAgIGRhdGEtZmllbGQtZmlsdGVyPVwicHJpbnRlZFwiXG4gICAgICAgICAgICAgICAgYXJpYS1jb250cm9scz1cImZpZWxkc0xpc3RcIlxuICAgICAgICAgICAgICAgIGFyaWEtc2VsZWN0ZWQ9XCJ0cnVlXCJcbiAgICAgICAgICAgICAgICBhcmlhLXByZXNzZWQ9XCJ0cnVlXCJcbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxzcGFuIGRhdGEtZmllbGQtZmlsdGVyLWxhYmVsPVwicHJpbnRlZFwiPlByaW50ZWQ8L3NwYW4+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZmllbGRGaWx0ZXJfX2NvdW50XCIgZGF0YS1maWVsZC1maWx0ZXItY291bnQ9XCJwcmludGVkXCI+MDwvc3Bhbj5cbiAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJmaWVsZEZpbHRlcl9fYnV0dG9uXCJcbiAgICAgICAgICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgICAgICAgICByb2xlPVwidGFiXCJcbiAgICAgICAgICAgICAgICBkYXRhLWZpZWxkLWZpbHRlcj1cImhpZGRlblwiXG4gICAgICAgICAgICAgICAgYXJpYS1jb250cm9scz1cImZpZWxkc0xpc3RcIlxuICAgICAgICAgICAgICAgIGFyaWEtc2VsZWN0ZWQ9XCJmYWxzZVwiXG4gICAgICAgICAgICAgICAgYXJpYS1wcmVzc2VkPVwiZmFsc2VcIlxuICAgICAgICAgICAgICAgIHRhYkluZGV4PXstMX1cbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxzcGFuIGRhdGEtZmllbGQtZmlsdGVyLWxhYmVsPVwiaGlkZGVuXCI+SGlkZGVuPC9zcGFuPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImZpZWxkRmlsdGVyX19jb3VudFwiIGRhdGEtZmllbGQtZmlsdGVyLWNvdW50PVwiaGlkZGVuXCI+MDwvc3Bhbj5cbiAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgaWQ9XCJidG5TaG93SGlkZGVuT25DYW52YXNcIlxuICAgICAgICAgICAgICBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCBsZWZ0UGFuZWxJY29uQnV0dG9uXCJcbiAgICAgICAgICAgICAgdHlwZT1cImJ1dHRvblwiXG4gICAgICAgICAgICAgIGFyaWEtbGFiZWw9XCJTaG93IGhpZGRlbiBmaWVsZHNcIlxuICAgICAgICAgICAgICBhcmlhLXByZXNzZWQ9XCJmYWxzZVwiXG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIDxIaWRkZW5DYW52YXNUb2dnbGVJY29uIC8+XG4gICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBpZD1cImxlZnRQYW5lbENvbGxhcHNlZEFjdGlvbnNcIiBjbGFzc05hbWU9XCJsZWZ0UGFuZWxfX2NvbGxhcHNlZEFjdGlvbnNcIiBhcmlhLWhpZGRlbj1cInRydWVcIj5cbiAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICBpZD1cImJ0bkFkZE9iamVjdENvbGxhcHNlZFwiXG4gICAgICAgICAgICBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCBsZWZ0UGFuZWxJY29uQnV0dG9uXCJcbiAgICAgICAgICAgIHR5cGU9XCJidXR0b25cIlxuICAgICAgICAgICAgYXJpYS1sYWJlbD1cIkFkZCBvYmplY3RcIlxuICAgICAgICAgICAgYXJpYS1oYXNwb3B1cD1cImRpYWxvZ1wiXG4gICAgICAgICAgICBhcmlhLWV4cGFuZGVkPVwiZmFsc2VcIlxuICAgICAgICAgICAgYXJpYS1jb250cm9scz1cImxlZnRBZGRPYmplY3RQb3BvdmVyXCJcbiAgICAgICAgICAgIHRhYkluZGV4PXstMX1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImJ0bkljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL2FkZF8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZWZ0UGFuZWxfX2NvbGxhcHNlZFRvcEFjdGlvbnNcIj5cbiAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgaWQ9XCJidG5Ub2dnbGVGaWVsZFNlYXJjaENvbGxhcHNlZFwiXG4gICAgICAgICAgICAgIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IGxlZnRQYW5lbEljb25CdXR0b25cIlxuICAgICAgICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgICAgICAgYXJpYS1sYWJlbD1cIlNlYXJjaCBvYmplY3RzXCJcbiAgICAgICAgICAgICAgYXJpYS1jb250cm9scz1cImxlZnRQYW5lbFNlYXJjaFwiXG4gICAgICAgICAgICAgIGFyaWEtZXhwYW5kZWQ9XCJmYWxzZVwiXG4gICAgICAgICAgICAgIHRhYkluZGV4PXstMX1cbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidG5JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy9zZWFyY2hfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgIGlkPVwiYnRuU2hvd0hpZGRlbk9uQ2FudmFzQ29sbGFwc2VkXCJcbiAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiYnRuIGJ0bi0tZ2hvc3QgbGVmdFBhbmVsSWNvbkJ1dHRvblwiXG4gICAgICAgICAgICAgIHR5cGU9XCJidXR0b25cIlxuICAgICAgICAgICAgICBhcmlhLWxhYmVsPVwiU2hvdyBoaWRkZW4gZmllbGRzXCJcbiAgICAgICAgICAgICAgYXJpYS1wcmVzc2VkPVwiZmFsc2VcIlxuICAgICAgICAgICAgICB0YWJJbmRleD17LTF9XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIDxIaWRkZW5DYW52YXNUb2dnbGVJY29uIC8+XG4gICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBpZD1cImZpZWxkc0xpc3RcIiBjbGFzc05hbWU9XCJsaXN0IGxlZnRQYW5lbF9fbGlzdFwiIHJvbGU9XCJsaXN0XCIgYXJpYS1sYWJlbGxlZGJ5PVwiZmllbGRCcm93c2VyVGl0bGVcIj48L2Rpdj5cblxuICAgICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJsZWZ0UGFuZWxfX2FkZFNlY3Rpb25cIiBhcmlhLWxhYmVsbGVkYnk9XCJsZWZ0UGFuZWxBZGRTZWN0aW9uVGl0bGVcIj5cbiAgICAgICAgICA8aDMgaWQ9XCJsZWZ0UGFuZWxBZGRTZWN0aW9uVGl0bGVcIiBjbGFzc05hbWU9XCJsZWZ0UGFuZWxfX2FkZFNlY3Rpb25UaXRsZVwiPkFkZDwvaDM+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0b29sZ3JpZCBsZWZ0UGFuZWxBZGRHcmlkXCIgYXJpYS1sYWJlbD1cIkFkZCBvYmplY3RcIj5cbiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnRuIGJ0bi0tZ2hvc3QgdG9vbEJ1dHRvblwiIGlkPVwiYWRkRGF0YU1hdHJpeFwiIHR5cGU9XCJidXR0b25cIj5cbiAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidXR0b25JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy9kYXRhbWF0cml4XzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgICAgPHNwYW4+RGF0YU1hdHJpeDwvc3Bhbj5cbiAgICAgICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IHRvb2xCdXR0b25cIiBpZD1cImFkZEZpeGVkVGV4dFwiIHR5cGU9XCJidXR0b25cIj5cbiAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidXR0b25JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy90ZXh0X2ZpZWxkc18yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgIDxzcGFuPlRleHQ8L3NwYW4+XG4gICAgICAgICAgICA8L2J1dHRvbj5cblxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCB0b29sQnV0dG9uXCIgaWQ9XCJhZGREYXRlVGV4dFwiIHR5cGU9XCJidXR0b25cIj5cbiAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidXR0b25JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy9jYWxlbmRhcl9tb250aF8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgIDxzcGFuPkRhdGU8L3NwYW4+XG4gICAgICAgICAgICA8L2J1dHRvbj5cblxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCB0b29sQnV0dG9uXCIgaWQ9XCJhZGRUaW1lVGV4dFwiIHR5cGU9XCJidXR0b25cIj5cbiAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidXR0b25JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy9jbG9ja19sb2FkZXJfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgICA8c3Bhbj5UaW1lPC9zcGFuPlxuICAgICAgICAgICAgPC9idXR0b24+XG5cbiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnRuIGJ0bi0tZ2hvc3QgdG9vbEJ1dHRvblwiIGlkPVwiYWRkT2Zmc2V0RGF0ZVRleHRcIiB0eXBlPVwiYnV0dG9uXCI+XG4gICAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiYnV0dG9uSWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvbW92ZV91cF8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgIDxzcGFuPk9mZnNldDwvc3Bhbj5cbiAgICAgICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IHRvb2xCdXR0b25cIiBpZD1cImFkZENvdW50ZXJUZXh0XCIgdHlwZT1cImJ1dHRvblwiPlxuICAgICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImJ1dHRvbkljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL2RlY2ltYWxfaW5jcmVhc2VfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgICA8c3Bhbj5Db3VudGVyPC9zcGFuPlxuICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgaWQ9XCJidG5FeHBhbmRMZWZ0UGFuZWxcIlxuICAgICAgICAgIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IGxlZnRQYW5lbEljb25CdXR0b24gbGVmdFBhbmVsX19leHBhbmRCdXR0b25cIlxuICAgICAgICAgIHR5cGU9XCJidXR0b25cIlxuICAgICAgICAgIGFyaWEtbGFiZWw9XCJFeHBhbmQgb2JqZWN0cyBwYW5lbFwiXG4gICAgICAgICAgYXJpYS1jb250cm9scz1cImxlZnRQYW5lbFwiXG4gICAgICAgICAgYXJpYS1leHBhbmRlZD1cImZhbHNlXCJcbiAgICAgICAgICB0YWJJbmRleD17LTF9XG4gICAgICAgID5cbiAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImJ0bkljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL2NoZXZyb25fZm9yd2FyZC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICA8L2J1dHRvbj5cbiAgICAgIDwvYXNpZGU+XG5cbiAgICAgIDxkaXZcbiAgICAgICAgaWQ9XCJsZWZ0QWRkT2JqZWN0UG9wb3ZlclwiXG4gICAgICAgIGNsYXNzTmFtZT1cImxlZnRQYW5lbEFkZFBvcG92ZXIgaGlkZGVuXCJcbiAgICAgICAgcm9sZT1cImRpYWxvZ1wiXG4gICAgICAgIGFyaWEtbW9kYWw9XCJmYWxzZVwiXG4gICAgICAgIGFyaWEtbGFiZWxsZWRieT1cImxlZnRBZGRPYmplY3RQb3BvdmVyVGl0bGVcIlxuICAgICAgICBhcmlhLWhpZGRlbj1cInRydWVcIlxuICAgICAgPlxuICAgICAgICA8ZGl2IGlkPVwibGVmdEFkZE9iamVjdFBvcG92ZXJUaXRsZVwiIGNsYXNzTmFtZT1cImxlZnRQYW5lbEFkZFBvcG92ZXJfX2hlYWRlclwiPkFkZCBvYmplY3Q8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0b29sZ3JpZCBsZWZ0UGFuZWxBZGRHcmlkXCIgYXJpYS1sYWJlbD1cIkFkZCBvYmplY3RcIj5cbiAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IHRvb2xCdXR0b25cIiBkYXRhLWFkZC1vYmplY3QtdGFyZ2V0PVwiYWRkRGF0YU1hdHJpeFwiIHR5cGU9XCJidXR0b25cIj5cbiAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiYnV0dG9uSWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvZGF0YW1hdHJpeF8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICA8c3Bhbj5EYXRhTWF0cml4PC9zcGFuPlxuICAgICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCB0b29sQnV0dG9uXCIgZGF0YS1hZGQtb2JqZWN0LXRhcmdldD1cImFkZEZpeGVkVGV4dFwiIHR5cGU9XCJidXR0b25cIj5cbiAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiYnV0dG9uSWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvdGV4dF9maWVsZHNfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgPHNwYW4+VGV4dDwvc3Bhbj5cbiAgICAgICAgICA8L2J1dHRvbj5cblxuICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnRuIGJ0bi0tZ2hvc3QgdG9vbEJ1dHRvblwiIGRhdGEtYWRkLW9iamVjdC10YXJnZXQ9XCJhZGREYXRlVGV4dFwiIHR5cGU9XCJidXR0b25cIj5cbiAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiYnV0dG9uSWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvY2FsZW5kYXJfbW9udGhfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgPHNwYW4+RGF0ZTwvc3Bhbj5cbiAgICAgICAgICA8L2J1dHRvbj5cblxuICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnRuIGJ0bi0tZ2hvc3QgdG9vbEJ1dHRvblwiIGRhdGEtYWRkLW9iamVjdC10YXJnZXQ9XCJhZGRUaW1lVGV4dFwiIHR5cGU9XCJidXR0b25cIj5cbiAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiYnV0dG9uSWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvY2xvY2tfbG9hZGVyXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgIDxzcGFuPlRpbWU8L3NwYW4+XG4gICAgICAgICAgPC9idXR0b24+XG5cbiAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IHRvb2xCdXR0b25cIiBkYXRhLWFkZC1vYmplY3QtdGFyZ2V0PVwiYWRkT2Zmc2V0RGF0ZVRleHRcIiB0eXBlPVwiYnV0dG9uXCI+XG4gICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImJ1dHRvbkljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL21vdmVfdXBfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgPHNwYW4+T2Zmc2V0PC9zcGFuPlxuICAgICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCB0b29sQnV0dG9uXCIgZGF0YS1hZGQtb2JqZWN0LXRhcmdldD1cImFkZENvdW50ZXJUZXh0XCIgdHlwZT1cImJ1dHRvblwiPlxuICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidXR0b25JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy9kZWNpbWFsX2luY3JlYXNlXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgIDxzcGFuPkNvdW50ZXI8L3NwYW4+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC8+XG4gICk7XG59XG4iXSwiZmlsZSI6IkM6L1VzZXJzL0dpZ2FHZW9yZ2UvRGVza3RvcC93aWxsb3ctcmVhY3Qtdml0ZS10ZXN0XzEuNC4wL3NyYy9jb21wb25lbnRzL0xlZnRQYW5lbC50c3gifQ==

@@ -15,8 +15,39 @@ const INTERNAL_PER_MM = 100;       // CIFF units: 0.01mm
 const SNAP_MM = 0.10;              // snap step in mm
 const GRID_MM = 1.0;               // grid step in mm
 const GRID_SIZE_OPTIONS = [1, 3, 5, 10];
+const DEFAULT_MOVE_STEP = 0.1;
+const MOVE_STEP_OPTIONS = [0.1, 0.3, 0.5, 0.7, 1, 1.2, 1.5, 2, 2.5, 3, 5, 7, 10];
+
+function normalizeMoveStep(value) {
+  const step = Number(value);
+  return MOVE_STEP_OPTIONS.includes(step) ? step : DEFAULT_MOVE_STEP;
+}
 const ALIGNMENT_SNAP_THRESHOLD_PX = 5;
 const CLARISOFT_TEXT_FIELD_HEIGHT_MM_PER_PITCH = 0.4;
+const CLARISOFT_TEXT_FIELD_HEIGHT_BY_PITCH = Object.freeze({
+  3: 133,
+  8: 325,
+  10: 392
+});
+const CLARISOFT_TEXT_FIELD_WIDTH_PER_PITCH_CHARACTER = 19.167;
+const CLARISOFT_TEXT_FIELD_TILDE_WIDTH_ADJUST_AT_PITCH_10 = 16;
+function getClarisoftTextFieldHeightInternal(pitch, fallbackPitch = 10) {
+  const normalized = normalizeTextPitchValue(pitch) ?? normalizeTextPitchValue(fallbackPitch) ?? 10;
+  const verified = CLARISOFT_TEXT_FIELD_HEIGHT_BY_PITCH[normalized];
+  if (verified != null) return verified;
+  return Math.max(1, Math.round(normalized * CLARISOFT_TEXT_FIELD_HEIGHT_MM_PER_PITCH * INTERNAL_PER_MM));
+}
+
+function getClarisoftTextFieldWidthInternal(value, pitch = 10, xMag = 100) {
+  const normalizedPitch = normalizeTextPitchValue(pitch) ?? 10;
+  const normalizedXMag = Number.isFinite(Number(xMag)) && Number(xMag) > 0 ? Number(xMag) : 100;
+  const characters = [...String(value ?? "")];
+  if (!characters.length) return Math.max(1, Math.round(12 * INTERNAL_PER_MM));
+  const tildeCount = characters.filter((character) => character === "~").length;
+  const baseWidth = characters.length * normalizedPitch * CLARISOFT_TEXT_FIELD_WIDTH_PER_PITCH_CHARACTER;
+  const tildeAdjustment = tildeCount * CLARISOFT_TEXT_FIELD_TILDE_WIDTH_ADJUST_AT_PITCH_10 * (normalizedPitch / 10);
+  return Math.max(1, Math.round((baseWidth + tildeAdjustment) * (normalizedXMag / 100)));
+}
 
 function normalizeTextPitchValue(value) {
   if (value == null || value === "") return null;
@@ -35,26 +66,97 @@ function inferTextPitchFromFieldHeight(field) {
 function getEffectiveTextPitch(field, fallback = 10) {
   const explicitPitch = normalizeTextPitchValue(field?.text?.pitch);
   const inferredPitch = inferTextPitchFromFieldHeight(field);
-  if (explicitPitch == null) return inferredPitch ?? fallback;
-  // Some Clarisoft templates omit Pitch during copy-like operations in a way
-  // that arrives as our default 10. If H clearly describes another pitch,
-  // use that Clarisoft geometry-derived value for preview/properties.
-  if (explicitPitch === fallback && inferredPitch != null && Math.abs(inferredPitch - explicitPitch) >= 2) {
-    return inferredPitch;
-  }
+  if (explicitPitch == null) return normalizeTextPitchValue(field?.text?.defaultPitch) ?? inferredPitch ?? fallback;
+  // An explicit CIFF Pitch is source data. Geometry is only an inference source
+  // when the tag is absent; otherwise a no-op save could rewrite valid files.
   return explicitPitch;
+}
+
+const DM_HELPER_NAMES = Object.freeze({
+  C1: "C1",
+  GTIN: "GTIN",
+  C2: "C2",
+  SN: "SN",
+  C3: "C3",
+  KRIPTO: "KRIPTO",
+  C4: "C4",
+  KRIPTO2: "KRIPTO2"
+});
+const DM_LEGACY_HELPER_NAMES = Object.freeze({
+  CYRILLIC_C1: "\u04211",
+  CYRILLIC_C2: "\u04212",
+  CYRILLIC_C3: "\u04213"
+});
+
+const DM_LEGACY_HELPER_ALIASES = Object.freeze({
+  [DM_HELPER_NAMES.C1]: DM_LEGACY_HELPER_NAMES.CYRILLIC_C1,
+  [DM_HELPER_NAMES.C2]: DM_LEGACY_HELPER_NAMES.CYRILLIC_C2,
+  [DM_HELPER_NAMES.C3]: DM_LEGACY_HELPER_NAMES.CYRILLIC_C3
+});
+
+const DM_HELPER_SPECS = Object.freeze({
+  [DM_HELPER_NAMES.C1]: Object.freeze({ mode: "fixed", defaultValue: "~101", maxChars: 4, editorMaxChars: 4, pitch: 10 }),
+  [DM_HELPER_NAMES.GTIN]: Object.freeze({ mode: "user", defaultValue: "0".repeat(14), maxChars: 14, editorMaxChars: 14, pitch: 10 }),
+  [DM_HELPER_NAMES.C2]: Object.freeze({ mode: "fixed", defaultValue: "21", maxChars: 2, editorMaxChars: 2, pitch: 10 }),
+  [DM_HELPER_NAMES.SN]: Object.freeze({ mode: "user", defaultValue: "0".repeat(6), maxChars: 6, editorMaxChars: null, pitch: 10 }),
+  [DM_HELPER_NAMES.C3]: Object.freeze({ mode: "fixed", defaultValue: "~d02993", maxChars: 7, editorMaxChars: 7, pitch: 10 }),
+  [DM_HELPER_NAMES.KRIPTO]: Object.freeze({ mode: "user", defaultValue: "0".repeat(4), maxChars: 4, editorMaxChars: 4, pitch: 10 }),
+  [DM_HELPER_NAMES.C4]: Object.freeze({ mode: "fixed", defaultValue: "~d02992", maxChars: 7, editorMaxChars: 7, pitch: 10 }),
+  [DM_HELPER_NAMES.KRIPTO2]: Object.freeze({ mode: "user", defaultValue: "0".repeat(44), maxChars: 44, editorMaxChars: 44, pitch: 10 })
+});
+
+function getDataMatrixHelperMaxChars(name, value = null) {
+  const spec = DM_HELPER_SPECS[name] || null;
+  if (!spec) return null;
+  if (name === DM_HELPER_NAMES.SN) {
+    const selectedLength = String(value ?? "").length;
+    if (selectedLength === 6 || selectedLength === 13) return selectedLength;
+  }
+  return spec.maxChars ?? null;
+}
+
+const PARTY_CODE_HELPER_SPECS = Object.freeze({
+  C1: Object.freeze({ mode: "fixed", defaultValue: "~101", maxChars: 4, pitch: 10 }),
+  GTIN: Object.freeze({ mode: "user", defaultValue: "0".repeat(14), maxChars: 14, pitch: 10 }),
+  GTIN2: Object.freeze({ mode: "user", defaultValue: "0".repeat(14), maxChars: 14, pitch: 10 }),
+  C3: Object.freeze({ mode: "fixed", defaultValue: "11", maxChars: 7, pitch: 10 }),
+  PRODUCT_DATE: Object.freeze({ mode: "user", defaultValue: "000000", maxChars: 6, pitch: 10 }),
+  C2: Object.freeze({ mode: "fixed", defaultValue: "10", maxChars: 2, pitch: 10 }),
+  SN: Object.freeze({ mode: "user", defaultValue: "0".repeat(10), maxChars: 12, pitch: 10 }),
+  C4: Object.freeze({ mode: "fixed", defaultValue: "21", maxChars: 2, pitch: 10 }),
+  BOX_COUNTER: Object.freeze({ mode: "user", defaultValue: "00000", maxChars: 5, pitch: 10 })
+});
+const PARTY_CODE_COMPOSITIONS = Object.freeze({
+  normal: Object.freeze({
+    requiredSegments: Object.freeze(["C1", "GTIN2", "C3", "PRODUCT_DATE", "C2", "SN"]),
+    fixedFields: Object.freeze({ C1: "~101", C3: "11", C2: "10" }),
+    helperSpecs: PARTY_CODE_HELPER_SPECS
+  }),
+  "box-counter": Object.freeze({
+    requiredSegments: Object.freeze(["C1", "GTIN2", "C3", "PRODUCT_DATE", "C2", "SN", "C4", "BOX_COUNTER"]),
+    fixedFields: Object.freeze({ C1: "~101", C3: "11", C2: "10", C4: "21" }),
+    helperSpecs: PARTY_CODE_HELPER_SPECS
+  })
+});
+
+function getPartyCodeComposition(withBoxCounter = false, gtinFieldName = "GTIN2") {
+  const composition = PARTY_CODE_COMPOSITIONS[withBoxCounter ? "box-counter" : "normal"];
+  if (gtinFieldName !== "GTIN") return composition;
+  return { ...composition, requiredSegments: composition.requiredSegments.map((name) => name === "GTIN2" ? "GTIN" : name) };
 }
 
 const DM_COMPOSITIONS = {
   short: {
-    requiredSegments: ["\u04211","GTIN","\u04212","SN","\u04213","KRIPTO"],
-    fixedFields: { "\u04211":"~101", "\u04212":"21", "\u04213":"~d02993" },
-    disallowedFields: ["C4","KRIPTO2"]
+    requiredSegments: [DM_HELPER_NAMES.C1, DM_HELPER_NAMES.GTIN, DM_HELPER_NAMES.C2, DM_HELPER_NAMES.SN, DM_HELPER_NAMES.C3, DM_HELPER_NAMES.KRIPTO],
+    fixedFields: { [DM_HELPER_NAMES.C1]: "~101", [DM_HELPER_NAMES.C2]: "21", [DM_HELPER_NAMES.C3]: "~d02993" },
+    disallowedFields: [DM_HELPER_NAMES.C4, DM_HELPER_NAMES.KRIPTO2]
   },
   long: {
-    requiredSegments: ["\u04211","GTIN","\u04212","SN","\u04213","KRIPTO","C4","KRIPTO2"],
-    fixedFields: { "\u04211":"~101", "\u04212":"21", "\u04213":"~d02991", "C4":"~d02992" }
-  }
+    requiredSegments: [DM_HELPER_NAMES.C1, DM_HELPER_NAMES.GTIN, DM_HELPER_NAMES.C2, DM_HELPER_NAMES.SN, DM_HELPER_NAMES.C3, DM_HELPER_NAMES.KRIPTO, DM_HELPER_NAMES.C4, DM_HELPER_NAMES.KRIPTO2],
+    fixedFields: { [DM_HELPER_NAMES.C1]: "~101", [DM_HELPER_NAMES.C2]: "21", [DM_HELPER_NAMES.C3]: "~d02991", [DM_HELPER_NAMES.C4]: "~d02992" }
+  },
+  party: getPartyCodeComposition(false),
+  "party-box": getPartyCodeComposition(true)
 };
 // Compatibility aliases for the existing profile selector. Composition is
 // determined by dimensions; the actual SymbolSize is never overwritten.
@@ -206,9 +308,38 @@ const DATE_MONTH_NAMES = MONTH_NAMES;
 
 const EMPTY_TEMPLATE_PRINTER_MODELS = ["6530", "6420", "6330", "6320"];
 const EMPTY_TEMPLATE_PRINT_MODES = ["Intermittent", "Continuous"];
-const TEMPLATE_TARGET_PRINTER_MODELS = EMPTY_TEMPLATE_PRINTER_MODELS.map((model) => `DataFlex ${model}(53mm)`);
+const TEMPLATE_TARGET_PRINTER_MODELS = [
+  "DataFlex 6530(53mm)",
+  "DataFlex 6530(107mm)",
+  "DataFlex 6420(53mm)",
+  "DataFlex 6420(107mm)",
+  "DataFlex 6330(32mm)",
+  "DataFlex 6330(53mm)",
+  "DataFlex 6320(32mm)",
+  "DataFlex 6320(53mm)",
+  "DataFlex 6230(32mm)",
+  "DataFlex 6210(32mm)"
+];
+const PRINTER_MODEL_GROUP_WIDTHS = ["32", "53", "107"];
+const TEMPLATE_32MM_MAX_IMAGE_WIDTH = 3200;
+const TEMPLATE_107MM_MAX_IMAGE_WIDTH = 10667;
 const DEFAULT_TEMPLATE_TARGET_PRINTER_MODEL = TEMPLATE_TARGET_PRINTER_MODELS[0];
-const EMPTY_TEMPLATE_CLST_VERSION_INFO = "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnVSVSNLLLnTAS2NyCJtJUD3VGHDbN6K76iHU!QGk8UrNGi8Uz9Tc9QVCIr2TyL6eAUTMUCVHm8EcI0yABuRMv7N4LVz1";
+const PRINTER_HEAD_CAPABILITIES = Object.freeze({
+  "32mm": Object.freeze({ maxImageWidth: 3200, maxImageHeight: 7500, xRes: 0.12, yRes: 0.12, xResText: "0.120000" }),
+  "53mm": Object.freeze({ maxImageWidth: 5333, maxImageHeight: 7500, xRes: 0.12, yRes: 0.12, xResText: "0.120000" }),
+  "107mm": Object.freeze({ maxImageWidth: 10667, maxImageHeight: 7500, xRes: 0.12, yRes: 0.12, xResText: "0.120000" })
+});
+const PRINTER_CAPABILITIES = Object.freeze(Object.fromEntries(
+  TEMPLATE_TARGET_PRINTER_MODELS.map((model) => {
+    const head = model.match(/\((32|53|107)mm\)/i)?.[1];
+    const capabilities = PRINTER_HEAD_CAPABILITIES[`${head}mm`];
+    // Installed native mapping: 6230 -> Independence(32mm), 8 dots/mm in
+    // both modes. Resolution belongs to the coder, not merely the head width.
+    return [model, model === "DataFlex 6230(32mm)"
+      ? Object.freeze({ ...capabilities, xRes: 0.08, yRes: 0.08, xResText: "0.080000" })
+      : capabilities];
+  })
+));
 const EMPTY_TEMPLATE_SUBIMAGE = {
   imageWidth: 5333,
   imageHeight: 7500,
@@ -228,12 +359,25 @@ let state = {
 
   docMeta: {
     version: null,
+    units: 0,
     designedFor: "",
     clStVersionInfo: "",
     printerModel: DEFAULT_TEMPLATE_TARGET_PRINTER_MODEL,
     printMode: EMPTY_TEMPLATE_PRINT_MODES[0]
   },
-  subImage: { imageReference: "1", width: 0, height: 0, maxWidth: 0, maxHeight: 0, xRes: 0.12, orientation: 0 },
+  subImage: {
+    imageReference: "1",
+    width: 0,
+    height: 0,
+    maxWidth: 0,
+    maxHeight: 0,
+    workspaceWidth: 0,
+    workspaceHeight: 0,
+    xRes: 0.12,
+    yRes: null,
+    orientation: 0,
+    usedSizeDirty: false
+  },
 
   dateOffsets: [],          // parsed from Header DateOffset
   dateOffsetsLoaded: false,
@@ -246,9 +390,12 @@ let state = {
   selectedNames: [],
   showHiddenOnCanvas: false,
   gridMm: GRID_MM,
+  moveStep: DEFAULT_MOVE_STEP,
 
   validation: {
-    invalidPrintableFieldNames: []
+    invalidPrintableFieldNames: [],
+    invalidHardwareFieldNames: [],
+    structuralErrors: []
   }
 };
 
@@ -293,6 +440,94 @@ function getStoredTextFieldValue(field) {
   return field.calcData || field.data?.defaultValue || field.data?.userEnterData || "";
 }
 
+function getFieldFromLookup(fieldByName, name) {
+  if (!fieldByName || !name) return null;
+  if (typeof fieldByName.get === "function") return fieldByName.get(name) ?? null;
+  if (Array.isArray(fieldByName)) return fieldByName.find((field) => field?.name === name) ?? null;
+  return fieldByName[name] ?? null;
+}
+
+function getDataMatrixSegmentValue(segment, fieldByName = null) {
+  const sourceField = getFieldFromLookup(fieldByName, segment?.srcField);
+  if (sourceField) return String(getStoredTextFieldValue(sourceField));
+  return String(segment?.defaultValue ?? "");
+}
+
+function buildDataMatrixCalcData(dmField, fieldByName = null) {
+  const segments = dmField?.barcode?.dataMatrix?.segments;
+  if (!Array.isArray(segments)) return "";
+  return segments.map((segment) => getDataMatrixSegmentValue(segment, fieldByName)).join("");
+}
+
+function synchronizeDataMatrixDerivedState(dmField, fieldByName = null) {
+  const dm = dmField?.barcode?.dataMatrix;
+  if (!dm || !Array.isArray(dm.segments)) return false;
+
+  let changed = false;
+  dm.segments.forEach((segment, index) => {
+    if (segment.index !== index) {
+      segment.index = index;
+      changed = true;
+    }
+    const nextDefault = getDataMatrixSegmentValue(segment, fieldByName);
+    if (String(segment.defaultValue ?? "") !== nextDefault) {
+      segment.defaultValue = nextDefault;
+      changed = true;
+    }
+  });
+
+  const nextCalcData = buildDataMatrixCalcData(dmField);
+  if (String(dmField.calcData ?? "") !== nextCalcData) {
+    dmField.calcData = nextCalcData;
+    changed = true;
+  }
+  return changed;
+}
+
+function synchronizeAllDataMatrixDerivedState(fields, fieldByName = null) {
+  const list = Array.isArray(fields) ? fields : [];
+  const lookup = fieldByName || new Map(list.map((field) => [field.name, field]));
+  let changed = false;
+  list.forEach((field) => {
+    if (synchronizeDataMatrixDerivedState(field, lookup)) changed = true;
+  });
+  return changed;
+}
+
+function validateDataMatrixDerivedState(dmField, fieldByName = null) {
+  const dm = dmField?.barcode?.dataMatrix;
+  if (!dm || !Array.isArray(dm.segments)) return [];
+  const issues = [];
+  dm.segments.forEach((segment, index) => {
+    if (segment.index !== index) {
+      issues.push({ code: "segment-index", index, actual: segment.index, expected: index });
+    }
+    if (segment.srcField) {
+      const sourceField = getFieldFromLookup(fieldByName, segment.srcField);
+      if (!sourceField) {
+        issues.push({ code: "missing-source", index, sourceName: segment.srcField });
+      } else {
+        const expected = String(getStoredTextFieldValue(sourceField));
+        const actual = String(segment.defaultValue ?? "");
+        if (actual !== expected) issues.push({ code: "segment-default", index, sourceName: segment.srcField, actual, expected });
+      }
+    }
+  });
+  const expectedCalcData = buildDataMatrixCalcData(dmField, fieldByName);
+  const actualCalcData = String(dmField.calcData ?? "");
+  if (actualCalcData !== expectedCalcData) {
+    issues.push({ code: "calc-data", actual: actualCalcData, expected: expectedCalcData });
+  }
+  return issues;
+}
+
+function getNextClarisoftFieldName(existingNames = []) {
+  const names = new Set(Array.from(existingNames || [], (item) => String(item?.name ?? item ?? "")));
+  let index = 0;
+  while (names.has(`Field${String(index).padStart(2, "0")}`)) index += 1;
+  return `Field${String(index).padStart(2, "0")}`;
+}
+
 function normalizeDataMatrixSymbolSizeValue(value, fallback = "Auto") {
   const raw = String(value ?? "").trim();
   if (!raw) return fallback;
@@ -306,6 +541,17 @@ function getDataMatrixComposition(symbolSize) {
   return match && Math.max(Number(match[1]), Number(match[2])) >= 32 ? "long" : "short";
 }
 
+function getDataMatrixFieldComposition(dmField, symbolSize = dmField?.barcode?.dataMatrix?.symbolSize) {
+  const sources = new Set((dmField?.barcode?.dataMatrix?.segments || []).map((segment) => segment?.srcField));
+  // Infer the recipe from its saved sources so it survives CIFF import without
+  // private metadata. Legacy Party.ciff uses C5 for the final "21" helper.
+  const partyGtin = sources.has("GTIN2") || (sources.has("GTIN") && !sources.has("KRIPTO") && !sources.has("KRIPTO2"));
+  if (partyGtin && ["PRODUCT_DATE", "SN"].every((name) => sources.has(name))) {
+    return sources.has("BOX_COUNTER") ? "party-box" : "party";
+  }
+  return getDataMatrixComposition(symbolSize);
+}
+
 // history (simple snapshot)
 let history = { undo: [], redo: [] };
 
@@ -317,9 +563,37 @@ const elSearch = $("fieldSearch");
 const elFieldFilterButtons = Array.from(document.querySelectorAll("[data-field-filter]"));
 let activeFieldFilter = "printed";
 let fieldListSelectionAnchorName = null;
+const elLeftPanel = $("leftPanel");
+const elLeftPanelExpanded = $("leftPanelExpanded");
+const elLeftPanelCollapsedActions = $("leftPanelCollapsedActions");
+const elLeftPanelSearch = $("leftPanelSearch");
+const elLeftAddObjectPopover = $("leftAddObjectPopover");
+const elBtnAddObjectCollapsed = $("btnAddObjectCollapsed");
+const elBtnToggleFieldSearch = $("btnToggleFieldSearch");
+const elBtnToggleFieldSearchCollapsed = $("btnToggleFieldSearchCollapsed");
+const elBtnCloseFieldSearch = $("btnCloseFieldSearch");
+const elBtnCollapseLeftPanel = $("btnCollapseLeftPanel");
+const elBtnExpandLeftPanel = $("btnExpandLeftPanel");
 const elPropsEmpty = $("propsEmpty");
 const elPropsPanel = $("propsPanel");
 const elBtnDelete = $("btnDelete");
+const elInspectorPanel = $("inspectorPanel");
+const elInspectorExpanded = $("inspectorExpanded");
+const elInspectorTitle = $("inspectorTitle");
+const elInspectorSubtitle = $("inspectorSubtitle");
+const elInspectorCollapsedLabel = $("inspectorCollapsedLabel");
+const elInspectorNoTemplate = $("inspectorNoTemplate");
+const elInspectorObjectContext = $("inspectorObjectContext");
+const elInspectorTemplateContext = $("inspectorTemplateContext");
+const elInspectorTemplateSections = $("inspectorTemplateSections");
+const elObjectAdvancedSection = $("objectAdvancedSection");
+const elBtnInspectorCollapse = $("btnInspectorCollapse");
+const elBtnInspectorExpand = $("btnInspectorExpand");
+const elBtnInspectorObjectMenu = $("btnInspectorObjectMenu");
+const elInspectorObjectMenu = $("inspectorObjectMenu");
+const elBtnInspectorTogglePrint = $("btnInspectorTogglePrint");
+const elBtnInspectorAppSettings = $("btnInspectorAppSettings");
+const elInspectorAppSettings = $("inspectorAppSettings");
 const elTemplateSizePanel = $("templateSizePanel");
 const elTemplateTargetPanel = $("templateTargetPanel");
 const elBtnSave = $("btnSave");
@@ -335,6 +609,8 @@ const elStatusRight = $("statusRight");
 const elCanvasHost = $("canvasHost");
 const elTemplateTabs = $("templateTabs");
 const elTemplateTabsList = $("templateTabsList");
+const elBtnTemplateTabsMenu = $("btnTemplateTabsMenu");
+const elTemplateTabMenu = $("templateTabMenu");
 const elBtnAddTemplateTab = $("btnAddTemplateTab");
 const elRulerTop = $("rulerTop");
 const elRulerLeft = $("rulerLeft");
@@ -410,6 +686,120 @@ function normalizePrintMode(value) {
 
 function normalizePrinterModel(value) {
   return String(value ?? "").trim() || DEFAULT_TEMPLATE_TARGET_PRINTER_MODEL;
+}
+
+function formatPrinterModelDisplayLabel(value) {
+  return String(value ?? "")
+    .trim()
+    .replace(/\s*\(\s*(\d+(?:[.,]\d+)?)\s*mm\s*\)/gi, " ($1 mm)");
+}
+
+function getPrinterModelSelectOptions(currentValue = "") {
+  const current = String(currentValue ?? "").trim();
+  const knownModels = PRINTER_MODEL_GROUP_WIDTHS.flatMap((width) => (
+    TEMPLATE_TARGET_PRINTER_MODELS.filter((model) => new RegExp(`\\(${width}mm\\)$`, "i").test(model))
+  ));
+  const models = current && !TEMPLATE_TARGET_PRINTER_MODELS.includes(current)
+    ? [current, ...knownModels]
+    : knownModels;
+
+  return models.map((model) => {
+    const isKnown = TEMPLATE_TARGET_PRINTER_MODELS.includes(model);
+    const width = isKnown ? model.match(/\((32|53|107)mm\)$/i)?.[1] : null;
+    return {
+      value: model,
+      label: formatPrinterModelDisplayLabel(model),
+      ...(width ? {
+        groupLabel: `${width} mm`,
+        menuLabel: model.replace(/\s*\([^)]*\)\s*$/, "").trim()
+      } : {})
+    };
+  });
+}
+
+function populateSelectOptions(selectEl, items, currentValue) {
+  if (!selectEl) return;
+  selectEl.innerHTML = "";
+  const current = String(currentValue ?? "");
+  const groups = new Map();
+
+  items.forEach((item) => {
+    const opt = document.createElement("option");
+    const value = String(item.value ?? "");
+    const label = String(item.label ?? value);
+    const groupLabel = String(item.groupLabel ?? "").trim();
+    const menuLabel = String(item.menuLabel ?? "").trim();
+    opt.value = value;
+    opt.textContent = label;
+    if (menuLabel && menuLabel !== label) opt.dataset.menuLabel = menuLabel;
+    if (value === current) opt.selected = true;
+
+    if (!groupLabel) {
+      selectEl.appendChild(opt);
+      return;
+    }
+
+    let group = groups.get(groupLabel);
+    if (!group) {
+      group = document.createElement("optgroup");
+      group.label = groupLabel;
+      groups.set(groupLabel, group);
+      selectEl.appendChild(group);
+    }
+    group.appendChild(opt);
+  });
+
+  selectEl.value = current;
+}
+
+function normalizeTemplateTargetPrinterModel(value) {
+  const raw = String(value ?? "").trim();
+  if (TEMPLATE_TARGET_PRINTER_MODELS.includes(raw)) return raw;
+  if (EMPTY_TEMPLATE_PRINTER_MODELS.includes(raw)) return `DataFlex ${raw}(53mm)`;
+  return DEFAULT_TEMPLATE_TARGET_PRINTER_MODEL;
+}
+
+function getPrinterCapabilities(printerModel) {
+  const model = normalizePrinterModel(printerModel);
+  if (PRINTER_CAPABILITIES[model]) return PRINTER_CAPABILITIES[model];
+  const head = model.match(/\((32|53|107)mm\)/i)?.[1];
+  return head ? PRINTER_HEAD_CAPABILITIES[`${head}mm`] ?? null : null;
+}
+
+function getKnownPrinterCapabilities(printerModel) {
+  const model = String(printerModel ?? "").trim();
+  return model ? PRINTER_CAPABILITIES[model] ?? null : null;
+}
+
+function getTemplateMaxImageWidthInternal(printerModel) {
+  return getPrinterCapabilities(printerModel)?.maxImageWidth ?? EMPTY_TEMPLATE_SUBIMAGE.maxImageWidth;
+}
+
+function getTemplateMaxImageHeightInternal(printerModel) {
+  return getPrinterCapabilities(printerModel)?.maxImageHeight ?? EMPTY_TEMPLATE_SUBIMAGE.maxImageHeight;
+}
+
+function applyPrinterCapabilitiesToSubImage(printerModel, subImage = state.subImage, options = {}) {
+  const capabilities = options.allowHeadFallback
+    ? getPrinterCapabilities(printerModel)
+    : getKnownPrinterCapabilities(printerModel);
+  if (!capabilities || !subImage) return null;
+  // MaxImage* belongs to the document. The profile supplies only a fallback.
+  const validDimension = value => value != null && value !== "" &&
+    Number.isSafeInteger(Number(value)) && Number(value) >= 0;
+  if (!validDimension(subImage.maxWidth)) {
+    subImage.maxWidth = [subImage.workspaceWidth, subImage.width, capabilities.maxImageWidth]
+      .find(validDimension) ?? null;
+  }
+  if (!validDimension(subImage.maxHeight)) {
+    subImage.maxHeight = [subImage.workspaceHeight, subImage.height, capabilities.maxImageHeight]
+      .find(validDimension) ?? null;
+  }
+  if (options.updateResolution || !(Number(subImage.xRes) > 0)) {
+    subImage.xRes = capabilities.xRes;
+  }
+  if (options.updateResolution) subImage.yRes = capabilities.yRes ?? capabilities.xRes;
+  return capabilities;
 }
 
 function buildDesignedForLabel(printerModel, printMode) {

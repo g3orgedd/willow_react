@@ -1,0 +1,1239 @@
+{
+  "name": "CLCSTextBasedField.dll",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSTextBasedField.dll",
+  "size": 875520,
+  "sha256": "2b9cedaa8a9bdc5ecb92f9dc43855650b0698b6f0ff0190237e6c5889232409b",
+  "imageBase": "42400000",
+  "exports": [
+    {
+      "name": "DllCanUnloadNow",
+      "ordinal": 1,
+      "va": "424205ba"
+    },
+    {
+      "name": "DllGetClassObject",
+      "ordinal": 2,
+      "va": "424205dc"
+    },
+    {
+      "name": "DllRegisterServer",
+      "ordinal": 3,
+      "va": "4242062c"
+    },
+    {
+      "name": "DllUnregisterServer",
+      "ordinal": 4,
+      "va": "4242063b"
+    }
+  ],
+  "imports": [
+    {
+      "library": "ODBC32.dll",
+      "names": [
+        24,
+        75,
+        157,
+        31
+      ]
+    },
+    {
+      "library": "gdiplus.dll",
+      "names": [
+        "GdipSetStringFormatFlags",
+        "GdiplusShutdown",
+        "GdipDeleteBrush",
+        "GdipCreateSolidFill",
+        "GdipCreateFromHDC",
+        "GdipDeleteGraphics",
+        "GdipSetTextRenderingHint",
+        "GdipScaleWorldTransform",
+        "GdipFillRectangleI",
+        "GdipCreateFontFromDC",
+        "GdipCreateFontFromLogfontW",
+        "GdipDeleteFont",
+        "GdipDrawString",
+        "GdipSetStringFormatTabStops",
+        "GdipSetStringFormatAlign",
+        "GdipGetStringFormatFlags",
+        "GdiplusStartup",
+        "GdipDeleteStringFormat",
+        "GdipStringFormatGetGenericTypographic",
+        "GdipMeasureString"
+      ]
+    },
+    {
+      "library": "USP10.dll",
+      "names": [
+        "ScriptFreeCache",
+        "ScriptItemize",
+        "ScriptLayout",
+        "ScriptShape",
+        "ScriptPlace",
+        "ScriptTextOut",
+        "ScriptJustify",
+        "ScriptBreak",
+        "ScriptGetProperties",
+        "ScriptGetFontProperties",
+        "ScriptRecordDigitSubstitution",
+        "ScriptApplyDigitSubstitution"
+      ]
+    },
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "FreeLibrary",
+        "GetModuleFileNameW",
+        "GetModuleHandleW",
+        "GetProcAddress",
+        "LoadLibraryExW",
+        "LoadResource",
+        "LockResource",
+        "SizeofResource",
+        "MulDiv",
+        "lstrcmpiW",
+        "FindResourceW",
+        "GetSystemDefaultLCID",
+        "GetSystemTime",
+        "GetPrivateProfileIntW",
+        "GetCurrentProcessId",
+        "GlobalAlloc",
+        "GlobalLock",
+        "GlobalUnlock",
+        "lstrcmpW",
+        "LoadLibraryW",
+        "OutputDebugStringA",
+        "GetStringTypeW",
+        "CreateDirectoryW",
+        "GetLocaleInfoW",
+        "FormatMessageW",
+        "DisableThreadLibraryCalls",
+        "GetCommandLineW",
+        "WaitForSingleObject",
+        "CreateProcessW",
+        "GetDateFormatW",
+        "GetTimeFormatW",
+        "LoadLibraryExA",
+        "ExpandEnvironmentStringsA",
+        "HeapSize",
+        "GetModuleHandleExW",
+        "ExitProcess",
+        "GetCPInfo",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "GetCommandLineA",
+        "GetTimeZoneInformation",
+        "RtlUnwind",
+        "GetSystemTimeAsFileTime",
+        "VirtualFree",
+        "VirtualAlloc",
+        "IsProcessorFeaturePresent",
+        "InterlockedPushEntrySList",
+        "InterlockedPopEntrySList",
+        "InitializeSListHead",
+        "GetProcessHeap",
+        "HeapFree",
+        "HeapAlloc",
+        "IsDebuggerPresent",
+        "CloseHandle",
+        "DecodePointer",
+        "EncodePointer",
+        "SetFilePointer",
+        "ReadFile",
+        "FindNextFileW",
+        "CreateFileW",
+        "GetEnvironmentVariableW",
+        "WideCharToMultiByte",
+        "VerifyVersionInfoW",
+        "FlushInstructionCache",
+        "GetCurrentThreadId",
+        "GetCurrentProcess",
+        "DeleteCriticalSection",
+        "InitializeCriticalSectionAndSpinCount",
+        "LeaveCriticalSection",
+        "EnterCriticalSection",
+        "SetLastError",
+        "GetLastError",
+        "RaiseException",
+        "VerSetConditionMask",
+        "MultiByteToWideChar",
+        "WritePrivateProfileStringW",
+        "GetPrivateProfileStringW",
+        "lstrlenW",
+        "lstrlenA",
+        "LocalFree",
+        "GetLocalTime",
+        "OutputDebugStringW",
+        "DebugBreak",
+        "FindFirstFileW",
+        "FindClose",
+        "GetStdHandle",
+        "UnhandledExceptionFilter",
+        "SetUnhandledExceptionFilter",
+        "Sleep",
+        "TerminateProcess",
+        "TlsAlloc",
+        "TlsGetValue",
+        "TlsSetValue",
+        "TlsFree",
+        "GetStartupInfoW",
+        "HeapReAlloc",
+        "GetFileType",
+        "GetModuleFileNameA",
+        "QueryPerformanceCounter",
+        "GetEnvironmentStringsW",
+        "FreeEnvironmentStringsW",
+        "CompareStringW",
+        "LCMapStringW",
+        "IsValidLocale",
+        "GetUserDefaultLCID",
+        "EnumSystemLocalesW",
+        "GetConsoleCP",
+        "GetConsoleMode",
+        "SetFilePointerEx",
+        "SetStdHandle",
+        "WriteConsoleW",
+        "FlushFileBuffers",
+        "ReadConsoleW",
+        "SetEnvironmentVariableA",
+        "WriteFile"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "CharUpperBuffW",
+        "CheckDlgButton",
+        "GetDlgItemTextW",
+        "SetCursor",
+        "SetDlgItemTextW",
+        "SendDlgItemMessageW",
+        "MonitorFromPoint",
+        "SystemParametersInfoW",
+        "LoadImageW",
+        "LoadCursorW",
+        "CallNextHookEx",
+        "UnhookWindowsHookEx",
+        "SetWindowsHookExW",
+        "GetWindowThreadProcessId",
+        "GetClassNameW",
+        "PtInRect",
+        "OffsetRect",
+        "InflateRect",
+        "SetRectEmpty",
+        "FrameRect",
+        "GetSysColorBrush",
+        "GetSysColor",
+        "WindowFromPoint",
+        "ClientToScreen",
+        "SetCaretPos",
+        "ShowCaret",
+        "HideCaret",
+        "CharUpperW",
+        "CreateCaret",
+        "MessageBeep",
+        "GetWindowDC",
+        "UpdateWindow",
+        "DrawTextW",
+        "SetMenuItemInfoW",
+        "GetMenuItemInfoW",
+        "TrackPopupMenuEx",
+        "ModifyMenuW",
+        "GetMenuItemCount",
+        "GetMenuItemID",
+        "GetSubMenu",
+        "EnableMenuItem",
+        "DestroyMenu",
+        "SetMenu",
+        "LoadMenuW",
+        "GetSystemMetrics",
+        "ReleaseCapture",
+        "SetCapture",
+        "GetCapture",
+        "GetAsyncKeyState",
+        "GetKeyState",
+        "GetFocus",
+        "CharLowerW",
+        "EmptyClipboard",
+        "GetClipboardData",
+        "SetClipboardData",
+        "DestroyCaret",
+        "LoadStringW",
+        "CharNextW",
+        "SendMessageW",
+        "PostMessageW",
+        "UnregisterClassW",
+        "SetWindowPos",
+        "DialogBoxParamW",
+        "EndDialog",
+        "GetDlgItem",
+        "GetActiveWindow",
+        "EnableWindow",
+        "GetDC",
+        "BeginPaint",
+        "EndPaint",
+        "CloseClipboard",
+        "OpenClipboard",
+        "IsWindowVisible",
+        "IsMenu",
+        "CreateWindowExW",
+        "GetClassInfoExW",
+        "RegisterClassExW",
+        "GetMessagePos",
+        "PeekMessageW",
+        "DrawFrameControl",
+        "DrawEdge",
+        "RegisterWindowMessageW",
+        "SetRect",
+        "FillRect",
+        "WinHelpW",
+        "IsDialogMessageW",
+        "LoadBitmapW",
+        "GetDialogBaseUnits",
+        "MoveWindow",
+        "DestroyWindow",
+        "IsWindow",
+        "CallWindowProcW",
+        "DefWindowProcW",
+        "InvalidateRect",
+        "ReleaseDC",
+        "IsWindowEnabled",
+        "GetDlgItemInt",
+        "SetDlgItemInt",
+        "CreateDialogParamW",
+        "ShowWindow",
+        "SetFocus",
+        "GetMonitorInfoW",
+        "MonitorFromWindow",
+        "GetWindow",
+        "GetParent",
+        "SetWindowLongW",
+        "GetWindowLongW",
+        "MapWindowPoints",
+        "MessageBoxW",
+        "GetWindowRect",
+        "GetClientRect",
+        "GetWindowTextLengthW",
+        "GetWindowTextW",
+        "SetWindowTextW",
+        "ScreenToClient"
+      ]
+    },
+    {
+      "library": "GDI32.dll",
+      "names": [
+        "GetTextCharacterExtra",
+        "SetDIBColorTable",
+        "GetDIBColorTable",
+        "Rectangle",
+        "CreatePen",
+        "CreateSolidBrush",
+        "SelectClipRgn",
+        "IntersectClipRect",
+        "GetClipRgn",
+        "SetBkMode",
+        "PatBlt",
+        "GetTextExtentPoint32W",
+        "GetCurrentObject",
+        "CreatePatternBrush",
+        "CreateBitmap",
+        "SetWindowExtEx",
+        "SetViewportExtEx",
+        "LPtoDP",
+        "DPtoLP",
+        "GetObjectW",
+        "CreateDIBSection",
+        "SetTextColor",
+        "StretchBlt",
+        "SetMapMode",
+        "SetBkColor",
+        "GetWindowExtEx",
+        "GetViewportExtEx",
+        "GetStockObject",
+        "CreateCompatibleDC",
+        "CreateCompatibleBitmap",
+        "BitBlt",
+        "DeleteDC",
+        "CreateFontIndirectW",
+        "CreateRectRgn",
+        "SetBrushOrgEx",
+        "TextOutW",
+        "SetTextJustification",
+        "DeleteObject",
+        "GetDeviceCaps",
+        "GetTextExtentPointW",
+        "SelectObject",
+        "GetTextMetricsW",
+        "SetTextCharacterExtra"
+      ]
+    },
+    {
+      "library": "COMDLG32.dll",
+      "names": [
+        "GetOpenFileNameW",
+        "GetSaveFileNameW"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "RegCreateKeyExW",
+        "RegOpenKeyExW",
+        "RegQueryValueExW",
+        "RegSetValueExW",
+        "RegDeleteKeyW",
+        "RegDeleteValueW",
+        "RegEnumKeyExW",
+        "RegQueryInfoKeyW",
+        "RegOpenKeyExA",
+        "RegQueryValueExA",
+        "RegCloseKey"
+      ]
+    },
+    {
+      "library": "SHELL32.dll",
+      "names": [
+        "SHGetFolderPathW"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "CLSIDFromString",
+        "CLSIDFromProgID",
+        "ProgIDFromCLSID",
+        "CoTaskMemFree",
+        "CoTaskMemRealloc",
+        "CoTaskMemAlloc",
+        "StringFromGUID2",
+        "CoCreateFreeThreadedMarshaler",
+        "OleRun",
+        "CoInitialize",
+        "CoCreateInstance",
+        "CoUninitialize"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "SysStringByteLen",
+        "SysAllocStringByteLen",
+        "VariantClear",
+        "VarBstrCat",
+        "VarBstrCmp",
+        "VariantChangeType",
+        "SysReAllocStringLen",
+        "SysStringLen",
+        "VarUI4FromStr",
+        "LoadTypeLib",
+        "RegisterTypeLib",
+        "UnRegisterTypeLib",
+        "SetErrorInfo",
+        "CreateErrorInfo",
+        "OleCreatePropertyFrame",
+        "SystemTimeToVariantTime",
+        "VariantTimeToSystemTime",
+        "GetErrorInfo",
+        "SysFreeString",
+        "SysAllocStringLen",
+        "SysAllocString",
+        "VariantCopy"
+      ]
+    },
+    {
+      "library": "COMCTL32.dll",
+      "names": [
+        "InitCommonControlsEx",
+        "ImageList_Create",
+        "ImageList_Destroy",
+        "ImageList_GetImageCount",
+        "ImageList_Draw",
+        "ImageList_AddMasked",
+        "ImageList_DrawIndirect",
+        8
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "42498330",
+      "fileOffset": 616752,
+      "encoding": "ascii",
+      "text": "CCLCSTextBasedFieldObj::ShowFontPropertyPage"
+    },
+    {
+      "va": "424994b4",
+      "fileOffset": 621236,
+      "encoding": "ascii",
+      "text": "CTextBasedFieldProp::OnUseZipherBitmapFonts"
+    },
+    {
+      "va": "4249952c",
+      "fileOffset": 621356,
+      "encoding": "ascii",
+      "text": "CTextBasedFieldProp::SortFontPropertyPage()"
+    },
+    {
+      "va": "4249970c",
+      "fileOffset": 621836,
+      "encoding": "ascii",
+      "text": "CTextFieldProp2::UpdateData - pDataObject7 is NULL"
+    },
+    {
+      "va": "42499c8c",
+      "fileOffset": 623244,
+      "encoding": "ascii",
+      "text": "CCapabilitiesHelper::IsAlphabetValidForFont"
+    },
+    {
+      "va": "4249b81a",
+      "fileOffset": 630298,
+      "encoding": "ascii",
+      "text": "JB_|FBZipherBitmapFont::PopulateZipherFontList()"
+    },
+    {
+      "va": "4249b85c",
+      "fileOffset": 630364,
+      "encoding": "ascii",
+      "text": "%s - Could not add font(0x%08X): Filename(%ls), Directory(%ls)"
+    },
+    {
+      "va": "4249b89c",
+      "fileOffset": 630428,
+      "encoding": "ascii",
+      "text": "ZipherBitmapFont::CheckBinaryFontInterfacePointer()"
+    },
+    {
+      "va": "4249b8d0",
+      "fileOffset": 630480,
+      "encoding": "ascii",
+      "text": "%s - Could not create m_pBinaryFont(0x%08X)"
+    },
+    {
+      "va": "4249b8fc",
+      "fileOffset": 630524,
+      "encoding": "ascii",
+      "text": "ZipherBitmapFont::GetDefaultFont()"
+    },
+    {
+      "va": "4249b920",
+      "fileOffset": 630560,
+      "encoding": "ascii",
+      "text": "ZipherBitmapFont::GetCharSpace()"
+    },
+    {
+      "va": "4249b960",
+      "fileOffset": 630624,
+      "encoding": "ascii",
+      "text": "ZipherBitmapFont::CalculateSize"
+    },
+    {
+      "va": "4249b980",
+      "fileOffset": 630656,
+      "encoding": "ascii",
+      "text": "ZipherBitmapFont::CalculateSize - m_pBinaryFontRenderer->SelectBitmapFont CAUGHT(...)"
+    },
+    {
+      "va": "4249b9d8",
+      "fileOffset": 630744,
+      "encoding": "ascii",
+      "text": "ZipherBitmapFont::CalculateSize - m_bstrFontName[%ls] ulFlags[%d], m_lEscapement[%d], m_lEscapement[%d], m_eRTL[%d]"
+    },
+    {
+      "va": "4249ba50",
+      "fileOffset": 630864,
+      "encoding": "ascii",
+      "text": "%s - m_pBinaryFontRenderer->SelectBitmapFont Failed(0x%08X): Fontname(%ls)"
+    },
+    {
+      "va": "4249ba9c",
+      "fileOffset": 630940,
+      "encoding": "ascii",
+      "text": "%s - Could not de-select the bitmap font (%ls)"
+    },
+    {
+      "va": "4249bacc",
+      "fileOffset": 630988,
+      "encoding": "ascii",
+      "text": "ZipherBitmapFont::RenderStaticBitmapText"
+    },
+    {
+      "va": "4249baf8",
+      "fileOffset": 631032,
+      "encoding": "ascii",
+      "text": "ZipherBitmapFont::RenderBitmapText"
+    },
+    {
+      "va": "4249e82c",
+      "fileOffset": 642604,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "4249e89c",
+      "fileOffset": 642716,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "424a5e20",
+      "fileOffset": 672800,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "424a61f8",
+      "fileOffset": 673784,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "424a625c",
+      "fileOffset": 673884,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "424b6d57",
+      "fileOffset": 742231,
+      "encoding": "ascii",
+      "text": "DllGetClassObject"
+    },
+    {
+      "va": "424b74ea",
+      "fileOffset": 744170,
+      "encoding": "ascii",
+      "text": "GdipDeleteGraphics"
+    },
+    {
+      "va": "424b754c",
+      "fileOffset": 744268,
+      "encoding": "ascii",
+      "text": "GdipCreateFontFromDC"
+    },
+    {
+      "va": "424b7564",
+      "fileOffset": 744292,
+      "encoding": "ascii",
+      "text": "GdipCreateFontFromLogfontW"
+    },
+    {
+      "va": "424b7582",
+      "fileOffset": 744322,
+      "encoding": "ascii",
+      "text": "GdipDeleteFont"
+    },
+    {
+      "va": "424b75ba",
+      "fileOffset": 744378,
+      "encoding": "ascii",
+      "text": "GdipStringFormatGetGenericTypographic"
+    },
+    {
+      "va": "424b770c",
+      "fileOffset": 744716,
+      "encoding": "ascii",
+      "text": "ScriptGetFontProperties"
+    },
+    {
+      "va": "424b7ab0",
+      "fileOffset": 745648,
+      "encoding": "ascii",
+      "text": "GetSystemDefaultLCID"
+    },
+    {
+      "va": "424b7bcc",
+      "fileOffset": 745932,
+      "encoding": "ascii",
+      "text": "WaitForSingleObject"
+    },
+    {
+      "va": "424b83ba",
+      "fileOffset": 747962,
+      "encoding": "ascii",
+      "text": "CreateFontIndirectW"
+    },
+    {
+      "va": "424b83d0",
+      "fileOffset": 747984,
+      "encoding": "ascii",
+      "text": "DeleteObject"
+    },
+    {
+      "va": "424b8406",
+      "fileOffset": 748038,
+      "encoding": "ascii",
+      "text": "SelectObject"
+    },
+    {
+      "va": "424b8462",
+      "fileOffset": 748130,
+      "encoding": "ascii",
+      "text": "GetStockObject"
+    },
+    {
+      "va": "424b84e8",
+      "fileOffset": 748264,
+      "encoding": "ascii",
+      "text": "GetObjectW"
+    },
+    {
+      "va": "424b8556",
+      "fileOffset": 748374,
+      "encoding": "ascii",
+      "text": "GetCurrentObject"
+    },
+    {
+      "va": "424b8c38",
+      "fileOffset": 750136,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLCID"
+    },
+    {
+      "va": "424bb690",
+      "fileOffset": 760464,
+      "encoding": "ascii",
+      "text": ".?AVCCiffHelperUtil@@"
+    },
+    {
+      "va": "424bb94c",
+      "fileOffset": 761164,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "424bb9b0",
+      "fileOffset": 761264,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "424bb9f4",
+      "fileOffset": 761332,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "424bba78",
+      "fileOffset": 761464,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "424bbb14",
+      "fileOffset": 761620,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+    },
+    {
+      "va": "424bbcec",
+      "fileOffset": 762092,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCLCSTextBasedFieldObj@@@ATL@@"
+    },
+    {
+      "va": "424bc084",
+      "fileOffset": 763012,
+      "encoding": "ascii",
+      "text": ".?AUICLCSFontProperty@@"
+    },
+    {
+      "va": "424bc110",
+      "fileOffset": 763152,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCCLCSTextBasedFieldObj@@@ATL@@"
+    },
+    {
+      "va": "424bc150",
+      "fileOffset": 763216,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@"
+    },
+    {
+      "va": "424bc36c",
+      "fileOffset": 763756,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCTextFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bc3a0",
+      "fileOffset": 763808,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCTextFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bc588",
+      "fileOffset": 764296,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCGeneralFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bc5c0",
+      "fileOffset": 764352,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCGeneralFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bc650",
+      "fileOffset": 764496,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCTextBasedFieldProp@@@ATL@@"
+    },
+    {
+      "va": "424bc7e8",
+      "fileOffset": 764904,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCTextBasedFieldProp@@@ATL@@"
+    },
+    {
+      "va": "424bc9c4",
+      "fileOffset": 765380,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCDateFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bc9f8",
+      "fileOffset": 765432,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCDateFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bcbdc",
+      "fileOffset": 765916,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCAlphaCntProp2@@@ATL@@"
+    },
+    {
+      "va": "424bcc10",
+      "fileOffset": 765968,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCAlphaCntProp2@@@ATL@@"
+    },
+    {
+      "va": "424bcdc0",
+      "fileOffset": 766400,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCNumCntProp2@@@ATL@@"
+    },
+    {
+      "va": "424bcdf0",
+      "fileOffset": 766448,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCNumCntProp2@@@ATL@@"
+    },
+    {
+      "va": "424bcf98",
+      "fileOffset": 766872,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCPriceProp@@@ATL@@"
+    },
+    {
+      "va": "424bcfc8",
+      "fileOffset": 766920,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCPriceProp@@@ATL@@"
+    },
+    {
+      "va": "424bcff8",
+      "fileOffset": 766968,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?_GUID_00020404_0000_0000_c000_000000000046@@3U__s_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@ATL@@@ATL@@"
+    },
+    {
+      "va": "424bd0e0",
+      "fileOffset": 767200,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCCLCSTextBasedFieldObj@@@ATL@@"
+    },
+    {
+      "va": "424bd124",
+      "fileOffset": 767268,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCTextFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bd160",
+      "fileOffset": 767328,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCGeneralFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bd1a0",
+      "fileOffset": 767392,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCTextBasedFieldProp@@@ATL@@"
+    },
+    {
+      "va": "424bd1e0",
+      "fileOffset": 767456,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCDateFieldProp2@@@ATL@@"
+    },
+    {
+      "va": "424bd21c",
+      "fileOffset": 767516,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCAlphaCntProp2@@@ATL@@"
+    },
+    {
+      "va": "424bd258",
+      "fileOffset": 767576,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCNumCntProp2@@@ATL@@"
+    },
+    {
+      "va": "424bd290",
+      "fileOffset": 767632,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCPriceProp@@@ATL@@"
+    },
+    {
+      "va": "424bd360",
+      "fileOffset": 767840,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCLCSToolBoxItem@@@ATL@@"
+    },
+    {
+      "va": "424bdde4",
+      "fileOffset": 770532,
+      "encoding": "ascii",
+      "text": ".?AVCZFBFFontUtilities@@"
+    },
+    {
+      "va": "424bde08",
+      "fileOffset": 770568,
+      "encoding": "ascii",
+      "text": ".?AVZipherBitmapFont@@"
+    },
+    {
+      "va": "424d237c",
+      "fileOffset": 829308,
+      "encoding": "ascii",
+      "text": "varCiffFileW"
+    },
+    {
+      "va": "424d24d0",
+      "fileOffset": 829648,
+      "encoding": "ascii",
+      "text": "bstrFontName"
+    },
+    {
+      "va": "424d24e6",
+      "fileOffset": 829670,
+      "encoding": "ascii",
+      "text": "H<lFontPitchWW"
+    },
+    {
+      "va": "424d24ff",
+      "fileOffset": 829695,
+      "encoding": "ascii",
+      "text": ";bstrSubImage"
+    },
+    {
+      "va": "424d2534",
+      "fileOffset": 829748,
+      "encoding": "ascii",
+      "text": "pVarCiffFieldWWWd"
+    },
+    {
+      "va": "424d2550",
+      "fileOffset": 829776,
+      "encoding": "ascii",
+      "text": "GetCiffW"
+    },
+    {
+      "va": "424d2564",
+      "fileOffset": 829796,
+      "encoding": "ascii",
+      "text": "varCiffWd"
+    },
+    {
+      "va": "424d25d4",
+      "fileOffset": 829908,
+      "encoding": "ascii",
+      "text": "GetCiffFileWX"
+    },
+    {
+      "va": "424d287f",
+      "fileOffset": 830591,
+      "encoding": "ascii",
+      "text": "iICLCSFontPropertyWWWL"
+    },
+    {
+      "va": "424d289f",
+      "fileOffset": 830623,
+      "encoding": "ascii",
+      "text": "RShowFontPropertyPage"
+    },
+    {
+      "va": "424d29e3",
+      "fileOffset": 830947,
+      "encoding": "ascii",
+      "text": "0RemovePriceDataObjectWWW"
+    },
+    {
+      "va": "424d2a63",
+      "fileOffset": 831075,
+      "encoding": "ascii",
+      "text": "ZlSubImageWWW"
+    },
+    {
+      "va": "424d2a7c",
+      "fileOffset": 831100,
+      "encoding": "ascii",
+      "text": "get_WhichSubImageWWW"
+    },
+    {
+      "va": "424d2a9c",
+      "fileOffset": 831132,
+      "encoding": "ascii",
+      "text": "put_WhichSubImageWWW@"
+    },
+    {
+      "va": "424d2d06",
+      "fileOffset": 831750,
+      "encoding": "ascii",
+      "text": "method GetCiff"
+    },
+    {
+      "va": "424d2d42",
+      "fileOffset": 831810,
+      "encoding": "ascii",
+      "text": "method GetCiffFile"
+    },
+    {
+      "va": "424d2e8e",
+      "fileOffset": 832142,
+      "encoding": "ascii",
+      "text": "ICLCSFontProperty InterfaceWWW"
+    },
+    {
+      "va": "424d2eae",
+      "fileOffset": 832174,
+      "encoding": "ascii",
+      "text": "method ShowFontPropertyPageWWW"
+    },
+    {
+      "va": "424d2f96",
+      "fileOffset": 832406,
+      "encoding": "ascii",
+      "text": "method RemovePriceDataObjectWW"
+    },
+    {
+      "va": "424d2ff6",
+      "fileOffset": 832502,
+      "encoding": "ascii",
+      "text": "method get_WhichSubImageWW"
+    },
+    {
+      "va": "424d3012",
+      "fileOffset": 832530,
+      "encoding": "ascii",
+      "text": "method put_WhichSubImageWW/"
+    },
+    {
+      "va": "42495bac",
+      "fileOffset": 606636,
+      "encoding": "utf-16-le",
+      "text": "FixedText"
+    },
+    {
+      "va": "42495bd4",
+      "fileOffset": 606676,
+      "encoding": "utf-16-le",
+      "text": "DateText"
+    },
+    {
+      "va": "42495be8",
+      "fileOffset": 606696,
+      "encoding": "utf-16-le",
+      "text": "OffsetDateText"
+    },
+    {
+      "va": "42495c08",
+      "fileOffset": 606728,
+      "encoding": "utf-16-le",
+      "text": "CounterText"
+    },
+    {
+      "va": "42496032",
+      "fileOffset": 607794,
+      "encoding": "utf-16-le",
+      "text": ")Default"
+    },
+    {
+      "va": "42496244",
+      "fileOffset": 608324,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    },
+    {
+      "va": "42496420",
+      "fileOffset": 608800,
+      "encoding": "utf-16-le",
+      "text": "default"
+    },
+    {
+      "va": "424974c4",
+      "fileOffset": 613060,
+      "encoding": "utf-16-le",
+      "text": "\\Fonts\\"
+    },
+    {
+      "va": "424985bc",
+      "fileOffset": 617404,
+      "encoding": "utf-16-le",
+      "text": "Default Dialog Font"
+    },
+    {
+      "va": "42498e34",
+      "fileOffset": 619572,
+      "encoding": "utf-16-le",
+      "text": "GraphicPrimitive"
+    },
+    {
+      "va": "42498fc0",
+      "fileOffset": 619968,
+      "encoding": "utf-16-le",
+      "text": "DefaultText"
+    },
+    {
+      "va": "42499160",
+      "fileOffset": 620384,
+      "encoding": "utf-16-le",
+      "text": "SetDefaultText"
+    },
+    {
+      "va": "42499ef0",
+      "fileOffset": 623856,
+      "encoding": "utf-16-le",
+      "text": "%sFonts\\"
+    },
+    {
+      "va": "424c6178",
+      "fileOffset": 779640,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_RAD_PROMPTDEFAULT"
+    },
+    {
+      "va": "424c65a0",
+      "fileOffset": 780704,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_TEXTDEFAULT"
+    },
+    {
+      "va": "424c70e0",
+      "fileOffset": 783584,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_FONTNAME"
+    },
+    {
+      "va": "424c7128",
+      "fileOffset": 783656,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_FONTPITCH"
+    },
+    {
+      "va": "424c71b0",
+      "fileOffset": 783792,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_FONTMAGNIFICATION"
+    },
+    {
+      "va": "424c7208",
+      "fileOffset": 783880,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_FONTMAGX"
+    },
+    {
+      "va": "424c7250",
+      "fileOffset": 783952,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_FONTMAGY"
+    },
+    {
+      "va": "424c7328",
+      "fileOffset": 784168,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_CHK_FONTBOLD"
+    },
+    {
+      "va": "424c7374",
+      "fileOffset": 784244,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_CHK_FONTDBLSPACE"
+    },
+    {
+      "va": "424c73e8",
+      "fileOffset": 784360,
+      "encoding": "utf-16-le",
+      "text": "Use Zipher Bitmap Font"
+    },
+    {
+      "va": "424c7b90",
+      "fileOffset": 786320,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_RAD_PROMPTDEFAULT"
+    },
+    {
+      "va": "424c8342",
+      "fileOffset": 788290,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_CHK_DBA_DEFAULTDATA"
+    },
+    {
+      "va": "424c8c14",
+      "fileOffset": 790548,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_RAD_MACHINEDEFAULT"
+    },
+    {
+      "va": "424c8f30",
+      "fileOffset": 791344,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_TEXTDEFAULT"
+    },
+    {
+      "va": "424c92b4",
+      "fileOffset": 792244,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_RAD_PROMPTDEFAULT"
+    },
+    {
+      "va": "424c9de0",
+      "fileOffset": 795104,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_RAD_PROMPTDEFAULT"
+    },
+    {
+      "va": "424ca8f4",
+      "fileOffset": 797940,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_RAD_PROMPTDEFAULT"
+    },
+    {
+      "va": "424cb3d8",
+      "fileOffset": 800728,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_CHK_BARCODE"
+    },
+    {
+      "va": "424cbe98",
+      "fileOffset": 803480,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_USEDEFAULTVALUES"
+    },
+    {
+      "va": "424cbfa8",
+      "fileOffset": 803752,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_S_CURRENTORDEFAULT"
+    },
+    {
+      "va": "424d3d52",
+      "fileOffset": 835922,
+      "encoding": "utf-16-le",
+      "text": "Font"
+    }
+  ]
+}

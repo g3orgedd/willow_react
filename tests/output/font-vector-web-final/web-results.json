@@ -1,0 +1,241 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "No Electron preload bridge",
+      "ok": true
+    },
+    {
+      "name": "Native font calls use HTTP",
+      "ok": true
+    },
+    {
+      "name": "All text fields expose the font selector",
+      "ok": true
+    },
+    {
+      "name": "Web font selection changes the model",
+      "ok": true
+    },
+    {
+      "name": "All five web text types use vectors at 50%",
+      "ok": true,
+      "actual": [
+        "Path",
+        "Path",
+        "Path",
+        "Path",
+        "Path"
+      ]
+    },
+    {
+      "name": "Zoom keeps native geometry and CIFF at 50%",
+      "ok": true
+    },
+    {
+      "name": "All five web text types use vectors at 100%",
+      "ok": true,
+      "actual": [
+        "Path",
+        "Path",
+        "Path",
+        "Path",
+        "Path"
+      ]
+    },
+    {
+      "name": "Zoom keeps native geometry and CIFF at 100%",
+      "ok": true
+    },
+    {
+      "name": "All five web text types use vectors at 133%",
+      "ok": true,
+      "actual": [
+        "Path",
+        "Path",
+        "Path",
+        "Path",
+        "Path"
+      ]
+    },
+    {
+      "name": "Zoom keeps native geometry and CIFF at 133%",
+      "ok": true
+    },
+    {
+      "name": "All five web text types use vectors at 400%",
+      "ok": true,
+      "actual": [
+        "Path",
+        "Path",
+        "Path",
+        "Path",
+        "Path"
+      ]
+    },
+    {
+      "name": "Zoom keeps native geometry and CIFF at 400%",
+      "ok": true
+    },
+    {
+      "name": "Web cache contains native vector outlines",
+      "ok": true
+    },
+    {
+      "name": "DataMatrix still uses module rectangles",
+      "ok": true
+    },
+    {
+      "name": "Actual web preview has antialiased edges at 4x native size",
+      "ok": true,
+      "actual": 3983
+    },
+    {
+      "name": "DataMatrix module edges remain crisp",
+      "ok": true,
+      "actual": 0
+    }
+  ],
+  "zoomChecks": [
+    {
+      "zoom": 50,
+      "classes": [
+        "Path",
+        "Path",
+        "Path",
+        "Path",
+        "Path"
+      ],
+      "sameKeys": true,
+      "sameGeometry": true,
+      "sameSaved": true
+    },
+    {
+      "zoom": 100,
+      "classes": [
+        "Path",
+        "Path",
+        "Path",
+        "Path",
+        "Path"
+      ],
+      "sameKeys": true,
+      "sameGeometry": true,
+      "sameSaved": true
+    },
+    {
+      "zoom": 133,
+      "classes": [
+        "Path",
+        "Path",
+        "Path",
+        "Path",
+        "Path"
+      ],
+      "sameKeys": true,
+      "sameGeometry": true,
+      "sameSaved": true
+    },
+    {
+      "zoom": 400,
+      "classes": [
+        "Path",
+        "Path",
+        "Path",
+        "Path",
+        "Path"
+      ],
+      "sameKeys": true,
+      "sameGeometry": true,
+      "sameSaved": true
+    }
+  ],
+  "installedFontCount": 158,
+  "fields": [
+    {
+      "name": "WebFont0",
+      "type": "FixedText",
+      "face": "Arial Narrow",
+      "geom": {
+        "x": 100,
+        "y": 100,
+        "w": 1475,
+        "h": 250
+      },
+      "preview": "Path"
+    },
+    {
+      "name": "WebFont1",
+      "type": "DateText",
+      "face": "Times New Roman",
+      "geom": {
+        "x": 100,
+        "y": 750,
+        "w": 717,
+        "h": 242
+      },
+      "preview": "Path"
+    },
+    {
+      "name": "WebFont2",
+      "type": "OffsetDateText",
+      "face": "Courier New",
+      "geom": {
+        "x": 100,
+        "y": 1400,
+        "w": 1000,
+        "h": 242
+      },
+      "preview": "Path"
+    },
+    {
+      "name": "WebFont3",
+      "type": "TimeText",
+      "face": "Tahoma",
+      "geom": {
+        "x": 100,
+        "y": 2050,
+        "w": 542,
+        "h": 250
+      },
+      "preview": "Path"
+    },
+    {
+      "name": "WebFont4",
+      "type": "CounterText",
+      "face": "Segoe UI",
+      "geom": {
+        "x": 100,
+        "y": 2700,
+        "w": 433,
+        "h": 292
+      },
+      "preview": "Path"
+    },
+    {
+      "name": "WebDataMatrix",
+      "type": "Barcode",
+      "geom": {
+        "x": 100,
+        "y": 3800,
+        "w": 1100,
+        "h": 1100
+      },
+      "preview": "Group"
+    }
+  ],
+  "edgePixels": 3983,
+  "dmEdgePixels": 0,
+  "initial": {
+    "url": "http://127.0.0.1:5173/",
+    "noElectronPreload": true,
+    "bridgeUsesHttp": true,
+    "catalogCount": 158,
+    "httpStatus": 200,
+    "outlineAvailable": true,
+    "outlineLength": 5309,
+    "responseWidth": 171,
+    "responseHeight": 28
+  },
+  "consoleMessages": []
+}

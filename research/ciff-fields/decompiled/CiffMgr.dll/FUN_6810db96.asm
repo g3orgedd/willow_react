@@ -1,0 +1,9 @@
+6810db96 PUSH EBP
+6810db97 MOV EBP,ESP
+6810db99 PUSH dword ptr [EBP + 0x10]
+6810db9c PUSH dword ptr [EBP + 0xc]
+6810db9f PUSH 0x68149aac
+6810dba4 PUSH dword ptr [EBP + 0x8]
+6810dba7 CALL 0x68103eaf
+6810dbac POP EBP
+6810dbad RET 0xc

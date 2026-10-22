@@ -1,0 +1,71 @@
+{
+  "CapturedAtUtc": "2026-10-22T08:42:02.8879505Z",
+  "Version": "2.3.1",
+  "Processes": [
+    {
+      "Id": 17024,
+      "ProcessName": "CLARiSOFT",
+      "Path": "C:\\Program Files (x86)\\CLARICOM\\CLARiSOFT\\CLARiSOFT.exe",
+      "MainWindowTitle": "CLARiSOFT - C:\\Users\\GigaGeorge\\Downloads\\Party (Date+Par)NEW2.ciff"
+    },
+    {
+      "Id": 1308,
+      "ProcessName": "Glyph Studio",
+      "Path": "C:\\Users\\GigaGeorge\\AppData\\Local\\Programs\\Glyph Studio\\Glyph Studio.exe",
+      "MainWindowTitle": ""
+    },
+    {
+      "Id": 33592,
+      "ProcessName": "Glyph Studio",
+      "Path": "C:\\Users\\GigaGeorge\\AppData\\Local\\Programs\\Glyph Studio\\Glyph Studio.exe",
+      "MainWindowTitle": ""
+    },
+    {
+      "Id": 35484,
+      "ProcessName": "Glyph Studio",
+      "Path": "C:\\Users\\GigaGeorge\\AppData\\Local\\Programs\\Glyph Studio\\Glyph Studio.exe",
+      "MainWindowTitle": "Glyph Studio"
+    },
+    {
+      "Id": 42784,
+      "ProcessName": "Glyph Studio",
+      "Path": "C:\\Users\\GigaGeorge\\AppData\\Local\\Programs\\Glyph Studio\\Glyph Studio.exe",
+      "MainWindowTitle": ""
+    }
+  ],
+  "ServerListeners": [
+    {
+      "LocalAddress": "0.0.0.0",
+      "LocalPort": 5173,
+      "OwningProcess": 26952
+    }
+  ],
+  "Archives": [
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-fonts-20261020\\win-unpacked\\resources\\app.asar",
+      "Bytes": 7441397,
+      "ModifiedUtc": "2026-10-20T18:34:56.7138121Z",
+      "Sha256": "8399A93DCAC1F76DC8B22375A1F697DE96E71CE23B511A61582C38A9BD06F8D0"
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-glyph-studio-2.1.1\\win-unpacked\\resources\\app.asar",
+      "Bytes": 7369329,
+      "ModifiedUtc": "2026-09-14T21:31:30.5032062Z",
+      "Sha256": "B3B4DBB1B350D1000DB9098498725EDC4CA77D65BAF49236C24A50FF09DA7D91"
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-local\\win-unpacked\\resources\\app.asar",
+      "Bytes": 7510315,
+      "ModifiedUtc": "2026-10-21T05:22:15.4564804Z",
+      "Sha256": "A24F2F653B800003554C034D4DBBF3CC27675157060D3F6C50276C8A7D039254"
+    },
+    {
+      "Path": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\resources\\app.asar",
+      "Bytes": 7455431,
+      "ModifiedUtc": "2026-10-20T19:54:24.3637778Z",
+      "Sha256": "C79F0B912AD96BB07D3D80DE732A152F14148378658027C4802E03A34D2A5546"
+    }
+  ],
+  "NoUiOpened": true,
+  "NoBuildStarted": true
+}

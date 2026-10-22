@@ -1,0 +1,11 @@
+45426b58 PUSH EBP
+45426b59 MOV EBP,ESP
+45426b5b MOV EAX,dword ptr [EBP + 0x8]
+45426b5e PUSH dword ptr [EBP + 0x10]
+45426b61 PUSH dword ptr [EBP + 0xc]
+45426b64 MOV EAX,dword ptr [EAX + 0xc]
+45426b67 PUSH EAX
+45426b68 MOV ECX,dword ptr [EAX]
+45426b6a CALL dword ptr [ECX]
+45426b6c POP EBP
+45426b6d RET 0xc

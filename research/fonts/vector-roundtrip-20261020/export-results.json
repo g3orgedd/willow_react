@@ -1,0 +1,23 @@
+{
+  "completedAt": "2026-10-20T20:30:32.679Z",
+  "cleanup": {
+    "actualOwnedExeExited": true,
+    "debuggingPortClosed": 58934,
+    "researchHarnessClosedAfterCdpCloseRace": true,
+    "existingUserExePidUntouched": 36168
+  },
+  "web": {
+    "mode": "web",
+    "filename": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\web-vector.ciff",
+    "fields": 10,
+    "bytes": 9958,
+    "sha256": "d6046cd29ccb5200fe80726b4eb22734ef9d236307573018457d30953d0a367e"
+  },
+  "exe": {
+    "mode": "exe",
+    "filename": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\exe-vector.ciff",
+    "fields": 10,
+    "bytes": 9958,
+    "sha256": "d6046cd29ccb5200fe80726b4eb22734ef9d236307573018457d30953d0a367e"
+  }
+}

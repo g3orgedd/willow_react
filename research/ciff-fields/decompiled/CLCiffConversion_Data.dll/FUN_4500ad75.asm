@@ -1,0 +1,7 @@
+4500ad75 MOV ECX,dword ptr [ECX + 0x4]
+4500ad78 TEST ECX,ECX
+4500ad7a JZ 0x4500ad82
+4500ad7c MOV EAX,dword ptr [ECX]
+4500ad7e PUSH ECX
+4500ad7f CALL dword ptr [EAX + 0x8]
+4500ad82 RET

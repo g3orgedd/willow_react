@@ -1,0 +1,44 @@
+[
+  {
+    "height": 28,
+    "face": "Fixedsys",
+    "width": 348,
+    "pitch": 6,
+    "different": 0
+  },
+  {
+    "height": 63,
+    "face": "Fixedsys",
+    "width": 766,
+    "pitch": 13,
+    "different": 0
+  },
+  {
+    "height": 28,
+    "face": "System",
+    "width": 348,
+    "pitch": 6,
+    "different": 0
+  },
+  {
+    "height": 63,
+    "face": "System",
+    "width": 766,
+    "pitch": 13,
+    "different": 0
+  },
+  {
+    "height": 28,
+    "face": "Terminal",
+    "width": 348,
+    "pitch": 6,
+    "different": 0
+  },
+  {
+    "height": 63,
+    "face": "Terminal",
+    "width": 766,
+    "pitch": 13,
+    "different": 0
+  }
+]

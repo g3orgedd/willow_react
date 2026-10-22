@@ -1,0 +1,766 @@
+{
+  "name": "CLCSGraphicPrimitive.dll",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSGraphicPrimitive.dll",
+  "size": 277504,
+  "sha256": "19a1a7c24c3446ae7e48d540832a056c1d3d8c3a05d1afa96bc2f138de26ba2f",
+  "imageBase": "42800000",
+  "exports": [
+    {
+      "name": "DllCanUnloadNow",
+      "ordinal": 1,
+      "va": "4280d099"
+    },
+    {
+      "name": "DllGetClassObject",
+      "ordinal": 2,
+      "va": "4280d0a5"
+    },
+    {
+      "name": "DllRegisterServer",
+      "ordinal": 3,
+      "va": "4280d0f5"
+    },
+    {
+      "name": "DllUnregisterServer",
+      "ordinal": 4,
+      "va": "4280d104"
+    }
+  ],
+  "imports": [
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "GetCurrentProcess",
+        "GetCurrentThreadId",
+        "FlushInstructionCache",
+        "GetStringTypeW",
+        "CreateDirectoryW",
+        "FormatMessageW",
+        "CreateFileW",
+        "ReadFile",
+        "WriteFile",
+        "CloseHandle",
+        "GetCommandLineW",
+        "WaitForSingleObject",
+        "CreateProcessW",
+        "LoadLibraryExA",
+        "ExpandEnvironmentStringsA",
+        "SetEnvironmentVariableA",
+        "ReadConsoleW",
+        "FlushFileBuffers",
+        "WriteConsoleW",
+        "SetLastError",
+        "SetFilePointerEx",
+        "GetConsoleMode",
+        "GetConsoleCP",
+        "LCMapStringW",
+        "CompareStringW",
+        "FreeEnvironmentStringsW",
+        "GetEnvironmentStringsW",
+        "GetCurrentProcessId",
+        "QueryPerformanceCounter",
+        "GetModuleFileNameA",
+        "GetFileType",
+        "GetStdHandle",
+        "GetStartupInfoW",
+        "TlsFree",
+        "FindResourceW",
+        "lstrcmpiW",
+        "MulDiv",
+        "SizeofResource",
+        "LockResource",
+        "LoadResource",
+        "LoadLibraryExW",
+        "GetProcAddress",
+        "GetModuleHandleW",
+        "GetModuleFileNameW",
+        "FreeLibrary",
+        "DisableThreadLibraryCalls",
+        "InitializeCriticalSectionAndSpinCount",
+        "LeaveCriticalSection",
+        "EnterCriticalSection",
+        "EncodePointer",
+        "GetTimeFormatW",
+        "GetDateFormatW",
+        "OutputDebugStringA",
+        "GetPrivateProfileIntW",
+        "WideCharToMultiByte",
+        "DeleteCriticalSection",
+        "InitializeCriticalSectionEx",
+        "GetLastError",
+        "RaiseException",
+        "DecodePointer",
+        "GetProcessHeap",
+        "MultiByteToWideChar",
+        "lstrlenW",
+        "lstrlenA",
+        "LocalFree",
+        "GetLocalTime",
+        "OutputDebugStringW",
+        "DebugBreak",
+        "FindFirstFileW",
+        "FindClose",
+        "HeapFree",
+        "HeapAlloc",
+        "SetStdHandle",
+        "TlsSetValue",
+        "TlsGetValue",
+        "TlsAlloc",
+        "TerminateProcess",
+        "Sleep",
+        "SetUnhandledExceptionFilter",
+        "UnhandledExceptionFilter",
+        "HeapReAlloc",
+        "HeapSize",
+        "GetModuleHandleExW",
+        "ExitProcess",
+        "GetCPInfo",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "GetCommandLineA",
+        "GetTimeZoneInformation",
+        "RtlUnwind",
+        "GetSystemTimeAsFileTime",
+        "VirtualFree",
+        "VirtualAlloc",
+        "IsProcessorFeaturePresent",
+        "InterlockedPushEntrySList",
+        "InterlockedPopEntrySList",
+        "InitializeSListHead",
+        "IsDebuggerPresent"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "UnregisterClassW",
+        "CharUpperW",
+        "ShowWindow",
+        "CharNextW",
+        "GetDialogBaseUnits",
+        "GetDC",
+        "ReleaseDC",
+        "SetWindowLongW",
+        "MoveWindow",
+        "CreateDialogParamW",
+        "MessageBoxW",
+        "GetWindowTextLengthW",
+        "GetWindowTextW",
+        "SetWindowTextW",
+        "EnableWindow",
+        "SetFocus",
+        "GetDlgItem",
+        "LoadBitmapW",
+        "DestroyWindow",
+        "IsWindow",
+        "PostMessageW",
+        "SendMessageW",
+        "FillRect",
+        "IsDialogMessageW",
+        "LoadStringW"
+      ]
+    },
+    {
+      "library": "GDI32.dll",
+      "names": [
+        "GetCurrentObject",
+        "SetWindowExtEx",
+        "SetViewportExtEx",
+        "GetObjectW",
+        "CreateDIBSection",
+        "StretchBlt",
+        "SetMapMode",
+        "PatBlt",
+        "GetWindowExtEx",
+        "GetViewportExtEx",
+        "GetStockObject",
+        "Ellipse",
+        "DeleteDC",
+        "CreatePen",
+        "CreateCompatibleDC",
+        "CreateCompatibleBitmap",
+        "BitBlt",
+        "GetTextMetricsW",
+        "SelectObject",
+        "GetTextExtentPointW",
+        "GetDeviceCaps",
+        "DeleteObject",
+        "CreateFontIndirectW"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "RegQueryValueExA",
+        "RegOpenKeyExA",
+        "RegQueryInfoKeyW",
+        "RegEnumKeyExW",
+        "RegDeleteValueW",
+        "RegDeleteKeyW",
+        "RegSetValueExW",
+        "RegQueryValueExW",
+        "RegOpenKeyExW",
+        "RegCreateKeyExW",
+        "RegCloseKey"
+      ]
+    },
+    {
+      "library": "SHELL32.dll",
+      "names": [
+        "SHGetFolderPathW"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "CoTaskMemFree",
+        "CoCreateInstance",
+        "CoInitialize",
+        "OleRun",
+        "CLSIDFromString",
+        "CLSIDFromProgID",
+        "CoCreateFreeThreadedMarshaler",
+        "StringFromGUID2",
+        "CoTaskMemAlloc",
+        "CoTaskMemRealloc",
+        "CoUninitialize"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "RegisterTypeLib",
+        "UnRegisterTypeLib",
+        "OleCreatePropertyFrame",
+        "LoadTypeLib",
+        "VarUI4FromStr",
+        "VariantCopy",
+        "VariantTimeToSystemTime",
+        "SystemTimeToVariantTime",
+        "VarBstrCmp",
+        "VariantClear",
+        "VariantInit",
+        "SysAllocStringByteLen",
+        "SysStringByteLen",
+        "SysStringLen",
+        "SysFreeString",
+        "SysAllocStringLen",
+        "SysAllocString",
+        "GetErrorInfo"
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "4282d350",
+      "fileOffset": 181072,
+      "encoding": "ascii",
+      "text": "CCLCSGraphicPrimitiveObj::Resize - position: l=%ld, t=%ld, r=%ld, b=%ld"
+    },
+    {
+      "va": "4282d3a0",
+      "fileOffset": 181152,
+      "encoding": "ascii",
+      "text": "CCLCSGraphicPrimitiveObj::Resize - lHeight: l=%ld lWidth: l=%ld"
+    },
+    {
+      "va": "42833374",
+      "fileOffset": 205684,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "428333e4",
+      "fileOffset": 205796,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "42836a90",
+      "fileOffset": 219792,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "42836e68",
+      "fileOffset": 220776,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "42836ecc",
+      "fileOffset": 220876,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "42836f90",
+      "fileOffset": 221072,
+      "encoding": "ascii",
+      "text": "C:\\AutomatedBuilds\\TFSTeamBuild\\Windows Applications\\Releases\\PCMS4.500\\CLARICOM\\Installation Directory\\PDB Files\\CLCSGraphicPrimitive.pdb"
+    },
+    {
+      "va": "4283aa00",
+      "fileOffset": 236032,
+      "encoding": "ascii",
+      "text": "CLCSGraphicPrimitive.DLL"
+    },
+    {
+      "va": "4283aa29",
+      "fileOffset": 236073,
+      "encoding": "ascii",
+      "text": "DllGetClassObject"
+    },
+    {
+      "va": "4283b176",
+      "fileOffset": 237942,
+      "encoding": "ascii",
+      "text": "WaitForSingleObject"
+    },
+    {
+      "va": "4283b36e",
+      "fileOffset": 238446,
+      "encoding": "ascii",
+      "text": "CreateFontIndirectW"
+    },
+    {
+      "va": "4283b384",
+      "fileOffset": 238468,
+      "encoding": "ascii",
+      "text": "DeleteObject"
+    },
+    {
+      "va": "4283b3ba",
+      "fileOffset": 238522,
+      "encoding": "ascii",
+      "text": "SelectObject"
+    },
+    {
+      "va": "4283b438",
+      "fileOffset": 238648,
+      "encoding": "ascii",
+      "text": "GetStockObject"
+    },
+    {
+      "va": "4283b4aa",
+      "fileOffset": 238762,
+      "encoding": "ascii",
+      "text": "GetObjectW"
+    },
+    {
+      "va": "4283b4de",
+      "fileOffset": 238814,
+      "encoding": "ascii",
+      "text": "GetCurrentObject"
+    },
+    {
+      "va": "4283e030",
+      "fileOffset": 248880,
+      "encoding": "ascii",
+      "text": ".?AVCCiffHelperUtil@@"
+    },
+    {
+      "va": "4283e1dc",
+      "fileOffset": 249308,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "4283e240",
+      "fileOffset": 249408,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "4283e284",
+      "fileOffset": 249476,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "4283e350",
+      "fileOffset": 249680,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "4283e3ec",
+      "fileOffset": 249836,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+    },
+    {
+      "va": "4283e6e8",
+      "fileOffset": 250600,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCLCSToolBoxItem@@@ATL@@"
+    },
+    {
+      "va": "4283e85c",
+      "fileOffset": 250972,
+      "encoding": "ascii",
+      "text": ".?AVCCLCSGraphicPrimitiveObj@@"
+    },
+    {
+      "va": "4283e888",
+      "fileOffset": 251016,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCCLCSGraphicPrimitiveObj@@$1?CLSID_CLCSGraphicPrimitiveObj@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "4283e8f0",
+      "fileOffset": 251120,
+      "encoding": "ascii",
+      "text": ".?AV?$CLEventHandler@VCCLCSGraphicPrimitiveObj@@@CLLanguageEventHandlerNamespace@@"
+    },
+    {
+      "va": "4283e94c",
+      "fileOffset": 251212,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCLCSGraphicPrimitiveObj@@@ATL@@"
+    },
+    {
+      "va": "4283e988",
+      "fileOffset": 251272,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCCLCSGraphicPrimitiveObj@@@ATL@@"
+    },
+    {
+      "va": "4283e9c8",
+      "fileOffset": 251336,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@"
+    },
+    {
+      "va": "4283ea10",
+      "fileOffset": 251408,
+      "encoding": "ascii",
+      "text": ".?AVCGraphicPrimitiveProp@@"
+    },
+    {
+      "va": "4283ea38",
+      "fileOffset": 251448,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCGraphicPrimitiveProp@@$1?CLSID_GraphicPrimitiveProp@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "4283eaa0",
+      "fileOffset": 251552,
+      "encoding": "ascii",
+      "text": ".?AV?$IInternationalPropertyPageImpl@VCGraphicPrimitiveProp@@$0PKKF@@@"
+    },
+    {
+      "va": "4283eaf0",
+      "fileOffset": 251632,
+      "encoding": "ascii",
+      "text": ".?AV?$IPropertyPageImpl@VCGraphicPrimitiveProp@@@ATL@@"
+    },
+    {
+      "va": "4283eb30",
+      "fileOffset": 251696,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCGraphicPrimitiveProp@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "4283eb78",
+      "fileOffset": 251768,
+      "encoding": "ascii",
+      "text": ".?AV?$CLEventHandler@VCGraphicPrimitiveProp@@@CLLanguageEventHandlerNamespace@@"
+    },
+    {
+      "va": "4283ebd0",
+      "fileOffset": 251856,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCGraphicPrimitiveProp@@@ATL@@"
+    },
+    {
+      "va": "4283ec08",
+      "fileOffset": 251912,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCGraphicPrimitiveProp@@@ATL@@"
+    },
+    {
+      "va": "4283ec48",
+      "fileOffset": 251976,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@ATL@@@ATL@@"
+    },
+    {
+      "va": "4283ed10",
+      "fileOffset": 252176,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCCLCSGraphicPrimitiveObj@@@ATL@@"
+    },
+    {
+      "va": "4283ed58",
+      "fileOffset": 252248,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCGraphicPrimitiveProp@@@ATL@@"
+    },
+    {
+      "va": "428455ca",
+      "fileOffset": 254410,
+      "encoding": "ascii",
+      "text": "CLCSGraphicPrimitive.CLCSGraphicPrimitiveObj.1 = s 'CLCSGraphicPrimitiveObj Class'"
+    },
+    {
+      "va": "4284565d",
+      "fileOffset": 254557,
+      "encoding": "ascii",
+      "text": "CLCSGraphicPrimitive.CLCSGraphicPrimitiveObj = s 'CLCSGraphicPrimitiveObj Class'"
+    },
+    {
+      "va": "428456eb",
+      "fileOffset": 254699,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSGraphicPrimitive.CLCSGraphicPrimitiveObj.1'"
+    },
+    {
+      "va": "42845743",
+      "fileOffset": 254787,
+      "encoding": "ascii",
+      "text": "ForceRemove {DC1F7EC4-7698-11D5-8036-005004D10645} = s 'CLCSGraphicPrimitiveObj Class'"
+    },
+    {
+      "va": "428457a3",
+      "fileOffset": 254883,
+      "encoding": "ascii",
+      "text": "ProgID = s 'CLCSGraphicPrimitive.CLCSGraphicPrimitiveObj.1'"
+    },
+    {
+      "va": "428457e3",
+      "fileOffset": 254947,
+      "encoding": "ascii",
+      "text": "VersionIndependentProgID = s 'CLCSGraphicPrimitive.CLCSGraphicPrimitiveObj'"
+    },
+    {
+      "va": "42845952",
+      "fileOffset": 255314,
+      "encoding": "ascii",
+      "text": "CLCSGraphicPrimitive.GraphicPrimitiveProp.1 = s 'GraphicPrimitiveProp Class'"
+    },
+    {
+      "va": "428459df",
+      "fileOffset": 255455,
+      "encoding": "ascii",
+      "text": "CLCSGraphicPrimitive.GraphicPrimitiveProp = s 'GraphicPrimitiveProp Class'"
+    },
+    {
+      "va": "42845a67",
+      "fileOffset": 255591,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSGraphicPrimitive.GraphicPrimitiveProp.1'"
+    },
+    {
+      "va": "42845abc",
+      "fileOffset": 255676,
+      "encoding": "ascii",
+      "text": "ForceRemove {45CB1736-7760-11D5-8036-005004D10645} = s 'GraphicPrimitiveProp Class'"
+    },
+    {
+      "va": "428469d8",
+      "fileOffset": 259544,
+      "encoding": "ascii",
+      "text": "CLCSGRAPHICPRIMITIVELibW"
+    },
+    {
+      "va": "428469fc",
+      "fileOffset": 259580,
+      "encoding": "ascii",
+      "text": "CLCSGraphicPrimitiveObjWd"
+    },
+    {
+      "va": "42846b4c",
+      "fileOffset": 259916,
+      "encoding": "ascii",
+      "text": "varCiffFileW"
+    },
+    {
+      "va": "42846ca0",
+      "fileOffset": 260256,
+      "encoding": "ascii",
+      "text": "bstrFontName"
+    },
+    {
+      "va": "42846cb6",
+      "fileOffset": 260278,
+      "encoding": "ascii",
+      "text": "H<lFontPitchWW"
+    },
+    {
+      "va": "42846ccf",
+      "fileOffset": 260303,
+      "encoding": "ascii",
+      "text": ";bstrSubImage"
+    },
+    {
+      "va": "42846d04",
+      "fileOffset": 260356,
+      "encoding": "ascii",
+      "text": "pVarCiffFieldWWWd"
+    },
+    {
+      "va": "42846d20",
+      "fileOffset": 260384,
+      "encoding": "ascii",
+      "text": "GetCiffW"
+    },
+    {
+      "va": "42846d34",
+      "fileOffset": 260404,
+      "encoding": "ascii",
+      "text": "varCiffWd"
+    },
+    {
+      "va": "42846da4",
+      "fileOffset": 260516,
+      "encoding": "ascii",
+      "text": "GetCiffFileWX"
+    },
+    {
+      "va": "4284702f",
+      "fileOffset": 261167,
+      "encoding": "ascii",
+      "text": "ZlSubImageWWW"
+    },
+    {
+      "va": "42847048",
+      "fileOffset": 261192,
+      "encoding": "ascii",
+      "text": "get_WhichSubImageWWW"
+    },
+    {
+      "va": "42847068",
+      "fileOffset": 261224,
+      "encoding": "ascii",
+      "text": "put_WhichSubImageWWWL"
+    },
+    {
+      "va": "42847124",
+      "fileOffset": 261412,
+      "encoding": "ascii",
+      "text": "GraphicPrimitiveProp%"
+    },
+    {
+      "va": "4284713a",
+      "fileOffset": 261434,
+      "encoding": "ascii",
+      "text": "CLCSGraphicPrimitive 1.0 Type LibraryW"
+    },
+    {
+      "va": "42847162",
+      "fileOffset": 261474,
+      "encoding": "ascii",
+      "text": "CLCSGraphicPrimitiveObj ClassW"
+    },
+    {
+      "va": "4284720e",
+      "fileOffset": 261646,
+      "encoding": "ascii",
+      "text": "method GetCiff"
+    },
+    {
+      "va": "4284724a",
+      "fileOffset": 261706,
+      "encoding": "ascii",
+      "text": "method GetCiffFile"
+    },
+    {
+      "va": "4284738e",
+      "fileOffset": 262030,
+      "encoding": "ascii",
+      "text": "method get_WhichSubImageWW"
+    },
+    {
+      "va": "428473aa",
+      "fileOffset": 262058,
+      "encoding": "ascii",
+      "text": "method put_WhichSubImageWW/"
+    },
+    {
+      "va": "4284743e",
+      "fileOffset": 262206,
+      "encoding": "ascii",
+      "text": "GraphicPrimitiveProp Class"
+    },
+    {
+      "va": "4282b704",
+      "fileOffset": 173828,
+      "encoding": "utf-16-le",
+      "text": "FixedText"
+    },
+    {
+      "va": "4282b72c",
+      "fileOffset": 173868,
+      "encoding": "utf-16-le",
+      "text": "DateText"
+    },
+    {
+      "va": "4282b740",
+      "fileOffset": 173888,
+      "encoding": "utf-16-le",
+      "text": "OffsetDateText"
+    },
+    {
+      "va": "4282b760",
+      "fileOffset": 173920,
+      "encoding": "utf-16-le",
+      "text": "CounterText"
+    },
+    {
+      "va": "4282cdd0",
+      "fileOffset": 179664,
+      "encoding": "utf-16-le",
+      "text": "CLCSGraphicPrimitive"
+    },
+    {
+      "va": "4282ce6c",
+      "fileOffset": 179820,
+      "encoding": "utf-16-le",
+      "text": "GraphicPrimitive"
+    },
+    {
+      "va": "4282d420",
+      "fileOffset": 181280,
+      "encoding": "utf-16-le",
+      "text": "CGraphicPrimitiveProp::Apply"
+    },
+    {
+      "va": "42845378",
+      "fileOffset": 253816,
+      "encoding": "utf-16-le",
+      "text": "CLARiSOFT Graphic Primitive Design Component"
+    },
+    {
+      "va": "42845424",
+      "fileOffset": 253988,
+      "encoding": "utf-16-le",
+      "text": "CLCSGraphicPrimitive"
+    },
+    {
+      "va": "428454bc",
+      "fileOffset": 254140,
+      "encoding": "utf-16-le",
+      "text": "CLCSGraphicPrimitive.DLL"
+    },
+    {
+      "va": "42845510",
+      "fileOffset": 254224,
+      "encoding": "utf-16-le",
+      "text": "CLCSGraphicPrimitive Module"
+    },
+    {
+      "va": "42845eca",
+      "fileOffset": 256714,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_S_GRAPHICLINEWIDTH"
+    },
+    {
+      "va": "42847d3a",
+      "fileOffset": 264506,
+      "encoding": "utf-16-le",
+      "text": "CLCSGraphicPrimitive"
+    }
+  ]
+}

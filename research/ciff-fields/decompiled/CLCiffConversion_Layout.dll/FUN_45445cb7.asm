@@ -1,0 +1,4 @@
+45445cb7 PUSH dword ptr [EBP + -0x48]
+45445cba CALL 0x454298af
+45445cbf POP ECX
+45445cc0 RET

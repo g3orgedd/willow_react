@@ -1,0 +1,162 @@
+[
+  {
+    "mode": "web",
+    "caseId": "normal",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-normal.ciff",
+    "basename": "xml-web-normal.ciff",
+    "sha256": "99d6c6a7669b2258f8f5a266a089867fe4e7b94730b312996108a79dab2323ef",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-normal-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "anisotropic-yres",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-anisotropic-yres.ciff",
+    "basename": "xml-web-anisotropic-yres.ciff",
+    "sha256": "ad6cc4ae37c5e99fb2510b27b0485534e1aef7e9c694947ebbc24ae9c72850a7",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-anisotropic-yres-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "anisotropic-xres",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-anisotropic-xres.ciff",
+    "basename": "xml-web-anisotropic-xres.ciff",
+    "sha256": "41d9bf9b4e86faa98885f2bbf9553d2912f3807407c918010e76470cb06486e5",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-anisotropic-xres-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "lower-yres",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-lower-yres.ciff",
+    "basename": "xml-web-lower-yres.ciff",
+    "sha256": "09887c4774626d795315a6febb0dfbfe0d20548c61245595aabe7dc96571601f",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-lower-yres-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "lower-xres",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-lower-xres.ciff",
+    "basename": "xml-web-lower-xres.ciff",
+    "sha256": "b2f8cc4a2d923bafe8d2e08146865c2f330f751b42c93094dfc1092b8a750e63",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-lower-xres-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "fractional-rotation90",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-fractional-rotation90.ciff",
+    "basename": "xml-web-fractional-rotation90.ciff",
+    "sha256": "e74c45fef1464c232033c0038303c561773708ce05106033b1bc0f6498ed5ca0",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-fractional-rotation90-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "fractional-rotation270",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-fractional-rotation270.ciff",
+    "basename": "xml-web-fractional-rotation270.ciff",
+    "sha256": "e3e8e79b219818f9cf88b61281a6646225e89001a27d34ab1659ddcad78c0052",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-fractional-rotation270-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "profile6230",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-profile6230.ciff",
+    "basename": "xml-web-profile6230.ciff",
+    "sha256": "688eec987bbfb4d09be97da2b6e0336a950b2d3666671f06a06e23f192da7c4e",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-profile6230-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "party-gtin2",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-party-gtin2.ciff",
+    "basename": "xml-web-party-gtin2.ciff",
+    "sha256": "c57f5c8eb711035b4c01e223e9caa3f2270e0bdd860ba678b576bf3de94f5329",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-party-gtin2-expected.json"
+  },
+  {
+    "mode": "web",
+    "caseId": "party-box-gtin",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-web-party-box-gtin.ciff",
+    "basename": "xml-web-party-box-gtin.ciff",
+    "sha256": "0369bae7fba8843c34ded498e5ead27d02e1288a71c386cbe2a98e18f6051caa",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\web-party-box-gtin-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "normal",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+    "basename": "xml-exe-normal.ciff",
+    "sha256": "ad7db1c27a62af801935f39b82dbf9b07bbe71681a9433ae7c4e07a375cb3b72",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-normal-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "anisotropic-yres",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+    "basename": "xml-exe-anisotropic-yres.ciff",
+    "sha256": "ad6cc4ae37c5e99fb2510b27b0485534e1aef7e9c694947ebbc24ae9c72850a7",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-anisotropic-yres-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "anisotropic-xres",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+    "basename": "xml-exe-anisotropic-xres.ciff",
+    "sha256": "41d9bf9b4e86faa98885f2bbf9553d2912f3807407c918010e76470cb06486e5",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-anisotropic-xres-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "lower-yres",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+    "basename": "xml-exe-lower-yres.ciff",
+    "sha256": "09887c4774626d795315a6febb0dfbfe0d20548c61245595aabe7dc96571601f",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-lower-yres-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "lower-xres",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+    "basename": "xml-exe-lower-xres.ciff",
+    "sha256": "2fdc485342cdff18ee3e2c35166ebb3fe8dbb19baab2216a29d8f15ff73f7463",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-lower-xres-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "fractional-rotation90",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation90.ciff",
+    "basename": "xml-exe-fractional-rotation90.ciff",
+    "sha256": "4148531de8aac52e021bdcb7d4833f5a61f01d4ab3b5c98b8bccc3f8cd3e7a37",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-fractional-rotation90-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "fractional-rotation270",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation270.ciff",
+    "basename": "xml-exe-fractional-rotation270.ciff",
+    "sha256": "e3e8e79b219818f9cf88b61281a6646225e89001a27d34ab1659ddcad78c0052",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-fractional-rotation270-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "profile6230",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-profile6230.ciff",
+    "basename": "xml-exe-profile6230.ciff",
+    "sha256": "118e3788bbbeb9750b9747f4b924a5b440748e60362101956f196b98391bca5e",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-profile6230-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "party-gtin2",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-party-gtin2.ciff",
+    "basename": "xml-exe-party-gtin2.ciff",
+    "sha256": "e732b4a76604d37b9deb54b34117246c08dbd422646068b23511a141decbf1b4",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-party-gtin2-expected.json"
+  },
+  {
+    "mode": "exe",
+    "caseId": "party-box-gtin",
+    "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-party-box-gtin.ciff",
+    "basename": "xml-exe-party-box-gtin.ciff",
+    "sha256": "0369bae7fba8843c34ded498e5ead27d02e1288a71c386cbe2a98e18f6051caa",
+    "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\exe-party-box-gtin-expected.json"
+  }
+]

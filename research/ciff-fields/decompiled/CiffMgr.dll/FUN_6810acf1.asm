@@ -1,0 +1,10 @@
+6810acf1 PUSH EDI
+6810acf2 MOV EDI,ECX
+6810acf4 PUSH dword ptr [EDI + 0xaf8]
+6810acfa MOV dword ptr [EDI],0x68148728
+6810ad00 CALL dword ptr [0x68147190]
+6810ad06 PUSH dword ptr [EDI + 0xaf4]
+6810ad0c CALL dword ptr [0x68147190]
+6810ad12 MOV dword ptr [EDI + 0x10],0x68148694
+6810ad19 POP EDI
+6810ad1a RET

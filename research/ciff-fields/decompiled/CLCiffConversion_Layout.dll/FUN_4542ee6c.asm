@@ -1,0 +1,3 @@
+4542ee6c AND dword ptr [EBP + -0x14],0x0
+4542ee70 MOV EAX,0x4542ee76
+4542ee75 RET

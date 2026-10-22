@@ -1,0 +1,626 @@
+✔ double-click editing selects the current FixedText value input (3.3434ms)
+✔ computed text and DataMatrix values do not start direct editing (0.9444ms)
+✔ canvas installer handles only primary-button double-clicks on FixedText (1.2632ms)
+✔ editable inspector values expose a stable canvas-editing hook (1.1762ms)
+✔ text value updates on every input event and records one history snapshot per edit session (1.6106ms)
+✔ blur closes a live edit session and unchanged input creates no history or renders (1.6277ms)
+✔ a change event without prior input still applies once and starts one history entry (1.2745ms)
+✔ short DM composition uses Latin C1, C2 and C3 only (15.8781ms)
+✔ derived DM synchronization updates every segment Default and aggregate CalcData (5.3834ms)
+✔ all-DM synchronization updates dependent barcodes after a helper edit (4.699ms)
+✔ derived-state validator reports stale segment defaults and stale CalcData (3.8816ms)
+✔ mixed short and long DataMatrix compositions are rejected before shared helpers mutate (4.6511ms)
+✔ Clarisoft field allocator shares one FieldNN namespace and fills the first gap (3.6187ms)
+✔ explicit profile application migrates legacy Cyrillic C1, C2 and C3 without a load-time rename (6.6589ms)
+✔ new Barcode serializer emits the exact Clarisoft direct-child order (5.0074ms)
+✔ canonical helper models emit exact C1-C4 MaxNoOfChars and omit default XMag (5.8226ms)
+✔ new text, date, time, offset and counter fields use ClariSoft optional-tag signatures (5.0351ms)
+✔ generic field factories keep Ln absent until explicitly configured, including zero (4.8421ms)
+✔ external FixedText factory preserves explicit attributes and source configuration (4.2732ms)
+✔ new field Object attributes distinguish explicit absence from empty and zero values (3.9288ms)
+✔ date editor preserves an existing named offset regardless of Header array order (4.7562ms)
+✔ date editor leaves an unresolved explicit offset reference for validation instead of rebinding it (3.8442ms)
+✔ date editor creates a dedicated free offset name when the field has no reference (7.0369ms)
+✔ FixedLen follows the text-entry model instead of MaxNoOfChars alone (11.4272ms)
+✔ an imported MaxNoOfChars edit is upserted without inventing FixedLen (9.474ms)
+✔ lossless field matching decodes XML entities and replacement names treat dollar tokens literally (7.0055ms)
+✔ VarText opaque XML survives value edits and CDATA terminators are split safely (9.1948ms)
+✔ explicit Pitch wins over a conflicting geometry inference (3.8816ms)
+✔ generic new DataMatrix literals validate without activating a recipe profile (7.7525ms)
+✔ an explicit QuietMargin edit upserts a previously absent optional tag (5.5285ms)
+✔ DataMatrix BcH is derived from symbol rows and effective module size (4.0594ms)
+✔ rectangular DataMatrix geometry uses columns for width and rows for height (4.3841ms)
+✔ explicit DataMatrix options use integer dot geometry and rounded serialized BcH (5.3727ms)
+✔ Auto SymbolSize BcH uses the effectively selected symbol row count (4.4088ms)
+✔ imported Auto SymbolSize updates geometry without changing BcH after a source text edit (8.2459ms)
+✔ new DataMatrix with an unresolvable symbol cannot serialize BcH as zero (7.4771ms)
+✔ serializer only derives DataMatrix BcH when the stored value is null (7.6527ms)
+✔ new DataMatrix serializes ModuleSize and BcH from the same effective module size (5.2568ms)
+✔ geometry sync changes DataMatrix geometry without changing imported BcH (4.3828ms)
+✔ DataMatrix resize snaps ModuleSize and calculates BcH independently from geom.h (8.6865ms)
+✔ new DataMatrix creation initializes calculated BcH instead of default field geometry (13.6486ms)
+✔ XML consistency validator rejects stale DataMatrix Default and CalcData (13.9166ms)
+✔ imported DataMatrix value patch preserves unknown Object structure when structureDirty is false (9.015ms)
+✔ lossless save preserves imported BcH for 22X22 ModuleSize 42 (4.4859ms)
+✔ lossless save does not normalize other imported BcH variants (20.4407ms)
+✔ lossless save inserts a missing BcH before HR (6.7564ms)
+✔ coordinates, movement endpoint and dependent text edits preserve imported BcH (7.7476ms)
+✔ explicit DataMatrix settings edits recalculate BcH through the centralized helper (3.852ms)
+✔ failed DataMatrix profile application preserves imported BcH (4.1362ms)
+✔ Undo and Redo restore imported and explicitly recalculated BcH values (4.8183ms)
+✔ restoring a legacy snapshot infers DataMatrix structural edits from raw XML (5.3811ms)
+✔ explicit DataMatrix structure change uses the canonical Object rebuild path (5.3821ms)
+✔ no-op patch preserves an imported explicit Orientation zero and the complete field block (4.5105ms)
+✔ real ClariSoft fixture keeps its immutable byte anchor and CIFF envelope (5.2685ms)
+✔ production parser reads ClariSoft header and SubHeader metadata (13.4989ms)
+✔ production parser preserves field order and exact Cyrillic/Latin names (6.0467ms)
+✔ production parser reconstructs the ordered DataMatrix model without marking it dirty (5.0597ms)
+✔ production no-op save is byte-identical and preserves imported ClariSoft BcH (45.4514ms)
+✔ ordered comparator reports no structural or byte differences after a no-op save (26.5573ms)
+✔ production load preserves imported geometry until explicit dot geometry sync (28.6363ms)
+✔ production round-trip preserves an imported non-snapped ModuleSize and BcH (19.8014ms)
+✔ production no-op round-trip preserves source ModuleSize and SymbolSize spelling (19.0775ms)
+✔ editing a DataMatrix source text field does not change imported BcH (25.7135ms)
+✔ one model X edit produces only byte metadata and the ordered X difference (29.7134ms)
+✔ X-edited output reparses into the same production model except for PRODUCT_DATE.x (32.1012ms)
+✔ save, production reparse and second save are byte-identical (49.668ms)
+✔ canonical ClStVersionInfo is exact, immutable-looking and formatter-safe (1.9063ms)
+✔ new 6330 Continuous 22X22 ModuleSize 50 output uses the canonical Header (39.2501ms)
+✔ changing 22X22 to 20X20 leaves ClStVersionInfo unchanged (47.0901ms)
+✔ new 36X36 output with C4 and KRIPTO2 uses the same canonical value (14.2164ms)
+✔ additional business fields do not change the canonical value (0.2614ms)
+✔ DataMatrix coordinates and Image dimensions do not change ClStVersionInfo (27.2211ms)
+✔ changing the selected DataMatrix runtime source changes ClStVersionInfo on save (21.0804ms)
+✔ removing the first selected Field changes field count and ClStVersionInfo (22.7455ms)
+✔ an imported ClStVersionInfo is parsed, then regenerated on non-empty save (26.856ms)
+▶ missing, empty, self-closing and clearly invalid target values repair to one canonical element
+  ✔ missing (21.2056ms)
+  ✔ empty (24.2971ms)
+  ✔ self-closing (26.3236ms)
+  ✔ whitespace-only (22.3668ms)
+  ✔ escaped underscore (22.8679ms)
+✔ missing, empty, self-closing and clearly invalid target values repair to one canonical element (117.9947ms)
+✔ a self-closing target Header is expanded and repaired with canonical ClStVersionInfo (17.5877ms)
+✔ duplicate direct ClStVersionInfo elements are replaced with one canonical element (26.3791ms)
+✔ nested markup inside ClStVersionInfo is repaired to plain canonical text (18.026ms)
+✔ a nested vendor Header cannot shadow the direct ImageDesign Header repair (32.2147ms)
+✔ non-empty generation is independent of the empty-template compatibility profile (25.4248ms)
+✔ canonical value survives serialization, UTF-16LE encoding, reparse and a second save (47.0925ms)
+✔ counter edits leave shadow counter and display properties in vendor extensions untouched (30.8349ms)
+✔ constant-text.ciff: no-op import/model/export preserves all ordered field XML semantics (26.2625ms)
+✔ constant-text.ciff: editing X preserves names, optional properties, unknown nodes and sibling order (16.7828ms)
+✔ external-text.ciff: no-op import/model/export preserves all ordered field XML semantics (26.1142ms)
+✔ external-text.ciff: editing X preserves names, optional properties, unknown nodes and sibling order (13.3871ms)
+✔ date.ciff: no-op import/model/export preserves all ordered field XML semantics (24.4827ms)
+✔ date.ciff: editing X preserves names, optional properties, unknown nodes and sibling order (17.8516ms)
+✔ offset-date.ciff: no-op import/model/export preserves all ordered field XML semantics (23.0934ms)
+✔ offset-date.ciff: editing X preserves names, optional properties, unknown nodes and sibling order (13.7987ms)
+✔ field-order.ciff: no-op import/model/export preserves all ordered field XML semantics (26.9029ms)
+✔ field-order.ciff: editing X preserves names, optional properties, unknown nodes and sibling order (18.0375ms)
+✔ constant FixedText / 0 keeps absent optional Object attributes and nodes (11.656ms)
+✔ explicit optional model edits distinguish zero-valued attributes from absence (16.6564ms)
+✔ imported absent optional metadata and missing ImageMapping survive no-op and coordinate saves (37.4826ms)
+✔ imported empty optional metadata and missing ImageMapping survive no-op and coordinate saves (20.2746ms)
+✔ external FixedText / 6 preserves Static, FixedLen, source CDATA and SQL verbatim (10.3181ms)
+✔ editing a self-closing SrcData adds configured children and preserves source attributes (11.434ms)
+✔ null source SQL removes only its direct node while undefined preserves loaded SQL (20.7388ms)
+✔ DateText / 2 retains its format separately from preview and has no offset/source/fixed length (11.9068ms)
+✔ OffsetDateText / 3 resolves SellBy by name regardless of Header order (20.538ms)
+✔ clean and dirty offset saves preserve Header extensions with nested DateOffset nodes (15.7206ms)
+✔ SrcSQL tag-like text and nested source references survive clean and dirty named offset edits (23.1996ms)
+✔ a nested extension DateOffset cannot satisfy a real field offset reference (7.8953ms)
+✔ editing Field11 keeps non-numeric XML order, names and explicit zero attributes (14.222ms)
+✔ new fields append in insertion order without renumbering loaded fields (22.5731ms)
+✔ overlapping explicit field renames preserve each original XML block and its position (17.9574ms)
+✔ unknown nested X/Ln/Default/Pitch do not shadow the actual field configuration (10.798ms)
+✔ Undo/Redo after a saved field rename retains raw XML, source order and unknown properties (40.0007ms)
+✔ Undo/Redo after a saved field delete retains raw XML, source order and unknown properties (31.042ms)
+✔ constant-text.ciff: the imported semantic model can serialize a new field without inventing optional properties (3.7187ms)
+✔ external-text.ciff: the imported semantic model can serialize a new field without inventing optional properties (3.7768ms)
+✔ date.ciff: the imported semantic model can serialize a new field without inventing optional properties (3.6185ms)
+✔ offset-date.ciff: the imported semantic model can serialize a new field without inventing optional properties (4.989ms)
+✔ source regression fixtures remain byte-identical to the analyzed inputs (2.7184ms)
+✔ ZDRAVA2 separates the used image extent from the ClariSoft printer workspace (2.2895ms)
+✔ broken fixture reproduces the printer-profile, metadata, date and hidden-bounds defects (1.6568ms)
+✔ fixed fixture keeps the real image size and passes structural and hardware checks (1.1513ms)
+✔ font import keeps Face separate from the native family classification and preserves no-op XML (38.1491ms)
+✔ FixedText: selecting a font inserts only Face and survives save/reopen (21.1206ms)
+✔ DateText: selecting a font inserts only Face and survives save/reopen (21.0831ms)
+✔ OffsetDateText: selecting a font inserts only Face and survives save/reopen (15.5018ms)
+✔ TimeText: selecting a font inserts only Face and survives save/reopen (17.4186ms)
+✔ CounterText: selecting a font inserts only Face and survives save/reopen (20.2305ms)
+✔ a selected face expands an empty or absent font container (<Text><Font/></Text>) (12.2396ms)
+✔ a selected face expands an empty or absent font container (<Text Vendor="kept"/>) (29.2267ms)
+✔ a selected face expands an empty or absent font container (no Text) (12.6976ms)
+✔ a changed font safely round-trips CDATA terminators and style changes retain opaque children (14.4185ms)
+✔ preview measurement and drawing use the same face, style and YMag for every text type (4.3611ms)
+✔ canvas font CSS quotes the complete face rather than interpreting a font name as CSS (1.1283ms)
+✔ requested ImageWidth and ImageHeight examples export extents measured from coordinate zero (36.943ms)
+✔ requested 2683 + 983 example preserves exact integer CIFF units through import edit and save (12.4394ms)
+✔ quarter-turn field edits retain the existing CIFF geometry rule for every supported orientation (48.3054ms)
+✔ an empty image retains its configured fallback dimensions independently from hardware limits (3.9907ms)
+✔ source ImageRotation metadata and source dimensions survive an untouched save (27.8007ms)
+✔ clarisoft_fix6 decoded fixture reconstructs the supplied immutable CIFF (1.7781ms)
+✔ production parser derives clarisoft_fix6 bounds from visible X/Y/W/H only (6.6468ms)
+✔ production save repairs stale 1100 Image bounds and preserves printer limits (39.436ms)
+✔ changing visibility automatically changes the exported image bounds (34.76ms)
+✔ untouched clarisoft_fix6 import keeps its correct source image dimensions (16.7937ms)
+✔ non-geometry edits preserve source ClariSoft Image padding when history marks bounds dirty (34.7185ms)
+✔ a real printed geometry edit replaces source Image padding with recalculated bounds (28.8961ms)
+✔ a printed orientation edit invalidates source Image padding (19.5063ms)
+✔ programmatically created Glyph equivalent exports the same geometry and bounds (32.0666ms)
+✔ reference text fixture stays in the expected repository location (0.1576ms)
+✔ CIFF import distinguishes absent Ln and Object attributes from explicit zero and empty values (12.7931ms)
+✔ CIFF import retains external SrcData text independently of Default and CalcData (3.9283ms)
+✔ CIFF import retains SrcData child absence separately from an explicitly empty child (3.4237ms)
+✔ CIFF import ignores unknown nested elements that reuse known field and data tag names (3.4605ms)
+✔ CIFF import resolves offset configuration by source name regardless of Header order (6.7941ms)
+✔ CIFF source field identifiers, insertion order, nullable values and external configuration survive a snapshot (3.9996ms)
+✔ ordered comparator fixtures remain byte-identical to the supplied files (5.0435ms)
+✔ real comparison is deterministic and reports ordered fields with code points (35.114ms)
+✔ classifier distinguishes missing, extra, value, order, attribute, unicode and reference differences (1.4436ms)
+✔ fixture copies contain no accidental byte changes (0.2918ms)
+✔ comparison parser rejects a raw CDATA terminator outside a CDATA section (0.5557ms)
+✔ production preset generator matches the ClariSoft order with intentional Latin helper names (38.7732ms)
+✔ generated reference DataMatrix has synchronized source values and CalcData (15.4109ms)
+✔ dirty DateOffsets share one frozen clock and commit only after validation (16.5699ms)
+✔ dirty DateOffsets patch matching source blocks losslessly, remove deleted entries and append new entries canonically (5.4154ms)
+✔ renaming an imported DateOffset preserves opaque source XML and commits its new identity (4.519ms)
+✔ date rollover follows the same JavaScript calendar semantics used by preview (5.2202ms)
+✔ optional metadata remains absent while required numeric metadata and opaque XML stay lossless (3.5355ms)
+✔ an explicit ImageReference edit adds its mapping without rewriting foreign maps (7.0855ms)
+✔ unknown printer targets retain source hardware values instead of guessing a profile (4.2849ms)
+✔ saving after a printer change patches DesignedFor without changing physical or used dimensions (4.8597ms)
+✔ compatibility validator reports physical bounds, invalid dates and broken references together (5.2902ms)
+✔ a failed prepared save leaves live derived state unchanged (5.6505ms)
+✔ clean imported invalid CurrentOffset is repaired while valid clean offsets stay lossless (4.2705ms)
+✔ a valid clean imported DateOffset is preserved byte-for-byte inside Header (3.5906ms)
+✔ UTF-16LE encoder keeps BOM, declaration, two CRLFs and the final CRLF (2.5229ms)
+✔ download failure is caught and shown through the notification modal (2.7208ms)
+✔ attached CIFF loads as 16 x 16 mm while its 25.16 x 25.58 mm Image bounds remain separate (29.4646ms)
+✔ MaxImage sizes survive different heads, print modes, and 0/90/180/270 degree orientation metadata (256.6646ms)
+✔ missing or invalid MaxImage dimensions fall back per axis to source Image before profile repair (55.4695ms)
+✔ known printer limits are only a fallback when neither source dimension is valid (10.8391ms)
+✔ changing object bounds and used-image bounds never resizes the physical workspace (10.2996ms)
+✔ unknown printer capabilities do not turn document dimensions into hardware limits (17.8574ms)
+✔ save and reopen preserve the attached file physical dimensions and source geometry (46.5001ms)
+✔ unchanged imported overflow remains saveable but editing overflow geometry or shrinking requires containment (33.6388ms)
+✔ resizing persists the physical dimensions in MaxImage so reopening cannot restore the old workspace (6.5607ms)
+✔ new templates retain requested dimensions after save and reopening as a file (18.9434ms)
+✔ changing printer or mode preserves physical dimensions through saving and reopening (29.0999ms)
+✔ zoom changes grid pixels and ruler spacing without changing physical dimensions or CIFF units (3.0866ms)
+✔ CEncryption matches all confirmed vectors character-for-character (9.4093ms)
+✔ structure key uses DDSSFF and clamps each counter to 99 (1.5038ms)
+✔ selection masks preserve unsigned bit 31 and fixed-width uppercase hex (1.7835ms)
+✔ TagData truncates to exactly 20 UTF-16 code units (1.8318ms)
+✔ DataMatrix logical value follows Index order and keeps raw ~ source syntax (2.2456ms)
+✔ runtime TagData dispatch covers user text, date, offset date and counter values (1.3815ms)
+✔ full one-TimeText template produces the confirmed 117-character value (30.5539ms)
+✔ save adapter counts only direct DateOffsets and all direct SubImage Fields (5.9407ms)
+✔ empty external templates keep or repair the known-good empty branch without profile gating (5.0498ms)
+✔ same state and now are deterministic; changing value or field count changes ClSt (6.9885ms)
+✔ unsupported non-empty templates do not emit a fictitious token (4.3423ms)
+✔ save preserves a loaded token and warns when runtime TagData is unsupported (8.3282ms)
+✔ grouped custom select keeps semantic groups, compact labels, and raw values (3.9356ms)
+✔ font catalog preserves GDI raster and Unicode names while removing aliases and duplicates (19.2404ms)
+✔ Windows enumeration is hidden, cached across concurrent calls, and isolated from caller mutations (0.8592ms)
+✔ font enumeration errors are visible and permit a later retry (1.5152ms)
+✔ unsupported platforms report no catalog without launching a helper (0.1829ms)
+✔ malformed or empty native catalogs are rejected instead of claiming installed fallback fonts (0.5381ms)
+✔ native rendering validates sizes and sends text as data without interpolating PowerShell source (0.7098ms)
+✔ native bitmap worker persists, serializes jobs, deduplicates requests, and caches results (9.3635ms)
+✔ a timed out bitmap worker rejects the request and restarts on a later render (31.9907ms)
+✔ disposing during startup rejects current and queued work without restarting the worker (3.8396ms)
+✔ native bitmap metadata is bounded before it is returned over IPC (16.5886ms)
+✔ single font edit preserves position, omitted Pitch, horizontal scale and source data, with one undo snapshot (3.0442ms)
+✔ a mixed selection changes all text subtypes in one history entry and leaves the barcode intact (10.7325ms)
+✔ font controls expose mixed family/style values and selecting one style updates every text field (2.0351ms)
+✔ an unavailable imported face remains visible and is not silently replaced by the control (2.9113ms)
+✔ manual font-size changes update pitch and model geometry without moving the field (2.8869ms)
+✔ manual oversized font values are retained for normal overflow validation (1.3796ms)
+✔ canvas resize normalizes transformer scale into pitch, xMag and real geometry (3.5485ms)
+✔ horizontal canvas resize changes xMag without reverting an auto-fit pitch (2.1068ms)
+✔ DataMatrix common properties omit type and maximum characters (3.2642ms)
+✔ non-DataMatrix fields retain type and maximum characters (1.395ms)
+✔ Object and Template properties keep dedicated contextual inspector hosts (3.3183ms)
+✔ Object and Template inspector contexts use the concise shared Properties title (0.6453ms)
+✔ Object value field spans the full inspector width (6.4431ms)
+✔ Multi-selection rotation and font size controls span the full inspector width (2.3746ms)
+✔ DataMatrix modal and template builder share the segmented SN length control (14.5538ms)
+✔ template size hint is spaced from the height field (3.8236ms)
+✔ central editor keeps its functional regions while removing the outer card class (1.4584ms)
+✖ only the central workspace is flattened and shared surface cards remain intact (1.3684ms)
+✔ tabs use a flat bar with transparent inactive tabs and a tonal active tab (0.5785ms)
+✔ workspace, integrated rulers, and status bar form one rectangular hierarchy (0.4672ms)
+✔ mobile keeps the flat editor and file drop still targets the workspace (0.4801ms)
+✔ orientation transforms the same local bounds used by the canvas selection (5.7285ms)
+✔ mouse rotation snaps every pointer angle to a supported quarter turn (6.5441ms)
+✔ canvas rotation preserves the transformed visual top-left and advances field orientation (2.1347ms)
+✔ snapped no-op DataMatrix resize preserves imported BcH outside history (1.3455ms)
+✔ logged R_NUM scenario validates the visible text bounds, not its empty saved width (2.4289ms)
+✔ DataMatrix movement remains constrained by its full logical rectangle (2.8799ms)
+✔ oversized fields are anchored at the template origin and remain invalid (1.4814ms)
+✔ text constraint never writes negative CIFF coordinates (1.4161ms)
+✔ resize constraint can remeasure text instead of using stale selection bounds (1.9127ms)
+✔ group movement preserves spacing and stops at the furthest printed edge (2.1013ms)
+✔ used content size updates Image dimensions without changing the workspace (1.8986ms)
+✔ calculateImageBounds uses raw CIFF geometry instead of browser text metrics (1.51ms)
+✔ calculateImageBounds matches the ClariSoft TEXT_ROTATIONS oracle for 90 and 270 degrees (1.4091ms)
+✔ calculateImageBounds handles one origin object (1.2327ms)
+✔ calculateImageBounds includes field offsets (2.2984ms)
+✔ millimetre geometry is converted to integer CIFF units before calculating the image edge (2.3989ms)
+✔ calculateImageBounds takes the furthest edge across multiple fields (1.2276ms)
+✔ calculateImageBounds shrinks after deleting the furthest field (1.4319ms)
+✔ clarisoft_fix6 visible fields produce 2516 x 2558 and hidden helpers do not expand it (1.5311ms)
+✔ only hidden fields from the previous automatic column are restacked after resize (3.2431ms)
+✔ hidden allocator falls back below the image and keeps every field inside hardware bounds (5.0601ms)
+✔ DataMatrix service text fields form a vertical editing column outside a full-size template (2.8226ms)
+✔ hardware validation ignores the hidden editing column and still validates printed fields (2.6173ms)
+✔ known printer hardware validation uses capabilities without rewriting imported MaxImage values (1.6279ms)
+✔ hidden allocator reports a field that cannot physically fit in the printer workspace (1.4406ms)
+✔ save refreshes used Image dimensions separately from printer capabilities (5.8013ms)
+✔ saving an untouched file preserves its source used dimensions (2.3842ms)
+✔ localhost browser startup connects the Vite native bridge and uses it for bitmap rendering (13.917ms)
+✔ a remote website never probes the local native service (1.8575ms)
+✔ missing middleware, HTML fallback and empty native catalogs retain the browser font path (4.2839ms)
+✔ Electron keeps its existing font bridge without calling the dev endpoint (1.3278ms)
+✔ local bridge HTTP render failures reject so save cannot treat failed measurements as successful (1.4392ms)
+✔ RightPanel exposes selection-driven contexts instead of the legacy 2x2 tab matrix (3.7651ms)
+✔ Template workspace owns Grid while application settings stay in a popup (0.3907ms)
+✔ Template printer controls are stacked in two full-width rows (0.2916ms)
+✔ Inspector collapse is accessible and persisted for the browser session (1.0814ms)
+✔ Object actions open from both the header trigger and a canvas context menu (2.949ms)
+✔ Inspector header stays visible while its body scrolls on desktop and mobile (1.7497ms)
+✖ Zoom control uses a compact editor-toolbar width independent from the Inspector (0.7106ms)
+✔ Expanded Inspector matches the compact left-panel width (0.4965ms)
+✖ Inspector sections share one symmetric horizontal content inset (0.5076ms)
+✔ Inspector omits the divider after the last section (0.2871ms)
+✖ Inspector navigation controls use the supplied SVG assets (0.4474ms)
+✖ Inspector disclosure arrows use centered down and up SVG assets (1.0959ms)
+✔ Custom select menu is layered above Inspector popovers (0.637ms)
+✔ LeftPanel exposes an objects-first shell while preserving the legacy runtime IDs (1.948ms)
+✖ LeftPanel header mirrors the Inspector header shell and controls (0.8233ms)
+✔ the permanent Add section and collapsed proxy popover remain separate surfaces (1.4209ms)
+✔ left-panel search preserves its query on Escape and clears it only through the close button (0.8725ms)
+✖ collapsed Add proxies delegate to canonical buttons and dismiss the popover (0.5576ms)
+✔ desktop collapse uses localStorage and the existing canvas resize pipeline (3.3717ms)
+✔ field rendering keeps one filtered list with localized human labels and type icons (0.8631ms)
+✔ list rows use sibling buttons and one shared object menu for ellipsis and right click (1.5457ms)
+✔ new left-panel strings exist in both dictionaries and are wired to static controls (3.0397ms)
+✔ CSS fixes the desktop panel at 288px, uses a 52–56px rail, and ignores collapse on narrow layouts (1.1964ms)
+✖ Expanded left-panel content uses the same symmetric inset as inspectorBody (0.4779ms)
+✔ host resize coalesces layout events, keeps stage geometry, and avoids resize feedback (2.2892ms)
+✔ select menus stay inside narrow and visual viewports while preserving desktop sizing (4.529ms)
+✔ drawer reuses panels, isolates the background, and restores focus without disabling portals (3.1306ms)
+✔ modal and canvas-placement focus survive drawer close, and breakpoint changes restore original nodes (1.2984ms)
+✔ drawer Tab reaches native disclosure summaries and permits scrolling focused controls into view (0.9574ms)
+✔ DateText: changing the format recalculates saved geometry before save without moving the text (5.8813ms)
+✔ OffsetDateText: changing the format recalculates saved geometry before save without moving the text (4.3265ms)
+✔ TimeText: changing the format recalculates saved geometry before save without moving the text (5.5475ms)
+✔ ordinary live clock ticks keep imported geometry intact and do not mark the document dirty (7.5583ms)
+✔ counter digit edits resize the saved field after native measurement and retain its position (2.2298ms)
+✔ changing an offset delta remeasures the date while unchanged imports only establish their baseline (1.4955ms)
+✔ native bitmap cache deduplicates identical content and remains independent of position and zoom (15.0945ms)
+✔ an old font response cannot overwrite geometry after the field changes font (2.0049ms)
+✔ a response for a previous tab does not mutate its detached fields or an unrelated current tab (3.7917ms)
+✔ save preparation waits for the current font when it changes during a pending native measurement (3.2225ms)
+✔ native measurement failure rejects save preparation and retains pending geometry for retry (1.7559ms)
+✔ a cached measurement synchronizes each edited field without re-requesting or moving it (1.4634ms)
+✔ explicit face changes update the native font classification without changing imported no-op metadata (1.5198ms)
+✔ pending native geometry survives document snapshots used by tab switching (16.7339ms)
+✔ native text coordinates use printer-dot rounding without modifying saved CIFF positions (1.63ms)
+✔ Precision Move markup is one flat D-pad with direction-only controls (2.4327ms)
+✔ Precision Move CSS uses a framed, aligned grid with comfortably sized controls (0.9092ms)
+✔ Precision Move labels are localized for the group and all buttons (0.2639ms)
+✔ Precision Move visibility and disabled state follow single or multi-selection (1.4979ms)
+✔ pointer hold keeps the existing immediate move, 320 ms delay, and 72 ms repeat (3.6391ms)
+✔ keyboard and D-pad share all step values and preserve integer coordinates after repeated moves (18.7449ms)
+✔ move step restores from persisted tab view, falls back safely, and synchronizes the indicator (2.2909ms)
+✔ single and multi-selection both move exactly 0.1 mm with one history entry (0.9838ms)
+✔ template wizard keeps its existing hooks on one semantic modal surface (1.0749ms)
+✔ creation method and data source options expose radio semantics (0.6731ms)
+✔ wizard layout is flat, scrollable, and responsive (1.3466ms)
+✔ review step uses structured sections without summary cards or chips (0.4153ms)
+✔ wizard navigation and creation paths remain connected to the existing state machine (0.2841ms)
+✔ new template defaults to Continuous print mode (5.0647ms)
+✔ 32 mm printer presets reject widths above 32 mm (2.0929ms)
+✔ new-template printer changes synchronize the head-width axis in every direction (3.1552ms)
+✔ new-template printer changes clamp only an invalid secondary axis (1.4104ms)
+✔ committing a generated template recalculates Image dimensions from its final fields (2.8196ms)
+✔ short DataMatrix has six ordered segments and no long-only fields (2.3197ms)
+✔ 32X32 uses the long composition and preserves the selected SymbolSize (1.6531ms)
+✔ hidden DataMatrix fields are stacked outside the template without overlap (1.4781ms)
+✔ printer offset date creates a deterministic dedicated DateOffset (2.2665ms)
+✔ DataMatrix-only mode exposes only renamed dates and time (2.5252ms)
+✔ server-full mode emits canonical Clarisoft field order (1.5422ms)
+✔ layout reports fields that do not fit before commit (2.485ms)
+✔ 20 x 20 template keeps the standard size when one additional field already fits (1.6937ms)
+✔ 20 x 20 template scales four additional fields to the largest fitting pitch (1.9952ms)
+✔ large templates retain standard field sizes and increasing size restores them (2.2253ms)
+✔ changing the selected field set recalculates size and positions from defaults (2.4668ms)
+✔ an impossible combination reports overflow only after reaching the minimum pitch (2.5925ms)
+✔ rendered text bounds participate in adaptive fitting (2.373ms)
+✔ tab close actions are calculated relative to the selected tab (3.6075ms)
+✔ closing the active tab prefers the nearest tab to the right (1.39ms)
+✔ bulk close keeps an active tab that is not being closed (1.0075ms)
+✔ bulk close searches right and then left around a removed active tab (0.8826ms)
+✔ impossible menu operations yield an empty target list (0.898ms)
+✔ v1 persisted tabs retain an unsaved physical resize in Max and preserve Image bounds (3.4204ms)
+✔ v1 imported physical dimensions stay authoritative without printer profile substitution (1.409ms)
+✔ v2 migration recovers source Max dimensions after an old printer profile repair (1.4257ms)
+✔ v1 unknown printer tabs restore physical dimensions from the source (1.7404ms)
+✔ v1/v2 clean CIFF model migration refreshes its fingerprint without marking the tab dirty (4.5723ms)
+✔ v1 empty tabs remain clean and reusable during storage migration (1.1606ms)
+✔ v3 migration attaches raw XML to legacy history while retaining each existing source baseline (1.4004ms)
+✔ v1 and v2 history migrations attach the source XML without changing existing per-snapshot sources (1.4078ms)
+✔ source XML snapshot bookkeeping does not mark an unchanged saved tab dirty (1.8285ms)
+✔ capturing a tab upgrades legacy history and preserves newer history sources (1.3386ms)
+✔ legacy tab migration removes invented Ln only where the direct source field omitted it (2.7836ms)
+✔ v3 migration persists an Image fallback instead of retaining a stale profile repair (1.4445ms)
+✔ v3 sessions restore 16 x 16 mm from Max instead of stale 25.16 x 25.58 workspace (1.8906ms)
+✔ v3 migration preserves a distinguishable user resize on each axis and makes it serializable (1.8748ms)
+✔ dimension migration resolves undo and redo from their own XML baseline across saves (1.3959ms)
+✔ all printer and printhead variants are available with matching width limits (7.5047ms)
+✔ printer dropdown labels add readable spacing without changing stored model values (5.9627ms)
+✔ new 107 mm templates preserve the printer target and expanded width in XML (1.8824ms)
+✔ new templates serialize the configured ClStVersionInfo key (2.4124ms)
+✔ new empty templates for other printer profiles keep the known-good empty fallback (2.3231ms)
+✔ new 32 mm templates preserve the full printer target and width limit in XML (2.3224ms)
+✔ new 53 mm template writes the requested physical area separately from printer capabilities (2.6154ms)
+✔ new 20 x 20 mm template records its physical area and keeps the 53 mm hardware profile (2.3662ms)
+✔ resizing changes workspace and CIFF MaxImage area without changing used Image or hardware limits (3.5701ms)
+✔ imported canvas uses the configured MaxImage area rather than the used Image bounds (2.3788ms)
+✔ explicit editor workspace overrides the raw document dimensions (1.2371ms)
+✔ missing Image dimensions still use the imported MaxImage area (1.2838ms)
+✔ an imported template restores its workspace from MaxImage and preserves separate used Image dimensions (2.8915ms)
+✔ newly created templates retain their requested editor workspace (2.3194ms)
+✔ known imported target preserves physical area and repairs only invalid resolution (2.3881ms)
+✔ changing 6330 from 32 mm to 53 mm preserves a 20 x 30 mm template (2.5574ms)
+✔ changing printer profiles repeatedly preserves a 32 x 50 mm template (3.1654ms)
+✔ changing to a narrower printer keeps an oversized template and reports the hardware overflow (2.3911ms)
+✔ changing print mode preserves template, hardware, objects and geometry metadata (2.231ms)
+✔ target change materializes the document workspace while preserving its MaxImage area (2.2017ms)
+✔ known imported target also preserves a positive source XRes (2.0012ms)
+✔ known imported target falls back to Image for invalid MaxImage and repairs invalid resolution (1.7012ms)
+✔ changing print mode on a known imported target preserves physical area and source resolution (2.6683ms)
+✔ unknown imported target preserves physical area and source resolution (2.8035ms)
+✔ changing print mode for an unknown target preserves physical area and source resolution (1.6206ms)
+✔ changing print mode cannot collapse an unknown template with missing MaxImage area (1.5343ms)
+✔ TopBar preserves editor control IDs and removes decorative outer capsules (1.9348ms)
+✔ Topbar document info reads the active tab, canonical metadata and existing dirty state (2.5777ms)
+✖ Desktop topbar is compact, single-row and uses stateful segmented toggles (0.7729ms)
+✖ Highlighted application and panel headings use the bundled Playfair Display font (0.4199ms)
+✔ Template tab rendering synchronizes the document summary on every title or dirty update (0.3583ms)
+✔ local Vite font endpoints use the native services and validate a render request before dispatch (5.9047ms)
+✔ font middleware rejects remote peers, nonlocal Host names and cross-origin POST requests (2.3795ms)
+✔ font middleware rejects invalid methods, content types, malformed JSON and invalid native parameters (1.6332ms)
+✔ both declared and streamed request bodies obey the 128 KiB limit (0.5319ms)
+✔ native service failures produce controlled responses and unrelated Vite requests pass through (1.0233ms)
+✔ Vite server close and plugin teardown dispose the native renderer exactly once (0.2648ms)
+✔ zoom changes keep the native value, percentage, track position and render pipeline in sync (2.3462ms)
+✔ restoring slider presentation reads its current range without changing zoom or rendering (0.8883ms)
+ℹ tests 400
+ℹ suites 0
+ℹ pass 390
+ℹ fail 10
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 794.9919
+
+✖ failing tests:
+
+test at tests\editor-workspace.test.cjs:63:1
+✖ only the central workspace is flattened and shared surface cards remain intact (1.3684ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /border:\s*0/. Input:
+  
+  '.canvasWrap {\r\n' +
+    '  --editor-radius: 0px;\r\n' +
+    '  --editor-divider: color-mix(in srgb, var(--md-sys-color-outline-variant) 76%, transparent);\r\n' +
+    '  --editor-tabs-height: 50px;\r\n' +
+    '  --editor-status-height: 34px;\r\n' +
+    '  --editor-ruler-top-height: 32px;\r\n' +
+    '  --editor-ruler-left-width: 32px;\r\n' +
+    '\r\n' +
+    '  position: relative;\r\n' +
+    '  min-width: 0;\r\n' +
+    '  min-height: 0;\r\n' +
+    '  display: flex;\r\n' +
+    '  flex-direction: column;\r\n' +
+    '  gap: 0;\r\n' +
+    '  padding: 0;\r\n' +
+    '  overflow: hidden;\r\n' +
+    '  background: transparent;\r\n' +
+    '  isolation: isolate;\r\n' +
+    '\r\n' +
+    '  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 72%, transparent);\r\n' +
+    '  border-radius: var(--app-radius-md);\r\n' +
+    '  box-shadow: var(--app-shadow-1);\r\n' +
+    '}'
+  
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\editor-workspace.test.cjs:74:10)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '.canvasWrap {\r\n  --editor-radius: 0px;\r\n  --editor-divider: color-mix(in srgb, var(--md-sys-color-outline-variant) 76%, transparent);\r\n  --editor-tabs-height: 50px;\r\n  --editor-status-height: 34px;\r\n  --editor-ruler-top-height: 32px;\r\n  --editor-ruler-left-width: 32px;\r\n\r\n  position: relative;\r\n  min-width: 0;\r\n  min-height: 0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0;\r\n  padding: 0;\r\n  overflow: hidden;\r\n  background: transparent;\r\n  isolation: isolate;\r\n\r\n  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 72%, transparent);\r\n  border-radius: var(--app-radius-md);\r\n  box-shadow: var(--app-shadow-1);\r\n}',
+    expected: /border:\s*0/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\inspector-navigation.test.cjs:234:1
+✖ Zoom control uses a compact editor-toolbar width independent from the Inspector (0.7106ms)
+  AssertionError [ERR_ASSERTION]: Desktop zoom control must stay compact while retaining a flexible slider
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:18:10)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:235:3)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\inspector-navigation.test.cjs:265:1
+✖ Inspector sections share one symmetric horizontal content inset (0.5076ms)
+  AssertionError [ERR_ASSERTION]: Inspector body must own the shared left and right padding
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:18:10)
+      at assertCssRuleIncludes (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:30:3)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:266:3)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\inspector-navigation.test.cjs:299:1
+✖ Inspector navigation controls use the supplied SVG assets (0.4474ms)
+  AssertionError [ERR_ASSERTION]: RightPanel must render arrow_back_24dp.svg instead of a text glyph
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:18:10)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:308:5)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\inspector-navigation.test.cjs:336:1
+✖ Inspector disclosure arrows use centered down and up SVG assets (1.0959ms)
+  AssertionError [ERR_ASSERTION]: Expected source to match /url\(["']?\/resourses\/Icons\/arrow_drop_up\.svg["']?\)/
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:18:10)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\inspector-navigation.test.cjs:343:5)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\left-panel.test.cjs:140:1
+✖ LeftPanel header mirrors the Inspector header shell and controls (0.8233ms)
+  AssertionError [ERR_ASSERTION]: Left header must use the Inspector header geometry, divider, and surface
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\left-panel.test.cjs:18:10)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\left-panel.test.cjs:141:3)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\left-panel.test.cjs:233:1
+✖ collapsed Add proxies delegate to canonical buttons and dismiss the popover (0.5576ms)
+  AssertionError [ERR_ASSERTION]: Viewport changes must dismiss the anchored popover
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\left-panel.test.cjs:18:10)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\left-panel.test.cjs:264:3)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\left-panel.test.cjs:441:1
+✖ Expanded left-panel content uses the same symmetric inset as inspectorBody (0.4779ms)
+  AssertionError [ERR_ASSERTION]: Search must align to the shared panel inset
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\left-panel.test.cjs:18:10)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\left-panel.test.cjs:452:3)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\topbar.test.cjs:120:1
+✖ Desktop topbar is compact, single-row and uses stateful segmented toggles (0.7729ms)
+  AssertionError [ERR_ASSERTION]: Expected source to match /\.topbar\s*\{[^}]*--topbar-gap:\s*16px;[^}]*min-height:\s*66px;[^}]*flex:\s*0\s+0\s+auto;[^}]*justify-content:\s*flex-start;[^}]*gap:\s*var\(--topbar-gap\);[^}]*padding:\s*var\(--app-topbar-padding\)\s+16px;/s
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\topbar.test.cjs:15:10)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\topbar.test.cjs:121:3)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\topbar.test.cjs:139:1
+✖ Highlighted application and panel headings use the bundled Playfair Display font (0.4199ms)
+  AssertionError [ERR_ASSERTION]: Expected source to match /@font-face\s*\{[^}]*font-family:\s*"Playfair Display";[^}]*src:\s*url\("\.\/resourses\/Fonts\/PlayfairDisplay\.ttf"\)\s*format\("truetype"\);/s
+      at assertSourceMatch (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\topbar.test.cjs:15:10)
+      at TestContext.<anonymous> (C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\tests\topbar.test.cjs:141:3)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -1,0 +1,221 @@
+{
+  "method": "Production core compared to actual COM generator using exact native CalculatedData snapshot and selected mask",
+  "cases": [
+    {
+      "name": "native-0-fields",
+      "mask": "00000000",
+      "fieldCount": 0,
+      "exactMatch": true,
+      "tagDataUnits": [],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A"
+    },
+    {
+      "name": "native-1-fields",
+      "mask": "00000001",
+      "fieldCount": 1,
+      "exactMatch": true,
+      "tagDataUnits": [
+        86,
+        65,
+        76,
+        85,
+        69,
+        48
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo46NIDX1UC13xGAyQIn4N_RAnA0KIKsT9NP7HGSJBUkOIuT",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo46NIDX1UC13xGAyQIn4N_RAnA0KIKsT9NP7HGSJBUkOIuT"
+    },
+    {
+      "name": "native-2-fields",
+      "mask": "00000001",
+      "fieldCount": 2,
+      "exactMatch": true,
+      "tagDataUnits": [
+        86,
+        65,
+        76,
+        85,
+        69,
+        48
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo46NIDX1UC13xGAyQIn4N_RAnA0KIKsT9NP7HGSJBUkOIuT",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo46NIDX1UC13xGAyQIn4N_RAnA0KIKsT9NP7HGSJBUkOIuT"
+    },
+    {
+      "name": "native-3-fields",
+      "mask": "00000004",
+      "fieldCount": 3,
+      "exactMatch": true,
+      "tagDataUnits": [
+        86,
+        65,
+        76,
+        85,
+        69,
+        50
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTBLr78SIMfNGkIVhV3f1Mz9TkH9yBFtMMiVOiDHx0PaNROP2d1",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTBLr78SIMfNGkIVhV3f1Mz9TkH9yBFtMMiVOiDHx0PaNROP2d1"
+    },
+    {
+      "name": "native-31-fields",
+      "mask": "00010000",
+      "fieldCount": 31,
+      "exactMatch": true,
+      "tagDataUnits": [
+        86,
+        65,
+        76,
+        85,
+        69,
+        49,
+        54
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk7RGJ2DQM_KSr07H7NKIOs6SQ7RyQKa7Ow63zUHpUS7LTo20sBMLMAvBQiP0aHV_TAmLFA6LwOCsI4pRVyIUw9F45LiD4x7NHQJZU",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk7RGJ2DQM_KSr07H7NKIOs6SQ7RyQKa7Ow63zUHpUS7LTo20sBMLMAvBQiP0aHV_TAmLFA6LwOCsI4pRVyIUw9F45LiD4x7NHQJZU"
+    },
+    {
+      "name": "native-32-fields",
+      "mask": "00400000",
+      "fieldCount": 32,
+      "exactMatch": true,
+      "tagDataUnits": [
+        86,
+        65,
+        76,
+        85,
+        69,
+        50,
+        50
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIOUTt2PcVTNL73JKoD4!0Ov9LaJNsNUI0OuSItG2PTS0N1nQRPRLnEAjHKa7PRPL53Ht1JI3TzDLeTFkUUfR1bAQ9T2o8I7ERS31F1NzEEGGII1",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIOUTt2PcVTNL73JKoD4!0Ov9LaJNsNUI0OuSItG2PTS0N1nQRPRLnEAjHKa7PRPL53Ht1JI3TzDLeTFkUUfR1bAQ9T2o8I7ERS31F1NzEEGGII1"
+    },
+    {
+      "name": "native-33-fields",
+      "mask": "00000400",
+      "fieldCount": 33,
+      "exactMatch": true,
+      "tagDataUnits": [
+        86,
+        65,
+        76,
+        85,
+        69,
+        49,
+        48
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOz92tBQG9AhC4r6CDUTr69vORmQPRKSvACe0Q6RNWV7bHI1PV_QMjV1Y9GJSUrMMcDAtQJCMTuJTZAEg0Ny5",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOz92tBQG9AhC4r6CDUTr69vORmQPRKSvACe0Q6RNWV7bHI1PV_QMjV1Y9GJSUrMMcDAtQJCMTuJTZAEg0Ny5"
+    },
+    {
+      "name": "native-multiple-subimages",
+      "mask": "00000004",
+      "fieldCount": 4,
+      "exactMatch": true,
+      "tagDataUnits": [
+        84,
+        72,
+        73,
+        82,
+        68
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTBLr58U4RpIReAJ!AFyFOBR1j1UlN7Z06T7KaQ2Q9",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTBLr58U4RpIReAJ!AFyFOBR1j1UlN7Z06T7KaQ2Q9"
+    },
+    {
+      "name": "native-hidden-graphic",
+      "mask": "00000004",
+      "fieldCount": 3,
+      "exactMatch": true,
+      "tagDataUnits": [
+        86,
+        73,
+        83,
+        73,
+        66,
+        76,
+        69
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTBLr78SIMfNGj1NfF0W7TO9AvHRWSVTR0OBGy9TqO8M77HVNs0DTTDhFNiA",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTBLr78SIMfNGj1NfF0W7TO9AvHRWSVTR0OBGy9TqO8M77HVNs0DTTDhFNiA"
+    },
+    {
+      "name": "native-nul-data",
+      "mask": "00000001",
+      "fieldCount": 1,
+      "exactMatch": true,
+      "tagDataUnits": [
+        97,
+        98
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LK",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LK"
+    },
+    {
+      "name": "native-control-data",
+      "mask": "00000001",
+      "fieldCount": 1,
+      "exactMatch": true,
+      "tagDataUnits": [
+        97,
+        98,
+        1,
+        99,
+        100,
+        29,
+        101,
+        102,
+        9,
+        103,
+        104,
+        13,
+        10,
+        105,
+        106
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LKHyPNh0705IhU0p62PDHyUNsARxO1lH14B4uJ7Y7KrCA8CGqRFfECnHPG3ES2SUEL!SStVGEHDKRUqDTPGKEB2v8TF41q3KfRLXMQNOB69AjJKw4PsSBSC",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LKHyPNh0705IhU0p62PDHyUNsARxO1lH14B4uJ7Y7KrCA8CGqRFfECnHPG3ES2SUEL!SStVGEHDKRUqDTPGKEB2v8TF41q3KfRLXMQNOB69AjJKw4PsSBSC"
+    },
+    {
+      "name": "native-empty-calculated-data",
+      "mask": "00000001",
+      "fieldCount": 1,
+      "exactMatch": true,
+      "tagDataUnits": [],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!B",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!B"
+    },
+    {
+      "name": "native-surrogate-clipping",
+      "mask": "00000001",
+      "fieldCount": 1,
+      "exactMatch": true,
+      "tagDataUnits": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        55357
+      ],
+      "nativeToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoB1H4E6GLsPLTBMiMC!3AxFHRBPX6PSKRVDG!RNUV8bT2HVUUNNB6JaGPNDQw7SXTSx6Iz2VuFGx2Iq6PGK4QV0p1TIVQmA5y3FrLE!A0!8VvIMWMAcS6DNEvC6!F3oTH!UJy76!BHtFVTBFxRHm18W9JM1UfCKuR9w2EZFA3V6NH",
+      "productionToken": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoB1H4E6GLsPLTBMiMC!3AxFHRBPX6PSKRVDG!RNUV8bT2HVUUNNB6JaGPNDQw7SXTSx6Iz2VuFGx2Iq6PGK4QV0p1TIVQmA5y3FrLE!A0!8VvIMWMAcS6DNEvC6!F3oTH!UJy76!BHtFVTBFxRHm18W9JM1UfCKuR9w2EZFA3V6NH"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+4200be8b PUSH EBP
+4200be8c MOV EBP,ESP
+4200be8e PUSH ESI
+4200be8f PUSH EDI
+4200be90 MOV EDI,ECX
+4200be92 XOR ESI,ESI
+4200be94 PUSH dword ptr [EDI + 0x38]
+4200be97 CALL 0x4200be36
+4200be9c MOV ECX,EAX
+4200be9e MOV EAX,dword ptr [EBP + 0x8]
+4200bea1 CMP EAX,0x5
+4200bea4 JZ 0x4200becd
+4200bea6 ADD EAX,-0x6
+4200bea9 CMP EAX,0x1
+4200beac JA 0x4200bee7
+4200beae CMP dword ptr [EDI + 0x1c],ESI
+4200beb1 JNZ 0x4200bee7
+4200beb3 CMP dword ptr [EDI + 0x18],ESI
+4200beb6 JZ 0x4200bee7
+4200beb8 TEST ECX,ECX
+4200beba JZ 0x4200bee7
+4200bebc MOV EAX,dword ptr [ECX]
+4200bebe CALL dword ptr [EAX + 0xc]
+4200bec1 LEA ESI,[EAX + -0x3]
+4200bec4 IMUL ESI,dword ptr [EDI + 0xf8]
+4200becb JMP 0x4200bee7
+4200becd CMP dword ptr [EDI + 0x1c],ESI
+4200bed0 JNZ 0x4200bee7
+4200bed2 CMP dword ptr [EDI + 0x18],ESI
+4200bed5 JZ 0x4200bee7
+4200bed7 TEST ECX,ECX
+4200bed9 JZ 0x4200bee7
+4200bedb MOV EAX,dword ptr [ECX]
+4200bedd CALL dword ptr [EAX + 0xc]
+4200bee0 IMUL ESI,dword ptr [EDI + 0xf8],0x7
+4200bee7 POP EDI
+4200bee8 MOV EAX,ESI
+4200beea POP ESI
+4200beeb POP EBP
+4200beec RET 0x4

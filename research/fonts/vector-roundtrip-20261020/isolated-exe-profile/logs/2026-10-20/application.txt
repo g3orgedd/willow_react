@@ -1,0 +1,2018 @@
+====================================================================================================
+[2026-10-20 23:25:05.891 +03:00] [INFO] [session: 20261020-232505-pid41212]
+Event: APPLICATION_SESSION_STARTED
+Message: Glyph Studio logging session started.
+Source: electron-main
+Details:
+  {
+    application: {
+      appPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\resources\\app.asar',
+      logsDirectory: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile\\logs',
+      name: 'project-glyph',
+      packaged: true,
+      userDataPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile',
+      version: '2.1.3'
+    },
+    operatingSystem: {
+      architecture: 'x64',
+      hostname: 'DESKTOP-9RR9GPQ',
+      locale: 'ru',
+      platform: 'win32',
+      release: '10.0.19045',
+      timezone: 'Europe/Moscow'
+    },
+    process: {
+      arguments: [
+        'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\Glyph Studio.exe',
+        '--remote-debugging-address=127.0.0.1',
+        '--remote-debugging-port=58495',
+        '--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile',
+        '--disable-gpu',
+        '--window-position=-32000,-32000'
+      ],
+      pid: 41212
+    },
+    runtime: {
+      chrome: '150.0.7871.46',
+      electron: '43.0.0',
+      node: '24.17.0',
+      v8: '15.0.245.13-electron.0'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:25:05.949 +03:00] [INFO] [session: 20261020-232505-pid41212]
+Event: MAIN_WINDOW_CREATED
+Message: Main application window was created.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    developmentServer: null,
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:25:44.595 +03:00] [INFO] [session: 20261020-232544-pid36504]
+Event: APPLICATION_SESSION_STARTED
+Message: Glyph Studio logging session started.
+Source: electron-main
+Details:
+  {
+    application: {
+      appPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\resources\\app.asar',
+      logsDirectory: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile\\logs',
+      name: 'project-glyph',
+      packaged: true,
+      userDataPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile',
+      version: '2.1.3'
+    },
+    operatingSystem: {
+      architecture: 'x64',
+      hostname: 'DESKTOP-9RR9GPQ',
+      locale: 'ru',
+      platform: 'win32',
+      release: '10.0.19045',
+      timezone: 'Europe/Moscow'
+    },
+    process: {
+      arguments: [
+        'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\Glyph Studio.exe',
+        '--remote-debugging-address=127.0.0.1',
+        '--remote-debugging-port=58542',
+        '--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile',
+        '--disable-gpu',
+        '--window-position=-32000,-32000'
+      ],
+      pid: 36504
+    },
+    runtime: {
+      chrome: '150.0.7871.46',
+      electron: '43.0.0',
+      node: '24.17.0',
+      v8: '15.0.245.13-electron.0'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:25:44.640 +03:00] [INFO] [session: 20261020-232544-pid36504]
+Event: MAIN_WINDOW_CREATED
+Message: Main application window was created.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    developmentServer: null,
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:25:44.714 +03:00] [INFO] [session: 20261020-232544-pid36504]
+Event: RENDERER_LOADED
+Message: Renderer finished loading.
+Source: electron-main
+Details:
+  {
+    url: 'glyph://app/index.html',
+    windowId: 1
+  }
+====================================================================================================
+[2026-10-20 23:25:44.756 +03:00] [INFO] [session: 20261020-232544-pid36504]
+Event: MAIN_WINDOW_READY
+Message: Main window is ready and will be shown.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:25:44.764 +03:00] [INFO] [session: 20261020-232544-pid36504]
+Event: RUNTIME_BOOT_STARTED
+Message: Начата загрузка модулей редактора.
+Source: react-runtime-loader
+Details:
+  {
+    moduleCount: 20,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:25:44.767 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: MAIN_WINDOW_FOCUSED
+Message: Main window received focus.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: true,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:25:44.791 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_DEPENDENCY_LOADED
+Message: Загружена библиотека Konva.
+Source: react-runtime-loader
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/libs/konva.min.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.795 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CIFF_EDITOR_CORE_READY'
+    ],
+    key: 'core',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/00-core.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.797 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CIFF_COMPATIBILITY_READY'
+    ],
+    key: 'ciffCompatibility',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/01-ciff-compatibility.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.799 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'getEffectiveTextFontFamily',
+      'getTextCanvasFontFamily'
+    ],
+    key: 'fonts',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/02-fonts.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.801 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initTextFontCatalog',
+      'getAvailableTextFontFamilies'
+    ],
+    key: 'fontCatalog',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/03-font-catalog.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.802 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'makeNativeTextPreviewNode'
+    ],
+    key: 'nativeTextPreview',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/04-native-text-preview.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.804 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CEncryption',
+      'CLST_ENCRYPTION_READY'
+    ],
+    key: 'clstEncryption',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/encryption.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.805 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'resolveClstTagData',
+      'CLST_TAG_DATA_READY'
+    ],
+    key: 'clstTagData',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/tag-data.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.807 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'generateClStVersionInfo',
+      'CLST_VERSION_INFO_READY'
+    ],
+    key: 'clstVersionInfo',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/version-info.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.810 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      't',
+      'initUiLanguageControls'
+    ],
+    key: 'i18n',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/05-i18n.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.812 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'setUiTheme',
+      'initUiThemeControls'
+    ],
+    key: 'theme',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/06-theme.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.813 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'appLogger',
+      'initAppLogging'
+    ],
+    key: 'logging',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/07-logging.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.822 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initCanvas',
+      'initUI'
+    ],
+    key: 'canvasUi',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/10-canvas-ui.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.824 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'loadXml',
+      'parseFields'
+    ],
+    key: 'xmlLoad',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/20-xml-load.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.831 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'renderAll',
+      'startDynamicFieldValueTicker'
+    ],
+    key: 'rendering',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/30-rendering.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.863 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'renderSelectionPanels',
+      'addField'
+    ],
+    key: 'editor',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/40-editor.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.868 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'generateTemplatePreset',
+      'initTemplatePresetBuilder'
+    ],
+    key: 'templatePreset',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/45-template-preset.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.870 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'inputText',
+      'snapPoint'
+    ],
+    key: 'inputs',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/50-inputs.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.873 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'pushHistory',
+      'patchXmlLosslessV2'
+    ],
+    key: 'historySave',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/60-history-save.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.877 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initTemplateTabs',
+      'switchTemplateTab'
+    ],
+    key: 'templateTabs',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/70-template-tabs.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.882 +03:00] [DEBUG] [session: 20261020-232544-pid36504]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [],
+    key: 'bootstrap',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/90-bootstrap.js'
+  }
+====================================================================================================
+[2026-10-20 23:25:44.882 +03:00] [INFO] [session: 20261020-232544-pid36504]
+Event: RUNTIME_BOOT_COMPLETED
+Message: Все модули редактора успешно загружены.
+Source: react-runtime-loader
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: null
+  }
+====================================================================================================
+[2026-10-20 23:25:44.882 +03:00] [INFO] [session: 20261020-232544-pid36504]
+Event: RENDERER_LOGGING_INITIALIZED
+Message: Система логирования интерфейса инициализирована.
+Source: renderer
+Details:
+  {
+    logInfo: {
+      appVersion: '2.1.3',
+      baseDir: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile\\logs',
+      files: {
+        actions: 'user-actions.txt',
+        application: 'application.txt',
+        errors: 'errors.txt',
+        files: 'file-operations.txt',
+        state: 'application-state.txt'
+      },
+      lastWriteError: null,
+      sessionId: '20261020-232544-pid36504'
+    },
+    loggingBridgeAvailable: true,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    runtime: {
+      deviceMemory: 16,
+      hardwareConcurrency: 12,
+      language: 'ru',
+      languages: [
+        'ru',
+        'en-US'
+      ],
+      platform: 'Win32',
+      screen: {
+        availableHeight: 1040,
+        availableWidth: 1920,
+        colorDepth: 24,
+        height: 1080,
+        width: 1920
+      },
+      touchPoints: 0,
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) project-glyph/2.1.3 Chrome/150.0.7871.46 Electron/43.0.0 Safari/537.36'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.215 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: APPLICATION_SESSION_STARTED
+Message: Glyph Studio logging session started.
+Source: electron-main
+Details:
+  {
+    application: {
+      appPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\resources\\app.asar',
+      logsDirectory: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile\\logs',
+      name: 'project-glyph',
+      packaged: true,
+      userDataPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile',
+      version: '2.1.3'
+    },
+    operatingSystem: {
+      architecture: 'x64',
+      hostname: 'DESKTOP-9RR9GPQ',
+      locale: 'ru',
+      platform: 'win32',
+      release: '10.0.19045',
+      timezone: 'Europe/Moscow'
+    },
+    process: {
+      arguments: [
+        'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\Glyph Studio.exe',
+        '--remote-debugging-address=127.0.0.1',
+        '--remote-debugging-port=58710',
+        '--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile',
+        '--disable-gpu',
+        '--window-position=-32000,-32000'
+      ],
+      pid: 31196
+    },
+    runtime: {
+      chrome: '150.0.7871.46',
+      electron: '43.0.0',
+      node: '24.17.0',
+      v8: '15.0.245.13-electron.0'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.258 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: MAIN_WINDOW_CREATED
+Message: Main application window was created.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    developmentServer: null,
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:27:02.321 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: RENDERER_LOADED
+Message: Renderer finished loading.
+Source: electron-main
+Details:
+  {
+    url: 'glyph://app/index.html',
+    windowId: 1
+  }
+====================================================================================================
+[2026-10-20 23:27:02.367 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: MAIN_WINDOW_READY
+Message: Main window is ready and will be shown.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:27:02.369 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: RUNTIME_BOOT_STARTED
+Message: Начата загрузка модулей редактора.
+Source: react-runtime-loader
+Details:
+  {
+    moduleCount: 20,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.382 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: MAIN_WINDOW_FOCUSED
+Message: Main window received focus.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: true,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:27:02.413 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_DEPENDENCY_LOADED
+Message: Загружена библиотека Konva.
+Source: react-runtime-loader
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/libs/konva.min.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.415 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CIFF_EDITOR_CORE_READY'
+    ],
+    key: 'core',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/00-core.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.417 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CIFF_COMPATIBILITY_READY'
+    ],
+    key: 'ciffCompatibility',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/01-ciff-compatibility.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.419 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'getEffectiveTextFontFamily',
+      'getTextCanvasFontFamily'
+    ],
+    key: 'fonts',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/02-fonts.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.420 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initTextFontCatalog',
+      'getAvailableTextFontFamilies'
+    ],
+    key: 'fontCatalog',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/03-font-catalog.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.422 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'makeNativeTextPreviewNode'
+    ],
+    key: 'nativeTextPreview',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/04-native-text-preview.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.428 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CEncryption',
+      'CLST_ENCRYPTION_READY'
+    ],
+    key: 'clstEncryption',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/encryption.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.430 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'resolveClstTagData',
+      'CLST_TAG_DATA_READY'
+    ],
+    key: 'clstTagData',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/tag-data.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.433 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'generateClStVersionInfo',
+      'CLST_VERSION_INFO_READY'
+    ],
+    key: 'clstVersionInfo',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/version-info.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.442 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      't',
+      'initUiLanguageControls'
+    ],
+    key: 'i18n',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/05-i18n.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.447 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'setUiTheme',
+      'initUiThemeControls'
+    ],
+    key: 'theme',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/06-theme.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.451 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'appLogger',
+      'initAppLogging'
+    ],
+    key: 'logging',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/07-logging.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.454 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initCanvas',
+      'initUI'
+    ],
+    key: 'canvasUi',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/10-canvas-ui.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.455 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'loadXml',
+      'parseFields'
+    ],
+    key: 'xmlLoad',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/20-xml-load.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.458 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'renderAll',
+      'startDynamicFieldValueTicker'
+    ],
+    key: 'rendering',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/30-rendering.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.460 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'renderSelectionPanels',
+      'addField'
+    ],
+    key: 'editor',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/40-editor.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.462 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'generateTemplatePreset',
+      'initTemplatePresetBuilder'
+    ],
+    key: 'templatePreset',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/45-template-preset.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.464 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'inputText',
+      'snapPoint'
+    ],
+    key: 'inputs',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/50-inputs.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.468 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'pushHistory',
+      'patchXmlLosslessV2'
+    ],
+    key: 'historySave',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/60-history-save.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.470 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initTemplateTabs',
+      'switchTemplateTab'
+    ],
+    key: 'templateTabs',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/70-template-tabs.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.472 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [],
+    key: 'bootstrap',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/90-bootstrap.js'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.472 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: RUNTIME_BOOT_COMPLETED
+Message: Все модули редактора успешно загружены.
+Source: react-runtime-loader
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: null
+  }
+====================================================================================================
+[2026-10-20 23:27:02.472 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: RENDERER_LOGGING_INITIALIZED
+Message: Система логирования интерфейса инициализирована.
+Source: renderer
+Details:
+  {
+    logInfo: {
+      appVersion: '2.1.3',
+      baseDir: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile\\logs',
+      files: {
+        actions: 'user-actions.txt',
+        application: 'application.txt',
+        errors: 'errors.txt',
+        files: 'file-operations.txt',
+        state: 'application-state.txt'
+      },
+      lastWriteError: null,
+      sessionId: '20261020-232702-pid31196'
+    },
+    loggingBridgeAvailable: true,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    runtime: {
+      deviceMemory: 16,
+      hardwareConcurrency: 12,
+      language: 'ru',
+      languages: [
+        'ru',
+        'en-US'
+      ],
+      platform: 'Win32',
+      screen: {
+        availableHeight: 1040,
+        availableWidth: 1920,
+        colorDepth: 24,
+        height: 1080,
+        width: 1920
+      },
+      touchPoints: 0,
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) project-glyph/2.1.3 Chrome/150.0.7871.46 Electron/43.0.0 Safari/537.36'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.856 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: INITIAL_EMPTY_TAB_CREATED
+Message: Создана начальная пустая вкладка шаблона.
+Source: renderer
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+    title: 'Untitled template'
+  }
+====================================================================================================
+[2026-10-20 23:27:02.882 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-20 23:27:02.950 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'TNR_Text'
+    ],
+    undoDepth: 2
+  }
+====================================================================================================
+[2026-10-20 23:27:02.962 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Arial_Bold'
+    ],
+    undoDepth: 3
+  }
+====================================================================================================
+[2026-10-20 23:27:02.985 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Courier_XMag'
+    ],
+    undoDepth: 4
+  }
+====================================================================================================
+[2026-10-20 23:27:03.008 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Tahoma_Date'
+    ],
+    undoDepth: 5
+  }
+====================================================================================================
+[2026-10-20 23:27:03.027 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Segoe_Offset'
+    ],
+    undoDepth: 6
+  }
+====================================================================================================
+[2026-10-20 23:27:03.044 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Narrow_Time'
+    ],
+    undoDepth: 7
+  }
+====================================================================================================
+[2026-10-20 23:27:03.059 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'OCRB_Counter'
+    ],
+    undoDepth: 8
+  }
+====================================================================================================
+[2026-10-20 23:27:03.074 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'TNR_Rot90'
+    ],
+    undoDepth: 9
+  }
+====================================================================================================
+[2026-10-20 23:27:03.089 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Courier_Rot180'
+    ],
+    undoDepth: 10
+  }
+====================================================================================================
+[2026-10-20 23:27:03.107 +03:00] [DEBUG] [session: 20261020-232702-pid31196]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан снимок истории перед изменением.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: false,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Tahoma_Rot270'
+    ],
+    undoDepth: 11
+  }
+====================================================================================================
+[2026-10-20 23:29:09.308 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: APPLICATION_SESSION_STARTED
+Message: Glyph Studio logging session started.
+Source: electron-main
+Details:
+  {
+    application: {
+      appPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\resources\\app.asar',
+      logsDirectory: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile\\logs',
+      name: 'project-glyph',
+      packaged: true,
+      userDataPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile',
+      version: '2.1.3'
+    },
+    operatingSystem: {
+      architecture: 'x64',
+      hostname: 'DESKTOP-9RR9GPQ',
+      locale: 'ru',
+      platform: 'win32',
+      release: '10.0.19045',
+      timezone: 'Europe/Moscow'
+    },
+    process: {
+      arguments: [
+        'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-vector-fonts-20261020\\win-unpacked\\Glyph Studio.exe',
+        '--remote-debugging-address=127.0.0.1',
+        '--remote-debugging-port=58934',
+        '--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile',
+        '--disable-gpu',
+        '--window-position=-32000,-32000'
+      ],
+      pid: 6760
+    },
+    runtime: {
+      chrome: '150.0.7871.46',
+      electron: '43.0.0',
+      node: '24.17.0',
+      v8: '15.0.245.13-electron.0'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:29:09.354 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: MAIN_WINDOW_CREATED
+Message: Main application window was created.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    developmentServer: null,
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:29:09.433 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: RENDERER_LOADED
+Message: Renderer finished loading.
+Source: electron-main
+Details:
+  {
+    url: 'glyph://app/index.html',
+    windowId: 1
+  }
+====================================================================================================
+[2026-10-20 23:29:09.475 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: MAIN_WINDOW_READY
+Message: Main window is ready and will be shown.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:29:09.489 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: MAIN_WINDOW_FOCUSED
+Message: Main window received focus.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: true,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:29:09.486 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: RUNTIME_BOOT_STARTED
+Message: Начата загрузка модулей редактора.
+Source: react-runtime-loader
+Details:
+  {
+    moduleCount: 20,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:29:09.522 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_DEPENDENCY_LOADED
+Message: Загружена библиотека Konva.
+Source: react-runtime-loader
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/libs/konva.min.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.526 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CIFF_EDITOR_CORE_READY'
+    ],
+    key: 'core',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/00-core.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.528 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CIFF_COMPATIBILITY_READY'
+    ],
+    key: 'ciffCompatibility',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/01-ciff-compatibility.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.529 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'getEffectiveTextFontFamily',
+      'getTextCanvasFontFamily'
+    ],
+    key: 'fonts',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/02-fonts.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.530 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initTextFontCatalog',
+      'getAvailableTextFontFamilies'
+    ],
+    key: 'fontCatalog',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/03-font-catalog.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.531 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'makeNativeTextPreviewNode'
+    ],
+    key: 'nativeTextPreview',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/04-native-text-preview.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.533 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CEncryption',
+      'CLST_ENCRYPTION_READY'
+    ],
+    key: 'clstEncryption',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/encryption.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.534 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'resolveClstTagData',
+      'CLST_TAG_DATA_READY'
+    ],
+    key: 'clstTagData',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/tag-data.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.535 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'generateClStVersionInfo',
+      'CLST_VERSION_INFO_READY'
+    ],
+    key: 'clstVersionInfo',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/version-info.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.538 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      't',
+      'initUiLanguageControls'
+    ],
+    key: 'i18n',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/05-i18n.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.540 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'setUiTheme',
+      'initUiThemeControls'
+    ],
+    key: 'theme',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/06-theme.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.542 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'appLogger',
+      'initAppLogging'
+    ],
+    key: 'logging',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/07-logging.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.544 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initCanvas',
+      'initUI'
+    ],
+    key: 'canvasUi',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/10-canvas-ui.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.546 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'loadXml',
+      'parseFields'
+    ],
+    key: 'xmlLoad',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/20-xml-load.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.549 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'renderAll',
+      'startDynamicFieldValueTicker'
+    ],
+    key: 'rendering',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/30-rendering.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.552 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'renderSelectionPanels',
+      'addField'
+    ],
+    key: 'editor',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/40-editor.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.554 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'generateTemplatePreset',
+      'initTemplatePresetBuilder'
+    ],
+    key: 'templatePreset',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/45-template-preset.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.556 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'inputText',
+      'snapPoint'
+    ],
+    key: 'inputs',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/50-inputs.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.558 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'pushHistory',
+      'patchXmlLosslessV2'
+    ],
+    key: 'historySave',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/60-history-save.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.560 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initTemplateTabs',
+      'switchTemplateTab'
+    ],
+    key: 'templateTabs',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/70-template-tabs.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.563 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [],
+    key: 'bootstrap',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/90-bootstrap.js'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.563 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: RUNTIME_BOOT_COMPLETED
+Message: Все модули редактора успешно загружены.
+Source: react-runtime-loader
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: null
+  }
+====================================================================================================
+[2026-10-20 23:29:09.563 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: RENDERER_LOGGING_INITIALIZED
+Message: Система логирования интерфейса инициализирована.
+Source: renderer
+Details:
+  {
+    logInfo: {
+      appVersion: '2.1.3',
+      baseDir: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\fonts\\vector-roundtrip-20261020\\isolated-exe-profile\\logs',
+      files: {
+        actions: 'user-actions.txt',
+        application: 'application.txt',
+        errors: 'errors.txt',
+        files: 'file-operations.txt',
+        state: 'application-state.txt'
+      },
+      lastWriteError: null,
+      sessionId: '20261020-232909-pid6760'
+    },
+    loggingBridgeAvailable: true,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    runtime: {
+      deviceMemory: 16,
+      hardwareConcurrency: 12,
+      language: 'ru',
+      languages: [
+        'ru',
+        'en-US'
+      ],
+      platform: 'Win32',
+      screen: {
+        availableHeight: 1040,
+        availableWidth: 1920,
+        colorDepth: 24,
+        height: 1080,
+        width: 1920
+      },
+      touchPoints: 0,
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) project-glyph/2.1.3 Chrome/150.0.7871.46 Electron/43.0.0 Safari/537.36'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:29:09.943 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: INITIAL_EMPTY_TAB_CREATED
+Message: Создана начальная пустая вкладка шаблона.
+Source: renderer
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+    title: 'Untitled template'
+  }
+====================================================================================================
+[2026-10-20 23:29:09.962 +03:00] [DEBUG] [session: 20261020-232909-pid6760]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 10,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-20 23:29:11.175 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: APPLICATION_SESSION_ENDING
+Message: Application is shutting down.
+Source: electron-main
+Details:
+  {
+    openWindowCount: 1,
+    processUptimeSeconds: 1.919
+  }
+====================================================================================================
+[2026-10-20 23:29:11.177 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: MAIN_WINDOW_CLOSING
+Message: Main window is closing.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: true,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-20 23:29:11.179 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: RENDERER_UNLOADING
+Message: Интерфейс приложения выгружается.
+Source: renderer
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: null
+  }

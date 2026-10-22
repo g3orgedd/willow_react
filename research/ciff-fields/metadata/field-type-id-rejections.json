@@ -1,0 +1,192 @@
+[
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "FixedText",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "TimeText",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "DateText",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "OffsetDateText",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "CounterText",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "SourceField",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "SourceData",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "EquipRef",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "Price",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "Barcode",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "SmallBarcode",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "DataMatrix",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "Graphic",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "VariableGraphic",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "EmbeddedGraphic",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "GraphicPrimitive",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "BlockText",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "RichText",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "Code128",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "EAN128",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "Code39",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "ITF",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "EAN13",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "EAN8",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "DataMatrixECC200",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "PDF417",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "MicroPDF417",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "QR",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "QRCode",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "MaxiCode",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "Line",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "OutlineBox",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "FilledBox",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "OutlineEllipse",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "FilledEllipse",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "PolyLine",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "Polygon",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "FilledPolygon",
+        "error":  "Exception calling \"FieldTypeId\" with \"2\" argument(s): \"Error HRESULT E_FAIL has been returned from a call to a COM component.\""
+    }
+]

@@ -1,0 +1,1073 @@
+{
+  "file": "CLCSGraphicPrimitive.dll",
+  "name": "CLCSGRAPHICPRIMITIVELib",
+  "types": [
+    {
+      "index": 0,
+      "name": "CLCSGraphicPrimitiveObj",
+      "documentation": "CLCSGraphicPrimitiveObj Class",
+      "guid": "{DC1F7EC4-7698-11D5-8036-005004D10645}",
+      "guidLocations": [
+        "4282c898",
+        "4284666c"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "ICLCSGenericFieldObj",
+          "guid": "{BB0561B1-C54F-11D4-A995-00010212D541}"
+        },
+        {
+          "name": "ICLCSGenericFieldObjSupp",
+          "guid": "{EB463F61-4F5D-11D5-8DAE-0050DAFE8A9F}"
+        },
+        {
+          "name": "ICLCSGenericFieldPossible",
+          "guid": "{0F6FF9A1-A524-11D5-8DAE-0050DAFE8A9F}"
+        },
+        {
+          "name": "ICLCSGenericFieldObj5",
+          "guid": "{EC8FEDBF-63F3-4ADC-857B-49D50CC5036D}"
+        },
+        {
+          "name": "ICLCSGenericDiscoverableFieldObj",
+          "guid": "{7362FD75-CE89-44F3-9873-3D5EC26391F4}"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "ICLCSGenericFieldObj",
+      "documentation": "ICLCSGenericFieldObj Interface",
+      "guid": "{BB0561B1-C54F-11D4-A995-00010212D541}",
+      "guidLocations": [
+        "4282c848",
+        "4282cf4c",
+        "42846684"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "Draw",
+          "names": [
+            "Draw",
+            "hDC",
+            "bIgnorePosition",
+            "fieldData",
+            "varCapsCoder",
+            "varCiffFile",
+            "colField"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": "method Draw",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "ShowPropertyPage",
+          "names": [
+            "ShowPropertyPage",
+            "hWnd",
+            "varField",
+            "varFile",
+            "varCapsCoder",
+            "lDesUnits"
+          ],
+          "memid": 2,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": "method ShowPropertyPage",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHWND"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 3
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "GetFieldTypeID",
+          "names": [
+            "GetFieldTypeID",
+            "bstrFieldType",
+            "lFieldID"
+          ],
+          "memid": 3,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": "method GetFieldTypeID",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetTools",
+          "names": [
+            "GetTools",
+            "ppToolList"
+          ],
+          "memid": 4,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": "method GetTools",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 3
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "CreateField",
+          "names": [
+            "CreateField",
+            "lFieldType",
+            "bstrFontName",
+            "lFontPitch",
+            "varCiffFile",
+            "bstrSubImage",
+            "bstrFieldName",
+            "varCapsCoder",
+            "pVarCiffField"
+          ],
+          "memid": 1610678276,
+          "invkind": 1,
+          "vtableOffset32": 28,
+          "documentation": "method CreateField",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetCiff",
+          "names": [
+            "GetCiff",
+            "varCiff"
+          ],
+          "memid": 1610678277,
+          "invkind": 1,
+          "vtableOffset32": 32,
+          "documentation": "method GetCiff",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetParentWnd",
+          "names": [
+            "GetParentWnd",
+            "ppHWnd"
+          ],
+          "memid": 1610678278,
+          "invkind": 1,
+          "vtableOffset32": 36,
+          "documentation": "method GetParentWnd",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 29,
+                    "name": "wireHWND"
+                  }
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "UpdateData",
+          "names": [
+            "UpdateData",
+            "varFieldData",
+            "varCiffFile"
+          ],
+          "memid": 1610678279,
+          "invkind": 1,
+          "vtableOffset32": 40,
+          "documentation": "method UpdateData",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "GetCiffFile",
+          "names": [
+            "GetCiffFile",
+            "varFile"
+          ],
+          "memid": 1610678280,
+          "invkind": 1,
+          "vtableOffset32": 44,
+          "documentation": "method GetCiffFile",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "CalculateSize",
+          "names": [
+            "CalculateSize",
+            "szField",
+            "varField",
+            "varCapsCoder",
+            "varCiffFile"
+          ],
+          "memid": 1610678281,
+          "invkind": 1,
+          "vtableOffset32": 48,
+          "documentation": "method CalculateSize",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "tagSIZE"
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "GetCapsCoder",
+          "names": [
+            "GetCapsCoder",
+            "varCapsCoder"
+          ],
+          "memid": 1610678282,
+          "invkind": 1,
+          "vtableOffset32": 52,
+          "documentation": "method GetCapsCoder",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "GetDesignUnits",
+          "names": [
+            "GetDesignUnits",
+            "lDesignUnits"
+          ],
+          "memid": 1610678283,
+          "invkind": 1,
+          "vtableOffset32": 56,
+          "documentation": "method GetDesignUnits",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "Resize",
+          "names": [
+            "Resize",
+            "position",
+            "varCiffFile",
+            "varCapsCoder",
+            "varFieldData"
+          ],
+          "memid": 1610678284,
+          "invkind": 1,
+          "vtableOffset32": 60,
+          "documentation": "method Resize",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "tagRECT"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "wireHDC",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 6,
+      "functions": [],
+      "variables": [],
+      "implements": []
+    },
+    {
+      "index": 3,
+      "name": "_RemotableHandle",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 1,
+      "functions": [],
+      "variables": [
+        {
+          "name": "fContext",
+          "value": null
+        },
+        {
+          "name": "u",
+          "value": null
+        }
+      ],
+      "implements": []
+    },
+    {
+      "index": 4,
+      "name": "__MIDL_IWinTypes_0009",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 7,
+      "functions": [],
+      "variables": [
+        {
+          "name": "hInproc",
+          "value": null
+        },
+        {
+          "name": "hRemote",
+          "value": null
+        }
+      ],
+      "implements": []
+    },
+    {
+      "index": 5,
+      "name": "wireHWND",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 6,
+      "functions": [],
+      "variables": [],
+      "implements": []
+    },
+    {
+      "index": 6,
+      "name": "tagSIZE",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 1,
+      "functions": [],
+      "variables": [
+        {
+          "name": "cx",
+          "value": null
+        },
+        {
+          "name": "cy",
+          "value": null
+        }
+      ],
+      "implements": []
+    },
+    {
+      "index": 7,
+      "name": "tagRECT",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 1,
+      "functions": [],
+      "variables": [
+        {
+          "name": "left",
+          "value": null
+        },
+        {
+          "name": "top",
+          "value": null
+        },
+        {
+          "name": "right",
+          "value": null
+        },
+        {
+          "name": "bottom",
+          "value": null
+        }
+      ],
+      "implements": []
+    },
+    {
+      "index": 8,
+      "name": "ICLCSGenericFieldObjSupp",
+      "documentation": "ICLCSGenericFieldObjSupp Interface",
+      "guid": "{EB463F61-4F5D-11D5-8DAE-0050DAFE8A9F}",
+      "guidLocations": [
+        "4282c868",
+        "4282cf6c",
+        "428466cc"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "GetNoOfHandles",
+          "names": [
+            "GetNoOfHandles",
+            "pHandles"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": "method GetNoOfHandles",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "RequiresInitialSize",
+          "names": [
+            "RequiresInitialSize",
+            "bReqSize"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": "method RequiresInitialSize",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "ICLCSGenericFieldPossible",
+      "documentation": "ICLCSGenericFieldPossible Interface",
+      "guid": "{0F6FF9A1-A524-11D5-8DAE-0050DAFE8A9F}",
+      "guidLocations": [
+        "4282c878",
+        "4282cf7c",
+        "428466e4"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "FieldPossible",
+          "names": [
+            "FieldPossible",
+            "varCaps",
+            "lFieldType",
+            "pFieldPossible"
+          ],
+          "memid": 1,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": "method FieldPossible",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "ICLCSGenericFieldObj5",
+      "documentation": "ICLCSGenericFieldObj5 Interface",
+      "guid": "{EC8FEDBF-63F3-4ADC-857B-49D50CC5036D}",
+      "guidLocations": [
+        "4282c858",
+        "4282cf5c",
+        "428466fc"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "ShowPropertyPage2",
+          "names": [
+            "ShowPropertyPage2",
+            "hWnd",
+            "varField",
+            "varFile",
+            "varCapsCoder",
+            "lDesUnits",
+            "lSubImage"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": "method ShowPropertyPage2",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHWND"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 3
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "get_WhichSubImage",
+          "names": [
+            "get_WhichSubImage",
+            "lSubImage"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": "method get_WhichSubImage",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "put_WhichSubImage",
+          "names": [
+            "put_WhichSubImage",
+            "lSubImage"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": "method put_WhichSubImage",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "ICLCSGenericDiscoverableFieldObj",
+      "documentation": "Claricom Discoverable Field Component Interface",
+      "guid": "{7362FD75-CE89-44F3-9873-3D5EC26391F4}",
+      "guidLocations": [
+        "4282cf8c",
+        "42846714"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "Count",
+          "names": [
+            "Count",
+            "pVal"
+          ],
+          "memid": 1610678272,
+          "invkind": 2,
+          "vtableOffset32": 12,
+          "documentation": "property Count",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 10
+            }
+          ]
+        },
+        {
+          "name": "_NewEnum",
+          "names": [
+            "_NewEnum",
+            "pVal"
+          ],
+          "memid": 1610678273,
+          "invkind": 2,
+          "vtableOffset32": 16,
+          "documentation": "property _NewEnum",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 13
+                }
+              },
+              "flags": 10
+            }
+          ]
+        },
+        {
+          "name": "Item",
+          "names": [
+            "Item",
+            "lIndex",
+            "pVal"
+          ],
+          "memid": 1610678274,
+          "invkind": 2,
+          "vtableOffset32": 20,
+          "documentation": "property Item",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 10
+            }
+          ]
+        },
+        {
+          "name": "Order",
+          "names": [
+            "Order",
+            "pVal"
+          ],
+          "memid": 1610678275,
+          "invkind": 2,
+          "vtableOffset32": 24,
+          "documentation": "property Order",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 10
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "GraphicPrimitiveProp",
+      "documentation": "GraphicPrimitiveProp Class",
+      "guid": "{45CB1736-7760-11D5-8036-005004D10645}",
+      "guidLocations": [
+        "4282c8a8",
+        "4284672c"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    }
+  ]
+}

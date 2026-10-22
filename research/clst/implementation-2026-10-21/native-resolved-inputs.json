@@ -1,0 +1,332 @@
+[
+  {
+    "name": "partial-source",
+    "fields": [
+      {
+        "name": "SOURCE",
+        "type": 0,
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "ABCDE"
+            }
+          }
+        ]
+      },
+      {
+        "name": "BCD",
+        "type": 0,
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 5,
+              "SourceFieldName": "SOURCE",
+              "StartCharacter": 1,
+              "NumberOfCharacters": 3,
+              "SelectMode": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "CD",
+        "type": 0,
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 5,
+              "SourceFieldName": "SOURCE",
+              "StartCharacter": 1,
+              "NumberOfCharacters": 2,
+              "SelectMode": 1
+            }
+          }
+        ]
+      },
+      {
+        "name": "BCDE",
+        "type": 0,
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 5,
+              "SourceFieldName": "SOURCE",
+              "StartCharacter": 1,
+              "NumberOfCharacters": 0,
+              "SelectMode": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "zero-count-back",
+        "type": 0,
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 5,
+              "SourceFieldName": "SOURCE",
+              "StartCharacter": 1,
+              "NumberOfCharacters": 0,
+              "SelectMode": 1
+            }
+          }
+        ]
+      },
+      {
+        "name": "suffix",
+        "type": 0,
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 5,
+              "SourceFieldName": "SOURCE",
+              "StartCharacter": 0,
+              "NumberOfCharacters": 2,
+              "SelectMode": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dynamic-pad-mode0",
+    "fields": [
+      {
+        "name": "PAD",
+        "type": 0,
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "AB",
+              "MaximumCharacters": 5,
+              "FixedLength": 1,
+              "FixedLengthPadCharacter": 48,
+              "FixedLengthPadMode": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dynamic-pad-mode1",
+    "fields": [
+      {
+        "name": "PAD",
+        "type": 0,
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "AB",
+              "MaximumCharacters": 5,
+              "FixedLength": 1,
+              "FixedLengthPadCharacter": 48,
+              "FixedLengthPadMode": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dynamic-pad-defaults",
+    "fields": [
+      {
+        "name": "PAD",
+        "type": 0,
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "AB",
+              "MaximumCharacters": 5,
+              "FixedLength": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dynamic-pad-nul",
+    "fields": [
+      {
+        "name": "PAD",
+        "type": 0,
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "AB",
+              "MaximumCharacters": 5,
+              "FixedLength": 1,
+              "FixedLengthPadCharacter": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "static-no-padding",
+    "fields": [
+      {
+        "name": "PAD",
+        "type": 0,
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "AB",
+              "MaximumCharacters": 5,
+              "FixedLength": 1,
+              "FixedLengthPadCharacter": 48,
+              "FixedLengthPadMode": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dynamic-no-truncation",
+    "fields": [
+      {
+        "name": "PAD",
+        "type": 0,
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "ABCDE",
+              "MaximumCharacters": 2,
+              "FixedLength": 1,
+              "FixedLengthPadCharacter": 48
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "user-empty-override",
+    "fields": [
+      {
+        "name": "USER",
+        "type": 0,
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "DEFAULT",
+              "VariableTextUserEnteredData": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "user-value-override",
+    "fields": [
+      {
+        "name": "USER",
+        "type": 0,
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "DEFAULT",
+              "VariableTextUserEnteredData": "OPERATOR"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "user-pad-default",
+    "fields": [
+      {
+        "name": "USER",
+        "type": 0,
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "DEFAULT",
+              "VariableTextUserEnteredData": "AB",
+              "MaximumCharacters": 5,
+              "FixedLength": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

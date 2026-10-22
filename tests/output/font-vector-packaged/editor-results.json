@@ -1,0 +1,65 @@
+{
+  "installedFontCount": 158,
+  "fields": [
+    {
+      "type": "FixedText",
+      "face": "Arial",
+      "geom": {
+        "x": 100,
+        "y": 100,
+        "w": 1842,
+        "h": 233
+      },
+      "nativePreview": "Path"
+    },
+    {
+      "type": "DateText",
+      "face": "Times New Roman",
+      "geom": {
+        "x": 100,
+        "y": 900,
+        "w": 717,
+        "h": 242
+      },
+      "nativePreview": "Path"
+    },
+    {
+      "type": "OffsetDateText",
+      "face": "Courier New",
+      "geom": {
+        "x": 100,
+        "y": 1700,
+        "w": 1000,
+        "h": 242
+      },
+      "nativePreview": "Path"
+    },
+    {
+      "type": "TimeText",
+      "face": "Tahoma",
+      "geom": {
+        "x": 100,
+        "y": 2500,
+        "w": 542,
+        "h": 250
+      },
+      "nativePreview": "Path"
+    },
+    {
+      "type": "CounterText",
+      "face": "Segoe UI",
+      "geom": {
+        "x": 100,
+        "y": 3300,
+        "w": 433,
+        "h": 292
+      },
+      "nativePreview": "Path"
+    }
+  ],
+  "uiSelection": true,
+  "groupSelection": true,
+  "saveReopen": true,
+  "zoomGeometryStable": true,
+  "errors": []
+}

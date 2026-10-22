@@ -1,0 +1,47 @@
+4205efc4 PUSH EBP
+4205efc5 MOV EBP,ESP
+4205efc7 PUSH ESI
+4205efc8 PUSH EDI
+4205efc9 MOV EDI,dword ptr [EBP + 0x8]
+4205efcc MOV ESI,ECX
+4205efce PUSH 0x4209c37c
+4205efd3 MOV EAX,dword ptr [EDI]
+4205efd5 PUSH EAX
+4205efd6 MOV EDX,dword ptr [EAX]
+4205efd8 CALL dword ptr [EDX + 0x6c]
+4205efdb MOV EAX,dword ptr [EDI]
+4205efdd PUSH dword ptr [ESI + 0x14]
+4205efe0 PUSH EAX
+4205efe1 MOV EDX,dword ptr [EAX]
+4205efe3 CALL dword ptr [EDX + 0xac]
+4205efe9 MOV EAX,dword ptr [EDI]
+4205efeb PUSH 0x205
+4205eff0 PUSH EAX
+4205eff1 MOV ECX,dword ptr [EAX]
+4205eff3 CALL dword ptr [ECX + 0xf4]
+4205eff9 MOV EAX,dword ptr [EDI]
+4205effb XOR ESI,ESI
+4205effd PUSH ESI
+4205effe PUSH EAX
+4205efff MOV ECX,dword ptr [EAX]
+4205f001 CALL dword ptr [ECX + 0x114]
+4205f007 MOV EAX,dword ptr [EDI]
+4205f009 PUSH ESI
+4205f00a PUSH EAX
+4205f00b MOV ECX,dword ptr [EAX]
+4205f00d CALL dword ptr [ECX + 0x11c]
+4205f013 MOV EAX,dword ptr [EDI]
+4205f015 PUSH ESI
+4205f016 PUSH EAX
+4205f017 MOV ECX,dword ptr [EAX]
+4205f019 CALL dword ptr [ECX + 0x124]
+4205f01f MOV EAX,dword ptr [EDI]
+4205f021 PUSH ESI
+4205f022 PUSH EAX
+4205f023 MOV ECX,dword ptr [EAX]
+4205f025 CALL dword ptr [ECX + 0x12c]
+4205f02b POP EDI
+4205f02c MOV AL,0x1
+4205f02e POP ESI
+4205f02f POP EBP
+4205f030 RET 0x4

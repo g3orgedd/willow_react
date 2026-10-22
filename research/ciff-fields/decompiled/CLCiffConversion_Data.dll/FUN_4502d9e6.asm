@@ -1,0 +1,25 @@
+4502d9e6 PUSH EBP
+4502d9e7 MOV EBP,ESP
+4502d9e9 SUB ESP,0x10
+4502d9ec PUSH dword ptr [EBP + 0x8]
+4502d9ef LEA ECX,[EBP + -0x10]
+4502d9f2 CALL 0x45021444
+4502d9f7 PUSH dword ptr [EBP + 0x28]
+4502d9fa LEA EAX,[EBP + -0x10]
+4502d9fd PUSH dword ptr [EBP + 0x24]
+4502da00 PUSH dword ptr [EBP + 0x20]
+4502da03 PUSH dword ptr [EBP + 0x1c]
+4502da06 PUSH dword ptr [EBP + 0x18]
+4502da09 PUSH dword ptr [EBP + 0x14]
+4502da0c PUSH dword ptr [EBP + 0x10]
+4502da0f PUSH dword ptr [EBP + 0xc]
+4502da12 PUSH EAX
+4502da13 CALL 0x4502d7e2
+4502da18 ADD ESP,0x24
+4502da1b CMP byte ptr [EBP + -0x4],0x0
+4502da1f JZ 0x4502da28
+4502da21 MOV ECX,dword ptr [EBP + -0x8]
+4502da24 AND dword ptr [ECX + 0x70],0xfffffffd
+4502da28 MOV ESP,EBP
+4502da2a POP EBP
+4502da2b RET

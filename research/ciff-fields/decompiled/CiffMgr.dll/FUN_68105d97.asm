@@ -1,0 +1,25 @@
+68105d97 PUSH EBP
+68105d98 MOV EBP,ESP
+68105d9a MOV EAX,dword ptr [EBP + 0xc]
+68105d9d PUSH ESI
+68105d9e PUSH EDI
+68105d9f MOV EDI,ECX
+68105da1 MOV EDX,dword ptr [EAX]
+68105da3 MOV dword ptr [EBP + 0xc],EDX
+68105da6 MOV ESI,dword ptr [EAX + 0x4]
+68105da9 MOV EDX,dword ptr [EAX]
+68105dab PUSH EAX
+68105dac MOV dword ptr [ESI],EDX
+68105dae MOV EDX,dword ptr [EAX]
+68105db0 MOV ECX,dword ptr [EAX + 0x4]
+68105db3 MOV dword ptr [EDX + 0x4],ECX
+68105db6 MOV ECX,EDI
+68105db8 DEC dword ptr [EDI + 0x4]
+68105dbb CALL 0x6810578a
+68105dc0 MOV EAX,dword ptr [EBP + 0x8]
+68105dc3 MOV ECX,dword ptr [EBP + 0xc]
+68105dc6 POP EDI
+68105dc7 POP ESI
+68105dc8 MOV dword ptr [EAX],ECX
+68105dca POP EBP
+68105dcb RET 0x8

@@ -1,0 +1,39 @@
+4502bd7c PUSH 0x8
+4502bd7e PUSH 0x4504fc28
+4502bd83 CALL 0x45026c30
+4502bd88 MOV EAX,dword ptr [EBP + 0x8]
+4502bd8b TEST EAX,EAX
+4502bd8d JZ 0x4502be01
+4502bd8f CMP dword ptr [EAX],0xe06d7363
+4502bd95 JNZ 0x4502be01
+4502bd97 CMP dword ptr [EAX + 0x10],0x3
+4502bd9b JNZ 0x4502be01
+4502bd9d CMP dword ptr [EAX + 0x14],0x19930520
+4502bda4 JZ 0x4502bdb8
+4502bda6 CMP dword ptr [EAX + 0x14],0x19930521
+4502bdad JZ 0x4502bdb8
+4502bdaf CMP dword ptr [EAX + 0x14],0x19930522
+4502bdb6 JNZ 0x4502be01
+4502bdb8 MOV ECX,dword ptr [EAX + 0x1c]
+4502bdbb TEST ECX,ECX
+4502bdbd JZ 0x4502be01
+4502bdbf MOV EDX,dword ptr [ECX + 0x4]
+4502bdc2 TEST EDX,EDX
+4502bdc4 JZ 0x4502bded
+4502bdc6 AND dword ptr [EBP + -0x4],0x0
+4502bdca PUSH EDX
+4502bdcb PUSH dword ptr [EAX + 0x18]
+4502bdce CALL 0x450230de
+4502bdd3 MOV dword ptr [EBP + -0x4],0xfffffffe
+4502bdda JMP 0x4502be01
+4502bded TEST byte ptr [ECX],0x10
+4502bdf0 JZ 0x4502be01
+4502bdf2 MOV EAX,dword ptr [EAX + 0x18]
+4502bdf5 MOV ECX,dword ptr [EAX]
+4502bdf7 TEST ECX,ECX
+4502bdf9 JZ 0x4502be01
+4502bdfb MOV EAX,dword ptr [ECX]
+4502bdfd PUSH ECX
+4502bdfe CALL dword ptr [EAX + 0x8]
+4502be01 CALL 0x45026c75
+4502be06 RET

@@ -1,0 +1,19 @@
+45038ed2 PUSH EBP
+45038ed3 MOV EBP,ESP
+45038ed5 PUSH ESI
+45038ed6 MOV ESI,dword ptr [EBP + 0x8]
+45038ed9 TEST byte ptr [ESI + 0xc],0x83
+45038edd JZ 0x45038eff
+45038edf TEST byte ptr [ESI + 0xc],0x8
+45038ee3 JZ 0x45038eff
+45038ee5 PUSH dword ptr [ESI + 0x8]
+45038ee8 CALL 0x450238e4
+45038eed AND dword ptr [ESI + 0xc],0xfffffbf7
+45038ef4 XOR EAX,EAX
+45038ef6 POP ECX
+45038ef7 MOV dword ptr [ESI],EAX
+45038ef9 MOV dword ptr [ESI + 0x8],EAX
+45038efc MOV dword ptr [ESI + 0x4],EAX
+45038eff POP ESI
+45038f00 POP EBP
+45038f01 RET

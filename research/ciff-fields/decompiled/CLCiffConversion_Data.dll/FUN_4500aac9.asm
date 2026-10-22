@@ -1,0 +1,19 @@
+4500aac9 PUSH EBP
+4500aaca MOV EBP,ESP
+4500aacc PUSH ECX
+4500aacd AND dword ptr [EBP + -0x4],0x0
+4500aad1 CMP dword ptr [EBP + 0x8],0x0
+4500aad5 PUSH ESI
+4500aad6 MOV ESI,ECX
+4500aad8 JZ 0x4500aae8
+4500aada LEA ECX,[ESI + 0x8]
+4500aadd MOV dword ptr [ESI],0x4503ecfc
+4500aae3 CALL 0x450054d2
+4500aae8 MOV EAX,dword ptr [ESI]
+4500aaea MOV EAX,dword ptr [EAX + 0x4]
+4500aaed MOV dword ptr [ESI + EAX*0x1],0x4503ece8
+4500aaf4 MOV EAX,ESI
+4500aaf6 POP ESI
+4500aaf7 MOV ESP,EBP
+4500aaf9 POP EBP
+4500aafa RET 0x4

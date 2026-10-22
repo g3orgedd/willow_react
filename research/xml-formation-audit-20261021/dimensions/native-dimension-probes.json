@@ -1,0 +1,989 @@
+{
+    "processBits":  32,
+    "method":  "Unmodified registered CiffMgr COM interfaces; no GUI, no clipping or app size aggregation assumed",
+    "cases":  [
+                  {
+                      "name":  "create-empty-1600x2400",
+                      "kind":  "Original AddSubImage/AddField/savetostring",
+                      "status":  "ok",
+                      "before":  {
+                                     "ImageWidth":  1600,
+                                     "ImageHeight":  2400,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2400,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterField":  {
+                                         "ImageWidth":  1600,
+                                         "ImageHeight":  2400,
+                                         "MaxImageWidth":  1600,
+                                         "MaxImageHeight":  2400,
+                                         "AutoSize":  0,
+                                         "ImageRotation":  0,
+                                         "CurrentOrientation":  0,
+                                         "FieldCount":  0
+                                     },
+                      "afterWriter":  {
+                                          "ImageWidth":  1600,
+                                          "ImageHeight":  2400,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2400,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e1600\u003c/ImageWidth\u003e\u003cImageHeight\u003e2400\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2400\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings/\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "create-empty-zero",
+                      "kind":  "Original AddSubImage/AddField/savetostring",
+                      "status":  "ok",
+                      "before":  {
+                                     "ImageWidth":  0,
+                                     "ImageHeight":  0,
+                                     "MaxImageWidth":  0,
+                                     "MaxImageHeight":  0,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterField":  {
+                                         "ImageWidth":  0,
+                                         "ImageHeight":  0,
+                                         "MaxImageWidth":  0,
+                                         "MaxImageHeight":  0,
+                                         "AutoSize":  0,
+                                         "ImageRotation":  0,
+                                         "CurrentOrientation":  0,
+                                         "FieldCount":  0
+                                     },
+                      "afterWriter":  {
+                                          "ImageWidth":  0,
+                                          "ImageHeight":  0,
+                                          "MaxImageWidth":  0,
+                                          "MaxImageHeight":  0,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e0\u003c/ImageWidth\u003e\u003cImageHeight\u003e0\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e0\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e0\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings/\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "create-empty-negative",
+                      "kind":  "Original AddSubImage/AddField/savetostring",
+                      "status":  "ok",
+                      "before":  {
+                                     "ImageWidth":  -100,
+                                     "ImageHeight":  -200,
+                                     "MaxImageWidth":  -100,
+                                     "MaxImageHeight":  -200,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterField":  {
+                                         "ImageWidth":  -100,
+                                         "ImageHeight":  -200,
+                                         "MaxImageWidth":  -100,
+                                         "MaxImageHeight":  -200,
+                                         "AutoSize":  0,
+                                         "ImageRotation":  0,
+                                         "CurrentOrientation":  0,
+                                         "FieldCount":  0
+                                     },
+                      "afterWriter":  {
+                                          "ImageWidth":  -100,
+                                          "ImageHeight":  -200,
+                                          "MaxImageWidth":  -100,
+                                          "MaxImageHeight":  -200,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e-100\u003c/ImageWidth\u003e\u003cImageHeight\u003e-200\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e-100\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e-200\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings/\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "create-printed-outside",
+                      "kind":  "Original AddSubImage/AddField/savetostring",
+                      "status":  "ok",
+                      "before":  {
+                                     "ImageWidth":  1600,
+                                     "ImageHeight":  2400,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2400,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterField":  {
+                                         "ImageWidth":  1600,
+                                         "ImageHeight":  2400,
+                                         "MaxImageWidth":  1600,
+                                         "MaxImageHeight":  2400,
+                                         "AutoSize":  0,
+                                         "ImageRotation":  0,
+                                         "CurrentOrientation":  0,
+                                         "FieldCount":  1
+                                     },
+                      "afterWriter":  {
+                                          "ImageWidth":  1600,
+                                          "ImageHeight":  2400,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2400,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  1
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e1600\u003c/ImageWidth\u003e\u003cImageHeight\u003e2400\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2400\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cX\u003e2500\u003c/X\u003e\u003cY\u003e3000\u003c/Y\u003e\u003cW\u003e700\u003c/W\u003e\u003cH\u003e500\u003c/H\u003e\u003cData/\u003e\u003cText\u003e\u003cFont/\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings/\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "create-hidden-outside",
+                      "kind":  "Original AddSubImage/AddField/savetostring",
+                      "status":  "ok",
+                      "before":  {
+                                     "ImageWidth":  1600,
+                                     "ImageHeight":  2400,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2400,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterField":  {
+                                         "ImageWidth":  1600,
+                                         "ImageHeight":  2400,
+                                         "MaxImageWidth":  1600,
+                                         "MaxImageHeight":  2400,
+                                         "AutoSize":  0,
+                                         "ImageRotation":  0,
+                                         "CurrentOrientation":  0,
+                                         "FieldCount":  1
+                                     },
+                      "afterWriter":  {
+                                          "ImageWidth":  1600,
+                                          "ImageHeight":  2400,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2400,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  1
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e1600\u003c/ImageWidth\u003e\u003cImageHeight\u003e2400\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2400\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e2500\u003c/X\u003e\u003cY\u003e3000\u003c/Y\u003e\u003cW\u003e700\u003c/W\u003e\u003cH\u003e500\u003c/H\u003e\u003cData/\u003e\u003cText\u003e\u003cFont/\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings/\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "baseline",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  987,
+                                     "ImageHeight":  1140,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  987,
+                                          "ImageHeight":  1140,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e987\u003c/ImageWidth\u003e\u003cImageHeight\u003e1140\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "small-image-large-max",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  2000,
+                                     "MaxImageHeight":  3000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  2000,
+                                          "MaxImageHeight":  3000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e2000\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e3000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "large-image-small-max",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  2516,
+                                     "ImageHeight":  2558,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  1600,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  2516,
+                                          "ImageHeight":  2558,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  1600,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e2516\u003c/ImageWidth\u003e\u003cImageHeight\u003e2558\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e1600\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "zero-image",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  0,
+                                     "ImageHeight":  0,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  0,
+                                          "ImageHeight":  0,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e0\u003c/ImageWidth\u003e\u003cImageHeight\u003e0\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "negative-image",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  -200,
+                                     "ImageHeight":  -300,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  -200,
+                                          "ImageHeight":  -300,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e-200\u003c/ImageWidth\u003e\u003cImageHeight\u003e-300\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "missing-image-both",
+                      "status":  "error",
+                      "error":  "System.Management.Automation.MethodInvocationException: Exception calling \"SetString\" with \"3\" argument(s): \"The compound file  was produced with an incompatible version of storage. (Exception from HRESULT: 0x80030104 (STG_E_OLDFORMAT))\" ---\u003e System.Runtime.InteropServices.COMException: The compound file  was produced with an incompatible version of storage. (Exception from HRESULT: 0x80030104 (STG_E_OLDFORMAT))\r\n   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)\r\n   at CiffNative.SetString(IntPtr value, Int32 offset, String argument)\r\n   at CallSite.Target(Closure , CallSite , Type , Object , Int32 , Object )\r\n   --- End of inner exception stack trace ---\r\n   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)\r\n   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)"
+                  },
+                  {
+                      "name":  "missing-image-width",
+                      "status":  "error",
+                      "error":  "System.Management.Automation.MethodInvocationException: Exception calling \"SetString\" with \"3\" argument(s): \"The compound file  was produced with an incompatible version of storage. (Exception from HRESULT: 0x80030104 (STG_E_OLDFORMAT))\" ---\u003e System.Runtime.InteropServices.COMException: The compound file  was produced with an incompatible version of storage. (Exception from HRESULT: 0x80030104 (STG_E_OLDFORMAT))\r\n   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)\r\n   at CiffNative.SetString(IntPtr value, Int32 offset, String argument)\r\n   at CallSite.Target(Closure , CallSite , Type , Object , Int32 , Object )\r\n   --- End of inner exception stack trace ---\r\n   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)\r\n   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)"
+                  },
+                  {
+                      "name":  "missing-image-height",
+                      "status":  "error",
+                      "error":  "System.Management.Automation.MethodInvocationException: Exception calling \"SetString\" with \"3\" argument(s): \"The compound file  was produced with an incompatible version of storage. (Exception from HRESULT: 0x80030104 (STG_E_OLDFORMAT))\" ---\u003e System.Runtime.InteropServices.COMException: The compound file  was produced with an incompatible version of storage. (Exception from HRESULT: 0x80030104 (STG_E_OLDFORMAT))\r\n   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)\r\n   at CiffNative.SetString(IntPtr value, Int32 offset, String argument)\r\n   at CallSite.Target(Closure , CallSite , Type , Object , Int32 , Object )\r\n   --- End of inner exception stack trace ---\r\n   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)\r\n   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)"
+                  },
+                  {
+                      "name":  "missing-max-both",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  600,
+                                     "MaxImageHeight":  700,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  600,
+                                          "MaxImageHeight":  700,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e700\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "missing-max-width",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "zero-max",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  0,
+                                     "MaxImageHeight":  0,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  0,
+                                          "MaxImageHeight":  0,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e0\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e0\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "negative-max",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  -100,
+                                     "MaxImageHeight":  -200,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  -100,
+                                          "MaxImageHeight":  -200,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e-100\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e-200\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "missing-all",
+                      "status":  "error",
+                      "error":  "System.Management.Automation.MethodInvocationException: Exception calling \"SetString\" with \"3\" argument(s): \"The compound file  was produced with an incompatible version of storage. (Exception from HRESULT: 0x80030104 (STG_E_OLDFORMAT))\" ---\u003e System.Runtime.InteropServices.COMException: The compound file  was produced with an incompatible version of storage. (Exception from HRESULT: 0x80030104 (STG_E_OLDFORMAT))\r\n   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)\r\n   at CiffNative.SetString(IntPtr value, Int32 offset, String argument)\r\n   at CallSite.Target(Closure , CallSite , Type , Object , Int32 , Object )\r\n   --- End of inner exception stack trace ---\r\n   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)\r\n   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)"
+                  },
+                  {
+                      "name":  "baseline-autosize0",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  987,
+                                     "ImageHeight":  1140,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  987,
+                                          "ImageHeight":  1140,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e987\u003c/ImageWidth\u003e\u003cImageHeight\u003e1140\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "baseline-autosize1",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  987,
+                                     "ImageHeight":  1140,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  1,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  987,
+                                          "ImageHeight":  1140,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  1,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e987\u003c/ImageWidth\u003e\u003cImageHeight\u003e1140\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cAutoSize\u003e1\u003c/AutoSize\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "baseline-rotation90",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  987,
+                                     "ImageHeight":  1140,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  90,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  987,
+                                          "ImageHeight":  1140,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  90,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e987\u003c/ImageWidth\u003e\u003cImageHeight\u003e1140\u003c/ImageHeight\u003e\u003cImageRotation\u003e90\u003c/ImageRotation\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "baseline-rotation270",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  987,
+                                     "ImageHeight":  1140,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  270,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  987,
+                                          "ImageHeight":  1140,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  270,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e987\u003c/ImageWidth\u003e\u003cImageHeight\u003e1140\u003c/ImageHeight\u003e\u003cImageRotation\u003e270\u003c/ImageRotation\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "small-image-large-max-autosize0",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  2000,
+                                     "MaxImageHeight":  3000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  2000,
+                                          "MaxImageHeight":  3000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e2000\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e3000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "small-image-large-max-autosize1",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  2000,
+                                     "MaxImageHeight":  3000,
+                                     "AutoSize":  1,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  2000,
+                                          "MaxImageHeight":  3000,
+                                          "AutoSize":  1,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e2000\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e3000\u003c/MaxImageHeight\u003e\u003cAutoSize\u003e1\u003c/AutoSize\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "small-image-large-max-rotation90",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  2000,
+                                     "MaxImageHeight":  3000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  90,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  2000,
+                                          "MaxImageHeight":  3000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  90,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cImageRotation\u003e90\u003c/ImageRotation\u003e\u003cMaxImageWidth\u003e2000\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e3000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "small-image-large-max-rotation270",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  2000,
+                                     "MaxImageHeight":  3000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  270,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  2000,
+                                          "MaxImageHeight":  3000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  270,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cImageRotation\u003e270\u003c/ImageRotation\u003e\u003cMaxImageWidth\u003e2000\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e3000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "large-image-small-max-autosize0",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  2516,
+                                     "ImageHeight":  2558,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  1600,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  2516,
+                                          "ImageHeight":  2558,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  1600,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e2516\u003c/ImageWidth\u003e\u003cImageHeight\u003e2558\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e1600\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "large-image-small-max-autosize1",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  2516,
+                                     "ImageHeight":  2558,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  1600,
+                                     "AutoSize":  1,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  2516,
+                                          "ImageHeight":  2558,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  1600,
+                                          "AutoSize":  1,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e2516\u003c/ImageWidth\u003e\u003cImageHeight\u003e2558\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e1600\u003c/MaxImageHeight\u003e\u003cAutoSize\u003e1\u003c/AutoSize\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "large-image-small-max-rotation90",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  2516,
+                                     "ImageHeight":  2558,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  1600,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  90,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  2516,
+                                          "ImageHeight":  2558,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  1600,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  90,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e2516\u003c/ImageWidth\u003e\u003cImageHeight\u003e2558\u003c/ImageHeight\u003e\u003cImageRotation\u003e90\u003c/ImageRotation\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e1600\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "large-image-small-max-rotation270",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  2516,
+                                     "ImageHeight":  2558,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  1600,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  270,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  2516,
+                                          "ImageHeight":  2558,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  1600,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  270,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e2516\u003c/ImageWidth\u003e\u003cImageHeight\u003e2558\u003c/ImageHeight\u003e\u003cImageRotation\u003e270\u003c/ImageRotation\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e1600\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "outside-field-displayed0",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  1
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  1
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e2500\u003c/X\u003e\u003cY\u003e3000\u003c/Y\u003e\u003cW\u003e700\u003c/W\u003e\u003cH\u003e500\u003c/H\u003e\u003cCalcData\u003e\u003c![CDATA[ABC]]\u003e\u003c/CalcData\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[ABC]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "outside-field-displayed1",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  1
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  1
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cX\u003e2500\u003c/X\u003e\u003cY\u003e3000\u003c/Y\u003e\u003cW\u003e700\u003c/W\u003e\u003cH\u003e500\u003c/H\u003e\u003cCalcData\u003e\u003c![CDATA[ABC]]\u003e\u003c/CalcData\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[ABC]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "outside-field-displayed0-autosize0",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  1
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  1
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e2500\u003c/X\u003e\u003cY\u003e3000\u003c/Y\u003e\u003cW\u003e700\u003c/W\u003e\u003cH\u003e500\u003c/H\u003e\u003cCalcData\u003e\u003c![CDATA[ABC]]\u003e\u003c/CalcData\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[ABC]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "outside-field-displayed0-autosize1",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  1,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  1
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  1,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  1
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cAutoSize\u003e1\u003c/AutoSize\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e2500\u003c/X\u003e\u003cY\u003e3000\u003c/Y\u003e\u003cW\u003e700\u003c/W\u003e\u003cH\u003e500\u003c/H\u003e\u003cCalcData\u003e\u003c![CDATA[ABC]]\u003e\u003c/CalcData\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[ABC]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "outside-field-displayed1-autosize0",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  0,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  1
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  0,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  1
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cX\u003e2500\u003c/X\u003e\u003cY\u003e3000\u003c/Y\u003e\u003cW\u003e700\u003c/W\u003e\u003cH\u003e500\u003c/H\u003e\u003cCalcData\u003e\u003c![CDATA[ABC]]\u003e\u003c/CalcData\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[ABC]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "outside-field-displayed1-autosize1",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  600,
+                                     "ImageHeight":  700,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  1,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  1
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  600,
+                                          "ImageHeight":  700,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  1,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  1
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e600\u003c/ImageWidth\u003e\u003cImageHeight\u003e700\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cAutoSize\u003e1\u003c/AutoSize\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cX\u003e2500\u003c/X\u003e\u003cY\u003e3000\u003c/Y\u003e\u003cW\u003e700\u003c/W\u003e\u003cH\u003e500\u003c/H\u003e\u003cCalcData\u003e\u003c![CDATA[ABC]]\u003e\u003c/CalcData\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[ABC]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "zero-image-autosize1",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  0,
+                                     "ImageHeight":  0,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  1,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  0,
+                                          "ImageHeight":  0,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  1,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e0\u003c/ImageWidth\u003e\u003cImageHeight\u003e0\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cAutoSize\u003e1\u003c/AutoSize\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  },
+                  {
+                      "name":  "negative-image-autosize1",
+                      "kind":  "Original ICiffFile.loadfromstring/savetostring",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "loaded":  {
+                                     "ImageWidth":  -200,
+                                     "ImageHeight":  -300,
+                                     "MaxImageWidth":  1600,
+                                     "MaxImageHeight":  2000,
+                                     "AutoSize":  1,
+                                     "ImageRotation":  0,
+                                     "CurrentOrientation":  0,
+                                     "FieldCount":  0
+                                 },
+                      "afterWriter":  {
+                                          "ImageWidth":  -200,
+                                          "ImageHeight":  -300,
+                                          "MaxImageWidth":  1600,
+                                          "MaxImageHeight":  2000,
+                                          "AutoSize":  1,
+                                          "ImageRotation":  0,
+                                          "CurrentOrientation":  0,
+                                          "FieldCount":  0
+                                      },
+                      "xml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6320(53mm) - Continuous\"/\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\"\u003e\u003cImageWidth\u003e-200\u003c/ImageWidth\u003e\u003cImageHeight\u003e-300\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e1600\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e2000\u003c/MaxImageHeight\u003e\u003cAutoSize\u003e1\u003c/AutoSize\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003c/SubHeader\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n"
+                  }
+              ]
+}

@@ -1,0 +1,29 @@
+45407dea PUSH EBP
+45407deb MOV EBP,ESP
+45407ded MOV EDX,dword ptr [EBP + 0x8]
+45407df0 PUSH ESI
+45407df1 MOV ESI,dword ptr [EDX + 0x8]
+45407df4 MOV EAX,dword ptr [ESI]
+45407df6 MOV dword ptr [EDX + 0x8],EAX
+45407df9 MOV EAX,dword ptr [ESI]
+45407dfb CMP byte ptr [EAX + 0xd],0x0
+45407dff JNZ 0x45407e04
+45407e01 MOV dword ptr [EAX + 0x4],EDX
+45407e04 MOV EAX,dword ptr [EDX + 0x4]
+45407e07 MOV dword ptr [ESI + 0x4],EAX
+45407e0a MOV EAX,dword ptr [ECX]
+45407e0c CMP EDX,dword ptr [EAX + 0x4]
+45407e0f JNZ 0x45407e16
+45407e11 MOV dword ptr [EAX + 0x4],ESI
+45407e14 JMP 0x45407e24
+45407e16 MOV EAX,dword ptr [EDX + 0x4]
+45407e19 CMP EDX,dword ptr [EAX]
+45407e1b JNZ 0x45407e21
+45407e1d MOV dword ptr [EAX],ESI
+45407e1f JMP 0x45407e24
+45407e21 MOV dword ptr [EAX + 0x8],ESI
+45407e24 MOV dword ptr [ESI],EDX
+45407e26 MOV dword ptr [EDX + 0x4],ESI
+45407e29 POP ESI
+45407e2a POP EBP
+45407e2b RET 0x4

@@ -1,0 +1,3 @@
+45401c67 PUSH dword ptr [ECX]
+45401c69 CALL dword ptr [0x4544725c]
+45401c6f RET

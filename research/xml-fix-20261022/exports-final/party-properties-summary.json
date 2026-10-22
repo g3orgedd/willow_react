@@ -1,0 +1,153 @@
+{
+  "verifiedAt": "2026-10-22T09:22:59.853Z",
+  "cases": [
+    {
+      "name": "web-party-gtin2",
+      "caseId": "party-gtin2",
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "fields": 7,
+      "gtinFieldName": "GTIN2",
+      "segmentOrder": [
+        "C1",
+        "GTIN2",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN"
+      ],
+      "allHelperFontPitch": 10,
+      "fixedLengthPaddingExact": true,
+      "nativeResolvedValuesExact": true,
+      "nativeCanonicalPropertiesExact": true,
+      "allPreviewMetricsExact": true,
+      "previewMetricDifferences": [],
+      "image": {
+        "width": 1300,
+        "height": 1300
+      },
+      "max": {
+        "width": 1600,
+        "height": 2400
+      },
+      "dataMatrixDots": {
+        "width": 132,
+        "height": 132
+      },
+      "unchangedSha256": "A7BEFDED2FABB0190675FEC0BBC27B124CBD5CF6317EB72F07CB5C5937F59257"
+    },
+    {
+      "name": "web-party-box-gtin",
+      "caseId": "party-box-gtin",
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "fields": 9,
+      "gtinFieldName": "GTIN",
+      "segmentOrder": [
+        "C1",
+        "GTIN",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN",
+        "C4",
+        "BOX_COUNTER"
+      ],
+      "allHelperFontPitch": 10,
+      "fixedLengthPaddingExact": true,
+      "nativeResolvedValuesExact": true,
+      "nativeCanonicalPropertiesExact": true,
+      "allPreviewMetricsExact": true,
+      "previewMetricDifferences": [],
+      "image": {
+        "width": 1300,
+        "height": 1300
+      },
+      "max": {
+        "width": 1600,
+        "height": 2400
+      },
+      "dataMatrixDots": {
+        "width": 132,
+        "height": 132
+      },
+      "unchangedSha256": "A652446CC2590294E0D3714CA8EF9C6AF6BD32AB8D8EACB7640DD8E50C41514C"
+    },
+    {
+      "name": "exe-party-gtin2",
+      "caseId": "party-gtin2",
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "fields": 7,
+      "gtinFieldName": "GTIN2",
+      "segmentOrder": [
+        "C1",
+        "GTIN2",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN"
+      ],
+      "allHelperFontPitch": 10,
+      "fixedLengthPaddingExact": true,
+      "nativeResolvedValuesExact": true,
+      "nativeCanonicalPropertiesExact": true,
+      "allPreviewMetricsExact": true,
+      "previewMetricDifferences": [],
+      "image": {
+        "width": 1300,
+        "height": 1300
+      },
+      "max": {
+        "width": 1600,
+        "height": 2400
+      },
+      "dataMatrixDots": {
+        "width": 132,
+        "height": 132
+      },
+      "unchangedSha256": "A7BEFDED2FABB0190675FEC0BBC27B124CBD5CF6317EB72F07CB5C5937F59257"
+    },
+    {
+      "name": "exe-party-box-gtin",
+      "caseId": "party-box-gtin",
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "fields": 9,
+      "gtinFieldName": "GTIN",
+      "segmentOrder": [
+        "C1",
+        "GTIN",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN",
+        "C4",
+        "BOX_COUNTER"
+      ],
+      "allHelperFontPitch": 10,
+      "fixedLengthPaddingExact": true,
+      "nativeResolvedValuesExact": true,
+      "nativeCanonicalPropertiesExact": true,
+      "allPreviewMetricsExact": true,
+      "previewMetricDifferences": [],
+      "image": {
+        "width": 1300,
+        "height": 1300
+      },
+      "max": {
+        "width": 1600,
+        "height": 2400
+      },
+      "dataMatrixDots": {
+        "width": 132,
+        "height": 132
+      },
+      "unchangedSha256": "FD95BFCE31CE836D55797BEC3C34045AAB19E683C517EA20CCC90F03D23FD72C"
+    }
+  ]
+}

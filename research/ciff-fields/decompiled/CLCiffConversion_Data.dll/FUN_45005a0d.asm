@@ -1,0 +1,2 @@
+45005a0d SUB ECX,dword ptr [ECX + -0x4]
+45005a10 JMP 0x45005a81

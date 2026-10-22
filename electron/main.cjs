@@ -4,8 +4,9 @@ const os = require("node:os");
 const path = require("node:path");
 const { pathToFileURL } = require("node:url");
 const { createFileLogger, createSessionId } = require("./logger.cjs");
+const { createFontCatalogService, createFontRendererService } = require("./fonts.cjs");
 
-const APP_PROTOCOL = "willow";
+const APP_PROTOCOL = "glyph";
 const APP_HOST = "app";
 let fileLogger = null;
 let quitAfterLogFlush = false;
@@ -92,7 +93,7 @@ function initializeFileLogging() {
     appVersion: app.getVersion()
   });
 
-  ipcMain.on("willow:log", (event, payload) => {
+  ipcMain.on("glyph:log", (event, payload) => {
     const rendererDetails = {
       ...(payload?.details && typeof payload.details === "object" ? payload.details : { value: payload?.details }),
       renderer: {
@@ -111,13 +112,13 @@ function initializeFileLogging() {
     });
   });
 
-  ipcMain.handle("willow:get-log-info", () => fileLogger.getInfo());
-  ipcMain.handle("willow:flush-logs", () => fileLogger.flush().then(() => fileLogger.getInfo()));
+  ipcMain.handle("glyph:get-log-info", () => fileLogger.getInfo());
+  ipcMain.handle("glyph:flush-logs", () => fileLogger.flush().then(() => fileLogger.getInfo()));
 
   return logMain(
     "application",
     "APPLICATION_SESSION_STARTED",
-    "Willow CIFF Editor logging session started.",
+    "Glyph Studio logging session started.",
     {
       application: {
         name: app.getName(),
@@ -294,6 +295,25 @@ process.on("unhandledRejection", (reason) => {
 
 app.whenReady().then(async () => {
   await initializeFileLogging();
+  ipcMain.on("glyph:get-system-tick-count", (event) => {
+    const sourceUrl = event.senderFrame?.url || event.sender.getURL();
+    event.returnValue = isAllowedNavigation(sourceUrl, getDevServerUrl())
+      ? Math.floor(os.uptime() * 1000) >>> 0
+      : null;
+  });
+  const fontCatalog = createFontCatalogService();
+  const fontRenderer = createFontRendererService();
+  ipcMain.handle("glyph:list-fonts", (event) => {
+    const sourceUrl = event.senderFrame?.url || event.sender.getURL();
+    if (!isAllowedNavigation(sourceUrl, getDevServerUrl())) throw new Error("Untrusted font catalog request.");
+    return fontCatalog.list();
+  });
+  ipcMain.handle("glyph:render-font", (event, request) => {
+    const sourceUrl = event.senderFrame?.url || event.sender.getURL();
+    if (!isAllowedNavigation(sourceUrl, getDevServerUrl())) throw new Error("Untrusted font rendering request.");
+    return fontRenderer.render(request);
+  });
+  app.on("will-quit", () => fontRenderer.dispose());
   registerAppProtocol();
   createMainWindow();
 

@@ -1,0 +1,2 @@
+4201ab59 MOV dword ptr [ECX],0x42091e20
+4201ab5f JMP 0x4200a02b

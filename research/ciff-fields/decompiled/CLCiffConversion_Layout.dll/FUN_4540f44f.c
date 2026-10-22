@@ -1,0 +1,12 @@
+// Source: CLCiffConversion_Layout.dll @ 4540f44f; FUN_4540f44f
+
+bool __cdecl FUN_4540f44f(LPSYSTEMTIME param_1,DOUBLE param_2)
+
+{
+  INT IVar1;
+  
+  IVar1 = VariantTimeToSystemTime(param_2,param_1);
+  return IVar1 != 0;
+}
+
+

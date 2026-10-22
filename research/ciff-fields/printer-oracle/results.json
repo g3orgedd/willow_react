@@ -1,0 +1,722 @@
+[
+    {
+        "profile":  "DataFlex 6530(53mm) - Continuous",
+        "coder":  "Nimitz Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6530_53mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6530(53mm) - Intermittent",
+        "coder":  "Nimitz Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6530_53mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6420(53mm) - Continuous",
+        "coder":  "Zodiac Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6420_53mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6420(53mm) - Intermittent",
+        "coder":  "Zodiac Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6420_53mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6420(107mm) - Continuous",
+        "coder":  "Zodiac(107mm) Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6420_107mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6420(107mm) - Intermittent",
+        "coder":  "Zodiac(107mm) Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6420_107mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6330(53mm) - Continuous",
+        "coder":  "Forrester Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6330_53mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6330(53mm) - Intermittent",
+        "coder":  "Forrester Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6330_53mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6320(53mm) - Continuous",
+        "coder":  "Zodiac Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6320_53mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6320(53mm) - Intermittent",
+        "coder":  "Zodiac Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6320_53mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6320(32mm) - Continuous",
+        "coder":  "Zodiac(32mm) Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6320_32mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6320(32mm) - Intermittent",
+        "coder":  "Zodiac(32mm) Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6320_32mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex 6230(32mm) - Continuous",
+        "coder":  "Independence(32mm) Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  181,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  42
+                       },
+                       {
+                           "calculatedDotsWidth":  94,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  42
+                       },
+                       {
+                           "calculatedDotsWidth":  188,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  42
+                       },
+                       {
+                           "calculatedDotsWidth":  84,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  42
+                       },
+                       {
+                           "height":  67,
+                           "width":  67,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.08,
+        "yRes":  0.08,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6230_32mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex 6230(32mm) - Intermittent",
+        "coder":  "Independence(32mm) Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  181,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  42
+                       },
+                       {
+                           "calculatedDotsWidth":  94,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  42
+                       },
+                       {
+                           "calculatedDotsWidth":  188,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  42
+                       },
+                       {
+                           "calculatedDotsWidth":  84,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  42
+                       },
+                       {
+                           "height":  67,
+                           "width":  67,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.08,
+        "yRes":  0.08,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_6230_32mm_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex - Continuous",
+        "coder":  "Zodiac Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex - Intermittent",
+        "coder":  "Zodiac Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_Intermittent.ciff"
+    },
+    {
+        "profile":  "DataFlex(107mm) - Continuous",
+        "coder":  "Zodiac(107mm) Continuous",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_107mm_Continuous.ciff"
+    },
+    {
+        "profile":  "DataFlex(107mm) - Intermittent",
+        "coder":  "Zodiac(107mm) Intermittent",
+        "status":  "ok",
+        "fields":  [
+                       {
+                           "calculatedDotsWidth":  274,
+                           "calcData":  "DefaultText",
+                           "type":  0,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  139,
+                           "calcData":  "12:43",
+                           "type":  1,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  278,
+                           "calcData":  "17/10/2026",
+                           "type":  2,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "calculatedDotsWidth":  124,
+                           "calcData":  "0000",
+                           "type":  3,
+                           "calculatedDotsHeight":  63
+                       },
+                       {
+                           "height":  111,
+                           "width":  111,
+                           "type":  "DM"
+                       }
+                   ],
+        "xRes":  0.12,
+        "yRes":  0.12,
+        "nativeDefaultFont":  null,
+        "file":  "DataFlex_107mm_Intermittent.ciff"
+    }
+]

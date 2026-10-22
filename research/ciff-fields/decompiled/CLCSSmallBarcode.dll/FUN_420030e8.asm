@@ -1,0 +1,2 @@
+420030e8 MOV dword ptr [ECX],0x420897d0
+420030ee RET

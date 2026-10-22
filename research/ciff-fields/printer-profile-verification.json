@@ -1,0 +1,327 @@
+{
+  "binaryHashes": [
+    {
+      "module": "CiffMgr.dll",
+      "sha256": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CiffHelper.dll",
+      "sha256": "26e0cc9bc69d44b00e9ab482e1a2d13daf5bb8f801817c717194c5f1b535558a",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCSTextBasedField.dll",
+      "sha256": "2b9cedaa8a9bdc5ecb92f9dc43855650b0698b6f0ff0190237e6c5889232409b",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCSBarcodeField.dll",
+      "sha256": "258f201aaad6e993379ab725c9184afcf5a64035abb9546e1ab25bd529d8c45e",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCSGraphicBasedField.dll",
+      "sha256": "d9158db819d9eef1a544ec9e5bbaedeb2e01c9621b7164ab45d1ad336fc12dfe",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCSGraphicPrimitive.dll",
+      "sha256": "19a1a7c24c3446ae7e48d540832a056c1d3d8c3a05d1afa96bc2f138de26ba2f",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCSBlockTextField.dll",
+      "sha256": "443175b5452295fd1c638da06ee5f3d9ff0f5e292dcc746628e18996a1eb3d6c",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCSRichTextBlockField.dll",
+      "sha256": "09b2455e8954a95f85b9206e16fa01d816e25abb5409c74440cc379a421ffad5",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCSSmallBarcode.dll",
+      "sha256": "7068b4674e98d4ed44f6025b44dc170f277adeef0929be20a817019a863324d9",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCSBinaryFontComponent.dll",
+      "sha256": "8bc081e2c23fa2dedc8accd0a91dbe02c913581a7aaac2d60c20a451938be675",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLZipherBCP2.dll",
+      "sha256": "5e4f9c6615fc1b39d235beb5103e9f0ca044bd2b110dbe53c41c05c945bf7429",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CiffDateFormats.dll",
+      "sha256": "dfda165a8ea544b125425a256058bfe938e3adccfb786c75621bf9020c055ffb",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCiffConversion_Data.dll",
+      "sha256": "9960bc627c1844a8ef510c0592ad86520ab94d3129142ca931484a6113450ecd",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLCiffConversion_Layout.dll",
+      "sha256": "dfee6a96e6d6d361760b5c154a4072acb83eefe11dc9a3bbe23fdbeeb2520c1a",
+      "matchesPriorDecompilation": true
+    },
+    {
+      "module": "CLARiSOFT.exe",
+      "sha256": "28aebc9c30c68e85175be90580195d6e4f3180a994ecdc8215e9b93c26304e1a",
+      "matchesPriorDecompilation": true
+    }
+  ],
+  "successfulProfileProbes": 18,
+  "headerOnlyProbes": 18,
+  "retargetMetadataProbes": 18,
+  "equalFieldsAt12DotsPerMm": 16,
+  "clockNormalization": "Only TEXT_1 CalcData; native wall clock is not deterministic.",
+  "matrix": [
+    {
+      "profile": "DataFlex 6530(53mm) - Continuous",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6530(53mm) - Intermittent",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6420(53mm) - Continuous",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6420(53mm) - Intermittent",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6420(107mm) - Continuous",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6420(107mm) - Intermittent",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6330(53mm) - Continuous",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6330(53mm) - Intermittent",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6320(53mm) - Continuous",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6320(53mm) - Intermittent",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6320(32mm) - Continuous",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6320(32mm) - Intermittent",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex 6230(32mm) - Continuous",
+      "xRes": 0.08,
+      "requestedHmm": 1000,
+      "W": 836,
+      "H": 836,
+      "BcH": 836,
+      "ModuleSize": 38
+    },
+    {
+      "profile": "DataFlex 6230(32mm) - Intermittent",
+      "xRes": 0.08,
+      "requestedHmm": 1000,
+      "W": 836,
+      "H": 836,
+      "BcH": 836,
+      "ModuleSize": 38
+    },
+    {
+      "profile": "DataFlex - Continuous",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex - Intermittent",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex(107mm) - Continuous",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    },
+    {
+      "profile": "DataFlex(107mm) - Intermittent",
+      "xRes": 0.12,
+      "requestedHmm": 1000,
+      "W": 924,
+      "H": 924,
+      "BcH": 924,
+      "ModuleSize": 42
+    }
+  ],
+  "printerTypeOverrides": [
+    {
+      "newDesignedFor": "DataFlex 6530(53mm) - Continuous",
+      "serializedPrinterType": null
+    },
+    {
+      "newDesignedFor": "DataFlex 6530(53mm) - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6420(53mm) - Continuous",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6420(53mm) - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6420(107mm) - Continuous",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6420(107mm) - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6330(53mm) - Continuous",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6330(53mm) - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6320(53mm) - Continuous",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6320(53mm) - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6320(32mm) - Continuous",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6320(32mm) - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6230(32mm) - Continuous",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex 6230(32mm) - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex - Continuous",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex(107mm) - Continuous",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    },
+    {
+      "newDesignedFor": "DataFlex(107mm) - Intermittent",
+      "serializedPrinterType": "DataFlex 6530(53mm) - Continuous"
+    }
+  ],
+  "limitations": [
+    "Text CreateField/UpdateData/CalculateSize exercised; application placement and W/H assignment not emulated.",
+    "DM model was configured explicitly before public Resize; UI barcode selection dialog not used.",
+    "No printer download, firmware or physical printing was exercised."
+  ]
+}

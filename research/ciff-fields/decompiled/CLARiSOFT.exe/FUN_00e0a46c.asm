@@ -1,0 +1,26 @@
+00e0a46c PUSH EDI
+00e0a46d MOV EDI,ECX
+00e0a46f LEA ECX,[EDI + 0x20]
+00e0a472 CALL 0x00e0a371
+00e0a477 LEA ECX,[EDI + 0x18]
+00e0a47a CALL 0x00e0a34f
+00e0a47f LEA ECX,[EDI + 0x10]
+00e0a482 CALL 0x00e0a3b5
+00e0a487 MOV ECX,dword ptr [EDI + 0xc]
+00e0a48a TEST ECX,ECX
+00e0a48c JZ 0x00e0a494
+00e0a48e MOV EAX,dword ptr [ECX]
+00e0a490 PUSH ECX
+00e0a491 CALL dword ptr [EAX + 0x8]
+00e0a494 MOV ECX,dword ptr [EDI + 0x8]
+00e0a497 TEST ECX,ECX
+00e0a499 JZ 0x00e0a4a1
+00e0a49b MOV EAX,dword ptr [ECX]
+00e0a49d PUSH ECX
+00e0a49e CALL dword ptr [EAX + 0x8]
+00e0a4a1 PUSH dword ptr [EDI + 0x4]
+00e0a4a4 CALL dword ptr [0x00efc448]
+00e0a4aa PUSH dword ptr [EDI]
+00e0a4ac CALL dword ptr [0x00efc448]
+00e0a4b2 POP EDI
+00e0a4b3 RET

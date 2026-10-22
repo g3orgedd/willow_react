@@ -1,0 +1,5 @@
+4143f4f3 PUSH EBP
+4143f4f4 MOV EBP,ESP
+4143f4f6 MOV EAX,dword ptr [ECX]
+4143f4f8 POP EBP
+4143f4f9 JMP dword ptr [EAX + 0x1c]

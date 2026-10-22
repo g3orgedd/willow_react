@@ -1,0 +1,2 @@
+45443f45 MOV ECX,dword ptr [EBP + 0xffffef90]
+45443f4b JMP 0x45402c86

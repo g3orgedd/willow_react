@@ -1,0 +1,937 @@
+{
+  "name": "CiffHelper.dll",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffHelper.dll",
+  "size": 436224,
+  "sha256": "26e0cc9bc69d44b00e9ab482e1a2d13daf5bb8f801817c717194c5f1b535558a",
+  "imageBase": "40800000",
+  "exports": [
+    {
+      "name": "DllCanUnloadNow",
+      "ordinal": 1,
+      "va": "4082116d"
+    },
+    {
+      "name": "DllGetClassObject",
+      "ordinal": 2,
+      "va": "40821179"
+    },
+    {
+      "name": "DllRegisterServer",
+      "ordinal": 3,
+      "va": "408211c9"
+    },
+    {
+      "name": "DllUnregisterServer",
+      "ordinal": 4,
+      "va": "408211d8"
+    }
+  ],
+  "imports": [
+    {
+      "library": "MPR.dll",
+      "names": [
+        "WNetGetLastErrorW",
+        "WNetGetUniversalNameW"
+      ]
+    },
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "FindClose",
+        "FindFirstFileW",
+        "DebugBreak",
+        "OutputDebugStringW",
+        "GetLocalTime",
+        "LocalFree",
+        "lstrlenA",
+        "WritePrivateProfileStringW",
+        "MultiByteToWideChar",
+        "DecodePointer",
+        "RaiseException",
+        "GetLastError",
+        "InitializeCriticalSectionEx",
+        "DeleteCriticalSection",
+        "WideCharToMultiByte",
+        "GetPrivateProfileIntW",
+        "LocalAlloc",
+        "FormatMessageW",
+        "OutputDebugStringA",
+        "EncodePointer",
+        "EnterCriticalSection",
+        "InitializeCriticalSectionAndSpinCount",
+        "DisableThreadLibraryCalls",
+        "GetModuleFileNameW",
+        "GetModuleHandleW",
+        "LoadLibraryExW",
+        "LoadResource",
+        "SizeofResource",
+        "lstrcmpiW",
+        "FindResourceW",
+        "CreateDirectoryW",
+        "GetDateFormatW",
+        "GetTimeFormatW",
+        "ReadConsoleW",
+        "ReadFile",
+        "CloseHandle",
+        "CreateFileW",
+        "FlushFileBuffers",
+        "WriteConsoleW",
+        "GetPrivateProfileStringW",
+        "lstrlenW",
+        "LoadLibraryW",
+        "GetProcAddress",
+        "FreeLibrary",
+        "GetSystemDirectoryW",
+        "SetEnvironmentVariableA",
+        "GetModuleHandleExW",
+        "LeaveCriticalSection",
+        "SetStdHandle",
+        "SetFilePointerEx",
+        "GetConsoleMode",
+        "GetConsoleCP",
+        "LCMapStringW",
+        "CompareStringW",
+        "FreeEnvironmentStringsW",
+        "GetEnvironmentStringsW",
+        "GetCurrentProcessId",
+        "QueryPerformanceCounter",
+        "GetModuleFileNameA",
+        "GetFileType",
+        "WriteFile",
+        "GetStdHandle",
+        "ExitProcess",
+        "GetStartupInfoW",
+        "TlsFree",
+        "TlsSetValue",
+        "TlsGetValue",
+        "TlsAlloc",
+        "TerminateProcess",
+        "GetCurrentProcess",
+        "Sleep",
+        "SetUnhandledExceptionFilter",
+        "UnhandledExceptionFilter",
+        "HeapReAlloc",
+        "GetProcessHeap",
+        "GetStringTypeW",
+        "SetLastError",
+        "GetCPInfo",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "IsDebuggerPresent",
+        "RtlUnwind",
+        "GetSystemTimeAsFileTime",
+        "HeapFree",
+        "IsProcessorFeaturePresent",
+        "HeapAlloc",
+        "GetTimeZoneInformation",
+        "GetCommandLineA",
+        "GetCurrentThreadId",
+        "HeapSize"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "CharUpperW",
+        "CharNextW",
+        "LoadStringW",
+        "MessageBoxW"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "RegDeleteValueW",
+        "RegQueryInfoKeyW",
+        "RegEnumKeyExW",
+        "RegDeleteKeyW",
+        "RegSetValueExW",
+        "RegQueryValueExW",
+        "RegOpenKeyExW",
+        "RegCreateKeyExW",
+        "RegCloseKey"
+      ]
+    },
+    {
+      "library": "SHELL32.dll",
+      "names": [
+        "SHGetFolderPathW"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "OleRun",
+        "ProgIDFromCLSID",
+        "CoUninitialize",
+        "CoCreateInstance",
+        "CoTaskMemFree",
+        "CoCreateInstanceEx",
+        "CLSIDFromProgID",
+        "StringFromGUID2",
+        "CoTaskMemAlloc",
+        "CoTaskMemRealloc",
+        "CLSIDFromString",
+        "CoInitialize"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "GetErrorInfo",
+        "UnRegisterTypeLib",
+        "RegisterTypeLib",
+        "LoadRegTypeLib",
+        "LoadTypeLib",
+        "VarUI4FromStr",
+        "VariantCopy",
+        "VariantTimeToSystemTime",
+        "SystemTimeToVariantTime",
+        "CreateErrorInfo",
+        "SetErrorInfo",
+        "SafeArrayUnaccessData",
+        "SafeArrayAccessData",
+        "VarBstrCat",
+        "VarBstrCmp",
+        "VariantChangeType",
+        "VariantClear",
+        "SysAllocStringByteLen",
+        "SysStringLen",
+        "SysFreeString",
+        "SysReAllocStringLen",
+        "SysAllocStringLen",
+        "SysAllocString",
+        "SysStringByteLen"
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "4084be6c",
+      "fileOffset": 305260,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::OpenConnection"
+    },
+    {
+      "va": "4084be8c",
+      "fileOffset": 305292,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::DisconnectADO"
+    },
+    {
+      "va": "4084beac",
+      "fileOffset": 305324,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::GetADOErrors"
+    },
+    {
+      "va": "4084c010",
+      "fileOffset": 305680,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::FormatPrice Fail to set checksum verifier"
+    },
+    {
+      "va": "4084c050",
+      "fileOffset": 305744,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::FormatPrice Fail to set Price current data value from verifier code"
+    },
+    {
+      "va": "4084c0a8",
+      "fileOffset": 305832,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::FormatPrice lcurrentValue < switchVal. Could not set price value from price format"
+    },
+    {
+      "va": "4084c110",
+      "fileOffset": 305936,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::FormatPrice Could not set price value from price format"
+    },
+    {
+      "va": "4084c160",
+      "fileOffset": 306016,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::FormatPrice Fail to set Price current data value"
+    },
+    {
+      "va": "4084c5e1",
+      "fileOffset": 307169,
+      "encoding": "ascii",
+      "text": ".YhCCiffDataHelper::ResolveData"
+    },
+    {
+      "va": "4084c738",
+      "fileOffset": 307512,
+      "encoding": "ascii",
+      "text": "CCiffDataHelper::CopyDateOffsetToClipboard"
+    },
+    {
+      "va": "4084c8af",
+      "fileOffset": 307887,
+      "encoding": "ascii",
+      "text": "'CCiffDataHelper::ApplyEncryption"
+    },
+    {
+      "va": "4085220c",
+      "fileOffset": 330764,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "4085227c",
+      "fileOffset": 330876,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "408593e8",
+      "fileOffset": 359912,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "408597c0",
+      "fileOffset": 360896,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "40859824",
+      "fileOffset": 360996,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "408598e8",
+      "fileOffset": 361192,
+      "encoding": "ascii",
+      "text": "C:\\AutomatedBuilds\\TFSTeamBuild\\Windows Applications\\Releases\\PCMS4.500\\CLARICOM\\Installation Directory\\PDB Files\\CiffHelper.pdb"
+    },
+    {
+      "va": "40860870",
+      "fileOffset": 389744,
+      "encoding": "ascii",
+      "text": "CiffHelper.DLL"
+    },
+    {
+      "va": "4086088f",
+      "fileOffset": 389775,
+      "encoding": "ascii",
+      "text": "DllGetClassObject"
+    },
+    {
+      "va": "40863fe4",
+      "fileOffset": 401380,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "40864048",
+      "fileOffset": 401480,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "4086408c",
+      "fileOffset": 401548,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "408640b4",
+      "fileOffset": 401588,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+    },
+    {
+      "va": "408640f4",
+      "fileOffset": 401652,
+      "encoding": "ascii",
+      "text": ".?AVCCiffDataHelper@@"
+    },
+    {
+      "va": "40864118",
+      "fileOffset": 401688,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCCiffDataHelper@@$1?CLSID_CiffDataHelper@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "40864170",
+      "fileOffset": 401776,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffDataHelper12@@$1?IID_ICiffDataHelper12@@3U_GUID@@B$1?LIBID_CIFFHELPERLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "40864208",
+      "fileOffset": 401928,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper12@@"
+    },
+    {
+      "va": "40864228",
+      "fileOffset": 401960,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper11@@"
+    },
+    {
+      "va": "40864248",
+      "fileOffset": 401992,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper10@@"
+    },
+    {
+      "va": "40864268",
+      "fileOffset": 402024,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper9@@"
+    },
+    {
+      "va": "40864288",
+      "fileOffset": 402056,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper8@@"
+    },
+    {
+      "va": "408642a8",
+      "fileOffset": 402088,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper7@@"
+    },
+    {
+      "va": "408642c8",
+      "fileOffset": 402120,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper6@@"
+    },
+    {
+      "va": "408642e8",
+      "fileOffset": 402152,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper5@@"
+    },
+    {
+      "va": "40864308",
+      "fileOffset": 402184,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper4@@"
+    },
+    {
+      "va": "40864328",
+      "fileOffset": 402216,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper3@@"
+    },
+    {
+      "va": "40864348",
+      "fileOffset": 402248,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper2@@"
+    },
+    {
+      "va": "40864368",
+      "fileOffset": 402280,
+      "encoding": "ascii",
+      "text": ".?AUICiffDataHelper@@"
+    },
+    {
+      "va": "40864388",
+      "fileOffset": 402312,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffDataHelper@@@ATL@@"
+    },
+    {
+      "va": "408643bc",
+      "fileOffset": 402364,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCCiffDataHelper@@@ATL@@"
+    },
+    {
+      "va": "408643f8",
+      "fileOffset": 402424,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@"
+    },
+    {
+      "va": "40864440",
+      "fileOffset": 402496,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCCiffDataHelper@@@ATL@@"
+    },
+    {
+      "va": "408694da",
+      "fileOffset": 404698,
+      "encoding": "ascii",
+      "text": "CiffHelper.CiffDataHelper.1 = s 'CiffDataHelper Class'"
+    },
+    {
+      "va": "40869551",
+      "fileOffset": 404817,
+      "encoding": "ascii",
+      "text": "CiffHelper.CiffDataHelper = s 'CiffDataHelper Class'"
+    },
+    {
+      "va": "408695c3",
+      "fileOffset": 404931,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CiffHelper.CiffDataHelper.1'"
+    },
+    {
+      "va": "40869608",
+      "fileOffset": 405000,
+      "encoding": "ascii",
+      "text": "ForceRemove {E86E92C2-C9C2-11D4-A996-00010212D541} = s 'CiffDataHelper Class'"
+    },
+    {
+      "va": "4086965f",
+      "fileOffset": 405087,
+      "encoding": "ascii",
+      "text": "ProgID = s 'CiffHelper.CiffDataHelper.1'"
+    },
+    {
+      "va": "4086968c",
+      "fileOffset": 405132,
+      "encoding": "ascii",
+      "text": "VersionIndependentProgID = s 'CiffHelper.CiffDataHelper'"
+    },
+    {
+      "va": "4086a347",
+      "fileOffset": 408391,
+      "encoding": "ascii",
+      "text": "qCIFFHELPERLibWWW"
+    },
+    {
+      "va": "4086a364",
+      "fileOffset": 408420,
+      "encoding": "ascii",
+      "text": "CiffDataHelperWWd"
+    },
+    {
+      "va": "4086a380",
+      "fileOffset": 408448,
+      "encoding": "ascii",
+      "text": "ICiffDataHelperWd"
+    },
+    {
+      "va": "4086a3b4",
+      "fileOffset": 408500,
+      "encoding": "ascii",
+      "text": "varDataObjectWWW"
+    },
+    {
+      "va": "4086a3d0",
+      "fileOffset": 408528,
+      "encoding": "ascii",
+      "text": "varCiffFileWd"
+    },
+    {
+      "va": "4086a470",
+      "fileOffset": 408688,
+      "encoding": "ascii",
+      "text": "vtDefaultWWW"
+    },
+    {
+      "va": "4086a65b",
+      "fileOffset": 409179,
+      "encoding": "ascii",
+      "text": "BSetGraphicSizesW"
+    },
+    {
+      "va": "4086a752",
+      "fileOffset": 409426,
+      "encoding": "ascii",
+      "text": "~-CopyFieldtoSubImageW"
+    },
+    {
+      "va": "4086a774",
+      "fileOffset": 409460,
+      "encoding": "ascii",
+      "text": "varCiffField"
+    },
+    {
+      "va": "4086a78a",
+      "fileOffset": 409482,
+      "encoding": "ascii",
+      "text": "%!varSubImageWd"
+    },
+    {
+      "va": "4086a7a4",
+      "fileOffset": 409508,
+      "encoding": "ascii",
+      "text": "CopyDataObjecttoFieldWWWd"
+    },
+    {
+      "va": "4086a7e4",
+      "fileOffset": 409572,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper2"
+    },
+    {
+      "va": "4086a820",
+      "fileOffset": 409632,
+      "encoding": "ascii",
+      "text": "vtSubImageWW"
+    },
+    {
+      "va": "4086a84c",
+      "fileOffset": 409676,
+      "encoding": "ascii",
+      "text": "vtDataObject"
+    },
+    {
+      "va": "4086a8f8",
+      "fileOffset": 409848,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper3,"
+    },
+    {
+      "va": "4086a958",
+      "fileOffset": 409944,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper4"
+    },
+    {
+      "va": "4086a9c0",
+      "fileOffset": 410048,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper5"
+    },
+    {
+      "va": "4086aa4c",
+      "fileOffset": 410188,
+      "encoding": "ascii",
+      "text": "vtObject"
+    },
+    {
+      "va": "4086aa74",
+      "fileOffset": 410228,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper6X"
+    },
+    {
+      "va": "4086aad4",
+      "fileOffset": 410324,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper7"
+    },
+    {
+      "va": "4086ab2c",
+      "fileOffset": 410412,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper8"
+    },
+    {
+      "va": "4086ab70",
+      "fileOffset": 410480,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper9"
+    },
+    {
+      "va": "4086abfc",
+      "fileOffset": 410620,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper10WWW"
+    },
+    {
+      "va": "4086ac3b",
+      "fileOffset": 410683,
+      "encoding": "ascii",
+      "text": "sRemoveUnreferencedDataObjectsWWW"
+    },
+    {
+      "va": "4086ac94",
+      "fileOffset": 410772,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper11WWWL"
+    },
+    {
+      "va": "4086acd8",
+      "fileOffset": 410840,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper12WWW"
+    },
+    {
+      "va": "4086acf8",
+      "fileOffset": 410872,
+      "encoding": "ascii",
+      "text": "UpgradeCiffW"
+    },
+    {
+      "va": "4086add6",
+      "fileOffset": 411094,
+      "encoding": "ascii",
+      "text": "CiffHelper 1.0 Type LibraryWWW"
+    },
+    {
+      "va": "4086adf6",
+      "fileOffset": 411126,
+      "encoding": "ascii",
+      "text": "CiffDataHelper ClassWW"
+    },
+    {
+      "va": "4086ae0e",
+      "fileOffset": 411150,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper InterfaceW"
+    },
+    {
+      "va": "4086af12",
+      "fileOffset": 411410,
+      "encoding": "ascii",
+      "text": "method SetGraphicSizes!"
+    },
+    {
+      "va": "4086afae",
+      "fileOffset": 411566,
+      "encoding": "ascii",
+      "text": "method CopyFieldtoSubImage"
+    },
+    {
+      "va": "4086afca",
+      "fileOffset": 411594,
+      "encoding": "ascii",
+      "text": "method CopyDataObjecttoFieldWW"
+    },
+    {
+      "va": "4086b002",
+      "fileOffset": 411650,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper2 Interface"
+    },
+    {
+      "va": "4086b0ca",
+      "fileOffset": 411850,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper3 Interface "
+    },
+    {
+      "va": "4086b10a",
+      "fileOffset": 411914,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper4 Interface"
+    },
+    {
+      "va": "4086b13e",
+      "fileOffset": 411966,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper5 Interface"
+    },
+    {
+      "va": "4086b186",
+      "fileOffset": 412038,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper6 Interface "
+    },
+    {
+      "va": "4086b1c6",
+      "fileOffset": 412102,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper7 Interface"
+    },
+    {
+      "va": "4086b202",
+      "fileOffset": 412162,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper8 Interface"
+    },
+    {
+      "va": "4086b21e",
+      "fileOffset": 412190,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper9 Interface"
+    },
+    {
+      "va": "4086b252",
+      "fileOffset": 412242,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper10 InterfaceWWW"
+    },
+    {
+      "va": "4086b292",
+      "fileOffset": 412306,
+      "encoding": "ascii",
+      "text": "method RemoveUnreferencedDataObjectsWW%"
+    },
+    {
+      "va": "4086b2e2",
+      "fileOffset": 412386,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper11 InterfaceWWW"
+    },
+    {
+      "va": "4086b302",
+      "fileOffset": 412418,
+      "encoding": "ascii",
+      "text": "ICiffDataHelper12 InterfaceWWW"
+    },
+    {
+      "va": "4086b322",
+      "fileOffset": 412450,
+      "encoding": "ascii",
+      "text": "method UpgradeCiff"
+    },
+    {
+      "va": "4084a9fc",
+      "fileOffset": 300028,
+      "encoding": "utf-16-le",
+      "text": "StaticGraphic"
+    },
+    {
+      "va": "4084aa18",
+      "fileOffset": 300056,
+      "encoding": "utf-16-le",
+      "text": "DateText"
+    },
+    {
+      "va": "4084aa2c",
+      "fileOffset": 300076,
+      "encoding": "utf-16-le",
+      "text": "OffsetDateText"
+    },
+    {
+      "va": "4084ad00",
+      "fileOffset": 300800,
+      "encoding": "utf-16-le",
+      "text": "CIFFReference"
+    },
+    {
+      "va": "4084ad1c",
+      "fileOffset": 300828,
+      "encoding": "utf-16-le",
+      "text": "AuxCIFFReference"
+    },
+    {
+      "va": "4084ae18",
+      "fileOffset": 301080,
+      "encoding": "utf-16-le",
+      "text": "CiffReference"
+    },
+    {
+      "va": "4084ae34",
+      "fileOffset": 301108,
+      "encoding": "utf-16-le",
+      "text": "AuxCiffReference"
+    },
+    {
+      "va": "4084ae58",
+      "fileOffset": 301144,
+      "encoding": "utf-16-le",
+      "text": "PrimaryBarcode"
+    },
+    {
+      "va": "4084ae78",
+      "fileOffset": 301176,
+      "encoding": "utf-16-le",
+      "text": "SecondaryBarcode"
+    },
+    {
+      "va": "4084af08",
+      "fileOffset": 301320,
+      "encoding": "utf-16-le",
+      "text": "default"
+    },
+    {
+      "va": "4084b150",
+      "fileOffset": 301904,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    },
+    {
+      "va": "4084b9e4",
+      "fileOffset": 304100,
+      "encoding": "utf-16-le",
+      "text": "ExtraCiffReference%d"
+    },
+    {
+      "va": "4084ba78",
+      "fileOffset": 304248,
+      "encoding": "utf-16-le",
+      "text": "CiffReferenceDBTYPE"
+    },
+    {
+      "va": "4084baa0",
+      "fileOffset": 304288,
+      "encoding": "utf-16-le",
+      "text": "AuxCiffReferenceDBTYPE"
+    },
+    {
+      "va": "4084bad0",
+      "fileOffset": 304336,
+      "encoding": "utf-16-le",
+      "text": "ExtraCiffReferenceDBTYPE%d"
+    },
+    {
+      "va": "4084bb68",
+      "fileOffset": 304488,
+      "encoding": "utf-16-le",
+      "text": "PrimaryBarcodeDBTYPE"
+    },
+    {
+      "va": "4084bb94",
+      "fileOffset": 304532,
+      "encoding": "utf-16-le",
+      "text": "SecondaryBarcodeDBTYPE"
+    },
+    {
+      "va": "4084c840",
+      "fileOffset": 307776,
+      "encoding": "utf-16-le",
+      "text": "CiffHelper"
+    },
+    {
+      "va": "4084efe0",
+      "fileOffset": 317920,
+      "encoding": "utf-16-le",
+      "text": "Default (34 dots high)"
+    },
+    {
+      "va": "4084f8a4",
+      "fileOffset": 320164,
+      "encoding": "utf-16-le",
+      "text": "Default"
+    },
+    {
+      "va": "4084fa4c",
+      "fileOffset": 320588,
+      "encoding": "utf-16-le",
+      "text": "ImageDesign"
+    },
+    {
+      "va": "40869250",
+      "fileOffset": 404048,
+      "encoding": "utf-16-le",
+      "text": "CIFF Helper Component"
+    },
+    {
+      "va": "408692fc",
+      "fileOffset": 404220,
+      "encoding": "utf-16-le",
+      "text": "CiffHelper Module"
+    },
+    {
+      "va": "40869370",
+      "fileOffset": 404336,
+      "encoding": "utf-16-le",
+      "text": "CiffHelper"
+    },
+    {
+      "va": "408693f4",
+      "fileOffset": 404468,
+      "encoding": "utf-16-le",
+      "text": "CiffHelper.DLL"
+    },
+    {
+      "va": "40869434",
+      "fileOffset": 404532,
+      "encoding": "utf-16-le",
+      "text": "CiffHelper Module"
+    },
+    {
+      "va": "4086c35a",
+      "fileOffset": 416602,
+      "encoding": "utf-16-le",
+      "text": "CiffHelper"
+    }
+  ]
+}

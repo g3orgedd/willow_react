@@ -1,0 +1,65 @@
+﻿[
+    {
+        "face":  "Arial",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    },
+    {
+        "face":  "Arial Black",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    },
+    {
+        "face":  "Times New Roman",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    },
+    {
+        "face":  "Courier New",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    },
+    {
+        "face":  "Symbol",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    },
+    {
+        "face":  "OCRB",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    },
+    {
+        "face":  "Tahoma",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    },
+    {
+        "face":  "Arabic Transparent",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    },
+    {
+        "face":  "MS Gothic",
+        "windowsLocation":  null,
+        "alias":  "",
+        "pointSize":  10,
+        "type":  "TrueType"
+    }
+]

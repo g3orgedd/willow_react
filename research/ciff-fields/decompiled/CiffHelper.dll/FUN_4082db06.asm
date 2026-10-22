@@ -1,0 +1,23 @@
+4082db06 PUSH 0x10
+4082db08 PUSH 0x40860268
+4082db0d CALL 0x40832830
+4082db12 XOR ESI,ESI
+4082db14 MOV dword ptr [EBP + -0x1c],ESI
+4082db17 MOV dword ptr [EBP + -0x20],ESI
+4082db1a MOV dword ptr [EBP + -0x4],ESI
+4082db1d CMP ESI,dword ptr [EBP + 0x10]
+4082db20 JGE 0x4082db34
+4082db22 MOV ECX,dword ptr [EBP + 0x8]
+4082db25 CALL dword ptr [EBP + 0x14]
+4082db28 MOV EAX,dword ptr [EBP + 0xc]
+4082db2b ADD dword ptr [EBP + 0x8],EAX
+4082db2e INC ESI
+4082db2f MOV dword ptr [EBP + -0x1c],ESI
+4082db32 JMP 0x4082db1d
+4082db34 XOR EAX,EAX
+4082db36 INC EAX
+4082db37 MOV dword ptr [EBP + -0x20],EAX
+4082db3a MOV dword ptr [EBP + -0x4],0xfffffffe
+4082db41 CALL 0x4082db54
+4082db46 CALL 0x40832875
+4082db4b RET 0x14

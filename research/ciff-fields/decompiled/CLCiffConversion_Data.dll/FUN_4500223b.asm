@@ -1,0 +1,2 @@
+4500223b MOV dword ptr [ECX],0x4503d69c
+45002241 RET

@@ -1,0 +1,104 @@
+{
+  "reference": "expected-web.json",
+  "unit": "0.01 mm",
+  "modes": {
+    "web": {
+      "observedCount": 10,
+      "expectedCount": 10,
+      "allMatch": true,
+      "differences": [],
+      "extraNames": [],
+      "fields": {
+        "TNR_Text": {
+          "x": 123,
+          "y": 234
+        },
+        "Arial_Bold": {
+          "x": 377,
+          "y": 900
+        },
+        "Courier_XMag": {
+          "x": 111,
+          "y": 1701
+        },
+        "Tahoma_Date": {
+          "x": 197,
+          "y": 2403
+        },
+        "Segoe_Offset": {
+          "x": 213,
+          "y": 3107
+        },
+        "Narrow_Time": {
+          "x": 319,
+          "y": 3811
+        },
+        "OCRB_Counter": {
+          "x": 421,
+          "y": 4517
+        },
+        "TNR_Rot90": {
+          "x": 3801,
+          "y": 801
+        },
+        "Courier_Rot180": {
+          "x": 1801,
+          "y": 5203
+        },
+        "Tahoma_Rot270": {
+          "x": 4003,
+          "y": 3001
+        }
+      }
+    },
+    "exe": {
+      "observedCount": 10,
+      "expectedCount": 10,
+      "allMatch": true,
+      "differences": [],
+      "extraNames": [],
+      "fields": {
+        "TNR_Text": {
+          "x": 123,
+          "y": 234
+        },
+        "Arial_Bold": {
+          "x": 377,
+          "y": 900
+        },
+        "Courier_XMag": {
+          "x": 111,
+          "y": 1701
+        },
+        "Tahoma_Date": {
+          "x": 197,
+          "y": 2403
+        },
+        "Segoe_Offset": {
+          "x": 213,
+          "y": 3107
+        },
+        "Narrow_Time": {
+          "x": 319,
+          "y": 3811
+        },
+        "OCRB_Counter": {
+          "x": 421,
+          "y": 4517
+        },
+        "TNR_Rot90": {
+          "x": 3801,
+          "y": 801
+        },
+        "Courier_Rot180": {
+          "x": 1801,
+          "y": 5203
+        },
+        "Tahoma_Rot270": {
+          "x": 4003,
+          "y": 3001
+        }
+      }
+    }
+  }
+}

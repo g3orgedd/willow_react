@@ -2,11 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Willow XML CIFF Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Glyph Studio</title>
+    <link rel="icon" type="image/svg+xml" href="/resourses/Icons/glyph-logo.svg" />
     <script>
       (() => {
-        const storageKey = "willowXml.uiTheme";
+        // Preserve browser data when the application's storage namespace changes.
+        try {
+          const suffixes = ["uiTheme", "uiLanguage", "inspectorCollapsed", "leftPanelCollapsed", "templateTabs.v1"];
+          const keys = Object.keys(localStorage);
+          for (const suffix of suffixes) {
+            const target = `glyphXml.${suffix}`;
+            if (localStorage.getItem(target) !== null) continue;
+            const previous = keys.find(key => key !== target && key.endsWith(`Xml.${suffix}`));
+            if (previous) localStorage.setItem(target, localStorage.getItem(previous));
+          }
+        } catch {
+          // Storage can be unavailable in restricted browser contexts.
+        }
+        const storageKey = "glyphXml.uiTheme";
         let preference = "system";
         try {
           const saved = localStorage.getItem(storageKey);
@@ -22,10 +36,7 @@
         document.documentElement.style.colorScheme = resolved;
       })();
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/resourses/Fonts/Geist.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>

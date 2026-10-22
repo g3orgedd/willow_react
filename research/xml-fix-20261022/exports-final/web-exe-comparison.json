@@ -1,0 +1,88 @@
+{
+  "comparedAt": "2026-10-22T09:22:59.900Z",
+  "pairs": 9,
+  "allNativePropertiesIdentical": true,
+  "cases": [
+    {
+      "caseId": "normal",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-normal.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-normal.ciff",
+      "sourceBytesIdentical": false,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    },
+    {
+      "caseId": "no-op-import",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-no-op-import.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-no-op-import.ciff",
+      "sourceBytesIdentical": true,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    },
+    {
+      "caseId": "rotation",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-rotation.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-rotation.ciff",
+      "sourceBytesIdentical": true,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    },
+    {
+      "caseId": "hidden-outlier",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-hidden-outlier.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-hidden-outlier.ciff",
+      "sourceBytesIdentical": false,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    },
+    {
+      "caseId": "all-hidden",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-all-hidden.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-all-hidden.ciff",
+      "sourceBytesIdentical": false,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    },
+    {
+      "caseId": "last-field-deleted",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-last-field-deleted.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-last-field-deleted.ciff",
+      "sourceBytesIdentical": true,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    },
+    {
+      "caseId": "anisotropic-yres",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-anisotropic-yres.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-anisotropic-yres.ciff",
+      "sourceBytesIdentical": false,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    },
+    {
+      "caseId": "party-gtin2",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-party-gtin2.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-party-gtin2.ciff",
+      "sourceBytesIdentical": true,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    },
+    {
+      "caseId": "party-box-gtin",
+      "nativePropertiesIdentical": true,
+      "sourceHashesUnchanged": true,
+      "web": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-party-box-gtin.ciff",
+      "exe": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-exe-party-box-gtin.ciff",
+      "sourceBytesIdentical": false,
+      "compared": "Loaded dimensions/resolution, field order/Displayed/XYWH/Orientation/CalculatedData, 12 native font properties and CalculateSize; ClSt random bytes are not required to match."
+    }
+  ]
+}

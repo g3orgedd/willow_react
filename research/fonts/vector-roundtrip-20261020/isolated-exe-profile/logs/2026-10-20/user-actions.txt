@@ -1,0 +1,396 @@
+====================================================================================================
+[2026-10-20 23:27:02.940 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 142,
+      selectedLabel: 'Times New Roman',
+      value: 'Times New Roman'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.962 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 3,
+      selectedLabel: 'Arial',
+      value: 'Arial'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.985 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 37,
+      selectedLabel: 'Courier New',
+      value: 'Courier New'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.008 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 140,
+      selectedLabel: 'Tahoma',
+      value: 'Tahoma'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.027 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 109,
+      selectedLabel: 'Segoe UI',
+      value: 'Segoe UI'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.044 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 5,
+      selectedLabel: 'Arial Narrow',
+      value: 'Arial Narrow'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.059 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 100,
+      selectedLabel: 'OCRB',
+      value: 'OCRB'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.074 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 142,
+      selectedLabel: 'Times New Roman',
+      value: 'Times New Roman'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.089 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 37,
+      selectedLabel: 'Courier New',
+      value: 'Courier New'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.107 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CHANGED
+Message: Пользователь изменил элемент «Font».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: 'panel panel--right inspector surface-card',
+        tabViewId: null
+      },
+      dataset: {
+        fontFaceSelect: '1'
+      },
+      disabled: false,
+      id: null,
+      label: 'Font',
+      role: null,
+      tagName: 'SELECT',
+      type: null
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: {
+      kind: 'select',
+      selectedIndex: 140,
+      selectedLabel: 'Tahoma',
+      value: 'Tahoma'
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.496 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: USER_CONTROL_CLICKED
+Message: Пользователь нажал элемент управления «A».
+Source: renderer
+Details:
+  {
+    control: {
+      ariaPressed: null,
+      ariaSelected: null,
+      context: {
+        dialogId: null,
+        panelClass: null,
+        tabViewId: null
+      },
+      dataset: {},
+      disabled: null,
+      id: null,
+      label: 'A',
+      role: null,
+      tagName: 'A',
+      type: null
+    },
+    pointer: {
+      altKey: false,
+      button: 0,
+      ctrlKey: false,
+      detail: 0,
+      metaKey: false,
+      shiftKey: false
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }

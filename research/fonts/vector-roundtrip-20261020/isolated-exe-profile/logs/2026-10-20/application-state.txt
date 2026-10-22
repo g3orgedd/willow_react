@@ -1,0 +1,2560 @@
+====================================================================================================
+[2026-10-20 23:25:44.883 +03:00] [INFO] [session: 20261020-232544-pid36504]
+Event: INITIAL_RENDERER_STATE
+Message: Начальное состояние интерфейса после запуска.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: null,
+      document: {
+        designedFor: null,
+        loaded: false,
+        overallSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        printMode: 'Intermittent',
+        printerModel: 'DataFlex 6530(53mm)',
+        usedSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        version: null
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 0
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: null,
+        count: 0,
+        items: []
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.473 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: INITIAL_RENDERER_STATE
+Message: Начальное состояние интерфейса после запуска.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: null,
+      document: {
+        designedFor: null,
+        loaded: false,
+        overallSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        printMode: 'Intermittent',
+        printerModel: 'DataFlex 6530(53mm)',
+        usedSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        version: null
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 0
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: null,
+        count: 0,
+        items: []
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.860 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: APPLICATION_READY
+Message: Приложение полностью инициализировано и готово к работе.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        title: 'Untitled template'
+      },
+      document: {
+        designedFor: null,
+        loaded: false,
+        overallSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        printMode: 'Intermittent',
+        printerModel: 'DataFlex 6530(53mm)',
+        usedSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        version: null
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        count: 1,
+        items: [
+          {
+            dirty: false,
+            hasDocument: false,
+            id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+            title: 'Untitled template'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:02.906 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: APPLICATION_STATE_AFTER_TEMPLATE_LOAD
+Message: Состояние после загрузки шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      source: 'exe-vector-save-check',
+      title: 'exe-vector'
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        title: 'exe-vector'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 70,
+          width: 53
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 70,
+          width: 53
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        count: 1,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+            title: 'exe-vector'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.290 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: APPLICATION_STATE_AFTER_INTERACTION
+Message: Состояние приложения после пользовательского взаимодействия.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      triggers: [
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 142,
+              selectedLabel: 'Times New Roman',
+              value: 'Times New Roman'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 3,
+              selectedLabel: 'Arial',
+              value: 'Arial'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 37,
+              selectedLabel: 'Courier New',
+              value: 'Courier New'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 140,
+              selectedLabel: 'Tahoma',
+              value: 'Tahoma'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 109,
+              selectedLabel: 'Segoe UI',
+              value: 'Segoe UI'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 5,
+              selectedLabel: 'Arial Narrow',
+              value: 'Arial Narrow'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 100,
+              selectedLabel: 'OCRB',
+              value: 'OCRB'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 142,
+              selectedLabel: 'Times New Roman',
+              value: 'Times New Roman'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 37,
+              selectedLabel: 'Courier New',
+              value: 'Courier New'
+            }
+          },
+          reason: 'change'
+        },
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: false,
+              id: null,
+              label: 'Font',
+              role: null,
+              tagName: 'SELECT',
+              type: null
+            },
+            value: {
+              kind: 'select',
+              selectedIndex: 140,
+              selectedLabel: 'Tahoma',
+              value: 'Tahoma'
+            }
+          },
+          reason: 'change'
+        }
+      ]
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: true,
+        id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        title: 'exe-vector'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 70,
+          width: 53
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 55.03,
+          width: 43.03
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          CounterText: 1,
+          DateText: 1,
+          FixedText: 6,
+          OffsetDateText: 1,
+          TimeText: 1
+        },
+        hidden: 0,
+        items: [
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 123,
+              y: 234
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 1.23,
+              y: 2.34
+            },
+            lineNumber: null,
+            name: 'TNR_Text',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 377,
+              y: 900
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 3.77,
+              y: 9
+            },
+            lineNumber: null,
+            name: 'Arial_Bold',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 13,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 111,
+              y: 1701
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 1.11,
+              y: 17.01
+            },
+            lineNumber: null,
+            name: 'Courier_XMag',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 9,
+              xMag: 150
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 197,
+              y: 2403
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 1.97,
+              y: 24.03
+            },
+            lineNumber: null,
+            name: 'Tahoma_Date',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'DateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 213,
+              y: 3107
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 2.13,
+              y: 31.07
+            },
+            lineNumber: null,
+            name: 'Segoe_Offset',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 7,
+              xMag: null
+            },
+            type: 'OffsetDateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 319,
+              y: 3811
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 3.19,
+              y: 38.11
+            },
+            lineNumber: null,
+            name: 'Narrow_Time',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'TimeText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 421,
+              y: 4517
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 4.21,
+              y: 45.17
+            },
+            lineNumber: null,
+            name: 'OCRB_Counter',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 11,
+              xMag: null
+            },
+            type: 'CounterText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 3801,
+              y: 801
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 38.01,
+              y: 8.01
+            },
+            lineNumber: null,
+            name: 'TNR_Rot90',
+            orientation: 90,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 1801,
+              y: 5203
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 18.01,
+              y: 52.03
+            },
+            lineNumber: null,
+            name: 'Courier_Rot180',
+            orientation: 180,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 300,
+              w: 1000,
+              x: 4003,
+              y: 3001
+            },
+            geometryMillimeters: {
+              height: 3,
+              width: 10,
+              x: 40.03,
+              y: 30.01
+            },
+            lineNumber: null,
+            name: 'Tahoma_Rot270',
+            orientation: 270,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 10,
+        total: 10
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 11
+      },
+      offsets: {
+        count: 1,
+        dirty: true,
+        loaded: true,
+        names: [
+          'offset0'
+        ]
+      },
+      selection: {
+        count: 1,
+        primaryName: 'Tahoma_Rot270',
+        selectedNames: [
+          'Tahoma_Rot270'
+        ]
+      },
+      tabs: {
+        activeTabId: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        count: 1,
+        items: [
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+            title: 'exe-vector'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.498 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: APPLICATION_STATE_AFTER_SAVE
+Message: Состояние после запуска сохранения шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      filename: 'exe-vector.ciff',
+      sizeBytes: 9958
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: true,
+        id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        title: 'exe-vector'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 70,
+          width: 53
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 55.11,
+          width: 42.53
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          CounterText: 1,
+          DateText: 1,
+          FixedText: 6,
+          OffsetDateText: 1,
+          TimeText: 1
+        },
+        hidden: 0,
+        items: [
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 242,
+              w: 1367,
+              x: 123,
+              y: 234
+            },
+            geometryMillimeters: {
+              height: 2.42,
+              width: 13.67,
+              x: 1.23,
+              y: 2.34
+            },
+            lineNumber: null,
+            name: 'TNR_Text',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 533,
+              w: 3025,
+              x: 377,
+              y: 900
+            },
+            geometryMillimeters: {
+              height: 5.33,
+              width: 30.25,
+              x: 3.77,
+              y: 9
+            },
+            lineNumber: null,
+            name: 'Arial_Bold',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 13,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 333,
+              w: 2625,
+              x: 111,
+              y: 1701
+            },
+            geometryMillimeters: {
+              height: 3.33,
+              width: 26.25,
+              x: 1.11,
+              y: 17.01
+            },
+            lineNumber: null,
+            name: 'Courier_XMag',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 9,
+              xMag: 150
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 1167,
+              x: 197,
+              y: 2403
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 11.67,
+              x: 1.97,
+              y: 24.03
+            },
+            lineNumber: null,
+            name: 'Tahoma_Date',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'DateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 1000,
+              x: 213,
+              y: 3107
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 10,
+              x: 2.13,
+              y: 31.07
+            },
+            lineNumber: null,
+            name: 'Segoe_Offset',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 7,
+              xMag: null
+            },
+            type: 'OffsetDateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 408,
+              w: 717,
+              x: 319,
+              y: 3811
+            },
+            geometryMillimeters: {
+              height: 4.08,
+              width: 7.17,
+              x: 3.19,
+              y: 38.11
+            },
+            lineNumber: null,
+            name: 'Narrow_Time',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'TimeText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 933,
+              x: 421,
+              y: 4517
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 9.33,
+              x: 4.21,
+              y: 45.17
+            },
+            lineNumber: null,
+            name: 'OCRB_Counter',
+            orientation: 0,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 11,
+              xMag: null
+            },
+            type: 'CounterText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 242,
+              w: 558,
+              x: 3801,
+              y: 801
+            },
+            geometryMillimeters: {
+              height: 2.42,
+              width: 5.58,
+              x: 38.01,
+              y: 8.01
+            },
+            lineNumber: null,
+            name: 'TNR_Rot90',
+            orientation: 90,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 308,
+              w: 1167,
+              x: 1801,
+              y: 5203
+            },
+            geometryMillimeters: {
+              height: 3.08,
+              width: 11.67,
+              x: 18.01,
+              y: 52.03
+            },
+            lineNumber: null,
+            name: 'Courier_Rot180',
+            orientation: 180,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 250,
+              w: 733,
+              x: 4003,
+              y: 3001
+            },
+            geometryMillimeters: {
+              height: 2.5,
+              width: 7.33,
+              x: 40.03,
+              y: 30.01
+            },
+            lineNumber: null,
+            name: 'Tahoma_Rot270',
+            orientation: 270,
+            printed: true,
+            sourceName: null,
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 10,
+        total: 10
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 11
+      },
+      offsets: {
+        count: 1,
+        dirty: true,
+        loaded: true,
+        names: [
+          'offset0'
+        ]
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        count: 1,
+        items: [
+          {
+            dirty: true,
+            hasDocument: true,
+            id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+            title: 'exe-vector'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:27:03.720 +03:00] [INFO] [session: 20261020-232702-pid31196]
+Event: APPLICATION_STATE_AFTER_INTERACTION
+Message: Состояние приложения после пользовательского взаимодействия.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      triggers: [
+        {
+          extra: {
+            control: {
+              ariaPressed: null,
+              ariaSelected: null,
+              context: '[Max depth reached]',
+              dataset: '[Max depth reached]',
+              disabled: null,
+              id: null,
+              label: 'A',
+              role: null,
+              tagName: 'A',
+              type: null
+            }
+          },
+          reason: 'click'
+        }
+      ]
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        title: 'exe-vector'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 70,
+          width: 53
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 55.11,
+          width: 42.53
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          CounterText: 1,
+          DateText: 1,
+          FixedText: 6,
+          OffsetDateText: 1,
+          TimeText: 1
+        },
+        hidden: 0,
+        items: [
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 242,
+              w: 1367,
+              x: 123,
+              y: 234
+            },
+            geometryMillimeters: {
+              height: 2.42,
+              width: 13.67,
+              x: 1.23,
+              y: 2.34
+            },
+            lineNumber: null,
+            name: 'TNR_Text',
+            orientation: 0,
+            printed: true,
+            sourceName: 'TNR_Text',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 533,
+              w: 3025,
+              x: 377,
+              y: 900
+            },
+            geometryMillimeters: {
+              height: 5.33,
+              width: 30.25,
+              x: 3.77,
+              y: 9
+            },
+            lineNumber: null,
+            name: 'Arial_Bold',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Arial_Bold',
+            textSettings: {
+              pitch: 13,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 333,
+              w: 2625,
+              x: 111,
+              y: 1701
+            },
+            geometryMillimeters: {
+              height: 3.33,
+              width: 26.25,
+              x: 1.11,
+              y: 17.01
+            },
+            lineNumber: null,
+            name: 'Courier_XMag',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Courier_XMag',
+            textSettings: {
+              pitch: 9,
+              xMag: 150
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 1167,
+              x: 197,
+              y: 2403
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 11.67,
+              x: 1.97,
+              y: 24.03
+            },
+            lineNumber: null,
+            name: 'Tahoma_Date',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Tahoma_Date',
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'DateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 1000,
+              x: 213,
+              y: 3107
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 10,
+              x: 2.13,
+              y: 31.07
+            },
+            lineNumber: null,
+            name: 'Segoe_Offset',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Segoe_Offset',
+            textSettings: {
+              pitch: 7,
+              xMag: null
+            },
+            type: 'OffsetDateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 408,
+              w: 717,
+              x: 319,
+              y: 3811
+            },
+            geometryMillimeters: {
+              height: 4.08,
+              width: 7.17,
+              x: 3.19,
+              y: 38.11
+            },
+            lineNumber: null,
+            name: 'Narrow_Time',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Narrow_Time',
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'TimeText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 933,
+              x: 421,
+              y: 4517
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 9.33,
+              x: 4.21,
+              y: 45.17
+            },
+            lineNumber: null,
+            name: 'OCRB_Counter',
+            orientation: 0,
+            printed: true,
+            sourceName: 'OCRB_Counter',
+            textSettings: {
+              pitch: 11,
+              xMag: null
+            },
+            type: 'CounterText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 242,
+              w: 558,
+              x: 3801,
+              y: 801
+            },
+            geometryMillimeters: {
+              height: 2.42,
+              width: 5.58,
+              x: 38.01,
+              y: 8.01
+            },
+            lineNumber: null,
+            name: 'TNR_Rot90',
+            orientation: 90,
+            printed: true,
+            sourceName: 'TNR_Rot90',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 308,
+              w: 1167,
+              x: 1801,
+              y: 5203
+            },
+            geometryMillimeters: {
+              height: 3.08,
+              width: 11.67,
+              x: 18.01,
+              y: 52.03
+            },
+            lineNumber: null,
+            name: 'Courier_Rot180',
+            orientation: 180,
+            printed: true,
+            sourceName: 'Courier_Rot180',
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 250,
+              w: 733,
+              x: 4003,
+              y: 3001
+            },
+            geometryMillimeters: {
+              height: 2.5,
+              width: 7.33,
+              x: 40.03,
+              y: 30.01
+            },
+            lineNumber: null,
+            name: 'Tahoma_Rot270',
+            orientation: 270,
+            printed: true,
+            sourceName: 'Tahoma_Rot270',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 10,
+        total: 10
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 11
+      },
+      offsets: {
+        count: 1,
+        dirty: false,
+        loaded: true,
+        names: [
+          'offset0'
+        ]
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+        count: 1,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '106cda38-6b23-4c57-891c-e5b606ebe3f5',
+            title: 'exe-vector'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:29:09.564 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: INITIAL_RENDERER_STATE
+Message: Начальное состояние интерфейса после запуска.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: null,
+      document: {
+        designedFor: null,
+        loaded: false,
+        overallSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        printMode: 'Intermittent',
+        printerModel: 'DataFlex 6530(53mm)',
+        usedSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        version: null
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 0
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: null,
+        count: 0,
+        items: []
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:29:09.945 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: APPLICATION_READY
+Message: Приложение полностью инициализировано и готово к работе.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+        title: 'Untitled template'
+      },
+      document: {
+        designedFor: null,
+        loaded: false,
+        overallSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        printMode: 'Intermittent',
+        printerModel: 'DataFlex 6530(53mm)',
+        usedSizeMillimeters: {
+          height: 0,
+          width: 0
+        },
+        version: null
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {},
+        hidden: 0,
+        items: [],
+        printed: 0,
+        total: 0
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 0,
+        dirty: false,
+        loaded: false,
+        names: []
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+        count: 1,
+        items: [
+          {
+            dirty: false,
+            hasDocument: false,
+            id: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+            title: 'Untitled template'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:29:10.013 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: APPLICATION_STATE_AFTER_TEMPLATE_LOAD
+Message: Состояние после загрузки шаблона.
+Source: renderer-state
+Details:
+  {
+    extra: {
+      source: 'exe-vector-save-check',
+      title: 'exe-vector'
+    },
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+        title: 'exe-vector'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 70,
+          width: 53
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 55.11,
+          width: 42.53
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          CounterText: 1,
+          DateText: 1,
+          FixedText: 6,
+          OffsetDateText: 1,
+          TimeText: 1
+        },
+        hidden: 0,
+        items: [
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 242,
+              w: 1367,
+              x: 123,
+              y: 234
+            },
+            geometryMillimeters: {
+              height: 2.42,
+              width: 13.67,
+              x: 1.23,
+              y: 2.34
+            },
+            lineNumber: null,
+            name: 'TNR_Text',
+            orientation: 0,
+            printed: true,
+            sourceName: 'TNR_Text',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 533,
+              w: 3025,
+              x: 377,
+              y: 900
+            },
+            geometryMillimeters: {
+              height: 5.33,
+              width: 30.25,
+              x: 3.77,
+              y: 9
+            },
+            lineNumber: null,
+            name: 'Arial_Bold',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Arial_Bold',
+            textSettings: {
+              pitch: 13,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 333,
+              w: 2625,
+              x: 111,
+              y: 1701
+            },
+            geometryMillimeters: {
+              height: 3.33,
+              width: 26.25,
+              x: 1.11,
+              y: 17.01
+            },
+            lineNumber: null,
+            name: 'Courier_XMag',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Courier_XMag',
+            textSettings: {
+              pitch: 9,
+              xMag: 150
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 1167,
+              x: 197,
+              y: 2403
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 11.67,
+              x: 1.97,
+              y: 24.03
+            },
+            lineNumber: null,
+            name: 'Tahoma_Date',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Tahoma_Date',
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'DateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 1000,
+              x: 213,
+              y: 3107
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 10,
+              x: 2.13,
+              y: 31.07
+            },
+            lineNumber: null,
+            name: 'Segoe_Offset',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Segoe_Offset',
+            textSettings: {
+              pitch: 7,
+              xMag: null
+            },
+            type: 'OffsetDateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 408,
+              w: 717,
+              x: 319,
+              y: 3811
+            },
+            geometryMillimeters: {
+              height: 4.08,
+              width: 7.17,
+              x: 3.19,
+              y: 38.11
+            },
+            lineNumber: null,
+            name: 'Narrow_Time',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Narrow_Time',
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'TimeText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 933,
+              x: 421,
+              y: 4517
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 9.33,
+              x: 4.21,
+              y: 45.17
+            },
+            lineNumber: null,
+            name: 'OCRB_Counter',
+            orientation: 0,
+            printed: true,
+            sourceName: 'OCRB_Counter',
+            textSettings: {
+              pitch: 11,
+              xMag: null
+            },
+            type: 'CounterText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 242,
+              w: 558,
+              x: 3801,
+              y: 801
+            },
+            geometryMillimeters: {
+              height: 2.42,
+              width: 5.58,
+              x: 38.01,
+              y: 8.01
+            },
+            lineNumber: null,
+            name: 'TNR_Rot90',
+            orientation: 90,
+            printed: true,
+            sourceName: 'TNR_Rot90',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 308,
+              w: 1167,
+              x: 1801,
+              y: 5203
+            },
+            geometryMillimeters: {
+              height: 3.08,
+              width: 11.67,
+              x: 18.01,
+              y: 52.03
+            },
+            lineNumber: null,
+            name: 'Courier_Rot180',
+            orientation: 180,
+            printed: true,
+            sourceName: 'Courier_Rot180',
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 250,
+              w: 733,
+              x: 4003,
+              y: 3001
+            },
+            geometryMillimeters: {
+              height: 2.5,
+              width: 7.33,
+              x: 40.03,
+              y: 30.01
+            },
+            lineNumber: null,
+            name: 'Tahoma_Rot270',
+            orientation: 270,
+            printed: true,
+            sourceName: 'Tahoma_Rot270',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 10,
+        total: 10
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 1,
+        dirty: false,
+        loaded: true,
+        names: [
+          'offset0'
+        ]
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+        count: 1,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+            title: 'exe-vector'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }
+====================================================================================================
+[2026-10-20 23:29:11.179 +03:00] [INFO] [session: 20261020-232909-pid6760]
+Event: FINAL_RENDERER_STATE
+Message: Финальное состояние интерфейса перед выгрузкой.
+Source: renderer-state
+Details:
+  {
+    extra: null,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    state: {
+      activeTemplateTab: {
+        dirty: false,
+        id: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+        title: 'exe-vector'
+      },
+      document: {
+        designedFor: 'DataFlex 6320(53mm) - Continuous',
+        loaded: true,
+        overallSizeMillimeters: {
+          height: 70,
+          width: 53
+        },
+        printMode: 'Continuous',
+        printerModel: 'DataFlex 6320(53mm)',
+        usedSizeMillimeters: {
+          height: 55.11,
+          width: 42.53
+        },
+        version: '23'
+      },
+      editor: {
+        activeFieldFilter: 'printed',
+        alignEnabled: false,
+        gridSizeMillimeters: 1,
+        gridVisible: true,
+        hiddenFieldsVisibleOnCanvas: false,
+        language: 'en',
+        mobilePanMode: false,
+        pendingPlacement: null,
+        snapEnabled: true,
+        theme: 'light',
+        zoomPercent: 100
+      },
+      fields: {
+        byType: {
+          CounterText: 1,
+          DateText: 1,
+          FixedText: 6,
+          OffsetDateText: 1,
+          TimeText: 1
+        },
+        hidden: 0,
+        items: [
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 242,
+              w: 1367,
+              x: 123,
+              y: 234
+            },
+            geometryMillimeters: {
+              height: 2.42,
+              width: 13.67,
+              x: 1.23,
+              y: 2.34
+            },
+            lineNumber: null,
+            name: 'TNR_Text',
+            orientation: 0,
+            printed: true,
+            sourceName: 'TNR_Text',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 533,
+              w: 3025,
+              x: 377,
+              y: 900
+            },
+            geometryMillimeters: {
+              height: 5.33,
+              width: 30.25,
+              x: 3.77,
+              y: 9
+            },
+            lineNumber: null,
+            name: 'Arial_Bold',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Arial_Bold',
+            textSettings: {
+              pitch: 13,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 333,
+              w: 2625,
+              x: 111,
+              y: 1701
+            },
+            geometryMillimeters: {
+              height: 3.33,
+              width: 26.25,
+              x: 1.11,
+              y: 17.01
+            },
+            lineNumber: null,
+            name: 'Courier_XMag',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Courier_XMag',
+            textSettings: {
+              pitch: 9,
+              xMag: 150
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 1167,
+              x: 197,
+              y: 2403
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 11.67,
+              x: 1.97,
+              y: 24.03
+            },
+            lineNumber: null,
+            name: 'Tahoma_Date',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Tahoma_Date',
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'DateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 1000,
+              x: 213,
+              y: 3107
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 10,
+              x: 2.13,
+              y: 31.07
+            },
+            lineNumber: null,
+            name: 'Segoe_Offset',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Segoe_Offset',
+            textSettings: {
+              pitch: 7,
+              xMag: null
+            },
+            type: 'OffsetDateText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 408,
+              w: 717,
+              x: 319,
+              y: 3811
+            },
+            geometryMillimeters: {
+              height: 4.08,
+              width: 7.17,
+              x: 3.19,
+              y: 38.11
+            },
+            lineNumber: null,
+            name: 'Narrow_Time',
+            orientation: 0,
+            printed: true,
+            sourceName: 'Narrow_Time',
+            textSettings: {
+              pitch: 10,
+              xMag: null
+            },
+            type: 'TimeText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 342,
+              w: 933,
+              x: 421,
+              y: 4517
+            },
+            geometryMillimeters: {
+              height: 3.42,
+              width: 9.33,
+              x: 4.21,
+              y: 45.17
+            },
+            lineNumber: null,
+            name: 'OCRB_Counter',
+            orientation: 0,
+            printed: true,
+            sourceName: 'OCRB_Counter',
+            textSettings: {
+              pitch: 11,
+              xMag: null
+            },
+            type: 'CounterText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 242,
+              w: 558,
+              x: 3801,
+              y: 801
+            },
+            geometryMillimeters: {
+              height: 2.42,
+              width: 5.58,
+              x: 38.01,
+              y: 8.01
+            },
+            lineNumber: null,
+            name: 'TNR_Rot90',
+            orientation: 90,
+            printed: true,
+            sourceName: 'TNR_Rot90',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 308,
+              w: 1167,
+              x: 1801,
+              y: 5203
+            },
+            geometryMillimeters: {
+              height: 3.08,
+              width: 11.67,
+              x: 18.01,
+              y: 52.03
+            },
+            lineNumber: null,
+            name: 'Courier_Rot180',
+            orientation: 180,
+            printed: true,
+            sourceName: 'Courier_Rot180',
+            textSettings: {
+              pitch: 8,
+              xMag: null
+            },
+            type: 'FixedText'
+          },
+          {
+            barcode: null,
+            geometryInternal: {
+              h: 250,
+              w: 733,
+              x: 4003,
+              y: 3001
+            },
+            geometryMillimeters: {
+              height: 2.5,
+              width: 7.33,
+              x: 40.03,
+              y: 30.01
+            },
+            lineNumber: null,
+            name: 'Tahoma_Rot270',
+            orientation: 270,
+            printed: true,
+            sourceName: 'Tahoma_Rot270',
+            textSettings: {
+              pitch: 6,
+              xMag: null
+            },
+            type: 'FixedText'
+          }
+        ],
+        printed: 10,
+        total: 10
+      },
+      history: {
+        redoDepth: 0,
+        undoDepth: 1
+      },
+      offsets: {
+        count: 1,
+        dirty: false,
+        loaded: true,
+        names: [
+          'offset0'
+        ]
+      },
+      selection: {
+        count: 0,
+        primaryName: null,
+        selectedNames: []
+      },
+      tabs: {
+        activeTabId: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+        count: 1,
+        items: [
+          {
+            dirty: false,
+            hasDocument: true,
+            id: '234c6555-28fd-4deb-ad88-e53a22f8ccbb',
+            title: 'exe-vector'
+          }
+        ]
+      },
+      validation: {
+        invalidHardwareFieldNames: [],
+        invalidPrintableFieldNames: [],
+        structuralErrors: []
+      },
+      window: {
+        devicePixelRatio: 1,
+        height: 761,
+        online: true,
+        visibility: 'visible',
+        width: 1264
+      }
+    }
+  }

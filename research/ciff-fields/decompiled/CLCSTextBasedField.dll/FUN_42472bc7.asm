@@ -1,0 +1,10 @@
+42472bc7 PUSH EBP
+42472bc8 MOV EBP,ESP
+42472bca MOV EAX,dword ptr [EBP + 0x8]
+42472bcd MOV dword ptr [ECX],0x4249d650
+42472bd3 MOV EAX,dword ptr [EAX]
+42472bd5 MOV dword ptr [ECX + 0x4],EAX
+42472bd8 MOV EAX,ECX
+42472bda MOV byte ptr [ECX + 0x8],0x0
+42472bde POP EBP
+42472bdf RET 0x8

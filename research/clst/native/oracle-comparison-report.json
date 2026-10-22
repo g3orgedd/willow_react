@@ -1,0 +1,23 @@
+{
+  "supportedCount": 200,
+  "supportedMatched": 200,
+  "total": 204,
+  "differences": [
+    {
+      "index": 202,
+      "kind": "edge",
+      "input": "audit",
+      "key": "12345678901234567890",
+      "native": "6V7KwNAmOP68PyE",
+      "js": "UuH5gCDSPF7CNQ8"
+    },
+    {
+      "index": 203,
+      "kind": "edge",
+      "input": "audit",
+      "key": "abc\u0000def",
+      "native": "VHP5FTTwPCjOF2A",
+      "js": "6mKCEDV_BOq58SQ"
+    }
+  ]
+}

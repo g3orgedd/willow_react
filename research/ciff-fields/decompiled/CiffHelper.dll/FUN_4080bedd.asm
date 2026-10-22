@@ -1,0 +1,16 @@
+4080bedd PUSH 0xc
+4080bedf MOV EAX,0x408458f4
+4080bee4 CALL 0x4082d54d
+4080bee9 MOV EDI,ECX
+4080beeb MOV dword ptr [EBP + -0x18],EDI
+4080beee CMP dword ptr [EBP + 0x8],0x0
+4080bef2 JNZ 0x4080bef8
+4080bef4 XOR EAX,EAX
+4080bef6 JMP 0x4080bf46
+4080bef8 AND dword ptr [EBP + -0x14],0x0
+4080befc AND dword ptr [EBP + -0x4],0x0
+4080bf00 LEA ECX,[EBP + -0x14]
+4080bf03 PUSH dword ptr [EBP + 0x8]
+4080bf06 MOV byte ptr [EBP + -0x4],0x1
+4080bf0a CALL 0x4080be87
+4080bf0f JMP 0x4080bf1a

@@ -1,0 +1,225 @@
+{
+  "file": "CiffDateFormats.dll",
+  "name": "CIFFDATEFORMATSLib",
+  "types": [
+    {
+      "index": 0,
+      "name": "BarillaJulianDate",
+      "documentation": "BarillaJulianDate Class",
+      "guid": "{51857478-31E8-45A5-B98D-866BC1F0FC00}",
+      "guidLocations": [
+        "1001656c",
+        "100245b4"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDateFormatObject2",
+          "guid": "{9B66BB32-B979-41A7-8BE9-AA3391F003CE}"
+        },
+        {
+          "name": "IDateFormatObject",
+          "guid": "{D6B53196-4EDD-45F7-ADB0-3E36AE04B390}"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "IDateFormatObject2",
+      "documentation": "IDateFormatObject2 Interface",
+      "guid": "{9B66BB32-B979-41A7-8BE9-AA3391F003CE}",
+      "guidLocations": [
+        "1001654c",
+        "10016a20",
+        "100245cc"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "GetDateTimeString2",
+          "names": [
+            "GetDateTimeString2",
+            "vtStr",
+            "vtDate",
+            "vtZeros",
+            "vtLCID"
+          ],
+          "memid": 1610743808,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": "method GetDateTimeString2",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDateFormatObject",
+          "guid": "{D6B53196-4EDD-45F7-ADB0-3E36AE04B390}"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "IDateFormatObject",
+      "documentation": "IDateFormatObject Interface",
+      "guid": "{D6B53196-4EDD-45F7-ADB0-3E36AE04B390}",
+      "guidLocations": [
+        "1001653c",
+        "10016a30",
+        "100245e4"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "GetDateTimeString",
+          "names": [
+            "GetDateTimeString",
+            "vtStr",
+            "vtDate",
+            "vtZeros"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": "method GetDateTimeString",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 12
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 12
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "MasterfoodsSingleDigitYear",
+      "documentation": "MasterfoodsSingleDigitYear Class",
+      "guid": "{5443EA97-470F-4865-8CC7-F26B1B6519FF}",
+      "guidLocations": [
+        "1001657c",
+        "1002462c"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDateFormatObject2",
+          "guid": "{9B66BB32-B979-41A7-8BE9-AA3391F003CE}"
+        },
+        {
+          "name": "IDateFormatObject",
+          "guid": "{D6B53196-4EDD-45F7-ADB0-3E36AE04B390}"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "JulianDate401",
+      "documentation": "JulianDate401 Class",
+      "guid": "{BD74865D-1A00-47B1-8385-F27CA6425F5D}",
+      "guidLocations": [
+        "1001658c",
+        "10024644"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDateFormatObject2",
+          "guid": "{9B66BB32-B979-41A7-8BE9-AA3391F003CE}"
+        },
+        {
+          "name": "IDateFormatObject",
+          "guid": "{D6B53196-4EDD-45F7-ADB0-3E36AE04B390}"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "DiageoJulianDate",
+      "documentation": "DiageoJulianDate Class",
+      "guid": "{A82F8E86-1E20-484A-B5B3-0218A4631728}",
+      "guidLocations": [
+        "1001659c",
+        "1002465c"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IDateFormatObject2",
+          "guid": "{9B66BB32-B979-41A7-8BE9-AA3391F003CE}"
+        },
+        {
+          "name": "IDateFormatObject",
+          "guid": "{D6B53196-4EDD-45F7-ADB0-3E36AE04B390}"
+        }
+      ]
+    }
+  ]
+}

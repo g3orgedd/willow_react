@@ -1,0 +1,107 @@
+[
+  {
+    "name": "CiffMgr.dll",
+    "size": 550400,
+    "sha256": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+    "imageBase": "68100000",
+    "stringCount": 4412
+  },
+  {
+    "name": "CiffHelper.dll",
+    "size": 436224,
+    "sha256": "26e0cc9bc69d44b00e9ab482e1a2d13daf5bb8f801817c717194c5f1b535558a",
+    "imageBase": "40800000",
+    "stringCount": 3327
+  },
+  {
+    "name": "CLCSTextBasedField.dll",
+    "size": 875520,
+    "sha256": "2b9cedaa8a9bdc5ecb92f9dc43855650b0698b6f0ff0190237e6c5889232409b",
+    "imageBase": "42400000",
+    "stringCount": 10775
+  },
+  {
+    "name": "CLCSBarcodeField.dll",
+    "size": 779776,
+    "sha256": "258f201aaad6e993379ab725c9184afcf5a64035abb9546e1ab25bd529d8c45e",
+    "imageBase": "41400000",
+    "stringCount": 6411
+  },
+  {
+    "name": "CLCSGraphicBasedField.dll",
+    "size": 295936,
+    "sha256": "d9158db819d9eef1a544ec9e5bbaedeb2e01c9621b7164ab45d1ad336fc12dfe",
+    "imageBase": "41c00000",
+    "stringCount": 2529
+  },
+  {
+    "name": "CLCSGraphicPrimitive.dll",
+    "size": 277504,
+    "sha256": "19a1a7c24c3446ae7e48d540832a056c1d3d8c3a05d1afa96bc2f138de26ba2f",
+    "imageBase": "42800000",
+    "stringCount": 2516
+  },
+  {
+    "name": "CLCSBlockTextField.dll",
+    "size": 312832,
+    "sha256": "443175b5452295fd1c638da06ee5f3d9ff0f5e292dcc746628e18996a1eb3d6c",
+    "imageBase": "41800000",
+    "stringCount": 2593
+  },
+  {
+    "name": "CLCSRichTextBlockField.dll",
+    "size": 356864,
+    "sha256": "09b2455e8954a95f85b9206e16fa01d816e25abb5409c74440cc379a421ffad5",
+    "imageBase": "41800000",
+    "stringCount": 2836
+  },
+  {
+    "name": "CLCSSmallBarcode.dll",
+    "size": 855552,
+    "sha256": "7068b4674e98d4ed44f6025b44dc170f277adeef0929be20a817019a863324d9",
+    "imageBase": "42000000",
+    "stringCount": 5292
+  },
+  {
+    "name": "CLCSBinaryFontComponent.dll",
+    "size": 167424,
+    "sha256": "8bc081e2c23fa2dedc8accd0a91dbe02c913581a7aaac2d60c20a451938be675",
+    "imageBase": "10000000",
+    "stringCount": 1597
+  },
+  {
+    "name": "CLZipherBCP2.dll",
+    "size": 2854400,
+    "sha256": "5e4f9c6615fc1b39d235beb5103e9f0ca044bd2b110dbe53c41c05c945bf7429",
+    "imageBase": "10000000",
+    "stringCount": 59226
+  },
+  {
+    "name": "CiffDateFormats.dll",
+    "size": 141312,
+    "sha256": "dfda165a8ea544b125425a256058bfe938e3adccfb786c75621bf9020c055ffb",
+    "imageBase": "10000000",
+    "stringCount": 1429
+  },
+  {
+    "name": "CLCiffConversion_Data.dll",
+    "size": 357888,
+    "sha256": "9960bc627c1844a8ef510c0592ad86520ab94d3129142ca931484a6113450ecd",
+    "imageBase": "45000000",
+    "stringCount": 2748
+  },
+  {
+    "name": "CLCiffConversion_Layout.dll",
+    "size": 406528,
+    "sha256": "dfee6a96e6d6d361760b5c154a4072acb83eefe11dc9a3bbe23fdbeeb2520c1a",
+    "imageBase": "45400000",
+    "stringCount": 5266
+  },
+  {
+    "name": "CLARiSOFT.exe",
+    "size": 1664000,
+    "sha256": "28aebc9c30c68e85175be90580195d6e4f3180a994ecdc8215e9b93c26304e1a",
+    "imageBase": "00e00000",
+    "stringCount": 10411
+  }
+]

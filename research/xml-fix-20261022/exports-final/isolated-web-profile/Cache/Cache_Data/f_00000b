@@ -1,0 +1,256 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/DocumentationModal.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=a8bfbb4b"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import functionalityMarkdown from "/FUNCTIONALITY.md?t=1792654981845&import&raw";
+import changelogMarkdown from "/CHANGELOG.md?t=1792660407699&import&raw";
+function renderInline(text) {
+  const parts = text.split(/(\*\*[^*]+\*\*|`[^`]+`)/g).filter(Boolean);
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return /* @__PURE__ */ jsxDEV("strong", { children: part.slice(2, -2) }, index, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+        lineNumber: 28,
+        columnNumber: 14
+      }, this);
+    }
+    if (part.startsWith("`") && part.endsWith("`")) {
+      return /* @__PURE__ */ jsxDEV("code", { children: part.slice(1, -1) }, index, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+        lineNumber: 31,
+        columnNumber: 14
+      }, this);
+    }
+    return part;
+  });
+}
+function splitTableRow(line) {
+  return line.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+}
+function MarkdownDocument({ source }) {
+  const lines = source.replace(/\r\n/g, "\n").split("\n");
+  const blocks = [];
+  let index = 0;
+  while (index < lines.length) {
+    const line = lines[index];
+    if (!line.trim()) {
+      index += 1;
+      continue;
+    }
+    const heading = line.match(/^(#{1,6})\s+(.+)$/);
+    if (heading) {
+      const level = Math.min(heading[1].length, 4);
+      const content = renderInline(heading[2]);
+      if (level === 1) blocks.push(/* @__PURE__ */ jsxDEV("h2", { children: content }, index, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+        lineNumber: 57,
+        columnNumber: 36
+      }, this));
+      else if (level === 2) blocks.push(/* @__PURE__ */ jsxDEV("h3", { children: content }, index, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+        lineNumber: 58,
+        columnNumber: 36
+      }, this));
+      else
+        blocks.push(/* @__PURE__ */ jsxDEV("h4", { children: content }, index, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+          lineNumber: 59,
+          columnNumber: 19
+        }, this));
+      index += 1;
+      continue;
+    }
+    if (/^\s*-\s+/.test(line)) {
+      const items = [];
+      const listKey = index;
+      while (index < lines.length && /^\s*-\s+/.test(lines[index])) {
+        items.push(/* @__PURE__ */ jsxDEV("li", { children: renderInline(lines[index].replace(/^\s*-\s+/, "")) }, index, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+          lineNumber: 68,
+          columnNumber: 20
+        }, this));
+        index += 1;
+      }
+      blocks.push(/* @__PURE__ */ jsxDEV("ul", { children: items }, listKey, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+        lineNumber: 71,
+        columnNumber: 19
+      }, this));
+      continue;
+    }
+    if (line.trim().startsWith("|") && index + 1 < lines.length && lines[index + 1].trim().startsWith("|")) {
+      const tableKey = index;
+      const header = splitTableRow(line);
+      index += 2;
+      const rows = [];
+      while (index < lines.length && lines[index].trim().startsWith("|")) {
+        rows.push(splitTableRow(lines[index]));
+        index += 1;
+      }
+      blocks.push(
+        /* @__PURE__ */ jsxDEV("div", { className: "documentationTableWrap", children: /* @__PURE__ */ jsxDEV("table", { children: [
+          /* @__PURE__ */ jsxDEV("thead", { children: /* @__PURE__ */ jsxDEV("tr", { children: header.map((cell, cellIndex) => /* @__PURE__ */ jsxDEV("th", { children: renderInline(cell) }, cellIndex, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 87,
+            columnNumber: 57
+          }, this)) }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 87,
+            columnNumber: 20
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 87,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV("tbody", { children: rows.map(
+            (row, rowIndex) => /* @__PURE__ */ jsxDEV("tr", { children: row.map((cell, cellIndex) => /* @__PURE__ */ jsxDEV("td", { children: renderInline(cell) }, cellIndex, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+              lineNumber: 90,
+              columnNumber: 64
+            }, this)) }, rowIndex, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+              lineNumber: 90,
+              columnNumber: 15
+            }, this)
+          ) }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 88,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+          lineNumber: 86,
+          columnNumber: 11
+        }, this) }, tableKey, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+          lineNumber: 85,
+          columnNumber: 9
+        }, this)
+      );
+      continue;
+    }
+    const paragraphKey = index;
+    const paragraph = [];
+    while (index < lines.length && lines[index].trim() && !/^(#{1,6})\s+/.test(lines[index]) && !/^\s*-\s+/.test(lines[index]) && !lines[index].trim().startsWith("|")) {
+      paragraph.push(lines[index].trim());
+      index += 1;
+    }
+    blocks.push(/* @__PURE__ */ jsxDEV("p", { children: renderInline(paragraph.join(" ")) }, paragraphKey, false, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+      lineNumber: 111,
+      columnNumber: 17
+    }, this));
+  }
+  return /* @__PURE__ */ jsxDEV("div", { className: "documentationMarkdown", children: blocks }, void 0, false, {
+    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+    lineNumber: 114,
+    columnNumber: 10
+  }, this);
+}
+_c = MarkdownDocument;
+export function DocumentationModal() {
+  return /* @__PURE__ */ jsxDEV("div", { id: "documentationModal", className: "modal modal--documentation hidden", "aria-hidden": "true", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "modal__backdrop", "data-modal-close": "1" }, void 0, false, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+      lineNumber: 120,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      "div",
+      {
+        className: "modal__card modal__card--documentation surface-card",
+        role: "dialog",
+        "aria-modal": "true",
+        "aria-labelledby": "documentationModalTitle",
+        children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "modal__header documentationModal__header", children: /* @__PURE__ */ jsxDEV("div", { className: "modal__title", id: "documentationModalTitle", children: "Functionality" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 128,
+            columnNumber: 11
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 127,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "documentationModal__content", children: [
+            /* @__PURE__ */ jsxDEV("div", { id: "functionalityDocument", children: /* @__PURE__ */ jsxDEV(MarkdownDocument, { source: functionalityMarkdown }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+              lineNumber: 132,
+              columnNumber: 43
+            }, this) }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+              lineNumber: 132,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { id: "changelogDocument", className: "hidden", children: /* @__PURE__ */ jsxDEV(MarkdownDocument, { source: changelogMarkdown }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+              lineNumber: 133,
+              columnNumber: 58
+            }, this) }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+              lineNumber: 133,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 131,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "modal__actions documentationModal__actions", children: /* @__PURE__ */ jsxDEV("button", { id: "btnCloseDocumentation", className: "btn btn--primary", type: "button", children: "Close" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 137,
+            columnNumber: 11
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+            lineNumber: 136,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+        lineNumber: 121,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, true, {
+    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx",
+    lineNumber: 119,
+    columnNumber: 5
+  }, this);
+}
+_c2 = DocumentationModal;
+var _c, _c2;
+$RefreshReg$(_c, "MarkdownDocument");
+$RefreshReg$(_c2, "DocumentationModal");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/DocumentationModal.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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eUJBQTFCO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBQWdELEtBQWhGO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBQW1GO0FBQUEsWUFDbkYsdUJBQUMsU0FBSSxJQUFHLHFCQUFvQixXQUFVLFVBQVMsaUNBQUMsb0JBQWlCLFFBQVFDLHFCQUExQjtBQUFBO0FBQUE7QUFBQTtBQUFBLG1CQUE0QyxLQUEzRjtBQUFBO0FBQUE7QUFBQTtBQUFBLG1CQUE4RjtBQUFBLGVBRmhHO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBR0E7QUFBQSxVQUVBLHVCQUFDLFNBQUksV0FBVSw4Q0FDYixpQ0FBQyxZQUFPLElBQUcseUJBQXdCLFdBQVUsb0JBQW1CLE1BQUssVUFBUyxxQkFBOUU7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFBbUYsS0FEckY7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFFQTtBQUFBO0FBQUE7QUFBQSxNQWpCRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFrQkE7QUFBQSxPQXBCRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBcUJBO0FBRUo7QUFBQzRDLE1BekJlRDtBQUFrQixJQUFBRCxJQUFBRTtBQUFBLGFBQUFGLElBQUE7QUFBQSxhQUFBRSxLQUFBIiwibmFtZXMiOlsiZnVuY3Rpb25hbGl0eU1hcmtkb3duIiwiY2hhbmdlbG9nTWFya2Rvd24iLCJyZW5kZXJJbmxpbmUiLCJ0ZXh0IiwicGFydHMiLCJzcGxpdCIsImZpbHRlciIsIkJvb2xlYW4iLCJtYXAiLCJwYXJ0IiwiaW5kZXgiLCJzdGFydHNXaXRoIiwiZW5kc1dpdGgiLCJzbGljZSIsInNwbGl0VGFibGVSb3ciLCJsaW5lIiwidHJpbSIsInJlcGxhY2UiLCJjZWxsIiwiTWFya2Rvd25Eb2N1bWVudCIsInNvdXJjZSIsImxpbmVzIiwiYmxvY2tzIiwibGVuZ3RoIiwiaGVhZGluZyIsIm1hdGNoIiwibGV2ZWwiLCJNYXRoIiwibWluIiwiY29udGVudCIsInB1c2giLCJ0ZXN0IiwiaXRlbXMiLCJsaXN0S2V5IiwidGFibGVLZXkiLCJoZWFkZXIiLCJyb3dzIiwiY2VsbEluZGV4Iiwicm93Iiwicm93SW5kZXgiLCJwYXJhZ3JhcGhLZXkiLCJwYXJhZ3JhcGgiLCJqb2luIiwiX2MiLCJEb2N1bWVudGF0aW9uTW9kYWwiLCJfYzIiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsiRG9jdW1lbnRhdGlvbk1vZGFsLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgdHlwZSB7IFJlYWN0Tm9kZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBmdW5jdGlvbmFsaXR5TWFya2Rvd24gZnJvbSAnLi4vLi4vRlVOQ1RJT05BTElUWS5tZD9yYXcnO1xuaW1wb3J0IGNoYW5nZWxvZ01hcmtkb3duIGZyb20gJy4uLy4uL0NIQU5HRUxPRy5tZD9yYXcnO1xuXG5mdW5jdGlvbiByZW5kZXJJbmxpbmUodGV4dDogc3RyaW5nKTogUmVhY3ROb2RlW10ge1xuICBjb25zdCBwYXJ0cyA9IHRleHQuc3BsaXQoLyhcXCpcXCpbXipdK1xcKlxcKnxgW15gXStgKS9nKS5maWx0ZXIoQm9vbGVhbik7XG4gIHJldHVybiBwYXJ0cy5tYXAoKHBhcnQsIGluZGV4KSA9PiB7XG4gICAgaWYgKHBhcnQuc3RhcnRzV2l0aCgnKionKSAmJiBwYXJ0LmVuZHNXaXRoKCcqKicpKSB7XG4gICAgICByZXR1cm4gPHN0cm9uZyBrZXk9e2luZGV4fT57cGFydC5zbGljZSgyLCAtMil9PC9zdHJvbmc+O1xuICAgIH1cbiAgICBpZiAocGFydC5zdGFydHNXaXRoKCdgJykgJiYgcGFydC5lbmRzV2l0aCgnYCcpKSB7XG4gICAgICByZXR1cm4gPGNvZGUga2V5PXtpbmRleH0+e3BhcnQuc2xpY2UoMSwgLTEpfTwvY29kZT47XG4gICAgfVxuICAgIHJldHVybiBwYXJ0O1xuICB9KTtcbn1cblxuZnVuY3Rpb24gc3BsaXRUYWJsZVJvdyhsaW5lOiBzdHJpbmcpOiBzdHJpbmdbXSB7XG4gIHJldHVybiBsaW5lLnRyaW0oKS5yZXBsYWNlKC9eXFx8fFxcfCQvZywgJycpLnNwbGl0KCd8JykubWFwKChjZWxsKSA9PiBjZWxsLnRyaW0oKSk7XG59XG5cbmZ1bmN0aW9uIE1hcmtkb3duRG9jdW1lbnQoeyBzb3VyY2UgfTogeyBzb3VyY2U6IHN0cmluZyB9KSB7XG4gIGNvbnN0IGxpbmVzID0gc291cmNlLnJlcGxhY2UoL1xcclxcbi9nLCAnXFxuJykuc3BsaXQoJ1xcbicpO1xuICBjb25zdCBibG9ja3M6IFJlYWN0Tm9kZVtdID0gW107XG4gIGxldCBpbmRleCA9IDA7XG5cbiAgd2hpbGUgKGluZGV4IDwgbGluZXMubGVuZ3RoKSB7XG4gICAgY29uc3QgbGluZSA9IGxpbmVzW2luZGV4XTtcbiAgICBpZiAoIWxpbmUudHJpbSgpKSB7XG4gICAgICBpbmRleCArPSAxO1xuICAgICAgY29udGludWU7XG4gICAgfVxuXG4gICAgY29uc3QgaGVhZGluZyA9IGxpbmUubWF0Y2goL14oI3sxLDZ9KVxccysoLispJC8pO1xuICAgIGlmIChoZWFkaW5nKSB7XG4gICAgICBjb25zdCBsZXZlbCA9IE1hdGgubWluKGhlYWRpbmdbMV0ubGVuZ3RoLCA0KTtcbiAgICAgIGNvbnN0IGNvbnRlbnQgPSByZW5kZXJJbmxpbmUoaGVhZGluZ1syXSk7XG4gICAgICBpZiAobGV2ZWwgPT09IDEpIGJsb2Nrcy5wdXNoKDxoMiBrZXk9e2luZGV4fT57Y29udGVudH08L2gyPik7XG4gICAgICBlbHNlIGlmIChsZXZlbCA9PT0gMikgYmxvY2tzLnB1c2goPGgzIGtleT17aW5kZXh9Pntjb250ZW50fTwvaDM+KTtcbiAgICAgIGVsc2UgYmxvY2tzLnB1c2goPGg0IGtleT17aW5kZXh9Pntjb250ZW50fTwvaDQ+KTtcbiAgICAgIGluZGV4ICs9IDE7XG4gICAgICBjb250aW51ZTtcbiAgICB9XG5cbiAgICBpZiAoL15cXHMqLVxccysvLnRlc3QobGluZSkpIHtcbiAgICAgIGNvbnN0IGl0ZW1zOiBSZWFjdE5vZGVbXSA9IFtdO1xuICAgICAgY29uc3QgbGlzdEtleSA9IGluZGV4O1xuICAgICAgd2hpbGUgKGluZGV4IDwgbGluZXMubGVuZ3RoICYmIC9eXFxzKi1cXHMrLy50ZXN0KGxpbmVzW2luZGV4XSkpIHtcbiAgICAgICAgaXRlbXMucHVzaCg8bGkga2V5PXtpbmRleH0+e3JlbmRlcklubGluZShsaW5lc1tpbmRleF0ucmVwbGFjZSgvXlxccyotXFxzKy8sICcnKSl9PC9saT4pO1xuICAgICAgICBpbmRleCArPSAxO1xuICAgICAgfVxuICAgICAgYmxvY2tzLnB1c2goPHVsIGtleT17bGlzdEtleX0+e2l0ZW1zfTwvdWw+KTtcbiAgICAgIGNvbnRpbnVlO1xuICAgIH1cblxuICAgIGlmIChsaW5lLnRyaW0oKS5zdGFydHNXaXRoKCd8JykgJiYgaW5kZXggKyAxIDwgbGluZXMubGVuZ3RoICYmIGxpbmVzW2luZGV4ICsgMV0udHJpbSgpLnN0YXJ0c1dpdGgoJ3wnKSkge1xuICAgICAgY29uc3QgdGFibGVLZXkgPSBpbmRleDtcbiAgICAgIGNvbnN0IGhlYWRlciA9IHNwbGl0VGFibGVSb3cobGluZSk7XG4gICAgICBpbmRleCArPSAyO1xuICAgICAgY29uc3Qgcm93czogc3RyaW5nW11bXSA9IFtdO1xuICAgICAgd2hpbGUgKGluZGV4IDwgbGluZXMubGVuZ3RoICYmIGxpbmVzW2luZGV4XS50cmltKCkuc3RhcnRzV2l0aCgnfCcpKSB7XG4gICAgICAgIHJvd3MucHVzaChzcGxpdFRhYmxlUm93KGxpbmVzW2luZGV4XSkpO1xuICAgICAgICBpbmRleCArPSAxO1xuICAgICAgfVxuICAgICAgYmxvY2tzLnB1c2goXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZG9jdW1lbnRhdGlvblRhYmxlV3JhcFwiIGtleT17dGFibGVLZXl9PlxuICAgICAgICAgIDx0YWJsZT5cbiAgICAgICAgICAgIDx0aGVhZD48dHI+e2hlYWRlci5tYXAoKGNlbGwsIGNlbGxJbmRleCkgPT4gPHRoIGtleT17Y2VsbEluZGV4fT57cmVuZGVySW5saW5lKGNlbGwpfTwvdGg+KX08L3RyPjwvdGhlYWQ+XG4gICAgICAgICAgICA8dGJvZHk+XG4gICAgICAgICAgICAgIHtyb3dzLm1hcCgocm93LCByb3dJbmRleCkgPT4gKFxuICAgICAgICAgICAgICAgIDx0ciBrZXk9e3Jvd0luZGV4fT57cm93Lm1hcCgoY2VsbCwgY2VsbEluZGV4KSA9PiA8dGQga2V5PXtjZWxsSW5kZXh9PntyZW5kZXJJbmxpbmUoY2VsbCl9PC90ZD4pfTwvdHI+XG4gICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgPC90Ym9keT5cbiAgICAgICAgICA8L3RhYmxlPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICk7XG4gICAgICBjb250aW51ZTtcbiAgICB9XG5cbiAgICBjb25zdCBwYXJhZ3JhcGhLZXkgPSBpbmRleDtcbiAgICBjb25zdCBwYXJhZ3JhcGg6IHN0cmluZ1tdID0gW107XG4gICAgd2hpbGUgKFxuICAgICAgaW5kZXggPCBsaW5lcy5sZW5ndGggJiZcbiAgICAgIGxpbmVzW2luZGV4XS50cmltKCkgJiZcbiAgICAgICEvXigjezEsNn0pXFxzKy8udGVzdChsaW5lc1tpbmRleF0pICYmXG4gICAgICAhL15cXHMqLVxccysvLnRlc3QobGluZXNbaW5kZXhdKSAmJlxuICAgICAgIWxpbmVzW2luZGV4XS50cmltKCkuc3RhcnRzV2l0aCgnfCcpXG4gICAgKSB7XG4gICAgICBwYXJhZ3JhcGgucHVzaChsaW5lc1tpbmRleF0udHJpbSgpKTtcbiAgICAgIGluZGV4ICs9IDE7XG4gICAgfVxuICAgIGJsb2Nrcy5wdXNoKDxwIGtleT17cGFyYWdyYXBoS2V5fT57cmVuZGVySW5saW5lKHBhcmFncmFwaC5qb2luKCcgJykpfTwvcD4pO1xuICB9XG5cbiAgcmV0dXJuIDxkaXYgY2xhc3NOYW1lPVwiZG9jdW1lbnRhdGlvbk1hcmtkb3duXCI+e2Jsb2Nrc308L2Rpdj47XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBEb2N1bWVudGF0aW9uTW9kYWwoKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBpZD1cImRvY3VtZW50YXRpb25Nb2RhbFwiIGNsYXNzTmFtZT1cIm1vZGFsIG1vZGFsLS1kb2N1bWVudGF0aW9uIGhpZGRlblwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJtb2RhbF9fYmFja2Ryb3BcIiBkYXRhLW1vZGFsLWNsb3NlPVwiMVwiPjwvZGl2PlxuICAgICAgPGRpdlxuICAgICAgICBjbGFzc05hbWU9XCJtb2RhbF9fY2FyZCBtb2RhbF9fY2FyZC0tZG9jdW1lbnRhdGlvbiBzdXJmYWNlLWNhcmRcIlxuICAgICAgICByb2xlPVwiZGlhbG9nXCJcbiAgICAgICAgYXJpYS1tb2RhbD1cInRydWVcIlxuICAgICAgICBhcmlhLWxhYmVsbGVkYnk9XCJkb2N1bWVudGF0aW9uTW9kYWxUaXRsZVwiXG4gICAgICA+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX2hlYWRlciBkb2N1bWVudGF0aW9uTW9kYWxfX2hlYWRlclwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX3RpdGxlXCIgaWQ9XCJkb2N1bWVudGF0aW9uTW9kYWxUaXRsZVwiPkZ1bmN0aW9uYWxpdHk8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJkb2N1bWVudGF0aW9uTW9kYWxfX2NvbnRlbnRcIj5cbiAgICAgICAgICA8ZGl2IGlkPVwiZnVuY3Rpb25hbGl0eURvY3VtZW50XCI+PE1hcmtkb3duRG9jdW1lbnQgc291cmNlPXtmdW5jdGlvbmFsaXR5TWFya2Rvd259IC8+PC9kaXY+XG4gICAgICAgICAgPGRpdiBpZD1cImNoYW5nZWxvZ0RvY3VtZW50XCIgY2xhc3NOYW1lPVwiaGlkZGVuXCI+PE1hcmtkb3duRG9jdW1lbnQgc291cmNlPXtjaGFuZ2Vsb2dNYXJrZG93bn0gLz48L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtb2RhbF9fYWN0aW9ucyBkb2N1bWVudGF0aW9uTW9kYWxfX2FjdGlvbnNcIj5cbiAgICAgICAgICA8YnV0dG9uIGlkPVwiYnRuQ2xvc2VEb2N1bWVudGF0aW9uXCIgY2xhc3NOYW1lPVwiYnRuIGJ0bi0tcHJpbWFyeVwiIHR5cGU9XCJidXR0b25cIj5DbG9zZTwvYnV0dG9uPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICApO1xufVxuIl0sImZpbGUiOiJDOi9Vc2Vycy9HaWdhR2VvcmdlL0Rlc2t0b3Avd2lsbG93LXJlYWN0LXZpdGUtdGVzdF8xLjQuMC9zcmMvY29tcG9uZW50cy9Eb2N1bWVudGF0aW9uTW9kYWwudHN4In0=

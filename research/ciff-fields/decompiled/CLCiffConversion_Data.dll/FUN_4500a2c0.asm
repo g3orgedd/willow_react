@@ -1,0 +1,8 @@
+4500a2c0 PUSH EBP
+4500a2c1 MOV EBP,ESP
+4500a2c3 MOV EAX,dword ptr [EBP + 0x8]
+4500a2c6 MOV EDX,dword ptr [EBP + 0xc]
+4500a2c9 MOV dword ptr [EAX],EDX
+4500a2cb MOV dword ptr [EAX + 0x4],ECX
+4500a2ce POP EBP
+4500a2cf RET 0x8

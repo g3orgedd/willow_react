@@ -1,0 +1,198 @@
+{
+  "runs": [
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/make-native-inputs.cjs"
+      ],
+      "startedUtc": "2026-10-20T22:01:16.837Z",
+      "finishedUtc": "2026-10-20T22:01:16.889Z",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/native-com-oracle.ps1"
+      ],
+      "startedUtc": "2026-10-20T22:01:16.891Z",
+      "finishedUtc": "2026-10-20T22:01:17.690Z",
+      "exitCode": 0,
+      "stdout": "{\r\n    \"cases\":  13,\r\n    \"ok\":  13,\r\n    \"errors\":  0\r\n}\r\n",
+      "stderr": ""
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/make-resolved-inputs.cjs"
+      ],
+      "startedUtc": "2026-10-20T22:01:17.691Z",
+      "finishedUtc": "2026-10-20T22:01:17.742Z",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/native-resolved-oracle.ps1"
+      ],
+      "startedUtc": "2026-10-20T22:01:17.743Z",
+      "finishedUtc": "2026-10-20T22:01:18.960Z",
+      "exitCode": 0,
+      "stdout": "{\r\n    \"cases\":  10,\r\n    \"ok\":  10,\r\n    \"errors\":  0\r\n}\r\n",
+      "stderr": ""
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/native-resolved-reload.ps1"
+      ],
+      "startedUtc": "2026-10-20T22:01:18.961Z",
+      "finishedUtc": "2026-10-20T22:01:19.697Z",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "python",
+      "args": [
+        "research/clst/implementation-2026-10-21/verify-native-machine.py"
+      ],
+      "startedUtc": "2026-10-20T22:01:19.698Z",
+      "finishedUtc": "2026-10-20T22:01:43.827Z",
+      "exitCode": 0,
+      "stdout": "{\"cipher\":{\"total\":206,\"matched\":206,\"failures\":[]},\"randomIndex\":{\"total\":438,\"matched\":438,\"failures\":[]},\"sourceHashes\":{\"public/modules/clst/encryption.js\":\"d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d\",\"public/modules/clst/tag-data.js\":\"e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d\"}}\r\n",
+      "stderr": ""
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/prepare-production-emission.cjs"
+      ],
+      "startedUtc": "2026-10-20T22:01:43.828Z",
+      "finishedUtc": "2026-10-20T22:01:43.965Z",
+      "exitCode": 0,
+      "stdout": "{\"nativeGeneratedCases\":13,\"exactMatched\":13,\"emitted\":52}\n",
+      "stderr": ""
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/validate-production-files.ps1"
+      ],
+      "startedUtc": "2026-10-20T22:01:43.965Z",
+      "finishedUtc": "2026-10-20T22:01:44.946Z",
+      "exitCode": 0,
+      "stdout": "{\r\n    \"cases\":  52,\r\n    \"ok\":  39,\r\n    \"rejected\":  13,\r\n    \"errors\":  0,\r\n    \"expectedVerdicts\":  52\r\n}\r\n",
+      "stderr": ""
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/verify-production-native.cjs"
+      ],
+      "startedUtc": "2026-10-20T22:01:44.947Z",
+      "finishedUtc": "2026-10-20T22:01:45.075Z",
+      "exitCode": 0,
+      "stdout": "{\"accepted\":39,\"negativeControlsRejected\":13,\"allOriginalRegenerationsRecomposed\":true}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/save-through-production.cjs"
+      ],
+      "startedUtc": "2026-10-20T22:01:45.076Z",
+      "finishedUtc": "2026-10-20T22:01:45.613Z",
+      "exitCode": 0,
+      "stdout": "{\"cases\":43,\"saved\":43,\"failures\":[]}\n",
+      "stderr": ""
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/validate-production-files.ps1",
+        "-InputFile",
+        "research/clst/implementation-2026-10-21/saved-production-inputs.json",
+        "-OutputFile",
+        "research/clst/implementation-2026-10-21/saved-native-validation.json"
+      ],
+      "startedUtc": "2026-10-20T22:01:45.614Z",
+      "finishedUtc": "2026-10-20T22:01:46.533Z",
+      "exitCode": 0,
+      "stdout": "{\r\n    \"cases\":  43,\r\n    \"ok\":  43,\r\n    \"rejected\":  0,\r\n    \"errors\":  0,\r\n    \"expectedVerdicts\":  43\r\n}\r\n",
+      "stderr": ""
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/verify-saved-native.cjs"
+      ],
+      "startedUtc": "2026-10-20T22:01:46.534Z",
+      "finishedUtc": "2026-10-20T22:01:46.713Z",
+      "exitCode": 0,
+      "stdout": "{\"accepted\":43,\"calculatedDataUnchanged\":true,\"preparedRawSnapshotsAndOriginalRegenerationsMatch\":true}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/prepare-import-probes.cjs"
+      ],
+      "startedUtc": "2026-10-20T22:01:46.714Z",
+      "finishedUtc": "2026-10-20T22:01:46.792Z",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/native-import-probes.ps1"
+      ],
+      "startedUtc": "2026-10-20T22:01:46.793Z",
+      "finishedUtc": "2026-10-20T22:01:47.519Z",
+      "exitCode": 0,
+      "stdout": "[\r\n    {\r\n        \"name\":  \"first-subimage-charref-cr\",\r\n        \"before\":  [\r\n                       {\r\n                           \"subImageIndex\":  1,\r\n                           \"index\":  1,\r\n                           \"fieldType\":  0,\r\n                           \"displayed\":  1,\r\n                           \"name\":  \"FIRST\",\r\n                           \"calculatedDataUnits\":  [\r\n                                                       65,\r\n                                                       10,\r\n                                                       66\r\n                                                   ]\r\n                       }\r\n                   ],\r\n        \"after\":  [\r\n                      {\r\n                          \"subImageIndex\":  1,\r\n                          \"index\":  1,\r\n                          \"fieldType\":  0,\r\n                          \"displayed\":  1,\r\n                          \"name\":  \"FIRST\",\r\n                          \"calculatedDataUnits\":  [\r\n                                                      117,\r\n                                                      110,\r\n                                                      117,\r\n                                                      115,\r\n                                                      101,\r\n                                                      100\r\n                                                  ]\r\n                      }\r\n                  ],\r\n        \"properties\":  [\r\n                           {\r\n                               \"field\":  1,\r\n                               \"userUnits\":  null,\r\n                               \"subImage\":  1,\r\n                               \"defaultUnits\":  [\r\n                                                    117,\r\n                                                    110,\r\n                                                    117,\r\n                                                    115,\r\n                                                    101,\r\n                                                    100\r\n                                                ],\r\n                               \"index\":  1\r\n                           }\r\n                       ]\r\n    },\r\n    {\r\n        \"name\":  \"first-default-charref-cr\",\r\n        \"before\":  [\r\n                       {\r\n                           \"subImageIndex\":  1,\r\n                           \"index\":  1,\r\n                           \"fieldType\":  0,\r\n                           \"displayed\":  1,\r\n                           \"name\":  \"FIRST\",\r\n                           \"calculatedDataUnits\":  [\r\n                                                       115,\r\n                                                       116,\r\n                                                       97,\r\n                                                       108,\r\n                                                       101\r\n                                                   ]\r\n                       }\r\n                   ],\r\n        \"after\":  [\r\n                      {\r\n                          \"subImageIndex\":  1,\r\n                          \"index\":  1,\r\n                          \"fieldType\":  0,\r\n                          \"displayed\":  1,\r\n                          \"name\":  \"FIRST\",\r\n                          \"calculatedDataUnits\":  [\r\n                                                      68,\r\n                                                      10,\r\n                                                      69\r\n                                                  ]\r\n                      }\r\n                  ],\r\n        \"properties\":  [\r\n                           {\r\n                               \"field\":  1,\r\n                               \"userUnits\":  null,\r\n                               \"subImage\":  1,\r\n                               \"defaultUnits\":  [\r\n                                                    68,\r\n                                                    10,\r\n                                                    69\r\n                                                ],\r\n                               \"index\":  1\r\n                           }\r\n                       ]\r\n    },\r\n    {\r\n        \"name\":  \"first-user-charref-cr\",\r\n        \"before\":  [\r\n                       {\r\n                           \"subImageIndex\":  1,\r\n                           \"index\":  1,\r\n                           \"fieldType\":  0,\r\n                           \"displayed\":  1,\r\n                           \"name\":  \"FIRST\",\r\n                           \"calculatedDataUnits\":  [\r\n                                                       115,\r\n                                                       116,\r\n                                                       97,\r\n                                                       108,\r\n                                                       101\r\n                                                   ]\r\n                       }\r\n                   ],\r\n        \"after\":  [\r\n                      {\r\n                          \"subImageIndex\":  1,\r\n                          \"index\":  1,\r\n                          \"fieldType\":  0,\r\n                          \"displayed\":  1,\r\n                          \"name\":  \"FIRST\",\r\n                          \"calculatedDataUnits\":  [\r\n                                                      85,\r\n                                                      10,\r\n                                                      86\r\n                                                  ]\r\n                      }\r\n                  ],\r\n        \"properties\":  [\r\n                           {\r\n                               \"field\":  1,\r\n                               \"userUnits\":  [\r\n                                                 85,\r\n                                                 10,\r\n                                                 86\r\n                                             ],\r\n                               \"subImage\":  1,\r\n                               \"defaultUnits\":  [\r\n                                                    68,\r\n                                                    69,\r\n                                                    70,\r\n                                                    65,\r\n                                                    85,\r\n                                                    76,\r\n                                                    84\r\n                                                ],\r\n                               \"index\":  1\r\n                           }\r\n                       ]\r\n    },\r\n    {\r\n        \"name\":  \"second-subimage-literal-crlf\",\r\n        \"before\":  [\r\n                       {\r\n                           \"subImageIndex\":  1,\r\n                           \"index\":  1,\r\n                           \"fieldType\":  0,\r\n                           \"displayed\":  1,\r\n                           \"name\":  \"FIRST\",\r\n                           \"calculatedDataUnits\":  [\r\n                                                       70,\r\n                                                       73,\r\n                                                       82,\r\n                                                       83,\r\n                                                       84\r\n                                                   ]\r\n                       },\r\n                       {\r\n                           \"subImageIndex\":  2,\r\n                           \"index\":  1,\r\n                           \"fieldType\":  0,\r\n                           \"displayed\":  1,\r\n                           \"name\":  \"SECOND\",\r\n                           \"calculatedDataUnits\":  [\r\n                                                       65,\r\n                                                       10,\r\n                                                       66\r\n                                                   ]\r\n                       }\r\n                   ],\r\n        \"after\":  [\r\n                      {\r\n                          \"subImageIndex\":  1,\r\n                          \"index\":  1,\r\n                          \"fieldType\":  0,\r\n                          \"displayed\":  1,\r\n                          \"name\":  \"FIRST\",\r\n                          \"calculatedDataUnits\":  [\r\n                                                      70,\r\n                                                      73,\r\n                                                      82,\r\n                                                      83,\r\n                                                      84\r\n                                                  ]\r\n                      },\r\n                      {\r\n                          \"subImageIndex\":  2,\r\n                          \"index\":  1,\r\n                          \"fieldType\":  0,\r\n                          \"displayed\":  1,\r\n                          \"name\":  \"SECOND\",\r\n                          \"calculatedDataUnits\":  [\r\n                                                      117,\r\n                                                      110,\r\n                                                      117,\r\n                                                      115,\r\n                                                      101,\r\n                                                      100\r\n                                                  ]\r\n                      }\r\n                  ],\r\n        \"properties\":  [\r\n                           {\r\n                               \"field\":  1,\r\n                               \"userUnits\":  null,\r\n                               \"subImage\":  1,\r\n                               \"defaultUnits\":  [\r\n                                                    70,\r\n                                                    73,\r\n                                                    82,\r\n                                                    83,\r\n                                                    84\r\n                                                ],\r\n                               \"index\":  1\r\n                           },\r\n                           {\r\n                               \"field\":  1,\r\n                               \"userUnits\":  null,\r\n                               \"subImage\":  2,\r\n                               \"defaultUnits\":  [\r\n                                                    117,\r\n                                                    110,\r\n                                                    117,\r\n                                                    115,\r\n                                                    101,\r\n                                                    100\r\n                                                ],\r\n                               \"index\":  1\r\n                           }\r\n                       ]\r\n    },\r\n    {\r\n        \"name\":  \"second-subimage-charref-cr\",\r\n        \"before\":  [\r\n                       {\r\n                           \"subImageIndex\":  1,\r\n                           \"index\":  1,\r\n                           \"fieldType\":  0,\r\n                           \"displayed\":  1,\r\n                           \"name\":  \"FIRST\",\r\n                           \"calculatedDataUnits\":  [\r\n                                                       70,\r\n                                                       73,\r\n                                                       82,\r\n                                                       83,\r\n                                                       84\r\n                                                   ]\r\n                       },\r\n                       {\r\n                           \"subImageIndex\":  2,\r\n                           \"index\":  1,\r\n                           \"fieldType\":  0,\r\n                           \"displayed\":  1,\r\n                           \"name\":  \"SECOND\",\r\n                           \"calculatedDataUnits\":  [\r\n                                                       65,\r\n                                                       10,\r\n                                                       66\r\n                                                   ]\r\n                       }\r\n                   ],\r\n        \"after\":  [\r\n                      {\r\n                          \"subImageIndex\":  1,\r\n                          \"index\":  1,\r\n                          \"fieldType\":  0,\r\n                          \"displayed\":  1,\r\n                          \"name\":  \"FIRST\",\r\n                          \"calculatedDataUnits\":  [\r\n                                                      70,\r\n                                                      73,\r\n                                                      82,\r\n                                                      83,\r\n                                                      84\r\n                                                  ]\r\n                      },\r\n                      {\r\n                          \"subImageIndex\":  2,\r\n                          \"index\":  1,\r\n                          \"fieldType\":  0,\r\n                          \"displayed\":  1,\r\n                          \"name\":  \"SECOND\",\r\n                          \"calculatedDataUnits\":  [\r\n                                                      117,\r\n                                                      110,\r\n                                                      117,\r\n                                                      115,\r\n                                                      101,\r\n                                                      100\r\n                                                  ]\r\n                      }\r\n                  ],\r\n        \"properties\":  [\r\n                           {\r\n                               \"field\":  1,\r\n                               \"userUnits\":  null,\r\n                               \"subImage\":  1,\r\n                               \"defaultUnits\":  [\r\n                                                    70,\r\n                                                    73,\r\n                                                    82,\r\n                                                    83,\r\n                                                    84\r\n                                                ],\r\n                               \"index\":  1\r\n                           },\r\n                           {\r\n                               \"field\":  1,\r\n                               \"userUnits\":  null,\r\n                               \"subImage\":  2,\r\n                               \"defaultUnits\":  [\r\n                                                    117,\r\n                                                    110,\r\n                                                    117,\r\n                                                    115,\r\n                                                    101,\r\n                                                    100\r\n                                                ],\r\n                               \"index\":  1\r\n                           }\r\n                       ]\r\n    }\r\n]\r\n",
+      "stderr": ""
+    },
+    {
+      "command": "node",
+      "args": [
+        "--test",
+        "tests/clst-dll-equivalence.test.cjs"
+      ],
+      "startedUtc": "2026-10-20T22:01:47.520Z",
+      "finishedUtc": "2026-10-20T22:01:48.243Z",
+      "exitCode": 0,
+      "stdout": "✔ production transform matches 206 executions of original installed DLL instructions (46.6443ms)\n✔ production reseeded selection RNG matches 438 executions of original MSVCRT path (1.6868ms)\n✔ complete core matches actual COM generator across native collections and UTF16 edges (15.9804ms)\n✔ prepared source selection and padding match original COM reload and ResolveField (104.9356ms)\n✔ imported CalcData, Default and UserEnterData match original DLL character-reference normalization (15.4075ms)\n✔ production save regenerates tokens already accepted by original COM load and both validators (410.398ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 665.2335\n",
+      "stderr": ""
+    }
+  ]
+}

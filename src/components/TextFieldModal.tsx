@@ -12,18 +12,20 @@ type TextPresetCard = {
 
 const TEXT_PRESET_CARDS: TextPresetCard[] = [
   { id: 'gtin', name: 'GTIN', value: '00000000000000', mode: 'user', maxCharacters: '14', printed: false },
+  { id: 'gtin2', name: 'GTIN2', value: '00000000000000', mode: 'user', maxCharacters: '14', printed: false },
+  { id: 'box_counter', name: 'BOX_COUNTER', value: '00000', mode: 'user', maxCharacters: '5', printed: false },
   { id: 'kripto', name: 'KRIPTO', value: '0000', mode: 'user', maxCharacters: '4', printed: false },
   { id: 'kripto2', name: 'KRIPTO2', value: '00000000000000000000000000000000000000000000', mode: 'user', maxCharacters: '44', printed: false },
   { id: 'sn', name: 'SN', values: ['000000', '0000000000000'], mode: 'user', maxCharacters: '6 / 13', printed: false },
-  { id: 'c1', name: 'С1', value: '~101', mode: 'fixed', maxCharacters: '4', printed: false },
-  { id: 'c2', name: 'С2', value: '21', mode: 'fixed', maxCharacters: '2', printed: false },
-  { id: 'c3', name: 'С3', values: ['~d02991', '~d02993'], mode: 'fixed', maxCharacters: '7', printed: false },
+  { id: 'c1', name: 'C1', value: '~101', mode: 'fixed', maxCharacters: '4', printed: false },
+  { id: 'c2', name: 'C2', value: '21', mode: 'fixed', maxCharacters: '2', printed: false },
+  { id: 'c3', name: 'C3', values: ['~d02991', '~d02993'], mode: 'fixed', maxCharacters: '7', printed: false },
   { id: 'c4', name: 'C4', value: '~d02992', mode: 'fixed', maxCharacters: '7', printed: false },
   { id: 'product_date', name: 'PRODUCT_DATE', value: '0000000000', mode: 'user', maxCharacters: '—', printed: true },
   { id: 'packing_date', name: 'PACKING_DATE', value: '0000000000', mode: 'user', maxCharacters: '—', printed: true },
   { id: 'expiration_date', name: 'EXPIRATION_DATE', value: '0000000000', mode: 'user', maxCharacters: '—', printed: true },
-  { id: 'party', name: 'PARTY', value: '00000', mode: 'user', maxCharacters: '—', printed: true },
-  { id: 'r_num', name: 'R_NUM', value: '00000', mode: 'user', maxCharacters: '—', printed: true },
+  { id: 'party', name: 'PARTY', value: '00000000', mode: 'user', maxCharacters: '—', printed: true },
+  { id: 'r_num', name: 'R_NUM', value: '000', mode: 'user', maxCharacters: '—', printed: true },
   { id: 'team', name: 'TEAM', value: '00', mode: 'user', maxCharacters: '—', printed: true },
 ];
 
@@ -112,10 +114,10 @@ export function TextFieldModal() {
             ))}
           </div>
 
-          <div id="textFieldPresetError" className="note textFieldModal__error" aria-live="polite"></div>
         </div>
 
         <div className="modal__actions textFieldModal__actions">
+          <div id="textFieldPresetError" className="note textFieldModal__error" aria-live="polite"></div>
           <button id="btnCancelTextField" className="btn btn--text" type="button">Cancel</button>
           <button id="btnConfirmTextField" className="btn btn--primary" type="button">Add</button>
         </div>

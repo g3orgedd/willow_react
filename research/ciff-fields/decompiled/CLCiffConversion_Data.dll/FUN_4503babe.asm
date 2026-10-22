@@ -1,0 +1,2 @@
+4503babe MOV ECX,dword ptr [EBP + 0x8]
+4503bac1 JMP 0x45002256

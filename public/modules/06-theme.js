@@ -1,4 +1,4 @@
-const UI_THEME_STORAGE_KEY = "willowXml.uiTheme";
+const UI_THEME_STORAGE_KEY = "glyphXml.uiTheme";
 const UI_THEME_OPTIONS = ["system", "light", "dark"];
 const uiThemeChangeListeners = new Set();
 const systemDarkThemeQuery = globalThis.matchMedia?.("(prefers-color-scheme: dark)") ?? null;

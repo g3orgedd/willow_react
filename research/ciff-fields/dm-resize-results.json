@@ -1,0 +1,78 @@
+{
+    "source":  "Original CLCSSmallBarcode.dll routine 4204a286",
+    "capabilitySource":  "Explicit test stub for XRes/YRes, not an actual printer profile",
+    "cases":  [
+                  {
+                      "requestedWidth":  1100,
+                      "requestedHeight":  1100,
+                      "quietMargins":  0,
+                      "symbolSizeIndex":  6,
+                      "xRes":  0.12,
+                      "yRes":  0.12,
+                      "moduleSize":  50,
+                      "width":  1100,
+                      "height":  1100,
+                      "bcH":  1100
+                  },
+                  {
+                      "requestedWidth":  1000,
+                      "requestedHeight":  1000,
+                      "quietMargins":  0,
+                      "symbolSizeIndex":  6,
+                      "xRes":  0.12,
+                      "yRes":  0.12,
+                      "moduleSize":  42,
+                      "width":  924,
+                      "height":  924,
+                      "bcH":  924
+                  },
+                  {
+                      "requestedWidth":  500,
+                      "requestedHeight":  500,
+                      "quietMargins":  0,
+                      "symbolSizeIndex":  6,
+                      "xRes":  0.12,
+                      "yRes":  0.12,
+                      "moduleSize":  17,
+                      "width":  374,
+                      "height":  374,
+                      "bcH":  374
+                  },
+                  {
+                      "requestedWidth":  1100,
+                      "requestedHeight":  1100,
+                      "quietMargins":  1,
+                      "symbolSizeIndex":  6,
+                      "xRes":  0.12,
+                      "yRes":  0.12,
+                      "moduleSize":  42,
+                      "width":  1092,
+                      "height":  1092,
+                      "bcH":  1092
+                  },
+                  {
+                      "requestedWidth":  1000,
+                      "requestedHeight":  1000,
+                      "quietMargins":  1,
+                      "symbolSizeIndex":  6,
+                      "xRes":  0.12,
+                      "yRes":  0.12,
+                      "moduleSize":  33,
+                      "width":  858,
+                      "height":  858,
+                      "bcH":  858
+                  },
+                  {
+                      "requestedWidth":  500,
+                      "requestedHeight":  500,
+                      "quietMargins":  1,
+                      "symbolSizeIndex":  6,
+                      "xRes":  0.12,
+                      "yRes":  0.12,
+                      "moduleSize":  17,
+                      "width":  442,
+                      "height":  442,
+                      "bcH":  442
+                  }
+              ]
+}

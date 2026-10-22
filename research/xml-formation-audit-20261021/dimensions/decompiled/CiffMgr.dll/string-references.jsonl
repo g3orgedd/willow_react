@@ -1,0 +1,1194 @@
+{"address":"68147370","value":"generic","refs":[{"from":"6810206c","function":"6810206c"}]}
+{"address":"68147378","value":"unknown error","refs":[{"from":"68101ffc","function":"68101fe1"},{"from":"6810205a","function":"6810203f"},{"from":"68101ff4","function":"68101fe1"},{"from":"68102052","function":"6810203f"}]}
+{"address":"681473a4","value":"iostream","refs":[{"from":"68102072","function":"68102072"}]}
+{"address":"681473b0","value":"iostream stream error","refs":[{"from":"6810201f","function":"6810200e"}]}
+{"address":"681473e4","value":"system","refs":[{"from":"68102078","function":"68102078"}]}
+{"address":"681473f8","value":"string too long","refs":[{"from":"68105806","function":"681057a9"},{"from":"68101d05","function":"68101cad"}]}
+{"address":"68147408","value":"invalid string position","refs":[{"from":"68105c13","function":"68105b8b"},{"from":"68105d08","function":"68105ce0"},{"from":"68105d8c","function":"68105d13"},{"from":"68101e18","function":"68101d8f"},{"from":"68101f3c","function":"68101f18"},{"from":"68101fbe","function":"68101f47"}]}
+{"address":"681474a4","value":"CLARiTYConfig","refs":[{"from":"68101024","function":null}]}
+{"address":"681474d0","value":"\\MSXML3.DLL","refs":[{"from":"68102578","function":"68102520"}]}
+{"address":"681474e8","value":"DllRegisterServer","refs":[{"from":"681025a6","function":"68102520"}]}
+{"address":"68147500","value":"%s has not been installed correctly. (failed to create MSXML.dll [%d])\n %s can still run but parameter names and values will be displayed incorrectly.\nInstalling Internet Explorer 5.0 or later will solve this problem.","refs":[{"from":"681025e8","function":"68102520"}]}
+{"address":"681476bc","value":"Param","refs":[{"from":"6811fa17","function":"6811f8ca"},{"from":"6811c54c","function":"6811c26c"},{"from":"6812677d","function":"68126560"},{"from":"6812acc7","function":"6812ab09"},{"from":"681600ec","function":null},{"from":"6815ff04","function":null}]}
+{"address":"68147808","value":"vector<T> too long","refs":[{"from":"681136ed","function":"681136ca"},{"from":"68105886","function":"6810583c"},{"from":"68116233","function":"681161f3"},{"from":"681047f5","function":"681047b5"}]}
+{"address":"68147898","value":"9999","refs":[{"from":"6812be22","function":"6812bb40"},{"from":"68104d61","function":"68104d1c"}]}
+{"address":"68147918","value":"EN-GB","refs":[{"from":"68107e67","function":"68107e2a"},{"from":"6811c0a0","function":"6811bf88"},{"from":"68126886","function":"68126560"},{"from":"68106ed2","function":"68106e75"}]}
+{"address":"681479f3","value":"Flist<T> too long","refs":[]}
+{"address":"681484f4","value":"Component Categories","refs":[{"from":"6814862c","function":null}]}
+{"address":"68148520","value":"FileType","refs":[{"from":"68148630","function":null}]}
+{"address":"68148534","value":"Interface","refs":[{"from":"68148634","function":null}]}
+{"address":"68148548","value":"Hardware","refs":[{"from":"68148638","function":null}]}
+{"address":"6814855c","value":"Mime","refs":[{"from":"6814863c","function":null}]}
+{"address":"68148570","value":"SECURITY","refs":[{"from":"68148644","function":null}]}
+{"address":"68148584","value":"SYSTEM","refs":[{"from":"68148648","function":null}]}
+{"address":"68148594","value":"Software","refs":[{"from":"6814864c","function":null}]}
+{"address":"681485a8","value":"TypeLib","refs":[{"from":"68148650","function":null}]}
+{"address":"681485b8","value":"CLSID","refs":[{"from":"6810d055","function":"6810d04c"},{"from":"68128b00","function":"68128924"},{"from":"68148628","function":null},{"from":"6815fce0","function":null}]}
+{"address":"681485c4","value":"AppID","refs":[{"from":"6810d055","function":"6810d04c"},{"from":"68148624","function":null}]}
+{"address":"681485e8","value":"ForceRemove","refs":[{"from":"6810e181","function":"6810e0ec"}]}
+{"address":"68148600","value":"NoRemove","refs":[{"from":"6810e270","function":"6810e0ec"}]}
+{"address":"68148614","value":"Delete","refs":[{"from":"6810e16c","function":"6810e0ec"}]}
+{"address":"681486a0","value":"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!_","refs":[{"from":"6810a991","function":"6810a989"}]}
+{"address":"6814872c","value":"TagData","refs":[{"from":"6810a9e9","function":"6810a9b5"}]}
+{"address":"6814873c","value":"spaRtNoyAK","refs":[{"from":"6810a9fd","function":"6810a9b5"}]}
+{"address":"68148b48","value":"Generic","refs":[{"from":"68129c82","function":"68129bfc"},{"from":"6810a837","function":"6810a7da"}]}
+{"address":"68148b58","value":"CLARiSOFT","refs":[{"from":"68129cdf","function":"68129bfc"},{"from":"6810a84b","function":"6810a7da"}]}
+{"address":"68149668","value":"Advapi32.dll","refs":[{"from":"6810d334","function":"6810d312"},{"from":"6810dc99","function":"6810dc8e"},{"from":"6810dcfe","function":"6810dcf1"},{"from":"6810dd4e","function":"6810dd43"}]}
+{"address":"68149684","value":"RegOpenKeyTransactedW","refs":[{"from":"6810dd5d","function":"6810dd43"}]}
+{"address":"6814969c","value":"RegCreateKeyTransactedW","refs":[{"from":"6810dca8","function":"6810dc8e"}]}
+{"address":"681496b4","value":"RegDeleteKeyTransactedW","refs":[{"from":"6810dd0d","function":"6810dcf1"}]}
+{"address":"68149708","value":"RegDeleteKeyExW","refs":[{"from":"6810d343","function":"6810d312"}]}
+{"address":"681497a8","value":"HKCR","refs":[{"from":"6810d5cb","function":"6810d5c5"},{"from":"6810d95b","function":"6810d8cc"},{"from":"68149738","function":null}]}
+{"address":"681497b4","value":"HKCU","refs":[{"from":"6810d5cb","function":"6810d5c5"},{"from":"68149740","function":null}]}
+{"address":"681497f8","value":"HKEY_CLASSES_ROOT","refs":[]}
+{"address":"6814981c","value":"HKEY_CURRENT_USER","refs":[]}
+{"address":"68149840","value":"HKEY_LOCAL_MACHINE","refs":[]}
+{"address":"68149868","value":"HKEY_USERS","refs":[]}
+{"address":"68149880","value":"HKEY_PERFORMANCE_DATA","refs":[]}
+{"address":"681498ac","value":"HKEY_DYN_DATA","refs":[]}
+{"address":"681498c8","value":"HKEY_CURRENT_CONFIG","refs":[]}
+{"address":"681498f0","value":"HKCU\r\n{\tSoftware\r\n\t{\r\n\t\tClasses","refs":[{"from":"6810d984","function":"6810d8cc"}]}
+{"address":"68149930","value":"\r\n\t}\r\n}\r\n","refs":[{"from":"6810da06","function":"6810d8cc"}]}
+{"address":"68149944","value":"Module","refs":[{"from":"6810ecbb","function":"6810eb7a"},{"from":"6810ee82","function":"6810ed3d"}]}
+{"address":"68149954","value":"Module_Raw","refs":[{"from":"6810ecd7","function":"6810eb7a"},{"from":"6810ee9e","function":"6810ed3d"}]}
+{"address":"6814996c","value":"REGISTRY","refs":[{"from":"6810ed14","function":"6810eb7a"},{"from":"6810eedf","function":"6810ed3d"}]}
+{"address":"681499a0","value":"CLSID\\","refs":[{"from":"6810cc0e","function":"6810cb05"},{"from":"6810ccfa","function":"6810cb05"}]}
+{"address":"681499b0","value":"\\Required Categories","refs":[{"from":"6810cc45","function":"6810cb05"}]}
+{"address":"681499dc","value":"\\Implemented Categories","refs":[{"from":"6810cd2c","function":"6810cb05"}]}
+{"address":"68149a0c","value":"OLEAUT32.DLL","refs":[{"from":"6810cf17","function":"6810cdfa"},{"from":"6810cfe2","function":"6810cf8f"}]}
+{"address":"68149a28","value":"UnRegisterTypeLibForUser","refs":[{"from":"6810cff1","function":"6810cf8f"}]}
+{"address":"68149a44","value":"RegisterTypeLibForUser","refs":[{"from":"6810cf26","function":"6810cdfa"}]}
+{"address":"68149aa0","value":"APPID","refs":[{"from":"6810c064","function":"6810c059"}]}
+{"address":"68149eb0","value":"Temp","refs":[{"from":"6810fb47","function":"6810fb17"}]}
+{"address":"6814a3d8","value":"Arial","refs":[{"from":"6812d210","function":"6812d1de"},{"from":"68110ef0","function":"68110eef"}]}
+{"address":"6814a80c","value":"OCRB","refs":[{"from":"681299f0","function":"681299bb"},{"from":"68110ec0","function":"68110ebf"}]}
+{"address":"6814af18","value":"{BB0561B2-C54F-11D4-A995-00010212D541}","refs":[{"from":"68128aec","function":"68128924"},{"from":"68110a9a","function":"68110a4d"},{"from":"68110b2a","function":"68110add"},{"from":"68110bba","function":"68110b6d"}]}
+{"address":"6814af68","value":"Not Logged","refs":[{"from":"68128e9f","function":"68128924"},{"from":"68110aab","function":"68110a4d"},{"from":"68110b3b","function":"68110add"},{"from":"68110bcb","function":"68110b6d"}]}
+{"address":"6814b598","value":"CurrentDate","refs":[{"from":"68117634","function":"681175ec"},{"from":"68127d9e","function":"68127601"},{"from":"68127d62","function":"68127601"},{"from":"6815fc84","function":null}]}
+{"address":"6814b838","value":"%02ld%02ld%02ld","refs":[{"from":"68118787","function":"6811861c"},{"from":"681191a7","function":"68118e92"}]}
+{"address":"6814b858","value":"%08X","refs":[{"from":"6811872f","function":"6811861c"}]}
+{"address":"6814b864","value":".new","refs":[{"from":"681183da","function":"681182fa"}]}
+{"address":"6814b870","value":"%s%s","refs":[{"from":"68118497","function":"681182fa"}]}
+{"address":"6814b87c","value":"%08x","refs":[{"from":"681184fa","function":"681182fa"}]}
+{"address":"6814b888","value":".ciff","refs":[{"from":"68118e40","function":"68118c55"}]}
+{"address":"6814b9fc","value":"Table containing Index Fields","refs":[{"from":"681272d6","function":"68127254"},{"from":"681272e5","function":"68127254"},{"from":"681272d1","function":"68127254"}]}
+{"address":"6814ba38","value":"ResetToDefaultVal","refs":[{"from":"6812fb77","function":"6812fb44"},{"from":"681601f0","function":null}]}
+{"address":"6814ba5c","value":"ContinueWithCurrentVal","refs":[{"from":"6812f81d","function":"6812f7ea"},{"from":"6812fb77","function":"6812fb44"},{"from":"68160200","function":null},{"from":"681601f4","function":null}]}
+{"address":"6814ba8c","value":"PromptForValue","refs":[]}
+{"address":"6814baac","value":"ResetToStartVal","refs":[{"from":"6812f81d","function":"6812f7ea"},{"from":"681601fc","function":null}]}
+{"address":"6814bad4","value":"CAL_GREGORIAN","refs":[{"from":"6812e9f9","function":"6812e9e2"},{"from":"6812e9fe","function":"6812e9e2"},{"from":"6812e9f4","function":"6812e9e2"},{"from":"6812ea5c","function":"6812ea38"}]}
+{"address":"6814bb10","value":"CAL_GREGORIAN_US","refs":[{"from":"6812ea17","function":"6812e9e2"},{"from":"6812e9fe","function":"6812e9e2"},{"from":"6812ea5c","function":"6812ea38"}]}
+{"address":"6814bb4c","value":"CAL_JAPAN","refs":[]}
+{"address":"6814bb88","value":"CAL_TAIWAN","refs":[]}
+{"address":"6814bbc4","value":"CAL_KOREA","refs":[]}
+{"address":"6814bc3c","value":"CAL_THAI","refs":[]}
+{"address":"6814bc78","value":"CAL_HEBREW","refs":[]}
+{"address":"6814bcb4","value":"CAL_GREGORIAN_ME_FRENCH","refs":[]}
+{"address":"6814bcf0","value":"CAL_GREGORIAN_ARABIC","refs":[]}
+{"address":"6814bd2c","value":"CAL_GREGORIAN_XLIT_ENGLISH","refs":[]}
+{"address":"6814bd68","value":"CAL_GREGORIAN_XLIT_FRENCH","refs":[]}
+{"address":"6814bda4","value":"DontCare","refs":[{"from":"6812ef3a","function":"6812ef23"},{"from":"6812ef3f","function":"6812ef23"},{"from":"6812ef35","function":"6812ef23"},{"from":"6812ef9d","function":"6812ef79"}]}
+{"address":"6814bdc0","value":"Roman","refs":[{"from":"6812ef58","function":"6812ef23"},{"from":"6812ef3f","function":"6812ef23"},{"from":"6812ef9d","function":"6812ef79"}]}
+{"address":"6814bddc","value":"Swiss","refs":[]}
+{"address":"6814bdf8","value":"Modern","refs":[]}
+{"address":"6814be14","value":"Script","refs":[]}
+{"address":"6814be30","value":"Decorative","refs":[]}
+{"address":"6814be8c","value":"Centre","refs":[{"from":"6812e943","function":"6812e914"},{"from":"6816020c","function":null}]}
+{"address":"6814be9c","value":"Full","refs":[{"from":"68160214","function":null}]}
+{"address":"6814bea8","value":"Below","refs":[{"from":"6812f066","function":"6812f048"},{"from":"68160218","function":null}]}
+{"address":"6814beb4","value":"Above","refs":[{"from":"6812f066","function":"6812f048"},{"from":"6816021c","function":null}]}
+{"address":"6814bec0","value":"Line","refs":[{"from":"6812f98a","function":"6812f94e"},{"from":"6812f003","function":"6812efa6"},{"from":"68160330","function":null},{"from":"68160220","function":null}]}
+{"address":"6814becc","value":"OutlineBox","refs":[{"from":"6812f98a","function":"6812f94e"},{"from":"68160224","function":null}]}
+{"address":"6814bee4","value":"FilledBox","refs":[{"from":"68160228","function":null}]}
+{"address":"6814bef8","value":"OutlineEllipse","refs":[{"from":"6816022c","function":null}]}
+{"address":"6814bf18","value":"FilledEllipse","refs":[{"from":"68160230","function":null}]}
+{"address":"6814bf34","value":"PolyLine","refs":[{"from":"68160234","function":null}]}
+{"address":"6814bf48","value":"Polygon","refs":[{"from":"68160238","function":null}]}
+{"address":"6814bf58","value":"FilledPolygon","refs":[{"from":"6816023c","function":null}]}
+{"address":"6814bf74","value":"High","refs":[{"from":"6812f5bc","function":"6812f589"},{"from":"68160240","function":null}]}
+{"address":"6814bf80","value":"Medium","refs":[{"from":"6812f5bc","function":"6812f589"},{"from":"68160244","function":null}]}
+{"address":"6814bfb8","value":"None","refs":[{"from":"6812eb4e","function":"6812eb30"},{"from":"6812ec23","function":"6812ec05"},{"from":"68160458","function":null},{"from":"6816026c","function":null}]}
+{"address":"6814bfcc","value":"UseDefault","refs":[{"from":"6812f4cc","function":"6812f499"},{"from":"68160280","function":null}]}
+{"address":"6814bfe4","value":"UseCurrent","refs":[{"from":"6812f4cc","function":"6812f499"},{"from":"68160284","function":null}]}
+{"address":"6814bffc","value":"UseBlank","refs":[]}
+{"address":"6814c010","value":"Before","refs":[{"from":"6812ea7c","function":"6812ea65"},{"from":"6816028c","function":null}]}
+{"address":"6814c020","value":"After","refs":[{"from":"6812ea7c","function":"6812ea65"},{"from":"68160290","function":null}]}
+{"address":"6814c02c","value":"TopLeft","refs":[{"from":"6812f310","function":"6812f2c7"},{"from":"68160294","function":null}]}
+{"address":"6814c03c","value":"TopCentre","refs":[{"from":"6812f310","function":"6812f2c7"},{"from":"68160298","function":null}]}
+{"address":"6814c050","value":"TopRight","refs":[{"from":"6816029c","function":null}]}
+{"address":"6814c064","value":"MiddleLeft","refs":[{"from":"681602a0","function":null}]}
+{"address":"6814c07c","value":"MiddleCentre","refs":[{"from":"681602a4","function":null}]}
+{"address":"6814c098","value":"MiddleRight","refs":[{"from":"681602a8","function":null}]}
+{"address":"6814c0b0","value":"BottomLeft","refs":[{"from":"681602ac","function":null}]}
+{"address":"6814c0c8","value":"BottomCentre","refs":[{"from":"681602b0","function":null}]}
+{"address":"6814c0e4","value":"BottomRight","refs":[{"from":"681602b4","function":null}]}
+{"address":"6814c0fc","value":"BaselineLeft","refs":[{"from":"681602b8","function":null}]}
+{"address":"6814c118","value":"BaselineCentre","refs":[{"from":"681602bc","function":null}]}
+{"address":"6814c138","value":"BaselineRight","refs":[{"from":"681602c0","function":null}]}
+{"address":"6814c180","value":"Auto","refs":[{"from":"681602f8","function":null}]}
+{"address":"6814c18c","value":"Truncated","refs":[{"from":"6812f3e7","function":"6812f3c9"},{"from":"68160300","function":null}]}
+{"address":"6814c1a0","value":"EAN128C1","refs":[{"from":"6812f384","function":"6812f355"},{"from":"68160308","function":null}]}
+{"address":"6814c1b4","value":"EAN128C2","refs":[{"from":"6816030c","function":null}]}
+{"address":"6814c1c8","value":"EAN128C0","refs":[{"from":"68160310","function":null}]}
+{"address":"6814c1e0","value":"ImageDesign","refs":[{"from":"681292c1","function":"68129209"},{"from":"6812e555","function":"6812e2f6"},{"from":"6812e7c6","function":"6812e6f0"},{"from":"6815fc3c","function":null}]}
+{"address":"6814c1f8","value":"Header","refs":[{"from":"68123c86","function":"68123a44"},{"from":"6812de28","function":"6812dc1c"},{"from":"6815fc40","function":null}]}
+{"address":"6814c208","value":"SubImage","refs":[{"from":"68123cfe","function":"68123a44"},{"from":"6812cbf1","function":"6812cad1"},{"from":"6815fc44","function":null}]}
+{"address":"6814c21c","value":"GenericSettings","refs":[{"from":"68123d6a","function":"68123a44"},{"from":"6812defe","function":"6812dc1c"},{"from":"6815fc48","function":null}]}
+{"address":"6814c23c","value":"Units","refs":[{"from":"68129da5","function":"68129bfc"},{"from":"6811f0df","function":"6811eef8"},{"from":"6815fc4c","function":null}]}
+{"address":"6814c248","value":"ErrorLeniency","refs":[{"from":"68129de9","function":"68129bfc"},{"from":"6811f14f","function":"6811eef8"},{"from":"6815fc50","function":null}]}
+{"address":"6814c264","value":"ClStVersionInfo","refs":[{"from":"68129e32","function":"68129bfc"},{"from":"6811f1b5","function":"6811eef8"},{"from":"6815fc54","function":null}]}
+{"address":"6814c284","value":"BlankValue","refs":[{"from":"6812eaeb","function":"6812eab8"},{"from":"68160314","function":null}]}
+{"address":"6814c29c","value":"LastDownloaded","refs":[{"from":"68129e96","function":"68129bfc"},{"from":"6811f211","function":"6811eef8"},{"from":"6815fc58","function":null}]}
+{"address":"6814c2bc","value":"CurrentValue","refs":[{"from":"6812eaeb","function":"6812eab8"},{"from":"68160318","function":null}]}
+{"address":"6814c2d8","value":"DeveloperLicense","refs":[{"from":"6811f2ef","function":"6811eef8"},{"from":"6815fc5c","function":null}]}
+{"address":"6814c2fc","value":"StartValue","refs":[]}
+{"address":"6814c314","value":"DateOffset","refs":[{"from":"681283c0","function":"681282c3"},{"from":"6811f373","function":"6811eef8"},{"from":"6815fc60","function":null}]}
+{"address":"6814c32c","value":"DefaultOffset","refs":[{"from":"68127874","function":"68127601"},{"from":"6815fc64","function":null}]}
+{"address":"6814c348","value":"SourceOffset","refs":[{"from":"6812794f","function":"68127601"},{"from":"6815fc68","function":null},{"from":"6810144e","function":null}]}
+{"address":"6814c364","value":"RndMode","refs":[{"from":"68127a7b","function":"68127601"},{"from":"6815fc6c","function":null}]}
+{"address":"6814c374","value":"RndType","refs":[{"from":"68127ac2","function":"68127601"},{"from":"6815fc70","function":null}]}
+{"address":"6814c384","value":"RndDay","refs":[{"from":"68127b09","function":"68127601"},{"from":"6815fc74","function":null}]}
+{"address":"6814c394","value":"Prompt","refs":[{"from":"6812b4d9","function":"6812b048"},{"from":"68123524","function":"681234de"},{"from":"68127b55","function":"68127601"},{"from":"6812d7ee","function":"6812d7a8"},{"from":"6812bf80","function":"6812bb40"},{"from":"6815fc78","function":null}]}
+{"address":"6814c3a4","value":"ResetOnSel","refs":[{"from":"6812b50e","function":"6812b048"},{"from":"681236b1","function":"681234de"},{"from":"68127ba9","function":"68127601"},{"from":"6812d92d","function":"6812d7a8"},{"from":"6811bcb8","function":"6811bb98"},{"from":"681262b0","function":"681261df"},{"from":"6815fc7c","function":null}]}
+{"address":"6814c3bc","value":"CurrentOffset","refs":[{"from":"68127c4e","function":"68127601"},{"from":"6815fc80","function":null}]}
+{"address":"6814c3d8","value":"MinOffset","refs":[{"from":"68127ec7","function":"68127601"},{"from":"6815fc88","function":null}]}
+{"address":"6814c3ec","value":"MaxOffset","refs":[{"from":"681280ee","function":"68127601"},{"from":"6815fc8c","function":null}]}
+{"address":"6814c400","value":"RefDate","refs":[{"from":"68127db2","function":"68127601"},{"from":"6815fc90","function":null}]}
+{"address":"6814c410","value":"CalcAtCoder","refs":[{"from":"68127e06","function":"68127601"},{"from":"6815fc94","function":null}]}
+{"address":"6814c428","value":"Seconds","refs":[{"from":"681278a2","function":"68127601"},{"from":"68127c7c","function":"68127601"},{"from":"68127f99","function":"68127601"},{"from":"681281be","function":"68127601"},{"from":"68120b97","function":"68120b7a"},{"from":"6815fc98","function":null}]}
+{"address":"6814c440","value":"Month","refs":[{"from":"681278f8","function":"68127601"},{"from":"68127cd2","function":"68127601"},{"from":"68127fef","function":"68127601"},{"from":"68128214","function":"68127601"},{"from":"68119fd6","function":"68119e5e"},{"from":"6811a247","function":"6811a0cf"},{"from":"68124756","function":"68124548"},{"from":"681249f4","function":"681247de"},{"from":"68120c5c","function":"68120b7a"},{"from":"681600dc","function":null},{"from":"6815fca0","function":null}]}
+{"address":"6814c44c","value":"Year","refs":[{"from":"68127923","function":"68127601"},{"from":"68127cfd","function":"68127601"},{"from":"6812801a","function":"68127601"},{"from":"6812823f","function":"68127601"},{"from":"68120cbe","function":"68120b7a"},{"from":"6815fca4","function":null}]}
+{"address":"6814c458","value":"ConnStr","refs":[{"from":"6812b5df","function":"6812b048"},{"from":"68121272","function":"6812123e"},{"from":"681238f9","function":"681234de"},{"from":"6812799c","function":"68127601"},{"from":"6812db36","function":"6812d7a8"},{"from":"6812b82a","function":"6812b7e4"},{"from":"68120d74","function":"68120d2b"},{"from":"6815fca8","function":null},{"from":"6815fff8","function":null}]}
+{"address":"6814c468","value":"External","refs":[{"from":"6812eb4e","function":"6812eb30"},{"from":"6816045c","function":null}]}
+{"address":"6814c47c","value":"DateSQL","refs":[{"from":"681212cf","function":"6812123e"},{"from":"681279d7","function":"68127601"},{"from":"6815fcac","function":null}]}
+{"address":"6814c48c","value":"DateMask","refs":[{"from":"6812132b","function":"6812123e"},{"from":"68127a1f","function":"68127601"},{"from":"6815fcb0","function":null}]}
+{"address":"6814c4a0","value":"SubHeader","refs":[{"from":"6812c0d1","function":"6812bfec"},{"from":"68122699","function":"68122545"},{"from":"6815fcb4","function":null}]}
+{"address":"6814c4b4","value":"ImageWidth","refs":[{"from":"68121b77","function":"68121a2a"},{"from":"6812c4ee","function":"6812c2ca"},{"from":"6815fcb8","function":null}]}
+{"address":"6814c4cc","value":"ImageHeight","refs":[{"from":"68121be5","function":"68121a2a"},{"from":"6812c52c","function":"6812c2ca"},{"from":"6815fcbc","function":null}]}
+{"address":"6814c4e4","value":"ImageRotation","refs":[{"from":"68121c59","function":"68121a2a"},{"from":"68121f55","function":"68121a2a"},{"from":"6812c5d4","function":"6812c2ca"},{"from":"6815fcc0","function":null}]}
+{"address":"6814c500","value":"MaxImageWidth","refs":[{"from":"68121dc8","function":"68121a2a"},{"from":"6812c6d8","function":"6812c2ca"},{"from":"6815fcc4","function":null}]}
+{"address":"6814c51c","value":"MaxImageHeight","refs":[{"from":"68121e3e","function":"68121a2a"},{"from":"6812c716","function":"6812c2ca"},{"from":"6815fcc8","function":null}]}
+{"address":"6814c53c","value":"XRes","refs":[{"from":"68122288","function":"68121a2a"},{"from":"6812c9a3","function":"6812c2ca"},{"from":"6815fccc","function":null}]}
+{"address":"6814c548","value":"YRes","refs":[{"from":"68122304","function":"68121a2a"},{"from":"6812c9f7","function":"6812c2ca"},{"from":"6815fcd0","function":null}]}
+{"address":"6814c554","value":"LastUpdated","refs":[{"from":"681223c8","function":"68121a2a"},{"from":"6812cab3","function":"6812c2ca"},{"from":"6815fcd4","function":null}]}
+{"address":"6814c56c","value":"Field","refs":[{"from":"6812c1fa","function":"6812bfec"},{"from":"68122642","function":"68122545"},{"from":"6815fcd8","function":null}]}
+{"address":"6814c578","value":"FldType","refs":[{"from":"68128aa6","function":"68128924"},{"from":"6815fcdc","function":null}]}
+{"address":"6814c588","value":"Displayed","refs":[{"from":"68128b51","function":"68128924"},{"from":"6815fce4","function":null}]}
+{"address":"6814c5b4","value":"EU_ITF14","refs":[{"from":"6812f0d1","function":"6812f0a2"},{"from":"68160324","function":null}]}
+{"address":"6814c5c8","value":"Orientation","refs":[{"from":"68128cd7","function":"68128924"},{"from":"6815fcfc","function":null}]}
+{"address":"6814c5e0","value":"US_ITF14","refs":[{"from":"68160328","function":null}]}
+{"address":"6814c5f4","value":"OverrideThis","refs":[{"from":"68128d1e","function":"68128924"},{"from":"6815fd00","function":null}]}
+{"address":"6814c610","value":"HRS_HIBC","refs":[{"from":"6816032c","function":null}]}
+{"address":"6814c624","value":"Inverse","refs":[{"from":"68128d62","function":"68128924"},{"from":"6815fd04","function":null}]}
+{"address":"6814c634","value":"Mirror","refs":[{"from":"68128da6","function":"68128924"},{"from":"6815fd08","function":null}]}
+{"address":"6814c644","value":"RenderMode","refs":[{"from":"68128dea","function":"68128924"},{"from":"6815fd0c","function":null}]}
+{"address":"6814c65c","value":"CalcData","refs":[{"from":"68128e4f","function":"68128924"},{"from":"6815fd10","function":null}]}
+{"address":"6814c670","value":"LoggedField","refs":[{"from":"68128eb4","function":"68128924"},{"from":"6815fd14","function":null}]}
+{"address":"6814c688","value":"Origin","refs":[{"from":"68128f16","function":"68128924"},{"from":"6815fd18","function":null}]}
+{"address":"6814c698","value":"Data","refs":[{"from":"68128fe9","function":"68128924"},{"from":"6815fd1c","function":null}]}
+{"address":"6814c6a4","value":"Text","refs":[{"from":"681291c6","function":"68128924"},{"from":"6815fd20","function":null}]}
+{"address":"6814c6b0","value":"Barcode","refs":[{"from":"6812917e","function":"68128924"},{"from":"6815fd24","function":null}]}
+{"address":"6814c6c0","value":"Graphic","refs":[{"from":"68129114","function":"68128924"},{"from":"6815fd28","function":null},{"from":"68101555","function":null}]}
+{"address":"6814c6d0","value":"Object","refs":[{"from":"68127187","function":"6812708a"},{"from":"6811dda6","function":"6811d9a6"},{"from":"6815fd2c","function":null}]}
+{"address":"6814c6e0","value":"DataType","refs":[{"from":"6812684a","function":"68126560"},{"from":"6815fd30","function":null}]}
+{"address":"6814c6f4","value":"Locale","refs":[{"from":"6812689a","function":"68126560"},{"from":"6815fd34","function":null}]}
+{"address":"6814c704","value":"Calendar","refs":[{"from":"681268ee","function":"68126560"},{"from":"6815fd38","function":null}]}
+{"address":"6814c718","value":"Encryption","refs":[{"from":"68126937","function":"68126560"},{"from":"6815fd3c","function":null}]}
+{"address":"6814c730","value":"MaxNoOfChars","refs":[{"from":"6812698b","function":"68126560"},{"from":"6815fd40","function":null}]}
+{"address":"6814c74c","value":"Default","refs":[{"from":"6812b469","function":"6812b048"},{"from":"681269d4","function":"68126560"},{"from":"6815fd44","function":null}]}
+{"address":"6814c75c","value":"FixedLen","refs":[{"from":"68126a2f","function":"68126560"},{"from":"6815fd48","function":null}]}
+{"address":"6814c770","value":"SrcField","refs":[{"from":"6812b542","function":"6812b048"},{"from":"68127047","function":"68126560"},{"from":"6815fd4c","function":null},{"from":"6815fee0","function":null}]}
+{"address":"6814c788","value":"SrcData","refs":[{"from":"68127010","function":"68126560"},{"from":"6815fd50","function":null}]}
+{"address":"6814c7a0","value":"VarText","refs":[{"from":"68126fd9","function":"68126560"},{"from":"6815fd54","function":null},{"from":"68101370","function":null}]}
+{"address":"6814c7b8","value":"OffsetDate","refs":[{"from":"68126f9b","function":"68126560"},{"from":"6815fd58","function":null}]}
+{"address":"6814c7d8","value":"CounterText","refs":[{"from":"68126f5d","function":"68126560"},{"from":"6815fd5c","function":null}]}
+{"address":"6814c7f8","value":"PadChar","refs":[{"from":"6811e3d3","function":"6811e3a4"},{"from":"68126a7a","function":"68126560"},{"from":"6815fd60","function":null}]}
+{"address":"6814c810","value":"PadMode","refs":[{"from":"6811e435","function":"6811e3a4"},{"from":"68126aba","function":"68126560"},{"from":"6815fd64","function":null}]}
+{"address":"6814c828","value":"StartChar","refs":[{"from":"6812b8b9","function":"6812b7e4"},{"from":"6812ba6b","function":"6812b98e"},{"from":"68120e2d","function":"68120d2b"},{"from":"681210a2","function":"68120fc0"},{"from":"6815fd68","function":null}]}
+{"address":"6814c83c","value":"NoOfChars","refs":[{"from":"6812b901","function":"6812b7e4"},{"from":"6812bab4","function":"6812b98e"},{"from":"6812bd4b","function":"6812bb40"},{"from":"68120e98","function":"68120d2b"},{"from":"68121110","function":"68120fc0"},{"from":"6815fd6c","function":null}]}
+{"address":"6814c850","value":"SrcSQL","refs":[{"from":"6812b864","function":"6812b7e4"},{"from":"68120dd1","function":"68120d2b"},{"from":"6815fd70","function":null}]}
+{"address":"6814c860","value":"Mask","refs":[{"from":"68123583","function":"681234de"},{"from":"68123782","function":"681234de"},{"from":"6812d83c","function":"6812d7a8"},{"from":"6812dad5","function":"6812d7a8"},{"from":"6815fd74","function":null},{"from":"68160104","function":null}]}
+{"address":"6814c86c","value":"UserEnterData","refs":[{"from":"681235e4","function":"681234de"},{"from":"6812d892","function":"6812d7a8"},{"from":"6815fd78","function":null}]}
+{"address":"6814c888","value":"PromptAtCoder","refs":[{"from":"68123645","function":"681234de"},{"from":"6812d8e6","function":"6812d7a8"},{"from":"6815fd7c","function":null}]}
+{"address":"6814c8a4","value":"ListData","refs":[{"from":"6812371d","function":"681234de"},{"from":"6812da56","function":"6812d7a8"},{"from":"6815fd80","function":null}]}
+{"address":"6814c8b8","value":"Item","refs":[{"from":"681239b7","function":"681234de"},{"from":"6812d619","function":"6812d4ec"},{"from":"6815fd84","function":null}]}
+{"address":"6814c8c4","value":"Rollover","refs":[{"from":"6811bbe1","function":"6811bb98"},{"from":"68126221","function":"681261df"},{"from":"6815fd88","function":null}]}
+{"address":"6814c8d8","value":"PrnPerCnt","refs":[{"from":"6811bc4d","function":"6811bb98"},{"from":"6812626b","function":"681261df"},{"from":"6815fd8c","function":null}]}
+{"address":"6814c8ec","value":"ParentCounter","refs":[{"from":"6811bd23","function":"6811bb98"},{"from":"681262f6","function":"681261df"},{"from":"6815fd90","function":null}]}
+{"address":"6814c908","value":"SubCnt","refs":[{"from":"6811bf12","function":"6811bb98"},{"from":"681264bd","function":"681261df"},{"from":"6815fd94","function":null}]}
+{"address":"6814c918","value":"LeadingChars","refs":[{"from":"6812bd8f","function":"6812bb40"},{"from":"6815fd98","function":null}]}
+{"address":"6814c934","value":"StartVal","refs":[{"from":"6812bddc","function":"6812bb40"},{"from":"6815fd9c","function":null}]}
+{"address":"6814c948","value":"EndVal","refs":[{"from":"6812be36","function":"6812bb40"},{"from":"6815fda0","function":null}]}
+{"address":"6814c958","value":"StepSize","refs":[{"from":"6812be87","function":"6812bb40"},{"from":"6815fda4","function":null},{"from":"681016e1","function":null}]}
+{"address":"6814c96c","value":"CurrVal","refs":[{"from":"6812bed0","function":"6812bb40"},{"from":"6815fda8","function":null}]}
+{"address":"6814c97c","value":"IncableChars","refs":[{"from":"6812bf2a","function":"6812bb40"},{"from":"6815fdac","function":null}]}
+{"address":"6814c998","value":"ClrStCntType","refs":[{"from":"6812bfc5","function":"6812bb40"},{"from":"6815fdb0","function":null}]}
+{"address":"6814c9bc","value":"Clip","refs":[{"from":"68129084","function":"68128924"},{"from":"6815fdb4","function":null}]}
+{"address":"6814c9d0","value":"Rect","refs":[{"from":"6811dede","function":"6811d9a6"},{"from":"68126112","function":"68126015"},{"from":"6815fdb8","function":null}]}
+{"address":"6814c9dc","value":"Font","refs":[{"from":"6812cd19","function":"6812ccce"},{"from":"6815fdbc","function":null}]}
+{"address":"6814c9e8","value":"Bold","refs":[{"from":"6812cd83","function":"6812ccce"},{"from":"6815fdc0","function":null}]}
+{"address":"6814c9f4","value":"Italic","refs":[{"from":"6812cee9","function":"6812ccce"},{"from":"6815fdc4","function":null}]}
+{"address":"6814ca04","value":"DblSpace","refs":[{"from":"6812cf30","function":"6812ccce"},{"from":"6815fdc8","function":null}]}
+{"address":"6814ca18","value":"Block","refs":[{"from":"6812cf70","function":"6812ccce"},{"from":"6815fdcc","function":null},{"from":"681016ec","function":null}]}
+{"address":"6814ca24","value":"Face","refs":[{"from":"6812d224","function":"6812d1de"},{"from":"68129a04","function":"681299bb"},{"from":"6815fdd0","function":null}]}
+{"address":"6814ca30","value":"Family","refs":[{"from":"6812d278","function":"6812d1de"},{"from":"68129a59","function":"681299bb"},{"from":"6815fdd4","function":null}]}
+{"address":"6814ca40","value":"Pitch","refs":[{"from":"6812d2bf","function":"6812d1de"},{"from":"68129aa1","function":"681299bb"},{"from":"6815fdd8","function":null}]}
+{"address":"6814ca4c","value":"XMag","refs":[{"from":"6812d370","function":"6812d1de"},{"from":"68129ae9","function":"681299bb"},{"from":"6815fddc","function":null}]}
+{"address":"6814ca58","value":"YMag","refs":[{"from":"6812d3b7","function":"6812d1de"},{"from":"68129b31","function":"681299bb"},{"from":"6815fde0","function":null},{"from":"681015b0","function":null}]}
+{"address":"6814ca64","value":"TTSize","refs":[{"from":"6812d3fe","function":"6812d1de"},{"from":"68129b79","function":"681299bb"},{"from":"6815fde4","function":null}]}
+{"address":"6814ca74","value":"BlkW","refs":[{"from":"68125d45","function":"68125c42"},{"from":"68122bf9","function":"6812282a"},{"from":"6815fde8","function":null}]}
+{"address":"6814ca80","value":"BlkH","refs":[{"from":"68125d82","function":"68125c42"},{"from":"68122c68","function":"6812282a"},{"from":"6815fdec","function":null}]}
+{"address":"6814ca8c","value":"MinFontSize","refs":[{"from":"68125dbf","function":"68125c42"},{"from":"68122ccd","function":"6812282a"},{"from":"6815fdf0","function":null}]}
+{"address":"6814caa4","value":"BlkJustify","refs":[{"from":"68125dfa","function":"68125c42"},{"from":"68122d36","function":"6812282a"},{"from":"6815fdf4","function":null}]}
+{"address":"6814cabc","value":"Hyphenation","refs":[{"from":"68125e35","function":"68125c42"},{"from":"68122d9f","function":"6812282a"},{"from":"6815fdf8","function":null}]}
+{"address":"6814caec","value":"CheckDigit","refs":[{"from":"68124ca9","function":"68124afe"},{"from":"6815fe08","function":null}]}
+{"address":"6814cb04","value":"QuietMargin","refs":[{"from":"68124cef","function":"68124afe"},{"from":"6815fe0c","function":null}]}
+{"address":"6814cb1c","value":"XOffSet","refs":[{"from":"68124d35","function":"68124afe"},{"from":"6815fe10","function":null},{"from":"681012d8","function":null}]}
+{"address":"6814cb2c","value":"EAN8","refs":[{"from":"6815fe14","function":null}]}
+{"address":"6814cb38","value":"EAN13","refs":[{"from":"6815fe18","function":null}]}
+{"address":"6814cb44","value":"UPCE","refs":[{"from":"6815fe1c","function":null}]}
+{"address":"6814cb50","value":"UPCA","refs":[{"from":"6815fe20","function":null}]}
+{"address":"6814cb5c","value":"Code39","refs":[{"from":"6815fe24","function":null}]}
+{"address":"6814cb6c","value":"Code128","refs":[{"from":"6815fe28","function":null}]}
+{"address":"6814cb84","value":"EAN128","refs":[{"from":"6815fe30","function":null}]}
+{"address":"6814cb94","value":"Sup2DigitCode","refs":[{"from":"6815fe34","function":null}]}
+{"address":"6814cbb0","value":"Sup5DigitCode","refs":[{"from":"6815fe38","function":null}]}
+{"address":"6814cbcc","value":"RSS14","refs":[{"from":"6815fe3c","function":null}]}
+{"address":"6814cbd8","value":"RSS14Truncated","refs":[{"from":"6815fe40","function":null}]}
+{"address":"6814cbf8","value":"RSS14Stacked","refs":[{"from":"6815fe44","function":null}]}
+{"address":"6814cc14","value":"RSS14StackedOmni","refs":[{"from":"6815fe48","function":null}]}
+{"address":"6814cc40","value":"RSSLimited","refs":[{"from":"6815fe4c","function":null}]}
+{"address":"6814cc60","value":"HRDisplayed","refs":[{"from":"6811f5c5","function":"6811f5a7"},{"from":"6812a1c4","function":"6812a184"},{"from":"6815fe50","function":null}]}
+{"address":"6814cc80","value":"HRPos","refs":[{"from":"6811f636","function":"6811f5a7"},{"from":"6812a20b","function":"6812a184"},{"from":"6815fe54","function":null}]}
+{"address":"6814cc94","value":"HRFont","refs":[{"from":"6811f6a6","function":"6811f5a7"},{"from":"6812a233","function":"6812a184"},{"from":"6815fe58","function":null}]}
+{"address":"6814ccac","value":"GuardBars","refs":[{"from":"6811a87c","function":"6811a75a"},{"from":"68124f2b","function":"68124e3d"},{"from":"6815fe5c","function":null}]}
+{"address":"6814ccc8","value":"BearerBars","refs":[{"from":"6811a8ef","function":"6811a75a"},{"from":"68124f79","function":"68124e3d"},{"from":"6815fe60","function":null}]}
+{"address":"6814cce8","value":"BearerBox","refs":[{"from":"6811a95c","function":"6811a75a"},{"from":"68124fc7","function":"68124e3d"},{"from":"6815fe64","function":null}]}
+{"address":"6814cd04","value":"HGauge","refs":[{"from":"6811a9c9","function":"6811a75a"},{"from":"68125015","function":"68124e3d"},{"from":"6815fe68","function":null}]}
+{"address":"6814cd1c","value":"ThickThinRatio","refs":[{"from":"6811aa36","function":"6811a75a"},{"from":"68125066","function":"68124e3d"},{"from":"6815fe6c","function":null}]}
+{"address":"6814cd44","value":"IntelligentEan128","refs":[{"from":"6811aaa3","function":"6811a75a"},{"from":"681250b4","function":"68124e3d"},{"from":"6815fe70","function":null}]}
+{"address":"6814cd70","value":"GfxW","refs":[{"from":"681294db","function":"68129475"},{"from":"6811e810","function":"6811e7a1"},{"from":"6815fe74","function":null}]}
+{"address":"6814cd84","value":"GfxH","refs":[{"from":"6812951c","function":"68129475"},{"from":"6811e883","function":"6811e7a1"},{"from":"6815fe78","function":null}]}
+{"address":"6814cd98","value":"StaticGfx","refs":[{"from":"68129886","function":"68129475"},{"from":"6811eac7","function":"6811e7a1"},{"from":"6815fe7c","function":null}]}
+{"address":"6814cdb4","value":"Primitive","refs":[{"from":"68129586","function":"68129475"},{"from":"6811e90d","function":"6811e7a1"},{"from":"6815fe80","function":null}]}
+{"address":"6814cdd0","value":"VariableGfx","refs":[{"from":"68129886","function":"68129475"},{"from":"6811eac7","function":"6811e7a1"},{"from":"6815fe84","function":null}]}
+{"address":"6814cdf0","value":"EmbeddedGfx","refs":[{"from":"68129886","function":"68129475"},{"from":"6811eac7","function":"6811e7a1"},{"from":"6815fe88","function":null},{"from":"68101602","function":null}]}
+{"address":"6814ce10","value":"AspectRatio","refs":[{"from":"681298c9","function":"68129475"},{"from":"6811eaef","function":"6811e7a1"},{"from":"6815fe8c","function":null}]}
+{"address":"6814ce30","value":"ResizeFrame","refs":[{"from":"68129912","function":"68129475"},{"from":"6811eb55","function":"6811e7a1"},{"from":"6815fe90","function":null}]}
+{"address":"6814ce50","value":"Shape","refs":[{"from":"681295c8","function":"68129475"},{"from":"6811e93e","function":"6811e7a1"},{"from":"6815fe94","function":null}]}
+{"address":"6814ce64","value":"LineW","refs":[{"from":"6812960b","function":"68129475"},{"from":"6811e9a4","function":"6811e7a1"},{"from":"6815fe98","function":null}]}
+{"address":"6814ce78","value":"ComplexShape","refs":[{"from":"6812965c","function":"68129475"},{"from":"6811ea0d","function":"6811e7a1"},{"from":"6815fe9c","function":null}]}
+{"address":"6814ce9c","value":"Point","refs":[{"from":"681296db","function":"68129475"},{"from":"6811ea36","function":"6811e7a1"},{"from":"6815fea0","function":null}]}
+{"address":"6814ceb0","value":"ImageMapping","refs":[{"from":"6812a436","function":"6812a3fb"},{"from":"6815fea4","function":null}]}
+{"address":"6814cee4","value":"ImageQuality","refs":[{"from":"6812937d","function":"6812932f"},{"from":"6815feac","function":null}]}
+{"address":"6814cf00","value":"SelectAfterDownload","refs":[{"from":"681293c2","function":"6812932f"},{"from":"6815feb0","function":null},{"from":"681015d9","function":null}]}
+{"address":"6814cf28","value":"Embedded","refs":[{"from":"68123e7c","function":"68123a44"},{"from":"6812dffc","function":"6812dc1c"},{"from":"6815feb4","function":null}]}
+{"address":"6814cf3c","value":"File","refs":[{"from":"68128854","function":"68128755"},{"from":"6815feb8","function":null},{"from":"68101459","function":null}]}
+{"address":"6814cf48","value":"MaxLines","refs":[]}
+{"address":"6814cf5c","value":"DataSource","refs":[{"from":"68127534","function":"68127437"},{"from":"6811fced","function":"6811facb"},{"from":"6812a970","function":"6812a7d3"},{"from":"6811f4b9","function":"6811eef8"},{"from":"6815fec0","function":null},{"from":"681600fc","function":null}]}
+{"address":"6814cf74","value":"Price","refs":[{"from":"6812b717","function":"6812b61a"},{"from":"6811f412","function":"6811eef8"},{"from":"6815fec4","function":null}]}
+{"address":"6814cf80","value":"Current","refs":[{"from":"6812b438","function":"6812b048"},{"from":"6815fec8","function":null}]}
+{"address":"6814cfa0","value":"DecimalPlaces","refs":[{"from":"6812b49b","function":"6812b048"},{"from":"6815fed4","function":null}]}
+{"address":"6814cfbc","value":"SQLUsed","refs":[{"from":"6812b574","function":"6812b048"},{"from":"6815fed8","function":null},{"from":"68101686","function":null}]}
+{"address":"6814cfcc","value":"PriceSQL","refs":[{"from":"6812b5a8","function":"6812b048"},{"from":"6815fedc","function":null}]}
+{"address":"6814cfe0","value":"PriceData","refs":[{"from":"68126b43","function":"68126560"},{"from":"6815fee4","function":null}]}
+{"address":"6814cff4","value":"Checksum","refs":[{"from":"68126dba","function":"68126560"},{"from":"6815fee8","function":null}]}
+{"address":"6814d008","value":"HigherFmt","refs":[{"from":"68126c9f","function":"68126560"},{"from":"6812078c","function":"6812066d"},{"from":"6815feec","function":null}]}
+{"address":"6814d01c","value":"LowerFmt","refs":[{"from":"68126cc8","function":"68126560"},{"from":"681207e9","function":"6812066d"},{"from":"6815fef0","function":null}]}
+{"address":"6814d030","value":"SwitchVal","refs":[{"from":"68126cf0","function":"68126560"},{"from":"68120846","function":"6812066d"},{"from":"6815fef4","function":null},{"from":"68101621","function":null}]}
+{"address":"6814d044","value":"Type","refs":[{"from":"6812b119","function":"6812b048"},{"from":"6811d3bb","function":"6811d134"},{"from":"6811d65d","function":"6811d4d5"},{"from":"68127796","function":"68127601"},{"from":"6811b7cd","function":"6811b6aa"},{"from":"6811fbde","function":"6811facb"},{"from":"681285bc","function":"6812848d"},{"from":"68126e89","function":"68126560"},{"from":"6811af12","function":"6811a75a"},{"from":"6812a8ba","function":"6812a7d3"},{"from":"68120a40","function":"681208e1"},{"from":"68125566","function":"68124e3d"},{"from":"6815ff30","function":null},{"from":"6815fef8","function":null},{"from":"6816003c","function":null},{"from":"681600b4","function":null},{"from":"681012e3","function":null}]}
+{"address":"6814d054","value":"Parameters","refs":[{"from":"6812afea","function":"6812afaf"},{"from":"6815fefc","function":null}]}
+{"address":"6814d070","value":"ParamSet","refs":[{"from":"6811e597","function":"6811e4ae"},{"from":"6812aebf","function":"6812adb8"},{"from":"6815ff00","function":null}]}
+{"address":"6814d084","value":"DataMatrix","refs":[{"from":"6815ff08","function":null}]}
+{"address":"6814d09c","value":"ECCType","refs":[{"from":"6811ab1f","function":"6811a75a"},{"from":"68125113","function":"68124e3d"},{"from":"6815ff0c","function":null}]}
+{"address":"6814d0ac","value":"ModuleSize","refs":[{"from":"6811ab8a","function":"6811a75a"},{"from":"68125187","function":"68124e3d"},{"from":"6815ff10","function":null}]}
+{"address":"6814d0c4","value":"SymbolSize","refs":[{"from":"6811abf5","function":"6811a75a"},{"from":"681251fb","function":"68124e3d"},{"from":"6815ff14","function":null}]}
+{"address":"6814d0dc","value":"PDF417","refs":[{"from":"6815ff18","function":null}]}
+{"address":"6814d0ec","value":"MicroPDF417","refs":[{"from":"6815ff1c","function":null}]}
+{"address":"6814d104","value":"RowHeight","refs":[{"from":"6811ac6f","function":"6811a75a"},{"from":"6812526f","function":"68124e3d"},{"from":"6815ff20","function":null}]}
+{"address":"6814d118","value":"Columns","refs":[{"from":"6811acda","function":"6811a75a"},{"from":"681252dd","function":"68124e3d"},{"from":"6815ff24","function":null}]}
+{"address":"6814d128","value":"Rows","refs":[{"from":"6811ad45","function":"6811a75a"},{"from":"6811adb0","function":"6811a75a"},{"from":"68125357","function":"68124e3d"},{"from":"68125386","function":"68124e3d"},{"from":"6815ff28","function":null}]}
+{"address":"6814d134","value":"ErrorCorrection","refs":[{"from":"6811aea7","function":"6811a75a"},{"from":"681254f2","function":"68124e3d"},{"from":"6815ff2c","function":null}]}
+{"address":"6814d154","value":"Encoding","refs":[{"from":"6811af7d","function":"6811a75a"},{"from":"681255da","function":"68124e3d"},{"from":"6815ff34","function":null}]}
+{"address":"6814d168","value":"RolloverError","refs":[{"from":"6811bda2","function":"6811bb98"},{"from":"68126357","function":"681261df"},{"from":"6815ff38","function":null}]}
+{"address":"6814d184","value":"PromptWith","refs":[{"from":"6811be15","function":"6811bb98"},{"from":"68126397","function":"681261df"},{"from":"6815ff3c","function":null}]}
+{"address":"6814d19c","value":"HRStyle","refs":[{"from":"6811afe8","function":"6811a75a"},{"from":"6812564e","function":"68124e3d"},{"from":"6815ff40","function":null}]}
+{"address":"6814d1ac","value":"LineID","refs":[{"from":"68129eef","function":"68129bfc"},{"from":"6811f282","function":"6811eef8"},{"from":"6815ff44","function":null}]}
+{"address":"6814d1bc","value":"TxtDir","refs":[{"from":"6812d457","function":"6812d1de"},{"from":"68129bcf","function":"681299bb"},{"from":"6815ff48","function":null}]}
+{"address":"6814d1cc","value":"FixedWidth","refs":[{"from":"6812d0c2","function":"6812ccce"},{"from":"6815ff4c","function":null}]}
+{"address":"6814d1e4","value":"HighQuality","refs":[{"from":"6812e8d8","function":"6812e8ba"},{"from":"6816043c","function":null}]}
+{"address":"6814d1fc","value":"Width","refs":[{"from":"68122ece","function":"6812282a"},{"from":"6812d0eb","function":"6812ccce"},{"from":"6815ff50","function":null}]}
+{"address":"6814d208","value":"HighSpeed","refs":[{"from":"6812e8d8","function":"6812e8ba"},{"from":"68160440","function":null}]}
+{"address":"6814d21c","value":"Align","refs":[{"from":"68122f37","function":"6812282a"},{"from":"6812d115","function":"6812ccce"},{"from":"6815ff54","function":null}]}
+{"address":"6814d228","value":"CharSpace","refs":[{"from":"6812d4bd","function":"6812d1de"},{"from":"6815ff58","function":null}]}
+{"address":"6814d23c","value":"Escapement","refs":[{"from":"6812d039","function":"6812ccce"},{"from":"6815ff5c","function":null}]}
+{"address":"6814d25c","value":"QRVersion","refs":[{"from":"6811b062","function":"6811a75a"},{"from":"681256c6","function":"68124e3d"},{"from":"6815ff64","function":null}]}
+{"address":"6814d270","value":"QRErrorLevel","refs":[{"from":"6811b0cd","function":"6811a75a"},{"from":"68125741","function":"68124e3d"},{"from":"6815ff68","function":null}]}
+{"address":"6814d28c","value":"QRMirror","refs":[{"from":"6811b138","function":"6811a75a"},{"from":"681257b9","function":"68124e3d"},{"from":"6815ff6c","function":null}]}
+{"address":"6814d2a0","value":"RSSExpanded","refs":[{"from":"6815ff70","function":null}]}
+{"address":"6814d2b8","value":"RSSExpandedStacked","refs":[{"from":"6815ff74","function":null}]}
+{"address":"6814d2e0","value":"CalendarRules","refs":[{"from":"68124846","function":"681247de"},{"from":"6815ff78","function":null}]}
+{"address":"6814d2fc","value":"CalendarRule","refs":[{"from":"681248bc","function":"681247de"},{"from":"6811d045","function":"6811cb20"},{"from":"6815ff7c","function":null}]}
+{"address":"6814d318","value":"AvoidanceDates","refs":[{"from":"681245b0","function":"68124548"},{"from":"6815ff80","function":null}]}
+{"address":"6814d338","value":"AvoidanceDate","refs":[{"from":"68124626","function":"68124548"},{"from":"6811d090","function":"6811cb20"},{"from":"6815ff84","function":null}]}
+{"address":"6814d354","value":"BearerSize","refs":[{"from":"6811b1b2","function":"6811a75a"},{"from":"68125847","function":"68124e3d"},{"from":"6815ff88","function":null}]}
+{"address":"6814d36c","value":"QMSize","refs":[{"from":"6811b232","function":"6811a75a"},{"from":"681258e5","function":"68124e3d"},{"from":"6815ff8c","function":null}]}
+{"address":"6814d37c","value":"MultiStroke","refs":[{"from":"6812d17c","function":"6812ccce"},{"from":"6815ff90","function":null},{"from":"6810173d","function":null}]}
+{"address":"6814d394","value":"AutoSize","refs":[{"from":"68121ec4","function":"68121a2a"},{"from":"6812c76f","function":"6812c2ca"},{"from":"6815ff94","function":null}]}
+{"address":"6814d3a8","value":"ImageMirror","refs":[{"from":"68122070","function":"68121a2a"},{"from":"681220e6","function":"68121a2a"},{"from":"6812c82b","function":"6812c2ca"},{"from":"6815ff98","function":null}]}
+{"address":"6814d3c0","value":"ImageInverse","refs":[{"from":"681221ef","function":"68121a2a"},{"from":"6812c948","function":"6812c2ca"},{"from":"6815ff9c","function":null}]}
+{"address":"6814d3dc","value":"Unknown","refs":[{"from":"6812ebc0","function":"6812eb8a"},{"from":"68160444","function":null}]}
+{"address":"6814d3ec","value":"PitchResolution","refs":[{"from":"6812d318","function":"6812d1de"},{"from":"6815ffa0","function":null}]}
+{"address":"6814d414","value":"ResetSource","refs":[{"from":"6811be98","function":"6811bb98"},{"from":"681263f4","function":"681261df"},{"from":"6815ffa4","function":null}]}
+{"address":"6814d434","value":"LegacyC128Enc","refs":[{"from":"6811b2cd","function":"6811a75a"},{"from":"68125959","function":"68124e3d"},{"from":"6815ffa8","function":null}]}
+{"address":"6814d458","value":"MagRnd","refs":[{"from":"68124bc4","function":"68124afe"},{"from":"6815ffac","function":null}]}
+{"address":"6814d468","value":"MaxiCode","refs":[{"from":"6815ffb0","function":null}]}
+{"address":"6814d47c","value":"Mode","refs":[{"from":"6811b347","function":"6811a75a"},{"from":"68125ab5","function":"68124e3d"},{"from":"6815ffb4","function":null}]}
+{"address":"6814d488","value":"Symbol","refs":[{"from":"6811b3b2","function":"6811a75a"},{"from":"68125b29","function":"68124e3d"},{"from":"6815ffb8","function":null}]}
+{"address":"6814d498","value":"SymbolCount","refs":[{"from":"6811b41d","function":"6811a75a"},{"from":"68125b9d","function":"68124e3d"},{"from":"6815ffbc","function":null}]}
+{"address":"6814d4b0","value":"Planet","refs":[{"from":"6815ffc0","function":null}]}
+{"address":"6814d4c0","value":"Postnet","refs":[{"from":"6815ffc4","function":null}]}
+{"address":"6814d4d0","value":"Plant","refs":[{"from":"6815ffc8","function":null}]}
+{"address":"6814d4dc","value":"UspsImb","refs":[{"from":"6815ffcc","function":null}]}
+{"address":"6814d4ec","value":"MarkSet","refs":[{"from":"68128f83","function":"68128924"},{"from":"6815ffd0","function":null}]}
+{"address":"6814d4fc","value":"BarcodePrinting","refs":[{"from":"68124d8a","function":"68124afe"},{"from":"6815ffd4","function":null}]}
+{"address":"6814d51c","value":"HRPrintCheckDigit","refs":[{"from":"6811f73f","function":"6811f5a7"},{"from":"6812a2ab","function":"6812a184"},{"from":"6815ffd8","function":null}]}
+{"address":"6814d540","value":"ManualCode128Encoding","refs":[{"from":"6811b497","function":"6811a75a"},{"from":"681259cd","function":"68124e3d"},{"from":"6815ffdc","function":null}]}
+{"address":"6814d56c","value":"CorrectCheckDigit","refs":[{"from":"6811b502","function":"6811a75a"},{"from":"68125a41","function":"68124e3d"},{"from":"6815ffe0","function":null}]}
+{"address":"6814d590","value":"CurrentOrientation","refs":[{"from":"6812244b","function":"68121a2a"},{"from":"6812ca50","function":"6812c2ca"},{"from":"6815ffe4","function":null}]}
+{"address":"6814d5b8","value":"BarcodeDataFormat","refs":[{"from":"6811b578","function":"6811a75a"},{"from":"68125c11","function":"68124e3d"},{"from":"6815ffe8","function":null}]}
+{"address":"6814d5dc","value":"Code93","refs":[{"from":"68101183","function":null},{"from":"6815ffec","function":null}]}
+{"address":"6814d5ec","value":"SelectMode","refs":[{"from":"6812b958","function":"6812b7e4"},{"from":"6812bb0f","function":"6812b98e"},{"from":"68120f21","function":"68120d2b"},{"from":"6812118f","function":"68120fc0"},{"from":"6815fff0","function":null}]}
+{"address":"6814d604","value":"LogoReferencePrinter","refs":[{"from":"68129969","function":"68129475"},{"from":"6811ebd5","function":"6811e7a1"},{"from":"6815fff4","function":null}]}
+{"address":"6814d630","value":"Hexadecimal","refs":[{"from":"6812e87e","function":"6812e860"},{"from":"68160464","function":null}]}
+{"address":"6814d648","value":"SourceSQL","refs":[{"from":"68123958","function":"681234de"},{"from":"6812db76","function":"6812d7a8"},{"from":"6815fffc","function":null}]}
+{"address":"6814d65c","value":"CLARICOMSSCC","refs":[{"from":"68126f32","function":"68126560"},{"from":"68160000","function":null},{"from":"681013b7","function":null}]}
+{"address":"6814d678","value":"InternalName","refs":[{"from":"68123a96","function":"68123a44"},{"from":"6812dd2b","function":"6812dc1c"},{"from":"68160020","function":null}]}
+{"address":"6814d694","value":"DesignedFor","refs":[{"from":"68129c99","function":"68129bfc"},{"from":"6811ef4e","function":"6811eef8"},{"from":"68160024","function":null}]}
+{"address":"6814d6ac","value":"DesignedWith","refs":[{"from":"68129cf6","function":"68129bfc"},{"from":"6811efcc","function":"6811eef8"},{"from":"68160028","function":null}]}
+{"address":"6814d6c8","value":"OverrideAll","refs":[{"from":"68129d45","function":"68129bfc"},{"from":"6811f04c","function":"6811eef8"},{"from":"6816002c","function":null}]}
+{"address":"6814d6e0","value":"Name","refs":[{"from":"6812b0c6","function":"6812b048"},{"from":"6811d1b6","function":"6811d134"},{"from":"6811d537","function":"6811d4d5"},{"from":"6812768d","function":"68127601"},{"from":"6811f935","function":"6811f8ca"},{"from":"6811fb54","function":"6811facb"},{"from":"6811e0be","function":"6811e012"},{"from":"68128514","function":"6812848d"},{"from":"6812a85a","function":"6812a7d3"},{"from":"68120961","function":"681208e1"},{"from":"681289a4","function":"68128924"},{"from":"6812aba5","function":"6812ab09"},{"from":"68160030","function":null},{"from":"681600ac","function":null}]}
+{"address":"6814d6ec","value":"StaticDate","refs":[{"from":"6811d2a3","function":"6811d134"},{"from":"681276e8","function":"68127601"},{"from":"68160034","function":null}]}
+{"address":"6814d704","value":"AutoUpdate","refs":[{"from":"6811d333","function":"6811d134"},{"from":"68127743","function":"68127601"},{"from":"68160038","function":null}]}
+{"address":"6814d71c","value":"Used","refs":[{"from":"6812b22c","function":"6812b048"},{"from":"6812b387","function":"6812b048"},{"from":"68127f4d","function":"68127601"},{"from":"68128174","function":"68127601"},{"from":"6812041c","function":"68120227"},{"from":"681205ad","function":"68120227"},{"from":"6811cef9","function":"6811cb20"},{"from":"6811cddb","function":"6811cb20"},{"from":"68160040","function":null}]}
+{"address":"6814d728","value":"ImageReference","refs":[{"from":"6812c086","function":"6812bfec"},{"from":"681225bd","function":"68122545"},{"from":"68160044","function":null}]}
+{"address":"6814d748","value":"FormatName","refs":[{"from":"68121a86","function":"68121a2a"},{"from":"6812c35d","function":"6812c2ca"},{"from":"68160048","function":null}]}
+{"address":"6814d760","value":"PrinterType","refs":[{"from":"68121af3","function":"68121a2a"},{"from":"6812c3ef","function":"6812c2ca"},{"from":"6816004c","function":null}]}
+{"address":"6814d778","value":"Index","refs":[{"from":"6811c307","function":"6811c26c"},{"from":"681265ff","function":"68126560"},{"from":"68160050","function":null}]}
+{"address":"6814d784","value":"Static","refs":[{"from":"6811c390","function":"6811c26c"},{"from":"6812665a","function":"68126560"},{"from":"68160054","function":null}]}
+{"address":"6814d794","value":"Parse","refs":[{"from":"6811c420","function":"6811c26c"},{"from":"681266b5","function":"68126560"},{"from":"68160058","function":null}]}
+{"address":"6814d7a0","value":"SrcFieldName","refs":[{"from":"6812ba06","function":"6812b98e"},{"from":"68121029","function":"68120fc0"},{"from":"6816005c","function":null}]}
+{"address":"6814d7bc","value":"SrcOffset","refs":[{"from":"6811f831","function":"6811f7c5"},{"from":"6812a797","function":"6812a724"},{"from":"68160060","function":null}]}
+{"address":"6814d7d0","value":"Significance","refs":[{"from":"68121691","function":"681215f4"},{"from":"6812bbd9","function":"6812bb40"},{"from":"68160064","function":null}]}
+{"address":"6814d7ec","value":"AlphaNum","refs":[{"from":"68121723","function":"681215f4"},{"from":"6812bc34","function":"6812bb40"},{"from":"68160068","function":null}]}
+{"address":"6814d800","value":"LeadChar","refs":[{"from":"681217a3","function":"681215f4"},{"from":"6812bc8c","function":"6812bb40"},{"from":"6816006c","function":null}]}
+{"address":"6814d814","value":"Left","refs":[{"from":"6811b8e7","function":"6811b867"},{"from":"68125edf","function":"68125e4d"},{"from":"6812e943","function":"6812e914"},{"from":"6812ede1","function":"6812edc3"},{"from":"6812ee50","function":"6812ee1d"},{"from":"68160070","function":null},{"from":"68160208","function":null},{"from":"681601e8","function":null},{"from":"6816037c","function":null}]}
+{"address":"6814d828","value":"Right","refs":[{"from":"6811b9e5","function":"6811b867"},{"from":"68125f8b","function":"68125e4d"},{"from":"6812ede1","function":"6812edc3"},{"from":"6812ee50","function":"6812ee1d"},{"from":"68160078","function":null},{"from":"68160210","function":null},{"from":"681601ec","function":null},{"from":"68160380","function":null}]}
+{"address":"6814d834","value":"Bottom","refs":[{"from":"6811ba6b","function":"6811b867"},{"from":"68125fd9","function":"68125e4d"},{"from":"6816007c","function":null}]}
+{"address":"6814d844","value":"Weight","refs":[{"from":"68122a3c","function":"6812282a"},{"from":"6812ce1c","function":"6812ccce"},{"from":"68160080","function":null}]}
+{"address":"6814d854","value":"Compatibility","refs":[{"from":"68125ce1","function":"68125c42"},{"from":"68122b5b","function":"6812282a"},{"from":"68160084","function":null}]}
+{"address":"6814d870","value":"ParentField","refs":[{"from":"6811a7fc","function":"6811a75a"},{"from":"68124ec1","function":"68124e3d"},{"from":"68160088","function":null}]}
+{"address":"6814d890","value":"PrintHeadDigits","refs":[{"from":"6812a500","function":"6812a3fb"},{"from":"6811e693","function":"6811e4ae"},{"from":"68160098","function":null}]}
+{"address":"6814d8b0","value":"SubIMageRef","refs":[{"from":"68124020","function":"68123fae"},{"from":"6812a34f","function":"6812a2da"},{"from":"6816009c","function":null}]}
+{"address":"6814d8c8","value":"xml:space","refs":[{"from":"6812dd61","function":"6812dc1c"},{"from":"681600a0","function":null}]}
+{"address":"6814d8dc","value":"EqRef","refs":[{"from":"6811c4b5","function":"6811c26c"},{"from":"68126710","function":"68126560"},{"from":"681600a4","function":null}]}
+{"address":"6814d8e8","value":"Temporary","refs":[{"from":"68123bca","function":"68123a44"},{"from":"6812ddc0","function":"6812dc1c"},{"from":"681600a8","function":null}]}
+{"address":"6814d8fc","value":"Size","refs":[{"from":"6811d5cf","function":"6811d4d5"},{"from":"6812855f","function":"6812848d"},{"from":"681600b0","function":null}]}
+{"address":"6814d908","value":"CompType","refs":[{"from":"6811d6f1","function":"6811d4d5"},{"from":"6812867d","function":"6812848d"},{"from":"681600b8","function":null}]}
+{"address":"6814d91c","value":"DataSourceName","refs":[{"from":"68127317","function":"68127254"},{"from":"6811c8ab","function":"6811c830"},{"from":"681600bc","function":null}]}
+{"address":"6814d93c","value":"DataSourceTable","refs":[{"from":"6812735c","function":"68127254"},{"from":"6811c9cf","function":"6811c830"},{"from":"681600c0","function":null}]}
+{"address":"6814d95c","value":"DataSourceIndex","refs":[{"from":"68127397","function":"68127254"},{"from":"6811ca54","function":"6811c830"},{"from":"681600c4","function":null}]}
+{"address":"6814d97c","value":"SrcPrice","refs":[{"from":"68126bbc","function":"68126560"},{"from":"68120705","function":"6812066d"},{"from":"681600c8","function":null}]}
+{"address":"6814d998","value":"TXField","refs":[{"from":"6811e130","function":"6811e012"},{"from":"68128a26","function":"68128924"},{"from":"681600d0","function":null}]}
+{"address":"6814d9a8","value":"Global","refs":[{"from":"6812182e","function":"681215f4"},{"from":"6812bcf1","function":"6812bb40"},{"from":"681600d4","function":null}]}
+{"address":"6814d9b8","value":"Offset","refs":[{"from":"6811a2d3","function":"6811a0cf"},{"from":"68124a76","function":"681247de"},{"from":"681600e0","function":null}]}
+{"address":"6814d9c8","value":"Enabled","refs":[{"from":"68121fbb","function":"68121a2a"},{"from":"6812214a","function":"68121a2a"},{"from":"6812c65c","function":"6812c2ca"},{"from":"6812c8b1","function":"6812c2ca"},{"from":"681600e4","function":null}]}
+{"address":"6814d9d8","value":"PrinterFormatName","refs":[{"from":"68121cbc","function":"68121a2a"},{"from":"6812c483","function":"6812c2ca"},{"from":"681600e8","function":null}]}
+{"address":"6814da04","value":"Version","refs":[{"from":"68123b21","function":"68123a44"},{"from":"6812dcbb","function":"6812dc1c"},{"from":"681600f4","function":null}]}
+{"address":"6814da14","value":"Database","refs":[{"from":"6811fc5f","function":"6811facb"},{"from":"6812a922","function":"6812a7d3"},{"from":"681600f8","function":null}]}
+{"address":"6814da28","value":"Reference","refs":[{"from":"6811c5dc","function":"6811c26c"},{"from":"681267df","function":"68126560"},{"from":"68160108","function":null}]}
+{"address":"6814da3c","value":"version=\"1.0\" ","refs":[{"from":"6812922e","function":"68129209"},{"from":"68160008","function":null}]}
+{"address":"6814da5c","value":"encoding=\"UTF-8\" ","refs":[{"from":"68129255","function":"68129209"},{"from":"6816000c","function":null}]}
+{"address":"6814da80","value":"encoding=\"UTF-16\" ","refs":[{"from":"6812924d","function":"68129209"},{"from":"68160010","function":null}]}
+{"address":"6814daa8","value":"default","refs":[{"from":"6812dd4a","function":"6812dc1c"},{"from":"68160014","function":null}]}
+{"address":"6814dab8","value":"encoding=\"","refs":[{"from":"6812e49b","function":"6812e2f6"},{"from":"6812e4b1","function":"6812e2f6"},{"from":"68160018","function":null}]}
+{"address":"6814dad0","value":"UTF-8","refs":[{"from":"6812e4bc","function":"6812e2f6"},{"from":"6812e4cb","function":"6812e2f6"},{"from":"6816001c","function":null}]}
+{"address":"6814dadc","value":"10X10","refs":[{"from":"6812f9e8","function":"6812f9cf"},{"from":"6812fa4a","function":"6812f9cf"},{"from":"68160128","function":null}]}
+{"address":"6814dae8","value":"12X12","refs":[{"from":"6812f9e8","function":"6812f9cf"},{"from":"6812fa4a","function":"6812f9cf"},{"from":"6816012c","function":null}]}
+{"address":"6814daf4","value":"14X14","refs":[{"from":"68160130","function":null}]}
+{"address":"6814db00","value":"16X16","refs":[{"from":"68160134","function":null}]}
+{"address":"6814db0c","value":"18X18","refs":[{"from":"68160138","function":null}]}
+{"address":"6814db18","value":"20X20","refs":[{"from":"6816013c","function":null}]}
+{"address":"6814db24","value":"22X22","refs":[{"from":"68160140","function":null}]}
+{"address":"6814db30","value":"24X24","refs":[{"from":"68160144","function":null}]}
+{"address":"6814db3c","value":"26X26","refs":[{"from":"68160148","function":null}]}
+{"address":"6814db48","value":"32X32","refs":[{"from":"6816014c","function":null}]}
+{"address":"6814db54","value":"36X36","refs":[{"from":"68160150","function":null}]}
+{"address":"6814db60","value":"40X40","refs":[{"from":"68160154","function":null}]}
+{"address":"6814db6c","value":"44X44","refs":[{"from":"68160158","function":null}]}
+{"address":"6814db78","value":"48X48","refs":[{"from":"6816015c","function":null}]}
+{"address":"6814db84","value":"52X52","refs":[{"from":"68160160","function":null}]}
+{"address":"6814db90","value":"64X64","refs":[{"from":"68160164","function":null}]}
+{"address":"6814db9c","value":"72X72","refs":[{"from":"68160168","function":null}]}
+{"address":"6814dba8","value":"80X80","refs":[{"from":"6816016c","function":null}]}
+{"address":"6814dbb4","value":"88X88","refs":[{"from":"68160170","function":null}]}
+{"address":"6814dbc0","value":"96X96","refs":[{"from":"68160174","function":null}]}
+{"address":"6814dbcc","value":"104X104","refs":[{"from":"68160178","function":null}]}
+{"address":"6814dbdc","value":"120X120","refs":[{"from":"6816017c","function":null}]}
+{"address":"6814dbec","value":"132X132","refs":[{"from":"68160180","function":null}]}
+{"address":"6814dbfc","value":"144X144","refs":[{"from":"68160184","function":null}]}
+{"address":"6814dc0c","value":"8X18","refs":[{"from":"68160188","function":null}]}
+{"address":"6814dc18","value":"8X32","refs":[{"from":"6816018c","function":null}]}
+{"address":"6814dc24","value":"12X26","refs":[{"from":"68160190","function":null}]}
+{"address":"6814dc30","value":"12X36","refs":[{"from":"68160194","function":null}]}
+{"address":"6814dc3c","value":"16X36","refs":[{"from":"68160198","function":null}]}
+{"address":"6814dc48","value":"16X48","refs":[{"from":"6816019c","function":null}]}
+{"address":"6814dc54","value":"AUTO","refs":[{"from":"6812f72e","function":"6812f675"},{"from":"68160388","function":null},{"from":"681601a0","function":null}]}
+{"address":"6814dc60","value":"AUTOREC","refs":[{"from":"681601a4","function":null}]}
+{"address":"6814dc78","value":"dots","refs":[{"from":"6812fb08","function":"6812faea"},{"from":"681601ac","function":null}]}
+{"address":"6814dc84","value":"Normal","refs":[{"from":"6812f0d1","function":"6812f0a2"},{"from":"6812f282","function":"6812f24c"},{"from":"6812f384","function":"6812f355"},{"from":"6812f3e7","function":"6812f3c9"},{"from":"6812f544","function":"6812f511"},{"from":"6812e87e","function":"6812e860"},{"from":"68160460","function":null},{"from":"68160320","function":null},{"from":"68160114","function":null},{"from":"68160304","function":null},{"from":"681602fc","function":null},{"from":"68160274","function":null}]}
+{"address":"6814dc94","value":"User","refs":[{"from":"6812f282","function":"6812f24c"},{"from":"6812f544","function":"6812f511"},{"from":"68160118","function":null},{"from":"68160278","function":null}]}
+{"address":"6814dca0","value":"Hidden","refs":[{"from":"6816011c","function":null}]}
+{"address":"6814dcb0","value":"Updateable","refs":[{"from":"68160120","function":null}]}
+{"address":"6814dcc8","value":"Elapsed","refs":[{"from":"68160124","function":null}]}
+{"address":"6814dcd8","value":"NoRounding","refs":[{"from":"6812f891","function":"6812f862"},{"from":"681601b0","function":null}]}
+{"address":"6814dcf0","value":"RoundUp","refs":[{"from":"6812f891","function":"6812f862"},{"from":"681601b4","function":null}]}
+{"address":"6814dd00","value":"RoundDown","refs":[{"from":"681601b8","function":null}]}
+{"address":"6814dd14","value":"RoundNearest","refs":[{"from":"681601bc","function":null}]}
+{"address":"6814dd30","value":"DayOfWeek","refs":[{"from":"6812f909","function":"6812f8d6"},{"from":"681601c0","function":null}]}
+{"address":"6814dd44","value":"DayOfMonth","refs":[{"from":"6812f909","function":"6812f8d6"},{"from":"681601c4","function":null}]}
+{"address":"6814dd5c","value":"DayOfBiWeek","refs":[]}
+{"address":"6814dd74","value":"ResetToDefaultOffset","refs":[{"from":"6812f207","function":"6812f1d4"},{"from":"681601cc","function":null}]}
+{"address":"6814dda0","value":"ContinueWithCurrentOffset","refs":[{"from":"6812f207","function":"6812f1d4"},{"from":"681601d0","function":null}]}
+{"address":"6814ddd4","value":"PromptForOffset","refs":[]}
+{"address":"6814de0c","value":"COPY","refs":[{"from":"681601e4","function":null}]}
+{"address":"6814deb8","value":"Auto;","refs":[{"from":"6812fa10","function":"6812f9cf"},{"from":"6812fa17","function":"6812f9cf"},{"from":"6812fa2c","function":"6812f9cf"},{"from":"6812fa0b","function":"6812f9cf"}]}
+{"address":"6814e200","value":"ERROR : Unable to initialize critical section in CAtlBaseModule\n","refs":[{"from":"68130d09","function":"68130ccc"}]}
+{"address":"6814e290","value":"bad allocation","refs":[{"from":"68130e40","function":"68130e35"},{"from":"68130f71","function":"68130f46"}]}
+{"address":"6814e798","value":"permission denied","refs":[{"from":"6814e2cc","function":null}]}
+{"address":"6814e7ac","value":"file exists","refs":[{"from":"68130f11","function":"68130eec"},{"from":"6814e2d4","function":null}]}
+{"address":"6814e7b8","value":"no such device","refs":[{"from":"6814e2dc","function":null}]}
+{"address":"6814e7c8","value":"filename too long","refs":[]}
+{"address":"6814e7dc","value":"device or resource busy","refs":[]}
+{"address":"6814e7f4","value":"io error","refs":[]}
+{"address":"6814e800","value":"directory not empty","refs":[]}
+{"address":"6814e814","value":"invalid argument","refs":[]}
+{"address":"6814e828","value":"no space on device","refs":[]}
+{"address":"6814e83c","value":"no such file or directory","refs":[]}
+{"address":"6814e858","value":"function not supported","refs":[]}
+{"address":"6814e870","value":"no lock available","refs":[]}
+{"address":"6814e884","value":"not enough memory","refs":[]}
+{"address":"6814e898","value":"resource unavailable try again","refs":[]}
+{"address":"6814e8b8","value":"cross device link","refs":[]}
+{"address":"6814e8cc","value":"operation canceled","refs":[]}
+{"address":"6814e8e0","value":"too many files open","refs":[]}
+{"address":"6814e8f4","value":"permission_denied","refs":[]}
+{"address":"6814e908","value":"address_in_use","refs":[]}
+{"address":"6814e918","value":"address_not_available","refs":[]}
+{"address":"6814e930","value":"address_family_not_supported","refs":[]}
+{"address":"6814e950","value":"connection_already_in_progress","refs":[]}
+{"address":"6814e970","value":"bad_file_descriptor","refs":[]}
+{"address":"6814e984","value":"connection_aborted","refs":[]}
+{"address":"6814e998","value":"connection_refused","refs":[]}
+{"address":"6814e9ac","value":"connection_reset","refs":[]}
+{"address":"6814e9c0","value":"destination_address_required","refs":[]}
+{"address":"6814e9e0","value":"bad_address","refs":[]}
+{"address":"6814e9ec","value":"host_unreachable","refs":[]}
+{"address":"6814ea00","value":"operation_in_progress","refs":[]}
+{"address":"6814ea18","value":"interrupted","refs":[]}
+{"address":"6814ea24","value":"invalid_argument","refs":[]}
+{"address":"6814ea38","value":"already_connected","refs":[]}
+{"address":"6814ea4c","value":"too_many_files_open","refs":[]}
+{"address":"6814ea60","value":"message_size","refs":[]}
+{"address":"6814ea70","value":"filename_too_long","refs":[]}
+{"address":"6814ea84","value":"network_down","refs":[]}
+{"address":"6814ea94","value":"network_reset","refs":[]}
+{"address":"6814eaa4","value":"network_unreachable","refs":[]}
+{"address":"6814eab8","value":"no_buffer_space","refs":[]}
+{"address":"6814eac8","value":"no_protocol_option","refs":[]}
+{"address":"6814eadc","value":"not_connected","refs":[]}
+{"address":"6814eaec","value":"not_a_socket","refs":[]}
+{"address":"6814eafc","value":"operation_not_supported","refs":[]}
+{"address":"6814eb14","value":"protocol_not_supported","refs":[]}
+{"address":"6814eb2c","value":"wrong_protocol_type","refs":[]}
+{"address":"6814eb40","value":"timed_out","refs":[]}
+{"address":"6814eb4c","value":"operation_would_block","refs":[]}
+{"address":"6814eb64","value":"address family not supported","refs":[{"from":"6814e524","function":null}]}
+{"address":"6814eb84","value":"address in use","refs":[{"from":"68130ee7","function":"68130ec2"},{"from":"6814e52c","function":null}]}
+{"address":"6814eb94","value":"address not available","refs":[{"from":"6814e534","function":null}]}
+{"address":"6814ebac","value":"already connected","refs":[]}
+{"address":"6814ebc0","value":"argument list too long","refs":[]}
+{"address":"6814ebd8","value":"argument out of domain","refs":[]}
+{"address":"6814ebf0","value":"bad address","refs":[]}
+{"address":"6814ebfc","value":"bad file descriptor","refs":[]}
+{"address":"6814ec10","value":"bad message","refs":[]}
+{"address":"6814ec1c","value":"broken pipe","refs":[]}
+{"address":"6814ec28","value":"connection aborted","refs":[]}
+{"address":"6814ec3c","value":"connection already in progress","refs":[]}
+{"address":"6814ec5c","value":"connection refused","refs":[]}
+{"address":"6814ec70","value":"connection reset","refs":[]}
+{"address":"6814ec84","value":"destination address required","refs":[]}
+{"address":"6814eca4","value":"executable format error","refs":[]}
+{"address":"6814ecbc","value":"file too large","refs":[]}
+{"address":"6814eccc","value":"host unreachable","refs":[]}
+{"address":"6814ece0","value":"identifier removed","refs":[]}
+{"address":"6814ecf4","value":"illegal byte sequence","refs":[]}
+{"address":"6814ed0c","value":"inappropriate io control operation","refs":[]}
+{"address":"6814ed30","value":"invalid seek","refs":[]}
+{"address":"6814ed40","value":"is a directory","refs":[]}
+{"address":"6814ed50","value":"message size","refs":[]}
+{"address":"6814ed60","value":"network down","refs":[]}
+{"address":"6814ed70","value":"network reset","refs":[]}
+{"address":"6814ed80","value":"network unreachable","refs":[]}
+{"address":"6814ed94","value":"no buffer space","refs":[]}
+{"address":"6814eda4","value":"no child process","refs":[]}
+{"address":"6814edb8","value":"no link","refs":[]}
+{"address":"6814edc0","value":"no message available","refs":[]}
+{"address":"6814edd8","value":"no message","refs":[]}
+{"address":"6814ede4","value":"no protocol option","refs":[]}
+{"address":"6814edf8","value":"no stream resources","refs":[]}
+{"address":"6814ee0c","value":"no such device or address","refs":[]}
+{"address":"6814ee28","value":"no such process","refs":[]}
+{"address":"6814ee38","value":"not a directory","refs":[]}
+{"address":"6814ee48","value":"not a socket","refs":[]}
+{"address":"6814ee58","value":"not a stream","refs":[]}
+{"address":"6814ee68","value":"not connected","refs":[]}
+{"address":"6814ee78","value":"not supported","refs":[]}
+{"address":"6814ee88","value":"operation in progress","refs":[]}
+{"address":"6814eea0","value":"operation not permitted","refs":[]}
+{"address":"6814eeb8","value":"operation not supported","refs":[]}
+{"address":"6814eed0","value":"operation would block","refs":[]}
+{"address":"6814eee8","value":"owner dead","refs":[]}
+{"address":"6814eef4","value":"protocol error","refs":[]}
+{"address":"6814ef04","value":"protocol not supported","refs":[]}
+{"address":"6814ef1c","value":"read only file system","refs":[]}
+{"address":"6814ef34","value":"resource deadlock would occur","refs":[]}
+{"address":"6814ef54","value":"result out of range","refs":[]}
+{"address":"6814ef68","value":"state not recoverable","refs":[]}
+{"address":"6814ef80","value":"stream timeout","refs":[]}
+{"address":"6814ef90","value":"text file busy","refs":[]}
+{"address":"6814efa0","value":"timed out","refs":[]}
+{"address":"6814efac","value":"too many files open in system","refs":[]}
+{"address":"6814efcc","value":"too many links","refs":[]}
+{"address":"6814efdc","value":"too many symbolic link levels","refs":[]}
+{"address":"6814effc","value":"value too large","refs":[]}
+{"address":"6814f00c","value":"wrong protocol type","refs":[]}
+{"address":"6814f104","value":"Unknown exception","refs":[{"from":"6813568b","function":"68135684"}]}
+{"address":"6814f118","value":"mscoree.dll","refs":[{"from":"6813573b","function":"68135733"}]}
+{"address":"6814f130","value":"CorExitProcess","refs":[{"from":"6813574c","function":"68135733"}]}
+{"address":"6814f1ac","value":"log10","refs":[{"from":"681360ac","function":"68135f9d"},{"from":"681360bb","function":"68135f9d"},{"from":"68136193","function":"68135f9d"}]}
+{"address":"6814f1cc","value":"exp10","refs":[{"from":"68136169","function":"68135f9d"}]}
+{"address":"6814f1e4","value":"floor","refs":[{"from":"681361ba","function":"68135f9d"}]}
+{"address":"6814f274","value":"_nextafter","refs":[]}
+{"address":"6814f290","value":"bad exception","refs":[{"from":"68137996","function":"68137640"}]}
+{"address":"6814f2a0","value":"e+000","refs":[{"from":"6813864b","function":"6813858e"}]}
+{"address":"6814f2b8","value":"ja-JP","refs":[{"from":"68139194","function":"68139161"},{"from":"6814f2a8","function":null}]}
+{"address":"6814f2c4","value":"zh-CN","refs":[{"from":"6813918d","function":"68139161"},{"from":"6814f2ac","function":null}]}
+{"address":"6814f2d0","value":"ko-KR","refs":[{"from":"68139186","function":"68139161"},{"from":"6814f2b0","function":null}]}
+{"address":"6814f2dc","value":"zh-TW","refs":[{"from":"6813917f","function":"68139161"},{"from":"6814f2b4","function":null}]}
+{"address":"6814f304","value":"Sunday","refs":[{"from":"68160cdc","function":null}]}
+{"address":"6814f30c","value":"Monday","refs":[{"from":"68160ce0","function":null}]}
+{"address":"6814f314","value":"Tuesday","refs":[{"from":"68160ce4","function":null}]}
+{"address":"6814f31c","value":"Wednesday","refs":[{"from":"68160ce8","function":null}]}
+{"address":"6814f328","value":"Thursday","refs":[{"from":"68160cec","function":null}]}
+{"address":"6814f334","value":"Friday","refs":[{"from":"68160cf0","function":null}]}
+{"address":"6814f33c","value":"Saturday","refs":[{"from":"68160cf4","function":null}]}
+{"address":"6814f378","value":"January","refs":[{"from":"68160d28","function":null}]}
+{"address":"6814f380","value":"February","refs":[{"from":"68160d2c","function":null}]}
+{"address":"6814f38c","value":"March","refs":[{"from":"68160d30","function":null}]}
+{"address":"6814f394","value":"April","refs":[{"from":"68160d34","function":null}]}
+{"address":"6814f3ac","value":"August","refs":[{"from":"68160d44","function":null}]}
+{"address":"6814f3b4","value":"September","refs":[{"from":"68160d48","function":null}]}
+{"address":"6814f3c0","value":"October","refs":[{"from":"68160d4c","function":null}]}
+{"address":"6814f3c8","value":"November","refs":[{"from":"68160d50","function":null}]}
+{"address":"6814f3d4","value":"December","refs":[{"from":"68160d54","function":null}]}
+{"address":"6814f3e8","value":"MM/dd/yy","refs":[{"from":"68160d60","function":null}]}
+{"address":"6814f3f4","value":"dddd, MMMM dd, yyyy","refs":[{"from":"68160d64","function":null}]}
+{"address":"6814f408","value":"HH:mm:ss","refs":[{"from":"68160d68","function":null}]}
+{"address":"6814f44c","value":"Sunday","refs":[{"from":"68160d90","function":null}]}
+{"address":"6814f45c","value":"Monday","refs":[{"from":"68160d94","function":null}]}
+{"address":"6814f46c","value":"Tuesday","refs":[{"from":"68160d98","function":null}]}
+{"address":"6814f47c","value":"Wednesday","refs":[{"from":"68160d9c","function":null}]}
+{"address":"6814f490","value":"Thursday","refs":[{"from":"68160da0","function":null}]}
+{"address":"6814f4a4","value":"Friday","refs":[{"from":"68160da4","function":null}]}
+{"address":"6814f4b4","value":"Saturday","refs":[{"from":"68160da8","function":null}]}
+{"address":"6814f528","value":"January","refs":[{"from":"68160ddc","function":null}]}
+{"address":"6814f538","value":"February","refs":[{"from":"68160de0","function":null}]}
+{"address":"6814f54c","value":"March","refs":[{"from":"68160de4","function":null}]}
+{"address":"6814f558","value":"April","refs":[{"from":"68160de8","function":null}]}
+{"address":"6814f564","value":"June","refs":[{"from":"68160df0","function":null}]}
+{"address":"6814f570","value":"July","refs":[{"from":"68160df4","function":null}]}
+{"address":"6814f57c","value":"August","refs":[{"from":"68160df8","function":null}]}
+{"address":"6814f58c","value":"September","refs":[{"from":"68160dfc","function":null}]}
+{"address":"6814f5a0","value":"October","refs":[{"from":"68160e00","function":null}]}
+{"address":"6814f5b0","value":"November","refs":[{"from":"68160e04","function":null}]}
+{"address":"6814f5c4","value":"December","refs":[{"from":"68160e08","function":null}]}
+{"address":"6814f5e8","value":"MM/dd/yy","refs":[{"from":"68160e14","function":null}]}
+{"address":"6814f5fc","value":"dddd, MMMM dd, yyyy","refs":[{"from":"68160e18","function":null}]}
+{"address":"6814f624","value":"HH:mm:ss","refs":[{"from":"68160e1c","function":null}]}
+{"address":"6814f638","value":"en-US","refs":[{"from":"68160e20","function":null}]}
+{"address":"6814f6c8","value":"kernel32.dll","refs":[{"from":"6813b64e","function":"6813b64c"}]}
+{"address":"6814f6e4","value":"FlsAlloc","refs":[{"from":"6813b661","function":"6813b64c"}]}
+{"address":"6814f6f0","value":"FlsFree","refs":[{"from":"6813b66f","function":"6813b64c"}]}
+{"address":"6814f6f8","value":"FlsGetValue","refs":[{"from":"6813b682","function":"6813b64c"}]}
+{"address":"6814f704","value":"FlsSetValue","refs":[{"from":"6813b695","function":"6813b64c"}]}
+{"address":"6814f710","value":"InitializeCriticalSectionEx","refs":[{"from":"6813b6a8","function":"6813b64c"}]}
+{"address":"6814f72c","value":"CreateEventExW","refs":[{"from":"6813b6bb","function":"6813b64c"}]}
+{"address":"6814f73c","value":"CreateSemaphoreExW","refs":[{"from":"6813b6ce","function":"6813b64c"}]}
+{"address":"6814f750","value":"SetThreadStackGuarantee","refs":[{"from":"6813b6e1","function":"6813b64c"}]}
+{"address":"6814f768","value":"CreateThreadpoolTimer","refs":[{"from":"6813b6f4","function":"6813b64c"}]}
+{"address":"6814f780","value":"SetThreadpoolTimer","refs":[{"from":"6813b707","function":"6813b64c"}]}
+{"address":"6814f794","value":"WaitForThreadpoolTimerCallbacks","refs":[{"from":"6813b71a","function":"6813b64c"}]}
+{"address":"6814f7b4","value":"CloseThreadpoolTimer","refs":[{"from":"6813b72d","function":"6813b64c"}]}
+{"address":"6814f7cc","value":"CreateThreadpoolWait","refs":[{"from":"6813b740","function":"6813b64c"}]}
+{"address":"6814f7e4","value":"SetThreadpoolWait","refs":[{"from":"6813b753","function":"6813b64c"}]}
+{"address":"6814f7f8","value":"CloseThreadpoolWait","refs":[{"from":"6813b766","function":"6813b64c"}]}
+{"address":"6814f80c","value":"FlushProcessWriteBuffers","refs":[{"from":"6813b77e","function":"6813b64c"}]}
+{"address":"6814f828","value":"FreeLibraryWhenCallbackReturns","refs":[{"from":"6813b78c","function":"6813b64c"}]}
+{"address":"6814f848","value":"GetCurrentProcessorNumber","refs":[{"from":"6813b79f","function":"6813b64c"}]}
+{"address":"6814f864","value":"GetLogicalProcessorInformation","refs":[{"from":"6813b7b2","function":"6813b64c"}]}
+{"address":"6814f884","value":"CreateSymbolicLinkW","refs":[{"from":"6813b7c5","function":"6813b64c"}]}
+{"address":"6814f898","value":"SetDefaultDllDirectories","refs":[{"from":"6813b7d8","function":"6813b64c"}]}
+{"address":"6814f8b4","value":"EnumSystemLocalesEx","refs":[{"from":"6813b7eb","function":"6813b64c"}]}
+{"address":"6814f8c8","value":"CompareStringEx","refs":[{"from":"6813b7fe","function":"6813b64c"}]}
+{"address":"6814f8d8","value":"GetDateFormatEx","refs":[{"from":"6813b811","function":"6813b64c"}]}
+{"address":"6814f8e8","value":"GetLocaleInfoEx","refs":[{"from":"6813b824","function":"6813b64c"}]}
+{"address":"6814f8f8","value":"GetTimeFormatEx","refs":[{"from":"6813b837","function":"6813b64c"}]}
+{"address":"6814f908","value":"GetUserDefaultLocaleName","refs":[{"from":"6813b84a","function":"6813b64c"}]}
+{"address":"6814f924","value":"IsValidLocaleName","refs":[{"from":"6813b85d","function":"6813b64c"}]}
+{"address":"6814f938","value":"LCMapStringEx","refs":[{"from":"6813b870","function":"6813b64c"}]}
+{"address":"6814f948","value":"GetCurrentPackageId","refs":[{"from":"6813b883","function":"6813b64c"}]}
+{"address":"6814f95c","value":"GetTickCount64","refs":[{"from":"6813b896","function":"6813b64c"}]}
+{"address":"6814f96c","value":"GetFileInformationByHandleExW","refs":[{"from":"6813b8ae","function":"6813b64c"}]}
+{"address":"6814f98c","value":"SetFileInformationByHandleW","refs":[{"from":"6813b8bc","function":"6813b64c"}]}
+{"address":"6814fa60","value":"R6002\r\n- floating point support not loaded\r\n","refs":[]}
+{"address":"6814fac0","value":"R6008\r\n- not enough space for arguments\r\n","refs":[{"from":"6813b964","function":"6813b949"},{"from":"6814f9b4","function":null}]}
+{"address":"6814fb18","value":"R6009\r\n- not enough space for environment\r\n","refs":[]}
+{"address":"6814fb70","value":"R6010\r\n- abort() has been called\r\n","refs":[]}
+{"address":"6814fbb8","value":"R6016\r\n- not enough space for thread data\r\n","refs":[]}
+{"address":"6814fc10","value":"R6017\r\n- unexpected multithread lock error\r\n","refs":[]}
+{"address":"6814fc70","value":"R6018\r\n- unexpected heap error\r\n","refs":[]}
+{"address":"6814fcb8","value":"R6019\r\n- unable to open console device\r\n","refs":[]}
+{"address":"6814fd10","value":"R6024\r\n- not enough space for _onexit/atexit table\r\n","refs":[]}
+{"address":"6814fd80","value":"R6025\r\n- pure virtual function call\r\n","refs":[]}
+{"address":"6814fdd0","value":"R6026\r\n- not enough space for stdio initialization\r\n","refs":[]}
+{"address":"6814fe40","value":"R6027\r\n- not enough space for lowio initialization\r\n","refs":[]}
+{"address":"6814feb0","value":"R6028\r\n- unable to initialize heap\r\n","refs":[]}
+{"address":"6814fefc","value":"R6030\r\n- CRT not initialized\r\n","refs":[]}
+{"address":"6814ff40","value":"R6031\r\n- Attempt to initialize the CRT more than once.\nThis indicates a bug in your application.\r\n","refs":[]}
+{"address":"68150008","value":"R6032\r\n- not enough space for locale information\r\n","refs":[]}
+{"address":"68150070","value":"R6033\r\n- Attempt to use MSIL code from this assembly during native code initialization\nThis indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.\r\n","refs":[]}
+{"address":"68150260","value":"R6034\r\n- inconsistent onexit begin-end variables\r\n","refs":[]}
+{"address":"681502c8","value":"DOMAIN error\r\n","refs":[]}
+{"address":"681502e8","value":"SING error\r\n","refs":[]}
+{"address":"68150304","value":"TLOSS error\r\n","refs":[]}
+{"address":"68150328","value":"runtime error ","refs":[]}
+{"address":"68150348","value":"Runtime Error!\n\nProgram: ","refs":[{"from":"6813b9cd","function":"6813b96d"}]}
+{"address":"6815037c","value":"<program name unknown>","refs":[{"from":"6813ba0e","function":"6813b96d"}]}
+{"address":"681503c0","value":"Microsoft Visual C++ Runtime Library","refs":[{"from":"6813baa7","function":"6813b96d"}]}
+{"address":"68150416","value":"null)","refs":[{"from":"6813a4f6","function":"68139b6f"},{"from":"6813b17f","function":"6813a7ec"}]}
+{"address":"681515bc","value":"de-DE","refs":[]}
+{"address":"681516dc","value":"sl-SI","refs":[]}
+{"address":"681517a8","value":"hi-IN","refs":[]}
+{"address":"68151820","value":"bn-IN","refs":[]}
+{"address":"6815182c","value":"pa-IN","refs":[]}
+{"address":"68151844","value":"ta-IN","refs":[]}
+{"address":"68151850","value":"te-IN","refs":[]}
+{"address":"6815185c","value":"kn-IN","refs":[]}
+{"address":"68151880","value":"sa-IN","refs":[]}
+{"address":"68151914","value":"de-CH","refs":[]}
+{"address":"68151974","value":"sr-SP-Latn","refs":[]}
+{"address":"681519b0","value":"se-SE","refs":[]}
+{"address":"68151a08","value":"de-AT","refs":[]}
+{"address":"68151a38","value":"sr-SP-Cyrl","refs":[]}
+{"address":"68151aa8","value":"fr-CH","refs":[]}
+{"address":"68151ae8","value":"de-LI","refs":[]}
+{"address":"68151b18","value":"bs-BA-Latn","refs":[]}
+{"address":"68151b70","value":"sr-BA-Latn","refs":[]}
+{"address":"68151e80","value":"bn-in","refs":[]}
+{"address":"68151e8c","value":"bs-ba-latn","refs":[]}
+{"address":"68151ed4","value":"de-at","refs":[]}
+{"address":"68151ee0","value":"de-ch","refs":[]}
+{"address":"68151eec","value":"de-de","refs":[]}
+{"address":"68151ef8","value":"de-li","refs":[]}
+{"address":"68151f98","value":"en-tt","refs":[{"from":"6813d270","function":"6813d257"},{"from":"68150e08","function":null}]}
+{"address":"68152100","value":"fr-ch","refs":[]}
+{"address":"68152154","value":"hi-in","refs":[]}
+{"address":"68152190","value":"id-id","refs":[{"from":"6813d270","function":"6813d257"},{"from":"68150fd0","function":null}]}
+{"address":"681521e4","value":"kn-in","refs":[]}
+{"address":"681522cc","value":"pa-in","refs":[]}
+{"address":"68152344","value":"sa-in","refs":[]}
+{"address":"68152368","value":"se-se","refs":[]}
+{"address":"68152380","value":"sl-si","refs":[]}
+{"address":"68152410","value":"sr-ba-latn","refs":[]}
+{"address":"68152428","value":"sr-sp-cyrl","refs":[]}
+{"address":"68152440","value":"sr-sp-latn","refs":[]}
+{"address":"6815248c","value":"ta-in","refs":[]}
+{"address":"68152498","value":"te-in","refs":[]}
+{"address":"681527a4","value":"__based(","refs":[{"from":"68152618","function":null}]}
+{"address":"681527b0","value":"__cdecl","refs":[{"from":"6815261c","function":null}]}
+{"address":"681527b8","value":"__pascal","refs":[{"from":"68152620","function":null}]}
+{"address":"681527c4","value":"__stdcall","refs":[{"from":"68152624","function":null}]}
+{"address":"681527d0","value":"__thiscall","refs":[{"from":"68152628","function":null}]}
+{"address":"681527dc","value":"__fastcall","refs":[{"from":"6815262c","function":null}]}
+{"address":"681527e8","value":"__vectorcall","refs":[{"from":"68152630","function":null}]}
+{"address":"681527f8","value":"__clrcall","refs":[{"from":"68152634","function":null}]}
+{"address":"68152804","value":"__eabi","refs":[{"from":"68152638","function":null}]}
+{"address":"6815280c","value":"__ptr64","refs":[{"from":"6815263c","function":null}]}
+{"address":"68152814","value":"__restrict","refs":[{"from":"68152640","function":null}]}
+{"address":"68152820","value":"__unaligned","refs":[{"from":"68152644","function":null}]}
+{"address":"6815282c","value":"restrict(","refs":[{"from":"68152648","function":null}]}
+{"address":"68152840","value":" delete","refs":[{"from":"68152654","function":null}]}
+{"address":"68152864","value":"operator","refs":[{"from":"68152674","function":null}]}
+{"address":"681528ec","value":"`vftable'","refs":[{"from":"681526f4","function":null}]}
+{"address":"681528f8","value":"`vbtable'","refs":[{"from":"681526f8","function":null}]}
+{"address":"68152904","value":"`vcall'","refs":[{"from":"681526fc","function":null}]}
+{"address":"6815290c","value":"`typeof'","refs":[{"from":"68152700","function":null}]}
+{"address":"68152918","value":"`local static guard'","refs":[{"from":"68152704","function":null}]}
+{"address":"68152930","value":"`string'","refs":[{"from":"68152708","function":null}]}
+{"address":"6815293c","value":"`vbase destructor'","refs":[{"from":"6815270c","function":null}]}
+{"address":"68152950","value":"`vector deleting destructor'","refs":[{"from":"68152710","function":null}]}
+{"address":"68152970","value":"`default constructor closure'","refs":[{"from":"68152714","function":null}]}
+{"address":"68152990","value":"`scalar deleting destructor'","refs":[{"from":"68152718","function":null}]}
+{"address":"681529b0","value":"`vector constructor iterator'","refs":[{"from":"6815271c","function":null}]}
+{"address":"681529d0","value":"`vector destructor iterator'","refs":[{"from":"68152720","function":null}]}
+{"address":"681529f0","value":"`vector vbase constructor iterator'","refs":[{"from":"68152724","function":null}]}
+{"address":"68152a14","value":"`virtual displacement map'","refs":[{"from":"68152728","function":null}]}
+{"address":"68152a30","value":"`eh vector constructor iterator'","refs":[{"from":"6815272c","function":null}]}
+{"address":"68152a54","value":"`eh vector destructor iterator'","refs":[{"from":"68152730","function":null}]}
+{"address":"68152a74","value":"`eh vector vbase constructor iterator'","refs":[{"from":"68152734","function":null}]}
+{"address":"68152a9c","value":"`copy constructor closure'","refs":[{"from":"68152738","function":null}]}
+{"address":"68152ab8","value":"`udt returning'","refs":[{"from":"6815273c","function":null}]}
+{"address":"68152acc","value":"`RTTI","refs":[{"from":"68152744","function":null}]}
+{"address":"68152ad4","value":"`local vftable'","refs":[{"from":"68152748","function":null}]}
+{"address":"68152ae4","value":"`local vftable constructor closure'","refs":[{"from":"6815274c","function":null}]}
+{"address":"68152b08","value":" new[]","refs":[{"from":"68152750","function":null}]}
+{"address":"68152b10","value":" delete[]","refs":[{"from":"68152754","function":null}]}
+{"address":"68152b1c","value":"`omni callsig'","refs":[{"from":"68152758","function":null}]}
+{"address":"68152b2c","value":"`placement delete closure'","refs":[{"from":"6815275c","function":null}]}
+{"address":"68152b48","value":"`placement delete[] closure'","refs":[{"from":"68152760","function":null}]}
+{"address":"68152b68","value":"`managed vector constructor iterator'","refs":[{"from":"68152764","function":null}]}
+{"address":"68152b90","value":"`managed vector destructor iterator'","refs":[{"from":"68152768","function":null}]}
+{"address":"68152bb8","value":"`eh vector copy constructor iterator'","refs":[{"from":"6815276c","function":null}]}
+{"address":"68152be0","value":"`eh vector vbase copy constructor iterator'","refs":[{"from":"68152770","function":null}]}
+{"address":"68152c0c","value":"`dynamic initializer for '","refs":[{"from":"68152774","function":null}]}
+{"address":"68152c28","value":"`dynamic atexit destructor for '","refs":[{"from":"68152778","function":null}]}
+{"address":"68152c4c","value":"`vector copy constructor iterator'","refs":[{"from":"6815277c","function":null}]}
+{"address":"68152c70","value":"`vector vbase copy constructor iterator'","refs":[{"from":"68152780","function":null}]}
+{"address":"68152c9c","value":"`managed vector copy constructor iterator'","refs":[{"from":"68152784","function":null}]}
+{"address":"68152cc8","value":"`local static thread guard'","refs":[{"from":"68152788","function":null}]}
+{"address":"68152ce4","value":" Type Descriptor'","refs":[{"from":"68152790","function":null}]}
+{"address":"68152cf8","value":" Base Class Descriptor at (","refs":[{"from":"68152794","function":null}]}
+{"address":"68152d14","value":" Base Class Array'","refs":[{"from":"68152798","function":null}]}
+{"address":"68152d28","value":" Class Hierarchy Descriptor'","refs":[{"from":"6815279c","function":null}]}
+{"address":"68152d48","value":" Complete Object Locator'","refs":[{"from":"681527a0","function":null}]}
+{"address":"681535d4","value":"USER32.DLL","refs":[{"from":"6813ff0d","function":"6813fec4"},{"from":"6813ff2f","function":"6813fec4"}]}
+{"address":"681535ec","value":"MessageBoxW","refs":[{"from":"6813ff44","function":"6813fec4"}]}
+{"address":"681535f8","value":"GetActiveWindow","refs":[{"from":"6813ff5b","function":"6813fec4"}]}
+{"address":"68153608","value":"GetLastActivePopup","refs":[{"from":"6813ff6f","function":"6813fec4"}]}
+{"address":"6815361c","value":"GetUserObjectInformationW","refs":[{"from":"6813ff83","function":"6813fec4"}]}
+{"address":"68153638","value":"GetProcessWindowStation","refs":[{"from":"6813ffa0","function":"6813fec4"}]}
+{"address":"68153650","value":"1#SNAN","refs":[{"from":"6814145e","function":"68141397"}]}
+{"address":"68153658","value":"1#IND","refs":[{"from":"68141477","function":"68141397"}]}
+{"address":"68153660","value":"1#INF","refs":[{"from":"68141486","function":"68141397"}]}
+{"address":"68153668","value":"1#QNAN","refs":[{"from":"681414a7","function":"68141397"}]}
+{"address":"68153670","value":"CONOUT$","refs":[{"from":"68142781","function":"68142773"}]}
+{"address":"6815d940","value":"CiffMgr.DLL","refs":[{"from":"6815d8fc","function":null}]}
+{"address":"6815d94c","value":"DllCanUnloadNow","refs":[{"from":"6815d928","function":null}]}
+{"address":"6815d95c","value":"DllGetClassObject","refs":[{"from":"6815d92c","function":null}]}
+{"address":"6815d96e","value":"DllRegisterServer","refs":[{"from":"6815d930","function":null}]}
+{"address":"6815d980","value":"DllUnregisterServer","refs":[{"from":"6815d934","function":null}]}
+{"address":"6815dbf2","value":"GetSystemDirectoryW","refs":[]}
+{"address":"6815dc08","value":"FreeLibrary","refs":[]}
+{"address":"6815dc16","value":"GetProcAddress","refs":[]}
+{"address":"6815dc28","value":"LoadLibraryW","refs":[]}
+{"address":"6815dc38","value":"EnterCriticalSection","refs":[]}
+{"address":"6815dc50","value":"LeaveCriticalSection","refs":[]}
+{"address":"6815dc68","value":"InitializeCriticalSectionAndSpinCount","refs":[]}
+{"address":"6815dc90","value":"GetLastError","refs":[]}
+{"address":"6815dca0","value":"DeleteCriticalSection","refs":[]}
+{"address":"6815dcb8","value":"GetModuleFileNameW","refs":[]}
+{"address":"6815dcce","value":"EncodePointer","refs":[]}
+{"address":"6815dcde","value":"DecodePointer","refs":[]}
+{"address":"6815dcee","value":"RaiseException","refs":[]}
+{"address":"6815dd00","value":"DisableThreadLibraryCalls","refs":[]}
+{"address":"6815dd1c","value":"GetModuleHandleW","refs":[]}
+{"address":"6815dd30","value":"LoadLibraryExW","refs":[]}
+{"address":"6815dd42","value":"LoadResource","refs":[]}
+{"address":"6815dd52","value":"SizeofResource","refs":[]}
+{"address":"6815dd64","value":"lstrcmpiW","refs":[]}
+{"address":"6815dd70","value":"FindResourceW","refs":[]}
+{"address":"6815dd80","value":"MultiByteToWideChar","refs":[]}
+{"address":"6815dd96","value":"GetTickCount","refs":[]}
+{"address":"6815dda6","value":"CreateFileW","refs":[]}
+{"address":"6815ddb4","value":"WriteFile","refs":[]}
+{"address":"6815ddc0","value":"CloseHandle","refs":[]}
+{"address":"6815ddce","value":"WideCharToMultiByte","refs":[]}
+{"address":"6815dde2","value":"KERNEL32.dll","refs":[]}
+{"address":"6815ddf2","value":"MessageBoxW","refs":[]}
+{"address":"6815de00","value":"SetRectEmpty","refs":[]}
+{"address":"6815de10","value":"SetRect","refs":[]}
+{"address":"6815de1a","value":"CharUpperBuffW","refs":[]}
+{"address":"6815de2c","value":"CharNextW","refs":[]}
+{"address":"6815de36","value":"USER32.dll","refs":[]}
+{"address":"6815de44","value":"RegCloseKey","refs":[]}
+{"address":"6815de52","value":"RegCreateKeyExW","refs":[]}
+{"address":"6815de64","value":"RegDeleteKeyW","refs":[]}
+{"address":"6815de74","value":"RegDeleteValueW","refs":[]}
+{"address":"6815de86","value":"RegEnumKeyExW","refs":[]}
+{"address":"6815de96","value":"RegOpenKeyExW","refs":[]}
+{"address":"6815dea6","value":"RegQueryInfoKeyW","refs":[]}
+{"address":"6815deba","value":"RegSetValueExW","refs":[]}
+{"address":"6815deca","value":"ADVAPI32.dll","refs":[]}
+{"address":"6815deda","value":"CoCreateInstance","refs":[]}
+{"address":"6815deee","value":"StringFromGUID2","refs":[]}
+{"address":"6815df00","value":"CoTaskMemAlloc","refs":[]}
+{"address":"6815df12","value":"CoTaskMemRealloc","refs":[]}
+{"address":"6815df26","value":"CoTaskMemFree","refs":[]}
+{"address":"6815df34","value":"ole32.dll","refs":[]}
+{"address":"6815df3e","value":"OLEAUT32.dll","refs":[]}
+{"address":"6815df4e","value":"IsDebuggerPresent","refs":[]}
+{"address":"6815df62","value":"OutputDebugStringW","refs":[]}
+{"address":"6815df78","value":"RtlUnwind","refs":[]}
+{"address":"6815df84","value":"HeapFree","refs":[]}
+{"address":"6815df90","value":"IsProcessorFeaturePresent","refs":[]}
+{"address":"6815dfac","value":"HeapAlloc","refs":[]}
+{"address":"6815dfb8","value":"GetCommandLineA","refs":[]}
+{"address":"6815dfca","value":"GetCurrentThreadId","refs":[]}
+{"address":"6815dfe0","value":"ExitProcess","refs":[]}
+{"address":"6815dfee","value":"GetModuleHandleExW","refs":[]}
+{"address":"6815e004","value":"HeapSize","refs":[]}
+{"address":"6815e010","value":"SetLastError","refs":[]}
+{"address":"6815e020","value":"IsValidCodePage","refs":[]}
+{"address":"6815e032","value":"GetACP","refs":[]}
+{"address":"6815e03c","value":"GetOEMCP","refs":[]}
+{"address":"6815e048","value":"GetCPInfo","refs":[]}
+{"address":"6815e054","value":"GetProcessHeap","refs":[]}
+{"address":"6815e066","value":"UnhandledExceptionFilter","refs":[]}
+{"address":"6815e082","value":"SetUnhandledExceptionFilter","refs":[]}
+{"address":"6815e0a0","value":"Sleep","refs":[]}
+{"address":"6815e0a8","value":"GetCurrentProcess","refs":[]}
+{"address":"6815e0bc","value":"TerminateProcess","refs":[]}
+{"address":"6815e0d0","value":"TlsAlloc","refs":[]}
+{"address":"6815e0dc","value":"TlsGetValue","refs":[]}
+{"address":"6815e0ea","value":"TlsSetValue","refs":[]}
+{"address":"6815e0f8","value":"TlsFree","refs":[]}
+{"address":"6815e102","value":"GetStartupInfoW","refs":[]}
+{"address":"6815e114","value":"GetStdHandle","refs":[]}
+{"address":"6815e124","value":"HeapReAlloc","refs":[]}
+{"address":"6815e132","value":"GetFileType","refs":[]}
+{"address":"6815e140","value":"GetModuleFileNameA","refs":[]}
+{"address":"6815e156","value":"QueryPerformanceCounter","refs":[]}
+{"address":"6815e170","value":"GetCurrentProcessId","refs":[]}
+{"address":"6815e186","value":"GetSystemTimeAsFileTime","refs":[]}
+{"address":"6815e1a0","value":"GetEnvironmentStringsW","refs":[]}
+{"address":"6815e1ba","value":"FreeEnvironmentStringsW","refs":[]}
+{"address":"6815e1d4","value":"LCMapStringW","refs":[]}
+{"address":"6815e1e4","value":"GetStringTypeW","refs":[]}
+{"address":"6815e1f6","value":"GetConsoleCP","refs":[]}
+{"address":"6815e206","value":"GetConsoleMode","refs":[]}
+{"address":"6815e218","value":"SetFilePointerEx","refs":[]}
+{"address":"6815e22c","value":"SetStdHandle","refs":[]}
+{"address":"6815e23c","value":"WriteConsoleW","refs":[]}
+{"address":"6815e24c","value":"FlushFileBuffers","refs":[]}
+{"address":"68160771","value":"abcdefghijklmnopqrstuvwxyz","refs":[]}
+{"address":"68160791","value":"ABCDEFGHIJKLMNOPQRSTUVWXYZ","refs":[]}
+{"address":"6816098a","value":"abcdefghijklmnopqrstuvwxyz","refs":[]}
+{"address":"681609aa","value":"ABCDEFGHIJKLMNOPQRSTUVWXYZ","refs":[]}
+{"address":"68161678","value":".?AVerror_category@std@@","refs":[]}
+{"address":"6816169c","value":".?AV_Generic_error_category@std@@","refs":[]}
+{"address":"681616c8","value":".?AV_Iostream_error_category@std@@","refs":[]}
+{"address":"681616f4","value":".?AV_System_error_category@std@@","refs":[]}
+{"address":"68161720","value":".?AVZipherDate@@","refs":[]}
+{"address":"6816173c","value":".?AVCAtlException@ATL@@","refs":[]}
+{"address":"6816175c","value":".?AUIUnknown@@","refs":[]}
+{"address":"68161778","value":".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@","refs":[]}
+{"address":"681617bc","value":".?AVCComObjectRootBase@ATL@@","refs":[]}
+{"address":"681617e4","value":".?AUIDispatch@@","refs":[]}
+{"address":"681617fc","value":".?AUICiffClipRect@@","refs":[]}
+{"address":"68161818","value":".?AVCCiffClipRect@@","refs":[]}
+{"address":"68161838","value":".?AV?$IDispatchImpl@UICiffClipRect@@$1?IID_ICiffClipRect@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"681618c8","value":".?AV?$CComObject@VCCiffClipRect@@@ATL@@","refs":[]}
+{"address":"681618f8","value":".?AUICiffSubCounter@@","refs":[]}
+{"address":"68161918","value":".?AUICiffSubCounter2@@","refs":[]}
+{"address":"68161938","value":".?AUICiffSubCounter3@@","refs":[]}
+{"address":"68161958","value":".?AVCCiffSubCounter@@","refs":[]}
+{"address":"68161978","value":".?AV?$IDispatchImpl@UICiffSubCounter3@@$1?IID_ICiffSubCounter3@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68161a0c","value":".?AV?$CComObject@VCCiffSubCounter@@@ATL@@","refs":[]}
+{"address":"68161a40","value":".?AUICiffEmbeddedFile@@","refs":[]}
+{"address":"68161a60","value":".?AVCCiffEmbeddedFile@@","refs":[]}
+{"address":"68161a80","value":".?AV?$IDispatchImpl@UICiffEmbeddedFile@@$1?IID_ICiffEmbeddedFile@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68161b18","value":".?AV?$CComObject@VCCiffEmbeddedFile@@@ATL@@","refs":[]}
+{"address":"68161b4c","value":".?AUIEnumVARIANT@@","refs":[]}
+{"address":"68161b68","value":".?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@ATL@@","refs":[]}
+{"address":"68161c20","value":".?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@@ATL@@","refs":[]}
+{"address":"68161cc0","value":".?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@","refs":[]}
+{"address":"68161d04","value":".?AUICiffVariableDataList@@","refs":[]}
+{"address":"68161d28","value":".?AUICiffVariableDataList2@@","refs":[]}
+{"address":"68161d50","value":".?AUICiffVariableDataList3@@","refs":[]}
+{"address":"68161d78","value":".?AUICiffDataObject@@","refs":[]}
+{"address":"68161d98","value":".?AUICiffDataObject2@@","refs":[]}
+{"address":"68161db8","value":".?AUICiffDataObject3@@","refs":[]}
+{"address":"68161dd8","value":".?AUICiffDataObject4@@","refs":[]}
+{"address":"68161df8","value":".?AUICiffDataObject5@@","refs":[]}
+{"address":"68161e18","value":".?AUICiffDataObject6@@","refs":[]}
+{"address":"68161e38","value":".?AUICiffDataObject7@@","refs":[]}
+{"address":"68161e58","value":".?AUICiffDataObject8@@","refs":[]}
+{"address":"68161e78","value":".?AV?$ICollectionOnSTLImpl@UICiffVariableDataList3@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"68161fac","value":".?AVCCiffVariableDataList@@","refs":[]}
+{"address":"68161fd0","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffVariableDataList3@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffVariableDataList3@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"68162180","value":".?AV?$ICollectionOnSTLImpl@UICiffDataObject8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"681622ac","value":".?AVCCiffDataObject@@","refs":[]}
+{"address":"681622d0","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffDataObject8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffDataObject8@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"68162470","value":".?AV?$CComObject@VCCiffVariableDataList@@@ATL@@","refs":[]}
+{"address":"681624a8","value":".?AV?$CComObject@VCCiffDataObject@@@ATL@@","refs":[]}
+{"address":"681624e0","value":".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@ATL@@@ATL@@","refs":[]}
+{"address":"681625a8","value":".?AUICiffSubImage@@","refs":[]}
+{"address":"681625c4","value":".?AUICiffSubImage2@@","refs":[]}
+{"address":"681625e4","value":".?AUICiffSubImage3@@","refs":[]}
+{"address":"68162604","value":".?AUICiffSubImage4@@","refs":[]}
+{"address":"68162624","value":".?AUICiffSubImage5@@","refs":[]}
+{"address":"68162644","value":".?AUICiffSubImage6@@","refs":[]}
+{"address":"68162664","value":".?AUICiffSubImage7@@","refs":[]}
+{"address":"68162684","value":".?AUICiffSubImage8@@","refs":[]}
+{"address":"681626a4","value":".?AV?$CZipherBSTRMapAnalog@I@@","refs":[]}
+{"address":"681626d0","value":".?AV?$ICollectionOnSTLImpl@UICiffSubImage8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"681627fc","value":".?AVCCiffSubImage@@","refs":[]}
+{"address":"68162818","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffSubImage8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffSubImage8@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"681629b4","value":".?AV?$CComObject@VCCiffSubImage@@@ATL@@","refs":[]}
+{"address":"681629e4","value":".?AUICiffPrintHeadMap@@","refs":[]}
+{"address":"68162a04","value":".?AVCCiffPrintHeadMap@@","refs":[]}
+{"address":"68162a28","value":".?AV?$IDispatchImpl@UICiffPrintHeadMap@@$1?IID_ICiffPrintHeadMap@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68162ac0","value":".?AV?$CComObject@VCCiffPrintHeadMap@@@ATL@@","refs":[]}
+{"address":"68162af4","value":".?AUICiffFile@@","refs":[]}
+{"address":"68162b0c","value":".?AUICiffFile2@@","refs":[]}
+{"address":"68162b28","value":".?AUICiffFile3@@","refs":[]}
+{"address":"68162b44","value":".?AUICiffFile4@@","refs":[]}
+{"address":"68162b60","value":".?AUICiffFile5@@","refs":[]}
+{"address":"68162b7c","value":".?AUICiffFile6@@","refs":[]}
+{"address":"68162b98","value":".?AUICiffFile7@@","refs":[]}
+{"address":"68162bb4","value":".?AUICiffFile8@@","refs":[]}
+{"address":"68162bd0","value":".?AUICiffParameters@@","refs":[]}
+{"address":"68162bf0","value":".?AUIDateOffsets@@","refs":[]}
+{"address":"68162c0c","value":".?AUIPrices@@","refs":[]}
+{"address":"68162c24","value":".?AUICiffGenericSettings@@","refs":[]}
+{"address":"68162c48","value":".?AUICiffGenericSettings2@@","refs":[]}
+{"address":"68162c6c","value":".?AUICiffEmbeddedFiles@@","refs":[]}
+{"address":"68162c90","value":".?AUIDataSources@@","refs":[]}
+{"address":"68162cac","value":".?AVCEncryption@@","refs":[]}
+{"address":"68162cc8","value":".?AVCMSXMLCiffSerialiser@@","refs":[]}
+{"address":"68162cf0","value":".?AV?$ICollectionOnSTLImpl@UIDateOffsets@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"68162e18","value":".?AVCDateOffsets@@","refs":[]}
+{"address":"68162e38","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UIDateOffsets@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_IDateOffsets@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"68162fd0","value":".?AV?$ICollectionOnSTLImpl@UICiffParameters@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"681630fc","value":".?AVCCiffParameters@@","refs":[]}
+{"address":"68163120","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffParameters@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffParameters@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"681632c0","value":".?AV?$ICollectionOnSTLImpl@UICiffGenericSettings2@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"681633f4","value":".?AVCCiffGenericSettings@@","refs":[]}
+{"address":"68163418","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffGenericSettings2@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffGenericSettings2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"681635c0","value":".?AV?$CComObject@VCCiffParameters@@@ATL@@","refs":[]}
+{"address":"681635f8","value":".?AV?$ICollectionOnSTLImpl@UICiffEmbeddedFiles@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"68163728","value":".?AVCCiffEmbeddedFiles@@","refs":[]}
+{"address":"68163750","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffEmbeddedFiles@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffEmbeddedFiles@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"681638f8","value":".?AV?$ICollectionOnSTLImpl@UIPrices@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"68163a1c","value":".?AVCPrices@@","refs":[]}
+{"address":"68163a38","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UIPrices@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_IPrices@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"68163bc8","value":".?AV?$ICollectionOnSTLImpl@UIDataSources@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"68163cf0","value":".?AVCDataSources@@","refs":[]}
+{"address":"68163d10","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UIDataSources@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_IDataSources@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"68163ea8","value":".?AV?$ICollectionOnSTLImpl@UICiffFile8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"68163fd0","value":".?AVCCiffFile@@","refs":[]}
+{"address":"68163fe8","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffFile8@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffFile8@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"6816417c","value":".?AV?$CComObject@VCDateOffsets@@@ATL@@","refs":[]}
+{"address":"681641ac","value":".?AV?$CComObject@VCCiffGenericSettings@@@ATL@@","refs":[]}
+{"address":"681641e4","value":".?AV?$CComObject@VCCiffEmbeddedFiles@@@ATL@@","refs":[]}
+{"address":"6816421c","value":".?AV?$CComObject@VCPrices@@@ATL@@","refs":[]}
+{"address":"68164248","value":".?AV?$CComObject@VCDataSources@@@ATL@@","refs":[]}
+{"address":"68164278","value":".?AV?$CComObject@VCCiffFile@@@ATL@@","refs":[]}
+{"address":"681642a4","value":".?AUIRegistrarBase@@","refs":[]}
+{"address":"681642c4","value":".?AVCAtlModule@ATL@@","refs":[]}
+{"address":"681642e4","value":".?AU_ATL_MODULE70@ATL@@","refs":[]}
+{"address":"68164304","value":".?AVCComModule@ATL@@","refs":[]}
+{"address":"68164324","value":".?AV?$CAtlModuleT@VCComModule@ATL@@@ATL@@","refs":[]}
+{"address":"68164358","value":".?AVCRegObject@ATL@@","refs":[]}
+{"address":"68164378","value":".?AVCComClassFactory@ATL@@","refs":[]}
+{"address":"6816439c","value":".?AUIClassFactory@@","refs":[]}
+{"address":"681643b8","value":".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@","refs":[]}
+{"address":"681643f8","value":".?AUICiffManager@@","refs":[]}
+{"address":"68164414","value":".?AUICiffManager2@@","refs":[]}
+{"address":"68164430","value":".?AUICiffManager3@@","refs":[]}
+{"address":"6816444c","value":".?AUICiffManager4@@","refs":[]}
+{"address":"68164468","value":".?AVCCiffManager@@","refs":[]}
+{"address":"68164488","value":".?AV?$CComCoClass@VCCiffManager@@$1?CLSID_CiffManager@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"681644d8","value":".?AV?$IDispatchImpl@UICiffManager4@@$1?IID_ICiffManager4@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68164568","value":".?AV?$CComObject@VCCiffManager@@@ATL@@","refs":[]}
+{"address":"68164598","value":".?AV?$CComAggObject@VCCiffManager@@@ATL@@","refs":[]}
+{"address":"681645d0","value":".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@","refs":[]}
+{"address":"68164618","value":".?AV?$CComContainedObject@VCCiffManager@@@ATL@@","refs":[]}
+{"address":"68164650","value":".?AUICiffParameterSet@@","refs":[]}
+{"address":"68164670","value":".?AUICiffParameterSet2@@","refs":[]}
+{"address":"68164698","value":".?AV?$ICollectionOnSTLImpl@UICiffParameterSet2@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"681647c8","value":".?AVCCiffParameterSet@@","refs":[]}
+{"address":"681647e8","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffParameterSet2@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffParameterSet2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"6816498c","value":".?AV?$CComObject@VCCiffParameterSet@@@ATL@@","refs":[]}
+{"address":"681649c0","value":".?AUICiffParameter@@","refs":[]}
+{"address":"681649e0","value":".?AUICiffParameter2@@","refs":[]}
+{"address":"68164a00","value":".?AVCCiffParameter@@","refs":[]}
+{"address":"68164a20","value":".?AV?$IDispatchImpl@UICiffParameter2@@$1?IID_ICiffParameter2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68164ab4","value":".?AV?$CComObject@VCCiffParameter@@@ATL@@","refs":[]}
+{"address":"68164ae8","value":".?AUICiffFieldData@@","refs":[]}
+{"address":"68164b08","value":".?AUICiffClipping@@","refs":[]}
+{"address":"68164b24","value":".?AUICiffField@@","refs":[]}
+{"address":"68164b40","value":".?AUICiffFieldExtension@@","refs":[]}
+{"address":"68164b64","value":".?AUICiffFieldExtension2@@","refs":[]}
+{"address":"68164b88","value":".?AUICiffFieldExtension3@@","refs":[]}
+{"address":"68164bac","value":".?AUICiffTextField@@","refs":[]}
+{"address":"68164bcc","value":".?AUICiffTextField2@@","refs":[]}
+{"address":"68164bec","value":".?AUICiffTextField3@@","refs":[]}
+{"address":"68164c0c","value":".?AUICiffTextField4@@","refs":[]}
+{"address":"68164c2c","value":".?AUICiffTextField5@@","refs":[]}
+{"address":"68164c4c","value":".?AUICiffTextField6@@","refs":[]}
+{"address":"68164c6c","value":".?AUICiffTextField7@@","refs":[]}
+{"address":"68164c8c","value":".?AUICiffBarcodeField@@","refs":[]}
+{"address":"68164cac","value":".?AUICiffBarcodeField2@@","refs":[]}
+{"address":"68164cd0","value":".?AUICiffBarcodeField3@@","refs":[]}
+{"address":"68164cf4","value":".?AUICiffBarcodeField4@@","refs":[]}
+{"address":"68164d18","value":".?AUICiffBarcodeField5@@","refs":[]}
+{"address":"68164d3c","value":".?AUICiffBarcodeField6@@","refs":[]}
+{"address":"68164d60","value":".?AUICiffBarcodeField7@@","refs":[]}
+{"address":"68164d84","value":".?AUICiffBarcodeField8@@","refs":[]}
+{"address":"68164da8","value":".?AUICiffBarcodeField9@@","refs":[]}
+{"address":"68164dcc","value":".?AUICiffBarcodeField10@@","refs":[]}
+{"address":"68164df0","value":".?AUICiffBarcodeField11@@","refs":[]}
+{"address":"68164e14","value":".?AUICiffBarcodeField12@@","refs":[]}
+{"address":"68164e38","value":".?AUICiffBarcodeField13@@","refs":[]}
+{"address":"68164e5c","value":".?AUICiffGfxField@@","refs":[]}
+{"address":"68164e78","value":".?AUICiffGfxField2@@","refs":[]}
+{"address":"68164e98","value":".?AV?$ICollectionOnSTLImpl@UICiffFieldData@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"68164fc4","value":".?AVCCiffFieldData@@","refs":[]}
+{"address":"68164fe8","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffFieldData@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffFieldData@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"68165188","value":".?AV?$ICollectionOnSTLImpl@UICiffClipping@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"681652b4","value":".?AVCCiffClipping@@","refs":[]}
+{"address":"681652d0","value":".?AV?$IDispatchImpl@V?$ICollectionOnSTLImpl@UICiffClipping@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@$1?IID_ICiffClipping@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U4@B$00$0A@VCComTypeInfoHolder@2@@ATL@@","refs":[]}
+{"address":"68165468","value":".?AV?$CComObject@VCCiffClipping@@@ATL@@","refs":[]}
+{"address":"68165498","value":".?AVCCiffTextField@@","refs":[]}
+{"address":"681654b8","value":".?AV?$IDispatchImpl@V?$ICiffFieldImpl@UICiffTextField7@@@@$1?IID_ICiffTextField7@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68165560","value":".?AV?$ICiffFieldImpl@UICiffTextField7@@@@","refs":[]}
+{"address":"68165594","value":".?AV?$CComObject@VCCiffFieldData@@@ATL@@","refs":[]}
+{"address":"681655c8","value":".?AVCCiffBarcodeField@@","refs":[]}
+{"address":"681655e8","value":".?AV?$IDispatchImpl@V?$ICiffFieldImpl@UICiffBarcodeField13@@@@$1?IID_ICiffBarcodeField13@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68165698","value":".?AV?$ICiffFieldImpl@UICiffBarcodeField13@@@@","refs":[]}
+{"address":"681656d0","value":".?AVCCiffGfxField@@","refs":[]}
+{"address":"681656f0","value":".?AV?$IDispatchImpl@V?$ICiffFieldImpl@UICiffGfxField2@@@@$1?IID_ICiffGfxField2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68165794","value":".?AV?$ICiffFieldImpl@UICiffGfxField2@@@@","refs":[]}
+{"address":"681657c8","value":".?AV?$CComObject@VCCiffTextField@@@ATL@@","refs":[]}
+{"address":"681657fc","value":".?AV?$CComObject@VCCiffBarcodeField@@@ATL@@","refs":[]}
+{"address":"68165830","value":".?AV?$CComObject@VCCiffGfxField@@@ATL@@","refs":[]}
+{"address":"68165860","value":".?AUICiffVariableDataItem@@","refs":[]}
+{"address":"68165884","value":".?AUICiffVariableDataItem2@@","refs":[]}
+{"address":"681658ac","value":".?AVCCiffVariableDataItem@@","refs":[]}
+{"address":"681658d0","value":".?AV?$IDispatchImpl@UICiffVariableDataItem2@@$1?IID_ICiffVariableDataItem2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68165970","value":".?AV?$CComObject@VCCiffVariableDataItem@@@ATL@@","refs":[]}
+{"address":"681659a8","value":".?AUIDataSource@@","refs":[]}
+{"address":"681659c4","value":".?AVCDataSource@@","refs":[]}
+{"address":"681659e0","value":".?AV?$IDispatchImpl@UIDataSource@@$1?IID_IDataSource@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68165a6c","value":".?AV?$CComObject@VCDataSource@@@ATL@@","refs":[]}
+{"address":"68165a9c","value":".?AUIDayMonth@@","refs":[]}
+{"address":"68165ab4","value":".?AUIAvoidanceDates@@","refs":[]}
+{"address":"68165ad4","value":".?AUICalendarRule@@","refs":[]}
+{"address":"68165af0","value":".?AUICalendarRules@@","refs":[]}
+{"address":"68165b10","value":".?AVCCalendarRule@@","refs":[]}
+{"address":"68165b30","value":".?AV?$IDispatchImpl@UICalendarRule@@$1?IID_ICalendarRule@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68165bc0","value":".?AVCCalendarRules@@","refs":[]}
+{"address":"68165be0","value":".?AV?$IDispatchImpl@U?$ComCollectionImpl@UICalendarRule@@UICalendarRules@@@@$1?IID_ICalendarRules@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68165c98","value":".?AU?$ComCollectionImpl@UICalendarRule@@UICalendarRules@@@@","refs":[]}
+{"address":"68165ce0","value":".?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UICalendarRules@@$1?_GUID_597fa193_e5a1_4055_be99_6bf2926a0244@@3U__s_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$vector@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@@std@@@std@@PAUICalendarRule@@U?$_CopyItfFromAdaptItf@UICalendarRule@@@@U?$ComCollectionEnum@UICalendarRule@@@@@ATL@@","refs":[]}
+{"address":"68165ea0","value":".?AV?$IDispatchImpl@UICalendarRules@@$1?_GUID_597fa193_e5a1_4055_be99_6bf2926a0244@@3U__s_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68165f58","value":".?AU?$ComCollectionEnum@UICalendarRule@@@@","refs":[]}
+{"address":"68165f90","value":".?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UICalendarRule@@@@V?$vector@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@","refs":[]}
+{"address":"681660c0","value":".?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UICalendarRule@@@@V?$vector@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@@std@@@std@@@ATL@@","refs":[]}
+{"address":"681661d4","value":".?AV?$CComObject@VCCalendarRule@@@ATL@@","refs":[]}
+{"address":"68166204","value":".?AVCAvoidDate@@","refs":[]}
+{"address":"68166220","value":".?AV?$IDispatchImpl@UIDayMonth@@$1?IID_IDayMonth@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"681662a8","value":".?AVCAvoidanceDates@@","refs":[]}
+{"address":"681662c8","value":".?AV?$IDispatchImpl@U?$ComCollectionImpl@UIDayMonth@@UIAvoidanceDates@@@@$1?IID_IAvoidanceDates@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68166380","value":".?AU?$ComCollectionImpl@UIDayMonth@@UIAvoidanceDates@@@@","refs":[]}
+{"address":"681663c8","value":".?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIAvoidanceDates@@$1?_GUID_a1676afc_c7e4_4041_a0c8_abd22e1dbbc3@@3U__s_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$vector@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@@std@@@std@@PAUIDayMonth@@U?$_CopyItfFromAdaptItf@UIDayMonth@@@@U?$ComCollectionEnum@UIDayMonth@@@@@ATL@@","refs":[]}
+{"address":"68166570","value":".?AV?$IDispatchImpl@UIAvoidanceDates@@$1?_GUID_a1676afc_c7e4_4041_a0c8_abd22e1dbbc3@@3U__s_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68166628","value":".?AU?$ComCollectionEnum@UIDayMonth@@@@","refs":[]}
+{"address":"68166658","value":".?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDayMonth@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@","refs":[]}
+{"address":"68166780","value":".?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDayMonth@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@@std@@@std@@@ATL@@","refs":[]}
+{"address":"68166888","value":".?AV?$CComObject@VCAvoidDate@@@ATL@@","refs":[]}
+{"address":"681668b8","value":".?AV?$CComObject@VCCalendarRules@@@ATL@@","refs":[]}
+{"address":"681668ec","value":".?AV?$CComObject@VCAvoidanceDates@@@ATL@@","refs":[]}
+{"address":"68166920","value":".?AV?$CComObject@U?$ComCollectionEnum@UICalendarRule@@@@@ATL@@","refs":[]}
+{"address":"68166968","value":".?AV?$CComObject@U?$ComCollectionEnum@UIDayMonth@@@@@ATL@@","refs":[]}
+{"address":"681669b0","value":".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UICalendarRule@@@@V?$vector@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UICalendarRule@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@","refs":[]}
+{"address":"68166af8","value":".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDayMonth@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDayMonth@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@","refs":[]}
+{"address":"68166c30","value":".?AUIDateOffset@@","refs":[]}
+{"address":"68166c4c","value":".?AUIDateOffset2@@","refs":[]}
+{"address":"68166c68","value":".?AUIDateOffset3@@","refs":[]}
+{"address":"68166c84","value":".?AUIDateOffset4@@","refs":[]}
+{"address":"68166ca0","value":".?AUIDateOffset5@@","refs":[]}
+{"address":"68166cbc","value":".?AVCDateOffset@@","refs":[]}
+{"address":"68166cd8","value":".?AV?$IDispatchImpl@UIDateOffset5@@$1?IID_IDateOffset5@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68166d64","value":".?AV?$CComObject@VCDateOffset@@@ATL@@","refs":[]}
+{"address":"68166d94","value":".?AUISequentialStream@@","refs":[]}
+{"address":"68166db4","value":".?AUIStream@@","refs":[]}
+{"address":"68166dcc","value":".?AUISafeArrayStream@@","refs":[]}
+{"address":"68166dec","value":".?AVCSafeArrayStream@@","refs":[]}
+{"address":"68166e0c","value":".?AV?$CComObject@VCSafeArrayStream@@@ATL@@","refs":[]}
+{"address":"68166e40","value":".?AUIPrice@@","refs":[]}
+{"address":"68166e58","value":".?AUIPrice2@@","refs":[]}
+{"address":"68166e70","value":".?AVCPrice@@","refs":[]}
+{"address":"68166e88","value":".?AV?$IDispatchImpl@UIPrice2@@$1?IID_IPrice2@@3U_GUID@@B$1?LIBID_CIFFMGRLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@","refs":[]}
+{"address":"68166f0c","value":".?AV?$CComObject@VCPrice@@@ATL@@","refs":[]}
+{"address":"68166f38","value":".?AVCRLECompression@@","refs":[]}
+{"address":"68166f58","value":".?AVbad_alloc@std@@","refs":[]}
+{"address":"68166f74","value":".?AVexception@std@@","refs":[]}
+{"address":"68166f90","value":".?AVlogic_error@std@@","refs":[]}
+{"address":"68166fb0","value":".?AVlength_error@std@@","refs":[]}
+{"address":"68166fd0","value":".?AVout_of_range@std@@","refs":[]}
+{"address":"68166ff0","value":".?AVtype_info@@","refs":[]}
+{"address":"68167008","value":".?AVbad_exception@std@@","refs":[]}
+{"address":"6816a202","value":"StringFileInfo","refs":[]}
+{"address":"6816a226","value":"040904b0","refs":[]}
+{"address":"6816a23e","value":"Comments","refs":[]}
+{"address":"6816a250","value":"CIFF Manager Component","refs":[]}
+{"address":"6816a286","value":"CompanyName","refs":[]}
+{"address":"6816a2a0","value":"Videojet Technologies Ltd.","refs":[]}
+{"address":"6816a2de","value":"FileDescription","refs":[]}
+{"address":"6816a300","value":"CiffMgr Module","refs":[]}
+{"address":"6816a326","value":"FileVersion","refs":[]}
+{"address":"6816a340","value":"4.5.0.0","refs":[]}
+{"address":"6816a356","value":"InternalName","refs":[]}
+{"address":"6816a370","value":"CiffMgr","refs":[]}
+{"address":"6816a386","value":"LegalCopyright","refs":[]}
+{"address":"6816a3a4","value":"© Videojet Corporation, All rights reserved.","refs":[]}
+{"address":"6816a406","value":"OriginalFilename","refs":[]}
+{"address":"6816a428","value":"CiffMgr.dll","refs":[]}
+{"address":"6816a446","value":"ProductName","refs":[]}
+{"address":"6816a460","value":"CiffMgr Module","refs":[]}
+{"address":"6816a486","value":"ProductVersion","refs":[]}
+{"address":"6816a4a4","value":"4.5.0.0","refs":[]}
+{"address":"6816a4ba","value":"VarFileInfo","refs":[]}
+{"address":"6816a4da","value":"Translation","refs":[]}
+{"address":"68184520","value":"","refs":[]}
+{"address":"68184522","value":"","refs":[]}
+{"address":"68184524","value":"","refs":[]}
+{"address":"68184526","value":"","refs":[]}
+{"address":"68184528","value":"CiffMgr","refs":[]}
+{"address":"68184538","value":"","refs":[]}
+{"address":"6818453a","value":"","refs":[]}
+{"address":"6818453c","value":"","refs":[]}
+{"address":"6818453e","value":"","refs":[]}
+{"address":"68184540","value":"","refs":[]}
+{"address":"68184542","value":"","refs":[]}
+{"address":"68184544","value":"","refs":[]}
+{"address":"68184546","value":"","refs":[]}
+{"address":"68184548","value":"","refs":[]}
+{"address":"6818454a","value":"","refs":[]}
+{"address":"6818454c","value":"","refs":[]}
+{"address":"68184550","value":"<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n","refs":[]}
+{"address":"ffdff1ac","value":"","refs":[]}
+{"address":"ffdffc00","value":"","refs":[]}

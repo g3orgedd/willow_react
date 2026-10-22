@@ -1,0 +1,22 @@
+4542e9e0 PUSH 0x4542ea40
+4542e9e5 PUSH dword ptr FS:[0x0]
+4542e9ec MOV EAX,dword ptr [ESP + 0x10]
+4542e9f0 MOV dword ptr [ESP + 0x10],EBP
+4542e9f4 LEA EBP,[ESP + 0x10]
+4542e9f8 SUB ESP,EAX
+4542e9fa PUSH EBX
+4542e9fb PUSH ESI
+4542e9fc PUSH EDI
+4542e9fd MOV EAX,[0x4545d9f0]
+4542ea02 XOR dword ptr [EBP + -0x4],EAX
+4542ea05 XOR EAX,EBP
+4542ea07 MOV dword ptr [EBP + -0x1c],EAX
+4542ea0a PUSH EAX
+4542ea0b MOV dword ptr [EBP + -0x18],ESP
+4542ea0e PUSH dword ptr [EBP + -0x8]
+4542ea11 MOV EAX,dword ptr [EBP + -0x4]
+4542ea14 MOV dword ptr [EBP + -0x4],0xfffffffe
+4542ea1b MOV dword ptr [EBP + -0x8],EAX
+4542ea1e LEA EAX,[EBP + -0x10]
+4542ea21 MOV FS:[0x0],EAX
+4542ea27 RET

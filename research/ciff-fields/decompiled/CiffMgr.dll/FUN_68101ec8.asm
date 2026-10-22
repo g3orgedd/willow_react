@@ -1,0 +1,8 @@
+68101ec8 PUSH EBP
+68101ec9 MOV EBP,ESP
+68101ecb MOV EAX,dword ptr [EBP + 0x8]
+68101ece MOV EDX,dword ptr [EBP + 0xc]
+68101ed1 MOV dword ptr [EAX],EDX
+68101ed3 MOV dword ptr [EAX + 0x4],ECX
+68101ed6 POP EBP
+68101ed7 RET 0x8

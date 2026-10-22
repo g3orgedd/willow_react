@@ -1,0 +1,27 @@
+420299ed PUSH 0x4
+420299ef MOV EAX,0x4208345c
+420299f4 CALL 0x4206a66c
+420299f9 MOV ESI,ECX
+420299fb MOV dword ptr [EBP + -0x10],ESI
+420299fe XOR EDI,EDI
+42029a00 MOV dword ptr [ESI],0x42093dac
+42029a06 MOV dword ptr [ESI + 0x6c],EDI
+42029a09 MOV dword ptr [EBP + -0x4],EDI
+42029a0c MOV dword ptr [ESI + 0x70],EDI
+42029a0f MOV dword ptr [ESI + 0x74],EDI
+42029a12 PUSH 0x42093db0
+42029a17 LEA ECX,[ESI + 0xa8]
+42029a1d MOV byte ptr [EBP + -0x4],0x2
+42029a21 MOV dword ptr [ESI + 0x7c],EDI
+42029a24 CALL 0x42002eae
+42029a29 MOV dword ptr [ESI + 0xac],0x20
+42029a33 MOV EAX,ESI
+42029a35 MOV dword ptr [ESI + 0xf0],EDI
+42029a3b MOV dword ptr [ESI + 0xf4],EDI
+42029a41 MOV dword ptr [ESI + 0xf8],EDI
+42029a47 MOV dword ptr [ESI + 0xe4],EDI
+42029a4d MOV dword ptr [ESI + 0xb8],EDI
+42029a53 MOV dword ptr [ESI + 0xe8],EDI
+42029a59 MOV dword ptr [ESI + 0xec],EDI
+42029a5f CALL 0x4206a63a
+42029a64 RET

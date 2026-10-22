@@ -1,0 +1,50 @@
+{
+  "direct": {
+    "supportedCount": 200,
+    "supportedMatched": 200,
+    "referenceMatched": 204,
+    "total": 204,
+    "productionDifferences": [
+      {
+        "index": 202,
+        "kind": "edge",
+        "key": "12345678901234567890",
+        "nativeKeyLength": 14,
+        "reason": "production does not cap key at 14 UTF16 units or stop key at NUL"
+      },
+      {
+        "index": 203,
+        "kind": "edge",
+        "key": "abc\u0000def",
+        "nativeKeyLength": 3,
+        "reason": "production does not cap key at 14 UTF16 units or stop key at NUL"
+      }
+    ]
+  },
+  "knownVectors": [
+    {
+      "matched": true
+    },
+    {
+      "matched": true
+    },
+    {
+      "matched": true
+    }
+  ],
+  "basic": {
+    "total": 16,
+    "matched": 16,
+    "differences": []
+  },
+  "optional": {
+    "total": 8,
+    "matched": 8,
+    "differences": []
+  },
+  "paths": {
+    "total": 31,
+    "matched": 31,
+    "differences": []
+  }
+}

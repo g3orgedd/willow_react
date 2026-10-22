@@ -1,0 +1,276 @@
+====================================================================================================
+[2026-10-22 12:08:55.630 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture party-gtin2'
+  }
+====================================================================================================
+[2026-10-22 12:08:55.655 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: true,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'preset-builder',
+    title: 'XML party fixture party-gtin2'
+  }
+====================================================================================================
+[2026-10-22 12:08:56.061 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML party fixture party-gtin2',
+    filename: 'xml-exe-party-gtin2.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.061 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 7,
+    filename: 'xml-exe-party-gtin2.ciff',
+    hiddenFieldCount: 6,
+    printedFieldCount: 1,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.072 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 7,
+    filename: 'xml-exe-party-gtin2.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 8722
+  }
+====================================================================================================
+[2026-10-22 12:08:56.073 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-party-gtin2.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: '5aaca687-cb9c-4362-9c4e-55995e71e7d3',
+    title: 'xml-exe-party-gtin2'
+  }
+====================================================================================================
+[2026-10-22 12:08:56.318 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture party-box-gtin'
+  }
+====================================================================================================
+[2026-10-22 12:08:56.336 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: true,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'preset-builder',
+    title: 'XML party fixture party-box-gtin'
+  }
+====================================================================================================
+[2026-10-22 12:08:56.376 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML party fixture party-box-gtin',
+    filename: 'xml-exe-party-box-gtin.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.376 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 9,
+    filename: 'xml-exe-party-box-gtin.ciff',
+    hiddenFieldCount: 8,
+    printedFieldCount: 1,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 12:08:56.381 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 9,
+    filename: 'xml-exe-party-box-gtin.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 10600
+  }
+====================================================================================================
+[2026-10-22 12:08:56.382 +03:00] [INFO] [session: 20261022-120853-pid1536]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-party-box-gtin.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: '6ebfd35a-746e-4ead-a825-0a8ff238d678',
+    title: 'xml-exe-party-box-gtin'
+  }

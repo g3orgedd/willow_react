@@ -3,6 +3,22 @@ const { contextBridge, ipcRenderer } = require("electron");
 const ALLOWED_LOG_CATEGORIES = new Set(["application", "actions", "files", "state", "errors"]);
 const ALLOWED_LOG_LEVELS = new Set(["TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL"]);
 
+// ClariSoft reseeds MSVCRT rand from system uptime on every selection draw.
+contextBridge.exposeInMainWorld("glyphSystemTickCount", () => {
+  const tick = ipcRenderer.sendSync("glyph:get-system-tick-count");
+  if (!Number.isFinite(tick)) throw new Error("System uptime is unavailable.");
+  return tick >>> 0;
+});
+
+contextBridge.exposeInMainWorld("glyphFonts", Object.freeze({
+  list() {
+    return ipcRenderer.invoke("glyph:list-fonts");
+  },
+  render(request) {
+    return ipcRenderer.invoke("glyph:render-font", request);
+  }
+}));
+
 function normalizeLogPayload(payload = {}) {
   const category = ALLOWED_LOG_CATEGORIES.has(payload.category) ? payload.category : "application";
   const normalizedLevel = String(payload.level || "INFO").toUpperCase();
@@ -17,14 +33,14 @@ function normalizeLogPayload(payload = {}) {
   };
 }
 
-contextBridge.exposeInMainWorld("willowLogger", Object.freeze({
+contextBridge.exposeInMainWorld("glyphLogger", Object.freeze({
   log(payload) {
-    ipcRenderer.send("willow:log", normalizeLogPayload(payload));
+    ipcRenderer.send("glyph:log", normalizeLogPayload(payload));
   },
   getInfo() {
-    return ipcRenderer.invoke("willow:get-log-info");
+    return ipcRenderer.invoke("glyph:get-log-info");
   },
   flush() {
-    return ipcRenderer.invoke("willow:flush-logs");
+    return ipcRenderer.invoke("glyph:flush-logs");
   }
 }));

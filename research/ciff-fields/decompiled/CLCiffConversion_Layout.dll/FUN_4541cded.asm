@@ -1,0 +1,14 @@
+4541cded PUSH EBP
+4541cdee MOV EBP,ESP
+4541cdf0 PUSH ECX
+4541cdf1 MOV EAX,dword ptr [ECX + 0x4]
+4541cdf4 LEA EDX,[EBP + -0x4]
+4541cdf7 AND dword ptr [EBP + -0x4],0x0
+4541cdfb PUSH EDX
+4541cdfc PUSH EAX
+4541cdfd MOV ECX,dword ptr [EAX]
+4541cdff CALL dword ptr [ECX + 0xb0]
+4541ce05 MOV EAX,dword ptr [EBP + -0x4]
+4541ce08 MOV ESP,EBP
+4541ce0a POP EBP
+4541ce0b RET

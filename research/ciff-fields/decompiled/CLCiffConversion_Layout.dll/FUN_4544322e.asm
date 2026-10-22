@@ -1,0 +1,7 @@
+4544322e MOV EAX,dword ptr [EBP + 0xfffffc7c]
+45443234 AND EAX,0x1
+45443237 JZ 0x4544324f
+4544323d AND dword ptr [EBP + 0xfffffc7c],0xfffffffe
+45443244 MOV ECX,dword ptr [EBP + 0xfffffc78]
+4544324a JMP 0x45401c67
+4544324f RET

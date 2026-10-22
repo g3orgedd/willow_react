@@ -1,0 +1,462 @@
+{
+  "method": "Original COM load, both validators and GetXml regeneration tested against production core with actual loaded fields",
+  "accepted": 39,
+  "negativeControlsRejected": 13,
+  "cases": [
+    {
+      "name": "native-0-fields",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000000",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-0-fields",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000000",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-0-fields",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000000",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-0-fields",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-1-fields",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-1-fields",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-1-fields",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-1-fields",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-2-fields",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-2-fields",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000002",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-2-fields",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000002",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-2-fields",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-3-fields",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-3-fields",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-3-fields",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-3-fields",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-31-fields",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000040",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-31-fields",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000040",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-31-fields",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "01000000",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-31-fields",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-32-fields",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "02000000",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-32-fields",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00002000",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-32-fields",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "40000000",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-32-fields",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-33-fields",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00040000",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-33-fields",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000040",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-33-fields",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00800000",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-33-fields",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-multiple-subimages",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-multiple-subimages",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-multiple-subimages",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000002",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-multiple-subimages",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-hidden-graphic",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-hidden-graphic",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-hidden-graphic",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-hidden-graphic",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-nul-data",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-nul-data",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-nul-data",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-nul-data",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-control-data",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": true,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-control-data",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": true,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-control-data",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": true,
+      "controlFiltering": true,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-control-data",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-empty-calculated-data",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-empty-calculated-data",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-empty-calculated-data",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-empty-calculated-data",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    },
+    {
+      "name": "native-surrogate-clipping",
+      "kind": "native-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-surrogate-clipping",
+      "kind": "drawn-mask",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": false,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-surrogate-clipping",
+      "kind": "optional",
+      "originalLoadAndBothValidatorsAccepted": true,
+      "originalGetXmlRecomposedByProduction": true,
+      "mask": "00000001",
+      "optional": true,
+      "controlFiltering": false,
+      "sourceHashUnchanged": true
+    },
+    {
+      "name": "native-surrogate-clipping",
+      "kind": "corrupt",
+      "originalComLoadRejected": true
+    }
+  ]
+}

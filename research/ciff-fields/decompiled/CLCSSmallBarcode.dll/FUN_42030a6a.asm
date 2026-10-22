@@ -1,0 +1,103 @@
+42030a6a PUSH EBP
+42030a6b MOV EBP,ESP
+42030a6d SUB ESP,0x150
+42030a73 MOV EAX,[0x420b8f90]
+42030a78 XOR EAX,EBP
+42030a7a MOV dword ptr [EBP + -0x4],EAX
+42030a7d MOV EAX,dword ptr [EBP + 0xc]
+42030a80 PUSH EBX
+42030a81 MOV EBX,dword ptr [EBP + 0x18]
+42030a84 PUSH ESI
+42030a85 PUSH EDI
+42030a86 MOV EDI,ECX
+42030a88 MOV dword ptr [EBP + 0xfffffec4],EAX
+42030a8e XOR ECX,ECX
+42030a90 MOV dword ptr [EBP + 0xfffffeb4],EBX
+42030a96 XOR ESI,ESI
+42030a98 PUSH EBX
+42030a99 MOV AL,byte ptr [EDI + 0x90]
+42030a9f CMP AL,0x1
+42030aa1 MOV dword ptr [EBP + 0xfffffec8],ESI
+42030aa7 MOV dword ptr [EBP + 0xfffffecc],ESI
+42030aad SETZ CL
+42030ab0 MOV dword ptr [EBP + 0xfffffed0],ECX
+42030ab6 XOR ECX,ECX
+42030ab8 CMP AL,0x1
+42030aba LEA EAX,[EBP + 0xfffffecc]
+42030ac0 PUSH EAX
+42030ac1 LEA EAX,[EBP + 0xfffffed4]
+42030ac7 SETNZ CL
+42030aca PUSH EAX
+42030acb PUSH dword ptr [EBP + 0x8]
+42030ace MOV dword ptr [EBP + 0xfffffebc],ECX
+42030ad4 LEA ECX,[EDI + 0xe4]
+42030ada CALL 0x42032db0
+42030adf MOV EDX,EAX
+42030ae1 MOV dword ptr [EBP + 0xfffffeb8],EDX
+42030ae7 TEST EDX,EDX
+42030ae9 JNZ 0x42030bd6
+42030aef MOV ECX,dword ptr [EBP + 0xfffffecc]
+42030af5 CMP ECX,0x1
+42030af8 JNZ 0x42030b28
+42030afa CMP dword ptr [EBP + 0xfffffed8],ESI
+42030b00 JNZ 0x42030b28
+42030b02 PUSH dword ptr [EBP + 0x14]
+42030b05 MOV EAX,dword ptr [EBP + 0xfffffed0]
+42030b0b MOV ECX,EDI
+42030b0d PUSH dword ptr [EBP + 0x10]
+42030b10 PUSH dword ptr [EBP + 0xfffffec4]
+42030b16 CALL dword ptr [EAX*0x4 + 0x42095254]
+42030b1d MOV EAX,dword ptr [EDI + 0x8c]
+42030b23 JMP 0x42030bd1
+42030b28 TEST ECX,ECX
+42030b2a JZ 0x42030bcb
+42030b30 LEA EDX,[EBP + 0xfffffed4]
+42030b36 MOV dword ptr [EBP + 0xfffffed0],EDX
+42030b3c MOV EAX,dword ptr [EBP + 0xfffffebc]
+42030b42 MOV dword ptr [EBP + 0xfffffeb0],EAX
+42030b48 IMUL EAX,dword ptr [EDX + 0x4],0x3
+42030b4c SUB EAX,0x3
+42030b4f MOV dword ptr [EBP + 0xfffffec0],EAX
+42030b55 JS 0x42030bad
+42030b57 MOV EBX,dword ptr [EBP + 0xfffffeb0]
+42030b5d MOV ESI,dword ptr [EDX]
+42030b5f MOV ECX,EAX
+42030b61 SHR ESI,CL
+42030b63 AND ESI,0x7
+42030b66 IMUL ESI,dword ptr [EDI + 0x8c]
+42030b6d TEST ESI,ESI
+42030b6f JLE 0x42030b93
+42030b71 PUSH ESI
+42030b72 PUSH dword ptr [EBP + 0x10]
+42030b75 MOV ECX,EDI
+42030b77 PUSH dword ptr [EBP + 0xfffffec4]
+42030b7d CALL dword ptr [EBX*0x4 + 0x42095254]
+42030b84 ADD dword ptr [EBP + 0x10],ESI
+42030b87 MOV EAX,dword ptr [EBP + 0xfffffec0]
+42030b8d MOV EDX,dword ptr [EBP + 0xfffffed0]
+42030b93 XOR EBX,0x1
+42030b96 SUB EAX,0x3
+42030b99 MOV dword ptr [EBP + 0xfffffec0],EAX
+42030b9f JNS 0x42030b5d
+42030ba1 MOV ECX,dword ptr [EBP + 0xfffffecc]
+42030ba7 MOV ESI,dword ptr [EBP + 0xfffffec8]
+42030bad INC ESI
+42030bae ADD EDX,0x8
+42030bb1 MOV dword ptr [EBP + 0xfffffec8],ESI
+42030bb7 MOV dword ptr [EBP + 0xfffffed0],EDX
+42030bbd CMP ESI,ECX
+42030bbf JC 0x42030b3c
+42030bc5 MOV EBX,dword ptr [EBP + 0xfffffeb4]
+42030bcb MOV EAX,dword ptr [EDI + 0xc4]
+42030bd1 IMUL EAX,dword ptr [EBX]
+42030bd4 MOV dword ptr [EBX],EAX
+42030bd6 MOV ECX,dword ptr [EBP + -0x4]
+42030bd9 MOV EAX,dword ptr [EBP + 0xfffffeb8]
+42030bdf XOR ECX,EBP
+42030be1 POP EDI
+42030be2 POP ESI
+42030be3 POP EBX
+42030be4 CALL 0x4206a5c8
+42030be9 MOV ESP,EBP
+42030beb POP EBP
+42030bec RET 0x14

@@ -1,0 +1,2 @@
+4145c16b MOV dword ptr [ECX],0x4148c53c
+4145c171 RET

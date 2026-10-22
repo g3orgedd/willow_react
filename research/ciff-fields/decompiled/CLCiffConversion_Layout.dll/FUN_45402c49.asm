@@ -1,0 +1,4 @@
+45402c49 CMP dword ptr [ECX],0x0
+45402c4c JL 0x45402c54
+45402c4e JMP dword ptr [0x454472d4]
+45402c54 RET

@@ -1,0 +1,1277 @@
+{
+  "mode": "exe",
+  "caseId": "profile6230",
+  "filename": "xml-exe-profile6230.ciff",
+  "actualLocation": "glyph://app/index.html",
+  "transport": "Packaged glyph:// main/preload/IPC",
+  "fixtureConstruction": "Research fixture prepared inside actual renderer; production Save dialog button clicked",
+  "sourceXml": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<ImageDesign Version=\"23\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6230(32mm) - Continuous\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A</ClStVersionInfo></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>1600</ImageWidth><ImageHeight>2400</ImageHeight><MaxImageWidth>1600</MaxImageWidth><MaxImageHeight>2400</MaxImageHeight><XRes>0.080000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>",
+  "builderDraft": null,
+  "beforeAction": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1600,
+      "height": 2400,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.08,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6230(32mm)"
+    },
+    "fields": []
+  },
+  "preSave": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1100,
+      "height": 1813,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.08,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6230(32mm)"
+    },
+    "canvas": {
+      "width": 1600,
+      "height": 2400,
+      "pixelsPerMm": 12
+    },
+    "fields": [
+      {
+        "name": "Arial10",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 125,
+          "y": 100,
+          "w": 725,
+          "h": 400
+        },
+        "previewText": "ABC",
+        "calculatedData": "ABC",
+        "text": {
+          "pitch": 10,
+          "xMag": null,
+          "face": "Arial"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "ABC",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "ABC",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 800,
+          "yRes": 800
+        },
+        "nativeMetrics": {
+          "width": 58,
+          "height": 32,
+          "fontFamily": 32
+        },
+        "outlinePath": "M-0.0469 26L7.6563 5.9531L10.5156 5.9531L18.7188 26L15.7031 26L13.3594 19.9219L4.9844 19.9219L2.7813 26ZM5.75 17.7656L12.5313 17.7656L10.4531 12.2188Q9.4844 9.6875 9.0313 8.0625Q8.6406 9.9844 7.9375 11.8906ZM21.0469 26L21.0469 5.9531L28.5781 5.9531Q30.875 5.9531 32.2578 6.5625Q33.6406 7.1719 34.4297 8.4375Q35.2188 9.7031 35.2188 11.0781Q35.2188 12.375 34.5234 13.5078Q33.8281 14.6406 32.4063 15.3281Q34.2344 15.875 35.2109 17.1563Q36.1875 18.4375 36.1875 20.1875Q36.1875 21.5938 35.5938 22.8047Q35 24.0156 34.125 24.6719Q33.25 25.3281 31.9297 25.6641Q30.6094 26 28.6875 26ZM23.7031 14.375L28.0313 14.375Q29.7969 14.375 30.5625 14.1406Q31.5781 13.8438 32.0938 13.1484Q32.6094 12.4531 32.6094 11.3906Q32.6094 10.4063 32.125 9.6406Q31.6406 8.875 30.7578 8.6016Q29.875 8.3281 27.7031 8.3281L23.7031 8.3281ZM23.7031 23.6406L28.6875 23.6406Q29.9844 23.6406 30.5 23.5313Q31.4219 23.375 32.0313 22.9922Q32.6406 22.6094 33.0391 21.875Q33.4375 21.1406 33.4375 20.1875Q33.4375 19.0625 32.8672 18.2344Q32.2969 17.4063 31.2734 17.0781Q30.25 16.75 28.3438 16.75L23.7031 16.75ZM54.4688 18.9688L57.1094 19.6406Q56.2813 22.9063 54.1172 24.625Q51.9531 26.3438 48.8125 26.3438Q45.5781 26.3438 43.5469 25.0234Q41.5156 23.7031 40.4531 21.2031Q39.3906 18.7031 39.3906 15.8281Q39.3906 12.7031 40.5859 10.3672Q41.7813 8.0313 43.9922 6.8203Q46.2031 5.6094 48.8594 5.6094Q51.8594 5.6094 53.9141 7.1406Q55.9688 8.6719 56.7656 11.4531L54.1563 12.0625Q53.4688 9.875 52.1406 8.8828Q50.8125 7.8906 48.7969 7.8906Q46.4844 7.8906 44.9375 8.9922Q43.3906 10.0938 42.7578 11.9609Q42.125 13.8281 42.125 15.8125Q42.125 18.375 42.875 20.2813Q43.625 22.1875 45.1953 23.1328Q46.7656 24.0781 48.5938 24.0781Q50.8281 24.0781 52.375 22.7891Q53.9219 21.5 54.4688 18.9688Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1.5,
+            0,
+            0,
+            1.5,
+            35,
+            32
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 58,
+            "height": 32
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 35,
+            "y": 32,
+            "width": 87,
+            "height": 48
+          },
+          "fieldGroup": {
+            "x": 15,
+            "y": 12,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              35,
+              32
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 10,
+          "y": 8
+        },
+        "workerBitmap": "exe-profile6230-preSave-Arial10-worker.png"
+      },
+      {
+        "name": "Times13",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 150,
+          "y": 700,
+          "w": 713,
+          "h": 525
+        },
+        "previewText": "123",
+        "calculatedData": "123",
+        "text": {
+          "pitch": 13,
+          "xMag": null,
+          "face": "Times New Roman",
+          "family": "Roman"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "123",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Times New Roman",
+          "pitch": 13,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "123",
+          "face": "Times New Roman",
+          "pitch": 13,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 800,
+          "yRes": 800
+        },
+        "nativeMetrics": {
+          "width": 57,
+          "height": 42,
+          "fontFamily": 16
+        },
+        "outlinePath": "M4.3438 10.9063L10.2969 8L10.8906 8L10.8906 28.6875Q10.8906 30.7344 11.0625 31.2422Q11.2344 31.75 11.7813 32.0234Q12.3281 32.2969 13.9844 32.3281L13.9844 33L4.7656 33L4.7656 32.3281Q6.5 32.2969 7.0078 32.0313Q7.5156 31.7656 7.7109 31.3281Q7.9063 30.8906 7.9063 28.6875L7.9063 15.4531Q7.9063 12.7813 7.7344 12.0313Q7.6094 11.4531 7.2734 11.1797Q6.9375 10.9063 6.4688 10.9063Q5.7969 10.9063 4.6094 11.4688ZM35.9688 28.2813L34.25 33L19.7969 33L19.7969 32.3281Q26.1719 26.5156 28.7734 22.8281Q31.375 19.1406 31.375 16.0938Q31.375 13.7656 29.9453 12.2656Q28.5156 10.7656 26.5313 10.7656Q24.7344 10.7656 23.2969 11.8203Q21.8594 12.875 21.1719 14.9219L20.5 14.9219Q20.9531 11.5781 22.8203 9.7891Q24.6875 8 27.4844 8Q30.4688 8 32.4688 9.9141Q34.4688 11.8281 34.4688 14.4219Q34.4688 16.2813 33.5938 18.1563Q32.2656 21.0781 29.2656 24.3438Q24.7656 29.2656 23.6406 30.2656L30.0313 30.2656Q31.9844 30.2656 32.7734 30.125Q33.5625 29.9844 34.1953 29.5391Q34.8281 29.0938 35.2969 28.2813ZM39.875 13.1563Q40.9219 10.6875 42.5234 9.3438Q44.125 8 46.5156 8Q49.4531 8 51.0313 9.9063Q52.2188 11.3438 52.2188 12.9688Q52.2188 15.6406 48.8594 18.5Q51.1094 19.375 52.2656 21.0234Q53.4219 22.6719 53.4219 24.8906Q53.4219 28.0625 51.4063 30.3906Q48.7656 33.4375 43.7656 33.4375Q41.2813 33.4375 40.3906 32.8203Q39.5 32.2031 39.5 31.5Q39.5 30.9688 39.9219 30.5781Q40.3438 30.1875 40.9375 30.1875Q41.3906 30.1875 41.8594 30.3281Q42.1719 30.4219 43.2578 30.9844Q44.3438 31.5469 44.75 31.6563Q45.4219 31.8594 46.1875 31.8594Q48.0313 31.8594 49.3906 30.4297Q50.75 29 50.75 27.0625Q50.75 25.625 50.125 24.2813Q49.6563 23.2656 49.0938 22.7344Q48.3125 22.0156 46.9609 21.4297Q45.6094 20.8438 44.2031 20.8438L43.625 20.8438L43.625 20.2969Q45.0469 20.125 46.4844 19.2734Q47.9219 18.4219 48.5703 17.2266Q49.2188 16.0313 49.2188 14.6094Q49.2188 12.75 48.0547 11.6016Q46.8906 10.4531 45.1563 10.4531Q42.3594 10.4531 40.4688 13.4531Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1.5,
+            0,
+            0,
+            1.5,
+            38,
+            104
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 57,
+            "height": 42
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 38,
+            "y": 104,
+            "width": 85.5,
+            "height": 63
+          },
+          "fieldGroup": {
+            "x": 18,
+            "y": 84,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              38,
+              104
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 12,
+          "y": 56
+        },
+        "workerBitmap": "exe-profile6230-preSave-Times13-worker.png"
+      },
+      {
+        "name": "Courier8",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 200,
+          "y": 1500,
+          "w": 900,
+          "h": 313
+        },
+        "previewText": "SN01",
+        "calculatedData": "SN01",
+        "text": {
+          "pitch": 8,
+          "xMag": 125,
+          "face": "Courier New",
+          "family": "Modern"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "SN01",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Courier New",
+          "pitch": 8,
+          "xMag": 125,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "SN01",
+          "face": "Courier New",
+          "pitch": 8,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 125,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 800,
+          "yRes": 800
+        },
+        "nativeMetrics": {
+          "width": 72,
+          "height": 25,
+          "fontFamily": 48
+        },
+        "outlinePath": "M13.4063 6.7969L13.4063 6.4844Q13.4063 6.1563 13.5703 6.0078Q13.7344 5.8594 14.0156 5.8594Q14.2969 5.8594 14.4688 6.0078Q14.6406 6.1563 14.6406 6.4844L14.6406 8.8906Q14.6406 9.2344 14.4688 9.375Q14.2969 9.5156 14.0156 9.5156Q13.75 9.5156 13.5859 9.3828Q13.4219 9.25 13.4063 8.9531Q13.3281 8 12.1328 7.25Q10.9375 6.5 9.0156 6.5Q6.9688 6.5 5.7734 7.3047Q4.5781 8.1094 4.5781 9.2031Q4.5781 9.75 4.9141 10.2109Q5.25 10.6719 5.8047 10.9609Q6.3594 11.25 7.0625 11.4219Q7.7656 11.5938 9.2656 11.7969Q11.7656 12.1094 12.7188 12.4375Q13.9844 12.875 14.6406 13.6484Q15.2969 14.4219 15.2969 15.4688Q15.2969 17.0938 13.6094 18.2344Q11.9219 19.375 9.0625 19.375Q5.8594 19.375 3.9375 17.8281L3.9375 18.375Q3.9375 18.7031 3.7734 18.8516Q3.6094 19 3.3281 19Q3.0625 19 2.8828 18.8516Q2.7031 18.7031 2.7031 18.375L2.7031 15.7656Q2.7031 15.4219 2.875 15.2734Q3.0469 15.125 3.3281 15.125Q3.5938 15.125 3.7578 15.2578Q3.9219 15.3906 3.9375 15.7031Q4.0156 16.7344 5.3828 17.5781Q6.75 18.4219 9.0625 18.4219Q11.375 18.4219 12.7188 17.5391Q14.0625 16.6563 14.0625 15.4375Q14.0625 14.7031 13.5469 14.125Q13.0313 13.5469 12.0313 13.2031Q11.3281 12.9688 9.0938 12.6719Q6.0313 12.2813 4.6875 11.4688Q3.3438 10.6719 3.3438 9.1719Q3.3438 7.6875 4.8906 6.625Q6.4375 5.5625 8.9688 5.5625Q11.5469 5.5625 13.4063 6.7969ZM33.0313 19L31.4531 19L22.375 7.2344L22.375 18.0625L24.6563 18.0625Q25.1094 18.0625 25.2969 18.1875Q25.4844 18.3125 25.4844 18.5313Q25.4844 18.7344 25.2969 18.8672Q25.1094 19 24.6563 19L20.125 19Q19.6719 19 19.4844 18.8672Q19.2969 18.7344 19.2969 18.5313Q19.2969 18.3125 19.4844 18.1875Q19.6719 18.0625 20.125 18.0625L21.1563 18.0625L21.1563 6.7969L19.5 6.7969Q19.0625 6.7969 18.8672 6.6719Q18.6719 6.5469 18.6719 6.3281Q18.6719 6.125 18.8672 5.9922Q19.0625 5.8594 19.5 5.8594L22.7188 5.8594L31.7969 17.6406L31.7969 6.7969L29.5313 6.7969Q29.0938 6.7969 28.8984 6.6719Q28.7031 6.5469 28.7031 6.3281Q28.7031 6.125 28.8906 5.9922Q29.0781 5.8594 29.5313 5.8594L34.0625 5.8594Q34.5156 5.8594 34.7031 5.9922Q34.8906 6.125 34.8906 6.3281Q34.8906 6.5469 34.7031 6.6719Q34.5156 6.7969 34.0625 6.7969L33.0313 6.7969ZM50.6563 10.7969L50.6563 13.125Q50.6563 16.1719 48.7656 17.9375Q47.2813 19.3438 45.0313 19.3438Q43.9375 19.3438 42.9766 19.0078Q42.0156 18.6719 41.3438 18.0781Q40.9219 17.7031 40.4141 16.8828Q39.9063 16.0625 39.6875 15.3906Q39.3594 14.4219 39.3594 13.125L39.3594 10.7969Q39.3594 7.7344 41.25 5.9688Q42.7188 4.5625 44.9844 4.5625Q46.0781 4.5625 47.0313 4.8984Q47.9844 5.2344 48.6563 5.8281Q49.0938 6.2031 49.5938 7.0234Q50.0938 7.8438 50.3281 8.5156Q50.6563 9.4844 50.6563 10.7969ZM49.4219 10.9063Q49.4219 9.5781 48.9297 8.4297Q48.4375 7.2813 47.8281 6.5938Q47.4531 6.2031 46.875 5.9219Q46.0313 5.5156 45 5.5156Q42.9219 5.5156 41.75 7.1328Q40.5781 8.75 40.5781 10.9063L40.5781 12.9844Q40.5781 14.3281 41.0703 15.4844Q41.5625 16.6406 42.2031 17.3281Q42.5469 17.7031 43.1406 17.9844Q43.9688 18.3906 45.0313 18.3906Q47.0781 18.3906 48.25 16.7656Q49.4219 15.1406 49.4219 12.9844ZM63.6094 4.7188L63.6094 18.0625L67.8281 18.0625Q68.2656 18.0625 68.4609 18.1875Q68.6563 18.3125 68.6563 18.5313Q68.6563 18.7344 68.4609 18.8672Q68.2656 19 67.8281 19L58.1563 19Q57.7188 19 57.5313 18.8672Q57.3438 18.7344 57.3438 18.5313Q57.3438 18.3125 57.5313 18.1875Q57.7188 18.0625 58.1563 18.0625L62.375 18.0625L62.375 6.0156L58.3594 6.9844Q58.0781 7.0469 57.9375 7.0469Q57.7188 7.0469 57.5391 6.9063Q57.3594 6.7656 57.3594 6.5781Q57.3594 6.4063 57.5 6.2656Q57.625 6.1719 57.9844 6.0781Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1.5,
+            0,
+            0,
+            1.5,
+            44,
+            200
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 72,
+            "height": 25
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 44,
+            "y": 200,
+            "width": 108,
+            "height": 37.5
+          },
+          "fieldGroup": {
+            "x": 24,
+            "y": 180,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              44,
+              200
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 16,
+          "y": 120
+        },
+        "workerBitmap": "exe-profile6230-preSave-Courier8-worker.png"
+      }
+    ]
+  },
+  "aggregate": {
+    "width": 1100,
+    "height": 1813
+  },
+  "expectedImage": {
+    "width": 1100,
+    "height": 1813
+  },
+  "expectedMax": {
+    "width": 1600,
+    "height": 2400
+  },
+  "postSave": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1100,
+      "height": 1813,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.08,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6230(32mm)"
+    },
+    "fields": [
+      {
+        "name": "Arial10",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 125,
+          "y": 100,
+          "w": 725,
+          "h": 400
+        },
+        "previewText": "ABC",
+        "calculatedData": "ABC",
+        "text": {
+          "pitch": 10,
+          "xMag": null,
+          "face": "Arial"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "ABC",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "ABC",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 800,
+          "yRes": 800
+        },
+        "nativeMetrics": {
+          "width": 58,
+          "height": 32,
+          "fontFamily": 32
+        },
+        "outlinePath": "M-0.0469 26L7.6563 5.9531L10.5156 5.9531L18.7188 26L15.7031 26L13.3594 19.9219L4.9844 19.9219L2.7813 26ZM5.75 17.7656L12.5313 17.7656L10.4531 12.2188Q9.4844 9.6875 9.0313 8.0625Q8.6406 9.9844 7.9375 11.8906ZM21.0469 26L21.0469 5.9531L28.5781 5.9531Q30.875 5.9531 32.2578 6.5625Q33.6406 7.1719 34.4297 8.4375Q35.2188 9.7031 35.2188 11.0781Q35.2188 12.375 34.5234 13.5078Q33.8281 14.6406 32.4063 15.3281Q34.2344 15.875 35.2109 17.1563Q36.1875 18.4375 36.1875 20.1875Q36.1875 21.5938 35.5938 22.8047Q35 24.0156 34.125 24.6719Q33.25 25.3281 31.9297 25.6641Q30.6094 26 28.6875 26ZM23.7031 14.375L28.0313 14.375Q29.7969 14.375 30.5625 14.1406Q31.5781 13.8438 32.0938 13.1484Q32.6094 12.4531 32.6094 11.3906Q32.6094 10.4063 32.125 9.6406Q31.6406 8.875 30.7578 8.6016Q29.875 8.3281 27.7031 8.3281L23.7031 8.3281ZM23.7031 23.6406L28.6875 23.6406Q29.9844 23.6406 30.5 23.5313Q31.4219 23.375 32.0313 22.9922Q32.6406 22.6094 33.0391 21.875Q33.4375 21.1406 33.4375 20.1875Q33.4375 19.0625 32.8672 18.2344Q32.2969 17.4063 31.2734 17.0781Q30.25 16.75 28.3438 16.75L23.7031 16.75ZM54.4688 18.9688L57.1094 19.6406Q56.2813 22.9063 54.1172 24.625Q51.9531 26.3438 48.8125 26.3438Q45.5781 26.3438 43.5469 25.0234Q41.5156 23.7031 40.4531 21.2031Q39.3906 18.7031 39.3906 15.8281Q39.3906 12.7031 40.5859 10.3672Q41.7813 8.0313 43.9922 6.8203Q46.2031 5.6094 48.8594 5.6094Q51.8594 5.6094 53.9141 7.1406Q55.9688 8.6719 56.7656 11.4531L54.1563 12.0625Q53.4688 9.875 52.1406 8.8828Q50.8125 7.8906 48.7969 7.8906Q46.4844 7.8906 44.9375 8.9922Q43.3906 10.0938 42.7578 11.9609Q42.125 13.8281 42.125 15.8125Q42.125 18.375 42.875 20.2813Q43.625 22.1875 45.1953 23.1328Q46.7656 24.0781 48.5938 24.0781Q50.8281 24.0781 52.375 22.7891Q53.9219 21.5 54.4688 18.9688Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1.5,
+            0,
+            0,
+            1.5,
+            35,
+            32
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 58,
+            "height": 32
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 35,
+            "y": 32,
+            "width": 87,
+            "height": 48
+          },
+          "fieldGroup": {
+            "x": 15,
+            "y": 12,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              35,
+              32
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 10,
+          "y": 8
+        },
+        "workerBitmap": "exe-profile6230-postSave-Arial10-worker.png"
+      },
+      {
+        "name": "Times13",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 150,
+          "y": 700,
+          "w": 713,
+          "h": 525
+        },
+        "previewText": "123",
+        "calculatedData": "123",
+        "text": {
+          "pitch": 13,
+          "xMag": null,
+          "face": "Times New Roman",
+          "family": "Roman"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "123",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Times New Roman",
+          "pitch": 13,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "123",
+          "face": "Times New Roman",
+          "pitch": 13,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 800,
+          "yRes": 800
+        },
+        "nativeMetrics": {
+          "width": 57,
+          "height": 42,
+          "fontFamily": 16
+        },
+        "outlinePath": "M4.3438 10.9063L10.2969 8L10.8906 8L10.8906 28.6875Q10.8906 30.7344 11.0625 31.2422Q11.2344 31.75 11.7813 32.0234Q12.3281 32.2969 13.9844 32.3281L13.9844 33L4.7656 33L4.7656 32.3281Q6.5 32.2969 7.0078 32.0313Q7.5156 31.7656 7.7109 31.3281Q7.9063 30.8906 7.9063 28.6875L7.9063 15.4531Q7.9063 12.7813 7.7344 12.0313Q7.6094 11.4531 7.2734 11.1797Q6.9375 10.9063 6.4688 10.9063Q5.7969 10.9063 4.6094 11.4688ZM35.9688 28.2813L34.25 33L19.7969 33L19.7969 32.3281Q26.1719 26.5156 28.7734 22.8281Q31.375 19.1406 31.375 16.0938Q31.375 13.7656 29.9453 12.2656Q28.5156 10.7656 26.5313 10.7656Q24.7344 10.7656 23.2969 11.8203Q21.8594 12.875 21.1719 14.9219L20.5 14.9219Q20.9531 11.5781 22.8203 9.7891Q24.6875 8 27.4844 8Q30.4688 8 32.4688 9.9141Q34.4688 11.8281 34.4688 14.4219Q34.4688 16.2813 33.5938 18.1563Q32.2656 21.0781 29.2656 24.3438Q24.7656 29.2656 23.6406 30.2656L30.0313 30.2656Q31.9844 30.2656 32.7734 30.125Q33.5625 29.9844 34.1953 29.5391Q34.8281 29.0938 35.2969 28.2813ZM39.875 13.1563Q40.9219 10.6875 42.5234 9.3438Q44.125 8 46.5156 8Q49.4531 8 51.0313 9.9063Q52.2188 11.3438 52.2188 12.9688Q52.2188 15.6406 48.8594 18.5Q51.1094 19.375 52.2656 21.0234Q53.4219 22.6719 53.4219 24.8906Q53.4219 28.0625 51.4063 30.3906Q48.7656 33.4375 43.7656 33.4375Q41.2813 33.4375 40.3906 32.8203Q39.5 32.2031 39.5 31.5Q39.5 30.9688 39.9219 30.5781Q40.3438 30.1875 40.9375 30.1875Q41.3906 30.1875 41.8594 30.3281Q42.1719 30.4219 43.2578 30.9844Q44.3438 31.5469 44.75 31.6563Q45.4219 31.8594 46.1875 31.8594Q48.0313 31.8594 49.3906 30.4297Q50.75 29 50.75 27.0625Q50.75 25.625 50.125 24.2813Q49.6563 23.2656 49.0938 22.7344Q48.3125 22.0156 46.9609 21.4297Q45.6094 20.8438 44.2031 20.8438L43.625 20.8438L43.625 20.2969Q45.0469 20.125 46.4844 19.2734Q47.9219 18.4219 48.5703 17.2266Q49.2188 16.0313 49.2188 14.6094Q49.2188 12.75 48.0547 11.6016Q46.8906 10.4531 45.1563 10.4531Q42.3594 10.4531 40.4688 13.4531Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1.5,
+            0,
+            0,
+            1.5,
+            38,
+            104
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 57,
+            "height": 42
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 38,
+            "y": 104,
+            "width": 85.5,
+            "height": 63
+          },
+          "fieldGroup": {
+            "x": 18,
+            "y": 84,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              38,
+              104
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 12,
+          "y": 56
+        },
+        "workerBitmap": "exe-profile6230-postSave-Times13-worker.png"
+      },
+      {
+        "name": "Courier8",
+        "type": "FixedText",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 200,
+          "y": 1500,
+          "w": 900,
+          "h": 313
+        },
+        "previewText": "SN01",
+        "calculatedData": "SN01",
+        "text": {
+          "pitch": 8,
+          "xMag": 125,
+          "face": "Courier New",
+          "family": "Modern"
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "SN01",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Courier New",
+          "pitch": 8,
+          "xMag": 125,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "SN01",
+          "face": "Courier New",
+          "pitch": 8,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 125,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 800,
+          "yRes": 800
+        },
+        "nativeMetrics": {
+          "width": 72,
+          "height": 25,
+          "fontFamily": 48
+        },
+        "outlinePath": "M13.4063 6.7969L13.4063 6.4844Q13.4063 6.1563 13.5703 6.0078Q13.7344 5.8594 14.0156 5.8594Q14.2969 5.8594 14.4688 6.0078Q14.6406 6.1563 14.6406 6.4844L14.6406 8.8906Q14.6406 9.2344 14.4688 9.375Q14.2969 9.5156 14.0156 9.5156Q13.75 9.5156 13.5859 9.3828Q13.4219 9.25 13.4063 8.9531Q13.3281 8 12.1328 7.25Q10.9375 6.5 9.0156 6.5Q6.9688 6.5 5.7734 7.3047Q4.5781 8.1094 4.5781 9.2031Q4.5781 9.75 4.9141 10.2109Q5.25 10.6719 5.8047 10.9609Q6.3594 11.25 7.0625 11.4219Q7.7656 11.5938 9.2656 11.7969Q11.7656 12.1094 12.7188 12.4375Q13.9844 12.875 14.6406 13.6484Q15.2969 14.4219 15.2969 15.4688Q15.2969 17.0938 13.6094 18.2344Q11.9219 19.375 9.0625 19.375Q5.8594 19.375 3.9375 17.8281L3.9375 18.375Q3.9375 18.7031 3.7734 18.8516Q3.6094 19 3.3281 19Q3.0625 19 2.8828 18.8516Q2.7031 18.7031 2.7031 18.375L2.7031 15.7656Q2.7031 15.4219 2.875 15.2734Q3.0469 15.125 3.3281 15.125Q3.5938 15.125 3.7578 15.2578Q3.9219 15.3906 3.9375 15.7031Q4.0156 16.7344 5.3828 17.5781Q6.75 18.4219 9.0625 18.4219Q11.375 18.4219 12.7188 17.5391Q14.0625 16.6563 14.0625 15.4375Q14.0625 14.7031 13.5469 14.125Q13.0313 13.5469 12.0313 13.2031Q11.3281 12.9688 9.0938 12.6719Q6.0313 12.2813 4.6875 11.4688Q3.3438 10.6719 3.3438 9.1719Q3.3438 7.6875 4.8906 6.625Q6.4375 5.5625 8.9688 5.5625Q11.5469 5.5625 13.4063 6.7969ZM33.0313 19L31.4531 19L22.375 7.2344L22.375 18.0625L24.6563 18.0625Q25.1094 18.0625 25.2969 18.1875Q25.4844 18.3125 25.4844 18.5313Q25.4844 18.7344 25.2969 18.8672Q25.1094 19 24.6563 19L20.125 19Q19.6719 19 19.4844 18.8672Q19.2969 18.7344 19.2969 18.5313Q19.2969 18.3125 19.4844 18.1875Q19.6719 18.0625 20.125 18.0625L21.1563 18.0625L21.1563 6.7969L19.5 6.7969Q19.0625 6.7969 18.8672 6.6719Q18.6719 6.5469 18.6719 6.3281Q18.6719 6.125 18.8672 5.9922Q19.0625 5.8594 19.5 5.8594L22.7188 5.8594L31.7969 17.6406L31.7969 6.7969L29.5313 6.7969Q29.0938 6.7969 28.8984 6.6719Q28.7031 6.5469 28.7031 6.3281Q28.7031 6.125 28.8906 5.9922Q29.0781 5.8594 29.5313 5.8594L34.0625 5.8594Q34.5156 5.8594 34.7031 5.9922Q34.8906 6.125 34.8906 6.3281Q34.8906 6.5469 34.7031 6.6719Q34.5156 6.7969 34.0625 6.7969L33.0313 6.7969ZM50.6563 10.7969L50.6563 13.125Q50.6563 16.1719 48.7656 17.9375Q47.2813 19.3438 45.0313 19.3438Q43.9375 19.3438 42.9766 19.0078Q42.0156 18.6719 41.3438 18.0781Q40.9219 17.7031 40.4141 16.8828Q39.9063 16.0625 39.6875 15.3906Q39.3594 14.4219 39.3594 13.125L39.3594 10.7969Q39.3594 7.7344 41.25 5.9688Q42.7188 4.5625 44.9844 4.5625Q46.0781 4.5625 47.0313 4.8984Q47.9844 5.2344 48.6563 5.8281Q49.0938 6.2031 49.5938 7.0234Q50.0938 7.8438 50.3281 8.5156Q50.6563 9.4844 50.6563 10.7969ZM49.4219 10.9063Q49.4219 9.5781 48.9297 8.4297Q48.4375 7.2813 47.8281 6.5938Q47.4531 6.2031 46.875 5.9219Q46.0313 5.5156 45 5.5156Q42.9219 5.5156 41.75 7.1328Q40.5781 8.75 40.5781 10.9063L40.5781 12.9844Q40.5781 14.3281 41.0703 15.4844Q41.5625 16.6406 42.2031 17.3281Q42.5469 17.7031 43.1406 17.9844Q43.9688 18.3906 45.0313 18.3906Q47.0781 18.3906 48.25 16.7656Q49.4219 15.1406 49.4219 12.9844ZM63.6094 4.7188L63.6094 18.0625L67.8281 18.0625Q68.2656 18.0625 68.4609 18.1875Q68.6563 18.3125 68.6563 18.5313Q68.6563 18.7344 68.4609 18.8672Q68.2656 19 67.8281 19L58.1563 19Q57.7188 19 57.5313 18.8672Q57.3438 18.7344 57.3438 18.5313Q57.3438 18.3125 57.5313 18.1875Q57.7188 18.0625 58.1563 18.0625L62.375 18.0625L62.375 6.0156L58.3594 6.9844Q58.0781 7.0469 57.9375 7.0469Q57.7188 7.0469 57.5391 6.9063Q57.3594 6.7656 57.3594 6.5781Q57.3594 6.4063 57.5 6.2656Q57.625 6.1719 57.9844 6.0781Z",
+        "node": {
+          "className": "Path",
+          "absoluteMatrix": [
+            1.5,
+            0,
+            0,
+            1.5,
+            44,
+            200
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 72,
+            "height": 25
+          },
+          "native": true,
+          "vector": true,
+          "dataMatchesOutline": true,
+          "cellWorldBounds": {
+            "x": 44,
+            "y": 200,
+            "width": 108,
+            "height": 37.5
+          },
+          "fieldGroup": {
+            "x": 24,
+            "y": 180,
+            "absoluteMatrix": [
+              1,
+              0,
+              0,
+              1,
+              44,
+              200
+            ]
+          },
+          "pixelsPerMm": 12
+        },
+        "nativeDotAnchor": {
+          "x": 16,
+          "y": 120
+        },
+        "workerBitmap": "exe-profile6230-postSave-Courier8-worker.png"
+      }
+    ],
+    "validation": {
+      "invalidPrintableFieldNames": [],
+      "invalidHardwareFieldNames": [],
+      "structuralErrors": []
+    }
+  },
+  "expectedResolution": {
+    "xRes": 0.08,
+    "yRes": 0.08
+  },
+  "expectedCapabilityResolution": {
+    "xRes": 800,
+    "yRes": 800
+  },
+  "xmlAfterSave": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<ImageDesign Version=\"23\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6230(32mm) - Continuous\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEHQEPJ39CCAQw6EP4VyHLiU</ClStVersionInfo></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>1100</ImageWidth><ImageHeight>1813</ImageHeight><MaxImageWidth>1600</MaxImageWidth><MaxImageHeight>2400</MaxImageHeight><XRes>0.080000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader><Field Name=\"Arial10\"><FldType>FixedText</FldType><X>125</X><Y>100</Y><W>725</W><H>400</H><CalcData><![CDATA[ABC]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[ABC]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"Times13\"><FldType>FixedText</FldType><X>150</X><Y>700</Y><W>713</W><H>525</H><CalcData><![CDATA[123]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[123]]></Default></Object></Data><Text><Font><Face><![CDATA[Times New Roman]]></Face><Family>Roman</Family></Font></Text></Field><Field Name=\"Courier8\"><FldType>FixedText</FldType><X>200</X><Y>1500</Y><W>900</W><H>313</H><CalcData><![CDATA[SN01]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[SN01]]></Default></Object></Data><Text><Font><Face><![CDATA[Courier New]]></Face><Family>Modern</Family><Pitch>8</Pitch><XMag>125</XMag></Font></Text></Field></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>",
+  "saveStartedAt": "2026-10-22T13:03:27.802Z",
+  "saveEndedAt": "2026-10-22T13:03:27.833Z",
+  "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-profile6230.ciff",
+  "bytes": 3304,
+  "sha256": "118e3788bbbeb9750b9747f4b924a5b440748e60362101956f196b98391bca5e",
+  "screenshot": "exe-profile6230-editor.png",
+  "completedDownloadEvents": [
+    {
+      "method": "Browser.downloadWillBegin",
+      "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+      "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+      "url": "blob:glyph://app/70ba34f4-a956-4b5b-9d4a-226c9a31619b",
+      "suggestedFilename": "xml-exe-normal.ciff",
+      "at": "2026-10-22T13:03:26.188Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+      "totalBytes": 3322,
+      "receivedBytes": 0,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.189Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+      "totalBytes": 3322,
+      "receivedBytes": 3322,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.189Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+      "totalBytes": 3322,
+      "receivedBytes": 3322,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.189Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+      "totalBytes": 3322,
+      "receivedBytes": 3322,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.193Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+      "totalBytes": 3322,
+      "receivedBytes": 3322,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.238Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "2fb590ef-cd12-463c-b4db-083d98e441ed",
+      "totalBytes": 3322,
+      "receivedBytes": 3322,
+      "state": "completed",
+      "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-normal.ciff",
+      "at": "2026-10-22T13:03:26.256Z"
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+      "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+      "url": "blob:glyph://app/6a6e2964-a2e5-4a99-b1a5-5555725f16ef",
+      "suggestedFilename": "xml-exe-anisotropic-yres.ciff",
+      "at": "2026-10-22T13:03:26.474Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+      "totalBytes": 3346,
+      "receivedBytes": 0,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.474Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.474Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.475Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.476Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.494Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bd27e19a-eeb4-4900-b84b-cec6f10558fe",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "completed",
+      "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-yres.ciff",
+      "at": "2026-10-22T13:03:26.512Z"
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+      "guid": "09206921-5050-41b6-ac11-b0544921838c",
+      "url": "blob:glyph://app/98ac6301-3cb2-44a1-a050-3b0e5a8fe54f",
+      "suggestedFilename": "xml-exe-anisotropic-xres.ciff",
+      "at": "2026-10-22T13:03:26.683Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "09206921-5050-41b6-ac11-b0544921838c",
+      "totalBytes": 3364,
+      "receivedBytes": 0,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.683Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "09206921-5050-41b6-ac11-b0544921838c",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.684Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "09206921-5050-41b6-ac11-b0544921838c",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.684Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "09206921-5050-41b6-ac11-b0544921838c",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.685Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "09206921-5050-41b6-ac11-b0544921838c",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.701Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "09206921-5050-41b6-ac11-b0544921838c",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "completed",
+      "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-anisotropic-xres.ciff",
+      "at": "2026-10-22T13:03:26.720Z"
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+      "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+      "url": "blob:glyph://app/ed0a3e7d-f704-4a04-b941-6e8ff4dfb561",
+      "suggestedFilename": "xml-exe-lower-yres.ciff",
+      "at": "2026-10-22T13:03:26.906Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+      "totalBytes": 3346,
+      "receivedBytes": 0,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.906Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.906Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.907Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.910Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:26.931Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "e41eb3f7-0204-4d76-8ba3-2b38c1cda6e0",
+      "totalBytes": 3346,
+      "receivedBytes": 3346,
+      "state": "completed",
+      "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-yres.ciff",
+      "at": "2026-10-22T13:03:26.950Z"
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+      "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+      "url": "blob:glyph://app/1978743c-ae27-40a1-900b-15e557702f5a",
+      "suggestedFilename": "xml-exe-lower-xres.ciff",
+      "at": "2026-10-22T13:03:27.120Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+      "totalBytes": 3364,
+      "receivedBytes": 0,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.121Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.121Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.121Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.123Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.140Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "bdb95b4d-0202-484c-9968-bf1bf445f295",
+      "totalBytes": 3364,
+      "receivedBytes": 3364,
+      "state": "completed",
+      "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-lower-xres.ciff",
+      "at": "2026-10-22T13:03:27.159Z"
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+      "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+      "url": "blob:glyph://app/2b502a02-9e56-4abf-8bc1-e36545a72764",
+      "suggestedFilename": "xml-exe-fractional-rotation90.ciff",
+      "at": "2026-10-22T13:03:27.346Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+      "totalBytes": 3408,
+      "receivedBytes": 0,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.346Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+      "totalBytes": 3408,
+      "receivedBytes": 3408,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.346Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+      "totalBytes": 3408,
+      "receivedBytes": 3408,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.346Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+      "totalBytes": 3408,
+      "receivedBytes": 3408,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.349Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+      "totalBytes": 3408,
+      "receivedBytes": 3408,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.366Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ba08afb0-7ed1-499c-bf75-3a944935d2d3",
+      "totalBytes": 3408,
+      "receivedBytes": 3408,
+      "state": "completed",
+      "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation90.ciff",
+      "at": "2026-10-22T13:03:27.386Z"
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+      "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+      "url": "blob:glyph://app/f592c8f8-6255-4748-a1f1-2c70600d534d",
+      "suggestedFilename": "xml-exe-fractional-rotation270.ciff",
+      "at": "2026-10-22T13:03:27.592Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+      "totalBytes": 3410,
+      "receivedBytes": 0,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.592Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+      "totalBytes": 3410,
+      "receivedBytes": 3410,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.593Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+      "totalBytes": 3410,
+      "receivedBytes": 3410,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.593Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+      "totalBytes": 3410,
+      "receivedBytes": 3410,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.595Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+      "totalBytes": 3410,
+      "receivedBytes": 3410,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.617Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "da9e4e98-4272-40d3-a9d1-d2b9296b1ffb",
+      "totalBytes": 3410,
+      "receivedBytes": 3410,
+      "state": "completed",
+      "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-fractional-rotation270.ciff",
+      "at": "2026-10-22T13:03:27.638Z"
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "frameId": "2A28871DB2CEB8516857C27FFB1EC67C",
+      "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+      "url": "blob:glyph://app/ba68aa8d-a1cc-46d6-85be-24f9a966ac7f",
+      "suggestedFilename": "xml-exe-profile6230.ciff",
+      "at": "2026-10-22T13:03:27.806Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+      "totalBytes": 3304,
+      "receivedBytes": 0,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.807Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+      "totalBytes": 3304,
+      "receivedBytes": 3304,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.807Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+      "totalBytes": 3304,
+      "receivedBytes": 3304,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.807Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+      "totalBytes": 3304,
+      "receivedBytes": 3304,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.809Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+      "totalBytes": 3304,
+      "receivedBytes": 3304,
+      "state": "inProgress",
+      "at": "2026-10-22T13:03:27.826Z"
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "guid": "ac4473ce-c093-4e78-b7f8-9bfc6768124e",
+      "totalBytes": 3304,
+      "receivedBytes": 3304,
+      "state": "completed",
+      "filePath": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\xml-exe-profile6230.ciff",
+      "at": "2026-10-22T13:03:27.845Z"
+    }
+  ],
+  "executable": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-resolution-fix-20261022\\win-unpacked\\Glyph Studio.exe",
+  "executableSha256": "6161c5b4f6d8e4a20ceb97c51481909761aef52eabad90bc5325f0ada5369f2b",
+  "archiveSha256": "a29577512aa370ee07f99197500859fddf02790b368fba5e9cd775b60b58753f",
+  "actualExeProcess": {
+    "pid": 38460,
+    "startedAt": "2026-10-22T13:03:23.720Z",
+    "arguments": [
+      "--remote-debugging-address=127.0.0.1",
+      "--remote-debugging-port=52539",
+      "--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+      "--disable-gpu",
+      "--window-position=-32000,-32000"
+    ],
+    "userDataDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile",
+    "logBaseDir": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs",
+    "debuggingPort": 52539
+  },
+  "savePath": "Actual packaged EXE Save button -> browser download",
+  "downloadControl": "Browser.setDownloadBehavior"
+}

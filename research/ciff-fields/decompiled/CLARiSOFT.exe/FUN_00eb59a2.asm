@@ -1,0 +1,15 @@
+00eb59a2 PUSH EBP
+00eb59a3 MOV EBP,ESP
+00eb59a5 PUSH ECX
+00eb59a6 MOV EAX,dword ptr [ECX + 0x4]
+00eb59a9 LEA EDX,[EBP + -0x4]
+00eb59ac AND dword ptr [EBP + -0x4],0x0
+00eb59b0 PUSH EDX
+00eb59b1 PUSH EAX
+00eb59b2 MOV ECX,dword ptr [EAX]
+00eb59b4 CALL dword ptr [ECX + 0x24]
+00eb59b7 CMP dword ptr [EBP + -0x4],0x0
+00eb59bb SETNZ AL
+00eb59be MOV ESP,EBP
+00eb59c0 POP EBP
+00eb59c1 RET

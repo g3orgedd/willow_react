@@ -1,0 +1,797 @@
+{
+  "name": "CLCiffConversion_Data.dll",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCiffConversion_Data.dll",
+  "size": 357888,
+  "sha256": "9960bc627c1844a8ef510c0592ad86520ab94d3129142ca931484a6113450ecd",
+  "imageBase": "45000000",
+  "exports": [
+    {
+      "name": "DllCanUnloadNow",
+      "ordinal": 1,
+      "va": "45018a25"
+    },
+    {
+      "name": "DllGetClassObject",
+      "ordinal": 2,
+      "va": "45018a31"
+    },
+    {
+      "name": "DllRegisterServer",
+      "ordinal": 3,
+      "va": "45018a81"
+    },
+    {
+      "name": "DllUnregisterServer",
+      "ordinal": 4,
+      "va": "45018a90"
+    }
+  ],
+  "imports": [
+    {
+      "library": "MPR.dll",
+      "names": [
+        "WNetGetUniversalNameW",
+        "WNetGetLastErrorW"
+      ]
+    },
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "WritePrivateProfileStringW",
+        "MultiByteToWideChar",
+        "OutputDebugStringA",
+        "DecodePointer",
+        "RaiseException",
+        "GetLastError",
+        "InitializeCriticalSectionEx",
+        "DeleteCriticalSection",
+        "WideCharToMultiByte",
+        "EncodePointer",
+        "EnterCriticalSection",
+        "LeaveCriticalSection",
+        "InitializeCriticalSectionAndSpinCount",
+        "DisableThreadLibraryCalls",
+        "FreeLibrary",
+        "GetModuleFileNameW",
+        "GetModuleHandleW",
+        "GetPrivateProfileStringW",
+        "LoadLibraryExW",
+        "LoadResource",
+        "SizeofResource",
+        "lstrcmpiW",
+        "FindResourceW",
+        "GetPrivateProfileIntW",
+        "CreateDirectoryW",
+        "GetTempPathW",
+        "GetDateFormatW",
+        "GetTimeFormatW",
+        "CloseHandle",
+        "CreateFileW",
+        "FlushFileBuffers",
+        "WriteConsoleW",
+        "SetStdHandle",
+        "lstrlenW",
+        "lstrlenA",
+        "LocalFree",
+        "GetLocalTime",
+        "DebugBreak",
+        "OutputDebugStringW",
+        "FindFirstFileW",
+        "FindClose",
+        "ReadFile",
+        "ReadConsoleW",
+        "SetEnvironmentVariableA",
+        "GetStdHandle",
+        "WriteFile",
+        "GetProcAddress",
+        "FreeEnvironmentStringsW",
+        "SetFilePointerEx",
+        "GetConsoleMode",
+        "GetConsoleCP",
+        "LCMapStringW",
+        "CompareStringW",
+        "GetFileType",
+        "GetEnvironmentStringsW",
+        "GetCurrentProcessId",
+        "QueryPerformanceCounter",
+        "GetModuleFileNameA",
+        "GetStartupInfoW",
+        "TlsFree",
+        "TlsSetValue",
+        "TlsGetValue",
+        "TlsAlloc",
+        "TerminateProcess",
+        "GetCurrentProcess",
+        "Sleep",
+        "SetUnhandledExceptionFilter",
+        "UnhandledExceptionFilter",
+        "HeapReAlloc",
+        "GetProcessHeap",
+        "HeapSize",
+        "GetModuleHandleExW",
+        "ExitProcess",
+        "SetLastError",
+        "GetStringTypeW",
+        "GetCPInfo",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "GetCurrentThreadId",
+        "GetCommandLineA",
+        "GetTimeZoneInformation",
+        "VirtualQuery",
+        "VirtualProtect",
+        "IsDebuggerPresent",
+        "GetSystemTimeAsFileTime",
+        "RtlUnwind",
+        "HeapFree",
+        "IsProcessorFeaturePresent",
+        "HeapAlloc",
+        "GetSystemInfo",
+        "VirtualAlloc"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "CharNextW",
+        "MessageBoxW",
+        "CharUpperW",
+        "LoadStringW"
+      ]
+    },
+    {
+      "library": "GDI32.dll",
+      "names": [
+        "GetCurrentObject",
+        "DeleteObject",
+        "DeleteDC",
+        "CreateCompatibleDC",
+        "SelectObject"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "RegEnumKeyExW",
+        "RegDeleteValueW",
+        "RegDeleteKeyW",
+        "RegSetValueExW",
+        "RegQueryValueExW",
+        "RegOpenKeyExW",
+        "RegCreateKeyExW",
+        "RegCloseKey",
+        "RegQueryInfoKeyW"
+      ]
+    },
+    {
+      "library": "SHELL32.dll",
+      "names": [
+        "SHGetFolderPathW"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "StringFromGUID2",
+        "CoCreateInstance",
+        "CoTaskMemRealloc",
+        "CoTaskMemFree",
+        "CoInitialize",
+        "OleRun",
+        "CoCreateInstanceEx",
+        "ProgIDFromCLSID",
+        "CoTaskMemAlloc",
+        "CLSIDFromProgID",
+        "CLSIDFromString",
+        "CoUninitialize"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "RegisterTypeLib",
+        "LoadRegTypeLib",
+        "LoadTypeLib",
+        "VarUI4FromStr",
+        "CreateErrorInfo",
+        "SetErrorInfo",
+        "VariantCopy",
+        "SafeArrayCreateVector",
+        "SafeArrayGetElement",
+        "SafeArrayGetLBound",
+        "SafeArrayGetUBound",
+        "SafeArrayDestroy",
+        "VariantTimeToSystemTime",
+        "UnRegisterTypeLib",
+        "VariantChangeType",
+        "SafeArrayUnaccessData",
+        "SafeArrayAccessData",
+        "VarBstrCmp",
+        "VarBstrCat",
+        "VariantClear",
+        "SysAllocStringByteLen",
+        "SysStringByteLen",
+        "SysStringLen",
+        "SysFreeString",
+        "SysAllocStringLen",
+        "SysAllocString",
+        "SystemTimeToVariantTime",
+        "SysReAllocStringLen",
+        "GetErrorInfo"
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "4503daf8",
+      "fileOffset": 248568,
+      "encoding": "ascii",
+      "text": "CCIFFConvertBase::Convert"
+    },
+    {
+      "va": "4503db18",
+      "fileOffset": 248600,
+      "encoding": "ascii",
+      "text": "%s - hr(0x%08x) = Convert(pSubImage)"
+    },
+    {
+      "va": "4503db40",
+      "fileOffset": 248640,
+      "encoding": "ascii",
+      "text": "CCIFFConvertBase::Convert CComPtr<ICiffSubImage>"
+    },
+    {
+      "va": "4503db8c",
+      "fileOffset": 248716,
+      "encoding": "ascii",
+      "text": "%s - pSubImage is NULL"
+    },
+    {
+      "va": "4503eb2b",
+      "fileOffset": 252715,
+      "encoding": "ascii",
+      "text": "@CCIFFConvertBase::PutMachineID id=%ls"
+    },
+    {
+      "va": "4503eb54",
+      "fileOffset": 252756,
+      "encoding": "ascii",
+      "text": "CCIFFConvertBase::PutDownloadOnly"
+    },
+    {
+      "va": "4503ed04",
+      "fileOffset": 253188,
+      "encoding": "ascii",
+      "text": "CCIFFDatabaseResolve::Convert (DateOffset)"
+    },
+    {
+      "va": "4503ee68",
+      "fileOffset": 253544,
+      "encoding": "ascii",
+      "text": "CCIFFDatabaseResolve::Convert - ADOConn.ExecuteToVariant(bstrSQL, vtValue) succeeded but returned vtValue.vt == NULL (Date Offset Name=[%ls]) [empty database record ??], so returning E_FAIL"
+    },
+    {
+      "va": "4503f024",
+      "fileOffset": 253988,
+      "encoding": "ascii",
+      "text": "CCIFFDatabaseResolve::Convert (Price)"
+    },
+    {
+      "va": "4503f070",
+      "fileOffset": 254064,
+      "encoding": "ascii",
+      "text": "CCIFFDatabaseResolve::Convert (field)"
+    },
+    {
+      "va": "4503f0b7",
+      "fileOffset": 254135,
+      "encoding": "ascii",
+      "text": "ECCIFFDatabaseResolve::Convert"
+    },
+    {
+      "va": "4503f0d8",
+      "fileOffset": 254168,
+      "encoding": "ascii",
+      "text": "%s - CCIFFConvertBase::Convert() (FAILED(hr)"
+    },
+    {
+      "va": "4503f208",
+      "fileOffset": 254472,
+      "encoding": "ascii",
+      "text": "CCIFFDatabaseResolve::ResolveAbsoluteDate"
+    },
+    {
+      "va": "4503f2b8",
+      "fileOffset": 254648,
+      "encoding": "ascii",
+      "text": "%s - switch[vtVAlue] fell through to default, returning E_FAIL"
+    },
+    {
+      "va": "4503f3b4",
+      "fileOffset": 254900,
+      "encoding": "ascii",
+      "text": "CCIFFDatabaseResolve::ResolveDate"
+    },
+    {
+      "va": "4503f43c",
+      "fileOffset": 255036,
+      "encoding": "ascii",
+      "text": "%s - switch(vtVAlue) fell through to default, returning E_FAIL"
+    },
+    {
+      "va": "4503f4c0",
+      "fileOffset": 255168,
+      "encoding": "ascii",
+      "text": "CIFFDatabaseResolve::ResolveDateWithDateMask"
+    },
+    {
+      "va": "4503f52c",
+      "fileOffset": 255276,
+      "encoding": "ascii",
+      "text": "CIFFDatabaseResolve::ProcessSubString"
+    },
+    {
+      "va": "4503f628",
+      "fileOffset": 255528,
+      "encoding": "ascii",
+      "text": "CIFFDatabaseResolve::SaveCIFFParamenter - Database parameter is invalid"
+    },
+    {
+      "va": "4503f6d4",
+      "fileOffset": 255700,
+      "encoding": "ascii",
+      "text": "CCIFFCharTranslate::Convert"
+    },
+    {
+      "va": "4503f77c",
+      "fileOffset": 255868,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Data::Convert (vtCiffFile)"
+    },
+    {
+      "va": "4503f7c8",
+      "fileOffset": 255944,
+      "encoding": "ascii",
+      "text": "m_pCiffFile == NULL: This usually happens when CiffMgr needs re-registering."
+    },
+    {
+      "va": "4503f818",
+      "fileOffset": 256024,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Data::Parameter"
+    },
+    {
+      "va": "4503f840",
+      "fileOffset": 256064,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Data::CreateConvertList"
+    },
+    {
+      "va": "4503f870",
+      "fileOffset": 256112,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Layout::ClearLists"
+    },
+    {
+      "va": "4503f894",
+      "fileOffset": 256148,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Data::SaveConvertedCiff"
+    },
+    {
+      "va": "4503f8bc",
+      "fileOffset": 256188,
+      "encoding": "ascii",
+      "text": "\\CiffConversion\\CiffConversion_Data_"
+    },
+    {
+      "va": "4503fe53",
+      "fileOffset": 257619,
+      "encoding": "ascii",
+      "text": "ECCiffConversion_Data Constructor"
+    },
+    {
+      "va": "4503fe78",
+      "fileOffset": 257656,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Data Destructor - Start"
+    },
+    {
+      "va": "4503fea4",
+      "fileOffset": 257700,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Data Destructor - End"
+    },
+    {
+      "va": "45040398",
+      "fileOffset": 258968,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Data::ParameterCheck"
+    },
+    {
+      "va": "450403c0",
+      "fileOffset": 259008,
+      "encoding": "ascii",
+      "text": "CCiffConversion_Data::Parameter_GetSet"
+    },
+    {
+      "va": "450406c8",
+      "fileOffset": 259784,
+      "encoding": "ascii",
+      "text": "CCIFFDataObject::GetDateOffset - couldn't get target date offset from pCiffFile"
+    },
+    {
+      "va": "45040720",
+      "fileOffset": 259872,
+      "encoding": "ascii",
+      "text": "CCIFFDataObject::GetPrice - couldn't get target price from pCiffFile"
+    },
+    {
+      "va": "45042e9c",
+      "fileOffset": 269980,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "45042f0c",
+      "fileOffset": 270092,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "4504a090",
+      "fileOffset": 299152,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "4504a468",
+      "fileOffset": 300136,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "4504a4cc",
+      "fileOffset": 300236,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "4504a590",
+      "fileOffset": 300432,
+      "encoding": "ascii",
+      "text": "C:\\AutomatedBuilds\\TFSTeamBuild\\Windows Applications\\Releases\\PCMS4.500\\CLARICOM\\Installation Directory\\PDB Files\\CLCiffConversion_Data.pdb"
+    },
+    {
+      "va": "4504ffc0",
+      "fileOffset": 323520,
+      "encoding": "ascii",
+      "text": "CLCiffConversion_Data.DLL"
+    },
+    {
+      "va": "4504ffea",
+      "fileOffset": 323562,
+      "encoding": "ascii",
+      "text": "DllGetClassObject"
+    },
+    {
+      "va": "450506e0",
+      "fileOffset": 325344,
+      "encoding": "ascii",
+      "text": "DeleteObject"
+    },
+    {
+      "va": "450506f0",
+      "fileOffset": 325360,
+      "encoding": "ascii",
+      "text": "GetCurrentObject"
+    },
+    {
+      "va": "45050704",
+      "fileOffset": 325380,
+      "encoding": "ascii",
+      "text": "SelectObject"
+    },
+    {
+      "va": "45052d50",
+      "fileOffset": 334672,
+      "encoding": "ascii",
+      "text": ".?AVCCiffHelperUtil@@"
+    },
+    {
+      "va": "45052d70",
+      "fileOffset": 334704,
+      "encoding": "ascii",
+      "text": ".?AV?$TCIFFField@UICiffField@@@@"
+    },
+    {
+      "va": "45052d9c",
+      "fileOffset": 334748,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFClass@@"
+    },
+    {
+      "va": "45052db8",
+      "fileOffset": 334776,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFConvertBase@@"
+    },
+    {
+      "va": "45052dd8",
+      "fileOffset": 334808,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFFieldDataReplacement@@"
+    },
+    {
+      "va": "45052ea8",
+      "fileOffset": 335016,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFTextField@@"
+    },
+    {
+      "va": "45052ec8",
+      "fileOffset": 335048,
+      "encoding": "ascii",
+      "text": ".?AV?$TCIFFField@UICiffTextField@@@@"
+    },
+    {
+      "va": "45052ef8",
+      "fileOffset": 335096,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFHeightWidthResolve@@"
+    },
+    {
+      "va": "45052f20",
+      "fileOffset": 335136,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFDatabaseResolve@@"
+    },
+    {
+      "va": "45052f70",
+      "fileOffset": 335216,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFFieldResolve@@"
+    },
+    {
+      "va": "45052f90",
+      "fileOffset": 335248,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFCharTranslate@@"
+    },
+    {
+      "va": "45053098",
+      "fileOffset": 335512,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "450530f8",
+      "fileOffset": 335608,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "4505313c",
+      "fileOffset": 335676,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "45053168",
+      "fileOffset": 335720,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "45053218",
+      "fileOffset": 335896,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+    },
+    {
+      "va": "450533e0",
+      "fileOffset": 336352,
+      "encoding": "ascii",
+      "text": ".?AUICiffConversion_Data@@"
+    },
+    {
+      "va": "4505341c",
+      "fileOffset": 336412,
+      "encoding": "ascii",
+      "text": ".?AVCCiffConversion_Data@@"
+    },
+    {
+      "va": "45053440",
+      "fileOffset": 336448,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCCiffConversion_Data@@$1?CLSID_CiffConversion_Data@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "450534a0",
+      "fileOffset": 336544,
+      "encoding": "ascii",
+      "text": ".?AV?$IConnectionPointContainerImpl@VCCiffConversion_Data@@@ATL@@"
+    },
+    {
+      "va": "450534f0",
+      "fileOffset": 336624,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispatchImpl@UICiffConversion_Data@@$1?IID_ICiffConversion_Data@@3U_GUID@@B$1?LIBID_CLCIFFCONVERSION_DATALib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "4505359c",
+      "fileOffset": 336796,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCiffConversion_Data@@@ATL@@"
+    },
+    {
+      "va": "450535d4",
+      "fileOffset": 336852,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCCiffConversion_Data@@@ATL@@"
+    },
+    {
+      "va": "45053610",
+      "fileOffset": 336912,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@"
+    },
+    {
+      "va": "45053658",
+      "fileOffset": 336984,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@"
+    },
+    {
+      "va": "45053738",
+      "fileOffset": 337208,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCCiffConversion_Data@@@ATL@@"
+    },
+    {
+      "va": "4505754a",
+      "fileOffset": 339274,
+      "encoding": "ascii",
+      "text": "Claricom.CiffConversion_Data.1 = s 'Claricom CiffConversion_Data Class'"
+    },
+    {
+      "va": "450575d2",
+      "fileOffset": 339410,
+      "encoding": "ascii",
+      "text": "Claricom.CiffConversion_Data = s 'Claricom CiffConversion_Data Class'"
+    },
+    {
+      "va": "45057655",
+      "fileOffset": 339541,
+      "encoding": "ascii",
+      "text": "CurVer = s 'Claricom.CiffConversion_Data.1'"
+    },
+    {
+      "va": "4505769d",
+      "fileOffset": 339613,
+      "encoding": "ascii",
+      "text": "ForceRemove {A767401C-7615-474B-B683-7DF118556416} = s 'Claricom CiffConversion_Data Class'"
+    },
+    {
+      "va": "45057702",
+      "fileOffset": 339714,
+      "encoding": "ascii",
+      "text": "ProgID = s 'Claricom.CiffConversion_Data.1'"
+    },
+    {
+      "va": "45057732",
+      "fileOffset": 339762,
+      "encoding": "ascii",
+      "text": "VersionIndependentProgID = s 'Claricom.CiffConversion_Data'"
+    },
+    {
+      "va": "45057dc8",
+      "fileOffset": 341448,
+      "encoding": "ascii",
+      "text": "CLCIFFCONVERSION_DATALib"
+    },
+    {
+      "va": "45057de9",
+      "fileOffset": 341481,
+      "encoding": "ascii",
+      "text": "8r|CiffConversion_DataWd"
+    },
+    {
+      "va": "45057e0b",
+      "fileOffset": 341515,
+      "encoding": "ascii",
+      "text": "HICiffConversion_Datad"
+    },
+    {
+      "va": "45057e3f",
+      "fileOffset": 341567,
+      "encoding": "ascii",
+      "text": "`vtCiffFileWWd"
+    },
+    {
+      "va": "45057e92",
+      "fileOffset": 341650,
+      "encoding": "ascii",
+      "text": "Claricom CLCiffConversion_Data 1.0 Type LibraryWWW\""
+    },
+    {
+      "va": "45057ec6",
+      "fileOffset": 341702,
+      "encoding": "ascii",
+      "text": "Claricom CiffConversion_Data Class"
+    },
+    {
+      "va": "45057eea",
+      "fileOffset": 341738,
+      "encoding": "ascii",
+      "text": "ICiffConversion_Data Interface"
+    },
+    {
+      "va": "4503d778",
+      "fileOffset": 247672,
+      "encoding": "utf-16-le",
+      "text": "StaticGraphic"
+    },
+    {
+      "va": "4503d794",
+      "fileOffset": 247700,
+      "encoding": "utf-16-le",
+      "text": "FixedText"
+    },
+    {
+      "va": "4503d7bc",
+      "fileOffset": 247740,
+      "encoding": "utf-16-le",
+      "text": "DateText"
+    },
+    {
+      "va": "4503d7d0",
+      "fileOffset": 247760,
+      "encoding": "utf-16-le",
+      "text": "OffsetDateText"
+    },
+    {
+      "va": "4503fdec",
+      "fileOffset": 257516,
+      "encoding": "utf-16-le",
+      "text": "CLCiffConversion_Data"
+    },
+    {
+      "va": "45057250",
+      "fileOffset": 338512,
+      "encoding": "utf-16-le",
+      "text": "Ciff Conversion (Data) Component"
+    },
+    {
+      "va": "45057314",
+      "fileOffset": 338708,
+      "encoding": "utf-16-le",
+      "text": "CLCiffConversion_Data Module"
+    },
+    {
+      "va": "450573a0",
+      "fileOffset": 338848,
+      "encoding": "utf-16-le",
+      "text": "CLCiffConversion_Data"
+    },
+    {
+      "va": "45057438",
+      "fileOffset": 339000,
+      "encoding": "utf-16-le",
+      "text": "CLCiffConversion_Data.DLL"
+    },
+    {
+      "va": "4505748c",
+      "fileOffset": 339084,
+      "encoding": "utf-16-le",
+      "text": "CLCiffConversion_Data Module"
+    },
+    {
+      "va": "4505803a",
+      "fileOffset": 342074,
+      "encoding": "utf-16-le",
+      "text": "CLCiffConversion_Data"
+    }
+  ]
+}

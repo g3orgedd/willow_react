@@ -1,0 +1,262 @@
+[
+  {
+    "DisplayName": "DataFlex 6530(53mm) - Continuous",
+    "CoderName": "Nimitz Continuous"
+  },
+  {
+    "DisplayName": "DataFlex 6530(53mm) - Intermittent",
+    "CoderName": "Nimitz Intermittent"
+  },
+  {
+    "DisplayName": "DataFlex 6420(53mm) - Continuous",
+    "CoderName": "Zodiac Continuous"
+  },
+  {
+    "DisplayName": "DataFlex 6420(53mm) - Intermittent",
+    "CoderName": "Zodiac Intermittent"
+  },
+  {
+    "DisplayName": "DataFlex 6420(107mm) - Continuous",
+    "CoderName": "Zodiac(107mm) Continuous"
+  },
+  {
+    "DisplayName": "DataFlex 6420(107mm) - Intermittent",
+    "CoderName": "Zodiac(107mm) Intermittent"
+  },
+  {
+    "DisplayName": "DataFlex 6330(53mm) - Continuous",
+    "CoderName": "Forrester Continuous"
+  },
+  {
+    "DisplayName": "DataFlex 6330(53mm) - Intermittent",
+    "CoderName": "Forrester Intermittent"
+  },
+  {
+    "DisplayName": "DataFlex 6320(53mm) - Continuous",
+    "CoderName": "Zodiac Continuous"
+  },
+  {
+    "DisplayName": "DataFlex 6320(53mm) - Intermittent",
+    "CoderName": "Zodiac Intermittent"
+  },
+  {
+    "DisplayName": "DataFlex 6320(32mm) - Continuous",
+    "CoderName": "Zodiac(32mm) Continuous"
+  },
+  {
+    "DisplayName": "DataFlex 6320(32mm) - Intermittent",
+    "CoderName": "Zodiac(32mm) Intermittent"
+  },
+  {
+    "DisplayName": "DataFlex 6230(32mm) - Continuous",
+    "CoderName": "Independence(32mm) Continuous"
+  },
+  {
+    "DisplayName": "DataFlex 6230(32mm) - Intermittent",
+    "CoderName": "Independence(32mm) Intermittent"
+  },
+  {
+    "DisplayName": "DataFlex - Continuous",
+    "CoderName": "Zodiac Continuous"
+  },
+  {
+    "DisplayName": "DataFlex - Intermittent",
+    "CoderName": "Zodiac Intermittent"
+  },
+  {
+    "DisplayName": "DataFlex(107mm) - Continuous",
+    "CoderName": "Zodiac(107mm) Continuous"
+  },
+  {
+    "DisplayName": "DataFlex(107mm) - Intermittent",
+    "CoderName": "Zodiac(107mm) Intermittent"
+  },
+  {
+    "DisplayName": "Videojet 2310",
+    "CoderName": "Viper 126"
+  },
+  {
+    "DisplayName": "Videojet 2320",
+    "CoderName": "Viper 380"
+  },
+  {
+    "DisplayName": "Videojet 2330",
+    "CoderName": "Viper 500"
+  },
+  {
+    "DisplayName": "Videojet 2340",
+    "CoderName": "Viper 126"
+  },
+  {
+    "DisplayName": "Videojet 2350",
+    "CoderName": "Viper 380"
+  },
+  {
+    "DisplayName": "Videojet 2351",
+    "CoderName": "Viper 380"
+  },
+  {
+    "DisplayName": "Videojet 2360",
+    "CoderName": "Viper 500"
+  },
+  {
+    "DisplayName": "Videojet 2361",
+    "CoderName": "Viper 500"
+  },
+  {
+    "DisplayName": "Videojet 9550",
+    "CoderName": "Integra(107mm)"
+  },
+  {
+    "DisplayName": "VJ1550",
+    "CoderName": "Comet 15XX"
+  },
+  {
+    "DisplayName": "VJ1560",
+    "CoderName": "Comet 15XX"
+  },
+  {
+    "DisplayName": "VJ1650",
+    "CoderName": "Comet 16XX"
+  },
+  {
+    "DisplayName": "VJ1660",
+    "CoderName": "Comet 16XX"
+  },
+  {
+    "DisplayName": "VJ1650 UHS",
+    "CoderName": "Comet UHS"
+  },
+  {
+    "DisplayName": "VJ1650 HR",
+    "CoderName": "Comet HR"
+  },
+  {
+    "DisplayName": "VJ1860",
+    "CoderName": "Eclipse"
+  },
+  {
+    "DisplayName": "VJ2120 (Basic Driver)",
+    "CoderName": "CLARiTY3150Controller (Basic Driver)"
+  },
+  {
+    "DisplayName": "VJ2120 (Full Driver)",
+    "CoderName": "CLARiTY3150Controller (Full Driver)"
+  },
+  {
+    "DisplayName": "VJ6210 (Basic Driver)",
+    "CoderName": "Pegasus (original)"
+  },
+  {
+    "DisplayName": "VJ6210 (Full Driver)",
+    "CoderName": "Pegasus"
+  },
+  {
+    "DisplayName": "VJ6220 (Basic Driver)",
+    "CoderName": "Pegasus(Basic Driver)"
+  },
+  {
+    "DisplayName": "VJ6220 (Full Driver)",
+    "CoderName": "Pegasus(Full Driver)"
+  },
+  {
+    "DisplayName": "VJ6250",
+    "CoderName": "Pegasus Plus"
+  },
+  {
+    "DisplayName": "VJ8510",
+    "CoderName": "CLARiTY TIJ"
+  },
+  {
+    "DisplayName": "VJ8520",
+    "CoderName": "CLARiTY TIJ"
+  },
+  {
+    "DisplayName": "VJ8610",
+    "CoderName": "CLARiTY BARK"
+  },
+  {
+    "DisplayName": "Marsh 1100",
+    "CoderName": "Viper 126"
+  },
+  {
+    "DisplayName": "Marsh 2100",
+    "CoderName": "Viper 380"
+  },
+  {
+    "DisplayName": "Marsh 3100",
+    "CoderName": "Viper 500"
+  },
+  {
+    "DisplayName": "610",
+    "CoderName": "Indigo"
+  },
+  {
+    "DisplayName": "Woodman Codeline",
+    "CoderName": "Pegasus"
+  },
+  {
+    "DisplayName": "Laser - 3020",
+    "CoderName": "CLARiTY VJ30x0"
+  },
+  {
+    "DisplayName": "Laser - 3030",
+    "CoderName": "CLARiTY VJ30x0"
+  },
+  {
+    "DisplayName": "Laser - 3120",
+    "CoderName": "CLARiTY VJ31x0"
+  },
+  {
+    "DisplayName": "Laser - 3130",
+    "CoderName": "CLARiTY VJ31x0"
+  },
+  {
+    "DisplayName": "Laser - 3140",
+    "CoderName": "CLARiTY VJ3140"
+  },
+  {
+    "DisplayName": "Laser - 3320",
+    "CoderName": "CLARiTY VJ33x0"
+  },
+  {
+    "DisplayName": "Laser - 3330",
+    "CoderName": "CLARiTY VJ33x0"
+  },
+  {
+    "DisplayName": "Laser - 3340",
+    "CoderName": "CLARiTY VJ3340"
+  },
+  {
+    "DisplayName": "Laser - 3430",
+    "CoderName": "CLARiTY VJ3430"
+  },
+  {
+    "DisplayName": "Laser - 3640",
+    "CoderName": "CLARiTY VJ3640"
+  },
+  {
+    "DisplayName": "Laser - 7210",
+    "CoderName": "CLARiTY VJ7x10"
+  },
+  {
+    "DisplayName": "Laser - 7220",
+    "CoderName": "CLARiTY VJ7x10"
+  },
+  {
+    "DisplayName": "Laser - 7310",
+    "CoderName": "CLARiTY VJ7x10"
+  },
+  {
+    "DisplayName": "Laser - 7320",
+    "CoderName": "CLARiTY VJ7x10"
+  },
+  {
+    "DisplayName": "Laser - 7510",
+    "CoderName": "CLARiTY Y0050CW"
+  },
+  {
+    "DisplayName": "Laser - 7810",
+    "CoderName": "CLARiTY VJ7810"
+  }
+]

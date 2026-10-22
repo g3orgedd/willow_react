@@ -1,0 +1,38 @@
+6810dc8e PUSH EBP
+6810dc8f MOV EBP,ESP
+6810dc91 PUSH ESI
+6810dc92 MOV ESI,ECX
+6810dc94 CMP dword ptr [ESI],0x0
+6810dc97 JZ 0x6810dcdb
+6810dc99 PUSH 0x68149668
+6810dc9e CALL dword ptr [0x68147038]
+6810dca4 TEST EAX,EAX
+6810dca6 JZ 0x6810dce9
+6810dca8 PUSH 0x6814969c
+6810dcad PUSH EAX
+6810dcae CALL dword ptr [0x68147094]
+6810dcb4 TEST EAX,EAX
+6810dcb6 JZ 0x6810dce9
+6810dcb8 PUSH 0x0
+6810dcba PUSH dword ptr [ESI]
+6810dcbc PUSH dword ptr [EBP + 0x28]
+6810dcbf PUSH dword ptr [EBP + 0x24]
+6810dcc2 PUSH dword ptr [EBP + 0x20]
+6810dcc5 PUSH dword ptr [EBP + 0x1c]
+6810dcc8 PUSH dword ptr [EBP + 0x18]
+6810dccb PUSH dword ptr [EBP + 0x14]
+6810dcce PUSH dword ptr [EBP + 0x10]
+6810dcd1 PUSH dword ptr [EBP + 0xc]
+6810dcd4 PUSH dword ptr [EBP + 0x8]
+6810dcd7 CALL EAX
+6810dcd9 JMP 0x6810dcec
+6810dcdb CMP dword ptr [ESI + 0x4],0x0
+6810dcdf JZ 0x6810dce9
+6810dce1 POP ESI
+6810dce2 POP EBP
+6810dce3 JMP dword ptr [0x68147014]
+6810dce9 XOR EAX,EAX
+6810dceb INC EAX
+6810dcec POP ESI
+6810dced POP EBP
+6810dcee RET 0x24

@@ -1,0 +1,7 @@
+45445cc1 MOV EAX,dword ptr [EBP + -0x38]
+45445cc4 AND EAX,0x1
+45445cc7 JZ 0x45445cd9
+45445ccd AND dword ptr [EBP + -0x38],0xfffffffe
+45445cd1 LEA ECX,[EBP + -0x34]
+45445cd4 JMP 0x45402c5d
+45445cd9 RET

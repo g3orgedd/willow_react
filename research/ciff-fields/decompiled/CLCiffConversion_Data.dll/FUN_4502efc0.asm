@@ -1,0 +1,15 @@
+4502efc0 PUSH EBP
+4502efc1 MOV EBP,ESP
+4502efc3 XOR EDX,EDX
+4502efc5 MOV EAX,EDX
+4502efc7 CMP dword ptr [EBP + 0xc],EAX
+4502efca JBE 0x4502efdd
+4502efcc MOV ECX,dword ptr [EBP + 0x8]
+4502efcf CMP word ptr [ECX],DX
+4502efd2 JZ 0x4502efdd
+4502efd4 INC EAX
+4502efd5 ADD ECX,0x2
+4502efd8 CMP EAX,dword ptr [EBP + 0xc]
+4502efdb JC 0x4502efcf
+4502efdd POP EBP
+4502efde RET

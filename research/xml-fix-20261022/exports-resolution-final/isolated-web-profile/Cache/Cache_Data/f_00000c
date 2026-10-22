@@ -1,0 +1,348 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/TopBar.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=287aaf08"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+export function TopBar() {
+  return /* @__PURE__ */ jsxDEV("header", { className: "topbar", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "topbar__brandCluster", children: [
+      /* @__PURE__ */ jsxDEV("button", { id: "mobilePanelMenuToggle", className: "btn btn--ghost btn--icon mobilePanelMenuToggle surface-card", type: "button", "aria-label": "Open panels menu", "aria-controls": "mobilePanelMenu", "aria-expanded": "false", children: /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/menu_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 25,
+        columnNumber: 9
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 24,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "brand", children: /* @__PURE__ */ jsxDEV("div", { className: "brand__copy", children: /* @__PURE__ */ jsxDEV("div", { className: "brand__title", children: "Glyph" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 30,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 29,
+        columnNumber: 9
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 28,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "topbar__actions topbar__actions--primary", children: [
+        /* @__PURE__ */ jsxDEV("button", { id: "btnNewTemplate", className: "btn btn--tonal topbarAction", type: "button", "aria-label": "Create template", children: [
+          /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/add_circle_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 36,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Create" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 37,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 35,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { id: "btnOpenFile", className: "btn btn--ghost topbarAction", type: "button", "aria-label": "Open file", children: [
+          /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/upload_file_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 41,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Open" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 42,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 40,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("input", { id: "fileInput", type: "file", accept: ".ciff,.xml,text/xml", hidden: true }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 44,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { id: "btnSave", className: "btn btn--primary topbarAction", type: "button", "aria-label": "Save file", children: [
+          /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/save_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 47,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Save" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 48,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 46,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 34,
+        columnNumber: 7
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+      lineNumber: 23,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ jsxDEV("span", { className: "topbarDivider topbarDivider--document", "aria-hidden": "true" }, void 0, false, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+      lineNumber: 53,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "topbarDocument", "aria-live": "polite", "aria-labelledby": "topbarDocumentTitle", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "topbarDocument__titleRow", children: [
+        /* @__PURE__ */ jsxDEV("span", { id: "topbarDocumentTitle", className: "topbarDocument__title", children: "New template" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 57,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { id: "topbarDocumentDirty", className: "topbarDocument__dirty", hidden: true, "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 58,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 56,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { id: "topbarDocumentMeta", className: "topbarDocument__meta", children: "—" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 60,
+        columnNumber: 7
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+      lineNumber: 55,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "topbar__actions topbar__actions--utility", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "utilityGroup utilityGroup--history", children: [
+        /* @__PURE__ */ jsxDEV("button", { id: "btnUndo", className: "btn btn--ghost btn--icon", type: "button", "aria-label": "Undo", children: /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/undo_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 66,
+          columnNumber: 11
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 65,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { id: "btnRedo", className: "btn btn--ghost btn--icon", type: "button", "aria-label": "Redo", children: /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/redo_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 70,
+          columnNumber: 11
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 69,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 64,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("span", { className: "topbarDivider", "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 74,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("button", { id: "btnPanMode", className: "btn btn--ghost mobilePanToggle surface-card", type: "button", "aria-label": "Pan canvas", "aria-pressed": "false", children: [
+        /* @__PURE__ */ jsxDEV("img", { className: "buttonIcon", src: "/resourses/Icons/pan_tool_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 77,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { children: "Pan" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 78,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 76,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "utilityGroup utilityGroup--toggles surface-card", children: [
+        /* @__PURE__ */ jsxDEV("label", { className: "utilityToggle", htmlFor: "toggleGrid", id: "toggleGrid_ID", children: [
+          /* @__PURE__ */ jsxDEV("input", { id: "toggleGrid", type: "checkbox", defaultChecked: true }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 83,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Grid" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 84,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 82,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("label", { className: "utilityToggle", htmlFor: "toggleSnap", id: "toggleSnap_ID", children: [
+          /* @__PURE__ */ jsxDEV("input", { id: "toggleSnap", type: "checkbox", defaultChecked: true }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 88,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Snap" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 89,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 87,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("label", { className: "utilityToggle", htmlFor: "toggleAlign", id: "toggleAlign_ID", children: [
+          /* @__PURE__ */ jsxDEV("input", { id: "toggleAlign", type: "checkbox" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 93,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "utilityToggle__label", children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "utilityToggle__full", children: "Align" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+              lineNumber: 95,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("span", { className: "utilityToggle__short", children: "Align" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+              lineNumber: 96,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 94,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 92,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 81,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("span", { className: "topbarDivider topbarDivider--zoom", "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 101,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "zoom surface-card", children: [
+        /* @__PURE__ */ jsxDEV("button", { id: "zoomOut", className: "btn btn--ghost btn--icon", type: "button", "aria-label": "Zoom out", children: /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/remove_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 105,
+          columnNumber: 11
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 104,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "zoom__sliderWrap", children: [
+          /* @__PURE__ */ jsxDEV("label", { className: "srOnly", htmlFor: "zoomRange", children: "Zoom" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 109,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("input", { id: "zoomRange", className: "zoomRange", type: "range", min: "25", max: "400", defaultValue: "100", step: "1", "aria-valuetext": "100%" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 110,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "zoom__track zoom__track--active", "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 111,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "zoom__track zoom__track--inactive", "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 112,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "zoom__handle", "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+            lineNumber: 113,
+            columnNumber: 11
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 108,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { id: "zoomIn", className: "btn btn--ghost btn--icon", type: "button", "aria-label": "Zoom in", children: /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/add_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 117,
+          columnNumber: 11
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 116,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { className: "zoom__divider", "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 120,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { id: "zoomLabel", className: "btn btn--ghost zoom__label", type: "button", children: "100%" }, void 0, false, {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+          lineNumber: 121,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+        lineNumber: 103,
+        columnNumber: 7
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+      lineNumber: 63,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx",
+    lineNumber: 22,
+    columnNumber: 5
+  }, this);
+}
+_c = TopBar;
+var _c;
+$RefreshReg$(_c, "TopBar");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TopBar.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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LFFBQ2xELHVCQUFDLFlBQU8sSUFBRyxhQUFZLFdBQVUsOEJBQTZCLE1BQUssVUFBUyxvQkFBNUU7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUFnRjtBQUFBLFdBbEJsRjtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBbUJBO0FBQUEsU0EzREY7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQTREQTtBQUFBLE9BckdGO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0FzR0E7QUFFRjtBQUFDQyxLQTFHZUQ7QUFBTSxJQUFBQztBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJUb3BCYXIiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJUb3BCYXIudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBmdW5jdGlvbiBUb3BCYXIoKSB7XG4gIHJldHVybiAoXG4gIDxoZWFkZXIgY2xhc3NOYW1lPVwidG9wYmFyXCI+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJ0b3BiYXJfX2JyYW5kQ2x1c3RlclwiPlxuICAgICAgPGJ1dHRvbiBpZD1cIm1vYmlsZVBhbmVsTWVudVRvZ2dsZVwiIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IGJ0bi0taWNvbiBtb2JpbGVQYW5lbE1lbnVUb2dnbGUgc3VyZmFjZS1jYXJkXCIgdHlwZT1cImJ1dHRvblwiIGFyaWEtbGFiZWw9XCJPcGVuIHBhbmVscyBtZW51XCIgYXJpYS1jb250cm9scz1cIm1vYmlsZVBhbmVsTWVudVwiIGFyaWEtZXhwYW5kZWQ9XCJmYWxzZVwiPlxuICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImljb25CdXR0b25fX2ljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL21lbnVfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgPC9idXR0b24+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYnJhbmRcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJicmFuZF9fY29weVwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYnJhbmRfX3RpdGxlXCI+R2x5cGg8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0b3BiYXJfX2FjdGlvbnMgdG9wYmFyX19hY3Rpb25zLS1wcmltYXJ5XCI+XG4gICAgICAgIDxidXR0b24gaWQ9XCJidG5OZXdUZW1wbGF0ZVwiIGNsYXNzTmFtZT1cImJ0biBidG4tLXRvbmFsIHRvcGJhckFjdGlvblwiIHR5cGU9XCJidXR0b25cIiBhcmlhLWxhYmVsPVwiQ3JlYXRlIHRlbXBsYXRlXCI+XG4gICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidXR0b25JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy9hZGRfY2lyY2xlXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICA8c3Bhbj5DcmVhdGU8L3NwYW4+XG4gICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgIDxidXR0b24gaWQ9XCJidG5PcGVuRmlsZVwiIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IHRvcGJhckFjdGlvblwiIHR5cGU9XCJidXR0b25cIiBhcmlhLWxhYmVsPVwiT3BlbiBmaWxlXCI+XG4gICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJidXR0b25JY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy91cGxvYWRfZmlsZV8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgPHNwYW4+T3Blbjwvc3Bhbj5cbiAgICAgICAgPC9idXR0b24+XG4gICAgICAgIDxpbnB1dCBpZD1cImZpbGVJbnB1dFwiIHR5cGU9XCJmaWxlXCIgYWNjZXB0PVwiLmNpZmYsLnhtbCx0ZXh0L3htbFwiIGhpZGRlbiAvPlxuXG4gICAgICAgIDxidXR0b24gaWQ9XCJidG5TYXZlXCIgY2xhc3NOYW1lPVwiYnRuIGJ0bi0tcHJpbWFyeSB0b3BiYXJBY3Rpb25cIiB0eXBlPVwiYnV0dG9uXCIgYXJpYS1sYWJlbD1cIlNhdmUgZmlsZVwiPlxuICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiYnV0dG9uSWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvc2F2ZV8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgPHNwYW4+U2F2ZTwvc3Bhbj5cbiAgICAgICAgPC9idXR0b24+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cblxuICAgIDxzcGFuIGNsYXNzTmFtZT1cInRvcGJhckRpdmlkZXIgdG9wYmFyRGl2aWRlci0tZG9jdW1lbnRcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuXG4gICAgPGRpdiBjbGFzc05hbWU9XCJ0b3BiYXJEb2N1bWVudFwiIGFyaWEtbGl2ZT1cInBvbGl0ZVwiIGFyaWEtbGFiZWxsZWRieT1cInRvcGJhckRvY3VtZW50VGl0bGVcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwidG9wYmFyRG9jdW1lbnRfX3RpdGxlUm93XCI+XG4gICAgICAgIDxzcGFuIGlkPVwidG9wYmFyRG9jdW1lbnRUaXRsZVwiIGNsYXNzTmFtZT1cInRvcGJhckRvY3VtZW50X190aXRsZVwiPk5ldyB0ZW1wbGF0ZTwvc3Bhbj5cbiAgICAgICAgPHNwYW4gaWQ9XCJ0b3BiYXJEb2N1bWVudERpcnR5XCIgY2xhc3NOYW1lPVwidG9wYmFyRG9jdW1lbnRfX2RpcnR5XCIgaGlkZGVuIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxkaXYgaWQ9XCJ0b3BiYXJEb2N1bWVudE1ldGFcIiBjbGFzc05hbWU9XCJ0b3BiYXJEb2N1bWVudF9fbWV0YVwiPuKAlDwvZGl2PlxuICAgIDwvZGl2PlxuXG4gICAgPGRpdiBjbGFzc05hbWU9XCJ0b3BiYXJfX2FjdGlvbnMgdG9wYmFyX19hY3Rpb25zLS11dGlsaXR5XCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInV0aWxpdHlHcm91cCB1dGlsaXR5R3JvdXAtLWhpc3RvcnlcIj5cbiAgICAgICAgPGJ1dHRvbiBpZD1cImJ0blVuZG9cIiBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCBidG4tLWljb25cIiB0eXBlPVwiYnV0dG9uXCIgYXJpYS1sYWJlbD1cIlVuZG9cIj5cbiAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImljb25CdXR0b25fX2ljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL3VuZG9fMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICA8L2J1dHRvbj5cblxuICAgICAgICA8YnV0dG9uIGlkPVwiYnRuUmVkb1wiIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IGJ0bi0taWNvblwiIHR5cGU9XCJidXR0b25cIiBhcmlhLWxhYmVsPVwiUmVkb1wiPlxuICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiaWNvbkJ1dHRvbl9faWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvcmVkb18yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgIDwvYnV0dG9uPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRvcGJhckRpdmlkZXJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuXG4gICAgICA8YnV0dG9uIGlkPVwiYnRuUGFuTW9kZVwiIGNsYXNzTmFtZT1cImJ0biBidG4tLWdob3N0IG1vYmlsZVBhblRvZ2dsZSBzdXJmYWNlLWNhcmRcIiB0eXBlPVwiYnV0dG9uXCIgYXJpYS1sYWJlbD1cIlBhbiBjYW52YXNcIiBhcmlhLXByZXNzZWQ9XCJmYWxzZVwiPlxuICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImJ1dHRvbkljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL3Bhbl90b29sXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgPHNwYW4+UGFuPC9zcGFuPlxuICAgICAgPC9idXR0b24+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwidXRpbGl0eUdyb3VwIHV0aWxpdHlHcm91cC0tdG9nZ2xlcyBzdXJmYWNlLWNhcmRcIj5cbiAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cInV0aWxpdHlUb2dnbGVcIiBodG1sRm9yPVwidG9nZ2xlR3JpZFwiIGlkPVwidG9nZ2xlR3JpZF9JRFwiPlxuICAgICAgICAgIDxpbnB1dCBpZD1cInRvZ2dsZUdyaWRcIiB0eXBlPVwiY2hlY2tib3hcIiBkZWZhdWx0Q2hlY2tlZCAvPlxuICAgICAgICAgIDxzcGFuPkdyaWQ8L3NwYW4+XG4gICAgICAgIDwvbGFiZWw+XG5cbiAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cInV0aWxpdHlUb2dnbGVcIiBodG1sRm9yPVwidG9nZ2xlU25hcFwiIGlkPVwidG9nZ2xlU25hcF9JRFwiPlxuICAgICAgICAgIDxpbnB1dCBpZD1cInRvZ2dsZVNuYXBcIiB0eXBlPVwiY2hlY2tib3hcIiBkZWZhdWx0Q2hlY2tlZCAvPlxuICAgICAgICAgIDxzcGFuPlNuYXA8L3NwYW4+XG4gICAgICAgIDwvbGFiZWw+XG5cbiAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cInV0aWxpdHlUb2dnbGVcIiBodG1sRm9yPVwidG9nZ2xlQWxpZ25cIiBpZD1cInRvZ2dsZUFsaWduX0lEXCI+XG4gICAgICAgICAgPGlucHV0IGlkPVwidG9nZ2xlQWxpZ25cIiB0eXBlPVwiY2hlY2tib3hcIiAvPlxuICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInV0aWxpdHlUb2dnbGVfX2xhYmVsXCI+XG4gICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ1dGlsaXR5VG9nZ2xlX19mdWxsXCI+QWxpZ248L3NwYW4+XG4gICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ1dGlsaXR5VG9nZ2xlX19zaG9ydFwiPkFsaWduPC9zcGFuPlxuICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0b3BiYXJEaXZpZGVyIHRvcGJhckRpdmlkZXItLXpvb21cIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInpvb20gc3VyZmFjZS1jYXJkXCI+XG4gICAgICAgIDxidXR0b24gaWQ9XCJ6b29tT3V0XCIgY2xhc3NOYW1lPVwiYnRuIGJ0bi0tZ2hvc3QgYnRuLS1pY29uXCIgdHlwZT1cImJ1dHRvblwiIGFyaWEtbGFiZWw9XCJab29tIG91dFwiPlxuICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiaWNvbkJ1dHRvbl9faWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvcmVtb3ZlXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgPC9idXR0b24+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ6b29tX19zbGlkZXJXcmFwXCI+XG4gICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cInNyT25seVwiIGh0bWxGb3I9XCJ6b29tUmFuZ2VcIj5ab29tPC9sYWJlbD5cbiAgICAgICAgICA8aW5wdXQgaWQ9XCJ6b29tUmFuZ2VcIiBjbGFzc05hbWU9XCJ6b29tUmFuZ2VcIiB0eXBlPVwicmFuZ2VcIiBtaW49XCIyNVwiIG1heD1cIjQwMFwiIGRlZmF1bHRWYWx1ZT1cIjEwMFwiIHN0ZXA9XCIxXCIgYXJpYS12YWx1ZXRleHQ9XCIxMDAlXCIgLz5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ6b29tX190cmFjayB6b29tX190cmFjay0tYWN0aXZlXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ6b29tX190cmFjayB6b29tX190cmFjay0taW5hY3RpdmVcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInpvb21fX2hhbmRsZVwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxidXR0b24gaWQ9XCJ6b29tSW5cIiBjbGFzc05hbWU9XCJidG4gYnRuLS1naG9zdCBidG4tLWljb25cIiB0eXBlPVwiYnV0dG9uXCIgYXJpYS1sYWJlbD1cIlpvb20gaW5cIj5cbiAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImljb25CdXR0b25fX2ljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL2FkZF8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInpvb21fX2RpdmlkZXJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICA8YnV0dG9uIGlkPVwiem9vbUxhYmVsXCIgY2xhc3NOYW1lPVwiYnRuIGJ0bi0tZ2hvc3Qgem9vbV9fbGFiZWxcIiB0eXBlPVwiYnV0dG9uXCI+MTAwJTwvYnV0dG9uPlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gIDwvaGVhZGVyPlxuICApO1xufVxuIl0sImZpbGUiOiJDOi9Vc2Vycy9HaWdhR2VvcmdlL0Rlc2t0b3Avd2lsbG93LXJlYWN0LXZpdGUtdGVzdF8xLjQuMC9zcmMvY29tcG9uZW50cy9Ub3BCYXIudHN4In0=

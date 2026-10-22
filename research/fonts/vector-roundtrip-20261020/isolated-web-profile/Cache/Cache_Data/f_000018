@@ -1,0 +1,2055 @@
+const Konva = window.Konva;
+
+const PRECISION_MOVE_REPEAT_DELAY_MS = 320;
+const PRECISION_MOVE_REPEAT_INTERVAL_MS = 72;
+const CANVAS_ROTATION_SNAP_TOLERANCE_DEGREES = 46;
+const INSPECTOR_COLLAPSED_STORAGE_KEY = "glyphXml.inspectorCollapsed";
+const LEFT_PANEL_COLLAPSED_STORAGE_KEY = "glyphXml.leftPanelCollapsed";
+let notificationModalCloseHandler = null;
+let confirmationModalConfirmHandler = null;
+let confirmationModalCancelHandler = null;
+let transformerOperation = null;
+let inspectorCollapsedPreference = false;
+let inspectorObjectMenuReturnFocus = null;
+let inspectorAppSettingsReturnFocus = null;
+let leftPanelCollapsedPreference = false;
+let leftPanelSearchOpen = false;
+let leftAddObjectReturnFocus = null;
+
+function snapCanvasRotationDegrees(value) {
+  const numericValue = Number(value);
+  if (!Number.isFinite(numericValue)) return 0;
+  const normalized = ((numericValue % 360) + 360) % 360;
+  const index = Math.round(normalized / 90) % ALLOWED_ORIENTATIONS.length;
+  return ALLOWED_ORIENTATIONS[index];
+}
+
+function getCanvasRotatedFieldResult(field, group) {
+  if (!field?.geom || !group?.getTransform) return null;
+
+  const currentOrientation = normalizeOrientation(field.orientation);
+  const deltaRotation = snapCanvasRotationDegrees(group.rotation?.() ?? 0);
+  const nextOrientation = snapCanvasRotationDegrees(currentOrientation + deltaRotation);
+  const isSideways = currentOrientation === 90 || currentOrientation === 270;
+  const visualWidthPx = mmToPx(internalToMm(isSideways ? field.geom.h : field.geom.w));
+  const visualHeightPx = mmToPx(internalToMm(isSideways ? field.geom.w : field.geom.h));
+  const transform = group.getTransform();
+  const corners = [
+    transform.point({ x: 0, y: 0 }),
+    transform.point({ x: visualWidthPx, y: 0 }),
+    transform.point({ x: visualWidthPx, y: visualHeightPx }),
+    transform.point({ x: 0, y: visualHeightPx })
+  ];
+  const minX = Math.min(...corners.map((point) => point.x));
+  const minY = Math.min(...corners.map((point) => point.y));
+
+  return {
+    orientation: nextOrientation,
+    x: mmToInternal(pxToMm(minX)),
+    y: mmToInternal(pxToMm(minY)),
+    deltaRotation
+  };
+}
+
+function finishCanvasRotation(selectedFields, operation) {
+  const before = operation?.before ?? selectedFields.map((field) => ({
+    name: field.name,
+    orientation: normalizeOrientation(field.orientation),
+    geometry: { ...field.geom }
+  }));
+  const historySnapshot = operation?.historySnapshot ?? snapshotState();
+  const results = selectedFields.map((field) => ({
+    field,
+    result: getCanvasRotatedFieldResult(field, field._konva)
+  }));
+
+  results.forEach(({ field, result }) => {
+    if (!result) return;
+    field.orientation = result.orientation;
+    field.geom.x = result.x;
+    field.geom.y = result.y;
+  });
+  constrainCurrentFieldPositionsInternal(selectedFields, { forceFreshTextBounds: true });
+
+  const changed = selectedFields.some((field, index) => {
+    const previous = before[index];
+    return !previous ||
+      normalizeOrientation(field.orientation) !== previous.orientation ||
+      field.geom.x !== previous.geometry.x ||
+      field.geom.y !== previous.geometry.y;
+  });
+  if (!changed) {
+    renderAll();
+    return false;
+  }
+
+  pushHistory(false, historySnapshot);
+  renderAll();
+  appLogger.action("FIELDS_ROTATED_WITH_MOUSE", "Пользователь повернул выбранные объекты мышью.", {
+    before,
+    after: selectedFields.map((field) => ({
+      name: field.name,
+      orientation: normalizeOrientation(field.orientation),
+      geometry: { ...field.geom }
+    }))
+  });
+  appLogger.state("APPLICATION_STATE_AFTER_MOUSE_ROTATION", "Состояние после поворота объектов мышью.");
+  return true;
+}
+
+function hasCanvasFieldGeometryChanged(field, previousGeometry) {
+  return !previousGeometry || ["x", "y", "w", "h"].some((key) => field.geom[key] !== previousGeometry[key]);
+}
+
+function hasCanvasFieldSizeChanged(field, previousGeometry) {
+  return !previousGeometry || ["w", "h"].some((key) => field.geom[key] !== previousGeometry[key]);
+}
+
+function applyDataMatrixResizeMetricsAfterGeometryChange(field, resizeMetrics, previousGeometry) {
+  if (
+    !resizeMetrics ||
+    field?.fldType !== "Barcode" ||
+    !field.barcode?.dataMatrix ||
+    !hasCanvasFieldSizeChanged(field, previousGeometry)
+  ) {
+    return false;
+  }
+
+  field.barcode.dataMatrix.moduleSize = resizeMetrics.moduleSize;
+  if (resizeMetrics.bcH != null) field.barcode.bcH = resizeMetrics.bcH;
+  return true;
+}
+
+function isEditableEventTarget(target) {
+  const element = target instanceof Element ? target : null;
+  if (!element) return false;
+  return !!element.closest("input, textarea, select, [contenteditable='true']");
+}
+
+function initCanvas() {
+  // Middle mouse is reserved for panning the workspace, including over fields.
+  // Keep Konva from starting a field drag before the stage handles that button.
+  Konva.dragButtons = [0];
+
+  // Apply the saved desktop rail before measuring the host so Konva starts at
+  // the final grid width instead of the expanded panel's first-frame width.
+  const initialLayoutApp = document.querySelector(".app");
+  if (elLeftPanel) {
+    initialLayoutApp?.classList.add("app--initialPanelLayout");
+    leftPanelCollapsedPreference = readLeftPanelCollapsedPreference();
+    applyLeftPanelCollapsedState();
+  }
+
+  const rect = elCanvasHost.getBoundingClientRect();
+
+  stage = new Konva.Stage({
+    container: "canvasHost",
+    width: rect.width,
+    height: rect.height,
+    draggable: false
+  });
+  requestAnimationFrame(() => initialLayoutApp?.classList.remove("app--initialPanelLayout"));
+
+  gridLayer = new Konva.Layer({ listening: false });
+  objLayer = new Konva.Layer({ imageSmoothingEnabled: !globalThis.glyphFonts?.render });
+  uiLayer = new Konva.Layer();
+
+  stage.add(gridLayer);
+  stage.add(objLayer);
+  stage.add(uiLayer);
+
+  transformer = new Konva.Transformer({
+    rotateEnabled: true,
+    rotationSnaps: ALLOWED_ORIENTATIONS,
+    rotationSnapTolerance: CANVAS_ROTATION_SNAP_TOLERANCE_DEGREES,
+    rotateAnchorOffset: 24,
+    rotateAnchorCursor: "grab",
+    ignoreStroke: true,
+    anchorStyleFunc: (anchor) => {
+      if (!anchor.hasName?.("rotater")) return;
+      anchor.cornerRadius(anchor.width() / 2);
+      anchor.fill("#ffffff");
+      anchor.stroke("rgb(0, 161, 255)");
+      anchor.strokeWidth(2);
+    },
+    boundBoxFunc: (oldBox, newBox) => {
+      if (newBox.width < 5 || newBox.height < 5) return oldBox;
+      return newBox;
+    }
+  });
+  selectionRect = new Konva.Rect({
+    visible: false,
+    listening: false,
+    fill: "rgba(106,168,255,0.18)",
+    stroke: "rgba(106,168,255,0.75)",
+    strokeWidth: 1,
+    dash: [4, 4]
+  });
+  alignmentGuideGroup = new Konva.Group({
+    name: "AlignmentGuides",
+    visible: false,
+    listening: false
+  });
+  uiLayer.add(alignmentGuideGroup);
+  uiLayer.add(selectionRect);
+  uiLayer.add(transformer);
+
+  stage.on("mousedown", (e) => {
+    const button = e.evt?.button ?? 0;
+    if (button === 1) {
+      startStagePan(e, { cancelBubble: true, preventDefault: true });
+      return;
+    }
+    if (button !== 0) return;
+    if (tryCommitPendingCanvasPlacement(e, "mouse")) return;
+    if (isSpaceDown || isMobilePanMode) {
+      startStagePan(e, { cancelBubble: isMobilePanMode, preventDefault: isMobilePanMode });
+      return;
+    }
+    if (e.target === stage) {
+      const p = getStageLocalPointerPosition();
+      if (!p) return;
+      isSelectionBoxActive = true;
+      selectionBoxAdditive = !!e.evt.shiftKey;
+      selectionStart = p;
+      selectionRect.setAttrs({ x: p.x, y: p.y, width: 0, height: 0, visible: true });
+      uiLayer.batchDraw();
+    }
+  });
+
+  stage.on("mousemove", () => {
+    const p = stage.getPointerPosition();
+    if (!p) return;
+
+    if (isPanning && panStart) {
+      updateStagePan();
+      return;
+    }
+
+    if (isSelectionBoxActive && selectionStart) {
+      const local = getStageLocalPointerPosition();
+      if (!local) return;
+      selectionRect.setAttrs({
+        x: Math.min(selectionStart.x, local.x),
+        y: Math.min(selectionStart.y, local.y),
+        width: Math.abs(local.x - selectionStart.x),
+        height: Math.abs(local.y - selectionStart.y),
+        visible: true
+      });
+      uiLayer.batchDraw();
+      return;
+    }
+
+    const mm = pxToMmWorld(p.x, p.y);
+    elStatusRight.textContent = `Cursor: X = ${mm.x.toFixed(2)} mm  Y = ${mm.y.toFixed(2)} mm`;
+  });
+
+  stage.on("mouseup", () => {
+    if (isSelectionBoxActive) {
+      const box = selectionRect.getClientRect({ relativeTo: uiLayer });
+      const hasArea = box.width > 3 && box.height > 3;
+      selectionRect.visible(false);
+
+      if (hasArea) {
+        const nextNames = selectionBoxAdditive ? getSelectedNames().slice() : [];
+        state.fields.forEach((field) => {
+          if (!field._konva) return;
+          const fieldRect = field._konva.getClientRect({ relativeTo: objLayer });
+          if (!rectsIntersect(box, fieldRect)) return;
+          if (!nextNames.includes(field.name)) nextNames.push(field.name);
+        });
+        setSelectedNames(nextNames, nextNames[nextNames.length - 1] ?? null);
+        if (nextNames.length) activateInspectorTab("object");
+        renderSelectionPanels();
+        renderFieldLists();
+        renderUI();
+      } else {
+        if (!selectionBoxAdditive) {
+          setSelectedNames([]);
+          renderSelectionPanels();
+          renderFieldLists();
+          renderUI();
+        }
+        activateInspectorTab("template");
+      }
+
+      isSelectionBoxActive = false;
+      selectionStart = null;
+      selectionBoxAdditive = false;
+      uiLayer.batchDraw();
+    }
+
+    stopStagePan();
+  });
+
+  stage.on("touchstart", (e) => {
+    if (tryCommitPendingCanvasPlacement(e, "touch")) return;
+    if (!isMobilePanMode) return;
+    const touches = e.evt?.touches;
+    if (touches && touches.length !== 1) return;
+    startStagePan(e, { cancelBubble: true, preventDefault: true });
+  });
+
+  stage.on("touchmove", (e) => {
+    if (!isMobilePanMode || !isPanning) return;
+    updateStagePan(e, { cancelBubble: true, preventDefault: true });
+  });
+
+  stage.on("touchend touchcancel", (e) => {
+    if (!isMobilePanMode || !isPanning) return;
+    cancelStagePanEvent(e, { cancelBubble: true, preventDefault: true });
+    stopStagePan();
+  });
+
+  elCanvasHost.addEventListener("wheel", (ev) => {
+    if (!ev.ctrlKey) return;
+    ev.preventDefault();
+    const delta = -ev.deltaY;
+    const step = delta > 0 ? 10 : -10;
+    setZoom(clamp(25, 400, zoomPct + step));
+  }, { passive: false });
+
+  initCanvasHostResize();
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && pendingCanvasPlacement) {
+      e.preventDefault();
+      clearPendingCanvasPlacement();
+      return;
+    }
+    if (isEditableEventTarget(e.target)) {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s") {
+        e.preventDefault();
+        if (elSaveTemplateModal && !elSaveTemplateModal.classList.contains("hidden")) {
+          saveTemplateFromDialog();
+        } else {
+          openSaveTemplateModal();
+        }
+      }
+      return;
+    }
+    if (handleMoveSelectionKeydown(e)) return;
+    if (e.code === "Space") isSpaceDown = true;
+    if (e.key === "Delete") deleteSelected();
+    if (matchesPrimaryShortcut(e, "KeyZ", "z")) { e.preventDefault(); undo(); }
+    if (matchesPrimaryShortcut(e, "KeyY", "y")) { e.preventDefault(); redo(); }
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s") {
+      e.preventDefault();
+      if (elSaveTemplateModal && !elSaveTemplateModal.classList.contains("hidden")) {
+        saveTemplateFromDialog();
+      } else {
+        openSaveTemplateModal();
+      }
+    }
+  });
+  window.addEventListener("keyup", (e) => { if (e.code === "Space") { isSpaceDown = false; stopStagePan(); } });
+  window.addEventListener("mouseup", (e) => { if (e.button === 1) stopStagePan(); });
+  window.addEventListener("blur", () => { isSpaceDown = false; stopStagePan(); });
+
+  transformer.on("transformstart", () => {
+    const selectedFields = getSelectedFields().filter((field) => field._konva);
+    transformerOperation = {
+      kind: transformer.getActiveAnchor?.() === "rotater" ? "rotate" : "resize",
+      historySnapshot: snapshotState(),
+      before: selectedFields.map((field) => ({
+        name: field.name,
+        orientation: normalizeOrientation(field.orientation),
+        geometry: { ...field.geom },
+        text: field.text ? {
+          pitch: getEffectiveTextPitch(field, 10),
+          xMag: Number(field.text.xMag) || 100
+        } : null
+      }))
+    };
+  });
+
+  // Transformer transformend => save rotation or resize in CIFF geometry.
+  transformer.on("transformend", () => {
+    const selectedFields = getSelectedFields().filter((field) => field._konva);
+    const operation = transformerOperation;
+    transformerOperation = null;
+    if (!selectedFields.length) return;
+    if (operation?.kind === "rotate") {
+      finishCanvasRotation(selectedFields, operation);
+      return;
+    }
+
+    const before = operation?.before ?? selectedFields.map((field) => ({
+      name: field.name,
+      orientation: normalizeOrientation(field.orientation),
+      geometry: { ...field.geom },
+      text: field.text ? {
+        pitch: getEffectiveTextPitch(field, 10),
+        xMag: Number(field.text.xMag) || 100
+      } : null
+    }));
+    const historySnapshot = operation?.historySnapshot ?? snapshotState();
+    const dataMatrixResizeMetrics = new Map();
+
+    selectedFields.forEach((field) => {
+      const group = field._konva;
+      const rect = group.findOne("Rect");
+      if (!rect) return;
+
+      const scaleX = group.scaleX();
+      const scaleY = group.scaleY();
+
+      let newW = Math.max(5, rect.width() * Math.abs(scaleX));
+      let newH = Math.max(5, rect.height() * Math.abs(scaleY));
+
+      group.scaleX(1);
+      group.scaleY(1);
+
+      if (field.fldType === "Barcode" && field.barcode?.dataMatrix) {
+        const resizeMetrics = getDataMatrixResizeMetrics(field, newW, newH);
+        if (resizeMetrics) {
+          dataMatrixResizeMetrics.set(field.name, resizeMetrics);
+          newW = resizeMetrics.widthPx;
+          newH = resizeMetrics.heightPx;
+        }
+      }
+
+      rect.width(newW);
+      rect.height(newH);
+
+      const label = group.findOne("Text");
+      if (label) {
+        label.width(Math.max(0, newW - 12));
+        label.height(Math.max(0, newH - 8));
+      }
+
+      const geomNew = pxGeomToInternal(group.x(), group.y(), newW, newH);
+      field.geom.x = geomNew.x;
+      field.geom.y = geomNew.y;
+      field.geom.w = geomNew.w;
+      field.geom.h = geomNew.h;
+      if (field.text && field.fldType !== "Barcode" && typeof applyTextResizeTransform === "function") {
+        const previous = before.find((item) => item.name === field.name);
+        applyTextResizeTransform(field, previous?.text, scaleX, scaleY);
+      }
+    });
+
+    constrainCurrentFieldPositionsInternal(selectedFields, { forceFreshTextBounds: true });
+
+    selectedFields.forEach((field, index) => {
+      applyDataMatrixResizeMetricsAfterGeometryChange(
+        field,
+        dataMatrixResizeMetrics.get(field.name),
+        before[index]?.geometry
+      );
+    });
+
+    const geometryChanged = selectedFields.some((field, index) => {
+      const previous = before[index]?.geometry;
+      return hasCanvasFieldGeometryChanged(field, previous);
+    });
+    if (!geometryChanged) {
+      renderAll();
+      return;
+    }
+
+    pushHistory(false, historySnapshot);
+    renderAll();
+    appLogger.action("FIELDS_RESIZED", "Пользователь изменил размер выбранных объектов.", {
+      before,
+      after: selectedFields.map((field) => ({
+        name: field.name,
+        geometry: { ...field.geom }
+      }))
+    });
+    appLogger.state("APPLICATION_STATE_AFTER_RESIZE", "Состояние после изменения размеров объектов.");
+  });
+}
+
+function matchesPrimaryShortcut(e, code, key) {
+  if (!(e.ctrlKey || e.metaKey) || e.shiftKey || e.altKey) return false;
+
+  // KeyboardEvent.code is based on the physical key and does not depend on
+  // the active keyboard layout. Keep event.key as a fallback for older paths.
+  return e.code === code || String(e.key || "").toLowerCase() === key;
+}
+
+function cancelStagePanEvent(e, options = {}) {
+  if (options.cancelBubble && e) e.cancelBubble = true;
+  if (options.preventDefault && e?.evt?.cancelable) e.evt.preventDefault();
+}
+
+function startStagePan(e, options = {}) {
+  cancelStagePanEvent(e, options);
+  const p = stage.getPointerPosition();
+  if (!p) return;
+
+  if (isSelectionBoxActive) {
+    isSelectionBoxActive = false;
+    selectionStart = null;
+    selectionBoxAdditive = false;
+    selectionRect.visible(false);
+    uiLayer.batchDraw();
+  }
+
+  clearAlignmentGuides();
+  isPanning = true;
+  panStart = { x: stage.x(), y: stage.y(), px: p.x, py: p.y };
+  elCanvasHost?.classList.add("canvasHost--panning");
+}
+
+function updateStagePan(e, options = {}) {
+  cancelStagePanEvent(e, options);
+  const p = stage.getPointerPosition();
+  if (!p || !panStart) return;
+
+  const dx = p.x - panStart.px;
+  const dy = p.y - panStart.py;
+  stage.position({ x: panStart.x + dx, y: panStart.y + dy });
+  stage.batchDraw();
+  renderRulers();
+}
+
+function stopStagePan() {
+  const didPan = !!isPanning;
+  isPanning = false;
+  panStart = null;
+  elCanvasHost?.classList.remove("canvasHost--panning");
+  if (didPan && typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+}
+
+function isMobilePanControlAvailable() {
+  return !window.matchMedia || window.matchMedia("(max-width: 960px)").matches;
+}
+
+function syncMobilePanModeUI() {
+  elBtnPanMode?.classList.toggle("is-active", isMobilePanMode);
+  elBtnPanMode?.setAttribute("aria-pressed", String(isMobilePanMode));
+  elCanvasHost?.classList.toggle("canvasHost--panMode", isMobilePanMode);
+}
+
+function updateFieldDraggingForPanMode() {
+  state.fields.forEach((field) => field._konva?.draggable(!isMobilePanMode));
+  transformer?.listening(!isMobilePanMode);
+  transformer?.visible(!isMobilePanMode);
+  if (isMobilePanMode) {
+    selectionRect?.visible(false);
+    isSelectionBoxActive = false;
+    selectionStart = null;
+    selectionBoxAdditive = false;
+    clearAlignmentGuides();
+  }
+  objLayer?.batchDraw();
+  uiLayer?.batchDraw();
+}
+
+function setMobilePanMode(enabled) {
+  if (enabled && pendingCanvasPlacement) clearPendingCanvasPlacement();
+  isMobilePanMode = !!enabled && isMobilePanControlAvailable();
+  if (!isMobilePanMode) stopStagePan();
+  updateFieldDraggingForPanMode();
+  syncMobilePanModeUI();
+}
+
+let canvasResizeFrame = null;
+let canvasResizeNeedsRulers = false;
+
+function scheduleCanvasHostResize(forceRulers = false) {
+  canvasResizeNeedsRulers ||= forceRulers;
+  if (canvasResizeFrame !== null) return;
+  canvasResizeFrame = requestAnimationFrame(() => {
+    canvasResizeFrame = null;
+    const refreshRulers = canvasResizeNeedsRulers;
+    canvasResizeNeedsRulers = false;
+    if (!stage || !elCanvasHost) return;
+    const rect = elCanvasHost.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+    const current = stage.size();
+    const changed = current.width !== rect.width || current.height !== rect.height;
+    if (changed) {
+      stage.size({ width: rect.width, height: rect.height });
+      stage.batchDraw();
+    }
+    if (changed || refreshRulers) renderRulers();
+  });
+}
+
+function initCanvasHostResize() {
+  window.addEventListener("resize", () => scheduleCanvasHostResize(true));
+  window.visualViewport?.addEventListener("resize", () => scheduleCanvasHostResize(true));
+  if (typeof ResizeObserver !== "undefined") {
+    // Toolbar wrapping and dynamic viewport units can change the host without
+    // a window resize. Observe its layout box, never the canvases we resize.
+    const observer = new ResizeObserver(() => scheduleCanvasHostResize());
+    observer.observe(elCanvasHost);
+  }
+}
+
+function refreshCanvasSizeAfterPanelMove() {
+  if (!stage || !elCanvasHost) return;
+
+  const applySize = () => scheduleCanvasHostResize(true);
+
+  requestAnimationFrame(applySize);
+  setTimeout(applySize, 240);
+
+  const app = document.querySelector(".app");
+  if (!app) {
+    setTimeout(applySize, 320);
+    return;
+  }
+
+  let settled = false;
+  const applySettledSize = () => {
+    if (settled) return;
+    settled = true;
+    app.removeEventListener("transitionend", handleGridTransitionEnd);
+    applySize();
+  };
+  const handleGridTransitionEnd = (event) => {
+    if (event.target !== app || event.propertyName !== "grid-template-columns") return;
+    applySettledSize();
+  };
+
+  app.addEventListener("transitionend", handleGridTransitionEnd);
+  setTimeout(applySettledSize, 400);
+}
+
+function initMobilePanelMenu() {
+  const mobileQuery = window.matchMedia?.("(max-width: 960px)");
+  const menu = $("mobilePanelMenu");
+  const overlay = $("mobilePanelMenuOverlay");
+  const toggle = $("mobilePanelMenuToggle");
+  const closeBtn = $("mobilePanelMenuClose");
+  if (!mobileQuery || !menu || !overlay || !toggle || !closeBtn) return;
+
+  const entries = [
+    { el: document.querySelector(".panel--right"), slot: $("mobileRightPanelSlot") },
+    { el: document.querySelector(".panel--left"), slot: $("mobileLeftPanelSlot") }
+  ].filter((entry) => entry.el && entry.slot)
+    .map((entry) => ({
+      ...entry,
+      parent: entry.el.parentNode,
+      next: entry.el.nextSibling
+    }));
+
+  const background = [document.querySelector(".topbar"), document.querySelector(".canvasWrap")].filter(Boolean);
+  const backgroundInert = new Map();
+  let isOpen = false;
+  let returnFocus = null;
+  let touchStart = null;
+
+  const isVisible = (element) => !!element && !element.hidden && element.getClientRects().length > 0;
+  const getOpenModal = () => Array.from(document.querySelectorAll(".modal")).filter(isVisible).at(-1);
+  const getOpenPortals = () => [
+    $("inspectorObjectMenu"), $("inspectorAppSettings"), $("leftAddObjectPopover"), $("customSelectMenu")
+  ].filter(isVisible);
+
+  const closePortals = () => {
+    if (typeof closeCustomSelect === "function") closeCustomSelect();
+    closeInspectorObjectMenu({ restoreFocus: false });
+    closeInspectorAppSettings({ restoreFocus: false });
+    closeLeftAddObjectPopover({ restoreFocus: false });
+  };
+
+  const setMenuOpen = (nextOpen, { restoreFocus = true } = {}) => {
+    const wasOpen = isOpen;
+    isOpen = !!nextOpen && mobileQuery.matches;
+    if (isOpen && !wasOpen) {
+      returnFocus = document.activeElement === document.body ? toggle : document.activeElement;
+      closePortals();
+      background.forEach((element) => {
+        backgroundInert.set(element, element.inert);
+        element.inert = true;
+      });
+    } else if (!isOpen && wasOpen) {
+      closePortals();
+      background.forEach((element) => { element.inert = backgroundInert.get(element) || false; });
+      backgroundInert.clear();
+    }
+    document.body.classList.toggle("mobile-panels-open", isOpen);
+    menu.hidden = !mobileQuery.matches;
+    menu.inert = mobileQuery.matches && !isOpen;
+    overlay.hidden = !isOpen;
+    menu.classList.toggle("is-open", isOpen);
+    overlay.classList.toggle("is-open", isOpen);
+    menu.setAttribute("aria-hidden", String(!isOpen));
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    if (isOpen && !wasOpen) {
+      closeBtn.focus({ preventScroll: true });
+    } else if (!isOpen && wasOpen) {
+      if (restoreFocus && !getOpenModal()) {
+        const target = isVisible(returnFocus) && !returnFocus.closest("[inert]") ? returnFocus : toggle;
+        if (isVisible(target)) target.focus({ preventScroll: true });
+      }
+      returnFocus = null;
+    }
+    if (wasOpen !== isOpen) scheduleCanvasHostResize(true);
+  };
+
+  const moveEntry = (entry, toMenu) => {
+    if (toMenu) {
+      if (entry.el.parentNode !== entry.slot) entry.slot.appendChild(entry.el);
+      return;
+    }
+
+    if (entry.el.parentNode !== entry.parent) {
+      entry.parent.insertBefore(entry.el, entry.next);
+    }
+  };
+
+  const syncMenuMode = () => {
+    const mobile = mobileQuery.matches;
+    entries.forEach((entry) => moveEntry(entry, mobile));
+    if (!mobile) setMenuOpen(false, { restoreFocus: false });
+    else {
+      menu.hidden = false;
+      menu.inert = !isOpen;
+      menu.setAttribute("aria-hidden", String(!isOpen));
+    }
+    refreshCanvasSizeAfterPanelMove();
+  };
+
+  toggle.addEventListener("click", () => setMenuOpen(!isOpen));
+  closeBtn.addEventListener("click", () => setMenuOpen(false));
+  overlay.addEventListener("click", () => setMenuOpen(false));
+  document.addEventListener("ciff:canvas-placement-started", () => setMenuOpen(false, { restoreFocus: false }));
+  document.addEventListener("keydown", (event) => {
+    if (!isOpen) return;
+    const modal = getOpenModal();
+    const portals = getOpenPortals();
+    // Let an overlaid dialog or menu handle Escape before the drawer itself.
+    if (event.key === "Escape" && !modal && !portals.length) {
+      event.preventDefault();
+      setMenuOpen(false);
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const selectMenu = $("customSelectMenu");
+    const roots = modal ? [modal, ...(isVisible(selectMenu) ? [selectMenu] : [])] : [menu, ...portals];
+    const focusable = [...new Set(roots.flatMap((root) => Array.from(root.querySelectorAll(
+      "summary, button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex]"
+    ))))].filter((element) => element.tabIndex >= 0 && !element.closest("[inert]") && isVisible(element));
+    if (!focusable.length) return;
+    const index = focusable.indexOf(document.activeElement);
+    const next = index < 0 ? (event.shiftKey ? focusable.length - 1 : 0)
+      : (index + (event.shiftKey ? -1 : 1) + focusable.length) % focusable.length;
+    event.preventDefault();
+    focusable[next].focus();
+  }, true);
+
+  menu.addEventListener("touchstart", (e) => {
+    const touch = e.touches?.length === 1 ? e.touches[0] : null;
+    // A deliberate header swipe can close the drawer; scrolling its form or
+    // editing a value must never be interpreted as a dismiss gesture.
+    touchStart = touch && e.target.closest(".mobilePanelMenu__header") && !e.target.closest("button")
+      ? { x: touch.clientX, y: touch.clientY } : null;
+  }, { passive: true });
+  menu.addEventListener("touchend", (e) => {
+    const touch = e.changedTouches?.[0];
+    const deltaX = touchStart && touch ? touchStart.x - touch.clientX : 0;
+    const deltaY = touchStart && touch ? Math.abs(touchStart.y - touch.clientY) : 0;
+    if (deltaX > 64 && deltaX > deltaY * 2) {
+      setMenuOpen(false);
+    }
+    touchStart = null;
+  }, { passive: true });
+  menu.addEventListener("touchcancel", () => { touchStart = null; }, { passive: true });
+
+  if (mobileQuery.addEventListener) mobileQuery.addEventListener("change", syncMenuMode);
+  else mobileQuery.addListener?.(syncMenuMode);
+
+  syncMenuMode();
+}
+
+function activateInspectorTab(tabName) {
+  if (tabName !== "object" && tabName !== "template") return false;
+  syncInspectorShell();
+  return true;
+}
+
+function getInspectorSelectedFields() {
+  if (typeof getSelectedFields === "function") return getSelectedFields();
+  const selectedNames = Array.isArray(state?.selectedNames) ? state.selectedNames : [];
+  return selectedNames.map((name) => state.fieldByName?.get(name)).filter(Boolean);
+}
+
+function getInspectorTemplateSubtitle() {
+  if (!state?.xmlDoc) return t("inspector.noTemplate");
+  const printer = String(state.docMeta?.printerModel || state.docMeta?.designedFor || t("common.none")).trim();
+  return printer;
+}
+
+function setInspectorContextVisibility(element, visible) {
+  if (!element) return;
+  element.classList.toggle("hidden", !visible);
+  element.setAttribute("aria-hidden", String(!visible));
+  element.inert = !visible;
+}
+
+function syncInspectorShell(selectedFields = null) {
+  const fields = Array.isArray(selectedFields) ? selectedFields : getInspectorSelectedFields();
+  const hasSelection = fields.length > 0;
+  const hasTemplate = !!state?.xmlDoc;
+  const singleField = fields.length === 1 ? fields[0] : null;
+  const singleDataMatrix = !!singleField && singleField.fldType === "Barcode" && !!singleField.barcode?.dataMatrix;
+
+  setInspectorContextVisibility(elInspectorObjectContext, hasSelection);
+  setInspectorContextVisibility(elInspectorTemplateContext, !hasSelection);
+  elInspectorNoTemplate?.classList.toggle("hidden", hasTemplate || hasSelection);
+  elInspectorTemplateSections?.classList.toggle("hidden", !hasTemplate || hasSelection);
+  elObjectAdvancedSection?.classList.toggle("hidden", !singleDataMatrix);
+  if (elObjectAdvancedSection) elObjectAdvancedSection.inert = !singleDataMatrix;
+
+  let title = t("inspector.title");
+  let subtitle = t("inspector.noTemplate");
+  if (hasSelection) {
+    title = t("inspector.objectTitle");
+    subtitle = singleField
+      ? singleField.name
+      : t("status.selectedMultiple", { count: fields.length });
+  } else if (hasTemplate) {
+    title = t("inspector.templateTitle");
+    subtitle = getInspectorTemplateSubtitle();
+  }
+
+  if (elInspectorTitle) elInspectorTitle.textContent = title;
+  if (elInspectorSubtitle) elInspectorSubtitle.textContent = subtitle;
+  if (elInspectorCollapsedLabel) elInspectorCollapsedLabel.textContent = title;
+
+  elBtnInspectorObjectMenu?.classList.toggle("hidden", !hasSelection);
+  elBtnInspectorObjectMenu?.setAttribute("aria-expanded", String(!elInspectorObjectMenu?.classList.contains("hidden")));
+  if (elBtnDelete) elBtnDelete.disabled = !hasSelection;
+
+  if (elBtnInspectorTogglePrint) {
+    const allPrinted = hasSelection && fields.every((field) => !!field.printed);
+    const mixed = hasSelection && fields.some((field) => !!field.printed !== allPrinted);
+    elBtnInspectorTogglePrint.disabled = !hasSelection;
+    elBtnInspectorTogglePrint.dataset.nextPrinted = String(!allPrinted);
+    elBtnInspectorTogglePrint.setAttribute("aria-checked", mixed ? "mixed" : String(allPrinted));
+  }
+
+  if (!hasSelection) closeInspectorObjectMenu({ restoreFocus: false });
+}
+
+function positionInspectorPopover(popover, options = {}) {
+  if (!popover) return;
+  const margin = 8;
+  const anchorRect = options.anchor?.getBoundingClientRect?.() ?? null;
+  const preferredX = Number.isFinite(options.x)
+    ? options.x
+    : (anchorRect ? anchorRect.right : margin);
+  const preferredY = Number.isFinite(options.y)
+    ? options.y
+    : (anchorRect ? anchorRect.bottom + 6 : margin);
+  const rect = popover.getBoundingClientRect();
+  const alignEnd = options.alignEnd !== false && !!anchorRect && !Number.isFinite(options.x);
+  const left = Math.max(margin, Math.min(
+    window.innerWidth - rect.width - margin,
+    alignEnd ? preferredX - rect.width : preferredX
+  ));
+  const top = Math.max(margin, Math.min(window.innerHeight - rect.height - margin, preferredY));
+  popover.style.left = `${Math.round(left)}px`;
+  popover.style.top = `${Math.round(top)}px`;
+}
+
+function closeInspectorObjectMenu(options = {}) {
+  if (!elInspectorObjectMenu || elInspectorObjectMenu.classList.contains("hidden")) return;
+  elInspectorObjectMenu.classList.add("hidden");
+  elBtnInspectorObjectMenu?.setAttribute("aria-expanded", "false");
+  inspectorObjectMenuReturnFocus?.setAttribute?.("aria-expanded", "false");
+  if (options.restoreFocus !== false && inspectorObjectMenuReturnFocus?.isConnected) {
+    inspectorObjectMenuReturnFocus.focus({ preventScroll: true });
+  }
+  inspectorObjectMenuReturnFocus = null;
+}
+
+function openInspectorObjectMenuAt(x = null, y = null, returnFocus = null, anchor = null) {
+  if (!elInspectorObjectMenu || !getInspectorSelectedFields().length) return false;
+  closeInspectorAppSettings({ restoreFocus: false });
+  inspectorObjectMenuReturnFocus = returnFocus || document.activeElement;
+  elInspectorObjectMenu.classList.remove("hidden");
+  elBtnInspectorObjectMenu?.setAttribute("aria-expanded", "true");
+  returnFocus?.setAttribute?.("aria-expanded", "true");
+  positionInspectorPopover(elInspectorObjectMenu, {
+    x: Number.isFinite(x) ? x : undefined,
+    y: Number.isFinite(y) ? y : undefined,
+    anchor: Number.isFinite(x) ? null : (anchor || elBtnInspectorObjectMenu)
+  });
+  requestAnimationFrame(() => elInspectorObjectMenu.querySelector("[role^='menuitem']:not(:disabled)")?.focus());
+  return true;
+}
+
+function closeInspectorAppSettings(options = {}) {
+  if (!elInspectorAppSettings || elInspectorAppSettings.classList.contains("hidden")) return;
+  elInspectorAppSettings.classList.add("hidden");
+  elBtnInspectorAppSettings?.setAttribute("aria-expanded", "false");
+  if (options.restoreFocus !== false && inspectorAppSettingsReturnFocus?.isConnected) {
+    inspectorAppSettingsReturnFocus.focus({ preventScroll: true });
+  }
+  inspectorAppSettingsReturnFocus = null;
+}
+
+function openInspectorAppSettings() {
+  if (!elInspectorAppSettings) return false;
+  closeInspectorObjectMenu({ restoreFocus: false });
+  inspectorAppSettingsReturnFocus = elBtnInspectorAppSettings || document.activeElement;
+  elInspectorAppSettings.classList.remove("hidden");
+  elBtnInspectorAppSettings?.setAttribute("aria-expanded", "true");
+  positionInspectorPopover(elInspectorAppSettings, { anchor: elBtnInspectorAppSettings });
+  requestAnimationFrame(() => {
+    const focusTarget = elInspectorAppSettings.querySelector(".customSelect__button, button, input, select:not(.customSelect__native)");
+    focusTarget?.focus();
+  });
+  return true;
+}
+
+function toggleSelectedFieldsPrintOutput() {
+  const fields = getInspectorSelectedFields();
+  if (!fields.length) return false;
+  const nextPrinted = !fields.every((field) => !!field.printed);
+  pushHistory();
+  fields.forEach((field) => {
+    field.printed = nextPrinted;
+  });
+  if (nextPrinted) constrainCurrentFieldPositionsInternal(fields);
+  closeInspectorObjectMenu({ restoreFocus: false });
+  renderAll();
+  return true;
+}
+
+function isInspectorCollapseAvailable() {
+  return !window.matchMedia || window.matchMedia("(min-width: 1121px)").matches;
+}
+
+function readInspectorCollapsedPreference() {
+  try {
+    return window.sessionStorage?.getItem(INSPECTOR_COLLAPSED_STORAGE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function persistInspectorCollapsedPreference() {
+  try {
+    window.sessionStorage?.setItem(INSPECTOR_COLLAPSED_STORAGE_KEY, inspectorCollapsedPreference ? "1" : "0");
+  } catch {
+    // Storage can be unavailable in private or embedded browser contexts.
+  }
+}
+
+function applyInspectorCollapsedState() {
+  const collapsed = inspectorCollapsedPreference && isInspectorCollapseAvailable();
+  elInspectorPanel?.classList.toggle("inspector--collapsed", collapsed);
+  elInspectorPanel?.setAttribute("data-collapsed", String(collapsed));
+  document.querySelector(".app")?.classList.toggle("app--inspectorCollapsed", collapsed);
+  if (elInspectorExpanded) elInspectorExpanded.inert = collapsed;
+  elBtnInspectorCollapse?.setAttribute("aria-expanded", String(!collapsed));
+  elBtnInspectorExpand?.setAttribute("aria-expanded", String(!collapsed));
+  if (collapsed) {
+    closeInspectorObjectMenu({ restoreFocus: false });
+    closeInspectorAppSettings({ restoreFocus: false });
+  }
+  refreshCanvasSizeAfterPanelMove();
+}
+
+function setInspectorCollapsed(collapsed) {
+  inspectorCollapsedPreference = !!collapsed;
+  persistInspectorCollapsedPreference();
+  applyInspectorCollapsedState();
+  if (!inspectorCollapsedPreference) {
+    requestAnimationFrame(() => elBtnInspectorCollapse?.focus({ preventScroll: true }));
+  }
+}
+
+function initInspectorUi() {
+  inspectorCollapsedPreference = readInspectorCollapsedPreference();
+
+  elBtnInspectorCollapse?.addEventListener("click", () => setInspectorCollapsed(true));
+  elBtnInspectorExpand?.addEventListener("click", () => setInspectorCollapsed(false));
+  elBtnInspectorObjectMenu?.addEventListener("click", () => {
+    if (elInspectorObjectMenu?.classList.contains("hidden")) openInspectorObjectMenuAt(null, null, elBtnInspectorObjectMenu);
+    else closeInspectorObjectMenu();
+  });
+  elBtnInspectorAppSettings?.addEventListener("click", () => {
+    if (elInspectorAppSettings?.classList.contains("hidden")) openInspectorAppSettings();
+    else closeInspectorAppSettings();
+  });
+  elBtnInspectorTogglePrint?.addEventListener("click", () => toggleSelectedFieldsPrintOutput());
+  elBtnDelete?.addEventListener("click", () => {
+    closeInspectorObjectMenu({ restoreFocus: false });
+    deleteSelected();
+  });
+
+  ["btnOpenFunctionality", "btnOpenChangelog"].forEach((id) => {
+    $(id)?.addEventListener("click", () => closeInspectorAppSettings({ restoreFocus: false }));
+  });
+
+  elInspectorObjectMenu?.addEventListener("keydown", (event) => {
+    const items = Array.from(elInspectorObjectMenu.querySelectorAll("[role^='menuitem']:not(:disabled)"));
+    const currentIndex = items.indexOf(document.activeElement);
+    let nextIndex = null;
+    if (event.key === "ArrowDown") nextIndex = (currentIndex + 1) % items.length;
+    if (event.key === "ArrowUp") nextIndex = (currentIndex - 1 + items.length) % items.length;
+    if (event.key === "Home") nextIndex = 0;
+    if (event.key === "End") nextIndex = items.length - 1;
+    if (nextIndex === null || !items.length) return;
+    event.preventDefault();
+    items[nextIndex]?.focus();
+  });
+
+  document.addEventListener("pointerdown", (event) => {
+    if (!elInspectorObjectMenu?.classList.contains("hidden") &&
+        !elInspectorObjectMenu.contains(event.target) &&
+        !elBtnInspectorObjectMenu?.contains(event.target)) {
+      closeInspectorObjectMenu({ restoreFocus: false });
+    }
+    if (!elInspectorAppSettings?.classList.contains("hidden") &&
+        !elInspectorAppSettings.contains(event.target) &&
+        !elBtnInspectorAppSettings?.contains(event.target)) {
+      closeInspectorAppSettings({ restoreFocus: false });
+    }
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    if (!elInspectorObjectMenu?.classList.contains("hidden")) {
+      closeInspectorObjectMenu();
+      return;
+    }
+    if (!elInspectorAppSettings?.classList.contains("hidden")) closeInspectorAppSettings();
+  });
+
+  const collapseQuery = window.matchMedia?.("(min-width: 1121px)");
+  if (collapseQuery?.addEventListener) collapseQuery.addEventListener("change", applyInspectorCollapsedState);
+  else collapseQuery?.addListener?.(applyInspectorCollapsedState);
+
+  syncInspectorShell();
+  applyInspectorCollapsedState();
+}
+
+function isLeftPanelCollapseAvailable() {
+  return !window.matchMedia || window.matchMedia("(min-width: 1121px)").matches;
+}
+
+function readLeftPanelCollapsedPreference() {
+  try {
+    return window.localStorage?.getItem(LEFT_PANEL_COLLAPSED_STORAGE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function persistLeftPanelCollapsedPreference() {
+  try {
+    window.localStorage?.setItem(LEFT_PANEL_COLLAPSED_STORAGE_KEY, leftPanelCollapsedPreference ? "1" : "0");
+  } catch {
+    // Storage can be unavailable in private or embedded browser contexts.
+  }
+}
+
+function syncLeftPanelSearchQueryState() {
+  const hasQuery = !!String(elSearch?.value || "").trim();
+  [elBtnToggleFieldSearch, elBtnToggleFieldSearchCollapsed].forEach((button) => {
+    button?.classList.toggle("leftPanel__searchButton--active", leftPanelSearchOpen || hasQuery);
+  });
+}
+
+function setLeftPanelSearchOpen(open, options = {}) {
+  if (!elLeftPanelSearch || !elSearch) return;
+  leftPanelSearchOpen = !!open;
+
+  if (options.clear) {
+    elSearch.value = "";
+    renderFieldLists();
+  }
+
+  elLeftPanelSearch.classList.toggle("leftPanelSearch--open", leftPanelSearchOpen);
+  elLeftPanelSearch.setAttribute("aria-hidden", String(!leftPanelSearchOpen));
+  elLeftPanelSearch.inert = !leftPanelSearchOpen;
+  elSearch.tabIndex = leftPanelSearchOpen ? 0 : -1;
+  if (elBtnCloseFieldSearch) elBtnCloseFieldSearch.tabIndex = leftPanelSearchOpen ? 0 : -1;
+  [elBtnToggleFieldSearch, elBtnToggleFieldSearchCollapsed].forEach((button) => {
+    button?.setAttribute("aria-expanded", String(leftPanelSearchOpen));
+  });
+  syncLeftPanelSearchQueryState();
+
+  if (leftPanelSearchOpen && options.focus !== false) {
+    requestAnimationFrame(() => {
+      elSearch.focus({ preventScroll: true });
+      elSearch.select();
+    });
+  } else if (!leftPanelSearchOpen && options.restoreFocus) {
+    requestAnimationFrame(() => elBtnToggleFieldSearch?.focus({ preventScroll: true }));
+  }
+}
+
+function closeLeftAddObjectPopover(options = {}) {
+  if (!elLeftAddObjectPopover) return;
+  const wasOpen = !elLeftAddObjectPopover.classList.contains("hidden");
+  elLeftAddObjectPopover.classList.add("hidden");
+  elLeftAddObjectPopover.setAttribute("aria-hidden", "true");
+  elLeftAddObjectPopover.inert = true;
+  elBtnAddObjectCollapsed?.setAttribute("aria-expanded", "false");
+  if (wasOpen && options.restoreFocus !== false && leftAddObjectReturnFocus?.isConnected) {
+    leftAddObjectReturnFocus.focus({ preventScroll: true });
+  }
+  leftAddObjectReturnFocus = null;
+}
+
+function positionLeftAddObjectPopover() {
+  if (!elLeftAddObjectPopover || elLeftAddObjectPopover.classList.contains("hidden")) return;
+  const workspaceRect = document.querySelector(".canvasWrap.editorWorkspace")?.getBoundingClientRect();
+  positionInspectorPopover(elLeftAddObjectPopover, workspaceRect ? {
+    x: workspaceRect.left,
+    y: workspaceRect.bottom - elLeftAddObjectPopover.offsetHeight
+  } : { anchor: leftAddObjectReturnFocus });
+}
+
+function openLeftAddObjectPopover(anchor = elBtnAddObjectCollapsed) {
+  if (!elLeftAddObjectPopover || !anchor) return false;
+  closeInspectorObjectMenu({ restoreFocus: false });
+  closeInspectorAppSettings({ restoreFocus: false });
+  leftAddObjectReturnFocus = anchor;
+  elLeftAddObjectPopover.classList.remove("hidden");
+  elLeftAddObjectPopover.setAttribute("aria-hidden", "false");
+  elLeftAddObjectPopover.inert = false;
+  elBtnAddObjectCollapsed?.setAttribute("aria-expanded", String(elBtnAddObjectCollapsed === anchor));
+  positionLeftAddObjectPopover();
+  requestAnimationFrame(() => elLeftAddObjectPopover.querySelector(".toolButton")?.focus());
+  return true;
+}
+
+function applyLeftPanelCollapsedState() {
+  const collapsed = leftPanelCollapsedPreference && isLeftPanelCollapseAvailable();
+  elLeftPanel?.classList.toggle("leftPanel--collapsed", collapsed);
+  elLeftPanel?.setAttribute("data-collapsed", String(collapsed));
+  const app = document.querySelector(".app");
+  app?.classList.toggle("app--leftPanelCollapsed", collapsed);
+  app?.setAttribute("data-left-panel-collapsed", String(collapsed));
+
+  if (elLeftPanelExpanded) elLeftPanelExpanded.inert = collapsed;
+  if (elLeftPanelCollapsedActions) {
+    elLeftPanelCollapsedActions.inert = !collapsed;
+    elLeftPanelCollapsedActions.setAttribute("aria-hidden", String(!collapsed));
+    elLeftPanelCollapsedActions.querySelectorAll("button").forEach((button) => {
+      button.tabIndex = collapsed ? 0 : -1;
+    });
+  }
+
+  if (elBtnCollapseLeftPanel) {
+    elBtnCollapseLeftPanel.tabIndex = collapsed ? -1 : 0;
+    elBtnCollapseLeftPanel.setAttribute("aria-expanded", String(!collapsed));
+  }
+  if (elBtnExpandLeftPanel) {
+    elBtnExpandLeftPanel.tabIndex = collapsed ? 0 : -1;
+    elBtnExpandLeftPanel.setAttribute("aria-expanded", String(!collapsed));
+  }
+
+  if (collapsed) {
+    setLeftPanelSearchOpen(false, { focus: false });
+    closeLeftAddObjectPopover({ restoreFocus: false });
+  }
+  refreshCanvasSizeAfterPanelMove();
+}
+
+function setLeftPanelCollapsed(collapsed, options = {}) {
+  leftPanelCollapsedPreference = !!collapsed;
+  persistLeftPanelCollapsedPreference();
+  applyLeftPanelCollapsedState();
+
+  if (options.focus === false) return;
+  const target = leftPanelCollapsedPreference && isLeftPanelCollapseAvailable()
+    ? elBtnExpandLeftPanel
+    : elBtnCollapseLeftPanel;
+  requestAnimationFrame(() => target?.focus({ preventScroll: true }));
+}
+
+function initLeftPanelUi() {
+  leftPanelCollapsedPreference = readLeftPanelCollapsedPreference();
+  elLeftPanelSearch && (elLeftPanelSearch.inert = true);
+  closeLeftAddObjectPopover({ restoreFocus: false });
+
+  elBtnAddObjectCollapsed?.addEventListener("click", () => {
+    if (!elLeftAddObjectPopover?.classList.contains("hidden") && leftAddObjectReturnFocus === elBtnAddObjectCollapsed) {
+      closeLeftAddObjectPopover();
+    } else {
+      openLeftAddObjectPopover(elBtnAddObjectCollapsed);
+    }
+  });
+
+  elBtnToggleFieldSearch?.addEventListener("click", () => {
+    setLeftPanelSearchOpen(!leftPanelSearchOpen, { focus: true, restoreFocus: true });
+  });
+  elBtnToggleFieldSearchCollapsed?.addEventListener("click", () => {
+    setLeftPanelCollapsed(false, { focus: false });
+    requestAnimationFrame(() => setLeftPanelSearchOpen(true, { focus: true }));
+  });
+  elBtnCloseFieldSearch?.addEventListener("click", () => {
+    setLeftPanelSearchOpen(false, { clear: true, restoreFocus: true });
+  });
+  elBtnCollapseLeftPanel?.addEventListener("click", () => setLeftPanelCollapsed(true));
+  elBtnExpandLeftPanel?.addEventListener("click", () => setLeftPanelCollapsed(false));
+
+  elLeftAddObjectPopover?.addEventListener("click", (event) => {
+    const toolButton = event.target.closest?.(".toolButton");
+    if (!toolButton) return;
+    const targetId = toolButton.dataset.addObjectTarget;
+    closeLeftAddObjectPopover({ restoreFocus: false });
+    if (targetId) $(targetId)?.click();
+  }, true);
+
+  document.addEventListener("pointerdown", (event) => {
+    if (elLeftAddObjectPopover?.classList.contains("hidden")) return;
+    const clickedTrigger = elBtnAddObjectCollapsed?.contains(event.target);
+    if (!clickedTrigger && !elLeftAddObjectPopover.contains(event.target)) {
+      closeLeftAddObjectPopover({ restoreFocus: false });
+    }
+  });
+  document.addEventListener("ciff:canvas-placement-started", () => {
+    closeLeftAddObjectPopover({ restoreFocus: false });
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    if (!elLeftAddObjectPopover?.classList.contains("hidden")) {
+      event.preventDefault();
+      closeLeftAddObjectPopover();
+      return;
+    }
+    if (leftPanelSearchOpen) {
+      event.preventDefault();
+      setLeftPanelSearchOpen(false, { restoreFocus: true });
+    }
+  });
+  window.addEventListener("resize", () => requestAnimationFrame(positionLeftAddObjectPopover));
+
+  const collapseQuery = window.matchMedia?.("(min-width: 1121px)");
+  if (collapseQuery?.addEventListener) collapseQuery.addEventListener("change", applyLeftPanelCollapsedState);
+  else collapseQuery?.addListener?.(applyLeftPanelCollapsedState);
+
+  syncLeftPanelSearchQueryState();
+  applyLeftPanelCollapsedState();
+}
+
+function isExternalFileDrag(event) {
+  const types = event?.dataTransfer?.types;
+  if (!types) return false;
+  if (typeof types.includes === "function") return types.includes("Files");
+  return Array.from(types).includes("Files");
+}
+
+function isSupportedTemplateFile(file) {
+  return /\.(?:ciff|xml)$/i.test(String(file?.name || ""));
+}
+
+async function openTemplateFile(file) {
+  if (!isSupportedTemplateFile(file)) {
+    appLogger.file("FILE_OPEN_UNSUPPORTED", "Отклонён файл неподдерживаемого формата.", {
+      name: file.name,
+      sizeBytes: file.size,
+      mimeType: file.type || null
+    }, "WARN");
+    openNotificationModal(
+      t("dialog.unsupportedFile.message"),
+      t("dialog.unsupportedFile.title")
+    );
+    return false;
+  }
+  appLogger.file("FILE_OPEN_SELECTED", "Пользователь выбрал файл для открытия.", {
+    name: file.name,
+    sizeBytes: file.size,
+    mimeType: file.type || null,
+    lastModified: file.lastModified ? new Date(file.lastModified).toISOString() : null
+  });
+  try {
+    const text = await readFileSmart(file);
+    const result = typeof openXmlInNewTemplateTab === "function"
+      ? openXmlInNewTemplateTab(text, file.name)
+      : loadXml(text, { title: file.name, markDirty: false, source: "file" });
+    appLogger.file("FILE_OPEN_COMPLETED", "Открытие выбранного файла завершено.", {
+      name: file.name,
+      sizeBytes: file.size,
+      success: !!result
+    }, result ? "INFO" : "WARN");
+    return !!result;
+  } catch (error) {
+    console.error("Failed to open CIFF file:", error);
+    appLogger.error("FILE_OPEN_FAILED", "Ошибка чтения или открытия выбранного файла.", error, {
+      name: file.name,
+      sizeBytes: file.size,
+      mimeType: file.type || null
+    });
+    openNotificationModal(
+      t("dialog.fileOpenError.message"),
+      t("dialog.fileOpenError.title")
+    );
+    return false;
+  }
+}
+
+async function openTemplateFiles(files) {
+  for (const file of files) {
+    await openTemplateFile(file);
+  }
+}
+
+function initTemplateFileDropZone() {
+  const dropZone = document.querySelector(".canvasWrap");
+  if (!dropZone) return;
+
+  let dragEnterDepth = 0;
+
+  const deactivateDragState = () => {
+    dragEnterDepth = 0;
+    dropZone.classList.remove("is-file-dragging");
+  };
+
+  const activateDragState = () => {
+    dropZone.classList.add("is-file-dragging");
+  };
+
+  dropZone.addEventListener("dragenter", (event) => {
+    if (!isExternalFileDrag(event)) return;
+    event.preventDefault();
+    dragEnterDepth += 1;
+    activateDragState();
+  });
+
+  dropZone.addEventListener("dragover", (event) => {
+    if (!isExternalFileDrag(event)) return;
+    event.preventDefault();
+    event.dataTransfer.dropEffect = "copy";
+    if (dragEnterDepth === 0) dragEnterDepth = 1;
+    activateDragState();
+  });
+
+  dropZone.addEventListener("dragleave", (event) => {
+    if (dragEnterDepth === 0) return;
+    dragEnterDepth = Math.max(0, dragEnterDepth - 1);
+    if (dragEnterDepth === 0) deactivateDragState();
+  });
+
+  dropZone.addEventListener("drop", (event) => {
+    if (!isExternalFileDrag(event)) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const files = Array.from(event.dataTransfer?.files || []);
+    deactivateDragState();
+    void openTemplateFiles(files);
+  });
+
+  window.addEventListener("blur", deactivateDragState);
+  window.addEventListener("dragend", deactivateDragState);
+  document.addEventListener("dragover", (event) => {
+    if (isExternalFileDrag(event)) event.preventDefault();
+  });
+  document.addEventListener("drop", (event) => {
+    if (!isExternalFileDrag(event)) return;
+    event.preventDefault();
+    deactivateDragState();
+  });
+}
+
+// ---------- UI init ----------
+function initUI() {
+  if (typeof initUiLanguageControls === "function") initUiLanguageControls();
+  if (typeof onUiLanguageChange === "function") {
+    onUiLanguageChange(() => {
+      renderAll();
+      if (typeof syncTextFieldModalControls === "function") syncTextFieldModalControls();
+    });
+  }
+  if (typeof initUiThemeControls === "function") initUiThemeControls();
+  if (typeof onUiThemeChange === "function") {
+    onUiThemeChange(() => {
+      renderAll();
+      requestAnimationFrame(() => {
+        renderRulers();
+        renderGrid();
+      });
+    });
+  }
+
+  initInspectorUi();
+  initLeftPanelUi();
+
+  $("fileInput").addEventListener("change", async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    try {
+      await openTemplateFile(file);
+    } finally {
+      e.target.value = "";
+    }
+  });
+  $("btnOpenFile")?.addEventListener("click", () => $("fileInput").click());
+  initTemplateFileDropZone();
+
+  $("btnSave").addEventListener("click", () => openSaveTemplateModal());
+
+  populateNewTemplateOptions();
+  $("btnNewTemplate").addEventListener("click", () => openNewTemplateModal());
+  $("btnCancelNewTemplate").addEventListener("click", () => closeNewTemplateModal());
+  $("btnCreateNewTemplate").addEventListener("click", () => (
+    typeof createTemplateFromBuilderDialog === "function"
+      ? createTemplateFromBuilderDialog()
+      : createNewTemplateFromDialog()
+  ));
+  elNewTemplateModal?.addEventListener("click", (e) => {
+    if (e.target?.dataset?.modalClose === "1") closeNewTemplateModal();
+  });
+  $("btnCancelDataMatrix")?.addEventListener("click", () => closeDataMatrixModal());
+  elBtnConfirmDataMatrix?.addEventListener("click", () => confirmDataMatrixModal());
+  elDataMatrixModal?.addEventListener("click", (e) => {
+    if (e.target?.dataset?.modalClose === "1") closeDataMatrixModal();
+  });
+  elNewDataMatrixSymbolSize?.addEventListener("change", () => syncDataMatrixModalControls());
+  elNewDataMatrixSnValue?.addEventListener("change", () => syncDataMatrixModalControls());
+  elDataMatrixModal?.querySelectorAll("[data-dm-sn-length]").forEach((button) => button.addEventListener("click", () => {
+    if (!elNewDataMatrixSnValue) return;
+    elNewDataMatrixSnValue.value = button.dataset.dmSnLength === "13" ? "0000000000000" : "000000";
+    syncDataMatrixModalControls();
+  }));
+  $("btnCancelSaveTemplate")?.addEventListener("click", () => closeSaveTemplateModal());
+  $("btnConfirmSaveTemplate")?.addEventListener("click", () => saveTemplateFromDialog());
+  elSaveTemplateName?.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter") return;
+    e.preventDefault();
+    saveTemplateFromDialog();
+  });
+  elSaveTemplateModal?.addEventListener("click", (e) => {
+    if (e.target?.dataset?.modalClose === "1") closeSaveTemplateModal();
+  });
+  $("btnCancelTextField")?.addEventListener("click", () => closeTextFieldModal());
+  $("btnConfirmTextField")?.addEventListener("click", () => confirmTextFieldModal());
+  elTextFieldModal?.addEventListener("click", (e) => {
+    if (e.target?.dataset?.modalClose === "1") closeTextFieldModal();
+  });
+  elTextFieldModeFixed?.addEventListener("change", () => syncTextFieldModalControls());
+  elTextFieldModePresets?.addEventListener("change", () => syncTextFieldModalControls());
+  elTextFieldModal?.querySelectorAll("[data-text-preset]").forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked && elTextFieldModePresets) elTextFieldModePresets.checked = true;
+      syncTextFieldModalControls();
+    });
+  });
+  elTextFieldModal?.querySelectorAll("[data-text-preset-value]").forEach((select) => {
+    select.addEventListener("change", () => syncTextFieldModalControls());
+  });
+  elBtnCloseNotification?.addEventListener("click", () => closeNotificationModal());
+  elNotificationModal?.addEventListener("click", (e) => {
+    if (e.target?.dataset?.modalClose === "1") closeNotificationModal();
+  });
+  elBtnCancelConfirmation?.addEventListener("click", () => closeConfirmationModal(false));
+  elBtnConfirmConfirmation?.addEventListener("click", () => closeConfirmationModal(true));
+  elConfirmationModal?.addEventListener("click", (e) => {
+    if (e.target?.dataset?.confirmationCancel === "1") closeConfirmationModal(false);
+  });
+  $("btnOpenFunctionality")?.addEventListener("click", () => openDocumentationModal("functionality"));
+  $("btnOpenChangelog")?.addEventListener("click", () => openDocumentationModal("changelog"));
+  elBtnCloseDocumentation?.addEventListener("click", () => closeDocumentationModal());
+  elDocumentationModal?.addEventListener("click", (e) => {
+    if (e.target?.dataset?.modalClose === "1") closeDocumentationModal();
+  });
+  $("btnOpenDataMatrixEditor")?.addEventListener("click", () => openAdvancedEditorModal("datamatrix"));
+  $("btnOpenOffsetsEditor")?.addEventListener("click", () => openAdvancedEditorModal("offsets"));
+  $("btnOpenHiddenFieldsEditor")?.addEventListener("click", () => openAdvancedEditorModal("hidden"));
+  elBtnCloseDataMatrixEditor?.addEventListener("click", () => closeAdvancedEditorModal("datamatrix"));
+  elBtnCloseOffsetsEditor?.addEventListener("click", () => closeAdvancedEditorModal("offsets"));
+  elBtnCloseHiddenFieldsEditor?.addEventListener("click", () => closeAdvancedEditorModal("hidden"));
+  document.querySelectorAll("[data-editor-modal-close]").forEach((backdrop) => {
+    backdrop.addEventListener("click", () => closeAdvancedEditorModal(backdrop.dataset.editorModalClose));
+  });
+  elZoomRange.addEventListener("input", () => setZoom(parseInt(String(elZoomRange.value), 10)));
+  syncZoomSliderUI();
+  $("zoomIn").addEventListener("click", () => setZoom(clamp(25, 400, zoomPct + 10)));
+  $("zoomOut").addEventListener("click", () => setZoom(clamp(25, 400, zoomPct - 10)));
+  elZoomLabel.addEventListener("click", () => setZoom(100));
+  elBtnPanMode?.addEventListener("click", () => setMobilePanMode(!isMobilePanMode));
+
+  const mobilePanQuery = window.matchMedia?.("(max-width: 960px)");
+  const syncMobilePanAvailability = () => {
+    if (mobilePanQuery && !mobilePanQuery.matches) setMobilePanMode(false);
+    else syncMobilePanModeUI();
+  };
+  if (mobilePanQuery?.addEventListener) mobilePanQuery.addEventListener("change", syncMobilePanAvailability);
+  else mobilePanQuery?.addListener?.(syncMobilePanAvailability);
+  syncMobilePanAvailability();
+
+  elToggleGrid.addEventListener("change", () => {
+    renderGrid();
+    if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+  });
+  elToggleSnap.addEventListener("change", () => {
+    if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+  });
+  elToggleAlign?.addEventListener("change", () => {
+    clearAlignmentGuides();
+    if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+  });
+  if (elGridSizeSelect) {
+    elGridSizeSelect.value = String(state.gridMm);
+    elGridSizeSelect.addEventListener("change", () => {
+      const nextGridMm = Number(elGridSizeSelect.value);
+      state.gridMm = GRID_SIZE_OPTIONS.includes(nextGridMm) ? nextGridMm : GRID_MM;
+      elGridSizeSelect.value = String(state.gridMm);
+      renderGrid();
+      if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+    });
+  }
+  const precisionStepSelect = $("precisionMoveStep");
+  if (precisionStepSelect) {
+    precisionStepSelect.replaceChildren(...MOVE_STEP_OPTIONS.map((step) => {
+      const option = document.createElement("option");
+      option.value = String(step);
+      option.textContent = String(step);
+      return option;
+    }));
+  }
+  [$("moveStepSelect"), precisionStepSelect].filter(Boolean).forEach((moveStepSelect) => {
+    Array.from(moveStepSelect.options).forEach((option) => {
+      option.dataset.menuLabel = `${option.value} mm`;
+    });
+    moveStepSelect.value = String(normalizeMoveStep(state.moveStep));
+    moveStepSelect.addEventListener("change", () => {
+      state.moveStep = normalizeMoveStep(moveStepSelect.value);
+      syncPrecisionMoveControls();
+      if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+    });
+  });
+  if (typeof enhanceSelectControls === "function") enhanceSelectControls(document);
+  if (typeof enhanceNumberControls === "function") enhanceNumberControls(document);
+  if (typeof syncTextFieldModalControls === "function") syncTextFieldModalControls();
+  if (typeof syncDataMatrixModalControls === "function") syncDataMatrixModalControls();
+
+  elSearch.addEventListener("input", () => {
+    syncLeftPanelSearchQueryState();
+    renderFieldLists();
+  });
+  elFieldFilterButtons.forEach((button, buttonIndex) => {
+    button.addEventListener("click", () => {
+      activeFieldFilter = button.dataset.fieldFilter || "printed";
+      renderFieldLists();
+    });
+    button.addEventListener("keydown", (event) => {
+      let nextIndex = null;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (buttonIndex + 1) % elFieldFilterButtons.length;
+      if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (buttonIndex - 1 + elFieldFilterButtons.length) % elFieldFilterButtons.length;
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = elFieldFilterButtons.length - 1;
+      if (nextIndex === null) return;
+      event.preventDefault();
+      elFieldFilterButtons[nextIndex]?.focus();
+      elFieldFilterButtons[nextIndex]?.click();
+    });
+  });
+  initPrecisionMoveControls();
+
+  $("addFixedText").addEventListener("click", () => openTextFieldModal());
+  $("addDateText").addEventListener("click", () => beginCanvasPlacement({
+    kind: "field",
+    fldType: "DateText",
+    toolButtonId: "addDateText"
+  }));
+  $("addOffsetDateText").addEventListener("click", () => beginCanvasPlacement({
+    kind: "field",
+    fldType: "OffsetDateText",
+    toolButtonId: "addOffsetDateText"
+  }));
+  $("addTimeText").addEventListener("click", () => beginCanvasPlacement({
+    kind: "field",
+    fldType: "TimeText",
+    toolButtonId: "addTimeText"
+  }));
+  $("addCounterText").addEventListener("click", () => beginCanvasPlacement({
+    kind: "field",
+    fldType: "CounterText",
+    toolButtonId: "addCounterText"
+  }));
+  $("addDataMatrix").addEventListener("click", () => openDataMatrixModal());
+
+  $("btnShowHiddenOnCanvas").addEventListener("click", () => {
+    state.showHiddenOnCanvas = !state.showHiddenOnCanvas;
+    renderAll();
+    if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+  });
+  $("btnShowHiddenOnCanvasCollapsed")?.addEventListener("click", () => {
+    $("btnShowHiddenOnCanvas").click();
+  });
+  $("addOffset").addEventListener("click", () => {
+    if (!state.xmlDoc) return;
+    pushHistory();
+    createDateOffset();
+    renderAll();
+  });
+
+  $("btnUndo").addEventListener("click", undo);
+  $("btnRedo").addEventListener("click", redo);
+
+  initMobilePanelMenu();
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && elConfirmationModal && !elConfirmationModal.classList.contains("hidden")) {
+      closeConfirmationModal(false);
+      return;
+    }
+    if (e.key === "Escape" && elNewTemplateModal && !elNewTemplateModal.classList.contains("hidden")) {
+      closeNewTemplateModal();
+    }
+    if (e.key === "Escape" && elDataMatrixModal && !elDataMatrixModal.classList.contains("hidden")) {
+      closeDataMatrixModal();
+    }
+    if (e.key === "Escape" && elSaveTemplateModal && !elSaveTemplateModal.classList.contains("hidden")) {
+      closeSaveTemplateModal();
+    }
+    if (e.key === "Escape" && elTextFieldModal && !elTextFieldModal.classList.contains("hidden")) {
+      closeTextFieldModal();
+    }
+    if (e.key === "Escape" && elNotificationModal && !elNotificationModal.classList.contains("hidden")) {
+      closeNotificationModal();
+      return;
+    }
+    if (e.key === "Escape" && elDocumentationModal && !elDocumentationModal.classList.contains("hidden")) {
+      closeDocumentationModal();
+      return;
+    }
+    if (e.key === "Escape" && getOpenAdvancedEditorModal()) {
+      closeAdvancedEditorModal();
+    }
+  });
+
+  updateHiddenCanvasToggleButton();
+  elStatusLeft.textContent = t("status.openFile");
+  elStatusRight.textContent = "-";
+  syncPrecisionMoveControls();
+}
+
+function openNotificationModal(message, title = t("dialog.notification.title"), options = {}) {
+  notificationModalCloseHandler = typeof options.onClose === "function" ? options.onClose : null;
+  if (!elNotificationModal) {
+    const onClose = notificationModalCloseHandler;
+    notificationModalCloseHandler = null;
+    onClose?.();
+    return;
+  }
+  if (elNotificationModalTitle) elNotificationModalTitle.textContent = title;
+  if (elNotificationModalMessage) elNotificationModalMessage.textContent = message;
+  elNotificationModal.classList.remove("hidden");
+  elNotificationModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  setTimeout(() => elBtnCloseNotification?.focus(), 0);
+}
+
+function openConfirmationModal(message, title, options = {}) {
+  if (!elConfirmationModal) return;
+
+  confirmationModalConfirmHandler = typeof options.onConfirm === "function" ? options.onConfirm : null;
+  confirmationModalCancelHandler = typeof options.onCancel === "function" ? options.onCancel : null;
+  if (elConfirmationModalTitle) elConfirmationModalTitle.textContent = title;
+  if (elConfirmationModalMessage) elConfirmationModalMessage.textContent = message;
+  if (elBtnConfirmConfirmation) {
+    elBtnConfirmConfirmation.textContent = options.confirmLabel ?? t("dialog.continue");
+  }
+  if (elBtnCancelConfirmation) {
+    elBtnCancelConfirmation.textContent = options.cancelLabel ?? t("dialog.cancel");
+  }
+  elConfirmationModal.classList.remove("hidden");
+  elConfirmationModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  setTimeout(() => elBtnConfirmConfirmation?.focus(), 0);
+}
+
+function closeConfirmationModal(confirmed) {
+  if (!elConfirmationModal || elConfirmationModal.classList.contains("hidden")) return;
+
+  const handler = confirmed ? confirmationModalConfirmHandler : confirmationModalCancelHandler;
+  confirmationModalConfirmHandler = null;
+  confirmationModalCancelHandler = null;
+  elConfirmationModal.classList.add("hidden");
+  elConfirmationModal.setAttribute("aria-hidden", "true");
+  document.body.classList.toggle("modal-open", Boolean(document.querySelector(".modal:not(.hidden)")));
+  if (handler) window.setTimeout(handler, 0);
+}
+
+function closeNotificationModal() {
+  if (!elNotificationModal) return;
+  const onClose = notificationModalCloseHandler;
+  notificationModalCloseHandler = null;
+  elNotificationModal.classList.add("hidden");
+  elNotificationModal.setAttribute("aria-hidden", "true");
+  document.body.classList.toggle("modal-open", Boolean(document.querySelector(".modal:not(.hidden)")));
+  if (onClose) window.setTimeout(onClose, 0);
+}
+
+function openDocumentationModal(documentName) {
+  if (!elDocumentationModal) return;
+  const showChangelog = documentName === "changelog";
+  elFunctionalityDocument?.classList.toggle("hidden", showChangelog);
+  elChangelogDocument?.classList.toggle("hidden", !showChangelog);
+  if (elDocumentationModalTitle) {
+    elDocumentationModalTitle.textContent = t(showChangelog
+      ? "dialog.documentation.changelogTitle"
+      : "dialog.documentation.functionalityTitle");
+  }
+  elDocumentationModal.classList.remove("hidden");
+  elDocumentationModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  elDocumentationModal.querySelector(".documentationModal__content")?.scrollTo({ top: 0 });
+  setTimeout(() => elBtnCloseDocumentation?.focus(), 0);
+}
+
+function closeDocumentationModal() {
+  if (!elDocumentationModal) return;
+  elDocumentationModal.classList.add("hidden");
+  elDocumentationModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
+
+function getAdvancedEditorModal(kind) {
+  if (kind === "datamatrix") return elDataMatrixEditorModal;
+  if (kind === "offsets") return elOffsetsEditorModal;
+  if (kind === "hidden") return elHiddenFieldsEditorModal;
+  return null;
+}
+
+function getOpenAdvancedEditorModal() {
+  return [elDataMatrixEditorModal, elOffsetsEditorModal, elHiddenFieldsEditorModal]
+    .find((modal) => modal && !modal.classList.contains("hidden")) ?? null;
+}
+
+function openAdvancedEditorModal(kind) {
+  if (!state.xmlDoc) {
+    openNotificationModal(t("dialog.notification.openFileFirst"));
+    return;
+  }
+
+  const modal = getAdvancedEditorModal(kind);
+  if (!modal) return;
+
+  if (kind === "datamatrix") {
+    const selectedFields = getSelectedFields();
+    const selectedDataMatrix = selectedFields.length === 1 &&
+      selectedFields[0].fldType === "Barcode" &&
+      selectedFields[0].barcode?.dataMatrix;
+    if (!selectedDataMatrix) return;
+  }
+
+  renderAll();
+  modal.classList.remove("hidden");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+
+  const closeButton = kind === "datamatrix"
+    ? elBtnCloseDataMatrixEditor
+    : kind === "offsets"
+      ? elBtnCloseOffsetsEditor
+      : elBtnCloseHiddenFieldsEditor;
+  window.setTimeout(() => closeButton?.focus(), 0);
+}
+
+function closeAdvancedEditorModal(kind = null) {
+  const modal = kind ? getAdvancedEditorModal(kind) : getOpenAdvancedEditorModal();
+  if (!modal) return;
+  modal.classList.add("hidden");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.toggle("modal-open", Boolean(document.querySelector(".modal:not(.hidden)")));
+}
+
+function getPrecisionMoveButtons() {
+  return Array.from(document.querySelectorAll("[data-precision-move]"));
+}
+
+function getPrecisionMoveButtonDelta(button) {
+  return getMoveStepDelta(button?.dataset?.precisionMove);
+}
+
+function getMoveStepDelta(direction) {
+  const step = normalizeMoveStep(state.moveStep);
+  switch (direction) {
+    case "left": return { dxMm: -step, dyMm: 0 };
+    case "right": return { dxMm: step, dyMm: 0 };
+    case "up": return { dxMm: 0, dyMm: -step };
+    case "down": return { dxMm: 0, dyMm: step };
+    default: return { dxMm: 0, dyMm: 0 };
+  }
+}
+
+function handleMoveSelectionKeydown(event) {
+  const direction = { ArrowLeft: "left", ArrowRight: "right", ArrowUp: "up", ArrowDown: "down" }[event.key];
+  if (!direction || event.defaultPrevented || event.isComposing || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return false;
+  if (isEditableEventTarget(event.target) || event.target?.closest?.("button:not([data-precision-move]), [role='tab'], [role='menu'], [role='listbox'], [role='slider']")) return false;
+  const hasOpenDialog = Array.from(document.querySelectorAll(".modal, [role='dialog'], .customSelect.is-open"))
+    .some((element) => element.getClientRects().length > 0 && !element.closest(".hidden, [hidden], [aria-hidden='true']"));
+  if (hasOpenDialog || pendingCanvasPlacement) return false;
+  if (!getSelectedFields().length) return false;
+  event.preventDefault();
+  const { dxMm, dyMm } = getMoveStepDelta(direction);
+  moveSelectedFieldsByMm(dxMm, dyMm);
+  return true;
+}
+
+function syncPrecisionMoveControls() {
+  const step = String(normalizeMoveStep(state.moveStep));
+  const stepLabel = $("precisionMoveStep");
+  if (stepLabel) {
+    stepLabel.value = step;
+    if (typeof syncCustomSelectControl === "function") syncCustomSelectControl(stepLabel);
+  }
+  const select = $("moveStepSelect");
+  if (select) {
+    select.value = step;
+    if (typeof syncCustomSelectControl === "function") syncCustomSelectControl(select);
+  }
+  const hasSelection = typeof getSelectedFields === "function" && getSelectedFields().length > 0;
+  const panel = $("precisionMovePanel");
+  panel?.classList.toggle("is-visible", hasSelection);
+  panel?.setAttribute("aria-hidden", String(!hasSelection));
+  getPrecisionMoveButtons().forEach((button) => {
+    button.disabled = !hasSelection;
+    const direction = button.dataset.precisionMove;
+    const key = `canvas.move${direction[0].toUpperCase()}${direction.slice(1)}`;
+    const label = t(key, { step });
+    button.setAttribute("aria-label", label);
+  });
+}
+
+function moveSelectionFromPrecisionButton(button, options = {}) {
+  const { dxMm, dyMm } = getPrecisionMoveButtonDelta(button);
+  if (!Number.isFinite(dxMm) || !Number.isFinite(dyMm)) return false;
+  if (dxMm === 0 && dyMm === 0) return false;
+  if (typeof moveSelectedFieldsByMm !== "function") return false;
+  return moveSelectedFieldsByMm(dxMm, dyMm, options);
+}
+
+function initPrecisionMoveControls() {
+  getPrecisionMoveButtons().forEach((button) => {
+    let repeatDelayId = null;
+    let repeatIntervalId = null;
+
+    const stopRepeat = () => {
+      if (repeatDelayId !== null) window.clearTimeout(repeatDelayId);
+      if (repeatIntervalId !== null) window.clearInterval(repeatIntervalId);
+      repeatDelayId = null;
+      repeatIntervalId = null;
+      button.classList.remove("is-pressing");
+    };
+
+    button.addEventListener("pointerdown", (event) => {
+      if (button.disabled || event.button !== 0) return;
+      event.preventDefault();
+      button.classList.add("is-pressing");
+      button.setPointerCapture?.(event.pointerId);
+
+      const moved = moveSelectionFromPrecisionButton(button);
+      if (!moved) {
+        stopRepeat();
+        return;
+      }
+
+      repeatDelayId = window.setTimeout(() => {
+        repeatDelayId = null;
+        repeatIntervalId = window.setInterval(() => {
+          moveSelectionFromPrecisionButton(button, { skipHistory: true });
+        }, PRECISION_MOVE_REPEAT_INTERVAL_MS);
+      }, PRECISION_MOVE_REPEAT_DELAY_MS);
+    });
+
+    button.addEventListener("click", (event) => {
+      if (event.detail !== 0) return;
+      moveSelectionFromPrecisionButton(button);
+    });
+
+    button.addEventListener("pointerup", stopRepeat);
+    button.addEventListener("pointercancel", stopRepeat);
+    button.addEventListener("lostpointercapture", stopRepeat);
+    button.addEventListener("mouseleave", (event) => {
+      if (event.buttons === 0) stopRepeat();
+    });
+  });
+}
+
+function syncZoomSliderUI() {
+  if (!elZoomRange) return;
+  const min = Number(elZoomRange.min);
+  const max = Number(elZoomRange.max);
+  const value = Number(elZoomRange.value);
+  const fraction = max > min ? clamp(0, 1, (value - min) / (max - min)) : 0;
+  elZoomRange.parentElement?.style.setProperty("--zoom-slider-fraction", String(fraction));
+  elZoomRange.setAttribute("aria-valuetext", `${elZoomRange.value}%`);
+}
+
+function setZoom(pct) {
+  zoomPct = pct;
+  elZoomRange.value = String(pct);
+  elZoomLabel.textContent = `${pct}%`;
+  syncZoomSliderUI();
+
+  renderGrid();
+  renderObjects();
+  renderRulers();
+  renderUI();
+  if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+}
+
+function getPixelsPerMm() { return MM_TO_PX_BASE * (zoomPct / 100); }
+function mmToPx(mm) { return mm * getPixelsPerMm(); }
+function pxToMm(px) { return px / getPixelsPerMm(); }
+function internalToMm(v) { return v / INTERNAL_PER_MM; }
+function mmToInternal(mm) { return Math.round(mm * INTERNAL_PER_MM); }
+
+function pxToMmWorld(px, py) {
+  const x = pxToMm(px - stage.x());
+  const y = pxToMm(py - stage.y());
+  return { x, y };
+}
+
+function getStageLocalPointerPosition() {
+  const p = stage.getPointerPosition();
+  if (!p) return null;
+  return { x: p.x - stage.x(), y: p.y - stage.y() };
+}
+
+function syncPendingCanvasPlacementUI() {
+  document.querySelectorAll(".toolButton").forEach((button) => {
+    const isPending = button.id === pendingCanvasPlacement?.toolButtonId;
+    button.classList.toggle("is-placement-pending", isPending);
+    button.setAttribute("aria-pressed", String(isPending));
+  });
+  elCanvasHost?.classList.toggle("canvasHost--placing", !!pendingCanvasPlacement);
+  if (pendingCanvasPlacement && elStatusLeft) {
+    elStatusLeft.textContent = t("placement.hint");
+  }
+}
+
+function clearPendingCanvasPlacement(options = {}) {
+  if (!pendingCanvasPlacement) return false;
+  const cancelledRequest = pendingCanvasPlacement;
+  pendingCanvasPlacement = null;
+  syncPendingCanvasPlacementUI();
+  if (options.restoreStatus !== false && typeof renderSelectionPanels === "function") {
+    renderSelectionPanels();
+  }
+  appLogger.action(
+    options.reason === "committed" ? "PLACEMENT_MODE_COMPLETED" : "PLACEMENT_MODE_CANCELLED",
+    options.reason === "committed"
+      ? "Режим размещения завершён после создания объекта."
+      : "Ожидающее размещение объекта отменено.",
+    {
+      reason: options.reason || "cancelled",
+      request: {
+        kind: cancelledRequest.kind,
+        fieldType: cancelledRequest.fldType || null,
+        toolButtonId: cancelledRequest.toolButtonId || null,
+        presetNames: (cancelledRequest.resolved || []).map((item) => item.preset?.name).filter(Boolean)
+      }
+    },
+    options.reason === "committed" ? "DEBUG" : "INFO"
+  );
+  return true;
+}
+
+function beginCanvasPlacement(request) {
+  if (!state.xmlDoc) {
+    openNotificationModal(t("dialog.notification.openFileFirst"));
+    return false;
+  }
+  if (!request?.kind || !request?.toolButtonId) return false;
+
+  if (isMobilePanMode) setMobilePanMode(false);
+  pendingCanvasPlacement = request;
+  syncPendingCanvasPlacementUI();
+  appLogger.action("PLACEMENT_MODE_STARTED", "Выбран инструмент, приложение ожидает точку размещения на шаблоне.", {
+    kind: request.kind,
+    fieldType: request.fldType || null,
+    toolButtonId: request.toolButtonId,
+    presetNames: (request.resolved || []).map((item) => item.preset?.name).filter(Boolean),
+    inputMode: isMobilePanControlAvailable() ? "mouse-or-touch" : "mouse"
+  });
+  document.dispatchEvent(new CustomEvent("ciff:canvas-placement-started"));
+  return true;
+}
+
+function tryCommitPendingCanvasPlacement(e, inputType) {
+  const now = performance.now();
+  if (inputType === "mouse" && now < suppressCanvasMouseUntil) {
+    cancelStagePanEvent(e, { cancelBubble: true, preventDefault: true });
+    return true;
+  }
+  if (!pendingCanvasPlacement) return false;
+
+  const local = getStageLocalPointerPosition();
+  if (!local) return true;
+
+  const canvasWidthPx = mmToPx(internalToMm(getCanvasInternalWidth()));
+  const canvasHeightPx = mmToPx(internalToMm(getCanvasInternalHeight()));
+  const isInsideTemplate = (
+    local.x >= 0 &&
+    local.y >= 0 &&
+    local.x <= canvasWidthPx &&
+    local.y <= canvasHeightPx
+  );
+
+  cancelStagePanEvent(e, { cancelBubble: true, preventDefault: inputType === "touch" });
+  if (!isInsideTemplate) return true;
+
+  if (inputType === "touch") suppressCanvasMouseUntil = now + 700;
+  const request = pendingCanvasPlacement;
+  const position = {
+    x: mmToInternal(pxToMm(local.x)),
+    y: mmToInternal(pxToMm(local.y))
+  };
+
+  appLogger.action("PLACEMENT_POINT_SELECTED", "Пользователь выбрал точку размещения объекта.", {
+    inputType,
+    fieldType: request.fldType || null,
+    positionInternal: position,
+    positionMillimeters: {
+      x: Number(internalToMm(position.x).toFixed(2)),
+      y: Number(internalToMm(position.y).toFixed(2))
+    },
+    snapEnabled: !!elToggleSnap?.checked
+  });
+  clearPendingCanvasPlacement({ restoreStatus: false, reason: "committed" });
+  commitCanvasPlacement(request, position);
+  return true;
+}
+
+function rectsIntersect(a, b) {
+  return !(
+    a.x + a.width < b.x ||
+    b.x + b.width < a.x ||
+    a.y + a.height < b.y ||
+    b.y + b.height < a.y
+  );
+}
+
+function getCanvasInternalWidth() {
+  for (const value of [
+    state.subImage?.workspaceWidth,
+    state.subImage?.maxWidth,
+    state.subImage?.width
+  ]) {
+    const width = Number(value);
+    if (Number.isFinite(width) && width > 0) return width;
+  }
+  return 0;
+}
+
+function getCanvasInternalHeight() {
+  for (const value of [
+    state.subImage?.workspaceHeight,
+    state.subImage?.maxHeight,
+    state.subImage?.height
+  ]) {
+    const height = Number(value);
+    if (Number.isFinite(height) && height > 0) return height;
+  }
+  return 0;
+}
+
+function getUsedImageInternalWidth() {
+  const width = Number(state.subImage?.width);
+  return Number.isFinite(width) && width > 0 ? width : 0;
+}
+
+function getUsedImageInternalHeight() {
+  const height = Number(state.subImage?.height);
+  return Number.isFinite(height) && height > 0 ? height : 0;
+}
+

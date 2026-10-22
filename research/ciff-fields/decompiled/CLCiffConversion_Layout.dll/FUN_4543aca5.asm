@@ -1,0 +1,16 @@
+4543aca5 PUSH EBX
+4543aca6 PUSH ECX
+4543aca7 MOV EBX,0x4545e6b0
+4543acac MOV ECX,dword ptr [ESP + 0xc]
+4543acb0 MOV dword ptr [EBX + 0x8],ECX
+4543acb3 MOV dword ptr [EBX + 0x4],EAX
+4543acb6 MOV dword ptr [EBX + 0xc],EBP
+4543acb9 PUSH EBP
+4543acba PUSH ECX
+4543acbb PUSH EAX
+4543acbc POP EAX
+4543acbd POP ECX
+4543acbe POP EBP
+4543acbf POP ECX
+4543acc0 POP EBX
+4543acc1 RET 0x4

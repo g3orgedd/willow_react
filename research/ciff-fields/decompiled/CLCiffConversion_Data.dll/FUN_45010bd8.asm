@@ -1,0 +1,2 @@
+45010bd8 MOV AL,0x1
+45010bda RET 0x4

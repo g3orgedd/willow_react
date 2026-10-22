@@ -1,0 +1,28 @@
+4245fac6 PUSH 0x8
+4245fac8 MOV EAX,0x42492e15
+4245facd CALL 0x4246ed7d
+4245fad2 MOV EDI,ECX
+4245fad4 MOV dword ptr [EBP + -0x14],EDI
+4245fad7 MOV EBX,dword ptr [EBP + 0x8]
+4245fada XOR ESI,ESI
+4245fadc PUSH EBX
+4245fadd MOV dword ptr [EDI],ESI
+4245fadf MOV dword ptr [EDI + 0x4],ESI
+4245fae2 MOV dword ptr [EDI + 0x8],ESI
+4245fae5 CALL 0x424622b5
+4245faea TEST AL,AL
+4245faec JZ 0x4245fb0a
+4245faee PUSH dword ptr [EBP + 0x8]
+4245faf1 LEA EAX,[EBP + 0xb]
+4245faf4 MOV dword ptr [EBP + -0x4],ESI
+4245faf7 PUSH ESI
+4245faf8 PUSH EAX
+4245faf9 PUSH EBX
+4245fafa PUSH dword ptr [EDI]
+4245fafc CALL 0x4245f7d7
+4245fb01 SHL EBX,0x5
+4245fb04 ADD ESP,0x14
+4245fb07 ADD dword ptr [EDI + 0x4],EBX
+4245fb0a MOV EAX,EDI
+4245fb0c CALL 0x4246ece2
+4245fb11 RET 0x4

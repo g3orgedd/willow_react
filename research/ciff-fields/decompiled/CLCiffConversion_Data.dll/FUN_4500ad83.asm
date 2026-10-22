@@ -1,0 +1,11 @@
+4500ad83 PUSH ESI
+4500ad84 MOV ESI,ECX
+4500ad86 CMP dword ptr [ESI],0x0
+4500ad89 JZ 0x4500ad96
+4500ad8b PUSH dword ptr [ESI]
+4500ad8d CALL dword ptr [0x4503d21c]
+4500ad93 AND dword ptr [ESI],0x0
+4500ad96 PUSH dword ptr [ESI]
+4500ad98 CALL dword ptr [0x4503d21c]
+4500ad9e POP ESI
+4500ad9f RET

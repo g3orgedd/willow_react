@@ -1,0 +1,20 @@
+45016ca5 PUSH EBP
+45016ca6 MOV EBP,ESP
+45016ca8 MOV EDX,dword ptr [ECX]
+45016caa PUSH ESI
+45016cab MOV ESI,dword ptr [EBP + 0x8]
+45016cae SHL ESI,0x2
+45016cb1 ADD EDX,ESI
+45016cb3 JZ 0x45016cbc
+45016cb5 MOV EAX,dword ptr [EBP + 0xc]
+45016cb8 MOV EAX,dword ptr [EAX]
+45016cba MOV dword ptr [EDX],EAX
+45016cbc MOV ECX,dword ptr [ECX + 0x4]
+45016cbf ADD ECX,ESI
+45016cc1 POP ESI
+45016cc2 JZ 0x45016ccb
+45016cc4 MOV EAX,dword ptr [EBP + 0x10]
+45016cc7 MOV EAX,dword ptr [EAX]
+45016cc9 MOV dword ptr [ECX],EAX
+45016ccb POP EBP
+45016ccc RET 0xc

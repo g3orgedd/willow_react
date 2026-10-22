@@ -1,0 +1,2 @@
+6810d572 MOV EAX,dword ptr [ECX + 0x8]
+6810d575 RET

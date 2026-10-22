@@ -1,0 +1,214 @@
+[
+  {
+    "caseId": "web-normal",
+    "pid": 43480,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-normal.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:06:18.147Z",
+    "priorObservations": [
+      {
+        "caseId": "web-normal",
+        "pid": 43480,
+        "ready": true,
+        "saveDisabled": true,
+        "dialogs": [],
+        "method": "Original ClariSoft filename CLI and live Computer Use AX",
+        "observedAt": "2026-10-22T13:05:27.109Z"
+      }
+    ],
+    "recovery": "Fresh state read confirmed full title of same launched document"
+  },
+  {
+    "caseId": "exe-normal",
+    "pid": 26144,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-normal.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:06:25.656Z"
+  },
+  {
+    "caseId": "web-anisotropic-yres",
+    "pid": 11180,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-anisotropic-yres.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:06:32.285Z"
+  },
+  {
+    "caseId": "exe-anisotropic-yres",
+    "pid": 38636,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-anisotropic-yres.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:06:39.174Z"
+  },
+  {
+    "caseId": "web-anisotropic-xres",
+    "pid": 20520,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-anisotropic-xres.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:06:50.442Z"
+  },
+  {
+    "caseId": "exe-anisotropic-xres",
+    "pid": 40464,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-anisotropic-xres.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:07:02.842Z"
+  },
+  {
+    "caseId": "web-lower-yres",
+    "pid": 11748,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-lower-yres.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:07:18.863Z"
+  },
+  {
+    "caseId": "exe-lower-yres",
+    "pid": 43692,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-lower-yres.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:07:32.001Z"
+  },
+  {
+    "caseId": "web-lower-xres",
+    "pid": 26408,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-lower-xres.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:07:45.639Z"
+  },
+  {
+    "caseId": "exe-lower-xres",
+    "pid": 39248,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-lower-xres.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:07:57.993Z"
+  },
+  {
+    "caseId": "web-fractional-rotation90",
+    "pid": 43148,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-fractional-rotation90.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:08:11.917Z"
+  },
+  {
+    "caseId": "exe-fractional-rotation90",
+    "pid": 35048,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-fractional-rotation90.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:08:25.928Z"
+  },
+  {
+    "caseId": "web-fractional-rotation270",
+    "pid": 18256,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-fractional-rotation270.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:08:40.405Z"
+  },
+  {
+    "caseId": "exe-fractional-rotation270",
+    "pid": 37312,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-fractional-rotation270.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:08:51.832Z"
+  },
+  {
+    "caseId": "web-profile6230",
+    "pid": 40916,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-profile6230.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:09:03.364Z"
+  },
+  {
+    "caseId": "exe-profile6230",
+    "pid": 42020,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-profile6230.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:09:13.246Z"
+  },
+  {
+    "caseId": "web-party-gtin2",
+    "pid": 26192,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-party-gtin2.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:09:23.024Z"
+  },
+  {
+    "caseId": "exe-party-gtin2",
+    "pid": 41292,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-party-gtin2.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:09:34.203Z"
+  },
+  {
+    "caseId": "web-party-box-gtin",
+    "pid": 16472,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-web-party-box-gtin.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:09:47.886Z"
+  },
+  {
+    "caseId": "exe-party-box-gtin",
+    "pid": 44604,
+    "title": "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-resolution-final/xml-exe-party-box-gtin.ciff",
+    "ready": true,
+    "saveDisabled": true,
+    "dialogs": [],
+    "method": "Original ClariSoft filename CLI and live Computer Use AX",
+    "observedAt": "2026-10-22T13:09:56.496Z"
+  }
+]

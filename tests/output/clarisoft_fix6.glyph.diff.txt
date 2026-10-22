@@ -1,0 +1,193 @@
+Glyph / clarisoft_fix6 geometry regression
+{
+  "referenceSha256": "61CDFB349E15D3B95F5828B2EAAA1F7A200C70CECF50C47A74DC613CFD6C16F1",
+  "generatedSha256": "3609269850E49C778DE4E560C9522F2C177435F261317A6CDE6D4370976CAC2C",
+  "referenceSize": {
+    "width": 2516,
+    "height": 2558,
+    "maxWidth": 3200,
+    "maxHeight": 7500
+  },
+  "generatedSize": {
+    "width": 2516,
+    "height": 2558,
+    "maxWidth": 3200,
+    "maxHeight": 7500
+  },
+  "fieldCount": 8,
+  "sameGeometry": true,
+  "relevantDifferenceCount": 5
+}
+
+Task-relevant differences after the requested exclusions:
+[
+  {
+    "category": "value",
+    "path": "/ImageDesign/SubImage[ImageReference=\"1\"]/Field[Name=\"Field00\"]/Barcode/BcH",
+    "kind": "direct-content",
+    "expected": [
+      {
+        "type": "text",
+        "value": "924"
+      }
+    ],
+    "actual": [
+      {
+        "type": "text",
+        "value": "1100"
+      }
+    ]
+  },
+  {
+    "category": "extra",
+    "path": "/ImageDesign/SubImage[ImageReference=\"1\"]/Field[Name=\"С1\"]/Data/Object/FixedLen",
+    "kind": "element",
+    "expected": null,
+    "actual": "FixedLen"
+  },
+  {
+    "category": "extra",
+    "path": "/ImageDesign/SubImage[ImageReference=\"1\"]/Field[Name=\"С2\"]/Data/Object/FixedLen",
+    "kind": "element",
+    "expected": null,
+    "actual": "FixedLen"
+  },
+  {
+    "category": "extra",
+    "path": "/ImageDesign/SubImage[ImageReference=\"1\"]/Field[Name=\"С3\"]/Data/Object/FixedLen",
+    "kind": "element",
+    "expected": null,
+    "actual": "FixedLen"
+  },
+  {
+    "category": "extra",
+    "path": "/ImageDesign/SubImage[ImageReference=\"1\"]/Field[Name=\"Field02\"]/Data/Object/FixedLen",
+    "kind": "element",
+    "expected": null,
+    "actual": "FixedLen"
+  }
+]
+
+Full ordered comparison:
+CIFF ORDERED STRUCTURAL COMPARISON
+Expected: C:\Users\GigaGeorge\Downloads\clarisoft_fix6.ciff
+Actual:   C:\Users\GigaGeorge\Desktop\glyph-react-vite-test_1.4.0\tests\output\clarisoft_fix6.glyph.generated.ciff
+
+BYTE ENVELOPE
+expected: bytes=9430; sha256=61CDFB349E15D3B95F5828B2EAAA1F7A200C70CECF50C47A74DC613CFD6C16F1; BOM=FF FE; encoding=UTF-16LE; CRLF=2; loneLF=0; loneCR=0; nonEmptyLines=2; twoLine=true; finalCRLF=true
+actual: bytes=9520; sha256=3609269850E49C778DE4E560C9522F2C177435F261317A6CDE6D4370976CAC2C; BOM=FF FE; encoding=UTF-16LE; CRLF=2; loneLF=0; loneCR=0; nonEmptyLines=2; twoLine=true; finalCRLF=true
+
+FIELD NAME INVENTORY (ordered; exact Unicode code points)
+expected:
+  [0] "Field00" = U+0046 U+0069 U+0065 U+006C U+0064 U+0030 U+0030
+      signature: {"fieldChildren":["FldType","CLSID","X","Y","W","H","Ln","CalcData","LoggedField","Data","Barcode"],"dataChildren":["Object","Object","Object","Object","Object","Object"],"objects":[{"attributes":["Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]}],"textChildren":[],"fontChildren":[],"barcodeChildren":["BcH","HR","QuietMargin","DataMatrix"],"dataMatrixChildren":["ModuleSize","SymbolSize"]}
+  [1] "С1" = U+0421 U+0031
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Reference"],"children":["DataType","MaxNoOfChars","Default"],"varTextChildren":[],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [2] "GTIN" = U+0047 U+0054 U+0049 U+004E
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Static","Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen","VarText"],"varTextChildren":["UserEnterData"],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [3] "SN" = U+0053 U+004E
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Static","Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen","VarText"],"varTextChildren":["UserEnterData"],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [4] "KRIPTO" = U+004B U+0052 U+0049 U+0050 U+0054 U+004F
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Static","Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen","VarText"],"varTextChildren":["UserEnterData"],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [5] "С2" = U+0421 U+0032
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Reference"],"children":["DataType","MaxNoOfChars","Default"],"varTextChildren":[],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [6] "С3" = U+0421 U+0033
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Reference"],"children":["DataType","MaxNoOfChars","Default"],"varTextChildren":[],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [7] "Field02" = U+0046 U+0069 U+0065 U+006C U+0064 U+0030 U+0032
+      signature: {"fieldChildren":["FldType","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Reference"],"children":["DataType","MaxNoOfChars","Default"],"varTextChildren":[],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+actual:
+  [0] "Field00" = U+0046 U+0069 U+0065 U+006C U+0064 U+0030 U+0030
+      signature: {"fieldChildren":["FldType","CLSID","X","Y","W","H","Ln","CalcData","LoggedField","Data","Barcode"],"dataChildren":["Object","Object","Object","Object","Object","Object"],"objects":[{"attributes":["Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]},{"attributes":["Index","Reference"],"children":["DataType","Default","SrcField"],"varTextChildren":[],"counterChildren":[]}],"textChildren":[],"fontChildren":[],"barcodeChildren":["BcH","HR","QuietMargin","DataMatrix"],"dataMatrixChildren":["ModuleSize","SymbolSize"]}
+  [1] "C1" = U+0043 U+0031
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen"],"varTextChildren":[],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [2] "GTIN" = U+0047 U+0054 U+0049 U+004E
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Static","Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen","VarText"],"varTextChildren":["UserEnterData"],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [3] "SN" = U+0053 U+004E
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Static","Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen","VarText"],"varTextChildren":["UserEnterData"],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [4] "KRIPTO" = U+004B U+0052 U+0049 U+0050 U+0054 U+004F
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Static","Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen","VarText"],"varTextChildren":["UserEnterData"],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [5] "C2" = U+0043 U+0032
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen"],"varTextChildren":[],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [6] "C3" = U+0043 U+0033
+      signature: {"fieldChildren":["FldType","Displayed","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen"],"varTextChildren":[],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+  [7] "Field02" = U+0046 U+0069 U+0065 U+006C U+0064 U+0030 U+0032
+      signature: {"fieldChildren":["FldType","X","Y","W","H","Ln","CalcData","LoggedField","Data","Text"],"dataChildren":["Object"],"objects":[{"attributes":["Reference"],"children":["DataType","MaxNoOfChars","Default","FixedLen"],"varTextChildren":[],"counterChildren":[]}],"textChildren":["Font"],"fontChildren":["Pitch"],"barcodeChildren":[],"dataMatrixChildren":[]}
+
+SUMMARY: total=22; attribute=6; extra=4; reference=3; unicode=6; value=3
+
+ORDERED STRUCTURAL DIFF
+[001] VALUE byte-envelope /bytes/byteLength
+      expected: 9430
+      actual:   9520
+[002] VALUE byte-envelope /bytes/sha256
+      expected: "61CDFB349E15D3B95F5828B2EAAA1F7A200C70CECF50C47A74DC613CFD6C16F1"
+      actual:   "3609269850E49C778DE4E560C9522F2C177435F261317A6CDE6D4370976CAC2C"
+[003] ATTRIBUTE attribute-value /ImageDesign/SubImage[ImageReference="1"]/Field[Name="Field00"]/Data/Object/SrcField[SrcFieldName="С1"]/@SrcFieldName
+      expected: "С1"
+      actual:   "C1"
+[004] UNICODE confusable-code-points /ImageDesign/SubImage[ImageReference="1"]/Field[Name="Field00"]/Data/Object/SrcField[SrcFieldName="С1"]/@SrcFieldName
+      expected: "С1"
+      actual:   "C1"
+      details:  {"expectedCodePoints":["U+0421","U+0031"],"actualCodePoints":["U+0043","U+0031"]}
+[005] ATTRIBUTE attribute-value /ImageDesign/SubImage[ImageReference="1"]/Field[Name="Field00"]/Data/Object[Index="2"]/SrcField[SrcFieldName="С2"]/@SrcFieldName
+      expected: "С2"
+      actual:   "C2"
+[006] UNICODE confusable-code-points /ImageDesign/SubImage[ImageReference="1"]/Field[Name="Field00"]/Data/Object[Index="2"]/SrcField[SrcFieldName="С2"]/@SrcFieldName
+      expected: "С2"
+      actual:   "C2"
+      details:  {"expectedCodePoints":["U+0421","U+0032"],"actualCodePoints":["U+0043","U+0032"]}
+[007] ATTRIBUTE attribute-value /ImageDesign/SubImage[ImageReference="1"]/Field[Name="Field00"]/Data/Object[Index="4"]/SrcField[SrcFieldName="С3"]/@SrcFieldName
+      expected: "С3"
+      actual:   "C3"
+[008] UNICODE confusable-code-points /ImageDesign/SubImage[ImageReference="1"]/Field[Name="Field00"]/Data/Object[Index="4"]/SrcField[SrcFieldName="С3"]/@SrcFieldName
+      expected: "С3"
+      actual:   "C3"
+      details:  {"expectedCodePoints":["U+0421","U+0033"],"actualCodePoints":["U+0043","U+0033"]}
+[009] VALUE direct-content /ImageDesign/SubImage[ImageReference="1"]/Field[Name="Field00"]/Barcode/BcH
+      expected: [{"type":"text","value":"924"}]
+      actual:   [{"type":"text","value":"1100"}]
+[010] ATTRIBUTE attribute-value /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С1"]/@Name
+      expected: "С1"
+      actual:   "C1"
+[011] UNICODE confusable-code-points /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С1"]/@Name
+      expected: "С1"
+      actual:   "C1"
+      details:  {"expectedCodePoints":["U+0421","U+0031"],"actualCodePoints":["U+0043","U+0031"]}
+[012] EXTRA element /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С1"]/Data/Object/FixedLen
+      expected: null
+      actual:   "FixedLen"
+[013] ATTRIBUTE attribute-value /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С2"]/@Name
+      expected: "С2"
+      actual:   "C2"
+[014] UNICODE confusable-code-points /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С2"]/@Name
+      expected: "С2"
+      actual:   "C2"
+      details:  {"expectedCodePoints":["U+0421","U+0032"],"actualCodePoints":["U+0043","U+0032"]}
+[015] EXTRA element /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С2"]/Data/Object/FixedLen
+      expected: null
+      actual:   "FixedLen"
+[016] ATTRIBUTE attribute-value /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С3"]/@Name
+      expected: "С3"
+      actual:   "C3"
+[017] UNICODE confusable-code-points /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С3"]/@Name
+      expected: "С3"
+      actual:   "C3"
+      details:  {"expectedCodePoints":["U+0421","U+0033"],"actualCodePoints":["U+0043","U+0033"]}
+[018] EXTRA element /ImageDesign/SubImage[ImageReference="1"]/Field[Name="С3"]/Data/Object/FixedLen
+      expected: null
+      actual:   "FixedLen"
+[019] EXTRA element /ImageDesign/SubImage[ImageReference="1"]/Field[Name="Field02"]/Data/Object/FixedLen
+      expected: null
+      actual:   "FixedLen"
+[020] REFERENCE reference-target /references/field-reference#1
+      expected: "С1"
+      actual:   "C1"
+      details:  {"expectedCodePoints":["U+0421","U+0031"],"actualCodePoints":["U+0043","U+0031"]}
+[021] REFERENCE reference-target /references/field-reference#3
+      expected: "С2"
+      actual:   "C2"
+      details:  {"expectedCodePoints":["U+0421","U+0032"],"actualCodePoints":["U+0043","U+0032"]}
+[022] REFERENCE reference-target /references/field-reference#5
+      expected: "С3"
+      actual:   "C3"
+      details:  {"expectedCodePoints":["U+0421","U+0033"],"actualCodePoints":["U+0043","U+0033"]}

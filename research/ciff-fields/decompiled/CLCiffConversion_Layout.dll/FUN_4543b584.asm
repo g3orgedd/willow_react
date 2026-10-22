@@ -1,0 +1,3 @@
+4543b584 PUSH dword ptr [0x45461698]
+4543b58a CALL dword ptr [0x454470f0]
+4543b590 RET

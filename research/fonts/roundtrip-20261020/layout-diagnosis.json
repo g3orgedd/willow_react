@@ -1,0 +1,92 @@
+[
+    {
+        "name":  "TNR_Text",
+        "zeroDifference":  0,
+        "best":  {
+                     "dx":  0,
+                     "different":  0,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "Arial_Bold",
+        "zeroDifference":  0,
+        "best":  {
+                     "dx":  0,
+                     "different":  0,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "Courier_XMag",
+        "zeroDifference":  0,
+        "best":  {
+                     "dx":  0,
+                     "different":  0,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "Tahoma_Date",
+        "zeroDifference":  71,
+        "best":  {
+                     "dx":  0,
+                     "different":  71,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "Segoe_Offset",
+        "zeroDifference":  140,
+        "best":  {
+                     "dx":  0,
+                     "different":  140,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "Narrow_Time",
+        "zeroDifference":  107,
+        "best":  {
+                     "dx":  0,
+                     "different":  107,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "OCRB_Counter",
+        "zeroDifference":  0,
+        "best":  {
+                     "dx":  0,
+                     "different":  0,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "TNR_Rot90",
+        "zeroDifference":  0,
+        "best":  {
+                     "dx":  0,
+                     "different":  0,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "Courier_Rot180",
+        "zeroDifference":  0,
+        "best":  {
+                     "dx":  0,
+                     "different":  0,
+                     "dy":  0
+                 }
+    },
+    {
+        "name":  "Tahoma_Rot270",
+        "zeroDifference":  0,
+        "best":  {
+                     "dx":  0,
+                     "different":  0,
+                     "dy":  0
+                 }
+    }
+]

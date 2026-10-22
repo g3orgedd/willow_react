@@ -1,0 +1,3 @@
+4280fd96 MOV dword ptr [ECX],0x4282d4cc
+4280fd9c MOV EAX,ECX
+4280fd9e RET

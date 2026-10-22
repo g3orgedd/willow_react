@@ -1,0 +1,4 @@
+binaries/
+ghidra-project/
+*.log
+__pycache__/

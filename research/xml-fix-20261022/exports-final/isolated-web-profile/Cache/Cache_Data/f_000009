@@ -1,0 +1,331 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/AdvancedEditorModals.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=a8bfbb4b"; const Fragment = __vite__cjsImport0_react_jsxDevRuntime["Fragment"]; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+export function AdvancedEditorModals() {
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("div", { id: "dataMatrixEditorModal", className: "modal modal--editor hidden", "aria-hidden": "true", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "modal__backdrop", "data-editor-modal-close": "datamatrix" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+        lineNumber: 24,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "div",
+        {
+          className: "modal__card modal__card--editor dmEditorModal surface-card",
+          role: "dialog",
+          "aria-modal": "true",
+          "aria-labelledby": "dataMatrixEditorModalTitle",
+          "aria-describedby": "dataMatrixEditorModalSubtitle",
+          children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "modal__header editorModal__header dmEditorModal__header", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "modal__title", id: "dataMatrixEditorModalTitle", children: "DataMatrix" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 34,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "modal__subtitle", id: "dataMatrixEditorModalSubtitle", children: "Edit the selected DataMatrix profile and segments." }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 35,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 33,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { id: "btnCloseDataMatrixEditor", className: "btn btn--text dmEditorModal__close", type: "button", "aria-label": "Close", children: /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/close_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 38,
+                columnNumber: 15
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 37,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+              lineNumber: 32,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "editorModal__content", children: [
+              /* @__PURE__ */ jsxDEV("div", { id: "dmEmpty", className: "muted", children: [
+                "No DataMatrix object found.",
+                /* @__PURE__ */ jsxDEV("br", {}, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 42,
+                  columnNumber: 76
+                }, this),
+                "Create a new DataMatrix or select an existing one."
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 42,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { id: "dmPanel", className: "form hidden" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 43,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+              lineNumber: 41,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+          lineNumber: 25,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+      lineNumber: 23,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { id: "offsetsEditorModal", className: "modal modal--editor hidden", "aria-hidden": "true", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "modal__backdrop", "data-editor-modal-close": "offsets" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+        lineNumber: 49,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "div",
+        {
+          className: "modal__card modal__card--editor dateOffsetsModal surface-card",
+          role: "dialog",
+          "aria-modal": "true",
+          "aria-labelledby": "offsetsEditorModalTitle",
+          "aria-describedby": "offsetsEditorModalSubtitle",
+          children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "modal__header editorModal__header dateOffsetsModal__header", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "modal__title", id: "offsetsEditorModalTitle", children: "Date offsets" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 59,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "modal__subtitle", id: "offsetsEditorModalSubtitle", children: "Manage reusable calculated dates." }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 60,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 58,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { id: "btnCloseOffsetsEditor", className: "btn btn--text dateOffsetsModal__close", type: "button", "aria-label": "Close", children: /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/close_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 63,
+                columnNumber: 15
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 62,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+              lineNumber: 57,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("section", { className: "dateOffsetsEditor", "aria-labelledby": "dateOffsetsSectionTitle", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "dateOffsetsEditor__sectionHeader", children: [
+                /* @__PURE__ */ jsxDEV("h3", { id: "dateOffsetsSectionTitle", className: "dateOffsetsEditor__sectionTitle", children: "Offsets" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 68,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { id: "dateOffsetsCount", className: "dateOffsetsEditor__count", children: "0" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 69,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("button", { id: "addOffset", className: "btn btn--tonal btn--small dateOffsetsEditor__addButton", type: "button", "aria-label": "Add offset", children: [
+                  /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/add_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                    lineNumber: 71,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("span", { children: "Add offset" }, void 0, false, {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                    lineNumber: 72,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 70,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 67,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "editorModal__content", children: /* @__PURE__ */ jsxDEV("div", { id: "offsetsEditor", className: "dateOffsetsList" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 76,
+                columnNumber: 15
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 75,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+              lineNumber: 66,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+          lineNumber: 50,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+      lineNumber: 48,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { id: "hiddenFieldsEditorModal", className: "modal modal--editor hidden", "aria-hidden": "true", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "modal__backdrop", "data-editor-modal-close": "hidden" }, void 0, false, {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+        lineNumber: 83,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "div",
+        {
+          className: "modal__card modal__card--editor hiddenFieldsModal surface-card",
+          role: "dialog",
+          "aria-modal": "true",
+          "aria-labelledby": "hiddenFieldsEditorModalTitle",
+          "aria-describedby": "hiddenFieldsEditorModalSubtitle",
+          children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "modal__header editorModal__header hiddenFieldsModal__header", children: [
+              /* @__PURE__ */ jsxDEV("div", { children: [
+                /* @__PURE__ */ jsxDEV("div", { className: "modal__title", id: "hiddenFieldsEditorModalTitle", children: "Hidden fields" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 93,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { className: "modal__subtitle", id: "hiddenFieldsEditorModalSubtitle", children: "Edit values for non-printed fields." }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 94,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 92,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("button", { id: "btnCloseHiddenFieldsEditor", className: "btn btn--text hiddenFieldsModal__close", type: "button", "aria-label": "Close", children: /* @__PURE__ */ jsxDEV("img", { className: "iconButton__icon", src: "/resourses/Icons/close_24dp.svg", alt: "", "aria-hidden": "true" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 97,
+                columnNumber: 15
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 96,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+              lineNumber: 91,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("section", { className: "hiddenFieldsEditor", "aria-labelledby": "hiddenFieldsSectionTitle", children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "hiddenFieldsEditor__sectionHeader", children: [
+                /* @__PURE__ */ jsxDEV("h3", { id: "hiddenFieldsSectionTitle", className: "hiddenFieldsEditor__sectionTitle", children: "Fields" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 102,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { id: "hiddenFieldsCount", className: "hiddenFieldsEditor__count", children: "0" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                  lineNumber: 103,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 101,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "editorModal__content", children: /* @__PURE__ */ jsxDEV("div", { id: "hiddenEditor", className: "hiddenFieldsList" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 106,
+                columnNumber: 15
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+                lineNumber: 105,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+              lineNumber: 100,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+          lineNumber: 84,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+      lineNumber: 82,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx",
+    lineNumber: 22,
+    columnNumber: 5
+  }, this);
+}
+_c = AdvancedEditorModals;
+var _c;
+$RefreshReg$(_c, "AdvancedEditorModals");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/AdvancedEditorModals.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFBQSxjQUNBLHVCQUFDLFNBQUksV0FBVSx3QkFDYixpQ0FBQyxTQUFJLElBQUcsZ0JBQWUsV0FBVSxzQkFBakM7QUFBQTtBQUFBO0FBQUE7QUFBQSxxQkFBb0QsS0FEdEQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxxQkFFQTtBQUFBLGlCQVBGO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBUUE7QUFBQTtBQUFBO0FBQUEsUUF4QkY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE1BeUJBO0FBQUEsU0EzQkY7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQTRCQTtBQUFBLE9BeEZGO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0F5RkE7QUFFSjtBQUFDQyxLQTdGZUQ7QUFBb0IsSUFBQUM7QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsiQWR2YW5jZWRFZGl0b3JNb2RhbHMiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBZHZhbmNlZEVkaXRvck1vZGFscy50c3giXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGZ1bmN0aW9uIEFkdmFuY2VkRWRpdG9yTW9kYWxzKCkge1xuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8ZGl2IGlkPVwiZGF0YU1hdHJpeEVkaXRvck1vZGFsXCIgY2xhc3NOYW1lPVwibW9kYWwgbW9kYWwtLWVkaXRvciBoaWRkZW5cIiBhcmlhLWhpZGRlbj1cInRydWVcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtb2RhbF9fYmFja2Ryb3BcIiBkYXRhLWVkaXRvci1tb2RhbC1jbG9zZT1cImRhdGFtYXRyaXhcIj48L2Rpdj5cbiAgICAgICAgPGRpdlxuICAgICAgICAgIGNsYXNzTmFtZT1cIm1vZGFsX19jYXJkIG1vZGFsX19jYXJkLS1lZGl0b3IgZG1FZGl0b3JNb2RhbCBzdXJmYWNlLWNhcmRcIlxuICAgICAgICAgIHJvbGU9XCJkaWFsb2dcIlxuICAgICAgICAgIGFyaWEtbW9kYWw9XCJ0cnVlXCJcbiAgICAgICAgICBhcmlhLWxhYmVsbGVkYnk9XCJkYXRhTWF0cml4RWRpdG9yTW9kYWxUaXRsZVwiXG4gICAgICAgICAgYXJpYS1kZXNjcmliZWRieT1cImRhdGFNYXRyaXhFZGl0b3JNb2RhbFN1YnRpdGxlXCJcbiAgICAgICAgPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX2hlYWRlciBlZGl0b3JNb2RhbF9faGVhZGVyIGRtRWRpdG9yTW9kYWxfX2hlYWRlclwiPlxuICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtb2RhbF9fdGl0bGVcIiBpZD1cImRhdGFNYXRyaXhFZGl0b3JNb2RhbFRpdGxlXCI+RGF0YU1hdHJpeDwvZGl2PlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1vZGFsX19zdWJ0aXRsZVwiIGlkPVwiZGF0YU1hdHJpeEVkaXRvck1vZGFsU3VidGl0bGVcIj5FZGl0IHRoZSBzZWxlY3RlZCBEYXRhTWF0cml4IHByb2ZpbGUgYW5kIHNlZ21lbnRzLjwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8YnV0dG9uIGlkPVwiYnRuQ2xvc2VEYXRhTWF0cml4RWRpdG9yXCIgY2xhc3NOYW1lPVwiYnRuIGJ0bi0tdGV4dCBkbUVkaXRvck1vZGFsX19jbG9zZVwiIHR5cGU9XCJidXR0b25cIiBhcmlhLWxhYmVsPVwiQ2xvc2VcIj5cbiAgICAgICAgICAgICAgPGltZyBjbGFzc05hbWU9XCJpY29uQnV0dG9uX19pY29uXCIgc3JjPVwiL3Jlc291cnNlcy9JY29ucy9jbG9zZV8yNGRwLnN2Z1wiIGFsdD1cIlwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImVkaXRvck1vZGFsX19jb250ZW50XCI+XG4gICAgICAgICAgICA8ZGl2IGlkPVwiZG1FbXB0eVwiIGNsYXNzTmFtZT1cIm11dGVkXCI+Tm8gRGF0YU1hdHJpeCBvYmplY3QgZm91bmQuPGJyIC8+Q3JlYXRlIGEgbmV3IERhdGFNYXRyaXggb3Igc2VsZWN0IGFuIGV4aXN0aW5nIG9uZS48L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgaWQ9XCJkbVBhbmVsXCIgY2xhc3NOYW1lPVwiZm9ybSBoaWRkZW5cIj48L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cblxuICAgICAgPGRpdiBpZD1cIm9mZnNldHNFZGl0b3JNb2RhbFwiIGNsYXNzTmFtZT1cIm1vZGFsIG1vZGFsLS1lZGl0b3IgaGlkZGVuXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX2JhY2tkcm9wXCIgZGF0YS1lZGl0b3ItbW9kYWwtY2xvc2U9XCJvZmZzZXRzXCI+PC9kaXY+XG4gICAgICAgIDxkaXZcbiAgICAgICAgICBjbGFzc05hbWU9XCJtb2RhbF9fY2FyZCBtb2RhbF9fY2FyZC0tZWRpdG9yIGRhdGVPZmZzZXRzTW9kYWwgc3VyZmFjZS1jYXJkXCJcbiAgICAgICAgICByb2xlPVwiZGlhbG9nXCJcbiAgICAgICAgICBhcmlhLW1vZGFsPVwidHJ1ZVwiXG4gICAgICAgICAgYXJpYS1sYWJlbGxlZGJ5PVwib2Zmc2V0c0VkaXRvck1vZGFsVGl0bGVcIlxuICAgICAgICAgIGFyaWEtZGVzY3JpYmVkYnk9XCJvZmZzZXRzRWRpdG9yTW9kYWxTdWJ0aXRsZVwiXG4gICAgICAgID5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1vZGFsX19oZWFkZXIgZWRpdG9yTW9kYWxfX2hlYWRlciBkYXRlT2Zmc2V0c01vZGFsX19oZWFkZXJcIj5cbiAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX3RpdGxlXCIgaWQ9XCJvZmZzZXRzRWRpdG9yTW9kYWxUaXRsZVwiPkRhdGUgb2Zmc2V0czwvZGl2PlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1vZGFsX19zdWJ0aXRsZVwiIGlkPVwib2Zmc2V0c0VkaXRvck1vZGFsU3VidGl0bGVcIj5NYW5hZ2UgcmV1c2FibGUgY2FsY3VsYXRlZCBkYXRlcy48L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGJ1dHRvbiBpZD1cImJ0bkNsb3NlT2Zmc2V0c0VkaXRvclwiIGNsYXNzTmFtZT1cImJ0biBidG4tLXRleHQgZGF0ZU9mZnNldHNNb2RhbF9fY2xvc2VcIiB0eXBlPVwiYnV0dG9uXCIgYXJpYS1sYWJlbD1cIkNsb3NlXCI+XG4gICAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiaWNvbkJ1dHRvbl9faWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvY2xvc2VfMjRkcC5zdmdcIiBhbHQ9XCJcIiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwiZGF0ZU9mZnNldHNFZGl0b3JcIiBhcmlhLWxhYmVsbGVkYnk9XCJkYXRlT2Zmc2V0c1NlY3Rpb25UaXRsZVwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJkYXRlT2Zmc2V0c0VkaXRvcl9fc2VjdGlvbkhlYWRlclwiPlxuICAgICAgICAgICAgICA8aDMgaWQ9XCJkYXRlT2Zmc2V0c1NlY3Rpb25UaXRsZVwiIGNsYXNzTmFtZT1cImRhdGVPZmZzZXRzRWRpdG9yX19zZWN0aW9uVGl0bGVcIj5PZmZzZXRzPC9oMz5cbiAgICAgICAgICAgICAgPHNwYW4gaWQ9XCJkYXRlT2Zmc2V0c0NvdW50XCIgY2xhc3NOYW1lPVwiZGF0ZU9mZnNldHNFZGl0b3JfX2NvdW50XCI+MDwvc3Bhbj5cbiAgICAgICAgICAgICAgPGJ1dHRvbiBpZD1cImFkZE9mZnNldFwiIGNsYXNzTmFtZT1cImJ0biBidG4tLXRvbmFsIGJ0bi0tc21hbGwgZGF0ZU9mZnNldHNFZGl0b3JfX2FkZEJ1dHRvblwiIHR5cGU9XCJidXR0b25cIiBhcmlhLWxhYmVsPVwiQWRkIG9mZnNldFwiPlxuICAgICAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwiaWNvbkJ1dHRvbl9faWNvblwiIHNyYz1cIi9yZXNvdXJzZXMvSWNvbnMvYWRkXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgICAgICA8c3Bhbj5BZGQgb2Zmc2V0PC9zcGFuPlxuICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJlZGl0b3JNb2RhbF9fY29udGVudFwiPlxuICAgICAgICAgICAgICA8ZGl2IGlkPVwib2Zmc2V0c0VkaXRvclwiIGNsYXNzTmFtZT1cImRhdGVPZmZzZXRzTGlzdFwiPjwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9zZWN0aW9uPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8ZGl2IGlkPVwiaGlkZGVuRmllbGRzRWRpdG9yTW9kYWxcIiBjbGFzc05hbWU9XCJtb2RhbCBtb2RhbC0tZWRpdG9yIGhpZGRlblwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1vZGFsX19iYWNrZHJvcFwiIGRhdGEtZWRpdG9yLW1vZGFsLWNsb3NlPVwiaGlkZGVuXCI+PC9kaXY+XG4gICAgICAgIDxkaXZcbiAgICAgICAgICBjbGFzc05hbWU9XCJtb2RhbF9fY2FyZCBtb2RhbF9fY2FyZC0tZWRpdG9yIGhpZGRlbkZpZWxkc01vZGFsIHN1cmZhY2UtY2FyZFwiXG4gICAgICAgICAgcm9sZT1cImRpYWxvZ1wiXG4gICAgICAgICAgYXJpYS1tb2RhbD1cInRydWVcIlxuICAgICAgICAgIGFyaWEtbGFiZWxsZWRieT1cImhpZGRlbkZpZWxkc0VkaXRvck1vZGFsVGl0bGVcIlxuICAgICAgICAgIGFyaWEtZGVzY3JpYmVkYnk9XCJoaWRkZW5GaWVsZHNFZGl0b3JNb2RhbFN1YnRpdGxlXCJcbiAgICAgICAgPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX2hlYWRlciBlZGl0b3JNb2RhbF9faGVhZGVyIGhpZGRlbkZpZWxkc01vZGFsX19oZWFkZXJcIj5cbiAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX3RpdGxlXCIgaWQ9XCJoaWRkZW5GaWVsZHNFZGl0b3JNb2RhbFRpdGxlXCI+SGlkZGVuIGZpZWxkczwvZGl2PlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1vZGFsX19zdWJ0aXRsZVwiIGlkPVwiaGlkZGVuRmllbGRzRWRpdG9yTW9kYWxTdWJ0aXRsZVwiPkVkaXQgdmFsdWVzIGZvciBub24tcHJpbnRlZCBmaWVsZHMuPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxidXR0b24gaWQ9XCJidG5DbG9zZUhpZGRlbkZpZWxkc0VkaXRvclwiIGNsYXNzTmFtZT1cImJ0biBidG4tLXRleHQgaGlkZGVuRmllbGRzTW9kYWxfX2Nsb3NlXCIgdHlwZT1cImJ1dHRvblwiIGFyaWEtbGFiZWw9XCJDbG9zZVwiPlxuICAgICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImljb25CdXR0b25fX2ljb25cIiBzcmM9XCIvcmVzb3Vyc2VzL0ljb25zL2Nsb3NlXzI0ZHAuc3ZnXCIgYWx0PVwiXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImhpZGRlbkZpZWxkc0VkaXRvclwiIGFyaWEtbGFiZWxsZWRieT1cImhpZGRlbkZpZWxkc1NlY3Rpb25UaXRsZVwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoaWRkZW5GaWVsZHNFZGl0b3JfX3NlY3Rpb25IZWFkZXJcIj5cbiAgICAgICAgICAgICAgPGgzIGlkPVwiaGlkZGVuRmllbGRzU2VjdGlvblRpdGxlXCIgY2xhc3NOYW1lPVwiaGlkZGVuRmllbGRzRWRpdG9yX19zZWN0aW9uVGl0bGVcIj5GaWVsZHM8L2gzPlxuICAgICAgICAgICAgICA8c3BhbiBpZD1cImhpZGRlbkZpZWxkc0NvdW50XCIgY2xhc3NOYW1lPVwiaGlkZGVuRmllbGRzRWRpdG9yX19jb3VudFwiPjA8L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZWRpdG9yTW9kYWxfX2NvbnRlbnRcIj5cbiAgICAgICAgICAgICAgPGRpdiBpZD1cImhpZGRlbkVkaXRvclwiIGNsYXNzTmFtZT1cImhpZGRlbkZpZWxkc0xpc3RcIj48L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvc2VjdGlvbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8Lz5cbiAgKTtcbn1cbiJdLCJmaWxlIjoiQzovVXNlcnMvR2lnYUdlb3JnZS9EZXNrdG9wL3dpbGxvdy1yZWFjdC12aXRlLXRlc3RfMS40LjAvc3JjL2NvbXBvbmVudHMvQWR2YW5jZWRFZGl0b3JNb2RhbHMudHN4In0=

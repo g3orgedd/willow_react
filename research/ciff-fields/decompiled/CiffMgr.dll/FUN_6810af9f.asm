@@ -1,0 +1,2 @@
+6810af9f MOV EAX,0x6810afa5
+6810afa4 RET

@@ -1,0 +1,18 @@
+4500abdc PUSH EBP
+4500abdd MOV EBP,ESP
+4500abdf MOV EDX,dword ptr [EBP + 0x8]
+4500abe2 PUSH ESI
+4500abe3 MOV ESI,ECX
+4500abe5 PUSH 0x9
+4500abe7 POP EAX
+4500abe8 MOV word ptr [ESI],AX
+4500abeb MOV dword ptr [ESI + 0x8],EDX
+4500abee TEST EDX,EDX
+4500abf0 JZ 0x4500abf8
+4500abf2 MOV EAX,dword ptr [EDX]
+4500abf4 PUSH EDX
+4500abf5 CALL dword ptr [EAX + 0x4]
+4500abf8 MOV EAX,ESI
+4500abfa POP ESI
+4500abfb POP EBP
+4500abfc RET 0x4

@@ -6,7 +6,7 @@
     throw new Error(`Missing required CIFF modules: ${missing.join(", ")}`);
   }
 
-  initAppLogging()
+  Promise.all([initAppLogging(), initTextFontCatalog()])
     .catch((error) => console.error("Failed to initialize application logging:", error))
     .finally(() => {
       initCanvas();

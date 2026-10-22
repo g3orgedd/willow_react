@@ -1,0 +1,3 @@
+45025aeb AND dword ptr [EBP + -0x14],0x0
+45025aef MOV EAX,0x45025af5
+45025af4 RET

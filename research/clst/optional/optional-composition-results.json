@@ -1,0 +1,162 @@
+{
+  "method": "manual pipeline composition; native CiffMgr.dll transform and filename splitting",
+  "caseCount": 8,
+  "cases": [
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [],
+        "mask": "0",
+        "sourcePath": "C:\\labels\\Report.ciff",
+        "includeFileMetadata": true
+      },
+      "counts6": "000100",
+      "fileMetadata": "Report.ciff",
+      "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+      "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+      "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+      "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv3",
+      "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn8",
+      "length": 243
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [],
+        "mask": "0",
+        "sourcePath": "C:\\labels\\Report.ciff.new",
+        "includeFileMetadata": true
+      },
+      "counts6": "000100",
+      "fileMetadata": "Report.ciff",
+      "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+      "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+      "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv3",
+      "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv3",
+      "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn8",
+      "length": 243
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "C:\\labels\\Report.ciff",
+        "includeFileMetadata": true
+      },
+      "counts6": "000101",
+      "fileMetadata": "Report.ciff",
+      "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+      "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+      "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn9NJORD23yC6sRHC8VYRIS9Au8TCKR_9LrN3QAJjKSiBTgG",
+      "length": 288
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "D:\\other\\Report.ciff",
+        "includeFileMetadata": true
+      },
+      "counts6": "000101",
+      "fileMetadata": "Report.ciff",
+      "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3",
+      "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQ_4",
+      "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "intermediate": "MWNDu5BBD5YND7UFBSMsGQ_46n7VCAEJC1R2Un4Ss3HcQ3D0UsPRyI3f3MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4ARrNJDCEX2HEIVq9QG3620IMVOzTLbBE77ViLPuSNoOGGRJ1K4xKPkESbF0FHSj0PW38CEVrOCE9MkF4jPIsAGUKR46P789v44GVSq9TB3Br3VEKTnTU3DKtSV2HKrG8VDDZOIRJEjJ6mGASG6XALTQ4S70dPUEVSDUNHT6dLTn9NJORD23yC6sRHC8VYRIS9Au8TCKR_9LrN3QAJjKSiBTgG",
+      "length": 288
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "Report.CIFF.NEW",
+        "includeFileMetadata": true
+      },
+      "counts6": "000101",
+      "fileMetadata": "Report.CIFF.NEW",
+      "metadataFragment": "6n7VCAEJC1R2Un4Ss3HcQ3C0NtO6vUIiH3tBVdDD!QKjM",
+      "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsGQzH",
+      "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "intermediate": "MWNDu5BBD5YND7UFBSMsGQzH6n7VCAEJC1R2Un4Ss3HcQ3C0NtO6vUIiH3tBVdDD!QKjMMWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVILB77VMeQVt0EKIL!D5LPEgG6vTIxBRz9FoMD85Kl84xIRjMNiC4_QIr6VaJ4R1QHSQ03EK6N!88U3DOFVX7R_CAhLMeR2bP3LN9V9EuOUeTUyN1k1TxS3iLN!5Ts0SFL2j55gHVvRIsEF93UUAVr25t93THVqA8SPHW4Bz57hHMn1Rr8EbTBSB1CADeUE51UOQQr2FAUMD312KIEP3dDSIR5rFE4K0pS1MQQ0TJx6Hs9UA1NiV6mO7LQM3FM!HCl2",
+      "length": 324
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "\u0418\u043c\u044f \u0448\u0430\u0431\u043b\u043e\u043d\u0430.ciff",
+        "includeFileMetadata": true
+      },
+      "counts6": "000101",
+      "fileMetadata": "\u0418\u043c\u044f \u0448\u0430\u0431\u043b\u043e\u043d\u0430.ciff",
+      "metadataFragment": "6JDFU70oA6BDEQD6LCHCPJD50WSFFJHZQOa5MH9DNKKlFKO9",
+      "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsHA_D",
+      "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "intermediate": "MWNDu5BBD5YND7UFBSMsHA_D6JDFU70oA6BDEQD6LCHCPJD50WSFFJHZQOa5MH9DNKKlFKO9MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW95PLIzLMe3Gk6Pe63v2Vh3RiL7aFGTQPo83bDCFG4hTTn3PeI5dC5TF3TBGvFA!26y24Q0Vy1Os88HMQCKVj5TRN14NVNS992QHJJkNOSH5qQVV9TOG8VFEaK6FSUQBNJPNvRRi9Lw9NSBLUJI_RKz01dI0kVFtL0SBEwEFg0OdD2tQJEALuCRtK6I97PVJgJAACP8SLuDPkTCOSUgNCm53BMOS6PnFOtJQLKMoUEsS6T9HdLASQ3Z3LLHR!4VqAOT6KhAGX6IN2ToV",
+      "length": 333
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\ud83d\ude00.ciff",
+        "includeFileMetadata": true
+      },
+      "counts6": "000101",
+      "fileMetadata": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\ud83d.ciff",
+      "metadataFragment": "6mKCEPT_DO1SDxBVnK9xQLW7Vm55PTVz83lTRgIDW6C7PV!43wGD!AET6MlMNm0BFUAuM6cOB1RAB6AcS8D1NwL0w0JjS9uB7xLT!K9fP5QP5V3Nz7Nn58BMMpK0UVRGQDzM624KaOCd85SSU_TK8QKMERP57lT9XF7NHMLNFFMEsKVU9L9H8tR0DTFZ2CP0UlNEw5TPH8dBA25M!PGwL8l7IpK4EJ39HNzBFnKCVQIbC2RCUuR9cCAEL0DCKxQQbD5sQ6P5DkL7lCKl12jC4TR7ZQATV2wE7m6EHKSAAKR8TKSHGEVkC0uGGuO",
+      "metadataLengthFragment": "MWNDu5BBD5YND7UFBT6sOUTV",
+      "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "intermediate": "MWNDu5BBD5YND7UFBT6sOUTV6mKCEPT_DO1SDxBVnK9xQLW7Vm55PTVz83lTRgIDW6C7PV!43wGD!AET6MlMNm0BFUAuM6cOB1RAB6AcS8D1NwL0w0JjS9uB7xLT!K9fP5QP5V3Nz7Nn58BMMpK0UVRGQDzM624KaOCd85SSU_TK8QKMERP57lT9XF7NHMLNFFMEsKVU9L9H8tR0DTFZ2CP0UlNEw5TPH8dBA25M!PGwL8l7IpK4EJ39HNzBFnKCVQIbC2RCUuR9cCAEL0DCKxQQbD5sQ6P5DkL7lCKl12jC4TR7ZQATV2wE7m6EHKSAAKR8TKSHGEVkC0uGGuOMWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzIG!GBjM4bLA3NCZTKTJ0HKU7Q6v0Eo7SqF8IVPiBJsE7UKGz7Mz7DeS4a3SRC1_F6DCHzMEeCAo6DKJC_4LcIKM3Ay1UJNECTM98Fn0Lv9Ts3QO3PqC3o2P8SDJUQD1V1BRj03jOCkUBkBH!TGuC3oOE8VFpU1FKIiF7ZQ6bQ4a3FKEUq5UlL2kH0uCLL4GeDUlHTkCUTKTQTB_8BkGTzPC!D7sFTm6MgIAwM1q93DDAu0U0NOW75639LLRIDTiQBo666CTX4EDLIiTAhOOeRVoKQPILYM2xTVH0RkLJgDHmE6DGQ!79KTHd9EETHjC5jADl8SbRB7NEV9GeU1eKE4CHLLBiHMYI014LpLNP33zNMxANuKJz82NKN!EFzG5z8SsDR7RUkA54ALs2PUBM!S1TOUvVMZAGIEEZ5LL3Jo66TLUb4Lq0OX38TSP!FV_JMeL7aICuQEOVDpBEDUJx28q8AsM7TBPsRUK767CIKIJSJUGPMr0TB2Vd1IFIRWVOd4Bz76iDFTQIuCPjIJy5FyPGDRJZEUFTQDR9055v4Mi4TfGRk1NcGKSUPdCDd6KK4RMAE!83qMVS79y2OzRTITFj5Cw6HwBKk63fNFhBLnL9MFUs03a6UVENuVQn6TNR1V1MhOO!CNzQTvT2lDNx7Gt1VPGH!NAj7THOUuLIs9UTCP20QuE7gJGfO8hH4f40nDTDPP_ONjHJyNIyMFxN3SNEQ4Vs0ROVN!4JK74NKVS7VcAEh6Sd01e06PUHKGMzSKRQUr2CtLF3JKnS2KVVqTN46J94PmMIOQP!D6eTNsHKt8BuAEe76NF0SRNt4QkE6IANs0PzQEVP6dOQIDJZ8EwF7o9A41GG6RS6U!0ORKJ3N7NLCbLPEDCSHNgL2k42iQQNGR41HlI9bKSLHUmO7VAMY9PSI9ePSuN7W2KSQPvRMtTAMCL0FLtA5CQ6uSBfNNxIClQBvNMq0Pb7R70NiSC_UTjTQyKPy9Eg87l1MBJ6ZB17T7qBFw4IsPG3SPUJNEQUo4NDE2fTKy9Ht835SSJ2Q0PCLVS6MPr9B876hSL6G3uI3CAIZIP6E",
+      "length": 1134
+    },
+    {
+      "input": {
+        "dateOffsetCount": 0,
+        "subImageCount": 1,
+        "fieldValues": [
+          "21:22"
+        ],
+        "mask": "1",
+        "sourcePath": "C:/folder/a:b.ciff",
+        "includeFileMetadata": true
+      },
+      "counts6": "000101",
+      "fileMetadata": "a:b.ciff",
+      "metadataFragment": "6mKCC2VvB4pFI_K3WBA61Vs5",
+      "metadataLengthFragment": "MWNDu5BBD5YND7UFBSMsJAv3",
+      "normalIntermediate": "MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "intermediate": "MWNDu5BBD5YND7UFBSMsJAv36mKCC2VvB4pFI_K3WBA61Vs5MWNDu5BBD5YND7UFBSMsIQv26o7UEV2GF5uKVqU",
+      "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUWB5V7MzGSlM9pCTXH2_7RjLHyLBlLPiTHnQQcHMCNO85PNBFQ81yFAa0EkK7yL2kLKoEBJBRrHGU6Ry57c6NQ4RzJUXMQVDVuT1rPECEUvCVwGMzDC_O7IBKx3Tv6RaLF6QJ5EK!18k6AyEAdAF3GKsRJN8RTDTaUGMPGpPOzIBxBGwMJX00y4UqKME9QwMDx9APAHd8",
+      "length": 261
+    }
+  ]
+}

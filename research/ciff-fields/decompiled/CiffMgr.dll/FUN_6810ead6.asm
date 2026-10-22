@@ -1,0 +1,5 @@
+6810ead6 ADD ECX,0x8
+6810ead9 OR EAX,0xffffffff
+6810eadc XADD.LOCK dword ptr [ECX],EAX
+6810eae0 DEC EAX
+6810eae1 RET

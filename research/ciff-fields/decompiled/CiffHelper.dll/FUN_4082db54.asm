@@ -1,0 +1,8 @@
+4082db54 TEST EAX,EAX
+4082db56 JNZ 0x4082db67
+4082db58 PUSH dword ptr [EBP + 0x18]
+4082db5b PUSH ESI
+4082db5c PUSH dword ptr [EBP + 0xc]
+4082db5f PUSH dword ptr [EBP + 0x8]
+4082db62 CALL 0x4082dbd7
+4082db67 RET

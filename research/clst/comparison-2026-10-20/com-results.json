@@ -1,0 +1,267 @@
+{
+    "method":  "Original registered COM generator via savetostring2(UTF_16,1), no DLL patches",
+    "processBits":  32,
+    "dllSha256":  "F1A3C15E39657C5D8B2A0391660BBA2809702B5B83E368C41584ABDD2955124B",
+    "cases":  [
+                  {
+                      "name":  "no-subimages",
+                      "status":  "ok",
+                      "subImageCount":  0,
+                      "fieldCount":  0,
+                      "fieldValuesBefore":  [
+
+                                            ],
+                      "fieldValuesAfter":  [
+
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A",
+                      "tokenLength":  72
+                  },
+                  {
+                      "name":  "empty-subimage",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  0,
+                      "fieldValuesBefore":  [
+
+                                            ],
+                      "fieldValuesAfter":  [
+
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A",
+                      "tokenLength":  72
+                  },
+                  {
+                      "name":  "one-field",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  1,
+                      "fieldValuesBefore":  [
+                                                "alpha"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "alpha"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LERw9H_GQwHQ_MTl7LfG5Z9OO7HFE",
+                      "tokenLength":  117
+                  },
+                  {
+                      "name":  "three-fields",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  3,
+                      "fieldValuesBefore":  [
+                                                "alpha",
+                                                "beta",
+                                                "gamma"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "alpha",
+                                               "beta",
+                                               "gamma"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDT8Lq4Lp79S36z9UXVGF0IZC5qCQCDHzNAH2TwJQeA",
+                      "tokenLength":  117
+                  },
+                  {
+                      "name":  "second-subimage-only",
+                      "status":  "ok",
+                      "subImageCount":  2,
+                      "fieldCount":  1,
+                      "fieldValuesBefore":  [
+                                                "SECOND-IMAGE"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "SECOND-IMAGE"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo1KNBFVFCLT5bKDH5D5MESQTCRSSB6aVMzR5a06M3C8J6jKNv6QfU0!K8sUCpVMf1ToUM5FR!A0sPUGSIpKFK96HCNxIAa6AbOV80",
+                      "tokenLength":  180
+                  },
+                  {
+                      "name":  "two-subimages",
+                      "status":  "ok",
+                      "subImageCount":  2,
+                      "fieldCount":  4,
+                      "fieldValuesBefore":  [
+                                                "I1-A",
+                                                "I1-B",
+                                                "I2-A",
+                                                "I2-B"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "I1-A",
+                                               "I1-B",
+                                               "I2-A",
+                                               "I2-B"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLMzRS!KRrOJG3THVUgULgIQP5D6H5vHCyI4uDPZ7",
+                      "tokenLength":  108
+                  },
+                  {
+                      "name":  "thirty-three-fields",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  33,
+                      "fieldValuesBefore":  [
+                                                "FieldValue00",
+                                                "FieldValue01",
+                                                "FieldValue02",
+                                                "FieldValue03",
+                                                "FieldValue04",
+                                                "FieldValue05",
+                                                "FieldValue06",
+                                                "FieldValue07",
+                                                "FieldValue08",
+                                                "FieldValue09",
+                                                "FieldValue10",
+                                                "FieldValue11",
+                                                "FieldValue12",
+                                                "FieldValue13",
+                                                "FieldValue14",
+                                                "FieldValue15",
+                                                "FieldValue16",
+                                                "FieldValue17",
+                                                "FieldValue18",
+                                                "FieldValue19",
+                                                "FieldValue20",
+                                                "FieldValue21",
+                                                "FieldValue22",
+                                                "FieldValue23",
+                                                "FieldValue24",
+                                                "FieldValue25",
+                                                "FieldValue26",
+                                                "FieldValue27",
+                                                "FieldValue28",
+                                                "FieldValue29",
+                                                "FieldValue30",
+                                                "FieldValue31",
+                                                "FieldValue32"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "FieldValue00",
+                                               "FieldValue01",
+                                               "FieldValue02",
+                                               "FieldValue03",
+                                               "FieldValue04",
+                                               "FieldValue05",
+                                               "FieldValue06",
+                                               "FieldValue07",
+                                               "FieldValue08",
+                                               "FieldValue09",
+                                               "FieldValue10",
+                                               "FieldValue11",
+                                               "FieldValue12",
+                                               "FieldValue13",
+                                               "FieldValue14",
+                                               "FieldValue15",
+                                               "FieldValue16",
+                                               "FieldValue17",
+                                               "FieldValue18",
+                                               "FieldValue19",
+                                               "FieldValue20",
+                                               "FieldValue21",
+                                               "FieldValue22",
+                                               "FieldValue23",
+                                               "FieldValue24",
+                                               "FieldValue25",
+                                               "FieldValue26",
+                                               "FieldValue27",
+                                               "FieldValue28",
+                                               "FieldValue29",
+                                               "FieldValue30",
+                                               "FieldValue31",
+                                               "FieldValue32"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLMzRS!KRrOJGQNR7HCAVYL6FD5SNVuJOb0G03HpU5PB1Q6PYEOUGVrOBPRSmAQlCIcT6VPJzD3q2KUM1fQ7tABe57g5PyA7o7NySKyGLvM1S37WR",
+                      "tokenLength":  180
+                  },
+                  {
+                      "name":  "payload-truncate",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  1,
+                      "fieldValuesBefore":  [
+                                                "12345678901234567890TRAILING"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "12345678901234567890TRAILING"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoA1HSFEHCzPKuPDy29xUV_UEXD1ROQuI9XNARNJaMLuGHhQAtFEJTQnFDb6UP0RRDUtMUj4CQFR5ETtIVSJEcC2H8RxRCqBLPK2KGGU31pKOQBQbAT7BNqQ2T4MuQVk4E9B62EGk0A!A1YC2BSSrRF1VEGDSwILSUTQUTl9Sa9QYH",
+                      "tokenLength":  252
+                  },
+                  {
+                      "name":  "control-char",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  1,
+                      "fieldValuesBefore":  [
+                                                "AB\u0001CD\u001dEF"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "AB\u0001CD\u001dEF"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PGUtVRKE6vHCGFFaQUXUQRGSu23oGTTVHHDEj3LM4RlCJq8NGH",
+                      "tokenLength":  144
+                  },
+                  {
+                      "name":  "nul-in-plaintext",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  1,
+                      "fieldValuesBefore":  [
+                                                "AB"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "AB"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC",
+                      "tokenLength":  90
+                  },
+                  {
+                      "name":  "surrogate-truncate",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  1,
+                      "fieldValuesBefore":  [
+                                                "1234567890123456789😀TAIL"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "1234567890123456789😀TAIL"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoA1HSFEHCzPKuPDy29xUV_UEXD1ROQuI9XNARNJaMLuGHhQAtFEJTQnFDb6UP0RRDUtMUj4CQFR5ETtIVSJEcC2H8RxRCqBLPK2KGGU31pKOQBQbAT7BNqQ2T4MuQVk4E9B62EGk0A!A1YC2BSSrRF1VEGDSwILSUTQUTiBTYDRb6",
+                      "tokenLength":  252
+                  },
+                  {
+                      "name":  "mixed-field-types",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  3,
+                      "fieldValuesBefore":  [
+                                                "TEXT",
+                                                "BARCODE",
+                                                "GRAPHIC"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "TEXT",
+                                               "BARCODE",
+                                               "GRAPHIC"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEGQD3UC8GdKAyJU19DdGUO5QzCVZ7DUVEmN7V11IOKUNPQQOPQRYJ8EUOmR",
+                      "tokenLength":  135
+                  },
+                  {
+                      "name":  "hidden-field",
+                      "status":  "ok",
+                      "subImageCount":  1,
+                      "fieldCount":  1,
+                      "fieldValuesBefore":  [
+                                                "HIDDEN"
+                                            ],
+                      "fieldValuesAfter":  [
+                                               "HIDDEN"
+                                           ],
+                      "token":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFn3SHTEdVPSMMe9Fz1ImBH3R9EUNcBNVIPa88qPIUDVrOTyF",
+                      "tokenLength":  126
+                  }
+              ]
+}

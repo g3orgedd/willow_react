@@ -1,0 +1,2 @@
+00e68567 MOV EAX,dword ptr [ECX + 0x14]
+00e6856a RET

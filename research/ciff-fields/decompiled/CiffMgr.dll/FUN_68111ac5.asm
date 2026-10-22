@@ -1,0 +1,11 @@
+68111ac5 PUSH EBP
+68111ac6 MOV EBP,ESP
+68111ac8 PUSH dword ptr [EBP + 0x1c]
+68111acb MOV ECX,0x6815f5a0
+68111ad0 PUSH dword ptr [EBP + 0x18]
+68111ad3 PUSH dword ptr [EBP + 0x14]
+68111ad6 PUSH dword ptr [EBP + 0x10]
+68111ad9 PUSH dword ptr [EBP + 0xc]
+68111adc CALL 0x681040ea
+68111ae1 POP EBP
+68111ae2 RET 0x18

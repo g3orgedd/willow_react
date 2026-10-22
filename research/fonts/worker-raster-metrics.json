@@ -1,0 +1,62 @@
+[
+  {
+    "face": "Fixedsys",
+    "pitch": 6,
+    "oracleWidth": 348,
+    "oracleHeight": 28,
+    "width": 348,
+    "height": 28,
+    "fontFamily": 32,
+    "file": "worker-raster_Fixedsys_6.png"
+  },
+  {
+    "face": "Fixedsys",
+    "pitch": 13,
+    "oracleWidth": 766,
+    "oracleHeight": 63,
+    "width": 766,
+    "height": 63,
+    "fontFamily": 32,
+    "file": "worker-raster_Fixedsys_13.png"
+  },
+  {
+    "face": "System",
+    "pitch": 6,
+    "oracleWidth": 348,
+    "oracleHeight": 28,
+    "width": 348,
+    "height": 28,
+    "fontFamily": 32,
+    "file": "worker-raster_System_6.png"
+  },
+  {
+    "face": "System",
+    "pitch": 13,
+    "oracleWidth": 766,
+    "oracleHeight": 63,
+    "width": 766,
+    "height": 63,
+    "fontFamily": 32,
+    "file": "worker-raster_System_13.png"
+  },
+  {
+    "face": "Terminal",
+    "pitch": 6,
+    "oracleWidth": 348,
+    "oracleHeight": 28,
+    "width": 348,
+    "height": 28,
+    "fontFamily": 32,
+    "file": "worker-raster_Terminal_6.png"
+  },
+  {
+    "face": "Terminal",
+    "pitch": 13,
+    "oracleWidth": 766,
+    "oracleHeight": 63,
+    "width": 766,
+    "height": 63,
+    "fontFamily": 32,
+    "file": "worker-raster_Terminal_13.png"
+  }
+]

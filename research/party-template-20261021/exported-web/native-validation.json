@@ -1,0 +1,678 @@
+{
+    "method":  "Original ICiffManager.load(file,null), ICiffFile.Validate(null), ICiffFile4.Validate2(null,null), GetXml(1,1)",
+    "processBits":  32,
+    "cases":  [
+                  {
+                      "name":  "Glyph-party-without-counter-20261021.ciff",
+                      "kind":  "actual-web-ui-download",
+                      "file":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\Glyph-party-without-counter-20261021.ciff",
+                      "status":  "ok",
+                      "loadedToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEJQ9RI94GKSRS5NjVRp2UUD5y62b17z1",
+                      "loadedFields":  [
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  1,
+                                               "fieldType":  1,
+                                               "displayed":  1,
+                                               "name":  "Field00",
+                                               "calculatedDataUnits":  [
+                                                                           126,
+                                                                           49,
+                                                                           48,
+                                                                           49,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           49,
+                                                                           49,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           49,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           32,
+                                                                           32
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  2,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "C1",
+                                               "calculatedDataUnits":  [
+                                                                           126,
+                                                                           49,
+                                                                           48,
+                                                                           49
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  3,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "GTIN2",
+                                               "calculatedDataUnits":  [
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  4,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "C3",
+                                               "calculatedDataUnits":  [
+                                                                           49,
+                                                                           49
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  5,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "PRODUCT_DATE",
+                                               "calculatedDataUnits":  [
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  6,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "C2",
+                                               "calculatedDataUnits":  [
+                                                                           49,
+                                                                           48
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  7,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "SN",
+                                               "calculatedDataUnits":  [
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           32,
+                                                                           32
+                                                                       ]
+                                           }
+                                       ],
+                      "afterNativeResolve":  [
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  1,
+                                                     "fieldType":  1,
+                                                     "displayed":  1,
+                                                     "name":  "Field00",
+                                                     "calculatedDataUnits":  [
+                                                                                 126,
+                                                                                 49,
+                                                                                 48,
+                                                                                 49,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 49,
+                                                                                 49,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 49,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 32,
+                                                                                 32
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  2,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "C1",
+                                                     "calculatedDataUnits":  [
+                                                                                 126,
+                                                                                 49,
+                                                                                 48,
+                                                                                 49
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  3,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "GTIN2",
+                                                     "calculatedDataUnits":  [
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  4,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "C3",
+                                                     "calculatedDataUnits":  [
+                                                                                 49,
+                                                                                 49
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  5,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "PRODUCT_DATE",
+                                                     "calculatedDataUnits":  [
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  6,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "C2",
+                                                     "calculatedDataUnits":  [
+                                                                                 49,
+                                                                                 48
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  7,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "SN",
+                                                     "calculatedDataUnits":  [
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 32,
+                                                                                 32
+                                                                             ]
+                                                 }
+                                             ],
+                      "validate":  "00000000",
+                      "validate2":  "00000000",
+                      "expectedValidation":  "00000000",
+                      "regeneratedToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUWB5V7MzGSi7Hx4PXHH2SRt5Us9E8CVcP5GBBXBUUQLaMNn1SD0J8OHFAHOKRt0B9V",
+                      "regeneratedXml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6530(53mm) - Continuous\"\u003e\u003cClStVersionInfo\u003ePyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUWB5V7MzGSi7Hx4PXHH2SRt5Us9E8CVcP5GBBXBUUQLaMNn1SD0J8OHFAHOKRt0B9V\u003c/ClStVersionInfo\u003e\u003c/Header\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"\u003e\u003cImageWidth\u003e1300\u003c/ImageWidth\u003e\u003cImageHeight\u003e1300\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e5333\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e7500\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003cCurrentOrientation\u003e0\u003c/CurrentOrientation\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cFldType\u003eBarcode\u003c/FldType\u003e\u003cCLSID\u003e{7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F}\u003c/CLSID\u003e\u003cX\u003e200\u003c/X\u003e\u003cY\u003e200\u003c/Y\u003e\u003cW\u003e1100\u003c/W\u003e\u003cH\u003e1100\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[~1010000000000000011000000100000000000  ]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[~101]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"C1\"/\u003e\u003c/Object\u003e\u003cObject Index=\"1\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[00000000000000]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"GTIN2\"/\u003e\u003c/Object\u003e\u003cObject Index=\"2\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[11]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"C3\"/\u003e\u003c/Object\u003e\u003cObject Index=\"3\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[000000]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"PRODUCT_DATE\"/\u003e\u003c/Object\u003e\u003cObject Index=\"4\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[10]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"C2\"/\u003e\u003c/Object\u003e\u003cObject Index=\"5\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[0000000000  ]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"SN\"/\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cBarcode\u003e\u003cBcH\u003e1100\u003c/BcH\u003e\u003cHR\u003e\u003cHRFont/\u003e\u003c/HR\u003e\u003cQuietMargin\u003e0\u003c/QuietMargin\u003e\u003cDataMatrix\u003e\u003cModuleSize\u003e50\u003c/ModuleSize\u003e\u003cSymbolSize\u003e22X22\u003c/SymbolSize\u003e\u003c/DataMatrix\u003e\u003c/Barcode\u003e\u003c/Field\u003e\u003cField Name=\"C1\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e0\u003c/Y\u003e\u003cW\u003e783\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[~101]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e4\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[~101]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"GTIN2\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e430\u003c/Y\u003e\u003cW\u003e2683\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[00000000000000]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Static=\"0\" Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e14\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[00000000000000]]\u003e\u003c/Default\u003e\u003cFixedLen/\u003e\u003cVarText\u003e\u003cUserEnterData\u003e\u003c![CDATA[00000000000000]]\u003e\u003c/UserEnterData\u003e\u003c/VarText\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"C3\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e860\u003c/Y\u003e\u003cW\u003e383\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[11]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e7\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[11]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"PRODUCT_DATE\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e1290\u003c/Y\u003e\u003cW\u003e345\u003c/W\u003e\u003cH\u003e133\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[000000]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Static=\"0\" Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e6\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[000000]]\u003e\u003c/Default\u003e\u003cFixedLen/\u003e\u003cVarText\u003e\u003cUserEnterData\u003e\u003c![CDATA[000000]]\u003e\u003c/UserEnterData\u003e\u003c/VarText\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e3\u003c/Pitch\u003e\u003cXMag\u003e108\u003c/XMag\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"C2\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e1489\u003c/Y\u003e\u003cW\u003e383\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[10]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e2\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[10]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"SN\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e1919\u003c/Y\u003e\u003cW\u003e575\u003c/W\u003e\u003cH\u003e133\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[0000000000  ]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Static=\"0\" Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e12\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[0000000000]]\u003e\u003c/Default\u003e\u003cFixedLen/\u003e\u003cVarText\u003e\u003cMask\u003e\u003c![CDATA[0-9,A-Z,a-z]]\u003e\u003c/Mask\u003e\u003cUserEnterData\u003e\u003c![CDATA[0000000000]]\u003e\u003c/UserEnterData\u003e\u003c/VarText\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e3\u003c/Pitch\u003e\u003cXMag\u003e75\u003c/XMag\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n",
+                      "sourceSha256":  "FE3688AA3F7C318ABD48C98480398BED1AEAB1AB5A489923A3B371B565A684E4",
+                      "sourceSha256After":  "FE3688AA3F7C318ABD48C98480398BED1AEAB1AB5A489923A3B371B565A684E4"
+                  },
+                  {
+                      "name":  "Glyph-party-with-box-counter-20261021.ciff",
+                      "kind":  "actual-web-ui-download",
+                      "file":  "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\party-template-20261021\\exported-web\\Glyph-party-with-box-counter-20261021.ciff",
+                      "status":  "ok",
+                      "loadedToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW6NVVIKEV4BRrNNCCVJQOSEFY87iL",
+                      "loadedFields":  [
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  1,
+                                               "fieldType":  1,
+                                               "displayed":  1,
+                                               "name":  "Field00",
+                                               "calculatedDataUnits":  [
+                                                                           126,
+                                                                           49,
+                                                                           48,
+                                                                           49,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           49,
+                                                                           49,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           49,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           32,
+                                                                           32,
+                                                                           50,
+                                                                           49,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  2,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "C1",
+                                               "calculatedDataUnits":  [
+                                                                           126,
+                                                                           49,
+                                                                           48,
+                                                                           49
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  3,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "GTIN2",
+                                               "calculatedDataUnits":  [
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  4,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "C3",
+                                               "calculatedDataUnits":  [
+                                                                           49,
+                                                                           49
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  5,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "PRODUCT_DATE",
+                                               "calculatedDataUnits":  [
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  6,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "C2",
+                                               "calculatedDataUnits":  [
+                                                                           49,
+                                                                           48
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  7,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "SN",
+                                               "calculatedDataUnits":  [
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           32,
+                                                                           32
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  8,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "C4",
+                                               "calculatedDataUnits":  [
+                                                                           50,
+                                                                           49
+                                                                       ]
+                                           },
+                                           {
+                                               "subImageIndex":  1,
+                                               "index":  9,
+                                               "fieldType":  0,
+                                               "displayed":  0,
+                                               "name":  "BOX_COUNTER",
+                                               "calculatedDataUnits":  [
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48,
+                                                                           48
+                                                                       ]
+                                           }
+                                       ],
+                      "afterNativeResolve":  [
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  1,
+                                                     "fieldType":  1,
+                                                     "displayed":  1,
+                                                     "name":  "Field00",
+                                                     "calculatedDataUnits":  [
+                                                                                 126,
+                                                                                 49,
+                                                                                 48,
+                                                                                 49,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 49,
+                                                                                 49,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 49,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 32,
+                                                                                 32,
+                                                                                 50,
+                                                                                 49,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  2,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "C1",
+                                                     "calculatedDataUnits":  [
+                                                                                 126,
+                                                                                 49,
+                                                                                 48,
+                                                                                 49
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  3,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "GTIN2",
+                                                     "calculatedDataUnits":  [
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  4,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "C3",
+                                                     "calculatedDataUnits":  [
+                                                                                 49,
+                                                                                 49
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  5,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "PRODUCT_DATE",
+                                                     "calculatedDataUnits":  [
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  6,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "C2",
+                                                     "calculatedDataUnits":  [
+                                                                                 49,
+                                                                                 48
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  7,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "SN",
+                                                     "calculatedDataUnits":  [
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 32,
+                                                                                 32
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  8,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "C4",
+                                                     "calculatedDataUnits":  [
+                                                                                 50,
+                                                                                 49
+                                                                             ]
+                                                 },
+                                                 {
+                                                     "subImageIndex":  1,
+                                                     "index":  9,
+                                                     "fieldType":  0,
+                                                     "displayed":  0,
+                                                     "name":  "BOX_COUNTER",
+                                                     "calculatedDataUnits":  [
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48,
+                                                                                 48
+                                                                             ]
+                                                 }
+                                             ],
+                      "validate":  "00000000",
+                      "validate2":  "00000000",
+                      "expectedValidation":  "00000000",
+                      "regeneratedToken":  "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTALr8SU4LyD7_KDaLHTF7C4ToALS7GoLPJ3FRQN_VPh1AyAUjTLjGNr6GwECjQDo93sLTA8ArMN7L72T3b8EtP6H31qVU3JR!TIjM8nBEQ9NuGDeP6L2N0FTZH",
+                      "regeneratedXml":  "\u003c?xml version=\"1.0\" encoding=\"UTF-16\"?\u003e\r\n\u003cImageDesign Version=\"23\" xml:space=\"default\"\u003e\u003cHeader DesignedFor=\"DataFlex 6530(53mm) - Continuous\"\u003e\u003cClStVersionInfo\u003ePyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTALr8SU4LyD7_KDaLHTF7C4ToALS7GoLPJ3FRQN_VPh1AyAUjTLjGNr6GwECjQDo93sLTA8ArMN7L72T3b8EtP6H31qVU3JR!TIjM8nBEQ9NuGDeP6L2N0FTZH\u003c/ClStVersionInfo\u003e\u003c/Header\u003e\u003cSubImage ImageReference=\"1\"\u003e\u003cSubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"\u003e\u003cImageWidth\u003e1300\u003c/ImageWidth\u003e\u003cImageHeight\u003e1300\u003c/ImageHeight\u003e\u003cMaxImageWidth\u003e5333\u003c/MaxImageWidth\u003e\u003cMaxImageHeight\u003e7500\u003c/MaxImageHeight\u003e\u003cXRes\u003e0.120000\u003c/XRes\u003e\u003cCurrentOrientation\u003e0\u003c/CurrentOrientation\u003e\u003c/SubHeader\u003e\u003cField Name=\"Field00\"\u003e\u003cFldType\u003eBarcode\u003c/FldType\u003e\u003cCLSID\u003e{7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F}\u003c/CLSID\u003e\u003cX\u003e200\u003c/X\u003e\u003cY\u003e200\u003c/Y\u003e\u003cW\u003e1100\u003c/W\u003e\u003cH\u003e1100\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[~1010000000000000011000000100000000000  2100000]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[~101]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"C1\"/\u003e\u003c/Object\u003e\u003cObject Index=\"1\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[00000000000000]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"GTIN2\"/\u003e\u003c/Object\u003e\u003cObject Index=\"2\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[11]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"C3\"/\u003e\u003c/Object\u003e\u003cObject Index=\"3\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[000000]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"PRODUCT_DATE\"/\u003e\u003c/Object\u003e\u003cObject Index=\"4\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[10]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"C2\"/\u003e\u003c/Object\u003e\u003cObject Index=\"5\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[0000000000  ]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"SN\"/\u003e\u003c/Object\u003e\u003cObject Index=\"6\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[21]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"C4\"/\u003e\u003c/Object\u003e\u003cObject Index=\"7\" Reference=\"\"\u003e\u003cDataType\u003e5\u003c/DataType\u003e\u003cDefault\u003e\u003c![CDATA[00000]]\u003e\u003c/Default\u003e\u003cSrcField SrcFieldName=\"BOX_COUNTER\"/\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cBarcode\u003e\u003cBcH\u003e1100\u003c/BcH\u003e\u003cHR\u003e\u003cHRFont/\u003e\u003c/HR\u003e\u003cQuietMargin\u003e0\u003c/QuietMargin\u003e\u003cDataMatrix\u003e\u003cModuleSize\u003e50\u003c/ModuleSize\u003e\u003cSymbolSize\u003e22X22\u003c/SymbolSize\u003e\u003c/DataMatrix\u003e\u003c/Barcode\u003e\u003c/Field\u003e\u003cField Name=\"C1\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e0\u003c/Y\u003e\u003cW\u003e783\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[~101]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e4\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[~101]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"GTIN2\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e430\u003c/Y\u003e\u003cW\u003e2683\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[00000000000000]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Static=\"0\" Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e14\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[00000000000000]]\u003e\u003c/Default\u003e\u003cFixedLen/\u003e\u003cVarText\u003e\u003cUserEnterData\u003e\u003c![CDATA[00000000000000]]\u003e\u003c/UserEnterData\u003e\u003c/VarText\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"C3\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e860\u003c/Y\u003e\u003cW\u003e383\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[11]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e7\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[11]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"PRODUCT_DATE\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e1290\u003c/Y\u003e\u003cW\u003e345\u003c/W\u003e\u003cH\u003e133\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[000000]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Static=\"0\" Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e6\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[000000]]\u003e\u003c/Default\u003e\u003cFixedLen/\u003e\u003cVarText\u003e\u003cUserEnterData\u003e\u003c![CDATA[000000]]\u003e\u003c/UserEnterData\u003e\u003c/VarText\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e3\u003c/Pitch\u003e\u003cXMag\u003e108\u003c/XMag\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"C2\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e1489\u003c/Y\u003e\u003cW\u003e383\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[10]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e2\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[10]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"SN\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e1919\u003c/Y\u003e\u003cW\u003e575\u003c/W\u003e\u003cH\u003e133\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[0000000000  ]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Static=\"0\" Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e12\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[0000000000]]\u003e\u003c/Default\u003e\u003cFixedLen/\u003e\u003cVarText\u003e\u003cMask\u003e\u003c![CDATA[0-9,A-Z,a-z]]\u003e\u003c/Mask\u003e\u003cUserEnterData\u003e\u003c![CDATA[0000000000]]\u003e\u003c/UserEnterData\u003e\u003c/VarText\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e3\u003c/Pitch\u003e\u003cXMag\u003e75\u003c/XMag\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"C4\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e2118\u003c/Y\u003e\u003cW\u003e383\u003c/W\u003e\u003cH\u003e392\u003c/H\u003e\u003cLn\u003e1\u003c/Ln\u003e\u003cCalcData\u003e\u003c![CDATA[21]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e2\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[21]]\u003e\u003c/Default\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e10\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003cField Name=\"BOX_COUNTER\"\u003e\u003cFldType\u003eFixedText\u003c/FldType\u003e\u003cDisplayed\u003e0\u003c/Displayed\u003e\u003cX\u003e5483\u003c/X\u003e\u003cY\u003e2548\u003c/Y\u003e\u003cW\u003e288\u003c/W\u003e\u003cH\u003e133\u003c/H\u003e\u003cCalcData\u003e\u003c![CDATA[00000]]\u003e\u003c/CalcData\u003e\u003cLoggedField\u003e\u003c/LoggedField\u003e\u003cData\u003e\u003cObject Static=\"0\" Reference=\"\"\u003e\u003cDataType\u003e0\u003c/DataType\u003e\u003cMaxNoOfChars\u003e5\u003c/MaxNoOfChars\u003e\u003cDefault\u003e\u003c![CDATA[00000]]\u003e\u003c/Default\u003e\u003cFixedLen/\u003e\u003cVarText\u003e\u003cUserEnterData\u003e\u003c![CDATA[00000]]\u003e\u003c/UserEnterData\u003e\u003c/VarText\u003e\u003c/Object\u003e\u003c/Data\u003e\u003cText\u003e\u003cFont\u003e\u003cPitch\u003e3\u003c/Pitch\u003e\u003c/Font\u003e\u003c/Text\u003e\u003c/Field\u003e\u003c/SubImage\u003e\u003cGenericSettings\u003e\u003cImageMapping\u003e\u003cMap SubIMageRef=\"1\"\u003e1\u003c/Map\u003e\u003c/ImageMapping\u003e\u003c/GenericSettings\u003e\u003c/ImageDesign\u003e\r\n",
+                      "sourceSha256":  "7F00BCBADCD69D5C5C06915DD7B3BB7A2E8EEA4DAC4272D7D00586785470CF04",
+                      "sourceSha256After":  "7F00BCBADCD69D5C5C06915DD7B3BB7A2E8EEA4DAC4272D7D00586785470CF04"
+                  }
+              ]
+}

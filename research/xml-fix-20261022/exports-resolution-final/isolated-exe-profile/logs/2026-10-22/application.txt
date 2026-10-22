@@ -1,0 +1,1686 @@
+====================================================================================================
+[2026-10-22 16:03:23.940 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: APPLICATION_SESSION_STARTED
+Message: Glyph Studio logging session started.
+Source: electron-main
+Details:
+  {
+    application: {
+      appPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-resolution-fix-20261022\\win-unpacked\\resources\\app.asar',
+      logsDirectory: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs',
+      name: 'project-glyph',
+      packaged: true,
+      userDataPath: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile',
+      version: '2.3.1'
+    },
+    operatingSystem: {
+      architecture: 'x64',
+      hostname: 'DESKTOP-9RR9GPQ',
+      locale: 'ru',
+      platform: 'win32',
+      release: '10.0.19045',
+      timezone: 'Europe/Moscow'
+    },
+    process: {
+      arguments: [
+        'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\desktop-release-resolution-fix-20261022\\win-unpacked\\Glyph Studio.exe',
+        '--remote-debugging-address=127.0.0.1',
+        '--remote-debugging-port=52539',
+        '--user-data-dir=C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile',
+        '--disable-gpu',
+        '--window-position=-32000,-32000'
+      ],
+      pid: 38460
+    },
+    runtime: {
+      chrome: '150.0.7871.46',
+      electron: '43.0.0',
+      node: '24.17.0',
+      v8: '15.0.245.13-electron.0'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:23.991 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: MAIN_WINDOW_CREATED
+Message: Main application window was created.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    developmentServer: null,
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-22 16:03:24.192 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: RENDERER_LOADED
+Message: Renderer finished loading.
+Source: electron-main
+Details:
+  {
+    url: 'glyph://app/index.html',
+    windowId: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:24.243 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: RUNTIME_BOOT_STARTED
+Message: Начата загрузка модулей редактора.
+Source: react-runtime-loader
+Details:
+  {
+    moduleCount: 21,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:24.260 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_DEPENDENCY_LOADED
+Message: Загружена библиотека Konva.
+Source: react-runtime-loader
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/libs/konva.min.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.263 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CIFF_EDITOR_CORE_READY'
+    ],
+    key: 'core',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/00-core.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.264 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CIFF_COMPATIBILITY_READY'
+    ],
+    key: 'ciffCompatibility',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/01-ciff-compatibility.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.266 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'getEffectiveTextFontFamily',
+      'getTextCanvasFontFamily'
+    ],
+    key: 'fonts',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/02-fonts.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.269 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initTextFontCatalog',
+      'getAvailableTextFontFamilies'
+    ],
+    key: 'fontCatalog',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/03-font-catalog.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.274 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: MAIN_WINDOW_READY
+Message: Main window is ready and will be shown.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: false,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-22 16:03:24.275 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'makeNativeTextPreviewNode'
+    ],
+    key: 'nativeTextPreview',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/04-native-text-preview.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.288 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: MAIN_WINDOW_FOCUSED
+Message: Main window received focus.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: true,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-22 16:03:24.304 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'CEncryption',
+      'CLST_ENCRYPTION_READY'
+    ],
+    key: 'clstEncryption',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/encryption.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.310 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'resolveClstTagData',
+      'CLST_TAG_DATA_READY'
+    ],
+    key: 'clstTagData',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/tag-data.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.311 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'prepareCiffCalculatedData'
+    ],
+    key: 'clstCalculatedData',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/calculated-data.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.313 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'generateClStVersionInfo',
+      'CLST_VERSION_INFO_READY'
+    ],
+    key: 'clstVersionInfo',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/clst/version-info.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.315 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      't',
+      'initUiLanguageControls'
+    ],
+    key: 'i18n',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/05-i18n.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.316 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'setUiTheme',
+      'initUiThemeControls'
+    ],
+    key: 'theme',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/06-theme.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.317 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'appLogger',
+      'initAppLogging'
+    ],
+    key: 'logging',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/07-logging.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.320 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initCanvas',
+      'initUI'
+    ],
+    key: 'canvasUi',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/10-canvas-ui.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.322 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'loadXml',
+      'parseFields'
+    ],
+    key: 'xmlLoad',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/20-xml-load.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.325 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'renderAll',
+      'startDynamicFieldValueTicker'
+    ],
+    key: 'rendering',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/30-rendering.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.327 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'renderSelectionPanels',
+      'addField'
+    ],
+    key: 'editor',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/40-editor.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.329 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'generateTemplatePreset',
+      'initTemplatePresetBuilder'
+    ],
+    key: 'templatePreset',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/45-template-preset.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.331 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'inputText',
+      'snapPoint'
+    ],
+    key: 'inputs',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/50-inputs.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.339 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'pushHistory',
+      'patchXmlLosslessV2'
+    ],
+    key: 'historySave',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/60-history-save.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.343 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [
+      'initTemplateTabs',
+      'switchTemplateTab'
+    ],
+    key: 'templateTabs',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/70-template-tabs.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.345 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: RUNTIME_MODULE_LOADED
+Message: Модуль редактора успешно загружен.
+Source: react-runtime-loader
+Details:
+  {
+    checkedSymbols: [],
+    key: 'bootstrap',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: '/modules/90-bootstrap.js'
+  }
+====================================================================================================
+[2026-10-22 16:03:24.345 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: RUNTIME_BOOT_COMPLETED
+Message: Все модули редактора успешно загружены.
+Source: react-runtime-loader
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: null
+  }
+====================================================================================================
+[2026-10-22 16:03:24.345 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: RENDERER_LOGGING_INITIALIZED
+Message: Система логирования интерфейса инициализирована.
+Source: renderer
+Details:
+  {
+    logInfo: {
+      appVersion: '2.3.1',
+      baseDir: 'C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-resolution-final\\isolated-exe-profile\\logs',
+      files: {
+        actions: 'user-actions.txt',
+        application: 'application.txt',
+        errors: 'errors.txt',
+        files: 'file-operations.txt',
+        state: 'application-state.txt'
+      },
+      lastWriteError: null,
+      sessionId: '20261022-160323-pid38460'
+    },
+    loggingBridgeAvailable: true,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    runtime: {
+      deviceMemory: 16,
+      hardwareConcurrency: 12,
+      language: 'ru',
+      languages: [
+        'ru',
+        'en-US'
+      ],
+      platform: 'Win32',
+      screen: {
+        availableHeight: 1040,
+        availableWidth: 1920,
+        colorDepth: 24,
+        height: 1080,
+        width: 1920
+      },
+      touchPoints: 0,
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) project-glyph/2.3.1 Chrome/150.0.7871.46 Electron/43.0.0 Safari/537.36'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:25.751 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: INITIAL_EMPTY_TAB_CREATED
+Message: Создана начальная пустая вкладка шаблона.
+Source: renderer
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'Untitled template'
+  }
+====================================================================================================
+[2026-10-22 16:03:25.771 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:26.436 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 3,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:26.650 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 3,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:26.875 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 3,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:27.088 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 3,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:27.317 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 3,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:27.558 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 3,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:27.770 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:27.997 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 3,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.018 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.028 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 7,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Field00'
+    ],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.277 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 3,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.297 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.305 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 9,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [
+      'Field00'
+    ],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.546 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.569 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.585 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.601 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.618 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.633 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.649 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.665 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.681 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.697 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.712 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.728 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.744 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.773 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.793 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.812 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.831 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.848 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.872 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.889 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.907 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.925 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.943 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.961 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:28.984 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.019 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.040 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.063 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.083 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.102 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.121 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.141 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.159 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.175 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.192 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.209 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.227 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.257 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.273 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.289 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.305 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.323 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.346 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.364 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.381 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.401 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.419 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.435 +03:00] [DEBUG] [session: 20261022-160323-pid38460]
+Event: HISTORY_SNAPSHOT_CREATED
+Message: Создан начальный снимок истории шаблона.
+Source: renderer-history
+Details:
+  {
+    fieldCount: 0,
+    initial: true,
+    redoDepth: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    undoDepth: 1
+  }
+====================================================================================================
+[2026-10-22 16:03:29.518 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: APPLICATION_SESSION_ENDING
+Message: Application is shutting down.
+Source: electron-main
+Details:
+  {
+    openWindowCount: 1,
+    processUptimeSeconds: 5.677
+  }
+====================================================================================================
+[2026-10-22 16:03:29.519 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: MAIN_WINDOW_CLOSING
+Message: Main window is closing.
+Source: electron-main
+Details:
+  {
+    bounds: {
+      height: 800,
+      width: 1280,
+      x: 320,
+      y: 120
+    },
+    contentBounds: '[REDACTED]',
+    focused: true,
+    fullScreen: false,
+    id: 1,
+    maximized: false,
+    minimized: false,
+    visible: false
+  }
+====================================================================================================
+[2026-10-22 16:03:29.520 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: RENDERER_UNLOADING
+Message: Интерфейс приложения выгружается.
+Source: renderer
+Details:
+  {
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    value: null
+  }

@@ -1,0 +1,29 @@
+45007a43 PUSH EBP
+45007a44 MOV EBP,ESP
+45007a46 MOV EDX,dword ptr [EBP + 0x8]
+45007a49 PUSH ESI
+45007a4a MOV ESI,dword ptr [EDX]
+45007a4c MOV EAX,dword ptr [ESI + 0x8]
+45007a4f MOV dword ptr [EDX],EAX
+45007a51 MOV EAX,dword ptr [ESI + 0x8]
+45007a54 CMP byte ptr [EAX + 0xd],0x0
+45007a58 JNZ 0x45007a5d
+45007a5a MOV dword ptr [EAX + 0x4],EDX
+45007a5d MOV EAX,dword ptr [EDX + 0x4]
+45007a60 MOV dword ptr [ESI + 0x4],EAX
+45007a63 MOV EAX,dword ptr [ECX]
+45007a65 CMP EDX,dword ptr [EAX + 0x4]
+45007a68 JNZ 0x45007a6f
+45007a6a MOV dword ptr [EAX + 0x4],ESI
+45007a6d JMP 0x45007a7e
+45007a6f MOV EAX,dword ptr [EDX + 0x4]
+45007a72 CMP EDX,dword ptr [EAX + 0x8]
+45007a75 JNZ 0x45007a7c
+45007a77 MOV dword ptr [EAX + 0x8],ESI
+45007a7a JMP 0x45007a7e
+45007a7c MOV dword ptr [EAX],ESI
+45007a7e MOV dword ptr [ESI + 0x8],EDX
+45007a81 MOV dword ptr [EDX + 0x4],ESI
+45007a84 POP ESI
+45007a85 POP EBP
+45007a86 RET 0x4

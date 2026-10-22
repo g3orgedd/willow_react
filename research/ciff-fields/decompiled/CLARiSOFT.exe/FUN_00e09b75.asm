@@ -1,0 +1,20 @@
+00e09b75 PUSH 0xc
+00e09b77 MOV EAX,0xee716e
+00e09b7c CALL 0x00ec9ec3
+00e09b81 MOV ESI,ECX
+00e09b83 MOV dword ptr [EBP + -0x18],ESI
+00e09b86 XOR EBX,EBX
+00e09b88 MOV dword ptr [ESI],EBX
+00e09b8a MOV dword ptr [ESI + 0x4],EBX
+00e09b8d CALL 0x00e0d154
+00e09b92 MOV dword ptr [ESI],EAX
+00e09b94 MOV byte ptr [EBP + -0x14],BL
+00e09b97 MOV ECX,ESI
+00e09b99 PUSH dword ptr [EBP + -0x14]
+00e09b9c MOV dword ptr [EBP + -0x4],EBX
+00e09b9f PUSH dword ptr [EBP + 0x8]
+00e09ba2 MOV byte ptr [EBP + -0x4],0x1
+00e09ba6 CALL 0x00e082fa
+00e09bab MOV EAX,ESI
+00e09bad CALL 0x00ec9e28
+00e09bb2 RET 0x8

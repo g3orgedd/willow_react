@@ -1,0 +1,2 @@
+4503af3e LEA ECX,[EBP + 0xfffffee8]
+4503af44 JMP 0x45002256

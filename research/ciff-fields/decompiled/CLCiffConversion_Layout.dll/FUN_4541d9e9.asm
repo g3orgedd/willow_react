@@ -1,0 +1,10 @@
+4541d9e9 PUSH ESI
+4541d9ea MOV ESI,ECX
+4541d9ec CMP dword ptr [ESI + 0x4],0x0
+4541d9f0 JNZ 0x4541d9fc
+4541d9f2 PUSH dword ptr [ESI]
+4541d9f4 CALL 0x454295e0
+4541d9f9 MOV dword ptr [ESI + 0x4],EAX
+4541d9fc MOV EAX,dword ptr [ESI + 0x4]
+4541d9ff POP ESI
+4541da00 RET

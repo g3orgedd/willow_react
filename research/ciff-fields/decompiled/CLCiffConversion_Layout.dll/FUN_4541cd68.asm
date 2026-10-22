@@ -1,0 +1,30 @@
+4541cd68 PUSH 0x8
+4541cd6a MOV EAX,0x45444fc1
+4541cd6f CALL 0x4542a975
+4541cd74 XOR EBX,EBX
+4541cd76 MOV dword ptr [EBP + -0x10],EBX
+4541cd79 MOV ESI,dword ptr [ECX]
+4541cd7b MOV dword ptr [EBP + -0x4],EBX
+4541cd7e MOV dword ptr [EBP + -0x14],ESI
+4541cd81 TEST ESI,ESI
+4541cd83 JZ 0x4541cd8b
+4541cd85 MOV EAX,dword ptr [ESI]
+4541cd87 PUSH ESI
+4541cd88 CALL dword ptr [EAX + 0x4]
+4541cd8b MOV EDI,dword ptr [EBP + 0x8]
+4541cd8e XOR EAX,EAX
+4541cd90 INC EAX
+4541cd91 MOV dword ptr [EBP + -0x4],EAX
+4541cd94 MOV dword ptr [EDI],EBX
+4541cd96 MOV ECX,dword ptr [ESI]
+4541cd98 PUSH EDI
+4541cd99 PUSH ESI
+4541cd9a MOV dword ptr [EBP + -0x10],EAX
+4541cd9d CALL dword ptr [ECX + 0xac]
+4541cda3 MOV ECX,dword ptr [ESI]
+4541cda5 PUSH ESI
+4541cda6 MOV byte ptr [EBP + -0x4],BL
+4541cda9 CALL dword ptr [ECX + 0x8]
+4541cdac MOV EAX,EDI
+4541cdae CALL 0x4542a943
+4541cdb3 RET 0x4

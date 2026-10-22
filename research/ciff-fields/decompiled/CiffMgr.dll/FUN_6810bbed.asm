@@ -1,0 +1,17 @@
+6810bbed PUSH 0x4
+6810bbef MOV EAX,0x68143243
+6810bbf4 CALL 0x681320f5
+6810bbf9 MOV ESI,ECX
+6810bbfb MOV dword ptr [EBP + -0x10],ESI
+6810bbfe AND dword ptr [ESI + 0x4],0x0
+6810bc02 LEA ECX,[ESI + 0xc]
+6810bc05 PUSH dword ptr [EBP + 0x8]
+6810bc08 MOV dword ptr [ESI],0x68149c6c
+6810bc0e CALL 0x6810bc2c
+6810bc13 MOV ECX,dword ptr [0x6816703c]
+6810bc19 AND dword ptr [EBP + -0x4],0x0
+6810bc1d MOV EAX,dword ptr [ECX]
+6810bc1f CALL dword ptr [EAX + 0x4]
+6810bc22 MOV EAX,ESI
+6810bc24 CALL 0x681320c3
+6810bc29 RET 0x4

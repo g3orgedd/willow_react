@@ -1,0 +1,4 @@
+42034e3a AND dword ptr [ECX + 0x8],0x0
+42034e3e MOV EAX,ECX
+42034e40 MOV dword ptr [ECX],0x4209b3fc
+42034e46 RET

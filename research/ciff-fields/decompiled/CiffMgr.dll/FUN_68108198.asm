@@ -1,0 +1,3 @@
+68108198 PUSH dword ptr [ECX + 0x4]
+6810819b CALL dword ptr [0x68147190]
+681081a1 RET

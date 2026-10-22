@@ -1,0 +1,317 @@
+{
+  "name": "CiffDateFormats.dll",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffDateFormats.dll",
+  "size": 141312,
+  "sha256": "dfda165a8ea544b125425a256058bfe938e3adccfb786c75621bf9020c055ffb",
+  "imageBase": "10000000",
+  "exports": [
+    {
+      "name": "DllCanUnloadNow",
+      "ordinal": 1,
+      "va": "10005606"
+    },
+    {
+      "name": "DllGetClassObject",
+      "ordinal": 2,
+      "va": "10005612"
+    },
+    {
+      "name": "DllRegisterServer",
+      "ordinal": 3,
+      "va": "1000565f"
+    },
+    {
+      "name": "DllUnregisterServer",
+      "ordinal": 4,
+      "va": "1000566e"
+    }
+  ],
+  "imports": [
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "FreeLibrary",
+        "GetModuleFileNameW",
+        "GetModuleHandleW",
+        "GetProcAddress",
+        "LoadLibraryExW",
+        "LoadResource",
+        "DisableThreadLibraryCalls",
+        "lstrcmpiW",
+        "FindResourceW",
+        "MultiByteToWideChar",
+        "CreateFileW",
+        "FlushFileBuffers",
+        "WriteConsoleW",
+        "DeleteCriticalSection",
+        "LeaveCriticalSection",
+        "EnterCriticalSection",
+        "GetLastError",
+        "RaiseException",
+        "DecodePointer",
+        "EncodePointer",
+        "SizeofResource",
+        "InitializeCriticalSectionAndSpinCount",
+        "SetStdHandle",
+        "GetStringTypeW",
+        "SetFilePointerEx",
+        "GetConsoleMode",
+        "GetConsoleCP",
+        "GetCPInfo",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "LCMapStringW",
+        "IsDebuggerPresent",
+        "OutputDebugStringW",
+        "RtlUnwind",
+        "IsProcessorFeaturePresent",
+        "HeapFree",
+        "HeapAlloc",
+        "GetCommandLineA",
+        "GetCurrentThreadId",
+        "ExitProcess",
+        "GetModuleHandleExW",
+        "WideCharToMultiByte",
+        "HeapSize",
+        "SetLastError",
+        "UnhandledExceptionFilter",
+        "SetUnhandledExceptionFilter",
+        "Sleep",
+        "GetCurrentProcess",
+        "TerminateProcess",
+        "TlsAlloc",
+        "TlsGetValue",
+        "TlsSetValue",
+        "TlsFree",
+        "GetStartupInfoW",
+        "GetProcessHeap",
+        "GetStdHandle",
+        "WriteFile",
+        "HeapReAlloc",
+        "GetFileType",
+        "GetModuleFileNameA",
+        "QueryPerformanceCounter",
+        "GetCurrentProcessId",
+        "GetSystemTimeAsFileTime",
+        "GetEnvironmentStringsW",
+        "FreeEnvironmentStringsW",
+        "CloseHandle"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "CharNextW"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "RegQueryInfoKeyW",
+        "RegOpenKeyExW",
+        "RegEnumKeyExW",
+        "RegDeleteValueW",
+        "RegDeleteKeyW",
+        "RegCreateKeyExW",
+        "RegCloseKey",
+        "RegSetValueExW"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "CoCreateInstance",
+        "CoTaskMemRealloc",
+        "CoTaskMemFree",
+        "StringFromGUID2",
+        "CoTaskMemAlloc"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "UnRegisterTypeLib",
+        "RegisterTypeLib",
+        "LoadTypeLib",
+        "VarUI4FromStr",
+        "SysStringLen",
+        "SysFreeString",
+        "SysAllocString",
+        "VariantClear",
+        "VariantTimeToSystemTime",
+        "SystemTimeToVariantTime"
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "10017eb8",
+      "fileOffset": 94392,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "10017f28",
+      "fileOffset": 94504,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "1001b2b0",
+      "fileOffset": 107696,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "1001b688",
+      "fileOffset": 108680,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "1001b764",
+      "fileOffset": 108900,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "1001d7d0",
+      "fileOffset": 117200,
+      "encoding": "ascii",
+      "text": "CiffDateFormats.DLL"
+    },
+    {
+      "va": "1001d7f4",
+      "fileOffset": 117236,
+      "encoding": "ascii",
+      "text": "DllGetClassObject"
+    },
+    {
+      "va": "10020470",
+      "fileOffset": 125040,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "100204d0",
+      "fileOffset": 125136,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "10020514",
+      "fileOffset": 125204,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "1002053c",
+      "fileOffset": 125244,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+    },
+    {
+      "va": "1002057c",
+      "fileOffset": 125308,
+      "encoding": "ascii",
+      "text": ".?AUIDateFormatObject@@"
+    },
+    {
+      "va": "1002059c",
+      "fileOffset": 125340,
+      "encoding": "ascii",
+      "text": ".?AUIDateFormatObject2@@"
+    },
+    {
+      "va": "10020644",
+      "fileOffset": 125508,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCBarillaJulianDate@@@ATL@@"
+    },
+    {
+      "va": "10020718",
+      "fileOffset": 125720,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCMasterfoodsSingleDigitYear@@@ATL@@"
+    },
+    {
+      "va": "100207d0",
+      "fileOffset": 125904,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCJulianDate401@@@ATL@@"
+    },
+    {
+      "va": "10020884",
+      "fileOffset": 126084,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCDiageoJulianDate@@@ATL@@"
+    },
+    {
+      "va": "10024928",
+      "fileOffset": 132904,
+      "encoding": "ascii",
+      "text": "CIFFDATEFORMATSLibWW"
+    },
+    {
+      "va": "10024968",
+      "fileOffset": 132968,
+      "encoding": "ascii",
+      "text": "IDateFormatObject2WW"
+    },
+    {
+      "va": "10024988",
+      "fileOffset": 133000,
+      "encoding": "ascii",
+      "text": "IDateFormatObjectWWW"
+    },
+    {
+      "va": "10024a8e",
+      "fileOffset": 133262,
+      "encoding": "ascii",
+      "text": "CiffDateFormats 1.0 Type LibraryWW"
+    },
+    {
+      "va": "10024ace",
+      "fileOffset": 133326,
+      "encoding": "ascii",
+      "text": "IDateFormatObject2 InterfaceWW"
+    },
+    {
+      "va": "10024aee",
+      "fileOffset": 133358,
+      "encoding": "ascii",
+      "text": "IDateFormatObject InterfaceWWW"
+    },
+    {
+      "va": "100232f0",
+      "fileOffset": 127216,
+      "encoding": "utf-16-le",
+      "text": "CiffDateFormats Module"
+    },
+    {
+      "va": "10023378",
+      "fileOffset": 127352,
+      "encoding": "utf-16-le",
+      "text": "CIFFDATEFORMATS"
+    },
+    {
+      "va": "10023408",
+      "fileOffset": 127496,
+      "encoding": "utf-16-le",
+      "text": "CIFFDATEFORMATS.DLL"
+    },
+    {
+      "va": "10023450",
+      "fileOffset": 127568,
+      "encoding": "utf-16-le",
+      "text": "CiffDateFormats Module"
+    },
+    {
+      "va": "10024cda",
+      "fileOffset": 133850,
+      "encoding": "utf-16-le",
+      "text": "CiffDateFormats"
+    }
+  ]
+}

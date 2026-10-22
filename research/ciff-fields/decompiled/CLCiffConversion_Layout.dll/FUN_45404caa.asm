@@ -1,0 +1,7 @@
+45404caa MOV ECX,dword ptr [ECX]
+45404cac TEST ECX,ECX
+45404cae JZ 0x45404cb6
+45404cb0 MOV EAX,dword ptr [ECX]
+45404cb2 PUSH ECX
+45404cb3 CALL dword ptr [EAX + 0x8]
+45404cb6 RET

@@ -1,0 +1,1500 @@
+{
+  "date": "2026-10-21",
+  "scope": "Production parser/save/geometry, synthetic XML. Existing harness replaces unrelated DOM/Konva; text bounds fall back to stored nominal geometry. This is not a screenshot or native font run.",
+  "cases": [
+    {
+      "name": "Image_small_Max_large_noop",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "600",
+        "ImageHeight": "700",
+        "MaxImageWidth": "2000",
+        "MaxImageHeight": "3000",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "e85c1f86f0ea364bf265a17292ffd1b4ef8a0e796965da518ed8ff77a8558f5c"
+    },
+    {
+      "name": "printed_outside_Max_unchanged",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 2500,
+          "height": 2600,
+          "maxWidth": 1600,
+          "maxHeight": 1600,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 1600,
+          "workspaceHeight": 1600
+        },
+        "canvas": [
+          1600,
+          1600
+        ],
+        "imageTags": {
+          "ImageWidth": "2500",
+          "ImageHeight": "2600",
+          "MaxImageWidth": "1600",
+          "MaxImageHeight": "1600",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 2500,
+          "height": 2600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 192,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 2400,
+              "y": 2500,
+              "w": 100,
+              "h": 100
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 2500,
+          "height": 2600,
+          "maxWidth": 1600,
+          "maxHeight": 1600,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 1600,
+          "workspaceHeight": 1600
+        },
+        "canvas": [
+          1600,
+          1600
+        ],
+        "imageTags": {
+          "ImageWidth": "2500",
+          "ImageHeight": "2600",
+          "MaxImageWidth": "1600",
+          "MaxImageHeight": "1600",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 2500,
+          "height": 2600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 192,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 2400,
+              "y": 2500,
+              "w": 100,
+              "h": 100
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "2500",
+        "ImageHeight": "2600",
+        "MaxImageWidth": "1600",
+        "MaxImageHeight": "1600",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "a80de677d3477b549e998db79ea7491ac9b5aeddc5e8a243a080eaf049281e14"
+    },
+    {
+      "name": "printed_outside_Max_edited",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 2500,
+          "height": 2600,
+          "maxWidth": 1600,
+          "maxHeight": 1600,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 1600,
+          "workspaceHeight": 1600
+        },
+        "canvas": [
+          1600,
+          1600
+        ],
+        "imageTags": {
+          "ImageWidth": "2500",
+          "ImageHeight": "2600",
+          "MaxImageWidth": "1600",
+          "MaxImageHeight": "1600",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 2500,
+          "height": 2600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 192,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 2400,
+              "y": 2500,
+              "w": 100,
+              "h": 100
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 2500,
+          "height": 2600,
+          "maxWidth": 1600,
+          "maxHeight": 1600,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 1600,
+          "workspaceHeight": 1600
+        },
+        "canvas": [
+          1600,
+          1600
+        ],
+        "imageTags": {
+          "ImageWidth": "2500",
+          "ImageHeight": "2600",
+          "MaxImageWidth": "1600",
+          "MaxImageHeight": "1600",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 2501,
+          "height": 2600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 192,
+          "height": 192,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 2401,
+              "y": 2500,
+              "w": 100,
+              "h": 100
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "2501",
+        "ImageHeight": "2600",
+        "MaxImageWidth": "1600",
+        "MaxImageHeight": "1600",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [
+          "A"
+        ],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": false
+      },
+      "outputSha256": "c6f352f1bbc7c59d81e952370561443b7c1ff78dafe1f67d07832d8df5b08496"
+    },
+    {
+      "name": "printed_inside_move_recomputes_Image_only",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 700,
+          "height": 600,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "700",
+          "ImageHeight": "600",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 700,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 200,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "700",
+        "ImageHeight": "600",
+        "MaxImageWidth": "2000",
+        "MaxImageHeight": "3000",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "93503ba01b31a960a476abcebb18061a8f83ee6ab16cfd493f4c19051ad719d6"
+    },
+    {
+      "name": "hidden_outlier_edited_does_not_change_Image",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          },
+          {
+            "name": "HIDDEN",
+            "printed": false,
+            "geom": {
+              "x": 9000,
+              "y": 10000,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          },
+          {
+            "name": "HIDDEN",
+            "printed": false,
+            "geom": {
+              "x": 9001,
+              "y": 10000,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "600",
+        "ImageHeight": "700",
+        "MaxImageWidth": "2000",
+        "MaxImageHeight": "3000",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "bb04ce52ce092021387d18042afd8e2d4df1c8e341b19e881a4556c1c819edcd"
+    },
+    {
+      "name": "last_printed_removed_retains_Image_fallback",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          },
+          {
+            "name": "HIDDEN",
+            "printed": false,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 700
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "HIDDEN",
+            "printed": false,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "600",
+        "ImageHeight": "700",
+        "MaxImageWidth": "2000",
+        "MaxImageHeight": "3000",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "ae563d228b080544f9fb3953758fd79e1a3ce2faed967ffa4477cec222601573"
+    },
+    {
+      "name": "field_rotation90_extents",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 500,
+          "height": 700
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 90
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 501,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "501",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 501,
+          "height": 700
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 101,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 90
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "501",
+        "ImageHeight": "700",
+        "MaxImageWidth": "2000",
+        "MaxImageHeight": "3000",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "5548d893a44b60380469bf4116ee21a819a8ec8677294f8bffc9225308290021"
+    },
+    {
+      "name": "missing_Max_falls_back_to_Image",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 2100,
+          "height": 3100,
+          "maxWidth": 2100,
+          "maxHeight": 3100,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2100,
+          "workspaceHeight": 3100
+        },
+        "canvas": [
+          2100,
+          3100
+        ],
+        "imageTags": {
+          "ImageWidth": "2100",
+          "ImageHeight": "3100",
+          "MaxImageWidth": null,
+          "MaxImageHeight": null,
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 2100,
+          "height": 3100
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 252,
+          "height": 372,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": []
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 2100,
+          "height": 3100,
+          "maxWidth": 2100,
+          "maxHeight": 3100,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2100,
+          "workspaceHeight": 3100
+        },
+        "canvas": [
+          2100,
+          3100
+        ],
+        "imageTags": {
+          "ImageWidth": "2100",
+          "ImageHeight": "3100",
+          "MaxImageWidth": "2100",
+          "MaxImageHeight": "3100",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 2100,
+          "height": 3100
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 252,
+          "height": 372,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": []
+      },
+      "preparedTags": {
+        "ImageWidth": "2100",
+        "ImageHeight": "3100",
+        "MaxImageWidth": "2100",
+        "MaxImageHeight": "3100",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "9a24d3d13d161a053ec79cfd967f2dac478c7dcd69534e03b8f035c622c8ee63"
+    },
+    {
+      "name": "missing_all_sizes_profile_workspace_but_save_rejects_Image0",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 0,
+          "height": 0,
+          "maxWidth": 5333,
+          "maxHeight": 7500,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 5333,
+          "workspaceHeight": 7500
+        },
+        "canvas": [
+          5333,
+          7500
+        ],
+        "imageTags": {
+          "ImageWidth": null,
+          "ImageHeight": null,
+          "MaxImageWidth": null,
+          "MaxImageHeight": null,
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 0,
+          "height": 0
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 639.96,
+          "height": 900,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": []
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 0,
+          "height": 0,
+          "maxWidth": 5333,
+          "maxHeight": 7500,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 5333,
+          "workspaceHeight": 7500
+        },
+        "canvas": [
+          5333,
+          7500
+        ],
+        "imageTags": {
+          "ImageWidth": null,
+          "ImageHeight": null,
+          "MaxImageWidth": null,
+          "MaxImageHeight": null,
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 0,
+          "height": 0
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 639.96,
+          "height": 900,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": []
+      },
+      "preparedTags": {
+        "ImageWidth": "0",
+        "ImageHeight": "0",
+        "MaxImageWidth": "5333",
+        "MaxImageHeight": "7500",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [
+          "ImageWidth must be a positive integer.",
+          "ImageHeight must be a positive integer."
+        ],
+        "ok": false
+      },
+      "outputSha256": "66cafc69bf5beaeb0c90b70eac77a9259aadea65caa0aa04b377435ecc6fd816"
+    },
+    {
+      "name": "orientation90_metadata_does_not_rotate_workspace",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 90,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "90",
+          "AutoSize": null,
+          "CurrentOrientation": "90"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 90,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "90",
+          "AutoSize": null,
+          "CurrentOrientation": "90"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "600",
+        "ImageHeight": "700",
+        "MaxImageWidth": "2000",
+        "MaxImageHeight": "3000",
+        "ImageRotation": "90",
+        "AutoSize": null,
+        "CurrentOrientation": "90"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "eb1bd7192b3d695c486c7f26a9e3a759e1fb93048726bf318611cf8a8b38ec6e"
+    },
+    {
+      "name": "AutoSize1_preserved_but_not_used_for_workspace",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": "1",
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": "1",
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 600,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": 100,
+              "y": 200,
+              "w": 500,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "600",
+        "ImageHeight": "700",
+        "MaxImageWidth": "2000",
+        "MaxImageHeight": "3000",
+        "ImageRotation": "0",
+        "AutoSize": "1",
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "outputSha256": "812846e28b497ec10dc6e7021db921b7097703a57c27b1f915fa9b388debd776"
+    },
+    {
+      "name": "negative_coordinate_edited_rejected",
+      "loaded": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 1,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": -100,
+              "y": 200,
+              "w": 50,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "afterSave": {
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        },
+        "canvas": [
+          2000,
+          3000
+        ],
+        "imageTags": {
+          "ImageWidth": "600",
+          "ImageHeight": "700",
+          "MaxImageWidth": "2000",
+          "MaxImageHeight": "3000",
+          "ImageRotation": "0",
+          "AutoSize": null,
+          "CurrentOrientation": "0"
+        },
+        "bounds": {
+          "width": 1,
+          "height": 600
+        },
+        "grid": {
+          "x": 0,
+          "y": 0,
+          "width": 240,
+          "height": 360,
+          "fill": "white",
+          "stroke": "rgba(0,0,0,0.2)",
+          "strokeWidth": 1
+        },
+        "fields": [
+          {
+            "name": "A",
+            "printed": true,
+            "geom": {
+              "x": -101,
+              "y": 200,
+              "w": 50,
+              "h": 400
+            },
+            "orientation": 0
+          }
+        ]
+      },
+      "preparedTags": {
+        "ImageWidth": "1",
+        "ImageHeight": "600",
+        "MaxImageWidth": "2000",
+        "MaxImageHeight": "3000",
+        "ImageRotation": "0",
+        "AutoSize": null,
+        "CurrentOrientation": "0"
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [
+          "A"
+        ],
+        "invalidHardwareFieldNames": [
+          "A"
+        ],
+        "structuralErrors": [],
+        "ok": false
+      },
+      "outputSha256": "ed7cbccc4b0478f30cfdd8708e67ec3e909ea471ce00a81dd2b45cbf8f6662f4"
+    }
+  ]
+}

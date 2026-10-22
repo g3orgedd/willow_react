@@ -1,0 +1,33 @@
+{
+  "method": "Actual COM generation compared with independently recovered pipeline; native selected mask is supplied explicitly.",
+  "cases": [
+    {
+      "name": "with-native-clst",
+      "nativeTokenLength": 117,
+      "mask": "00000001",
+      "tagData": "Hello",
+      "exactMatch": true
+    },
+    {
+      "name": "with-native-clst-empty",
+      "nativeTokenLength": 72,
+      "mask": "00000000",
+      "tagData": "",
+      "exactMatch": true
+    },
+    {
+      "name": "native-time-recipe",
+      "nativeTokenLength": 117,
+      "mask": "00000001",
+      "tagData": "08:31",
+      "exactMatch": true
+    },
+    {
+      "name": "native-dm-template",
+      "nativeTokenLength": 252,
+      "mask": "00000001",
+      "tagData": "~1010123456789012821",
+      "exactMatch": true
+    }
+  ]
+}

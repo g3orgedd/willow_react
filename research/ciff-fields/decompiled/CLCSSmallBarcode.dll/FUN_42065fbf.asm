@@ -1,0 +1,17 @@
+42065fbf PUSH ESI
+42065fc0 MOV ESI,ECX
+42065fc2 CALL 0x4200a156
+42065fc7 XOR EAX,EAX
+42065fc9 MOV dword ptr [ESI],0x4208a79c
+42065fcf MOV dword ptr [ESI + 0x10],EAX
+42065fd2 MOV dword ptr [ESI + 0x14],EAX
+42065fd5 MOV dword ptr [ESI + 0x24],EAX
+42065fd8 MOV dword ptr [ESI + 0x28],EAX
+42065fdb MOV dword ptr [ESI + 0x48],EAX
+42065fde MOV dword ptr [ESI + 0x58],EAX
+42065fe1 MOV dword ptr [ESI + 0x5c],EAX
+42065fe4 MOV dword ptr [ESI + 0x6c],EAX
+42065fe7 MOV dword ptr [ESI + 0x100],EAX
+42065fed MOV EAX,ESI
+42065fef POP ESI
+42065ff0 RET

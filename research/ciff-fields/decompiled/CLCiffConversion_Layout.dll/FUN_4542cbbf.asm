@@ -1,0 +1,12 @@
+4542cbbf PUSH EBP
+4542cbc0 MOV EBP,ESP
+4542cbc2 LEA EAX,[EBP + 0x14]
+4542cbc5 PUSH EAX
+4542cbc6 PUSH 0x0
+4542cbc8 PUSH dword ptr [EBP + 0x10]
+4542cbcb PUSH dword ptr [EBP + 0xc]
+4542cbce PUSH dword ptr [EBP + 0x8]
+4542cbd1 CALL 0x4542cdc3
+4542cbd6 ADD ESP,0x14
+4542cbd9 POP EBP
+4542cbda RET

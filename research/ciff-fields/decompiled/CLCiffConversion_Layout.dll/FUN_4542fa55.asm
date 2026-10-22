@@ -1,0 +1,21 @@
+4542fa55 MOV EAX,dword ptr [EDX + 0x4]
+4542fa58 AND EAX,0x7ff00000
+4542fa5d CMP EAX,0x7ff00000
+4542fa62 JZ 0x4542fa67
+4542fa64 FLD double ptr [EDX]
+4542fa66 RET
+4542fa67 MOV EAX,dword ptr [EDX + 0x4]
+4542fa6a SUB ESP,0xa
+4542fa6d OR EAX,0x7fff0000
+4542fa72 MOV dword ptr [ESP + 0x6],EAX
+4542fa76 MOV EAX,dword ptr [EDX + 0x4]
+4542fa79 MOV ECX,dword ptr [EDX]
+4542fa7b SHLD EAX,ECX,0xb
+4542fa7f SHL ECX,0xb
+4542fa82 MOV dword ptr [ESP + 0x4],EAX
+4542fa86 MOV dword ptr [ESP],ECX
+4542fa89 FLD extended double ptr [ESP]
+4542fa8c ADD ESP,0xa
+4542fa8f TEST EAX,0x0
+4542fa94 MOV EAX,dword ptr [EDX + 0x4]
+4542fa97 RET

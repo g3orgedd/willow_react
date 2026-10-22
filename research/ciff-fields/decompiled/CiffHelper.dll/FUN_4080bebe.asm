@@ -1,0 +1,15 @@
+4080bebe PUSH EBP
+4080bebf MOV EBP,ESP
+4080bec1 MOV EAX,dword ptr [EBP + 0xc]
+4080bec4 MOV ECX,dword ptr [EAX]
+4080bec6 MOV EAX,dword ptr [EBP + 0x8]
+4080bec9 PUSH ECX
+4080beca PUSH dword ptr [EAX]
+4080becc CALL 0x4082dac3
+4080bed1 NEG EAX
+4080bed3 POP ECX
+4080bed4 SBB EAX,EAX
+4080bed6 POP ECX
+4080bed7 NEG EAX
+4080bed9 POP EBP
+4080beda RET 0x8

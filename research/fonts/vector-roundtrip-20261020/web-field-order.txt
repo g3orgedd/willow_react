@@ -1,0 +1,103 @@
+Window: "CLARiSOFT - C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\research\fonts\vector-roundtrip-20261020\web-vector.ciff", App: CLARiSOFT.exe.
+	0 окно CLARiSOFT - C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\research\fonts\vector-roundtrip-20261020\web-vector.ciff Secondary Actions: Raise
+		1 панель ID: 59392
+			2 панель инструментов ID: 59392
+				3 поле со списком (settable, string) Value: 500% ID: 104
+					4 текстовый (settable, string) Value: 500%
+					5 кнопка Открыть ID: DropDown
+				6 текстовый DataFlex 6320(53mm) - Continuous
+				7 текстовый Default
+				8 кнопка Zoom In
+				9 кнопка Zoom Out
+				10 кнопка Select Coder
+			11 панель инструментов ID: 59392
+				12 кнопка (disabled) User Level (Ctrl+U)
+				13 кнопка New
+				14 кнопка Open
+				15 кнопка (disabled) Save
+				16 кнопка Print Preview
+				17 кнопка (disabled) Sub Image Preview
+				18 кнопка (disabled) Stitched Sub Image Preview
+				19 кнопка Print
+				20 кнопка Download to coder memory
+				21 кнопка (disabled) Delete
+				22 кнопка (disabled) Cut
+				23 кнопка (disabled) Copy
+				24 кнопка (disabled) Paste
+				25 кнопка (disabled) Undo
+				26 кнопка (disabled) Redo
+				27 кнопка (disabled) Horizontal Center
+				28 кнопка (disabled) Vertical Center
+				29 кнопка (disabled) Left Align
+				30 кнопка (disabled) Right Align
+				31 кнопка (disabled) Top Align
+				32 кнопка (disabled) Bottom Align
+				33 кнопка (disabled) Horizontal Spacing
+				34 кнопка (disabled) Vertical Spacing
+				35 кнопка (disabled) Bring to Front
+				36 кнопка (disabled) Send to Back
+				37 кнопка (disabled) Rotate Left
+				38 кнопка (disabled) Rotate Right
+				39 кнопка Select Language
+				40 кнопка About
+				41 кнопка Help Contents
+			42 панель инструментов ID: 10
+				43 элемент меню File
+				44 элемент меню Edit
+				45 элемент меню View
+				46 элемент меню Tools
+				47 элемент меню Help
+			255 кнопка Шеврон-
+		49 строка состояния ID: 59393
+			50 текстовый
+			51 текстовый
+			52 текстовый
+			53 текстовый
+			54 текстовый
+		55 панель ID: 7042180
+			56 панель ID: 7042932
+				57 панель ID: 7042660
+					58 панель ID: 7043120
+				59 панель ID: 7042796
+					60 панель ID: 7042316
+						61 полоса прокрутки (settable, float) По вертикали Value: 0 ID: NonClientVerticalScrollBar
+							62 кнопка Строка вверх ID: UpButton
+							63 бегунок Положение ID: ScrollbarThumb
+							64 кнопка Прокрутить вниз ID: DownPageButton
+							65 кнопка Строка вниз ID: DownButton
+						66 полоса прокрутки (settable, float) По горизонтали Value: 0 ID: NonClientHorizontalScrollBar
+							67 кнопка Колонка влево ID: UpButton
+							68 бегунок Положение ID: ScrollbarThumb
+							69 кнопка Переместить вправо ID: DownPageButton
+							70 кнопка Колонка вправо ID: DownButton
+						71 бегунок (disabled)
+					72 панель ID: 7043068
+			73 панель ID: 134942080
+		74 название (settable, string) Value: CLARiSOFT - C:\Users\GigaGeorge\Desktop\willow-react-vite-test_1.4.0\research\fonts\vector-roundtrip-20261020\web-vector.ciff
+			75 строка меню Система ID: MenuBar
+				76 элемент меню Система
+			77 кнопка Свернуть
+			78 кнопка Развернуть
+			79 кнопка Закрыть
+		256 диалоговое окно Field Order Dialog Secondary Actions: Raise
+			257 кнопка OK ID: 1
+			258 список ID: 1229
+				259 элемент списка (selectable) 1, Name:TNR_Text, Data:Abc 0123 АБВГ, X:123, Y:234
+				260 элемент списка (selectable) 2, Name:Arial_Bold, Data:Bold 012 АБВ, X:377, Y:900
+				261 элемент списка (selectable) 3, Name:Courier_XMag, Data:Wide 0123, X:111, Y:1701
+				262 элемент списка (selectable) 4, Name:Tahoma_Date, Data:20/10/26, X:197, Y:2403
+				263 элемент списка (selectable) 5, Name:Segoe_Offset, Data:20/10/26, X:213, Y:3107
+				264 элемент списка (selectable) 6, Name:Narrow_Time, Data:23:24, X:319, Y:3811
+				265 элемент списка (selectable) 7, Name:OCRB_Counter, Data:0001, X:421, Y:4517
+				266 элемент списка (selectable) 8, Name:TNR_Rot90, Data:Rot 90, X:3801, Y:801
+				267 элемент списка (selectable) 9, Name:Courier_Rot180, Data:Rot 180, X:1801, Y:5203
+				268 элемент списка (selectable) 10, Name:Tahoma_Rot270, Data:Rot 270, X:4003, Y:3001
+			269 кнопка UP ID: 1227
+			270 кнопка DOWN ID: 1228
+			271 поле со списком (settable, string) Value: SubImage 1 ID: 1230
+				272 поле (settable, string) Value: SubImage 1 ID: 1001
+				273 кнопка Открыть ID: DropDown
+			274 название (settable, string) Value: Field Order Dialog
+				275 кнопка Закрыть
+
+The focused UI element is 42 панель инструментов ID: 10.

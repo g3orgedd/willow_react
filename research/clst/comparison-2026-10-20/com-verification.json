@@ -1,0 +1,577 @@
+{
+  "method": "Complete original COM generator; actual selected mask decoded and supplied to reference. CalculatedData snapshots are read before XML control filtering. RNG distribution is not inferred from these cases.",
+  "cases": [
+    {
+      "name": "no-subimages",
+      "subImageCount": 0,
+      "fieldCount": 0,
+      "maskHex": "00000000",
+      "selectedIndices": [],
+      "payload": "",
+      "payloadUtf16Length": 0,
+      "payloadUtf16Words": [],
+      "selectedStoredXml": "",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 72,
+      "exactMatch": true,
+      "ciffSha256": "42a7099332e6c3743c8c0f79494cba72950b9d1bc9f7e29bddef743fb2fce479"
+    },
+    {
+      "name": "empty-subimage",
+      "subImageCount": 1,
+      "fieldCount": 0,
+      "maskHex": "00000000",
+      "selectedIndices": [],
+      "payload": "",
+      "payloadUtf16Length": 0,
+      "payloadUtf16Words": [],
+      "selectedStoredXml": "",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 72,
+      "exactMatch": true,
+      "ciffSha256": "55ef415ac3e773bd5f587ebd7fda8646b5fafe77fee4abd6bbbf8cb21ba3df8d"
+    },
+    {
+      "name": "one-field",
+      "subImageCount": 1,
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedIndices": [
+        0
+      ],
+      "payload": "alpha",
+      "payloadUtf16Length": 5,
+      "payloadUtf16Words": [
+        "0061",
+        "006c",
+        "0070",
+        "0068",
+        "0061"
+      ],
+      "selectedStoredXml": "alpha",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 117,
+      "exactMatch": true,
+      "ciffSha256": "b7f6c93f97d46720e599eafe283b07ab2ae23a32842ddaab7859c8a23cfd56de"
+    },
+    {
+      "name": "three-fields",
+      "subImageCount": 1,
+      "fieldCount": 3,
+      "maskHex": "00000004",
+      "selectedIndices": [
+        2
+      ],
+      "payload": "gamma",
+      "payloadUtf16Length": 5,
+      "payloadUtf16Words": [
+        "0067",
+        "0061",
+        "006d",
+        "006d",
+        "0061"
+      ],
+      "selectedStoredXml": "gamma",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 117,
+      "exactMatch": true,
+      "ciffSha256": "c779be6d034ba7a5bcd5757236c30518bfb57ef76ec976a768d1839b6c1b82a5"
+    },
+    {
+      "name": "second-subimage-only",
+      "subImageCount": 2,
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedIndices": [
+        0
+      ],
+      "payload": "SECOND-IMAGE",
+      "payloadUtf16Length": 12,
+      "payloadUtf16Words": [
+        "0053",
+        "0045",
+        "0043",
+        "004f",
+        "004e",
+        "0044",
+        "002d",
+        "0049",
+        "004d",
+        "0041",
+        "0047",
+        "0045"
+      ],
+      "selectedStoredXml": "SECOND-IMAGE",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 180,
+      "exactMatch": true,
+      "ciffSha256": "f9137f6bd2710861a548bfae60087f22dc52db12a716e8832373ae7c762132a2"
+    },
+    {
+      "name": "two-subimages",
+      "subImageCount": 2,
+      "fieldCount": 4,
+      "maskHex": "00000008",
+      "selectedIndices": [
+        3
+      ],
+      "payload": "I2-B",
+      "payloadUtf16Length": 4,
+      "payloadUtf16Words": [
+        "0049",
+        "0032",
+        "002d",
+        "0042"
+      ],
+      "selectedStoredXml": "I2-B",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 108,
+      "exactMatch": true,
+      "ciffSha256": "bbeb87056ec982e8884045e257be759c30aef9be38bf273279e12f0d971f35a2"
+    },
+    {
+      "name": "thirty-three-fields",
+      "subImageCount": 1,
+      "fieldCount": 33,
+      "maskHex": "00000008",
+      "selectedIndices": [
+        3
+      ],
+      "payload": "FieldValue03",
+      "payloadUtf16Length": 12,
+      "payloadUtf16Words": [
+        "0046",
+        "0069",
+        "0065",
+        "006c",
+        "0064",
+        "0056",
+        "0061",
+        "006c",
+        "0075",
+        "0065",
+        "0030",
+        "0033"
+      ],
+      "selectedStoredXml": "FieldValue03",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 180,
+      "exactMatch": true,
+      "ciffSha256": "27a1d750793e2589dba1309c1d4d081ba0070644d432ed9fee0109d6141c5bcd"
+    },
+    {
+      "name": "payload-truncate",
+      "subImageCount": 1,
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedIndices": [
+        0
+      ],
+      "payload": "12345678901234567890",
+      "payloadUtf16Length": 20,
+      "payloadUtf16Words": [
+        "0031",
+        "0032",
+        "0033",
+        "0034",
+        "0035",
+        "0036",
+        "0037",
+        "0038",
+        "0039",
+        "0030",
+        "0031",
+        "0032",
+        "0033",
+        "0034",
+        "0035",
+        "0036",
+        "0037",
+        "0038",
+        "0039",
+        "0030"
+      ],
+      "selectedStoredXml": "12345678901234567890",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 252,
+      "exactMatch": true,
+      "ciffSha256": "23993ba1727a68fea50e30401cb4ec2bb88ba37d7dd87dd15fa95b3c11e4c1bc"
+    },
+    {
+      "name": "control-char",
+      "subImageCount": 1,
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedIndices": [
+        0
+      ],
+      "payload": "AB\u0001CD\u001dEF",
+      "payloadUtf16Length": 8,
+      "payloadUtf16Words": [
+        "0041",
+        "0042",
+        "0001",
+        "0043",
+        "0044",
+        "001d",
+        "0045",
+        "0046"
+      ],
+      "selectedStoredXml": "ABCDEF",
+      "payloadMatchesStoredXml": false,
+      "tokenLength": 144,
+      "exactMatch": true,
+      "ciffSha256": "9a5850137d7abba190e3214f73e6e9be2f30ce614cc0bb0f139f9f6041baa934"
+    },
+    {
+      "name": "nul-in-plaintext",
+      "subImageCount": 1,
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedIndices": [
+        0
+      ],
+      "payload": "AB",
+      "payloadUtf16Length": 2,
+      "payloadUtf16Words": [
+        "0041",
+        "0042"
+      ],
+      "selectedStoredXml": "AB",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 90,
+      "exactMatch": true,
+      "ciffSha256": "7b62c3e57b30461da7e98e6b86e2f63403e50a495f6956835d88963084ea129c"
+    },
+    {
+      "name": "surrogate-truncate",
+      "subImageCount": 1,
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedIndices": [
+        0
+      ],
+      "payload": "1234567890123456789\ud83d",
+      "payloadUtf16Length": 20,
+      "payloadUtf16Words": [
+        "0031",
+        "0032",
+        "0033",
+        "0034",
+        "0035",
+        "0036",
+        "0037",
+        "0038",
+        "0039",
+        "0030",
+        "0031",
+        "0032",
+        "0033",
+        "0034",
+        "0035",
+        "0036",
+        "0037",
+        "0038",
+        "0039",
+        "d83d"
+      ],
+      "selectedStoredXml": "1234567890123456789\ud83d",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 252,
+      "exactMatch": true,
+      "ciffSha256": "78b9da8936a52d6305b3340617f908c9f1e6300e0d628be9a381078f9d614193"
+    },
+    {
+      "name": "mixed-field-types",
+      "subImageCount": 1,
+      "fieldCount": 3,
+      "maskHex": "00000002",
+      "selectedIndices": [
+        1
+      ],
+      "payload": "BARCODE",
+      "payloadUtf16Length": 7,
+      "payloadUtf16Words": [
+        "0042",
+        "0041",
+        "0052",
+        "0043",
+        "004f",
+        "0044",
+        "0045"
+      ],
+      "selectedStoredXml": "BARCODE",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 135,
+      "exactMatch": true,
+      "ciffSha256": "fb6101f12b975bea2aeb94959c46e24d52043f2e00a4d4e2ae8850fdb3ac1959"
+    },
+    {
+      "name": "hidden-field",
+      "subImageCount": 1,
+      "fieldCount": 1,
+      "maskHex": "00000001",
+      "selectedIndices": [
+        0
+      ],
+      "payload": "HIDDEN",
+      "payloadUtf16Length": 6,
+      "payloadUtf16Words": [
+        "0048",
+        "0049",
+        "0044",
+        "0044",
+        "0045",
+        "004e"
+      ],
+      "selectedStoredXml": "HIDDEN",
+      "payloadMatchesStoredXml": true,
+      "tokenLength": 126,
+      "exactMatch": true,
+      "ciffSha256": "8522ec324a077ab7aeb9eea793c5159eba003e1b10798157c6cb89bef4bbedeb"
+    }
+  ],
+  "total": 13,
+  "matched": 13,
+  "ghidra": {
+    "method": "Repeated export from the existing read-only project for the binary whose SHA-256 matches the installed DLL.",
+    "functionCount": 47,
+    "exports": [
+      {
+        "file": "FUN_6810207e.c",
+        "sameAsPrevious": true,
+        "sha256": "a1157a8ae6286a5c08cf363111c29c49e67aeee3e438ab6157e1bb5f68b369cb"
+      },
+      {
+        "file": "FUN_6810a989.c",
+        "sameAsPrevious": true,
+        "sha256": "fb50969e7ea4637dbf3f0389fb3f959b845119e3f7fb7de16efe037c1d694251"
+      },
+      {
+        "file": "FUN_6810a9b5.c",
+        "sameAsPrevious": true,
+        "sha256": "d93e52565d72f2f2a431079304b0ba8c12b78e663c08fbeddd374fcba67c021b"
+      },
+      {
+        "file": "FUN_68117723.c",
+        "sameAsPrevious": true,
+        "sha256": "aa7a71047fe7ad8e278a2866ddbb80da6d67b1af1c5dfc94aa6e0105a04add0f"
+      },
+      {
+        "file": "FUN_6811779a.c",
+        "sameAsPrevious": true,
+        "sha256": "ae512ef0c248212b700047df313bb4d831812d9bfe3af8cb725cf93453cc194f"
+      },
+      {
+        "file": "FUN_681177fd.c",
+        "sameAsPrevious": true,
+        "sha256": "5075588744e967b1655ce3062a1a62e91b0c9099219a3dd7d77bf4d0a165b7e3"
+      },
+      {
+        "file": "FUN_6811781c.c",
+        "sameAsPrevious": true,
+        "sha256": "109b65915bd6154a9b379011b34401047f3a254f76092a9903cee69b1afbc523"
+      },
+      {
+        "file": "FUN_681178d3.c",
+        "sameAsPrevious": true,
+        "sha256": "41d5f75634df5bf487834c2ba83f1a0a10ba3f3838a368efb4017c3f112001d7"
+      },
+      {
+        "file": "FUN_6811790c.c",
+        "sameAsPrevious": true,
+        "sha256": "2d794b9765e8d20455ab441a963f0e0f60bb03981a8a6c620bec8089cb0ca2b9"
+      },
+      {
+        "file": "FUN_68117963.c",
+        "sameAsPrevious": true,
+        "sha256": "acf394913bc3ac15d0ca9fb0b687c1db3729eb8e637a37b098036c91bbf83b5b"
+      },
+      {
+        "file": "FUN_681179bd.c",
+        "sameAsPrevious": true,
+        "sha256": "47387c7bbdb14a5a9d6c4ef7a4a629b5dd92920d3528204b47639365861e46a7"
+      },
+      {
+        "file": "FUN_68117a48.c",
+        "sameAsPrevious": true,
+        "sha256": "5dab6b06ff3b472f579f40d088b20489c3f8b01baad1e3c0d3efad9ad210a3c6"
+      },
+      {
+        "file": "FUN_68117a68.c",
+        "sameAsPrevious": true,
+        "sha256": "924801fa0e9007e1fb605acc0464b6c37078d400ce1aab62cc522a957cd1189b"
+      },
+      {
+        "file": "FUN_68117a8c.c",
+        "sameAsPrevious": true,
+        "sha256": "488d622efb2f5853541481b06e1e71dbed0394080a89d1276dda6e1dc627db8c"
+      },
+      {
+        "file": "FUN_68117a9a.c",
+        "sameAsPrevious": true,
+        "sha256": "6861c5d1e5dde25d52a19573d9d7e7242b848df145db5011d3cd772327c9ee5c"
+      },
+      {
+        "file": "FUN_68117ab4.c",
+        "sameAsPrevious": true,
+        "sha256": "0884b7c801f81571a3c98e8337ef5022646ed9d013103a1f1d2bc8117527d10e"
+      },
+      {
+        "file": "FUN_68117af7.c",
+        "sameAsPrevious": true,
+        "sha256": "37cd36e44edb1862f171415038bd9f49b061e7f1a5cff485305c4fb807b4af42"
+      },
+      {
+        "file": "FUN_68117b42.c",
+        "sameAsPrevious": true,
+        "sha256": "69819d442e234d0ff50fe464a4aa090268d9a3738270d9aa32ff6128358c9021"
+      },
+      {
+        "file": "FUN_68117b8e.c",
+        "sameAsPrevious": true,
+        "sha256": "777b3e3018ef90516c25e87d1e59c0eb1418fe00690beb4268fde4386eaf054f"
+      },
+      {
+        "file": "FUN_68117bea.c",
+        "sameAsPrevious": true,
+        "sha256": "f13067f75ae23a91ab0006338989c4cb63b79dd12e74e65e78f38ef249fb2fb5"
+      },
+      {
+        "file": "FUN_68117c0a.c",
+        "sameAsPrevious": true,
+        "sha256": "347c9bf92eec7958f7207ae8d7a938905fe6d5770a3ccba70579dec0b78d4e9d"
+      },
+      {
+        "file": "FUN_68117ce1.c",
+        "sameAsPrevious": true,
+        "sha256": "5b4976c6d35be0ae5676d67db6688d10c998e0539678d0ece63fce2b6cf5cce9"
+      },
+      {
+        "file": "FUN_68117d03.c",
+        "sameAsPrevious": true,
+        "sha256": "9584edc3bc2ba751672b4862a11ec4d668092fbf18cf0d62c0adec1309b83ba7"
+      },
+      {
+        "file": "FUN_68117de2.c",
+        "sameAsPrevious": true,
+        "sha256": "06e78523ad96fc4a90609237a74aa7b0ddf1ba943bd0fdf3c0f63682ba79e3f0"
+      },
+      {
+        "file": "FUN_68117e37.c",
+        "sameAsPrevious": true,
+        "sha256": "8de5afdbb8216013e94a4a93179e2dc1972aa4aa3e0c0d2a78849f769e530719"
+      },
+      {
+        "file": "FUN_68117f20.c",
+        "sameAsPrevious": true,
+        "sha256": "bec7c790b50d0217df10337aa6fecc04955e0d6102d3f2ee8e45588395618704"
+      },
+      {
+        "file": "FUN_68117f62.c",
+        "sameAsPrevious": true,
+        "sha256": "667431237672ae3ea27a795859c562fde452b196c69d5111a7a14b3edf8710b3"
+      },
+      {
+        "file": "FUN_681180b9.c",
+        "sameAsPrevious": true,
+        "sha256": "fcb43b2baf5e7c00a7e3930485186a4c6e85dfdf3210da7116c1ce40d89ab7a6"
+      },
+      {
+        "file": "FUN_681180d7.c",
+        "sameAsPrevious": true,
+        "sha256": "dde0105679ebd07fd6e38d697c8e3cdc0af07fcebfa30ecee18e0440036f1a41"
+      },
+      {
+        "file": "FUN_6811811f.c",
+        "sameAsPrevious": true,
+        "sha256": "a94460f3aac37fe2941b6a7079fb45756a18e5d2e71d20eaf0eace0586e74074"
+      },
+      {
+        "file": "FUN_6811812f.c",
+        "sameAsPrevious": true,
+        "sha256": "a0f526860e6ec6e8e8a686cd7b4a4e549adfa1cd491dd5ac6699c1cc3d4e6118"
+      },
+      {
+        "file": "FUN_68118158.c",
+        "sameAsPrevious": true,
+        "sha256": "0e6761313b736e0606abd8de67f4e4488849b306c8941db9b248c85f0b5b3641"
+      },
+      {
+        "file": "FUN_68118181.c",
+        "sameAsPrevious": true,
+        "sha256": "053d57739183d25488a916103a64ed14a4d5fc69a6a0db265bb7c9dbc68c46e6"
+      },
+      {
+        "file": "FUN_681181bc.c",
+        "sameAsPrevious": true,
+        "sha256": "859740ad0fbeaf5bfcfccfaa656f67162059805d74498adbc23a81cf6f1ed61e"
+      },
+      {
+        "file": "FUN_681181da.c",
+        "sameAsPrevious": true,
+        "sha256": "479f13a1f71ed9c6613ac36fd99915d4c6f694f77ee12bd4dfe62fd500498592"
+      },
+      {
+        "file": "FUN_68118200.c",
+        "sameAsPrevious": true,
+        "sha256": "da387003d483330b094bea332dd616d23fd316a153eb956f7efd1519c83719e2"
+      },
+      {
+        "file": "FUN_6811823c.c",
+        "sameAsPrevious": true,
+        "sha256": "eb4b6cb74eaa20633f2daadd63062b5cab21b93beaa79970a96fb3e8a42613af"
+      },
+      {
+        "file": "FUN_68118280.c",
+        "sameAsPrevious": true,
+        "sha256": "6aedd6720a9d683c17bf4924ea906571e326d50a2e67400d76c5c0a3f6a59f21"
+      },
+      {
+        "file": "FUN_681182fa.c",
+        "sameAsPrevious": true,
+        "sha256": "b272be7e82a11f14ac43d6bd79a8ea4ae75a8bbde699b59ed65c6f8462a1668d"
+      },
+      {
+        "file": "FUN_6811861c.c",
+        "sameAsPrevious": true,
+        "sha256": "c4ad5d80ced4ad32d6b5aa045009335e78d308673195e0c52cc1e98eacce357b"
+      },
+      {
+        "file": "FUN_68118879.c",
+        "sameAsPrevious": true,
+        "sha256": "daa4198df51bfae7b247bb6c0381799775dac96e54fa0ee3150495c22d8c4d77"
+      },
+      {
+        "file": "FUN_68118a19.c",
+        "sameAsPrevious": true,
+        "sha256": "97a3209d58f69f5c4d3d82ccd27356880a7cbaa6a2460d4d338467d0044eeca5"
+      },
+      {
+        "file": "FUN_68118c55.c",
+        "sameAsPrevious": true,
+        "sha256": "6e18bec70523a150e10ca9ee67736c4e71e39786e4c0a2648c0fff7617b49175"
+      },
+      {
+        "file": "FUN_68118e73.c",
+        "sameAsPrevious": true,
+        "sha256": "50197ab142fc8528b79fe9e4e47663f3d861c3b7dabf21d0be90e5310a1a8232"
+      },
+      {
+        "file": "FUN_68118e92.c",
+        "sameAsPrevious": true,
+        "sha256": "13f41c6e3b18cd6435c5e1612b83c17fa46b55ce8772827a418bf18bd6f24580"
+      },
+      {
+        "file": "FUN_68134d99.c",
+        "sameAsPrevious": true,
+        "sha256": "8e6b32ec564d4313ad4d3f11efad52f3a68a19ae605d4cca1b34f75ad6459498"
+      },
+      {
+        "file": "FUN_68134dba.c",
+        "sameAsPrevious": true,
+        "sha256": "de8f241bb991c48371815ae80983b4e4449021ef478e044898305b676f7a3bbd"
+      }
+    ]
+  }
+}

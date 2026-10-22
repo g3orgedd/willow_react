@@ -1,0 +1,6 @@
+4542fa25 MOV EDX,dword ptr [ESP + 0x4]
+4542fa29 AND EDX,0x300
+4542fa2f OR EDX,0x7f
+4542fa32 MOV word ptr [ESP + 0x6],DX
+4542fa37 FLDCW word ptr [ESP + 0x6]
+4542fa3b RET

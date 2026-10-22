@@ -1,0 +1,17 @@
+4541caea PUSH 0x4
+4541caec MOV EAX,0x454450f7
+4541caf1 CALL 0x4542a975
+4541caf6 XOR EAX,EAX
+4541caf8 MOV dword ptr [EBP + -0x10],EAX
+4541cafb MOV ESI,dword ptr [EBP + 0x8]
+4541cafe MOV dword ptr [ESI],EAX
+4541cb00 MOV ECX,dword ptr [ECX]
+4541cb02 PUSH ESI
+4541cb03 PUSH ECX
+4541cb04 MOV dword ptr [EBP + -0x4],EAX
+4541cb07 MOV EDX,dword ptr [ECX]
+4541cb09 MOV dword ptr [EBP + -0x10],0x1
+4541cb10 CALL dword ptr [EDX + 0x58]
+4541cb13 MOV EAX,ESI
+4541cb15 CALL 0x4542a943
+4541cb1a RET 0x4

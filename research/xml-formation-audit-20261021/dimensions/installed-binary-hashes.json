@@ -1,0 +1,26 @@
+[
+  {
+    "path": "C:\\Program Files (x86)\\CLARICOM\\CLARiSOFT\\CLARiSOFT.exe",
+    "version": "4.5.1.0",
+    "bytes": 1664000,
+    "sha256": "28AEBC9C30C68E85175BE90580195D6E4F3180A994ECDC8215E9B93C26304E1A"
+  },
+  {
+    "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffMgr.dll",
+    "version": "4.5.0.0",
+    "bytes": 550400,
+    "sha256": "F1A3C15E39657C5D8B2A0391660BBA2809702B5B83E368C41584ABDD2955124B"
+  },
+  {
+    "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffHelper.dll",
+    "version": "4.4.0.7",
+    "bytes": 436224,
+    "sha256": "26E0CC9BC69D44B00E9AB482E1A2D13DAF5BB8F801817C717194C5F1B535558A"
+  },
+  {
+    "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLPrintPreview.ocx",
+    "version": "4.4.0.7",
+    "bytes": 432640,
+    "sha256": "B8E2B447E44AF3B781A713054D507F56C8C18BAE835A0E2B6C4D3BD174F15E48"
+  }
+]

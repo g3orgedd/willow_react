@@ -1,0 +1,567 @@
+{
+    "cases":  [
+                  {
+                      "name":  "partial-source",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "SOURCE",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     67,
+                                                                     68,
+                                                                     69
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  2,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "BCD",
+                                         "calculatedDataUnits":  [
+                                                                     66,
+                                                                     67,
+                                                                     68
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  3,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "CD",
+                                         "calculatedDataUnits":  [
+                                                                     67,
+                                                                     68
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  4,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "BCDE",
+                                         "calculatedDataUnits":  [
+                                                                     66,
+                                                                     67,
+                                                                     68,
+                                                                     69
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  5,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "zero-count-back",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     67,
+                                                                     68
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  6,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "suffix",
+                                         "calculatedDataUnits":  [
+                                                                     68,
+                                                                     69
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "SOURCE",
+                                        "calculatedDataUnits":  [
+                                                                    65,
+                                                                    66,
+                                                                    67,
+                                                                    68,
+                                                                    69
+                                                                ]
+                                    },
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  2,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "BCD",
+                                        "calculatedDataUnits":  [
+                                                                    66,
+                                                                    67,
+                                                                    68
+                                                                ]
+                                    },
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  3,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "CD",
+                                        "calculatedDataUnits":  [
+                                                                    67,
+                                                                    68
+                                                                ]
+                                    },
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  4,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "BCDE",
+                                        "calculatedDataUnits":  [
+                                                                    66,
+                                                                    67,
+                                                                    68,
+                                                                    69
+                                                                ]
+                                    },
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  5,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "zero-count-back",
+                                        "calculatedDataUnits":  [
+                                                                    65,
+                                                                    66,
+                                                                    67,
+                                                                    68
+                                                                ]
+                                    },
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  6,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "suffix",
+                                        "calculatedDataUnits":  [
+                                                                    68,
+                                                                    69
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  null,
+                                          "padChar":  null,
+                                          "index":  1
+                                      },
+                                      {
+                                          "fieldIndex":  2,
+                                          "padMode":  null,
+                                          "padChar":  null,
+                                          "index":  1
+                                      },
+                                      {
+                                          "fieldIndex":  3,
+                                          "padMode":  null,
+                                          "padChar":  null,
+                                          "index":  1
+                                      },
+                                      {
+                                          "fieldIndex":  4,
+                                          "padMode":  null,
+                                          "padChar":  null,
+                                          "index":  1
+                                      },
+                                      {
+                                          "fieldIndex":  5,
+                                          "padMode":  null,
+                                          "padChar":  null,
+                                          "index":  1
+                                      },
+                                      {
+                                          "fieldIndex":  6,
+                                          "padMode":  null,
+                                          "padChar":  null,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "dynamic-pad-mode0",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     48,
+                                                                     48,
+                                                                     48
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "PAD",
+                                        "calculatedDataUnits":  [
+                                                                    65,
+                                                                    66,
+                                                                    48,
+                                                                    48,
+                                                                    48
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  0,
+                                          "padChar":  48,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "dynamic-pad-mode1",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     48,
+                                                                     48,
+                                                                     48,
+                                                                     65,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "PAD",
+                                        "calculatedDataUnits":  [
+                                                                    48,
+                                                                    48,
+                                                                    48,
+                                                                    65,
+                                                                    66
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  1,
+                                          "padChar":  48,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "dynamic-pad-defaults",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     32,
+                                                                     32,
+                                                                     32
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "PAD",
+                                        "calculatedDataUnits":  [
+                                                                    65,
+                                                                    66,
+                                                                    32,
+                                                                    32,
+                                                                    32
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  0,
+                                          "padChar":  32,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "dynamic-pad-nul",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "PAD",
+                                        "calculatedDataUnits":  [
+                                                                    65,
+                                                                    66
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  0,
+                                          "padChar":  0,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "static-no-padding",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "PAD",
+                                        "calculatedDataUnits":  [
+                                                                    65,
+                                                                    66
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  1,
+                                          "padChar":  48,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "dynamic-no-truncation",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "PAD",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     67,
+                                                                     68,
+                                                                     69
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "PAD",
+                                        "calculatedDataUnits":  [
+                                                                    65,
+                                                                    66,
+                                                                    67,
+                                                                    68,
+                                                                    69
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  0,
+                                          "padChar":  48,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "user-empty-override",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "USER",
+                                         "calculatedDataUnits":  null
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "USER",
+                                        "calculatedDataUnits":  null
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  null,
+                                          "padChar":  null,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "user-value-override",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "USER",
+                                         "calculatedDataUnits":  [
+                                                                     79,
+                                                                     80,
+                                                                     69,
+                                                                     82,
+                                                                     65,
+                                                                     84,
+                                                                     79,
+                                                                     82
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "USER",
+                                        "calculatedDataUnits":  [
+                                                                    79,
+                                                                    80,
+                                                                    69,
+                                                                    82,
+                                                                    65,
+                                                                    84,
+                                                                    79,
+                                                                    82
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  null,
+                                          "padChar":  null,
+                                          "index":  1
+                                      }
+                                  ]
+                  },
+                  {
+                      "name":  "user-pad-default",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "USER",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     66,
+                                                                     32,
+                                                                     32,
+                                                                     32
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "USER",
+                                        "calculatedDataUnits":  [
+                                                                    65,
+                                                                    66,
+                                                                    32,
+                                                                    32,
+                                                                    32
+                                                                ]
+                                    }
+                                ],
+                      "objects":  [
+                                      {
+                                          "fieldIndex":  1,
+                                          "padMode":  0,
+                                          "padChar":  32,
+                                          "index":  1
+                                      }
+                                  ]
+                  }
+              ],
+    "method":  "Original COM load of own XML and CiffHelper.ResolveField again"
+}

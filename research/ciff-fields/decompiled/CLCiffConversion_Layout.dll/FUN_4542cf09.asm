@@ -1,0 +1,8 @@
+4542cf09 TEST EAX,EAX
+4542cf0b JNZ 0x4542cf1c
+4542cf0d PUSH dword ptr [EBP + 0x18]
+4542cf10 PUSH ESI
+4542cf11 PUSH dword ptr [EBP + 0xc]
+4542cf14 PUSH dword ptr [EBP + 0x8]
+4542cf17 CALL 0x4542cf8c
+4542cf1c RET

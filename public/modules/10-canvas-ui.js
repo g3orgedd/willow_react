@@ -1,10 +1,124 @@
-﻿const Konva = window.Konva;
+const Konva = window.Konva;
 
 const PRECISION_MOVE_REPEAT_DELAY_MS = 320;
 const PRECISION_MOVE_REPEAT_INTERVAL_MS = 72;
+const CANVAS_ROTATION_SNAP_TOLERANCE_DEGREES = 46;
+const INSPECTOR_COLLAPSED_STORAGE_KEY = "glyphXml.inspectorCollapsed";
+const LEFT_PANEL_COLLAPSED_STORAGE_KEY = "glyphXml.leftPanelCollapsed";
 let notificationModalCloseHandler = null;
 let confirmationModalConfirmHandler = null;
 let confirmationModalCancelHandler = null;
+let transformerOperation = null;
+let inspectorCollapsedPreference = false;
+let inspectorObjectMenuReturnFocus = null;
+let inspectorAppSettingsReturnFocus = null;
+let leftPanelCollapsedPreference = false;
+let leftPanelSearchOpen = false;
+let leftAddObjectReturnFocus = null;
+
+function snapCanvasRotationDegrees(value) {
+  const numericValue = Number(value);
+  if (!Number.isFinite(numericValue)) return 0;
+  const normalized = ((numericValue % 360) + 360) % 360;
+  const index = Math.round(normalized / 90) % ALLOWED_ORIENTATIONS.length;
+  return ALLOWED_ORIENTATIONS[index];
+}
+
+function getCanvasRotatedFieldResult(field, group) {
+  if (!field?.geom || !group?.getTransform) return null;
+
+  const currentOrientation = normalizeOrientation(field.orientation);
+  const deltaRotation = snapCanvasRotationDegrees(group.rotation?.() ?? 0);
+  const nextOrientation = snapCanvasRotationDegrees(currentOrientation + deltaRotation);
+  const isSideways = currentOrientation === 90 || currentOrientation === 270;
+  const visualWidthPx = mmToPx(internalToMm(isSideways ? field.geom.h : field.geom.w));
+  const visualHeightPx = mmToPx(internalToMm(isSideways ? field.geom.w : field.geom.h));
+  const transform = group.getTransform();
+  const corners = [
+    transform.point({ x: 0, y: 0 }),
+    transform.point({ x: visualWidthPx, y: 0 }),
+    transform.point({ x: visualWidthPx, y: visualHeightPx }),
+    transform.point({ x: 0, y: visualHeightPx })
+  ];
+  const minX = Math.min(...corners.map((point) => point.x));
+  const minY = Math.min(...corners.map((point) => point.y));
+
+  return {
+    orientation: nextOrientation,
+    x: mmToInternal(pxToMm(minX)),
+    y: mmToInternal(pxToMm(minY)),
+    deltaRotation
+  };
+}
+
+function finishCanvasRotation(selectedFields, operation) {
+  const before = operation?.before ?? selectedFields.map((field) => ({
+    name: field.name,
+    orientation: normalizeOrientation(field.orientation),
+    geometry: { ...field.geom }
+  }));
+  const historySnapshot = operation?.historySnapshot ?? snapshotState();
+  const results = selectedFields.map((field) => ({
+    field,
+    result: getCanvasRotatedFieldResult(field, field._konva)
+  }));
+
+  results.forEach(({ field, result }) => {
+    if (!result) return;
+    field.orientation = result.orientation;
+    field.geom.x = result.x;
+    field.geom.y = result.y;
+  });
+  constrainCurrentFieldPositionsInternal(selectedFields, { forceFreshTextBounds: true });
+
+  const changed = selectedFields.some((field, index) => {
+    const previous = before[index];
+    return !previous ||
+      normalizeOrientation(field.orientation) !== previous.orientation ||
+      field.geom.x !== previous.geometry.x ||
+      field.geom.y !== previous.geometry.y;
+  });
+  if (!changed) {
+    renderAll();
+    return false;
+  }
+
+  pushHistory(false, historySnapshot);
+  renderAll();
+  appLogger.action("FIELDS_ROTATED_WITH_MOUSE", "Пользователь повернул выбранные объекты мышью.", {
+    before,
+    after: selectedFields.map((field) => ({
+      name: field.name,
+      orientation: normalizeOrientation(field.orientation),
+      geometry: { ...field.geom }
+    }))
+  });
+  appLogger.state("APPLICATION_STATE_AFTER_MOUSE_ROTATION", "Состояние после поворота объектов мышью.");
+  return true;
+}
+
+function hasCanvasFieldGeometryChanged(field, previousGeometry) {
+  return !previousGeometry || ["x", "y", "w", "h"].some((key) => field.geom[key] !== previousGeometry[key]);
+}
+
+function hasCanvasFieldSizeChanged(field, previousGeometry) {
+  return !previousGeometry || ["w", "h"].some((key) => field.geom[key] !== previousGeometry[key]);
+}
+
+function applyDataMatrixResizeMetricsAfterGeometryChange(field, resizeMetrics, previousGeometry) {
+  if (
+    !resizeMetrics ||
+    field?.fldType !== "Barcode" ||
+    !field.barcode?.dataMatrix ||
+    !hasCanvasFieldSizeChanged(field, previousGeometry)
+  ) {
+    return false;
+  }
+
+  field.barcode.dataMatrix.moduleSize = resizeMetrics.moduleSize;
+  if (resizeMetrics.bcH != null) field.barcode.bcH = resizeMetrics.bcH;
+  return true;
+}
 
 function isEditableEventTarget(target) {
   const element = target instanceof Element ? target : null;
@@ -13,6 +127,19 @@ function isEditableEventTarget(target) {
 }
 
 function initCanvas() {
+  // Middle mouse is reserved for panning the workspace, including over fields.
+  // Keep Konva from starting a field drag before the stage handles that button.
+  Konva.dragButtons = [0];
+
+  // Apply the saved desktop rail before measuring the host so Konva starts at
+  // the final grid width instead of the expanded panel's first-frame width.
+  const initialLayoutApp = document.querySelector(".app");
+  if (elLeftPanel) {
+    initialLayoutApp?.classList.add("app--initialPanelLayout");
+    leftPanelCollapsedPreference = readLeftPanelCollapsedPreference();
+    applyLeftPanelCollapsedState();
+  }
+
   const rect = elCanvasHost.getBoundingClientRect();
 
   stage = new Konva.Stage({
@@ -21,9 +148,10 @@ function initCanvas() {
     height: rect.height,
     draggable: false
   });
+  requestAnimationFrame(() => initialLayoutApp?.classList.remove("app--initialPanelLayout"));
 
   gridLayer = new Konva.Layer({ listening: false });
-  objLayer = new Konva.Layer();
+  objLayer = new Konva.Layer({ imageSmoothingEnabled: !globalThis.glyphFonts?.render });
   uiLayer = new Konva.Layer();
 
   stage.add(gridLayer);
@@ -31,8 +159,19 @@ function initCanvas() {
   stage.add(uiLayer);
 
   transformer = new Konva.Transformer({
-    rotateEnabled: false,
+    rotateEnabled: true,
+    rotationSnaps: ALLOWED_ORIENTATIONS,
+    rotationSnapTolerance: CANVAS_ROTATION_SNAP_TOLERANCE_DEGREES,
+    rotateAnchorOffset: 24,
+    rotateAnchorCursor: "grab",
     ignoreStroke: true,
+    anchorStyleFunc: (anchor) => {
+      if (!anchor.hasName?.("rotater")) return;
+      anchor.cornerRadius(anchor.width() / 2);
+      anchor.fill("#ffffff");
+      anchor.stroke("rgb(0, 161, 255)");
+      anchor.strokeWidth(2);
+    },
     boundBoxFunc: (oldBox, newBox) => {
       if (newBox.width < 5 || newBox.height < 5) return oldBox;
       return newBox;
@@ -56,7 +195,12 @@ function initCanvas() {
   uiLayer.add(transformer);
 
   stage.on("mousedown", (e) => {
-    if ((e.evt?.button ?? 0) !== 0) return;
+    const button = e.evt?.button ?? 0;
+    if (button === 1) {
+      startStagePan(e, { cancelBubble: true, preventDefault: true });
+      return;
+    }
+    if (button !== 0) return;
     if (tryCommitPendingCanvasPlacement(e, "mouse")) return;
     if (isSpaceDown || isMobilePanMode) {
       startStagePan(e, { cancelBubble: isMobilePanMode, preventDefault: isMobilePanMode });
@@ -115,14 +259,18 @@ function initCanvas() {
           if (!nextNames.includes(field.name)) nextNames.push(field.name);
         });
         setSelectedNames(nextNames, nextNames[nextNames.length - 1] ?? null);
+        if (nextNames.length) activateInspectorTab("object");
         renderSelectionPanels();
         renderFieldLists();
         renderUI();
-      } else if (!selectionBoxAdditive) {
-        setSelectedNames([]);
-        renderSelectionPanels();
-        renderFieldLists();
-        renderUI();
+      } else {
+        if (!selectionBoxAdditive) {
+          setSelectedNames([]);
+          renderSelectionPanels();
+          renderFieldLists();
+          renderUI();
+        }
+        activateInspectorTab("template");
       }
 
       isSelectionBoxActive = false;
@@ -161,12 +309,7 @@ function initCanvas() {
     setZoom(clamp(25, 400, zoomPct + step));
   }, { passive: false });
 
-  window.addEventListener("resize", () => {
-    const r = elCanvasHost.getBoundingClientRect();
-    stage.size({ width: r.width, height: r.height });
-    stage.batchDraw();
-    renderRulers();
-  });
+  initCanvasHostResize();
 
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && pendingCanvasPlacement) {
@@ -185,6 +328,7 @@ function initCanvas() {
       }
       return;
     }
+    if (handleMoveSelectionKeydown(e)) return;
     if (e.code === "Space") isSpaceDown = true;
     if (e.key === "Delete") deleteSelected();
     if (matchesPrimaryShortcut(e, "KeyZ", "z")) { e.preventDefault(); undo(); }
@@ -199,18 +343,48 @@ function initCanvas() {
     }
   });
   window.addEventListener("keyup", (e) => { if (e.code === "Space") { isSpaceDown = false; stopStagePan(); } });
+  window.addEventListener("mouseup", (e) => { if (e.button === 1) stopStagePan(); });
   window.addEventListener("blur", () => { isSpaceDown = false; stopStagePan(); });
 
-  // Transformer transformend => apply resize to internal geometry
+  transformer.on("transformstart", () => {
+    const selectedFields = getSelectedFields().filter((field) => field._konva);
+    transformerOperation = {
+      kind: transformer.getActiveAnchor?.() === "rotater" ? "rotate" : "resize",
+      historySnapshot: snapshotState(),
+      before: selectedFields.map((field) => ({
+        name: field.name,
+        orientation: normalizeOrientation(field.orientation),
+        geometry: { ...field.geom },
+        text: field.text ? {
+          pitch: getEffectiveTextPitch(field, 10),
+          xMag: Number(field.text.xMag) || 100
+        } : null
+      }))
+    };
+  });
+
+  // Transformer transformend => save rotation or resize in CIFF geometry.
   transformer.on("transformend", () => {
     const selectedFields = getSelectedFields().filter((field) => field._konva);
+    const operation = transformerOperation;
+    transformerOperation = null;
     if (!selectedFields.length) return;
-    const before = selectedFields.map((field) => ({
-      name: field.name,
-      geometry: { ...field.geom }
-    }));
+    if (operation?.kind === "rotate") {
+      finishCanvasRotation(selectedFields, operation);
+      return;
+    }
 
-    pushHistory();
+    const before = operation?.before ?? selectedFields.map((field) => ({
+      name: field.name,
+      orientation: normalizeOrientation(field.orientation),
+      geometry: { ...field.geom },
+      text: field.text ? {
+        pitch: getEffectiveTextPitch(field, 10),
+        xMag: Number(field.text.xMag) || 100
+      } : null
+    }));
+    const historySnapshot = operation?.historySnapshot ?? snapshotState();
+    const dataMatrixResizeMetrics = new Map();
 
     selectedFields.forEach((field) => {
       const group = field._konva;
@@ -220,19 +394,18 @@ function initCanvas() {
       const scaleX = group.scaleX();
       const scaleY = group.scaleY();
 
-      let newW = Math.max(5, rect.width() * scaleX);
-      let newH = Math.max(5, rect.height() * scaleY);
+      let newW = Math.max(5, rect.width() * Math.abs(scaleX));
+      let newH = Math.max(5, rect.height() * Math.abs(scaleY));
 
       group.scaleX(1);
       group.scaleY(1);
 
       if (field.fldType === "Barcode" && field.barcode?.dataMatrix) {
-        const nextModuleSize = getNearestDataMatrixModuleSizeForGeom(field, newW, newH);
-        field.barcode.dataMatrix.moduleSize = nextModuleSize;
-        const syncedSize = getDataMatrixFieldSizeMm(field, nextModuleSize);
-        if (syncedSize) {
-          newW = mmToPx(syncedSize.w);
-          newH = mmToPx(syncedSize.h);
+        const resizeMetrics = getDataMatrixResizeMetrics(field, newW, newH);
+        if (resizeMetrics) {
+          dataMatrixResizeMetrics.set(field.name, resizeMetrics);
+          newW = resizeMetrics.widthPx;
+          newH = resizeMetrics.heightPx;
         }
       }
 
@@ -250,9 +423,32 @@ function initCanvas() {
       field.geom.y = geomNew.y;
       field.geom.w = geomNew.w;
       field.geom.h = geomNew.h;
-      if (field.fldType === "Barcode" && field.barcode) field.barcode.bcH = geomNew.h;
+      if (field.text && field.fldType !== "Barcode" && typeof applyTextResizeTransform === "function") {
+        const previous = before.find((item) => item.name === field.name);
+        applyTextResizeTransform(field, previous?.text, scaleX, scaleY);
+      }
     });
 
+    constrainCurrentFieldPositionsInternal(selectedFields, { forceFreshTextBounds: true });
+
+    selectedFields.forEach((field, index) => {
+      applyDataMatrixResizeMetricsAfterGeometryChange(
+        field,
+        dataMatrixResizeMetrics.get(field.name),
+        before[index]?.geometry
+      );
+    });
+
+    const geometryChanged = selectedFields.some((field, index) => {
+      const previous = before[index]?.geometry;
+      return hasCanvasFieldGeometryChanged(field, previous);
+    });
+    if (!geometryChanged) {
+      renderAll();
+      return;
+    }
+
+    pushHistory(false, historySnapshot);
     renderAll();
     appLogger.action("FIELDS_RESIZED", "Пользователь изменил размер выбранных объектов.", {
       before,
@@ -350,19 +546,68 @@ function setMobilePanMode(enabled) {
   syncMobilePanModeUI();
 }
 
+let canvasResizeFrame = null;
+let canvasResizeNeedsRulers = false;
+
+function scheduleCanvasHostResize(forceRulers = false) {
+  canvasResizeNeedsRulers ||= forceRulers;
+  if (canvasResizeFrame !== null) return;
+  canvasResizeFrame = requestAnimationFrame(() => {
+    canvasResizeFrame = null;
+    const refreshRulers = canvasResizeNeedsRulers;
+    canvasResizeNeedsRulers = false;
+    if (!stage || !elCanvasHost) return;
+    const rect = elCanvasHost.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+    const current = stage.size();
+    const changed = current.width !== rect.width || current.height !== rect.height;
+    if (changed) {
+      stage.size({ width: rect.width, height: rect.height });
+      stage.batchDraw();
+    }
+    if (changed || refreshRulers) renderRulers();
+  });
+}
+
+function initCanvasHostResize() {
+  window.addEventListener("resize", () => scheduleCanvasHostResize(true));
+  window.visualViewport?.addEventListener("resize", () => scheduleCanvasHostResize(true));
+  if (typeof ResizeObserver !== "undefined") {
+    // Toolbar wrapping and dynamic viewport units can change the host without
+    // a window resize. Observe its layout box, never the canvases we resize.
+    const observer = new ResizeObserver(() => scheduleCanvasHostResize());
+    observer.observe(elCanvasHost);
+  }
+}
+
 function refreshCanvasSizeAfterPanelMove() {
   if (!stage || !elCanvasHost) return;
 
-  const applySize = () => {
-    const r = elCanvasHost.getBoundingClientRect();
-    if (!r.width || !r.height) return;
-    stage.size({ width: r.width, height: r.height });
-    stage.batchDraw();
-    renderRulers();
-  };
+  const applySize = () => scheduleCanvasHostResize(true);
 
   requestAnimationFrame(applySize);
   setTimeout(applySize, 240);
+
+  const app = document.querySelector(".app");
+  if (!app) {
+    setTimeout(applySize, 320);
+    return;
+  }
+
+  let settled = false;
+  const applySettledSize = () => {
+    if (settled) return;
+    settled = true;
+    app.removeEventListener("transitionend", handleGridTransitionEnd);
+    applySize();
+  };
+  const handleGridTransitionEnd = (event) => {
+    if (event.target !== app || event.propertyName !== "grid-template-columns") return;
+    applySettledSize();
+  };
+
+  app.addEventListener("transitionend", handleGridTransitionEnd);
+  setTimeout(applySettledSize, 400);
 }
 
 function initMobilePanelMenu() {
@@ -383,17 +628,58 @@ function initMobilePanelMenu() {
       next: entry.el.nextSibling
     }));
 
+  const background = [document.querySelector(".topbar"), document.querySelector(".canvasWrap")].filter(Boolean);
+  const backgroundInert = new Map();
   let isOpen = false;
-  let touchStartX = null;
+  let returnFocus = null;
+  let touchStart = null;
 
-  const setMenuOpen = (nextOpen) => {
+  const isVisible = (element) => !!element && !element.hidden && element.getClientRects().length > 0;
+  const getOpenModal = () => Array.from(document.querySelectorAll(".modal")).filter(isVisible).at(-1);
+  const getOpenPortals = () => [
+    $("inspectorObjectMenu"), $("inspectorAppSettings"), $("leftAddObjectPopover"), $("customSelectMenu")
+  ].filter(isVisible);
+
+  const closePortals = () => {
+    if (typeof closeCustomSelect === "function") closeCustomSelect();
+    closeInspectorObjectMenu({ restoreFocus: false });
+    closeInspectorAppSettings({ restoreFocus: false });
+    closeLeftAddObjectPopover({ restoreFocus: false });
+  };
+
+  const setMenuOpen = (nextOpen, { restoreFocus = true } = {}) => {
+    const wasOpen = isOpen;
     isOpen = !!nextOpen && mobileQuery.matches;
+    if (isOpen && !wasOpen) {
+      returnFocus = document.activeElement === document.body ? toggle : document.activeElement;
+      closePortals();
+      background.forEach((element) => {
+        backgroundInert.set(element, element.inert);
+        element.inert = true;
+      });
+    } else if (!isOpen && wasOpen) {
+      closePortals();
+      background.forEach((element) => { element.inert = backgroundInert.get(element) || false; });
+      backgroundInert.clear();
+    }
+    document.body.classList.toggle("mobile-panels-open", isOpen);
     menu.hidden = !mobileQuery.matches;
+    menu.inert = mobileQuery.matches && !isOpen;
     overlay.hidden = !isOpen;
     menu.classList.toggle("is-open", isOpen);
     overlay.classList.toggle("is-open", isOpen);
     menu.setAttribute("aria-hidden", String(!isOpen));
     toggle.setAttribute("aria-expanded", String(isOpen));
+    if (isOpen && !wasOpen) {
+      closeBtn.focus({ preventScroll: true });
+    } else if (!isOpen && wasOpen) {
+      if (restoreFocus && !getOpenModal()) {
+        const target = isVisible(returnFocus) && !returnFocus.closest("[inert]") ? returnFocus : toggle;
+        if (isVisible(target)) target.focus({ preventScroll: true });
+      }
+      returnFocus = null;
+    }
+    if (wasOpen !== isOpen) scheduleCanvasHostResize(true);
   };
 
   const moveEntry = (entry, toMenu) => {
@@ -410,9 +696,10 @@ function initMobilePanelMenu() {
   const syncMenuMode = () => {
     const mobile = mobileQuery.matches;
     entries.forEach((entry) => moveEntry(entry, mobile));
-    if (!mobile) setMenuOpen(false);
+    if (!mobile) setMenuOpen(false, { restoreFocus: false });
     else {
       menu.hidden = false;
+      menu.inert = !isOpen;
       menu.setAttribute("aria-hidden", String(!isOpen));
     }
     refreshCanvasSizeAfterPanelMove();
@@ -421,26 +708,642 @@ function initMobilePanelMenu() {
   toggle.addEventListener("click", () => setMenuOpen(!isOpen));
   closeBtn.addEventListener("click", () => setMenuOpen(false));
   overlay.addEventListener("click", () => setMenuOpen(false));
-  document.addEventListener("ciff:canvas-placement-started", () => setMenuOpen(false));
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && isOpen) setMenuOpen(false);
-  });
+  document.addEventListener("ciff:canvas-placement-started", () => setMenuOpen(false, { restoreFocus: false }));
+  document.addEventListener("keydown", (event) => {
+    if (!isOpen) return;
+    const modal = getOpenModal();
+    const portals = getOpenPortals();
+    // Let an overlaid dialog or menu handle Escape before the drawer itself.
+    if (event.key === "Escape" && !modal && !portals.length) {
+      event.preventDefault();
+      setMenuOpen(false);
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const selectMenu = $("customSelectMenu");
+    const roots = modal ? [modal, ...(isVisible(selectMenu) ? [selectMenu] : [])] : [menu, ...portals];
+    const focusable = [...new Set(roots.flatMap((root) => Array.from(root.querySelectorAll(
+      "summary, button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex]"
+    ))))].filter((element) => element.tabIndex >= 0 && !element.closest("[inert]") && isVisible(element));
+    if (!focusable.length) return;
+    const index = focusable.indexOf(document.activeElement);
+    const next = index < 0 ? (event.shiftKey ? focusable.length - 1 : 0)
+      : (index + (event.shiftKey ? -1 : 1) + focusable.length) % focusable.length;
+    event.preventDefault();
+    focusable[next].focus();
+  }, true);
 
   menu.addEventListener("touchstart", (e) => {
-    touchStartX = e.touches?.[0]?.clientX ?? null;
+    const touch = e.touches?.length === 1 ? e.touches[0] : null;
+    // A deliberate header swipe can close the drawer; scrolling its form or
+    // editing a value must never be interpreted as a dismiss gesture.
+    touchStart = touch && e.target.closest(".mobilePanelMenu__header") && !e.target.closest("button")
+      ? { x: touch.clientX, y: touch.clientY } : null;
   }, { passive: true });
   menu.addEventListener("touchend", (e) => {
-    const endX = e.changedTouches?.[0]?.clientX;
-    if (touchStartX !== null && Number.isFinite(endX) && touchStartX - endX > 64) {
+    const touch = e.changedTouches?.[0];
+    const deltaX = touchStart && touch ? touchStart.x - touch.clientX : 0;
+    const deltaY = touchStart && touch ? Math.abs(touchStart.y - touch.clientY) : 0;
+    if (deltaX > 64 && deltaX > deltaY * 2) {
       setMenuOpen(false);
     }
-    touchStartX = null;
+    touchStart = null;
   }, { passive: true });
+  menu.addEventListener("touchcancel", () => { touchStart = null; }, { passive: true });
 
   if (mobileQuery.addEventListener) mobileQuery.addEventListener("change", syncMenuMode);
   else mobileQuery.addListener?.(syncMenuMode);
 
   syncMenuMode();
+}
+
+function activateInspectorTab(tabName) {
+  if (tabName !== "object" && tabName !== "template") return false;
+  syncInspectorShell();
+  return true;
+}
+
+function getInspectorSelectedFields() {
+  if (typeof getSelectedFields === "function") return getSelectedFields();
+  const selectedNames = Array.isArray(state?.selectedNames) ? state.selectedNames : [];
+  return selectedNames.map((name) => state.fieldByName?.get(name)).filter(Boolean);
+}
+
+function getInspectorTemplateSubtitle() {
+  if (!state?.xmlDoc) return t("inspector.noTemplate");
+  const printer = String(state.docMeta?.printerModel || state.docMeta?.designedFor || t("common.none")).trim();
+  return printer;
+}
+
+function setInspectorContextVisibility(element, visible) {
+  if (!element) return;
+  element.classList.toggle("hidden", !visible);
+  element.setAttribute("aria-hidden", String(!visible));
+  element.inert = !visible;
+}
+
+function syncInspectorShell(selectedFields = null) {
+  const fields = Array.isArray(selectedFields) ? selectedFields : getInspectorSelectedFields();
+  const hasSelection = fields.length > 0;
+  const hasTemplate = !!state?.xmlDoc;
+  const singleField = fields.length === 1 ? fields[0] : null;
+  const singleDataMatrix = !!singleField && singleField.fldType === "Barcode" && !!singleField.barcode?.dataMatrix;
+
+  setInspectorContextVisibility(elInspectorObjectContext, hasSelection);
+  setInspectorContextVisibility(elInspectorTemplateContext, !hasSelection);
+  elInspectorNoTemplate?.classList.toggle("hidden", hasTemplate || hasSelection);
+  elInspectorTemplateSections?.classList.toggle("hidden", !hasTemplate || hasSelection);
+  elObjectAdvancedSection?.classList.toggle("hidden", !singleDataMatrix);
+  if (elObjectAdvancedSection) elObjectAdvancedSection.inert = !singleDataMatrix;
+
+  let title = t("inspector.title");
+  let subtitle = t("inspector.noTemplate");
+  if (hasSelection) {
+    title = t("inspector.objectTitle");
+    subtitle = singleField
+      ? singleField.name
+      : t("status.selectedMultiple", { count: fields.length });
+  } else if (hasTemplate) {
+    title = t("inspector.templateTitle");
+    subtitle = getInspectorTemplateSubtitle();
+  }
+
+  if (elInspectorTitle) elInspectorTitle.textContent = title;
+  if (elInspectorSubtitle) elInspectorSubtitle.textContent = subtitle;
+  if (elInspectorCollapsedLabel) elInspectorCollapsedLabel.textContent = title;
+
+  elBtnInspectorObjectMenu?.classList.toggle("hidden", !hasSelection);
+  elBtnInspectorObjectMenu?.setAttribute("aria-expanded", String(!elInspectorObjectMenu?.classList.contains("hidden")));
+  if (elBtnDelete) elBtnDelete.disabled = !hasSelection;
+
+  if (elBtnInspectorTogglePrint) {
+    const allPrinted = hasSelection && fields.every((field) => !!field.printed);
+    const mixed = hasSelection && fields.some((field) => !!field.printed !== allPrinted);
+    elBtnInspectorTogglePrint.disabled = !hasSelection;
+    elBtnInspectorTogglePrint.dataset.nextPrinted = String(!allPrinted);
+    elBtnInspectorTogglePrint.setAttribute("aria-checked", mixed ? "mixed" : String(allPrinted));
+  }
+
+  if (!hasSelection) closeInspectorObjectMenu({ restoreFocus: false });
+}
+
+function positionInspectorPopover(popover, options = {}) {
+  if (!popover) return;
+  const margin = 8;
+  const anchorRect = options.anchor?.getBoundingClientRect?.() ?? null;
+  const preferredX = Number.isFinite(options.x)
+    ? options.x
+    : (anchorRect ? anchorRect.right : margin);
+  const preferredY = Number.isFinite(options.y)
+    ? options.y
+    : (anchorRect ? anchorRect.bottom + 6 : margin);
+  const rect = popover.getBoundingClientRect();
+  const alignEnd = options.alignEnd !== false && !!anchorRect && !Number.isFinite(options.x);
+  const left = Math.max(margin, Math.min(
+    window.innerWidth - rect.width - margin,
+    alignEnd ? preferredX - rect.width : preferredX
+  ));
+  const top = Math.max(margin, Math.min(window.innerHeight - rect.height - margin, preferredY));
+  popover.style.left = `${Math.round(left)}px`;
+  popover.style.top = `${Math.round(top)}px`;
+}
+
+function closeInspectorObjectMenu(options = {}) {
+  if (!elInspectorObjectMenu || elInspectorObjectMenu.classList.contains("hidden")) return;
+  elInspectorObjectMenu.classList.add("hidden");
+  elBtnInspectorObjectMenu?.setAttribute("aria-expanded", "false");
+  inspectorObjectMenuReturnFocus?.setAttribute?.("aria-expanded", "false");
+  if (options.restoreFocus !== false && inspectorObjectMenuReturnFocus?.isConnected) {
+    inspectorObjectMenuReturnFocus.focus({ preventScroll: true });
+  }
+  inspectorObjectMenuReturnFocus = null;
+}
+
+function openInspectorObjectMenuAt(x = null, y = null, returnFocus = null, anchor = null) {
+  if (!elInspectorObjectMenu || !getInspectorSelectedFields().length) return false;
+  closeInspectorAppSettings({ restoreFocus: false });
+  inspectorObjectMenuReturnFocus = returnFocus || document.activeElement;
+  elInspectorObjectMenu.classList.remove("hidden");
+  elBtnInspectorObjectMenu?.setAttribute("aria-expanded", "true");
+  returnFocus?.setAttribute?.("aria-expanded", "true");
+  positionInspectorPopover(elInspectorObjectMenu, {
+    x: Number.isFinite(x) ? x : undefined,
+    y: Number.isFinite(y) ? y : undefined,
+    anchor: Number.isFinite(x) ? null : (anchor || elBtnInspectorObjectMenu)
+  });
+  requestAnimationFrame(() => elInspectorObjectMenu.querySelector("[role^='menuitem']:not(:disabled)")?.focus());
+  return true;
+}
+
+function closeInspectorAppSettings(options = {}) {
+  if (!elInspectorAppSettings || elInspectorAppSettings.classList.contains("hidden")) return;
+  elInspectorAppSettings.classList.add("hidden");
+  elBtnInspectorAppSettings?.setAttribute("aria-expanded", "false");
+  if (options.restoreFocus !== false && inspectorAppSettingsReturnFocus?.isConnected) {
+    inspectorAppSettingsReturnFocus.focus({ preventScroll: true });
+  }
+  inspectorAppSettingsReturnFocus = null;
+}
+
+function openInspectorAppSettings() {
+  if (!elInspectorAppSettings) return false;
+  closeInspectorObjectMenu({ restoreFocus: false });
+  inspectorAppSettingsReturnFocus = elBtnInspectorAppSettings || document.activeElement;
+  elInspectorAppSettings.classList.remove("hidden");
+  elBtnInspectorAppSettings?.setAttribute("aria-expanded", "true");
+  positionInspectorPopover(elInspectorAppSettings, { anchor: elBtnInspectorAppSettings });
+  requestAnimationFrame(() => {
+    const focusTarget = elInspectorAppSettings.querySelector(".customSelect__button, button, input, select:not(.customSelect__native)");
+    focusTarget?.focus();
+  });
+  return true;
+}
+
+function toggleSelectedFieldsPrintOutput() {
+  const fields = getInspectorSelectedFields();
+  if (!fields.length) return false;
+  const nextPrinted = !fields.every((field) => !!field.printed);
+  pushHistory();
+  fields.forEach((field) => {
+    field.printed = nextPrinted;
+  });
+  if (nextPrinted) constrainCurrentFieldPositionsInternal(fields);
+  closeInspectorObjectMenu({ restoreFocus: false });
+  renderAll();
+  return true;
+}
+
+function isInspectorCollapseAvailable() {
+  return !window.matchMedia || window.matchMedia("(min-width: 1121px)").matches;
+}
+
+function readInspectorCollapsedPreference() {
+  try {
+    return window.sessionStorage?.getItem(INSPECTOR_COLLAPSED_STORAGE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function persistInspectorCollapsedPreference() {
+  try {
+    window.sessionStorage?.setItem(INSPECTOR_COLLAPSED_STORAGE_KEY, inspectorCollapsedPreference ? "1" : "0");
+  } catch {
+    // Storage can be unavailable in private or embedded browser contexts.
+  }
+}
+
+function applyInspectorCollapsedState() {
+  const collapsed = inspectorCollapsedPreference && isInspectorCollapseAvailable();
+  elInspectorPanel?.classList.toggle("inspector--collapsed", collapsed);
+  elInspectorPanel?.setAttribute("data-collapsed", String(collapsed));
+  document.querySelector(".app")?.classList.toggle("app--inspectorCollapsed", collapsed);
+  if (elInspectorExpanded) elInspectorExpanded.inert = collapsed;
+  elBtnInspectorCollapse?.setAttribute("aria-expanded", String(!collapsed));
+  elBtnInspectorExpand?.setAttribute("aria-expanded", String(!collapsed));
+  if (collapsed) {
+    closeInspectorObjectMenu({ restoreFocus: false });
+    closeInspectorAppSettings({ restoreFocus: false });
+  }
+  refreshCanvasSizeAfterPanelMove();
+}
+
+function setInspectorCollapsed(collapsed) {
+  inspectorCollapsedPreference = !!collapsed;
+  persistInspectorCollapsedPreference();
+  applyInspectorCollapsedState();
+  if (!inspectorCollapsedPreference) {
+    requestAnimationFrame(() => elBtnInspectorCollapse?.focus({ preventScroll: true }));
+  }
+}
+
+function initInspectorUi() {
+  inspectorCollapsedPreference = readInspectorCollapsedPreference();
+
+  elBtnInspectorCollapse?.addEventListener("click", () => setInspectorCollapsed(true));
+  elBtnInspectorExpand?.addEventListener("click", () => setInspectorCollapsed(false));
+  elBtnInspectorObjectMenu?.addEventListener("click", () => {
+    if (elInspectorObjectMenu?.classList.contains("hidden")) openInspectorObjectMenuAt(null, null, elBtnInspectorObjectMenu);
+    else closeInspectorObjectMenu();
+  });
+  elBtnInspectorAppSettings?.addEventListener("click", () => {
+    if (elInspectorAppSettings?.classList.contains("hidden")) openInspectorAppSettings();
+    else closeInspectorAppSettings();
+  });
+  elBtnInspectorTogglePrint?.addEventListener("click", () => toggleSelectedFieldsPrintOutput());
+  elBtnDelete?.addEventListener("click", () => {
+    closeInspectorObjectMenu({ restoreFocus: false });
+    deleteSelected();
+  });
+
+  ["btnOpenFunctionality", "btnOpenChangelog"].forEach((id) => {
+    $(id)?.addEventListener("click", () => closeInspectorAppSettings({ restoreFocus: false }));
+  });
+
+  elInspectorObjectMenu?.addEventListener("keydown", (event) => {
+    const items = Array.from(elInspectorObjectMenu.querySelectorAll("[role^='menuitem']:not(:disabled)"));
+    const currentIndex = items.indexOf(document.activeElement);
+    let nextIndex = null;
+    if (event.key === "ArrowDown") nextIndex = (currentIndex + 1) % items.length;
+    if (event.key === "ArrowUp") nextIndex = (currentIndex - 1 + items.length) % items.length;
+    if (event.key === "Home") nextIndex = 0;
+    if (event.key === "End") nextIndex = items.length - 1;
+    if (nextIndex === null || !items.length) return;
+    event.preventDefault();
+    items[nextIndex]?.focus();
+  });
+
+  document.addEventListener("pointerdown", (event) => {
+    if (!elInspectorObjectMenu?.classList.contains("hidden") &&
+        !elInspectorObjectMenu.contains(event.target) &&
+        !elBtnInspectorObjectMenu?.contains(event.target)) {
+      closeInspectorObjectMenu({ restoreFocus: false });
+    }
+    if (!elInspectorAppSettings?.classList.contains("hidden") &&
+        !elInspectorAppSettings.contains(event.target) &&
+        !elBtnInspectorAppSettings?.contains(event.target)) {
+      closeInspectorAppSettings({ restoreFocus: false });
+    }
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    if (!elInspectorObjectMenu?.classList.contains("hidden")) {
+      closeInspectorObjectMenu();
+      return;
+    }
+    if (!elInspectorAppSettings?.classList.contains("hidden")) closeInspectorAppSettings();
+  });
+
+  const collapseQuery = window.matchMedia?.("(min-width: 1121px)");
+  if (collapseQuery?.addEventListener) collapseQuery.addEventListener("change", applyInspectorCollapsedState);
+  else collapseQuery?.addListener?.(applyInspectorCollapsedState);
+
+  syncInspectorShell();
+  applyInspectorCollapsedState();
+}
+
+function isLeftPanelCollapseAvailable() {
+  return !window.matchMedia || window.matchMedia("(min-width: 1121px)").matches;
+}
+
+function readLeftPanelCollapsedPreference() {
+  try {
+    return window.localStorage?.getItem(LEFT_PANEL_COLLAPSED_STORAGE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function persistLeftPanelCollapsedPreference() {
+  try {
+    window.localStorage?.setItem(LEFT_PANEL_COLLAPSED_STORAGE_KEY, leftPanelCollapsedPreference ? "1" : "0");
+  } catch {
+    // Storage can be unavailable in private or embedded browser contexts.
+  }
+}
+
+function syncLeftPanelSearchQueryState() {
+  const hasQuery = !!String(elSearch?.value || "").trim();
+  [elBtnToggleFieldSearch, elBtnToggleFieldSearchCollapsed].forEach((button) => {
+    button?.classList.toggle("leftPanel__searchButton--active", leftPanelSearchOpen || hasQuery);
+  });
+}
+
+function setLeftPanelSearchOpen(open, options = {}) {
+  if (!elLeftPanelSearch || !elSearch) return;
+  leftPanelSearchOpen = !!open;
+
+  if (options.clear) {
+    elSearch.value = "";
+    renderFieldLists();
+  }
+
+  elLeftPanelSearch.classList.toggle("leftPanelSearch--open", leftPanelSearchOpen);
+  elLeftPanelSearch.setAttribute("aria-hidden", String(!leftPanelSearchOpen));
+  elLeftPanelSearch.inert = !leftPanelSearchOpen;
+  elSearch.tabIndex = leftPanelSearchOpen ? 0 : -1;
+  if (elBtnCloseFieldSearch) elBtnCloseFieldSearch.tabIndex = leftPanelSearchOpen ? 0 : -1;
+  [elBtnToggleFieldSearch, elBtnToggleFieldSearchCollapsed].forEach((button) => {
+    button?.setAttribute("aria-expanded", String(leftPanelSearchOpen));
+  });
+  syncLeftPanelSearchQueryState();
+
+  if (leftPanelSearchOpen && options.focus !== false) {
+    requestAnimationFrame(() => {
+      elSearch.focus({ preventScroll: true });
+      elSearch.select();
+    });
+  } else if (!leftPanelSearchOpen && options.restoreFocus) {
+    requestAnimationFrame(() => elBtnToggleFieldSearch?.focus({ preventScroll: true }));
+  }
+}
+
+function closeLeftAddObjectPopover(options = {}) {
+  if (!elLeftAddObjectPopover) return;
+  const wasOpen = !elLeftAddObjectPopover.classList.contains("hidden");
+  elLeftAddObjectPopover.classList.add("hidden");
+  elLeftAddObjectPopover.setAttribute("aria-hidden", "true");
+  elLeftAddObjectPopover.inert = true;
+  elBtnAddObjectCollapsed?.setAttribute("aria-expanded", "false");
+  if (wasOpen && options.restoreFocus !== false && leftAddObjectReturnFocus?.isConnected) {
+    leftAddObjectReturnFocus.focus({ preventScroll: true });
+  }
+  leftAddObjectReturnFocus = null;
+}
+
+function positionLeftAddObjectPopover() {
+  if (!elLeftAddObjectPopover || elLeftAddObjectPopover.classList.contains("hidden")) return;
+  const workspaceRect = document.querySelector(".canvasWrap.editorWorkspace")?.getBoundingClientRect();
+  positionInspectorPopover(elLeftAddObjectPopover, workspaceRect ? {
+    x: workspaceRect.left,
+    y: workspaceRect.bottom - elLeftAddObjectPopover.offsetHeight
+  } : { anchor: leftAddObjectReturnFocus });
+}
+
+function openLeftAddObjectPopover(anchor = elBtnAddObjectCollapsed) {
+  if (!elLeftAddObjectPopover || !anchor) return false;
+  closeInspectorObjectMenu({ restoreFocus: false });
+  closeInspectorAppSettings({ restoreFocus: false });
+  leftAddObjectReturnFocus = anchor;
+  elLeftAddObjectPopover.classList.remove("hidden");
+  elLeftAddObjectPopover.setAttribute("aria-hidden", "false");
+  elLeftAddObjectPopover.inert = false;
+  elBtnAddObjectCollapsed?.setAttribute("aria-expanded", String(elBtnAddObjectCollapsed === anchor));
+  positionLeftAddObjectPopover();
+  requestAnimationFrame(() => elLeftAddObjectPopover.querySelector(".toolButton")?.focus());
+  return true;
+}
+
+function applyLeftPanelCollapsedState() {
+  const collapsed = leftPanelCollapsedPreference && isLeftPanelCollapseAvailable();
+  elLeftPanel?.classList.toggle("leftPanel--collapsed", collapsed);
+  elLeftPanel?.setAttribute("data-collapsed", String(collapsed));
+  const app = document.querySelector(".app");
+  app?.classList.toggle("app--leftPanelCollapsed", collapsed);
+  app?.setAttribute("data-left-panel-collapsed", String(collapsed));
+
+  if (elLeftPanelExpanded) elLeftPanelExpanded.inert = collapsed;
+  if (elLeftPanelCollapsedActions) {
+    elLeftPanelCollapsedActions.inert = !collapsed;
+    elLeftPanelCollapsedActions.setAttribute("aria-hidden", String(!collapsed));
+    elLeftPanelCollapsedActions.querySelectorAll("button").forEach((button) => {
+      button.tabIndex = collapsed ? 0 : -1;
+    });
+  }
+
+  if (elBtnCollapseLeftPanel) {
+    elBtnCollapseLeftPanel.tabIndex = collapsed ? -1 : 0;
+    elBtnCollapseLeftPanel.setAttribute("aria-expanded", String(!collapsed));
+  }
+  if (elBtnExpandLeftPanel) {
+    elBtnExpandLeftPanel.tabIndex = collapsed ? 0 : -1;
+    elBtnExpandLeftPanel.setAttribute("aria-expanded", String(!collapsed));
+  }
+
+  if (collapsed) {
+    setLeftPanelSearchOpen(false, { focus: false });
+    closeLeftAddObjectPopover({ restoreFocus: false });
+  }
+  refreshCanvasSizeAfterPanelMove();
+}
+
+function setLeftPanelCollapsed(collapsed, options = {}) {
+  leftPanelCollapsedPreference = !!collapsed;
+  persistLeftPanelCollapsedPreference();
+  applyLeftPanelCollapsedState();
+
+  if (options.focus === false) return;
+  const target = leftPanelCollapsedPreference && isLeftPanelCollapseAvailable()
+    ? elBtnExpandLeftPanel
+    : elBtnCollapseLeftPanel;
+  requestAnimationFrame(() => target?.focus({ preventScroll: true }));
+}
+
+function initLeftPanelUi() {
+  leftPanelCollapsedPreference = readLeftPanelCollapsedPreference();
+  elLeftPanelSearch && (elLeftPanelSearch.inert = true);
+  closeLeftAddObjectPopover({ restoreFocus: false });
+
+  elBtnAddObjectCollapsed?.addEventListener("click", () => {
+    if (!elLeftAddObjectPopover?.classList.contains("hidden") && leftAddObjectReturnFocus === elBtnAddObjectCollapsed) {
+      closeLeftAddObjectPopover();
+    } else {
+      openLeftAddObjectPopover(elBtnAddObjectCollapsed);
+    }
+  });
+
+  elBtnToggleFieldSearch?.addEventListener("click", () => {
+    setLeftPanelSearchOpen(!leftPanelSearchOpen, { focus: true, restoreFocus: true });
+  });
+  elBtnToggleFieldSearchCollapsed?.addEventListener("click", () => {
+    setLeftPanelCollapsed(false, { focus: false });
+    requestAnimationFrame(() => setLeftPanelSearchOpen(true, { focus: true }));
+  });
+  elBtnCloseFieldSearch?.addEventListener("click", () => {
+    setLeftPanelSearchOpen(false, { clear: true, restoreFocus: true });
+  });
+  elBtnCollapseLeftPanel?.addEventListener("click", () => setLeftPanelCollapsed(true));
+  elBtnExpandLeftPanel?.addEventListener("click", () => setLeftPanelCollapsed(false));
+
+  elLeftAddObjectPopover?.addEventListener("click", (event) => {
+    const toolButton = event.target.closest?.(".toolButton");
+    if (!toolButton) return;
+    const targetId = toolButton.dataset.addObjectTarget;
+    closeLeftAddObjectPopover({ restoreFocus: false });
+    if (targetId) $(targetId)?.click();
+  }, true);
+
+  document.addEventListener("pointerdown", (event) => {
+    if (elLeftAddObjectPopover?.classList.contains("hidden")) return;
+    const clickedTrigger = elBtnAddObjectCollapsed?.contains(event.target);
+    if (!clickedTrigger && !elLeftAddObjectPopover.contains(event.target)) {
+      closeLeftAddObjectPopover({ restoreFocus: false });
+    }
+  });
+  document.addEventListener("ciff:canvas-placement-started", () => {
+    closeLeftAddObjectPopover({ restoreFocus: false });
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    if (!elLeftAddObjectPopover?.classList.contains("hidden")) {
+      event.preventDefault();
+      closeLeftAddObjectPopover();
+      return;
+    }
+    if (leftPanelSearchOpen) {
+      event.preventDefault();
+      setLeftPanelSearchOpen(false, { restoreFocus: true });
+    }
+  });
+  window.addEventListener("resize", () => requestAnimationFrame(positionLeftAddObjectPopover));
+
+  const collapseQuery = window.matchMedia?.("(min-width: 1121px)");
+  if (collapseQuery?.addEventListener) collapseQuery.addEventListener("change", applyLeftPanelCollapsedState);
+  else collapseQuery?.addListener?.(applyLeftPanelCollapsedState);
+
+  syncLeftPanelSearchQueryState();
+  applyLeftPanelCollapsedState();
+}
+
+function isExternalFileDrag(event) {
+  const types = event?.dataTransfer?.types;
+  if (!types) return false;
+  if (typeof types.includes === "function") return types.includes("Files");
+  return Array.from(types).includes("Files");
+}
+
+function isSupportedTemplateFile(file) {
+  return /\.(?:ciff|xml)$/i.test(String(file?.name || ""));
+}
+
+async function openTemplateFile(file) {
+  if (!isSupportedTemplateFile(file)) {
+    appLogger.file("FILE_OPEN_UNSUPPORTED", "Отклонён файл неподдерживаемого формата.", {
+      name: file.name,
+      sizeBytes: file.size,
+      mimeType: file.type || null
+    }, "WARN");
+    openNotificationModal(
+      t("dialog.unsupportedFile.message"),
+      t("dialog.unsupportedFile.title")
+    );
+    return false;
+  }
+  appLogger.file("FILE_OPEN_SELECTED", "Пользователь выбрал файл для открытия.", {
+    name: file.name,
+    sizeBytes: file.size,
+    mimeType: file.type || null,
+    lastModified: file.lastModified ? new Date(file.lastModified).toISOString() : null
+  });
+  try {
+    const text = await readFileSmart(file);
+    const result = typeof openXmlInNewTemplateTab === "function"
+      ? openXmlInNewTemplateTab(text, file.name)
+      : loadXml(text, { title: file.name, markDirty: false, source: "file" });
+    appLogger.file("FILE_OPEN_COMPLETED", "Открытие выбранного файла завершено.", {
+      name: file.name,
+      sizeBytes: file.size,
+      success: !!result
+    }, result ? "INFO" : "WARN");
+    return !!result;
+  } catch (error) {
+    console.error("Failed to open CIFF file:", error);
+    appLogger.error("FILE_OPEN_FAILED", "Ошибка чтения или открытия выбранного файла.", error, {
+      name: file.name,
+      sizeBytes: file.size,
+      mimeType: file.type || null
+    });
+    openNotificationModal(
+      t("dialog.fileOpenError.message"),
+      t("dialog.fileOpenError.title")
+    );
+    return false;
+  }
+}
+
+async function openTemplateFiles(files) {
+  for (const file of files) {
+    await openTemplateFile(file);
+  }
+}
+
+function initTemplateFileDropZone() {
+  const dropZone = document.querySelector(".canvasWrap");
+  if (!dropZone) return;
+
+  let dragEnterDepth = 0;
+
+  const deactivateDragState = () => {
+    dragEnterDepth = 0;
+    dropZone.classList.remove("is-file-dragging");
+  };
+
+  const activateDragState = () => {
+    dropZone.classList.add("is-file-dragging");
+  };
+
+  dropZone.addEventListener("dragenter", (event) => {
+    if (!isExternalFileDrag(event)) return;
+    event.preventDefault();
+    dragEnterDepth += 1;
+    activateDragState();
+  });
+
+  dropZone.addEventListener("dragover", (event) => {
+    if (!isExternalFileDrag(event)) return;
+    event.preventDefault();
+    event.dataTransfer.dropEffect = "copy";
+    if (dragEnterDepth === 0) dragEnterDepth = 1;
+    activateDragState();
+  });
+
+  dropZone.addEventListener("dragleave", (event) => {
+    if (dragEnterDepth === 0) return;
+    dragEnterDepth = Math.max(0, dragEnterDepth - 1);
+    if (dragEnterDepth === 0) deactivateDragState();
+  });
+
+  dropZone.addEventListener("drop", (event) => {
+    if (!isExternalFileDrag(event)) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const files = Array.from(event.dataTransfer?.files || []);
+    deactivateDragState();
+    void openTemplateFiles(files);
+  });
+
+  window.addEventListener("blur", deactivateDragState);
+  window.addEventListener("dragend", deactivateDragState);
+  document.addEventListener("dragover", (event) => {
+    if (isExternalFileDrag(event)) event.preventDefault();
+  });
+  document.addEventListener("drop", (event) => {
+    if (!isExternalFileDrag(event)) return;
+    event.preventDefault();
+    deactivateDragState();
+  });
 }
 
 // ---------- UI init ----------
@@ -463,59 +1366,20 @@ function initUI() {
     });
   }
 
-  // Tabs
-  document.querySelectorAll(".tab").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".tab").forEach((b) => {
-        b.classList.remove("tab--active");
-        b.active = false;
-        b.setAttribute("aria-selected", "false");
-      });
-      btn.classList.add("tab--active");
-      btn.active = true;
-      btn.setAttribute("aria-selected", "true");
-      const tab = btn.dataset.tab;
-
-      document.querySelectorAll(".tabview").forEach(v => v.classList.remove("tabview--active"));
-      $(`tab-${tab}`).classList.add("tabview--active");
-    });
-  });
+  initInspectorUi();
+  initLeftPanelUi();
 
   $("fileInput").addEventListener("change", async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    appLogger.file("FILE_OPEN_SELECTED", "Пользователь выбрал файл для открытия.", {
-      name: file.name,
-      sizeBytes: file.size,
-      mimeType: file.type || null,
-      lastModified: file.lastModified ? new Date(file.lastModified).toISOString() : null
-    });
     try {
-      const text = await readFileSmart(file);
-      const result = typeof openXmlInNewTemplateTab === "function"
-        ? openXmlInNewTemplateTab(text, file.name)
-        : loadXml(text, { title: file.name, markDirty: false, source: "file" });
-      appLogger.file("FILE_OPEN_COMPLETED", "Открытие выбранного файла завершено.", {
-        name: file.name,
-        sizeBytes: file.size,
-        success: !!result
-      }, result ? "INFO" : "WARN");
-    } catch (error) {
-      console.error("Failed to open CIFF file:", error);
-      appLogger.error("FILE_OPEN_FAILED", "Ошибка чтения или открытия выбранного файла.", error, {
-        name: file.name,
-        sizeBytes: file.size,
-        mimeType: file.type || null
-      });
-      openNotificationModal(
-        t("dialog.fileOpenError.message"),
-        t("dialog.fileOpenError.title")
-      );
+      await openTemplateFile(file);
     } finally {
       e.target.value = "";
     }
   });
   $("btnOpenFile")?.addEventListener("click", () => $("fileInput").click());
+  initTemplateFileDropZone();
 
   $("btnSave").addEventListener("click", () => openSaveTemplateModal());
 
@@ -537,6 +1401,11 @@ function initUI() {
   });
   elNewDataMatrixSymbolSize?.addEventListener("change", () => syncDataMatrixModalControls());
   elNewDataMatrixSnValue?.addEventListener("change", () => syncDataMatrixModalControls());
+  elDataMatrixModal?.querySelectorAll("[data-dm-sn-length]").forEach((button) => button.addEventListener("click", () => {
+    if (!elNewDataMatrixSnValue) return;
+    elNewDataMatrixSnValue.value = button.dataset.dmSnLength === "13" ? "0000000000000" : "000000";
+    syncDataMatrixModalControls();
+  }));
   $("btnCancelSaveTemplate")?.addEventListener("click", () => closeSaveTemplateModal());
   $("btnConfirmSaveTemplate")?.addEventListener("click", () => saveTemplateFromDialog());
   elSaveTemplateName?.addEventListener("keydown", (e) => {
@@ -588,8 +1457,10 @@ function initUI() {
     backdrop.addEventListener("click", () => closeAdvancedEditorModal(backdrop.dataset.editorModalClose));
   });
   elZoomRange.addEventListener("input", () => setZoom(parseInt(String(elZoomRange.value), 10)));
+  syncZoomSliderUI();
   $("zoomIn").addEventListener("click", () => setZoom(clamp(25, 400, zoomPct + 10)));
   $("zoomOut").addEventListener("click", () => setZoom(clamp(25, 400, zoomPct - 10)));
+  elZoomLabel.addEventListener("click", () => setZoom(100));
   elBtnPanMode?.addEventListener("click", () => setMobilePanMode(!isMobilePanMode));
 
   const mobilePanQuery = window.matchMedia?.("(max-width: 960px)");
@@ -622,16 +1493,50 @@ function initUI() {
       if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
     });
   }
+  const precisionStepSelect = $("precisionMoveStep");
+  if (precisionStepSelect) {
+    precisionStepSelect.replaceChildren(...MOVE_STEP_OPTIONS.map((step) => {
+      const option = document.createElement("option");
+      option.value = String(step);
+      option.textContent = String(step);
+      return option;
+    }));
+  }
+  [$("moveStepSelect"), precisionStepSelect].filter(Boolean).forEach((moveStepSelect) => {
+    Array.from(moveStepSelect.options).forEach((option) => {
+      option.dataset.menuLabel = `${option.value} mm`;
+    });
+    moveStepSelect.value = String(normalizeMoveStep(state.moveStep));
+    moveStepSelect.addEventListener("change", () => {
+      state.moveStep = normalizeMoveStep(moveStepSelect.value);
+      syncPrecisionMoveControls();
+      if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+    });
+  });
   if (typeof enhanceSelectControls === "function") enhanceSelectControls(document);
   if (typeof enhanceNumberControls === "function") enhanceNumberControls(document);
   if (typeof syncTextFieldModalControls === "function") syncTextFieldModalControls();
   if (typeof syncDataMatrixModalControls === "function") syncDataMatrixModalControls();
 
-  elSearch.addEventListener("input", () => renderFieldLists());
-  elFieldFilterButtons.forEach((button) => {
+  elSearch.addEventListener("input", () => {
+    syncLeftPanelSearchQueryState();
+    renderFieldLists();
+  });
+  elFieldFilterButtons.forEach((button, buttonIndex) => {
     button.addEventListener("click", () => {
       activeFieldFilter = button.dataset.fieldFilter || "printed";
       renderFieldLists();
+    });
+    button.addEventListener("keydown", (event) => {
+      let nextIndex = null;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (buttonIndex + 1) % elFieldFilterButtons.length;
+      if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (buttonIndex - 1 + elFieldFilterButtons.length) % elFieldFilterButtons.length;
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = elFieldFilterButtons.length - 1;
+      if (nextIndex === null) return;
+      event.preventDefault();
+      elFieldFilterButtons[nextIndex]?.focus();
+      elFieldFilterButtons[nextIndex]?.click();
     });
   });
   initPrecisionMoveControls();
@@ -659,12 +1564,13 @@ function initUI() {
   }));
   $("addDataMatrix").addEventListener("click", () => openDataMatrixModal());
 
-  elBtnDelete.addEventListener("click", () => deleteSelected());
-
   $("btnShowHiddenOnCanvas").addEventListener("click", () => {
     state.showHiddenOnCanvas = !state.showHiddenOnCanvas;
     renderAll();
     if (typeof schedulePersistActiveTemplateTab === "function") schedulePersistActiveTemplateTab();
+  });
+  $("btnShowHiddenOnCanvasCollapsed")?.addEventListener("click", () => {
+    $("btnShowHiddenOnCanvas").click();
   });
   $("addOffset").addEventListener("click", () => {
     if (!state.xmlDoc) return;
@@ -817,10 +1723,11 @@ function openAdvancedEditorModal(kind) {
   if (!modal) return;
 
   if (kind === "datamatrix") {
-    const selectedDataMatrix = getSelectedFields().find((field) => field.fldType === "Barcode" && field.barcode?.dataMatrix);
-    const firstDataMatrix = state.fields.find((field) => field.fldType === "Barcode" && field.barcode?.dataMatrix);
-    const dataMatrix = selectedDataMatrix ?? firstDataMatrix;
-    if (dataMatrix && !isFieldSelected(dataMatrix.name)) setSelectedNames([dataMatrix.name], dataMatrix.name);
+    const selectedFields = getSelectedFields();
+    const selectedDataMatrix = selectedFields.length === 1 &&
+      selectedFields[0].fldType === "Barcode" &&
+      selectedFields[0].barcode?.dataMatrix;
+    if (!selectedDataMatrix) return;
   }
 
   renderAll();
@@ -849,19 +1756,56 @@ function getPrecisionMoveButtons() {
 }
 
 function getPrecisionMoveButtonDelta(button) {
-  return {
-    dxMm: Number(button?.dataset?.moveDx ?? 0),
-    dyMm: Number(button?.dataset?.moveDy ?? 0)
-  };
+  return getMoveStepDelta(button?.dataset?.precisionMove);
+}
+
+function getMoveStepDelta(direction) {
+  const step = normalizeMoveStep(state.moveStep);
+  switch (direction) {
+    case "left": return { dxMm: -step, dyMm: 0 };
+    case "right": return { dxMm: step, dyMm: 0 };
+    case "up": return { dxMm: 0, dyMm: -step };
+    case "down": return { dxMm: 0, dyMm: step };
+    default: return { dxMm: 0, dyMm: 0 };
+  }
+}
+
+function handleMoveSelectionKeydown(event) {
+  const direction = { ArrowLeft: "left", ArrowRight: "right", ArrowUp: "up", ArrowDown: "down" }[event.key];
+  if (!direction || event.defaultPrevented || event.isComposing || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return false;
+  if (isEditableEventTarget(event.target) || event.target?.closest?.("button:not([data-precision-move]), [role='tab'], [role='menu'], [role='listbox'], [role='slider']")) return false;
+  const hasOpenDialog = Array.from(document.querySelectorAll(".modal, [role='dialog'], .customSelect.is-open"))
+    .some((element) => element.getClientRects().length > 0 && !element.closest(".hidden, [hidden], [aria-hidden='true']"));
+  if (hasOpenDialog || pendingCanvasPlacement) return false;
+  if (!getSelectedFields().length) return false;
+  event.preventDefault();
+  const { dxMm, dyMm } = getMoveStepDelta(direction);
+  moveSelectedFieldsByMm(dxMm, dyMm);
+  return true;
 }
 
 function syncPrecisionMoveControls() {
+  const step = String(normalizeMoveStep(state.moveStep));
+  const stepLabel = $("precisionMoveStep");
+  if (stepLabel) {
+    stepLabel.value = step;
+    if (typeof syncCustomSelectControl === "function") syncCustomSelectControl(stepLabel);
+  }
+  const select = $("moveStepSelect");
+  if (select) {
+    select.value = step;
+    if (typeof syncCustomSelectControl === "function") syncCustomSelectControl(select);
+  }
   const hasSelection = typeof getSelectedFields === "function" && getSelectedFields().length > 0;
   const panel = $("precisionMovePanel");
   panel?.classList.toggle("is-visible", hasSelection);
   panel?.setAttribute("aria-hidden", String(!hasSelection));
   getPrecisionMoveButtons().forEach((button) => {
     button.disabled = !hasSelection;
+    const direction = button.dataset.precisionMove;
+    const key = `canvas.move${direction[0].toUpperCase()}${direction.slice(1)}`;
+    const label = t(key, { step });
+    button.setAttribute("aria-label", label);
   });
 }
 
@@ -920,10 +1864,21 @@ function initPrecisionMoveControls() {
   });
 }
 
+function syncZoomSliderUI() {
+  if (!elZoomRange) return;
+  const min = Number(elZoomRange.min);
+  const max = Number(elZoomRange.max);
+  const value = Number(elZoomRange.value);
+  const fraction = max > min ? clamp(0, 1, (value - min) / (max - min)) : 0;
+  elZoomRange.parentElement?.style.setProperty("--zoom-slider-fraction", String(fraction));
+  elZoomRange.setAttribute("aria-valuetext", `${elZoomRange.value}%`);
+}
+
 function setZoom(pct) {
   zoomPct = pct;
   elZoomRange.value = String(pct);
   elZoomLabel.textContent = `${pct}%`;
+  syncZoomSliderUI();
 
   renderGrid();
   renderObjects();
@@ -1065,18 +2020,38 @@ function rectsIntersect(a, b) {
 }
 
 function getCanvasInternalWidth() {
-  return state.subImage.maxWidth || state.subImage.width || 0;
+  for (const value of [
+    state.subImage?.workspaceWidth,
+    state.subImage?.maxWidth,
+    state.subImage?.width
+  ]) {
+    if (value == null || value === "") continue;
+    const width = Number(value);
+    if (Number.isFinite(width) && width >= 0) return width;
+  }
+  return 0;
 }
 
 function getCanvasInternalHeight() {
-  return state.subImage.maxHeight || state.subImage.height || 0;
+  for (const value of [
+    state.subImage?.workspaceHeight,
+    state.subImage?.maxHeight,
+    state.subImage?.height
+  ]) {
+    if (value == null || value === "") continue;
+    const height = Number(value);
+    if (Number.isFinite(height) && height >= 0) return height;
+  }
+  return 0;
 }
 
 function getUsedImageInternalWidth() {
-  return state.subImage.width || state.subImage.maxWidth || 0;
+  const width = Number(state.subImage?.width);
+  return Number.isFinite(width) && width > 0 ? width : 0;
 }
 
 function getUsedImageInternalHeight() {
-  return state.subImage.height || state.subImage.maxHeight || 0;
+  const height = Number(state.subImage?.height);
+  return Number.isFinite(height) && height > 0 ? height : 0;
 }
 

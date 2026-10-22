@@ -1,0 +1,15 @@
+45404cbe PUSH ESI
+45404cbf MOV ESI,ECX
+45404cc1 MOV ECX,dword ptr [ESI + 0x8]
+45404cc4 MOV dword ptr [ESI],0x45447ba8
+45404cca TEST ECX,ECX
+45404ccc JZ 0x45404cd4
+45404cce MOV EAX,dword ptr [ECX]
+45404cd0 PUSH ECX
+45404cd1 CALL dword ptr [EAX + 0x8]
+45404cd4 CMP dword ptr [ESI + 0xc],0x0
+45404cd8 JZ 0x45404ce3
+45404cda PUSH dword ptr [ESI + 0xc]
+45404cdd CALL dword ptr [0x45447124]
+45404ce3 POP ESI
+45404ce4 RET

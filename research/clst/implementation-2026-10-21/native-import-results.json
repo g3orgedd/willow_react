@@ -1,0 +1,337 @@
+{
+    "cases":  [
+                  {
+                      "name":  "first-subimage-charref-cr",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "FIRST",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     10,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "FIRST",
+                                        "calculatedDataUnits":  [
+                                                                    117,
+                                                                    110,
+                                                                    117,
+                                                                    115,
+                                                                    101,
+                                                                    100
+                                                                ]
+                                    }
+                                ],
+                      "properties":  [
+                                         {
+                                             "field":  1,
+                                             "userUnits":  null,
+                                             "subImage":  1,
+                                             "defaultUnits":  [
+                                                                  117,
+                                                                  110,
+                                                                  117,
+                                                                  115,
+                                                                  101,
+                                                                  100
+                                                              ],
+                                             "index":  1
+                                         }
+                                     ]
+                  },
+                  {
+                      "name":  "first-default-charref-cr",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "FIRST",
+                                         "calculatedDataUnits":  [
+                                                                     115,
+                                                                     116,
+                                                                     97,
+                                                                     108,
+                                                                     101
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "FIRST",
+                                        "calculatedDataUnits":  [
+                                                                    68,
+                                                                    10,
+                                                                    69
+                                                                ]
+                                    }
+                                ],
+                      "properties":  [
+                                         {
+                                             "field":  1,
+                                             "userUnits":  null,
+                                             "subImage":  1,
+                                             "defaultUnits":  [
+                                                                  68,
+                                                                  10,
+                                                                  69
+                                                              ],
+                                             "index":  1
+                                         }
+                                     ]
+                  },
+                  {
+                      "name":  "first-user-charref-cr",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "FIRST",
+                                         "calculatedDataUnits":  [
+                                                                     115,
+                                                                     116,
+                                                                     97,
+                                                                     108,
+                                                                     101
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "FIRST",
+                                        "calculatedDataUnits":  [
+                                                                    85,
+                                                                    10,
+                                                                    86
+                                                                ]
+                                    }
+                                ],
+                      "properties":  [
+                                         {
+                                             "field":  1,
+                                             "userUnits":  [
+                                                               85,
+                                                               10,
+                                                               86
+                                                           ],
+                                             "subImage":  1,
+                                             "defaultUnits":  [
+                                                                  68,
+                                                                  69,
+                                                                  70,
+                                                                  65,
+                                                                  85,
+                                                                  76,
+                                                                  84
+                                                              ],
+                                             "index":  1
+                                         }
+                                     ]
+                  },
+                  {
+                      "name":  "second-subimage-literal-crlf",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "FIRST",
+                                         "calculatedDataUnits":  [
+                                                                     70,
+                                                                     73,
+                                                                     82,
+                                                                     83,
+                                                                     84
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  2,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "SECOND",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     10,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "FIRST",
+                                        "calculatedDataUnits":  [
+                                                                    70,
+                                                                    73,
+                                                                    82,
+                                                                    83,
+                                                                    84
+                                                                ]
+                                    },
+                                    {
+                                        "subImageIndex":  2,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "SECOND",
+                                        "calculatedDataUnits":  [
+                                                                    117,
+                                                                    110,
+                                                                    117,
+                                                                    115,
+                                                                    101,
+                                                                    100
+                                                                ]
+                                    }
+                                ],
+                      "properties":  [
+                                         {
+                                             "field":  1,
+                                             "userUnits":  null,
+                                             "subImage":  1,
+                                             "defaultUnits":  [
+                                                                  70,
+                                                                  73,
+                                                                  82,
+                                                                  83,
+                                                                  84
+                                                              ],
+                                             "index":  1
+                                         },
+                                         {
+                                             "field":  1,
+                                             "userUnits":  null,
+                                             "subImage":  2,
+                                             "defaultUnits":  [
+                                                                  117,
+                                                                  110,
+                                                                  117,
+                                                                  115,
+                                                                  101,
+                                                                  100
+                                                              ],
+                                             "index":  1
+                                         }
+                                     ]
+                  },
+                  {
+                      "name":  "second-subimage-charref-cr",
+                      "before":  [
+                                     {
+                                         "subImageIndex":  1,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "FIRST",
+                                         "calculatedDataUnits":  [
+                                                                     70,
+                                                                     73,
+                                                                     82,
+                                                                     83,
+                                                                     84
+                                                                 ]
+                                     },
+                                     {
+                                         "subImageIndex":  2,
+                                         "index":  1,
+                                         "fieldType":  0,
+                                         "displayed":  1,
+                                         "name":  "SECOND",
+                                         "calculatedDataUnits":  [
+                                                                     65,
+                                                                     10,
+                                                                     66
+                                                                 ]
+                                     }
+                                 ],
+                      "after":  [
+                                    {
+                                        "subImageIndex":  1,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "FIRST",
+                                        "calculatedDataUnits":  [
+                                                                    70,
+                                                                    73,
+                                                                    82,
+                                                                    83,
+                                                                    84
+                                                                ]
+                                    },
+                                    {
+                                        "subImageIndex":  2,
+                                        "index":  1,
+                                        "fieldType":  0,
+                                        "displayed":  1,
+                                        "name":  "SECOND",
+                                        "calculatedDataUnits":  [
+                                                                    117,
+                                                                    110,
+                                                                    117,
+                                                                    115,
+                                                                    101,
+                                                                    100
+                                                                ]
+                                    }
+                                ],
+                      "properties":  [
+                                         {
+                                             "field":  1,
+                                             "userUnits":  null,
+                                             "subImage":  1,
+                                             "defaultUnits":  [
+                                                                  70,
+                                                                  73,
+                                                                  82,
+                                                                  83,
+                                                                  84
+                                                              ],
+                                             "index":  1
+                                         },
+                                         {
+                                             "field":  1,
+                                             "userUnits":  null,
+                                             "subImage":  2,
+                                             "defaultUnits":  [
+                                                                  117,
+                                                                  110,
+                                                                  117,
+                                                                  115,
+                                                                  101,
+                                                                  100
+                                                              ],
+                                             "index":  1
+                                         }
+                                     ]
+                  }
+              ],
+    "method":  "Original XML import from unmodified entity source, property getters and CiffHelper.ResolveField"
+}

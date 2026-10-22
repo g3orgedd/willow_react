@@ -1,0 +1,17 @@
+// Source: CLCiffConversion_Layout.dll @ 4542ce38; _vsprintf_s
+
+/* Library Function - Single Match
+    _vsprintf_s
+   
+   Library: Visual Studio 2012 Release */
+
+int __cdecl _vsprintf_s(char *_DstBuf,size_t _SizeInBytes,char *_Format,va_list _ArgList)
+
+{
+  int iVar1;
+  
+  iVar1 = __vsprintf_s_l(_DstBuf,_SizeInBytes,_Format,(_locale_t)0x0,_ArgList);
+  return iVar1;
+}
+
+

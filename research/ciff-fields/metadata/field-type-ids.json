@@ -1,0 +1,68 @@
+[
+    {
+        "module":  "CLCSTextBasedField.dll",
+        "typeName":  "FixedText",
+        "typeId":  0,
+        "clsid":  "{BB0561B2-C54F-11D4-A995-00010212D541}"
+    },
+    {
+        "module":  "CLCSTextBasedField.dll",
+        "typeName":  "TimeText",
+        "typeId":  1,
+        "clsid":  "{BB0561B2-C54F-11D4-A995-00010212D541}"
+    },
+    {
+        "module":  "CLCSTextBasedField.dll",
+        "typeName":  "DateText",
+        "typeId":  2,
+        "clsid":  "{BB0561B2-C54F-11D4-A995-00010212D541}"
+    },
+    {
+        "module":  "CLCSTextBasedField.dll",
+        "typeName":  "OffsetDateText",
+        "typeId":  4,
+        "clsid":  "{BB0561B2-C54F-11D4-A995-00010212D541}"
+    },
+    {
+        "module":  "CLCSTextBasedField.dll",
+        "typeName":  "CounterText",
+        "typeId":  3,
+        "clsid":  "{BB0561B2-C54F-11D4-A995-00010212D541}"
+    },
+    {
+        "module":  "CLCSTextBasedField.dll",
+        "typeName":  "EquipRef",
+        "typeId":  6,
+        "clsid":  "{BB0561B2-C54F-11D4-A995-00010212D541}"
+    },
+    {
+        "module":  "CLCSTextBasedField.dll",
+        "typeName":  "Price",
+        "typeId":  7,
+        "clsid":  "{BB0561B2-C54F-11D4-A995-00010212D541}"
+    },
+    {
+        "module":  "CLCSBarcodeField.dll",
+        "typeName":  "Barcode",
+        "typeId":  0,
+        "clsid":  "{43C2458C-D5B0-11D4-800A-005004D10645}"
+    },
+    {
+        "module":  "CLCSSmallBarcode.dll",
+        "typeName":  "Barcode",
+        "typeId":  0,
+        "clsid":  "{7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F}"
+    },
+    {
+        "module":  "CLCSGraphicBasedField.dll",
+        "typeName":  "StaticGraphic",
+        "typeId":  0,
+        "clsid":  "{6AE09851-D80F-11D4-8DAE-0050DAFE8A9F}"
+    },
+    {
+        "module":  "CLCSGraphicPrimitive.dll",
+        "typeName":  "GraphicPrimitive",
+        "typeId":  0,
+        "clsid":  "{DC1F7EC4-7698-11D5-8036-005004D10645}"
+    }
+]

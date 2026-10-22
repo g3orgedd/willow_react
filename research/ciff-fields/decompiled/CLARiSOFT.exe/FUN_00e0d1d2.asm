@@ -1,0 +1,18 @@
+00e0d1d2 PUSH 0x0
+00e0d1d4 PUSH 0x1
+00e0d1d6 CALL 0x00e07f7d
+00e0d1db POP ECX
+00e0d1dc POP ECX
+00e0d1dd TEST EAX,EAX
+00e0d1df JZ 0x00e0d1e3
+00e0d1e1 MOV dword ptr [EAX],EAX
+00e0d1e3 LEA ECX,[EAX + 0x4]
+00e0d1e6 TEST ECX,ECX
+00e0d1e8 JZ 0x00e0d1ec
+00e0d1ea MOV dword ptr [ECX],EAX
+00e0d1ec LEA ECX,[EAX + 0x8]
+00e0d1ef TEST ECX,ECX
+00e0d1f1 JZ 0x00e0d1f5
+00e0d1f3 MOV dword ptr [ECX],EAX
+00e0d1f5 MOV word ptr [EAX + 0xc],0x101
+00e0d1fb RET

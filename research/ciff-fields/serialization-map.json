@@ -1,0 +1,3862 @@
+{
+  "sourceDllSha256": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+  "note": "Evidence index, not an executable rule engine. Conditions and error propagation remain in the cited C and assembly.",
+  "tags": [
+    {
+      "index": 0,
+      "pointerAddress": "6815fc38",
+      "value": "*"
+    },
+    {
+      "index": 1,
+      "pointerAddress": "6815fc3c",
+      "value": "ImageDesign"
+    },
+    {
+      "index": 2,
+      "pointerAddress": "6815fc40",
+      "value": "Header"
+    },
+    {
+      "index": 3,
+      "pointerAddress": "6815fc44",
+      "value": "SubImage"
+    },
+    {
+      "index": 4,
+      "pointerAddress": "6815fc48",
+      "value": "GenericSettings"
+    },
+    {
+      "index": 5,
+      "pointerAddress": "6815fc4c",
+      "value": "Units"
+    },
+    {
+      "index": 6,
+      "pointerAddress": "6815fc50",
+      "value": "ErrorLeniency"
+    },
+    {
+      "index": 7,
+      "pointerAddress": "6815fc54",
+      "value": "ClStVersionInfo"
+    },
+    {
+      "index": 8,
+      "pointerAddress": "6815fc58",
+      "value": "LastDownloaded"
+    },
+    {
+      "index": 9,
+      "pointerAddress": "6815fc5c",
+      "value": "DeveloperLicense"
+    },
+    {
+      "index": 10,
+      "pointerAddress": "6815fc60",
+      "value": "DateOffset"
+    },
+    {
+      "index": 11,
+      "pointerAddress": "6815fc64",
+      "value": "DefaultOffset"
+    },
+    {
+      "index": 12,
+      "pointerAddress": "6815fc68",
+      "value": "SourceOffset"
+    },
+    {
+      "index": 13,
+      "pointerAddress": "6815fc6c",
+      "value": "RndMode"
+    },
+    {
+      "index": 14,
+      "pointerAddress": "6815fc70",
+      "value": "RndType"
+    },
+    {
+      "index": 15,
+      "pointerAddress": "6815fc74",
+      "value": "RndDay"
+    },
+    {
+      "index": 16,
+      "pointerAddress": "6815fc78",
+      "value": "Prompt"
+    },
+    {
+      "index": 17,
+      "pointerAddress": "6815fc7c",
+      "value": "ResetOnSel"
+    },
+    {
+      "index": 18,
+      "pointerAddress": "6815fc80",
+      "value": "CurrentOffset"
+    },
+    {
+      "index": 19,
+      "pointerAddress": "6815fc84",
+      "value": "CurrentDate"
+    },
+    {
+      "index": 20,
+      "pointerAddress": "6815fc88",
+      "value": "MinOffset"
+    },
+    {
+      "index": 21,
+      "pointerAddress": "6815fc8c",
+      "value": "MaxOffset"
+    },
+    {
+      "index": 22,
+      "pointerAddress": "6815fc90",
+      "value": "RefDate"
+    },
+    {
+      "index": 23,
+      "pointerAddress": "6815fc94",
+      "value": "CalcAtCoder"
+    },
+    {
+      "index": 24,
+      "pointerAddress": "6815fc98",
+      "value": "Seconds"
+    },
+    {
+      "index": 25,
+      "pointerAddress": "6815fc9c",
+      "value": "Day"
+    },
+    {
+      "index": 26,
+      "pointerAddress": "6815fca0",
+      "value": "Month"
+    },
+    {
+      "index": 27,
+      "pointerAddress": "6815fca4",
+      "value": "Year"
+    },
+    {
+      "index": 28,
+      "pointerAddress": "6815fca8",
+      "value": "ConnStr"
+    },
+    {
+      "index": 29,
+      "pointerAddress": "6815fcac",
+      "value": "DateSQL"
+    },
+    {
+      "index": 30,
+      "pointerAddress": "6815fcb0",
+      "value": "DateMask"
+    },
+    {
+      "index": 31,
+      "pointerAddress": "6815fcb4",
+      "value": "SubHeader"
+    },
+    {
+      "index": 32,
+      "pointerAddress": "6815fcb8",
+      "value": "ImageWidth"
+    },
+    {
+      "index": 33,
+      "pointerAddress": "6815fcbc",
+      "value": "ImageHeight"
+    },
+    {
+      "index": 34,
+      "pointerAddress": "6815fcc0",
+      "value": "ImageRotation"
+    },
+    {
+      "index": 35,
+      "pointerAddress": "6815fcc4",
+      "value": "MaxImageWidth"
+    },
+    {
+      "index": 36,
+      "pointerAddress": "6815fcc8",
+      "value": "MaxImageHeight"
+    },
+    {
+      "index": 37,
+      "pointerAddress": "6815fccc",
+      "value": "XRes"
+    },
+    {
+      "index": 38,
+      "pointerAddress": "6815fcd0",
+      "value": "YRes"
+    },
+    {
+      "index": 39,
+      "pointerAddress": "6815fcd4",
+      "value": "LastUpdated"
+    },
+    {
+      "index": 40,
+      "pointerAddress": "6815fcd8",
+      "value": "Field"
+    },
+    {
+      "index": 41,
+      "pointerAddress": "6815fcdc",
+      "value": "FldType"
+    },
+    {
+      "index": 42,
+      "pointerAddress": "6815fce0",
+      "value": "CLSID"
+    },
+    {
+      "index": 43,
+      "pointerAddress": "6815fce4",
+      "value": "Displayed"
+    },
+    {
+      "index": 44,
+      "pointerAddress": "6815fce8",
+      "value": "X"
+    },
+    {
+      "index": 45,
+      "pointerAddress": "6815fcec",
+      "value": "Y"
+    },
+    {
+      "index": 46,
+      "pointerAddress": "6815fcf0",
+      "value": "W"
+    },
+    {
+      "index": 47,
+      "pointerAddress": "6815fcf4",
+      "value": "H"
+    },
+    {
+      "index": 48,
+      "pointerAddress": "6815fcf8",
+      "value": "Ln"
+    },
+    {
+      "index": 49,
+      "pointerAddress": "6815fcfc",
+      "value": "Orientation"
+    },
+    {
+      "index": 50,
+      "pointerAddress": "6815fd00",
+      "value": "OverrideThis"
+    },
+    {
+      "index": 51,
+      "pointerAddress": "6815fd04",
+      "value": "Inverse"
+    },
+    {
+      "index": 52,
+      "pointerAddress": "6815fd08",
+      "value": "Mirror"
+    },
+    {
+      "index": 53,
+      "pointerAddress": "6815fd0c",
+      "value": "RenderMode"
+    },
+    {
+      "index": 54,
+      "pointerAddress": "6815fd10",
+      "value": "CalcData"
+    },
+    {
+      "index": 55,
+      "pointerAddress": "6815fd14",
+      "value": "LoggedField"
+    },
+    {
+      "index": 56,
+      "pointerAddress": "6815fd18",
+      "value": "Origin"
+    },
+    {
+      "index": 57,
+      "pointerAddress": "6815fd1c",
+      "value": "Data"
+    },
+    {
+      "index": 58,
+      "pointerAddress": "6815fd20",
+      "value": "Text"
+    },
+    {
+      "index": 59,
+      "pointerAddress": "6815fd24",
+      "value": "Barcode"
+    },
+    {
+      "index": 60,
+      "pointerAddress": "6815fd28",
+      "value": "Graphic"
+    },
+    {
+      "index": 61,
+      "pointerAddress": "6815fd2c",
+      "value": "Object"
+    },
+    {
+      "index": 62,
+      "pointerAddress": "6815fd30",
+      "value": "DataType"
+    },
+    {
+      "index": 63,
+      "pointerAddress": "6815fd34",
+      "value": "Locale"
+    },
+    {
+      "index": 64,
+      "pointerAddress": "6815fd38",
+      "value": "Calendar"
+    },
+    {
+      "index": 65,
+      "pointerAddress": "6815fd3c",
+      "value": "Encryption"
+    },
+    {
+      "index": 66,
+      "pointerAddress": "6815fd40",
+      "value": "MaxNoOfChars"
+    },
+    {
+      "index": 67,
+      "pointerAddress": "6815fd44",
+      "value": "Default"
+    },
+    {
+      "index": 68,
+      "pointerAddress": "6815fd48",
+      "value": "FixedLen"
+    },
+    {
+      "index": 69,
+      "pointerAddress": "6815fd4c",
+      "value": "SrcField"
+    },
+    {
+      "index": 70,
+      "pointerAddress": "6815fd50",
+      "value": "SrcData"
+    },
+    {
+      "index": 71,
+      "pointerAddress": "6815fd54",
+      "value": "VarText"
+    },
+    {
+      "index": 72,
+      "pointerAddress": "6815fd58",
+      "value": "OffsetDate"
+    },
+    {
+      "index": 73,
+      "pointerAddress": "6815fd5c",
+      "value": "CounterText"
+    },
+    {
+      "index": 74,
+      "pointerAddress": "6815fd60",
+      "value": "PadChar"
+    },
+    {
+      "index": 75,
+      "pointerAddress": "6815fd64",
+      "value": "PadMode"
+    },
+    {
+      "index": 76,
+      "pointerAddress": "6815fd68",
+      "value": "StartChar"
+    },
+    {
+      "index": 77,
+      "pointerAddress": "6815fd6c",
+      "value": "NoOfChars"
+    },
+    {
+      "index": 78,
+      "pointerAddress": "6815fd70",
+      "value": "SrcSQL"
+    },
+    {
+      "index": 79,
+      "pointerAddress": "6815fd74",
+      "value": "Mask"
+    },
+    {
+      "index": 80,
+      "pointerAddress": "6815fd78",
+      "value": "UserEnterData"
+    },
+    {
+      "index": 81,
+      "pointerAddress": "6815fd7c",
+      "value": "PromptAtCoder"
+    },
+    {
+      "index": 82,
+      "pointerAddress": "6815fd80",
+      "value": "ListData"
+    },
+    {
+      "index": 83,
+      "pointerAddress": "6815fd84",
+      "value": "Item"
+    },
+    {
+      "index": 84,
+      "pointerAddress": "6815fd88",
+      "value": "Rollover"
+    },
+    {
+      "index": 85,
+      "pointerAddress": "6815fd8c",
+      "value": "PrnPerCnt"
+    },
+    {
+      "index": 86,
+      "pointerAddress": "6815fd90",
+      "value": "ParentCounter"
+    },
+    {
+      "index": 87,
+      "pointerAddress": "6815fd94",
+      "value": "SubCnt"
+    },
+    {
+      "index": 88,
+      "pointerAddress": "6815fd98",
+      "value": "LeadingChars"
+    },
+    {
+      "index": 89,
+      "pointerAddress": "6815fd9c",
+      "value": "StartVal"
+    },
+    {
+      "index": 90,
+      "pointerAddress": "6815fda0",
+      "value": "EndVal"
+    },
+    {
+      "index": 91,
+      "pointerAddress": "6815fda4",
+      "value": "StepSize"
+    },
+    {
+      "index": 92,
+      "pointerAddress": "6815fda8",
+      "value": "CurrVal"
+    },
+    {
+      "index": 93,
+      "pointerAddress": "6815fdac",
+      "value": "IncableChars"
+    },
+    {
+      "index": 94,
+      "pointerAddress": "6815fdb0",
+      "value": "ClrStCntType"
+    },
+    {
+      "index": 95,
+      "pointerAddress": "6815fdb4",
+      "value": "Clip"
+    },
+    {
+      "index": 96,
+      "pointerAddress": "6815fdb8",
+      "value": "Rect"
+    },
+    {
+      "index": 97,
+      "pointerAddress": "6815fdbc",
+      "value": "Font"
+    },
+    {
+      "index": 98,
+      "pointerAddress": "6815fdc0",
+      "value": "Bold"
+    },
+    {
+      "index": 99,
+      "pointerAddress": "6815fdc4",
+      "value": "Italic"
+    },
+    {
+      "index": 100,
+      "pointerAddress": "6815fdc8",
+      "value": "DblSpace"
+    },
+    {
+      "index": 101,
+      "pointerAddress": "6815fdcc",
+      "value": "Block"
+    },
+    {
+      "index": 102,
+      "pointerAddress": "6815fdd0",
+      "value": "Face"
+    },
+    {
+      "index": 103,
+      "pointerAddress": "6815fdd4",
+      "value": "Family"
+    },
+    {
+      "index": 104,
+      "pointerAddress": "6815fdd8",
+      "value": "Pitch"
+    },
+    {
+      "index": 105,
+      "pointerAddress": "6815fddc",
+      "value": "XMag"
+    },
+    {
+      "index": 106,
+      "pointerAddress": "6815fde0",
+      "value": "YMag"
+    },
+    {
+      "index": 107,
+      "pointerAddress": "6815fde4",
+      "value": "TTSize"
+    },
+    {
+      "index": 108,
+      "pointerAddress": "6815fde8",
+      "value": "BlkW"
+    },
+    {
+      "index": 109,
+      "pointerAddress": "6815fdec",
+      "value": "BlkH"
+    },
+    {
+      "index": 110,
+      "pointerAddress": "6815fdf0",
+      "value": "MinFontSize"
+    },
+    {
+      "index": 111,
+      "pointerAddress": "6815fdf4",
+      "value": "BlkJustify"
+    },
+    {
+      "index": 112,
+      "pointerAddress": "6815fdf8",
+      "value": "Hyphenation"
+    },
+    {
+      "index": 113,
+      "pointerAddress": "6815fdfc",
+      "value": "Mag"
+    },
+    {
+      "index": 114,
+      "pointerAddress": "6815fe00",
+      "value": "BcH"
+    },
+    {
+      "index": 115,
+      "pointerAddress": "6815fe04",
+      "value": "HR"
+    },
+    {
+      "index": 116,
+      "pointerAddress": "6815fe08",
+      "value": "CheckDigit"
+    },
+    {
+      "index": 117,
+      "pointerAddress": "6815fe0c",
+      "value": "QuietMargin"
+    },
+    {
+      "index": 118,
+      "pointerAddress": "6815fe10",
+      "value": "XOffSet"
+    },
+    {
+      "index": 119,
+      "pointerAddress": "6815fe14",
+      "value": "EAN8"
+    },
+    {
+      "index": 120,
+      "pointerAddress": "6815fe18",
+      "value": "EAN13"
+    },
+    {
+      "index": 121,
+      "pointerAddress": "6815fe1c",
+      "value": "UPCE"
+    },
+    {
+      "index": 122,
+      "pointerAddress": "6815fe20",
+      "value": "UPCA"
+    },
+    {
+      "index": 123,
+      "pointerAddress": "6815fe24",
+      "value": "Code39"
+    },
+    {
+      "index": 124,
+      "pointerAddress": "6815fe28",
+      "value": "Code128"
+    },
+    {
+      "index": 125,
+      "pointerAddress": "6815fe2c",
+      "value": "ITF"
+    },
+    {
+      "index": 126,
+      "pointerAddress": "6815fe30",
+      "value": "EAN128"
+    },
+    {
+      "index": 127,
+      "pointerAddress": "6815fe34",
+      "value": "Sup2DigitCode"
+    },
+    {
+      "index": 128,
+      "pointerAddress": "6815fe38",
+      "value": "Sup5DigitCode"
+    },
+    {
+      "index": 129,
+      "pointerAddress": "6815fe3c",
+      "value": "RSS14"
+    },
+    {
+      "index": 130,
+      "pointerAddress": "6815fe40",
+      "value": "RSS14Truncated"
+    },
+    {
+      "index": 131,
+      "pointerAddress": "6815fe44",
+      "value": "RSS14Stacked"
+    },
+    {
+      "index": 132,
+      "pointerAddress": "6815fe48",
+      "value": "RSS14StackedOmni"
+    },
+    {
+      "index": 133,
+      "pointerAddress": "6815fe4c",
+      "value": "RSSLimited"
+    },
+    {
+      "index": 134,
+      "pointerAddress": "6815fe50",
+      "value": "HRDisplayed"
+    },
+    {
+      "index": 135,
+      "pointerAddress": "6815fe54",
+      "value": "HRPos"
+    },
+    {
+      "index": 136,
+      "pointerAddress": "6815fe58",
+      "value": "HRFont"
+    },
+    {
+      "index": 137,
+      "pointerAddress": "6815fe5c",
+      "value": "GuardBars"
+    },
+    {
+      "index": 138,
+      "pointerAddress": "6815fe60",
+      "value": "BearerBars"
+    },
+    {
+      "index": 139,
+      "pointerAddress": "6815fe64",
+      "value": "BearerBox"
+    },
+    {
+      "index": 140,
+      "pointerAddress": "6815fe68",
+      "value": "HGauge"
+    },
+    {
+      "index": 141,
+      "pointerAddress": "6815fe6c",
+      "value": "ThickThinRatio"
+    },
+    {
+      "index": 142,
+      "pointerAddress": "6815fe70",
+      "value": "IntelligentEan128"
+    },
+    {
+      "index": 143,
+      "pointerAddress": "6815fe74",
+      "value": "GfxW"
+    },
+    {
+      "index": 144,
+      "pointerAddress": "6815fe78",
+      "value": "GfxH"
+    },
+    {
+      "index": 145,
+      "pointerAddress": "6815fe7c",
+      "value": "StaticGfx"
+    },
+    {
+      "index": 146,
+      "pointerAddress": "6815fe80",
+      "value": "Primitive"
+    },
+    {
+      "index": 147,
+      "pointerAddress": "6815fe84",
+      "value": "VariableGfx"
+    },
+    {
+      "index": 148,
+      "pointerAddress": "6815fe88",
+      "value": "EmbeddedGfx"
+    },
+    {
+      "index": 149,
+      "pointerAddress": "6815fe8c",
+      "value": "AspectRatio"
+    },
+    {
+      "index": 150,
+      "pointerAddress": "6815fe90",
+      "value": "ResizeFrame"
+    },
+    {
+      "index": 151,
+      "pointerAddress": "6815fe94",
+      "value": "Shape"
+    },
+    {
+      "index": 152,
+      "pointerAddress": "6815fe98",
+      "value": "LineW"
+    },
+    {
+      "index": 153,
+      "pointerAddress": "6815fe9c",
+      "value": "ComplexShape"
+    },
+    {
+      "index": 154,
+      "pointerAddress": "6815fea0",
+      "value": "Point"
+    },
+    {
+      "index": 155,
+      "pointerAddress": "6815fea4",
+      "value": "ImageMapping"
+    },
+    {
+      "index": 156,
+      "pointerAddress": "6815fea8",
+      "value": "Map"
+    },
+    {
+      "index": 157,
+      "pointerAddress": "6815feac",
+      "value": "ImageQuality"
+    },
+    {
+      "index": 158,
+      "pointerAddress": "6815feb0",
+      "value": "SelectAfterDownload"
+    },
+    {
+      "index": 159,
+      "pointerAddress": "6815feb4",
+      "value": "Embedded"
+    },
+    {
+      "index": 160,
+      "pointerAddress": "6815feb8",
+      "value": "File"
+    },
+    {
+      "index": 161,
+      "pointerAddress": "6815febc",
+      "value": "MaxLines"
+    },
+    {
+      "index": 162,
+      "pointerAddress": "6815fec0",
+      "value": "DataSource"
+    },
+    {
+      "index": 163,
+      "pointerAddress": "6815fec4",
+      "value": "Price"
+    },
+    {
+      "index": 164,
+      "pointerAddress": "6815fec8",
+      "value": "Current"
+    },
+    {
+      "index": 165,
+      "pointerAddress": "6815fecc",
+      "value": "Min"
+    },
+    {
+      "index": 166,
+      "pointerAddress": "6815fed0",
+      "value": "Max"
+    },
+    {
+      "index": 167,
+      "pointerAddress": "6815fed4",
+      "value": "DecimalPlaces"
+    },
+    {
+      "index": 168,
+      "pointerAddress": "6815fed8",
+      "value": "SQLUsed"
+    },
+    {
+      "index": 169,
+      "pointerAddress": "6815fedc",
+      "value": "PriceSQL"
+    },
+    {
+      "index": 170,
+      "pointerAddress": "6815fee0",
+      "value": "SrcField"
+    },
+    {
+      "index": 171,
+      "pointerAddress": "6815fee4",
+      "value": "PriceData"
+    },
+    {
+      "index": 172,
+      "pointerAddress": "6815fee8",
+      "value": "Checksum"
+    },
+    {
+      "index": 173,
+      "pointerAddress": "6815feec",
+      "value": "HigherFmt"
+    },
+    {
+      "index": 174,
+      "pointerAddress": "6815fef0",
+      "value": "LowerFmt"
+    },
+    {
+      "index": 175,
+      "pointerAddress": "6815fef4",
+      "value": "SwitchVal"
+    },
+    {
+      "index": 176,
+      "pointerAddress": "6815fef8",
+      "value": "Type"
+    },
+    {
+      "index": 177,
+      "pointerAddress": "6815fefc",
+      "value": "Parameters"
+    },
+    {
+      "index": 178,
+      "pointerAddress": "6815ff00",
+      "value": "ParamSet"
+    },
+    {
+      "index": 179,
+      "pointerAddress": "6815ff04",
+      "value": "Param"
+    },
+    {
+      "index": 180,
+      "pointerAddress": "6815ff08",
+      "value": "DataMatrix"
+    },
+    {
+      "index": 181,
+      "pointerAddress": "6815ff0c",
+      "value": "ECCType"
+    },
+    {
+      "index": 182,
+      "pointerAddress": "6815ff10",
+      "value": "ModuleSize"
+    },
+    {
+      "index": 183,
+      "pointerAddress": "6815ff14",
+      "value": "SymbolSize"
+    },
+    {
+      "index": 184,
+      "pointerAddress": "6815ff18",
+      "value": "PDF417"
+    },
+    {
+      "index": 185,
+      "pointerAddress": "6815ff1c",
+      "value": "MicroPDF417"
+    },
+    {
+      "index": 186,
+      "pointerAddress": "6815ff20",
+      "value": "RowHeight"
+    },
+    {
+      "index": 187,
+      "pointerAddress": "6815ff24",
+      "value": "Columns"
+    },
+    {
+      "index": 188,
+      "pointerAddress": "6815ff28",
+      "value": "Rows"
+    },
+    {
+      "index": 189,
+      "pointerAddress": "6815ff2c",
+      "value": "ErrorCorrection"
+    },
+    {
+      "index": 190,
+      "pointerAddress": "6815ff30",
+      "value": "Type"
+    },
+    {
+      "index": 191,
+      "pointerAddress": "6815ff34",
+      "value": "Encoding"
+    },
+    {
+      "index": 192,
+      "pointerAddress": "6815ff38",
+      "value": "RolloverError"
+    },
+    {
+      "index": 193,
+      "pointerAddress": "6815ff3c",
+      "value": "PromptWith"
+    },
+    {
+      "index": 194,
+      "pointerAddress": "6815ff40",
+      "value": "HRStyle"
+    },
+    {
+      "index": 195,
+      "pointerAddress": "6815ff44",
+      "value": "LineID"
+    },
+    {
+      "index": 196,
+      "pointerAddress": "6815ff48",
+      "value": "TxtDir"
+    },
+    {
+      "index": 197,
+      "pointerAddress": "6815ff4c",
+      "value": "FixedWidth"
+    },
+    {
+      "index": 198,
+      "pointerAddress": "6815ff50",
+      "value": "Width"
+    },
+    {
+      "index": 199,
+      "pointerAddress": "6815ff54",
+      "value": "Align"
+    },
+    {
+      "index": 200,
+      "pointerAddress": "6815ff58",
+      "value": "CharSpace"
+    },
+    {
+      "index": 201,
+      "pointerAddress": "6815ff5c",
+      "value": "Escapement"
+    },
+    {
+      "index": 202,
+      "pointerAddress": "6815ff60",
+      "value": "QR"
+    },
+    {
+      "index": 203,
+      "pointerAddress": "6815ff64",
+      "value": "QRVersion"
+    },
+    {
+      "index": 204,
+      "pointerAddress": "6815ff68",
+      "value": "QRErrorLevel"
+    },
+    {
+      "index": 205,
+      "pointerAddress": "6815ff6c",
+      "value": "QRMirror"
+    },
+    {
+      "index": 206,
+      "pointerAddress": "6815ff70",
+      "value": "RSSExpanded"
+    },
+    {
+      "index": 207,
+      "pointerAddress": "6815ff74",
+      "value": "RSSExpandedStacked"
+    },
+    {
+      "index": 208,
+      "pointerAddress": "6815ff78",
+      "value": "CalendarRules"
+    },
+    {
+      "index": 209,
+      "pointerAddress": "6815ff7c",
+      "value": "CalendarRule"
+    },
+    {
+      "index": 210,
+      "pointerAddress": "6815ff80",
+      "value": "AvoidanceDates"
+    },
+    {
+      "index": 211,
+      "pointerAddress": "6815ff84",
+      "value": "AvoidanceDate"
+    },
+    {
+      "index": 212,
+      "pointerAddress": "6815ff88",
+      "value": "BearerSize"
+    },
+    {
+      "index": 213,
+      "pointerAddress": "6815ff8c",
+      "value": "QMSize"
+    },
+    {
+      "index": 214,
+      "pointerAddress": "6815ff90",
+      "value": "MultiStroke"
+    },
+    {
+      "index": 215,
+      "pointerAddress": "6815ff94",
+      "value": "AutoSize"
+    },
+    {
+      "index": 216,
+      "pointerAddress": "6815ff98",
+      "value": "ImageMirror"
+    },
+    {
+      "index": 217,
+      "pointerAddress": "6815ff9c",
+      "value": "ImageInverse"
+    },
+    {
+      "index": 218,
+      "pointerAddress": "6815ffa0",
+      "value": "PitchResolution"
+    },
+    {
+      "index": 219,
+      "pointerAddress": "6815ffa4",
+      "value": "ResetSource"
+    },
+    {
+      "index": 220,
+      "pointerAddress": "6815ffa8",
+      "value": "LegacyC128Enc"
+    },
+    {
+      "index": 221,
+      "pointerAddress": "6815ffac",
+      "value": "MagRnd"
+    },
+    {
+      "index": 222,
+      "pointerAddress": "6815ffb0",
+      "value": "MaxiCode"
+    },
+    {
+      "index": 223,
+      "pointerAddress": "6815ffb4",
+      "value": "Mode"
+    },
+    {
+      "index": 224,
+      "pointerAddress": "6815ffb8",
+      "value": "Symbol"
+    },
+    {
+      "index": 225,
+      "pointerAddress": "6815ffbc",
+      "value": "SymbolCount"
+    },
+    {
+      "index": 226,
+      "pointerAddress": "6815ffc0",
+      "value": "Planet"
+    },
+    {
+      "index": 227,
+      "pointerAddress": "6815ffc4",
+      "value": "Postnet"
+    },
+    {
+      "index": 228,
+      "pointerAddress": "6815ffc8",
+      "value": "Plant"
+    },
+    {
+      "index": 229,
+      "pointerAddress": "6815ffcc",
+      "value": "UspsImb"
+    },
+    {
+      "index": 230,
+      "pointerAddress": "6815ffd0",
+      "value": "MarkSet"
+    },
+    {
+      "index": 231,
+      "pointerAddress": "6815ffd4",
+      "value": "BarcodePrinting"
+    },
+    {
+      "index": 232,
+      "pointerAddress": "6815ffd8",
+      "value": "HRPrintCheckDigit"
+    },
+    {
+      "index": 233,
+      "pointerAddress": "6815ffdc",
+      "value": "ManualCode128Encoding"
+    },
+    {
+      "index": 234,
+      "pointerAddress": "6815ffe0",
+      "value": "CorrectCheckDigit"
+    },
+    {
+      "index": 235,
+      "pointerAddress": "6815ffe4",
+      "value": "CurrentOrientation"
+    },
+    {
+      "index": 236,
+      "pointerAddress": "6815ffe8",
+      "value": "BarcodeDataFormat"
+    },
+    {
+      "index": 237,
+      "pointerAddress": "6815ffec",
+      "value": "Code93"
+    },
+    {
+      "index": 238,
+      "pointerAddress": "6815fff0",
+      "value": "SelectMode"
+    },
+    {
+      "index": 239,
+      "pointerAddress": "6815fff4",
+      "value": "LogoReferencePrinter"
+    },
+    {
+      "index": 240,
+      "pointerAddress": "6815fff8",
+      "value": "ConnStr"
+    },
+    {
+      "index": 241,
+      "pointerAddress": "6815fffc",
+      "value": "SourceSQL"
+    },
+    {
+      "index": 242,
+      "pointerAddress": "68160000",
+      "value": "CLARICOMSSCC"
+    },
+    {
+      "index": 243,
+      "pointerAddress": "68160004",
+      "value": "xml"
+    },
+    {
+      "index": 244,
+      "pointerAddress": "68160008",
+      "value": "version=\"1.0\" "
+    },
+    {
+      "index": 245,
+      "pointerAddress": "6816000c",
+      "value": "encoding=\"UTF-8\" "
+    },
+    {
+      "index": 246,
+      "pointerAddress": "68160010",
+      "value": "encoding=\"UTF-16\" "
+    },
+    {
+      "index": 247,
+      "pointerAddress": "68160014",
+      "value": "default"
+    },
+    {
+      "index": 248,
+      "pointerAddress": "68160018",
+      "value": "encoding=\""
+    },
+    {
+      "index": 249,
+      "pointerAddress": "6816001c",
+      "value": "UTF-8"
+    },
+    {
+      "index": 250,
+      "pointerAddress": "68160020",
+      "value": "InternalName"
+    },
+    {
+      "index": 251,
+      "pointerAddress": "68160024",
+      "value": "DesignedFor"
+    },
+    {
+      "index": 252,
+      "pointerAddress": "68160028",
+      "value": "DesignedWith"
+    },
+    {
+      "index": 253,
+      "pointerAddress": "6816002c",
+      "value": "OverrideAll"
+    },
+    {
+      "index": 254,
+      "pointerAddress": "68160030",
+      "value": "Name"
+    },
+    {
+      "index": 255,
+      "pointerAddress": "68160034",
+      "value": "StaticDate"
+    },
+    {
+      "index": 256,
+      "pointerAddress": "68160038",
+      "value": "AutoUpdate"
+    },
+    {
+      "index": 257,
+      "pointerAddress": "6816003c",
+      "value": "Type"
+    },
+    {
+      "index": 258,
+      "pointerAddress": "68160040",
+      "value": "Used"
+    },
+    {
+      "index": 259,
+      "pointerAddress": "68160044",
+      "value": "ImageReference"
+    },
+    {
+      "index": 260,
+      "pointerAddress": "68160048",
+      "value": "FormatName"
+    },
+    {
+      "index": 261,
+      "pointerAddress": "6816004c",
+      "value": "PrinterType"
+    },
+    {
+      "index": 262,
+      "pointerAddress": "68160050",
+      "value": "Index"
+    },
+    {
+      "index": 263,
+      "pointerAddress": "68160054",
+      "value": "Static"
+    },
+    {
+      "index": 264,
+      "pointerAddress": "68160058",
+      "value": "Parse"
+    },
+    {
+      "index": 265,
+      "pointerAddress": "6816005c",
+      "value": "SrcFieldName"
+    },
+    {
+      "index": 266,
+      "pointerAddress": "68160060",
+      "value": "SrcOffset"
+    },
+    {
+      "index": 267,
+      "pointerAddress": "68160064",
+      "value": "Significance"
+    },
+    {
+      "index": 268,
+      "pointerAddress": "68160068",
+      "value": "AlphaNum"
+    },
+    {
+      "index": 269,
+      "pointerAddress": "6816006c",
+      "value": "LeadChar"
+    },
+    {
+      "index": 270,
+      "pointerAddress": "68160070",
+      "value": "Left"
+    },
+    {
+      "index": 271,
+      "pointerAddress": "68160074",
+      "value": "Top"
+    },
+    {
+      "index": 272,
+      "pointerAddress": "68160078",
+      "value": "Right"
+    },
+    {
+      "index": 273,
+      "pointerAddress": "6816007c",
+      "value": "Bottom"
+    },
+    {
+      "index": 274,
+      "pointerAddress": "68160080",
+      "value": "Weight"
+    },
+    {
+      "index": 275,
+      "pointerAddress": "68160084",
+      "value": "Compatibility"
+    },
+    {
+      "index": 276,
+      "pointerAddress": "68160088",
+      "value": "ParentField"
+    },
+    {
+      "index": 277,
+      "pointerAddress": "6816008c",
+      "value": "ID"
+    },
+    {
+      "index": 278,
+      "pointerAddress": "68160090",
+      "value": "X"
+    },
+    {
+      "index": 279,
+      "pointerAddress": "68160094",
+      "value": "Y"
+    },
+    {
+      "index": 280,
+      "pointerAddress": "68160098",
+      "value": "PrintHeadDigits"
+    },
+    {
+      "index": 281,
+      "pointerAddress": "6816009c",
+      "value": "SubIMageRef"
+    },
+    {
+      "index": 282,
+      "pointerAddress": "681600a0",
+      "value": "xml:space"
+    },
+    {
+      "index": 283,
+      "pointerAddress": "681600a4",
+      "value": "EqRef"
+    },
+    {
+      "index": 284,
+      "pointerAddress": "681600a8",
+      "value": "Temporary"
+    },
+    {
+      "index": 285,
+      "pointerAddress": "681600ac",
+      "value": "Name"
+    },
+    {
+      "index": 286,
+      "pointerAddress": "681600b0",
+      "value": "Size"
+    },
+    {
+      "index": 287,
+      "pointerAddress": "681600b4",
+      "value": "Type"
+    },
+    {
+      "index": 288,
+      "pointerAddress": "681600b8",
+      "value": "CompType"
+    },
+    {
+      "index": 289,
+      "pointerAddress": "681600bc",
+      "value": "DataSourceName"
+    },
+    {
+      "index": 290,
+      "pointerAddress": "681600c0",
+      "value": "DataSourceTable"
+    },
+    {
+      "index": 291,
+      "pointerAddress": "681600c4",
+      "value": "DataSourceIndex"
+    },
+    {
+      "index": 292,
+      "pointerAddress": "681600c8",
+      "value": "SrcPrice"
+    },
+    {
+      "index": 293,
+      "pointerAddress": "681600cc",
+      "value": "Pos"
+    },
+    {
+      "index": 294,
+      "pointerAddress": "681600d0",
+      "value": "TXField"
+    },
+    {
+      "index": 295,
+      "pointerAddress": "681600d4",
+      "value": "Global"
+    },
+    {
+      "index": 296,
+      "pointerAddress": "681600d8",
+      "value": "Day"
+    },
+    {
+      "index": 297,
+      "pointerAddress": "681600dc",
+      "value": "Month"
+    },
+    {
+      "index": 298,
+      "pointerAddress": "681600e0",
+      "value": "Offset"
+    },
+    {
+      "index": 299,
+      "pointerAddress": "681600e4",
+      "value": "Enabled"
+    },
+    {
+      "index": 300,
+      "pointerAddress": "681600e8",
+      "value": "PrinterFormatName"
+    },
+    {
+      "index": 301,
+      "pointerAddress": "681600ec",
+      "value": "Param"
+    },
+    {
+      "index": 302,
+      "pointerAddress": "681600f0",
+      "value": "Pad"
+    },
+    {
+      "index": 303,
+      "pointerAddress": "681600f4",
+      "value": "Version"
+    },
+    {
+      "index": 304,
+      "pointerAddress": "681600f8",
+      "value": "Database"
+    },
+    {
+      "index": 305,
+      "pointerAddress": "681600fc",
+      "value": "DataSource"
+    },
+    {
+      "index": 306,
+      "pointerAddress": "68160100",
+      "value": "ID"
+    },
+    {
+      "index": 307,
+      "pointerAddress": "68160104",
+      "value": "Mask"
+    },
+    {
+      "index": 308,
+      "pointerAddress": "68160108",
+      "value": "Reference"
+    }
+  ],
+  "barcodeRoutes": [
+    {
+      "value": 0,
+      "enum": "FSTB_ITF",
+      "xmlTag": "ITF",
+      "tagIndex": 125,
+      "featureMask": "0x0031003C"
+    },
+    {
+      "value": 1,
+      "enum": "FSTB_CODE128",
+      "xmlTag": "Code128",
+      "tagIndex": 124,
+      "featureMask": "0x0830001C"
+    },
+    {
+      "value": 2,
+      "enum": "FSTB_EAN128",
+      "xmlTag": "EAN128",
+      "tagIndex": 126,
+      "featureMask": "0x1870005C"
+    },
+    {
+      "value": 3,
+      "enum": "FSTB_CODE39",
+      "xmlTag": "Code39",
+      "tagIndex": 123,
+      "featureMask": "0x00010020"
+    },
+    {
+      "value": 4,
+      "enum": "FSTB_EAN8",
+      "xmlTag": "EAN8",
+      "tagIndex": 119,
+      "featureMask": "0x00000002"
+    },
+    {
+      "value": 5,
+      "enum": "FSTB_EAN13",
+      "xmlTag": "EAN13",
+      "tagIndex": 120,
+      "featureMask": "0x00000002"
+    },
+    {
+      "value": 6,
+      "enum": "FSTB_UPCA",
+      "xmlTag": "UPCA",
+      "tagIndex": 122,
+      "featureMask": "0x00000002"
+    },
+    {
+      "value": 7,
+      "enum": "FSTB_UPCE",
+      "xmlTag": "UPCE",
+      "tagIndex": 121,
+      "featureMask": "0x00000002"
+    },
+    {
+      "value": 8,
+      "enum": "FSTB_SUP2DIGIT",
+      "xmlTag": "Sup2DigitCode",
+      "tagIndex": 127,
+      "featureMask": "0x00000001"
+    },
+    {
+      "value": 9,
+      "enum": "FSTB_SUP5DIGIT",
+      "xmlTag": "Sup5DigitCode",
+      "tagIndex": 128,
+      "featureMask": "0x00000001"
+    },
+    {
+      "value": 10,
+      "enum": "FSTB_RSS14",
+      "xmlTag": "RSS14",
+      "tagIndex": 129,
+      "featureMask": "0x00000000"
+    },
+    {
+      "value": 11,
+      "enum": "FSTB_RSS14TRUNC",
+      "xmlTag": "RSS14Truncated",
+      "tagIndex": 130,
+      "featureMask": "0x00000000"
+    },
+    {
+      "value": 12,
+      "enum": "FSTB_RSS14STACKED",
+      "xmlTag": "RSS14Stacked",
+      "tagIndex": 131,
+      "featureMask": "0x00000000"
+    },
+    {
+      "value": 13,
+      "enum": "FSTB_RSS14STACKEDOMNI",
+      "xmlTag": "RSS14StackedOmni",
+      "tagIndex": 132,
+      "featureMask": "0x00000000"
+    },
+    {
+      "value": 14,
+      "enum": "FSTB_RSSLIMITED",
+      "xmlTag": "RSSLimited",
+      "tagIndex": 133,
+      "featureMask": "0x00000000"
+    },
+    {
+      "value": 15,
+      "enum": "FSTB_DATAMATRIXECC200",
+      "xmlTag": "DataMatrix",
+      "tagIndex": 180,
+      "featureMask": "0x00000380"
+    },
+    {
+      "value": 16,
+      "enum": "FSTB_PDF417",
+      "xmlTag": "PDF417",
+      "tagIndex": 184,
+      "featureMask": "0x00007D00"
+    },
+    {
+      "value": 17,
+      "enum": "FSTB_MICROPDF417",
+      "xmlTag": "MicroPDF417",
+      "tagIndex": 185,
+      "featureMask": "0x0000CD00"
+    },
+    {
+      "value": 18,
+      "enum": "FSTB_QR",
+      "xmlTag": "QR",
+      "tagIndex": 202,
+      "featureMask": "0x200E0100"
+    },
+    {
+      "value": 19,
+      "enum": "FSTB_RSSEXPANDED",
+      "xmlTag": "RSSExpanded",
+      "tagIndex": 206,
+      "featureMask": "0x00000000"
+    },
+    {
+      "value": 20,
+      "enum": "FSTB_RSSEXPANDEDSTACKED",
+      "xmlTag": "RSSExpandedStacked",
+      "tagIndex": 207,
+      "featureMask": "0x00000800"
+    },
+    {
+      "value": 21,
+      "enum": "FSTB_MAXICODE",
+      "xmlTag": "MaxiCode",
+      "tagIndex": 222,
+      "featureMask": "0x07000020"
+    },
+    {
+      "value": 22,
+      "enum": "FSTB_PLANET",
+      "xmlTag": "Planet",
+      "tagIndex": 226,
+      "featureMask": "0x00000020"
+    },
+    {
+      "value": 23,
+      "enum": "FSTB_POSTNET",
+      "xmlTag": "Postnet",
+      "tagIndex": 227,
+      "featureMask": "0x00000020"
+    },
+    {
+      "value": 24,
+      "enum": "FSTB_PLANT",
+      "xmlTag": "Plant",
+      "tagIndex": 228,
+      "featureMask": "0x00000020"
+    },
+    {
+      "value": 25,
+      "enum": "FSTB_USPSIMB",
+      "xmlTag": "UspsImb",
+      "tagIndex": 229,
+      "featureMask": "0x00000020"
+    },
+    {
+      "value": 26,
+      "enum": "FSTB_CODE93",
+      "xmlTag": "Code93",
+      "tagIndex": 237,
+      "featureMask": "0x00000020"
+    }
+  ],
+  "writers": [
+    {
+      "function": "6810248f",
+      "source": "decompiled/CiffMgr.dll/FUN_6810248f.c",
+      "writes": [
+        {
+          "line": 17,
+          "operation": "text element with returned node",
+          "node": null,
+          "call": "FUN_681023dc(param_1,param_2,param_3,param_4,local_14)"
+        }
+      ]
+    },
+    {
+      "function": "68124548",
+      "source": "decompiled/CiffMgr.dll/FUN_68124548.c",
+      "writes": [
+        {
+          "line": 35,
+          "operation": "child container",
+          "node": "AvoidanceDates",
+          "call": "FUN_68124179(param_1,param_3,PTR_u_AvoidanceDates_6815ff80,(int *)&local_1c)"
+        },
+        {
+          "line": 45,
+          "operation": "child container",
+          "node": "AvoidanceDate",
+          "call": "FUN_68124179(piVar1,&local_1c,PTR_u_AvoidanceDate_6815ff84,(int *)&param_1)"
+        },
+        {
+          "line": 61,
+          "operation": "attribute",
+          "node": "Day",
+          "call": "FUN_681021f5(piVar1,&param_2,PTR_DAT_681600d8,(undefined4 *)&local_38)"
+        },
+        {
+          "line": 75,
+          "operation": "attribute",
+          "node": "Month",
+          "call": "FUN_681021f5(piVar1,&param_2,PTR_u_Month_681600dc, (undefined4 *)&local_48)"
+        }
+      ]
+    },
+    {
+      "function": "681247de",
+      "source": "decompiled/CiffMgr.dll/FUN_681247de.c",
+      "writes": [
+        {
+          "line": 36,
+          "operation": "child container",
+          "node": "CalendarRules",
+          "call": "FUN_68124179(param_1,param_3,PTR_u_CalendarRules_6815ff78,(int *)&local_1c)"
+        },
+        {
+          "line": 46,
+          "operation": "child container",
+          "node": "CalendarRule",
+          "call": "FUN_68124179(piVar1,&local_1c,PTR_u_CalendarRule_6815ff7c,(int *)&param_1)"
+        },
+        {
+          "line": 62,
+          "operation": "attribute",
+          "node": "Day",
+          "call": "FUN_681021f5(piVar1,&param_2,PTR_DAT_681600d8,(undefined4 *)&local_38)"
+        },
+        {
+          "line": 77,
+          "operation": "attribute",
+          "node": "Month",
+          "call": "FUN_681021f5(piVar1,&param_2,PTR_u_Month_681600dc, (undefined4 *)&local_48)"
+        },
+        {
+          "line": 92,
+          "operation": "attribute",
+          "node": "Offset",
+          "call": "FUN_681021f5(piVar1,&param_2,PTR_u_Offset_681600e0, (undefined4 *)&local_58)"
+        }
+      ]
+    },
+    {
+      "function": "68124afe",
+      "source": "decompiled/CiffMgr.dll/FUN_68124afe.c",
+      "writes": [
+        {
+          "line": 28,
+          "operation": "text element",
+          "node": "Mag",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_DAT_6815fdfc,psVar3)"
+        },
+        {
+          "line": 37,
+          "operation": "text element",
+          "node": "MagRnd",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_MagRnd_6815ffac,psVar3)"
+        },
+        {
+          "line": 46,
+          "operation": "text element",
+          "node": "BcH",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_DAT_6815fe00,psVar3)"
+        },
+        {
+          "line": 50,
+          "operation": "child container",
+          "node": "HR",
+          "call": "FUN_68124179(param_1,puVar1,PTR_DAT_6815fe04,(int *)&param_2)"
+        },
+        {
+          "line": 62,
+          "operation": "text element",
+          "node": "CheckDigit",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_CheckDigit_6815fe08,puVar4)"
+        },
+        {
+          "line": 68,
+          "operation": "text element",
+          "node": "QuietMargin",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_QuietMargin_6815fe0c,puVar4)"
+        },
+        {
+          "line": 74,
+          "operation": "text element",
+          "node": "XOffSet",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_XOffSet_6815fe10,psVar3)"
+        },
+        {
+          "line": 83,
+          "operation": "text element",
+          "node": "BarcodePrinting",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_BarcodePrinting_6815ffd4,puVar4)"
+        },
+        {
+          "line": 94,
+          "operation": "child container",
+          "node": "*",
+          "call": "FUN_68124179(param_1,puVar1, (&PTR_DAT_6815fc38) [*(int *)(&DAT_6814b8e8 + (int)param_3 * 8)], (int *)&param_2)"
+        }
+      ]
+    },
+    {
+      "function": "68124e3d",
+      "source": "decompiled/CiffMgr.dll/FUN_68124e3d.c",
+      "writes": [
+        {
+          "line": 45,
+          "operation": "attribute",
+          "node": "ParentField",
+          "call": "FUN_681021f5(param_1,&param_4,PTR_u_ParentField_68160088,(undefined4 *)&local_34)"
+        },
+        {
+          "line": 64,
+          "operation": "text element",
+          "node": "GuardBars",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_GuardBars_6815fe5c,puVar3)"
+        },
+        {
+          "line": 75,
+          "operation": "text element",
+          "node": "BearerBars",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_BearerBars_6815fe60,puVar3)"
+        },
+        {
+          "line": 86,
+          "operation": "text element",
+          "node": "BearerBox",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_BearerBox_6815fe64,puVar3)"
+        },
+        {
+          "line": 97,
+          "operation": "text element",
+          "node": "HGauge",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_HGauge_6815fe68,puVar3)"
+        },
+        {
+          "line": 108,
+          "operation": "text element",
+          "node": "ThickThinRatio",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_ThickThinRatio_6815fe6c,psVar4)"
+        },
+        {
+          "line": 119,
+          "operation": "text element",
+          "node": "IntelligentEan128",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_IntelligentEan128_6815fe70,puVar3)"
+        },
+        {
+          "line": 130,
+          "operation": "text element",
+          "node": "ECCType",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_ECCType_6815ff0c,psVar4)"
+        },
+        {
+          "line": 145,
+          "operation": "text element",
+          "node": "ModuleSize",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_ModuleSize_6815ff10,psVar4)"
+        },
+        {
+          "line": 160,
+          "operation": "text element",
+          "node": "SymbolSize",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_SymbolSize_6815ff14,puVar3)"
+        },
+        {
+          "line": 175,
+          "operation": "text element",
+          "node": "RowHeight",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_RowHeight_6815ff20,psVar4)"
+        },
+        {
+          "line": 189,
+          "operation": "text element",
+          "node": "Columns",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_Columns_6815ff24,psVar4)"
+        },
+        {
+          "line": 203,
+          "operation": "text element",
+          "node": "Rows",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_Rows_6815ff28,psVar4)"
+        },
+        {
+          "line": 226,
+          "operation": "attribute",
+          "node": "Pad",
+          "call": "FUN_681021f5(param_1,&param_4,PTR_DAT_681600f0, (undefined4 *)&local_34)"
+        },
+        {
+          "line": 260,
+          "operation": "text element",
+          "node": "ErrorCorrection",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_ErrorCorrection_6815ff2c, puVar3)"
+        },
+        {
+          "line": 276,
+          "operation": "text element",
+          "node": "Type",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_Type_6815ff30,puVar3)"
+        },
+        {
+          "line": 291,
+          "operation": "text element",
+          "node": "Encoding",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_Encoding_6815ff34, puVar3)"
+        },
+        {
+          "line": 307,
+          "operation": "text element",
+          "node": "HRStyle",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_HRStyle_6815ff40, puVar3)"
+        },
+        {
+          "line": 324,
+          "operation": "text element",
+          "node": "QRVersion",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_QRVersion_6815ff64,puVar3)"
+        },
+        {
+          "line": 342,
+          "operation": "text element",
+          "node": "QRErrorLevel",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_QRErrorLevel_6815ff68,puVar3)"
+        },
+        {
+          "line": 360,
+          "operation": "text element",
+          "node": "QRMirror",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_QRMirror_6815ff6c,puVar3)"
+        },
+        {
+          "line": 380,
+          "operation": "text element",
+          "node": "BearerSize",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_BearerSize_6815ff88,psVar4)"
+        },
+        {
+          "line": 401,
+          "operation": "text element",
+          "node": "QMSize",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_QMSize_6815ff8c,pwVar5)"
+        },
+        {
+          "line": 418,
+          "operation": "text element",
+          "node": "LegacyC128Enc",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_LegacyC128Enc_6815ffa8, puVar3)"
+        },
+        {
+          "line": 436,
+          "operation": "text element",
+          "node": "ManualCode128Encoding",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_ManualCode128Encoding_6815ffdc,puVar3)"
+        },
+        {
+          "line": 454,
+          "operation": "text element",
+          "node": "CorrectCheckDigit",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_CorrectCheckDigit_6815ffe0,puVar3)"
+        },
+        {
+          "line": 472,
+          "operation": "text element",
+          "node": "Mode",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_Mode_6815ffb4, psVar4)"
+        },
+        {
+          "line": 491,
+          "operation": "text element",
+          "node": "Symbol",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_Symbol_6815ffb8, psVar4)"
+        },
+        {
+          "line": 510,
+          "operation": "text element",
+          "node": "SymbolCount",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_SymbolCount_6815ffbc, psVar4)"
+        },
+        {
+          "line": 530,
+          "operation": "text element",
+          "node": "BarcodeDataFormat",
+          "call": "FUN_6810248f(param_1,param_3, PTR_u_BarcodeDataFormat_6815ffe8,puVar3)"
+        }
+      ]
+    },
+    {
+      "function": "68125c42",
+      "source": "decompiled/CiffMgr.dll/FUN_68125c42.c",
+      "writes": [
+        {
+          "line": 39,
+          "operation": "attribute",
+          "node": "Compatibility",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_Compatibility_68160084,(undefined4 *)&local_2c)"
+        },
+        {
+          "line": 54,
+          "operation": "text element",
+          "node": "BlkW",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_BlkW_6815fde8,psVar3)"
+        },
+        {
+          "line": 59,
+          "operation": "text element",
+          "node": "BlkH",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_BlkH_6815fdec,psVar3)"
+        },
+        {
+          "line": 64,
+          "operation": "text element",
+          "node": "MinFontSize",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_MinFontSize_6815fdf0,psVar3)"
+        },
+        {
+          "line": 70,
+          "operation": "text element",
+          "node": "BlkJustify",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_BlkJustify_6815fdf4,puVar4)"
+        },
+        {
+          "line": 76,
+          "operation": "text element",
+          "node": "Hyphenation",
+          "call": "FUN_6810248f(param_1,puVar1,PTR_u_Hyphenation_6815fdf8,puVar4)"
+        }
+      ]
+    },
+    {
+      "function": "68125e4d",
+      "source": "decompiled/CiffMgr.dll/FUN_68125e4d.c",
+      "writes": [
+        {
+          "line": 30,
+          "operation": "attribute",
+          "node": "Left",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_Left_68160070,(undefined4 *)&local_24)"
+        },
+        {
+          "line": 37,
+          "operation": "attribute",
+          "node": "Top",
+          "call": "FUN_681021f5(param_1,local_14,PTR_DAT_68160074,(undefined4 *)&local_24)"
+        },
+        {
+          "line": 44,
+          "operation": "attribute",
+          "node": "Right",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_Right_68160078,(undefined4 *)&local_24)"
+        },
+        {
+          "line": 51,
+          "operation": "attribute",
+          "node": "Bottom",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_Bottom_6816007c, (undefined4 *)&local_24)"
+        }
+      ]
+    },
+    {
+      "function": "68126015",
+      "source": "decompiled/CiffMgr.dll/FUN_68126015.c",
+      "writes": [
+        {
+          "line": 60,
+          "operation": "child container",
+          "node": "Rect",
+          "call": "FUN_68124179(param_1,param_3,PTR_u_Rect_6815fdb8,(int *)&local_7c)"
+        }
+      ]
+    },
+    {
+      "function": "681261df",
+      "source": "decompiled/CiffMgr.dll/FUN_681261df.c",
+      "writes": [
+        {
+          "line": 34,
+          "operation": "text element",
+          "node": "Rollover",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Rollover_6815fd88,puVar4)"
+        },
+        {
+          "line": 41,
+          "operation": "text element",
+          "node": "PrnPerCnt",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_PrnPerCnt_6815fd8c,psVar5)"
+        },
+        {
+          "line": 48,
+          "operation": "text element",
+          "node": "ResetOnSel",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_ResetOnSel_6815fc7c,puVar4)"
+        },
+        {
+          "line": 55,
+          "operation": "text element",
+          "node": "ParentCounter",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_ParentCounter_6815fd90,param_1)"
+        },
+        {
+          "line": 68,
+          "operation": "text element",
+          "node": "RolloverError",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_RolloverError_6815ff38,puVar4)"
+        },
+        {
+          "line": 74,
+          "operation": "text element",
+          "node": "PromptWith",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_PromptWith_6815ff3c,puVar4)"
+        },
+        {
+          "line": 85,
+          "operation": "text element",
+          "node": "ResetSource",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_ResetSource_6815ffa4,puVar4)"
+        },
+        {
+          "line": 107,
+          "operation": "child container",
+          "node": "SubCnt",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_SubCnt_6815fd94, (int *)&local_1c)"
+        }
+      ]
+    },
+    {
+      "function": "68126560",
+      "source": "decompiled/CiffMgr.dll/FUN_68126560.c",
+      "writes": [
+        {
+          "line": 48,
+          "operation": "attribute",
+          "node": "Index",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_Index_68160050, (undefined4 *)local_38)"
+        },
+        {
+          "line": 58,
+          "operation": "attribute",
+          "node": "Static",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_Static_68160054, (undefined4 *)local_38)"
+        },
+        {
+          "line": 68,
+          "operation": "attribute",
+          "node": "Parse",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_Parse_68160058, (undefined4 *)local_38)"
+        },
+        {
+          "line": 78,
+          "operation": "attribute",
+          "node": "EqRef",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_EqRef_681600a4, (undefined4 *)local_38)"
+        },
+        {
+          "line": 90,
+          "operation": "attribute",
+          "node": "Param",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_Param_681600ec, (undefined4 *)local_38)"
+        },
+        {
+          "line": 105,
+          "operation": "attribute",
+          "node": "Reference",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_Reference_68160108, (undefined4 *)local_38)"
+        },
+        {
+          "line": 133,
+          "operation": "text element",
+          "node": "DataType",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_DataType_6815fd30,psVar6)"
+        },
+        {
+          "line": 141,
+          "operation": "text element",
+          "node": "Locale",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Locale_6815fd34,param_2)"
+        },
+        {
+          "line": 154,
+          "operation": "text element",
+          "node": "Calendar",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Calendar_6815fd38,pwVar7)"
+        },
+        {
+          "line": 163,
+          "operation": "text element",
+          "node": "Encryption",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Encryption_6815fd3c,param_2)"
+        },
+        {
+          "line": 176,
+          "operation": "text element",
+          "node": "MaxNoOfChars",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_MaxNoOfChars_6815fd40,psVar6)"
+        },
+        {
+          "line": 185,
+          "operation": "CDATA element",
+          "node": "Default",
+          "call": "FUN_6810226e((int *)pOVar1,param_3,PTR_u_Default_6815fd44,param_2)"
+        },
+        {
+          "line": 199,
+          "operation": "child container",
+          "node": "FixedLen",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_FixedLen_6815fd48,(int *)&param_1)"
+        },
+        {
+          "line": 205,
+          "operation": "CDATA element",
+          "node": "PadChar",
+          "call": "FUN_6810226e((int *)pOVar1,&param_1,PTR_u_PadChar_6815fd60,&local_28)"
+        },
+        {
+          "line": 211,
+          "operation": "text element",
+          "node": "PadMode",
+          "call": "FUN_6810248f((int *)pOVar1,&param_1,PTR_u_PadMode_6815fd64,puVar9)"
+        },
+        {
+          "line": 232,
+          "operation": "child container",
+          "node": "PriceData",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_PriceData_6815fee4,(int *)&param_1)"
+        },
+        {
+          "line": 245,
+          "operation": "attribute",
+          "node": "SrcPrice",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_24,PTR_u_SrcPrice_681600c8, (undefined4 *)local_38)"
+        },
+        {
+          "line": 282,
+          "operation": "CDATA element",
+          "node": "HigherFmt",
+          "call": "FUN_6810226e((int *)pOVar1,&param_1,PTR_u_HigherFmt_6815feec,local_18)"
+        },
+        {
+          "line": 287,
+          "operation": "CDATA element",
+          "node": "LowerFmt",
+          "call": "FUN_6810226e((int *)pOVar1,&param_1,PTR_u_LowerFmt_6815fef0,param_2)"
+        },
+        {
+          "line": 291,
+          "operation": "text element",
+          "node": "SwitchVal",
+          "call": "FUN_6810248f((int *)pOVar1,&param_1,PTR_u_SwitchVal_6815fef4,psVar6)"
+        },
+        {
+          "line": 326,
+          "operation": "child container",
+          "node": "Checksum",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_Checksum_6815fee8,(int *)&local_28)"
+        },
+        {
+          "line": 342,
+          "operation": "attribute",
+          "node": "Pos",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&param_1,PTR_DAT_681600cc, (undefined4 *)local_38)"
+        },
+        {
+          "line": 349,
+          "operation": "CDATA element",
+          "node": "Type",
+          "call": "FUN_6810226e((int *)pOVar1,&local_28,PTR_u_Type_6815fef8,param_2)"
+        },
+        {
+          "line": 374,
+          "operation": "child container",
+          "node": "SrcField",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_SrcField_6815fd4c,(int *)&param_2)"
+        },
+        {
+          "line": 384,
+          "operation": "child container",
+          "node": "SrcData",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_SrcData_6815fd50,(int *)&param_2)"
+        },
+        {
+          "line": 394,
+          "operation": "child container",
+          "node": "VarText",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_VarText_6815fd54,(int *)&param_2)"
+        },
+        {
+          "line": 404,
+          "operation": "child container",
+          "node": "OffsetDate",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_OffsetDate_6815fd58,(int *)&param_2)"
+        },
+        {
+          "line": 415,
+          "operation": "child container",
+          "node": "CounterText",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_CounterText_6815fd5c,(int *)&param_2 )"
+        },
+        {
+          "line": 429,
+          "operation": "child container",
+          "node": "CLARICOMSSCC",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_CLARICOMSSCC_68160000, (int *)&local_28)"
+        }
+      ]
+    },
+    {
+      "function": "6812708a",
+      "source": "decompiled/CiffMgr.dll/FUN_6812708a.c",
+      "writes": [
+        {
+          "line": 60,
+          "operation": "child container",
+          "node": "Object",
+          "call": "FUN_68124179((undefined4 *)param_1,param_3,PTR_u_Object_6815fd2c, (int *)&local_7c)"
+        }
+      ]
+    },
+    {
+      "function": "68127254",
+      "source": "decompiled/CiffMgr.dll/FUN_68127254.c",
+      "writes": [
+        {
+          "line": 41,
+          "operation": "attribute",
+          "node": "DataSourceName",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_DataSourceName_681600bc,(undefined4 *)local_24)"
+        },
+        {
+          "line": 47,
+          "operation": "attribute",
+          "node": "DataSourceTable",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_DataSourceTable_681600c0, (undefined4 *)local_24)"
+        },
+        {
+          "line": 54,
+          "operation": "attribute",
+          "node": "DataSourceIndex",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_DataSourceIndex_681600c4, (undefined4 *)local_24)"
+        }
+      ]
+    },
+    {
+      "function": "68127437",
+      "source": "decompiled/CiffMgr.dll/FUN_68127437.c",
+      "writes": [
+        {
+          "line": 60,
+          "operation": "child container",
+          "node": "DataSource",
+          "call": "FUN_68124179(param_1,param_3,PTR_u_DataSource_6815fec0,(int *)&local_7c)"
+        }
+      ]
+    },
+    {
+      "function": "68127601",
+      "source": "decompiled/CiffMgr.dll/FUN_68127601.c",
+      "writes": [
+        {
+          "line": 49,
+          "operation": "attribute",
+          "node": "Name",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_Name_68160030, (undefined4 *)local_3c)"
+        },
+        {
+          "line": 57,
+          "operation": "attribute",
+          "node": "StaticDate",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_StaticDate_68160034, (undefined4 *)local_3c)"
+        },
+        {
+          "line": 67,
+          "operation": "attribute",
+          "node": "AutoUpdate",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_AutoUpdate_68160038, (undefined4 *)local_3c)"
+        },
+        {
+          "line": 77,
+          "operation": "attribute",
+          "node": "Type",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_Type_6816003c, (undefined4 *)local_3c)"
+        },
+        {
+          "line": 115,
+          "operation": "child container",
+          "node": "DefaultOffset",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_DefaultOffset_6815fc64,(int *)&param_2 )"
+        },
+        {
+          "line": 121,
+          "operation": "text element",
+          "node": "Seconds",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Seconds_6815fc98,psVar7)"
+        },
+        {
+          "line": 127,
+          "operation": "text element",
+          "node": "Day",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_DAT_6815fc9c,psVar7)"
+        },
+        {
+          "line": 133,
+          "operation": "text element",
+          "node": "Month",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Month_6815fca0,psVar7)"
+        },
+        {
+          "line": 138,
+          "operation": "text element",
+          "node": "Year",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Year_6815fca4,psVar7)"
+        },
+        {
+          "line": 150,
+          "operation": "child container",
+          "node": "SourceOffset",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_SourceOffset_6815fc68,(int *)&param_1)"
+        },
+        {
+          "line": 159,
+          "operation": "CDATA element",
+          "node": "ConnStr",
+          "call": "FUN_6810226e((int *)pOVar1,&param_1,PTR_u_ConnStr_6815fca8,param_2)"
+        },
+        {
+          "line": 166,
+          "operation": "CDATA element",
+          "node": "DateSQL",
+          "call": "FUN_6810226e((int *)pOVar1,&param_1,PTR_u_DateSQL_6815fcac,param_2)"
+        },
+        {
+          "line": 172,
+          "operation": "CDATA element",
+          "node": "DateMask",
+          "call": "FUN_6810226e((int *)pOVar1,&param_1,PTR_u_DateMask_6815fcb0,param_2)"
+        },
+        {
+          "line": 190,
+          "operation": "text element",
+          "node": "RndMode",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_RndMode_6815fc6c,puVar8)"
+        },
+        {
+          "line": 196,
+          "operation": "text element",
+          "node": "RndType",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_RndType_6815fc70,puVar8)"
+        },
+        {
+          "line": 202,
+          "operation": "text element",
+          "node": "RndDay",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_RndDay_6815fc74,psVar7)"
+        },
+        {
+          "line": 209,
+          "operation": "CDATA element",
+          "node": "Prompt",
+          "call": "FUN_6810226e((int *)pOVar1,param_3,PTR_u_Prompt_6815fc78,param_2)"
+        },
+        {
+          "line": 217,
+          "operation": "text element",
+          "node": "ResetOnSel",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_ResetOnSel_6815fc7c,puVar8)"
+        },
+        {
+          "line": 240,
+          "operation": "child container",
+          "node": "CurrentOffset",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_CurrentOffset_6815fc80, (int *)&param_2)"
+        },
+        {
+          "line": 245,
+          "operation": "text element",
+          "node": "Seconds",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Seconds_6815fc98,psVar7)"
+        },
+        {
+          "line": 250,
+          "operation": "text element",
+          "node": "Day",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_DAT_6815fc9c,psVar7)"
+        },
+        {
+          "line": 255,
+          "operation": "text element",
+          "node": "Month",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Month_6815fca0,psVar7)"
+        },
+        {
+          "line": 259,
+          "operation": "text element",
+          "node": "Year",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Year_6815fca4,psVar7)"
+        },
+        {
+          "line": 283,
+          "operation": "text element",
+          "node": "CurrentDate",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_CurrentDate_6815fc84,pwVar10)"
+        },
+        {
+          "line": 290,
+          "operation": "CDATA element",
+          "node": "RefDate",
+          "call": "FUN_6810226e((int *)pOVar1,param_3,PTR_u_RefDate_6815fc90,param_2)"
+        },
+        {
+          "line": 298,
+          "operation": "text element",
+          "node": "CalcAtCoder",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_CalcAtCoder_6815fc94,puVar8)"
+        },
+        {
+          "line": 311,
+          "operation": "child container",
+          "node": "MinOffset",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_MinOffset_6815fc88,(int *)&param_2 )"
+        },
+        {
+          "line": 325,
+          "operation": "attribute",
+          "node": "Used",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&param_1,PTR_u_Used_68160040, (undefined4 *)&local_50)"
+        },
+        {
+          "line": 337,
+          "operation": "text element",
+          "node": "Seconds",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Seconds_6815fc98,psVar7)"
+        },
+        {
+          "line": 342,
+          "operation": "text element",
+          "node": "Day",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_DAT_6815fc9c,psVar7)"
+        },
+        {
+          "line": 347,
+          "operation": "text element",
+          "node": "Month",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Month_6815fca0,psVar7)"
+        },
+        {
+          "line": 351,
+          "operation": "text element",
+          "node": "Year",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Year_6815fca4,psVar7)"
+        },
+        {
+          "line": 372,
+          "operation": "child container",
+          "node": "MaxOffset",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3,PTR_u_MaxOffset_6815fc8c, (int *)&param_2)"
+        },
+        {
+          "line": 386,
+          "operation": "attribute",
+          "node": "Used",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&param_1,PTR_u_Used_68160040, (undefined4 *)&local_50)"
+        },
+        {
+          "line": 398,
+          "operation": "text element",
+          "node": "Seconds",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Seconds_6815fc98,psVar7)"
+        },
+        {
+          "line": 403,
+          "operation": "text element",
+          "node": "Day",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_DAT_6815fc9c,psVar7)"
+        },
+        {
+          "line": 408,
+          "operation": "text element",
+          "node": "Month",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Month_6815fca0,psVar7)"
+        },
+        {
+          "line": 412,
+          "operation": "text element",
+          "node": "Year",
+          "call": "FUN_6810248f((int *)pOVar1,&param_2,PTR_u_Year_6815fca4,psVar7)"
+        }
+      ]
+    },
+    {
+      "function": "681282c3",
+      "source": "decompiled/CiffMgr.dll/FUN_681282c3.c",
+      "writes": [
+        {
+          "line": 60,
+          "operation": "child container",
+          "node": "DateOffset",
+          "call": "FUN_68124179((undefined4 *)param_1,param_3,PTR_u_DateOffset_6815fc60, (int *)&local_7c)"
+        }
+      ]
+    },
+    {
+      "function": "6812848d",
+      "source": "decompiled/CiffMgr.dll/FUN_6812848d.c",
+      "writes": [
+        {
+          "line": 40,
+          "operation": "attribute",
+          "node": "Name",
+          "call": "FUN_681021f5((undefined4 *)pSVar1,&local_18,PTR_u_Name_681600ac, (undefined4 *)local_30)"
+        },
+        {
+          "line": 48,
+          "operation": "attribute",
+          "node": "Size",
+          "call": "FUN_681021f5((undefined4 *)pSVar1,&local_18,PTR_u_Size_681600b0, (undefined4 *)local_30)"
+        },
+        {
+          "line": 55,
+          "operation": "attribute",
+          "node": "Type",
+          "call": "FUN_681021f5((undefined4 *)pSVar1,&local_18,PTR_u_Type_681600b4, (undefined4 *)local_30)"
+        },
+        {
+          "line": 80,
+          "operation": "attribute",
+          "node": "CompType",
+          "call": "FUN_681021f5((undefined4 *)pSVar1,&local_18,PTR_u_CompType_681600b8, (undefined4 *)local_30)"
+        }
+      ]
+    },
+    {
+      "function": "68128755",
+      "source": "decompiled/CiffMgr.dll/FUN_68128755.c",
+      "writes": [
+        {
+          "line": 60,
+          "operation": "child container",
+          "node": "File",
+          "call": "FUN_68124179((undefined4 *)param_1,param_3,PTR_u_File_6815feb8,(int *)&local_7c)"
+        }
+      ]
+    },
+    {
+      "function": "68128924",
+      "source": "decompiled/CiffMgr.dll/FUN_68128924.c",
+      "writes": [
+        {
+          "line": 44,
+          "operation": "attribute",
+          "node": "Name",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_Name_68160030,(undefined4 *)local_30 )"
+        },
+        {
+          "line": 59,
+          "operation": "attribute",
+          "node": "TXField",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&local_18,PTR_u_TXField_681600d0, (undefined4 *)&local_40)"
+        },
+        {
+          "line": 78,
+          "operation": "text element",
+          "node": "FldType",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_FldType_6815fcdc,param_2)"
+        },
+        {
+          "line": 88,
+          "operation": "text element",
+          "node": "CLSID",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_CLSID_6815fce0,param_2)"
+        },
+        {
+          "line": 96,
+          "operation": "text element",
+          "node": "Displayed",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Displayed_6815fce4,puVar6)"
+        },
+        {
+          "line": 101,
+          "operation": "text element",
+          "node": "X",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_DAT_6815fce8,psVar7)"
+        },
+        {
+          "line": 106,
+          "operation": "text element",
+          "node": "Y",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_DAT_6815fcec,psVar7)"
+        },
+        {
+          "line": 111,
+          "operation": "text element",
+          "node": "W",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_DAT_6815fcf0,psVar7)"
+        },
+        {
+          "line": 116,
+          "operation": "text element",
+          "node": "H",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_DAT_6815fcf4,psVar7)"
+        },
+        {
+          "line": 122,
+          "operation": "text element",
+          "node": "Ln",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_DAT_6815fcf8,psVar7)"
+        },
+        {
+          "line": 129,
+          "operation": "text element",
+          "node": "Orientation",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Orientation_6815fcfc,psVar7)"
+        },
+        {
+          "line": 136,
+          "operation": "text element",
+          "node": "OverrideThis",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_OverrideThis_6815fd00, puVar6)"
+        },
+        {
+          "line": 144,
+          "operation": "text element",
+          "node": "Inverse",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Inverse_6815fd04,puVar6)"
+        },
+        {
+          "line": 151,
+          "operation": "text element",
+          "node": "Mirror",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Mirror_6815fd08,puVar6)"
+        },
+        {
+          "line": 159,
+          "operation": "text element",
+          "node": "RenderMode",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_RenderMode_6815fd0c, puVar6)"
+        },
+        {
+          "line": 171,
+          "operation": "CDATA element",
+          "node": "CalcData",
+          "call": "FUN_6810226e((int *)pOVar1,param_3,PTR_u_CalcData_6815fd10 ,param_2)"
+        },
+        {
+          "line": 185,
+          "operation": "text element",
+          "node": "LoggedField",
+          "call": "FUN_6810248f((int *)pOVar1,param_3, PTR_u_LoggedField_6815fd14,param_2)"
+        },
+        {
+          "line": 198,
+          "operation": "text element",
+          "node": "Origin",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Origin_6815fd18 ,puVar6)"
+        },
+        {
+          "line": 214,
+          "operation": "text element",
+          "node": "MarkSet",
+          "call": "FUN_6810248f((int *)pOVar1,param_3, PTR_u_MarkSet_6815ffd0,param_2)"
+        },
+        {
+          "line": 231,
+          "operation": "child container",
+          "node": "Data",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3, PTR_u_Data_6815fd1c,(int *)&param_1)"
+        },
+        {
+          "line": 256,
+          "operation": "child container",
+          "node": "Clip",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3, PTR_u_Clip_6815fdb4,(int *)&param_1)"
+        },
+        {
+          "line": 278,
+          "operation": "child container",
+          "node": "Text",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3, PTR_u_Text_6815fd20,(int *)&param_2 )"
+        },
+        {
+          "line": 300,
+          "operation": "child container",
+          "node": "Barcode",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3, PTR_u_Barcode_6815fd24, (int *)&param_2)"
+        },
+        {
+          "line": 320,
+          "operation": "child container",
+          "node": "Graphic",
+          "call": "FUN_68124179((undefined4 *)pOVar1,param_3, PTR_u_Graphic_6815fd28, (int *)&param_1)"
+        }
+      ]
+    },
+    {
+      "function": "6812932f",
+      "source": "decompiled/CiffMgr.dll/FUN_6812932f.c",
+      "writes": [
+        {
+          "line": 26,
+          "operation": "text element",
+          "node": "ImageQuality",
+          "call": "FUN_6810248f((int *)param_1,param_3,PTR_u_ImageQuality_6815feac,puVar3)"
+        },
+        {
+          "line": 33,
+          "operation": "text element",
+          "node": "SelectAfterDownload",
+          "call": "FUN_6810248f((int *)param_1,param_3,PTR_u_SelectAfterDownload_6815feb0,puVar3)"
+        }
+      ]
+    },
+    {
+      "function": "68129475",
+      "source": "decompiled/CiffMgr.dll/FUN_68129475.c",
+      "writes": [
+        {
+          "line": 39,
+          "operation": "text element",
+          "node": "GfxW",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_GfxW_6815fe74,psVar3)"
+        },
+        {
+          "line": 43,
+          "operation": "text element",
+          "node": "GfxH",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_GfxH_6815fe78,psVar3)"
+        },
+        {
+          "line": 54,
+          "operation": "child container",
+          "node": null,
+          "call": "FUN_68124179(piVar1,param_3,piVar5,(int *)&param_2)"
+        },
+        {
+          "line": 61,
+          "operation": "text element",
+          "node": "AspectRatio",
+          "call": "FUN_6810248f(piVar1,&param_2,PTR_u_AspectRatio_6815fe8c,puVar4)"
+        },
+        {
+          "line": 69,
+          "operation": "text element",
+          "node": "ResizeFrame",
+          "call": "FUN_6810248f(piVar1,&param_2,PTR_u_ResizeFrame_6815fe90,puVar4)"
+        },
+        {
+          "line": 80,
+          "operation": "text element",
+          "node": "LogoReferencePrinter",
+          "call": "FUN_6810248f(piVar1,&param_2,PTR_u_LogoReferencePrinter_6815fff4,puVar4)"
+        },
+        {
+          "line": 97,
+          "operation": "child container",
+          "node": "Primitive",
+          "call": "FUN_68124179(piVar1,param_3,PTR_u_Primitive_6815fe80,(int *)&param_1)"
+        },
+        {
+          "line": 103,
+          "operation": "text element",
+          "node": "Shape",
+          "call": "FUN_6810248f(piVar1,&param_1,PTR_u_Shape_6815fe94,puVar4)"
+        },
+        {
+          "line": 109,
+          "operation": "text element",
+          "node": "LineW",
+          "call": "FUN_6810248f(piVar1,&param_1,PTR_u_LineW_6815fe98,psVar3)"
+        },
+        {
+          "line": 118,
+          "operation": "child container",
+          "node": "ComplexShape",
+          "call": "FUN_68124179(piVar1,&param_1,PTR_u_ComplexShape_6815fe9c,(int *)&param_2)"
+        },
+        {
+          "line": 137,
+          "operation": "child container",
+          "node": "Point",
+          "call": "FUN_68124179(piVar1,&param_2,PTR_u_Point_6815fea0,(int *)&local_1c)"
+        },
+        {
+          "line": 150,
+          "operation": "attribute",
+          "node": "ID",
+          "call": "FUN_681021f5(piVar1,&param_3,PTR_DAT_6816008c,(undefined4 *)local_40)"
+        },
+        {
+          "line": 158,
+          "operation": "attribute",
+          "node": "X",
+          "call": "FUN_681021f5(piVar1,&param_3,PTR_DAT_68160090, (undefined4 *)local_40)"
+        },
+        {
+          "line": 165,
+          "operation": "attribute",
+          "node": "Y",
+          "call": "FUN_681021f5(piVar1,&param_3,PTR_DAT_68160094, (undefined4 *)local_40)"
+        }
+      ]
+    },
+    {
+      "function": "681299bb",
+      "source": "decompiled/CiffMgr.dll/FUN_681299bb.c",
+      "writes": [
+        {
+          "line": 28,
+          "operation": "CDATA element",
+          "node": "Face",
+          "call": "FUN_6810226e(piVar1,puVar2,PTR_u_Face_6815fdd0,local_18)"
+        },
+        {
+          "line": 36,
+          "operation": "text element",
+          "node": "Family",
+          "call": "FUN_6810248f(piVar1,puVar2,PTR_u_Family_6815fdd4,pwVar5)"
+        },
+        {
+          "line": 42,
+          "operation": "text element",
+          "node": "Pitch",
+          "call": "FUN_6810248f(piVar1,puVar2,PTR_u_Pitch_6815fdd8,psVar6)"
+        },
+        {
+          "line": 48,
+          "operation": "text element",
+          "node": "XMag",
+          "call": "FUN_6810248f(piVar1,puVar2,PTR_u_XMag_6815fddc,psVar6)"
+        },
+        {
+          "line": 55,
+          "operation": "text element",
+          "node": "YMag",
+          "call": "FUN_6810248f(piVar1,puVar2,PTR_u_YMag_6815fde0,psVar6)"
+        },
+        {
+          "line": 62,
+          "operation": "text element",
+          "node": "TTSize",
+          "call": "FUN_6810248f(piVar1,puVar2,PTR_u_TTSize_6815fde4,psVar6)"
+        },
+        {
+          "line": 71,
+          "operation": "text element",
+          "node": "TxtDir",
+          "call": "FUN_6810248f(piVar1,puVar2,PTR_u_TxtDir_6815ff48,puVar7)"
+        }
+      ]
+    },
+    {
+      "function": "68129bfc",
+      "source": "decompiled/CiffMgr.dll/FUN_68129bfc.c",
+      "writes": [
+        {
+          "line": 43,
+          "operation": "attribute",
+          "node": "DesignedFor",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&piStack_18,PTR_u_DesignedFor_68160024, (undefined4 *)&local_34)"
+        },
+        {
+          "line": 53,
+          "operation": "attribute",
+          "node": "DesignedWith",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&piStack_18,PTR_u_DesignedWith_68160028, (undefined4 *)&local_34)"
+        },
+        {
+          "line": 62,
+          "operation": "attribute",
+          "node": "OverrideAll",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,&piStack_18,PTR_u_OverrideAll_6816002c, (undefined4 *)&local_34)"
+        },
+        {
+          "line": 79,
+          "operation": "text element",
+          "node": "Units",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_Units_6815fc4c,puVar5)"
+        },
+        {
+          "line": 85,
+          "operation": "text element",
+          "node": "ErrorLeniency",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_ErrorLeniency_6815fc50,psVar6)"
+        },
+        {
+          "line": 92,
+          "operation": "text element",
+          "node": "ClStVersionInfo",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_ClStVersionInfo_6815fc54,param_2)"
+        },
+        {
+          "line": 100,
+          "operation": "text element",
+          "node": "LastDownloaded",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_LastDownloaded_6815fc58,pwVar8)"
+        },
+        {
+          "line": 109,
+          "operation": "text element",
+          "node": "LineID",
+          "call": "FUN_6810248f((int *)pOVar1,param_3,PTR_u_LineID_6815ff44,psVar6)"
+        }
+      ]
+    },
+    {
+      "function": "6812a184",
+      "source": "decompiled/CiffMgr.dll/FUN_6812a184.c",
+      "writes": [
+        {
+          "line": 26,
+          "operation": "text element",
+          "node": "HRDisplayed",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_HRDisplayed_6815fe50,puVar4)"
+        },
+        {
+          "line": 32,
+          "operation": "text element",
+          "node": "HRPos",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_HRPos_6815fe54,puVar4)"
+        },
+        {
+          "line": 37,
+          "operation": "child container",
+          "node": "HRFont",
+          "call": "FUN_68124179(piVar1,param_3,PTR_u_HRFont_6815fe58,(int *)&param_2)"
+        },
+        {
+          "line": 52,
+          "operation": "text element",
+          "node": "HRPrintCheckDigit",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_HRPrintCheckDigit_6815ffd8,puVar4)"
+        }
+      ]
+    },
+    {
+      "function": "6812a2da",
+      "source": "decompiled/CiffMgr.dll/FUN_6812a2da.c",
+      "writes": [
+        {
+          "line": 34,
+          "operation": "attribute",
+          "node": "SubIMageRef",
+          "call": "FUN_681021f5((undefined4 *)pOVar3,local_14,PTR_u_SubIMageRef_6816009c, (undefined4 *)local_24)"
+        }
+      ]
+    },
+    {
+      "function": "6812a3fb",
+      "source": "decompiled/CiffMgr.dll/FUN_6812a3fb.c",
+      "writes": [
+        {
+          "line": 56,
+          "operation": "attribute",
+          "node": "PrintHeadDigits",
+          "call": "FUN_681021f5((undefined4 *)param_1,&local_68,PTR_u_PrintHeadDigits_68160098, (undefined4 *)&local_a4)"
+        },
+        {
+          "line": 101,
+          "operation": "child container",
+          "node": "Map",
+          "call": "FUN_68124179((undefined4 *)local_88,&local_70,PTR_DAT_6815fea8,(int *)&local_84)"
+        }
+      ]
+    },
+    {
+      "function": "6812a724",
+      "source": "decompiled/CiffMgr.dll/FUN_6812a724.c",
+      "writes": [
+        {
+          "line": 29,
+          "operation": "attribute",
+          "node": "SrcOffset",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_SrcOffset_68160060,(undefined4 *)local_24)"
+        }
+      ]
+    },
+    {
+      "function": "6812a7d3",
+      "source": "decompiled/CiffMgr.dll/FUN_6812a7d3.c",
+      "writes": [
+        {
+          "line": 41,
+          "operation": "attribute",
+          "node": "Name",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,local_14,PTR_u_Name_68160030, (undefined4 *)&local_34)"
+        },
+        {
+          "line": 48,
+          "operation": "attribute",
+          "node": "Type",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,local_14,PTR_u_Type_6816003c, (undefined4 *)&local_34)"
+        },
+        {
+          "line": 63,
+          "operation": "attribute",
+          "node": "Database",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,local_14,PTR_u_Database_681600f8, (undefined4 *)&local_34)"
+        },
+        {
+          "line": 73,
+          "operation": "attribute",
+          "node": "DataSource",
+          "call": "FUN_681021f5((undefined4 *)pOVar1,local_14,PTR_u_DataSource_681600fc, (undefined4 *)&local_34)"
+        }
+      ]
+    },
+    {
+      "function": "6812ab09",
+      "source": "decompiled/CiffMgr.dll/FUN_6812ab09.c",
+      "writes": [
+        {
+          "line": 45,
+          "operation": "attribute",
+          "node": "Name",
+          "call": "FUN_681021f5((undefined4 *)local_84,&local_68,PTR_u_Name_68160030, (undefined4 *)local_a0)"
+        },
+        {
+          "line": 90,
+          "operation": "child container",
+          "node": "Param",
+          "call": "FUN_68124179((undefined4 *)local_84,local_8c,PTR_u_Param_6815ff04, (int *)&local_80)"
+        }
+      ]
+    },
+    {
+      "function": "6812adb8",
+      "source": "decompiled/CiffMgr.dll/FUN_6812adb8.c",
+      "writes": [
+        {
+          "line": 63,
+          "operation": "child container",
+          "node": "ParamSet",
+          "call": "FUN_68124179((undefined4 *)param_1,param_3,PTR_u_ParamSet_6815ff00, (int *)&local_80)"
+        }
+      ]
+    },
+    {
+      "function": "6812b048",
+      "source": "decompiled/CiffMgr.dll/FUN_6812b048.c",
+      "writes": [
+        {
+          "line": 61,
+          "operation": "attribute",
+          "node": "Name",
+          "call": "FUN_681021f5(piVar2,&local_18,PTR_u_Name_68160030,(undefined4 *)local_68)"
+        },
+        {
+          "line": 70,
+          "operation": "attribute",
+          "node": "Type",
+          "call": "FUN_681021f5(piVar2,&local_18,PTR_u_Type_6816003c,(undefined4 *)local_68)"
+        },
+        {
+          "line": 87,
+          "operation": "child container",
+          "node": "Min",
+          "call": "FUN_68124179(piVar2,param_3,PTR_DAT_6815fecc,(int *)&local_1c)"
+        },
+        {
+          "line": 100,
+          "operation": "attribute",
+          "node": "Used",
+          "call": "FUN_681021f5(piVar2,&param_1,PTR_u_Used_68160040,(undefined4 *)local_68)"
+        },
+        {
+          "line": 139,
+          "operation": "child container",
+          "node": "Max",
+          "call": "FUN_68124179(piVar2,param_3,PTR_DAT_6815fed0,(int *)&local_28)"
+        },
+        {
+          "line": 152,
+          "operation": "attribute",
+          "node": "Used",
+          "call": "FUN_681021f5(piVar2,&param_1,PTR_u_Used_68160040,(undefined4 *)local_68)"
+        },
+        {
+          "line": 188,
+          "operation": "text element",
+          "node": "Current",
+          "call": "FUN_6810248f(piVar2,param_3,PTR_u_Current_6815fec8,psVar6)"
+        },
+        {
+          "line": 193,
+          "operation": "text element",
+          "node": "Default",
+          "call": "FUN_6810248f(piVar2,puVar9,PTR_u_Default_6815fd44,psVar6)"
+        },
+        {
+          "line": 198,
+          "operation": "text element",
+          "node": "DecimalPlaces",
+          "call": "FUN_6810248f(piVar2,puVar9,PTR_u_DecimalPlaces_6815fed4,psVar6)"
+        },
+        {
+          "line": 204,
+          "operation": "CDATA element",
+          "node": "Prompt",
+          "call": "FUN_6810226e(piVar2,puVar9,PTR_u_Prompt_6815fc78,local_38)"
+        },
+        {
+          "line": 209,
+          "operation": "text element",
+          "node": "ResetOnSel",
+          "call": "FUN_6810248f(piVar2,puVar9,PTR_u_ResetOnSel_6815fc7c,puVar8)"
+        },
+        {
+          "line": 216,
+          "operation": "text element",
+          "node": "SrcField",
+          "call": "FUN_6810248f(piVar2,puVar9,PTR_u_SrcField_6815fee0,local_34)"
+        },
+        {
+          "line": 221,
+          "operation": "text element",
+          "node": "SQLUsed",
+          "call": "FUN_6810248f(piVar2,puVar9,PTR_u_SQLUsed_6815fed8,puVar8)"
+        },
+        {
+          "line": 228,
+          "operation": "text element",
+          "node": "PriceSQL",
+          "call": "FUN_6810248f(piVar2,puVar9,PTR_u_PriceSQL_6815fedc,local_30)"
+        },
+        {
+          "line": 236,
+          "operation": "text element",
+          "node": "ConnStr",
+          "call": "FUN_6810248f(piVar2,puVar9,PTR_u_ConnStr_6815fca8,local_2c)"
+        }
+      ]
+    },
+    {
+      "function": "6812b61a",
+      "source": "decompiled/CiffMgr.dll/FUN_6812b61a.c",
+      "writes": [
+        {
+          "line": 60,
+          "operation": "child container",
+          "node": "Price",
+          "call": "FUN_68124179(param_1,param_3,PTR_u_Price_6815fec4,(int *)&local_7c)"
+        }
+      ]
+    },
+    {
+      "function": "6812b7e4",
+      "source": "decompiled/CiffMgr.dll/FUN_6812b7e4.c",
+      "writes": [
+        {
+          "line": 25,
+          "operation": "CDATA element",
+          "node": "ConnStr",
+          "call": "FUN_6810226e(param_1,(undefined4 *)param_3,PTR_u_ConnStr_6815fca8,local_14[0])"
+        },
+        {
+          "line": 32,
+          "operation": "CDATA element",
+          "node": "SrcSQL",
+          "call": "FUN_6810226e(param_1,(undefined4 *)pOVar1,PTR_u_SrcSQL_6815fd70,param_3)"
+        },
+        {
+          "line": 40,
+          "operation": "text element",
+          "node": "StartChar",
+          "call": "FUN_6810248f(param_1,(undefined4 *)pOVar1,PTR_u_StartChar_6815fd68,psVar4)"
+        },
+        {
+          "line": 46,
+          "operation": "text element",
+          "node": "NoOfChars",
+          "call": "FUN_6810248f(param_1,(undefined4 *)pOVar1,PTR_u_NoOfChars_6815fd6c,psVar4)"
+        },
+        {
+          "line": 56,
+          "operation": "text element",
+          "node": "SelectMode",
+          "call": "FUN_6810248f(param_1,(undefined4 *)pOVar1,PTR_u_SelectMode_6815fff0,psVar4)"
+        }
+      ]
+    },
+    {
+      "function": "6812b98e",
+      "source": "decompiled/CiffMgr.dll/FUN_6812b98e.c",
+      "writes": [
+        {
+          "line": 34,
+          "operation": "attribute",
+          "node": "SrcFieldName",
+          "call": "FUN_681021f5(param_1,local_14,PTR_u_SrcFieldName_6816005c,(undefined4 *)local_2c)"
+        },
+        {
+          "line": 46,
+          "operation": "text element",
+          "node": "StartChar",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_StartChar_6815fd68,psVar3)"
+        },
+        {
+          "line": 52,
+          "operation": "text element",
+          "node": "NoOfChars",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_NoOfChars_6815fd6c,psVar3)"
+        },
+        {
+          "line": 62,
+          "operation": "text element",
+          "node": "SelectMode",
+          "call": "FUN_6810248f(param_1,param_3,PTR_u_SelectMode_6815fff0,psVar3)"
+        }
+      ]
+    },
+    {
+      "function": "6812bb40",
+      "source": "decompiled/CiffMgr.dll/FUN_6812bb40.c",
+      "writes": [
+        {
+          "line": 41,
+          "operation": "attribute",
+          "node": "Significance",
+          "call": "FUN_681021f5(piVar1,local_14,PTR_u_Significance_68160064,(undefined4 *)&local_2c)"
+        },
+        {
+          "line": 49,
+          "operation": "attribute",
+          "node": "AlphaNum",
+          "call": "FUN_681021f5(piVar1,local_14,PTR_u_AlphaNum_68160068,(undefined4 *)&local_2c)"
+        },
+        {
+          "line": 57,
+          "operation": "attribute",
+          "node": "LeadChar",
+          "call": "FUN_681021f5(piVar1,local_14,PTR_u_LeadChar_6816006c,(undefined4 *)&local_2c )"
+        },
+        {
+          "line": 68,
+          "operation": "attribute",
+          "node": "Global",
+          "call": "FUN_681021f5(piVar1,local_14,PTR_u_Global_681600d4,(undefined4 *)&local_2c )"
+        },
+        {
+          "line": 87,
+          "operation": "text element",
+          "node": "NoOfChars",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_NoOfChars_6815fd6c,psVar7)"
+        },
+        {
+          "line": 93,
+          "operation": "text element",
+          "node": "LeadingChars",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_LeadingChars_6815fd98,puVar8)"
+        },
+        {
+          "line": 102,
+          "operation": "CDATA element",
+          "node": "StartVal",
+          "call": "FUN_6810226e(piVar1,param_3,PTR_u_StartVal_6815fd9c,param_2)"
+        },
+        {
+          "line": 114,
+          "operation": "CDATA element",
+          "node": "EndVal",
+          "call": "FUN_6810226e(piVar1,param_3,PTR_u_EndVal_6815fda0,param_2)"
+        },
+        {
+          "line": 124,
+          "operation": "text element",
+          "node": "StepSize",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_StepSize_6815fda4,psVar7)"
+        },
+        {
+          "line": 133,
+          "operation": "CDATA element",
+          "node": "CurrVal",
+          "call": "FUN_6810226e(piVar1,param_3,PTR_u_CurrVal_6815fda8,param_2)"
+        },
+        {
+          "line": 145,
+          "operation": "CDATA element",
+          "node": "IncableChars",
+          "call": "FUN_6810226e(piVar1,param_3,PTR_u_IncableChars_6815fdac,param_2)"
+        },
+        {
+          "line": 157,
+          "operation": "CDATA element",
+          "node": "Prompt",
+          "call": "FUN_6810226e(piVar1,param_3,PTR_u_Prompt_6815fc78,param_2)"
+        },
+        {
+          "line": 167,
+          "operation": "text element",
+          "node": "ClrStCntType",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_ClrStCntType_6815fdb0,param_2)"
+        }
+      ]
+    },
+    {
+      "function": "6812bfec",
+      "source": "decompiled/CiffMgr.dll/FUN_6812bfec.c",
+      "writes": [
+        {
+          "line": 44,
+          "operation": "attribute",
+          "node": "ImageReference",
+          "call": "FUN_681021f5((undefined4 *)local_74,&local_68,PTR_u_ImageReference_68160044, (undefined4 *)local_9c)"
+        },
+        {
+          "line": 56,
+          "operation": "child container",
+          "node": "SubHeader",
+          "call": "FUN_68124179((undefined4 *)local_74,local_84,PTR_u_SubHeader_6815fcb4,(int *)&local_68)"
+        },
+        {
+          "line": 100,
+          "operation": "child container",
+          "node": "Field",
+          "call": "FUN_68124179((undefined4 *)local_74,local_84,PTR_u_Field_6815fcd8, (int *)&local_80)"
+        }
+      ]
+    },
+    {
+      "function": "6812c2ca",
+      "source": "decompiled/CiffMgr.dll/FUN_6812c2ca.c",
+      "writes": [
+        {
+          "line": 44,
+          "operation": "attribute",
+          "node": "FormatName",
+          "call": "FUN_681021f5(piVar1,&local_18,PTR_u_FormatName_68160048,(undefined4 *)&local_34)"
+        },
+        {
+          "line": 57,
+          "operation": "attribute",
+          "node": "PrinterType",
+          "call": "FUN_681021f5(piVar1,&local_18,PTR_u_PrinterType_6816004c,(undefined4 *)&local_34)"
+        },
+        {
+          "line": 73,
+          "operation": "attribute",
+          "node": "PrinterFormatName",
+          "call": "FUN_681021f5(piVar1,&local_18,PTR_u_PrinterFormatName_681600e8,(undefined4 *)&local_34 )"
+        },
+        {
+          "line": 88,
+          "operation": "text element",
+          "node": "ImageWidth",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_ImageWidth_6815fcb8,psVar6)"
+        },
+        {
+          "line": 92,
+          "operation": "text element",
+          "node": "ImageHeight",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_ImageHeight_6815fcbc,psVar6)"
+        },
+        {
+          "line": 105,
+          "operation": "text element with returned node",
+          "node": "ImageRotation",
+          "call": "FUN_681023dc(piVar1,param_3,PTR_u_ImageRotation_6815fcc0,psVar6,ppiVar10)"
+        },
+        {
+          "line": 117,
+          "operation": "attribute",
+          "node": "Enabled",
+          "call": "FUN_681021f5(piVar1,&param_2,PTR_u_Enabled_681600e4,(undefined4 *)&local_34)"
+        },
+        {
+          "line": 137,
+          "operation": "text element",
+          "node": "MaxImageWidth",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_MaxImageWidth_6815fcc4,psVar6)"
+        },
+        {
+          "line": 141,
+          "operation": "text element",
+          "node": "MaxImageHeight",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_MaxImageHeight_6815fcc8,psVar6)"
+        },
+        {
+          "line": 149,
+          "operation": "text element",
+          "node": "AutoSize",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_AutoSize_6815ff94,puVar8)"
+        },
+        {
+          "line": 167,
+          "operation": "text element with returned node",
+          "node": "ImageMirror",
+          "call": "FUN_681023dc(piVar1,param_3,PTR_u_ImageMirror_6815ff98,puVar8,ppiVar10)"
+        },
+        {
+          "line": 179,
+          "operation": "attribute",
+          "node": "Enabled",
+          "call": "FUN_681021f5(piVar1,&param_2,PTR_u_Enabled_681600e4, (undefined4 *)&local_34)"
+        },
+        {
+          "line": 204,
+          "operation": "text element",
+          "node": "ImageInverse",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_ImageInverse_6815ff9c,puVar8)"
+        },
+        {
+          "line": 214,
+          "operation": "text element",
+          "node": "XRes",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_XRes_6815fccc,pwVar9)"
+        },
+        {
+          "line": 220,
+          "operation": "text element",
+          "node": "YRes",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_YRes_6815fcd0,pwVar9)"
+        },
+        {
+          "line": 229,
+          "operation": "text element",
+          "node": "CurrentOrientation",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_CurrentOrientation_6815ffe4, puVar8)"
+        },
+        {
+          "line": 240,
+          "operation": "text element",
+          "node": "LastUpdated",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_LastUpdated_6815fcd4,pwVar9)"
+        }
+      ]
+    },
+    {
+      "function": "6812cad1",
+      "source": "decompiled/CiffMgr.dll/FUN_6812cad1.c",
+      "writes": [
+        {
+          "line": 65,
+          "operation": "child container",
+          "node": "SubImage",
+          "call": "FUN_68124179((undefined4 *)param_1,param_3,PTR_u_SubImage_6815fc44, (int *)&local_80)"
+        }
+      ]
+    },
+    {
+      "function": "6812ccce",
+      "source": "decompiled/CiffMgr.dll/FUN_6812ccce.c",
+      "writes": [
+        {
+          "line": 38,
+          "operation": "child container",
+          "node": "Font",
+          "call": "FUN_68124179(param_1,param_3,PTR_u_Font_6815fdbc,(int *)&local_28)"
+        },
+        {
+          "line": 45,
+          "operation": "child container",
+          "node": "Bold",
+          "call": "FUN_68124179(piVar2,param_3,PTR_u_Bold_6815fdc0,(int *)&local_20)"
+        },
+        {
+          "line": 61,
+          "operation": "attribute",
+          "node": "Weight",
+          "call": "FUN_681021f5(piVar2,&param_1,PTR_u_Weight_68160080,(undefined4 *)&local_44)"
+        },
+        {
+          "line": 98,
+          "operation": "text element",
+          "node": "Italic",
+          "call": "FUN_6810248f(piVar2,param_3,PTR_u_Italic_6815fdc4,puVar4)"
+        },
+        {
+          "line": 104,
+          "operation": "text element",
+          "node": "DblSpace",
+          "call": "FUN_6810248f(piVar2,param_3,PTR_u_DblSpace_6815fdc8,puVar4)"
+        },
+        {
+          "line": 111,
+          "operation": "child container",
+          "node": "Block",
+          "call": "FUN_68124179(piVar2,param_3,PTR_u_Block_6815fdcc,(int *)&param_1)"
+        },
+        {
+          "line": 134,
+          "operation": "text element",
+          "node": "Escapement",
+          "call": "FUN_6810248f(piVar2,param_3,PTR_u_Escapement_6815ff5c,psVar5)"
+        },
+        {
+          "line": 144,
+          "operation": "child container",
+          "node": "FixedWidth",
+          "call": "FUN_68124179(piVar2,param_3,PTR_u_FixedWidth_6815ff4c,(int *)&param_2)"
+        },
+        {
+          "line": 148,
+          "operation": "text element",
+          "node": "Width",
+          "call": "FUN_6810248f(piVar2,&param_2,PTR_u_Width_6815ff50,psVar5)"
+        },
+        {
+          "line": 152,
+          "operation": "text element",
+          "node": "Align",
+          "call": "FUN_6810248f(piVar2,&param_2,PTR_u_Align_6815ff54,puVar4)"
+        },
+        {
+          "line": 168,
+          "operation": "text element",
+          "node": "MultiStroke",
+          "call": "FUN_6810248f(piVar2,param_3,PTR_u_MultiStroke_6815ff90,psVar5)"
+        }
+      ]
+    },
+    {
+      "function": "6812d1de",
+      "source": "decompiled/CiffMgr.dll/FUN_6812d1de.c",
+      "writes": [
+        {
+          "line": 28,
+          "operation": "CDATA element",
+          "node": "Face",
+          "call": "FUN_6810226e(param_1,piVar2,PTR_u_Face_6815fdd0,local_18)"
+        },
+        {
+          "line": 36,
+          "operation": "text element",
+          "node": "Family",
+          "call": "FUN_6810248f(param_1,piVar2,PTR_u_Family_6815fdd4,pwVar5)"
+        },
+        {
+          "line": 42,
+          "operation": "text element",
+          "node": "Pitch",
+          "call": "FUN_6810248f(param_1,piVar2,PTR_u_Pitch_6815fdd8,psVar6)"
+        },
+        {
+          "line": 51,
+          "operation": "text element",
+          "node": "PitchResolution",
+          "call": "FUN_6810248f(param_1,piVar2,PTR_u_PitchResolution_6815ffa0,psVar6)"
+        },
+        {
+          "line": 61,
+          "operation": "text element",
+          "node": "XMag",
+          "call": "FUN_6810248f(param_1,piVar2,PTR_u_XMag_6815fddc,psVar6)"
+        },
+        {
+          "line": 68,
+          "operation": "text element",
+          "node": "YMag",
+          "call": "FUN_6810248f(param_1,piVar2,PTR_u_YMag_6815fde0,psVar6)"
+        },
+        {
+          "line": 75,
+          "operation": "text element",
+          "node": "TTSize",
+          "call": "FUN_6810248f(param_1,piVar2,PTR_u_TTSize_6815fde4,psVar6)"
+        },
+        {
+          "line": 84,
+          "operation": "text element",
+          "node": "TxtDir",
+          "call": "FUN_6810248f(param_1,piVar2,PTR_u_TxtDir_6815ff48,puVar7)"
+        },
+        {
+          "line": 97,
+          "operation": "text element",
+          "node": "CharSpace",
+          "call": "FUN_6810248f(param_1,piVar2,PTR_u_CharSpace_6815ff58,psVar6)"
+        }
+      ]
+    },
+    {
+      "function": "6812d4ec",
+      "source": "decompiled/CiffMgr.dll/FUN_6812d4ec.c",
+      "writes": [
+        {
+          "line": 96,
+          "operation": "attribute",
+          "node": "ID",
+          "call": "FUN_681021f5(local_8c,&local_70,PTR_DAT_68160100,(undefined4 *)&local_a0)"
+        }
+      ]
+    },
+    {
+      "function": "6812d7a8",
+      "source": "decompiled/CiffMgr.dll/FUN_6812d7a8.c",
+      "writes": [
+        {
+          "line": 37,
+          "operation": "CDATA element",
+          "node": "Prompt",
+          "call": "FUN_6810226e(param_1,param_3,PTR_u_Prompt_6815fc78,local_18)"
+        },
+        {
+          "line": 45,
+          "operation": "CDATA element",
+          "node": "Mask",
+          "call": "FUN_6810226e(piVar1,param_3,PTR_u_Mask_6815fd74,param_2)"
+        },
+        {
+          "line": 54,
+          "operation": "CDATA element",
+          "node": "UserEnterData",
+          "call": "FUN_6810226e(piVar1,param_3,PTR_u_UserEnterData_6815fd78,param_2)"
+        },
+        {
+          "line": 63,
+          "operation": "text element",
+          "node": "PromptAtCoder",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_PromptAtCoder_6815fd7c,puVar5)"
+        },
+        {
+          "line": 70,
+          "operation": "text element",
+          "node": "ResetOnSel",
+          "call": "FUN_6810248f(piVar1,param_3,PTR_u_ResetOnSel_6815fc7c,puVar5)"
+        },
+        {
+          "line": 120,
+          "operation": "attribute",
+          "node": "Mask",
+          "call": "FUN_681021f5(piVar1,local_14,PTR_u_Mask_68160104,(undefined4 *)&local_48 )"
+        },
+        {
+          "line": 137,
+          "operation": "text element",
+          "node": "ConnStr",
+          "call": "FUN_6810248f(piVar1,&param_2,PTR_u_ConnStr_6815fff8,local_1c)"
+        },
+        {
+          "line": 146,
+          "operation": "text element",
+          "node": "SourceSQL",
+          "call": "FUN_6810248f(piVar1,&param_2,PTR_u_SourceSQL_6815fffc,local_1c)"
+        }
+      ]
+    },
+    {
+      "function": "6812dc1c",
+      "source": "decompiled/CiffMgr.dll/FUN_6812dc1c.c",
+      "writes": [
+        {
+          "line": 39,
+          "operation": "attribute",
+          "node": "Version",
+          "call": "FUN_681021f5((undefined4 *)pSVar1,local_14,PTR_u_Version_681600f4,(undefined4 *)&local_3c)"
+        },
+        {
+          "line": 52,
+          "operation": "attribute",
+          "node": "InternalName",
+          "call": "FUN_681021f5((undefined4 *)pSVar1,local_14,PTR_u_InternalName_68160020, (undefined4 *)local_2c)"
+        },
+        {
+          "line": 58,
+          "operation": "attribute",
+          "node": "xml:space",
+          "call": "FUN_681021f5((undefined4 *)pSVar1,local_14,PTR_u_xml_space_681600a0,(undefined4 *)local_2c)"
+        },
+        {
+          "line": 68,
+          "operation": "attribute",
+          "node": "Temporary",
+          "call": "FUN_681021f5((undefined4 *)pSVar1,local_14,PTR_u_Temporary_681600a8, (undefined4 *)&local_3c)"
+        },
+        {
+          "line": 85,
+          "operation": "child container",
+          "node": "Header",
+          "call": "FUN_68124179((undefined4 *)pSVar1,param_3,PTR_u_Header_6815fc40,(int *)&param_1)"
+        },
+        {
+          "line": 106,
+          "operation": "child container",
+          "node": "GenericSettings",
+          "call": "FUN_68124179((undefined4 *)pSVar1,param_3,PTR_u_GenericSettings_6815fc48, (int *)&param_1)"
+        },
+        {
+          "line": 138,
+          "operation": "child container",
+          "node": "Embedded",
+          "call": "FUN_68124179((undefined4 *)pSVar1,param_3,PTR_u_Embedded_6815feb4, (int *)&param_5)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+418015e5 MOV dword ptr [ECX],0x4183573c
+418015eb RET

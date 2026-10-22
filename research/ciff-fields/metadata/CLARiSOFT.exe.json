@@ -1,0 +1,1979 @@
+{
+  "name": "CLARiSOFT.exe",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\..\\CLARiSOFT\\CLARiSOFT.exe",
+  "size": 1664000,
+  "sha256": "28aebc9c30c68e85175be90580195d6e4f3180a994ecdc8215e9b93c26304e1a",
+  "imageBase": "00e00000",
+  "exports": [],
+  "imports": [
+    {
+      "library": "SETUPAPI.dll",
+      "names": [
+        "SetupDiGetClassDevsW",
+        "SetupDiGetDeviceInterfaceDetailW",
+        "SetupDiEnumDeviceInterfaces",
+        "SetupDiDestroyDeviceInfoList"
+      ]
+    },
+    {
+      "library": "ODBC32.dll",
+      "names": [
+        157,
+        75,
+        24,
+        31
+      ]
+    },
+    {
+      "library": "COMCTL32.dll",
+      "names": [
+        "ImageList_DragLeave",
+        "CreatePropertySheetPageW",
+        "DestroyPropertySheetPage",
+        "ImageList_GetImageCount",
+        "ImageList_Draw",
+        "ImageList_AddMasked",
+        "ImageList_DrawIndirect",
+        "ImageList_LoadImageW",
+        8,
+        "CreateStatusWindowW",
+        "ImageList_GetImageInfo",
+        "PropertySheetW",
+        "InitCommonControlsEx",
+        "ImageList_Create",
+        "ImageList_Destroy",
+        "ImageList_BeginDrag",
+        "ImageList_EndDrag",
+        "ImageList_DragEnter"
+      ]
+    },
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "SetFilePointer",
+        "GetSystemDefaultLCID",
+        "CreateDirectoryW",
+        "GetTempPathW",
+        "WriteFile",
+        "GetCommandLineW",
+        "WaitForSingleObject",
+        "CreateProcessW",
+        "GetDateFormatW",
+        "GetTimeFormatW",
+        "LoadLibraryExA",
+        "ExpandEnvironmentStringsA",
+        "ReadConsoleW",
+        "FlushFileBuffers",
+        "WriteConsoleW",
+        "SetStdHandle",
+        "ReadFile",
+        "GetConsoleMode",
+        "GetConsoleCP",
+        "FreeEnvironmentStringsW",
+        "GetEnvironmentStringsW",
+        "QueryPerformanceCounter",
+        "GetFileType",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "GetStdHandle",
+        "EnumSystemLocalesW",
+        "GetUserDefaultLCID",
+        "IsValidLocale",
+        "GetLocaleInfoW",
+        "LCMapStringW",
+        "CompareStringW",
+        "GetStartupInfoW",
+        "TlsFree",
+        "TlsSetValue",
+        "TlsGetValue",
+        "TlsAlloc",
+        "SetUnhandledExceptionFilter",
+        "UnhandledExceptionFilter",
+        "GetCPInfo",
+        "GetTimeZoneInformation",
+        "ExitThread",
+        "GetModuleHandleExW",
+        "ExitProcess",
+        "GetSystemTimeAsFileTime",
+        "RtlUnwind",
+        "EncodePointer",
+        "IsDebuggerPresent",
+        "VirtualFree",
+        "VirtualAlloc",
+        "IsProcessorFeaturePresent",
+        "InterlockedPushEntrySList",
+        "InterlockedPopEntrySList",
+        "InitializeSListHead",
+        "FindNextFileW",
+        "GetEnvironmentVariableW",
+        "GetStringTypeW",
+        "GetCurrentProcessId",
+        "GetCurrentDirectoryW",
+        "Sleep",
+        "WritePrivateProfileSectionW",
+        "GetPrivateProfileIntW",
+        "GetProfileStringW",
+        "GetVolumeInformationW",
+        "GetDiskFreeSpaceW",
+        "lstrcpyW",
+        "lstrcpynW",
+        "OutputDebugStringA",
+        "SizeofResource",
+        "LoadLibraryExW",
+        "OpenProcess",
+        "CreateThread",
+        "TerminateProcess",
+        "CreateMutexW",
+        "DecodePointer",
+        "lstrcmpiW",
+        "FormatMessageW",
+        "GetModuleHandleW",
+        "lstrcmpW",
+        "GlobalFree",
+        "GlobalUnlock",
+        "GlobalHandle",
+        "GlobalLock",
+        "GlobalAlloc",
+        "GetModuleFileNameW",
+        "FindResourceW",
+        "LockResource",
+        "LoadResource",
+        "MulDiv",
+        "LocalAlloc",
+        "GetVersionExW",
+        "DeviceIoControl",
+        "GetProcessHeap",
+        "HeapSize",
+        "HeapFree",
+        "HeapReAlloc",
+        "HeapAlloc",
+        "CloseHandle",
+        "QueryDosDeviceW",
+        "GetLogicalDriveStringsW",
+        "GetLogicalDrives",
+        "GetDriveTypeW",
+        "CreateFileW",
+        "VerifyVersionInfoW",
+        "FlushInstructionCache",
+        "GetCurrentThreadId",
+        "GetCurrentProcess",
+        "DeleteCriticalSection",
+        "InitializeCriticalSectionAndSpinCount",
+        "LeaveCriticalSection",
+        "EnterCriticalSection",
+        "SetLastError",
+        "GetLastError",
+        "RaiseException",
+        "VerSetConditionMask",
+        "LoadLibraryW",
+        "GetProcAddress",
+        "FreeLibrary",
+        "WritePrivateProfileStringW",
+        "GetPrivateProfileStringW",
+        "FindFirstFileW",
+        "FindClose",
+        "DeleteFileW",
+        "WideCharToMultiByte",
+        "lstrlenW",
+        "lstrlenA",
+        "LocalFree",
+        "DebugBreak",
+        "SetCurrentDirectoryW",
+        "MultiByteToWideChar",
+        "GetLocalTime",
+        "OutputDebugStringW",
+        "SetEnvironmentVariableA",
+        "SetFilePointerEx"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "ShowScrollBar",
+        "GetScrollRange",
+        "SetScrollRange",
+        "GetScrollPos",
+        "GetAncestor",
+        "MonitorFromRect",
+        "MonitorFromPoint",
+        "LoadBitmapW",
+        "CheckMenuRadioItem",
+        "CallNextHookEx",
+        "UnhookWindowsHookEx",
+        "SetWindowsHookExW",
+        "GetSysColorBrush",
+        "WindowFromPoint",
+        "SetMenuDefaultItem",
+        "TrackPopupMenuEx",
+        "RemoveMenu",
+        "AppendMenuW",
+        "GetMenuItemID",
+        "CreatePopupMenu",
+        "DrawMenuBar",
+        "SetMenu",
+        "TranslateAcceleratorW",
+        "GetKeyState",
+        "IsZoomed",
+        "BringWindowToTop",
+        "IsIconic",
+        "SetWindowPlacement",
+        "IsMenu",
+        "PostQuitMessage",
+        "PostThreadMessageW",
+        "DrawFrameControl",
+        "LoadStringA",
+        "SetParent",
+        "GetDlgCtrlID",
+        "IsRectEmpty",
+        "IntersectRect",
+        "SetRect",
+        "SetDlgItemTextW",
+        "FrameRect",
+        "GetDlgItemTextW",
+        "SetCursorPos",
+        "GetWindowDC",
+        "GetSystemMetrics",
+        "CharUpperBuffW",
+        "DrawEdge",
+        "CreateDialogParamW",
+        "SetRectEmpty",
+        "GetCapture",
+        "LoadIconW",
+        "IsWindowVisible",
+        "SystemParametersInfoW",
+        "GetScrollInfo",
+        "SetScrollInfo",
+        "OffsetRect",
+        "CopyRect",
+        "DrawFocusRect",
+        "GetCursorPos",
+        "SetScrollPos",
+        "ScrollWindowEx",
+        "GetUpdateRect",
+        "UpdateWindow",
+        "KillTimer",
+        "SendMessageW",
+        "SetWindowPos",
+        "EndDialog",
+        "GetDlgItem",
+        "SetWindowTextW",
+        "GetClientRect",
+        "SetTimer",
+        "GetAsyncKeyState",
+        "IsClipboardFormatAvailable",
+        "EmptyClipboard",
+        "GetClipboardData",
+        "CloseClipboard",
+        "OpenClipboard",
+        "SetMenuItemInfoW",
+        "ModifyMenuW",
+        "GetSubMenu",
+        "DestroyMenu",
+        "GetMenuState",
+        "GetMenuStringW",
+        "LoadImageW",
+        "GetWindowThreadProcessId",
+        "EnumWindows",
+        "SetForegroundWindow",
+        "LoadMenuW",
+        "LoadAcceleratorsW",
+        "MsgWaitForMultipleObjects",
+        "GetCursor",
+        "CharUpperW",
+        "GetMessagePos",
+        "GetWindowRect",
+        "MapWindowPoints",
+        "CharLowerW",
+        "GetWindowLongW",
+        "SetWindowLongW",
+        "GetParent",
+        "GetWindow",
+        "MonitorFromWindow",
+        "GetMonitorInfoW",
+        "LoadStringW",
+        "CharLowerBuffW",
+        "CharNextW",
+        "MessageBoxW",
+        "PostMessageW",
+        "UnregisterClassW",
+        "DialogBoxParamW",
+        "GetActiveWindow",
+        "EnableWindow",
+        "GetWindowPlacement",
+        "ShowWindow",
+        "SetCursor",
+        "GetMenuItemInfoW",
+        "DeleteMenu",
+        "InsertMenuW",
+        "GetMenuItemCount",
+        "EnableMenuItem",
+        "PeekMessageW",
+        "DispatchMessageW",
+        "TranslateMessage",
+        "GetMessageW",
+        "MapDialogRect",
+        "LoadCursorW",
+        "GetClassNameW",
+        "GetDesktopWindow",
+        "FillRect",
+        "ScreenToClient",
+        "ClientToScreen",
+        "SetWindowContextHelpId",
+        "RedrawWindow",
+        "InvalidateRgn",
+        "DestroyAcceleratorTable",
+        "CreateAcceleratorTableW",
+        "ReleaseCapture",
+        "SetCapture",
+        "GetNextDlgTabItem",
+        "DialogBoxIndirectParamW",
+        "MoveWindow",
+        "DestroyWindow",
+        "IsChild",
+        "IsWindow",
+        "CreateWindowExW",
+        "GetClassInfoExW",
+        "RegisterClassExW",
+        "CallWindowProcW",
+        "DefWindowProcW",
+        "RegisterWindowMessageW",
+        "SendDlgItemMessageW",
+        "GetDlgItemInt",
+        "SetDlgItemInt",
+        "ReleaseDC",
+        "UnregisterDeviceNotification",
+        "RegisterDeviceNotificationW",
+        "PtInRect",
+        "InflateRect",
+        "GetSysColor",
+        "SetCaretPos",
+        "MessageBeep",
+        "InvalidateRect",
+        "DrawTextW",
+        "IsWindowEnabled",
+        "GetFocus",
+        "SetFocus",
+        "GetWindowTextLengthW",
+        "GetWindowTextW",
+        "EndPaint",
+        "BeginPaint",
+        "GetDC"
+      ]
+    },
+    {
+      "library": "GDI32.dll",
+      "names": [
+        "CreatePatternBrush",
+        "PatBlt",
+        "GetBkColor",
+        "GetTextColor",
+        "RealizePalette",
+        "SelectPalette",
+        "SetStretchBltMode",
+        "SetColorAdjustment",
+        "GetColorAdjustment",
+        "CreateHalftonePalette",
+        "CreateFontW",
+        "CreateDIBSection",
+        "CreateBitmap",
+        "SetROP2",
+        "PtInRegion",
+        "CreateRectRgnIndirect",
+        "ExcludeClipRect",
+        "SelectClipRgn",
+        "SaveDC",
+        "CreateDCW",
+        "RestoreDC",
+        "AbortDoc",
+        "EndPage",
+        "StartPage",
+        "EndDoc",
+        "StartDocW",
+        "StretchBlt",
+        "ResetDCW",
+        "CreateCompatibleBitmap",
+        "BitBlt",
+        "GetTextExtentPoint32W",
+        "DeleteObject",
+        "CreateFontIndirectW",
+        "ExtTextOutW",
+        "SetTextColor",
+        "SetBkMode",
+        "DeleteDC",
+        "GetStockObject",
+        "SelectObject",
+        "SetBrushOrgEx",
+        "SetWindowOrgEx",
+        "LPtoDP",
+        "DPtoLP",
+        "GetWindowExtEx",
+        "GetViewportOrgEx",
+        "SetWindowExtEx",
+        "SetViewportOrgEx",
+        "SetViewportExtEx",
+        "MoveToEx",
+        "SetMapMode",
+        "Rectangle",
+        "PaintRgn",
+        "LineTo",
+        "GetViewportExtEx",
+        "GetClipBox",
+        "FrameRgn",
+        "Ellipse",
+        "CreateRectRgn",
+        "CreatePen",
+        "CreateEllipticRgn",
+        "CreateBrushIndirect",
+        "CombineRgn",
+        "GetObjectW",
+        "GetDeviceCaps",
+        "TextOutW",
+        "SetBkColor",
+        "CreateSolidBrush",
+        "CreateCompatibleDC",
+        "GetCurrentObject"
+      ]
+    },
+    {
+      "library": "WINSPOOL.DRV",
+      "names": [
+        "OpenPrinterW",
+        "ClosePrinter",
+        "EnumPrintersW",
+        203,
+        "GetPrinterW"
+      ]
+    },
+    {
+      "library": "COMDLG32.dll",
+      "names": [
+        "ChooseFontW",
+        "GetSaveFileNameW",
+        "GetOpenFileNameW",
+        "ChooseColorW"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "SetEntriesInAclW",
+        "RegQueryValueExA",
+        "RegOpenKeyExA",
+        "RegQueryInfoKeyW",
+        "RegEnumKeyExW",
+        "RegDeleteKeyW",
+        "RegDeleteValueW",
+        "RegCloseKey",
+        "SetSecurityDescriptorDacl",
+        "InitializeSecurityDescriptor",
+        "AllocateAndInitializeSid",
+        "RegSetValueExW",
+        "RegQueryValueExW",
+        "RegOpenKeyExW",
+        "RegCreateKeyExW"
+      ]
+    },
+    {
+      "library": "SHELL32.dll",
+      "names": [
+        "SHBrowseForFolderW",
+        "SHGetPathFromIDListW",
+        "ShellExecuteW",
+        "SHGetFolderPathW"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "CLSIDFromProgID",
+        "CoGetClassObject",
+        "CreateStreamOnHGlobal",
+        "StringFromGUID2",
+        "CoInitialize",
+        "CLSIDFromString",
+        "CoCreateInstance",
+        "CoUninitialize",
+        "CoTaskMemAlloc",
+        "CoTaskMemFree",
+        "OleInitialize",
+        "OleUninitialize",
+        "CoTaskMemRealloc",
+        "OleLockRunning",
+        "StringFromCLSID",
+        "OleRun",
+        "CoCreateInstanceEx"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "SysStringLen",
+        "SafeArrayAccessData",
+        "SafeArrayUnaccessData",
+        "VariantClear",
+        "VarBstrCat",
+        "VariantChangeType",
+        "VarCmp",
+        "SysReAllocStringLen",
+        "VariantTimeToSystemTime",
+        "LoadTypeLib",
+        "SysAllocStringLen",
+        "OleCreateFontIndirect",
+        "GetErrorInfo",
+        "VariantCopy",
+        "DispCallFunc",
+        "SystemTimeToVariantTime",
+        "VarBstrCmp",
+        "SysAllocStringByteLen",
+        "SysStringByteLen",
+        "SysFreeString",
+        "SysAllocString",
+        "LoadRegTypeLib",
+        "VarUI4FromStr"
+      ]
+    },
+    {
+      "library": "CLCrashReport.DLL",
+      "names": [
+        "InstallMulti"
+      ]
+    },
+    {
+      "library": "MSIMG32.dll",
+      "names": [
+        "GradientFill"
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "00efea04",
+      "fileOffset": 1036292,
+      "encoding": "ascii",
+      "text": "GetBarcodeSupport"
+    },
+    {
+      "va": "00effd24",
+      "fileOffset": 1041188,
+      "encoding": "ascii",
+      "text": "Default"
+    },
+    {
+      "va": "00effe94",
+      "fileOffset": 1041556,
+      "encoding": "ascii",
+      "text": "CCIFFDoc::GetSoftwareRunningMode Failed m_ptrRunMode NULL"
+    },
+    {
+      "va": "00f00cb0",
+      "fileOffset": 1045168,
+      "encoding": "ascii",
+      "text": "CClipboard::CopyDateOffsetToClipboard - unable to access ICiffDataHelper3 interface.  Date offset will not be copied to clipboard"
+    },
+    {
+      "va": "00f00f00",
+      "fileOffset": 1045760,
+      "encoding": "ascii",
+      "text": "CClipboard::CopyDateOffsetFromClipboard - unable to access ICiffDataHelper3 interface.  Date offset will not be copied to clipboard"
+    },
+    {
+      "va": "00f01008",
+      "fileOffset": 1046024,
+      "encoding": "ascii",
+      "text": "%s - unable to access ICiffFile7 interface.  Price will not be copied to clipboard"
+    },
+    {
+      "va": "00f01060",
+      "fileOffset": 1046112,
+      "encoding": "ascii",
+      "text": "%s - unable to access ICiffDataHelper6 interface.  Price will not be copied to clipboard"
+    },
+    {
+      "va": "00f01160",
+      "fileOffset": 1046368,
+      "encoding": "ascii",
+      "text": "%s - Could not create pCiffFile7"
+    },
+    {
+      "va": "00f011d0",
+      "fileOffset": 1046480,
+      "encoding": "ascii",
+      "text": "%s - Could not create m_pCiffFile7"
+    },
+    {
+      "va": "00f01228",
+      "fileOffset": 1046568,
+      "encoding": "ascii",
+      "text": "%s - unable to access ICiffDataHelper6 interface.  Date offset will not be copied to clipboard"
+    },
+    {
+      "va": "00f01543",
+      "fileOffset": 1047363,
+      "encoding": "ascii",
+      "text": "ECPrintCiff::PrintCiffFile"
+    },
+    {
+      "va": "00f0162c",
+      "fileOffset": 1047596,
+      "encoding": "ascii",
+      "text": "CBitmapTarget::SubImageToBitmap"
+    },
+    {
+      "va": "00f0171c",
+      "fileOffset": 1047836,
+      "encoding": "ascii",
+      "text": "CPrintCiff::CIFF_Bkgnd_Barcode"
+    },
+    {
+      "va": "00f0173c",
+      "fileOffset": 1047868,
+      "encoding": "ascii",
+      "text": "CSPrintCiff::CIFF_Bkgnd_Graphic"
+    },
+    {
+      "va": "00f064d4",
+      "fileOffset": 1067732,
+      "encoding": "ascii",
+      "text": "CCapabilitiesHelper::IsAlphabetValidForFont"
+    },
+    {
+      "va": "00f06908",
+      "fileOffset": 1068808,
+      "encoding": "ascii",
+      "text": "CCapabilitiesCoder::BarcodesSupported - Couldn't get barcodes from the Capabilities"
+    },
+    {
+      "va": "00f06960",
+      "fileOffset": 1068896,
+      "encoding": "ascii",
+      "text": "CCapabilitiesCoder::SymbologySupported - Couldn't get barcodes from the Capabilities"
+    },
+    {
+      "va": "00f06a9c",
+      "fileOffset": 1069212,
+      "encoding": "ascii",
+      "text": "CCiffChecker::CheckTextField"
+    },
+    {
+      "va": "00f06ad4",
+      "fileOffset": 1069268,
+      "encoding": "ascii",
+      "text": "%s - bstrFoundFont(%ls), bstrFontName(%ls)"
+    },
+    {
+      "va": "00f06b24",
+      "fileOffset": 1069348,
+      "encoding": "ascii",
+      "text": "CIFF_FLDTYPE_FIXEDTEXT"
+    },
+    {
+      "va": "00f06b3c",
+      "fileOffset": 1069372,
+      "encoding": "ascii",
+      "text": "CIFF_FLDTYPE_BLOCKTEXT"
+    },
+    {
+      "va": "00f06b60",
+      "fileOffset": 1069408,
+      "encoding": "ascii",
+      "text": "CCiffChecker::CheckBarcodeField"
+    },
+    {
+      "va": "00f06c8c",
+      "fileOffset": 1069708,
+      "encoding": "ascii",
+      "text": "%s - lCurrentFieldWidth(%ld) lMaxBarcodeWidth(%ld)"
+    },
+    {
+      "va": "00f074e4",
+      "fileOffset": 1071844,
+      "encoding": "ascii",
+      "text": "%s - pPerfData->NumObjectTypes = %ld"
+    },
+    {
+      "va": "00f0750c",
+      "fileOffset": 1071884,
+      "encoding": "ascii",
+      "text": "%s - Obj(%ld) not a PROCESS_OBJECT_INDEX"
+    },
+    {
+      "va": "00f0af98",
+      "fileOffset": 1086872,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "00f0b008",
+      "fileOffset": 1086984,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "00f11c54",
+      "fileOffset": 1114708,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "00f11fd4",
+      "fileOffset": 1115604,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "00f123ac",
+      "fileOffset": 1116588,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "00f32d60",
+      "fileOffset": 1250144,
+      "encoding": "ascii",
+      "text": "GetSystemDefaultLCID"
+    },
+    {
+      "va": "00f32dba",
+      "fileOffset": 1250234,
+      "encoding": "ascii",
+      "text": "WaitForSingleObject"
+    },
+    {
+      "va": "00f333b0",
+      "fileOffset": 1251760,
+      "encoding": "ascii",
+      "text": "MsgWaitForMultipleObjects"
+    },
+    {
+      "va": "00f33828",
+      "fileOffset": 1252904,
+      "encoding": "ascii",
+      "text": "SetMenuDefaultItem"
+    },
+    {
+      "va": "00f33980",
+      "fileOffset": 1253248,
+      "encoding": "ascii",
+      "text": "GetStockObject"
+    },
+    {
+      "va": "00f33992",
+      "fileOffset": 1253266,
+      "encoding": "ascii",
+      "text": "SelectObject"
+    },
+    {
+      "va": "00f339da",
+      "fileOffset": 1253338,
+      "encoding": "ascii",
+      "text": "CreateFontIndirectW"
+    },
+    {
+      "va": "00f339f0",
+      "fileOffset": 1253360,
+      "encoding": "ascii",
+      "text": "DeleteObject"
+    },
+    {
+      "va": "00f33a76",
+      "fileOffset": 1253494,
+      "encoding": "ascii",
+      "text": "GetObjectW"
+    },
+    {
+      "va": "00f33bee",
+      "fileOffset": 1253870,
+      "encoding": "ascii",
+      "text": "GetCurrentObject"
+    },
+    {
+      "va": "00f33d32",
+      "fileOffset": 1254194,
+      "encoding": "ascii",
+      "text": "CreateFontW"
+    },
+    {
+      "va": "00f33e30",
+      "fileOffset": 1254448,
+      "encoding": "ascii",
+      "text": "ChooseFontW"
+    },
+    {
+      "va": "00f34074",
+      "fileOffset": 1255028,
+      "encoding": "ascii",
+      "text": "CoGetClassObject"
+    },
+    {
+      "va": "00f3436a",
+      "fileOffset": 1255786,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLCID"
+    },
+    {
+      "va": "00f39e68",
+      "fileOffset": 1276520,
+      "encoding": "ascii",
+      "text": ".?AVCCiffHelperUtil@@"
+    },
+    {
+      "va": "00f3a200",
+      "fileOffset": 1277440,
+      "encoding": "ascii",
+      "text": ".?AUIObjectWithSite@@"
+    },
+    {
+      "va": "00f3a328",
+      "fileOffset": 1277736,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3a36c",
+      "fileOffset": 1277804,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "00f3a510",
+      "fileOffset": 1278224,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3a5b8",
+      "fileOffset": 1278392,
+      "encoding": "ascii",
+      "text": ".?AV?$IObjectWithSiteImpl@VCAxHostWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3a6c0",
+      "fileOffset": 1278656,
+      "encoding": "ascii",
+      "text": ".?AV?$CComPolyObject@VCAxHostWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3a6f8",
+      "fileOffset": 1278712,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCAxFrameWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3a730",
+      "fileOffset": 1278768,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCAxUIWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3a8c0",
+      "fileOffset": 1279168,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@V?$CComEnum@UIEnumUnknown@@$1?_GUID_00000100_0000_0000_c000_000000000046@@3U__s_GUID@@BPAUIUnknown@@V?$_CopyInterface@UIUnknown@@@ATL@@VCComMultiThreadModel@6@@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3a988",
+      "fileOffset": 1279368,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCAxHostWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3ad2c",
+      "fileOffset": 1280300,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFDoc@@"
+    },
+    {
+      "va": "00f3ad48",
+      "fileOffset": 1280328,
+      "encoding": "ascii",
+      "text": ".?AV?$CDocument@VCCIFFDoc@@VCDocTemplateBase@@VCDocumentBase@@@@"
+    },
+    {
+      "va": "00f3ae10",
+      "fileOffset": 1280528,
+      "encoding": "ascii",
+      "text": ".?AV?$CLCallBackHandler@VCCIFFDoc@@_NABVCUndoRedoLastChange@@@@"
+    },
+    {
+      "va": "00f3ae58",
+      "fileOffset": 1280600,
+      "encoding": "ascii",
+      "text": ".?AVCCiffErrorDetailsDlg@@"
+    },
+    {
+      "va": "00f3ae80",
+      "fileOffset": 1280640,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCCiffErrorDetailsDlg@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3aec8",
+      "fileOffset": 1280712,
+      "encoding": "ascii",
+      "text": ".?AVCCiffErrorDlg@@"
+    },
+    {
+      "va": "00f3aee4",
+      "fileOffset": 1280740,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCCiffErrorDlg@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3af24",
+      "fileOffset": 1280804,
+      "encoding": "ascii",
+      "text": ".?AVCCiffPrintErrorDetailsDlg@@"
+    },
+    {
+      "va": "00f3af50",
+      "fileOffset": 1280848,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCCiffPrintErrorDetailsDlg@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3b050",
+      "fileOffset": 1281104,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "00f3b11c",
+      "fileOffset": 1281308,
+      "encoding": "ascii",
+      "text": ".?AVCFontDialog@WTL@@"
+    },
+    {
+      "va": "00f3b13c",
+      "fileOffset": 1281340,
+      "encoding": "ascii",
+      "text": ".?AV?$CFontDialogImpl@VCFontDialog@WTL@@@WTL@@"
+    },
+    {
+      "va": "00f3b298",
+      "fileOffset": 1281688,
+      "encoding": "ascii",
+      "text": ".?AV?$CViewImpl@VCCLARiSOFTView@@V?$CView@VCCIFFDoc@@@@@@"
+    },
+    {
+      "va": "00f3b2dc",
+      "fileOffset": 1281756,
+      "encoding": "ascii",
+      "text": ".?AV?$CView@VCCIFFDoc@@@@"
+    },
+    {
+      "va": "00f3bab4",
+      "fileOffset": 1283764,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFErrorHandlerBase@@"
+    },
+    {
+      "va": "00f3bad8",
+      "fileOffset": 1283800,
+      "encoding": "ascii",
+      "text": ".?AVCPrintCiff@@"
+    },
+    {
+      "va": "00f3c43c",
+      "fileOffset": 1286204,
+      "encoding": "ascii",
+      "text": ".?AVCEditSubImageDlg@@"
+    },
+    {
+      "va": "00f3c460",
+      "fileOffset": 1286240,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCEditSubImageDlg@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3c58c",
+      "fileOffset": 1286540,
+      "encoding": "ascii",
+      "text": ".?AVCFontSelectDlg@@"
+    },
+    {
+      "va": "00f3c5b0",
+      "fileOffset": 1286576,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCFontSelectDlg@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3ce74",
+      "fileOffset": 1288820,
+      "encoding": "ascii",
+      "text": ".?AVCImageSubImagesPage@@"
+    },
+    {
+      "va": "00f3ce98",
+      "fileOffset": 1288856,
+      "encoding": "ascii",
+      "text": ".?AV?$CPropertyPageImpl@VCImageSubImagesPage@@VCPropertyPageWindow@WTL@@@WTL@@"
+    },
+    {
+      "va": "00f3e2e4",
+      "fileOffset": 1294052,
+      "encoding": "ascii",
+      "text": ".?AVCStitchedSubImagePreview@@"
+    },
+    {
+      "va": "00f3e310",
+      "fileOffset": 1294096,
+      "encoding": "ascii",
+      "text": ".?AV?$CAxDialogImpl@VCStitchedSubImagePreview@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3e360",
+      "fileOffset": 1294176,
+      "encoding": "ascii",
+      "text": ".?AV?$CWinDataExchange@VCStitchedSubImagePreview@@@WTL@@"
+    },
+    {
+      "va": "00f3e3a8",
+      "fileOffset": 1294248,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispEventImpl@$00VCStitchedSubImagePreview@@$1?DIID__ICLPrintPreviewEvents@@3U_GUID@@B$1?LIBID_CLPRINTPREVIEWLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3e458",
+      "fileOffset": 1294424,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispEventSimpleImpl@$00VCStitchedSubImagePreview@@$1?DIID__ICLPrintPreviewEvents@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "00f3e4cc",
+      "fileOffset": 1294540,
+      "encoding": "ascii",
+      "text": ".?AVCSubImagePreview@@"
+    },
+    {
+      "va": "00f3e4f0",
+      "fileOffset": 1294576,
+      "encoding": "ascii",
+      "text": ".?AV?$CAxDialogImpl@VCSubImagePreview@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3e534",
+      "fileOffset": 1294644,
+      "encoding": "ascii",
+      "text": ".?AV?$CWinDataExchange@VCSubImagePreview@@@WTL@@"
+    },
+    {
+      "va": "00f3e570",
+      "fileOffset": 1294704,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispEventImpl@$00VCSubImagePreview@@$1?DIID__ICLPrintPreviewEvents@@3U_GUID@@B$1?LIBID_CLPRINTPREVIEWLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@"
+    },
+    {
+      "va": "00f3e618",
+      "fileOffset": 1294872,
+      "encoding": "ascii",
+      "text": ".?AV?$IDispEventSimpleImpl@$00VCSubImagePreview@@$1?DIID__ICLPrintPreviewEvents@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "00f3ebc4",
+      "fileOffset": 1296324,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFErrorList@@"
+    },
+    {
+      "va": "00f3ebe4",
+      "fileOffset": 1296356,
+      "encoding": "ascii",
+      "text": ".?AV?$TCIFFField@UICiffField@@@@"
+    },
+    {
+      "va": "00f3ec10",
+      "fileOffset": 1296400,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFClass@@"
+    },
+    {
+      "va": "00f3ec2c",
+      "fileOffset": 1296428,
+      "encoding": "ascii",
+      "text": ".?AVCCIFFBarcodeField@@"
+    },
+    {
+      "va": "00f3ec4c",
+      "fileOffset": 1296460,
+      "encoding": "ascii",
+      "text": ".?AV?$TCIFFField@UICiffBarcodeField@@@@"
+    },
+    {
+      "va": "00f3ec7c",
+      "fileOffset": 1296508,
+      "encoding": "ascii",
+      "text": ".?AVCCiffChecker@@"
+    },
+    {
+      "va": "00f3ec98",
+      "fileOffset": 1296536,
+      "encoding": "ascii",
+      "text": ".?AVCCiffReferenceUtils@@"
+    },
+    {
+      "va": "00f9671c",
+      "fileOffset": 1623324,
+      "encoding": "ascii",
+      "text": "<SupportedFormat FormatName=\"Default\">"
+    },
+    {
+      "va": "00f96974",
+      "fileOffset": 1623924,
+      "encoding": "ascii",
+      "text": "<UseZipherBitmapFonts>0</UseZipherBitmapFonts>"
+    },
+    {
+      "va": "00f969a6",
+      "fileOffset": 1623974,
+      "encoding": "ascii",
+      "text": "<FontStructureList>"
+    },
+    {
+      "va": "00f969be",
+      "fileOffset": 1623998,
+      "encoding": "ascii",
+      "text": "<FontStructure>"
+    },
+    {
+      "va": "00f969d3",
+      "fileOffset": 1624019,
+      "encoding": "ascii",
+      "text": "<WindowsFontName>Arial</WindowsFontName>"
+    },
+    {
+      "va": "00f96a01",
+      "fileOffset": 1624065,
+      "encoding": "ascii",
+      "text": "<FontType>TrueType</FontType> "
+    },
+    {
+      "va": "00f96a25",
+      "fileOffset": 1624101,
+      "encoding": "ascii",
+      "text": "<WindowsFontFamily>Swiss</WindowsFontFamily>"
+    },
+    {
+      "va": "00f96b7d",
+      "fileOffset": 1624445,
+      "encoding": "ascii",
+      "text": "</FontStructure>"
+    },
+    {
+      "va": "00f96b92",
+      "fileOffset": 1624466,
+      "encoding": "ascii",
+      "text": "<FontStructure>"
+    },
+    {
+      "va": "00f96ba7",
+      "fileOffset": 1624487,
+      "encoding": "ascii",
+      "text": "<WindowsFontName>Arial Unicode MS</WindowsFontName>"
+    },
+    {
+      "va": "00f96be0",
+      "fileOffset": 1624544,
+      "encoding": "ascii",
+      "text": "<WindowsFontFamily>Swiss</WindowsFontFamily>"
+    },
+    {
+      "va": "00f96c12",
+      "fileOffset": 1624594,
+      "encoding": "ascii",
+      "text": "<FontType>TrueType</FontType> "
+    },
+    {
+      "va": "00f96dc9",
+      "fileOffset": 1625033,
+      "encoding": "ascii",
+      "text": "<FixedTextOnly>0</FixedTextOnly>"
+    },
+    {
+      "va": "00f96dee",
+      "fileOffset": 1625070,
+      "encoding": "ascii",
+      "text": "</FontStructure>"
+    },
+    {
+      "va": "00f96e02",
+      "fileOffset": 1625090,
+      "encoding": "ascii",
+      "text": "</FontStructureList>"
+    },
+    {
+      "va": "00f96e1a",
+      "fileOffset": 1625114,
+      "encoding": "ascii",
+      "text": "<UseTTFFonts>1</UseTTFFonts>"
+    },
+    {
+      "va": "00f96e3a",
+      "fileOffset": 1625146,
+      "encoding": "ascii",
+      "text": "<UseTTCFonts>1</UseTTCFonts>"
+    },
+    {
+      "va": "00f96ff2",
+      "fileOffset": 1625586,
+      "encoding": "ascii",
+      "text": "<SubImageRotation>0,90,180,270</SubImageRotation>"
+    },
+    {
+      "va": "00f97056",
+      "fileOffset": 1625686,
+      "encoding": "ascii",
+      "text": "<BarcodeRotation>0,90,180,270</BarcodeRotation>"
+    },
+    {
+      "va": "00f9708a",
+      "fileOffset": 1625738,
+      "encoding": "ascii",
+      "text": "<GraphicRotation>0,90,180,270</GraphicRotation>"
+    },
+    {
+      "va": "00f9764b",
+      "fileOffset": 1627211,
+      "encoding": "ascii",
+      "text": "<SupportedDateFormats DateFormatType=\"ergn\" DefaultAction=\"Forget it\">"
+    },
+    {
+      "va": "00f99f06",
+      "fileOffset": 1637638,
+      "encoding": "ascii",
+      "text": "<SupportedGraphicPrimitives>"
+    },
+    {
+      "va": "00f9a011",
+      "fileOffset": 1637905,
+      "encoding": "ascii",
+      "text": "</SupportedGraphicPrimitives>"
+    },
+    {
+      "va": "00f9a032",
+      "fileOffset": 1637938,
+      "encoding": "ascii",
+      "text": "<SupportedBarcodesList>"
+    },
+    {
+      "va": "00f9a04e",
+      "fileOffset": 1637966,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"EAN128\" CoderName=\"EAN128\">"
+    },
+    {
+      "va": "00f9a134",
+      "fileOffset": 1638196,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9a14c",
+      "fileOffset": 1638220,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"Code128\" CoderName=\"Code128\">"
+    },
+    {
+      "va": "00f9a24a",
+      "fileOffset": 1638474,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9a262",
+      "fileOffset": 1638498,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"ITF\" CoderName=\"ITF\">"
+    },
+    {
+      "va": "00f9a3e6",
+      "fileOffset": 1638886,
+      "encoding": "ascii",
+      "text": "      </SupportedBarcode>"
+    },
+    {
+      "va": "00f9a404",
+      "fileOffset": 1638916,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"UPCE\" CoderName=\"UPCE\">"
+    },
+    {
+      "va": "00f9a485",
+      "fileOffset": 1639045,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9a49d",
+      "fileOffset": 1639069,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"UPCA\" CoderName=\"UPCA\">"
+    },
+    {
+      "va": "00f9a533",
+      "fileOffset": 1639219,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9a54b",
+      "fileOffset": 1639243,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"EAN8\" CoderName=\"EAN_8\">"
+    },
+    {
+      "va": "00f9a5cd",
+      "fileOffset": 1639373,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9a5e5",
+      "fileOffset": 1639397,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"EAN13\" CoderName=\"EAN_13\">"
+    },
+    {
+      "va": "00f9a669",
+      "fileOffset": 1639529,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9a681",
+      "fileOffset": 1639553,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"Code39\" CoderName=\"Code_39\">"
+    },
+    {
+      "va": "00f9a709",
+      "fileOffset": 1639689,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9a721",
+      "fileOffset": 1639713,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"EAN13PriceVerifier\" CoderName=\"EAN_13PriceVerifier\">"
+    },
+    {
+      "va": "00f9a7bf",
+      "fileOffset": 1639871,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9a7d7",
+      "fileOffset": 1639895,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"RSS14\" CoderName=\"RSS\">"
+    },
+    {
+      "va": "00f9a9cd",
+      "fileOffset": 1640397,
+      "encoding": "ascii",
+      "text": "      </SupportedBarcode>"
+    },
+    {
+      "va": "00f9a9eb",
+      "fileOffset": 1640427,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"DataMatrix\" CoderName=\"DataMatrix\">"
+    },
+    {
+      "va": "00f9aadb",
+      "fileOffset": 1640667,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9aaf3",
+      "fileOffset": 1640691,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"PDF417\" CoderName=\"PDF417\">"
+    },
+    {
+      "va": "00f9ab58",
+      "fileOffset": 1640792,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9ab70",
+      "fileOffset": 1640816,
+      "encoding": "ascii",
+      "text": "<SupportedBarcode BarcodeName=\"MicroPDF417\" CoderName=\"MicroPDF417\">"
+    },
+    {
+      "va": "00f9abe0",
+      "fileOffset": 1640928,
+      "encoding": "ascii",
+      "text": "</SupportedBarcode>"
+    },
+    {
+      "va": "00f9abf5",
+      "fileOffset": 1640949,
+      "encoding": "ascii",
+      "text": "      <SupportedBarcode BarcodeName=\"QR\" CoderName=\"QR\">"
+    },
+    {
+      "va": "00f9ac59",
+      "fileOffset": 1641049,
+      "encoding": "ascii",
+      "text": "      </SupportedBarcode>"
+    },
+    {
+      "va": "00f9ac74",
+      "fileOffset": 1641076,
+      "encoding": "ascii",
+      "text": "    </SupportedBarcodesList>"
+    },
+    {
+      "va": "00f9acaf",
+      "fileOffset": 1641135,
+      "encoding": "ascii",
+      "text": "<DefaultAction>Exit</DefaultAction>"
+    },
+    {
+      "va": "00f9c57d",
+      "fileOffset": 1647485,
+      "encoding": "ascii",
+      "text": "<ParameterValue Min=\"-86399\" Default=\"0\" Max=\"86399\"/>"
+    },
+    {
+      "va": "00efcfd4",
+      "fileOffset": 1029588,
+      "encoding": "utf-16-le",
+      "text": "DateText"
+    },
+    {
+      "va": "00efd434",
+      "fileOffset": 1030708,
+      "encoding": "utf-16-le",
+      "text": "StaticGraphic"
+    },
+    {
+      "va": "00efd450",
+      "fileOffset": 1030736,
+      "encoding": "utf-16-le",
+      "text": "FixedText"
+    },
+    {
+      "va": "00efd464",
+      "fileOffset": 1030756,
+      "encoding": "utf-16-le",
+      "text": "OffsetDateText"
+    },
+    {
+      "va": "00efd484",
+      "fileOffset": 1030788,
+      "encoding": "utf-16-le",
+      "text": "CounterText"
+    },
+    {
+      "va": "00efd514",
+      "fileOffset": 1030932,
+      "encoding": "utf-16-le",
+      "text": "HIBCBarcode"
+    },
+    {
+      "va": "00efdcb2",
+      "fileOffset": 1032882,
+      "encoding": "utf-16-le",
+      "text": ")Default"
+    },
+    {
+      "va": "00efdec4",
+      "fileOffset": 1033412,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    },
+    {
+      "va": "00efe070",
+      "fileOffset": 1033840,
+      "encoding": "utf-16-le",
+      "text": "default"
+    },
+    {
+      "va": "00eff588",
+      "fileOffset": 1039240,
+      "encoding": "utf-16-le",
+      "text": "CiffManager"
+    },
+    {
+      "va": "00eff5c8",
+      "fileOffset": 1039304,
+      "encoding": "utf-16-le",
+      "text": "CiffDataHelper"
+    },
+    {
+      "va": "00eff6d8",
+      "fileOffset": 1039576,
+      "encoding": "utf-16-le",
+      "text": "CIFF"
+    },
+    {
+      "va": "00eff76c",
+      "fileOffset": 1039724,
+      "encoding": "utf-16-le",
+      "text": "CS Font Convert"
+    },
+    {
+      "va": "00eff918",
+      "fileOffset": 1040152,
+      "encoding": "utf-16-le",
+      "text": "ICiffFile"
+    },
+    {
+      "va": "00f00730",
+      "fileOffset": 1043760,
+      "encoding": "utf-16-le",
+      "text": "ERROR: Wait for multiple objects failed!!!"
+    },
+    {
+      "va": "00f01778",
+      "fileOffset": 1047928,
+      "encoding": "utf-16-le",
+      "text": "GraphicPrimitive"
+    },
+    {
+      "va": "00f01c34",
+      "fileOffset": 1049140,
+      "encoding": "utf-16-le",
+      "text": "CiffReferenceField"
+    },
+    {
+      "va": "00f02148",
+      "fileOffset": 1050440,
+      "encoding": "utf-16-le",
+      "text": ".ciff"
+    },
+    {
+      "va": "00f02898",
+      "fileOffset": 1052312,
+      "encoding": "utf-16-le",
+      "text": " OR ( [%ls] LIKE '%ls.ciff' OR [%ls] LIKE '%ls')"
+    },
+    {
+      "va": "00f02900",
+      "fileOffset": 1052416,
+      "encoding": "utf-16-le",
+      "text": "( [%ls] LIKE '%ls.ciff' OR [%ls] LIKE '%ls')"
+    },
+    {
+      "va": "00f02bb4",
+      "fileOffset": 1053108,
+      "encoding": "utf-16-le",
+      "text": "SubImage %d "
+    },
+    {
+      "va": "00f0363c",
+      "fileOffset": 1055804,
+      "encoding": "utf-16-le",
+      "text": "CLARiSOFT-Open CIFF Image"
+    },
+    {
+      "va": "00f03670",
+      "fileOffset": 1055856,
+      "encoding": "utf-16-le",
+      "text": "Allows a user to open an existing CIFF image within CLARiSOFT"
+    },
+    {
+      "va": "00f036ec",
+      "fileOffset": 1055980,
+      "encoding": "utf-16-le",
+      "text": "CLARISOFT_CIFFOPEN"
+    },
+    {
+      "va": "00f03714",
+      "fileOffset": 1056020,
+      "encoding": "utf-16-le",
+      "text": "CLARiSOFT-Save CIFF Image"
+    },
+    {
+      "va": "00f03748",
+      "fileOffset": 1056072,
+      "encoding": "utf-16-le",
+      "text": "Allows a user to save a CIFF image within CLARiSOFT"
+    },
+    {
+      "va": "00f037b0",
+      "fileOffset": 1056176,
+      "encoding": "utf-16-le",
+      "text": "CLARISOFT_CIFFSAVE"
+    },
+    {
+      "va": "00f04c78",
+      "fileOffset": 1061496,
+      "encoding": "utf-16-le",
+      "text": "CiffReference"
+    },
+    {
+      "va": "00f04c94",
+      "fileOffset": 1061524,
+      "encoding": "utf-16-le",
+      "text": "AuxCiffReference"
+    },
+    {
+      "va": "00f04cb8",
+      "fileOffset": 1061560,
+      "encoding": "utf-16-le",
+      "text": "ExtraCiffReference%d"
+    },
+    {
+      "va": "00f04d20",
+      "fileOffset": 1061664,
+      "encoding": "utf-16-le",
+      "text": "PrimaryBarcode"
+    },
+    {
+      "va": "00f04d40",
+      "fileOffset": 1061696,
+      "encoding": "utf-16-le",
+      "text": "SecondaryBarcode"
+    },
+    {
+      "va": "00f04dd0",
+      "fileOffset": 1061840,
+      "encoding": "utf-16-le",
+      "text": "CiffReferenceDisplay"
+    },
+    {
+      "va": "00f04e5c",
+      "fileOffset": 1061980,
+      "encoding": "utf-16-le",
+      "text": "PrimaryBarcodeDisplay"
+    },
+    {
+      "va": "00f04e88",
+      "fileOffset": 1062024,
+      "encoding": "utf-16-le",
+      "text": "SecondaryBarcodeDisplay"
+    },
+    {
+      "va": "00f04f1c",
+      "fileOffset": 1062172,
+      "encoding": "utf-16-le",
+      "text": "CiffReferenceDBTYPE"
+    },
+    {
+      "va": "00f04f44",
+      "fileOffset": 1062212,
+      "encoding": "utf-16-le",
+      "text": "AuxCiffReferenceDBTYPE"
+    },
+    {
+      "va": "00f04f74",
+      "fileOffset": 1062260,
+      "encoding": "utf-16-le",
+      "text": "ExtraCiffReferenceDBTYPE%d"
+    },
+    {
+      "va": "00f0500c",
+      "fileOffset": 1062412,
+      "encoding": "utf-16-le",
+      "text": "PrimaryBarcodeDBTYPE"
+    },
+    {
+      "va": "00f05038",
+      "fileOffset": 1062456,
+      "encoding": "utf-16-le",
+      "text": "SecondaryBarcodeDBTYPE"
+    },
+    {
+      "va": "00f05e1c",
+      "fileOffset": 1066012,
+      "encoding": "utf-16-le",
+      "text": "CIFFReference"
+    },
+    {
+      "va": "00f05e38",
+      "fileOffset": 1066040,
+      "encoding": "utf-16-le",
+      "text": "AuxCIFFReference"
+    },
+    {
+      "va": "00f06000",
+      "fileOffset": 1066496,
+      "encoding": "utf-16-le",
+      "text": "AuxCiffReferenceDisplay"
+    },
+    {
+      "va": "00f06a48",
+      "fileOffset": 1069128,
+      "encoding": "utf-16-le",
+      "text": "\\Fonts\\"
+    },
+    {
+      "va": "00f06c1c",
+      "fileOffset": 1069596,
+      "encoding": "utf-16-le",
+      "text": "DataMatrix"
+    },
+    {
+      "va": "00f06d7c",
+      "fileOffset": 1069948,
+      "encoding": "utf-16-le",
+      "text": "CIFFReference2"
+    },
+    {
+      "va": "00f06e80",
+      "fileOffset": 1070208,
+      "encoding": "utf-16-le",
+      "text": "%sFonts\\"
+    },
+    {
+      "va": "00f35200",
+      "fileOffset": 1256960,
+      "encoding": "utf-16-le",
+      "text": "CIFF Files (*.ciff;*.cif)"
+    },
+    {
+      "va": "00f35234",
+      "fileOffset": 1257012,
+      "encoding": "utf-16-le",
+      "text": "*.ciff;*.cif"
+    },
+    {
+      "va": "00f35280",
+      "fileOffset": 1257088,
+      "encoding": "utf-16-le",
+      "text": "CIFF Files (*.ciff;*.cif)"
+    },
+    {
+      "va": "00f352b4",
+      "fileOffset": 1257140,
+      "encoding": "utf-16-le",
+      "text": "*.ciff;*.cif"
+    },
+    {
+      "va": "00f5a6de",
+      "fileOffset": 1377502,
+      "encoding": "utf-16-le",
+      "text": "&Font"
+    },
+    {
+      "va": "00f5bf70",
+      "fileOffset": 1383792,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_SUBIMAGE"
+    },
+    {
+      "va": "00f5bfb8",
+      "fileOffset": 1383864,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_SUBIMAGENAME"
+    },
+    {
+      "va": "00f5c4da",
+      "fileOffset": 1385178,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_FONT"
+    },
+    {
+      "va": "00f5c52e",
+      "fileOffset": 1385262,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_FONTSTYLE"
+    },
+    {
+      "va": "00f5c58e",
+      "fileOffset": 1385358,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_FONTSIZE"
+    },
+    {
+      "va": "00f5cb90",
+      "fileOffset": 1386896,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_OFFSETDEFAULT"
+    },
+    {
+      "va": "00f5cc48",
+      "fileOffset": 1387080,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_OFFSETDEFAULTUNITS"
+    },
+    {
+      "va": "00f5df82",
+      "fileOffset": 1392002,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_CHK_DBA_DEFAULTDATA"
+    },
+    {
+      "va": "00f5eac8",
+      "fileOffset": 1394888,
+      "encoding": "utf-16-le",
+      "text": "IDC_CSPM_SCIFFREFERENCE"
+    },
+    {
+      "va": "00f5eb5c",
+      "fileOffset": 1395036,
+      "encoding": "utf-16-le",
+      "text": "IDC_CSPM_SCIFFREFINVALID"
+    },
+    {
+      "va": "00f5ebae",
+      "fileOffset": 1395118,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_SUBIMAGES"
+    },
+    {
+      "va": "00f5ec14",
+      "fileOffset": 1395220,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_SUBIMAGES"
+    },
+    {
+      "va": "00f5ec7c",
+      "fileOffset": 1395324,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_BN_SUBIMAGE_NEW"
+    },
+    {
+      "va": "00f5eccc",
+      "fileOffset": 1395404,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_BN_SUBIMAGE_EDIT"
+    },
+    {
+      "va": "00f5ed20",
+      "fileOffset": 1395488,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_BN_SUBIMAGE_DELETE"
+    },
+    {
+      "va": "00f5ed7e",
+      "fileOffset": 1395582,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_PROPSUBIMAGEMAPPING"
+    },
+    {
+      "va": "00f5edf8",
+      "fileOffset": 1395704,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_SUBIMAGEMAPPING"
+    },
+    {
+      "va": "00f5f810",
+      "fileOffset": 1398288,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODF_SCIFFREFERENCE"
+    },
+    {
+      "va": "00f5f884",
+      "fileOffset": 1398404,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODF_SAUXCIFFREFERENCE"
+    },
+    {
+      "va": "00f5fa44",
+      "fileOffset": 1398852,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODF_SPRIMARYBARCODE"
+    },
+    {
+      "va": "00f5fabc",
+      "fileOffset": 1398972,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODF_SSECONDARYBARCODE"
+    },
+    {
+      "va": "00f8f904",
+      "fileOffset": 1595140,
+      "encoding": "utf-16-le",
+      "text": "&Font"
+    },
+    {
+      "va": "00f902be",
+      "fileOffset": 1597630,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_OFFSETDATESELECTDLG"
+    },
+    {
+      "va": "00f90870",
+      "fileOffset": 1599088,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_SUBIMAGE"
+    },
+    {
+      "va": "00f9104e",
+      "fileOffset": 1601102,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_EDITSUBIMAGE"
+    },
+    {
+      "va": "00f9150a",
+      "fileOffset": 1602314,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_CIFFERRORSFOUND"
+    },
+    {
+      "va": "00f919fa",
+      "fileOffset": 1603578,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODF_SCIFFREFERENCE"
+    },
+    {
+      "va": "00f91ad2",
+      "fileOffset": 1603794,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODF_SPRIMARYBARCODE"
+    },
+    {
+      "va": "00f91b22",
+      "fileOffset": 1603874,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODF_SSECONDARYBARCODE"
+    },
+    {
+      "va": "00f91b76",
+      "fileOffset": 1603958,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODF_SAUXCIFFREFERENCE"
+    },
+    {
+      "va": "00f922de",
+      "fileOffset": 1605854,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_DSC_CIFF"
+    },
+    {
+      "va": "00f93b60",
+      "fileOffset": 1612128,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODA_SEXTRACIFFREF1"
+    },
+    {
+      "va": "00f93bd4",
+      "fileOffset": 1612244,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODA_SEXTRACIFFREF2"
+    },
+    {
+      "va": "00f93c48",
+      "fileOffset": 1612360,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_TODA_SEXTRACIFFREF3"
+    },
+    {
+      "va": "00f951e8",
+      "fileOffset": 1617896,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_USEDEFAULTVALUES"
+    },
+    {
+      "va": "00f952f8",
+      "fileOffset": 1618168,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_S_CURRENTORDEFAULT"
+    },
+    {
+      "va": "00f955f0",
+      "fileOffset": 1618928,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_CHK_BARCODE"
+    }
+  ]
+}

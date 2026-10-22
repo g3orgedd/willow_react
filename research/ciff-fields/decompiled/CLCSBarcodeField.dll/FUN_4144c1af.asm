@@ -1,0 +1,9 @@
+4144c1af PUSH EDI
+4144c1b0 MOV EDI,ECX
+4144c1b2 PUSH dword ptr [EDI + 0x20]
+4144c1b5 MOV dword ptr [EDI],0x414848f8
+4144c1bb CALL dword ptr [0x414802b8]
+4144c1c1 PUSH dword ptr [EDI + 0x4]
+4144c1c4 CALL dword ptr [0x414802b8]
+4144c1ca POP EDI
+4144c1cb RET

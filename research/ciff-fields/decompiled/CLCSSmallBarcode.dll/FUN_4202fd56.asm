@@ -1,0 +1,2 @@
+4202fd56 MOV dword ptr [ECX],0x42095220
+4202fd5c RET

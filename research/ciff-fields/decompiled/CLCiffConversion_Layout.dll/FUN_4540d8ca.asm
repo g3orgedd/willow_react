@@ -1,0 +1,29 @@
+4540d8ca PUSH ESI
+4540d8cb PUSH EDI
+4540d8cc MOV ESI,ECX
+4540d8ce XOR EDI,EDI
+4540d8d0 PUSH 0x40
+4540d8d2 PUSH EDI
+4540d8d3 LEA EAX,[ESI + 0x4]
+4540d8d6 MOV dword ptr [ESI],0x4642465a
+4540d8dc PUSH EAX
+4540d8dd CALL 0x45429f70
+4540d8e2 OR dword ptr [ESI + 0x7c],0xffffffff
+4540d8e6 ADD ESP,0xc
+4540d8e9 XOR EAX,EAX
+4540d8eb MOV dword ptr [ESI + 0x74],EDI
+4540d8ee MOV dword ptr [ESI + 0x88],EDI
+4540d8f4 MOV dword ptr [ESI + 0x94],EDI
+4540d8fa MOV dword ptr [ESI + 0xb4],EDI
+4540d900 MOV dword ptr [ESI + 0x78],EDI
+4540d903 MOV dword ptr [ESI + 0x90],EDI
+4540d909 MOV dword ptr [ESI + 0x8c],EDI
+4540d90f MOV dword ptr [ESI + 0x9c],EDI
+4540d915 MOV dword ptr [ESI + 0x98],EDI
+4540d91b MOV word ptr [ESI + 0x4c],AX
+4540d91f MOV word ptr [ESI + 0x80],AX
+4540d926 MOV word ptr [ESI + 0xa2],AX
+4540d92d MOV EAX,ESI
+4540d92f POP EDI
+4540d930 POP ESI
+4540d931 RET

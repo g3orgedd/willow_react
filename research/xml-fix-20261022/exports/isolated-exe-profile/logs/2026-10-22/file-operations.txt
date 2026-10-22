@@ -1,0 +1,707 @@
+====================================================================================================
+[2026-10-22 11:58:59.178 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture normal'
+  }
+====================================================================================================
+[2026-10-22 11:58:59.581 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture normal',
+    filename: 'xml-exe-normal.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:58:59.582 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-normal.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:58:59.589 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-normal.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3304
+  }
+====================================================================================================
+[2026-10-22 11:58:59.590 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-normal.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'd41691c6-5554-4642-a5b5-daca0394a87f',
+    title: 'xml-exe-normal'
+  }
+====================================================================================================
+[2026-10-22 11:58:59.834 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1649,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture no-op-import'
+  }
+====================================================================================================
+[2026-10-22 11:58:59.849 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture no-op-import',
+    filename: 'xml-exe-no-op-import.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:58:59.849 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-no-op-import.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:58:59.855 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-no-op-import.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3300
+  }
+====================================================================================================
+[2026-10-22 11:58:59.855 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-no-op-import.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'd41691c6-5554-4642-a5b5-daca0394a87f',
+    title: 'xml-exe-no-op-import'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.047 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1651,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture rotation'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.064 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture rotation',
+    filename: 'xml-exe-rotation.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.064 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-rotation.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.067 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-rotation.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3366
+  }
+====================================================================================================
+[2026-10-22 11:59:00.068 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-rotation.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'd41691c6-5554-4642-a5b5-daca0394a87f',
+    title: 'xml-exe-rotation'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.261 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1651,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture hidden-outlier'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.279 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture hidden-outlier',
+    filename: 'xml-exe-hidden-outlier.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.279 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 4,
+    filename: 'xml-exe-hidden-outlier.ciff',
+    hiddenFieldCount: 1,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.283 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 4,
+    filename: 'xml-exe-hidden-outlier.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 4150
+  }
+====================================================================================================
+[2026-10-22 11:59:00.283 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-hidden-outlier.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'd41691c6-5554-4642-a5b5-daca0394a87f',
+    title: 'xml-exe-hidden-outlier'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.486 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1651,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture all-hidden'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.495 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture all-hidden',
+    filename: 'xml-exe-all-hidden.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.495 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-all-hidden.ciff',
+    hiddenFieldCount: 3,
+    printedFieldCount: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.498 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-all-hidden.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3454
+  }
+====================================================================================================
+[2026-10-22 11:59:00.499 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-all-hidden.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'd41691c6-5554-4642-a5b5-daca0394a87f',
+    title: 'xml-exe-all-hidden'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.689 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1651,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture last-field-deleted'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.699 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture last-field-deleted',
+    filename: 'xml-exe-last-field-deleted.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.699 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 0,
+    filename: 'xml-exe-last-field-deleted.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 0,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.701 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 0,
+    filename: 'xml-exe-last-field-deleted.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 1336
+  }
+====================================================================================================
+[2026-10-22 11:59:00.701 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-last-field-deleted.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'd41691c6-5554-4642-a5b5-daca0394a87f',
+    title: 'xml-exe-last-field-deleted'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.885 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1672,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture anisotropic-yres'
+  }
+====================================================================================================
+[2026-10-22 11:59:00.905 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture anisotropic-yres',
+    filename: 'xml-exe-anisotropic-yres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.905 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-anisotropic-yres.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 11:59:00.908 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-anisotropic-yres.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3364
+  }
+====================================================================================================
+[2026-10-22 11:59:00.909 +03:00] [INFO] [session: 20261022-115856-pid40572]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-anisotropic-yres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'd41691c6-5554-4642-a5b5-daca0394a87f',
+    title: 'xml-exe-anisotropic-yres'
+  }

@@ -1,0 +1,2884 @@
+====================================================================================================
+[2026-10-22 16:03:25.785 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture normal'
+  }
+====================================================================================================
+[2026-10-22 16:03:26.178 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture normal',
+    filename: 'xml-exe-normal.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.178 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-normal.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.186 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-normal.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3322
+  }
+====================================================================================================
+[2026-10-22 16:03:26.186 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-normal.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'xml-exe-normal'
+  }
+====================================================================================================
+[2026-10-22 16:03:26.448 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1681,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture anisotropic-yres'
+  }
+====================================================================================================
+[2026-10-22 16:03:26.466 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture anisotropic-yres',
+    filename: 'xml-exe-anisotropic-yres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.466 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-anisotropic-yres.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.473 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-anisotropic-yres.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3346
+  }
+====================================================================================================
+[2026-10-22 16:03:26.474 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-anisotropic-yres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'xml-exe-anisotropic-yres'
+  }
+====================================================================================================
+[2026-10-22 16:03:26.661 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [
+          {
+            capabilityValue: 0.12,
+            key: 'xRes',
+            sourceValue: 0.24
+          }
+        ],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1681,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture anisotropic-xres'
+  }
+====================================================================================================
+[2026-10-22 16:03:26.678 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture anisotropic-xres',
+    filename: 'xml-exe-anisotropic-xres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.678 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-anisotropic-xres.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.682 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-anisotropic-xres.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3364
+  }
+====================================================================================================
+[2026-10-22 16:03:26.682 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-anisotropic-xres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'xml-exe-anisotropic-xres'
+  }
+====================================================================================================
+[2026-10-22 16:03:26.886 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1681,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture lower-yres'
+  }
+====================================================================================================
+[2026-10-22 16:03:26.902 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture lower-yres',
+    filename: 'xml-exe-lower-yres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.902 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-lower-yres.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:26.905 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-lower-yres.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3346
+  }
+====================================================================================================
+[2026-10-22 16:03:26.905 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-lower-yres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'xml-exe-lower-yres'
+  }
+====================================================================================================
+[2026-10-22 16:03:27.100 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [
+          {
+            capabilityValue: 0.12,
+            key: 'xRes',
+            sourceValue: 0.06
+          }
+        ],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1681,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture lower-xres'
+  }
+====================================================================================================
+[2026-10-22 16:03:27.115 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture lower-xres',
+    filename: 'xml-exe-lower-xres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.115 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-lower-xres.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.120 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-lower-xres.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3364
+  }
+====================================================================================================
+[2026-10-22 16:03:27.120 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-lower-xres.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'xml-exe-lower-xres'
+  }
+====================================================================================================
+[2026-10-22 16:03:27.327 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [
+          {
+            capabilityValue: 0.12,
+            key: 'xRes',
+            sourceValue: 0.09
+          }
+        ],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1681,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture fractional-rotation90'
+  }
+====================================================================================================
+[2026-10-22 16:03:27.342 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture fractional-rotation90',
+    filename: 'xml-exe-fractional-rotation90.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.342 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-fractional-rotation90.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.345 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-fractional-rotation90.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3408
+  }
+====================================================================================================
+[2026-10-22 16:03:27.345 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-fractional-rotation90.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'xml-exe-fractional-rotation90'
+  }
+====================================================================================================
+[2026-10-22 16:03:27.570 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [
+          {
+            capabilityValue: 0.12,
+            key: 'xRes',
+            sourceValue: 0.135
+          }
+        ],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1681,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture fractional-rotation270'
+  }
+====================================================================================================
+[2026-10-22 16:03:27.587 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture fractional-rotation270',
+    filename: 'xml-exe-fractional-rotation270.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.587 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-fractional-rotation270.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.591 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-fractional-rotation270.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3410
+  }
+====================================================================================================
+[2026-10-22 16:03:27.591 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-fractional-rotation270.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'xml-exe-fractional-rotation270'
+  }
+====================================================================================================
+[2026-10-22 16:03:27.779 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6230(32mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6230(32mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6230(32mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture profile6230'
+  }
+====================================================================================================
+[2026-10-22 16:03:27.802 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML fixture profile6230',
+    filename: 'xml-exe-profile6230.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.802 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 3,
+    filename: 'xml-exe-profile6230.ciff',
+    hiddenFieldCount: 0,
+    printedFieldCount: 3,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:27.806 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 3,
+    filename: 'xml-exe-profile6230.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 3304
+  }
+====================================================================================================
+[2026-10-22 16:03:27.806 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-profile6230.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: 'a2bb3194-fd23-4e2d-a458-3d21e287bed5',
+    title: 'xml-exe-profile6230'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.008 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1660,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture party-gtin2'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.027 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: true,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'preset-builder',
+    title: 'XML party fixture party-gtin2'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.081 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML party fixture party-gtin2',
+    filename: 'xml-exe-party-gtin2.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:28.081 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 7,
+    filename: 'xml-exe-party-gtin2.ciff',
+    hiddenFieldCount: 6,
+    printedFieldCount: 1,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:28.086 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 7,
+    filename: 'xml-exe-party-gtin2.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 8722
+  }
+====================================================================================================
+[2026-10-22 16:03:28.086 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-party-gtin2.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: '620ff9aa-cf0e-43e9-9e66-b49e2e2dc2e8',
+    title: 'xml-exe-party-gtin2'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.287 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 3,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 3,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 1660,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'xml-fix-exe',
+    title: 'XML fixture party-box-gtin'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.305 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: true,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'preset-builder',
+    title: 'XML party fixture party-box-gtin'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.352 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_CONFIRMED
+Message: Пользователь подтвердил сохранение шаблона.
+Source: renderer-file
+Details:
+  {
+    activeTemplateTitle: 'XML party fixture party-box-gtin',
+    filename: 'xml-exe-party-box-gtin.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:28.352 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_SAVE_STARTED
+Message: Начата подготовка шаблона к сохранению.
+Source: renderer-file
+Details:
+  {
+    dateOffsetCount: 0,
+    fieldCount: 9,
+    filename: 'xml-exe-party-box-gtin.ciff',
+    hiddenFieldCount: 8,
+    printedFieldCount: 1,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    }
+  }
+====================================================================================================
+[2026-10-22 16:03:28.356 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_DOWNLOAD_TRIGGERED
+Message: Файл шаблона подготовлен, передан браузеру и ожидает сохранения на устройство.
+Source: renderer-file
+Details:
+  {
+    encoding: 'UTF-16LE with BOM',
+    fieldCount: 9,
+    filename: 'xml-exe-party-box-gtin.ciff',
+    lineEnding: 'CRLF',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    selectedNames: [],
+    sizeBytes: 10600
+  }
+====================================================================================================
+[2026-10-22 16:03:28.357 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_TAB_MARKED_SAVED
+Message: Активная вкладка отмечена как сохранённая.
+Source: renderer-file
+Details:
+  {
+    filename: 'xml-exe-party-box-gtin.ciff',
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    tabId: '26b667d5-d8b0-47d1-931a-91af4ceee40c',
+    title: 'xml-exe-party-box-gtin'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.554 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.574 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.591 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.608 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.623 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.639 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.654 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.671 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.687 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.703 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.718 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.733 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.750 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.781 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.799 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.819 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.836 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.854 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.878 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.895 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.915 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.931 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.950 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.969 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:28.992 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.026 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.049 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.072 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.089 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.109 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.128 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.148 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.166 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.182 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.198 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.215 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.234 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.263 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.278 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.294 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.312 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.329 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.353 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.370 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.387 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.408 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.424 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }
+====================================================================================================
+[2026-10-22 16:03:29.440 +03:00] [INFO] [session: 20261022-160323-pid38460]
+Event: TEMPLATE_LOADED
+Message: Шаблон успешно загружен в редактор.
+Source: renderer-file
+Details:
+  {
+    document: {
+      compatibilityRepair: {
+        changed: false,
+        changes: [],
+        knownProfile: true,
+        preservedDifferences: [],
+        printerModel: 'DataFlex 6320(53mm)'
+      },
+      dateOffsetCount: 0,
+      designedFor: 'DataFlex 6320(53mm) - Continuous',
+      fieldCount: 0,
+      heightMillimeters: 24,
+      hiddenFieldCount: 0,
+      printMode: 'Continuous',
+      printedFieldCount: 0,
+      printerModel: 'DataFlex 6320(53mm)',
+      widthMillimeters: 16
+    },
+    input: {
+      characterCount: 671,
+      lineEnding: 'CRLF'
+    },
+    markDirty: false,
+    renderer: {
+      url: 'glyph://app/index.html',
+      webContentsId: '[REDACTED]'
+    },
+    source: 'resolution-custom-research',
+    title: 'Controlled capability renderer proof'
+  }

@@ -1,0 +1,102 @@
+{
+  "RecoveredAtUtc": "2026-10-22T09:00:26.5123523Z",
+  "Reason": "All 14 production Save/download and expected captures completed; research-only CDP Browser.close cleanup did not settle. Manifest reconstructed from already saved progress JSON, no renderer Save repeated and no CIFF modified.",
+  "CaseCount": 14,
+  "Inputs": "native-inputs-recovered.json",
+  "PhysicalFiles": [
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-web-normal.ciff",
+      "RecordedSha256": "0c4347aebf99cc3deea722c8cd509ae3fa0dbbd4e6c70420f7fa127293f580e1",
+      "CurrentSha256": "0c4347aebf99cc3deea722c8cd509ae3fa0dbbd4e6c70420f7fa127293f580e1",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-web-no-op-import.ciff",
+      "RecordedSha256": "3e0702e493baf849f369da9e851f78f3a1245ffec588b412b476863188135b73",
+      "CurrentSha256": "3e0702e493baf849f369da9e851f78f3a1245ffec588b412b476863188135b73",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-web-rotation.ciff",
+      "RecordedSha256": "d9a0a7e0f4f0e4855ad7ef28f5a75fe2c318d1f134b12510c452bc085febbcbc",
+      "CurrentSha256": "d9a0a7e0f4f0e4855ad7ef28f5a75fe2c318d1f134b12510c452bc085febbcbc",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-web-hidden-outlier.ciff",
+      "RecordedSha256": "c33c19e7e3dde74daad16a953067e49871f835457568e23657c55a4f614fca10",
+      "CurrentSha256": "c33c19e7e3dde74daad16a953067e49871f835457568e23657c55a4f614fca10",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-web-all-hidden.ciff",
+      "RecordedSha256": "d5fff1ec97ee86b88bb25489944c7305c854911f0a23f8e05dc23388102218c8",
+      "CurrentSha256": "d5fff1ec97ee86b88bb25489944c7305c854911f0a23f8e05dc23388102218c8",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-web-last-field-deleted.ciff",
+      "RecordedSha256": "66489945474553087d3594ef73d215da3f6d605ca60df64675bb93bea9aa96ca",
+      "CurrentSha256": "66489945474553087d3594ef73d215da3f6d605ca60df64675bb93bea9aa96ca",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-web-anisotropic-yres.ciff",
+      "RecordedSha256": "ad6cc4ae37c5e99fb2510b27b0485534e1aef7e9c694947ebbc24ae9c72850a7",
+      "CurrentSha256": "ad6cc4ae37c5e99fb2510b27b0485534e1aef7e9c694947ebbc24ae9c72850a7",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-exe-normal.ciff",
+      "RecordedSha256": "0c4347aebf99cc3deea722c8cd509ae3fa0dbbd4e6c70420f7fa127293f580e1",
+      "CurrentSha256": "0c4347aebf99cc3deea722c8cd509ae3fa0dbbd4e6c70420f7fa127293f580e1",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-exe-no-op-import.ciff",
+      "RecordedSha256": "3e0702e493baf849f369da9e851f78f3a1245ffec588b412b476863188135b73",
+      "CurrentSha256": "3e0702e493baf849f369da9e851f78f3a1245ffec588b412b476863188135b73",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-exe-rotation.ciff",
+      "RecordedSha256": "4918569a05dc3a9e00240f06fd9478b8ccf2b3af15845a39bee48a1b0e11c9fd",
+      "CurrentSha256": "4918569a05dc3a9e00240f06fd9478b8ccf2b3af15845a39bee48a1b0e11c9fd",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-exe-hidden-outlier.ciff",
+      "RecordedSha256": "c33c19e7e3dde74daad16a953067e49871f835457568e23657c55a4f614fca10",
+      "CurrentSha256": "c33c19e7e3dde74daad16a953067e49871f835457568e23657c55a4f614fca10",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-exe-all-hidden.ciff",
+      "RecordedSha256": "d5fff1ec97ee86b88bb25489944c7305c854911f0a23f8e05dc23388102218c8",
+      "CurrentSha256": "d5fff1ec97ee86b88bb25489944c7305c854911f0a23f8e05dc23388102218c8",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-exe-last-field-deleted.ciff",
+      "RecordedSha256": "66489945474553087d3594ef73d215da3f6d605ca60df64675bb93bea9aa96ca",
+      "CurrentSha256": "66489945474553087d3594ef73d215da3f6d605ca60df64675bb93bea9aa96ca",
+      "Unchanged": true
+    },
+    {
+      "File": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports\\xml-exe-anisotropic-yres.ciff",
+      "RecordedSha256": "c0aaddb3f7e32deeecabd3be90c9a1d9d837d7c38afad1f0c1722ec8f13f981d",
+      "CurrentSha256": "c0aaddb3f7e32deeecabd3be90c9a1d9d837d7c38afad1f0c1722ec8f13f981d",
+      "Unchanged": true
+    }
+  ],
+  "ResearchCleanup": {
+    "ExporterPid": 40780,
+    "ExporterStoppedAfterPathAndCommandLineCheck": true,
+    "PackagedExePid": 40572,
+    "PackagedExeAlreadyExited": true,
+    "OwnedOrphanChildrenStopped": [
+      null
+    ],
+    "InstalledGlyphAndClariSoftNotStopped": true
+  }
+}

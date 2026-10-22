@@ -1,0 +1,23 @@
+45018a9f PUSH EBP
+45018aa0 MOV EBP,ESP
+45018aa2 MOV ECX,dword ptr [EBP + 0x8]
+45018aa5 MOV EDX,dword ptr [EBP + 0xc]
+45018aa8 MOV EAX,dword ptr [ECX]
+45018aaa CMP EAX,dword ptr [EDX]
+45018aac JNZ 0x45018acb
+45018aae MOV EAX,dword ptr [ECX + 0x4]
+45018ab1 CMP EAX,dword ptr [EDX + 0x4]
+45018ab4 JNZ 0x45018acb
+45018ab6 MOV EAX,dword ptr [ECX + 0x8]
+45018ab9 CMP EAX,dword ptr [EDX + 0x8]
+45018abc JNZ 0x45018acb
+45018abe MOV EAX,dword ptr [ECX + 0xc]
+45018ac1 CMP EAX,dword ptr [EDX + 0xc]
+45018ac4 JNZ 0x45018acb
+45018ac6 XOR EAX,EAX
+45018ac8 INC EAX
+45018ac9 POP EBP
+45018aca RET
+45018acb XOR EAX,EAX
+45018acd POP EBP
+45018ace RET

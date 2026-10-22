@@ -1,0 +1,853 @@
+{
+    "source":  "Installed CiffMgr.dll through original COM vtables",
+    "processBits":  32,
+    "cases":  [
+                  {
+                      "name":  "field-family-0-defaults",
+                      "status":  "ok",
+                      "file":  "field-family-0-defaults.ciff",
+                      "characters":  456
+                  },
+                  {
+                      "name":  "field-family-1-defaults",
+                      "status":  "ok",
+                      "file":  "field-family-1-defaults.ciff",
+                      "characters":  494
+                  },
+                  {
+                      "name":  "field-family-2-defaults",
+                      "status":  "ok",
+                      "file":  "field-family-2-defaults.ciff",
+                      "characters":  541
+                  },
+                  {
+                      "name":  "common-FieldDisplayed",
+                      "status":  "ok",
+                      "file":  "common-FieldDisplayed.ciff",
+                      "characters":  480
+                  },
+                  {
+                      "name":  "common-FieldXPos",
+                      "status":  "ok",
+                      "file":  "common-FieldXPos.ciff",
+                      "characters":  459
+                  },
+                  {
+                      "name":  "common-FieldYPos",
+                      "status":  "ok",
+                      "file":  "common-FieldYPos.ciff",
+                      "characters":  458
+                  },
+                  {
+                      "name":  "common-FieldWidth",
+                      "status":  "ok",
+                      "file":  "common-FieldWidth.ciff",
+                      "characters":  458
+                  },
+                  {
+                      "name":  "common-FieldHeight",
+                      "status":  "ok",
+                      "file":  "common-FieldHeight.ciff",
+                      "characters":  458
+                  },
+                  {
+                      "name":  "common-FieldLine",
+                      "status":  "ok",
+                      "file":  "common-FieldLine.ciff",
+                      "characters":  466
+                  },
+                  {
+                      "name":  "common-FieldOrientation",
+                      "status":  "ok",
+                      "file":  "common-FieldOrientation.ciff",
+                      "characters":  485
+                  },
+                  {
+                      "name":  "common-OverrideThis",
+                      "status":  "ok",
+                      "file":  "common-OverrideThis.ciff",
+                      "characters":  486
+                  },
+                  {
+                      "name":  "common-FieldInverse",
+                      "status":  "ok",
+                      "file":  "common-FieldInverse.ciff",
+                      "characters":  476
+                  },
+                  {
+                      "name":  "common-FieldMirror",
+                      "status":  "ok",
+                      "file":  "common-FieldMirror.ciff",
+                      "characters":  474
+                  },
+                  {
+                      "name":  "common-FieldRenderMode",
+                      "status":  "ok",
+                      "file":  "common-FieldRenderMode.ciff",
+                      "characters":  484
+                  },
+                  {
+                      "name":  "common-CalculatedData",
+                      "status":  "ok",
+                      "file":  "common-CalculatedData.ciff",
+                      "characters":  503
+                  },
+                  {
+                      "name":  "common-FieldLogged",
+                      "status":  "ok",
+                      "file":  "common-FieldLogged.ciff",
+                      "characters":  493
+                  },
+                  {
+                      "name":  "common-ClearStyleFieldType",
+                      "status":  "ok",
+                      "file":  "common-ClearStyleFieldType.ciff",
+                      "characters":  484
+                  },
+                  {
+                      "name":  "logged-0",
+                      "status":  "ok",
+                      "file":  "logged-0.ciff",
+                      "characters":  483
+                  },
+                  {
+                      "name":  "logged-1",
+                      "status":  "ok",
+                      "file":  "logged-1.ciff",
+                      "characters":  483
+                  },
+                  {
+                      "name":  "logged-2",
+                      "status":  "ok",
+                      "file":  "logged-2.ciff",
+                      "characters":  456
+                  },
+                  {
+                      "name":  "text-FontName",
+                      "status":  "ok",
+                      "file":  "text-FontName.ciff",
+                      "characters":  491
+                  },
+                  {
+                      "name":  "text-FontFamily",
+                      "status":  "ok",
+                      "file":  "text-FontFamily.ciff",
+                      "characters":  484
+                  },
+                  {
+                      "name":  "text-FontPitch",
+                      "status":  "ok",
+                      "file":  "text-FontPitch.ciff",
+                      "characters":  478
+                  },
+                  {
+                      "name":  "text-FontXMag",
+                      "status":  "ok",
+                      "file":  "text-FontXMag.ciff",
+                      "characters":  478
+                  },
+                  {
+                      "name":  "text-FontYMag",
+                      "status":  "ok",
+                      "file":  "text-FontYMag.ciff",
+                      "characters":  478
+                  },
+                  {
+                      "name":  "text-FontTrueTypeSize",
+                      "status":  "ok",
+                      "file":  "text-FontTrueTypeSize.ciff",
+                      "characters":  480
+                  },
+                  {
+                      "name":  "text-BoldText",
+                      "status":  "ok",
+                      "file":  "text-BoldText.ciff",
+                      "characters":  481
+                  },
+                  {
+                      "name":  "text-BoldWeight",
+                      "status":  "ok",
+                      "file":  "text-BoldWeight.ciff",
+                      "characters":  456
+                  },
+                  {
+                      "name":  "text-ItalicText",
+                      "status":  "ok",
+                      "file":  "text-ItalicText.ciff",
+                      "characters":  474
+                  },
+                  {
+                      "name":  "text-DoubleSpace",
+                      "status":  "ok",
+                      "file":  "text-DoubleSpace.ciff",
+                      "characters":  478
+                  },
+                  {
+                      "name":  "text-BlockWidth",
+                      "status":  "error",
+                      "error":  "Exception calling \"SetInt\" with \"3\" argument(s): \"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\""
+                  },
+                  {
+                      "name":  "text-BlockHeight",
+                      "status":  "ok",
+                      "file":  "text-BlockHeight.ciff",
+                      "characters":  456
+                  },
+                  {
+                      "name":  "text-BlockMaximumLines",
+                      "status":  "error",
+                      "error":  "Exception calling \"SetInt\" with \"3\" argument(s): \"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\""
+                  },
+                  {
+                      "name":  "text-BlockMinimumFontSize",
+                      "status":  "error",
+                      "error":  "Exception calling \"SetInt\" with \"3\" argument(s): \"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\""
+                  },
+                  {
+                      "name":  "text-BlockJustification",
+                      "status":  "ok",
+                      "file":  "text-BlockJustification.ciff",
+                      "characters":  456
+                  },
+                  {
+                      "name":  "text-BlockHyphenation",
+                      "status":  "ok",
+                      "file":  "text-BlockHyphenation.ciff",
+                      "characters":  456
+                  },
+                  {
+                      "name":  "text-FontPitchResolution",
+                      "status":  "ok",
+                      "file":  "text-FontPitchResolution.ciff",
+                      "characters":  498
+                  },
+                  {
+                      "name":  "block-default",
+                      "status":  "ok",
+                      "file":  "block-default.ciff",
+                      "characters":  527
+                  },
+                  {
+                      "name":  "block-complete",
+                      "status":  "ok",
+                      "file":  "block-complete.ciff",
+                      "characters":  591
+                  },
+                  {
+                      "name":  "barcode-subtype-00",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-00.ciff",
+                      "characters":  494
+                  },
+                  {
+                      "name":  "barcode-subtype-01",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-01.ciff",
+                      "characters":  498
+                  },
+                  {
+                      "name":  "barcode-subtype-02",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-02.ciff",
+                      "characters":  497
+                  },
+                  {
+                      "name":  "barcode-subtype-03",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-03.ciff",
+                      "characters":  497
+                  },
+                  {
+                      "name":  "barcode-subtype-04",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-04.ciff",
+                      "characters":  495
+                  },
+                  {
+                      "name":  "barcode-subtype-05",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-05.ciff",
+                      "characters":  496
+                  },
+                  {
+                      "name":  "barcode-subtype-06",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-06.ciff",
+                      "characters":  495
+                  },
+                  {
+                      "name":  "barcode-subtype-07",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-07.ciff",
+                      "characters":  495
+                  },
+                  {
+                      "name":  "barcode-subtype-08",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-08.ciff",
+                      "characters":  519
+                  },
+                  {
+                      "name":  "barcode-subtype-09",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-09.ciff",
+                      "characters":  519
+                  },
+                  {
+                      "name":  "barcode-subtype-10",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-10.ciff",
+                      "characters":  496
+                  },
+                  {
+                      "name":  "barcode-subtype-11",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-11.ciff",
+                      "characters":  505
+                  },
+                  {
+                      "name":  "barcode-subtype-12",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-12.ciff",
+                      "characters":  503
+                  },
+                  {
+                      "name":  "barcode-subtype-13",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-13.ciff",
+                      "characters":  507
+                  },
+                  {
+                      "name":  "barcode-subtype-14",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-14.ciff",
+                      "characters":  501
+                  },
+                  {
+                      "name":  "barcode-subtype-15",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-15.ciff",
+                      "characters":  501
+                  },
+                  {
+                      "name":  "barcode-subtype-16",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-16.ciff",
+                      "characters":  540
+                  },
+                  {
+                      "name":  "barcode-subtype-17",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-17.ciff",
+                      "characters":  550
+                  },
+                  {
+                      "name":  "barcode-subtype-18",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-18.ciff",
+                      "characters":  493
+                  },
+                  {
+                      "name":  "barcode-subtype-19",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-19.ciff",
+                      "characters":  502
+                  },
+                  {
+                      "name":  "barcode-subtype-20",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-20.ciff",
+                      "characters":  549
+                  },
+                  {
+                      "name":  "barcode-subtype-21",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-21.ciff",
+                      "characters":  499
+                  },
+                  {
+                      "name":  "barcode-subtype-22",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-22.ciff",
+                      "characters":  497
+                  },
+                  {
+                      "name":  "barcode-subtype-23",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-23.ciff",
+                      "characters":  498
+                  },
+                  {
+                      "name":  "barcode-subtype-24",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-24.ciff",
+                      "characters":  496
+                  },
+                  {
+                      "name":  "barcode-subtype-25",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-25.ciff",
+                      "characters":  498
+                  },
+                  {
+                      "name":  "barcode-subtype-26",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-26.ciff",
+                      "characters":  497
+                  },
+                  {
+                      "name":  "barcode-Magnification",
+                      "status":  "ok",
+                      "file":  "barcode-Magnification.ciff",
+                      "characters":  509
+                  },
+                  {
+                      "name":  "barcode-Height",
+                      "status":  "ok",
+                      "file":  "barcode-Height.ciff",
+                      "characters":  494
+                  },
+                  {
+                      "name":  "barcode-HRDisplayed",
+                      "status":  "ok",
+                      "file":  "barcode-HRDisplayed.ciff",
+                      "characters":  522
+                  },
+                  {
+                      "name":  "barcode-HRAbove",
+                      "status":  "ok",
+                      "file":  "barcode-HRAbove.ciff",
+                      "characters":  514
+                  },
+                  {
+                      "name":  "barcode-HRFontName",
+                      "status":  "ok",
+                      "file":  "barcode-HRFontName.ciff",
+                      "characters":  532
+                  },
+                  {
+                      "name":  "barcode-HRFontPitch",
+                      "status":  "ok",
+                      "file":  "barcode-HRFontPitch.ciff",
+                      "characters":  518
+                  },
+                  {
+                      "name":  "barcode-HRFontXMag",
+                      "status":  "ok",
+                      "file":  "barcode-HRFontXMag.ciff",
+                      "characters":  518
+                  },
+                  {
+                      "name":  "barcode-HRFontYMag",
+                      "status":  "ok",
+                      "file":  "barcode-HRFontYMag.ciff",
+                      "characters":  518
+                  },
+                  {
+                      "name":  "barcode-HRFontTTSize",
+                      "status":  "ok",
+                      "file":  "barcode-HRFontTTSize.ciff",
+                      "characters":  520
+                  },
+                  {
+                      "name":  "barcode-CheckDigit",
+                      "status":  "ok",
+                      "file":  "barcode-CheckDigit.ciff",
+                      "characters":  520
+                  },
+                  {
+                      "name":  "barcode-QuietMargins",
+                      "status":  "ok",
+                      "file":  "barcode-QuietMargins.ciff",
+                      "characters":  522
+                  },
+                  {
+                      "name":  "barcode-XOffset",
+                      "status":  "ok",
+                      "file":  "barcode-XOffset.ciff",
+                      "characters":  515
+                  },
+                  {
+                      "name":  "barcode-BarcodePrinting",
+                      "status":  "ok",
+                      "file":  "barcode-BarcodePrinting.ciff",
+                      "characters":  538
+                  },
+                  {
+                      "name":  "barcode-HRPrintCheckDigit",
+                      "status":  "ok",
+                      "file":  "barcode-HRPrintCheckDigit.ciff",
+                      "characters":  534
+                  },
+                  {
+                      "name":  "barcode-BarcodeMagnificationRoundingFactor",
+                      "status":  "ok",
+                      "file":  "barcode-BarcodeMagnificationRoundingFactor.ciff",
+                      "characters":  513
+                  },
+                  {
+                      "name":  "barcode-itf-extensions",
+                      "status":  "ok",
+                      "file":  "barcode-itf-extensions.ciff",
+                      "characters":  603
+                  },
+                  {
+                      "name":  "barcode-datamatrix-extensions",
+                      "status":  "ok",
+                      "file":  "barcode-datamatrix-extensions.ciff",
+                      "characters":  616
+                  },
+                  {
+                      "name":  "barcode-qr-extensions",
+                      "status":  "ok",
+                      "file":  "barcode-qr-extensions.ciff",
+                      "characters":  626
+                  },
+                  {
+                      "name":  "barcode-pdf417-extensions",
+                      "status":  "ok",
+                      "file":  "barcode-pdf417-extensions.ciff",
+                      "characters":  648
+                  },
+                  {
+                      "name":  "graphic-subtype-0",
+                      "status":  "ok",
+                      "file":  "graphic-subtype-0.ciff",
+                      "characters":  541
+                  },
+                  {
+                      "name":  "graphic-subtype-1",
+                      "status":  "ok",
+                      "file":  "graphic-subtype-1.ciff",
+                      "characters":  495
+                  },
+                  {
+                      "name":  "graphic-subtype-2",
+                      "status":  "ok",
+                      "file":  "graphic-subtype-2.ciff",
+                      "characters":  497
+                  },
+                  {
+                      "name":  "graphic-subtype-3",
+                      "status":  "ok",
+                      "file":  "graphic-subtype-3.ciff",
+                      "characters":  497
+                  },
+                  {
+                      "name":  "graphic-shape-0",
+                      "status":  "ok",
+                      "file":  "graphic-shape-0.ciff",
+                      "characters":  542
+                  },
+                  {
+                      "name":  "graphic-shape-1",
+                      "status":  "ok",
+                      "file":  "graphic-shape-1.ciff",
+                      "characters":  548
+                  },
+                  {
+                      "name":  "graphic-shape-2",
+                      "status":  "ok",
+                      "file":  "graphic-shape-2.ciff",
+                      "characters":  547
+                  },
+                  {
+                      "name":  "graphic-shape-3",
+                      "status":  "ok",
+                      "file":  "graphic-shape-3.ciff",
+                      "characters":  552
+                  },
+                  {
+                      "name":  "graphic-shape-4",
+                      "status":  "ok",
+                      "file":  "graphic-shape-4.ciff",
+                      "characters":  551
+                  },
+                  {
+                      "name":  "graphic-shape-5",
+                      "status":  "ok",
+                      "file":  "graphic-shape-5.ciff",
+                      "characters":  546
+                  },
+                  {
+                      "name":  "graphic-shape-6",
+                      "status":  "ok",
+                      "file":  "graphic-shape-6.ciff",
+                      "characters":  545
+                  },
+                  {
+                      "name":  "graphic-shape-7",
+                      "status":  "ok",
+                      "file":  "graphic-shape-7.ciff",
+                      "characters":  551
+                  },
+                  {
+                      "name":  "graphic-static-options",
+                      "status":  "ok",
+                      "file":  "graphic-static-options.ciff",
+                      "characters":  611
+                  },
+                  {
+                      "name":  "data-branch-0",
+                      "status":  "ok",
+                      "file":  "data-branch-0.ciff",
+                      "characters":  554
+                  },
+                  {
+                      "name":  "data-branch-1",
+                      "status":  "ok",
+                      "file":  "data-branch-1.ciff",
+                      "characters":  581
+                  },
+                  {
+                      "name":  "data-branch-2",
+                      "status":  "ok",
+                      "file":  "data-branch-2.ciff",
+                      "characters":  602
+                  },
+                  {
+                      "name":  "data-branch-3",
+                      "status":  "ok",
+                      "file":  "data-branch-3.ciff",
+                      "characters":  564
+                  },
+                  {
+                      "name":  "data-branch-4",
+                      "status":  "ok",
+                      "file":  "data-branch-4.ciff",
+                      "characters":  580
+                  },
+                  {
+                      "name":  "data-branch-5",
+                      "status":  "ok",
+                      "file":  "data-branch-5.ciff",
+                      "characters":  568
+                  },
+                  {
+                      "name":  "data-branch-6",
+                      "status":  "ok",
+                      "file":  "data-branch-6.ciff",
+                      "characters":  554
+                  },
+                  {
+                      "name":  "data-branch-7",
+                      "status":  "ok",
+                      "file":  "data-branch-7.ciff",
+                      "characters":  554
+                  },
+                  {
+                      "name":  "data-branch-8",
+                      "status":  "ok",
+                      "file":  "data-branch-8.ciff",
+                      "characters":  569
+                  },
+                  {
+                      "name":  "data-flags-0",
+                      "status":  "ok",
+                      "file":  "data-flags-0.ciff",
+                      "characters":  550
+                  },
+                  {
+                      "name":  "data-flags-1",
+                      "status":  "ok",
+                      "file":  "data-flags-1.ciff",
+                      "characters":  560
+                  },
+                  {
+                      "name":  "data-flags-2",
+                      "status":  "ok",
+                      "file":  "data-flags-2.ciff",
+                      "characters":  581
+                  },
+                  {
+                      "name":  "data-flags-3",
+                      "status":  "ok",
+                      "file":  "data-flags-3.ciff",
+                      "characters":  571
+                  },
+                  {
+                      "name":  "object-FixedLength",
+                      "status":  "ok",
+                      "file":  "object-FixedLength.ciff",
+                      "characters":  525
+                  },
+                  {
+                      "name":  "object-FixedLengthPadCharacter",
+                      "status":  "error",
+                      "error":  "Exception calling \"SetInt\" with \"3\" argument(s): \"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\""
+                  },
+                  {
+                      "name":  "object-FixedLengthPadMode",
+                      "status":  "error",
+                      "error":  "Exception calling \"SetInt\" with \"3\" argument(s): \"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\""
+                  },
+                  {
+                      "name":  "object-Locale",
+                      "status":  "ok",
+                      "file":  "object-Locale.ciff",
+                      "characters":  536
+                  },
+                  {
+                      "name":  "object-Calendar",
+                      "status":  "ok",
+                      "file":  "object-Calendar.ciff",
+                      "characters":  551
+                  },
+                  {
+                      "name":  "object-Encryption",
+                      "status":  "ok",
+                      "file":  "object-Encryption.ciff",
+                      "characters":  556
+                  },
+                  {
+                      "name":  "object-MaximumCharacters",
+                      "status":  "ok",
+                      "file":  "object-MaximumCharacters.ciff",
+                      "characters":  545
+                  },
+                  {
+                      "name":  "object-DefaultData",
+                      "status":  "ok",
+                      "file":  "object-DefaultData.ciff",
+                      "characters":  555
+                  },
+                  {
+                      "name":  "object-Reference",
+                      "status":  "ok",
+                      "file":  "object-Reference.ciff",
+                      "characters":  524
+                  },
+                  {
+                      "name":  "object-fixed-padding",
+                      "status":  "ok",
+                      "file":  "object-fixed-padding.ciff",
+                      "characters":  591
+                  },
+                  {
+                      "name":  "source-field",
+                      "status":  "ok",
+                      "file":  "source-field.ciff",
+                      "characters":  602
+                  },
+                  {
+                      "name":  "source-data",
+                      "status":  "ok",
+                      "file":  "source-data.ciff",
+                      "characters":  642
+                  },
+                  {
+                      "name":  "user-text",
+                      "status":  "ok",
+                      "file":  "user-text.ciff",
+                      "characters":  772
+                  },
+                  {
+                      "name":  "offset-date",
+                      "status":  "ok",
+                      "file":  "offset-date.ciff",
+                      "characters":  648
+                  },
+                  {
+                      "name":  "counter",
+                      "status":  "ok",
+                      "file":  "counter.ciff",
+                      "characters":  710
+                  },
+                  {
+                      "name":  "data-collection-order",
+                      "status":  "ok",
+                      "file":  "data-collection-order.ciff",
+                      "characters":  757
+                  },
+                  {
+                      "name":  "field-collection-order",
+                      "status":  "ok",
+                      "file":  "field-collection-order.ciff",
+                      "characters":  616
+                  },
+                  {
+                      "name":  "duplicate-field-name",
+                      "status":  "ok",
+                      "file":  "duplicate-field-name.ciff",
+                      "characters":  455
+                  },
+                  {
+                      "name":  "duplicate-data-index",
+                      "status":  "ok",
+                      "file":  "duplicate-data-index.ciff",
+                      "characters":  551
+                  },
+                  {
+                      "name":  "runtime-fixed",
+                      "status":  "ok",
+                      "file":  "runtime-fixed.ciff",
+                      "characters":  594
+                  },
+                  {
+                      "name":  "runtime-time",
+                      "status":  "ok",
+                      "file":  "runtime-time.ciff",
+                      "characters":  611
+                  },
+                  {
+                      "name":  "runtime-date",
+                      "status":  "ok",
+                      "file":  "runtime-date.ciff",
+                      "characters":  623
+                  },
+                  {
+                      "name":  "runtime-user",
+                      "status":  "ok",
+                      "file":  "runtime-user.ciff",
+                      "characters":  674
+                  },
+                  {
+                      "name":  "runtime-fixed-pad",
+                      "status":  "ok",
+                      "file":  "runtime-fixed-pad.ciff",
+                      "characters":  705
+                  },
+                  {
+                      "name":  "counter-subcounter",
+                      "status":  "ok",
+                      "file":  "counter-subcounter.ciff",
+                      "characters":  706
+                  },
+                  {
+                      "name":  "runtime-counter",
+                      "status":  "ok",
+                      "file":  "runtime-counter.ciff",
+                      "characters":  778
+                  },
+                  {
+                      "name":  "with-native-clst",
+                      "status":  "ok",
+                      "file":  "with-native-clst.ciff",
+                      "characters":  776
+                  },
+                  {
+                      "name":  "with-native-clst-empty",
+                      "status":  "ok",
+                      "file":  "with-native-clst-empty.ciff",
+                      "characters":  482
+                  },
+                  {
+                      "name":  "runtime-source-field",
+                      "status":  "ok",
+                      "file":  "runtime-source-field.ciff",
+                      "characters":  905
+                  },
+                  {
+                      "name":  "native-time-recipe",
+                      "status":  "ok",
+                      "file":  "native-time-recipe.ciff",
+                      "characters":  830
+                  },
+                  {
+                      "name":  "native-dm-template",
+                      "status":  "ok",
+                      "file":  "native-dm-template.ciff",
+                      "characters":  1378
+                  }
+              ]
+}

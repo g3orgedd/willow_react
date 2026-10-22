@@ -1,0 +1,2 @@
+45443c8b LEA ECX,[EBP + 0xffffff48]
+45443c91 JMP 0x45404caa

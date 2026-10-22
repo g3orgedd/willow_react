@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-21",
+  "scope": "Production import/save, unknown header/SubHeader properties and target change; no native GUI.",
+  "cases": [
+    {
+      "name": "metadata_import_noop",
+      "model": {
+        "docMeta": {
+          "version": "24",
+          "designedFor": "DataFlex 6330(53mm) - Continuous",
+          "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnS",
+          "printerModel": "DataFlex 6330(53mm)",
+          "printMode": "Continuous",
+          "sourceFileName": "",
+          "clStIncludeFileMetadata": false
+        },
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        }
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "xml": "<ImageDesign Version=\"24\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6330(53mm) - Continuous\" Units=\"Millimetres\" DesignedWith=\"native-test\" OverrideAll=\"1\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnS</ClStVersionInfo><UnmodeledHeader>KEEP</UnmodeledHeader></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\" PrinterType=\"Other Printer\"><ImageWidth>600</ImageWidth><ImageHeight>700</ImageHeight><MaxImageWidth>2000</MaxImageWidth><MaxImageHeight>3000</MaxImageHeight><XRes>0.120000</XRes><YRes>0.240000</YRes><AutoSize>1</AutoSize><ImageMirror>1</ImageMirror><ImageInverse>1</ImageInverse><LastUpdated>21/10/2026</LastUpdated><CurrentOrientation>0</CurrentOrientation><ImageRotation>0</ImageRotation></SubHeader><Field Name=\"A\"><FldType>FixedText</FldType><X>100</X><Y>200</Y><W>500</W><H>400</H><CalcData><![CDATA[A]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[A]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>"
+    },
+    {
+      "name": "metadata_target_changed",
+      "model": {
+        "docMeta": {
+          "version": "24",
+          "designedFor": "DataFlex 6320(32mm) - Intermittent",
+          "clStVersionInfo": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnS",
+          "printerModel": "DataFlex 6320(32mm)",
+          "printMode": "Intermittent",
+          "sourceFileName": "",
+          "clStIncludeFileMetadata": false
+        },
+        "subImage": {
+          "imageReference": "1",
+          "width": 600,
+          "height": 700,
+          "maxWidth": 2000,
+          "maxHeight": 3000,
+          "xRes": 0.12,
+          "orientation": 0,
+          "usedSizeDirty": false,
+          "workspaceWidth": 2000,
+          "workspaceHeight": 3000
+        }
+      },
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      },
+      "xml": "<ImageDesign Version=\"24\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6320(32mm) - Intermittent\" Units=\"Millimetres\" DesignedWith=\"native-test\" OverrideAll=\"1\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnS</ClStVersionInfo><UnmodeledHeader>KEEP</UnmodeledHeader></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\" PrinterType=\"Other Printer\"><ImageWidth>600</ImageWidth><ImageHeight>700</ImageHeight><MaxImageWidth>2000</MaxImageWidth><MaxImageHeight>3000</MaxImageHeight><XRes>0.120000</XRes><YRes>0.240000</YRes><AutoSize>1</AutoSize><ImageMirror>1</ImageMirror><ImageInverse>1</ImageInverse><LastUpdated>21/10/2026</LastUpdated><CurrentOrientation>0</CurrentOrientation><ImageRotation>0</ImageRotation></SubHeader><Field Name=\"A\"><FldType>FixedText</FldType><X>100</X><Y>200</Y><W>500</W><H>400</H><CalcData><![CDATA[A]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[A]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>"
+    }
+  ]
+}

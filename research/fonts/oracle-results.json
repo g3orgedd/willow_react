@@ -1,0 +1,152 @@
+﻿{
+    "xRes":  0.12,
+    "useZFBF":  0,
+    "fields":  [
+                   {
+                       "widthDots":  348,
+                       "widthCiff":  2900,
+                       "path":  "Arial_6.png",
+                       "pitch":  6,
+                       "heightCiff":  233,
+                       "heightDots":  28,
+                       "face":  "Arial"
+                   },
+                   {
+                       "widthDots":  766,
+                       "widthCiff":  6383,
+                       "path":  "Arial_13.png",
+                       "pitch":  13,
+                       "heightCiff":  525,
+                       "heightDots":  63,
+                       "face":  "Arial"
+                   },
+                   {
+                       "widthDots":  280,
+                       "widthCiff":  2333,
+                       "path":  "Arial_Narrow_6.png",
+                       "pitch":  6,
+                       "heightCiff":  250,
+                       "heightDots":  30,
+                       "face":  "Arial Narrow"
+                   },
+                   {
+                       "widthDots":  629,
+                       "widthCiff":  5242,
+                       "path":  "Arial_Narrow_13.png",
+                       "pitch":  13,
+                       "heightCiff":  542,
+                       "heightDots":  65,
+                       "face":  "Arial Narrow"
+                   },
+                   {
+                       "widthDots":  315,
+                       "widthCiff":  2625,
+                       "path":  "Times_New_Roman_6.png",
+                       "pitch":  6,
+                       "heightCiff":  242,
+                       "heightDots":  29,
+                       "face":  "Times New Roman"
+                   },
+                   {
+                       "widthDots":  712,
+                       "widthCiff":  5933,
+                       "path":  "Times_New_Roman_13.png",
+                       "pitch":  13,
+                       "heightCiff":  517,
+                       "heightDots":  62,
+                       "face":  "Times New Roman"
+                   },
+                   {
+                       "widthDots":  390,
+                       "widthCiff":  3250,
+                       "path":  "Courier_New_6.png",
+                       "pitch":  6,
+                       "heightCiff":  242,
+                       "heightDots":  29,
+                       "face":  "Courier New"
+                   },
+                   {
+                       "widthDots":  858,
+                       "widthCiff":  7150,
+                       "path":  "Courier_New_13.png",
+                       "pitch":  13,
+                       "heightCiff":  500,
+                       "heightDots":  60,
+                       "face":  "Courier New"
+                   },
+                   {
+                       "widthDots":  344,
+                       "widthCiff":  2867,
+                       "path":  "Tahoma_6.png",
+                       "pitch":  6,
+                       "heightCiff":  250,
+                       "heightDots":  30,
+                       "face":  "Tahoma"
+                   },
+                   {
+                       "widthDots":  744,
+                       "widthCiff":  6200,
+                       "path":  "Tahoma_13.png",
+                       "pitch":  13,
+                       "heightCiff":  550,
+                       "heightDots":  66,
+                       "face":  "Tahoma"
+                   },
+                   {
+                       "widthDots":  390,
+                       "widthCiff":  3250,
+                       "path":  "Verdana_6.png",
+                       "pitch":  6,
+                       "heightCiff":  258,
+                       "heightDots":  31,
+                       "face":  "Verdana"
+                   },
+                   {
+                       "widthDots":  854,
+                       "widthCiff":  7117,
+                       "path":  "Verdana_13.png",
+                       "pitch":  13,
+                       "heightCiff":  550,
+                       "heightDots":  66,
+                       "face":  "Verdana"
+                   },
+                   {
+                       "widthDots":  390,
+                       "widthCiff":  3250,
+                       "path":  "OCRB_6.png",
+                       "pitch":  6,
+                       "heightCiff":  183,
+                       "heightDots":  22,
+                       "face":  "OCRB"
+                   },
+                   {
+                       "widthDots":  858,
+                       "widthCiff":  7150,
+                       "path":  "OCRB_13.png",
+                       "pitch":  13,
+                       "heightCiff":  400,
+                       "heightDots":  48,
+                       "face":  "OCRB"
+                   },
+                   {
+                       "widthDots":  331,
+                       "widthCiff":  2758,
+                       "path":  "Segoe_UI_6.png",
+                       "pitch":  6,
+                       "heightCiff":  292,
+                       "heightDots":  35,
+                       "face":  "Segoe UI"
+                   },
+                   {
+                       "widthDots":  739,
+                       "widthCiff":  6158,
+                       "path":  "Segoe_UI_13.png",
+                       "pitch":  13,
+                       "heightCiff":  617,
+                       "heightDots":  74,
+                       "face":  "Segoe UI"
+                   }
+               ],
+    "useTTF":  1,
+    "yRes":  0.12
+}

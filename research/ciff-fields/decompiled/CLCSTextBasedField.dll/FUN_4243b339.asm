@@ -1,0 +1,12 @@
+4243b339 PUSH ESI
+4243b33a MOV ESI,ECX
+4243b33c PUSH dword ptr [ESI + 0xc]
+4243b33f PUSH dword ptr [ESI + 0x8]
+4243b342 CALL dword ptr [0x42495078]
+4243b348 CMP dword ptr [ESI + 0xc],0x0
+4243b34c JZ 0x4243b35b
+4243b34e PUSH dword ptr [ESI + 0xc]
+4243b351 CALL dword ptr [0x424950f4]
+4243b357 AND dword ptr [ESI + 0xc],0x0
+4243b35b POP ESI
+4243b35c RET

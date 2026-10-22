@@ -1,0 +1,14 @@
+4500fef6 PUSH EBP
+4500fef7 MOV EBP,ESP
+4500fef9 PUSH ECX
+4500fefa MOV EAX,dword ptr [ECX + 0x4]
+4500fefd LEA EDX,[EBP + -0x4]
+4500ff00 AND dword ptr [EBP + -0x4],0x0
+4500ff04 PUSH EDX
+4500ff05 PUSH EAX
+4500ff06 MOV ECX,dword ptr [EAX]
+4500ff08 CALL dword ptr [ECX + 0x2c]
+4500ff0b MOV EAX,dword ptr [EBP + -0x4]
+4500ff0e MOV ESP,EBP
+4500ff10 POP EBP
+4500ff11 RET

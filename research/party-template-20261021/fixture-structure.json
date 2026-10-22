@@ -1,0 +1,864 @@
+[
+  {
+    "source": "C:\\Users\\GigaGeorge\\Desktop\\Party.ciff",
+    "bytes": 13002,
+    "sha256": "750E00AFD3269D602EA9A7F2AB40053C92AA594A960868DD712CFFF8E96E5828",
+    "designedFor": "DataFlex 6530(53mm) - Continuous",
+    "subHeader": "<SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>987</ImageWidth><ImageHeight>987</ImageHeight><MaxImageWidth>1200</MaxImageWidth><MaxImageHeight>1800</MaxImageHeight><XRes>0.120000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader>",
+    "fieldOrder": [
+      "GTIN2",
+      "C4",
+      "C1",
+      "C3",
+      "C2",
+      "PRODUCT_DATE",
+      "SN",
+      "BOX_COUNTER",
+      "C5"
+    ],
+    "fields": [
+      {
+        "name": "GTIN2",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "2462",
+          "y": "-500",
+          "w": "2683",
+          "h": "392"
+        },
+        "ln": "1",
+        "orientation": "180",
+        "calcData": "00000000000000",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "0",
+            "dataType": "0",
+            "maxChars": "14",
+            "default": "00000000000000",
+            "fixedLen": true,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": true,
+            "userEnterData": "00000000000000",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "C4",
+        "fldType": "Barcode",
+        "printed": true,
+        "geom": {
+          "x": "70",
+          "y": "70",
+          "w": "917",
+          "h": "917"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "~1010000000000000011000000100000000000  2100000",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "~101",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "C1"
+          },
+          {
+            "index": "1",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "00000000000000",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "GTIN2"
+          },
+          {
+            "index": "2",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "11",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "C3"
+          },
+          {
+            "index": "3",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "000000",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "PRODUCT_DATE"
+          },
+          {
+            "index": "4",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "10",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "C2"
+          },
+          {
+            "index": "5",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "0000000000  ",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "SN"
+          },
+          {
+            "index": "6",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "21",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "C5"
+          },
+          {
+            "index": "7",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "00000",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "BOX_COUNTER"
+          }
+        ],
+        "text": {
+          "pitch": "",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "924",
+          "quietMargin": "0",
+          "moduleSize": "42",
+          "symbolSize": "22X22"
+        }
+      },
+      {
+        "name": "C1",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "2320",
+          "y": "925",
+          "w": "783",
+          "h": "392"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "~101",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "",
+            "dataType": "0",
+            "maxChars": "4",
+            "default": "~101",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "C3",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "2790",
+          "y": "1943",
+          "w": "1360",
+          "h": "390"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "11",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "",
+            "dataType": "0",
+            "maxChars": "7",
+            "default": "11",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "C2",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "2828",
+          "y": "1408",
+          "w": "383",
+          "h": "392"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "10",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "",
+            "dataType": "0",
+            "maxChars": "2",
+            "default": "10",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "PRODUCT_DATE",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "-1500",
+          "y": "2510",
+          "w": "420",
+          "h": "149"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "000000",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "0",
+            "dataType": "0",
+            "maxChars": "6",
+            "default": "000000",
+            "fixedLen": true,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": true,
+            "userEnterData": "000000",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "3",
+          "xMag": "108"
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "SN",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "-1830",
+          "y": "1880",
+          "w": "500",
+          "h": "134"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "0000000000  ",
+        "logged": true,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "0",
+            "dataType": "0",
+            "maxChars": "12",
+            "default": "0000000000",
+            "fixedLen": true,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": true,
+            "userEnterData": "0000000000",
+            "mask": "0-9,A-Z,a-z",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "3",
+          "xMag": "75"
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "BOX_COUNTER",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "160",
+          "y": "1570",
+          "w": "335",
+          "h": "149"
+        },
+        "ln": "",
+        "orientation": "",
+        "calcData": "00000",
+        "logged": true,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "0",
+            "dataType": "0",
+            "maxChars": "5",
+            "default": "00000",
+            "fixedLen": true,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": true,
+            "userEnterData": "00000",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "3",
+          "xMag": "100"
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "C5",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "140",
+          "y": "1130",
+          "w": "1200",
+          "h": "400"
+        },
+        "ln": "",
+        "orientation": "",
+        "calcData": "21",
+        "logged": true,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "0",
+            "dataType": "0",
+            "maxChars": "2",
+            "default": "21",
+            "fixedLen": true,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": true,
+            "userEnterData": "21",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      }
+    ]
+  },
+  {
+    "source": "C:\\Users\\GigaGeorge\\Downloads\\Party1.ciff",
+    "bytes": 10542,
+    "sha256": "D9A97615A4833A380EEC733581AE484D6AE70E6C6957CD9AA3380489D121EEC5",
+    "designedFor": "DataFlex 6530(53mm) - Continuous",
+    "subHeader": "<SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>987</ImageWidth><ImageHeight>987</ImageHeight><MaxImageWidth>1200</MaxImageWidth><MaxImageHeight>1800</MaxImageHeight><XRes>0.120000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader>",
+    "fieldOrder": [
+      "GTIN2",
+      "Field00",
+      "C1",
+      "C3",
+      "C2",
+      "PRODUCT_DATE",
+      "SN"
+    ],
+    "fields": [
+      {
+        "name": "GTIN2",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "6242",
+          "y": "467",
+          "w": "2683",
+          "h": "392"
+        },
+        "ln": "1",
+        "orientation": "180",
+        "calcData": "00000000000000",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "0",
+            "dataType": "0",
+            "maxChars": "14",
+            "default": "00000000000000",
+            "fixedLen": true,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": true,
+            "userEnterData": "00000000000000",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "Field00",
+        "fldType": "Barcode",
+        "printed": true,
+        "geom": {
+          "x": "70",
+          "y": "70",
+          "w": "917",
+          "h": "917"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "~1010000000000000011000000100000000000",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "~101",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "C1"
+          },
+          {
+            "index": "1",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "00000000000000",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "GTIN2"
+          },
+          {
+            "index": "2",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "11",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "C3"
+          },
+          {
+            "index": "3",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "000000",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "PRODUCT_DATE"
+          },
+          {
+            "index": "4",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "10",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "C2"
+          },
+          {
+            "index": "5",
+            "staticAttr": "",
+            "dataType": "5",
+            "maxChars": "",
+            "default": "0000000000",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": "SN"
+          }
+        ],
+        "text": {
+          "pitch": "",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "924",
+          "quietMargin": "0",
+          "moduleSize": "42",
+          "symbolSize": "22X22"
+        }
+      },
+      {
+        "name": "C1",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "6100",
+          "y": "1892",
+          "w": "783",
+          "h": "392"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "~101",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "",
+            "dataType": "0",
+            "maxChars": "4",
+            "default": "~101",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "C3",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "6570",
+          "y": "2910",
+          "w": "1360",
+          "h": "390"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "11",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "",
+            "dataType": "0",
+            "maxChars": "7",
+            "default": "11",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "C2",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "6608",
+          "y": "2375",
+          "w": "383",
+          "h": "392"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "10",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "",
+            "dataType": "0",
+            "maxChars": "2",
+            "default": "10",
+            "fixedLen": false,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": false,
+            "userEnterData": "",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "10",
+          "xMag": ""
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "PRODUCT_DATE",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "-1500",
+          "y": "2510",
+          "w": "467",
+          "h": "134"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "000000",
+        "logged": false,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "0",
+            "dataType": "0",
+            "maxChars": "6",
+            "default": "000000",
+            "fixedLen": true,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": true,
+            "userEnterData": "000000",
+            "mask": "",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "3",
+          "xMag": "108"
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      },
+      {
+        "name": "SN",
+        "fldType": "FixedText",
+        "printed": false,
+        "geom": {
+          "x": "-1830",
+          "y": "1880",
+          "w": "500",
+          "h": "134"
+        },
+        "ln": "1",
+        "orientation": "",
+        "calcData": "0000000000",
+        "logged": true,
+        "objects": [
+          {
+            "index": "",
+            "staticAttr": "0",
+            "dataType": "0",
+            "maxChars": "12",
+            "default": "0000000000",
+            "fixedLen": true,
+            "padChar": "",
+            "padMode": "",
+            "userEntered": true,
+            "userEnterData": "0000000000",
+            "mask": "0-9,A-Z,a-z",
+            "srcField": ""
+          }
+        ],
+        "text": {
+          "pitch": "3",
+          "xMag": "75"
+        },
+        "barcode": {
+          "bcH": "",
+          "quietMargin": "",
+          "moduleSize": "",
+          "symbolSize": ""
+        }
+      }
+    ]
+  }
+]

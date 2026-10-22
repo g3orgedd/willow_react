@@ -1,0 +1,9584 @@
+[
+  {
+    "va": "1000004d",
+    "fileOffset": 77,
+    "encoding": "ascii",
+    "text": "!This program cannot be run in DOS mode."
+  },
+  {
+    "va": "100000f0",
+    "fileOffset": 240,
+    "encoding": "ascii",
+    "text": "Rich"
+  },
+  {
+    "va": "10000200",
+    "fileOffset": 512,
+    "encoding": "ascii",
+    "text": ".text"
+  },
+  {
+    "va": "10000227",
+    "fileOffset": 551,
+    "encoding": "ascii",
+    "text": "`.rdata"
+  },
+  {
+    "va": "1000024f",
+    "fileOffset": 591,
+    "encoding": "ascii",
+    "text": "@.data"
+  },
+  {
+    "va": "10000278",
+    "fileOffset": 632,
+    "encoding": "ascii",
+    "text": ".rsrc"
+  },
+  {
+    "va": "1000029f",
+    "fileOffset": 671,
+    "encoding": "ascii",
+    "text": "@.reloc"
+  },
+  {
+    "va": "100010b0",
+    "fileOffset": 1200,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100011da",
+    "fileOffset": 1498,
+    "encoding": "ascii",
+    "text": "t5;p"
+  },
+  {
+    "va": "1000122a",
+    "fileOffset": 1578,
+    "encoding": "ascii",
+    "text": ",;0u"
+  },
+  {
+    "va": "1000142e",
+    "fileOffset": 2094,
+    "encoding": "ascii",
+    "text": "j0Xf"
+  },
+  {
+    "va": "1000174f",
+    "fileOffset": 2895,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100018f4",
+    "fileOffset": 3316,
+    "encoding": "ascii",
+    "text": ";0t?"
+  },
+  {
+    "va": "10001a02",
+    "fileOffset": 3586,
+    "encoding": "ascii",
+    "text": "8Ou#"
+  },
+  {
+    "va": "10001a7e",
+    "fileOffset": 3710,
+    "encoding": "ascii",
+    "text": ";q<t79"
+  },
+  {
+    "va": "10001d22",
+    "fileOffset": 4386,
+    "encoding": "ascii",
+    "text": "wL9q"
+  },
+  {
+    "va": "10001fbc",
+    "fileOffset": 5052,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "10002a3f",
+    "fileOffset": 7743,
+    "encoding": "ascii",
+    "text": "^DSj"
+  },
+  {
+    "va": "10003577",
+    "fileOffset": 10615,
+    "encoding": "ascii",
+    "text": "QSVW"
+  },
+  {
+    "va": "1000372e",
+    "fileOffset": 11054,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "10003798",
+    "fileOffset": 11160,
+    "encoding": "ascii",
+    "text": "Pj\\j"
+  },
+  {
+    "va": "100038a8",
+    "fileOffset": 11432,
+    "encoding": "ascii",
+    "text": "f;4A"
+  },
+  {
+    "va": "10003911",
+    "fileOffset": 11537,
+    "encoding": "ascii",
+    "text": "9N$u"
+  },
+  {
+    "va": "10003ca1",
+    "fileOffset": 12449,
+    "encoding": "ascii",
+    "text": "SVW3"
+  },
+  {
+    "va": "10003cab",
+    "fileOffset": 12459,
+    "encoding": "ascii",
+    "text": "VVj*"
+  },
+  {
+    "va": "10003ccc",
+    "fileOffset": 12492,
+    "encoding": "ascii",
+    "text": "SPj*"
+  },
+  {
+    "va": "10003d03",
+    "fileOffset": 12547,
+    "encoding": "ascii",
+    "text": "Yf9M"
+  },
+  {
+    "va": "10003d93",
+    "fileOffset": 12691,
+    "encoding": "ascii",
+    "text": "9GDt"
+  },
+  {
+    "va": "10003de0",
+    "fileOffset": 12768,
+    "encoding": "ascii",
+    "text": "!OL!OT"
+  },
+  {
+    "va": "10003dfe",
+    "fileOffset": 12798,
+    "encoding": "ascii",
+    "text": ";GLs"
+  },
+  {
+    "va": "10004159",
+    "fileOffset": 13657,
+    "encoding": "ascii",
+    "text": "f3D:"
+  },
+  {
+    "va": "10004399",
+    "fileOffset": 14233,
+    "encoding": "ascii",
+    "text": "F,`u`"
+  },
+  {
+    "va": "100044f9",
+    "fileOffset": 14585,
+    "encoding": "ascii",
+    "text": "u,PV"
+  },
+  {
+    "va": "100045f8",
+    "fileOffset": 14840,
+    "encoding": "ascii",
+    "text": "HPWV"
+  },
+  {
+    "va": "100048cb",
+    "fileOffset": 15563,
+    "encoding": "ascii",
+    "text": "F|PW"
+  },
+  {
+    "va": "10004925",
+    "fileOffset": 15653,
+    "encoding": "ascii",
+    "text": "?SVj"
+  },
+  {
+    "va": "10004963",
+    "fileOffset": 15715,
+    "encoding": "ascii",
+    "text": "^[_]"
+  },
+  {
+    "va": "10004b95",
+    "fileOffset": 16277,
+    "encoding": "ascii",
+    "text": "9G |"
+  },
+  {
+    "va": "10004b9e",
+    "fileOffset": 16286,
+    "encoding": "ascii",
+    "text": "9G }"
+  },
+  {
+    "va": "10004c96",
+    "fileOffset": 16534,
+    "encoding": "ascii",
+    "text": "Y_^]"
+  },
+  {
+    "va": "10004ce1",
+    "fileOffset": 16609,
+    "encoding": "ascii",
+    "text": "Y_^]"
+  },
+  {
+    "va": "10004d2c",
+    "fileOffset": 16684,
+    "encoding": "ascii",
+    "text": "Y_^]"
+  },
+  {
+    "va": "10004d77",
+    "fileOffset": 16759,
+    "encoding": "ascii",
+    "text": "Y_^]"
+  },
+  {
+    "va": "10004f33",
+    "fileOffset": 17203,
+    "encoding": "ascii",
+    "text": "SVWj"
+  },
+  {
+    "va": "10004f81",
+    "fileOffset": 17281,
+    "encoding": "ascii",
+    "text": "SVWj"
+  },
+  {
+    "va": "10004fd5",
+    "fileOffset": 17365,
+    "encoding": "ascii",
+    "text": "SVWj"
+  },
+  {
+    "va": "10005399",
+    "fileOffset": 18329,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100054e7",
+    "fileOffset": 18663,
+    "encoding": "ascii",
+    "text": "HQPj"
+  },
+  {
+    "va": "10005635",
+    "fileOffset": 18997,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000564f",
+    "fileOffset": 19023,
+    "encoding": "ascii",
+    "text": "w&s)+F"
+  },
+  {
+    "va": "1000597e",
+    "fileOffset": 19838,
+    "encoding": "ascii",
+    "text": "jeh@i"
+  },
+  {
+    "va": "100059a6",
+    "fileOffset": 19878,
+    "encoding": "ascii",
+    "text": "VWh\""
+  },
+  {
+    "va": "10005a0c",
+    "fileOffset": 19980,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "10005a7f",
+    "fileOffset": 20095,
+    "encoding": "ascii",
+    "text": "jfh@i"
+  },
+  {
+    "va": "100060b0",
+    "fileOffset": 21680,
+    "encoding": "ascii",
+    "text": "SVWP"
+  },
+  {
+    "va": "1000640a",
+    "fileOffset": 22538,
+    "encoding": "ascii",
+    "text": "Y_^["
+  },
+  {
+    "va": "100064e5",
+    "fileOffset": 22757,
+    "encoding": "ascii",
+    "text": "~n;N"
+  },
+  {
+    "va": "10006518",
+    "fileOffset": 22808,
+    "encoding": "ascii",
+    "text": "x;;N"
+  },
+  {
+    "va": "1000668a",
+    "fileOffset": 23178,
+    "encoding": "ascii",
+    "text": "90u(!u"
+  },
+  {
+    "va": "100066ea",
+    "fileOffset": 23274,
+    "encoding": "ascii",
+    "text": "[^_]"
+  },
+  {
+    "va": "10006772",
+    "fileOffset": 23410,
+    "encoding": "ascii",
+    "text": "^[_]"
+  },
+  {
+    "va": "100067fd",
+    "fileOffset": 23549,
+    "encoding": "ascii",
+    "text": "^[_]"
+  },
+  {
+    "va": "10006876",
+    "fileOffset": 23670,
+    "encoding": "ascii",
+    "text": "f98u"
+  },
+  {
+    "va": "10006884",
+    "fileOffset": 23684,
+    "encoding": "ascii",
+    "text": "^[_]"
+  },
+  {
+    "va": "10006c35",
+    "fileOffset": 24629,
+    "encoding": "ascii",
+    "text": "uISSSSSSS"
+  },
+  {
+    "va": "10006c44",
+    "fileOffset": 24644,
+    "encoding": "ascii",
+    "text": "PSSS"
+  },
+  {
+    "va": "10006ceb",
+    "fileOffset": 24811,
+    "encoding": "ascii",
+    "text": "uDSSSSSSS"
+  },
+  {
+    "va": "10006cfa",
+    "fileOffset": 24826,
+    "encoding": "ascii",
+    "text": "PSSS"
+  },
+  {
+    "va": "10006dad",
+    "fileOffset": 25005,
+    "encoding": "ascii",
+    "text": "SVWR"
+  },
+  {
+    "va": "10006de2",
+    "fileOffset": 25058,
+    "encoding": "ascii",
+    "text": "RRRj"
+  },
+  {
+    "va": "10006f66",
+    "fileOffset": 25446,
+    "encoding": "ascii",
+    "text": "u!h|"
+  },
+  {
+    "va": "10007063",
+    "fileOffset": 25699,
+    "encoding": "ascii",
+    "text": "GY;~"
+  },
+  {
+    "va": "100072ac",
+    "fileOffset": 26284,
+    "encoding": "ascii",
+    "text": "P$^]"
+  },
+  {
+    "va": "1000732e",
+    "fileOffset": 26414,
+    "encoding": "ascii",
+    "text": "Vj'^f;0u"
+  },
+  {
+    "va": "1000733e",
+    "fileOffset": 26430,
+    "encoding": "ascii",
+    "text": "f;0t"
+  },
+  {
+    "va": "100073c7",
+    "fileOffset": 26567,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "10007414",
+    "fileOffset": 26644,
+    "encoding": "ascii",
+    "text": "9;u*h"
+  },
+  {
+    "va": "10007476",
+    "fileOffset": 26742,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000748e",
+    "fileOffset": 26766,
+    "encoding": "ascii",
+    "text": "5VW3"
+  },
+  {
+    "va": "10007494",
+    "fileOffset": 26772,
+    "encoding": "ascii",
+    "text": "y(97u"
+  },
+  {
+    "va": "10007559",
+    "fileOffset": 26969,
+    "encoding": "ascii",
+    "text": "QQQQQQQPQQQ"
+  },
+  {
+    "va": "10007730",
+    "fileOffset": 27440,
+    "encoding": "ascii",
+    "text": "j'[3"
+  },
+  {
+    "va": "100078f3",
+    "fileOffset": 27891,
+    "encoding": "ascii",
+    "text": "j'Yf;"
+  },
+  {
+    "va": "10007946",
+    "fileOffset": 27974,
+    "encoding": "ascii",
+    "text": "}u!H"
+  },
+  {
+    "va": "1000796c",
+    "fileOffset": 28012,
+    "encoding": "ascii",
+    "text": "j%Yf9"
+  },
+  {
+    "va": "10007b34",
+    "fileOffset": 28468,
+    "encoding": "ascii",
+    "text": "PQQQ"
+  },
+  {
+    "va": "10007bf8",
+    "fileOffset": 28664,
+    "encoding": "ascii",
+    "text": "9>t.h"
+  },
+  {
+    "va": "10007c09",
+    "fileOffset": 28681,
+    "encoding": "ascii",
+    "text": "t-h("
+  },
+  {
+    "va": "10007c3a",
+    "fileOffset": 28730,
+    "encoding": "ascii",
+    "text": "@_^]"
+  },
+  {
+    "va": "10007d31",
+    "fileOffset": 28977,
+    "encoding": "ascii",
+    "text": "j{Xf;"
+  },
+  {
+    "va": "10007e14",
+    "fileOffset": 29204,
+    "encoding": "ascii",
+    "text": "j`SV"
+  },
+  {
+    "va": "10007f7e",
+    "fileOffset": 29566,
+    "encoding": "ascii",
+    "text": "q,W3"
+  },
+  {
+    "va": "1000800f",
+    "fileOffset": 29711,
+    "encoding": "ascii",
+    "text": "SVWP"
+  },
+  {
+    "va": "1000805c",
+    "fileOffset": 29788,
+    "encoding": "ascii",
+    "text": "j}Xf9"
+  },
+  {
+    "va": "100081d4",
+    "fileOffset": 30164,
+    "encoding": "ascii",
+    "text": "j=Xf9"
+  },
+  {
+    "va": "1000831e",
+    "fileOffset": 30494,
+    "encoding": "ascii",
+    "text": "PPWV"
+  },
+  {
+    "va": "10008341",
+    "fileOffset": 30529,
+    "encoding": "ascii",
+    "text": "j=Xf9"
+  },
+  {
+    "va": "100083da",
+    "fileOffset": 30682,
+    "encoding": "ascii",
+    "text": "j{Xf9"
+  },
+  {
+    "va": "1000853b",
+    "fileOffset": 31035,
+    "encoding": "ascii",
+    "text": "j{Xf9"
+  },
+  {
+    "va": "100085a4",
+    "fileOffset": 31140,
+    "encoding": "ascii",
+    "text": "Y_^["
+  },
+  {
+    "va": "100085ee",
+    "fileOffset": 31214,
+    "encoding": "ascii",
+    "text": "0Nu#"
+  },
+  {
+    "va": "1000881a",
+    "fileOffset": 31770,
+    "encoding": "ascii",
+    "text": "?=u/W"
+  },
+  {
+    "va": "10008906",
+    "fileOffset": 32006,
+    "encoding": "ascii",
+    "text": "t'9^"
+  },
+  {
+    "va": "10008b07",
+    "fileOffset": 32519,
+    "encoding": "ascii",
+    "text": "gj\"^"
+  },
+  {
+    "va": "10008cce",
+    "fileOffset": 32974,
+    "encoding": "ascii",
+    "text": "gj\"^"
+  },
+  {
+    "va": "10008eca",
+    "fileOffset": 33482,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "10008eff",
+    "fileOffset": 33535,
+    "encoding": "ascii",
+    "text": ";0u,9E"
+  },
+  {
+    "va": "10009115",
+    "fileOffset": 34069,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100091c1",
+    "fileOffset": 34241,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100092bc",
+    "fileOffset": 34492,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000942b",
+    "fileOffset": 34859,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100094f4",
+    "fileOffset": 35060,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100095ec",
+    "fileOffset": 35308,
+    "encoding": "ascii",
+    "text": "_^[t"
+  },
+  {
+    "va": "100096fe",
+    "fileOffset": 35582,
+    "encoding": "ascii",
+    "text": "QjTP"
+  },
+  {
+    "va": "10009796",
+    "fileOffset": 35734,
+    "encoding": "ascii",
+    "text": "t PV"
+  },
+  {
+    "va": "100097a5",
+    "fileOffset": 35749,
+    "encoding": "ascii",
+    "text": "+Ft3"
+  },
+  {
+    "va": "100097c0",
+    "fileOffset": 35776,
+    "encoding": "ascii",
+    "text": "Ft^]"
+  },
+  {
+    "va": "100097ca",
+    "fileOffset": 35786,
+    "encoding": "ascii",
+    "text": "QQS2"
+  },
+  {
+    "va": "1000989d",
+    "fileOffset": 35997,
+    "encoding": "ascii",
+    "text": "QQS2"
+  },
+  {
+    "va": "1000994a",
+    "fileOffset": 36170,
+    "encoding": "ascii",
+    "text": "E$)F"
+  },
+  {
+    "va": "100099b7",
+    "fileOffset": 36279,
+    "encoding": "ascii",
+    "text": "ZuHV"
+  },
+  {
+    "va": "10009a7f",
+    "fileOffset": 36479,
+    "encoding": "ascii",
+    "text": "ZuBW"
+  },
+  {
+    "va": "10009b0f",
+    "fileOffset": 36623,
+    "encoding": "ascii",
+    "text": "HtxHt_Ht>Ht%H"
+  },
+  {
+    "va": "10009e68",
+    "fileOffset": 37480,
+    "encoding": "ascii",
+    "text": "HtzHt_Ht>Ht%H"
+  },
+  {
+    "va": "10009f14",
+    "fileOffset": 37652,
+    "encoding": "ascii",
+    "text": "4SVW"
+  },
+  {
+    "va": "1000a1d0",
+    "fileOffset": 38352,
+    "encoding": "ascii",
+    "text": "HtvHt]HtDHt(H"
+  },
+  {
+    "va": "1000a50d",
+    "fileOffset": 39181,
+    "encoding": "ascii",
+    "text": "t}HttHt]HtDHt(H"
+  },
+  {
+    "va": "1000a86a",
+    "fileOffset": 40042,
+    "encoding": "ascii",
+    "text": "HtZHt2H"
+  },
+  {
+    "va": "1000a893",
+    "fileOffset": 40083,
+    "encoding": "ascii",
+    "text": "E PSV"
+  },
+  {
+    "va": "1000a8bb",
+    "fileOffset": 40123,
+    "encoding": "ascii",
+    "text": "E PSV"
+  },
+  {
+    "va": "1000a8db",
+    "fileOffset": 40155,
+    "encoding": "ascii",
+    "text": "E PSV"
+  },
+  {
+    "va": "1000a903",
+    "fileOffset": 40195,
+    "encoding": "ascii",
+    "text": "E PSV"
+  },
+  {
+    "va": "1000a955",
+    "fileOffset": 40277,
+    "encoding": "ascii",
+    "text": "HtPHt.H"
+  },
+  {
+    "va": "1000aaa5",
+    "fileOffset": 40613,
+    "encoding": "ascii",
+    "text": "f;E$"
+  },
+  {
+    "va": "1000aac7",
+    "fileOffset": 40647,
+    "encoding": "ascii",
+    "text": "Ht}HtVHt0H"
+  },
+  {
+    "va": "1000ab7d",
+    "fileOffset": 40829,
+    "encoding": "ascii",
+    "text": "f;E$"
+  },
+  {
+    "va": "1000abce",
+    "fileOffset": 40910,
+    "encoding": "ascii",
+    "text": "Ht}HtPHt.H"
+  },
+  {
+    "va": "1000ad0a",
+    "fileOffset": 41226,
+    "encoding": "ascii",
+    "text": "HtzHtWHt3H"
+  },
+  {
+    "va": "1000add5",
+    "fileOffset": 41429,
+    "encoding": "ascii",
+    "text": "f;E("
+  },
+  {
+    "va": "1000ae2e",
+    "fileOffset": 41518,
+    "encoding": "ascii",
+    "text": "HtcHt9H"
+  },
+  {
+    "va": "1000af9e",
+    "fileOffset": 41886,
+    "encoding": "ascii",
+    "text": "HtzHtSHt1H"
+  },
+  {
+    "va": "1000b0b1",
+    "fileOffset": 42161,
+    "encoding": "ascii",
+    "text": "Ht]Ht5H"
+  },
+  {
+    "va": "1000b0d7",
+    "fileOffset": 42199,
+    "encoding": "ascii",
+    "text": "E PWS"
+  },
+  {
+    "va": "1000b102",
+    "fileOffset": 42242,
+    "encoding": "ascii",
+    "text": "E PWS"
+  },
+  {
+    "va": "1000b125",
+    "fileOffset": 42277,
+    "encoding": "ascii",
+    "text": "E PWS"
+  },
+  {
+    "va": "1000b142",
+    "fileOffset": 42306,
+    "encoding": "ascii",
+    "text": "E PWS"
+  },
+  {
+    "va": "1000b179",
+    "fileOffset": 42361,
+    "encoding": "ascii",
+    "text": "f;E("
+  },
+  {
+    "va": "1000b1cd",
+    "fileOffset": 42445,
+    "encoding": "ascii",
+    "text": "HtxHt_Ht>Ht%H"
+  },
+  {
+    "va": "1000b2b7",
+    "fileOffset": 42679,
+    "encoding": "ascii",
+    "text": "HtzHt_Ht>Ht%H"
+  },
+  {
+    "va": "1000b3a4",
+    "fileOffset": 42916,
+    "encoding": "ascii",
+    "text": "HtvHt]HtDHt(H"
+  },
+  {
+    "va": "1000b499",
+    "fileOffset": 43161,
+    "encoding": "ascii",
+    "text": "t}HttHt]HtDHt(H"
+  },
+  {
+    "va": "1000b5bd",
+    "fileOffset": 43453,
+    "encoding": "ascii",
+    "text": "HtZHt2H"
+  },
+  {
+    "va": "1000b5e6",
+    "fileOffset": 43494,
+    "encoding": "ascii",
+    "text": "E PSV"
+  },
+  {
+    "va": "1000b60e",
+    "fileOffset": 43534,
+    "encoding": "ascii",
+    "text": "E PSV"
+  },
+  {
+    "va": "1000b62e",
+    "fileOffset": 43566,
+    "encoding": "ascii",
+    "text": "E PSV"
+  },
+  {
+    "va": "1000b656",
+    "fileOffset": 43606,
+    "encoding": "ascii",
+    "text": "E PSV"
+  },
+  {
+    "va": "1000b6a8",
+    "fileOffset": 43688,
+    "encoding": "ascii",
+    "text": "HtPHt.H"
+  },
+  {
+    "va": "1000b7f8",
+    "fileOffset": 44024,
+    "encoding": "ascii",
+    "text": "f;E$"
+  },
+  {
+    "va": "1000b81a",
+    "fileOffset": 44058,
+    "encoding": "ascii",
+    "text": "Ht}HtVHt0H"
+  },
+  {
+    "va": "1000b8d0",
+    "fileOffset": 44240,
+    "encoding": "ascii",
+    "text": "f;E$"
+  },
+  {
+    "va": "1000b921",
+    "fileOffset": 44321,
+    "encoding": "ascii",
+    "text": "Ht}HtPHt.H"
+  },
+  {
+    "va": "1000ba5d",
+    "fileOffset": 44637,
+    "encoding": "ascii",
+    "text": "HtzHtWHt3H"
+  },
+  {
+    "va": "1000bb28",
+    "fileOffset": 44840,
+    "encoding": "ascii",
+    "text": "f;E("
+  },
+  {
+    "va": "1000bb81",
+    "fileOffset": 44929,
+    "encoding": "ascii",
+    "text": "HtcHt9H"
+  },
+  {
+    "va": "1000bcf1",
+    "fileOffset": 45297,
+    "encoding": "ascii",
+    "text": "HtzHtSHt1H"
+  },
+  {
+    "va": "1000be04",
+    "fileOffset": 45572,
+    "encoding": "ascii",
+    "text": "Ht]Ht5H"
+  },
+  {
+    "va": "1000be2a",
+    "fileOffset": 45610,
+    "encoding": "ascii",
+    "text": "E PWS"
+  },
+  {
+    "va": "1000be55",
+    "fileOffset": 45653,
+    "encoding": "ascii",
+    "text": "E PWS"
+  },
+  {
+    "va": "1000be78",
+    "fileOffset": 45688,
+    "encoding": "ascii",
+    "text": "E PWS"
+  },
+  {
+    "va": "1000be95",
+    "fileOffset": 45717,
+    "encoding": "ascii",
+    "text": "E PWS"
+  },
+  {
+    "va": "1000becc",
+    "fileOffset": 45772,
+    "encoding": "ascii",
+    "text": "f;E("
+  },
+  {
+    "va": "1000bf72",
+    "fileOffset": 45938,
+    "encoding": "ascii",
+    "text": "9^ t"
+  },
+  {
+    "va": "1000bf94",
+    "fileOffset": 45972,
+    "encoding": "ascii",
+    "text": "v8RPS"
+  },
+  {
+    "va": "1000bfe7",
+    "fileOffset": 46055,
+    "encoding": "ascii",
+    "text": "ZuhV"
+  },
+  {
+    "va": "1000c38b",
+    "fileOffset": 46987,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000c41f",
+    "fileOffset": 47135,
+    "encoding": "ascii",
+    "text": " 0+E"
+  },
+  {
+    "va": "1000c442",
+    "fileOffset": 47170,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000c4b3",
+    "fileOffset": 47283,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000c692",
+    "fileOffset": 47762,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000c764",
+    "fileOffset": 47972,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000c7c2",
+    "fileOffset": 48066,
+    "encoding": "ascii",
+    "text": "_^[t"
+  },
+  {
+    "va": "1000c864",
+    "fileOffset": 48228,
+    "encoding": "ascii",
+    "text": "_^[t"
+  },
+  {
+    "va": "1000c970",
+    "fileOffset": 48496,
+    "encoding": "ascii",
+    "text": "ZFBFP"
+  },
+  {
+    "va": "1000ca07",
+    "fileOffset": 48647,
+    "encoding": "ascii",
+    "text": "9~tt"
+  },
+  {
+    "va": "1000cafc",
+    "fileOffset": 48892,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000cb15",
+    "fileOffset": 48917,
+    "encoding": "ascii",
+    "text": "W9FxsF"
+  },
+  {
+    "va": "1000cb63",
+    "fileOffset": 48995,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "1000cb9f",
+    "fileOffset": 49055,
+    "encoding": "ascii",
+    "text": "/@hv"
+  },
+  {
+    "va": "1000cc44",
+    "fileOffset": 49220,
+    "encoding": "ascii",
+    "text": "t2~ "
+  },
+  {
+    "va": "1000ccdc",
+    "fileOffset": 49372,
+    "encoding": "ascii",
+    "text": "9{,~Q"
+  },
+  {
+    "va": "1000ccef",
+    "fileOffset": 49391,
+    "encoding": "ascii",
+    "text": ";{,|"
+  },
+  {
+    "va": "1000cd46",
+    "fileOffset": 49478,
+    "encoding": "ascii",
+    "text": "QQSVW"
+  },
+  {
+    "va": "1000cda1",
+    "fileOffset": 49569,
+    "encoding": "ascii",
+    "text": "/u53"
+  },
+  {
+    "va": "1000cdbe",
+    "fileOffset": 49598,
+    "encoding": "ascii",
+    "text": "JPj "
+  },
+  {
+    "va": "1000cdf0",
+    "fileOffset": 49648,
+    "encoding": "ascii",
+    "text": "QSVW"
+  },
+  {
+    "va": "1000ce05",
+    "fileOffset": 49669,
+    "encoding": "ascii",
+    "text": "9w,~ "
+  },
+  {
+    "va": "1000ce25",
+    "fileOffset": 49701,
+    "encoding": "ascii",
+    "text": ";w,|"
+  },
+  {
+    "va": "1000cea0",
+    "fileOffset": 49824,
+    "encoding": "ascii",
+    "text": "[_^]"
+  },
+  {
+    "va": "1000cee8",
+    "fileOffset": 49896,
+    "encoding": "ascii",
+    "text": "QSVW"
+  },
+  {
+    "va": "1000cfd7",
+    "fileOffset": 50135,
+    "encoding": "ascii",
+    "text": "PjdWV"
+  },
+  {
+    "va": "1000cff5",
+    "fileOffset": 50165,
+    "encoding": "ascii",
+    "text": "?ZFBF"
+  },
+  {
+    "va": "1000d04f",
+    "fileOffset": 50255,
+    "encoding": "ascii",
+    "text": "f;Gb"
+  },
+  {
+    "va": "1000d06d",
+    "fileOffset": 50285,
+    "encoding": "ascii",
+    "text": "CMAP"
+  },
+  {
+    "va": "1000d083",
+    "fileOffset": 50307,
+    "encoding": "ascii",
+    "text": "CDAT"
+  },
+  {
+    "va": "1000d212",
+    "fileOffset": 50706,
+    "encoding": "ascii",
+    "text": "ZFBFP"
+  },
+  {
+    "va": "1000d260",
+    "fileOffset": 50784,
+    "encoding": "ascii",
+    "text": "tIVf"
+  },
+  {
+    "va": "1000d27a",
+    "fileOffset": 50810,
+    "encoding": "ascii",
+    "text": "t&It"
+  },
+  {
+    "va": "1000d27f",
+    "fileOffset": 50815,
+    "encoding": "ascii",
+    "text": "It It"
+  },
+  {
+    "va": "1000d2a5",
+    "fileOffset": 50853,
+    "encoding": "ascii",
+    "text": "f90u"
+  },
+  {
+    "va": "1000d2ff",
+    "fileOffset": 50943,
+    "encoding": "ascii",
+    "text": ";Q,}"
+  },
+  {
+    "va": "1000d38b",
+    "fileOffset": 51083,
+    "encoding": "ascii",
+    "text": "~4_^"
+  },
+  {
+    "va": "1000d6c7",
+    "fileOffset": 51911,
+    "encoding": "ascii",
+    "text": "r>PS"
+  },
+  {
+    "va": "1000d83a",
+    "fileOffset": 52282,
+    "encoding": "ascii",
+    "text": "oF f"
+  },
+  {
+    "va": "1000d896",
+    "fileOffset": 52374,
+    "encoding": "ascii",
+    "text": "oF f"
+  },
+  {
+    "va": "1000d8ee",
+    "fileOffset": 52462,
+    "encoding": "ascii",
+    "text": "oF f"
+  },
+  {
+    "va": "1000dccb",
+    "fileOffset": 53451,
+    "encoding": "ascii",
+    "text": "oV f"
+  },
+  {
+    "va": "1000dcd0",
+    "fileOffset": 53456,
+    "encoding": "ascii",
+    "text": "o^0f"
+  },
+  {
+    "va": "1000dce8",
+    "fileOffset": 53480,
+    "encoding": "ascii",
+    "text": "of@f"
+  },
+  {
+    "va": "1000dced",
+    "fileOffset": 53485,
+    "encoding": "ascii",
+    "text": "onPf"
+  },
+  {
+    "va": "1000dcf2",
+    "fileOffset": 53490,
+    "encoding": "ascii",
+    "text": "ov`f"
+  },
+  {
+    "va": "1000dcf7",
+    "fileOffset": 53495,
+    "encoding": "ascii",
+    "text": "o~pf"
+  },
+  {
+    "va": "1000dd65",
+    "fileOffset": 53605,
+    "encoding": "ascii",
+    "text": "FGIu"
+  },
+  {
+    "va": "1000dd97",
+    "fileOffset": 53655,
+    "encoding": "ascii",
+    "text": "FGIu"
+  },
+  {
+    "va": "1000df1a",
+    "fileOffset": 54042,
+    "encoding": "ascii",
+    "text": "oF f"
+  },
+  {
+    "va": "1000df76",
+    "fileOffset": 54134,
+    "encoding": "ascii",
+    "text": "oF f"
+  },
+  {
+    "va": "1000dfce",
+    "fileOffset": 54222,
+    "encoding": "ascii",
+    "text": "oF f"
+  },
+  {
+    "va": "1000e3ab",
+    "fileOffset": 55211,
+    "encoding": "ascii",
+    "text": "oV f"
+  },
+  {
+    "va": "1000e3b0",
+    "fileOffset": 55216,
+    "encoding": "ascii",
+    "text": "o^0f"
+  },
+  {
+    "va": "1000e3c8",
+    "fileOffset": 55240,
+    "encoding": "ascii",
+    "text": "of@f"
+  },
+  {
+    "va": "1000e3cd",
+    "fileOffset": 55245,
+    "encoding": "ascii",
+    "text": "onPf"
+  },
+  {
+    "va": "1000e3d2",
+    "fileOffset": 55250,
+    "encoding": "ascii",
+    "text": "ov`f"
+  },
+  {
+    "va": "1000e3d7",
+    "fileOffset": 55255,
+    "encoding": "ascii",
+    "text": "o~pf"
+  },
+  {
+    "va": "1000e445",
+    "fileOffset": 55365,
+    "encoding": "ascii",
+    "text": "FGIu"
+  },
+  {
+    "va": "1000e477",
+    "fileOffset": 55415,
+    "encoding": "ascii",
+    "text": "FGIu"
+  },
+  {
+    "va": "1000e574",
+    "fileOffset": 55668,
+    "encoding": "ascii",
+    "text": "t%Ou"
+  },
+  {
+    "va": "1000e5db",
+    "fileOffset": 55771,
+    "encoding": "ascii",
+    "text": " VWj"
+  },
+  {
+    "va": "1000e643",
+    "fileOffset": 55875,
+    "encoding": "ascii",
+    "text": "Y__^["
+  },
+  {
+    "va": "1000ea04",
+    "fileOffset": 56836,
+    "encoding": "ascii",
+    "text": "QQSVWd"
+  },
+  {
+    "va": "1000f0c5",
+    "fileOffset": 58565,
+    "encoding": "ascii",
+    "text": "j Y+"
+  },
+  {
+    "va": "10010732",
+    "fileOffset": 64306,
+    "encoding": "ascii",
+    "text": "woSW"
+  },
+  {
+    "va": "1001081e",
+    "fileOffset": 64542,
+    "encoding": "ascii",
+    "text": "[_^]"
+  },
+  {
+    "va": "100108a6",
+    "fileOffset": 64678,
+    "encoding": "ascii",
+    "text": "X_^]"
+  },
+  {
+    "va": "100109fd",
+    "fileOffset": 65021,
+    "encoding": "ascii",
+    "text": "q?xD"
+  },
+  {
+    "va": "10010eab",
+    "fileOffset": 66219,
+    "encoding": "ascii",
+    "text": "u$SP"
+  },
+  {
+    "va": "10010ed8",
+    "fileOffset": 66264,
+    "encoding": "ascii",
+    "text": "u*SV"
+  },
+  {
+    "va": "10011263",
+    "fileOffset": 67171,
+    "encoding": "ascii",
+    "text": "0N[u"
+  },
+  {
+    "va": "100112ee",
+    "fileOffset": 67310,
+    "encoding": "ascii",
+    "text": "uCh3R"
+  },
+  {
+    "va": "100113b2",
+    "fileOffset": 67506,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100115f2",
+    "fileOffset": 68082,
+    "encoding": "ascii",
+    "text": "u*9E"
+  },
+  {
+    "va": "1001167f",
+    "fileOffset": 68223,
+    "encoding": "ascii",
+    "text": "Y__^["
+  },
+  {
+    "va": "10011732",
+    "fileOffset": 68402,
+    "encoding": "ascii",
+    "text": "8csm"
+  },
+  {
+    "va": "1001187a",
+    "fileOffset": 68730,
+    "encoding": "ascii",
+    "text": "ineI"
+  },
+  {
+    "va": "10011881",
+    "fileOffset": 68737,
+    "encoding": "ascii",
+    "text": "5ntel"
+  },
+  {
+    "va": "10011891",
+    "fileOffset": 68753,
+    "encoding": "ascii",
+    "text": "5Genu"
+  },
+  {
+    "va": "100118c6",
+    "fileOffset": 68806,
+    "encoding": "ascii",
+    "text": "t#=`"
+  },
+  {
+    "va": "10011afc",
+    "fileOffset": 69372,
+    "encoding": "ascii",
+    "text": "PPPPP"
+  },
+  {
+    "va": "100121e8",
+    "fileOffset": 71144,
+    "encoding": "ascii",
+    "text": "t/Ht"
+  },
+  {
+    "va": "100125b9",
+    "fileOffset": 72121,
+    "encoding": "ascii",
+    "text": "~pjCXf"
+  },
+  {
+    "va": "100127d0",
+    "fileOffset": 72656,
+    "encoding": "ascii",
+    "text": "8csm"
+  },
+  {
+    "va": "10012892",
+    "fileOffset": 72850,
+    "encoding": "ascii",
+    "text": "j0h :"
+  },
+  {
+    "va": "100129a3",
+    "fileOffset": 73123,
+    "encoding": "ascii",
+    "text": "PRSW"
+  },
+  {
+    "va": "10012a05",
+    "fileOffset": 73221,
+    "encoding": "ascii",
+    "text": ">csm"
+  },
+  {
+    "va": "10012b1c",
+    "fileOffset": 73500,
+    "encoding": "ascii",
+    "text": "8csm"
+  },
+  {
+    "va": "10012b9f",
+    "fileOffset": 73631,
+    "encoding": "ascii",
+    "text": ">csm"
+  },
+  {
+    "va": "10012c1e",
+    "fileOffset": 73758,
+    "encoding": "ascii",
+    "text": ">csm"
+  },
+  {
+    "va": "10012ccd",
+    "fileOffset": 73933,
+    "encoding": "ascii",
+    "text": ">csm"
+  },
+  {
+    "va": "10012f3d",
+    "fileOffset": 74557,
+    "encoding": "ascii",
+    "text": "?MOC"
+  },
+  {
+    "va": "10012f45",
+    "fileOffset": 74565,
+    "encoding": "ascii",
+    "text": "?RCC"
+  },
+  {
+    "va": "10012fa2",
+    "fileOffset": 74658,
+    "encoding": "ascii",
+    "text": "|c;F"
+  },
+  {
+    "va": "10012fd9",
+    "fileOffset": 74713,
+    "encoding": "ascii",
+    "text": "@u(j"
+  },
+  {
+    "va": "10012fe5",
+    "fileOffset": 74725,
+    "encoding": "ascii",
+    "text": "u Qj"
+  },
+  {
+    "va": "1001301c",
+    "fileOffset": 74780,
+    "encoding": "ascii",
+    "text": "QQSV"
+  },
+  {
+    "va": "10013103",
+    "fileOffset": 75011,
+    "encoding": "ascii",
+    "text": "Hu4j"
+  },
+  {
+    "va": "100132af",
+    "fileOffset": 75439,
+    "encoding": "ascii",
+    "text": "YYPW"
+  },
+  {
+    "va": "1001331f",
+    "fileOffset": 75551,
+    "encoding": "ascii",
+    "text": "8RCC"
+  },
+  {
+    "va": "10013327",
+    "fileOffset": 75559,
+    "encoding": "ascii",
+    "text": "8MOC"
+  },
+  {
+    "va": "1001332f",
+    "fileOffset": 75567,
+    "encoding": "ascii",
+    "text": "8csm"
+  },
+  {
+    "va": "10013486",
+    "fileOffset": 75910,
+    "encoding": "ascii",
+    "text": "ft!9q"
+  },
+  {
+    "va": "100134bb",
+    "fileOffset": 75963,
+    "encoding": "ascii",
+    "text": "rY9q"
+  },
+  {
+    "va": "100134ca",
+    "fileOffset": 75978,
+    "encoding": "ascii",
+    "text": "r.9z"
+  },
+  {
+    "va": "10013518",
+    "fileOffset": 76056,
+    "encoding": "ascii",
+    "text": "@_^[]"
+  },
+  {
+    "va": "10013580",
+    "fileOffset": 76160,
+    "encoding": "ascii",
+    "text": "@_^]"
+  },
+  {
+    "va": "100135a8",
+    "fileOffset": 76200,
+    "encoding": "ascii",
+    "text": "t&:a"
+  },
+  {
+    "va": "100137c1",
+    "fileOffset": 76737,
+    "encoding": "ascii",
+    "text": ",SVWj0X"
+  },
+  {
+    "va": "100138f5",
+    "fileOffset": 77045,
+    "encoding": "ascii",
+    "text": "u'j0X"
+  },
+  {
+    "va": "10013987",
+    "fileOffset": 77191,
+    "encoding": "ascii",
+    "text": "j0Yf"
+  },
+  {
+    "va": "100139e3",
+    "fileOffset": 77283,
+    "encoding": "ascii",
+    "text": "v6j0"
+  },
+  {
+    "va": "10013a1f",
+    "fileOffset": 77343,
+    "encoding": "ascii",
+    "text": "Wj0XPV"
+  },
+  {
+    "va": "10013a9c",
+    "fileOffset": 77468,
+    "encoding": "ascii",
+    "text": "PRSQ"
+  },
+  {
+    "va": "10013abe",
+    "fileOffset": 77502,
+    "encoding": "ascii",
+    "text": "PjdSQ"
+  },
+  {
+    "va": "10013c18",
+    "fileOffset": 77848,
+    "encoding": "ascii",
+    "text": "80t-"
+  },
+  {
+    "va": "10013c27",
+    "fileOffset": 77863,
+    "encoding": "ascii",
+    "text": "-jd[;"
+  },
+  {
+    "va": "10013c7c",
+    "fileOffset": 77948,
+    "encoding": "ascii",
+    "text": "WWWWW"
+  },
+  {
+    "va": "10013e03",
+    "fileOffset": 78339,
+    "encoding": "ascii",
+    "text": "y&8]"
+  },
+  {
+    "va": "10013e1f",
+    "fileOffset": 78367,
+    "encoding": "ascii",
+    "text": "Wj0V"
+  },
+  {
+    "va": "10013ee5",
+    "fileOffset": 78565,
+    "encoding": "ascii",
+    "text": "PSVW"
+  },
+  {
+    "va": "10013faa",
+    "fileOffset": 78762,
+    "encoding": "ascii",
+    "text": "|+;E"
+  },
+  {
+    "va": "100141cf",
+    "fileOffset": 79311,
+    "encoding": "ascii",
+    "text": "VVVVV"
+  },
+  {
+    "va": "100147bd",
+    "fileOffset": 80829,
+    "encoding": "ascii",
+    "text": "<v5h"
+  },
+  {
+    "va": "100148a5",
+    "fileOffset": 81061,
+    "encoding": "ascii",
+    "text": "SSSSS"
+  },
+  {
+    "va": "10014ad4",
+    "fileOffset": 81620,
+    "encoding": "ascii",
+    "text": "jdhX;"
+  },
+  {
+    "va": "10014aed",
+    "fileOffset": 81645,
+    "encoding": "ascii",
+    "text": "j@j _W"
+  },
+  {
+    "va": "10014bad",
+    "fileOffset": 81837,
+    "encoding": "ascii",
+    "text": "} j@W"
+  },
+  {
+    "va": "10014ded",
+    "fileOffset": 82413,
+    "encoding": "ascii",
+    "text": "SVWh"
+  },
+  {
+    "va": "10014e27",
+    "fileOffset": 82471,
+    "encoding": "ascii",
+    "text": "PSSV"
+  },
+  {
+    "va": "10014f64",
+    "fileOffset": 82788,
+    "encoding": "ascii",
+    "text": ">\"u3"
+  },
+  {
+    "va": "10014fa3",
+    "fileOffset": 82851,
+    "encoding": "ascii",
+    "text": "tA9M"
+  },
+  {
+    "va": "10014faa",
+    "fileOffset": 82858,
+    "encoding": "ascii",
+    "text": "< t8<"
+  },
+  {
+    "va": "10015084",
+    "fileOffset": 83076,
+    "encoding": "ascii",
+    "text": "t@VSP"
+  },
+  {
+    "va": "100150c1",
+    "fileOffset": 83137,
+    "encoding": "ascii",
+    "text": "Y[_^"
+  },
+  {
+    "va": "100150df",
+    "fileOffset": 83167,
+    "encoding": "ascii",
+    "text": "PPPPP"
+  },
+  {
+    "va": "100151b1",
+    "fileOffset": 83377,
+    "encoding": "ascii",
+    "text": "SPPP+"
+  },
+  {
+    "va": "100151ba",
+    "fileOffset": 83386,
+    "encoding": "ascii",
+    "text": "FVWPP"
+  },
+  {
+    "va": "100151e0",
+    "fileOffset": 83424,
+    "encoding": "ascii",
+    "text": "SVWPP"
+  },
+  {
+    "va": "100152d1",
+    "fileOffset": 83665,
+    "encoding": "ascii",
+    "text": "j$hx;"
+  },
+  {
+    "va": "10015351",
+    "fileOffset": 83793,
+    "encoding": "ascii",
+    "text": "t#Ht"
+  },
+  {
+    "va": "100154e7",
+    "fileOffset": 84199,
+    "encoding": "ascii",
+    "text": "SVW3"
+  },
+  {
+    "va": "1001552d",
+    "fileOffset": 84269,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "100155bd",
+    "fileOffset": 84413,
+    "encoding": "ascii",
+    "text": "jA[jZZ+"
+  },
+  {
+    "va": "100157de",
+    "fileOffset": 84958,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "10015871",
+    "fileOffset": 85105,
+    "encoding": "ascii",
+    "text": "Y_^["
+  },
+  {
+    "va": "100158a2",
+    "fileOffset": 85154,
+    "encoding": "ascii",
+    "text": "Y_^["
+  },
+  {
+    "va": "10015a0e",
+    "fileOffset": 85518,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "10015bc8",
+    "fileOffset": 85960,
+    "encoding": "ascii",
+    "text": "9wlt"
+  },
+  {
+    "va": "10015bf5",
+    "fileOffset": 86005,
+    "encoding": "ascii",
+    "text": ";5<Y"
+  },
+  {
+    "va": "1001606f",
+    "fileOffset": 87151,
+    "encoding": "ascii",
+    "text": "URPQQh"
+  },
+  {
+    "va": "1001609a",
+    "fileOffset": 87194,
+    "encoding": "ascii",
+    "text": "L$,3"
+  },
+  {
+    "va": "10016152",
+    "fileOffset": 87378,
+    "encoding": "ascii",
+    "text": "UVWS"
+  },
+  {
+    "va": "10016164",
+    "fileOffset": 87396,
+    "encoding": "ascii",
+    "text": "[_^]"
+  },
+  {
+    "va": "10016185",
+    "fileOffset": 87429,
+    "encoding": "ascii",
+    "text": "SVWj"
+  },
+  {
+    "va": "10016196",
+    "fileOffset": 87446,
+    "encoding": "ascii",
+    "text": "_^[]"
+  },
+  {
+    "va": "10016584",
+    "fileOffset": 88452,
+    "encoding": "ascii",
+    "text": "SVAW"
+  },
+  {
+    "va": "1001660b",
+    "fileOffset": 88587,
+    "encoding": "ascii",
+    "text": "A_^[]"
+  },
+  {
+    "va": "10016765",
+    "fileOffset": 88933,
+    "encoding": "ascii",
+    "text": "Y_^[]"
+  },
+  {
+    "va": "10016802",
+    "fileOffset": 89090,
+    "encoding": "ascii",
+    "text": "1N_^["
+  },
+  {
+    "va": "10016829",
+    "fileOffset": 89129,
+    "encoding": "ascii",
+    "text": "Npt\""
+  },
+  {
+    "va": "100168e3",
+    "fileOffset": 89315,
+    "encoding": "ascii",
+    "text": "SVWUj"
+  },
+  {
+    "va": "100168f8",
+    "fileOffset": 89336,
+    "encoding": "ascii",
+    "text": "]_^["
+  },
+  {
+    "va": "10016984",
+    "fileOffset": 89476,
+    "encoding": "ascii",
+    "text": ";t$,v-"
+  },
+  {
+    "va": "10016a09",
+    "fileOffset": 89609,
+    "encoding": "ascii",
+    "text": "UQPXY]Y["
+  },
+  {
+    "va": "10016df4",
+    "fileOffset": 90612,
+    "encoding": "ascii",
+    "text": "@PSV"
+  },
+  {
+    "va": "10016e02",
+    "fileOffset": 90626,
+    "encoding": "ascii",
+    "text": "[_^]"
+  },
+  {
+    "va": "10016e39",
+    "fileOffset": 90681,
+    "encoding": "ascii",
+    "text": "PWWWWV"
+  },
+  {
+    "va": "10016ed4",
+    "fileOffset": 90836,
+    "encoding": "ascii",
+    "text": "PSSSSV"
+  },
+  {
+    "va": "1001709c",
+    "fileOffset": 91292,
+    "encoding": "ascii",
+    "text": "PPPPP"
+  },
+  {
+    "va": "100170b0",
+    "fileOffset": 91312,
+    "encoding": "ascii",
+    "text": "WVU3"
+  },
+  {
+    "va": "10017158",
+    "fileOffset": 91480,
+    "encoding": "ascii",
+    "text": "N+D$"
+  },
+  {
+    "va": "100172be",
+    "fileOffset": 91838,
+    "encoding": "ascii",
+    "text": "VVht"
+  },
+  {
+    "va": "1001738f",
+    "fileOffset": 92047,
+    "encoding": "ascii",
+    "text": "tO9="
+  },
+  {
+    "va": "10017e09",
+    "fileOffset": 94729,
+    "encoding": "ascii",
+    "text": "VVhU"
+  },
+  {
+    "va": "100180ab",
+    "fileOffset": 95403,
+    "encoding": "ascii",
+    "text": "~';_t|%3"
+  },
+  {
+    "va": "100180bf",
+    "fileOffset": 95423,
+    "encoding": "ascii",
+    "text": "wtVj"
+  },
+  {
+    "va": "100180d4",
+    "fileOffset": 95444,
+    "encoding": "ascii",
+    "text": ";_tr."
+  },
+  {
+    "va": "100180f5",
+    "fileOffset": 95477,
+    "encoding": "ascii",
+    "text": "GWVj"
+  },
+  {
+    "va": "100181bd",
+    "fileOffset": 95677,
+    "encoding": "ascii",
+    "text": "N+D$"
+  },
+  {
+    "va": "100182a7",
+    "fileOffset": 95911,
+    "encoding": "ascii",
+    "text": "9E(j"
+  },
+  {
+    "va": "100183fe",
+    "fileOffset": 96254,
+    "encoding": "ascii",
+    "text": "WVPS"
+  },
+  {
+    "va": "10018416",
+    "fileOffset": 96278,
+    "encoding": "ascii",
+    "text": "PP9E u"
+  },
+  {
+    "va": "100184b0",
+    "fileOffset": 96432,
+    "encoding": "ascii",
+    "text": "SVW3"
+  },
+  {
+    "va": "100184c9",
+    "fileOffset": 96457,
+    "encoding": "ascii",
+    "text": "9E W"
+  },
+  {
+    "va": "100186cd",
+    "fileOffset": 96973,
+    "encoding": "ascii",
+    "text": "tWPV"
+  },
+  {
+    "va": "100187a6",
+    "fileOffset": 97190,
+    "encoding": "ascii",
+    "text": "Ht+Ht$Ht"
+  },
+  {
+    "va": "100187b9",
+    "fileOffset": 97209,
+    "encoding": "ascii",
+    "text": "Huzj"
+  },
+  {
+    "va": "10019984",
+    "fileOffset": 101764,
+    "encoding": "ascii",
+    "text": "9E$u"
+  },
+  {
+    "va": "10019bca",
+    "fileOffset": 102346,
+    "encoding": "ascii",
+    "text": "+t\"HHt"
+  },
+  {
+    "va": "10019c20",
+    "fileOffset": 102432,
+    "encoding": "ascii",
+    "text": "9] t\""
+  },
+  {
+    "va": "10019cdf",
+    "fileOffset": 102623,
+    "encoding": "ascii",
+    "text": "HAO8"
+  },
+  {
+    "va": "1001aa34",
+    "fileOffset": 106036,
+    "encoding": "ascii",
+    "text": "<5|E"
+  },
+  {
+    "va": "1001aab2",
+    "fileOffset": 106162,
+    "encoding": "ascii",
+    "text": "SSSSS"
+  },
+  {
+    "va": "1001ad53",
+    "fileOffset": 106835,
+    "encoding": "ascii",
+    "text": "j@%@"
+  },
+  {
+    "va": "1001b550",
+    "fileOffset": 108880,
+    "encoding": "ascii",
+    "text": "@ht "
+  },
+  {
+    "va": "1001c3ac",
+    "fileOffset": 112044,
+    "encoding": "ascii",
+    "text": "generic"
+  },
+  {
+    "va": "1001c3b4",
+    "fileOffset": 112052,
+    "encoding": "ascii",
+    "text": "unknown error"
+  },
+  {
+    "va": "1001c3e0",
+    "fileOffset": 112096,
+    "encoding": "ascii",
+    "text": "iostream"
+  },
+  {
+    "va": "1001c3ec",
+    "fileOffset": 112108,
+    "encoding": "ascii",
+    "text": "iostream stream error"
+  },
+  {
+    "va": "1001c420",
+    "fileOffset": 112160,
+    "encoding": "ascii",
+    "text": "system"
+  },
+  {
+    "va": "1001c4a8",
+    "fileOffset": 112296,
+    "encoding": "ascii",
+    "text": "string too long"
+  },
+  {
+    "va": "1001c4b8",
+    "fileOffset": 112312,
+    "encoding": "ascii",
+    "text": "invalid string position"
+  },
+  {
+    "va": "1001c4d0",
+    "fileOffset": 112336,
+    "encoding": "ascii",
+    "text": "map/set<T> too long"
+  },
+  {
+    "va": "1001c4e4",
+    "fileOffset": 112356,
+    "encoding": "ascii",
+    "text": "ScriptApplyDigitSubstitution"
+  },
+  {
+    "va": "1001c504",
+    "fileOffset": 112388,
+    "encoding": "ascii",
+    "text": "ScriptApplyLogicalWidth"
+  },
+  {
+    "va": "1001c51c",
+    "fileOffset": 112412,
+    "encoding": "ascii",
+    "text": "ScriptBreak"
+  },
+  {
+    "va": "1001c528",
+    "fileOffset": 112424,
+    "encoding": "ascii",
+    "text": "ScriptCacheGetHeight"
+  },
+  {
+    "va": "1001c540",
+    "fileOffset": 112448,
+    "encoding": "ascii",
+    "text": "ScriptCPtoX"
+  },
+  {
+    "va": "1001c54c",
+    "fileOffset": 112460,
+    "encoding": "ascii",
+    "text": "ScriptFreeCache"
+  },
+  {
+    "va": "1001c55c",
+    "fileOffset": 112476,
+    "encoding": "ascii",
+    "text": "ScriptGetCMap"
+  },
+  {
+    "va": "1001c56c",
+    "fileOffset": 112492,
+    "encoding": "ascii",
+    "text": "ScriptGetFontProperties"
+  },
+  {
+    "va": "1001c584",
+    "fileOffset": 112516,
+    "encoding": "ascii",
+    "text": "ScriptGetGlyphABCWidth"
+  },
+  {
+    "va": "1001c59c",
+    "fileOffset": 112540,
+    "encoding": "ascii",
+    "text": "ScriptGetLogicalWidths"
+  },
+  {
+    "va": "1001c5b4",
+    "fileOffset": 112564,
+    "encoding": "ascii",
+    "text": "ScriptGetProperties"
+  },
+  {
+    "va": "1001c5c8",
+    "fileOffset": 112584,
+    "encoding": "ascii",
+    "text": "ScriptIsComplex"
+  },
+  {
+    "va": "1001c5d8",
+    "fileOffset": 112600,
+    "encoding": "ascii",
+    "text": "ScriptItemize"
+  },
+  {
+    "va": "1001c5e8",
+    "fileOffset": 112616,
+    "encoding": "ascii",
+    "text": "ScriptJustify"
+  },
+  {
+    "va": "1001c5f8",
+    "fileOffset": 112632,
+    "encoding": "ascii",
+    "text": "ScriptLayout"
+  },
+  {
+    "va": "1001c608",
+    "fileOffset": 112648,
+    "encoding": "ascii",
+    "text": "ScriptPlace"
+  },
+  {
+    "va": "1001c614",
+    "fileOffset": 112660,
+    "encoding": "ascii",
+    "text": "ScriptRecordDigitSubstitution"
+  },
+  {
+    "va": "1001c634",
+    "fileOffset": 112692,
+    "encoding": "ascii",
+    "text": "ScriptShape"
+  },
+  {
+    "va": "1001c640",
+    "fileOffset": 112704,
+    "encoding": "ascii",
+    "text": "ScriptString_pcOutChars"
+  },
+  {
+    "va": "1001c658",
+    "fileOffset": 112728,
+    "encoding": "ascii",
+    "text": "ScriptString_pLogAttr"
+  },
+  {
+    "va": "1001c670",
+    "fileOffset": 112752,
+    "encoding": "ascii",
+    "text": "ScriptString_pSize"
+  },
+  {
+    "va": "1001c684",
+    "fileOffset": 112772,
+    "encoding": "ascii",
+    "text": "ScriptStringCPtoX"
+  },
+  {
+    "va": "1001c698",
+    "fileOffset": 112792,
+    "encoding": "ascii",
+    "text": "ScriptStringAnalyse"
+  },
+  {
+    "va": "1001c6ac",
+    "fileOffset": 112812,
+    "encoding": "ascii",
+    "text": "ScriptStringFree"
+  },
+  {
+    "va": "1001c6c0",
+    "fileOffset": 112832,
+    "encoding": "ascii",
+    "text": "ScriptStringGetLogicalWidths"
+  },
+  {
+    "va": "1001c6e0",
+    "fileOffset": 112864,
+    "encoding": "ascii",
+    "text": "ScriptStringGetOrder"
+  },
+  {
+    "va": "1001c6f8",
+    "fileOffset": 112888,
+    "encoding": "ascii",
+    "text": "ScriptStringOut"
+  },
+  {
+    "va": "1001c708",
+    "fileOffset": 112904,
+    "encoding": "ascii",
+    "text": "ScriptStringValidate"
+  },
+  {
+    "va": "1001c720",
+    "fileOffset": 112928,
+    "encoding": "ascii",
+    "text": "ScriptStringXtoCP"
+  },
+  {
+    "va": "1001c734",
+    "fileOffset": 112948,
+    "encoding": "ascii",
+    "text": "ScriptTextOut"
+  },
+  {
+    "va": "1001c744",
+    "fileOffset": 112964,
+    "encoding": "ascii",
+    "text": "ScriptXtoCP"
+  },
+  {
+    "va": "1001c768",
+    "fileOffset": 113000,
+    "encoding": "ascii",
+    "text": "vector<T> too long"
+  },
+  {
+    "va": "1001c7f8",
+    "fileOffset": 113144,
+    "encoding": "ascii",
+    "text": "RegOpenKeyTransactedW"
+  },
+  {
+    "va": "1001c810",
+    "fileOffset": 113168,
+    "encoding": "ascii",
+    "text": "RegCreateKeyTransactedW"
+  },
+  {
+    "va": "1001c828",
+    "fileOffset": 113192,
+    "encoding": "ascii",
+    "text": "RegDeleteKeyTransactedW"
+  },
+  {
+    "va": "1001c87c",
+    "fileOffset": 113276,
+    "encoding": "ascii",
+    "text": "RegDeleteKeyExW"
+  },
+  {
+    "va": "1001cb98",
+    "fileOffset": 114072,
+    "encoding": "ascii",
+    "text": "UnRegisterTypeLibForUser"
+  },
+  {
+    "va": "1001cbb4",
+    "fileOffset": 114100,
+    "encoding": "ascii",
+    "text": "RegisterTypeLibForUser"
+  },
+  {
+    "va": "1001cd0f",
+    "fileOffset": 114447,
+    "encoding": "ascii",
+    "text": "F((I"
+  },
+  {
+    "va": "1001cdb0",
+    "fileOffset": 114608,
+    "encoding": "ascii",
+    "text": "bad allocation"
+  },
+  {
+    "va": "1001d2b8",
+    "fileOffset": 115896,
+    "encoding": "ascii",
+    "text": "permission denied"
+  },
+  {
+    "va": "1001d2cc",
+    "fileOffset": 115916,
+    "encoding": "ascii",
+    "text": "file exists"
+  },
+  {
+    "va": "1001d2d8",
+    "fileOffset": 115928,
+    "encoding": "ascii",
+    "text": "no such device"
+  },
+  {
+    "va": "1001d2e8",
+    "fileOffset": 115944,
+    "encoding": "ascii",
+    "text": "filename too long"
+  },
+  {
+    "va": "1001d2fc",
+    "fileOffset": 115964,
+    "encoding": "ascii",
+    "text": "device or resource busy"
+  },
+  {
+    "va": "1001d314",
+    "fileOffset": 115988,
+    "encoding": "ascii",
+    "text": "io error"
+  },
+  {
+    "va": "1001d320",
+    "fileOffset": 116000,
+    "encoding": "ascii",
+    "text": "directory not empty"
+  },
+  {
+    "va": "1001d334",
+    "fileOffset": 116020,
+    "encoding": "ascii",
+    "text": "invalid argument"
+  },
+  {
+    "va": "1001d348",
+    "fileOffset": 116040,
+    "encoding": "ascii",
+    "text": "no space on device"
+  },
+  {
+    "va": "1001d35c",
+    "fileOffset": 116060,
+    "encoding": "ascii",
+    "text": "no such file or directory"
+  },
+  {
+    "va": "1001d378",
+    "fileOffset": 116088,
+    "encoding": "ascii",
+    "text": "function not supported"
+  },
+  {
+    "va": "1001d390",
+    "fileOffset": 116112,
+    "encoding": "ascii",
+    "text": "no lock available"
+  },
+  {
+    "va": "1001d3a4",
+    "fileOffset": 116132,
+    "encoding": "ascii",
+    "text": "not enough memory"
+  },
+  {
+    "va": "1001d3b8",
+    "fileOffset": 116152,
+    "encoding": "ascii",
+    "text": "resource unavailable try again"
+  },
+  {
+    "va": "1001d3d8",
+    "fileOffset": 116184,
+    "encoding": "ascii",
+    "text": "cross device link"
+  },
+  {
+    "va": "1001d3ec",
+    "fileOffset": 116204,
+    "encoding": "ascii",
+    "text": "operation canceled"
+  },
+  {
+    "va": "1001d400",
+    "fileOffset": 116224,
+    "encoding": "ascii",
+    "text": "too many files open"
+  },
+  {
+    "va": "1001d414",
+    "fileOffset": 116244,
+    "encoding": "ascii",
+    "text": "permission_denied"
+  },
+  {
+    "va": "1001d428",
+    "fileOffset": 116264,
+    "encoding": "ascii",
+    "text": "address_in_use"
+  },
+  {
+    "va": "1001d438",
+    "fileOffset": 116280,
+    "encoding": "ascii",
+    "text": "address_not_available"
+  },
+  {
+    "va": "1001d450",
+    "fileOffset": 116304,
+    "encoding": "ascii",
+    "text": "address_family_not_supported"
+  },
+  {
+    "va": "1001d470",
+    "fileOffset": 116336,
+    "encoding": "ascii",
+    "text": "connection_already_in_progress"
+  },
+  {
+    "va": "1001d490",
+    "fileOffset": 116368,
+    "encoding": "ascii",
+    "text": "bad_file_descriptor"
+  },
+  {
+    "va": "1001d4a4",
+    "fileOffset": 116388,
+    "encoding": "ascii",
+    "text": "connection_aborted"
+  },
+  {
+    "va": "1001d4b8",
+    "fileOffset": 116408,
+    "encoding": "ascii",
+    "text": "connection_refused"
+  },
+  {
+    "va": "1001d4cc",
+    "fileOffset": 116428,
+    "encoding": "ascii",
+    "text": "connection_reset"
+  },
+  {
+    "va": "1001d4e0",
+    "fileOffset": 116448,
+    "encoding": "ascii",
+    "text": "destination_address_required"
+  },
+  {
+    "va": "1001d500",
+    "fileOffset": 116480,
+    "encoding": "ascii",
+    "text": "bad_address"
+  },
+  {
+    "va": "1001d50c",
+    "fileOffset": 116492,
+    "encoding": "ascii",
+    "text": "host_unreachable"
+  },
+  {
+    "va": "1001d520",
+    "fileOffset": 116512,
+    "encoding": "ascii",
+    "text": "operation_in_progress"
+  },
+  {
+    "va": "1001d538",
+    "fileOffset": 116536,
+    "encoding": "ascii",
+    "text": "interrupted"
+  },
+  {
+    "va": "1001d544",
+    "fileOffset": 116548,
+    "encoding": "ascii",
+    "text": "invalid_argument"
+  },
+  {
+    "va": "1001d558",
+    "fileOffset": 116568,
+    "encoding": "ascii",
+    "text": "already_connected"
+  },
+  {
+    "va": "1001d56c",
+    "fileOffset": 116588,
+    "encoding": "ascii",
+    "text": "too_many_files_open"
+  },
+  {
+    "va": "1001d580",
+    "fileOffset": 116608,
+    "encoding": "ascii",
+    "text": "message_size"
+  },
+  {
+    "va": "1001d590",
+    "fileOffset": 116624,
+    "encoding": "ascii",
+    "text": "filename_too_long"
+  },
+  {
+    "va": "1001d5a4",
+    "fileOffset": 116644,
+    "encoding": "ascii",
+    "text": "network_down"
+  },
+  {
+    "va": "1001d5b4",
+    "fileOffset": 116660,
+    "encoding": "ascii",
+    "text": "network_reset"
+  },
+  {
+    "va": "1001d5c4",
+    "fileOffset": 116676,
+    "encoding": "ascii",
+    "text": "network_unreachable"
+  },
+  {
+    "va": "1001d5d8",
+    "fileOffset": 116696,
+    "encoding": "ascii",
+    "text": "no_buffer_space"
+  },
+  {
+    "va": "1001d5e8",
+    "fileOffset": 116712,
+    "encoding": "ascii",
+    "text": "no_protocol_option"
+  },
+  {
+    "va": "1001d5fc",
+    "fileOffset": 116732,
+    "encoding": "ascii",
+    "text": "not_connected"
+  },
+  {
+    "va": "1001d60c",
+    "fileOffset": 116748,
+    "encoding": "ascii",
+    "text": "not_a_socket"
+  },
+  {
+    "va": "1001d61c",
+    "fileOffset": 116764,
+    "encoding": "ascii",
+    "text": "operation_not_supported"
+  },
+  {
+    "va": "1001d634",
+    "fileOffset": 116788,
+    "encoding": "ascii",
+    "text": "protocol_not_supported"
+  },
+  {
+    "va": "1001d64c",
+    "fileOffset": 116812,
+    "encoding": "ascii",
+    "text": "wrong_protocol_type"
+  },
+  {
+    "va": "1001d660",
+    "fileOffset": 116832,
+    "encoding": "ascii",
+    "text": "timed_out"
+  },
+  {
+    "va": "1001d66c",
+    "fileOffset": 116844,
+    "encoding": "ascii",
+    "text": "operation_would_block"
+  },
+  {
+    "va": "1001d684",
+    "fileOffset": 116868,
+    "encoding": "ascii",
+    "text": "address family not supported"
+  },
+  {
+    "va": "1001d6a4",
+    "fileOffset": 116900,
+    "encoding": "ascii",
+    "text": "address in use"
+  },
+  {
+    "va": "1001d6b4",
+    "fileOffset": 116916,
+    "encoding": "ascii",
+    "text": "address not available"
+  },
+  {
+    "va": "1001d6cc",
+    "fileOffset": 116940,
+    "encoding": "ascii",
+    "text": "already connected"
+  },
+  {
+    "va": "1001d6e0",
+    "fileOffset": 116960,
+    "encoding": "ascii",
+    "text": "argument list too long"
+  },
+  {
+    "va": "1001d6f8",
+    "fileOffset": 116984,
+    "encoding": "ascii",
+    "text": "argument out of domain"
+  },
+  {
+    "va": "1001d710",
+    "fileOffset": 117008,
+    "encoding": "ascii",
+    "text": "bad address"
+  },
+  {
+    "va": "1001d71c",
+    "fileOffset": 117020,
+    "encoding": "ascii",
+    "text": "bad file descriptor"
+  },
+  {
+    "va": "1001d730",
+    "fileOffset": 117040,
+    "encoding": "ascii",
+    "text": "bad message"
+  },
+  {
+    "va": "1001d73c",
+    "fileOffset": 117052,
+    "encoding": "ascii",
+    "text": "broken pipe"
+  },
+  {
+    "va": "1001d748",
+    "fileOffset": 117064,
+    "encoding": "ascii",
+    "text": "connection aborted"
+  },
+  {
+    "va": "1001d75c",
+    "fileOffset": 117084,
+    "encoding": "ascii",
+    "text": "connection already in progress"
+  },
+  {
+    "va": "1001d77c",
+    "fileOffset": 117116,
+    "encoding": "ascii",
+    "text": "connection refused"
+  },
+  {
+    "va": "1001d790",
+    "fileOffset": 117136,
+    "encoding": "ascii",
+    "text": "connection reset"
+  },
+  {
+    "va": "1001d7a4",
+    "fileOffset": 117156,
+    "encoding": "ascii",
+    "text": "destination address required"
+  },
+  {
+    "va": "1001d7c4",
+    "fileOffset": 117188,
+    "encoding": "ascii",
+    "text": "executable format error"
+  },
+  {
+    "va": "1001d7dc",
+    "fileOffset": 117212,
+    "encoding": "ascii",
+    "text": "file too large"
+  },
+  {
+    "va": "1001d7ec",
+    "fileOffset": 117228,
+    "encoding": "ascii",
+    "text": "host unreachable"
+  },
+  {
+    "va": "1001d800",
+    "fileOffset": 117248,
+    "encoding": "ascii",
+    "text": "identifier removed"
+  },
+  {
+    "va": "1001d814",
+    "fileOffset": 117268,
+    "encoding": "ascii",
+    "text": "illegal byte sequence"
+  },
+  {
+    "va": "1001d82c",
+    "fileOffset": 117292,
+    "encoding": "ascii",
+    "text": "inappropriate io control operation"
+  },
+  {
+    "va": "1001d850",
+    "fileOffset": 117328,
+    "encoding": "ascii",
+    "text": "invalid seek"
+  },
+  {
+    "va": "1001d860",
+    "fileOffset": 117344,
+    "encoding": "ascii",
+    "text": "is a directory"
+  },
+  {
+    "va": "1001d870",
+    "fileOffset": 117360,
+    "encoding": "ascii",
+    "text": "message size"
+  },
+  {
+    "va": "1001d880",
+    "fileOffset": 117376,
+    "encoding": "ascii",
+    "text": "network down"
+  },
+  {
+    "va": "1001d890",
+    "fileOffset": 117392,
+    "encoding": "ascii",
+    "text": "network reset"
+  },
+  {
+    "va": "1001d8a0",
+    "fileOffset": 117408,
+    "encoding": "ascii",
+    "text": "network unreachable"
+  },
+  {
+    "va": "1001d8b4",
+    "fileOffset": 117428,
+    "encoding": "ascii",
+    "text": "no buffer space"
+  },
+  {
+    "va": "1001d8c4",
+    "fileOffset": 117444,
+    "encoding": "ascii",
+    "text": "no child process"
+  },
+  {
+    "va": "1001d8d8",
+    "fileOffset": 117464,
+    "encoding": "ascii",
+    "text": "no link"
+  },
+  {
+    "va": "1001d8e0",
+    "fileOffset": 117472,
+    "encoding": "ascii",
+    "text": "no message available"
+  },
+  {
+    "va": "1001d8f8",
+    "fileOffset": 117496,
+    "encoding": "ascii",
+    "text": "no message"
+  },
+  {
+    "va": "1001d904",
+    "fileOffset": 117508,
+    "encoding": "ascii",
+    "text": "no protocol option"
+  },
+  {
+    "va": "1001d918",
+    "fileOffset": 117528,
+    "encoding": "ascii",
+    "text": "no stream resources"
+  },
+  {
+    "va": "1001d92c",
+    "fileOffset": 117548,
+    "encoding": "ascii",
+    "text": "no such device or address"
+  },
+  {
+    "va": "1001d948",
+    "fileOffset": 117576,
+    "encoding": "ascii",
+    "text": "no such process"
+  },
+  {
+    "va": "1001d958",
+    "fileOffset": 117592,
+    "encoding": "ascii",
+    "text": "not a directory"
+  },
+  {
+    "va": "1001d968",
+    "fileOffset": 117608,
+    "encoding": "ascii",
+    "text": "not a socket"
+  },
+  {
+    "va": "1001d978",
+    "fileOffset": 117624,
+    "encoding": "ascii",
+    "text": "not a stream"
+  },
+  {
+    "va": "1001d988",
+    "fileOffset": 117640,
+    "encoding": "ascii",
+    "text": "not connected"
+  },
+  {
+    "va": "1001d998",
+    "fileOffset": 117656,
+    "encoding": "ascii",
+    "text": "not supported"
+  },
+  {
+    "va": "1001d9a8",
+    "fileOffset": 117672,
+    "encoding": "ascii",
+    "text": "operation in progress"
+  },
+  {
+    "va": "1001d9c0",
+    "fileOffset": 117696,
+    "encoding": "ascii",
+    "text": "operation not permitted"
+  },
+  {
+    "va": "1001d9d8",
+    "fileOffset": 117720,
+    "encoding": "ascii",
+    "text": "operation not supported"
+  },
+  {
+    "va": "1001d9f0",
+    "fileOffset": 117744,
+    "encoding": "ascii",
+    "text": "operation would block"
+  },
+  {
+    "va": "1001da08",
+    "fileOffset": 117768,
+    "encoding": "ascii",
+    "text": "owner dead"
+  },
+  {
+    "va": "1001da14",
+    "fileOffset": 117780,
+    "encoding": "ascii",
+    "text": "protocol error"
+  },
+  {
+    "va": "1001da24",
+    "fileOffset": 117796,
+    "encoding": "ascii",
+    "text": "protocol not supported"
+  },
+  {
+    "va": "1001da3c",
+    "fileOffset": 117820,
+    "encoding": "ascii",
+    "text": "read only file system"
+  },
+  {
+    "va": "1001da54",
+    "fileOffset": 117844,
+    "encoding": "ascii",
+    "text": "resource deadlock would occur"
+  },
+  {
+    "va": "1001da74",
+    "fileOffset": 117876,
+    "encoding": "ascii",
+    "text": "result out of range"
+  },
+  {
+    "va": "1001da88",
+    "fileOffset": 117896,
+    "encoding": "ascii",
+    "text": "state not recoverable"
+  },
+  {
+    "va": "1001daa0",
+    "fileOffset": 117920,
+    "encoding": "ascii",
+    "text": "stream timeout"
+  },
+  {
+    "va": "1001dab0",
+    "fileOffset": 117936,
+    "encoding": "ascii",
+    "text": "text file busy"
+  },
+  {
+    "va": "1001dac0",
+    "fileOffset": 117952,
+    "encoding": "ascii",
+    "text": "timed out"
+  },
+  {
+    "va": "1001dacc",
+    "fileOffset": 117964,
+    "encoding": "ascii",
+    "text": "too many files open in system"
+  },
+  {
+    "va": "1001daec",
+    "fileOffset": 117996,
+    "encoding": "ascii",
+    "text": "too many links"
+  },
+  {
+    "va": "1001dafc",
+    "fileOffset": 118012,
+    "encoding": "ascii",
+    "text": "too many symbolic link levels"
+  },
+  {
+    "va": "1001db1c",
+    "fileOffset": 118044,
+    "encoding": "ascii",
+    "text": "value too large"
+  },
+  {
+    "va": "1001db2c",
+    "fileOffset": 118060,
+    "encoding": "ascii",
+    "text": "wrong protocol type"
+  },
+  {
+    "va": "1001db84",
+    "fileOffset": 118148,
+    "encoding": "ascii",
+    "text": "Unknown exception"
+  },
+  {
+    "va": "1001dbb0",
+    "fileOffset": 118192,
+    "encoding": "ascii",
+    "text": "CorExitProcess"
+  },
+  {
+    "va": "1001dbcc",
+    "fileOffset": 118220,
+    "encoding": "ascii",
+    "text": "log10"
+  },
+  {
+    "va": "1001dbd4",
+    "fileOffset": 118228,
+    "encoding": "ascii",
+    "text": "sinh"
+  },
+  {
+    "va": "1001dbdc",
+    "fileOffset": 118236,
+    "encoding": "ascii",
+    "text": "cosh"
+  },
+  {
+    "va": "1001dbe4",
+    "fileOffset": 118244,
+    "encoding": "ascii",
+    "text": "tanh"
+  },
+  {
+    "va": "1001dbec",
+    "fileOffset": 118252,
+    "encoding": "ascii",
+    "text": "asin"
+  },
+  {
+    "va": "1001dbf4",
+    "fileOffset": 118260,
+    "encoding": "ascii",
+    "text": "acos"
+  },
+  {
+    "va": "1001dbfc",
+    "fileOffset": 118268,
+    "encoding": "ascii",
+    "text": "atan"
+  },
+  {
+    "va": "1001dc04",
+    "fileOffset": 118276,
+    "encoding": "ascii",
+    "text": "atan2"
+  },
+  {
+    "va": "1001dc0c",
+    "fileOffset": 118284,
+    "encoding": "ascii",
+    "text": "sqrt"
+  },
+  {
+    "va": "1001dc20",
+    "fileOffset": 118304,
+    "encoding": "ascii",
+    "text": "ceil"
+  },
+  {
+    "va": "1001dc28",
+    "fileOffset": 118312,
+    "encoding": "ascii",
+    "text": "floor"
+  },
+  {
+    "va": "1001dc30",
+    "fileOffset": 118320,
+    "encoding": "ascii",
+    "text": "fabs"
+  },
+  {
+    "va": "1001dc38",
+    "fileOffset": 118328,
+    "encoding": "ascii",
+    "text": "modf"
+  },
+  {
+    "va": "1001dc40",
+    "fileOffset": 118336,
+    "encoding": "ascii",
+    "text": "ldexp"
+  },
+  {
+    "va": "1001dc48",
+    "fileOffset": 118344,
+    "encoding": "ascii",
+    "text": "_cabs"
+  },
+  {
+    "va": "1001dc50",
+    "fileOffset": 118352,
+    "encoding": "ascii",
+    "text": "_hypot"
+  },
+  {
+    "va": "1001dc58",
+    "fileOffset": 118360,
+    "encoding": "ascii",
+    "text": "fmod"
+  },
+  {
+    "va": "1001dc60",
+    "fileOffset": 118368,
+    "encoding": "ascii",
+    "text": "frexp"
+  },
+  {
+    "va": "1001dc74",
+    "fileOffset": 118388,
+    "encoding": "ascii",
+    "text": "_logb"
+  },
+  {
+    "va": "1001dc7c",
+    "fileOffset": 118396,
+    "encoding": "ascii",
+    "text": "_nextafter"
+  },
+  {
+    "va": "1001dc98",
+    "fileOffset": 118424,
+    "encoding": "ascii",
+    "text": "bad exception"
+  },
+  {
+    "va": "1001dca8",
+    "fileOffset": 118440,
+    "encoding": "ascii",
+    "text": "e+000"
+  },
+  {
+    "va": "1001dccc",
+    "fileOffset": 118476,
+    "encoding": "ascii",
+    "text": "FlsAlloc"
+  },
+  {
+    "va": "1001dcd8",
+    "fileOffset": 118488,
+    "encoding": "ascii",
+    "text": "FlsFree"
+  },
+  {
+    "va": "1001dce0",
+    "fileOffset": 118496,
+    "encoding": "ascii",
+    "text": "FlsGetValue"
+  },
+  {
+    "va": "1001dcec",
+    "fileOffset": 118508,
+    "encoding": "ascii",
+    "text": "FlsSetValue"
+  },
+  {
+    "va": "1001dcf8",
+    "fileOffset": 118520,
+    "encoding": "ascii",
+    "text": "InitializeCriticalSectionEx"
+  },
+  {
+    "va": "1001dd14",
+    "fileOffset": 118548,
+    "encoding": "ascii",
+    "text": "CreateEventExW"
+  },
+  {
+    "va": "1001dd24",
+    "fileOffset": 118564,
+    "encoding": "ascii",
+    "text": "CreateSemaphoreExW"
+  },
+  {
+    "va": "1001dd38",
+    "fileOffset": 118584,
+    "encoding": "ascii",
+    "text": "SetThreadStackGuarantee"
+  },
+  {
+    "va": "1001dd50",
+    "fileOffset": 118608,
+    "encoding": "ascii",
+    "text": "CreateThreadpoolTimer"
+  },
+  {
+    "va": "1001dd68",
+    "fileOffset": 118632,
+    "encoding": "ascii",
+    "text": "SetThreadpoolTimer"
+  },
+  {
+    "va": "1001dd7c",
+    "fileOffset": 118652,
+    "encoding": "ascii",
+    "text": "WaitForThreadpoolTimerCallbacks"
+  },
+  {
+    "va": "1001dd9c",
+    "fileOffset": 118684,
+    "encoding": "ascii",
+    "text": "CloseThreadpoolTimer"
+  },
+  {
+    "va": "1001ddb4",
+    "fileOffset": 118708,
+    "encoding": "ascii",
+    "text": "CreateThreadpoolWait"
+  },
+  {
+    "va": "1001ddcc",
+    "fileOffset": 118732,
+    "encoding": "ascii",
+    "text": "SetThreadpoolWait"
+  },
+  {
+    "va": "1001dde0",
+    "fileOffset": 118752,
+    "encoding": "ascii",
+    "text": "CloseThreadpoolWait"
+  },
+  {
+    "va": "1001ddf4",
+    "fileOffset": 118772,
+    "encoding": "ascii",
+    "text": "FlushProcessWriteBuffers"
+  },
+  {
+    "va": "1001de10",
+    "fileOffset": 118800,
+    "encoding": "ascii",
+    "text": "FreeLibraryWhenCallbackReturns"
+  },
+  {
+    "va": "1001de30",
+    "fileOffset": 118832,
+    "encoding": "ascii",
+    "text": "GetCurrentProcessorNumber"
+  },
+  {
+    "va": "1001de4c",
+    "fileOffset": 118860,
+    "encoding": "ascii",
+    "text": "GetLogicalProcessorInformation"
+  },
+  {
+    "va": "1001de6c",
+    "fileOffset": 118892,
+    "encoding": "ascii",
+    "text": "CreateSymbolicLinkW"
+  },
+  {
+    "va": "1001de80",
+    "fileOffset": 118912,
+    "encoding": "ascii",
+    "text": "SetDefaultDllDirectories"
+  },
+  {
+    "va": "1001de9c",
+    "fileOffset": 118940,
+    "encoding": "ascii",
+    "text": "EnumSystemLocalesEx"
+  },
+  {
+    "va": "1001deb0",
+    "fileOffset": 118960,
+    "encoding": "ascii",
+    "text": "CompareStringEx"
+  },
+  {
+    "va": "1001dec0",
+    "fileOffset": 118976,
+    "encoding": "ascii",
+    "text": "GetDateFormatEx"
+  },
+  {
+    "va": "1001ded0",
+    "fileOffset": 118992,
+    "encoding": "ascii",
+    "text": "GetLocaleInfoEx"
+  },
+  {
+    "va": "1001dee0",
+    "fileOffset": 119008,
+    "encoding": "ascii",
+    "text": "GetTimeFormatEx"
+  },
+  {
+    "va": "1001def0",
+    "fileOffset": 119024,
+    "encoding": "ascii",
+    "text": "GetUserDefaultLocaleName"
+  },
+  {
+    "va": "1001df0c",
+    "fileOffset": 119052,
+    "encoding": "ascii",
+    "text": "IsValidLocaleName"
+  },
+  {
+    "va": "1001df20",
+    "fileOffset": 119072,
+    "encoding": "ascii",
+    "text": "LCMapStringEx"
+  },
+  {
+    "va": "1001df30",
+    "fileOffset": 119088,
+    "encoding": "ascii",
+    "text": "GetCurrentPackageId"
+  },
+  {
+    "va": "1001df44",
+    "fileOffset": 119108,
+    "encoding": "ascii",
+    "text": "GetTickCount64"
+  },
+  {
+    "va": "1001df54",
+    "fileOffset": 119124,
+    "encoding": "ascii",
+    "text": "GetFileInformationByHandleExW"
+  },
+  {
+    "va": "1001df74",
+    "fileOffset": 119156,
+    "encoding": "ascii",
+    "text": "SetFileInformationByHandleW"
+  },
+  {
+    "va": "10020bf0",
+    "fileOffset": 130544,
+    "encoding": "ascii",
+    "text": "Sunday"
+  },
+  {
+    "va": "10020bf8",
+    "fileOffset": 130552,
+    "encoding": "ascii",
+    "text": "Monday"
+  },
+  {
+    "va": "10020c00",
+    "fileOffset": 130560,
+    "encoding": "ascii",
+    "text": "Tuesday"
+  },
+  {
+    "va": "10020c08",
+    "fileOffset": 130568,
+    "encoding": "ascii",
+    "text": "Wednesday"
+  },
+  {
+    "va": "10020c14",
+    "fileOffset": 130580,
+    "encoding": "ascii",
+    "text": "Thursday"
+  },
+  {
+    "va": "10020c20",
+    "fileOffset": 130592,
+    "encoding": "ascii",
+    "text": "Friday"
+  },
+  {
+    "va": "10020c28",
+    "fileOffset": 130600,
+    "encoding": "ascii",
+    "text": "Saturday"
+  },
+  {
+    "va": "10020c64",
+    "fileOffset": 130660,
+    "encoding": "ascii",
+    "text": "January"
+  },
+  {
+    "va": "10020c6c",
+    "fileOffset": 130668,
+    "encoding": "ascii",
+    "text": "February"
+  },
+  {
+    "va": "10020c78",
+    "fileOffset": 130680,
+    "encoding": "ascii",
+    "text": "March"
+  },
+  {
+    "va": "10020c80",
+    "fileOffset": 130688,
+    "encoding": "ascii",
+    "text": "April"
+  },
+  {
+    "va": "10020c88",
+    "fileOffset": 130696,
+    "encoding": "ascii",
+    "text": "June"
+  },
+  {
+    "va": "10020c90",
+    "fileOffset": 130704,
+    "encoding": "ascii",
+    "text": "July"
+  },
+  {
+    "va": "10020c98",
+    "fileOffset": 130712,
+    "encoding": "ascii",
+    "text": "August"
+  },
+  {
+    "va": "10020ca0",
+    "fileOffset": 130720,
+    "encoding": "ascii",
+    "text": "September"
+  },
+  {
+    "va": "10020cac",
+    "fileOffset": 130732,
+    "encoding": "ascii",
+    "text": "October"
+  },
+  {
+    "va": "10020cb4",
+    "fileOffset": 130740,
+    "encoding": "ascii",
+    "text": "November"
+  },
+  {
+    "va": "10020cc0",
+    "fileOffset": 130752,
+    "encoding": "ascii",
+    "text": "December"
+  },
+  {
+    "va": "10020cd4",
+    "fileOffset": 130772,
+    "encoding": "ascii",
+    "text": "MM/dd/yy"
+  },
+  {
+    "va": "10020ce0",
+    "fileOffset": 130784,
+    "encoding": "ascii",
+    "text": "dddd, MMMM dd, yyyy"
+  },
+  {
+    "va": "10020cf4",
+    "fileOffset": 130804,
+    "encoding": "ascii",
+    "text": "HH:mm:ss"
+  },
+  {
+    "va": "100210b4",
+    "fileOffset": 131764,
+    "encoding": "ascii",
+    "text": "__based("
+  },
+  {
+    "va": "100210c0",
+    "fileOffset": 131776,
+    "encoding": "ascii",
+    "text": "__cdecl"
+  },
+  {
+    "va": "100210c8",
+    "fileOffset": 131784,
+    "encoding": "ascii",
+    "text": "__pascal"
+  },
+  {
+    "va": "100210d4",
+    "fileOffset": 131796,
+    "encoding": "ascii",
+    "text": "__stdcall"
+  },
+  {
+    "va": "100210e0",
+    "fileOffset": 131808,
+    "encoding": "ascii",
+    "text": "__thiscall"
+  },
+  {
+    "va": "100210ec",
+    "fileOffset": 131820,
+    "encoding": "ascii",
+    "text": "__fastcall"
+  },
+  {
+    "va": "100210f8",
+    "fileOffset": 131832,
+    "encoding": "ascii",
+    "text": "__vectorcall"
+  },
+  {
+    "va": "10021108",
+    "fileOffset": 131848,
+    "encoding": "ascii",
+    "text": "__clrcall"
+  },
+  {
+    "va": "10021114",
+    "fileOffset": 131860,
+    "encoding": "ascii",
+    "text": "__eabi"
+  },
+  {
+    "va": "1002111c",
+    "fileOffset": 131868,
+    "encoding": "ascii",
+    "text": "__ptr64"
+  },
+  {
+    "va": "10021124",
+    "fileOffset": 131876,
+    "encoding": "ascii",
+    "text": "__restrict"
+  },
+  {
+    "va": "10021130",
+    "fileOffset": 131888,
+    "encoding": "ascii",
+    "text": "__unaligned"
+  },
+  {
+    "va": "1002113c",
+    "fileOffset": 131900,
+    "encoding": "ascii",
+    "text": "restrict("
+  },
+  {
+    "va": "10021148",
+    "fileOffset": 131912,
+    "encoding": "ascii",
+    "text": " new"
+  },
+  {
+    "va": "10021150",
+    "fileOffset": 131920,
+    "encoding": "ascii",
+    "text": " delete"
+  },
+  {
+    "va": "10021174",
+    "fileOffset": 131956,
+    "encoding": "ascii",
+    "text": "operator"
+  },
+  {
+    "va": "100211fc",
+    "fileOffset": 132092,
+    "encoding": "ascii",
+    "text": "`vftable'"
+  },
+  {
+    "va": "10021208",
+    "fileOffset": 132104,
+    "encoding": "ascii",
+    "text": "`vbtable'"
+  },
+  {
+    "va": "10021214",
+    "fileOffset": 132116,
+    "encoding": "ascii",
+    "text": "`vcall'"
+  },
+  {
+    "va": "1002121c",
+    "fileOffset": 132124,
+    "encoding": "ascii",
+    "text": "`typeof'"
+  },
+  {
+    "va": "10021228",
+    "fileOffset": 132136,
+    "encoding": "ascii",
+    "text": "`local static guard'"
+  },
+  {
+    "va": "10021240",
+    "fileOffset": 132160,
+    "encoding": "ascii",
+    "text": "`string'"
+  },
+  {
+    "va": "1002124c",
+    "fileOffset": 132172,
+    "encoding": "ascii",
+    "text": "`vbase destructor'"
+  },
+  {
+    "va": "10021260",
+    "fileOffset": 132192,
+    "encoding": "ascii",
+    "text": "`vector deleting destructor'"
+  },
+  {
+    "va": "10021280",
+    "fileOffset": 132224,
+    "encoding": "ascii",
+    "text": "`default constructor closure'"
+  },
+  {
+    "va": "100212a0",
+    "fileOffset": 132256,
+    "encoding": "ascii",
+    "text": "`scalar deleting destructor'"
+  },
+  {
+    "va": "100212c0",
+    "fileOffset": 132288,
+    "encoding": "ascii",
+    "text": "`vector constructor iterator'"
+  },
+  {
+    "va": "100212e0",
+    "fileOffset": 132320,
+    "encoding": "ascii",
+    "text": "`vector destructor iterator'"
+  },
+  {
+    "va": "10021300",
+    "fileOffset": 132352,
+    "encoding": "ascii",
+    "text": "`vector vbase constructor iterator'"
+  },
+  {
+    "va": "10021324",
+    "fileOffset": 132388,
+    "encoding": "ascii",
+    "text": "`virtual displacement map'"
+  },
+  {
+    "va": "10021340",
+    "fileOffset": 132416,
+    "encoding": "ascii",
+    "text": "`eh vector constructor iterator'"
+  },
+  {
+    "va": "10021364",
+    "fileOffset": 132452,
+    "encoding": "ascii",
+    "text": "`eh vector destructor iterator'"
+  },
+  {
+    "va": "10021384",
+    "fileOffset": 132484,
+    "encoding": "ascii",
+    "text": "`eh vector vbase constructor iterator'"
+  },
+  {
+    "va": "100213ac",
+    "fileOffset": 132524,
+    "encoding": "ascii",
+    "text": "`copy constructor closure'"
+  },
+  {
+    "va": "100213c8",
+    "fileOffset": 132552,
+    "encoding": "ascii",
+    "text": "`udt returning'"
+  },
+  {
+    "va": "100213dc",
+    "fileOffset": 132572,
+    "encoding": "ascii",
+    "text": "`RTTI"
+  },
+  {
+    "va": "100213e4",
+    "fileOffset": 132580,
+    "encoding": "ascii",
+    "text": "`local vftable'"
+  },
+  {
+    "va": "100213f4",
+    "fileOffset": 132596,
+    "encoding": "ascii",
+    "text": "`local vftable constructor closure'"
+  },
+  {
+    "va": "10021418",
+    "fileOffset": 132632,
+    "encoding": "ascii",
+    "text": " new[]"
+  },
+  {
+    "va": "10021420",
+    "fileOffset": 132640,
+    "encoding": "ascii",
+    "text": " delete[]"
+  },
+  {
+    "va": "1002142c",
+    "fileOffset": 132652,
+    "encoding": "ascii",
+    "text": "`omni callsig'"
+  },
+  {
+    "va": "1002143c",
+    "fileOffset": 132668,
+    "encoding": "ascii",
+    "text": "`placement delete closure'"
+  },
+  {
+    "va": "10021458",
+    "fileOffset": 132696,
+    "encoding": "ascii",
+    "text": "`placement delete[] closure'"
+  },
+  {
+    "va": "10021478",
+    "fileOffset": 132728,
+    "encoding": "ascii",
+    "text": "`managed vector constructor iterator'"
+  },
+  {
+    "va": "100214a0",
+    "fileOffset": 132768,
+    "encoding": "ascii",
+    "text": "`managed vector destructor iterator'"
+  },
+  {
+    "va": "100214c8",
+    "fileOffset": 132808,
+    "encoding": "ascii",
+    "text": "`eh vector copy constructor iterator'"
+  },
+  {
+    "va": "100214f0",
+    "fileOffset": 132848,
+    "encoding": "ascii",
+    "text": "`eh vector vbase copy constructor iterator'"
+  },
+  {
+    "va": "1002151c",
+    "fileOffset": 132892,
+    "encoding": "ascii",
+    "text": "`dynamic initializer for '"
+  },
+  {
+    "va": "10021538",
+    "fileOffset": 132920,
+    "encoding": "ascii",
+    "text": "`dynamic atexit destructor for '"
+  },
+  {
+    "va": "1002155c",
+    "fileOffset": 132956,
+    "encoding": "ascii",
+    "text": "`vector copy constructor iterator'"
+  },
+  {
+    "va": "10021580",
+    "fileOffset": 132992,
+    "encoding": "ascii",
+    "text": "`vector vbase copy constructor iterator'"
+  },
+  {
+    "va": "100215ac",
+    "fileOffset": 133036,
+    "encoding": "ascii",
+    "text": "`managed vector copy constructor iterator'"
+  },
+  {
+    "va": "100215d8",
+    "fileOffset": 133080,
+    "encoding": "ascii",
+    "text": "`local static thread guard'"
+  },
+  {
+    "va": "100215f4",
+    "fileOffset": 133108,
+    "encoding": "ascii",
+    "text": " Type Descriptor'"
+  },
+  {
+    "va": "10021608",
+    "fileOffset": 133128,
+    "encoding": "ascii",
+    "text": " Base Class Descriptor at ("
+  },
+  {
+    "va": "10021624",
+    "fileOffset": 133156,
+    "encoding": "ascii",
+    "text": " Base Class Array'"
+  },
+  {
+    "va": "10021638",
+    "fileOffset": 133176,
+    "encoding": "ascii",
+    "text": " Class Hierarchy Descriptor'"
+  },
+  {
+    "va": "10021658",
+    "fileOffset": 133208,
+    "encoding": "ascii",
+    "text": " Complete Object Locator'"
+  },
+  {
+    "va": "1002168c",
+    "fileOffset": 133260,
+    "encoding": "ascii",
+    "text": "MessageBoxW"
+  },
+  {
+    "va": "10021698",
+    "fileOffset": 133272,
+    "encoding": "ascii",
+    "text": "GetActiveWindow"
+  },
+  {
+    "va": "100216a8",
+    "fileOffset": 133288,
+    "encoding": "ascii",
+    "text": "GetLastActivePopup"
+  },
+  {
+    "va": "100216bc",
+    "fileOffset": 133308,
+    "encoding": "ascii",
+    "text": "GetUserObjectInformationW"
+  },
+  {
+    "va": "100216d8",
+    "fileOffset": 133336,
+    "encoding": "ascii",
+    "text": "GetProcessWindowStation"
+  },
+  {
+    "va": "100216f0",
+    "fileOffset": 133360,
+    "encoding": "ascii",
+    "text": "(null)"
+  },
+  {
+    "va": "10021729",
+    "fileOffset": 133417,
+    "encoding": "ascii",
+    "text": "( 8PX"
+  },
+  {
+    "va": "10021731",
+    "fileOffset": 133425,
+    "encoding": "ascii",
+    "text": "700WP"
+  },
+  {
+    "va": "10021741",
+    "fileOffset": 133441,
+    "encoding": "ascii",
+    "text": "`h````"
+  },
+  {
+    "va": "10021749",
+    "fileOffset": 133449,
+    "encoding": "ascii",
+    "text": "xpxxxx"
+  },
+  {
+    "va": "10021d10",
+    "fileOffset": 134928,
+    "encoding": "ascii",
+    "text": " !\"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+  },
+  {
+    "va": "10021e90",
+    "fileOffset": 135312,
+    "encoding": "ascii",
+    "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~"
+  },
+  {
+    "va": "10021f8f",
+    "fileOffset": 135567,
+    "encoding": "ascii",
+    "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+  },
+  {
+    "va": "10021ff0",
+    "fileOffset": 135664,
+    "encoding": "ascii",
+    "text": "1#SNAN"
+  },
+  {
+    "va": "10021ff8",
+    "fileOffset": 135672,
+    "encoding": "ascii",
+    "text": "1#IND"
+  },
+  {
+    "va": "10022000",
+    "fileOffset": 135680,
+    "encoding": "ascii",
+    "text": "1#INF"
+  },
+  {
+    "va": "10022008",
+    "fileOffset": 135688,
+    "encoding": "ascii",
+    "text": "1#QNAN"
+  },
+  {
+    "va": "10022035",
+    "fileOffset": 135733,
+    "encoding": "ascii",
+    "text": "('8PW"
+  },
+  {
+    "va": "1002203e",
+    "fileOffset": 135742,
+    "encoding": "ascii",
+    "text": "700PP"
+  },
+  {
+    "va": "10022050",
+    "fileOffset": 135760,
+    "encoding": "ascii",
+    "text": "`h`hhh"
+  },
+  {
+    "va": "10022059",
+    "fileOffset": 135769,
+    "encoding": "ascii",
+    "text": "xppwpp"
+  },
+  {
+    "va": "10023da0",
+    "fileOffset": 143264,
+    "encoding": "ascii",
+    "text": "CLCSBinaryFontComponent.DLL"
+  },
+  {
+    "va": "10023dbc",
+    "fileOffset": 143292,
+    "encoding": "ascii",
+    "text": "DllCanUnloadNow"
+  },
+  {
+    "va": "10023dcc",
+    "fileOffset": 143308,
+    "encoding": "ascii",
+    "text": "DllGetClassObject"
+  },
+  {
+    "va": "10023dde",
+    "fileOffset": 143326,
+    "encoding": "ascii",
+    "text": "DllRegisterServer"
+  },
+  {
+    "va": "10023df0",
+    "fileOffset": 143344,
+    "encoding": "ascii",
+    "text": "DllUnregisterServer"
+  },
+  {
+    "va": "1002403a",
+    "fileOffset": 143930,
+    "encoding": "ascii",
+    "text": "GetLastError"
+  },
+  {
+    "va": "1002404a",
+    "fileOffset": 143946,
+    "encoding": "ascii",
+    "text": "EnterCriticalSection"
+  },
+  {
+    "va": "10024062",
+    "fileOffset": 143970,
+    "encoding": "ascii",
+    "text": "LeaveCriticalSection"
+  },
+  {
+    "va": "1002407a",
+    "fileOffset": 143994,
+    "encoding": "ascii",
+    "text": "InitializeCriticalSectionAndSpinCount"
+  },
+  {
+    "va": "100240a2",
+    "fileOffset": 144034,
+    "encoding": "ascii",
+    "text": "DeleteCriticalSection"
+  },
+  {
+    "va": "100240ba",
+    "fileOffset": 144058,
+    "encoding": "ascii",
+    "text": "FreeLibrary"
+  },
+  {
+    "va": "100240c8",
+    "fileOffset": 144072,
+    "encoding": "ascii",
+    "text": "GetModuleHandleW"
+  },
+  {
+    "va": "100240dc",
+    "fileOffset": 144092,
+    "encoding": "ascii",
+    "text": "GetProcAddress"
+  },
+  {
+    "va": "100240ee",
+    "fileOffset": 144110,
+    "encoding": "ascii",
+    "text": "LoadLibraryW"
+  },
+  {
+    "va": "100240fe",
+    "fileOffset": 144126,
+    "encoding": "ascii",
+    "text": "GetStringTypeW"
+  },
+  {
+    "va": "10024110",
+    "fileOffset": 144144,
+    "encoding": "ascii",
+    "text": "GetLocaleInfoW"
+  },
+  {
+    "va": "10024122",
+    "fileOffset": 144162,
+    "encoding": "ascii",
+    "text": "EncodePointer"
+  },
+  {
+    "va": "10024132",
+    "fileOffset": 144178,
+    "encoding": "ascii",
+    "text": "DecodePointer"
+  },
+  {
+    "va": "10024142",
+    "fileOffset": 144194,
+    "encoding": "ascii",
+    "text": "RaiseException"
+  },
+  {
+    "va": "10024154",
+    "fileOffset": 144212,
+    "encoding": "ascii",
+    "text": "DisableThreadLibraryCalls"
+  },
+  {
+    "va": "10024170",
+    "fileOffset": 144240,
+    "encoding": "ascii",
+    "text": "GetModuleFileNameW"
+  },
+  {
+    "va": "10024186",
+    "fileOffset": 144262,
+    "encoding": "ascii",
+    "text": "LoadLibraryExW"
+  },
+  {
+    "va": "10024198",
+    "fileOffset": 144280,
+    "encoding": "ascii",
+    "text": "LoadResource"
+  },
+  {
+    "va": "100241a8",
+    "fileOffset": 144296,
+    "encoding": "ascii",
+    "text": "SizeofResource"
+  },
+  {
+    "va": "100241ba",
+    "fileOffset": 144314,
+    "encoding": "ascii",
+    "text": "lstrcmpiW"
+  },
+  {
+    "va": "100241c6",
+    "fileOffset": 144326,
+    "encoding": "ascii",
+    "text": "FindResourceW"
+  },
+  {
+    "va": "100241d6",
+    "fileOffset": 144342,
+    "encoding": "ascii",
+    "text": "MultiByteToWideChar"
+  },
+  {
+    "va": "100241ec",
+    "fileOffset": 144364,
+    "encoding": "ascii",
+    "text": "CreateFileW"
+  },
+  {
+    "va": "100241fa",
+    "fileOffset": 144378,
+    "encoding": "ascii",
+    "text": "ReadFile"
+  },
+  {
+    "va": "10024206",
+    "fileOffset": 144390,
+    "encoding": "ascii",
+    "text": "SetFilePointer"
+  },
+  {
+    "va": "10024218",
+    "fileOffset": 144408,
+    "encoding": "ascii",
+    "text": "WriteFile"
+  },
+  {
+    "va": "10024224",
+    "fileOffset": 144420,
+    "encoding": "ascii",
+    "text": "CloseHandle"
+  },
+  {
+    "va": "10024232",
+    "fileOffset": 144434,
+    "encoding": "ascii",
+    "text": "GetLocalTime"
+  },
+  {
+    "va": "10024240",
+    "fileOffset": 144448,
+    "encoding": "ascii",
+    "text": "KERNEL32.dll"
+  },
+  {
+    "va": "10024250",
+    "fileOffset": 144464,
+    "encoding": "ascii",
+    "text": "CharNextW"
+  },
+  {
+    "va": "1002425a",
+    "fileOffset": 144474,
+    "encoding": "ascii",
+    "text": "USER32.dll"
+  },
+  {
+    "va": "10024268",
+    "fileOffset": 144488,
+    "encoding": "ascii",
+    "text": "GetCurrentObject"
+  },
+  {
+    "va": "1002427c",
+    "fileOffset": 144508,
+    "encoding": "ascii",
+    "text": "GetObjectW"
+  },
+  {
+    "va": "10024288",
+    "fileOffset": 144520,
+    "encoding": "ascii",
+    "text": "GDI32.dll"
+  },
+  {
+    "va": "10024294",
+    "fileOffset": 144532,
+    "encoding": "ascii",
+    "text": "RegCloseKey"
+  },
+  {
+    "va": "100242a2",
+    "fileOffset": 144546,
+    "encoding": "ascii",
+    "text": "RegCreateKeyExW"
+  },
+  {
+    "va": "100242b4",
+    "fileOffset": 144564,
+    "encoding": "ascii",
+    "text": "RegDeleteKeyW"
+  },
+  {
+    "va": "100242c4",
+    "fileOffset": 144580,
+    "encoding": "ascii",
+    "text": "RegDeleteValueW"
+  },
+  {
+    "va": "100242d6",
+    "fileOffset": 144598,
+    "encoding": "ascii",
+    "text": "RegEnumKeyExW"
+  },
+  {
+    "va": "100242e6",
+    "fileOffset": 144614,
+    "encoding": "ascii",
+    "text": "RegOpenKeyExW"
+  },
+  {
+    "va": "100242f6",
+    "fileOffset": 144630,
+    "encoding": "ascii",
+    "text": "RegQueryInfoKeyW"
+  },
+  {
+    "va": "1002430a",
+    "fileOffset": 144650,
+    "encoding": "ascii",
+    "text": "RegSetValueExW"
+  },
+  {
+    "va": "1002431a",
+    "fileOffset": 144666,
+    "encoding": "ascii",
+    "text": "ADVAPI32.dll"
+  },
+  {
+    "va": "1002432a",
+    "fileOffset": 144682,
+    "encoding": "ascii",
+    "text": "CoCreateInstance"
+  },
+  {
+    "va": "1002433e",
+    "fileOffset": 144702,
+    "encoding": "ascii",
+    "text": "StringFromGUID2"
+  },
+  {
+    "va": "10024350",
+    "fileOffset": 144720,
+    "encoding": "ascii",
+    "text": "CoTaskMemAlloc"
+  },
+  {
+    "va": "10024362",
+    "fileOffset": 144738,
+    "encoding": "ascii",
+    "text": "CoTaskMemRealloc"
+  },
+  {
+    "va": "10024376",
+    "fileOffset": 144758,
+    "encoding": "ascii",
+    "text": "CoTaskMemFree"
+  },
+  {
+    "va": "10024384",
+    "fileOffset": 144772,
+    "encoding": "ascii",
+    "text": "ole32.dll"
+  },
+  {
+    "va": "1002438e",
+    "fileOffset": 144782,
+    "encoding": "ascii",
+    "text": "OLEAUT32.dll"
+  },
+  {
+    "va": "1002439e",
+    "fileOffset": 144798,
+    "encoding": "ascii",
+    "text": "IsDebuggerPresent"
+  },
+  {
+    "va": "100243b2",
+    "fileOffset": 144818,
+    "encoding": "ascii",
+    "text": "OutputDebugStringW"
+  },
+  {
+    "va": "100243c8",
+    "fileOffset": 144840,
+    "encoding": "ascii",
+    "text": "RtlUnwind"
+  },
+  {
+    "va": "100243d4",
+    "fileOffset": 144852,
+    "encoding": "ascii",
+    "text": "IsProcessorFeaturePresent"
+  },
+  {
+    "va": "100243f0",
+    "fileOffset": 144880,
+    "encoding": "ascii",
+    "text": "HeapFree"
+  },
+  {
+    "va": "100243fc",
+    "fileOffset": 144892,
+    "encoding": "ascii",
+    "text": "HeapAlloc"
+  },
+  {
+    "va": "10024408",
+    "fileOffset": 144904,
+    "encoding": "ascii",
+    "text": "GetCommandLineA"
+  },
+  {
+    "va": "1002441a",
+    "fileOffset": 144922,
+    "encoding": "ascii",
+    "text": "GetCurrentThreadId"
+  },
+  {
+    "va": "10024430",
+    "fileOffset": 144944,
+    "encoding": "ascii",
+    "text": "ExitProcess"
+  },
+  {
+    "va": "1002443e",
+    "fileOffset": 144958,
+    "encoding": "ascii",
+    "text": "GetModuleHandleExW"
+  },
+  {
+    "va": "10024454",
+    "fileOffset": 144980,
+    "encoding": "ascii",
+    "text": "WideCharToMultiByte"
+  },
+  {
+    "va": "1002446a",
+    "fileOffset": 145002,
+    "encoding": "ascii",
+    "text": "HeapSize"
+  },
+  {
+    "va": "10024476",
+    "fileOffset": 145014,
+    "encoding": "ascii",
+    "text": "SetLastError"
+  },
+  {
+    "va": "10024486",
+    "fileOffset": 145030,
+    "encoding": "ascii",
+    "text": "UnhandledExceptionFilter"
+  },
+  {
+    "va": "100244a2",
+    "fileOffset": 145058,
+    "encoding": "ascii",
+    "text": "SetUnhandledExceptionFilter"
+  },
+  {
+    "va": "100244c0",
+    "fileOffset": 145088,
+    "encoding": "ascii",
+    "text": "Sleep"
+  },
+  {
+    "va": "100244c8",
+    "fileOffset": 145096,
+    "encoding": "ascii",
+    "text": "GetCurrentProcess"
+  },
+  {
+    "va": "100244dc",
+    "fileOffset": 145116,
+    "encoding": "ascii",
+    "text": "TerminateProcess"
+  },
+  {
+    "va": "100244f0",
+    "fileOffset": 145136,
+    "encoding": "ascii",
+    "text": "TlsAlloc"
+  },
+  {
+    "va": "100244fc",
+    "fileOffset": 145148,
+    "encoding": "ascii",
+    "text": "TlsGetValue"
+  },
+  {
+    "va": "1002450a",
+    "fileOffset": 145162,
+    "encoding": "ascii",
+    "text": "TlsSetValue"
+  },
+  {
+    "va": "10024518",
+    "fileOffset": 145176,
+    "encoding": "ascii",
+    "text": "TlsFree"
+  },
+  {
+    "va": "10024522",
+    "fileOffset": 145186,
+    "encoding": "ascii",
+    "text": "GetStartupInfoW"
+  },
+  {
+    "va": "10024534",
+    "fileOffset": 145204,
+    "encoding": "ascii",
+    "text": "GetProcessHeap"
+  },
+  {
+    "va": "10024546",
+    "fileOffset": 145222,
+    "encoding": "ascii",
+    "text": "GetStdHandle"
+  },
+  {
+    "va": "10024556",
+    "fileOffset": 145238,
+    "encoding": "ascii",
+    "text": "HeapReAlloc"
+  },
+  {
+    "va": "10024564",
+    "fileOffset": 145252,
+    "encoding": "ascii",
+    "text": "GetFileType"
+  },
+  {
+    "va": "10024572",
+    "fileOffset": 145266,
+    "encoding": "ascii",
+    "text": "GetModuleFileNameA"
+  },
+  {
+    "va": "10024588",
+    "fileOffset": 145288,
+    "encoding": "ascii",
+    "text": "QueryPerformanceCounter"
+  },
+  {
+    "va": "100245a2",
+    "fileOffset": 145314,
+    "encoding": "ascii",
+    "text": "GetCurrentProcessId"
+  },
+  {
+    "va": "100245b8",
+    "fileOffset": 145336,
+    "encoding": "ascii",
+    "text": "GetSystemTimeAsFileTime"
+  },
+  {
+    "va": "100245d2",
+    "fileOffset": 145362,
+    "encoding": "ascii",
+    "text": "GetEnvironmentStringsW"
+  },
+  {
+    "va": "100245ec",
+    "fileOffset": 145388,
+    "encoding": "ascii",
+    "text": "FreeEnvironmentStringsW"
+  },
+  {
+    "va": "10024606",
+    "fileOffset": 145414,
+    "encoding": "ascii",
+    "text": "LCMapStringW"
+  },
+  {
+    "va": "10024616",
+    "fileOffset": 145430,
+    "encoding": "ascii",
+    "text": "IsValidCodePage"
+  },
+  {
+    "va": "10024628",
+    "fileOffset": 145448,
+    "encoding": "ascii",
+    "text": "GetACP"
+  },
+  {
+    "va": "10024632",
+    "fileOffset": 145458,
+    "encoding": "ascii",
+    "text": "GetOEMCP"
+  },
+  {
+    "va": "1002463e",
+    "fileOffset": 145470,
+    "encoding": "ascii",
+    "text": "GetCPInfo"
+  },
+  {
+    "va": "1002464a",
+    "fileOffset": 145482,
+    "encoding": "ascii",
+    "text": "GetConsoleCP"
+  },
+  {
+    "va": "1002465a",
+    "fileOffset": 145498,
+    "encoding": "ascii",
+    "text": "GetConsoleMode"
+  },
+  {
+    "va": "1002466c",
+    "fileOffset": 145516,
+    "encoding": "ascii",
+    "text": "SetFilePointerEx"
+  },
+  {
+    "va": "10024680",
+    "fileOffset": 145536,
+    "encoding": "ascii",
+    "text": "SetStdHandle"
+  },
+  {
+    "va": "10024690",
+    "fileOffset": 145552,
+    "encoding": "ascii",
+    "text": "WriteConsoleW"
+  },
+  {
+    "va": "100246a0",
+    "fileOffset": 145568,
+    "encoding": "ascii",
+    "text": "FlushFileBuffers"
+  },
+  {
+    "va": "10025240",
+    "fileOffset": 146496,
+    "encoding": "ascii",
+    "text": "sqrt"
+  },
+  {
+    "va": "10025572",
+    "fileOffset": 147314,
+    "encoding": "ascii",
+    "text": "                          "
+  },
+  {
+    "va": "10025659",
+    "fileOffset": 147545,
+    "encoding": "ascii",
+    "text": "abcdefghijklmnopqrstuvwxyz"
+  },
+  {
+    "va": "10025679",
+    "fileOffset": 147577,
+    "encoding": "ascii",
+    "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  },
+  {
+    "va": "10025792",
+    "fileOffset": 147858,
+    "encoding": "ascii",
+    "text": "                          "
+  },
+  {
+    "va": "10025872",
+    "fileOffset": 148082,
+    "encoding": "ascii",
+    "text": "abcdefghijklmnopqrstuvwxyz"
+  },
+  {
+    "va": "10025892",
+    "fileOffset": 148114,
+    "encoding": "ascii",
+    "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  },
+  {
+    "va": "10026062",
+    "fileOffset": 150114,
+    "encoding": "ascii",
+    "text": "kU'9"
+  },
+  {
+    "va": "100260b2",
+    "fileOffset": 150194,
+    "encoding": "ascii",
+    "text": "HMXB"
+  },
+  {
+    "va": "10026117",
+    "fileOffset": 150295,
+    "encoding": "ascii",
+    "text": "?Zd;"
+  },
+  {
+    "va": "1002615f",
+    "fileOffset": 150367,
+    "encoding": "ascii",
+    "text": "?/L["
+  },
+  {
+    "va": "1002616e",
+    "fileOffset": 150382,
+    "encoding": "ascii",
+    "text": "S;uD"
+  },
+  {
+    "va": "1002618e",
+    "fileOffset": 150414,
+    "encoding": "ascii",
+    "text": "z?aUY"
+  },
+  {
+    "va": "100261a6",
+    "fileOffset": 150438,
+    "encoding": "ascii",
+    "text": "D?$?"
+  },
+  {
+    "va": "100261be",
+    "fileOffset": 150462,
+    "encoding": "ascii",
+    "text": "U>c{"
+  },
+  {
+    "va": "100261d0",
+    "fileOffset": 150480,
+    "encoding": "ascii",
+    "text": "zc%C1"
+  },
+  {
+    "va": "100261fa",
+    "fileOffset": 150522,
+    "encoding": "ascii",
+    "text": ".:3q"
+  },
+  {
+    "va": "10026223",
+    "fileOffset": 150563,
+    "encoding": "ascii",
+    "text": "-64OS"
+  },
+  {
+    "va": "10026244",
+    "fileOffset": 150596,
+    "encoding": "ascii",
+    "text": "NKeb"
+  },
+  {
+    "va": "10026270",
+    "fileOffset": 150640,
+    "encoding": "ascii",
+    "text": ".?AVCAtlException@ATL@@"
+  },
+  {
+    "va": "10026290",
+    "fileOffset": 150672,
+    "encoding": "ascii",
+    "text": ".?AUIUnknown@@"
+  },
+  {
+    "va": "100262a8",
+    "fileOffset": 150696,
+    "encoding": "ascii",
+    "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+  },
+  {
+    "va": "100262ec",
+    "fileOffset": 150764,
+    "encoding": "ascii",
+    "text": ".?AVCComObjectRootBase@ATL@@"
+  },
+  {
+    "va": "10026314",
+    "fileOffset": 150804,
+    "encoding": "ascii",
+    "text": ".?AUISupportErrorInfo@@"
+  },
+  {
+    "va": "10026334",
+    "fileOffset": 150836,
+    "encoding": "ascii",
+    "text": ".?AVerror_category@std@@"
+  },
+  {
+    "va": "10026358",
+    "fileOffset": 150872,
+    "encoding": "ascii",
+    "text": ".?AV_Generic_error_category@std@@"
+  },
+  {
+    "va": "10026384",
+    "fileOffset": 150916,
+    "encoding": "ascii",
+    "text": ".?AV_Iostream_error_category@std@@"
+  },
+  {
+    "va": "100263b0",
+    "fileOffset": 150960,
+    "encoding": "ascii",
+    "text": ".?AV_System_error_category@std@@"
+  },
+  {
+    "va": "100263dc",
+    "fileOffset": 151004,
+    "encoding": "ascii",
+    "text": ".?AV?$CComObject@VCBinaryFontUniscribe@@@ATL@@"
+  },
+  {
+    "va": "10026414",
+    "fileOffset": 151060,
+    "encoding": "ascii",
+    "text": ".?AVCBinaryFontUniscribe@@"
+  },
+  {
+    "va": "10026438",
+    "fileOffset": 151096,
+    "encoding": "ascii",
+    "text": ".?AV?$CComCoClass@VCBinaryFontUniscribe@@$1?CLSID_BinaryFontUniscribe@@3U_GUID@@B@ATL@@"
+  },
+  {
+    "va": "10026498",
+    "fileOffset": 151192,
+    "encoding": "ascii",
+    "text": ".?AUIBinaryFontUniscribe@@"
+  },
+  {
+    "va": "100264bc",
+    "fileOffset": 151228,
+    "encoding": "ascii",
+    "text": ".?AV?$CZipherBSTRMapAnalog@PA_W@@"
+  },
+  {
+    "va": "100264e8",
+    "fileOffset": 151272,
+    "encoding": "ascii",
+    "text": ".?AUIRegistrarBase@@"
+  },
+  {
+    "va": "10026508",
+    "fileOffset": 151304,
+    "encoding": "ascii",
+    "text": ".?AVCAtlModule@ATL@@"
+  },
+  {
+    "va": "10026528",
+    "fileOffset": 151336,
+    "encoding": "ascii",
+    "text": ".?AU_ATL_MODULE70@ATL@@"
+  },
+  {
+    "va": "10026548",
+    "fileOffset": 151368,
+    "encoding": "ascii",
+    "text": ".?AVCComModule@ATL@@"
+  },
+  {
+    "va": "10026568",
+    "fileOffset": 151400,
+    "encoding": "ascii",
+    "text": ".?AV?$CAtlModuleT@VCComModule@ATL@@@ATL@@"
+  },
+  {
+    "va": "1002659c",
+    "fileOffset": 151452,
+    "encoding": "ascii",
+    "text": ".?AVCRegObject@ATL@@"
+  },
+  {
+    "va": "100265bc",
+    "fileOffset": 151484,
+    "encoding": "ascii",
+    "text": ".?AVCComClassFactory@ATL@@"
+  },
+  {
+    "va": "100265e0",
+    "fileOffset": 151520,
+    "encoding": "ascii",
+    "text": ".?AUIClassFactory@@"
+  },
+  {
+    "va": "100265fc",
+    "fileOffset": 151548,
+    "encoding": "ascii",
+    "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+  },
+  {
+    "va": "1002663c",
+    "fileOffset": 151612,
+    "encoding": "ascii",
+    "text": ".?AUIBinaryFont@@"
+  },
+  {
+    "va": "10026658",
+    "fileOffset": 151640,
+    "encoding": "ascii",
+    "text": ".?AVCBinaryFont@@"
+  },
+  {
+    "va": "10026678",
+    "fileOffset": 151672,
+    "encoding": "ascii",
+    "text": ".?AV?$CComCoClass@VCBinaryFont@@$1?CLSID_BinaryFont@@3U_GUID@@B@ATL@@"
+  },
+  {
+    "va": "100266c8",
+    "fileOffset": 151752,
+    "encoding": "ascii",
+    "text": ".?AVCZFBFFontPlayer@@"
+  },
+  {
+    "va": "100266e8",
+    "fileOffset": 151784,
+    "encoding": "ascii",
+    "text": ".?AVCZFBFFontUtilities@@"
+  },
+  {
+    "va": "1002670c",
+    "fileOffset": 151820,
+    "encoding": "ascii",
+    "text": ".?AV?$CComObject@VCBinaryFont@@@ATL@@"
+  },
+  {
+    "va": "1002673c",
+    "fileOffset": 151868,
+    "encoding": "ascii",
+    "text": ".?AVbad_alloc@std@@"
+  },
+  {
+    "va": "10026758",
+    "fileOffset": 151896,
+    "encoding": "ascii",
+    "text": ".?AVexception@std@@"
+  },
+  {
+    "va": "10026774",
+    "fileOffset": 151924,
+    "encoding": "ascii",
+    "text": ".?AVlogic_error@std@@"
+  },
+  {
+    "va": "10026794",
+    "fileOffset": 151956,
+    "encoding": "ascii",
+    "text": ".?AVlength_error@std@@"
+  },
+  {
+    "va": "100267b4",
+    "fileOffset": 151988,
+    "encoding": "ascii",
+    "text": ".?AVout_of_range@std@@"
+  },
+  {
+    "va": "100267d4",
+    "fileOffset": 152020,
+    "encoding": "ascii",
+    "text": ".?AVtype_info@@"
+  },
+  {
+    "va": "100267ec",
+    "fileOffset": 152044,
+    "encoding": "ascii",
+    "text": ".?AVbad_exception@std@@"
+  },
+  {
+    "va": "1002a528",
+    "fileOffset": 153896,
+    "encoding": "ascii",
+    "text": "HKCR"
+  },
+  {
+    "va": "1002a532",
+    "fileOffset": 153906,
+    "encoding": "ascii",
+    "text": "CLBinaryFontComponent.BinaryFont.1 = s 'BinaryFont Class'"
+  },
+  {
+    "va": "1002a573",
+    "fileOffset": 153971,
+    "encoding": "ascii",
+    "text": "CLSID = s '{B261CBA5-9A1F-4132-B65D-E748E241F00C}'"
+  },
+  {
+    "va": "1002a5ac",
+    "fileOffset": 154028,
+    "encoding": "ascii",
+    "text": "CLBinaryFontComponent.BinaryFont = s 'BinaryFont Class'"
+  },
+  {
+    "va": "1002a5eb",
+    "fileOffset": 154091,
+    "encoding": "ascii",
+    "text": "CLSID = s '{B261CBA5-9A1F-4132-B65D-E748E241F00C}'"
+  },
+  {
+    "va": "1002a621",
+    "fileOffset": 154145,
+    "encoding": "ascii",
+    "text": "CurVer = s 'CLBinaryFontComponent.BinaryFont.1'"
+  },
+  {
+    "va": "1002a657",
+    "fileOffset": 154199,
+    "encoding": "ascii",
+    "text": "NoRemove CLSID"
+  },
+  {
+    "va": "1002a66d",
+    "fileOffset": 154221,
+    "encoding": "ascii",
+    "text": "ForceRemove {B261CBA5-9A1F-4132-B65D-E748E241F00C} = s 'BinaryFont Class'"
+  },
+  {
+    "va": "1002a6c0",
+    "fileOffset": 154304,
+    "encoding": "ascii",
+    "text": "ProgID = s 'CLBinaryFontComponent.BinaryFont.1'"
+  },
+  {
+    "va": "1002a6f4",
+    "fileOffset": 154356,
+    "encoding": "ascii",
+    "text": "VersionIndependentProgID = s 'CLBinaryFontComponent.BinaryFont'"
+  },
+  {
+    "va": "1002a738",
+    "fileOffset": 154424,
+    "encoding": "ascii",
+    "text": "ForceRemove 'Programmable'"
+  },
+  {
+    "va": "1002a757",
+    "fileOffset": 154455,
+    "encoding": "ascii",
+    "text": "InprocServer32 = s '%MODULE%'"
+  },
+  {
+    "va": "1002a780",
+    "fileOffset": 154496,
+    "encoding": "ascii",
+    "text": "val ThreadingModel = s 'Both'"
+  },
+  {
+    "va": "1002a7a8",
+    "fileOffset": 154536,
+    "encoding": "ascii",
+    "text": "'TypeLib' = s '{9DCC25DC-6BFF-4A27-AB15-00C9632DB218}'"
+  },
+  {
+    "va": "1002a7f0",
+    "fileOffset": 154608,
+    "encoding": "ascii",
+    "text": "HKCR"
+  },
+  {
+    "va": "1002a7fa",
+    "fileOffset": 154618,
+    "encoding": "ascii",
+    "text": "CCLBinaryFontComponent.BinaryFontUniscribe.1 = s 'BinaryFontUniscribe Class'"
+  },
+  {
+    "va": "1002a84e",
+    "fileOffset": 154702,
+    "encoding": "ascii",
+    "text": "CLSID = s '{3F6D599E-4807-4E71-8953-1C3ECD927B1B}'"
+  },
+  {
+    "va": "1002a887",
+    "fileOffset": 154759,
+    "encoding": "ascii",
+    "text": "CLBinaryFontComponent.BinaryFontUniscribe = s 'BinaryFontUniscribe Class'"
+  },
+  {
+    "va": "1002a8d8",
+    "fileOffset": 154840,
+    "encoding": "ascii",
+    "text": "CLSID = s '{3F6D599E-4807-4E71-8953-1C3ECD927B1B}'"
+  },
+  {
+    "va": "1002a90e",
+    "fileOffset": 154894,
+    "encoding": "ascii",
+    "text": "CurVer = s 'CLBinaryFontComponent.BinaryFontUniscribe.1'"
+  },
+  {
+    "va": "1002a94d",
+    "fileOffset": 154957,
+    "encoding": "ascii",
+    "text": "NoRemove CLSID"
+  },
+  {
+    "va": "1002a963",
+    "fileOffset": 154979,
+    "encoding": "ascii",
+    "text": "ForceRemove {3F6D599E-4807-4E71-8953-1C3ECD927B1B} = s 'BinaryFontUniscribe Class'"
+  },
+  {
+    "va": "1002a9bf",
+    "fileOffset": 155071,
+    "encoding": "ascii",
+    "text": "ProgID = s 'CLBinaryFontComponent.BinaryFontUniscribe.1'"
+  },
+  {
+    "va": "1002a9fc",
+    "fileOffset": 155132,
+    "encoding": "ascii",
+    "text": "VersionIndependentProgID = s 'CLBinaryFontComponent.BinaryFontUniscribe'"
+  },
+  {
+    "va": "1002aa49",
+    "fileOffset": 155209,
+    "encoding": "ascii",
+    "text": "ForceRemove 'Programmable'"
+  },
+  {
+    "va": "1002aa68",
+    "fileOffset": 155240,
+    "encoding": "ascii",
+    "text": "InprocServer32 = s '%MODULE%'"
+  },
+  {
+    "va": "1002aa91",
+    "fileOffset": 155281,
+    "encoding": "ascii",
+    "text": "val ThreadingModel = s 'Both'"
+  },
+  {
+    "va": "1002aab9",
+    "fileOffset": 155321,
+    "encoding": "ascii",
+    "text": "'TypeLib' = s '{9DCC25DC-6BFF-4A27-AB15-00C9632DB218}'"
+  },
+  {
+    "va": "1002ab00",
+    "fileOffset": 155392,
+    "encoding": "ascii",
+    "text": "MSFT"
+  },
+  {
+    "va": "1002b0d2",
+    "fileOffset": 156882,
+    "encoding": "ascii",
+    "text": "stdole2.tlbWWW"
+  },
+  {
+    "va": "1002b2ec",
+    "fileOffset": 157420,
+    "encoding": "ascii",
+    "text": "CLCSBINARYFONTCOMPONENTLibWW"
+  },
+  {
+    "va": "1002b313",
+    "fileOffset": 157459,
+    "encoding": "ascii",
+    "text": "6BinaryFontWWd"
+  },
+  {
+    "va": "1002b32c",
+    "fileOffset": 157484,
+    "encoding": "ascii",
+    "text": "IBinaryFontW"
+  },
+  {
+    "va": "1002b344",
+    "fileOffset": 157508,
+    "encoding": "ascii",
+    "text": "IBinaryFontUniscribe"
+  },
+  {
+    "va": "1002b362",
+    "fileOffset": 157538,
+    "encoding": "ascii",
+    "text": "K#SelectBitmapFont"
+  },
+  {
+    "va": "1002b380",
+    "fileOffset": 157568,
+    "encoding": "ascii",
+    "text": "bstrFontName"
+  },
+  {
+    "va": "1002b398",
+    "fileOffset": 157592,
+    "encoding": "ascii",
+    "text": "ulFlagsW"
+  },
+  {
+    "va": "1002b3ac",
+    "fileOffset": 157612,
+    "encoding": "ascii",
+    "text": "lOrientation"
+  },
+  {
+    "va": "1002b3c4",
+    "fileOffset": 157636,
+    "encoding": "ascii",
+    "text": "lEscapementW"
+  },
+  {
+    "va": "1002b3db",
+    "fileOffset": 157659,
+    "encoding": "ascii",
+    "text": "TlCharacterSpacingWWW"
+  },
+  {
+    "va": "1002b3fb",
+    "fileOffset": 157691,
+    "encoding": "ascii",
+    "text": "SlMultiStroke"
+  },
+  {
+    "va": "1002b414",
+    "fileOffset": 157716,
+    "encoding": "ascii",
+    "text": "bRTL"
+  },
+  {
+    "va": "1002b423",
+    "fileOffset": 157731,
+    "encoding": "ascii",
+    "text": "=DeselectBitmapFontWW"
+  },
+  {
+    "va": "1002b444",
+    "fileOffset": 157764,
+    "encoding": "ascii",
+    "text": "SetObjectLinkWWW"
+  },
+  {
+    "va": "1002b45f",
+    "fileOffset": 157791,
+    "encoding": "ascii",
+    "text": "3riid"
+  },
+  {
+    "va": "1002b46e",
+    "fileOffset": 157806,
+    "encoding": "ascii",
+    "text": "|6pIObject,"
+  },
+  {
+    "va": "1002b483",
+    "fileOffset": 157827,
+    "encoding": "ascii",
+    "text": "IwireHDCW"
+  },
+  {
+    "va": "1002b498",
+    "fileOffset": 157848,
+    "encoding": "ascii",
+    "text": "_RemotableHandle"
+  },
+  {
+    "va": "1002b4b3",
+    "fileOffset": 157875,
+    "encoding": "ascii",
+    "text": "cfContext"
+  },
+  {
+    "va": "1002b4c7",
+    "fileOffset": 157895,
+    "encoding": "ascii",
+    "text": "Z__MIDL_IWinTypes_0009WWW"
+  },
+  {
+    "va": "1002b4eb",
+    "fileOffset": 157931,
+    "encoding": "ascii",
+    "text": "JhInprocW"
+  },
+  {
+    "va": "1002b500",
+    "fileOffset": 157952,
+    "encoding": "ascii",
+    "text": "hRemoteW"
+  },
+  {
+    "va": "1002b514",
+    "fileOffset": 157972,
+    "encoding": "ascii",
+    "text": "uWWW"
+  },
+  {
+    "va": "1002b523",
+    "fileOffset": 157987,
+    "encoding": "ascii",
+    "text": "FGetTextSizeW"
+  },
+  {
+    "va": "1002b53c",
+    "fileOffset": 158012,
+    "encoding": "ascii",
+    "text": "hDCW"
+  },
+  {
+    "va": "1002b54c",
+    "fileOffset": 158028,
+    "encoding": "ascii",
+    "text": "bstrText"
+  },
+  {
+    "va": "1002b560",
+    "fileOffset": 158048,
+    "encoding": "ascii",
+    "text": "nTextWidthWW"
+  },
+  {
+    "va": "1002b576",
+    "fileOffset": 158070,
+    "encoding": "ascii",
+    "text": "X&nTextHeightW"
+  },
+  {
+    "va": "1002b58f",
+    "fileOffset": 158095,
+    "encoding": "ascii",
+    "text": "%OutputTextWW"
+  },
+  {
+    "va": "1002b5a7",
+    "fileOffset": 158119,
+    "encoding": "ascii",
+    "text": "olXPosWWW"
+  },
+  {
+    "va": "1002b5bc",
+    "fileOffset": 158140,
+    "encoding": "ascii",
+    "text": "lYPosWWW"
+  },
+  {
+    "va": "1002b5d0",
+    "fileOffset": 158160,
+    "encoding": "ascii",
+    "text": "lTextLengthWd"
+  },
+  {
+    "va": "1002b5e8",
+    "fileOffset": 158184,
+    "encoding": "ascii",
+    "text": "CreateUniscribeRendererW"
+  },
+  {
+    "va": "1002b60c",
+    "fileOffset": 158220,
+    "encoding": "ascii",
+    "text": "pVald"
+  },
+  {
+    "va": "1002b61b",
+    "fileOffset": 158235,
+    "encoding": "ascii",
+    "text": "GAddBinaryFontResourceWWW"
+  },
+  {
+    "va": "1002b63f",
+    "fileOffset": 158271,
+    "encoding": "ascii",
+    "text": "kbstrFontPathd"
+  },
+  {
+    "va": "1002b658",
+    "fileOffset": 158296,
+    "encoding": "ascii",
+    "text": "RemoveBinaryFontResourceX"
+  },
+  {
+    "va": "1002b67c",
+    "fileOffset": 158332,
+    "encoding": "ascii",
+    "text": "BinaryFontUniscribeW$"
+  },
+  {
+    "va": "1002b692",
+    "fileOffset": 158354,
+    "encoding": "ascii",
+    "text": "BinaryFontComponent 1.0 Type LibraryWW"
+  },
+  {
+    "va": "1002b6ba",
+    "fileOffset": 158394,
+    "encoding": "ascii",
+    "text": "BinaryFont ClassWW"
+  },
+  {
+    "va": "1002b6ce",
+    "fileOffset": 158414,
+    "encoding": "ascii",
+    "text": "IBinaryFont InterfaceW"
+  },
+  {
+    "va": "1002b6e6",
+    "fileOffset": 158438,
+    "encoding": "ascii",
+    "text": "IBinaryFontUniscribe Interface"
+  },
+  {
+    "va": "1002b706",
+    "fileOffset": 158470,
+    "encoding": "ascii",
+    "text": "method SelectBitmapFontWWW"
+  },
+  {
+    "va": "1002b722",
+    "fileOffset": 158498,
+    "encoding": "ascii",
+    "text": "method DeselectBitmapFontW"
+  },
+  {
+    "va": "1002b73e",
+    "fileOffset": 158526,
+    "encoding": "ascii",
+    "text": "method SetObjectLinkWW"
+  },
+  {
+    "va": "1002b756",
+    "fileOffset": 158550,
+    "encoding": "ascii",
+    "text": "method GetTextSize"
+  },
+  {
+    "va": "1002b76a",
+    "fileOffset": 158570,
+    "encoding": "ascii",
+    "text": "method OutputTextW"
+  },
+  {
+    "va": "1002b77e",
+    "fileOffset": 158590,
+    "encoding": "ascii",
+    "text": "method CreateUniscribeRenderer"
+  },
+  {
+    "va": "1002b79e",
+    "fileOffset": 158622,
+    "encoding": "ascii",
+    "text": "method AddBinaryFontResourceWW"
+  },
+  {
+    "va": "1002b7be",
+    "fileOffset": 158654,
+    "encoding": "ascii",
+    "text": "method RemoveBinaryFontResourceWWW"
+  },
+  {
+    "va": "1002b7e2",
+    "fileOffset": 158690,
+    "encoding": "ascii",
+    "text": "BinaryFontUniscribe ClassW"
+  },
+  {
+    "va": "1002b852",
+    "fileOffset": 158802,
+    "encoding": "ascii",
+    "text": "Created by MIDL version 8.00.0603 at Mon Jul 09 11:04:27 2018"
+  },
+  {
+    "va": "1002b892",
+    "fileOffset": 158866,
+    "encoding": "ascii",
+    "text": ".3C[WW"
+  },
+  {
+    "va": "1002bc18",
+    "fileOffset": 159768,
+    "encoding": "ascii",
+    "text": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>"
+  },
+  {
+    "va": "1002bc51",
+    "fileOffset": 159825,
+    "encoding": "ascii",
+    "text": "<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>"
+  },
+  {
+    "va": "1002bc9c",
+    "fileOffset": 159900,
+    "encoding": "ascii",
+    "text": "  <trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\">"
+  },
+  {
+    "va": "1002bcd4",
+    "fileOffset": 159956,
+    "encoding": "ascii",
+    "text": "    <security>"
+  },
+  {
+    "va": "1002bce4",
+    "fileOffset": 159972,
+    "encoding": "ascii",
+    "text": "      <requestedPrivileges>"
+  },
+  {
+    "va": "1002bd01",
+    "fileOffset": 160001,
+    "encoding": "ascii",
+    "text": "        <requestedExecutionLevel level='asInvoker' uiAccess='false' />"
+  },
+  {
+    "va": "1002bd49",
+    "fileOffset": 160073,
+    "encoding": "ascii",
+    "text": "      </requestedPrivileges>"
+  },
+  {
+    "va": "1002bd67",
+    "fileOffset": 160103,
+    "encoding": "ascii",
+    "text": "    </security>"
+  },
+  {
+    "va": "1002bd78",
+    "fileOffset": 160120,
+    "encoding": "ascii",
+    "text": "  </trustInfo>"
+  },
+  {
+    "va": "1002bd88",
+    "fileOffset": 160136,
+    "encoding": "ascii",
+    "text": "</assembly>"
+  },
+  {
+    "va": "1002c00d",
+    "fileOffset": 160269,
+    "encoding": "ascii",
+    "text": "0%0/0;0E0R0^0d0h0n0{0"
+  },
+  {
+    "va": "1002c029",
+    "fileOffset": 160297,
+    "encoding": "ascii",
+    "text": "2V3o3v3|3V4^4n4u4"
+  },
+  {
+    "va": "1002c047",
+    "fileOffset": 160327,
+    "encoding": "ascii",
+    "text": "6c7~7"
+  },
+  {
+    "va": "1002c05b",
+    "fileOffset": 160347,
+    "encoding": "ascii",
+    "text": "8<9D9Y9c9"
+  },
+  {
+    "va": "1002c069",
+    "fileOffset": 160361,
+    "encoding": "ascii",
+    "text": ": :Q:d:"
+  },
+  {
+    "va": "1002c081",
+    "fileOffset": 160385,
+    "encoding": "ascii",
+    "text": "<q=@?"
+  },
+  {
+    "va": "1002c09f",
+    "fileOffset": 160415,
+    "encoding": "ascii",
+    "text": "4!4'4-4"
+  },
+  {
+    "va": "1002c0b1",
+    "fileOffset": 160433,
+    "encoding": "ascii",
+    "text": ":';?;G;P;W;a;j;u;"
+  },
+  {
+    "va": "1002c0e5",
+    "fileOffset": 160485,
+    "encoding": "ascii",
+    "text": "<$<-<8<C<K<T<[<e<n<y<"
+  },
+  {
+    "va": "1002c11d",
+    "fileOffset": 160541,
+    "encoding": "ascii",
+    "text": "=(=1=<=G=O=X=_=i=r=}="
+  },
+  {
+    "va": "1002c153",
+    "fileOffset": 160595,
+    "encoding": "ascii",
+    "text": ">\">,>5>@>K>S>\\>c>m>v>"
+  },
+  {
+    "va": "1002c18b",
+    "fileOffset": 160651,
+    "encoding": "ascii",
+    "text": "?&?0?9?D?O?W?`?g?q?z?"
+  },
+  {
+    "va": "1002c1c9",
+    "fileOffset": 160713,
+    "encoding": "ascii",
+    "text": "0#0*040=0H0S0[0d0k0u0~0"
+  },
+  {
+    "va": "1002c201",
+    "fileOffset": 160769,
+    "encoding": "ascii",
+    "text": "1'1.181A1L1W1_1h1o1y1"
+  },
+  {
+    "va": "1002c237",
+    "fileOffset": 160823,
+    "encoding": "ascii",
+    "text": "2\"2+222<2E2P2[2c2l2s2}2"
+  },
+  {
+    "va": "1002c26f",
+    "fileOffset": 160879,
+    "encoding": "ascii",
+    "text": "3&384O4s4b5"
+  },
+  {
+    "va": "1002c28b",
+    "fileOffset": 160907,
+    "encoding": "ascii",
+    "text": ";!<p<"
+  },
+  {
+    "va": "1002c297",
+    "fileOffset": 160919,
+    "encoding": "ascii",
+    "text": "<d=q="
+  },
+  {
+    "va": "1002c2ac",
+    "fileOffset": 160940,
+    "encoding": "ascii",
+    "text": "t2!3"
+  },
+  {
+    "va": "1002c2d3",
+    "fileOffset": 160979,
+    "encoding": "ascii",
+    "text": "1&2o2"
+  },
+  {
+    "va": "1002c2e1",
+    "fileOffset": 160993,
+    "encoding": "ascii",
+    "text": "324f4<5"
+  },
+  {
+    "va": "1002c305",
+    "fileOffset": 161029,
+    "encoding": "ascii",
+    "text": ";-;4;;;J;x;"
+  },
+  {
+    "va": "1002c31f",
+    "fileOffset": 161055,
+    "encoding": "ascii",
+    "text": "<5=X=t=~="
+  },
+  {
+    "va": "1002c36d",
+    "fileOffset": 161133,
+    "encoding": "ascii",
+    "text": "8)9z9"
+  },
+  {
+    "va": "1002c375",
+    "fileOffset": 161141,
+    "encoding": "ascii",
+    "text": "9<:O:"
+  },
+  {
+    "va": "1002c3a3",
+    "fileOffset": 161187,
+    "encoding": "ascii",
+    "text": ">i?o?x?"
+  },
+  {
+    "va": "1002c3e1",
+    "fileOffset": 161249,
+    "encoding": "ascii",
+    "text": "3#3:3"
+  },
+  {
+    "va": "1002c3eb",
+    "fileOffset": 161259,
+    "encoding": "ascii",
+    "text": "4+484>4i4"
+  },
+  {
+    "va": "1002c3fd",
+    "fileOffset": 161277,
+    "encoding": "ascii",
+    "text": "5+545I5l5"
+  },
+  {
+    "va": "1002c415",
+    "fileOffset": 161301,
+    "encoding": "ascii",
+    "text": "6L7k7"
+  },
+  {
+    "va": "1002c445",
+    "fileOffset": 161349,
+    "encoding": "ascii",
+    "text": "<4<M<S<\\<c<"
+  },
+  {
+    "va": "1002c459",
+    "fileOffset": 161369,
+    "encoding": "ascii",
+    "text": ">4>_>w>"
+  },
+  {
+    "va": "1002c465",
+    "fileOffset": 161381,
+    "encoding": "ascii",
+    "text": ">#?T?c?m?"
+  },
+  {
+    "va": "1002c479",
+    "fileOffset": 161401,
+    "encoding": "ascii",
+    "text": "0k0y0"
+  },
+  {
+    "va": "1002c481",
+    "fileOffset": 161409,
+    "encoding": "ascii",
+    "text": "0o1v1"
+  },
+  {
+    "va": "1002c4a7",
+    "fileOffset": 161447,
+    "encoding": "ascii",
+    "text": "8)9`9e9v9"
+  },
+  {
+    "va": "1002c4b3",
+    "fileOffset": 161459,
+    "encoding": "ascii",
+    "text": "99:K:"
+  },
+  {
+    "va": "1002c4c7",
+    "fileOffset": 161479,
+    "encoding": "ascii",
+    "text": "<h<|<"
+  },
+  {
+    "va": "1002c4cd",
+    "fileOffset": 161485,
+    "encoding": "ascii",
+    "text": "<8=T="
+  },
+  {
+    "va": "1002c4e7",
+    "fileOffset": 161511,
+    "encoding": "ascii",
+    "text": "> >&>*>0>:>C>^>"
+  },
+  {
+    "va": "1002c50f",
+    "fileOffset": 161551,
+    "encoding": "ascii",
+    "text": "0%090C0"
+  },
+  {
+    "va": "1002c519",
+    "fileOffset": 161561,
+    "encoding": "ascii",
+    "text": "0L1\\1"
+  },
+  {
+    "va": "1002c529",
+    "fileOffset": 161577,
+    "encoding": "ascii",
+    "text": "3k4s455B5"
+  },
+  {
+    "va": "1002c53b",
+    "fileOffset": 161595,
+    "encoding": "ascii",
+    "text": "7a:h:"
+  },
+  {
+    "va": "1002c548",
+    "fileOffset": 161608,
+    "encoding": "ascii",
+    "text": "I2N2U2Z2a2s2x2"
+  },
+  {
+    "va": "1002c587",
+    "fileOffset": 161671,
+    "encoding": "ascii",
+    "text": "7<8E8A9"
+  },
+  {
+    "va": "1002c5b4",
+    "fileOffset": 161716,
+    "encoding": "ascii",
+    "text": "40f0"
+  },
+  {
+    "va": "1002c5bd",
+    "fileOffset": 161725,
+    "encoding": "ascii",
+    "text": "061^1m1"
+  },
+  {
+    "va": "1002c5cb",
+    "fileOffset": 161739,
+    "encoding": "ascii",
+    "text": "3#3@3O3X3^3d3"
+  },
+  {
+    "va": "1002c5df",
+    "fileOffset": 161759,
+    "encoding": "ascii",
+    "text": "4$414G4"
+  },
+  {
+    "va": "1002c5f7",
+    "fileOffset": 161783,
+    "encoding": "ascii",
+    "text": "5?5E5t5z5"
+  },
+  {
+    "va": "1002c60d",
+    "fileOffset": 161805,
+    "encoding": "ascii",
+    "text": "6`6g6o6"
+  },
+  {
+    "va": "1002c61d",
+    "fileOffset": 161821,
+    "encoding": "ascii",
+    "text": "6(7E7"
+  },
+  {
+    "va": "1002c63b",
+    "fileOffset": 161851,
+    "encoding": "ascii",
+    "text": ":5:<:@:D:H:L:P:T:X:"
+  },
+  {
+    "va": "1002c659",
+    "fileOffset": 161881,
+    "encoding": "ascii",
+    "text": ";%;@;G;L;P;T;u;"
+  },
+  {
+    "va": "1002c67b",
+    "fileOffset": 161915,
+    "encoding": "ascii",
+    "text": ";><D<H<L<P<s>"
+  },
+  {
+    "va": "1002c694",
+    "fileOffset": 161940,
+    "encoding": "ascii",
+    "text": "U0s0"
+  },
+  {
+    "va": "1002c6ab",
+    "fileOffset": 161963,
+    "encoding": "ascii",
+    "text": "1 1$1(1,1014181"
+  },
+  {
+    "va": "1002c6c7",
+    "fileOffset": 161991,
+    "encoding": "ascii",
+    "text": "2 2'2,20242U2"
+  },
+  {
+    "va": "1002c6e9",
+    "fileOffset": 162025,
+    "encoding": "ascii",
+    "text": "3$3(3,303"
+  },
+  {
+    "va": "1002c70b",
+    "fileOffset": 162059,
+    "encoding": "ascii",
+    "text": ":':2;"
+  },
+  {
+    "va": "1002c765",
+    "fileOffset": 162149,
+    "encoding": "ascii",
+    "text": "3\"3&3*3.32363:3>3B3F3J3N3R3V3Z3^3b3f3j3"
+  },
+  {
+    "va": "1002c797",
+    "fileOffset": 162199,
+    "encoding": "ascii",
+    "text": "43595?5E5K5Q5X5_5f5m5t5{5"
+  },
+  {
+    "va": "1002c7cb",
+    "fileOffset": 162251,
+    "encoding": "ascii",
+    "text": "6:6@6F6L6R6X6_6f6m6t6{6"
+  },
+  {
+    "va": "1002c7ff",
+    "fileOffset": 162303,
+    "encoding": "ascii",
+    "text": "777V7m7|7J9"
+  },
+  {
+    "va": "1002c813",
+    "fileOffset": 162323,
+    "encoding": "ascii",
+    "text": "=+=5=?="
+  },
+  {
+    "va": "1002c821",
+    "fileOffset": 162337,
+    "encoding": "ascii",
+    "text": "=0>E>_>"
+  },
+  {
+    "va": "1002c84b",
+    "fileOffset": 162379,
+    "encoding": "ascii",
+    "text": "1)181@1I1R1t1}1"
+  },
+  {
+    "va": "1002c871",
+    "fileOffset": 162417,
+    "encoding": "ascii",
+    "text": "2&2+202A2F2W2\\2i2n2"
+  },
+  {
+    "va": "1002c899",
+    "fileOffset": 162457,
+    "encoding": "ascii",
+    "text": "3-3N3"
+  },
+  {
+    "va": "1002c8a5",
+    "fileOffset": 162469,
+    "encoding": "ascii",
+    "text": "4.444E4d4z4"
+  },
+  {
+    "va": "1002c8bf",
+    "fileOffset": 162495,
+    "encoding": "ascii",
+    "text": "4?5E5j5"
+  },
+  {
+    "va": "1002c8cf",
+    "fileOffset": 162511,
+    "encoding": "ascii",
+    "text": "616N6"
+  },
+  {
+    "va": "1002c8d5",
+    "fileOffset": 162517,
+    "encoding": "ascii",
+    "text": "6;7C7Z7x7"
+  },
+  {
+    "va": "1002c8df",
+    "fileOffset": 162527,
+    "encoding": "ascii",
+    "text": "7)878N8Y8"
+  },
+  {
+    "va": "1002c8f1",
+    "fileOffset": 162545,
+    "encoding": "ascii",
+    "text": "979L9V9o9y9"
+  },
+  {
+    "va": "1002c909",
+    "fileOffset": 162569,
+    "encoding": "ascii",
+    "text": ":?;s;"
+  },
+  {
+    "va": "1002c915",
+    "fileOffset": 162581,
+    "encoding": "ascii",
+    "text": "<R<]<o<"
+  },
+  {
+    "va": "1002c91d",
+    "fileOffset": 162589,
+    "encoding": "ascii",
+    "text": "> >6>L>T>"
+  },
+  {
+    "va": "1002c939",
+    "fileOffset": 162617,
+    "encoding": "ascii",
+    "text": "2M3_3q3"
+  },
+  {
+    "va": "1002c941",
+    "fileOffset": 162625,
+    "encoding": "ascii",
+    "text": "3)4V4"
+  },
+  {
+    "va": "1002c94d",
+    "fileOffset": 162637,
+    "encoding": "ascii",
+    "text": "4-535\\5w5"
+  },
+  {
+    "va": "1002c95f",
+    "fileOffset": 162655,
+    "encoding": "ascii",
+    "text": "6b6l6"
+  },
+  {
+    "va": "1002c96b",
+    "fileOffset": 162667,
+    "encoding": "ascii",
+    "text": "6/7:7@7g7"
+  },
+  {
+    "va": "1002c97b",
+    "fileOffset": 162683,
+    "encoding": "ascii",
+    "text": "7W8d8u8"
+  },
+  {
+    "va": "1002c9a1",
+    "fileOffset": 162721,
+    "encoding": "ascii",
+    "text": "6@6E6"
+  },
+  {
+    "va": "1002c9d9",
+    "fileOffset": 162777,
+    "encoding": "ascii",
+    "text": "3)3/3A3K3Q3l3|3"
+  },
+  {
+    "va": "1002ca0d",
+    "fileOffset": 162829,
+    "encoding": "ascii",
+    "text": "4 4%4+43484>4F4K4Q4Y4^4d4l4q4w4"
+  },
+  {
+    "va": "1002ca5f",
+    "fileOffset": 162911,
+    "encoding": "ascii",
+    "text": "5\"5*5/555=5B5H5P5U5[5c5h5n5v5{5"
+  },
+  {
+    "va": "1002caaf",
+    "fileOffset": 162991,
+    "encoding": "ascii",
+    "text": "6!6&6,646:6H6V6]6j6s6{6"
+  },
+  {
+    "va": "1002cad1",
+    "fileOffset": 163025,
+    "encoding": "ascii",
+    "text": "6<7T7^7z7"
+  },
+  {
+    "va": "1002caef",
+    "fileOffset": 163055,
+    "encoding": "ascii",
+    "text": "8.8A8"
+  },
+  {
+    "va": "1002cafb",
+    "fileOffset": 163067,
+    "encoding": "ascii",
+    "text": "829J9"
+  },
+  {
+    "va": "1002cb05",
+    "fileOffset": 163077,
+    "encoding": "ascii",
+    "text": ";%;];i;"
+  },
+  {
+    "va": "1002cb13",
+    "fileOffset": 163091,
+    "encoding": "ascii",
+    "text": "<]<c<j<"
+  },
+  {
+    "va": "1002cb33",
+    "fileOffset": 163123,
+    "encoding": "ascii",
+    "text": ">v>{>"
+  },
+  {
+    "va": "1002cb43",
+    "fileOffset": 163139,
+    "encoding": "ascii",
+    "text": "0Q0]0"
+  },
+  {
+    "va": "1002cb55",
+    "fileOffset": 163157,
+    "encoding": "ascii",
+    "text": "1 1/181E1t1|1"
+  },
+  {
+    "va": "1002cb6f",
+    "fileOffset": 163183,
+    "encoding": "ascii",
+    "text": "262;2"
+  },
+  {
+    "va": "1002cb81",
+    "fileOffset": 163201,
+    "encoding": "ascii",
+    "text": "2'3,3k3p3y3~3"
+  },
+  {
+    "va": "1002cb9f",
+    "fileOffset": 163231,
+    "encoding": "ascii",
+    "text": "5)5R5`5f5"
+  },
+  {
+    "va": "1002cba9",
+    "fileOffset": 163241,
+    "encoding": "ascii",
+    "text": "5 6=6C6M6c6v6"
+  },
+  {
+    "va": "1002cbc3",
+    "fileOffset": 163267,
+    "encoding": "ascii",
+    "text": "7J7O7t7"
+  },
+  {
+    "va": "1002cbd3",
+    "fileOffset": 163283,
+    "encoding": "ascii",
+    "text": "8+8?8E8"
+  },
+  {
+    "va": "1002cbdf",
+    "fileOffset": 163295,
+    "encoding": "ascii",
+    "text": "9+92999@9X9g9q9~9"
+  },
+  {
+    "va": "1002cc03",
+    "fileOffset": 163331,
+    "encoding": "ascii",
+    "text": "<#<N<"
+  },
+  {
+    "va": "1002cc0d",
+    "fileOffset": 163341,
+    "encoding": "ascii",
+    "text": "= =+=B=\\=w="
+  },
+  {
+    "va": "1002cc23",
+    "fileOffset": 163363,
+    "encoding": "ascii",
+    "text": "=1>g>z>"
+  },
+  {
+    "va": "1002cc2b",
+    "fileOffset": 163371,
+    "encoding": "ascii",
+    "text": "?>?e?"
+  },
+  {
+    "va": "1002cc3f",
+    "fileOffset": 163391,
+    "encoding": "ascii",
+    "text": "0+0u0"
+  },
+  {
+    "va": "1002cc4d",
+    "fileOffset": 163405,
+    "encoding": "ascii",
+    "text": "2l3+4,5<5M5U5e5v5"
+  },
+  {
+    "va": "1002cc69",
+    "fileOffset": 163433,
+    "encoding": "ascii",
+    "text": "8$8]8"
+  },
+  {
+    "va": "1002cc71",
+    "fileOffset": 163441,
+    "encoding": "ascii",
+    "text": "8Q9]9"
+  },
+  {
+    "va": "1002cc90",
+    "fileOffset": 163472,
+    "encoding": "ascii",
+    "text": " 0+23282\\2k2"
+  },
+  {
+    "va": "1002ccbb",
+    "fileOffset": 163515,
+    "encoding": "ascii",
+    "text": "3!3)32393A3J3\\3t3z3"
+  },
+  {
+    "va": "1002ccdb",
+    "fileOffset": 163547,
+    "encoding": "ascii",
+    "text": "4<4V4c4r4|4"
+  },
+  {
+    "va": "1002ccf7",
+    "fileOffset": 163575,
+    "encoding": "ascii",
+    "text": "5>5K5T5x5"
+  },
+  {
+    "va": "1002cd05",
+    "fileOffset": 163589,
+    "encoding": "ascii",
+    "text": "6&6]6w6"
+  },
+  {
+    "va": "1002cd13",
+    "fileOffset": 163603,
+    "encoding": "ascii",
+    "text": "8R8[8y8"
+  },
+  {
+    "va": "1002cd21",
+    "fileOffset": 163617,
+    "encoding": "ascii",
+    "text": "9F:O:,;7;J;^; <)<5=>=*>t>}>"
+  },
+  {
+    "va": "1002cd57",
+    "fileOffset": 163671,
+    "encoding": "ascii",
+    "text": "2@3/4"
+  },
+  {
+    "va": "1002cd5f",
+    "fileOffset": 163679,
+    "encoding": "ascii",
+    "text": "4b5t5"
+  },
+  {
+    "va": "1002cd83",
+    "fileOffset": 163715,
+    "encoding": "ascii",
+    "text": "9-9?9Q9c9"
+  },
+  {
+    "va": "1002cd9b",
+    "fileOffset": 163739,
+    "encoding": "ascii",
+    "text": ">2>>>d>"
+  },
+  {
+    "va": "1002cdb3",
+    "fileOffset": 163763,
+    "encoding": "ascii",
+    "text": "1?2K2"
+  },
+  {
+    "va": "1002cdc5",
+    "fileOffset": 163781,
+    "encoding": "ascii",
+    "text": "3M4o5w5"
+  },
+  {
+    "va": "1002cdd1",
+    "fileOffset": 163793,
+    "encoding": "ascii",
+    "text": "7K8S8_8n8"
+  },
+  {
+    "va": "1002cde1",
+    "fileOffset": 163809,
+    "encoding": "ascii",
+    "text": "93=E="
+  },
+  {
+    "va": "1002ce19",
+    "fileOffset": 163865,
+    "encoding": "ascii",
+    "text": "?#?*?Q?^?c?q?"
+  },
+  {
+    "va": "1002ce37",
+    "fileOffset": 163895,
+    "encoding": "ascii",
+    "text": "080N0a0"
+  },
+  {
+    "va": "1002ce45",
+    "fileOffset": 163909,
+    "encoding": "ascii",
+    "text": "0.171B1Q1p1"
+  },
+  {
+    "va": "1002ce5d",
+    "fileOffset": 163933,
+    "encoding": "ascii",
+    "text": "4-5>5R5X5]5"
+  },
+  {
+    "va": "1002ce77",
+    "fileOffset": 163959,
+    "encoding": "ascii",
+    "text": "6R7X7|7"
+  },
+  {
+    "va": "1002ce87",
+    "fileOffset": 163975,
+    "encoding": "ascii",
+    "text": "8+8F8a8|8"
+  },
+  {
+    "va": "1002ce9f",
+    "fileOffset": 163999,
+    "encoding": "ascii",
+    "text": ":&:A:\\:w:"
+  },
+  {
+    "va": "1002cead",
+    "fileOffset": 164013,
+    "encoding": "ascii",
+    "text": ":$;G;"
+  },
+  {
+    "va": "1002cf07",
+    "fileOffset": 164103,
+    "encoding": "ascii",
+    "text": "1D3H3L3P3T3X3\\3`3d3h3l3p3t3x3|3"
+  },
+  {
+    "va": "1002cf57",
+    "fileOffset": 164183,
+    "encoding": "ascii",
+    "text": "484D4l4p4t4x4|4"
+  },
+  {
+    "va": "1002cf79",
+    "fileOffset": 164217,
+    "encoding": "ascii",
+    "text": "4P7T7P8T8X8\\8`8d8h8l8p8t8x8"
+  },
+  {
+    "va": "1002cfcf",
+    "fileOffset": 164303,
+    "encoding": "ascii",
+    "text": "<(<P<T<X<\\<`<d<h<l<p<t<x<|<"
+  },
+  {
+    "va": "1002d031",
+    "fileOffset": 164401,
+    "encoding": "ascii",
+    "text": ">$>,>4><>D>L>T>\\>d>l>t>|>"
+  },
+  {
+    "va": "1002d071",
+    "fileOffset": 164465,
+    "encoding": "ascii",
+    "text": "?$?,?4?<?D?L?T?\\?d?l?t?|?"
+  },
+  {
+    "va": "1002d0bb",
+    "fileOffset": 164539,
+    "encoding": "ascii",
+    "text": "0$0,040D0L0T0\\0d0l0t0|0"
+  },
+  {
+    "va": "1002d0f9",
+    "fileOffset": 164601,
+    "encoding": "ascii",
+    "text": "1$1,141<1D1L1T1\\1d1l1t1|1"
+  },
+  {
+    "va": "1002d139",
+    "fileOffset": 164665,
+    "encoding": "ascii",
+    "text": "2$2,242<2D2L2T2\\2d2l2t2|2"
+  },
+  {
+    "va": "1002d15d",
+    "fileOffset": 164701,
+    "encoding": "ascii",
+    "text": "2`;d;h;l;p;x;|;"
+  },
+  {
+    "va": "1002d1a3",
+    "fileOffset": 164771,
+    "encoding": "ascii",
+    "text": "0$0,040<0D0"
+  },
+  {
+    "va": "1002d1cf",
+    "fileOffset": 164815,
+    "encoding": "ascii",
+    "text": ";$;,;4;<;D;L;T;\\;d;l;t;|;"
+  },
+  {
+    "va": "1002d20f",
+    "fileOffset": 164879,
+    "encoding": "ascii",
+    "text": "<$<,<4<<<D<L<T<\\<d<l<t<|<"
+  },
+  {
+    "va": "1002d24f",
+    "fileOffset": 164943,
+    "encoding": "ascii",
+    "text": "=$=,=4=<=D=L=T=\\=d=l=t=|="
+  },
+  {
+    "va": "1002d28f",
+    "fileOffset": 165007,
+    "encoding": "ascii",
+    "text": ">$>,>4><>D>L>T>\\>d>l>t>|>"
+  },
+  {
+    "va": "1002d2cf",
+    "fileOffset": 165071,
+    "encoding": "ascii",
+    "text": "?$?,?4?<?D?L?T?\\?d?l?t?|?"
+  },
+  {
+    "va": "1002d317",
+    "fileOffset": 165143,
+    "encoding": "ascii",
+    "text": "0$0,040<0D0L0T0\\0d0l0t0|0"
+  },
+  {
+    "va": "1002d357",
+    "fileOffset": 165207,
+    "encoding": "ascii",
+    "text": "1$1,141<1D1L1T1\\1d1l1t1|1"
+  },
+  {
+    "va": "1002d397",
+    "fileOffset": 165271,
+    "encoding": "ascii",
+    "text": "2 2(20282@2H2P2X2`2h2p2x2"
+  },
+  {
+    "va": "1002d3d7",
+    "fileOffset": 165335,
+    "encoding": "ascii",
+    "text": "3 3(30383@3H3P3X3`3h3p3x3"
+  },
+  {
+    "va": "1002d417",
+    "fileOffset": 165399,
+    "encoding": "ascii",
+    "text": "4 4(40484@4H4P4X4`4h4p4x4"
+  },
+  {
+    "va": "1002d457",
+    "fileOffset": 165463,
+    "encoding": "ascii",
+    "text": "5 5(50585@5H5P5X5`5h5p5x5"
+  },
+  {
+    "va": "1002d497",
+    "fileOffset": 165527,
+    "encoding": "ascii",
+    "text": "6 6(60686@6H6P6X6`6h6p6x6"
+  },
+  {
+    "va": "1002d4d7",
+    "fileOffset": 165591,
+    "encoding": "ascii",
+    "text": "7 7(70787@7H7P7X7`7h7p7x7"
+  },
+  {
+    "va": "1002d517",
+    "fileOffset": 165655,
+    "encoding": "ascii",
+    "text": "8 8(80888@8H8P8X8`8h8p8x8"
+  },
+  {
+    "va": "1002d550",
+    "fileOffset": 165712,
+    "encoding": "ascii",
+    "text": "H;L;P;T;(?,?0?4?8?<?@?D?H?L?P?T?X?\\?`?d?h?l?p?t?x?|?"
+  },
+  {
+    "va": "1002d5db",
+    "fileOffset": 165851,
+    "encoding": "ascii",
+    "text": "0 0$0(0,0004080<0@0D0H0L0P0T0X0\\0`0d0h0l0p0t0x0|0"
+  },
+  {
+    "va": "1002d641",
+    "fileOffset": 165953,
+    "encoding": "ascii",
+    "text": "1 181<1T1d1h1|1"
+  },
+  {
+    "va": "1002d66d",
+    "fileOffset": 165997,
+    "encoding": "ascii",
+    "text": "2 282H2L2\\2`2d2h2p2"
+  },
+  {
+    "va": "1002d6a7",
+    "fileOffset": 166055,
+    "encoding": "ascii",
+    "text": "3 3(3@3D3\\3l3p3t3x3|3"
+  },
+  {
+    "va": "1002d6d9",
+    "fileOffset": 166105,
+    "encoding": "ascii",
+    "text": "44484P4`4d4h4p4"
+  },
+  {
+    "va": "1002d703",
+    "fileOffset": 166147,
+    "encoding": "ascii",
+    "text": "5 585H5L5P5X5p5t5"
+  },
+  {
+    "va": "1002d731",
+    "fileOffset": 166193,
+    "encoding": "ascii",
+    "text": "606@6D6H6L6`6d6t6x6|6"
+  },
+  {
+    "va": "1002d763",
+    "fileOffset": 166243,
+    "encoding": "ascii",
+    "text": "7$7(7,747L7P7h7x7|7"
+  },
+  {
+    "va": "1002d79b",
+    "fileOffset": 166299,
+    "encoding": "ascii",
+    "text": "8 8$8(8,80848<8T8X8p8t8"
+  },
+  {
+    "va": "1002d7cb",
+    "fileOffset": 166347,
+    "encoding": "ascii",
+    "text": "909@9D9L9d9h9"
+  },
+  {
+    "va": "1002d7ff",
+    "fileOffset": 166399,
+    "encoding": "ascii",
+    "text": ":(:8:<:L:P:`:d:t:x:|:"
+  },
+  {
+    "va": "1002d82d",
+    "fileOffset": 166445,
+    "encoding": "ascii",
+    "text": "; ;$;,;D;T;X;h;l;p;t;|;"
+  },
+  {
+    "va": "1002d85f",
+    "fileOffset": 166495,
+    "encoding": "ascii",
+    "text": "<,<<<@<P<T<d<h<l<t<"
+  },
+  {
+    "va": "1002d873",
+    "fileOffset": 166515,
+    "encoding": "ascii",
+    "text": "<L=\\="
+  },
+  {
+    "va": "1002d887",
+    "fileOffset": 166535,
+    "encoding": "ascii",
+    "text": ">(>4>\\>p>"
+  },
+  {
+    "va": "1002d89f",
+    "fileOffset": 166559,
+    "encoding": "ascii",
+    "text": "?(?8?L?T?t?|?"
+  },
+  {
+    "va": "1002d8c1",
+    "fileOffset": 166593,
+    "encoding": "ascii",
+    "text": "0$00080X0|0"
+  },
+  {
+    "va": "1002d8d9",
+    "fileOffset": 166617,
+    "encoding": "ascii",
+    "text": "1,181@1`1"
+  },
+  {
+    "va": "1002d8fd",
+    "fileOffset": 166653,
+    "encoding": "ascii",
+    "text": "2$2,242@2h2"
+  },
+  {
+    "va": "1002d917",
+    "fileOffset": 166679,
+    "encoding": "ascii",
+    "text": "3<3H3P3p3"
+  },
+  {
+    "va": "1002d92d",
+    "fileOffset": 166701,
+    "encoding": "ascii",
+    "text": "4 4D4P4X4p4x4"
+  },
+  {
+    "va": "1002d947",
+    "fileOffset": 166727,
+    "encoding": "ascii",
+    "text": "4 545<5T5l5t5"
+  },
+  {
+    "va": "1002d965",
+    "fileOffset": 166757,
+    "encoding": "ascii",
+    "text": "646<6D6P6p6|6"
+  },
+  {
+    "va": "1002d97f",
+    "fileOffset": 166783,
+    "encoding": "ascii",
+    "text": "7(7<7D7\\7h7"
+  },
+  {
+    "va": "1002d9a9",
+    "fileOffset": 166825,
+    "encoding": "ascii",
+    "text": "8,848<8D8H8L8T8h8"
+  },
+  {
+    "va": "1002d9c7",
+    "fileOffset": 166855,
+    "encoding": "ascii",
+    "text": "9 9@9\\9`9"
+  },
+  {
+    "va": "1002d9e5",
+    "fileOffset": 166885,
+    "encoding": "ascii",
+    "text": ":8:@:D:\\:`:|:"
+  },
+  {
+    "va": "1002da09",
+    "fileOffset": 166921,
+    "encoding": "ascii",
+    "text": ";0;P;p;"
+  },
+  {
+    "va": "1002da1b",
+    "fileOffset": 166939,
+    "encoding": "ascii",
+    "text": "<0<P<p<|<"
+  },
+  {
+    "va": "1002da45",
+    "fileOffset": 166981,
+    "encoding": "ascii",
+    "text": "0 0(0,00040@0D0H0L0P0T0X0d0h0l0t2|2"
+  },
+  {
+    "va": "1002da8f",
+    "fileOffset": 167055,
+    "encoding": "ascii",
+    "text": "3$3,343<3D3L3T3"
+  },
+  {
+    "va": "1002dab1",
+    "fileOffset": 167089,
+    "encoding": "ascii",
+    "text": "3<9@:D:H:L:P:T:X:\\:`:d:h:l:p:t:x:|:"
+  },
+  {
+    "va": "1002db1f",
+    "fileOffset": 167199,
+    "encoding": "ascii",
+    "text": "; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\\;`;d;h;l;p;t;x;|;"
+  },
+  {
+    "va": "1002db6d",
+    "fileOffset": 167277,
+    "encoding": "ascii",
+    "text": "<,<8<<<@<D<x<"
+  },
+  {
+    "va": "1002db89",
+    "fileOffset": 167305,
+    "encoding": "ascii",
+    "text": "? ?$?(?,?0?4?@?D?H?L?P?T?X?\\?d?h?l?"
+  },
+  {
+    "va": "1002dbbd",
+    "fileOffset": 167357,
+    "encoding": "ascii",
+    "text": "3,3P3|3"
+  },
+  {
+    "va": "1002dbd3",
+    "fileOffset": 167379,
+    "encoding": "ascii",
+    "text": "5 5@5`5"
+  },
+  {
+    "va": "1002dbe1",
+    "fileOffset": 167393,
+    "encoding": "ascii",
+    "text": "546P6p6"
+  },
+  {
+    "va": "1002dbed",
+    "fileOffset": 167405,
+    "encoding": "ascii",
+    "text": "747P7l7"
+  },
+  {
+    "va": "1000e7e2",
+    "fileOffset": 56290,
+    "encoding": "utf-16-le",
+    "text": "jjjjj"
+  },
+  {
+    "va": "1001c200",
+    "fileOffset": 111616,
+    "encoding": "utf-16-le",
+    "text": "Component Categories"
+  },
+  {
+    "va": "1001c22c",
+    "fileOffset": 111660,
+    "encoding": "utf-16-le",
+    "text": "FileType"
+  },
+  {
+    "va": "1001c240",
+    "fileOffset": 111680,
+    "encoding": "utf-16-le",
+    "text": "Interface"
+  },
+  {
+    "va": "1001c254",
+    "fileOffset": 111700,
+    "encoding": "utf-16-le",
+    "text": "Hardware"
+  },
+  {
+    "va": "1001c268",
+    "fileOffset": 111720,
+    "encoding": "utf-16-le",
+    "text": "Mime"
+  },
+  {
+    "va": "1001c27c",
+    "fileOffset": 111740,
+    "encoding": "utf-16-le",
+    "text": "SECURITY"
+  },
+  {
+    "va": "1001c290",
+    "fileOffset": 111760,
+    "encoding": "utf-16-le",
+    "text": "SYSTEM"
+  },
+  {
+    "va": "1001c2a0",
+    "fileOffset": 111776,
+    "encoding": "utf-16-le",
+    "text": "Software"
+  },
+  {
+    "va": "1001c2b4",
+    "fileOffset": 111796,
+    "encoding": "utf-16-le",
+    "text": "TypeLib"
+  },
+  {
+    "va": "1001c2c4",
+    "fileOffset": 111812,
+    "encoding": "utf-16-le",
+    "text": "usp10.dll"
+  },
+  {
+    "va": "1001c2d8",
+    "fileOffset": 111832,
+    "encoding": "utf-16-le",
+    "text": "CLSID"
+  },
+  {
+    "va": "1001c2e4",
+    "fileOffset": 111844,
+    "encoding": "utf-16-le",
+    "text": "AppID"
+  },
+  {
+    "va": "1001c308",
+    "fileOffset": 111880,
+    "encoding": "utf-16-le",
+    "text": "ForceRemove"
+  },
+  {
+    "va": "1001c320",
+    "fileOffset": 111904,
+    "encoding": "utf-16-le",
+    "text": "NoRemove"
+  },
+  {
+    "va": "1001c334",
+    "fileOffset": 111924,
+    "encoding": "utf-16-le",
+    "text": "Delete"
+  },
+  {
+    "va": "1001c7dc",
+    "fileOffset": 113116,
+    "encoding": "utf-16-le",
+    "text": "Advapi32.dll"
+  },
+  {
+    "va": "1001c918",
+    "fileOffset": 113432,
+    "encoding": "utf-16-le",
+    "text": "HKCR"
+  },
+  {
+    "va": "1001c924",
+    "fileOffset": 113444,
+    "encoding": "utf-16-le",
+    "text": "HKCU"
+  },
+  {
+    "va": "1001c930",
+    "fileOffset": 113456,
+    "encoding": "utf-16-le",
+    "text": "HKLM"
+  },
+  {
+    "va": "1001c944",
+    "fileOffset": 113476,
+    "encoding": "utf-16-le",
+    "text": "HKPD"
+  },
+  {
+    "va": "1001c950",
+    "fileOffset": 113488,
+    "encoding": "utf-16-le",
+    "text": "HKDD"
+  },
+  {
+    "va": "1001c95c",
+    "fileOffset": 113500,
+    "encoding": "utf-16-le",
+    "text": "HKCC"
+  },
+  {
+    "va": "1001c968",
+    "fileOffset": 113512,
+    "encoding": "utf-16-le",
+    "text": "HKEY_CLASSES_ROOT"
+  },
+  {
+    "va": "1001c98c",
+    "fileOffset": 113548,
+    "encoding": "utf-16-le",
+    "text": "HKEY_CURRENT_USER"
+  },
+  {
+    "va": "1001c9b0",
+    "fileOffset": 113584,
+    "encoding": "utf-16-le",
+    "text": "HKEY_LOCAL_MACHINE"
+  },
+  {
+    "va": "1001c9d8",
+    "fileOffset": 113624,
+    "encoding": "utf-16-le",
+    "text": "HKEY_USERS"
+  },
+  {
+    "va": "1001c9f0",
+    "fileOffset": 113648,
+    "encoding": "utf-16-le",
+    "text": "HKEY_PERFORMANCE_DATA"
+  },
+  {
+    "va": "1001ca1c",
+    "fileOffset": 113692,
+    "encoding": "utf-16-le",
+    "text": "HKEY_DYN_DATA"
+  },
+  {
+    "va": "1001ca38",
+    "fileOffset": 113720,
+    "encoding": "utf-16-le",
+    "text": "HKEY_CURRENT_CONFIG"
+  },
+  {
+    "va": "1001ca60",
+    "fileOffset": 113760,
+    "encoding": "utf-16-le",
+    "text": "HKCU"
+  },
+  {
+    "va": "1001ca70",
+    "fileOffset": 113776,
+    "encoding": "utf-16-le",
+    "text": "Software"
+  },
+  {
+    "va": "1001ca90",
+    "fileOffset": 113808,
+    "encoding": "utf-16-le",
+    "text": "Classes"
+  },
+  {
+    "va": "1001cab4",
+    "fileOffset": 113844,
+    "encoding": "utf-16-le",
+    "text": "Module"
+  },
+  {
+    "va": "1001cac4",
+    "fileOffset": 113860,
+    "encoding": "utf-16-le",
+    "text": "Module_Raw"
+  },
+  {
+    "va": "1001cadc",
+    "fileOffset": 113884,
+    "encoding": "utf-16-le",
+    "text": "REGISTRY"
+  },
+  {
+    "va": "1001caf4",
+    "fileOffset": 113908,
+    "encoding": "utf-16-le",
+    "text": ".tlb"
+  },
+  {
+    "va": "1001cb10",
+    "fileOffset": 113936,
+    "encoding": "utf-16-le",
+    "text": "CLSID\\"
+  },
+  {
+    "va": "1001cb20",
+    "fileOffset": 113952,
+    "encoding": "utf-16-le",
+    "text": "\\Required Categories"
+  },
+  {
+    "va": "1001cb4c",
+    "fileOffset": 113996,
+    "encoding": "utf-16-le",
+    "text": "\\Implemented Categories"
+  },
+  {
+    "va": "1001cb7c",
+    "fileOffset": 114044,
+    "encoding": "utf-16-le",
+    "text": "OLEAUT32.DLL"
+  },
+  {
+    "va": "1001cc10",
+    "fileOffset": 114192,
+    "encoding": "utf-16-le",
+    "text": "APPID"
+  },
+  {
+    "va": "1001cd20",
+    "fileOffset": 114464,
+    "encoding": "utf-16-le",
+    "text": "ERROR : Unable to initialize critical section in CAtlBaseModule"
+  },
+  {
+    "va": "1001db98",
+    "fileOffset": 118168,
+    "encoding": "utf-16-le",
+    "text": "mscoree.dll"
+  },
+  {
+    "va": "1001dcb0",
+    "fileOffset": 118448,
+    "encoding": "utf-16-le",
+    "text": "kernel32.dll"
+  },
+  {
+    "va": "1001e048",
+    "fileOffset": 119368,
+    "encoding": "utf-16-le",
+    "text": "R6002"
+  },
+  {
+    "va": "1001e056",
+    "fileOffset": 119382,
+    "encoding": "utf-16-le",
+    "text": "- floating point support not loaded"
+  },
+  {
+    "va": "1001e0a8",
+    "fileOffset": 119464,
+    "encoding": "utf-16-le",
+    "text": "R6008"
+  },
+  {
+    "va": "1001e0b6",
+    "fileOffset": 119478,
+    "encoding": "utf-16-le",
+    "text": "- not enough space for arguments"
+  },
+  {
+    "va": "1001e100",
+    "fileOffset": 119552,
+    "encoding": "utf-16-le",
+    "text": "R6009"
+  },
+  {
+    "va": "1001e10e",
+    "fileOffset": 119566,
+    "encoding": "utf-16-le",
+    "text": "- not enough space for environment"
+  },
+  {
+    "va": "1001e158",
+    "fileOffset": 119640,
+    "encoding": "utf-16-le",
+    "text": "R6010"
+  },
+  {
+    "va": "1001e166",
+    "fileOffset": 119654,
+    "encoding": "utf-16-le",
+    "text": "- abort() has been called"
+  },
+  {
+    "va": "1001e1a0",
+    "fileOffset": 119712,
+    "encoding": "utf-16-le",
+    "text": "R6016"
+  },
+  {
+    "va": "1001e1ae",
+    "fileOffset": 119726,
+    "encoding": "utf-16-le",
+    "text": "- not enough space for thread data"
+  },
+  {
+    "va": "1001e1f8",
+    "fileOffset": 119800,
+    "encoding": "utf-16-le",
+    "text": "R6017"
+  },
+  {
+    "va": "1001e206",
+    "fileOffset": 119814,
+    "encoding": "utf-16-le",
+    "text": "- unexpected multithread lock error"
+  },
+  {
+    "va": "1001e258",
+    "fileOffset": 119896,
+    "encoding": "utf-16-le",
+    "text": "R6018"
+  },
+  {
+    "va": "1001e266",
+    "fileOffset": 119910,
+    "encoding": "utf-16-le",
+    "text": "- unexpected heap error"
+  },
+  {
+    "va": "1001e2a0",
+    "fileOffset": 119968,
+    "encoding": "utf-16-le",
+    "text": "R6019"
+  },
+  {
+    "va": "1001e2ae",
+    "fileOffset": 119982,
+    "encoding": "utf-16-le",
+    "text": "- unable to open console device"
+  },
+  {
+    "va": "1001e2f8",
+    "fileOffset": 120056,
+    "encoding": "utf-16-le",
+    "text": "R6024"
+  },
+  {
+    "va": "1001e306",
+    "fileOffset": 120070,
+    "encoding": "utf-16-le",
+    "text": "- not enough space for _onexit/atexit table"
+  },
+  {
+    "va": "1001e368",
+    "fileOffset": 120168,
+    "encoding": "utf-16-le",
+    "text": "R6025"
+  },
+  {
+    "va": "1001e376",
+    "fileOffset": 120182,
+    "encoding": "utf-16-le",
+    "text": "- pure virtual function call"
+  },
+  {
+    "va": "1001e3b8",
+    "fileOffset": 120248,
+    "encoding": "utf-16-le",
+    "text": "R6026"
+  },
+  {
+    "va": "1001e3c6",
+    "fileOffset": 120262,
+    "encoding": "utf-16-le",
+    "text": "- not enough space for stdio initialization"
+  },
+  {
+    "va": "1001e428",
+    "fileOffset": 120360,
+    "encoding": "utf-16-le",
+    "text": "R6027"
+  },
+  {
+    "va": "1001e436",
+    "fileOffset": 120374,
+    "encoding": "utf-16-le",
+    "text": "- not enough space for lowio initialization"
+  },
+  {
+    "va": "1001e498",
+    "fileOffset": 120472,
+    "encoding": "utf-16-le",
+    "text": "R6028"
+  },
+  {
+    "va": "1001e4a6",
+    "fileOffset": 120486,
+    "encoding": "utf-16-le",
+    "text": "- unable to initialize heap"
+  },
+  {
+    "va": "1001e4e4",
+    "fileOffset": 120548,
+    "encoding": "utf-16-le",
+    "text": "R6030"
+  },
+  {
+    "va": "1001e4f2",
+    "fileOffset": 120562,
+    "encoding": "utf-16-le",
+    "text": "- CRT not initialized"
+  },
+  {
+    "va": "1001e528",
+    "fileOffset": 120616,
+    "encoding": "utf-16-le",
+    "text": "R6031"
+  },
+  {
+    "va": "1001e536",
+    "fileOffset": 120630,
+    "encoding": "utf-16-le",
+    "text": "- Attempt to initialize the CRT more than once."
+  },
+  {
+    "va": "1001e596",
+    "fileOffset": 120726,
+    "encoding": "utf-16-le",
+    "text": "This indicates a bug in your application."
+  },
+  {
+    "va": "1001e5f0",
+    "fileOffset": 120816,
+    "encoding": "utf-16-le",
+    "text": "R6032"
+  },
+  {
+    "va": "1001e5fe",
+    "fileOffset": 120830,
+    "encoding": "utf-16-le",
+    "text": "- not enough space for locale information"
+  },
+  {
+    "va": "1001e658",
+    "fileOffset": 120920,
+    "encoding": "utf-16-le",
+    "text": "R6033"
+  },
+  {
+    "va": "1001e666",
+    "fileOffset": 120934,
+    "encoding": "utf-16-le",
+    "text": "- Attempt to use MSIL code from this assembly during native code initialization"
+  },
+  {
+    "va": "1001e706",
+    "fileOffset": 121094,
+    "encoding": "utf-16-le",
+    "text": "This indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain."
+  },
+  {
+    "va": "1001e848",
+    "fileOffset": 121416,
+    "encoding": "utf-16-le",
+    "text": "R6034"
+  },
+  {
+    "va": "1001e856",
+    "fileOffset": 121430,
+    "encoding": "utf-16-le",
+    "text": "- inconsistent onexit begin-end variables"
+  },
+  {
+    "va": "1001e8b0",
+    "fileOffset": 121520,
+    "encoding": "utf-16-le",
+    "text": "DOMAIN error"
+  },
+  {
+    "va": "1001e8d0",
+    "fileOffset": 121552,
+    "encoding": "utf-16-le",
+    "text": "SING error"
+  },
+  {
+    "va": "1001e8ec",
+    "fileOffset": 121580,
+    "encoding": "utf-16-le",
+    "text": "TLOSS error"
+  },
+  {
+    "va": "1001e910",
+    "fileOffset": 121616,
+    "encoding": "utf-16-le",
+    "text": "runtime error "
+  },
+  {
+    "va": "1001e930",
+    "fileOffset": 121648,
+    "encoding": "utf-16-le",
+    "text": "Runtime Error!"
+  },
+  {
+    "va": "1001e950",
+    "fileOffset": 121680,
+    "encoding": "utf-16-le",
+    "text": "Program: "
+  },
+  {
+    "va": "1001e964",
+    "fileOffset": 121700,
+    "encoding": "utf-16-le",
+    "text": "<program name unknown>"
+  },
+  {
+    "va": "1001e9a8",
+    "fileOffset": 121768,
+    "encoding": "utf-16-le",
+    "text": "Microsoft Visual C++ Runtime Library"
+  },
+  {
+    "va": "1001f8f0",
+    "fileOffset": 125680,
+    "encoding": "utf-16-le",
+    "text": "zh-CHS"
+  },
+  {
+    "va": "1001faf0",
+    "fileOffset": 126192,
+    "encoding": "utf-16-le",
+    "text": "ar-SA"
+  },
+  {
+    "va": "1001fafc",
+    "fileOffset": 126204,
+    "encoding": "utf-16-le",
+    "text": "bg-BG"
+  },
+  {
+    "va": "1001fb08",
+    "fileOffset": 126216,
+    "encoding": "utf-16-le",
+    "text": "ca-ES"
+  },
+  {
+    "va": "1001fb14",
+    "fileOffset": 126228,
+    "encoding": "utf-16-le",
+    "text": "zh-TW"
+  },
+  {
+    "va": "1001fb20",
+    "fileOffset": 126240,
+    "encoding": "utf-16-le",
+    "text": "cs-CZ"
+  },
+  {
+    "va": "1001fb2c",
+    "fileOffset": 126252,
+    "encoding": "utf-16-le",
+    "text": "da-DK"
+  },
+  {
+    "va": "1001fb38",
+    "fileOffset": 126264,
+    "encoding": "utf-16-le",
+    "text": "de-DE"
+  },
+  {
+    "va": "1001fb44",
+    "fileOffset": 126276,
+    "encoding": "utf-16-le",
+    "text": "el-GR"
+  },
+  {
+    "va": "1001fb50",
+    "fileOffset": 126288,
+    "encoding": "utf-16-le",
+    "text": "en-US"
+  },
+  {
+    "va": "1001fb5c",
+    "fileOffset": 126300,
+    "encoding": "utf-16-le",
+    "text": "fi-FI"
+  },
+  {
+    "va": "1001fb68",
+    "fileOffset": 126312,
+    "encoding": "utf-16-le",
+    "text": "fr-FR"
+  },
+  {
+    "va": "1001fb74",
+    "fileOffset": 126324,
+    "encoding": "utf-16-le",
+    "text": "he-IL"
+  },
+  {
+    "va": "1001fb80",
+    "fileOffset": 126336,
+    "encoding": "utf-16-le",
+    "text": "hu-HU"
+  },
+  {
+    "va": "1001fb8c",
+    "fileOffset": 126348,
+    "encoding": "utf-16-le",
+    "text": "is-IS"
+  },
+  {
+    "va": "1001fb98",
+    "fileOffset": 126360,
+    "encoding": "utf-16-le",
+    "text": "it-IT"
+  },
+  {
+    "va": "1001fba4",
+    "fileOffset": 126372,
+    "encoding": "utf-16-le",
+    "text": "ja-JP"
+  },
+  {
+    "va": "1001fbb0",
+    "fileOffset": 126384,
+    "encoding": "utf-16-le",
+    "text": "ko-KR"
+  },
+  {
+    "va": "1001fbbc",
+    "fileOffset": 126396,
+    "encoding": "utf-16-le",
+    "text": "nl-NL"
+  },
+  {
+    "va": "1001fbc8",
+    "fileOffset": 126408,
+    "encoding": "utf-16-le",
+    "text": "nb-NO"
+  },
+  {
+    "va": "1001fbd4",
+    "fileOffset": 126420,
+    "encoding": "utf-16-le",
+    "text": "pl-PL"
+  },
+  {
+    "va": "1001fbe0",
+    "fileOffset": 126432,
+    "encoding": "utf-16-le",
+    "text": "pt-BR"
+  },
+  {
+    "va": "1001fbec",
+    "fileOffset": 126444,
+    "encoding": "utf-16-le",
+    "text": "ro-RO"
+  },
+  {
+    "va": "1001fbf8",
+    "fileOffset": 126456,
+    "encoding": "utf-16-le",
+    "text": "ru-RU"
+  },
+  {
+    "va": "1001fc04",
+    "fileOffset": 126468,
+    "encoding": "utf-16-le",
+    "text": "hr-HR"
+  },
+  {
+    "va": "1001fc10",
+    "fileOffset": 126480,
+    "encoding": "utf-16-le",
+    "text": "sk-SK"
+  },
+  {
+    "va": "1001fc1c",
+    "fileOffset": 126492,
+    "encoding": "utf-16-le",
+    "text": "sq-AL"
+  },
+  {
+    "va": "1001fc28",
+    "fileOffset": 126504,
+    "encoding": "utf-16-le",
+    "text": "sv-SE"
+  },
+  {
+    "va": "1001fc34",
+    "fileOffset": 126516,
+    "encoding": "utf-16-le",
+    "text": "th-TH"
+  },
+  {
+    "va": "1001fc40",
+    "fileOffset": 126528,
+    "encoding": "utf-16-le",
+    "text": "tr-TR"
+  },
+  {
+    "va": "1001fc4c",
+    "fileOffset": 126540,
+    "encoding": "utf-16-le",
+    "text": "ur-PK"
+  },
+  {
+    "va": "1001fc58",
+    "fileOffset": 126552,
+    "encoding": "utf-16-le",
+    "text": "id-ID"
+  },
+  {
+    "va": "1001fc64",
+    "fileOffset": 126564,
+    "encoding": "utf-16-le",
+    "text": "uk-UA"
+  },
+  {
+    "va": "1001fc70",
+    "fileOffset": 126576,
+    "encoding": "utf-16-le",
+    "text": "be-BY"
+  },
+  {
+    "va": "1001fc7c",
+    "fileOffset": 126588,
+    "encoding": "utf-16-le",
+    "text": "sl-SI"
+  },
+  {
+    "va": "1001fc88",
+    "fileOffset": 126600,
+    "encoding": "utf-16-le",
+    "text": "et-EE"
+  },
+  {
+    "va": "1001fc94",
+    "fileOffset": 126612,
+    "encoding": "utf-16-le",
+    "text": "lv-LV"
+  },
+  {
+    "va": "1001fca0",
+    "fileOffset": 126624,
+    "encoding": "utf-16-le",
+    "text": "lt-LT"
+  },
+  {
+    "va": "1001fcac",
+    "fileOffset": 126636,
+    "encoding": "utf-16-le",
+    "text": "fa-IR"
+  },
+  {
+    "va": "1001fcb8",
+    "fileOffset": 126648,
+    "encoding": "utf-16-le",
+    "text": "vi-VN"
+  },
+  {
+    "va": "1001fcc4",
+    "fileOffset": 126660,
+    "encoding": "utf-16-le",
+    "text": "hy-AM"
+  },
+  {
+    "va": "1001fcd0",
+    "fileOffset": 126672,
+    "encoding": "utf-16-le",
+    "text": "az-AZ-Latn"
+  },
+  {
+    "va": "1001fce8",
+    "fileOffset": 126696,
+    "encoding": "utf-16-le",
+    "text": "eu-ES"
+  },
+  {
+    "va": "1001fcf4",
+    "fileOffset": 126708,
+    "encoding": "utf-16-le",
+    "text": "mk-MK"
+  },
+  {
+    "va": "1001fd00",
+    "fileOffset": 126720,
+    "encoding": "utf-16-le",
+    "text": "tn-ZA"
+  },
+  {
+    "va": "1001fd0c",
+    "fileOffset": 126732,
+    "encoding": "utf-16-le",
+    "text": "xh-ZA"
+  },
+  {
+    "va": "1001fd18",
+    "fileOffset": 126744,
+    "encoding": "utf-16-le",
+    "text": "zu-ZA"
+  },
+  {
+    "va": "1001fd24",
+    "fileOffset": 126756,
+    "encoding": "utf-16-le",
+    "text": "af-ZA"
+  },
+  {
+    "va": "1001fd30",
+    "fileOffset": 126768,
+    "encoding": "utf-16-le",
+    "text": "ka-GE"
+  },
+  {
+    "va": "1001fd3c",
+    "fileOffset": 126780,
+    "encoding": "utf-16-le",
+    "text": "fo-FO"
+  },
+  {
+    "va": "1001fd48",
+    "fileOffset": 126792,
+    "encoding": "utf-16-le",
+    "text": "hi-IN"
+  },
+  {
+    "va": "1001fd54",
+    "fileOffset": 126804,
+    "encoding": "utf-16-le",
+    "text": "mt-MT"
+  },
+  {
+    "va": "1001fd60",
+    "fileOffset": 126816,
+    "encoding": "utf-16-le",
+    "text": "se-NO"
+  },
+  {
+    "va": "1001fd6c",
+    "fileOffset": 126828,
+    "encoding": "utf-16-le",
+    "text": "ms-MY"
+  },
+  {
+    "va": "1001fd78",
+    "fileOffset": 126840,
+    "encoding": "utf-16-le",
+    "text": "kk-KZ"
+  },
+  {
+    "va": "1001fd84",
+    "fileOffset": 126852,
+    "encoding": "utf-16-le",
+    "text": "ky-KG"
+  },
+  {
+    "va": "1001fd90",
+    "fileOffset": 126864,
+    "encoding": "utf-16-le",
+    "text": "sw-KE"
+  },
+  {
+    "va": "1001fd9c",
+    "fileOffset": 126876,
+    "encoding": "utf-16-le",
+    "text": "uz-UZ-Latn"
+  },
+  {
+    "va": "1001fdb4",
+    "fileOffset": 126900,
+    "encoding": "utf-16-le",
+    "text": "tt-RU"
+  },
+  {
+    "va": "1001fdc0",
+    "fileOffset": 126912,
+    "encoding": "utf-16-le",
+    "text": "bn-IN"
+  },
+  {
+    "va": "1001fdcc",
+    "fileOffset": 126924,
+    "encoding": "utf-16-le",
+    "text": "pa-IN"
+  },
+  {
+    "va": "1001fdd8",
+    "fileOffset": 126936,
+    "encoding": "utf-16-le",
+    "text": "gu-IN"
+  },
+  {
+    "va": "1001fde4",
+    "fileOffset": 126948,
+    "encoding": "utf-16-le",
+    "text": "ta-IN"
+  },
+  {
+    "va": "1001fdf0",
+    "fileOffset": 126960,
+    "encoding": "utf-16-le",
+    "text": "te-IN"
+  },
+  {
+    "va": "1001fdfc",
+    "fileOffset": 126972,
+    "encoding": "utf-16-le",
+    "text": "kn-IN"
+  },
+  {
+    "va": "1001fe08",
+    "fileOffset": 126984,
+    "encoding": "utf-16-le",
+    "text": "ml-IN"
+  },
+  {
+    "va": "1001fe14",
+    "fileOffset": 126996,
+    "encoding": "utf-16-le",
+    "text": "mr-IN"
+  },
+  {
+    "va": "1001fe20",
+    "fileOffset": 127008,
+    "encoding": "utf-16-le",
+    "text": "sa-IN"
+  },
+  {
+    "va": "1001fe2c",
+    "fileOffset": 127020,
+    "encoding": "utf-16-le",
+    "text": "mn-MN"
+  },
+  {
+    "va": "1001fe38",
+    "fileOffset": 127032,
+    "encoding": "utf-16-le",
+    "text": "cy-GB"
+  },
+  {
+    "va": "1001fe44",
+    "fileOffset": 127044,
+    "encoding": "utf-16-le",
+    "text": "gl-ES"
+  },
+  {
+    "va": "1001fe50",
+    "fileOffset": 127056,
+    "encoding": "utf-16-le",
+    "text": "kok-IN"
+  },
+  {
+    "va": "1001fe60",
+    "fileOffset": 127072,
+    "encoding": "utf-16-le",
+    "text": "syr-SY"
+  },
+  {
+    "va": "1001fe70",
+    "fileOffset": 127088,
+    "encoding": "utf-16-le",
+    "text": "div-MV"
+  },
+  {
+    "va": "1001fe80",
+    "fileOffset": 127104,
+    "encoding": "utf-16-le",
+    "text": "quz-BO"
+  },
+  {
+    "va": "1001fe90",
+    "fileOffset": 127120,
+    "encoding": "utf-16-le",
+    "text": "ns-ZA"
+  },
+  {
+    "va": "1001fe9c",
+    "fileOffset": 127132,
+    "encoding": "utf-16-le",
+    "text": "mi-NZ"
+  },
+  {
+    "va": "1001fea8",
+    "fileOffset": 127144,
+    "encoding": "utf-16-le",
+    "text": "ar-IQ"
+  },
+  {
+    "va": "1001feb4",
+    "fileOffset": 127156,
+    "encoding": "utf-16-le",
+    "text": "zh-CN"
+  },
+  {
+    "va": "1001fec0",
+    "fileOffset": 127168,
+    "encoding": "utf-16-le",
+    "text": "de-CH"
+  },
+  {
+    "va": "1001fecc",
+    "fileOffset": 127180,
+    "encoding": "utf-16-le",
+    "text": "en-GB"
+  },
+  {
+    "va": "1001fed8",
+    "fileOffset": 127192,
+    "encoding": "utf-16-le",
+    "text": "es-MX"
+  },
+  {
+    "va": "1001fee4",
+    "fileOffset": 127204,
+    "encoding": "utf-16-le",
+    "text": "fr-BE"
+  },
+  {
+    "va": "1001fef0",
+    "fileOffset": 127216,
+    "encoding": "utf-16-le",
+    "text": "it-CH"
+  },
+  {
+    "va": "1001fefc",
+    "fileOffset": 127228,
+    "encoding": "utf-16-le",
+    "text": "nl-BE"
+  },
+  {
+    "va": "1001ff08",
+    "fileOffset": 127240,
+    "encoding": "utf-16-le",
+    "text": "nn-NO"
+  },
+  {
+    "va": "1001ff14",
+    "fileOffset": 127252,
+    "encoding": "utf-16-le",
+    "text": "pt-PT"
+  },
+  {
+    "va": "1001ff20",
+    "fileOffset": 127264,
+    "encoding": "utf-16-le",
+    "text": "sr-SP-Latn"
+  },
+  {
+    "va": "1001ff38",
+    "fileOffset": 127288,
+    "encoding": "utf-16-le",
+    "text": "sv-FI"
+  },
+  {
+    "va": "1001ff44",
+    "fileOffset": 127300,
+    "encoding": "utf-16-le",
+    "text": "az-AZ-Cyrl"
+  },
+  {
+    "va": "1001ff5c",
+    "fileOffset": 127324,
+    "encoding": "utf-16-le",
+    "text": "se-SE"
+  },
+  {
+    "va": "1001ff68",
+    "fileOffset": 127336,
+    "encoding": "utf-16-le",
+    "text": "ms-BN"
+  },
+  {
+    "va": "1001ff74",
+    "fileOffset": 127348,
+    "encoding": "utf-16-le",
+    "text": "uz-UZ-Cyrl"
+  },
+  {
+    "va": "1001ff8c",
+    "fileOffset": 127372,
+    "encoding": "utf-16-le",
+    "text": "quz-EC"
+  },
+  {
+    "va": "1001ff9c",
+    "fileOffset": 127388,
+    "encoding": "utf-16-le",
+    "text": "ar-EG"
+  },
+  {
+    "va": "1001ffa8",
+    "fileOffset": 127400,
+    "encoding": "utf-16-le",
+    "text": "zh-HK"
+  },
+  {
+    "va": "1001ffb4",
+    "fileOffset": 127412,
+    "encoding": "utf-16-le",
+    "text": "de-AT"
+  },
+  {
+    "va": "1001ffc0",
+    "fileOffset": 127424,
+    "encoding": "utf-16-le",
+    "text": "en-AU"
+  },
+  {
+    "va": "1001ffcc",
+    "fileOffset": 127436,
+    "encoding": "utf-16-le",
+    "text": "es-ES"
+  },
+  {
+    "va": "1001ffd8",
+    "fileOffset": 127448,
+    "encoding": "utf-16-le",
+    "text": "fr-CA"
+  },
+  {
+    "va": "1001ffe4",
+    "fileOffset": 127460,
+    "encoding": "utf-16-le",
+    "text": "sr-SP-Cyrl"
+  },
+  {
+    "va": "1001fffc",
+    "fileOffset": 127484,
+    "encoding": "utf-16-le",
+    "text": "se-FI"
+  },
+  {
+    "va": "10020008",
+    "fileOffset": 127496,
+    "encoding": "utf-16-le",
+    "text": "quz-PE"
+  },
+  {
+    "va": "10020018",
+    "fileOffset": 127512,
+    "encoding": "utf-16-le",
+    "text": "ar-LY"
+  },
+  {
+    "va": "10020024",
+    "fileOffset": 127524,
+    "encoding": "utf-16-le",
+    "text": "zh-SG"
+  },
+  {
+    "va": "10020030",
+    "fileOffset": 127536,
+    "encoding": "utf-16-le",
+    "text": "de-LU"
+  },
+  {
+    "va": "1002003c",
+    "fileOffset": 127548,
+    "encoding": "utf-16-le",
+    "text": "en-CA"
+  },
+  {
+    "va": "10020048",
+    "fileOffset": 127560,
+    "encoding": "utf-16-le",
+    "text": "es-GT"
+  },
+  {
+    "va": "10020054",
+    "fileOffset": 127572,
+    "encoding": "utf-16-le",
+    "text": "fr-CH"
+  },
+  {
+    "va": "10020060",
+    "fileOffset": 127584,
+    "encoding": "utf-16-le",
+    "text": "hr-BA"
+  },
+  {
+    "va": "1002006c",
+    "fileOffset": 127596,
+    "encoding": "utf-16-le",
+    "text": "smj-NO"
+  },
+  {
+    "va": "1002007c",
+    "fileOffset": 127612,
+    "encoding": "utf-16-le",
+    "text": "ar-DZ"
+  },
+  {
+    "va": "10020088",
+    "fileOffset": 127624,
+    "encoding": "utf-16-le",
+    "text": "zh-MO"
+  },
+  {
+    "va": "10020094",
+    "fileOffset": 127636,
+    "encoding": "utf-16-le",
+    "text": "de-LI"
+  },
+  {
+    "va": "100200a0",
+    "fileOffset": 127648,
+    "encoding": "utf-16-le",
+    "text": "en-NZ"
+  },
+  {
+    "va": "100200ac",
+    "fileOffset": 127660,
+    "encoding": "utf-16-le",
+    "text": "es-CR"
+  },
+  {
+    "va": "100200b8",
+    "fileOffset": 127672,
+    "encoding": "utf-16-le",
+    "text": "fr-LU"
+  },
+  {
+    "va": "100200c4",
+    "fileOffset": 127684,
+    "encoding": "utf-16-le",
+    "text": "bs-BA-Latn"
+  },
+  {
+    "va": "100200dc",
+    "fileOffset": 127708,
+    "encoding": "utf-16-le",
+    "text": "smj-SE"
+  },
+  {
+    "va": "100200ec",
+    "fileOffset": 127724,
+    "encoding": "utf-16-le",
+    "text": "ar-MA"
+  },
+  {
+    "va": "100200f8",
+    "fileOffset": 127736,
+    "encoding": "utf-16-le",
+    "text": "en-IE"
+  },
+  {
+    "va": "10020104",
+    "fileOffset": 127748,
+    "encoding": "utf-16-le",
+    "text": "es-PA"
+  },
+  {
+    "va": "10020110",
+    "fileOffset": 127760,
+    "encoding": "utf-16-le",
+    "text": "fr-MC"
+  },
+  {
+    "va": "1002011c",
+    "fileOffset": 127772,
+    "encoding": "utf-16-le",
+    "text": "sr-BA-Latn"
+  },
+  {
+    "va": "10020134",
+    "fileOffset": 127796,
+    "encoding": "utf-16-le",
+    "text": "sma-NO"
+  },
+  {
+    "va": "10020144",
+    "fileOffset": 127812,
+    "encoding": "utf-16-le",
+    "text": "ar-TN"
+  },
+  {
+    "va": "10020150",
+    "fileOffset": 127824,
+    "encoding": "utf-16-le",
+    "text": "en-ZA"
+  },
+  {
+    "va": "1002015c",
+    "fileOffset": 127836,
+    "encoding": "utf-16-le",
+    "text": "es-DO"
+  },
+  {
+    "va": "10020168",
+    "fileOffset": 127848,
+    "encoding": "utf-16-le",
+    "text": "sr-BA-Cyrl"
+  },
+  {
+    "va": "10020180",
+    "fileOffset": 127872,
+    "encoding": "utf-16-le",
+    "text": "sma-SE"
+  },
+  {
+    "va": "10020190",
+    "fileOffset": 127888,
+    "encoding": "utf-16-le",
+    "text": "ar-OM"
+  },
+  {
+    "va": "1002019c",
+    "fileOffset": 127900,
+    "encoding": "utf-16-le",
+    "text": "en-JM"
+  },
+  {
+    "va": "100201a8",
+    "fileOffset": 127912,
+    "encoding": "utf-16-le",
+    "text": "es-VE"
+  },
+  {
+    "va": "100201b4",
+    "fileOffset": 127924,
+    "encoding": "utf-16-le",
+    "text": "sms-FI"
+  },
+  {
+    "va": "100201c4",
+    "fileOffset": 127940,
+    "encoding": "utf-16-le",
+    "text": "ar-YE"
+  },
+  {
+    "va": "100201d0",
+    "fileOffset": 127952,
+    "encoding": "utf-16-le",
+    "text": "en-CB"
+  },
+  {
+    "va": "100201dc",
+    "fileOffset": 127964,
+    "encoding": "utf-16-le",
+    "text": "es-CO"
+  },
+  {
+    "va": "100201e8",
+    "fileOffset": 127976,
+    "encoding": "utf-16-le",
+    "text": "smn-FI"
+  },
+  {
+    "va": "100201f8",
+    "fileOffset": 127992,
+    "encoding": "utf-16-le",
+    "text": "ar-SY"
+  },
+  {
+    "va": "10020204",
+    "fileOffset": 128004,
+    "encoding": "utf-16-le",
+    "text": "en-BZ"
+  },
+  {
+    "va": "10020210",
+    "fileOffset": 128016,
+    "encoding": "utf-16-le",
+    "text": "es-PE"
+  },
+  {
+    "va": "1002021c",
+    "fileOffset": 128028,
+    "encoding": "utf-16-le",
+    "text": "ar-JO"
+  },
+  {
+    "va": "10020228",
+    "fileOffset": 128040,
+    "encoding": "utf-16-le",
+    "text": "en-TT"
+  },
+  {
+    "va": "10020234",
+    "fileOffset": 128052,
+    "encoding": "utf-16-le",
+    "text": "es-AR"
+  },
+  {
+    "va": "10020240",
+    "fileOffset": 128064,
+    "encoding": "utf-16-le",
+    "text": "ar-LB"
+  },
+  {
+    "va": "1002024c",
+    "fileOffset": 128076,
+    "encoding": "utf-16-le",
+    "text": "en-ZW"
+  },
+  {
+    "va": "10020258",
+    "fileOffset": 128088,
+    "encoding": "utf-16-le",
+    "text": "es-EC"
+  },
+  {
+    "va": "10020264",
+    "fileOffset": 128100,
+    "encoding": "utf-16-le",
+    "text": "ar-KW"
+  },
+  {
+    "va": "10020270",
+    "fileOffset": 128112,
+    "encoding": "utf-16-le",
+    "text": "en-PH"
+  },
+  {
+    "va": "1002027c",
+    "fileOffset": 128124,
+    "encoding": "utf-16-le",
+    "text": "es-CL"
+  },
+  {
+    "va": "10020288",
+    "fileOffset": 128136,
+    "encoding": "utf-16-le",
+    "text": "ar-AE"
+  },
+  {
+    "va": "10020294",
+    "fileOffset": 128148,
+    "encoding": "utf-16-le",
+    "text": "es-UY"
+  },
+  {
+    "va": "100202a0",
+    "fileOffset": 128160,
+    "encoding": "utf-16-le",
+    "text": "ar-BH"
+  },
+  {
+    "va": "100202ac",
+    "fileOffset": 128172,
+    "encoding": "utf-16-le",
+    "text": "es-PY"
+  },
+  {
+    "va": "100202b8",
+    "fileOffset": 128184,
+    "encoding": "utf-16-le",
+    "text": "ar-QA"
+  },
+  {
+    "va": "100202c4",
+    "fileOffset": 128196,
+    "encoding": "utf-16-le",
+    "text": "es-BO"
+  },
+  {
+    "va": "100202d0",
+    "fileOffset": 128208,
+    "encoding": "utf-16-le",
+    "text": "es-SV"
+  },
+  {
+    "va": "100202dc",
+    "fileOffset": 128220,
+    "encoding": "utf-16-le",
+    "text": "es-HN"
+  },
+  {
+    "va": "100202e8",
+    "fileOffset": 128232,
+    "encoding": "utf-16-le",
+    "text": "es-NI"
+  },
+  {
+    "va": "100202f4",
+    "fileOffset": 128244,
+    "encoding": "utf-16-le",
+    "text": "es-PR"
+  },
+  {
+    "va": "10020300",
+    "fileOffset": 128256,
+    "encoding": "utf-16-le",
+    "text": "zh-CHT"
+  },
+  {
+    "va": "10020318",
+    "fileOffset": 128280,
+    "encoding": "utf-16-le",
+    "text": "af-za"
+  },
+  {
+    "va": "10020324",
+    "fileOffset": 128292,
+    "encoding": "utf-16-le",
+    "text": "ar-ae"
+  },
+  {
+    "va": "10020330",
+    "fileOffset": 128304,
+    "encoding": "utf-16-le",
+    "text": "ar-bh"
+  },
+  {
+    "va": "1002033c",
+    "fileOffset": 128316,
+    "encoding": "utf-16-le",
+    "text": "ar-dz"
+  },
+  {
+    "va": "10020348",
+    "fileOffset": 128328,
+    "encoding": "utf-16-le",
+    "text": "ar-eg"
+  },
+  {
+    "va": "10020354",
+    "fileOffset": 128340,
+    "encoding": "utf-16-le",
+    "text": "ar-iq"
+  },
+  {
+    "va": "10020360",
+    "fileOffset": 128352,
+    "encoding": "utf-16-le",
+    "text": "ar-jo"
+  },
+  {
+    "va": "1002036c",
+    "fileOffset": 128364,
+    "encoding": "utf-16-le",
+    "text": "ar-kw"
+  },
+  {
+    "va": "10020378",
+    "fileOffset": 128376,
+    "encoding": "utf-16-le",
+    "text": "ar-lb"
+  },
+  {
+    "va": "10020384",
+    "fileOffset": 128388,
+    "encoding": "utf-16-le",
+    "text": "ar-ly"
+  },
+  {
+    "va": "10020390",
+    "fileOffset": 128400,
+    "encoding": "utf-16-le",
+    "text": "ar-ma"
+  },
+  {
+    "va": "1002039c",
+    "fileOffset": 128412,
+    "encoding": "utf-16-le",
+    "text": "ar-om"
+  },
+  {
+    "va": "100203a8",
+    "fileOffset": 128424,
+    "encoding": "utf-16-le",
+    "text": "ar-qa"
+  },
+  {
+    "va": "100203b4",
+    "fileOffset": 128436,
+    "encoding": "utf-16-le",
+    "text": "ar-sa"
+  },
+  {
+    "va": "100203c0",
+    "fileOffset": 128448,
+    "encoding": "utf-16-le",
+    "text": "ar-sy"
+  },
+  {
+    "va": "100203cc",
+    "fileOffset": 128460,
+    "encoding": "utf-16-le",
+    "text": "ar-tn"
+  },
+  {
+    "va": "100203d8",
+    "fileOffset": 128472,
+    "encoding": "utf-16-le",
+    "text": "ar-ye"
+  },
+  {
+    "va": "100203e4",
+    "fileOffset": 128484,
+    "encoding": "utf-16-le",
+    "text": "az-az-cyrl"
+  },
+  {
+    "va": "100203fc",
+    "fileOffset": 128508,
+    "encoding": "utf-16-le",
+    "text": "az-az-latn"
+  },
+  {
+    "va": "10020414",
+    "fileOffset": 128532,
+    "encoding": "utf-16-le",
+    "text": "be-by"
+  },
+  {
+    "va": "10020420",
+    "fileOffset": 128544,
+    "encoding": "utf-16-le",
+    "text": "bg-bg"
+  },
+  {
+    "va": "1002042c",
+    "fileOffset": 128556,
+    "encoding": "utf-16-le",
+    "text": "bn-in"
+  },
+  {
+    "va": "10020438",
+    "fileOffset": 128568,
+    "encoding": "utf-16-le",
+    "text": "bs-ba-latn"
+  },
+  {
+    "va": "10020450",
+    "fileOffset": 128592,
+    "encoding": "utf-16-le",
+    "text": "ca-es"
+  },
+  {
+    "va": "1002045c",
+    "fileOffset": 128604,
+    "encoding": "utf-16-le",
+    "text": "cs-cz"
+  },
+  {
+    "va": "10020468",
+    "fileOffset": 128616,
+    "encoding": "utf-16-le",
+    "text": "cy-gb"
+  },
+  {
+    "va": "10020474",
+    "fileOffset": 128628,
+    "encoding": "utf-16-le",
+    "text": "da-dk"
+  },
+  {
+    "va": "10020480",
+    "fileOffset": 128640,
+    "encoding": "utf-16-le",
+    "text": "de-at"
+  },
+  {
+    "va": "1002048c",
+    "fileOffset": 128652,
+    "encoding": "utf-16-le",
+    "text": "de-ch"
+  },
+  {
+    "va": "10020498",
+    "fileOffset": 128664,
+    "encoding": "utf-16-le",
+    "text": "de-de"
+  },
+  {
+    "va": "100204a4",
+    "fileOffset": 128676,
+    "encoding": "utf-16-le",
+    "text": "de-li"
+  },
+  {
+    "va": "100204b0",
+    "fileOffset": 128688,
+    "encoding": "utf-16-le",
+    "text": "de-lu"
+  },
+  {
+    "va": "100204bc",
+    "fileOffset": 128700,
+    "encoding": "utf-16-le",
+    "text": "div-mv"
+  },
+  {
+    "va": "100204cc",
+    "fileOffset": 128716,
+    "encoding": "utf-16-le",
+    "text": "el-gr"
+  },
+  {
+    "va": "100204d8",
+    "fileOffset": 128728,
+    "encoding": "utf-16-le",
+    "text": "en-au"
+  },
+  {
+    "va": "100204e4",
+    "fileOffset": 128740,
+    "encoding": "utf-16-le",
+    "text": "en-bz"
+  },
+  {
+    "va": "100204f0",
+    "fileOffset": 128752,
+    "encoding": "utf-16-le",
+    "text": "en-ca"
+  },
+  {
+    "va": "100204fc",
+    "fileOffset": 128764,
+    "encoding": "utf-16-le",
+    "text": "en-cb"
+  },
+  {
+    "va": "10020508",
+    "fileOffset": 128776,
+    "encoding": "utf-16-le",
+    "text": "en-gb"
+  },
+  {
+    "va": "10020514",
+    "fileOffset": 128788,
+    "encoding": "utf-16-le",
+    "text": "en-ie"
+  },
+  {
+    "va": "10020520",
+    "fileOffset": 128800,
+    "encoding": "utf-16-le",
+    "text": "en-jm"
+  },
+  {
+    "va": "1002052c",
+    "fileOffset": 128812,
+    "encoding": "utf-16-le",
+    "text": "en-nz"
+  },
+  {
+    "va": "10020538",
+    "fileOffset": 128824,
+    "encoding": "utf-16-le",
+    "text": "en-ph"
+  },
+  {
+    "va": "10020544",
+    "fileOffset": 128836,
+    "encoding": "utf-16-le",
+    "text": "en-tt"
+  },
+  {
+    "va": "10020550",
+    "fileOffset": 128848,
+    "encoding": "utf-16-le",
+    "text": "en-us"
+  },
+  {
+    "va": "1002055c",
+    "fileOffset": 128860,
+    "encoding": "utf-16-le",
+    "text": "en-za"
+  },
+  {
+    "va": "10020568",
+    "fileOffset": 128872,
+    "encoding": "utf-16-le",
+    "text": "en-zw"
+  },
+  {
+    "va": "10020574",
+    "fileOffset": 128884,
+    "encoding": "utf-16-le",
+    "text": "es-ar"
+  },
+  {
+    "va": "10020580",
+    "fileOffset": 128896,
+    "encoding": "utf-16-le",
+    "text": "es-bo"
+  },
+  {
+    "va": "1002058c",
+    "fileOffset": 128908,
+    "encoding": "utf-16-le",
+    "text": "es-cl"
+  },
+  {
+    "va": "10020598",
+    "fileOffset": 128920,
+    "encoding": "utf-16-le",
+    "text": "es-co"
+  },
+  {
+    "va": "100205a4",
+    "fileOffset": 128932,
+    "encoding": "utf-16-le",
+    "text": "es-cr"
+  },
+  {
+    "va": "100205b0",
+    "fileOffset": 128944,
+    "encoding": "utf-16-le",
+    "text": "es-do"
+  },
+  {
+    "va": "100205bc",
+    "fileOffset": 128956,
+    "encoding": "utf-16-le",
+    "text": "es-ec"
+  },
+  {
+    "va": "100205c8",
+    "fileOffset": 128968,
+    "encoding": "utf-16-le",
+    "text": "es-es"
+  },
+  {
+    "va": "100205d4",
+    "fileOffset": 128980,
+    "encoding": "utf-16-le",
+    "text": "es-gt"
+  },
+  {
+    "va": "100205e0",
+    "fileOffset": 128992,
+    "encoding": "utf-16-le",
+    "text": "es-hn"
+  },
+  {
+    "va": "100205ec",
+    "fileOffset": 129004,
+    "encoding": "utf-16-le",
+    "text": "es-mx"
+  },
+  {
+    "va": "100205f8",
+    "fileOffset": 129016,
+    "encoding": "utf-16-le",
+    "text": "es-ni"
+  },
+  {
+    "va": "10020604",
+    "fileOffset": 129028,
+    "encoding": "utf-16-le",
+    "text": "es-pa"
+  },
+  {
+    "va": "10020610",
+    "fileOffset": 129040,
+    "encoding": "utf-16-le",
+    "text": "es-pe"
+  },
+  {
+    "va": "1002061c",
+    "fileOffset": 129052,
+    "encoding": "utf-16-le",
+    "text": "es-pr"
+  },
+  {
+    "va": "10020628",
+    "fileOffset": 129064,
+    "encoding": "utf-16-le",
+    "text": "es-py"
+  },
+  {
+    "va": "10020634",
+    "fileOffset": 129076,
+    "encoding": "utf-16-le",
+    "text": "es-sv"
+  },
+  {
+    "va": "10020640",
+    "fileOffset": 129088,
+    "encoding": "utf-16-le",
+    "text": "es-uy"
+  },
+  {
+    "va": "1002064c",
+    "fileOffset": 129100,
+    "encoding": "utf-16-le",
+    "text": "es-ve"
+  },
+  {
+    "va": "10020658",
+    "fileOffset": 129112,
+    "encoding": "utf-16-le",
+    "text": "et-ee"
+  },
+  {
+    "va": "10020664",
+    "fileOffset": 129124,
+    "encoding": "utf-16-le",
+    "text": "eu-es"
+  },
+  {
+    "va": "10020670",
+    "fileOffset": 129136,
+    "encoding": "utf-16-le",
+    "text": "fa-ir"
+  },
+  {
+    "va": "1002067c",
+    "fileOffset": 129148,
+    "encoding": "utf-16-le",
+    "text": "fi-fi"
+  },
+  {
+    "va": "10020688",
+    "fileOffset": 129160,
+    "encoding": "utf-16-le",
+    "text": "fo-fo"
+  },
+  {
+    "va": "10020694",
+    "fileOffset": 129172,
+    "encoding": "utf-16-le",
+    "text": "fr-be"
+  },
+  {
+    "va": "100206a0",
+    "fileOffset": 129184,
+    "encoding": "utf-16-le",
+    "text": "fr-ca"
+  },
+  {
+    "va": "100206ac",
+    "fileOffset": 129196,
+    "encoding": "utf-16-le",
+    "text": "fr-ch"
+  },
+  {
+    "va": "100206b8",
+    "fileOffset": 129208,
+    "encoding": "utf-16-le",
+    "text": "fr-fr"
+  },
+  {
+    "va": "100206c4",
+    "fileOffset": 129220,
+    "encoding": "utf-16-le",
+    "text": "fr-lu"
+  },
+  {
+    "va": "100206d0",
+    "fileOffset": 129232,
+    "encoding": "utf-16-le",
+    "text": "fr-mc"
+  },
+  {
+    "va": "100206dc",
+    "fileOffset": 129244,
+    "encoding": "utf-16-le",
+    "text": "gl-es"
+  },
+  {
+    "va": "100206e8",
+    "fileOffset": 129256,
+    "encoding": "utf-16-le",
+    "text": "gu-in"
+  },
+  {
+    "va": "100206f4",
+    "fileOffset": 129268,
+    "encoding": "utf-16-le",
+    "text": "he-il"
+  },
+  {
+    "va": "10020700",
+    "fileOffset": 129280,
+    "encoding": "utf-16-le",
+    "text": "hi-in"
+  },
+  {
+    "va": "1002070c",
+    "fileOffset": 129292,
+    "encoding": "utf-16-le",
+    "text": "hr-ba"
+  },
+  {
+    "va": "10020718",
+    "fileOffset": 129304,
+    "encoding": "utf-16-le",
+    "text": "hr-hr"
+  },
+  {
+    "va": "10020724",
+    "fileOffset": 129316,
+    "encoding": "utf-16-le",
+    "text": "hu-hu"
+  },
+  {
+    "va": "10020730",
+    "fileOffset": 129328,
+    "encoding": "utf-16-le",
+    "text": "hy-am"
+  },
+  {
+    "va": "1002073c",
+    "fileOffset": 129340,
+    "encoding": "utf-16-le",
+    "text": "id-id"
+  },
+  {
+    "va": "10020748",
+    "fileOffset": 129352,
+    "encoding": "utf-16-le",
+    "text": "is-is"
+  },
+  {
+    "va": "10020754",
+    "fileOffset": 129364,
+    "encoding": "utf-16-le",
+    "text": "it-ch"
+  },
+  {
+    "va": "10020760",
+    "fileOffset": 129376,
+    "encoding": "utf-16-le",
+    "text": "it-it"
+  },
+  {
+    "va": "1002076c",
+    "fileOffset": 129388,
+    "encoding": "utf-16-le",
+    "text": "ja-jp"
+  },
+  {
+    "va": "10020778",
+    "fileOffset": 129400,
+    "encoding": "utf-16-le",
+    "text": "ka-ge"
+  },
+  {
+    "va": "10020784",
+    "fileOffset": 129412,
+    "encoding": "utf-16-le",
+    "text": "kk-kz"
+  },
+  {
+    "va": "10020790",
+    "fileOffset": 129424,
+    "encoding": "utf-16-le",
+    "text": "kn-in"
+  },
+  {
+    "va": "1002079c",
+    "fileOffset": 129436,
+    "encoding": "utf-16-le",
+    "text": "kok-in"
+  },
+  {
+    "va": "100207ac",
+    "fileOffset": 129452,
+    "encoding": "utf-16-le",
+    "text": "ko-kr"
+  },
+  {
+    "va": "100207b8",
+    "fileOffset": 129464,
+    "encoding": "utf-16-le",
+    "text": "ky-kg"
+  },
+  {
+    "va": "100207c4",
+    "fileOffset": 129476,
+    "encoding": "utf-16-le",
+    "text": "lt-lt"
+  },
+  {
+    "va": "100207d0",
+    "fileOffset": 129488,
+    "encoding": "utf-16-le",
+    "text": "lv-lv"
+  },
+  {
+    "va": "100207dc",
+    "fileOffset": 129500,
+    "encoding": "utf-16-le",
+    "text": "mi-nz"
+  },
+  {
+    "va": "100207e8",
+    "fileOffset": 129512,
+    "encoding": "utf-16-le",
+    "text": "mk-mk"
+  },
+  {
+    "va": "100207f4",
+    "fileOffset": 129524,
+    "encoding": "utf-16-le",
+    "text": "ml-in"
+  },
+  {
+    "va": "10020800",
+    "fileOffset": 129536,
+    "encoding": "utf-16-le",
+    "text": "mn-mn"
+  },
+  {
+    "va": "1002080c",
+    "fileOffset": 129548,
+    "encoding": "utf-16-le",
+    "text": "mr-in"
+  },
+  {
+    "va": "10020818",
+    "fileOffset": 129560,
+    "encoding": "utf-16-le",
+    "text": "ms-bn"
+  },
+  {
+    "va": "10020824",
+    "fileOffset": 129572,
+    "encoding": "utf-16-le",
+    "text": "ms-my"
+  },
+  {
+    "va": "10020830",
+    "fileOffset": 129584,
+    "encoding": "utf-16-le",
+    "text": "mt-mt"
+  },
+  {
+    "va": "1002083c",
+    "fileOffset": 129596,
+    "encoding": "utf-16-le",
+    "text": "nb-no"
+  },
+  {
+    "va": "10020848",
+    "fileOffset": 129608,
+    "encoding": "utf-16-le",
+    "text": "nl-be"
+  },
+  {
+    "va": "10020854",
+    "fileOffset": 129620,
+    "encoding": "utf-16-le",
+    "text": "nl-nl"
+  },
+  {
+    "va": "10020860",
+    "fileOffset": 129632,
+    "encoding": "utf-16-le",
+    "text": "nn-no"
+  },
+  {
+    "va": "1002086c",
+    "fileOffset": 129644,
+    "encoding": "utf-16-le",
+    "text": "ns-za"
+  },
+  {
+    "va": "10020878",
+    "fileOffset": 129656,
+    "encoding": "utf-16-le",
+    "text": "pa-in"
+  },
+  {
+    "va": "10020884",
+    "fileOffset": 129668,
+    "encoding": "utf-16-le",
+    "text": "pl-pl"
+  },
+  {
+    "va": "10020890",
+    "fileOffset": 129680,
+    "encoding": "utf-16-le",
+    "text": "pt-br"
+  },
+  {
+    "va": "1002089c",
+    "fileOffset": 129692,
+    "encoding": "utf-16-le",
+    "text": "pt-pt"
+  },
+  {
+    "va": "100208a8",
+    "fileOffset": 129704,
+    "encoding": "utf-16-le",
+    "text": "quz-bo"
+  },
+  {
+    "va": "100208b8",
+    "fileOffset": 129720,
+    "encoding": "utf-16-le",
+    "text": "quz-ec"
+  },
+  {
+    "va": "100208c8",
+    "fileOffset": 129736,
+    "encoding": "utf-16-le",
+    "text": "quz-pe"
+  },
+  {
+    "va": "100208d8",
+    "fileOffset": 129752,
+    "encoding": "utf-16-le",
+    "text": "ro-ro"
+  },
+  {
+    "va": "100208e4",
+    "fileOffset": 129764,
+    "encoding": "utf-16-le",
+    "text": "ru-ru"
+  },
+  {
+    "va": "100208f0",
+    "fileOffset": 129776,
+    "encoding": "utf-16-le",
+    "text": "sa-in"
+  },
+  {
+    "va": "100208fc",
+    "fileOffset": 129788,
+    "encoding": "utf-16-le",
+    "text": "se-fi"
+  },
+  {
+    "va": "10020908",
+    "fileOffset": 129800,
+    "encoding": "utf-16-le",
+    "text": "se-no"
+  },
+  {
+    "va": "10020914",
+    "fileOffset": 129812,
+    "encoding": "utf-16-le",
+    "text": "se-se"
+  },
+  {
+    "va": "10020920",
+    "fileOffset": 129824,
+    "encoding": "utf-16-le",
+    "text": "sk-sk"
+  },
+  {
+    "va": "1002092c",
+    "fileOffset": 129836,
+    "encoding": "utf-16-le",
+    "text": "sl-si"
+  },
+  {
+    "va": "10020938",
+    "fileOffset": 129848,
+    "encoding": "utf-16-le",
+    "text": "sma-no"
+  },
+  {
+    "va": "10020948",
+    "fileOffset": 129864,
+    "encoding": "utf-16-le",
+    "text": "sma-se"
+  },
+  {
+    "va": "10020958",
+    "fileOffset": 129880,
+    "encoding": "utf-16-le",
+    "text": "smj-no"
+  },
+  {
+    "va": "10020968",
+    "fileOffset": 129896,
+    "encoding": "utf-16-le",
+    "text": "smj-se"
+  },
+  {
+    "va": "10020978",
+    "fileOffset": 129912,
+    "encoding": "utf-16-le",
+    "text": "smn-fi"
+  },
+  {
+    "va": "10020988",
+    "fileOffset": 129928,
+    "encoding": "utf-16-le",
+    "text": "sms-fi"
+  },
+  {
+    "va": "10020998",
+    "fileOffset": 129944,
+    "encoding": "utf-16-le",
+    "text": "sq-al"
+  },
+  {
+    "va": "100209a4",
+    "fileOffset": 129956,
+    "encoding": "utf-16-le",
+    "text": "sr-ba-cyrl"
+  },
+  {
+    "va": "100209bc",
+    "fileOffset": 129980,
+    "encoding": "utf-16-le",
+    "text": "sr-ba-latn"
+  },
+  {
+    "va": "100209d4",
+    "fileOffset": 130004,
+    "encoding": "utf-16-le",
+    "text": "sr-sp-cyrl"
+  },
+  {
+    "va": "100209ec",
+    "fileOffset": 130028,
+    "encoding": "utf-16-le",
+    "text": "sr-sp-latn"
+  },
+  {
+    "va": "10020a04",
+    "fileOffset": 130052,
+    "encoding": "utf-16-le",
+    "text": "sv-fi"
+  },
+  {
+    "va": "10020a10",
+    "fileOffset": 130064,
+    "encoding": "utf-16-le",
+    "text": "sv-se"
+  },
+  {
+    "va": "10020a1c",
+    "fileOffset": 130076,
+    "encoding": "utf-16-le",
+    "text": "sw-ke"
+  },
+  {
+    "va": "10020a28",
+    "fileOffset": 130088,
+    "encoding": "utf-16-le",
+    "text": "syr-sy"
+  },
+  {
+    "va": "10020a38",
+    "fileOffset": 130104,
+    "encoding": "utf-16-le",
+    "text": "ta-in"
+  },
+  {
+    "va": "10020a44",
+    "fileOffset": 130116,
+    "encoding": "utf-16-le",
+    "text": "te-in"
+  },
+  {
+    "va": "10020a50",
+    "fileOffset": 130128,
+    "encoding": "utf-16-le",
+    "text": "th-th"
+  },
+  {
+    "va": "10020a5c",
+    "fileOffset": 130140,
+    "encoding": "utf-16-le",
+    "text": "tn-za"
+  },
+  {
+    "va": "10020a68",
+    "fileOffset": 130152,
+    "encoding": "utf-16-le",
+    "text": "tr-tr"
+  },
+  {
+    "va": "10020a74",
+    "fileOffset": 130164,
+    "encoding": "utf-16-le",
+    "text": "tt-ru"
+  },
+  {
+    "va": "10020a80",
+    "fileOffset": 130176,
+    "encoding": "utf-16-le",
+    "text": "uk-ua"
+  },
+  {
+    "va": "10020a8c",
+    "fileOffset": 130188,
+    "encoding": "utf-16-le",
+    "text": "ur-pk"
+  },
+  {
+    "va": "10020a98",
+    "fileOffset": 130200,
+    "encoding": "utf-16-le",
+    "text": "uz-uz-cyrl"
+  },
+  {
+    "va": "10020ab0",
+    "fileOffset": 130224,
+    "encoding": "utf-16-le",
+    "text": "uz-uz-latn"
+  },
+  {
+    "va": "10020ac8",
+    "fileOffset": 130248,
+    "encoding": "utf-16-le",
+    "text": "vi-vn"
+  },
+  {
+    "va": "10020ad4",
+    "fileOffset": 130260,
+    "encoding": "utf-16-le",
+    "text": "xh-za"
+  },
+  {
+    "va": "10020ae0",
+    "fileOffset": 130272,
+    "encoding": "utf-16-le",
+    "text": "zh-chs"
+  },
+  {
+    "va": "10020af0",
+    "fileOffset": 130288,
+    "encoding": "utf-16-le",
+    "text": "zh-cht"
+  },
+  {
+    "va": "10020b00",
+    "fileOffset": 130304,
+    "encoding": "utf-16-le",
+    "text": "zh-cn"
+  },
+  {
+    "va": "10020b0c",
+    "fileOffset": 130316,
+    "encoding": "utf-16-le",
+    "text": "zh-hk"
+  },
+  {
+    "va": "10020b18",
+    "fileOffset": 130328,
+    "encoding": "utf-16-le",
+    "text": "zh-mo"
+  },
+  {
+    "va": "10020b24",
+    "fileOffset": 130340,
+    "encoding": "utf-16-le",
+    "text": "zh-sg"
+  },
+  {
+    "va": "10020b30",
+    "fileOffset": 130352,
+    "encoding": "utf-16-le",
+    "text": "zh-tw"
+  },
+  {
+    "va": "10020b3c",
+    "fileOffset": 130364,
+    "encoding": "utf-16-le",
+    "text": "zu-za"
+  },
+  {
+    "va": "10020d38",
+    "fileOffset": 130872,
+    "encoding": "utf-16-le",
+    "text": "Sunday"
+  },
+  {
+    "va": "10020d48",
+    "fileOffset": 130888,
+    "encoding": "utf-16-le",
+    "text": "Monday"
+  },
+  {
+    "va": "10020d58",
+    "fileOffset": 130904,
+    "encoding": "utf-16-le",
+    "text": "Tuesday"
+  },
+  {
+    "va": "10020d68",
+    "fileOffset": 130920,
+    "encoding": "utf-16-le",
+    "text": "Wednesday"
+  },
+  {
+    "va": "10020d7c",
+    "fileOffset": 130940,
+    "encoding": "utf-16-le",
+    "text": "Thursday"
+  },
+  {
+    "va": "10020d90",
+    "fileOffset": 130960,
+    "encoding": "utf-16-le",
+    "text": "Friday"
+  },
+  {
+    "va": "10020da0",
+    "fileOffset": 130976,
+    "encoding": "utf-16-le",
+    "text": "Saturday"
+  },
+  {
+    "va": "10020e14",
+    "fileOffset": 131092,
+    "encoding": "utf-16-le",
+    "text": "January"
+  },
+  {
+    "va": "10020e24",
+    "fileOffset": 131108,
+    "encoding": "utf-16-le",
+    "text": "February"
+  },
+  {
+    "va": "10020e38",
+    "fileOffset": 131128,
+    "encoding": "utf-16-le",
+    "text": "March"
+  },
+  {
+    "va": "10020e44",
+    "fileOffset": 131140,
+    "encoding": "utf-16-le",
+    "text": "April"
+  },
+  {
+    "va": "10020e50",
+    "fileOffset": 131152,
+    "encoding": "utf-16-le",
+    "text": "June"
+  },
+  {
+    "va": "10020e5c",
+    "fileOffset": 131164,
+    "encoding": "utf-16-le",
+    "text": "July"
+  },
+  {
+    "va": "10020e68",
+    "fileOffset": 131176,
+    "encoding": "utf-16-le",
+    "text": "August"
+  },
+  {
+    "va": "10020e78",
+    "fileOffset": 131192,
+    "encoding": "utf-16-le",
+    "text": "September"
+  },
+  {
+    "va": "10020e8c",
+    "fileOffset": 131212,
+    "encoding": "utf-16-le",
+    "text": "October"
+  },
+  {
+    "va": "10020e9c",
+    "fileOffset": 131228,
+    "encoding": "utf-16-le",
+    "text": "November"
+  },
+  {
+    "va": "10020eb0",
+    "fileOffset": 131248,
+    "encoding": "utf-16-le",
+    "text": "December"
+  },
+  {
+    "va": "10020ed4",
+    "fileOffset": 131284,
+    "encoding": "utf-16-le",
+    "text": "MM/dd/yy"
+  },
+  {
+    "va": "10020ee8",
+    "fileOffset": 131304,
+    "encoding": "utf-16-le",
+    "text": "dddd, MMMM dd, yyyy"
+  },
+  {
+    "va": "10020f10",
+    "fileOffset": 131344,
+    "encoding": "utf-16-le",
+    "text": "HH:mm:ss"
+  },
+  {
+    "va": "10021674",
+    "fileOffset": 133236,
+    "encoding": "utf-16-le",
+    "text": "USER32.DLL"
+  },
+  {
+    "va": "100216f8",
+    "fileOffset": 133368,
+    "encoding": "utf-16-le",
+    "text": "(null)"
+  },
+  {
+    "va": "10021868",
+    "fileOffset": 133736,
+    "encoding": "utf-16-le",
+    "text": "         (((((                  H"
+  },
+  {
+    "va": "10021a6a",
+    "fileOffset": 134250,
+    "encoding": "utf-16-le",
+    "text": "         (((((                  H"
+  },
+  {
+    "va": "10021b68",
+    "fileOffset": 134504,
+    "encoding": "utf-16-le",
+    "text": "                                 "
+  },
+  {
+    "va": "10022074",
+    "fileOffset": 135796,
+    "encoding": "utf-16-le",
+    "text": "CONOUT$"
+  },
+  {
+    "va": "1002a1aa",
+    "fileOffset": 153002,
+    "encoding": "utf-16-le",
+    "text": "REGISTRY"
+  },
+  {
+    "va": "1002a1bc",
+    "fileOffset": 153020,
+    "encoding": "utf-16-le",
+    "text": "TYPELIB"
+  },
+  {
+    "va": "1002a1d6",
+    "fileOffset": 153046,
+    "encoding": "utf-16-le",
+    "text": "VS_VERSION_INFO"
+  },
+  {
+    "va": "1002a232",
+    "fileOffset": 153138,
+    "encoding": "utf-16-le",
+    "text": "StringFileInfo"
+  },
+  {
+    "va": "1002a256",
+    "fileOffset": 153174,
+    "encoding": "utf-16-le",
+    "text": "040904b0"
+  },
+  {
+    "va": "1002a26e",
+    "fileOffset": 153198,
+    "encoding": "utf-16-le",
+    "text": "CompanyName"
+  },
+  {
+    "va": "1002a288",
+    "fileOffset": 153224,
+    "encoding": "utf-16-le",
+    "text": "Videojet Technologies Ltd."
+  },
+  {
+    "va": "1002a2c6",
+    "fileOffset": 153286,
+    "encoding": "utf-16-le",
+    "text": "FileDescription"
+  },
+  {
+    "va": "1002a2e8",
+    "fileOffset": 153320,
+    "encoding": "utf-16-le",
+    "text": "CLCSBinaryFontComponent Module"
+  },
+  {
+    "va": "1002a32e",
+    "fileOffset": 153390,
+    "encoding": "utf-16-le",
+    "text": "FileVersion"
+  },
+  {
+    "va": "1002a348",
+    "fileOffset": 153416,
+    "encoding": "utf-16-le",
+    "text": "4.4.0.7"
+  },
+  {
+    "va": "1002a35e",
+    "fileOffset": 153438,
+    "encoding": "utf-16-le",
+    "text": "InternalName"
+  },
+  {
+    "va": "1002a378",
+    "fileOffset": 153464,
+    "encoding": "utf-16-le",
+    "text": "CLCSBinaryFontComponent"
+  },
+  {
+    "va": "1002a3ae",
+    "fileOffset": 153518,
+    "encoding": "utf-16-le",
+    "text": "LegalCopyright"
+  },
+  {
+    "va": "1002a3cc",
+    "fileOffset": 153548,
+    "encoding": "utf-16-le",
+    "text": "Copyright "
+  },
+  {
+    "va": "1002a3e2",
+    "fileOffset": 153570,
+    "encoding": "utf-16-le",
+    "text": "2014"
+  },
+  {
+    "va": "1002a3f2",
+    "fileOffset": 153586,
+    "encoding": "utf-16-le",
+    "text": "OriginalFilename"
+  },
+  {
+    "va": "1002a414",
+    "fileOffset": 153620,
+    "encoding": "utf-16-le",
+    "text": "CLCSBinaryFontComponent.DLL"
+  },
+  {
+    "va": "1002a452",
+    "fileOffset": 153682,
+    "encoding": "utf-16-le",
+    "text": "ProductName"
+  },
+  {
+    "va": "1002a46c",
+    "fileOffset": 153708,
+    "encoding": "utf-16-le",
+    "text": "CLCSBinaryFontComponent Module"
+  },
+  {
+    "va": "1002a4b2",
+    "fileOffset": 153778,
+    "encoding": "utf-16-le",
+    "text": "ProductVersion"
+  },
+  {
+    "va": "1002a4d0",
+    "fileOffset": 153808,
+    "encoding": "utf-16-le",
+    "text": "4.4.0.7"
+  },
+  {
+    "va": "1002a4e6",
+    "fileOffset": 153830,
+    "encoding": "utf-16-le",
+    "text": "VarFileInfo"
+  },
+  {
+    "va": "1002a506",
+    "fileOffset": 153862,
+    "encoding": "utf-16-le",
+    "text": "Translation"
+  },
+  {
+    "va": "1002bbd2",
+    "fileOffset": 159698,
+    "encoding": "utf-16-le",
+    "text": "CLCSBinaryFontComponent"
+  }
+]

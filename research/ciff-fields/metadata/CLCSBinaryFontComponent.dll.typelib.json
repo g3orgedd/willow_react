@@ -1,0 +1,437 @@
+{
+  "file": "CLCSBinaryFontComponent.dll",
+  "name": "CLCSBINARYFONTCOMPONENTLib",
+  "types": [
+    {
+      "index": 0,
+      "name": "BinaryFont",
+      "documentation": "BinaryFont Class",
+      "guid": "{B261CBA5-9A1F-4132-B65D-E748E241F00C}",
+      "guidLocations": [
+        "1001c7ac",
+        "1002affc"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IBinaryFont",
+          "guid": "{824338BF-D4C2-49BC-875B-B8BB8594DD1F}"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "IBinaryFont",
+      "documentation": "IBinaryFont Interface",
+      "guid": "{824338BF-D4C2-49BC-875B-B8BB8594DD1F}",
+      "guidLocations": [
+        "1001c78c",
+        "1001cc40",
+        "1002b014"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "CreateUniscribeRenderer",
+          "names": [
+            "CreateUniscribeRenderer",
+            "pVal"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": "method CreateUniscribeRenderer",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 26,
+                  "target": {
+                    "vt": 29,
+                    "name": "IBinaryFontUniscribe"
+                  }
+                }
+              },
+              "flags": 10
+            }
+          ]
+        },
+        {
+          "name": "AddBinaryFontResource",
+          "names": [
+            "AddBinaryFontResource",
+            "bstrFontName",
+            "bstrFontPath"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": "method AddBinaryFontResource",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "RemoveBinaryFontResource",
+          "names": [
+            "RemoveBinaryFontResource",
+            "bstrFontName"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": "method RemoveBinaryFontResource",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "IBinaryFontUniscribe",
+      "documentation": "IBinaryFontUniscribe Interface",
+      "guid": "{0D63CB04-2FC0-45EB-B501-71AC1135777E}",
+      "guidLocations": [
+        "1001c45c",
+        "1001c77c",
+        "1002b05c"
+      ],
+      "kind": 3,
+      "functions": [
+        {
+          "name": "SelectBitmapFont",
+          "names": [
+            "SelectBitmapFont",
+            "bstrFontName",
+            "ulFlags",
+            "lOrientation",
+            "lEscapement",
+            "lCharacterSpacing",
+            "lMultiStroke",
+            "bRTL"
+          ],
+          "memid": 1610678272,
+          "invkind": 1,
+          "vtableOffset32": 12,
+          "documentation": "method SelectBitmapFont",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 19
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "DeselectBitmapFont",
+          "names": [
+            "DeselectBitmapFont",
+            "bstrFontName"
+          ],
+          "memid": 1610678273,
+          "invkind": 1,
+          "vtableOffset32": 16,
+          "documentation": "method DeselectBitmapFont",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "SetObjectLink",
+          "names": [
+            "SetObjectLink",
+            "riid",
+            "pIObject"
+          ],
+          "memid": 1610678274,
+          "invkind": 1,
+          "vtableOffset32": 20,
+          "documentation": "method SetObjectLink",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 29,
+                  "name": "GUID"
+                }
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 13
+              },
+              "flags": 1
+            }
+          ]
+        },
+        {
+          "name": "GetTextSize",
+          "names": [
+            "GetTextSize",
+            "hDC",
+            "bstrText",
+            "nTextWidth",
+            "nTextHeight"
+          ],
+          "memid": 1610678275,
+          "invkind": 1,
+          "vtableOffset32": 24,
+          "documentation": "method GetTextSize",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            },
+            {
+              "type": {
+                "vt": 26,
+                "target": {
+                  "vt": 3
+                }
+              },
+              "flags": 2
+            }
+          ]
+        },
+        {
+          "name": "OutputText",
+          "names": [
+            "OutputText",
+            "hDC",
+            "lXPos",
+            "lYPos",
+            "lTextLength",
+            "bstrText"
+          ],
+          "memid": 1610678276,
+          "invkind": 1,
+          "vtableOffset32": 28,
+          "documentation": "method OutputText",
+          "returnType": {
+            "vt": 25
+          },
+          "parameters": [
+            {
+              "type": {
+                "vt": 29,
+                "name": "wireHDC"
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 3
+              },
+              "flags": 1
+            },
+            {
+              "type": {
+                "vt": 8
+              },
+              "flags": 1
+            }
+          ]
+        }
+      ],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IUnknown",
+          "guid": "{00000000-0000-0000-C000-000000000046}"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "wireHDC",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 6,
+      "functions": [],
+      "variables": [],
+      "implements": []
+    },
+    {
+      "index": 4,
+      "name": "_RemotableHandle",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 1,
+      "functions": [],
+      "variables": [
+        {
+          "name": "fContext",
+          "value": null
+        },
+        {
+          "name": "u",
+          "value": null
+        }
+      ],
+      "implements": []
+    },
+    {
+      "index": 5,
+      "name": "__MIDL_IWinTypes_0009",
+      "documentation": null,
+      "guid": "{00000000-0000-0000-0000-000000000000}",
+      "guidLocations": [],
+      "kind": 7,
+      "functions": [],
+      "variables": [
+        {
+          "name": "hInproc",
+          "value": null
+        },
+        {
+          "name": "hRemote",
+          "value": null
+        }
+      ],
+      "implements": []
+    },
+    {
+      "index": 6,
+      "name": "BinaryFontUniscribe",
+      "documentation": "BinaryFontUniscribe Class",
+      "guid": "{3F6D599E-4807-4E71-8953-1C3ECD927B1B}",
+      "guidLocations": [
+        "1001c7bc",
+        "1002b074"
+      ],
+      "kind": 5,
+      "functions": [],
+      "variables": [],
+      "implements": [
+        {
+          "name": "IBinaryFontUniscribe",
+          "guid": "{0D63CB04-2FC0-45EB-B501-71AC1135777E}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-21",
+  "source": "Fresh original COM and targeted Ghidra export",
+  "decompiledCCount": 104,
+  "decompiledAsmCount": 104,
+  "byModule": [
+    {
+      "module": "CiffMgr.dll",
+      "functions": 12
+    },
+    {
+      "module": "CLARiSOFT.exe",
+      "functions": 77
+    },
+    {
+      "module": "CLPrintPreview.ocx",
+      "functions": 15
+    }
+  ],
+  "probes": {
+    "script": "probe-dimensions.ps1",
+    "processBits": 32,
+    "total": 38,
+    "ok": 34,
+    "expectedMissingImageErrors": 4
+  },
+  "hashComparison": [
+    {
+      "module": "CLARiSOFT.exe",
+      "oldResearchHash": "28aebc9c30c68e85175be90580195d6e4f3180a994ecdc8215e9b93c26304e1a",
+      "installedHash": "28AEBC9C30C68E85175BE90580195D6E4F3180A994ECDC8215E9B93C26304E1A",
+      "matchesPrior": true
+    },
+    {
+      "module": "CiffMgr.dll",
+      "oldResearchHash": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b",
+      "installedHash": "F1A3C15E39657C5D8B2A0391660BBA2809702B5B83E368C41584ABDD2955124B",
+      "matchesPrior": true
+    },
+    {
+      "module": "CiffHelper.dll",
+      "oldResearchHash": "26e0cc9bc69d44b00e9ab482e1a2d13daf5bb8f801817c717194c5f1b535558a",
+      "installedHash": "26E0CC9BC69D44B00E9AB482E1A2D13DAF5BB8F801817C717194C5F1B535558A",
+      "matchesPrior": true
+    },
+    {
+      "module": "CLPrintPreview.ocx",
+      "oldResearchHash": null,
+      "installedHash": "B8E2B447E44AF3B781A713054D507F56C8C18BAE835A0E2B6C4D3BD174F15E48",
+      "matchesPrior": null
+    }
+  ]
+}

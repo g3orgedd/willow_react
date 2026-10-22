@@ -1,0 +1,7 @@
+4503a0fb MOV EAX,dword ptr [EBP + -0x30]
+4503a0fe AND EAX,0x1
+4503a101 JZ 0x4503a113
+4503a107 AND dword ptr [EBP + -0x30],0xfffffffe
+4503a10b MOV ECX,dword ptr [EBP + -0x34]
+4503a10e JMP 0x45002256
+4503a113 RET

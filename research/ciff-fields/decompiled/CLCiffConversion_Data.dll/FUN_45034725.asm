@@ -1,0 +1,3 @@
+45034725 PUSH dword ptr [0x45055e94]
+4503472b CALL dword ptr [0x4503d04c]
+45034731 RET

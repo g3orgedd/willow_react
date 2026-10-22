@@ -12,6 +12,7 @@ import { RightPanel } from './RightPanel';
 import { SaveTemplateModal } from './SaveTemplateModal';
 import { TopBar } from './TopBar';
 import { TextFieldModal } from './TextFieldModal';
+import { TemplateTabMenu } from './TemplateTabMenu';
 
 export function AppLayout() {
   return (
@@ -23,6 +24,7 @@ export function AppLayout() {
         <RightPanel />
       </main>
       <MobilePanels />
+      <TemplateTabMenu />
       <AdvancedEditorModals />
       <NewTemplateModal />
       <DataMatrixModal />

@@ -1,0 +1,214 @@
+{
+    "source":  "Installed CiffMgr.dll through original COM vtables",
+    "processBits":  32,
+    "cases":  [
+                  {
+                      "name":  "field-family-0-defaults",
+                      "status":  "ok",
+                      "file":  "field-family-0-defaults.ciff",
+                      "characters":  456
+                  },
+                  {
+                      "name":  "field-family-1-defaults",
+                      "status":  "ok",
+                      "file":  "field-family-1-defaults.ciff",
+                      "characters":  494
+                  },
+                  {
+                      "name":  "common-FieldDisplayed",
+                      "status":  "ok",
+                      "file":  "common-FieldDisplayed.ciff",
+                      "characters":  480
+                  },
+                  {
+                      "name":  "common-FieldLine",
+                      "status":  "ok",
+                      "file":  "common-FieldLine.ciff",
+                      "characters":  466
+                  },
+                  {
+                      "name":  "common-FieldOrientation",
+                      "status":  "ok",
+                      "file":  "common-FieldOrientation.ciff",
+                      "characters":  485
+                  },
+                  {
+                      "name":  "common-OverrideThis",
+                      "status":  "ok",
+                      "file":  "common-OverrideThis.ciff",
+                      "characters":  486
+                  },
+                  {
+                      "name":  "common-CalculatedData",
+                      "status":  "ok",
+                      "file":  "common-CalculatedData.ciff",
+                      "characters":  503
+                  },
+                  {
+                      "name":  "logged-0",
+                      "status":  "ok",
+                      "file":  "logged-0.ciff",
+                      "characters":  483
+                  },
+                  {
+                      "name":  "logged-1",
+                      "status":  "ok",
+                      "file":  "logged-1.ciff",
+                      "characters":  483
+                  },
+                  {
+                      "name":  "logged-2",
+                      "status":  "ok",
+                      "file":  "logged-2.ciff",
+                      "characters":  456
+                  },
+                  {
+                      "name":  "text-FontName",
+                      "status":  "ok",
+                      "file":  "text-FontName.ciff",
+                      "characters":  491
+                  },
+                  {
+                      "name":  "text-FontPitch",
+                      "status":  "ok",
+                      "file":  "text-FontPitch.ciff",
+                      "characters":  478
+                  },
+                  {
+                      "name":  "barcode-subtype-15",
+                      "status":  "ok",
+                      "file":  "barcode-subtype-15.ciff",
+                      "characters":  501
+                  },
+                  {
+                      "name":  "barcode-QuietMargins",
+                      "status":  "ok",
+                      "file":  "barcode-QuietMargins.ciff",
+                      "characters":  522
+                  },
+                  {
+                      "name":  "barcode-datamatrix-extensions",
+                      "status":  "ok",
+                      "file":  "barcode-datamatrix-extensions.ciff",
+                      "characters":  616
+                  },
+                  {
+                      "name":  "data-flags-0",
+                      "status":  "ok",
+                      "file":  "data-flags-0.ciff",
+                      "characters":  550
+                  },
+                  {
+                      "name":  "data-flags-1",
+                      "status":  "ok",
+                      "file":  "data-flags-1.ciff",
+                      "characters":  560
+                  },
+                  {
+                      "name":  "data-flags-2",
+                      "status":  "ok",
+                      "file":  "data-flags-2.ciff",
+                      "characters":  581
+                  },
+                  {
+                      "name":  "data-flags-3",
+                      "status":  "ok",
+                      "file":  "data-flags-3.ciff",
+                      "characters":  571
+                  },
+                  {
+                      "name":  "object-FixedLength",
+                      "status":  "ok",
+                      "file":  "object-FixedLength.ciff",
+                      "characters":  525
+                  },
+                  {
+                      "name":  "object-FixedLengthPadCharacter",
+                      "status":  "error",
+                      "error":  "Exception calling \"SetInt\" with \"3\" argument(s): \"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\""
+                  },
+                  {
+                      "name":  "object-FixedLengthPadMode",
+                      "status":  "error",
+                      "error":  "Exception calling \"SetInt\" with \"3\" argument(s): \"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\""
+                  },
+                  {
+                      "name":  "object-MaximumCharacters",
+                      "status":  "ok",
+                      "file":  "object-MaximumCharacters.ciff",
+                      "characters":  545
+                  },
+                  {
+                      "name":  "source-field",
+                      "status":  "ok",
+                      "file":  "source-field.ciff",
+                      "characters":  602
+                  },
+                  {
+                      "name":  "source-data",
+                      "status":  "ok",
+                      "file":  "source-data.ciff",
+                      "characters":  642
+                  },
+                  {
+                      "name":  "user-text",
+                      "status":  "ok",
+                      "file":  "user-text.ciff",
+                      "characters":  772
+                  },
+                  {
+                      "name":  "offset-date",
+                      "status":  "ok",
+                      "file":  "offset-date.ciff",
+                      "characters":  648
+                  },
+                  {
+                      "name":  "counter",
+                      "status":  "ok",
+                      "file":  "counter.ciff",
+                      "characters":  710
+                  },
+                  {
+                      "name":  "neutral-explicit-defaults",
+                      "status":  "ok",
+                      "file":  "neutral-explicit-defaults.ciff",
+                      "characters":  553
+                  },
+                  {
+                      "name":  "variable-empty-values",
+                      "status":  "ok",
+                      "file":  "variable-empty-values.ciff",
+                      "characters":  563
+                  },
+                  {
+                      "name":  "fixedlen-space-left-defaults",
+                      "status":  "ok",
+                      "file":  "fixedlen-space-left-defaults.ciff",
+                      "characters":  693
+                  },
+                  {
+                      "name":  "partial-source-explicit-zero",
+                      "status":  "ok",
+                      "file":  "partial-source-explicit-zero.ciff",
+                      "characters":  583
+                  },
+                  {
+                      "name":  "ru-date-month",
+                      "status":  "ok",
+                      "file":  "ru-date-month.ciff",
+                      "characters":  674
+                  },
+                  {
+                      "name":  "default-date-month",
+                      "status":  "ok",
+                      "file":  "default-date-month.ciff",
+                      "characters":  652
+                  },
+                  {
+                      "name":  "source-data-empty",
+                      "status":  "ok",
+                      "file":  "source-data-empty.ciff",
+                      "characters":  601
+                  }
+              ]
+}

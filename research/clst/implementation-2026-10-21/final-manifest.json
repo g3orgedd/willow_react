@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-21",
+  "sourceDll": {
+    "path": "C:\\Program Files (x86)\\CLARICOM\\Data\\CiffMgr.dll",
+    "version": "4.5.0.0",
+    "byteLength": 550400,
+    "sha256": "f1a3c15e39657c5d8b2a0391660bba2809702b5b83e368c41584abdd2955124b"
+  },
+  "command": "node research/clst/implementation-2026-10-21/run-final-verification.cjs",
+  "steps": [
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/make-native-inputs.cjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/native-com-oracle.ps1"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/make-resolved-inputs.cjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/native-resolved-oracle.ps1"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/native-resolved-reload.ps1"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "python",
+      "args": [
+        "research/clst/implementation-2026-10-21/verify-native-machine.py"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/prepare-production-emission.cjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/validate-production-files.ps1"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/verify-production-native.cjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/save-through-production.cjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/validate-production-files.ps1",
+        "-InputFile",
+        "research/clst/implementation-2026-10-21/saved-production-inputs.json",
+        "-OutputFile",
+        "research/clst/implementation-2026-10-21/saved-native-validation.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/verify-saved-native.cjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "node",
+      "args": [
+        "research/clst/implementation-2026-10-21/prepare-import-probes.cjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "research/clst/implementation-2026-10-21/native-import-probes.ps1"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": "node",
+      "args": [
+        "--test",
+        "tests/clst-dll-equivalence.test.cjs"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "productionSourceHashesBefore": {
+    "electron/font-renderer.ps1": "5ddeab5babbf9b6f19891a466b2ab5ba19231ed3a057ac194e8255b9443abd66",
+    "electron/fonts.cjs": "c803944ecbdb425a188cf02c6ebcfd490cf2662c3c3151b0bf4c22bb0d2bba56",
+    "electron/logger.cjs": "50590d9f2d155cf9c26cd5f4627a533d2b29f530ef1b61696304b9c7ff359a11",
+    "electron/main.cjs": "ee375135c470672c23a8edb31ff0046f7b5905cdd75bc50ef9262c39f845b516",
+    "electron/preload.cjs": "e7ff091d5196df657021f3e6f10ba7e5a78578ec4cc28c12ce4ea690743ec5b7",
+    "index.html": "bf351757582d93f7d1dbd06f43d9e463fcf6b97539e8f348b8242cbece5fbf00",
+    "package-lock.json": "98b8bcab36c909f6367d19788eed395e534bcf5731175941baeb6e57c3e37688",
+    "package.json": "172ad94ffc676b84c6fa3c8d3fa6594dd8ab3e9cbe86ecb3e8515f6cc1e3f122",
+    "public/modules/00-core.js": "132cd3677218eb5832008f06df465359533ee9caa4b0dcbe0b2da94a308d7f8a",
+    "public/modules/01-ciff-compatibility.js": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91",
+    "public/modules/02-fonts.js": "539a19b4d44c2b1808c77e14f70af55fa53e8ea111ec4b8518d778d61acecc28",
+    "public/modules/03-font-catalog.js": "a97126a88bf0181c248e4c8d0b99d1a7e559a9d31787e9491a8aab9678563588",
+    "public/modules/04-native-text-preview.js": "ed1767a1acc78e5f098b962d1d991ce2cb087072c7d697c4901b52eb35ab30a5",
+    "public/modules/05-i18n.js": "aed1a75e4613ddfd5d54569a68a763064a6d2be1f563b38e8f40d7fefe165eea",
+    "public/modules/06-theme.js": "6057c0dd9b51efb4c3b077edc1d47ad764ea90db65b5f1663171e27e4acf05d0",
+    "public/modules/07-logging.js": "3778f2ad48ecf467208bd9eca9a02e5a12106882a984347df77a0873bccd0384",
+    "public/modules/10-canvas-ui.js": "ee2c0f161a4eee2fc5e773ea270dc8637a8dd630fbd39714f5db0662dddb8602",
+    "public/modules/20-xml-load.js": "b7ddcdd964d29f787254cd19ae825902067b9930dda6f0435ff1db98e6819216",
+    "public/modules/30-rendering.js": "ffff528bd265b6aca3a8e04e0bf1d231085cc35eb083e49b2c87b7b4295118db",
+    "public/modules/40-editor.js": "7c8d6cac2ca80abcbda935008571eac3ce347978a7790d5bc0de8fc94d5ea7f0",
+    "public/modules/45-template-preset.js": "fbecc4d205c5cc98d89d4a5ba2e7afd1bebaf8d9c12eb6b51cf95a07b977c449",
+    "public/modules/50-inputs.js": "1a4ba1f3b2b61ee55379fa5520a05daaf4cb6458cd3223f7a9db35393d32532d",
+    "public/modules/60-history-save.js": "41c4bafef829a84ae5632d94c4cfcdcdfa045f63efb8d60c0d31700a9fea5309",
+    "public/modules/70-template-tabs.js": "5a5cbfa1b985b2fa814bdc21e70fe918077bf59dbef4413fc8e331e366d3d65b",
+    "public/modules/90-bootstrap.js": "abd4e3bd2e29870515ddc1b95cf397c07ea11a9d3cfdef753cd8b3d66ce92ada",
+    "public/modules/clst/calculated-data.js": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb",
+    "public/modules/clst/encryption.js": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+    "public/modules/clst/tag-data.js": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d",
+    "public/modules/clst/version-info.js": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5",
+    "public/styles.css": "f7d9cc452d1aa3843f9bd0a9be5547559c7c14932fe690ee487cbcf0b5058953",
+    "src/components/AdvancedEditorModals.tsx": "ce85327acc8d0e68c9a9cdbcd282e6fea528539ae37206ba9bbcf8ac4544d09a",
+    "src/components/AppLayout.tsx": "d17fc89ba2639b82e2c5cfc78fd5df3e04accf6f2aa91072052c2f2061dd2572",
+    "src/components/CanvasWorkspace.tsx": "2958f2c21fa3bc8657b372bcb2c160e7ef534e2aa3bf304d5ac15e5e153f8cbd",
+    "src/components/DataMatrixModal.tsx": "0c2051c0d81d6bed0bceb91bd6ea1b8234333e2bc3f4c811e7e0bd9322fa504a",
+    "src/components/LeftPanel.tsx": "832e0c6dcc153f85d9b2ab188467c5d6eb1b6e4622a535979b5b9ba6a9b5410b",
+    "src/components/MobilePanels.tsx": "ecb4051d5b2776c706aa66f89fbb905b33db3dad807b8733cf879cd4cd8d2ef0",
+    "src/components/NewTemplateModal.tsx": "4292d1ada3075cc56eb4bea668e8ec3b9b516f8922690f2d2d51532b48e3c419",
+    "src/components/RightPanel.tsx": "5c587b2200d251cf0a798a276c79ea31781944613afd6f39f29e1971ab59dda4",
+    "src/components/SaveTemplateModal.tsx": "4868b679cb4284ebbe98817e186a2a5d0a8899acaaae021869211f1831bdbbe2",
+    "src/components/TemplateTabMenu.tsx": "5111b10b1517026280e7dbdd542a54bcb3dbf878e9c6cb0232ddc16712d41a83",
+    "src/components/TemplateTabs.tsx": "9844ffd358a57934f0af43913f13795c3545dc4b137968b6e2350ad7a41f68ad",
+    "src/components/TextFieldModal.tsx": "88be8fe7cd4c0563a550796f91447ba2333f797c1376cd0cf6df5b75b3297713",
+    "src/components/TopBar.tsx": "b322c853952bf1da86f7801d16a4036f727e5ca19f9bccc5a8acc7b345103d51",
+    "src/domain/ciffEditorModules.ts": "c4947ed19cc464e8ab6648412f53e1a5193426df11220dc69ea8a4d3e0cfed57",
+    "src/hooks/useCiffEditorRuntime.ts": "df187e27dc9ae002143d22b252efae272f94791e940c65a5eb70d60144779f09",
+    "src/legacy/global.d.ts": "4b57d008ca46a2fb61b10f105211fea4e5a0e55776ed8a2fe5d34f63bbddb220",
+    "src/utils/loadScript.ts": "f11d95683027347fbc2659a48a45f6d2a0b94c0fb7b59f573a615c8c1fb68ed2",
+    "tests/clst-dll-equivalence.test.cjs": "cef2e5062ffb333739e64fddfb8daad9915e671a6758c516eadb0e5621b56c1e",
+    "tests/helpers/ciff-production-harness.cjs": "a95a8a7e4a0b3680701b814fcfefb504ed77fdc09b55b03fa5811280897d1390",
+    "vite.config.ts": "5aff1a4607e140f0650c1f2519646836c05800631edd8160faccd940dc14d017"
+  },
+  "productionSourceHashesAfter": {
+    "electron/font-renderer.ps1": "5ddeab5babbf9b6f19891a466b2ab5ba19231ed3a057ac194e8255b9443abd66",
+    "electron/fonts.cjs": "c803944ecbdb425a188cf02c6ebcfd490cf2662c3c3151b0bf4c22bb0d2bba56",
+    "electron/logger.cjs": "50590d9f2d155cf9c26cd5f4627a533d2b29f530ef1b61696304b9c7ff359a11",
+    "electron/main.cjs": "ee375135c470672c23a8edb31ff0046f7b5905cdd75bc50ef9262c39f845b516",
+    "electron/preload.cjs": "e7ff091d5196df657021f3e6f10ba7e5a78578ec4cc28c12ce4ea690743ec5b7",
+    "index.html": "bf351757582d93f7d1dbd06f43d9e463fcf6b97539e8f348b8242cbece5fbf00",
+    "package-lock.json": "98b8bcab36c909f6367d19788eed395e534bcf5731175941baeb6e57c3e37688",
+    "package.json": "172ad94ffc676b84c6fa3c8d3fa6594dd8ab3e9cbe86ecb3e8515f6cc1e3f122",
+    "public/modules/00-core.js": "132cd3677218eb5832008f06df465359533ee9caa4b0dcbe0b2da94a308d7f8a",
+    "public/modules/01-ciff-compatibility.js": "fef8e4fb1cfe4c9dc849ae5ce8421be8431a0c88d3c2800e181bdadb1138ba91",
+    "public/modules/02-fonts.js": "539a19b4d44c2b1808c77e14f70af55fa53e8ea111ec4b8518d778d61acecc28",
+    "public/modules/03-font-catalog.js": "a97126a88bf0181c248e4c8d0b99d1a7e559a9d31787e9491a8aab9678563588",
+    "public/modules/04-native-text-preview.js": "ed1767a1acc78e5f098b962d1d991ce2cb087072c7d697c4901b52eb35ab30a5",
+    "public/modules/05-i18n.js": "aed1a75e4613ddfd5d54569a68a763064a6d2be1f563b38e8f40d7fefe165eea",
+    "public/modules/06-theme.js": "6057c0dd9b51efb4c3b077edc1d47ad764ea90db65b5f1663171e27e4acf05d0",
+    "public/modules/07-logging.js": "3778f2ad48ecf467208bd9eca9a02e5a12106882a984347df77a0873bccd0384",
+    "public/modules/10-canvas-ui.js": "ee2c0f161a4eee2fc5e773ea270dc8637a8dd630fbd39714f5db0662dddb8602",
+    "public/modules/20-xml-load.js": "b7ddcdd964d29f787254cd19ae825902067b9930dda6f0435ff1db98e6819216",
+    "public/modules/30-rendering.js": "ffff528bd265b6aca3a8e04e0bf1d231085cc35eb083e49b2c87b7b4295118db",
+    "public/modules/40-editor.js": "7c8d6cac2ca80abcbda935008571eac3ce347978a7790d5bc0de8fc94d5ea7f0",
+    "public/modules/45-template-preset.js": "fbecc4d205c5cc98d89d4a5ba2e7afd1bebaf8d9c12eb6b51cf95a07b977c449",
+    "public/modules/50-inputs.js": "1a4ba1f3b2b61ee55379fa5520a05daaf4cb6458cd3223f7a9db35393d32532d",
+    "public/modules/60-history-save.js": "41c4bafef829a84ae5632d94c4cfcdcdfa045f63efb8d60c0d31700a9fea5309",
+    "public/modules/70-template-tabs.js": "5a5cbfa1b985b2fa814bdc21e70fe918077bf59dbef4413fc8e331e366d3d65b",
+    "public/modules/90-bootstrap.js": "abd4e3bd2e29870515ddc1b95cf397c07ea11a9d3cfdef753cd8b3d66ce92ada",
+    "public/modules/clst/calculated-data.js": "8bec1a8e67d37ef0a53405c65c3963888140646ebe203f348a928f9c578e1bfb",
+    "public/modules/clst/encryption.js": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+    "public/modules/clst/tag-data.js": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d",
+    "public/modules/clst/version-info.js": "37efed01f43ce56e5e300a67c570a49f0037e7373fc1569a92baa2cb8c0d00b5",
+    "public/styles.css": "f7d9cc452d1aa3843f9bd0a9be5547559c7c14932fe690ee487cbcf0b5058953",
+    "src/components/AdvancedEditorModals.tsx": "ce85327acc8d0e68c9a9cdbcd282e6fea528539ae37206ba9bbcf8ac4544d09a",
+    "src/components/AppLayout.tsx": "d17fc89ba2639b82e2c5cfc78fd5df3e04accf6f2aa91072052c2f2061dd2572",
+    "src/components/CanvasWorkspace.tsx": "2958f2c21fa3bc8657b372bcb2c160e7ef534e2aa3bf304d5ac15e5e153f8cbd",
+    "src/components/DataMatrixModal.tsx": "0c2051c0d81d6bed0bceb91bd6ea1b8234333e2bc3f4c811e7e0bd9322fa504a",
+    "src/components/LeftPanel.tsx": "832e0c6dcc153f85d9b2ab188467c5d6eb1b6e4622a535979b5b9ba6a9b5410b",
+    "src/components/MobilePanels.tsx": "ecb4051d5b2776c706aa66f89fbb905b33db3dad807b8733cf879cd4cd8d2ef0",
+    "src/components/NewTemplateModal.tsx": "4292d1ada3075cc56eb4bea668e8ec3b9b516f8922690f2d2d51532b48e3c419",
+    "src/components/RightPanel.tsx": "5c587b2200d251cf0a798a276c79ea31781944613afd6f39f29e1971ab59dda4",
+    "src/components/SaveTemplateModal.tsx": "4868b679cb4284ebbe98817e186a2a5d0a8899acaaae021869211f1831bdbbe2",
+    "src/components/TemplateTabMenu.tsx": "5111b10b1517026280e7dbdd542a54bcb3dbf878e9c6cb0232ddc16712d41a83",
+    "src/components/TemplateTabs.tsx": "9844ffd358a57934f0af43913f13795c3545dc4b137968b6e2350ad7a41f68ad",
+    "src/components/TextFieldModal.tsx": "88be8fe7cd4c0563a550796f91447ba2333f797c1376cd0cf6df5b75b3297713",
+    "src/components/TopBar.tsx": "b322c853952bf1da86f7801d16a4036f727e5ca19f9bccc5a8acc7b345103d51",
+    "src/domain/ciffEditorModules.ts": "c4947ed19cc464e8ab6648412f53e1a5193426df11220dc69ea8a4d3e0cfed57",
+    "src/hooks/useCiffEditorRuntime.ts": "df187e27dc9ae002143d22b252efae272f94791e940c65a5eb70d60144779f09",
+    "src/legacy/global.d.ts": "4b57d008ca46a2fb61b10f105211fea4e5a0e55776ed8a2fe5d34f63bbddb220",
+    "src/utils/loadScript.ts": "f11d95683027347fbc2659a48a45f6d2a0b94c0fb7b59f573a615c8c1fb68ed2",
+    "tests/clst-dll-equivalence.test.cjs": "cef2e5062ffb333739e64fddfb8daad9915e671a6758c516eadb0e5621b56c1e",
+    "tests/helpers/ciff-production-harness.cjs": "a95a8a7e4a0b3680701b814fcfefb504ed77fdc09b55b03fa5811280897d1390",
+    "vite.config.ts": "5aff1a4607e140f0650c1f2519646836c05800631edd8160faccd940dc14d017"
+  },
+  "productionSourcesUnchangedDuringRun": true,
+  "actualResults": {
+    "nativeMachine": {
+      "cipher": {
+        "total": 206,
+        "matched": 206,
+        "failures": []
+      },
+      "randomIndex": {
+        "total": 438,
+        "matched": 438,
+        "failures": []
+      },
+      "sourceHashes": {
+        "public/modules/clst/encryption.js": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+        "public/modules/clst/tag-data.js": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d"
+      }
+    },
+    "nativeCoreCases": 13,
+    "emittedEnvelopeCases": 39,
+    "corruptRejected": 13,
+    "completeProductionSaves": 43,
+    "resolveCases": 10,
+    "partialAndDynamicDmNativeResolveMatched": [
+      "dm-partial-pad",
+      "dm-direct-time",
+      "first-default-charref-cr",
+      "first-user-charref-cr"
+    ],
+    "nativeImportPropertyCases": 5,
+    "unitTests": 6
+  },
+  "limitations": [
+    "Original COM load and validators are software compatibility evidence, not physical Videojet firmware acceptance.",
+    "Complete production save uses the project parser/save runtime harness; no GUI save or screenshot is implied.",
+    "The harness supplies ComparatorDomParser and replaces printable/hardware geometry validation and used-image-bounds updates with stubs. It executes the original calculated-data, ClSt, parser and XML save functions, but does not establish full application/geometry/printing compatibility.",
+    "GetTickCount/CRT thread-data source and OLE/CRT memory helpers are controlled for Unicorn; randomIndex and cipher arithmetic execute installed machine code.",
+    "Direct dynamic DataMatrix Time was frozen at the actual run time and compared immediately with original ResolveField."
+  ]
+}

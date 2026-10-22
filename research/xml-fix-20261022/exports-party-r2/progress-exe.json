@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "name": "exe-party-gtin2",
+      "mode": "exe",
+      "caseId": "party-gtin2",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\xml-exe-party-gtin2.ciff",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\exe-party-gtin2-expected.json",
+      "expectedValidation": "00000000",
+      "bytes": 8722,
+      "sha256": "de70fc29bc1440b19031c7fd19d6ca151670f5e19629f8af40dac66b71b4e09a"
+    },
+    {
+      "name": "exe-party-box-gtin",
+      "mode": "exe",
+      "caseId": "party-box-gtin",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\xml-exe-party-box-gtin.ciff",
+      "expectedFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-party-r2\\exe-party-box-gtin-expected.json",
+      "expectedValidation": "00000000",
+      "bytes": 10600,
+      "sha256": "3c78a94394526f7f32209a41877f15f275905546b5c29a279d64bbf01f29901f"
+    }
+  ],
+  "next": null
+}

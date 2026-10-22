@@ -1,0 +1,114 @@
+4543add8 PUSH EBP
+4543add9 MOV EBP,ESP
+4543addb SUB ESP,0x18
+4543adde LEA ECX,[EBP + -0x18]
+4543ade1 PUSH EBX
+4543ade2 PUSH EDI
+4543ade3 PUSH dword ptr [EBP + 0xc]
+4543ade6 CALL 0x4542c8eb
+4543adeb MOV EBX,dword ptr [EBP + 0x8]
+4543adee MOV EDI,0x100
+4543adf3 CMP EBX,EDI
+4543adf5 JNC 0x4543ae57
+4543adf7 MOV ECX,dword ptr [EBP + -0x18]
+4543adfa CMP dword ptr [ECX + 0x74],0x1
+4543adfe JLE 0x4543ae14
+4543ae00 LEA EAX,[EBP + -0x18]
+4543ae03 PUSH EAX
+4543ae04 PUSH 0x1
+4543ae06 PUSH EBX
+4543ae07 CALL 0x454344e5
+4543ae0c MOV ECX,dword ptr [EBP + -0x18]
+4543ae0f ADD ESP,0xc
+4543ae12 JMP 0x4543ae21
+4543ae14 MOV EAX,dword ptr [ECX + 0x90]
+4543ae1a MOVZX EAX,word ptr [EAX + EBX*0x2]
+4543ae1e AND EAX,0x1
+4543ae21 TEST EAX,EAX
+4543ae23 JZ 0x4543ae43
+4543ae25 CMP byte ptr [EBP + -0xc],0x0
+4543ae29 MOV EAX,dword ptr [ECX + 0x94]
+4543ae2f MOVZX ECX,byte ptr [EAX + EBX*0x1]
+4543ae33 JZ 0x4543ae3c
+4543ae35 MOV EAX,dword ptr [EBP + -0x10]
+4543ae38 AND dword ptr [EAX + 0x70],0xfffffffd
+4543ae3c MOV EAX,ECX
+4543ae3e JMP 0x4543af15
+4543ae43 CMP byte ptr [EBP + -0xc],0x0
+4543ae47 JZ 0x4543ae50
+4543ae49 MOV ECX,dword ptr [EBP + -0x10]
+4543ae4c AND dword ptr [ECX + 0x70],0xfffffffd
+4543ae50 MOV EAX,EBX
+4543ae52 JMP 0x4543af15
+4543ae57 MOV EAX,dword ptr [EBP + -0x18]
+4543ae5a CMP dword ptr [EAX + 0x74],0x1
+4543ae5e JLE 0x4543ae8d
+4543ae60 MOV EAX,EBX
+4543ae62 LEA ECX,[EBP + -0x18]
+4543ae65 SAR EAX,0x8
+4543ae68 MOV dword ptr [EBP + 0x8],EAX
+4543ae6b PUSH ECX
+4543ae6c MOVZX EAX,AL
+4543ae6f PUSH EAX
+4543ae70 CALL 0x4542d01b
+4543ae75 POP ECX
+4543ae76 POP ECX
+4543ae77 TEST EAX,EAX
+4543ae79 JZ 0x4543ae8d
+4543ae7b MOV EAX,dword ptr [EBP + 0x8]
+4543ae7e PUSH 0x2
+4543ae80 MOV byte ptr [EBP + -0x4],AL
+4543ae83 MOV byte ptr [EBP + -0x3],BL
+4543ae86 MOV byte ptr [EBP + -0x2],0x0
+4543ae8a POP ECX
+4543ae8b JMP 0x4543aea2
+4543ae8d CALL 0x45431fc5
+4543ae92 XOR ECX,ECX
+4543ae94 INC ECX
+4543ae95 MOV dword ptr [EAX],0x2a
+4543ae9b MOV byte ptr [EBP + -0x4],BL
+4543ae9e MOV byte ptr [EBP + -0x3],0x0
+4543aea2 MOV EAX,dword ptr [EBP + -0x18]
+4543aea5 LEA EDX,[EBP + -0x8]
+4543aea8 PUSH 0x1
+4543aeaa PUSH dword ptr [EAX + 0x4]
+4543aead PUSH 0x3
+4543aeaf PUSH EDX
+4543aeb0 PUSH ECX
+4543aeb1 LEA ECX,[EBP + -0x4]
+4543aeb4 PUSH ECX
+4543aeb5 PUSH EDI
+4543aeb6 PUSH dword ptr [EAX + 0xa8]
+4543aebc LEA EAX,[EBP + -0x18]
+4543aebf PUSH EAX
+4543aec0 CALL 0x45434481
+4543aec5 ADD ESP,0x24
+4543aec8 TEST EAX,EAX
+4543aeca JNZ 0x4543aee1
+4543aecc CMP byte ptr [EBP + -0xc],AL
+4543aecf JZ 0x4543ae50
+4543aed5 MOV EAX,dword ptr [EBP + -0x10]
+4543aed8 AND dword ptr [EAX + 0x70],0xfffffffd
+4543aedc JMP 0x4543ae50
+4543aee1 CMP EAX,0x1
+4543aee4 JNZ 0x4543aef9
+4543aee6 CMP byte ptr [EBP + -0xc],0x0
+4543aeea MOVZX EAX,byte ptr [EBP + -0x8]
+4543aeee JZ 0x4543af15
+4543aef0 MOV ECX,dword ptr [EBP + -0x10]
+4543aef3 AND dword ptr [ECX + 0x70],0xfffffffd
+4543aef7 JMP 0x4543af15
+4543aef9 MOVZX EDX,byte ptr [EBP + -0x8]
+4543aefd MOVZX EAX,byte ptr [EBP + -0x7]
+4543af01 SHL EDX,0x8
+4543af04 OR EDX,EAX
+4543af06 CMP byte ptr [EBP + -0xc],0x0
+4543af0a JZ 0x4543af13
+4543af0c MOV ECX,dword ptr [EBP + -0x10]
+4543af0f AND dword ptr [ECX + 0x70],0xfffffffd
+4543af13 MOV EAX,EDX
+4543af15 POP EDI
+4543af16 POP EBX
+4543af17 MOV ESP,EBP
+4543af19 POP EBP
+4543af1a RET

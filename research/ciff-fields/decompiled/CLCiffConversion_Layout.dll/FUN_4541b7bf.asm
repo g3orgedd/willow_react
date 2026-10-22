@@ -1,0 +1,7 @@
+4541b7bf LEA EAX,[ECX + 0x2c]
+4541b7c2 PUSH EAX
+4541b7c3 MOV EAX,dword ptr [ECX]
+4541b7c5 CALL dword ptr [EAX + 0x10]
+4541b7c8 PUSH EAX
+4541b7c9 CALL dword ptr [0x454472e4]
+4541b7cf RET

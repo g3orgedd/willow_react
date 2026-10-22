@@ -1,0 +1,16 @@
+{
+  "cipher": {
+    "total": 206,
+    "matched": 206,
+    "failures": []
+  },
+  "randomIndex": {
+    "total": 438,
+    "matched": 438,
+    "failures": []
+  },
+  "sourceHashes": {
+    "public/modules/clst/encryption.js": "d84e7251c310402cd1eab7e2a44d628bcc0fbe5ce9fb3dfcf2811a5f56879d0d",
+    "public/modules/clst/tag-data.js": "e1706aeeb2f676442f7103f282b41e98031d6b4be13cac0f7020d96592edd40d"
+  }
+}

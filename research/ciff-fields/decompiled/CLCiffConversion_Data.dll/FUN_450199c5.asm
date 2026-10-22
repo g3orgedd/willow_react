@@ -1,0 +1,2 @@
+450199c5 MOV EAX,dword ptr [ECX + 0x8]
+450199c8 RET

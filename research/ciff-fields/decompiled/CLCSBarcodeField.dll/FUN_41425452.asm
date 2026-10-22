@@ -1,0 +1,2 @@
+41425452 AND dword ptr [ECX + 0x138],0x0
+41425459 RET

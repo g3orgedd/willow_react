@@ -1,0 +1,28 @@
+4542ad8a PUSH EBP
+4542ad8b MOV EBP,ESP
+4542ad8d PUSH ESI
+4542ad8e CALL 0x454300d5
+4542ad93 MOV ESI,dword ptr [EBP + 0x8]
+4542ad96 CMP ESI,dword ptr [EAX + 0x98]
+4542ad9c JNZ 0x4542adaf
+4542ad9e CALL 0x454300d5
+4542ada3 MOV ECX,dword ptr [ESI + 0x4]
+4542ada6 MOV dword ptr [EAX + 0x98],ECX
+4542adac POP ESI
+4542adad POP EBP
+4542adae RET
+4542adaf CALL 0x454300d5
+4542adb4 MOV ECX,dword ptr [EAX + 0x98]
+4542adba JMP 0x4542adc5
+4542adbc MOV EAX,dword ptr [ECX + 0x4]
+4542adbf CMP ESI,EAX
+4542adc1 JZ 0x4542add2
+4542adc3 MOV ECX,EAX
+4542adc5 CMP dword ptr [ECX + 0x4],0x0
+4542adc9 JNZ 0x4542adbc
+4542adcb POP ESI
+4542adcc POP EBP
+4542adcd JMP 0x454302fc
+4542add2 MOV EAX,dword ptr [ESI + 0x4]
+4542add5 MOV dword ptr [ECX + 0x4],EAX
+4542add8 JMP 0x4542adac

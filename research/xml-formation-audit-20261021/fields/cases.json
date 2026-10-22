@@ -1,0 +1,725 @@
+[
+  {
+    "name": "field-family-0-defaults",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "field-family-1-defaults",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldDisplayed",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldDisplayed": 0
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldLine",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLine": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-FieldOrientation",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldOrientation": 90
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-OverrideThis",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "OverrideThis": 1
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "common-CalculatedData",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "CalculatedData": "A\u0001B\tC\nD\rE\u001fF<&>"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "logged-0",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLogged": ""
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "logged-1",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLogged": null
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "logged-2",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FieldLogged": "Not Logged"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontName",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontName": "OCRB"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "text-FontPitch",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "FontPitch": 8
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-subtype-15",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 15,
+        "name": "Field00",
+        "properties": {},
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-QuietMargins",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "QuietMargins": 0
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "barcode-datamatrix-extensions",
+    "fields": [
+      {
+        "type": 1,
+        "subtype": 15,
+        "name": "Field00",
+        "properties": {
+          "ECCType": 3,
+          "ModuleSize": 50,
+          "SymbolSize": 7,
+          "ClearStyleFieldType": "Barcode"
+        },
+        "objects": []
+      }
+    ]
+  },
+  {
+    "name": "data-flags-0",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-flags-1",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 1,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "DefaultData": "value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-flags-2",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 2,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "DefaultData": "value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "data-flags-3",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 3,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "DefaultData": "value"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-FixedLength",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "FixedLength": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "object-FixedLengthPadCharacter",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "FixedLengthPadCharacter": 48
+            }
+          }
+        ]
+      }
+    ],
+    "expectedError": "E_ACCESSDENIED"
+  },
+  {
+    "name": "object-FixedLengthPadMode",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "FixedLengthPadMode": 1
+            }
+          }
+        ]
+      }
+    ],
+    "expectedError": "E_ACCESSDENIED"
+  },
+  {
+    "name": "object-MaximumCharacters",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "MaximumCharacters": 31
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "source-field",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "SourceFieldName": "SRC",
+              "StartCharacter": 2,
+              "NumberOfCharacters": 5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "source-data",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {},
+        "objects": [
+          {
+            "type": 2,
+            "index": 0,
+            "static": true,
+            "parse": false,
+            "properties": {
+              "ConnStr": "example-connection-string",
+              "SourceSQL": "SELECT code\nFROM sample",
+              "ClearStyleDataType": 6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "user-text",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText"
+        },
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "DefaultData": "DEFAULT",
+              "VariableTextPrompt": "Enter code",
+              "VariableTextInputMask": "NNNN",
+              "VariableTextUserEnteredData": "1234",
+              "VariableTextPromptAtCoder": 1,
+              "VariableTextResetOnSelect": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "offset-date",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "OffsetDateText"
+        },
+        "objects": [
+          {
+            "type": 4,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "ClearStyleDataType": 3,
+              "DefaultData": "dd'/'MM'/'yyyy",
+              "OffsetDateSourceName": "ShelfLife"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "counter",
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "CounterText"
+        },
+        "objects": [
+          {
+            "type": 5,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 4,
+              "DefaultData": "0001",
+              "PrintsPerCount": 3,
+              "ResetOnSelect": 1,
+              "Rollover": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "neutral-explicit-defaults",
+    "resolve": false,
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText",
+          "FieldDisplayed": 1,
+          "FontXMag": 100,
+          "FontYMag": 100,
+          "FieldLine": 0,
+          "FieldOrientation": 0,
+          "FieldLogged": "Not Logged",
+          "FontTrueTypeSize": 1,
+          "FontPitch": 13,
+          "FontFamily": 32,
+          "FontName": "Arial",
+          "CalculatedData": ""
+        },
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "MaximumCharacters": 0,
+              "DefaultData": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "variable-empty-values",
+    "resolve": false,
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText"
+        },
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "",
+              "VariableTextUserEnteredData": "",
+              "VariableTextInputMask": "",
+              "VariableTextPrompt": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "fixedlen-space-left-defaults",
+    "resolve": false,
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText"
+        },
+        "objects": [
+          {
+            "type": 3,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 0,
+              "DefaultData": "ABC",
+              "MaximumCharacters": 6,
+              "FixedLength": 1,
+              "FixedLengthPadCharacter": 32,
+              "FixedLengthPadMode": 0,
+              "VariableTextUserEnteredData": "ABC"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "partial-source-explicit-zero",
+    "resolve": false,
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText"
+        },
+        "objects": [
+          {
+            "type": 1,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ClearStyleDataType": 5,
+              "SourceFieldName": "SRC",
+              "StartCharacter": 0,
+              "NumberOfCharacters": 0,
+              "SelectMode": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ru-date-month",
+    "resolve": true,
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "DateText"
+        },
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "Locale": "RU-RU",
+              "ClearStyleDataType": 2,
+              "DefaultData": "dd'/'MMM'/'yyyy"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "default-date-month",
+    "resolve": true,
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "DateText"
+        },
+        "objects": [
+          {
+            "type": 0,
+            "index": 0,
+            "static": false,
+            "parse": true,
+            "properties": {
+              "DefaultData": "dd'/'MMM'/'yyyy",
+              "ClearStyleDataType": 2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "source-data-empty",
+    "resolve": false,
+    "fields": [
+      {
+        "type": 0,
+        "subtype": 0,
+        "name": "Field00",
+        "properties": {
+          "ClearStyleFieldType": "FixedText"
+        },
+        "objects": [
+          {
+            "type": 2,
+            "index": 0,
+            "static": false,
+            "parse": false,
+            "properties": {
+              "ConnStr": "",
+              "SourceSQL": "",
+              "ClearStyleDataType": 6,
+              "DefaultData": ""
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-21",
+  "method": "Original installed 32-bit COM loader, two validators, ResolveField, native XML serialization, text/small-barcode CalculateSize and Draw. This is not a GUI screenshot or physical printer test.",
+  "ciffManager": {
+    "file": "C:/Program Files (x86)/CLARICOM/Data/CiffMgr.dll",
+    "sha256": "F1A3C15E39657C5D8B2A0391660BBA2809702B5B83E368C41584ABDD2955124B"
+  },
+  "cases": [
+    {
+      "name": "Glyph-party-without-counter-20261021.ciff",
+      "fieldCount": 7,
+      "segmentOrder": [
+        "C1",
+        "GTIN2",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN"
+      ],
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "loadedPropertiesExact": true,
+      "nativeResolveCalculatedDataExact": true,
+      "serialDefaultLength": 10,
+      "serialMaximumLength": 12,
+      "serialCalcData": "0000000000  ",
+      "originalAndNativeRegeneratedTokenRecompositionExact": true,
+      "componentUpdateSizeDrawFields": 7,
+      "updateAndCalculatePreserveStoredGeometry": true,
+      "drawPreservesPositionAndData": true,
+      "drawGeometryAdjustments": [
+        {
+          "name": "C3",
+          "printed": false,
+          "before": {
+            "w": 383,
+            "h": 392
+          },
+          "afterDraw": {
+            "w": 358,
+            "h": 392
+          },
+          "widthDots": 43,
+          "heightDots": 47
+        },
+        {
+          "name": "PRODUCT_DATE",
+          "printed": false,
+          "before": {
+            "w": 345,
+            "h": 133
+          },
+          "afterDraw": {
+            "w": 350,
+            "h": 133
+          },
+          "widthDots": 42,
+          "heightDots": 16
+        },
+        {
+          "name": "SN",
+          "printed": false,
+          "before": {
+            "w": 575,
+            "h": 133
+          },
+          "afterDraw": {
+            "w": 550,
+            "h": 133
+          },
+          "widthDots": 66,
+          "heightDots": 16
+        }
+      ],
+      "barcodeDots": {
+        "width": 132,
+        "height": 132
+      },
+      "sourceSHA256": "FE3688AA3F7C318ABD48C98480398BED1AEAB1AB5A489923A3B371B565A684E4",
+      "originalDownloadUnchanged": true
+    },
+    {
+      "name": "Glyph-party-with-box-counter-20261021.ciff",
+      "fieldCount": 9,
+      "segmentOrder": [
+        "C1",
+        "GTIN2",
+        "C3",
+        "PRODUCT_DATE",
+        "C2",
+        "SN",
+        "C4",
+        "BOX_COUNTER"
+      ],
+      "originalLoaderAccepted": true,
+      "validate": "00000000",
+      "validate2": "00000000",
+      "loadedPropertiesExact": true,
+      "nativeResolveCalculatedDataExact": true,
+      "serialDefaultLength": 10,
+      "serialMaximumLength": 12,
+      "serialCalcData": "0000000000  ",
+      "originalAndNativeRegeneratedTokenRecompositionExact": true,
+      "componentUpdateSizeDrawFields": 9,
+      "updateAndCalculatePreserveStoredGeometry": true,
+      "drawPreservesPositionAndData": true,
+      "drawGeometryAdjustments": [
+        {
+          "name": "C3",
+          "printed": false,
+          "before": {
+            "w": 383,
+            "h": 392
+          },
+          "afterDraw": {
+            "w": 358,
+            "h": 392
+          },
+          "widthDots": 43,
+          "heightDots": 47
+        },
+        {
+          "name": "PRODUCT_DATE",
+          "printed": false,
+          "before": {
+            "w": 345,
+            "h": 133
+          },
+          "afterDraw": {
+            "w": 350,
+            "h": 133
+          },
+          "widthDots": 42,
+          "heightDots": 16
+        },
+        {
+          "name": "SN",
+          "printed": false,
+          "before": {
+            "w": 575,
+            "h": 133
+          },
+          "afterDraw": {
+            "w": 550,
+            "h": 133
+          },
+          "widthDots": 66,
+          "heightDots": 16
+        },
+        {
+          "name": "BOX_COUNTER",
+          "printed": false,
+          "before": {
+            "w": 288,
+            "h": 133
+          },
+          "afterDraw": {
+            "w": 292,
+            "h": 133
+          },
+          "widthDots": 35,
+          "heightDots": 16
+        }
+      ],
+      "barcodeDots": {
+        "width": 132,
+        "height": 132
+      },
+      "sourceSHA256": "7F00BCBADCD69D5C5C06915DD7B3BB7A2E8EEA4DAC4272D7D00586785470CF04",
+      "originalDownloadUnchanged": true
+    }
+  ],
+  "accepted": 2
+}

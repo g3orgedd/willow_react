@@ -1,0 +1,1730 @@
+{"address":"4249576c","value":"DontCare","refs":[]}
+{"address":"42495788","value":"Roman","refs":[]}
+{"address":"424957a4","value":"Swiss","refs":[]}
+{"address":"424957c0","value":"Modern","refs":[]}
+{"address":"424957dc","value":"Script","refs":[]}
+{"address":"424957f8","value":"Decorative","refs":[]}
+{"address":"42495880","value":"Floating point (%%e, %%f, %%g, and %%G) is not supported by the WTL::CString class.","refs":[{"from":"42405750","function":"424054bc"}]}
+{"address":"42495974","value":"%02d/%02d/%4d at %02d:%02d:%02d - ","refs":[{"from":"42431f5c","function":"42431f0a"},{"from":"42404073","function":"42403ff7"},{"from":"42404964","function":"42404912"},{"from":"42432184","function":"42432132"},{"from":"4240472c","function":"424046da"},{"from":"424044f4","function":"424044a2"}]}
+{"address":"42495998","value":"C://TraceErrorLog.log","refs":[{"from":"42431f9b","function":"42431f0a"},{"from":"424049a3","function":"42404912"},{"from":"424321bd","function":"42432132"},{"from":"4240476b","function":"424046da"},{"from":"42404533","function":"424044a2"}]}
+{"address":"424959d2","value":"B(claricomsystem.log","refs":[]}
+{"address":"424959e8","value":"ATLTRACELOGALWAYS _com_error","refs":[{"from":"4240451f","function":"424044a2"},{"from":"42404527","function":"424044a2"},{"from":"42404516","function":"424044a2"}]}
+{"address":"42495a08","value":"ATLTRACELOGALWAYS (std::exception) Error","refs":[{"from":"42404757","function":"424046da"},{"from":"4240475f","function":"424046da"},{"from":"4240474e","function":"424046da"}]}
+{"address":"42495a34","value":"ATLTRACELOGALWAYS (...) Error","refs":[{"from":"4240498f","function":"42404912"},{"from":"42404997","function":"42404912"},{"from":"42404986","function":"42404912"}]}
+{"address":"42495a54","value":"string too long","refs":[{"from":"4246718b","function":"42467133"},{"from":"4243cc83","function":"4243cb6b"},{"from":"42428306","function":"4242826e"},{"from":"4240643b","function":"424063e3"},{"from":"4242823c","function":"424281a1"},{"from":"424066ac","function":"42406611"},{"from":"4243c6e4","function":"4243c69f"},{"from":"4240674e","function":"424066b7"},{"from":"424064a3","function":"42406446"}]}
+{"address":"42495a64","value":"invalid string position","refs":[{"from":"424671b0","function":"42467196"},{"from":"4243cc79","function":"4243cb6b"},{"from":"42406c19","function":"42406bf5"},{"from":"424068ee","function":"42406866"},{"from":"42410caa","function":"42410c4d"},{"from":"42406c9b","function":"42406c24"},{"from":"42406d52","function":"42406cd9"},{"from":"42406cce","function":"42406ca6"},{"from":"42428232","function":"424281a1"},{"from":"424066a2","function":"42406611"},{"from":"424067e2","function":"42406759"}]}
+{"address":"42495ac4","value":"DataSources","refs":[{"from":"42404c98","function":"42404c6e"}]}
+{"address":"42495adc","value":"Generic","refs":[{"from":"42459d80","function":"42459d46"},{"from":"42421268","function":"424211ff"},{"from":"424409cd","function":"424409a1"},{"from":"42404e87","function":"42404e68"},{"from":"42404e3e","function":"42404e04"},{"from":"42404c9d","function":"42404c6e"},{"from":"42404cfd","function":"42404cc3"},{"from":"42404d8b","function":"42404d5f"},{"from":"42404d46","function":"42404d27"},{"from":"42452e1b","function":"42452de1"},{"from":"42404deb","function":"42404db1"}]}
+{"address":"42495aec","value":"DataSource","refs":[{"from":"424213a8","function":"424212d9"},{"from":"42421234","function":"424211ff"}]}
+{"address":"42495b04","value":"%s_%02d","refs":[{"from":"42421239","function":"424211ff"}]}
+{"address":"42495b14","value":"%s_%s","refs":[{"from":"424213ad","function":"424212d9"}]}
+{"address":"42495b20","value":"Source","refs":[{"from":"42404be3","function":"42404bac"}]}
+{"address":"42495b30","value":"Table","refs":[{"from":"42404c44","function":"42404c0d"}]}
+{"address":"42495b3c","value":"IndexField","refs":[{"from":"42404b82","function":"42404b4b"}]}
+{"address":"42495b54","value":"%02d:%02d","refs":[{"from":"424069e5","function":"424069bb"}]}
+{"address":"42495b70","value":"%s%02d:%02d:%02d","refs":[{"from":"42406af2","function":"42406a8e"}]}
+{"address":"42495b94","value":"notpresent","refs":[{"from":"42405c2a","function":"42405c07"},{"from":"4240f38a","function":"4240f35a"},{"from":"4240eb60","function":"4240eaf8"},{"from":"42404e34","function":"42404e04"},{"from":"42404cf3","function":"42404cc3"},{"from":"42452e11","function":"42452de1"}]}
+{"address":"42495bac","value":"FixedText","refs":[{"from":"42405928","function":"4240591f"},{"from":"42423225","function":"424231a9"},{"from":"42456b83","function":"42456b3b"},{"from":"424566e6","function":"424566aa"},{"from":"424567ff","function":"424567c3"},{"from":"42401051","function":null},{"from":"42401142","function":null},{"from":"42401245","function":null},{"from":"424012f6","function":null},{"from":"424015ae","function":null},{"from":"4240165f","function":null},{"from":"42401710","function":null},{"from":"424017e5","function":null},{"from":"42401896","function":null}]}
+{"address":"42495bc0","value":"TimeText","refs":[{"from":"4240593d","function":"4240591f"},{"from":"4242341c","function":"424233b5"},{"from":"42439465","function":"42439442"},{"from":"42439545","function":"42439516"},{"from":"424363b0","function":"4243638c"},{"from":"4244e5bf","function":"4244e4ed"},{"from":"42401069","function":null},{"from":"4240115a","function":null},{"from":"4240125d","function":null},{"from":"4240130e","function":null},{"from":"424015c6","function":null},{"from":"42401677","function":null},{"from":"42401728","function":null},{"from":"424017fd","function":null},{"from":"424018ae","function":null}]}
+{"address":"42495bd4","value":"DateText","refs":[{"from":"42405955","function":"4240591f"},{"from":"42439458","function":"42439442"},{"from":"424229d3","function":"4242296c"},{"from":"4244e5d0","function":"4244e4ed"},{"from":"42401073","function":null},{"from":"42401164","function":null},{"from":"42401267","function":null},{"from":"42401318","function":null},{"from":"424015d0","function":null},{"from":"42401681","function":null},{"from":"42401732","function":null},{"from":"42401807","function":null},{"from":"424018b8","function":null}]}
+{"address":"42495be8","value":"OffsetDateText","refs":[{"from":"42427bd8","function":"42427b81"},{"from":"4240596a","function":"4240591f"},{"from":"424397ea","function":"424397d6"},{"from":"4242785a","function":"424277ef"},{"from":"42439538","function":"42439516"},{"from":"42422bb1","function":"42422b48"},{"from":"42401099","function":null},{"from":"4240118a","function":null},{"from":"4240128d","function":null},{"from":"4240133e","function":null},{"from":"424015f6","function":null},{"from":"424016a7","function":null},{"from":"42401758","function":null},{"from":"4240182d","function":null},{"from":"424018de","function":null}]}
+{"address":"42495c08","value":"CounterText","refs":[{"from":"42445c8e","function":"4244586b"},{"from":"42445dc0","function":"4244586b"},{"from":"4240597e","function":"4240591f"},{"from":"42422719","function":"424226b2"},{"from":"42412c3b","function":"42412703"},{"from":"42412d61","function":"42412703"},{"from":"42401086","function":null},{"from":"42401177","function":null},{"from":"4240127a","function":null},{"from":"4240132b","function":null},{"from":"424015e3","function":null},{"from":"42401694","function":null},{"from":"42401745","function":null},{"from":"4240181a","function":null},{"from":"424018cb","function":null}]}
+{"address":"42495c20","value":"SourceField","refs":[{"from":"42405992","function":"4240591f"}]}
+{"address":"42495c38","value":"SourceData","refs":[{"from":"424059a6","function":"4240591f"}]}
+{"address":"42495c50","value":"EquipRef","refs":[{"from":"424059ba","function":"4240591f"},{"from":"4245653a","function":"42456521"},{"from":"424010bf","function":null},{"from":"424011b0","function":null},{"from":"424012b3","function":null},{"from":"42401364","function":null},{"from":"4240161c","function":null},{"from":"424016cd","function":null},{"from":"4240177e","function":null},{"from":"42401853","function":null},{"from":"42401904","function":null}]}
+{"address":"42495c64","value":"Price","refs":[{"from":"424059ce","function":"4240591f"},{"from":"42422dc1","function":"42422d37"},{"from":"424010d2","function":null},{"from":"424011c3","function":null},{"from":"424012c6","function":null},{"from":"42401377","function":null},{"from":"4240162f","function":null},{"from":"424016e0","function":null},{"from":"42401791","function":null},{"from":"42401866","function":null},{"from":"42401917","function":null}]}
+{"address":"42495c80","value":"CurrentDate","refs":[{"from":"4245ee7e","function":"4245ee0f"},{"from":"4245ef80","function":"4245ee0f"}]}
+{"address":"42495d28","value":"Claricom","refs":[{"from":"4240ba4f","function":"4240b98a"},{"from":"4240102a","function":null}]}
+{"address":"42495d5c","value":"HIBC_","refs":[{"from":"4243da7d","function":"4243d71b"}]}
+{"address":"42495d68","value":"ZFBF","refs":[{"from":"42405b78","function":"42405a5e"},{"from":"42425bee","function":"42425abf"},{"from":"424539e6","function":"424538dd"},{"from":"424225bf","function":"42421f6e"},{"from":"424453b5","function":"424452ac"},{"from":"4242395d","function":"424236e5"},{"from":"4244da03","function":"4244d768"},{"from":"424255b6","function":"4242558d"},{"from":"42425640","function":"4242558d"},{"from":"4242694c","function":"42426819"},{"from":"4244f158","function":"4244ee4d"},{"from":"4245af71","function":"4245aeba"},{"from":"424687c9","function":"424683cb"},{"from":"4244a10c","function":"4244a003"},{"from":"424121fe","function":"424120f5"},{"from":"424266f1","function":"4242660b"},{"from":"4245a806","function":"4245a73e"},{"from":"42450696","function":"424504b4"},{"from":"424366bb","function":"424365b2"}]}
+{"address":"42495d74","value":"Start of Day","refs":[{"from":"42404cf8","function":"42404cc3"},{"from":"42404d41","function":"42404d27"}]}
+{"address":"42495d90","value":"Start of Day Offset","refs":[{"from":"42404e82","function":"42404e68"},{"from":"42404e39","function":"42404e04"}]}
+{"address":"42495db8","value":"Start of Day Enabled","refs":[{"from":"42404d86","function":"42404d5f"},{"from":"42404de6","function":"42404db1"}]}
+{"address":"42495de4","value":"map/set<T> too long","refs":[{"from":"424631d3","function":"424630b9"},{"from":"424630ae","function":"42462f94"},{"from":"424101b7","function":"42410094"}]}
+{"address":"42495e2c","value":"%02d:%02d:%02d - ","refs":[{"from":"42434738","function":"424346f7"},{"from":"42408488","function":"4240843a"}]}
+{"address":"42495e50","value":"ATL: ","refs":[{"from":"424084be","function":"4240843a"}]}
+{"address":"42495ea0","value":"Invalid message map ID (%i)\n","refs":[{"from":"4241d82c","function":"4241d813"},{"from":"4241df2a","function":"4241df13"},{"from":"4241dc73","function":"4241dc60"},{"from":"42431c3f","function":"42431c31"},{"from":"42439253","function":"42439247"},{"from":"4241d3b8","function":"4241d397"},{"from":"4241d064","function":"4241d04b"},{"from":"4241ca5a","function":"4241ca46"},{"from":"4241caba","function":"4241caa3"},{"from":"4245aba4","function":"4245ab98"},{"from":"42432839","function":"4243282b"},{"from":"4240c8dc","function":"4240c8cb"},{"from":"4240e924","function":"4240e918"},{"from":"42442ff0","function":"42442fe1"},{"from":"4242ec7e","function":"4242ec6c"},{"from":"4241c627","function":"4241c60a"}]}
+{"address":"42495edc","value":" (%ld : %ld)","refs":[{"from":"4240ab27","function":"4240a830"},{"from":"4240abd2","function":"4240a830"},{"from":"4240ac8f","function":"4240a830"},{"from":"4240ad4c","function":"4240a830"},{"from":"4240ae09","function":"4240a830"},{"from":"4240aec6","function":"4240a830"},{"from":"4240af83","function":"4240a830"},{"from":"4240b040","function":"4240a830"},{"from":"4240b0fd","function":"4240a830"},{"from":"4240b27b","function":"4240a830"},{"from":"4240b370","function":"4240a830"},{"from":"4240b435","function":"4240a830"},{"from":"4240b4fb","function":"4240a830"}]}
+{"address":"42495ef8","value":"Marking Speed (mm/sec)","refs":[{"from":"4240dbe6","function":"4240daa4"},{"from":"4240d2c5","function":"4240d159"},{"from":"424076a3","function":"4240752f"},{"from":"4240ab08","function":"4240a830"},{"from":"42408f8e","function":"42408cca"}]}
+{"address":"42495f38","value":"Jump Speed (mm/sec)","refs":[{"from":"4240dc83","function":"4240daa4"},{"from":"4240d355","function":"4240d159"},{"from":"4240776c","function":"4240752f"},{"from":"4240ad2a","function":"4240a830"},{"from":"4240904e","function":"42408cca"}]}
+{"address":"42495f60","value":"Mark Intensity (%)","refs":[{"from":"4240dce7","function":"4240daa4"},{"from":"4240d3b7","function":"4240d159"},{"from":"424077fc","function":"4240752f"},{"from":"4240aea4","function":"4240a830"},{"from":"424090ce","function":"42408cca"}]}
+{"address":"42495fa4","value":"Frequency (Hz)","refs":[{"from":"4240dd7a","function":"4240daa4"},{"from":"4240d44a","function":"4240d159"},{"from":"424078ce","function":"4240752f"},{"from":"4240b0db","function":"4240a830"},{"from":"4240918e","function":"42408cca"}]}
+{"address":"42495fb4","value":" (%0.3f : %0.3f)","refs":[{"from":"4240b1ba","function":"4240a830"}]}
+{"address":"42495fd8","value":"Line Width (mm)","refs":[{"from":"4240ddaf","function":"4240daa4"},{"from":"4240d47b","function":"4240d159"},{"from":"42407910","function":"4240752f"},{"from":"4240b198","function":"4240a830"},{"from":"424091ce","function":"42408cca"}]}
+{"address":"42495fe8","value":"Line Overlap (%)","refs":[{"from":"4240ddeb","function":"4240daa4"},{"from":"4240d50a","function":"4240d159"},{"from":"424079ce","function":"4240752f"},{"from":"4240b255","function":"4240a830"},{"from":"4240920e","function":"42408cca"}]}
+{"address":"42495ffc","value":"Min Vector (micron)","refs":[{"from":"4240de4f","function":"4240daa4"},{"from":"4240d56c","function":"4240d159"},{"from":"42407a58","function":"4240752f"},{"from":"4240b350","function":"4240a830"},{"from":"4240928a","function":"42408cca"}]}
+{"address":"42496010","value":"Max Vector (micron)","refs":[{"from":"4240de7e","function":"4240daa4"},{"from":"4240d59d","function":"4240d159"},{"from":"42407a9a","function":"4240752f"},{"from":"4240b410","function":"4240a830"},{"from":"424092d0","function":"42408cca"}]}
+{"address":"42496032","value":")Default","refs":[]}
+{"address":"42496044","value":"Marking Speed","refs":[{"from":"42407ce8","function":"42407cbb"},{"from":"424076cb","function":"4240752f"},{"from":"4240c0a2","function":"4240c02c"}]}
+{"address":"42496060","value":"Mark Delay","refs":[{"from":"42407d40","function":"42407cbb"},{"from":"4240770d","function":"4240752f"},{"from":"4240c112","function":"4240c02c"}]}
+{"address":"42496078","value":"Stroke Delay","refs":[{"from":"42407d8c","function":"42407cbb"},{"from":"4240774f","function":"4240752f"},{"from":"4240c176","function":"4240c02c"}]}
+{"address":"42496094","value":"Jump Speed","refs":[{"from":"42407dd8","function":"42407cbb"},{"from":"42407797","function":"4240752f"},{"from":"4240c1da","function":"4240c02c"}]}
+{"address":"424960ac","value":"Jump Delay","refs":[{"from":"42407e24","function":"42407cbb"},{"from":"424077df","function":"4240752f"},{"from":"4240c23e","function":"4240c02c"}]}
+{"address":"424960c4","value":"Mark Intensity","refs":[{"from":"42407e70","function":"42407cbb"},{"from":"42407827","function":"4240752f"},{"from":"4240c2a2","function":"4240c02c"}]}
+{"address":"424960e4","value":"Laser On Delay","refs":[{"from":"42407ebc","function":"42407cbb"},{"from":"42407869","function":"4240752f"},{"from":"4240c306","function":"4240c02c"}]}
+{"address":"42496104","value":"Laser Off Delay","refs":[{"from":"42407f08","function":"42407cbb"},{"from":"424078b1","function":"4240752f"},{"from":"4240c36a","function":"4240c02c"}]}
+{"address":"42496124","value":"Frequency","refs":[{"from":"42407f54","function":"42407cbb"},{"from":"424078f3","function":"4240752f"},{"from":"4240c3ce","function":"4240c02c"}]}
+{"address":"42496138","value":"%0.3f","refs":[{"from":"4240d4d2","function":"4240d159"},{"from":"42407969","function":"4240752f"}]}
+{"address":"42496140","value":"Line Width","refs":[{"from":"42407fa0","function":"42407cbb"},{"from":"4240798d","function":"4240752f"},{"from":"4240c432","function":"4240c02c"}]}
+{"address":"42496158","value":"Line Overlap","refs":[{"from":"42407fec","function":"42407cbb"},{"from":"424079f3","function":"4240752f"},{"from":"4240c496","function":"4240c02c"}]}
+{"address":"42496174","value":"Greyscale","refs":[{"from":"4240de20","function":"4240daa4"},{"from":"4240d53b","function":"4240d159"},{"from":"42407a10","function":"4240752f"},{"from":"4240924e","function":"42408cca"}]}
+{"address":"42496180","value":"Greyscale","refs":[{"from":"42408038","function":"42407cbb"},{"from":"42407a3b","function":"4240752f"},{"from":"4240c4fa","function":"4240c02c"}]}
+{"address":"42496194","value":"Min Vector","refs":[{"from":"42408084","function":"42407cbb"},{"from":"42407a7d","function":"4240752f"},{"from":"4240c55e","function":"4240c02c"}]}
+{"address":"424961ac","value":"Max Vector","refs":[{"from":"424080d0","function":"42407cbb"},{"from":"42407ac5","function":"4240752f"},{"from":"4240c5c2","function":"4240c02c"}]}
+{"address":"424961c4","value":"Q-switch","refs":[{"from":"4240811c","function":"42407cbb"},{"from":"42407b0d","function":"4240752f"},{"from":"4240c626","function":"4240c02c"}]}
+{"address":"424961d8","value":"Operating Mode","refs":[{"from":"4240df3b","function":"4240daa4"},{"from":"4240d5fc","function":"4240d159"},{"from":"42407b27","function":"4240752f"},{"from":"42409359","function":"42408cca"}]}
+{"address":"424961e8","value":"Operating Mode","refs":[{"from":"42408168","function":"42407cbb"},{"from":"42407b4c","function":"4240752f"},{"from":"4240c68a","function":"4240c02c"}]}
+{"address":"42496208","value":"FPS Correction","refs":[{"from":"4240dfd5","function":"4240daa4"},{"from":"4240d62a","function":"4240d159"},{"from":"42407b66","function":"4240752f"},{"from":"42409392","function":"42408cca"}]}
+{"address":"42496218","value":"FPS Correction","refs":[{"from":"424081b4","function":"42407cbb"},{"from":"42407b8b","function":"4240752f"},{"from":"4240c6ee","function":"4240c02c"}]}
+{"address":"42496244","value":"Barcode","refs":[{"from":"42408237","function":"42407cbb"},{"from":"4243f5a8","function":"4243f464"},{"from":"42407c34","function":"4240752f"},{"from":"4243d63e","function":"4243ce34"},{"from":"4240c7f7","function":"4240c02c"}]}
+{"address":"42496254","value":"Drawing","refs":[{"from":"4240825f","function":"42407cbb"},{"from":"4243f5bf","function":"4243f464"},{"from":"42407c47","function":"4240752f"},{"from":"4240c819","function":"4240c02c"}]}
+{"address":"42496284","value":"Frequency (Hz)","refs":[{"from":"4240bc7f","function":"4240bc45"},{"from":"4240c868","function":"4240c02c"},{"from":"42408716","function":"42408708"}]}
+{"address":"424962a4","value":"Local","refs":[{"from":"4240ba64","function":"4240b98a"}]}
+{"address":"424962b0","value":"MarkSets.xml","refs":[{"from":"4240a0a0","function":"4240a01a"}]}
+{"address":"424962e0","value":"%0.*f","refs":[{"from":"4240e22a","function":"4240daa4"},{"from":"4240e25b","function":"4240daa4"}]}
+{"address":"424962f7","value":"&Laser - 7810","refs":[]}
+{"address":"42496308","value":"MarkSets File Location","refs":[{"from":"4240f38f","function":"4240f35a"},{"from":"42408517","function":"424084fd"}]}
+{"address":"42496338","value":"CLARiSOFT","refs":[{"from":"4240f394","function":"4240f35a"},{"from":"424213f1","function":"424213e4"},{"from":"424214e2","function":"424214d5"},{"from":"424295c4","function":"4242958a"},{"from":"42452a0d","function":"4245290a"},{"from":"42452e98","function":"42452e5e"},{"from":"42452e52","function":"42452e45"},{"from":"42452efc","function":"42452ec2"},{"from":"42452f60","function":"42452f26"},{"from":"42453028","function":"42452fee"},{"from":"42452fc4","function":"42452f8a"},{"from":"4240851c","function":"424084fd"},{"from":"4245e589","function":"4245e491"}]}
+{"address":"4249634c","value":"vector<T> too long","refs":[{"from":"4240fd58","function":"4240fd18"},{"from":"4245f267","function":"4245f227"},{"from":"42462882","function":"42462842"},{"from":"424628cd","function":"4246288d"},{"from":"424622aa","function":"4246226a"},{"from":"4246225f","function":"4246221f"},{"from":"424622f7","function":"424622b5"},{"from":"42428162","function":"42428122"},{"from":"42462214","function":"424621d4"},{"from":"424621c9","function":"4246218d"},{"from":"4246c656","function":"4246c616"},{"from":"42462710","function":"424626d2"},{"from":"424626c7","function":"42462692"},{"from":"4246279b","function":"42462766"},{"from":"4246275b","function":"4246271b"},{"from":"42462837","function":"424627ef"},{"from":"424627e4","function":"424627a6"},{"from":"4240e479","function":"4240e439"},{"from":"42458535","function":"424584ed"},{"from":"424585c2","function":"4245859a"}]}
+{"address":"4249639c","value":"Cancel","refs":[{"from":"4240e6f4","function":"4240e617"}]}
+{"address":"424963b4","value":"version=\"1.0\" ","refs":[{"from":"4240f4bd","function":"4240f43c"},{"from":"424b9080","function":null}]}
+{"address":"424963d4","value":"encoding=\"UTF-8\" ","refs":[{"from":"4240f4cf","function":"4240f43c"},{"from":"424b9084","function":null}]}
+{"address":"424963f8","value":"encoding=\"UTF-16\" ","refs":[{"from":"424b9088","function":null}]}
+{"address":"42496420","value":"default","refs":[{"from":"42466d7c","function":"42466c06"},{"from":"424b908c","function":null}]}
+{"address":"42496430","value":"encoding=\"","refs":[{"from":"424b9090","function":null}]}
+{"address":"42496448","value":"UTF-8","refs":[{"from":"424b9094","function":null}]}
+{"address":"42496478","value":"%sMarkSets.xml","refs":[{"from":"4240eb91","function":"4240eaf8"}]}
+{"address":"42496498","value":"/MarkSetsFile/MarkSets[@CoderName=\"%s\"]","refs":[{"from":"4240f9bb","function":"4240f981"},{"from":"4240f085","function":"4240ef8b"}]}
+{"address":"424964e8","value":" MarkSet","refs":[{"from":"4240f9f1","function":"4240f981"}]}
+{"address":"424964fc","value":"Name","refs":[{"from":"4240fa65","function":"4240f981"},{"from":"4240f239","function":"4240f1a0"},{"from":"4240f00b","function":"4240ef8b"}]}
+{"address":"42496508","value":"/MarkSetsFile/MarkSets[@CoderName=\"%s\"]/MarkSet[@Name=\"%s\"]/Parameter[@Name=\"%s\"]","refs":[{"from":"4240f8e1","function":"4240f8a7"}]}
+{"address":"424965b0","value":"/MarkSetsFile/MarkSets[@CoderName=\"%s\"]/MarkSet[@Name=\"%s\"]/FieldSupport","refs":[{"from":"4240f6e3","function":"4240f6a6"}]}
+{"address":"42496648","value":"/MarkSetsFile/MarkSets[@CoderName=\"%s\"]/MarkSet[@Name=\"%s\"]","refs":[{"from":"4240f1c6","function":"4240f1a0"},{"from":"4240f5e7","function":"4240f5b2"},{"from":"4240ee0d","function":"4240ede4"}]}
+{"address":"424966c0","value":"MarkSet","refs":[{"from":"4240efcc","function":"4240ef8b"}]}
+{"address":"424966d0","value":"/MarkSetsFile/MarkSets[@CoderName=\"%s/%s\"]","refs":[{"from":"4240f0fa","function":"4240ef8b"}]}
+{"address":"42496728","value":"Parameter","refs":[{"from":"4240f1fb","function":"4240f1a0"}]}
+{"address":"42496740","value":"/MarkSetsFile/MarkSets[@CoderName=\"%s\"]/MarkSet[@Name=\"%s/%s\"]","refs":[{"from":"4240f2b4","function":"4240f1a0"}]}
+{"address":"424967c0","value":"FieldSupport","refs":[{"from":"4240ee42","function":"4240ede4"}]}
+{"address":"424967e0","value":"/MarkSetsFile/MarkSets[@CoderName=\"%s\"]/MarkSet[@Name=\"%s/FieldSupport\"]","refs":[{"from":"4240eee9","function":"4240ede4"}]}
+{"address":"42496874","value":"MarkSetsFile","refs":[{"from":"4240f456","function":"4240f43c"}]}
+{"address":"42496890","value":"/MarkSetsFile","refs":[{"from":"4240ed05","function":"4240ecd1"}]}
+{"address":"424968ac","value":"MarkSets","refs":[{"from":"4240ed39","function":"4240ecd1"}]}
+{"address":"424968c0","value":"CoderName","refs":[{"from":"4240ed74","function":"4240ecd1"}]}
+{"address":"424968d4","value":"VJ1550","refs":[{"from":"4240ffdb","function":"4240ffd2"}]}
+{"address":"424968e4","value":"VJ1650","refs":[{"from":"4240ffe9","function":"4240ffd2"}]}
+{"address":"424968f4","value":"VJ1560","refs":[{"from":"4240fff9","function":"4240ffd2"}]}
+{"address":"42496904","value":"VJ1660","refs":[{"from":"42410009","function":"4240ffd2"}]}
+{"address":"42496914","value":"VJ1650 UHS","refs":[{"from":"42410019","function":"4240ffd2"}]}
+{"address":"4249692c","value":"VJ1650 HR","refs":[{"from":"42410029","function":"4240ffd2"}]}
+{"address":"42496940","value":"No Translation Found","refs":[{"from":"42410a69","function":"42410912"},{"from":"4245a292","function":"4245a1e4"},{"from":"424b9098","function":null},{"from":"424b9864","function":null}]}
+{"address":"4249696c","value":"Missing Translation File","refs":[{"from":"424104a4","function":"42410459"}]}
+{"address":"424969a0","value":"%sLanguages","refs":[{"from":"4241fa57","function":"4241fa40"},{"from":"424104ba","function":"42410459"}]}
+{"address":"424969c8","value":"Software\\Claricom Ltd\\LanguageName","refs":[{"from":"42410b08","function":"42410aa9"},{"from":"42410823","function":"424107ed"},{"from":"424108c3","function":"424107ed"}]}
+{"address":"42496a10","value":"LanguageName","refs":[{"from":"42410b3b","function":"42410aa9"},{"from":"4241087d","function":"424107ed"}]}
+{"address":"42496a2c","value":"English","refs":[{"from":"424107dc","function":"424107d1"}]}
+{"address":"42496b44","value":"Component Categories","refs":[{"from":"42496c9c","function":null}]}
+{"address":"42496b70","value":"FileType","refs":[{"from":"42496ca0","function":null}]}
+{"address":"42496b84","value":"Interface","refs":[{"from":"42496ca4","function":null}]}
+{"address":"42496b98","value":"Hardware","refs":[{"from":"42496ca8","function":null}]}
+{"address":"42496bac","value":"Mime","refs":[{"from":"42496cac","function":null}]}
+{"address":"42496bc0","value":"SECURITY","refs":[{"from":"42496cb4","function":null}]}
+{"address":"42496bd4","value":"SYSTEM","refs":[{"from":"42496cb8","function":null}]}
+{"address":"42496be4","value":"Software","refs":[{"from":"42496cbc","function":null}]}
+{"address":"42496bf8","value":"TypeLib","refs":[{"from":"42496cc0","function":null}]}
+{"address":"42496c08","value":"CLSID","refs":[{"from":"424186fa","function":"424186f1"},{"from":"42496c98","function":null}]}
+{"address":"42496c14","value":"AppID","refs":[{"from":"424186fa","function":"424186f1"},{"from":"42496c94","function":null}]}
+{"address":"42496c38","value":"ForceRemove","refs":[{"from":"4241ee8e","function":"4241edf9"}]}
+{"address":"42496c50","value":"NoRemove","refs":[{"from":"4241ef7d","function":"4241edf9"}]}
+{"address":"42496c64","value":"Delete","refs":[{"from":"4241ee79","function":"4241edf9"}]}
+{"address":"42496d04","value":"MergeField","refs":[{"from":"4245772e","function":"42457388"},{"from":"42454945","function":"424544ed"},{"from":"424010ac","function":null},{"from":"4240119d","function":null},{"from":"424012a0","function":null},{"from":"42401351","function":null},{"from":"42401609","function":null},{"from":"424016ba","function":null},{"from":"4240176b","function":null},{"from":"42401840","function":null},{"from":"424018f1","function":null}]}
+{"address":"42496d4c","value":"SSCC","refs":[{"from":"42411ab7","function":"424111e9"},{"from":"42444995","function":"424440df"}]}
+{"address":"42496d70","value":"%s,%s,...,%s","refs":[{"from":"42446475","function":"42445f51"},{"from":"424134fc","function":"42412f09"}]}
+{"address":"42496d90","value":"%s%s,%s%s,...,%s%s,%s%s,%s%s,...,%s%s","refs":[{"from":"42446459","function":"42445f51"},{"from":"424134d8","function":"42412f09"}]}
+{"address":"42496f70","value":"Advapi32.dll","refs":[{"from":"4241935b","function":"42419339"},{"from":"4241ea5f","function":"4241ea54"},{"from":"4241ea13","function":"4241ea06"},{"from":"4241e9b2","function":"4241e9a7"}]}
+{"address":"42496f8c","value":"RegOpenKeyTransactedW","refs":[{"from":"4241ea6a","function":"4241ea54"}]}
+{"address":"42496fa4","value":"RegCreateKeyTransactedW","refs":[{"from":"4241e9bd","function":"4241e9a7"}]}
+{"address":"42496fbc","value":"RegDeleteKeyTransactedW","refs":[{"from":"4241ea1e","function":"4241ea06"}]}
+{"address":"42497010","value":"RegDeleteKeyExW","refs":[{"from":"4241936a","function":"42419339"}]}
+{"address":"424970b0","value":"HKCR","refs":[{"from":"4241ae9a","function":"4241ae94"},{"from":"4241c40d","function":"4241c38e"},{"from":"42497040","function":null}]}
+{"address":"424970bc","value":"HKCU","refs":[{"from":"4241ae9a","function":"4241ae94"},{"from":"42497048","function":null}]}
+{"address":"42497100","value":"HKEY_CLASSES_ROOT","refs":[]}
+{"address":"42497124","value":"HKEY_CURRENT_USER","refs":[]}
+{"address":"42497148","value":"HKEY_LOCAL_MACHINE","refs":[]}
+{"address":"42497170","value":"HKEY_USERS","refs":[]}
+{"address":"42497188","value":"HKEY_PERFORMANCE_DATA","refs":[]}
+{"address":"424971b4","value":"HKEY_DYN_DATA","refs":[]}
+{"address":"424971d0","value":"HKEY_CURRENT_CONFIG","refs":[]}
+{"address":"424971f8","value":"HKCU\r\n{\tSoftware\r\n\t{\r\n\t\tClasses","refs":[{"from":"4241c436","function":"4241c38e"}]}
+{"address":"42497238","value":"\r\n\t}\r\n}\r\n","refs":[{"from":"4241c4b8","function":"4241c38e"}]}
+{"address":"4249724c","value":"Module","refs":[{"from":"4241ffa1","function":"4241fe60"},{"from":"42420168","function":"42420023"}]}
+{"address":"4249725c","value":"Module_Raw","refs":[{"from":"4241ffbd","function":"4241fe60"},{"from":"42420184","function":"42420023"}]}
+{"address":"42497274","value":"REGISTRY","refs":[{"from":"4241fffa","function":"4241fe60"},{"from":"424201c5","function":"42420023"}]}
+{"address":"424972a4","value":"CLSID\\","refs":[{"from":"42418276","function":"4241819d"},{"from":"4241835f","function":"4241819d"}]}
+{"address":"424972b4","value":"\\Required Categories","refs":[{"from":"424182ad","function":"4241819d"}]}
+{"address":"424972e0","value":"\\Implemented Categories","refs":[{"from":"42418396","function":"4241819d"}]}
+{"address":"42497310","value":"OLEAUT32.DLL","refs":[{"from":"42418687","function":"42418634"},{"from":"424185bc","function":"42418464"}]}
+{"address":"4249732c","value":"UnRegisterTypeLibForUser","refs":[{"from":"42418696","function":"42418634"}]}
+{"address":"42497348","value":"RegisterTypeLibForUser","refs":[{"from":"424185cb","function":"42418464"}]}
+{"address":"424973e0","value":"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz","refs":[{"from":"42419c31","function":"42419b63"}]}
+{"address":"4249744c","value":"COMCTL32.DLL","refs":[{"from":"42418860","function":"4241881f"},{"from":"42418870","function":"4241881f"}]}
+{"address":"424974a0","value":"Regular","refs":[{"from":"42419e24","function":"42419cbb"}]}
+{"address":"424974a8","value":"%s %s","refs":[{"from":"42419e61","function":"42419cbb"}]}
+{"address":"424974b4","value":"windir","refs":[{"from":"4244f9a9","function":"4244f977"},{"from":"4241c21b","function":"4241c1ef"}]}
+{"address":"424974c4","value":"\\Fonts\\","refs":[{"from":"4244f9ce","function":"4244f977"},{"from":"4241c242","function":"4241c1ef"}]}
+{"address":"424974d4","value":"*.ttf","refs":[{"from":"4241c24c","function":"4241c1ef"}]}
+{"address":"424974dc","value":"APPID","refs":[{"from":"42417519","function":"4241750e"}]}
+{"address":"424974e8","value":"list<T> too long","refs":[{"from":"4243aeac","function":"4243ae8c"},{"from":"42466249","function":"42466229"},{"from":"4244402a","function":"4244400a"},{"from":"4246621e","function":"424661fe"}]}
+{"address":"42498020","value":"method ","refs":[{"from":"424253d5","function":"42425368"},{"from":"424253dd","function":"42425368"},{"from":"424253d0","function":"42425368"}]}
+{"address":"42498038","value":"CLCSTextBasedField","refs":[{"from":"424209f3","function":"4242095d"}]}
+{"address":"42498060","value":"DebugLog","refs":[{"from":"4242148b","function":"4242146c"},{"from":"424214b3","function":"4242146c"},{"from":"42421486","function":"4242146c"}]}
+{"address":"4249807c","value":"Debug","refs":[{"from":"42421422","function":"42421403"},{"from":"4242144a","function":"42421403"},{"from":"4242141d","function":"42421403"}]}
+{"address":"42498140","value":"TrueType","refs":[{"from":"42423d3e","function":"42423b45"},{"from":"424225a7","function":"42421f6e"},{"from":"4242b1d2","function":"4242b120"},{"from":"42423840","function":"424236e5"},{"from":"4242399b","function":"424236e5"},{"from":"4244d8f5","function":"4244d768"},{"from":"424217da","function":"424214ee"},{"from":"4244efc3","function":"4244ee4d"},{"from":"4245af60","function":"4245aeba"},{"from":"4242670f","function":"4242660b"},{"from":"4245a5e7","function":"4245a4e2"},{"from":"424506be","function":"424504b4"},{"from":"42450720","function":"424504b4"}]}
+{"address":"42498154","value":"FixedBitmap","refs":[{"from":"424225d5","function":"42421f6e"},{"from":"42426972","function":"42426819"}]}
+{"address":"4249816c","value":"Table containing Index Fields","refs":[{"from":"42452495","function":"42451bc6"},{"from":"42441983","function":"424418aa"},{"from":"42421384","function":"424212d9"},{"from":"4244b34c","function":"4244b2cd"},{"from":"424434c2","function":"42443387"},{"from":"4244350c","function":"42443387"},{"from":"42457ae8","function":"42457388"},{"from":"42421281","function":"424211ff"},{"from":"42441726","function":"4244164d"},{"from":"42448b2a","function":"424488d2"},{"from":"42442d59","function":"42442cce"},{"from":"424560e2","function":"42456074"},{"from":"4244c72a","function":"4244c145"},{"from":"424434ba","function":"42443387"}]}
+{"address":"424981d4","value":"CCLCSTextBasedFieldObj::Draw","refs":[{"from":"4242370e","function":"424236e5"}]}
+{"address":"424981f4","value":"CCLCSTextBasedFieldObj::DrawTrueType","refs":[{"from":"42424570","function":"42424518"}]}
+{"address":"4249822c","value":"CCLCSTextBasedFieldObj::DrawUBF","refs":[{"from":"42423ba5","function":"42423b45"}]}
+{"address":"4249825b","value":"2CCLCSTextBasedFieldObj::ApplyFixedLen","refs":[]}
+{"address":"42498284","value":"%s%s","refs":[{"from":"424359b9","function":"42435816"},{"from":"424357ea","function":"42435776"},{"from":"42452da3","function":"42452b50"},{"from":"42420f4e","function":"42420e0e"}]}
+{"address":"42498290","value":"HH':'mm","refs":[{"from":"42423489","function":"424233b5"}]}
+{"address":"424982a0","value":"9999","refs":[{"from":"424227f9","function":"424226b2"}]}
+{"address":"424982ac","value":"dd'/'MM'/'yyyy","refs":[{"from":"42422c1c","function":"42422b48"},{"from":"42422a40","function":"4242296c"}]}
+{"address":"424982cc","value":"PPpp","refs":[{"from":"42422e0f","function":"42422d37"}]}
+{"address":"424982d8","value":"Price","refs":[{"from":"42422e75","function":"42422d37"}]}
+{"address":"424982f8","value":"ppp'p'","refs":[{"from":"42423078","function":"42422d37"}]}
+{"address":"42498308","value":"CCLCSTextBasedFieldObj::CalculateSize","refs":[{"from":"4242151a","function":"424214ee"}]}
+{"address":"42498330","value":"CCLCSTextBasedFieldObj::ShowFontPropertyPage","refs":[{"from":"4242703c","function":"4242700d"}]}
+{"address":"42498360","value":"%ls\\*.zfbf","refs":[{"from":"424255d8","function":"4242558d"},{"from":"42468261","function":"42468233"},{"from":"42468058","function":"42468007"}]}
+{"address":"42498378","value":"%ls\\*.UBF","refs":[{"from":"424255df","function":"4242558d"}]}
+{"address":"4249838c","value":"Database Viewer Enabled","refs":[{"from":"424213ec","function":"424213e4"}]}
+{"address":"424983bc","value":"PrintsPerSequence","refs":[{"from":"424214dd","function":"424214d5"}]}
+{"address":"424983f8","value":"ATL:%p","refs":[{"from":"42428537","function":"42428463"}]}
+{"address":"42498408","value":"uxtheme.dll","refs":[{"from":"4242c101","function":"4242c0f4"}]}
+{"address":"42498420","value":"IsThemeActive","refs":[{"from":"4242c112","function":"4242c0f4"}]}
+{"address":"42498430","value":"IsAppThemed","refs":[{"from":"4242c124","function":"4242c0f4"}]}
+{"address":"4249843c","value":"DllGetVersion","refs":[{"from":"42429265","function":"42429262"}]}
+{"address":"4249844c","value":"comctl32.dll","refs":[{"from":"42429223","function":"424291f3"}]}
+{"address":"4249847c","value":"WTL_CommandBar","refs":[]}
+{"address":"4249849c","value":"ToolbarWindow32","refs":[{"from":"42429859","function":"42429843"},{"from":"4242bfbd","function":"4242bfb2"}]}
+{"address":"424984c0","value":"WTL_CmdBar_InternalAutoPopupMsg","refs":[{"from":"4242b358","function":"4242b32d"}]}
+{"address":"42498500","value":"WTL_CmdBar_InternalGetBarMsg","refs":[{"from":"4242b3cf","function":"4242b3a4"}]}
+{"address":"4249854c","value":"#32768","refs":[{"from":"424299ff","function":"424299c7"},{"from":"42429a3c","function":"424299c7"}]}
+{"address":"4249855c","value":"GetTextExtentPoint32W","refs":[{"from":"4242b9f4","function":"4242b9ae"}]}
+{"address":"42498588","value":"Warning","refs":[{"from":"4242f536","function":"4242f4ce"},{"from":"4242f601","function":"4242f599"}]}
+{"address":"42498598","value":"Arial Unicode MS","refs":[{"from":"424295ba","function":"4242958a"},{"from":"42468f08","function":"42468ee3"}]}
+{"address":"424985bc","value":"Default Dialog Font","refs":[{"from":"424295bf","function":"4242958a"}]}
+{"address":"424985f0","value":"%%0%dld","refs":[{"from":"42431857","function":"42431777"}]}
+{"address":"4249860c","value":"a-z,A-Z","refs":[{"from":"424312f0","function":"424312ba"},{"from":"424315e1","function":"424315a0"}]}
+{"address":"42498624","value":"A-Z,a-z","refs":[{"from":"42431305","function":"424312ba"},{"from":"42457c51","function":"42457388"},{"from":"424534e6","function":"42453499"},{"from":"42456e06","function":"42456b3b"}]}
+{"address":"42498648","value":"SelectDate","refs":[{"from":"42431bcf","function":"42431bc2"}]}
+{"address":"42498660","value":"%02d:%02d:%02d - ","refs":[{"from":"42431e98","function":"42431e20"}]}
+{"address":"42498674","value":"ATLTRACE _com_error","refs":[{"from":"42431f87","function":"42431f0a"},{"from":"42431f8f","function":"42431f0a"},{"from":"42431f7e","function":"42431f0a"}]}
+{"address":"42498688","value":"ATLTRACE (...) Error","refs":[{"from":"424321ac","function":"42432132"},{"from":"424321b4","function":"42432132"},{"from":"424321a3","function":"42432132"}]}
+{"address":"424986b4","value":"CDataEntryDlg::CDataEntryDlg\n","refs":[{"from":"42431d35","function":"42431cc8"}]}
+{"address":"424986d4","value":"CDataEntryDlg::OnInitDialog","refs":[{"from":"424323a2","function":"42432394"}]}
+{"address":"424986f0","value":"%s - subclass FAILED\n","refs":[{"from":"4243246c","function":"42432394"},{"from":"42432530","function":"42432394"}]}
+{"address":"42498748","value":"cl:x{","refs":[{"from":"4243a128","function":"4243a0fb"},{"from":"4243a133","function":"4243a0fb"},{"from":"424381a0","function":"4243810a"},{"from":"424381ad","function":"4243810a"}]}
+{"address":"42498778","value":"\nVariantTimeToSystemTime failed. Error = %lu.\n\t","refs":[{"from":"42439c9d","function":"42439c5a"}]}
+{"address":"424987ec","value":"StartOfDay","refs":[{"from":"42436723","function":"424366f2"}]}
+{"address":"42498804","value":"SelectDateFormat","refs":[{"from":"424331e2","function":"424330ae"}]}
+{"address":"42498828","value":"Language","refs":[{"from":"4243330a","function":"424330ae"}]}
+{"address":"4249883c","value":"Months","refs":[{"from":"424337ce","function":"424330ae"}]}
+{"address":"4249884c","value":"Years","refs":[{"from":"424337fe","function":"424330ae"}]}
+{"address":"42498858","value":"EncodeDigit1","refs":[{"from":"424338b3","function":"424330ae"}]}
+{"address":"42498874","value":"EncodeDigit2","refs":[{"from":"424338dc","function":"424330ae"}]}
+{"address":"42498890","value":"EncodeDigit3","refs":[{"from":"42433905","function":"424330ae"}]}
+{"address":"424988ac","value":"EncodeDigit4","refs":[{"from":"4243392e","function":"424330ae"}]}
+{"address":"424988c8","value":"UpdateInterval","refs":[{"from":"42433957","function":"424330ae"}]}
+{"address":"424988e8","value":"TimerCodeConfiguration","refs":[{"from":"42433980","function":"424330ae"}]}
+{"address":"42498927","value":"0CDateFieldProp2::Apply","refs":[]}
+{"address":"42498940","value":"ARABICNUM","refs":[{"from":"42434251","function":"42433ebb"},{"from":"4245f410","function":"4245f395"},{"from":"42438e2a","function":"42438ba3"},{"from":"42437448","function":"42436e9c"},{"from":"424b97d8","function":null},{"from":"42402862","function":null},{"from":"42403371","function":null}]}
+{"address":"42498954","value":"EN-GB","refs":[{"from":"4243427e","function":"42433ebb"},{"from":"42434286","function":"42433ebb"},{"from":"42457914","function":"42457388"},{"from":"4245792f","function":"42457388"},{"from":"4245540e","function":"42454bfb"},{"from":"42455429","function":"42454bfb"},{"from":"42438dd9","function":"42438ba3"},{"from":"42434279","function":"42433ebb"},{"from":"424b97f0","function":null},{"from":"424b9770","function":null},{"from":"42401960","function":null},{"from":"42401969","function":null},{"from":"42401971","function":null},{"from":"42402fbf","function":null},{"from":"42401950","function":null}]}
+{"address":"42498960","value":"CLARiTY.Encryption.Arabic.1","refs":[{"from":"42434295","function":"42433ebb"},{"from":"42438e19","function":"42438ba3"}]}
+{"address":"42498998","value":"dd MMM yyyy","refs":[{"from":"4243accc","function":"4243aadb"},{"from":"4243ad4c","function":"4243aadb"}]}
+{"address":"424989b0","value":"CDateFieldProp2::UpdateData","refs":[{"from":"4243a224","function":"4243a213"}]}
+{"address":"424989e4","value":"cl:sc","refs":[{"from":"4245c3d8","function":"4245c24b"},{"from":"4243a8a1","function":"4243a213"}]}
+{"address":"424989f4","value":"cl:hhc","refs":[{"from":"4245c3c4","function":"4245c24b"},{"from":"4243a8b6","function":"4243a213"}]}
+{"address":"424989fc","value":"TimerCode","refs":[{"from":"42438646","function":"4243852f"}]}
+{"address":"42498a10","value":"%s%c%s%c%s","refs":[{"from":"42435885","function":"42435816"}]}
+{"address":"42498a2c","value":"%s%s%c%s%s%s%c%s%s","refs":[{"from":"424358c4","function":"42435816"}]}
+{"address":"42498a54","value":"%s%s%s","refs":[{"from":"424358f9","function":"42435816"},{"from":"424359e6","function":"42435816"},{"from":"424357c0","function":"42435776"},{"from":"42452d3b","function":"42452b50"}]}
+{"address":"42498a6c","value":"%s%s%s%s%s","refs":[{"from":"42435934","function":"42435816"}]}
+{"address":"42498a84","value":"%s%c%s","refs":[{"from":"4243596e","function":"42435816"}]}
+{"address":"42498a94","value":"%s%s%c%s%s","refs":[{"from":"4243599e","function":"42435816"}]}
+{"address":"42498ab4","value":"CDateFieldProp2::PopulateFormatCombo","refs":[{"from":"42438684","function":"42438673"}]}
+{"address":"42498adc","value":"cl:x","refs":[{"from":"4243809d","function":"42438086"},{"from":"424380a7","function":"42438086"},{"from":"42438117","function":"4243810a"},{"from":"42438122","function":"4243810a"},{"from":"42438098","function":"42438086"},{"from":"42438110","function":"4243810a"}]}
+{"address":"42498ae8","value":"CDateFieldProp2::ShowAdvancedPage","refs":[{"from":"42439e6a","function":"42439e5c"}]}
+{"address":"42498b0c","value":"cl:xx{","refs":[{"from":"424381c5","function":"4243810a"},{"from":"424381ce","function":"4243810a"},{"from":"424381c0","function":"4243810a"}]}
+{"address":"42498b24","value":"yyyy''","refs":[{"from":"4243821e","function":"4243810a"},{"from":"42438226","function":"4243810a"},{"from":"42438219","function":"4243810a"}]}
+{"address":"42498b34","value":"%s'%c'%s","refs":[{"from":"42435732","function":"4243565f"}]}
+{"address":"42498b48","value":"%s''%s","refs":[{"from":"42435743","function":"4243565f"}]}
+{"address":"42498b58","value":"%s'%c'%s'%c'%s","refs":[{"from":"424356c3","function":"4243565f"}]}
+{"address":"42498b78","value":"%s''%s''%s","refs":[{"from":"424356fb","function":"4243565f"}]}
+{"address":"42498b90","value":"SinceJobSelection","refs":[{"from":"424395da","function":"42439516"},{"from":"42438484","function":"42438235"}]}
+{"address":"42498bb4","value":"_TODAYSDATE_","refs":[{"from":"42438329","function":"42438235"}]}
+{"address":"42498bd4","value":"CDateFieldProp2::GetLocale","refs":[{"from":"42435e7f","function":"42435e71"}]}
+{"address":"42498c00","value":"cl:tt{","refs":[{"from":"42436416","function":"424363eb"}]}
+{"address":"42498c10","value":"cl:tttt{","refs":[{"from":"42436437","function":"424363eb"}]}
+{"address":"42498c24","value":"cl:tt{}","refs":[{"from":"42436278","function":"42436272"}]}
+{"address":"42498c34","value":"cl:tttt{}","refs":[{"from":"42436294","function":"42436272"}]}
+{"address":"42498c48","value":"cl:tt{%d-%d}","refs":[{"from":"424362cf","function":"424362b1"},{"from":"42436228","function":"42436169"}]}
+{"address":"42498c64","value":"cl:tttt{%d-%d}","refs":[{"from":"424362f0","function":"424362b1"},{"from":"42436237","function":"42436169"}]}
+{"address":"42498c90","value":"DrawUniscribe::DrawField","refs":[{"from":"4243b46a","function":"4243b453"}]}
+{"address":"42498cac","value":"DrawUniscribe::CalcTextRect","refs":[{"from":"4243b16c","function":"4243b155"}]}
+{"address":"42498ce0","value":" \t\r\n","refs":[{"from":"4243c4cb","function":"4243c4c2"},{"from":"4243c4d8","function":"4243c4c2"},{"from":"4243c50b","function":"4243c4f5"},{"from":"4243c51b","function":"4243c4f5"},{"from":"4243c55a","function":"4243c550"},{"from":"4243c567","function":"4243c550"},{"from":"4243c586","function":"4243c550"},{"from":"4243c590","function":"4243c550"},{"from":"4243c4c6","function":"4243c4c2"},{"from":"4243c505","function":"4243c4f5"},{"from":"4243c555","function":"4243c550"}]}
+{"address":"42498dcc","value":"#text","refs":[{"from":"4243bdcf","function":"4243bdb3"},{"from":"4243bde5","function":"4243bdb3"},{"from":"4243bdca","function":"4243bdb3"}]}
+{"address":"42498de0","value":"#comment","refs":[{"from":"4243bbeb","function":"4243bbcf"},{"from":"4243bc01","function":"4243bbcf"},{"from":"4243bbe6","function":"4243bbcf"},{"from":"4243bc61","function":"4243bc45"},{"from":"4243bc77","function":"4243bc45"},{"from":"4243bc5c","function":"4243bc45"}]}
+{"address":"42498df4","value":"#cdata-section","refs":[{"from":"4243bafc","function":"4243bae0"},{"from":"4243bb12","function":"4243bae0"},{"from":"4243baf7","function":"4243bae0"},{"from":"4243bb72","function":"4243bb56"},{"from":"4243bb88","function":"4243bb56"},{"from":"4243bb6d","function":"4243bb56"}]}
+{"address":"42498e34","value":"GraphicPrimitive","refs":[{"from":"424401a8","function":"4243fa87"},{"from":"4243dccf","function":"4243d71b"},{"from":"4243d660","function":"4243ce34"}]}
+{"address":"42498e58","value":"User%d","refs":[{"from":"4243f3b7","function":"4243f352"},{"from":"4243deb7","function":"4243d71b"}]}
+{"address":"42498e70","value":"RichText","refs":[{"from":"4243d5f8","function":"4243ce34"},{"from":"4244ed08","function":"4244ece4"}]}
+{"address":"42498e84","value":"EAN13PriceVerifier","refs":[{"from":"4243d64f","function":"4243ce34"}]}
+{"address":"42498eac","value":"ComplexText","refs":[{"from":"4243d671","function":"4243ce34"}]}
+{"address":"42498ec4","value":"%02.2f","refs":[{"from":"4243fe18","function":"4243fa87"},{"from":"4243fe4e","function":"4243fa87"},{"from":"4243fe7e","function":"4243fa87"},{"from":"4243feae","function":"4243fa87"}]}
+{"address":"42498ed8","value":"Not Logged","refs":[{"from":"4243f84b","function":"4243f777"}]}
+{"address":"42498ee8","value":"{781C1E77-1FB4-4da4-9672-8F9454050925}","refs":[{"from":"4243f05c","function":"4243f037"}]}
+{"address":"42498f38","value":"NONE","refs":[{"from":"4245597d","function":"4245592f"},{"from":"4243f09d","function":"4243f037"}]}
+{"address":"42498f48","value":"SELECT [%s","refs":[{"from":"42440a2a","function":"424409f3"}]}
+{"address":"42498fb4","value":"Data","refs":[{"from":"42440d89","function":"42440c72"}]}
+{"address":"42498fc0","value":"DefaultText","refs":[{"from":"42443742","function":"42443387"},{"from":"42443754","function":"42443387"},{"from":"42442659","function":"424425e9"},{"from":"42443739","function":"42443387"}]}
+{"address":"42498fe0","value":"<CR>","refs":[{"from":"42455cf9","function":"42455ab7"},{"from":"4244aef2","function":"4244ac55"},{"from":"42442930","function":"424426e5"}]}
+{"address":"42498fec","value":"DataSourceUsed","refs":[{"from":"424409c8","function":"424409a1"}]}
+{"address":"42499010","value":"IJ600","refs":[{"from":"4244579e","function":"424454d6"},{"from":"42444862","function":"424440df"}]}
+{"address":"42499020","value":"%%0%dld","refs":[{"from":"424461be","function":"42445f51"}]}
+{"address":"42499030","value":"%%%dld","refs":[{"from":"424461f2","function":"42445f51"}]}
+{"address":"42499040","value":"The Number of Prints per Count must be divisible by the number of Prints per Sequence\n  Prints per count has been set to %d","refs":[{"from":"4244546b","function":"424453fc"}]}
+{"address":"42499138","value":"Sequence Mode Error","refs":[{"from":"4244547a","function":"424453fc"}]}
+{"address":"42499160","value":"SetDefaultText","refs":[{"from":"42452143","function":"42451bc6"},{"from":"424521f1","function":"42451bc6"},{"from":"424525d1","function":"42451bc6"},{"from":"4245263b","function":"42451bc6"},{"from":"424527da","function":"42451bc6"},{"from":"42457fb7","function":"42457f54"},{"from":"42451247","function":"424510ee"},{"from":"424476b3","function":"424475a3"}]}
+{"address":"42499180","value":"Error","refs":[{"from":"42448037","function":"42447c3d"}]}
+{"address":"4249919c","value":"1%0*s","refs":[{"from":"42447e4a","function":"42447c3d"}]}
+{"address":"424991a4","value":"'%%s'P'%c'pp","refs":[{"from":"42448526","function":"42447c3d"},{"from":"4244862d","function":"42447c3d"}]}
+{"address":"424991b4","value":"ppp'%s'","refs":[{"from":"424486d1","function":"42447c3d"}]}
+{"address":"424991c4","value":"'%s'P","refs":[{"from":"424486c4","function":"42447c3d"}]}
+{"address":"424991d0","value":"P'%s'","refs":[{"from":"424486bc","function":"42447c3d"}]}
+{"address":"424991dc","value":"p'%s'","refs":[{"from":"42448605","function":"42447c3d"},{"from":"42448693","function":"42447c3d"}]}
+{"address":"424991e8","value":"'%%s'P'%c'pppp","refs":[{"from":"4244859f","function":"42447c3d"}]}
+{"address":"424991fa","value":"p (Pound)","refs":[]}
+{"address":"42499214","value":" (Dollar)","refs":[]}
+{"address":"42499250","value":"1%c%%0*s5","refs":[{"from":"4244b676","function":"4244b540"}]}
+{"address":"42499264","value":"'P'%c'pp","refs":[{"from":"4244b7e7","function":"4244b540"}]}
+{"address":"42499274","value":"ppp'","refs":[{"from":"4244b936","function":"4244b540"},{"from":"42448e68","function":"42448dc7"}]}
+{"address":"42499290","value":"1.%0*s5","refs":[{"from":"4244bb8a","function":"4244b540"}]}
+{"address":"42499298","value":"1.%0*s0","refs":[{"from":"4244bbb1","function":"4244b540"}]}
+{"address":"424992a8","value":"pppp","refs":[{"from":"4244be96","function":"4244b540"},{"from":"4244bd19","function":"4244b540"}]}
+{"address":"424992b4","value":"0.%0*s","refs":[{"from":"4244c301","function":"4244c145"},{"from":"4244c451","function":"4244c145"}]}
+{"address":"424992c4","value":"%s.%0*s","refs":[{"from":"4244c4e3","function":"4244c145"},{"from":"4244c398","function":"4244c145"}]}
+{"address":"424992d4","value":"'P'.'pp","refs":[{"from":"42448e3a","function":"42448dc7"}]}
+{"address":"424992e4","value":"'P','pp","refs":[{"from":"42448e51","function":"42448dc7"}]}
+{"address":"42499324","value":"%c%%0*s","refs":[{"from":"42449360","function":"424491be"}]}
+{"address":"42499334","value":"123456789","refs":[{"from":"42449538","function":"424491be"}]}
+{"address":"42499358","value":"0%c%%0*d","refs":[{"from":"42449c5f","function":"42449bc2"}]}
+{"address":"42499364","value":"%%s%c%%s","refs":[{"from":"42449ce9","function":"42449bc2"}]}
+{"address":"424993f8","value":"generic","refs":[{"from":"4244cb47","function":"4244cb47"}]}
+{"address":"42499400","value":"unknown error","refs":[{"from":"4244cad7","function":"4244cabc"},{"from":"4244cb35","function":"4244cb1a"},{"from":"4244cacf","function":"4244cabc"},{"from":"4244cb2d","function":"4244cb1a"}]}
+{"address":"4249942c","value":"iostream","refs":[{"from":"4244cb4d","function":"4244cb4d"}]}
+{"address":"42499438","value":"iostream stream error","refs":[{"from":"4244cafa","function":"4244cae9"}]}
+{"address":"4249946c","value":"system","refs":[{"from":"4244cb53","function":"4244cb53"}]}
+{"address":"42499474","value":"*.ttc","refs":[{"from":"4244f9db","function":"4244f977"}]}
+{"address":"4249947c","value":"CTextBasedFieldProp::Activate","refs":[{"from":"4244ce58","function":"4244ce36"}]}
+{"address":"424994b4","value":"CTextBasedFieldProp::OnUseZipherBitmapFonts","refs":[{"from":"4244f6dd","function":"4244f6cf"}]}
+{"address":"424994e0","value":"Arial","refs":[{"from":"4244f79b","function":"4244f6cf"}]}
+{"address":"424994ec","value":"%s - pText == NULL","refs":[{"from":"4244f7fe","function":"4244f6cf"}]}
+{"address":"42499500","value":"%s\\*.zfbf","refs":[{"from":"4244ffdd","function":"4244ff89"}]}
+{"address":"4249952c","value":"CTextBasedFieldProp::SortFontPropertyPage()","refs":[{"from":"4245013c","function":"4245012b"}]}
+{"address":"42499560","value":"%.2lf","refs":[{"from":"42450e86","function":"42450d96"}]}
+{"address":"4249956c","value":"%.1lf","refs":[{"from":"42450e8d","function":"42450d96"}]}
+{"address":"42499578","value":"%.0lf","refs":[{"from":"42450e7f","function":"42450d96"}]}
+{"address":"42499630","value":"Checksum Component Error","refs":[{"from":"42457670","function":"42457388"}]}
+{"address":"42499668","value":"Checksum component not found.  \r\nDo you wish to choose a new checksum component?","refs":[{"from":"42457675","function":"42457388"}]}
+{"address":"4249970c","value":"CTextFieldProp2::UpdateData - pDataObject7 is NULL","refs":[{"from":"4245770b","function":"42457388"}]}
+{"address":"42499750","value":"y''cl:JJ''HH''mm''ss","refs":[{"from":"424578ae","function":"42457388"},{"from":"424553b2","function":"42454bfb"}]}
+{"address":"42499768","value":"0-9,A-Z,a-z","refs":[{"from":"42457c7f","function":"42457388"},{"from":"424534d8","function":"42453499"},{"from":"42456e30","function":"42456b3b"}]}
+{"address":"42499780","value":"{82836A0E-D83A-4b76-8831-865CFE824D3B}","refs":[{"from":"424558f2","function":"42455734"}]}
+{"address":"424997d0","value":"000000000000000000","refs":[{"from":"4245353d","function":"424534fb"}]}
+{"address":"424997f8","value":"yjjjHHmmss","refs":[{"from":"4245538c","function":"42454bfb"}]}
+{"address":"42499810","value":"CTextFieldData::OnUIUpdate - AddChecksum failed hr=%08lx","refs":[{"from":"4245553a","function":"42454bfb"}]}
+{"address":"42499850","value":"CTextFieldProp2::OnFixedLengthFocus - AddChecksum failed hr=%08lx","refs":[{"from":"42454164","function":"4245408d"}]}
+{"address":"42499898","value":"CTextFieldProp2::ApplyChecksum - (%s) CoCreateInstance failed hr=%08lx","refs":[{"from":"42452a41","function":"4245290a"}]}
+{"address":"424998e0","value":"y''cl:JJ''HH''mm''ss","refs":[{"from":"424565ec","function":"42456521"}]}
+{"address":"42499910","value":"CLARiSOFT Database Location","refs":[{"from":"42452e16","function":"42452de1"}]}
+{"address":"42499948","value":"SSCC_CompanyPrefix","refs":[{"from":"42452e93","function":"42452e5e"}]}
+{"address":"42499970","value":"SSCC_PrinterPrefix","refs":[{"from":"42452fbf","function":"42452f8a"}]}
+{"address":"42499998","value":"SSCC_Start","refs":[{"from":"42453023","function":"42452fee"}]}
+{"address":"424999b0","value":"SSCC_End","refs":[{"from":"42452f5b","function":"42452f26"}]}
+{"address":"424999c4","value":"SSCC_Database","refs":[{"from":"42452ef7","function":"42452ec2"}]}
+{"address":"424999e0","value":"SSCC_AutoCheckDigit","refs":[{"from":"42452e4d","function":"42452e45"}]}
+{"address":"42499aa0","value":"AR-AE","refs":[{"from":"424b9798","function":null},{"from":"42401e9b","function":null},{"from":"42402cca","function":null},{"from":"42401ea8","function":null},{"from":"42401eb4","function":null},{"from":"42402cd7","function":null},{"from":"42402cdf","function":null},{"from":"42402cc1","function":null}]}
+{"address":"42499aac","value":"AR-BH","refs":[{"from":"424b979c","function":null},{"from":"42401a0b","function":null},{"from":"42402d12","function":null},{"from":"42401a18","function":null},{"from":"42401a24","function":null},{"from":"42402d1f","function":null},{"from":"42402d27","function":null},{"from":"42402d09","function":null}]}
+{"address":"42499ab8","value":"AR-DZ","refs":[{"from":"424b97a0","function":null},{"from":"424019b1","function":null},{"from":"424029fa","function":null},{"from":"424019be","function":null},{"from":"424019ca","function":null},{"from":"42402a07","function":null},{"from":"42402a0f","function":null},{"from":"424029f1","function":null}]}
+{"address":"42499ac4","value":"AR-EG","refs":[{"from":"424b97a4","function":null},{"from":"42401a65","function":null},{"from":"4240296a","function":null},{"from":"42401a72","function":null},{"from":"42401a7e","function":null},{"from":"42402977","function":null},{"from":"4240297f","function":null},{"from":"42402961","function":null}]}
+{"address":"42499ad0","value":"AR-IQ","refs":[{"from":"424b97a8","function":null},{"from":"42401abf","function":null},{"from":"424029b2","function":null},{"from":"42401acc","function":null},{"from":"42401ad8","function":null},{"from":"424029bf","function":null},{"from":"424029c7","function":null},{"from":"424029a9","function":null}]}
+{"address":"42499adc","value":"AR-JO","refs":[{"from":"424b97ac","function":null},{"from":"42401b19","function":null},{"from":"42402bf2","function":null},{"from":"42401b26","function":null},{"from":"42401b32","function":null},{"from":"42402bff","function":null},{"from":"42402c07","function":null},{"from":"42402be9","function":null}]}
+{"address":"42499ae8","value":"AR-KW","refs":[{"from":"424b97b0","function":null},{"from":"42401b73","function":null},{"from":"42402c82","function":null},{"from":"42401b80","function":null},{"from":"42401b8c","function":null},{"from":"42402c8f","function":null},{"from":"42402c97","function":null},{"from":"42402c79","function":null}]}
+{"address":"42499af4","value":"AR-LB","refs":[{"from":"424b97b4","function":null},{"from":"42401bcd","function":null},{"from":"42402c3a","function":null},{"from":"42401bda","function":null},{"from":"42401be6","function":null},{"from":"42402c47","function":null},{"from":"42402c4f","function":null},{"from":"42402c31","function":null}]}
+{"address":"42499b00","value":"AR-LY","refs":[{"from":"424b97b8","function":null},{"from":"42401c27","function":null},{"from":"42402a42","function":null},{"from":"42401c34","function":null},{"from":"42401c40","function":null},{"from":"42402a4f","function":null},{"from":"42402a57","function":null},{"from":"42402a39","function":null}]}
+{"address":"42499b0c","value":"AR-MA","refs":[{"from":"424b97bc","function":null},{"from":"42401c81","function":null},{"from":"42402ad2","function":null},{"from":"42401c8e","function":null},{"from":"42401c9a","function":null},{"from":"42402adf","function":null},{"from":"42402ae7","function":null},{"from":"42402ac9","function":null}]}
+{"address":"42499b18","value":"AR-OM","refs":[{"from":"424b97c0","function":null},{"from":"42401cdb","function":null},{"from":"42402b1a","function":null},{"from":"42401ce8","function":null},{"from":"42401cf4","function":null},{"from":"42402b27","function":null},{"from":"42402b2f","function":null},{"from":"42402b11","function":null}]}
+{"address":"42499b24","value":"AR-QA","refs":[{"from":"424b97c4","function":null},{"from":"42401d35","function":null},{"from":"42402d5a","function":null},{"from":"42401d42","function":null},{"from":"42401d4e","function":null},{"from":"42402d67","function":null},{"from":"42402d6f","function":null},{"from":"42402d51","function":null}]}
+{"address":"42499b30","value":"AR-SA","refs":[{"from":"424b97c8","function":null},{"from":"42401d8f","function":null},{"from":"42402922","function":null},{"from":"42401d9c","function":null},{"from":"42401da8","function":null},{"from":"4240292f","function":null},{"from":"42402937","function":null},{"from":"42402919","function":null}]}
+{"address":"42499b3c","value":"AR-SY","refs":[{"from":"424b97cc","function":null},{"from":"42401de8","function":null},{"from":"42402baa","function":null},{"from":"42401df5","function":null},{"from":"42401e01","function":null},{"from":"42402bb7","function":null},{"from":"42402bbf","function":null},{"from":"42402ba1","function":null}]}
+{"address":"42499b48","value":"AR-TN","refs":[{"from":"424b97d0","function":null},{"from":"42401e42","function":null},{"from":"42402da2","function":null},{"from":"42401e4f","function":null},{"from":"42401e5b","function":null},{"from":"42402daf","function":null},{"from":"42402db7","function":null},{"from":"42402d99","function":null}]}
+{"address":"42499b54","value":"AR-YE","refs":[{"from":"424b97d4","function":null},{"from":"42401ef5","function":null},{"from":"42402b62","function":null},{"from":"42401f02","function":null},{"from":"42401f0e","function":null},{"from":"42402b6f","function":null},{"from":"42402b77","function":null},{"from":"42402b59","function":null}]}
+{"address":"42499bb8","value":"MS-BN","refs":[{"from":"424b9824","function":null},{"from":"4240250f","function":null},{"from":"4240331a","function":null}]}
+{"address":"42499bc4","value":"MS-MY","refs":[{"from":"424b9828","function":null},{"from":"4240254e","function":null},{"from":"42403330","function":null}]}
+{"address":"42499c10","value":"ZH-CN","refs":[{"from":"424b985c","function":null},{"from":"42401fa9","function":null},{"from":"42401fb6","function":null},{"from":"42401fc2","function":null},{"from":"42402f37","function":null}]}
+{"address":"42499c1c","value":"ZH-TW","refs":[{"from":"424b9860","function":null},{"from":"42402004","function":null},{"from":"42402011","function":null},{"from":"4240201d","function":null},{"from":"42402f59","function":null}]}
+{"address":"42499c68","value":"en-GB","refs":[{"from":"42458711","function":"4245867a"}]}
+{"address":"42499c78","value":"Free","refs":[{"from":"42458a70","function":"42458a36"}]}
+{"address":"42499c8c","value":"CCapabilitiesHelper::IsAlphabetValidForFont","refs":[{"from":"4245963e","function":"4245962c"}]}
+{"address":"42499cb8","value":"%s - SupportedAlphabets(%ld)\n","refs":[{"from":"4245968f","function":"4245962c"}]}
+{"address":"42499cd8","value":"UNICODE","refs":[{"from":"424596f3","function":"4245962c"}]}
+{"address":"42499ce8","value":"UNICODE","refs":[{"from":"42459727","function":"4245962c"}]}
+{"address":"42499cf0","value":"%s - RequiredAlphabets(%ld)\n","refs":[{"from":"4245976c","function":"4245962c"}]}
+{"address":"42499d14","value":"%s - converting AR to ARABICNUM","refs":[{"from":"424597d7","function":"4245962c"}]}
+{"address":"42499d34","value":"ARABICNUM","refs":[{"from":"424597e3","function":"4245962c"}]}
+{"address":"42499d40","value":"%s - c_strSupp(%s) c_strReq(%s)\n","refs":[{"from":"42459818","function":"4245962c"}]}
+{"address":"42499d64","value":"%s - lReqCount(%ld)\n","refs":[{"from":"42459870","function":"4245962c"}]}
+{"address":"42499d7c","value":"CCapabilitiesHelper::GetLocalePointerFromName","refs":[{"from":"42458c81","function":"42458c67"}]}
+{"address":"42499dac","value":"%s - pCapabilitiesCoder is NULL\n","refs":[{"from":"42458ca2","function":"42458c67"}]}
+{"address":"42499dd0","value":"%s - pLocales is NULL\n","refs":[{"from":"42458d0c","function":"42458c67"}]}
+{"address":"42499de8","value":"%s - lCount(%ld)\n","refs":[{"from":"42458d7d","function":"42458c67"}]}
+{"address":"42499dfc","value":"%s - lCount(%ld) getting(%ld)\n","refs":[{"from":"42458d9f","function":"42458c67"}]}
+{"address":"42499e1c","value":"%s - lCount(%ld) got(%ld) bstrVal(%ls) bstrLocaleName(%ls)\n","refs":[{"from":"42458e0f","function":"42458c67"}]}
+{"address":"42499e58","value":"%s - lCount(%ld) got(%ld) bstrVal(%ls) bstrLocaleName(%ls) - Match returning pLocale(%08lx)\n","refs":[{"from":"42458e83","function":"42458c67"}]}
+{"address":"42499eb8","value":"TrueType","refs":[{"from":"42459278","function":"42459170"},{"from":"42459395","function":"42459170"}]}
+{"address":"42499ef0","value":"%sFonts\\","refs":[{"from":"42459dc1","function":"42459daa"}]}
+{"address":"42499f04","value":"c:\\ClaricomData","refs":[{"from":"42459e8f","function":"42459e52"}]}
+{"address":"42499f24","value":"\\Claricom","refs":[{"from":"42459e9e","function":"42459e52"}]}
+{"address":"42499f38","value":"Claricom.INI","refs":[{"from":"42459dfc","function":"42459dd8"}]}
+{"address":"42499f54","value":"Installation Location","refs":[{"from":"42459d7b","function":"42459d46"}]}
+{"address":"42499f90","value":"CCLLocalesSupported::GetLocale","refs":[{"from":"4245a03b","function":"4245a02f"}]}
+{"address":"42499fb0","value":"%s iSize(%ld)\n","refs":[{"from":"4245a05a","function":"4245a02f"}]}
+{"address":"42499fc0","value":"%s i(%ld) dwResource(%ld) returning(%ls)\n","refs":[{"from":"4245a0d3","function":"4245a02f"}]}
+{"address":"42499fec","value":"%s not found returning(%s)\n","refs":[{"from":"4245a09b","function":"4245a02f"}]}
+{"address":"4249a01c","value":"CCLUnicodeStatic::OnPaint","refs":[{"from":"4245a861","function":"4245a84a"}]}
+{"address":"4249a040","value":"SELECT [","refs":[{"from":"4245b50f","function":"4245b315"}]}
+{"address":"4249a054","value":"] FROM [","refs":[{"from":"4245b530","function":"4245b315"}]}
+{"address":"4249a068","value":"] WHERE [","refs":[{"from":"4245b54a","function":"4245b315"}]}
+{"address":"4249a07c","value":"] = ##PRODUCTCODE##","refs":[{"from":"4245b58a","function":"4245b315"}]}
+{"address":"4249a170","value":"cl:MMM","refs":[{"from":"4245b6d9","function":"4245b62c"}]}
+{"address":"4249a178","value":"cl:MMMM","refs":[{"from":"4245b6f0","function":"4245b62c"}]}
+{"address":"4249a180","value":"y (2010 = 0)","refs":[{"from":"4245b6fa","function":"4245b62c"}]}
+{"address":"4249a194","value":"y (2010 = 10)","refs":[{"from":"4245b711","function":"4245b62c"}]}
+{"address":"4249a1a4","value":"cl:yy","refs":[{"from":"4245b71e","function":"4245b62c"}]}
+{"address":"4249a1b8","value":"JulDay(60)","refs":[{"from":"4245b73c","function":"4245b62c"}]}
+{"address":"4249a1cc","value":"JulDayZ(060)","refs":[{"from":"4245b753","function":"4245b62c"}]}
+{"address":"4249a1dc","value":"cl:jj","refs":[{"from":"4245b760","function":"4245b62c"}]}
+{"address":"4249a1e4","value":"JulDay(366)","refs":[{"from":"4245b76a","function":"4245b62c"}]}
+{"address":"4249a1f8","value":"JulDayZ(366)","refs":[{"from":"4245b781","function":"4245b62c"}]}
+{"address":"4249a208","value":"cl:JJ","refs":[{"from":"4245b78e","function":"4245b62c"}]}
+{"address":"4249a220","value":"WeekZ","refs":[{"from":"4245b7af","function":"4245b62c"}]}
+{"address":"4249a228","value":"cl:ww","refs":[{"from":"4245b7bc","function":"4245b62c"}]}
+{"address":"4249a230","value":"Week (North American)","refs":[{"from":"4245b7c6","function":"4245b62c"}]}
+{"address":"4249a250","value":"WeekZ (North American)","refs":[{"from":"4245b7dd","function":"4245b62c"}]}
+{"address":"4249a268","value":"cl:uu","refs":[{"from":"4245b7ea","function":"4245b62c"}]}
+{"address":"4249a270","value":"Week of Year Code","refs":[{"from":"4245b7f4","function":"4245b62c"}]}
+{"address":"4249a284","value":"cl:wwc","refs":[{"from":"4245b801","function":"4245b62c"}]}
+{"address":"4249a28c","value":"DayOfWeek(1-7)","refs":[{"from":"4245b80b","function":"4245b62c"}]}
+{"address":"4249a29c","value":"cl:ddd","refs":[{"from":"4245b818","function":"4245b62c"}]}
+{"address":"4249a2a4","value":"DayOfWeek(A-G)","refs":[{"from":"4245b822","function":"4245b62c"}]}
+{"address":"4249a2b4","value":"cl:dddd","refs":[{"from":"4245b82f","function":"4245b62c"}]}
+{"address":"4249a2c0","value":"cl:DDD","refs":[{"from":"4245b846","function":"4245b62c"}]}
+{"address":"4249a2c8","value":"Month Code","refs":[{"from":"4245b84d","function":"4245b62c"}]}
+{"address":"4249a2d4","value":"cl:mmc","refs":[{"from":"4245b85a","function":"4245b62c"}]}
+{"address":"4249a2dc","value":"Day of Month Code","refs":[{"from":"4245b861","function":"4245b62c"}]}
+{"address":"4249a2f0","value":"cl:ddc","refs":[{"from":"4245b86e","function":"4245b62c"}]}
+{"address":"4249a2f8","value":"Year of Decade Code","refs":[{"from":"4245b875","function":"4245b62c"}]}
+{"address":"4249a30c","value":"cl:yyc","refs":[{"from":"4245b882","function":"4245b62c"}]}
+{"address":"4249a314","value":"Day of Week Code","refs":[{"from":"4245b889","function":"4245b62c"}]}
+{"address":"4249a328","value":"cl:dddc","refs":[{"from":"4245b896","function":"4245b62c"}]}
+{"address":"4249a330","value":"Single Digit Day of Month","refs":[{"from":"4245b89d","function":"4245b62c"}]}
+{"address":"4249a37c","value":"am/pm","refs":[{"from":"4245c2e8","function":"4245c24b"}]}
+{"address":"4249a388","value":"MinuteOfDay","refs":[{"from":"4245c2ff","function":"4245c24b"}]}
+{"address":"4249a39c","value":"MinuteOfDayZ","refs":[{"from":"4245c316","function":"4245c24b"}]}
+{"address":"4249a3ac","value":"cl:nn","refs":[{"from":"4245c323","function":"4245c24b"}]}
+{"address":"4249a3b4","value":"SecondOfDay","refs":[{"from":"4245c32d","function":"4245c24b"}]}
+{"address":"4249a3c8","value":"SecondOfDayZ","refs":[{"from":"4245c344","function":"4245c24b"}]}
+{"address":"4249a3d8","value":"cl:ss","refs":[{"from":"4245c351","function":"4245c24b"}]}
+{"address":"4249a3e0","value":"HourOfWeek","refs":[{"from":"4245c35b","function":"4245c24b"}]}
+{"address":"4249a3f4","value":"HourOfWeekZ","refs":[{"from":"4245c372","function":"4245c24b"}]}
+{"address":"4249a400","value":"cl:ii","refs":[{"from":"4245c37f","function":"4245c24b"}]}
+{"address":"4249a408","value":"HourOfWeekWithOffset","refs":[{"from":"4245c389","function":"4245c24b"}]}
+{"address":"4249a420","value":"cl:iii","refs":[{"from":"4245c396","function":"4245c24b"}]}
+{"address":"4249a428","value":"HourOfWeekZWithOffset","refs":[{"from":"4245c3a0","function":"4245c24b"}]}
+{"address":"4249a440","value":"cl:iiii","refs":[{"from":"4245c3ad","function":"4245c24b"}]}
+{"address":"4249a448","value":"Hour Code","refs":[{"from":"4245c3b7","function":"4245c24b"}]}
+{"address":"4249a454","value":"Shift Code","refs":[{"from":"4245c3cb","function":"4245c24b"}]}
+{"address":"4249a460","value":"Minute Code","refs":[{"from":"4245c3df","function":"4245c24b"}]}
+{"address":"4249a46c","value":"cl:nnc","refs":[{"from":"4245c3ec","function":"4245c24b"}]}
+{"address":"4249a474","value":"TenthsOfSecond","refs":[{"from":"4245c3f3","function":"4245c24b"}]}
+{"address":"4249a48c","value":"HundredthsOfSecond","refs":[{"from":"4245c407","function":"4245c24b"}]}
+{"address":"4249a4a0","value":"cl:ff","refs":[{"from":"4245c414","function":"4245c24b"}]}
+{"address":"4249a4a8","value":"ThousandthsOfSecond","refs":[{"from":"4245c41b","function":"4245c24b"}]}
+{"address":"4249a4bc","value":"cl:fff","refs":[{"from":"4245c428","function":"4245c24b"}]}
+{"address":"4249a4cc","value":"cl:HH","refs":[{"from":"4245c0cd","function":"4245c085"}]}
+{"address":"4249a4d4","value":"2 Digit Timer Code","refs":[{"from":"4245cb68","function":"4245cb18"}]}
+{"address":"4249a4e8","value":"cl:tt{}","refs":[{"from":"4245cb72","function":"4245cb18"}]}
+{"address":"4249a4f0","value":"4 Digit Timer Code","refs":[{"from":"4245cb57","function":"4245cb18"}]}
+{"address":"4249a504","value":"cl:tttt{}","refs":[{"from":"4245cb61","function":"4245cb18"}]}
+{"address":"4249a520","value":"Domino CLARiSOFT.chm","refs":[{"from":"4245dd71","function":"4245dd50"},{"from":"4245dd69","function":"4245dd50"}]}
+{"address":"4249a54c","value":"CLARiSOFT.chm","refs":[{"from":"4245dd71","function":"4245dd50"},{"from":"4245dd64","function":"4245dd50"}]}
+{"address":"4249a568","value":"huGECyfQqD","refs":[{"from":"424b9868","function":null}]}
+{"address":"4249a580","value":"tIdgXBkSgJ","refs":[{"from":"424b986c","function":null}]}
+{"address":"4249a598","value":"yYaxxuSv3b","refs":[{"from":"424b9870","function":null}]}
+{"address":"4249a5b0","value":"IFTdt9lRsd","refs":[{"from":"424b9874","function":null}]}
+{"address":"4249a5c8","value":"wnPfZEZux7","refs":[{"from":"424b9878","function":null}]}
+{"address":"4249a5e0","value":"odR7im5JqG","refs":[{"from":"424b987c","function":null}]}
+{"address":"4249a5f8","value":"OAITXj4iXb","refs":[{"from":"424b9880","function":null}]}
+{"address":"4249a610","value":"ZiVUQFNM6w","refs":[{"from":"424b9884","function":null}]}
+{"address":"4249a628","value":"OyjnoKFjgp","refs":[{"from":"424b9888","function":null}]}
+{"address":"4249a640","value":"wD8chM1ak1","refs":[{"from":"424b988c","function":null}]}
+{"address":"4249a658","value":"kOZlUduB7n","refs":[{"from":"424b9890","function":null}]}
+{"address":"4249a670","value":"3ePYX6jOGk","refs":[{"from":"424b9894","function":null}]}
+{"address":"4249a688","value":"lF5u7gutXp","refs":[{"from":"424b9898","function":null}]}
+{"address":"4249a6a0","value":"75SjgTNO3Z","refs":[{"from":"424b989c","function":null}]}
+{"address":"4249a6b8","value":"pIH8x9YmgV","refs":[{"from":"424b98a0","function":null}]}
+{"address":"4249a6d0","value":"lJKZooveiC","refs":[{"from":"424b98a4","function":null}]}
+{"address":"4249a6e8","value":"rrcqZcggED","refs":[{"from":"424b98a8","function":null}]}
+{"address":"4249a700","value":"lqD8bYaGlu","refs":[{"from":"424b98ac","function":null}]}
+{"address":"4249a718","value":"SLm9zbNL1n","refs":[{"from":"424b98b0","function":null}]}
+{"address":"4249a730","value":"v3mLpbGymP","refs":[{"from":"424b98b4","function":null}]}
+{"address":"4249a748","value":"jD7oQ6kGsD","refs":[{"from":"424b98b8","function":null}]}
+{"address":"4249a760","value":"PWhBjWRuCI","refs":[{"from":"424b98bc","function":null}]}
+{"address":"4249a778","value":"BOHqDkZWcK","refs":[{"from":"424b98c0","function":null}]}
+{"address":"4249a790","value":"dG3NwFtWSk","refs":[{"from":"424b98c4","function":null}]}
+{"address":"4249a7a8","value":"2arzqlVPRK","refs":[{"from":"424b98c8","function":null}]}
+{"address":"4249a7c0","value":"yJVGT9cGrD","refs":[{"from":"424b98cc","function":null}]}
+{"address":"4249a7d8","value":"VAr2XtDjuf","refs":[{"from":"424b98d0","function":null}]}
+{"address":"4249a7f0","value":"N9ogFbjKQt","refs":[{"from":"424b98d4","function":null}]}
+{"address":"4249a808","value":"Mu0Uwke93q","refs":[{"from":"424b98d8","function":null}]}
+{"address":"4249a820","value":"tc7zXdZj8m","refs":[{"from":"424b98dc","function":null}]}
+{"address":"4249a838","value":"1tAB2etWQ9","refs":[{"from":"424b98e0","function":null}]}
+{"address":"4249a850","value":"oi53OFDfOA","refs":[{"from":"424b98e4","function":null}]}
+{"address":"4249a868","value":"AF89ULg7be","refs":[{"from":"424b98e8","function":null}]}
+{"address":"4249a880","value":"7ohZMl9qKI","refs":[{"from":"424b98ec","function":null}]}
+{"address":"4249a898","value":"O1Qk9KNSSu","refs":[{"from":"424b98f0","function":null}]}
+{"address":"4249a8b0","value":"GfcSfWxnGB","refs":[{"from":"424b98f4","function":null}]}
+{"address":"4249a8c8","value":"BeJbC3WR9M","refs":[{"from":"424b98f8","function":null}]}
+{"address":"4249a8e0","value":"lQPHx07gtM","refs":[{"from":"424b98fc","function":null}]}
+{"address":"4249a8f8","value":"3oHJkGKPGt","refs":[{"from":"424b9900","function":null}]}
+{"address":"4249a910","value":"E8uyTp4CaQ","refs":[{"from":"424b9904","function":null}]}
+{"address":"4249a928","value":"addgZCXd8i","refs":[{"from":"424b9908","function":null}]}
+{"address":"4249a940","value":"B3lmsIOeeL","refs":[{"from":"424b990c","function":null}]}
+{"address":"4249a958","value":"NixUzA9bER","refs":[{"from":"424b9910","function":null}]}
+{"address":"4249a970","value":"WUdpYpnfox","refs":[{"from":"424b9914","function":null}]}
+{"address":"4249a988","value":"Rt2YAETYUx","refs":[{"from":"424b9918","function":null}]}
+{"address":"4249a9a0","value":"sEdNHqj44p","refs":[{"from":"424b991c","function":null}]}
+{"address":"4249a9b8","value":"wgi9WNOWM0","refs":[{"from":"424b9920","function":null}]}
+{"address":"4249a9d0","value":"pNsN4JeZQ5","refs":[{"from":"424b9924","function":null}]}
+{"address":"4249a9e8","value":"aEuujxyyvi","refs":[{"from":"424b9928","function":null}]}
+{"address":"4249aa00","value":"dOEqUy2SfD","refs":[{"from":"424b992c","function":null}]}
+{"address":"4249aa18","value":"La7VJbYbTk","refs":[{"from":"424b9930","function":null}]}
+{"address":"4249aa30","value":"Y5FoQ5fbnk","refs":[{"from":"424b9934","function":null}]}
+{"address":"4249aa48","value":"YQzX1Lei71","refs":[{"from":"424b9938","function":null}]}
+{"address":"4249aa60","value":"5MAJdXEIx6","refs":[{"from":"424b993c","function":null}]}
+{"address":"4249aa78","value":"8CetBnFLFS","refs":[{"from":"424b9940","function":null}]}
+{"address":"4249aa90","value":"RibpStXgvl","refs":[{"from":"424b9944","function":null}]}
+{"address":"4249aaa8","value":"BpeD1ZIpex","refs":[{"from":"424b9948","function":null}]}
+{"address":"4249aac0","value":"yu4OPvc2uC","refs":[{"from":"424b994c","function":null}]}
+{"address":"4249aad8","value":"eBZY9k4TnL","refs":[{"from":"424b9950","function":null}]}
+{"address":"4249aaf0","value":"YenrUUYHUP","refs":[{"from":"424b9954","function":null}]}
+{"address":"4249ab08","value":"iJTUzKVmPe","refs":[{"from":"424b9958","function":null}]}
+{"address":"4249ab20","value":"C0MSk6NMYD","refs":[{"from":"424b995c","function":null}]}
+{"address":"4249ab38","value":"DleXZMPkbs","refs":[{"from":"424b9960","function":null}]}
+{"address":"4249ab50","value":"1N8r2gPz5E","refs":[{"from":"424b9964","function":null}]}
+{"address":"4249ab68","value":"vW13BS4IX3","refs":[{"from":"424b9968","function":null}]}
+{"address":"4249ab80","value":"tuTVpEiO1S","refs":[{"from":"424b996c","function":null}]}
+{"address":"4249ab98","value":"voi3CQUlEt","refs":[{"from":"424b9970","function":null}]}
+{"address":"4249abb0","value":"E8EL30FuVG","refs":[{"from":"424b9974","function":null}]}
+{"address":"4249abc8","value":"vSgF6Ydh0C","refs":[{"from":"424b9978","function":null}]}
+{"address":"4249abe0","value":"3UY1GqkzIr","refs":[{"from":"424b997c","function":null}]}
+{"address":"4249abf8","value":"73S0KUgt1V","refs":[{"from":"424b9980","function":null}]}
+{"address":"4249ac10","value":"YjSWHqUx7U","refs":[{"from":"424b9984","function":null}]}
+{"address":"4249ac28","value":"nqyZOWsIDv","refs":[{"from":"424b9988","function":null}]}
+{"address":"4249ac40","value":"AXd3lWPCOf","refs":[{"from":"424b998c","function":null}]}
+{"address":"4249ac58","value":"I06ZcQjAJm","refs":[{"from":"424b9990","function":null}]}
+{"address":"4249ac70","value":"iN2gvr9nAc","refs":[{"from":"424b9994","function":null}]}
+{"address":"4249ac88","value":"fmzB7QcT9s","refs":[{"from":"424b9998","function":null}]}
+{"address":"4249aca0","value":"1BF8XJRdI3","refs":[{"from":"424b999c","function":null}]}
+{"address":"4249acb8","value":"aaNCDFIMqL","refs":[{"from":"424b99a0","function":null}]}
+{"address":"4249acd0","value":"mB8NO7ElMn","refs":[{"from":"424b99a4","function":null}]}
+{"address":"4249ace8","value":"sHVdFCAe4N","refs":[{"from":"424b99a8","function":null}]}
+{"address":"4249ad00","value":"xJevvzwSdW","refs":[{"from":"424b99ac","function":null}]}
+{"address":"4249ad18","value":"rhEvpL9319","refs":[{"from":"424b99b0","function":null}]}
+{"address":"4249ad30","value":"N3yt0f9SGK","refs":[{"from":"424b99b4","function":null}]}
+{"address":"4249ad48","value":"jdJYiSiPMN","refs":[{"from":"424b99b8","function":null}]}
+{"address":"4249ad60","value":"FdsuUWTXJ5","refs":[{"from":"424b99bc","function":null}]}
+{"address":"4249ad78","value":"JByVtRuGWD","refs":[{"from":"424b99c0","function":null}]}
+{"address":"4249ad90","value":"3LC9GLjl0i","refs":[{"from":"424b99c4","function":null}]}
+{"address":"4249ada8","value":"lOZtu14hQc","refs":[{"from":"424b99c8","function":null}]}
+{"address":"4249adc0","value":"3il1O0BSnJ","refs":[{"from":"424b99cc","function":null}]}
+{"address":"4249add8","value":"nHEmKSN64T","refs":[{"from":"424b99d0","function":null}]}
+{"address":"4249adf0","value":"YsRgIvKbLN","refs":[{"from":"424b99d4","function":null}]}
+{"address":"4249ae08","value":"axJmMGJ2wD","refs":[{"from":"424b99d8","function":null}]}
+{"address":"4249ae20","value":"vcF0uoaMO8","refs":[{"from":"424b99dc","function":null}]}
+{"address":"4249ae38","value":"sF1vn9IfKF","refs":[{"from":"424b99e0","function":null}]}
+{"address":"4249ae50","value":"g6RFC4S4SH","refs":[{"from":"424b99e4","function":null}]}
+{"address":"4249ae68","value":"rHoMUhBr0s","refs":[{"from":"424b99e8","function":null}]}
+{"address":"4249ae80","value":"oC8l37pyB0","refs":[{"from":"424b99ec","function":null}]}
+{"address":"4249ae98","value":"s5sZXQWkhd","refs":[{"from":"424b99f0","function":null}]}
+{"address":"4249aeb0","value":"sTDwbbQH6u","refs":[{"from":"424b99f4","function":null}]}
+{"address":"4249aee4","value":",%2d","refs":[{"from":"4245e096","function":"4245e07b"}]}
+{"address":"4249aef0","value":"%1cp%1cR%1cN%1cy%1cK","refs":[{"from":"4245ddb7","function":"4245dd81"}]}
+{"address":"4249af20","value":"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!_","refs":[{"from":"4245dde2","function":"4245dd81"}]}
+{"address":"4249afc0","value":"CLARISOFT.EXE","refs":[{"from":"4245e528","function":"4245e491"}]}
+{"address":"4249afdc","value":"Data\\CLLicMgr.exe","refs":[{"from":"4245e5b1","function":"4245e491"}]}
+{"address":"4249b000","value":"CLSERVER.EXE","refs":[{"from":"4245e538","function":"4245e491"}]}
+{"address":"4249b01c","value":"CLARiNET","refs":[{"from":"4245e54a","function":"4245e491"},{"from":"4245e5a7","function":"4245e491"}]}
+{"address":"4249b030","value":"CLLicMgr.exe","refs":[{"from":"4245e556","function":"4245e491"}]}
+{"address":"4249b04c","value":"CLARINET.EXE","refs":[{"from":"4245e560","function":"4245e491"}]}
+{"address":"4249b068","value":"CLARISOFT PRINT MANAGER.EXE","refs":[{"from":"4245e577","function":"4245e491"}]}
+{"address":"4249b0a0","value":"CLARINETOPCSERVER.EXE","refs":[{"from":"4245e593","function":"4245e491"}]}
+{"address":"4249b0cc","value":"Standalone","refs":[{"from":"4245e5c5","function":"4245e491"}]}
+{"address":"4249b0e4","value":"CLicenseClient::Register - RPC_S_SERVER_UNAVAILABLE","refs":[{"from":"4245e8ee","function":"4245e885"}]}
+{"address":"4249b11c","value":"regserver","refs":[{"from":"4245e998","function":"4245e885"}]}
+{"address":"4249b138","value":"<!--","refs":[{"from":"42466ba5","function":"42466b90"},{"from":"42466bb5","function":"42466b90"}]}
+{"address":"4249b14c","value":"<![CDATA[","refs":[{"from":"42466b38","function":"42466b2f"},{"from":"42466b4d","function":"42466b2f"}]}
+{"address":"4249b170","value":"xml:space","refs":[{"from":"42466c90","function":"42466c06"},{"from":"42466ca7","function":"42466c06"},{"from":"42466d1f","function":"42466c06"},{"from":"42466d36","function":"42466c06"}]}
+{"address":"4249b184","value":"preserve","refs":[{"from":"42466ced","function":"42466c06"}]}
+{"address":"4249b1c0","value":"AR-AL","refs":[{"from":"42402a8a","function":null},{"from":"42402a97","function":null},{"from":"42402a9f","function":null},{"from":"42402a81","function":null}]}
+{"address":"4249b1f4","value":"EN-US","refs":[{"from":"42402feb","function":null}]}
+{"address":"4249b210","value":"FR-FR","refs":[{"from":"42403059","function":null}]}
+{"address":"4249b21c","value":"FR-CA","refs":[{"from":"42403070","function":null}]}
+{"address":"4249b250","value":"PT-BR","refs":[{"from":"424031e5","function":null}]}
+{"address":"4249b26c","value":"ES-ES","refs":[{"from":"4240327f","function":null}]}
+{"address":"4249b2ac","value":"(0x%X) ","refs":[{"from":"424640f2","function":"42463fc0"}]}
+{"address":"4249b2b4","value":"JOBS","refs":[{"from":"424033cb","function":null}]}
+{"address":"4249b2c0","value":"EXTRA","refs":[{"from":"424033b0","function":null}]}
+{"address":"4249b2cc","value":"CONFIGURATION","refs":[{"from":"42403395","function":null}]}
+{"address":"4249b2e8","value":"##PRODUCTCODE##","refs":[{"from":"424033e6","function":null}]}
+{"address":"4249b308","value":"UniqueJobCode","refs":[{"from":"42403401","function":null}]}
+{"address":"4249b324","value":"CUserDB::OpenConnection ****** Failed to create spConnection","refs":[{"from":"42465f33","function":"42465f06"}]}
+{"address":"4249b368","value":"SELECT INTERNALNAME, USERNAME FROM [CONFIGURATION];","refs":[{"from":"42465a49","function":"42465a2a"}]}
+{"address":"4249b3d0","value":"SELECT USERNAME, INTERNALNAME FROM [CONFIGURATION];","refs":[{"from":"42465a50","function":"42465a2a"}]}
+{"address":"4249b438","value":"CUserDB::MapFieldNames ****** Failed to create spRecordSet","refs":[{"from":"42465a7e","function":"42465a2a"}]}
+{"address":"4249b474","value":"SELECT TOP 1 * FROM [%s];","refs":[{"from":"424648fc","function":"424648b5"}]}
+{"address":"4249b4a8","value":"CUserDB::GetFieldInfo ********* Failed to get connection string.","refs":[{"from":"42464927","function":"424648b5"}]}
+{"address":"4249b4ec","value":"SELECT * FROM %s","refs":[{"from":"42464952","function":"424648b5"},{"from":"424649a2","function":"424648b5"}]}
+{"address":"4249b510","value":"SELECT * FROM \"%s\"","refs":[{"from":"42464959","function":"424648b5"}]}
+{"address":"4249b538","value":"SELECT * FROM [%s];","refs":[{"from":"42464960","function":"424648b5"}]}
+{"address":"4249b560","value":"SELECT * FROM `%s`;","refs":[{"from":"42464967","function":"424648b5"}]}
+{"address":"4249b590","value":"LIKE","refs":[{"from":"424656b0","function":"424655ac"}]}
+{"address":"4249b5a0","value":"SELECT INTERNALNAME, USERNAME, TYPE FROM [%s];","refs":[{"from":"424642c0","function":"4246426e"}]}
+{"address":"4249b600","value":"Number","refs":[{"from":"4246463f","function":"4246426e"},{"from":"4246462c","function":"4246426e"}]}
+{"address":"4249b61c","value":"Currency","refs":[{"from":"4246468e","function":"4246426e"},{"from":"42464677","function":"4246426e"}]}
+{"address":"4249b648","value":"Offset","refs":[{"from":"42464717","function":"4246426e"},{"from":"42464709","function":"4246426e"}]}
+{"address":"4249b658","value":"CUserDB::GetFieldNames","refs":[{"from":"4246512a","function":"42465108"}]}
+{"address":"4249b670","value":"Data Source=","refs":[{"from":"4246526b","function":"42465108"},{"from":"4246527e","function":"42465108"}]}
+{"address":"4249b694","value":"%s - %ls","refs":[{"from":"424653ee","function":"42465108"}]}
+{"address":"4249b6a0","value":"CUserDB::GetADOErrors","refs":[{"from":"42463fdd","function":"42463fc0"}]}
+{"address":"4249b6b8","value":"***** %s  ***** ErrorMessage *** %ls","refs":[{"from":"4246416d","function":"42463fc0"}]}
+{"address":"4249b6e0","value":"***** %s  ***** ADO EXCEPTION ******* CCLError::ErrorMessage *** %ls","refs":[{"from":"424641f0","function":"424641b6"}]}
+{"address":"4249b728","value":"***** %s  ***** ADO EXCEPTION ******* Error.Error(0x%08x)","refs":[{"from":"4246420c","function":"424641b6"}]}
+{"address":"4249b76c","value":"'\"&<>","refs":[{"from":"42466f7b","function":"42466f25"},{"from":"42466f88","function":"42466f25"}]}
+{"address":"4249b778","value":"&apos;","refs":[{"from":"4246702a","function":"42466f25"},{"from":"4246703a","function":"42466f25"}]}
+{"address":"4249b788","value":"&quot;","refs":[{"from":"4246705e","function":"42466f25"},{"from":"4246706e","function":"42466f25"}]}
+{"address":"4249b798","value":"&amp;","refs":[{"from":"42467044","function":"42466f25"},{"from":"42467054","function":"42466f25"}]}
+{"address":"4249b7a4","value":"&lt;","refs":[{"from":"42467010","function":"42466f25"},{"from":"42467020","function":"42466f25"}]}
+{"address":"4249b7b0","value":"&gt;","refs":[{"from":"42466ff7","function":"42466f25"},{"from":"42467006","function":"42466f25"}]}
+{"address":"4249b7bc","value":"\"&<>","refs":[{"from":"42467081","function":"42466f25"}]}
+{"address":"4249b820","value":"ZipherBitmapFont::PopulateZipherFontList()","refs":[{"from":"42468244","function":"42468233"}]}
+{"address":"4249b84c","value":"%ls%ls","refs":[{"from":"42468305","function":"42468233"},{"from":"424680fc","function":"42468007"}]}
+{"address":"4249b85c","value":"%s - Could not add font(0x%08X): Filename(%ls), Directory(%ls)","refs":[{"from":"42468351","function":"42468233"}]}
+{"address":"4249b89c","value":"ZipherBitmapFont::CheckBinaryFontInterfacePointer()","refs":[{"from":"42467e93","function":"42467e85"}]}
+{"address":"4249b8d0","value":"%s - Could not create m_pBinaryFont(0x%08X)","refs":[{"from":"42467ee2","function":"42467e85"}]}
+{"address":"4249b8fc","value":"ZipherBitmapFont::GetDefaultFont()","refs":[{"from":"4246802b","function":"42468007"}]}
+{"address":"4249b920","value":"ZipherBitmapFont::GetCharSpace()","refs":[{"from":"42467f35","function":"42467f17"}]}
+{"address":"4249b944","value":"%ls\\%ls.zfbf","refs":[{"from":"42467f51","function":"42467f17"},{"from":"42468192","function":"4246816e"}]}
+{"address":"4249b960","value":"ZipherBitmapFont::CalculateSize","refs":[{"from":"42467c92","function":"42467c7e"}]}
+{"address":"4249b980","value":"ZipherBitmapFont::CalculateSize - m_pBinaryFontRenderer->SelectBitmapFont CAUGHT(...)","refs":[{"from":"42467d41","function":"42467d41"}]}
+{"address":"4249b9d8","value":"ZipherBitmapFont::CalculateSize - m_bstrFontName[%ls] ulFlags[%d], m_lEscapement[%d], m_lEscapement[%d], m_eRTL[%d]","refs":[{"from":"42467d5d","function":"42467d41"}]}
+{"address":"4249ba50","value":"%s - m_pBinaryFontRenderer->SelectBitmapFont Failed(0x%08X): Fontname(%ls)","refs":[{"from":"42467de2","function":"42467d82"},{"from":"42468c01","function":"42468ac7"},{"from":"424685b9","function":"424683cb"}]}
+{"address":"4249ba9c","value":"%s - Could not de-select the bitmap font (%ls)","refs":[{"from":"42467e3d","function":"42467d82"},{"from":"42468eab","function":"42468ac7"},{"from":"42468a8e","function":"424683cb"}]}
+{"address":"4249bacc","value":"ZipherBitmapFont::RenderStaticBitmapText","refs":[{"from":"42468ae4","function":"42468ac7"}]}
+{"address":"4249baf8","value":"ZipherBitmapFont::RenderBitmapText","refs":[{"from":"424683f6","function":"424683cb"}]}
+{"address":"4249bd90","value":"cl:X","refs":[{"from":"4246b6c0","function":"4246b697"}]}
+{"address":"4249bf58","value":"cl:nn","refs":[{"from":"4246b6c0","function":"4246b697"}]}
+{"address":"4249c2f8","value":"TimeDateParset::FormatTimeDate -  calling ConvertNumerals\n","refs":[{"from":"4246bb1f","function":"4246babe"}]}
+{"address":"4249c334","value":"%03ld","refs":[{"from":"4246b20a","function":"4246b1ce"},{"from":"4246aa1c","function":"4246a993"},{"from":"4246a55e","function":"4246a50c"}]}
+{"address":"4249c348","value":"%1ld","refs":[{"from":"4246aa82","function":"4246aa53"},{"from":"4246a612","function":"4246a5db"}]}
+{"address":"4249c35c","value":"%02ld","refs":[{"from":"4246b2e4","function":"4246b255"},{"from":"4246b1a2","function":"4246b129"},{"from":"4246b218","function":"4246b1ce"},{"from":"4246a889","function":"4246a844"},{"from":"4246a738","function":"4246a6ec"},{"from":"4246a7a7","function":"4246a764"},{"from":"4246a818","function":"4246a7d3"}]}
+{"address":"4249c368","value":"%04ld","refs":[{"from":"4246a8f8","function":"4246a8b5"}]}
+{"address":"4249c374","value":"%05ld","refs":[{"from":"4246a967","function":"4246a924"}]}
+{"address":"4249c380","value":"%0*lu","refs":[{"from":"4246aef0","function":"4246ae58"}]}
+{"address":"4249c38c","value":"activeshifts","refs":[{"from":"4246bbf8","function":"4246bbb2"}]}
+{"address":"4249c3a8","value":"shiftcodes","refs":[{"from":"4246bbfd","function":"4246bbb2"},{"from":"4246bd2e","function":"4246bbb2"},{"from":"4246bd71","function":"4246bbb2"}]}
+{"address":"4249c3c0","value":"%02d","refs":[{"from":"4246bc32","function":"4246bbb2"},{"from":"4246c00b","function":"4246bbb2"},{"from":"4246c27b","function":"4246bbb2"},{"from":"4246c301","function":"4246bbb2"},{"from":"4246c36f","function":"4246bbb2"},{"from":"4246c3e5","function":"4246bbb2"}]}
+{"address":"4249c3cc","value":"start","refs":[{"from":"4246bc54","function":"4246bbb2"},{"from":"4246bc75","function":"4246bbb2"}]}
+{"address":"4249c3d8","value":"code","refs":[{"from":"4246bcb3","function":"4246bbb2"},{"from":"4246bccc","function":"4246bbb2"}]}
+{"address":"4249c48c","value":"monthcodes","refs":[{"from":"4246bfa6","function":"4246bbb2"}]}
+{"address":"4249c4a4","value":"hourcodes","refs":[{"from":"4246c096","function":"4246bbb2"}]}
+{"address":"4249c518","value":"dayofweekcodes","refs":[{"from":"4246c202","function":"4246bbb2"}]}
+{"address":"4249c538","value":"minutecodes","refs":[{"from":"4246c2a3","function":"4246bbb2"}]}
+{"address":"4249c550","value":"weekofyearcodes","refs":[{"from":"4246c329","function":"4246bbb2"}]}
+{"address":"4249c570","value":"yearofdecadecodes","refs":[{"from":"4246c39a","function":"4246bbb2"}]}
+{"address":"4249c594","value":"dayofmonthcodes","refs":[{"from":"4246c40d","function":"4246bbb2"}]}
+{"address":"4249c5b4","value":"TimeDateParser::ConvertNumerals","refs":[{"from":"4246b913","function":"4246b8ff"}]}
+{"address":"4249c5d8","value":"%s - adding Arabic Offset\n","refs":[{"from":"4246b952","function":"4246b8ff"}]}
+{"address":"4249c5f4","value":"ABCDEFGHIJ","refs":[{"from":"4246b278","function":"4246b255"},{"from":"4246b270","function":"4246b255"}]}
+{"address":"4249c60c","value":"%d-%d","refs":[{"from":"4246b287","function":"4246b255"}]}
+{"address":"4249c618","value":"%02ld%02ld","refs":[{"from":"4246b327","function":"4246b255"}]}
+{"address":"4249c638","value":"CLSID\\{ADB880A6-D8FF-11CF-9377-00AA003B7A11}\\InprocServer32","refs":[{"from":"4246c711","function":"4246c6e8"}]}
+{"address":"4249c674","value":"hhctrl.ocx","refs":[{"from":"4246c8db","function":"4246c867"}]}
+{"address":"4249c6c0","value":"ERROR : Unable to initialize critical section in CAtlBaseModule\n","refs":[{"from":"4246ca6b","function":"4246ca2e"}]}
+{"address":"4249c750","value":"bad allocation","refs":[{"from":"4246d15e","function":"4246d133"},{"from":"4246ccd1","function":"4246ccc6"}]}
+{"address":"4249cc58","value":"permission denied","refs":[{"from":"4249c78c","function":null}]}
+{"address":"4249cc6c","value":"file exists","refs":[{"from":"4246cda2","function":"4246cd7d"},{"from":"4249c794","function":null}]}
+{"address":"4249cc78","value":"no such device","refs":[{"from":"4249c79c","function":null}]}
+{"address":"4249cc88","value":"filename too long","refs":[]}
+{"address":"4249cc9c","value":"device or resource busy","refs":[]}
+{"address":"4249ccb4","value":"io error","refs":[]}
+{"address":"4249ccc0","value":"directory not empty","refs":[]}
+{"address":"4249ccd4","value":"invalid argument","refs":[]}
+{"address":"4249cce8","value":"no space on device","refs":[]}
+{"address":"4249ccfc","value":"no such file or directory","refs":[]}
+{"address":"4249cd18","value":"function not supported","refs":[]}
+{"address":"4249cd30","value":"no lock available","refs":[]}
+{"address":"4249cd44","value":"not enough memory","refs":[]}
+{"address":"4249cd58","value":"resource unavailable try again","refs":[]}
+{"address":"4249cd78","value":"cross device link","refs":[]}
+{"address":"4249cd8c","value":"operation canceled","refs":[]}
+{"address":"4249cda0","value":"too many files open","refs":[]}
+{"address":"4249cdb4","value":"permission_denied","refs":[]}
+{"address":"4249cdc8","value":"address_in_use","refs":[]}
+{"address":"4249cdd8","value":"address_not_available","refs":[]}
+{"address":"4249cdf0","value":"address_family_not_supported","refs":[]}
+{"address":"4249ce10","value":"connection_already_in_progress","refs":[]}
+{"address":"4249ce30","value":"bad_file_descriptor","refs":[]}
+{"address":"4249ce44","value":"connection_aborted","refs":[]}
+{"address":"4249ce58","value":"connection_refused","refs":[]}
+{"address":"4249ce6c","value":"connection_reset","refs":[]}
+{"address":"4249ce80","value":"destination_address_required","refs":[]}
+{"address":"4249cea0","value":"bad_address","refs":[]}
+{"address":"4249ceac","value":"host_unreachable","refs":[]}
+{"address":"4249cec0","value":"operation_in_progress","refs":[]}
+{"address":"4249ced8","value":"interrupted","refs":[]}
+{"address":"4249cee4","value":"invalid_argument","refs":[]}
+{"address":"4249cef8","value":"already_connected","refs":[]}
+{"address":"4249cf0c","value":"too_many_files_open","refs":[]}
+{"address":"4249cf20","value":"message_size","refs":[]}
+{"address":"4249cf30","value":"filename_too_long","refs":[]}
+{"address":"4249cf44","value":"network_down","refs":[]}
+{"address":"4249cf54","value":"network_reset","refs":[]}
+{"address":"4249cf64","value":"network_unreachable","refs":[]}
+{"address":"4249cf78","value":"no_buffer_space","refs":[]}
+{"address":"4249cf88","value":"no_protocol_option","refs":[]}
+{"address":"4249cf9c","value":"not_connected","refs":[]}
+{"address":"4249cfac","value":"not_a_socket","refs":[]}
+{"address":"4249cfbc","value":"operation_not_supported","refs":[]}
+{"address":"4249cfd4","value":"protocol_not_supported","refs":[]}
+{"address":"4249cfec","value":"wrong_protocol_type","refs":[]}
+{"address":"4249d000","value":"timed_out","refs":[]}
+{"address":"4249d00c","value":"operation_would_block","refs":[]}
+{"address":"4249d024","value":"address family not supported","refs":[{"from":"4249c9e4","function":null}]}
+{"address":"4249d044","value":"address in use","refs":[{"from":"4246cd78","function":"4246cd53"},{"from":"4249c9ec","function":null}]}
+{"address":"4249d054","value":"address not available","refs":[{"from":"4249c9f4","function":null}]}
+{"address":"4249d06c","value":"already connected","refs":[]}
+{"address":"4249d080","value":"argument list too long","refs":[]}
+{"address":"4249d098","value":"argument out of domain","refs":[]}
+{"address":"4249d0b0","value":"bad address","refs":[]}
+{"address":"4249d0bc","value":"bad file descriptor","refs":[]}
+{"address":"4249d0d0","value":"bad message","refs":[]}
+{"address":"4249d0dc","value":"broken pipe","refs":[]}
+{"address":"4249d0e8","value":"connection aborted","refs":[]}
+{"address":"4249d0fc","value":"connection already in progress","refs":[]}
+{"address":"4249d11c","value":"connection refused","refs":[]}
+{"address":"4249d130","value":"connection reset","refs":[]}
+{"address":"4249d144","value":"destination address required","refs":[]}
+{"address":"4249d164","value":"executable format error","refs":[]}
+{"address":"4249d17c","value":"file too large","refs":[]}
+{"address":"4249d18c","value":"host unreachable","refs":[]}
+{"address":"4249d1a0","value":"identifier removed","refs":[]}
+{"address":"4249d1b4","value":"illegal byte sequence","refs":[]}
+{"address":"4249d1cc","value":"inappropriate io control operation","refs":[]}
+{"address":"4249d1f0","value":"invalid seek","refs":[]}
+{"address":"4249d200","value":"is a directory","refs":[]}
+{"address":"4249d210","value":"message size","refs":[]}
+{"address":"4249d220","value":"network down","refs":[]}
+{"address":"4249d230","value":"network reset","refs":[]}
+{"address":"4249d240","value":"network unreachable","refs":[]}
+{"address":"4249d254","value":"no buffer space","refs":[]}
+{"address":"4249d264","value":"no child process","refs":[]}
+{"address":"4249d278","value":"no link","refs":[]}
+{"address":"4249d280","value":"no message available","refs":[]}
+{"address":"4249d298","value":"no message","refs":[]}
+{"address":"4249d2a4","value":"no protocol option","refs":[]}
+{"address":"4249d2b8","value":"no stream resources","refs":[]}
+{"address":"4249d2cc","value":"no such device or address","refs":[]}
+{"address":"4249d2e8","value":"no such process","refs":[]}
+{"address":"4249d2f8","value":"not a directory","refs":[]}
+{"address":"4249d308","value":"not a socket","refs":[]}
+{"address":"4249d318","value":"not a stream","refs":[]}
+{"address":"4249d328","value":"not connected","refs":[]}
+{"address":"4249d338","value":"not supported","refs":[]}
+{"address":"4249d348","value":"operation in progress","refs":[]}
+{"address":"4249d360","value":"operation not permitted","refs":[]}
+{"address":"4249d378","value":"operation not supported","refs":[]}
+{"address":"4249d390","value":"operation would block","refs":[]}
+{"address":"4249d3a8","value":"owner dead","refs":[]}
+{"address":"4249d3b4","value":"protocol error","refs":[]}
+{"address":"4249d3c4","value":"protocol not supported","refs":[]}
+{"address":"4249d3dc","value":"read only file system","refs":[]}
+{"address":"4249d3f4","value":"resource deadlock would occur","refs":[]}
+{"address":"4249d414","value":"result out of range","refs":[]}
+{"address":"4249d428","value":"state not recoverable","refs":[]}
+{"address":"4249d440","value":"stream timeout","refs":[]}
+{"address":"4249d450","value":"text file busy","refs":[]}
+{"address":"4249d460","value":"timed out","refs":[]}
+{"address":"4249d46c","value":"too many files open in system","refs":[]}
+{"address":"4249d48c","value":"too many links","refs":[]}
+{"address":"4249d49c","value":"too many symbolic link levels","refs":[]}
+{"address":"4249d4bc","value":"value too large","refs":[]}
+{"address":"4249d4cc","value":"wrong protocol type","refs":[]}
+{"address":"4249d658","value":"Unknown exception","refs":[{"from":"42472cc9","function":"42472cc2"}]}
+{"address":"4249d67c","value":"ja-JP","refs":[{"from":"42473337","function":"42473304"},{"from":"4249d66c","function":null}]}
+{"address":"4249d688","value":"zh-CN","refs":[{"from":"42473330","function":"42473304"},{"from":"4249d670","function":null}]}
+{"address":"4249d694","value":"ko-KR","refs":[{"from":"42473329","function":"42473304"},{"from":"4249d674","function":null}]}
+{"address":"4249d6a0","value":"zh-TW","refs":[{"from":"42473322","function":"42473304"},{"from":"4249d678","function":null}]}
+{"address":"4249d6c8","value":"Sunday","refs":[{"from":"424ba7fc","function":null}]}
+{"address":"4249d6d0","value":"Monday","refs":[{"from":"424ba800","function":null}]}
+{"address":"4249d6d8","value":"Tuesday","refs":[{"from":"424ba804","function":null}]}
+{"address":"4249d6e0","value":"Wednesday","refs":[{"from":"424ba808","function":null}]}
+{"address":"4249d6ec","value":"Thursday","refs":[{"from":"424ba80c","function":null}]}
+{"address":"4249d6f8","value":"Friday","refs":[{"from":"424ba810","function":null}]}
+{"address":"4249d700","value":"Saturday","refs":[{"from":"424ba814","function":null}]}
+{"address":"4249d73c","value":"January","refs":[{"from":"424ba848","function":null}]}
+{"address":"4249d744","value":"February","refs":[{"from":"424ba84c","function":null}]}
+{"address":"4249d750","value":"March","refs":[{"from":"424ba850","function":null}]}
+{"address":"4249d758","value":"April","refs":[{"from":"424ba854","function":null}]}
+{"address":"4249d770","value":"August","refs":[{"from":"424ba864","function":null}]}
+{"address":"4249d778","value":"September","refs":[{"from":"424ba868","function":null}]}
+{"address":"4249d784","value":"October","refs":[{"from":"424ba86c","function":null}]}
+{"address":"4249d78c","value":"November","refs":[{"from":"424ba870","function":null}]}
+{"address":"4249d798","value":"December","refs":[{"from":"424ba874","function":null}]}
+{"address":"4249d7ac","value":"MM/dd/yy","refs":[{"from":"424ba880","function":null}]}
+{"address":"4249d7b8","value":"dddd, MMMM dd, yyyy","refs":[{"from":"424ba884","function":null}]}
+{"address":"4249d7cc","value":"HH:mm:ss","refs":[{"from":"424ba888","function":null}]}
+{"address":"4249d7d8","value":"Sunday","refs":[{"from":"424ba8b0","function":null}]}
+{"address":"4249d7e8","value":"Monday","refs":[{"from":"424ba8b4","function":null}]}
+{"address":"4249d7f8","value":"Tuesday","refs":[{"from":"424ba8b8","function":null}]}
+{"address":"4249d808","value":"Wednesday","refs":[{"from":"424ba8bc","function":null}]}
+{"address":"4249d81c","value":"Thursday","refs":[{"from":"424ba8c0","function":null}]}
+{"address":"4249d830","value":"Friday","refs":[{"from":"424ba8c4","function":null}]}
+{"address":"4249d840","value":"Saturday","refs":[{"from":"424ba8c8","function":null}]}
+{"address":"4249d854","value":"January","refs":[{"from":"424ba8fc","function":null}]}
+{"address":"4249d864","value":"February","refs":[{"from":"424ba900","function":null}]}
+{"address":"4249d878","value":"March","refs":[{"from":"424ba904","function":null}]}
+{"address":"4249d884","value":"April","refs":[{"from":"424ba908","function":null}]}
+{"address":"4249d890","value":"June","refs":[{"from":"424ba910","function":null}]}
+{"address":"4249d89c","value":"July","refs":[{"from":"424ba914","function":null}]}
+{"address":"4249d8a8","value":"August","refs":[{"from":"424ba918","function":null}]}
+{"address":"4249d8b8","value":"September","refs":[{"from":"424ba91c","function":null}]}
+{"address":"4249d8cc","value":"October","refs":[{"from":"424ba920","function":null}]}
+{"address":"4249d8dc","value":"November","refs":[{"from":"424ba924","function":null}]}
+{"address":"4249d8f0","value":"December","refs":[{"from":"424ba928","function":null}]}
+{"address":"4249d914","value":"MM/dd/yy","refs":[{"from":"424ba934","function":null}]}
+{"address":"4249d928","value":"dddd, MMMM dd, yyyy","refs":[{"from":"424ba938","function":null}]}
+{"address":"4249d950","value":"HH:mm:ss","refs":[{"from":"424ba93c","function":null}]}
+{"address":"4249d964","value":"en-US","refs":[{"from":"424ba940","function":null}]}
+{"address":"4249d9b8","value":"LC_ALL","refs":[]}
+{"address":"4249d9c8","value":"LC_COLLATE","refs":[{"from":"42474b64","function":"42474a90"},{"from":"42474b72","function":"42474a90"},{"from":"4247495c","function":"42474923"},{"from":"4249d97c","function":null}]}
+{"address":"4249d9e0","value":"LC_CTYPE","refs":[{"from":"42474b64","function":"42474a90"},{"from":"424749cb","function":"42474923"},{"from":"4249d988","function":null}]}
+{"address":"4249d9f4","value":"LC_MONETARY","refs":[{"from":"4249d994","function":null}]}
+{"address":"4249da0c","value":"LC_NUMERIC","refs":[{"from":"4249d9a0","function":null}]}
+{"address":"4249da24","value":"LC_TIME","refs":[{"from":"4249d9ac","function":null}]}
+{"address":"4249dade","value":"null)","refs":[{"from":"4247608c","function":"42475705"},{"from":"42476d15","function":"42476382"},{"from":"42478a32","function":"4247852c"}]}
+{"address":"4249dbbc","value":"bad exception","refs":[{"from":"42479906","function":"424795b0"}]}
+{"address":"4249dbcc","value":"e+000","refs":[{"from":"4247a524","function":"4247a467"}]}
+{"address":"4249dbd4","value":"mscoree.dll","refs":[{"from":"4247ab32","function":"4247ab2a"}]}
+{"address":"4249dbec","value":"CorExitProcess","refs":[{"from":"4247ab43","function":"4247ab2a"}]}
+{"address":"4249dcb8","value":"R6002\r\n- floating point support not loaded\r\n","refs":[]}
+{"address":"4249dd18","value":"R6008\r\n- not enough space for arguments\r\n","refs":[{"from":"4247b0de","function":"4247b0c3"},{"from":"4249dc0c","function":null}]}
+{"address":"4249dd70","value":"R6009\r\n- not enough space for environment\r\n","refs":[]}
+{"address":"4249ddc8","value":"R6010\r\n- abort() has been called\r\n","refs":[]}
+{"address":"4249de10","value":"R6016\r\n- not enough space for thread data\r\n","refs":[]}
+{"address":"4249de68","value":"R6017\r\n- unexpected multithread lock error\r\n","refs":[]}
+{"address":"4249dec8","value":"R6018\r\n- unexpected heap error\r\n","refs":[]}
+{"address":"4249df10","value":"R6019\r\n- unable to open console device\r\n","refs":[]}
+{"address":"4249df68","value":"R6024\r\n- not enough space for _onexit/atexit table\r\n","refs":[]}
+{"address":"4249dfd8","value":"R6025\r\n- pure virtual function call\r\n","refs":[]}
+{"address":"4249e028","value":"R6026\r\n- not enough space for stdio initialization\r\n","refs":[]}
+{"address":"4249e098","value":"R6027\r\n- not enough space for lowio initialization\r\n","refs":[]}
+{"address":"4249e108","value":"R6028\r\n- unable to initialize heap\r\n","refs":[]}
+{"address":"4249e154","value":"R6030\r\n- CRT not initialized\r\n","refs":[]}
+{"address":"4249e198","value":"R6031\r\n- Attempt to initialize the CRT more than once.\nThis indicates a bug in your application.\r\n","refs":[]}
+{"address":"4249e260","value":"R6032\r\n- not enough space for locale information\r\n","refs":[]}
+{"address":"4249e2c8","value":"R6033\r\n- Attempt to use MSIL code from this assembly during native code initialization\nThis indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.\r\n","refs":[]}
+{"address":"4249e4b8","value":"R6034\r\n- inconsistent onexit begin-end variables\r\n","refs":[]}
+{"address":"4249e520","value":"DOMAIN error\r\n","refs":[]}
+{"address":"4249e540","value":"SING error\r\n","refs":[]}
+{"address":"4249e55c","value":"TLOSS error\r\n","refs":[]}
+{"address":"4249e578","value":"runtime error ","refs":[]}
+{"address":"4249e598","value":"Runtime Error!\n\nProgram: ","refs":[{"from":"4247b147","function":"4247b0e7"}]}
+{"address":"4249e5cc","value":"<program name unknown>","refs":[{"from":"4247b188","function":"4247b0e7"}]}
+{"address":"4249e610","value":"Microsoft Visual C++ Runtime Library","refs":[{"from":"4247b221","function":"4247b0e7"}]}
+{"address":"4249e65c","value":"kernel32.dll","refs":[{"from":"4247bf73","function":"4247bf71"}]}
+{"address":"4249e678","value":"FlsAlloc","refs":[{"from":"4247bf86","function":"4247bf71"}]}
+{"address":"4249e684","value":"FlsFree","refs":[{"from":"4247bf94","function":"4247bf71"}]}
+{"address":"4249e68c","value":"FlsGetValue","refs":[{"from":"4247bfa7","function":"4247bf71"}]}
+{"address":"4249e698","value":"FlsSetValue","refs":[{"from":"4247bfba","function":"4247bf71"}]}
+{"address":"4249e6a4","value":"InitializeCriticalSectionEx","refs":[{"from":"4247bfcd","function":"4247bf71"}]}
+{"address":"4249e6c0","value":"CreateEventExW","refs":[{"from":"4247bfe0","function":"4247bf71"}]}
+{"address":"4249e6d0","value":"CreateSemaphoreExW","refs":[{"from":"4247bff3","function":"4247bf71"}]}
+{"address":"4249e6e4","value":"SetThreadStackGuarantee","refs":[{"from":"4247c006","function":"4247bf71"}]}
+{"address":"4249e6fc","value":"CreateThreadpoolTimer","refs":[{"from":"4247c019","function":"4247bf71"}]}
+{"address":"4249e714","value":"SetThreadpoolTimer","refs":[{"from":"4247c02c","function":"4247bf71"}]}
+{"address":"4249e728","value":"WaitForThreadpoolTimerCallbacks","refs":[{"from":"4247c03f","function":"4247bf71"}]}
+{"address":"4249e748","value":"CloseThreadpoolTimer","refs":[{"from":"4247c052","function":"4247bf71"}]}
+{"address":"4249e760","value":"CreateThreadpoolWait","refs":[{"from":"4247c065","function":"4247bf71"}]}
+{"address":"4249e778","value":"SetThreadpoolWait","refs":[{"from":"4247c078","function":"4247bf71"}]}
+{"address":"4249e78c","value":"CloseThreadpoolWait","refs":[{"from":"4247c08b","function":"4247bf71"}]}
+{"address":"4249e7a0","value":"FlushProcessWriteBuffers","refs":[{"from":"4247c0a3","function":"4247bf71"}]}
+{"address":"4249e7bc","value":"FreeLibraryWhenCallbackReturns","refs":[{"from":"4247c0b1","function":"4247bf71"}]}
+{"address":"4249e7dc","value":"GetCurrentProcessorNumber","refs":[{"from":"4247c0c4","function":"4247bf71"}]}
+{"address":"4249e7f8","value":"GetLogicalProcessorInformation","refs":[{"from":"4247c0d7","function":"4247bf71"}]}
+{"address":"4249e818","value":"CreateSymbolicLinkW","refs":[{"from":"4247c0ea","function":"4247bf71"}]}
+{"address":"4249e82c","value":"SetDefaultDllDirectories","refs":[{"from":"4247c0fd","function":"4247bf71"}]}
+{"address":"4249e848","value":"EnumSystemLocalesEx","refs":[{"from":"4247c110","function":"4247bf71"}]}
+{"address":"4249e85c","value":"CompareStringEx","refs":[{"from":"4247c123","function":"4247bf71"}]}
+{"address":"4249e86c","value":"GetDateFormatEx","refs":[{"from":"4247c136","function":"4247bf71"}]}
+{"address":"4249e87c","value":"GetLocaleInfoEx","refs":[{"from":"4247c149","function":"4247bf71"}]}
+{"address":"4249e88c","value":"GetTimeFormatEx","refs":[{"from":"4247c15c","function":"4247bf71"}]}
+{"address":"4249e89c","value":"GetUserDefaultLocaleName","refs":[{"from":"4247c16f","function":"4247bf71"}]}
+{"address":"4249e8b8","value":"IsValidLocaleName","refs":[{"from":"4247c182","function":"4247bf71"}]}
+{"address":"4249e8cc","value":"LCMapStringEx","refs":[{"from":"4247c195","function":"4247bf71"}]}
+{"address":"4249e8dc","value":"GetCurrentPackageId","refs":[{"from":"4247c1a8","function":"4247bf71"}]}
+{"address":"4249e8f0","value":"GetTickCount64","refs":[{"from":"4247c1bb","function":"4247bf71"}]}
+{"address":"4249e900","value":"GetFileInformationByHandleExW","refs":[{"from":"4247c1d3","function":"4247bf71"}]}
+{"address":"4249e920","value":"SetFileInformationByHandleW","refs":[{"from":"4247c1e1","function":"4247bf71"}]}
+{"address":"4249ea24","value":"log10","refs":[{"from":"4247ca0b","function":"4247c8fc"},{"from":"4247ca1a","function":"4247c8fc"},{"from":"4247caf2","function":"4247c8fc"}]}
+{"address":"4249ea44","value":"exp10","refs":[{"from":"4247cac8","function":"4247c8fc"}]}
+{"address":"4249ea5c","value":"floor","refs":[{"from":"4247cb19","function":"4247c8fc"}]}
+{"address":"4249eae4","value":"_nextafter","refs":[]}
+{"address":"4249eaf0","value":"SunMonTueWedThuFriSat","refs":[]}
+{"address":"4249eb08","value":"JanFebMarAprMayJunJulAugSepOctNovDec","refs":[]}
+{"address":"424a3d5c","value":"de-DE","refs":[]}
+{"address":"424a3e7c","value":"sl-SI","refs":[]}
+{"address":"424a3f48","value":"hi-IN","refs":[]}
+{"address":"424a3fc0","value":"bn-IN","refs":[]}
+{"address":"424a3fcc","value":"pa-IN","refs":[]}
+{"address":"424a3fe4","value":"ta-IN","refs":[]}
+{"address":"424a3ff0","value":"te-IN","refs":[]}
+{"address":"424a3ffc","value":"kn-IN","refs":[]}
+{"address":"424a4020","value":"sa-IN","refs":[]}
+{"address":"424a40b4","value":"de-CH","refs":[]}
+{"address":"424a4114","value":"sr-SP-Latn","refs":[]}
+{"address":"424a4150","value":"se-SE","refs":[]}
+{"address":"424a41a8","value":"de-AT","refs":[]}
+{"address":"424a41d8","value":"sr-SP-Cyrl","refs":[]}
+{"address":"424a4248","value":"fr-CH","refs":[]}
+{"address":"424a4288","value":"de-LI","refs":[]}
+{"address":"424a42b8","value":"bs-BA-Latn","refs":[]}
+{"address":"424a4310","value":"sr-BA-Latn","refs":[]}
+{"address":"424a4618","value":"bn-in","refs":[]}
+{"address":"424a4624","value":"bs-ba-latn","refs":[]}
+{"address":"424a466c","value":"de-at","refs":[]}
+{"address":"424a4678","value":"de-ch","refs":[]}
+{"address":"424a4684","value":"de-de","refs":[]}
+{"address":"424a4690","value":"de-li","refs":[]}
+{"address":"424a4730","value":"en-tt","refs":[{"from":"42481468","function":"4248144f"},{"from":"424a3668","function":null}]}
+{"address":"424a4898","value":"fr-ch","refs":[]}
+{"address":"424a48ec","value":"hi-in","refs":[]}
+{"address":"424a4928","value":"id-id","refs":[{"from":"42481468","function":"4248144f"}]}
+{"address":"424a497c","value":"kn-in","refs":[]}
+{"address":"424a4a64","value":"pa-in","refs":[]}
+{"address":"424a4ad0","value":"sa-in","refs":[]}
+{"address":"424a4af4","value":"se-se","refs":[]}
+{"address":"424a4b0c","value":"sl-si","refs":[]}
+{"address":"424a4b9c","value":"sr-ba-latn","refs":[]}
+{"address":"424a4bb4","value":"sr-sp-cyrl","refs":[]}
+{"address":"424a4bcc","value":"sr-sp-latn","refs":[]}
+{"address":"424a4c18","value":"ta-in","refs":[]}
+{"address":"424a4c24","value":"te-in","refs":[]}
+{"address":"424a4d20","value":",PJBE","refs":[{"from":"42482069","function":"42481ffa"},{"from":"42482915","function":"4248284e"}]}
+{"address":"424a502c","value":"american","refs":[]}
+{"address":"424a5040","value":"american english","refs":[]}
+{"address":"424a5064","value":"american-english","refs":[]}
+{"address":"424a5088","value":"australian","refs":[]}
+{"address":"424a50a0","value":"belgian","refs":[]}
+{"address":"424a50b0","value":"canadian","refs":[]}
+{"address":"424a50d4","value":"chinese","refs":[]}
+{"address":"424a50e4","value":"chinese-hongkong","refs":[]}
+{"address":"424a5108","value":"chinese-simplified","refs":[]}
+{"address":"424a5130","value":"chinese-singapore","refs":[]}
+{"address":"424a5154","value":"chinese-traditional","refs":[]}
+{"address":"424a517c","value":"dutch-belgian","refs":[]}
+{"address":"424a5198","value":"english-american","refs":[]}
+{"address":"424a51bc","value":"english-aus","refs":[]}
+{"address":"424a51d4","value":"english-belize","refs":[]}
+{"address":"424a51f4","value":"english-can","refs":[]}
+{"address":"424a520c","value":"english-caribbean","refs":[]}
+{"address":"424a5230","value":"english-ire","refs":[]}
+{"address":"424a5248","value":"english-jamaica","refs":[]}
+{"address":"424a5268","value":"english-nz","refs":[]}
+{"address":"424a5280","value":"english-south africa","refs":[]}
+{"address":"424a52ac","value":"english-trinidad y tobago","refs":[]}
+{"address":"424a52e0","value":"english-uk","refs":[]}
+{"address":"424a52f8","value":"english-us","refs":[]}
+{"address":"424a5310","value":"english-usa","refs":[]}
+{"address":"424a5328","value":"french-belgian","refs":[]}
+{"address":"424a5348","value":"french-canadian","refs":[]}
+{"address":"424a5368","value":"french-luxembourg","refs":[]}
+{"address":"424a538c","value":"french-swiss","refs":[]}
+{"address":"424a53a8","value":"german-austrian","refs":[]}
+{"address":"424a53c8","value":"german-lichtenstein","refs":[]}
+{"address":"424a53f0","value":"german-luxembourg","refs":[]}
+{"address":"424a5414","value":"german-swiss","refs":[]}
+{"address":"424a5430","value":"irish-english","refs":[]}
+{"address":"424a544c","value":"italian-swiss","refs":[]}
+{"address":"424a5468","value":"norwegian","refs":[]}
+{"address":"424a547c","value":"norwegian-bokmal","refs":[]}
+{"address":"424a54a0","value":"norwegian-nynorsk","refs":[]}
+{"address":"424a54c4","value":"portuguese-brazilian","refs":[]}
+{"address":"424a54f0","value":"spanish-argentina","refs":[]}
+{"address":"424a5514","value":"spanish-bolivia","refs":[]}
+{"address":"424a5534","value":"spanish-chile","refs":[]}
+{"address":"424a5550","value":"spanish-colombia","refs":[]}
+{"address":"424a5574","value":"spanish-costa rica","refs":[]}
+{"address":"424a559c","value":"spanish-dominican republic","refs":[]}
+{"address":"424a55d4","value":"spanish-ecuador","refs":[]}
+{"address":"424a55f4","value":"spanish-el salvador","refs":[]}
+{"address":"424a561c","value":"spanish-guatemala","refs":[]}
+{"address":"424a5640","value":"spanish-honduras","refs":[]}
+{"address":"424a5664","value":"spanish-mexican","refs":[]}
+{"address":"424a5684","value":"spanish-modern","refs":[]}
+{"address":"424a56a4","value":"spanish-nicaragua","refs":[]}
+{"address":"424a56c8","value":"spanish-panama","refs":[]}
+{"address":"424a56e8","value":"spanish-paraguay","refs":[]}
+{"address":"424a570c","value":"spanish-peru","refs":[]}
+{"address":"424a5728","value":"spanish-puerto rico","refs":[]}
+{"address":"424a5750","value":"spanish-uruguay","refs":[]}
+{"address":"424a5770","value":"spanish-venezuela","refs":[]}
+{"address":"424a5794","value":"swedish-finland","refs":[]}
+{"address":"424a57b4","value":"swiss","refs":[]}
+{"address":"424a58e4","value":"america","refs":[{"from":"424a57d0","function":null}]}
+{"address":"424a58f4","value":"britain","refs":[]}
+{"address":"424a5904","value":"china","refs":[]}
+{"address":"424a591c","value":"england","refs":[]}
+{"address":"424a592c","value":"great britain","refs":[]}
+{"address":"424a5948","value":"holland","refs":[]}
+{"address":"424a5958","value":"hong-kong","refs":[]}
+{"address":"424a596c","value":"new-zealand","refs":[]}
+{"address":"424a598c","value":"pr china","refs":[]}
+{"address":"424a59a0","value":"pr-china","refs":[]}
+{"address":"424a59b4","value":"puerto-rico","refs":[]}
+{"address":"424a59dc","value":"south africa","refs":[]}
+{"address":"424a59f8","value":"south korea","refs":[]}
+{"address":"424a5a10","value":"south-africa","refs":[]}
+{"address":"424a5a2c","value":"south-korea","refs":[]}
+{"address":"424a5a44","value":"trinidad & tobago","refs":[]}
+{"address":"424a5a68","value":"united-kingdom","refs":[]}
+{"address":"424a5a88","value":"united-states","refs":[]}
+{"address":"424a5c5c","value":"__based(","refs":[{"from":"424a5ad0","function":null}]}
+{"address":"424a5c68","value":"__cdecl","refs":[{"from":"424a5ad4","function":null}]}
+{"address":"424a5c70","value":"__pascal","refs":[{"from":"424a5ad8","function":null}]}
+{"address":"424a5c7c","value":"__stdcall","refs":[{"from":"424a5adc","function":null}]}
+{"address":"424a5c88","value":"__thiscall","refs":[{"from":"424a5ae0","function":null}]}
+{"address":"424a5c94","value":"__fastcall","refs":[{"from":"424a5ae4","function":null}]}
+{"address":"424a5ca0","value":"__vectorcall","refs":[{"from":"424a5ae8","function":null}]}
+{"address":"424a5cb0","value":"__clrcall","refs":[{"from":"424a5aec","function":null}]}
+{"address":"424a5cbc","value":"__eabi","refs":[{"from":"424a5af0","function":null}]}
+{"address":"424a5cc4","value":"__ptr64","refs":[{"from":"424a5af4","function":null}]}
+{"address":"424a5ccc","value":"__restrict","refs":[{"from":"424a5af8","function":null}]}
+{"address":"424a5cd8","value":"__unaligned","refs":[{"from":"424a5afc","function":null}]}
+{"address":"424a5ce4","value":"restrict(","refs":[{"from":"424a5b00","function":null}]}
+{"address":"424a5cf8","value":" delete","refs":[{"from":"424a5b0c","function":null}]}
+{"address":"424a5d1c","value":"operator","refs":[{"from":"424a5b2c","function":null}]}
+{"address":"424a5d9c","value":"`vftable'","refs":[{"from":"424a5bac","function":null}]}
+{"address":"424a5da8","value":"`vbtable'","refs":[{"from":"424a5bb0","function":null}]}
+{"address":"424a5db4","value":"`vcall'","refs":[{"from":"424a5bb4","function":null}]}
+{"address":"424a5dbc","value":"`typeof'","refs":[{"from":"424a5bb8","function":null}]}
+{"address":"424a5dc8","value":"`local static guard'","refs":[{"from":"424a5bbc","function":null}]}
+{"address":"424a5de0","value":"`string'","refs":[{"from":"424a5bc0","function":null}]}
+{"address":"424a5dec","value":"`vbase destructor'","refs":[{"from":"424a5bc4","function":null}]}
+{"address":"424a5e00","value":"`vector deleting destructor'","refs":[{"from":"424a5bc8","function":null}]}
+{"address":"424a5e20","value":"`default constructor closure'","refs":[{"from":"424a5bcc","function":null}]}
+{"address":"424a5e40","value":"`scalar deleting destructor'","refs":[{"from":"424a5bd0","function":null}]}
+{"address":"424a5e60","value":"`vector constructor iterator'","refs":[{"from":"424a5bd4","function":null}]}
+{"address":"424a5e80","value":"`vector destructor iterator'","refs":[{"from":"424a5bd8","function":null}]}
+{"address":"424a5ea0","value":"`vector vbase constructor iterator'","refs":[{"from":"424a5bdc","function":null}]}
+{"address":"424a5ec4","value":"`virtual displacement map'","refs":[{"from":"424a5be0","function":null}]}
+{"address":"424a5ee0","value":"`eh vector constructor iterator'","refs":[{"from":"424a5be4","function":null}]}
+{"address":"424a5f04","value":"`eh vector destructor iterator'","refs":[{"from":"424a5be8","function":null}]}
+{"address":"424a5f24","value":"`eh vector vbase constructor iterator'","refs":[{"from":"424a5bec","function":null}]}
+{"address":"424a5f4c","value":"`copy constructor closure'","refs":[{"from":"424a5bf0","function":null}]}
+{"address":"424a5f68","value":"`udt returning'","refs":[{"from":"424a5bf4","function":null}]}
+{"address":"424a5f7c","value":"`RTTI","refs":[{"from":"424a5bfc","function":null}]}
+{"address":"424a5f84","value":"`local vftable'","refs":[{"from":"424a5c00","function":null}]}
+{"address":"424a5f94","value":"`local vftable constructor closure'","refs":[{"from":"424a5c04","function":null}]}
+{"address":"424a5fb8","value":" new[]","refs":[{"from":"424a5c08","function":null}]}
+{"address":"424a5fc0","value":" delete[]","refs":[{"from":"424a5c0c","function":null}]}
+{"address":"424a5fcc","value":"`omni callsig'","refs":[{"from":"424a5c10","function":null}]}
+{"address":"424a5fdc","value":"`placement delete closure'","refs":[{"from":"424a5c14","function":null}]}
+{"address":"424a5ff8","value":"`placement delete[] closure'","refs":[{"from":"424a5c18","function":null}]}
+{"address":"424a6018","value":"`managed vector constructor iterator'","refs":[{"from":"424a5c1c","function":null}]}
+{"address":"424a6040","value":"`managed vector destructor iterator'","refs":[{"from":"424a5c20","function":null}]}
+{"address":"424a6068","value":"`eh vector copy constructor iterator'","refs":[{"from":"424a5c24","function":null}]}
+{"address":"424a6090","value":"`eh vector vbase copy constructor iterator'","refs":[{"from":"424a5c28","function":null}]}
+{"address":"424a60bc","value":"`dynamic initializer for '","refs":[{"from":"424a5c2c","function":null}]}
+{"address":"424a60d8","value":"`dynamic atexit destructor for '","refs":[{"from":"424a5c30","function":null}]}
+{"address":"424a60fc","value":"`vector copy constructor iterator'","refs":[{"from":"424a5c34","function":null}]}
+{"address":"424a6120","value":"`vector vbase copy constructor iterator'","refs":[{"from":"424a5c38","function":null}]}
+{"address":"424a614c","value":"`managed vector copy constructor iterator'","refs":[{"from":"424a5c3c","function":null}]}
+{"address":"424a6178","value":"`local static thread guard'","refs":[{"from":"424a5c40","function":null}]}
+{"address":"424a6194","value":" Type Descriptor'","refs":[{"from":"424a5c48","function":null}]}
+{"address":"424a61a8","value":" Base Class Descriptor at (","refs":[{"from":"424a5c4c","function":null}]}
+{"address":"424a61c4","value":" Base Class Array'","refs":[{"from":"424a5c50","function":null}]}
+{"address":"424a61d8","value":" Class Hierarchy Descriptor'","refs":[{"from":"424a5c54","function":null}]}
+{"address":"424a61f8","value":" Complete Object Locator'","refs":[{"from":"424a5c58","function":null}]}
+{"address":"424a6214","value":"USER32.DLL","refs":[{"from":"42484b89","function":"42484b40"},{"from":"42484bab","function":"42484b40"}]}
+{"address":"424a622c","value":"MessageBoxW","refs":[{"from":"42484bc0","function":"42484b40"}]}
+{"address":"424a6238","value":"GetActiveWindow","refs":[{"from":"42484bd7","function":"42484b40"}]}
+{"address":"424a6248","value":"GetLastActivePopup","refs":[{"from":"42484beb","function":"42484b40"}]}
+{"address":"424a625c","value":"GetUserObjectInformationW","refs":[{"from":"42484bff","function":"42484b40"}]}
+{"address":"424a6278","value":"GetProcessWindowStation","refs":[{"from":"42484c1c","function":"42484b40"}]}
+{"address":"424a6290","value":"1#SNAN","refs":[{"from":"42487287","function":"424871c0"}]}
+{"address":"424a6298","value":"1#IND","refs":[{"from":"424872a0","function":"424871c0"}]}
+{"address":"424a62a0","value":"1#INF","refs":[{"from":"424872af","function":"424871c0"}]}
+{"address":"424a62a8","value":"1#QNAN","refs":[{"from":"424872d0","function":"424871c0"}]}
+{"address":"424a62b0","value":"CONOUT$","refs":[{"from":"42488324","function":"42488316"}]}
+{"address":"424b6d30","value":"CLCSTextBasedField.DLL","refs":[{"from":"424b6cec","function":null}]}
+{"address":"424b6d47","value":"DllCanUnloadNow","refs":[{"from":"424b6d18","function":null}]}
+{"address":"424b6d57","value":"DllGetClassObject","refs":[{"from":"424b6d1c","function":null}]}
+{"address":"424b6d69","value":"DllRegisterServer","refs":[{"from":"424b6d20","function":null}]}
+{"address":"424b6d7b","value":"DllUnregisterServer","refs":[{"from":"424b6d24","function":null}]}
+{"address":"424b747c","value":"ODBC32.dll","refs":[]}
+{"address":"424b748a","value":"GdiplusStartup","refs":[]}
+{"address":"424b749c","value":"GdiplusShutdown","refs":[]}
+{"address":"424b74ae","value":"GdipDeleteBrush","refs":[]}
+{"address":"424b74c0","value":"GdipCreateSolidFill","refs":[]}
+{"address":"424b74d6","value":"GdipCreateFromHDC","refs":[]}
+{"address":"424b74ea","value":"GdipDeleteGraphics","refs":[]}
+{"address":"424b7500","value":"GdipSetTextRenderingHint","refs":[]}
+{"address":"424b751c","value":"GdipScaleWorldTransform","refs":[]}
+{"address":"424b7536","value":"GdipFillRectangleI","refs":[]}
+{"address":"424b754c","value":"GdipCreateFontFromDC","refs":[]}
+{"address":"424b7564","value":"GdipCreateFontFromLogfontW","refs":[]}
+{"address":"424b7582","value":"GdipDeleteFont","refs":[]}
+{"address":"424b7594","value":"GdipDrawString","refs":[]}
+{"address":"424b75a6","value":"GdipMeasureString","refs":[]}
+{"address":"424b75ba","value":"GdipStringFormatGetGenericTypographic","refs":[]}
+{"address":"424b75e2","value":"GdipDeleteStringFormat","refs":[]}
+{"address":"424b75fc","value":"GdipSetStringFormatFlags","refs":[]}
+{"address":"424b7618","value":"GdipGetStringFormatFlags","refs":[]}
+{"address":"424b7634","value":"GdipSetStringFormatAlign","refs":[]}
+{"address":"424b7650","value":"GdipSetStringFormatTabStops","refs":[]}
+{"address":"424b766c","value":"gdiplus.dll","refs":[]}
+{"address":"424b767a","value":"ScriptFreeCache","refs":[]}
+{"address":"424b768c","value":"ScriptItemize","refs":[]}
+{"address":"424b769c","value":"ScriptLayout","refs":[]}
+{"address":"424b76ac","value":"ScriptShape","refs":[]}
+{"address":"424b76ba","value":"ScriptPlace","refs":[]}
+{"address":"424b76c8","value":"ScriptTextOut","refs":[]}
+{"address":"424b76d8","value":"ScriptJustify","refs":[]}
+{"address":"424b76e8","value":"ScriptBreak","refs":[]}
+{"address":"424b76f6","value":"ScriptGetProperties","refs":[]}
+{"address":"424b770c","value":"ScriptGetFontProperties","refs":[]}
+{"address":"424b7726","value":"ScriptRecordDigitSubstitution","refs":[]}
+{"address":"424b7746","value":"ScriptApplyDigitSubstitution","refs":[]}
+{"address":"424b7764","value":"USP10.dll","refs":[]}
+{"address":"424b7770","value":"FindClose","refs":[]}
+{"address":"424b777c","value":"FindFirstFileW","refs":[]}
+{"address":"424b778e","value":"DebugBreak","refs":[]}
+{"address":"424b779c","value":"OutputDebugStringW","refs":[]}
+{"address":"424b77b2","value":"GetLocalTime","refs":[]}
+{"address":"424b77c2","value":"LocalFree","refs":[]}
+{"address":"424b77ce","value":"lstrlenA","refs":[]}
+{"address":"424b77da","value":"lstrlenW","refs":[]}
+{"address":"424b77e6","value":"GetPrivateProfileStringW","refs":[]}
+{"address":"424b7802","value":"WritePrivateProfileStringW","refs":[]}
+{"address":"424b7820","value":"MultiByteToWideChar","refs":[]}
+{"address":"424b7836","value":"VerSetConditionMask","refs":[]}
+{"address":"424b784c","value":"RaiseException","refs":[]}
+{"address":"424b785e","value":"GetLastError","refs":[]}
+{"address":"424b786e","value":"SetLastError","refs":[]}
+{"address":"424b787e","value":"EnterCriticalSection","refs":[]}
+{"address":"424b7896","value":"LeaveCriticalSection","refs":[]}
+{"address":"424b78ae","value":"InitializeCriticalSectionAndSpinCount","refs":[]}
+{"address":"424b78d6","value":"DeleteCriticalSection","refs":[]}
+{"address":"424b78ee","value":"GetCurrentProcess","refs":[]}
+{"address":"424b7902","value":"GetCurrentThreadId","refs":[]}
+{"address":"424b7918","value":"FlushInstructionCache","refs":[]}
+{"address":"424b7930","value":"VerifyVersionInfoW","refs":[]}
+{"address":"424b7946","value":"WideCharToMultiByte","refs":[]}
+{"address":"424b795c","value":"GetEnvironmentVariableW","refs":[]}
+{"address":"424b7976","value":"CreateFileW","refs":[]}
+{"address":"424b7984","value":"FindNextFileW","refs":[]}
+{"address":"424b7994","value":"ReadFile","refs":[]}
+{"address":"424b79a0","value":"SetFilePointer","refs":[]}
+{"address":"424b79b2","value":"EncodePointer","refs":[]}
+{"address":"424b79c2","value":"DecodePointer","refs":[]}
+{"address":"424b79d2","value":"CloseHandle","refs":[]}
+{"address":"424b79e0","value":"DisableThreadLibraryCalls","refs":[]}
+{"address":"424b79fc","value":"FreeLibrary","refs":[]}
+{"address":"424b7a0a","value":"GetModuleFileNameW","refs":[]}
+{"address":"424b7a20","value":"GetModuleHandleW","refs":[]}
+{"address":"424b7a34","value":"GetProcAddress","refs":[]}
+{"address":"424b7a46","value":"LoadLibraryExW","refs":[]}
+{"address":"424b7a58","value":"LoadResource","refs":[]}
+{"address":"424b7a68","value":"LockResource","refs":[]}
+{"address":"424b7a78","value":"SizeofResource","refs":[]}
+{"address":"424b7a8a","value":"MulDiv","refs":[]}
+{"address":"424b7a94","value":"lstrcmpiW","refs":[]}
+{"address":"424b7aa0","value":"FindResourceW","refs":[]}
+{"address":"424b7ab0","value":"GetSystemDefaultLCID","refs":[]}
+{"address":"424b7ac8","value":"GetSystemTime","refs":[]}
+{"address":"424b7ad8","value":"GetPrivateProfileIntW","refs":[]}
+{"address":"424b7af0","value":"GetCurrentProcessId","refs":[]}
+{"address":"424b7b06","value":"GlobalAlloc","refs":[]}
+{"address":"424b7b14","value":"GlobalLock","refs":[]}
+{"address":"424b7b22","value":"GlobalUnlock","refs":[]}
+{"address":"424b7b32","value":"lstrcmpW","refs":[]}
+{"address":"424b7b3e","value":"LoadLibraryW","refs":[]}
+{"address":"424b7b4e","value":"OutputDebugStringA","refs":[]}
+{"address":"424b7b64","value":"GetStringTypeW","refs":[]}
+{"address":"424b7b76","value":"CreateDirectoryW","refs":[]}
+{"address":"424b7b8a","value":"GetLocaleInfoW","refs":[]}
+{"address":"424b7b9c","value":"FormatMessageW","refs":[]}
+{"address":"424b7bae","value":"WriteFile","refs":[]}
+{"address":"424b7bba","value":"GetCommandLineW","refs":[]}
+{"address":"424b7bcc","value":"WaitForSingleObject","refs":[]}
+{"address":"424b7be2","value":"CreateProcessW","refs":[]}
+{"address":"424b7bf4","value":"GetDateFormatW","refs":[]}
+{"address":"424b7c06","value":"GetTimeFormatW","refs":[]}
+{"address":"424b7c18","value":"LoadLibraryExA","refs":[]}
+{"address":"424b7c2a","value":"ExpandEnvironmentStringsA","refs":[]}
+{"address":"424b7c44","value":"KERNEL32.dll","refs":[]}
+{"address":"424b7c54","value":"LoadStringW","refs":[]}
+{"address":"424b7c62","value":"CharNextW","refs":[]}
+{"address":"424b7c6e","value":"SendMessageW","refs":[]}
+{"address":"424b7c7e","value":"PostMessageW","refs":[]}
+{"address":"424b7c8e","value":"UnregisterClassW","refs":[]}
+{"address":"424b7ca2","value":"SetWindowPos","refs":[]}
+{"address":"424b7cb2","value":"DialogBoxParamW","refs":[]}
+{"address":"424b7cc4","value":"EndDialog","refs":[]}
+{"address":"424b7cd0","value":"GetDlgItem","refs":[]}
+{"address":"424b7cde","value":"GetActiveWindow","refs":[]}
+{"address":"424b7cf0","value":"EnableWindow","refs":[]}
+{"address":"424b7d00","value":"GetDC","refs":[]}
+{"address":"424b7d08","value":"BeginPaint","refs":[]}
+{"address":"424b7d16","value":"EndPaint","refs":[]}
+{"address":"424b7d22","value":"SetWindowTextW","refs":[]}
+{"address":"424b7d34","value":"GetWindowTextW","refs":[]}
+{"address":"424b7d46","value":"GetWindowTextLengthW","refs":[]}
+{"address":"424b7d5e","value":"GetClientRect","refs":[]}
+{"address":"424b7d6e","value":"GetWindowRect","refs":[]}
+{"address":"424b7d7e","value":"MessageBoxW","refs":[]}
+{"address":"424b7d8c","value":"MapWindowPoints","refs":[]}
+{"address":"424b7d9e","value":"GetWindowLongW","refs":[]}
+{"address":"424b7db0","value":"SetWindowLongW","refs":[]}
+{"address":"424b7dc2","value":"GetParent","refs":[]}
+{"address":"424b7dce","value":"GetWindow","refs":[]}
+{"address":"424b7dda","value":"MonitorFromWindow","refs":[]}
+{"address":"424b7dee","value":"GetMonitorInfoW","refs":[]}
+{"address":"424b7e00","value":"SetFocus","refs":[]}
+{"address":"424b7e0c","value":"ShowWindow","refs":[]}
+{"address":"424b7e1a","value":"CreateDialogParamW","refs":[]}
+{"address":"424b7e30","value":"SetDlgItemInt","refs":[]}
+{"address":"424b7e40","value":"GetDlgItemInt","refs":[]}
+{"address":"424b7e50","value":"IsWindowEnabled","refs":[]}
+{"address":"424b7e62","value":"ReleaseDC","refs":[]}
+{"address":"424b7e6e","value":"InvalidateRect","refs":[]}
+{"address":"424b7e80","value":"DefWindowProcW","refs":[]}
+{"address":"424b7e92","value":"CallWindowProcW","refs":[]}
+{"address":"424b7ea4","value":"IsWindow","refs":[]}
+{"address":"424b7eb0","value":"DestroyWindow","refs":[]}
+{"address":"424b7ec0","value":"MoveWindow","refs":[]}
+{"address":"424b7ece","value":"GetDialogBaseUnits","refs":[]}
+{"address":"424b7ee4","value":"LoadBitmapW","refs":[]}
+{"address":"424b7ef2","value":"IsDialogMessageW","refs":[]}
+{"address":"424b7f06","value":"WinHelpW","refs":[]}
+{"address":"424b7f12","value":"FillRect","refs":[]}
+{"address":"424b7f1e","value":"SetRect","refs":[]}
+{"address":"424b7f28","value":"RegisterWindowMessageW","refs":[]}
+{"address":"424b7f42","value":"DrawEdge","refs":[]}
+{"address":"424b7f4e","value":"DrawFrameControl","refs":[]}
+{"address":"424b7f62","value":"PeekMessageW","refs":[]}
+{"address":"424b7f72","value":"GetMessagePos","refs":[]}
+{"address":"424b7f82","value":"RegisterClassExW","refs":[]}
+{"address":"424b7f96","value":"GetClassInfoExW","refs":[]}
+{"address":"424b7fa8","value":"CreateWindowExW","refs":[]}
+{"address":"424b7fba","value":"IsMenu","refs":[]}
+{"address":"424b7fc4","value":"IsWindowVisible","refs":[]}
+{"address":"424b7fd6","value":"OpenClipboard","refs":[]}
+{"address":"424b7fe6","value":"CloseClipboard","refs":[]}
+{"address":"424b7ff8","value":"SetClipboardData","refs":[]}
+{"address":"424b800c","value":"GetClipboardData","refs":[]}
+{"address":"424b8020","value":"EmptyClipboard","refs":[]}
+{"address":"424b8032","value":"CharLowerW","refs":[]}
+{"address":"424b8040","value":"GetFocus","refs":[]}
+{"address":"424b804c","value":"GetKeyState","refs":[]}
+{"address":"424b805a","value":"GetAsyncKeyState","refs":[]}
+{"address":"424b806e","value":"GetCapture","refs":[]}
+{"address":"424b807c","value":"SetCapture","refs":[]}
+{"address":"424b808a","value":"ReleaseCapture","refs":[]}
+{"address":"424b809c","value":"GetSystemMetrics","refs":[]}
+{"address":"424b80b0","value":"LoadMenuW","refs":[]}
+{"address":"424b80bc","value":"SetMenu","refs":[]}
+{"address":"424b80c6","value":"DestroyMenu","refs":[]}
+{"address":"424b80d4","value":"EnableMenuItem","refs":[]}
+{"address":"424b80e6","value":"GetSubMenu","refs":[]}
+{"address":"424b80f4","value":"GetMenuItemID","refs":[]}
+{"address":"424b8104","value":"GetMenuItemCount","refs":[]}
+{"address":"424b8118","value":"ModifyMenuW","refs":[]}
+{"address":"424b8126","value":"TrackPopupMenuEx","refs":[]}
+{"address":"424b813a","value":"GetMenuItemInfoW","refs":[]}
+{"address":"424b814e","value":"SetMenuItemInfoW","refs":[]}
+{"address":"424b8162","value":"DrawTextW","refs":[]}
+{"address":"424b816e","value":"UpdateWindow","refs":[]}
+{"address":"424b817e","value":"GetWindowDC","refs":[]}
+{"address":"424b818c","value":"MessageBeep","refs":[]}
+{"address":"424b819a","value":"CreateCaret","refs":[]}
+{"address":"424b81a8","value":"DestroyCaret","refs":[]}
+{"address":"424b81b8","value":"HideCaret","refs":[]}
+{"address":"424b81c4","value":"ShowCaret","refs":[]}
+{"address":"424b81d0","value":"SetCaretPos","refs":[]}
+{"address":"424b81de","value":"ClientToScreen","refs":[]}
+{"address":"424b81f0","value":"ScreenToClient","refs":[]}
+{"address":"424b8202","value":"WindowFromPoint","refs":[]}
+{"address":"424b8214","value":"GetSysColor","refs":[]}
+{"address":"424b8222","value":"GetSysColorBrush","refs":[]}
+{"address":"424b8236","value":"FrameRect","refs":[]}
+{"address":"424b8242","value":"SetRectEmpty","refs":[]}
+{"address":"424b8252","value":"InflateRect","refs":[]}
+{"address":"424b8260","value":"OffsetRect","refs":[]}
+{"address":"424b826e","value":"PtInRect","refs":[]}
+{"address":"424b827a","value":"GetClassNameW","refs":[]}
+{"address":"424b828a","value":"GetWindowThreadProcessId","refs":[]}
+{"address":"424b82a6","value":"SetWindowsHookExW","refs":[]}
+{"address":"424b82ba","value":"UnhookWindowsHookEx","refs":[]}
+{"address":"424b82d0","value":"CallNextHookEx","refs":[]}
+{"address":"424b82e2","value":"LoadCursorW","refs":[]}
+{"address":"424b82f0","value":"LoadImageW","refs":[]}
+{"address":"424b82fe","value":"SystemParametersInfoW","refs":[]}
+{"address":"424b8316","value":"MonitorFromPoint","refs":[]}
+{"address":"424b832a","value":"SendDlgItemMessageW","refs":[]}
+{"address":"424b8340","value":"SetDlgItemTextW","refs":[]}
+{"address":"424b8352","value":"SetCursor","refs":[]}
+{"address":"424b835e","value":"GetDlgItemTextW","refs":[]}
+{"address":"424b8370","value":"CheckDlgButton","refs":[]}
+{"address":"424b8382","value":"CharUpperBuffW","refs":[]}
+{"address":"424b8394","value":"CharUpperW","refs":[]}
+{"address":"424b83a0","value":"USER32.dll","refs":[]}
+{"address":"424b83ae","value":"DeleteDC","refs":[]}
+{"address":"424b83ba","value":"CreateFontIndirectW","refs":[]}
+{"address":"424b83d0","value":"DeleteObject","refs":[]}
+{"address":"424b83e0","value":"GetDeviceCaps","refs":[]}
+{"address":"424b83f0","value":"GetTextExtentPointW","refs":[]}
+{"address":"424b8406","value":"SelectObject","refs":[]}
+{"address":"424b8416","value":"GetTextMetricsW","refs":[]}
+{"address":"424b8428","value":"BitBlt","refs":[]}
+{"address":"424b8432","value":"CreateCompatibleBitmap","refs":[]}
+{"address":"424b844c","value":"CreateCompatibleDC","refs":[]}
+{"address":"424b8462","value":"GetStockObject","refs":[]}
+{"address":"424b8474","value":"GetViewportExtEx","refs":[]}
+{"address":"424b8488","value":"GetWindowExtEx","refs":[]}
+{"address":"424b849a","value":"SetBkColor","refs":[]}
+{"address":"424b84a8","value":"SetMapMode","refs":[]}
+{"address":"424b84b6","value":"StretchBlt","refs":[]}
+{"address":"424b84c4","value":"SetTextColor","refs":[]}
+{"address":"424b84d4","value":"CreateDIBSection","refs":[]}
+{"address":"424b84e8","value":"GetObjectW","refs":[]}
+{"address":"424b84f6","value":"DPtoLP","refs":[]}
+{"address":"424b8500","value":"LPtoDP","refs":[]}
+{"address":"424b850a","value":"SetViewportExtEx","refs":[]}
+{"address":"424b851e","value":"SetWindowExtEx","refs":[]}
+{"address":"424b8530","value":"CreateBitmap","refs":[]}
+{"address":"424b8540","value":"CreatePatternBrush","refs":[]}
+{"address":"424b8556","value":"GetCurrentObject","refs":[]}
+{"address":"424b856a","value":"GetTextExtentPoint32W","refs":[]}
+{"address":"424b8582","value":"PatBlt","refs":[]}
+{"address":"424b858c","value":"SetBkMode","refs":[]}
+{"address":"424b8598","value":"SetTextCharacterExtra","refs":[]}
+{"address":"424b85b0","value":"SetTextJustification","refs":[]}
+{"address":"424b85c8","value":"TextOutW","refs":[]}
+{"address":"424b85d4","value":"SetBrushOrgEx","refs":[]}
+{"address":"424b85e4","value":"CreateRectRgn","refs":[]}
+{"address":"424b85f4","value":"GetClipRgn","refs":[]}
+{"address":"424b8602","value":"IntersectClipRect","refs":[]}
+{"address":"424b8616","value":"SelectClipRgn","refs":[]}
+{"address":"424b8626","value":"CreateSolidBrush","refs":[]}
+{"address":"424b863a","value":"CreatePen","refs":[]}
+{"address":"424b8646","value":"Rectangle","refs":[]}
+{"address":"424b8652","value":"GetDIBColorTable","refs":[]}
+{"address":"424b8666","value":"SetDIBColorTable","refs":[]}
+{"address":"424b867a","value":"GetTextCharacterExtra","refs":[]}
+{"address":"424b8690","value":"GDI32.dll","refs":[]}
+{"address":"424b869c","value":"GetOpenFileNameW","refs":[]}
+{"address":"424b86b0","value":"GetSaveFileNameW","refs":[]}
+{"address":"424b86c2","value":"COMDLG32.dll","refs":[]}
+{"address":"424b86d2","value":"RegCloseKey","refs":[]}
+{"address":"424b86e0","value":"RegCreateKeyExW","refs":[]}
+{"address":"424b86f2","value":"RegOpenKeyExW","refs":[]}
+{"address":"424b8702","value":"RegQueryValueExW","refs":[]}
+{"address":"424b8716","value":"RegSetValueExW","refs":[]}
+{"address":"424b8728","value":"RegDeleteKeyW","refs":[]}
+{"address":"424b8738","value":"RegDeleteValueW","refs":[]}
+{"address":"424b874a","value":"RegEnumKeyExW","refs":[]}
+{"address":"424b875a","value":"RegQueryInfoKeyW","refs":[]}
+{"address":"424b876e","value":"RegOpenKeyExA","refs":[]}
+{"address":"424b877e","value":"RegQueryValueExA","refs":[]}
+{"address":"424b8790","value":"ADVAPI32.dll","refs":[]}
+{"address":"424b87a0","value":"SHGetFolderPathW","refs":[]}
+{"address":"424b87b2","value":"SHELL32.dll","refs":[]}
+{"address":"424b87c0","value":"CoUninitialize","refs":[]}
+{"address":"424b87d2","value":"CoCreateInstance","refs":[]}
+{"address":"424b87e6","value":"CoInitialize","refs":[]}
+{"address":"424b87f6","value":"OleRun","refs":[]}
+{"address":"424b8800","value":"CoCreateFreeThreadedMarshaler","refs":[]}
+{"address":"424b8820","value":"StringFromGUID2","refs":[]}
+{"address":"424b8832","value":"CoTaskMemAlloc","refs":[]}
+{"address":"424b8844","value":"CoTaskMemRealloc","refs":[]}
+{"address":"424b8858","value":"CoTaskMemFree","refs":[]}
+{"address":"424b8868","value":"ProgIDFromCLSID","refs":[]}
+{"address":"424b887a","value":"CLSIDFromProgID","refs":[]}
+{"address":"424b888c","value":"CLSIDFromString","refs":[]}
+{"address":"424b889c","value":"ole32.dll","refs":[]}
+{"address":"424b88a6","value":"OLEAUT32.dll","refs":[]}
+{"address":"424b88b6","value":"InitCommonControlsEx","refs":[]}
+{"address":"424b88ce","value":"ImageList_Create","refs":[]}
+{"address":"424b88e2","value":"ImageList_Destroy","refs":[]}
+{"address":"424b88f6","value":"ImageList_GetImageCount","refs":[]}
+{"address":"424b8910","value":"ImageList_Draw","refs":[]}
+{"address":"424b8922","value":"ImageList_AddMasked","refs":[]}
+{"address":"424b8938","value":"ImageList_DrawIndirect","refs":[]}
+{"address":"424b8950","value":"COMCTL32.dll","refs":[]}
+{"address":"424b8960","value":"IsDebuggerPresent","refs":[]}
+{"address":"424b8974","value":"HeapAlloc","refs":[]}
+{"address":"424b8980","value":"HeapFree","refs":[]}
+{"address":"424b898c","value":"GetProcessHeap","refs":[]}
+{"address":"424b899e","value":"InitializeSListHead","refs":[]}
+{"address":"424b89b4","value":"InterlockedPopEntrySList","refs":[]}
+{"address":"424b89d0","value":"InterlockedPushEntrySList","refs":[]}
+{"address":"424b89ec","value":"IsProcessorFeaturePresent","refs":[]}
+{"address":"424b8a08","value":"VirtualAlloc","refs":[]}
+{"address":"424b8a18","value":"VirtualFree","refs":[]}
+{"address":"424b8a26","value":"GetSystemTimeAsFileTime","refs":[]}
+{"address":"424b8a40","value":"RtlUnwind","refs":[]}
+{"address":"424b8a4c","value":"GetTimeZoneInformation","refs":[]}
+{"address":"424b8a66","value":"GetCommandLineA","refs":[]}
+{"address":"424b8a78","value":"IsValidCodePage","refs":[]}
+{"address":"424b8a8a","value":"GetACP","refs":[]}
+{"address":"424b8a94","value":"GetOEMCP","refs":[]}
+{"address":"424b8aa0","value":"GetCPInfo","refs":[]}
+{"address":"424b8aac","value":"ExitProcess","refs":[]}
+{"address":"424b8aba","value":"GetModuleHandleExW","refs":[]}
+{"address":"424b8ad0","value":"HeapSize","refs":[]}
+{"address":"424b8adc","value":"GetStdHandle","refs":[]}
+{"address":"424b8aec","value":"UnhandledExceptionFilter","refs":[]}
+{"address":"424b8b08","value":"SetUnhandledExceptionFilter","refs":[]}
+{"address":"424b8b26","value":"Sleep","refs":[]}
+{"address":"424b8b2e","value":"TerminateProcess","refs":[]}
+{"address":"424b8b42","value":"TlsAlloc","refs":[]}
+{"address":"424b8b4e","value":"TlsGetValue","refs":[]}
+{"address":"424b8b5c","value":"TlsSetValue","refs":[]}
+{"address":"424b8b6a","value":"TlsFree","refs":[]}
+{"address":"424b8b74","value":"GetStartupInfoW","refs":[]}
+{"address":"424b8b86","value":"HeapReAlloc","refs":[]}
+{"address":"424b8b94","value":"GetFileType","refs":[]}
+{"address":"424b8ba2","value":"GetModuleFileNameA","refs":[]}
+{"address":"424b8bb8","value":"QueryPerformanceCounter","refs":[]}
+{"address":"424b8bd2","value":"GetEnvironmentStringsW","refs":[]}
+{"address":"424b8bec","value":"FreeEnvironmentStringsW","refs":[]}
+{"address":"424b8c06","value":"CompareStringW","refs":[]}
+{"address":"424b8c18","value":"LCMapStringW","refs":[]}
+{"address":"424b8c28","value":"IsValidLocale","refs":[]}
+{"address":"424b8c38","value":"GetUserDefaultLCID","refs":[]}
+{"address":"424b8c4e","value":"EnumSystemLocalesW","refs":[]}
+{"address":"424b8c64","value":"GetConsoleCP","refs":[]}
+{"address":"424b8c74","value":"GetConsoleMode","refs":[]}
+{"address":"424b8c86","value":"SetFilePointerEx","refs":[]}
+{"address":"424b8c9a","value":"SetStdHandle","refs":[]}
+{"address":"424b8caa","value":"WriteConsoleW","refs":[]}
+{"address":"424b8cba","value":"FlushFileBuffers","refs":[]}
+{"address":"424b8cce","value":"ReadConsoleW","refs":[]}
+{"address":"424b8cde","value":"SetEnvironmentVariableA","refs":[]}
+{"address":"424b9020","value":"XML Files (*.xml)","refs":[{"from":"4240a0b1","function":"4240a01a"}]}
+{"address":"424b9050","value":"All Files (*.*)","refs":[]}
+{"address":"424ba3f9","value":"abcdefghijklmnopqrstuvwxyz","refs":[]}
+{"address":"424ba419","value":"ABCDEFGHIJKLMNOPQRSTUVWXYZ","refs":[]}
+{"address":"424ba612","value":"abcdefghijklmnopqrstuvwxyz","refs":[]}
+{"address":"424ba632","value":"ABCDEFGHIJKLMNOPQRSTUVWXYZ","refs":[]}
+{"address":"424bb638","value":".?AVCAtlException@ATL@@","refs":[]}
+{"address":"424bb658","value":".?AVexception@std@@","refs":[]}
+{"address":"424bb674","value":".?AV_com_error@@","refs":[]}
+{"address":"424bb690","value":".?AVCCiffHelperUtil@@","refs":[]}
+{"address":"424bb6b0","value":".?AVCMessageMap@ATL@@","refs":[]}
+{"address":"424bb6d0","value":".?AV?$CWindowImplRoot@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bb704","value":".?AVCWindow@ATL@@","refs":[]}
+{"address":"424bb720","value":".?AV?$CDialogImplBaseT@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bb754","value":".?AVCFileDialog@WTL@@","refs":[]}
+{"address":"424bb774","value":".?AV?$CFileDialogImpl@VCFileDialog@WTL@@@WTL@@","refs":[]}
+{"address":"424bb7ac","value":".?AVCCSMarkSetsMgrDlg@@","refs":[]}
+{"address":"424bb7d0","value":".?AV?$CDialogImpl@VCCSMarkSetsMgrDlg@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bb814","value":".?AVCCSNewDlg@@","refs":[]}
+{"address":"424bb82c","value":".?AV?$CDialogImpl@VCCSNewDlg@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bb868","value":".?AUIUnknown@@","refs":[]}
+{"address":"424bb880","value":".?AUIDispatch@@","refs":[]}
+{"address":"424bb898","value":".?AUIRegistrarBase@@","refs":[]}
+{"address":"424bb8b8","value":".?AVCAtlModule@ATL@@","refs":[]}
+{"address":"424bb8d8","value":".?AU_ATL_MODULE70@ATL@@","refs":[]}
+{"address":"424bb8f8","value":".?AVCComModule@ATL@@","refs":[]}
+{"address":"424bb918","value":".?AV?$CAtlModuleT@VCComModule@ATL@@@ATL@@","refs":[]}
+{"address":"424bb94c","value":".?AVCRegObject@ATL@@","refs":[]}
+{"address":"424bb96c","value":".?AVCComClassFactory@ATL@@","refs":[]}
+{"address":"424bb990","value":".?AUIClassFactory@@","refs":[]}
+{"address":"424bb9b0","value":".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@","refs":[]}
+{"address":"424bb9f4","value":".?AVCComObjectRootBase@ATL@@","refs":[]}
+{"address":"424bba20","value":".?AV?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@","refs":[]}
+{"address":"424bba78","value":".?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@","refs":[]}
+{"address":"424bbabc","value":".?AUIEnumVARIANT@@","refs":[]}
+{"address":"424bbad8","value":".?AUIPropertyPage@@","refs":[]}
+{"address":"424bbaf4","value":".?AVCCLCSComModule@@","refs":[]}
+{"address":"424bbb14","value":".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@","refs":[]}
+{"address":"424bbb58","value":".?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?_GUID_00020404_0000_0000_c000_000000000046@@3U__s_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@ATL@@","refs":[]}
+{"address":"424bbc30","value":".?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?_GUID_00020404_0000_0000_c000_000000000046@@3U__s_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@@ATL@@","refs":[]}
+{"address":"424bbcec","value":".?AV?$CComObject@VCCLCSTextBasedFieldObj@@@ATL@@","refs":[]}
+{"address":"424bbd28","value":".?AVCCLCSTextBasedFieldObj@@","refs":[]}
+{"address":"424bbd50","value":".?AV?$CComCoClass@VCCLCSTextBasedFieldObj@@$1?CLSID_CLCSTextBasedFieldObj@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bbdb4","value":".?AUISupportErrorInfo@@","refs":[]}
+{"address":"424bbdd4","value":".?AUICLCSGenericFieldObj2@@","refs":[]}
+{"address":"424bbdf8","value":".?AUICLCSGenericFieldObj3@@","refs":[]}
+{"address":"424bbe1c","value":".?AUICLCSGenericFieldObj@@","refs":[]}
+{"address":"424bbe40","value":".?AUICLCSGenericFieldObj4@@","refs":[]}
+{"address":"424bbe64","value":".?AUICLCSGenericFieldObj5@@","refs":[]}
+{"address":"424bbe88","value":".?AUICLCSUBFObj@@","refs":[]}
+{"address":"424bbea4","value":".?AUICLCSGenericFieldPossible@@","refs":[]}
+{"address":"424bbecc","value":".?AUICLCSGenericFieldObjSupp@@","refs":[]}
+{"address":"424bbef8","value":".?AV?$ICollectionOnSTLImpl@UICLCSGenericDiscoverableFieldObj@@V?$CCLVector@VCComVariant@ATL@@@@UtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?_GUID_00020404_0000_0000_c000_000000000046@@3U__s_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@5@@ATL@@","refs":[]}
+{"address":"424bc054","value":".?AUICLCSGenericDiscoverableFieldObj@@","refs":[]}
+{"address":"424bc084","value":".?AUICLCSFontProperty@@","refs":[]}
+{"address":"424bc0a8","value":".?AV?$CWindowImpl@VCCLCSTextBasedFieldObj@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@","refs":[]}
+{"address":"424bc110","value":".?AV?$CComAggObject@VCCLCSTextBasedFieldObj@@@ATL@@","refs":[]}
+{"address":"424bc150","value":".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@","refs":[]}
+{"address":"424bc198","value":".?AVCTextFieldProp2@@","refs":[]}
+{"address":"424bc1b8","value":".?AV?$CComCoClass@VCTextFieldProp2@@$1?CLSID_TextFieldProp2@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bc210","value":".?AV?$IInternationalPropertyPageImpl@VCTextFieldProp2@@$0GAAI@@@","refs":[]}
+{"address":"424bc25c","value":".?AV?$IPropertyPageImpl@VCTextFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bc298","value":".?AV?$CDialogImpl@VCTextFieldProp2@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bc2dc","value":".?AV?$CWinDataExchange@VCTextFieldProp2@@@WTL@@","refs":[]}
+{"address":"424bc318","value":".?AV?$CLEventHandler@VCTextFieldProp2@@@CLLanguageEventHandlerNamespace@@","refs":[]}
+{"address":"424bc36c","value":".?AV?$CComObject@VCTextFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bc3a0","value":".?AV?$CComAggObject@VCTextFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bc3d8","value":".?AVCGeneralFieldProp2@@","refs":[]}
+{"address":"424bc400","value":".?AV?$CComCoClass@VCGeneralFieldProp2@@$1?CLSID_GeneralFieldProp2@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bc460","value":".?AV?$IInternationalPropertyPageImpl@VCGeneralFieldProp2@@$0GBFB@@@","refs":[]}
+{"address":"424bc4ac","value":".?AV?$IPropertyPageImpl@VCGeneralFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bc4e8","value":".?AV?$CDialogImpl@VCGeneralFieldProp2@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bc530","value":".?AV?$CLEventHandler@VCGeneralFieldProp2@@@CLLanguageEventHandlerNamespace@@","refs":[]}
+{"address":"424bc588","value":".?AV?$CComObject@VCGeneralFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bc5c0","value":".?AV?$CComAggObject@VCGeneralFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bc5f8","value":".?AV?$CLEventHandler@VCTextBasedFieldProp@@@CLLanguageEventHandlerNamespace@@","refs":[]}
+{"address":"424bc650","value":".?AV?$CComObject@VCTextBasedFieldProp@@@ATL@@","refs":[]}
+{"address":"424bc688","value":".?AVCTextBasedFieldProp@@","refs":[]}
+{"address":"424bc6b0","value":".?AV?$CComCoClass@VCTextBasedFieldProp@@$1?CLSID_TextBasedFieldProp@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bc710","value":".?AV?$IInternationalPropertyPageImpl@VCTextBasedFieldProp@@$0GADA@@@","refs":[]}
+{"address":"424bc760","value":".?AV?$IPropertyPageImpl@VCTextBasedFieldProp@@@ATL@@","refs":[]}
+{"address":"424bc7a0","value":".?AV?$CDialogImpl@VCTextBasedFieldProp@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bc7e8","value":".?AV?$CComAggObject@VCTextBasedFieldProp@@@ATL@@","refs":[]}
+{"address":"424bc824","value":".?AVCDateFieldProp2@@","refs":[]}
+{"address":"424bc848","value":".?AV?$CComCoClass@VCDateFieldProp2@@$1?CLSID_DateFieldProp2@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bc8a0","value":".?AV?$IInternationalPropertyPageImpl@VCDateFieldProp2@@$0GAAI@@@","refs":[]}
+{"address":"424bc8ec","value":".?AV?$IPropertyPageImpl@VCDateFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bc928","value":".?AV?$CDialogImpl@VCDateFieldProp2@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bc970","value":".?AV?$CLEventHandler@VCDateFieldProp2@@@CLLanguageEventHandlerNamespace@@","refs":[]}
+{"address":"424bc9c4","value":".?AV?$CComObject@VCDateFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bc9f8","value":".?AV?$CComAggObject@VCDateFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bca30","value":".?AVCAlphaCntProp2@@","refs":[]}
+{"address":"424bca50","value":".?AV?$CComCoClass@VCAlphaCntProp2@@$1?CLSID_AlphaCntProp2@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bcaa8","value":".?AV?$IInternationalPropertyPageImpl@VCAlphaCntProp2@@$0GBGC@@@","refs":[]}
+{"address":"424bcaf0","value":".?AV?$IPropertyPageImpl@VCAlphaCntProp2@@@ATL@@","refs":[]}
+{"address":"424bcb28","value":".?AV?$CDialogImpl@VCAlphaCntProp2@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bcb68","value":".?AVCOldCounterHelper@@","refs":[]}
+{"address":"424bcb88","value":".?AV?$CLEventHandler@VCAlphaCntProp2@@@CLLanguageEventHandlerNamespace@@","refs":[]}
+{"address":"424bcbdc","value":".?AV?$CComObject@VCAlphaCntProp2@@@ATL@@","refs":[]}
+{"address":"424bcc10","value":".?AV?$CComAggObject@VCAlphaCntProp2@@@ATL@@","refs":[]}
+{"address":"424bcc44","value":".?AVCNumCntProp2@@","refs":[]}
+{"address":"424bcc60","value":".?AV?$CComCoClass@VCNumCntProp2@@$1?CLSID_NumCntProp2@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bccb0","value":".?AV?$IInternationalPropertyPageImpl@VCNumCntProp2@@$0GBGB@@@","refs":[]}
+{"address":"424bccf8","value":".?AV?$IPropertyPageImpl@VCNumCntProp2@@@ATL@@","refs":[]}
+{"address":"424bcd30","value":".?AV?$CDialogImpl@VCNumCntProp2@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bcd70","value":".?AV?$CLEventHandler@VCNumCntProp2@@@CLLanguageEventHandlerNamespace@@","refs":[]}
+{"address":"424bcdc0","value":".?AV?$CComObject@VCNumCntProp2@@@ATL@@","refs":[]}
+{"address":"424bcdf0","value":".?AV?$CComAggObject@VCNumCntProp2@@@ATL@@","refs":[]}
+{"address":"424bce24","value":".?AVCPriceProp@@","refs":[]}
+{"address":"424bce40","value":".?AV?$CComCoClass@VCPriceProp@@$1?CLSID_PriceProp@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bce90","value":".?AV?$IInternationalPropertyPageImpl@VCPriceProp@@$0GAAI@@@","refs":[]}
+{"address":"424bced4","value":".?AV?$IPropertyPageImpl@VCPriceProp@@@ATL@@","refs":[]}
+{"address":"424bcf08","value":".?AV?$CDialogImpl@VCPriceProp@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bcf48","value":".?AV?$CLEventHandler@VCPriceProp@@@CLLanguageEventHandlerNamespace@@","refs":[]}
+{"address":"424bcf98","value":".?AV?$CComObject@VCPriceProp@@@ATL@@","refs":[]}
+{"address":"424bcfc8","value":".?AV?$CComAggObject@VCPriceProp@@@ATL@@","refs":[]}
+{"address":"424bcff8","value":".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?_GUID_00020404_0000_0000_c000_000000000046@@3U__s_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@ATL@@@ATL@@","refs":[]}
+{"address":"424bd0e0","value":".?AV?$CComContainedObject@VCCLCSTextBasedFieldObj@@@ATL@@","refs":[]}
+{"address":"424bd124","value":".?AV?$CComContainedObject@VCTextFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bd160","value":".?AV?$CComContainedObject@VCGeneralFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bd1a0","value":".?AV?$CComContainedObject@VCTextBasedFieldProp@@@ATL@@","refs":[]}
+{"address":"424bd1e0","value":".?AV?$CComContainedObject@VCDateFieldProp2@@@ATL@@","refs":[]}
+{"address":"424bd21c","value":".?AV?$CComContainedObject@VCAlphaCntProp2@@@ATL@@","refs":[]}
+{"address":"424bd258","value":".?AV?$CComContainedObject@VCNumCntProp2@@@ATL@@","refs":[]}
+{"address":"424bd290","value":".?AV?$CComContainedObject@VCPriceProp@@@ATL@@","refs":[]}
+{"address":"424bd2c8","value":".?AUICLCSToolBoxItem@@","refs":[]}
+{"address":"424bd2e8","value":".?AVCCLCSToolBoxItem@@","refs":[]}
+{"address":"424bd308","value":".?AV?$CComCoClass@VCCLCSToolBoxItem@@$1?CLSID_CLCSToolBoxItem@@3U_GUID@@B@ATL@@","refs":[]}
+{"address":"424bd360","value":".?AV?$CComObject@VCCLCSToolBoxItem@@@ATL@@","refs":[]}
+{"address":"424bd398","value":".?AV?$CLEventHandler@VCCLCSTextBasedFieldObj@@@CLLanguageEventHandlerNamespace@@","refs":[]}
+{"address":"424bd3f8","value":".?AV?$CCommandBarCtrlImpl@VCCommandBarCtrl@WTL@@VCCommandBarCtrlBase@2@V?$CWinTraits@$0FGAAAAAA@$0A@@ATL@@@WTL@@","refs":[]}
+{"address":"424bd478","value":".?AV?$CWindowImpl@VCCommandBarCtrl@WTL@@VCCommandBarCtrlBase@2@V?$CWinTraits@$0FGAAAAAA@$0A@@ATL@@@ATL@@","refs":[]}
+{"address":"424bd4f0","value":".?AV?$CWindowImplBaseT@VCCommandBarCtrlBase@WTL@@V?$CWinTraits@$0FGAAAAAA@$0A@@ATL@@@ATL@@","refs":[]}
+{"address":"424bd554","value":".?AV?$CWindowImplRoot@VCCommandBarCtrlBase@WTL@@@ATL@@","refs":[]}
+{"address":"424bd594","value":".?AVCCommandBarCtrlBase@WTL@@","refs":[]}
+{"address":"424bd5bc","value":".?AV?$CToolBarCtrlT@VCWindow@ATL@@@WTL@@","refs":[]}
+{"address":"424bd5f0","value":".?AVCCommandBarCtrl@WTL@@","refs":[]}
+{"address":"424bd614","value":".?AVCCLUnicodeEdit@@","refs":[]}
+{"address":"424bd638","value":".?AV?$CWindowImpl@VCCLUnicodeEdit@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@","refs":[]}
+{"address":"424bd698","value":".?AVCDatabaseSelectDateDlg@@","refs":[]}
+{"address":"424bd6c0","value":".?AV?$CDialogImpl@VCDatabaseSelectDateDlg@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bd708","value":".?AVCDataEntryDlg@@","refs":[]}
+{"address":"424bd724","value":".?AV?$CDialogImpl@VCDataEntryDlg@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bd764","value":".?AVCUserQuestion@@","refs":[]}
+{"address":"424bd780","value":".?AV?$CDialogImpl@VCUserQuestion@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bd7c0","value":".?AVDrawUniscribe@@","refs":[]}
+{"address":"424bd7dc","value":".?AVNode@AdvXMLParser@@","refs":[]}
+{"address":"424bd7fc","value":".?AVNodeContainer@AdvXMLParser@@","refs":[]}
+{"address":"424bd828","value":".?AVAttribute@AdvXMLParser@@","refs":[]}
+{"address":"424bd850","value":".?AVElement@AdvXMLParser@@","refs":[]}
+{"address":"424bd874","value":".?AVComment@AdvXMLParser@@","refs":[]}
+{"address":"424bd898","value":".?AVPi@AdvXMLParser@@","refs":[]}
+{"address":"424bd8b8","value":".?AVCData@AdvXMLParser@@","refs":[]}
+{"address":"424bd8dc","value":".?AVText@AdvXMLParser@@","refs":[]}
+{"address":"424bd8fc","value":".?AVCListDataDialog@@","refs":[]}
+{"address":"424bd920","value":".?AV?$CDialogImpl@VCListDataDialog@@VCWindow@ATL@@@ATL@@","refs":[]}
+{"address":"424bd964","value":".?AVerror_category@std@@","refs":[]}
+{"address":"424bd988","value":".?AV_Generic_error_category@std@@","refs":[]}
+{"address":"424bd9b4","value":".?AV_Iostream_error_category@std@@","refs":[]}
+{"address":"424bd9e0","value":".?AV_System_error_category@std@@","refs":[]}
+{"address":"424bda0c","value":".?AVCCapabilitiesHelper@@","refs":[]}
+{"address":"424bda30","value":".?AVCCLLocale@@","refs":[]}
+{"address":"424bda48","value":".?AVCCLLocalesSupported@@","refs":[]}
+{"address":"424bda6c","value":".?AVCCLUnicodeStatic@@","refs":[]}
+{"address":"424bda90","value":".?AV?$CWindowImpl@VCCLUnicodeStatic@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@","refs":[]}
+{"address":"424bdaf4","value":".?AVCCVStatic@@","refs":[]}
+{"address":"424bdb0c","value":".?AV?$CStaticT@VCWindow@ATL@@@WTL@@","refs":[]}
+{"address":"424bdb38","value":".?AVCDateTimeFormat@@","refs":[]}
+{"address":"424bdb58","value":".?AVCDateTimeFormats@@","refs":[]}
+{"address":"424bdb78","value":".?AVCDateFormat@@","refs":[]}
+{"address":"424bdb94","value":".?AVCDateFormats@@","refs":[]}
+{"address":"424bdbb0","value":".?AVCDateFormatTable@@","refs":[]}
+{"address":"424bdbd0","value":".?AVCTimeFormat@@","refs":[]}
+{"address":"424bdbec","value":".?AVCTimeFormats@@","refs":[]}
+{"address":"424bdc08","value":".?AVCTimeFormatTable@@","refs":[]}
+{"address":"424bdc28","value":".?AVCElapsedFormat@@","refs":[]}
+{"address":"424bdc48","value":".?AVCElapsedFormats@@","refs":[]}
+{"address":"424bdc68","value":".?AVCElapsedFormatTable@@","refs":[]}
+{"address":"424bdc8c","value":".?AVCTimerCodeFormat@@","refs":[]}
+{"address":"424bdcac","value":".?AVCTimerCodeFormats@@","refs":[]}
+{"address":"424bdccc","value":".?AVCTimerCodeFormatTable@@","refs":[]}
+{"address":"424bdcf0","value":".?AVCDIBSection@@","refs":[]}
+{"address":"424bdd0c","value":".?AVCDSNList@@","refs":[]}
+{"address":"424bdd24","value":".?AVCLicenseBase@@","refs":[]}
+{"address":"424bdd40","value":".?AV?$CEncryption@VCLicenseBase@@@@","refs":[]}
+{"address":"424bdd6c","value":".?AVCLicenseClient@@","refs":[]}
+{"address":"424bdd8c","value":".?AUICollapseDateOffsetCallback@@","refs":[]}
+{"address":"424bddb8","value":".?AVCCheckedResolveDateOffsets@@","refs":[]}
+{"address":"424bdde4","value":".?AVCZFBFFontUtilities@@","refs":[]}
+{"address":"424bde08","value":".?AVZipherBitmapFont@@","refs":[]}
+{"address":"424bde28","value":".?AVbad_alloc@std@@","refs":[]}
+{"address":"424bde44","value":".?AVlogic_error@std@@","refs":[]}
+{"address":"424bde64","value":".?AVlength_error@std@@","refs":[]}
+{"address":"424bde84","value":".?AVout_of_range@std@@","refs":[]}
+{"address":"424bdea4","value":".?AVtype_info@@","refs":[]}
+{"address":"424bdebc","value":".?AVbad_exception@std@@","refs":[]}
+{"address":"424c49a2","value":"StringFileInfo","refs":[]}
+{"address":"424c49c6","value":"040904b0","refs":[]}
+{"address":"424c49de","value":"Comments","refs":[]}
+{"address":"424c49f0","value":"CLARiSOFT Text Based Field Component","refs":[]}
+{"address":"424c4a42","value":"CompanyName","refs":[]}
+{"address":"424c4a5c","value":"Videojet Technologies Ltd.","refs":[]}
+{"address":"424c4a9a","value":"FileDescription","refs":[]}
+{"address":"424c4abc","value":"CLCSTextBasedField Module","refs":[]}
+{"address":"424c4af6","value":"FileVersion","refs":[]}
+{"address":"424c4b10","value":"4.4.0.7","refs":[]}
+{"address":"424c4b26","value":"InternalName","refs":[]}
+{"address":"424c4b40","value":"CLCSTextBasedField","refs":[]}
+{"address":"424c4b6e","value":"LegalCopyright","refs":[]}
+{"address":"424c4b8c","value":"Copyright ©2014","refs":[]}
+{"address":"424c4bb2","value":"OriginalFilename","refs":[]}
+{"address":"424c4bd4","value":"CLCSTextBasedField.DLL","refs":[]}
+{"address":"424c4c0a","value":"ProductName","refs":[]}
+{"address":"424c4c24","value":"CLCSTextBasedField Module","refs":[]}
+{"address":"424c4c5e","value":"ProductVersion","refs":[]}
+{"address":"424c4c7c","value":"4.4.0.7","refs":[]}
+{"address":"424c4c92","value":"VarFileInfo","refs":[]}
+{"address":"424c4cb2","value":"Translation","refs":[]}
+{"address":"424d3c78","value":"","refs":[]}
+{"address":"424d3c7a","value":"","refs":[]}
+{"address":"424d3c7c","value":"","refs":[]}
+{"address":"424d3c7e","value":"","refs":[]}
+{"address":"424d3c80","value":"CLCSTextBasedField","refs":[]}
+{"address":"424d3ca6","value":"","refs":[]}
+{"address":"424d3ca8","value":"Text","refs":[]}
+{"address":"424d3cb2","value":"Help File Name","refs":[]}
+{"address":"424d3cd0","value":"Your Help String","refs":[]}
+{"address":"424d3cf2","value":"","refs":[]}
+{"address":"424d3cf4","value":"","refs":[]}
+{"address":"424d3cf6","value":"General","refs":[]}
+{"address":"424d3d06","value":"Help File Name","refs":[]}
+{"address":"424d3d24","value":"Your Help String","refs":[]}
+{"address":"424d3d46","value":"","refs":[]}
+{"address":"424d3d48","value":"","refs":[]}
+{"address":"424d3d50","value":"Font","refs":[]}
+{"address":"424d3d5a","value":"Help File Name","refs":[]}
+{"address":"424d3d78","value":"Your Help String","refs":[]}
+{"address":"424d3d9a","value":"","refs":[]}
+{"address":"424d3d9c","value":"","refs":[]}
+{"address":"424d3d9e","value":"Date","refs":[]}
+{"address":"424d3da8","value":"Help File Name","refs":[]}
+{"address":"424d3dc6","value":"Your Help String","refs":[]}
+{"address":"424d3de8","value":"","refs":[]}
+{"address":"424d3dea","value":"","refs":[]}
+{"address":"424d3dec","value":"Time","refs":[]}
+{"address":"424d3df6","value":"Help File Name","refs":[]}
+{"address":"424d3e14","value":"Your Help String","refs":[]}
+{"address":"424d3e36","value":"","refs":[]}
+{"address":"424d3e38","value":"","refs":[]}
+{"address":"424d3e3a","value":"Alpha","refs":[]}
+{"address":"424d3e48","value":"Price","refs":[]}
+{"address":"424d3e54","value":"Your Help String","refs":[]}
+{"address":"424d3e76","value":"","refs":[]}
+{"address":"424d3e78","value":"","refs":[]}
+{"address":"424d3e7a","value":"Numeric","refs":[]}
+{"address":"424d3e8a","value":"","refs":[]}
+{"address":"424d3e8c","value":"","refs":[]}
+{"address":"424d3e8e","value":"","refs":[]}
+{"address":"424d3e90","value":"","refs":[]}
+{"address":"424d3e92","value":"","refs":[]}
+{"address":"424d3e94","value":"","refs":[]}
+{"address":"424d3e96","value":"","refs":[]}
+{"address":"424d3e98","value":"","refs":[]}
+{"address":"424d3e9a","value":"","refs":[]}
+{"address":"424d3e9c","value":"","refs":[]}
+{"address":"424d3e9e","value":"","refs":[]}
+{"address":"424d3ea0","value":"Help File Name","refs":[]}
+{"address":"424d3ebe","value":"Your Help String","refs":[]}
+{"address":"424d3ee0","value":"","refs":[]}
+{"address":"424d3ee2","value":"","refs":[]}
+{"address":"424d3ee4","value":"Numeric","refs":[]}
+{"address":"424d3ef4","value":"Help File Name","refs":[]}
+{"address":"424d3f12","value":"Your Help String","refs":[]}
+{"address":"424d3f34","value":"","refs":[]}
+{"address":"424d3f36","value":"","refs":[]}
+{"address":"424d3f38","value":"","refs":[]}
+{"address":"424d3f3a","value":"","refs":[]}
+{"address":"424d3f3c","value":"","refs":[]}
+{"address":"424d3f3e","value":"","refs":[]}
+{"address":"424d3f40","value":"","refs":[]}
+{"address":"424d3f42","value":"","refs":[]}
+{"address":"424d3f44","value":"","refs":[]}
+{"address":"424d3f48","value":"<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n","refs":[]}
+{"address":"ffdff1ac","value":"","refs":[]}
+{"address":"ffdffc00","value":"","refs":[]}

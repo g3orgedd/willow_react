@@ -1,0 +1,17 @@
+4500fe88 PUSH 0x4
+4500fe8a MOV EAX,0x4503bfde
+4500fe8f CALL 0x45022ed6
+4500fe94 XOR EAX,EAX
+4500fe96 MOV dword ptr [EBP + -0x10],EAX
+4500fe99 MOV ESI,dword ptr [EBP + 0x8]
+4500fe9c MOV dword ptr [ESI],EAX
+4500fe9e MOV ECX,dword ptr [ECX]
+4500fea0 PUSH ESI
+4500fea1 PUSH ECX
+4500fea2 MOV dword ptr [EBP + -0x4],EAX
+4500fea5 MOV EDX,dword ptr [ECX]
+4500fea7 MOV dword ptr [EBP + -0x10],0x1
+4500feae CALL dword ptr [EDX + 0x58]
+4500feb1 MOV EAX,ESI
+4500feb3 CALL 0x45022ea4
+4500feb8 RET 0x4

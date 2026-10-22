@@ -1,0 +1,447 @@
+{
+  "date": "2026-10-21",
+  "scope": "Actual new-field factories and buildFieldXmlOneLine. New XML only, no original COM execution.",
+  "cases": [
+    {
+      "name": "emptyFixed",
+      "model": {
+        "sourceName": null,
+        "name": "Empty",
+        "fldType": "FixedText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 1200,
+          "h": 392
+        },
+        "ln": null,
+        "orientation": 0,
+        "calcData": "",
+        "data": {
+          "dataType": 0,
+          "defaultValue": "",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"Empty\"><FldType>FixedText</FldType><X>200</X><Y>200</Y><W>1200</W><H>392</H><CalcData><![CDATA[]]></CalcData><LoggedField></LoggedField><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field>"
+    },
+    {
+      "name": "fixed",
+      "model": {
+        "sourceName": null,
+        "name": "Fixed",
+        "fldType": "FixedText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 192,
+          "h": 392
+        },
+        "ln": null,
+        "orientation": 0,
+        "calcData": "A",
+        "data": {
+          "dataType": 0,
+          "defaultValue": "A",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"Fixed\"><FldType>FixedText</FldType><X>200</X><Y>200</Y><W>192</W><H>392</H><CalcData><![CDATA[A]]></CalcData><LoggedField></LoggedField><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[A]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field>"
+    },
+    {
+      "name": "userFixed3",
+      "model": {
+        "sourceName": null,
+        "name": "User",
+        "fldType": "FixedText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 192,
+          "h": 392
+        },
+        "ln": null,
+        "orientation": 0,
+        "calcData": "A",
+        "data": {
+          "dataType": 0,
+          "defaultValue": "A",
+          "maxChars": 3,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "A",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"User\"><FldType>FixedText</FldType><X>200</X><Y>200</Y><W>192</W><H>392</H><CalcData><![CDATA[A]]></CalcData><LoggedField></LoggedField><Data><Object Static=\"0\" Reference=\"\"><DataType>0</DataType><MaxNoOfChars>3</MaxNoOfChars><Default><![CDATA[A]]></Default><FixedLen/><VarText><UserEnterData><![CDATA[A]]></UserEnterData></VarText></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field>"
+    },
+    {
+      "name": "explicitMax0",
+      "model": {
+        "sourceName": null,
+        "name": "Max0",
+        "fldType": "FixedText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 192,
+          "h": 392
+        },
+        "ln": null,
+        "orientation": 0,
+        "calcData": "A",
+        "data": {
+          "dataType": 0,
+          "defaultValue": "A",
+          "maxChars": 0,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"Max0\"><FldType>FixedText</FldType><X>200</X><Y>200</Y><W>192</W><H>392</H><CalcData><![CDATA[A]]></CalcData><LoggedField></LoggedField><Data><Object Reference=\"\"><DataType>0</DataType><MaxNoOfChars>0</MaxNoOfChars><Default><![CDATA[A]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field>"
+    },
+    {
+      "name": "explicitLn0",
+      "model": {
+        "sourceName": null,
+        "name": "Ln0",
+        "fldType": "FixedText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 192,
+          "h": 392
+        },
+        "ln": 0,
+        "orientation": 0,
+        "calcData": "A",
+        "data": {
+          "dataType": 0,
+          "defaultValue": "A",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"Ln0\"><FldType>FixedText</FldType><X>200</X><Y>200</Y><W>192</W><H>392</H><Ln>0</Ln><CalcData><![CDATA[A]]></CalcData><LoggedField></LoggedField><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[A]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field>"
+    },
+    {
+      "name": "fontNativeDefaults",
+      "model": {
+        "sourceName": null,
+        "name": "FontDefaults",
+        "fldType": "FixedText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 249,
+          "h": 520
+        },
+        "ln": null,
+        "orientation": 0,
+        "calcData": "A",
+        "data": {
+          "dataType": 0,
+          "defaultValue": "A",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 13,
+          "xMag": 100
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"FontDefaults\"><FldType>FixedText</FldType><X>200</X><Y>200</Y><W>249</W><H>520</H><CalcData><![CDATA[A]]></CalcData><LoggedField></LoggedField><Data><Object Reference=\"\"><DataType>0</DataType><Default><![CDATA[A]]></Default></Object></Data><Text><Font><Pitch>13</Pitch><XMag>100</XMag></Font></Text></Field>"
+    },
+    {
+      "name": "currentDate",
+      "model": {
+        "sourceName": null,
+        "name": "Date",
+        "fldType": "DateText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 2300,
+          "h": 392
+        },
+        "ln": null,
+        "orientation": 0,
+        "calcData": "dd'.'MM'.'yy",
+        "data": {
+          "dataType": 2,
+          "defaultValue": "dd'.'MM'.'yy",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": "0",
+          "parseAttr": "1",
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": null,
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": "en",
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"Date\"><FldType>DateText</FldType><X>200</X><Y>200</Y><W>2300</W><H>392</H><CalcData><![CDATA[dd'.'MM'.'yy]]></CalcData><LoggedField></LoggedField><Data><Object Static=\"0\" Parse=\"1\" Reference=\"\"><DataType>2</DataType><Default><![CDATA[dd'.'MM'.'yy]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field>"
+    },
+    {
+      "name": "currentTime",
+      "model": {
+        "sourceName": null,
+        "name": "Time",
+        "fldType": "TimeText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 1342,
+          "h": 392
+        },
+        "ln": null,
+        "orientation": 0,
+        "calcData": "HH':'mm",
+        "data": {
+          "dataType": 1,
+          "defaultValue": "HH':'mm",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": "0",
+          "parseAttr": "1",
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": null,
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"Time\"><FldType>TimeText</FldType><X>200</X><Y>200</Y><W>1342</W><H>392</H><CalcData><![CDATA[HH':'mm]]></CalcData><LoggedField></LoggedField><Data><Object Static=\"0\" Parse=\"1\" Reference=\"\"><DataType>1</DataType><Default><![CDATA[HH':'mm]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field>"
+    },
+    {
+      "name": "counter",
+      "model": {
+        "sourceName": null,
+        "name": "Counter",
+        "fldType": "CounterText",
+        "printed": true,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 767,
+          "h": 392
+        },
+        "ln": null,
+        "orientation": 0,
+        "calcData": "0001",
+        "data": {
+          "dataType": 4,
+          "defaultValue": "0001",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": null,
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": 4,
+            "significance": 0,
+            "startVal": "1",
+            "endVal": "9999",
+            "stepSize": 1,
+            "clrStCntType": ""
+          }
+        },
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "barcode": null,
+        "_konva": null
+      },
+      "xml": "<Field Name=\"Counter\"><FldType>CounterText</FldType><X>200</X><Y>200</Y><W>767</W><H>392</H><CalcData><![CDATA[0001]]></CalcData><LoggedField></LoggedField><Data><Object Static=\"0\" Reference=\"\"><DataType>4</DataType><Default><![CDATA[0001]]></Default><CounterText><SubCnt Significance=\"0\"><NoOfChars>4</NoOfChars><StartVal><![CDATA[1]]></StartVal><EndVal><![CDATA[9999]]></EndVal><StepSize>1</StepSize><ClrStCntType></ClrStCntType></SubCnt></CounterText></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field>"
+    }
+  ]
+}

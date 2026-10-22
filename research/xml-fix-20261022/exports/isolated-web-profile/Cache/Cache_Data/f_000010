@@ -1,0 +1,314 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/TextFieldModal.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=a8bfbb4b"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=a8bfbb4b"; const Fragment = __vite__cjsImport3_react["Fragment"];
+const TEXT_PRESET_CARDS = [
+  { id: "gtin", name: "GTIN", value: "00000000000000", mode: "user", maxCharacters: "14", printed: false },
+  { id: "gtin2", name: "GTIN2", value: "00000000000000", mode: "user", maxCharacters: "14", printed: false },
+  { id: "box_counter", name: "BOX_COUNTER", value: "00000", mode: "user", maxCharacters: "5", printed: false },
+  { id: "kripto", name: "KRIPTO", value: "0000", mode: "user", maxCharacters: "4", printed: false },
+  { id: "kripto2", name: "KRIPTO2", value: "00000000000000000000000000000000000000000000", mode: "user", maxCharacters: "44", printed: false },
+  { id: "sn", name: "SN", values: ["000000", "0000000000000"], mode: "user", maxCharacters: "6 / 13", printed: false },
+  { id: "c1", name: "C1", value: "~101", mode: "fixed", maxCharacters: "4", printed: false },
+  { id: "c2", name: "C2", value: "21", mode: "fixed", maxCharacters: "2", printed: false },
+  { id: "c3", name: "C3", values: ["~d02991", "~d02993"], mode: "fixed", maxCharacters: "7", printed: false },
+  { id: "c4", name: "C4", value: "~d02992", mode: "fixed", maxCharacters: "7", printed: false },
+  { id: "product_date", name: "PRODUCT_DATE", value: "0000000000", mode: "user", maxCharacters: "—", printed: true },
+  { id: "packing_date", name: "PACKING_DATE", value: "0000000000", mode: "user", maxCharacters: "—", printed: true },
+  { id: "expiration_date", name: "EXPIRATION_DATE", value: "0000000000", mode: "user", maxCharacters: "—", printed: true },
+  { id: "party", name: "PARTY", value: "00000000", mode: "user", maxCharacters: "—", printed: true },
+  { id: "r_num", name: "R_NUM", value: "000", mode: "user", maxCharacters: "—", printed: true },
+  { id: "team", name: "TEAM", value: "00", mode: "user", maxCharacters: "—", printed: true }
+];
+export function TextFieldModal() {
+  return /* @__PURE__ */ jsxDEV("div", { id: "textFieldModal", className: "modal modal--text-field hidden", "aria-hidden": "true", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "modal__backdrop", "data-modal-close": "1" }, void 0, false, {
+      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+      lineNumber: 54,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      "div",
+      {
+        className: "modal__card modal__card--text-field surface-card",
+        role: "dialog",
+        "aria-modal": "true",
+        "aria-labelledby": "textFieldModalTitle",
+        "aria-describedby": "textFieldModalSubtitle",
+        children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "modal__header textFieldModal__header", children: /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("div", { className: "modal__title", id: "textFieldModalTitle", children: "Add text field" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+              lineNumber: 64,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { className: "modal__subtitle", id: "textFieldModalSubtitle", children: "Add a regular fixed text field or select one or more ready-made fields." }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+              lineNumber: 65,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+            lineNumber: 63,
+            columnNumber: 11
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+            lineNumber: 62,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "textFieldModal__content", children: [
+            /* @__PURE__ */ jsxDEV("label", { className: "textFieldModeCard", htmlFor: "textFieldModeFixed", children: [
+              /* @__PURE__ */ jsxDEV("input", { id: "textFieldModeFixed", name: "textFieldMode", type: "radio", value: "fixed", defaultChecked: true }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                lineNumber: 73,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { children: [
+                /* @__PURE__ */ jsxDEV("strong", { id: "textFieldModeFixedTitle", children: "Fixed text" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                  lineNumber: 75,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("small", { id: "textFieldModeFixedDescription", children: "Create the same editable fixed text field as before." }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                  lineNumber: 76,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                lineNumber: 74,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+              lineNumber: 72,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("label", { className: "textFieldModeCard", htmlFor: "textFieldModePresets", children: [
+              /* @__PURE__ */ jsxDEV("input", { id: "textFieldModePresets", name: "textFieldMode", type: "radio", value: "presets" }, void 0, false, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                lineNumber: 81,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { children: [
+                /* @__PURE__ */ jsxDEV("strong", { id: "textFieldModePresetsTitle", children: "Ready-made fields" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                  lineNumber: 83,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("small", { id: "textFieldModePresetsDescription", children: "Select several fields to add them in one vertical stack." }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                  lineNumber: 84,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                lineNumber: 82,
+                columnNumber: 13
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+              lineNumber: 80,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { id: "textFieldPresetList", className: "textPresetList", children: TEXT_PRESET_CARDS.map(
+              (preset) => /* @__PURE__ */ jsxDEV(Fragment, { children: [
+                preset.id === "product_date" ? /* @__PURE__ */ jsxDEV("div", { className: "textPresetList__divider", "aria-hidden": "true" }, void 0, false, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                  lineNumber: 92,
+                  columnNumber: 15
+                }, this) : null,
+                /* @__PURE__ */ jsxDEV("div", { className: "textPresetCard", "data-text-preset-row": preset.id, children: [
+                  /* @__PURE__ */ jsxDEV("label", { className: "textPresetCard__main", htmlFor: `textPreset-${preset.id}`, children: [
+                    /* @__PURE__ */ jsxDEV(
+                      "input",
+                      {
+                        id: `textPreset-${preset.id}`,
+                        className: "textPresetCard__checkbox",
+                        type: "checkbox",
+                        "data-text-preset": preset.id
+                      },
+                      void 0,
+                      false,
+                      {
+                        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                        lineNumber: 96,
+                        columnNumber: 19
+                      },
+                      this
+                    ),
+                    /* @__PURE__ */ jsxDEV("span", { className: "textPresetCard__copy", children: [
+                      /* @__PURE__ */ jsxDEV("strong", { children: preset.name }, void 0, false, {
+                        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                        lineNumber: 103,
+                        columnNumber: 21
+                      }, this),
+                      preset.value ? /* @__PURE__ */ jsxDEV("code", { children: preset.value }, void 0, false, {
+                        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                        lineNumber: 104,
+                        columnNumber: 37
+                      }, this) : null
+                    ] }, void 0, true, {
+                      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                      lineNumber: 102,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                    lineNumber: 95,
+                    columnNumber: 17
+                  }, this),
+                  preset.values ? /* @__PURE__ */ jsxDEV(
+                    "select",
+                    {
+                      className: "select textPresetCard__variant",
+                      "data-text-preset-value": preset.id,
+                      defaultValue: "",
+                      disabled: true,
+                      "aria-label": `${preset.name} value`,
+                      children: [
+                        /* @__PURE__ */ jsxDEV("option", { value: "", children: "Select value" }, void 0, false, {
+                          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                          lineNumber: 116,
+                          columnNumber: 21
+                        }, this),
+                        preset.values.map((value) => /* @__PURE__ */ jsxDEV("option", { value, children: value }, value, false, {
+                          fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                          lineNumber: 117,
+                          columnNumber: 51
+                        }, this))
+                      ]
+                    },
+                    void 0,
+                    true,
+                    {
+                      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                      lineNumber: 109,
+                      columnNumber: 17
+                    },
+                    this
+                  ) : null,
+                  /* @__PURE__ */ jsxDEV("div", { className: "textPresetCard__meta", children: [
+                    /* @__PURE__ */ jsxDEV("span", { className: preset.mode === "user" ? "textPresetTypeUser" : "textPresetTypeFixed", children: preset.mode === "user" ? "User entered" : "Fixed" }, void 0, false, {
+                      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                      lineNumber: 122,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("span", { className: preset.printed ? "textPresetPrintPrinted" : "textPresetPrintHidden", children: preset.printed ? "Printed" : "Not printed" }, void 0, false, {
+                      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                      lineNumber: 125,
+                      columnNumber: 19
+                    }, this),
+                    /* @__PURE__ */ jsxDEV("span", { children: [
+                      /* @__PURE__ */ jsxDEV("span", { className: "textPresetMaxLabel", children: "Max" }, void 0, false, {
+                        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                        lineNumber: 128,
+                        columnNumber: 25
+                      }, this),
+                      ": ",
+                      preset.maxCharacters
+                    ] }, void 0, true, {
+                      fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                      lineNumber: 128,
+                      columnNumber: 19
+                    }, this)
+                  ] }, void 0, true, {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                    lineNumber: 121,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("div", { className: "textPresetCard__status", "data-text-preset-status": preset.id }, void 0, false, {
+                    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                    lineNumber: 130,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                  lineNumber: 94,
+                  columnNumber: 17
+                }, this)
+              ] }, preset.id, true, {
+                fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+                lineNumber: 90,
+                columnNumber: 13
+              }, this)
+            ) }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+              lineNumber: 88,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+            lineNumber: 71,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "modal__actions textFieldModal__actions", children: [
+            /* @__PURE__ */ jsxDEV("div", { id: "textFieldPresetError", className: "note textFieldModal__error", "aria-live": "polite" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+              lineNumber: 139,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("button", { id: "btnCancelTextField", className: "btn btn--text", type: "button", children: "Cancel" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+              lineNumber: 140,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("button", { id: "btnConfirmTextField", className: "btn btn--primary", type: "button", children: "Add" }, void 0, false, {
+              fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+              lineNumber: 141,
+              columnNumber: 11
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+            lineNumber: 138,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+        lineNumber: 55,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, true, {
+    fileName: "C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx",
+    lineNumber: 53,
+    columnNumber: 5
+  }, this);
+}
+_c = TextFieldModal;
+var _c;
+$RefreshReg$(_c, "TextFieldModal");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/src/components/TextFieldModal.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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O0FBQUE7QUFBQTtBQUFBLGlCQWlFQTtBQUFBLFVBRUEsdUJBQUMsU0FBSSxXQUFVLDBDQUNiO0FBQUEsbUNBQUMsU0FBSSxJQUFHLHdCQUF1QixXQUFVLDhCQUE2QixhQUFVLFlBQWhGO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBQXlGO0FBQUEsWUFDekYsdUJBQUMsWUFBTyxJQUFHLHNCQUFxQixXQUFVLGlCQUFnQixNQUFLLFVBQVMsc0JBQXhFO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBQThFO0FBQUEsWUFDOUUsdUJBQUMsWUFBTyxJQUFHLHVCQUFzQixXQUFVLG9CQUFtQixNQUFLLFVBQVMsbUJBQTVFO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBQStFO0FBQUEsZUFIakY7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFJQTtBQUFBO0FBQUE7QUFBQSxNQXZGRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUF3RkE7QUFBQSxPQTFGRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBMkZBO0FBRUo7QUFBQ1UsS0EvRmVIO0FBQWMsSUFBQUc7QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsiRnJhZ21lbnQiLCJURVhUX1BSRVNFVF9DQVJEUyIsImlkIiwibmFtZSIsInZhbHVlIiwibW9kZSIsIm1heENoYXJhY3RlcnMiLCJwcmludGVkIiwidmFsdWVzIiwiVGV4dEZpZWxkTW9kYWwiLCJtYXAiLCJwcmVzZXQiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJUZXh0RmllbGRNb2RhbC50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRnJhZ21lbnQgfSBmcm9tICdyZWFjdCc7XG5cbnR5cGUgVGV4dFByZXNldENhcmQgPSB7XG4gIGlkOiBzdHJpbmc7XG4gIG5hbWU6IHN0cmluZztcbiAgdmFsdWU/OiBzdHJpbmc7XG4gIHZhbHVlcz86IHN0cmluZ1tdO1xuICBtb2RlOiAnZml4ZWQnIHwgJ3VzZXInO1xuICBtYXhDaGFyYWN0ZXJzOiBzdHJpbmc7XG4gIHByaW50ZWQ6IGJvb2xlYW47XG59O1xuXG5jb25zdCBURVhUX1BSRVNFVF9DQVJEUzogVGV4dFByZXNldENhcmRbXSA9IFtcbiAgeyBpZDogJ2d0aW4nLCBuYW1lOiAnR1RJTicsIHZhbHVlOiAnMDAwMDAwMDAwMDAwMDAnLCBtb2RlOiAndXNlcicsIG1heENoYXJhY3RlcnM6ICcxNCcsIHByaW50ZWQ6IGZhbHNlIH0sXG4gIHsgaWQ6ICdndGluMicsIG5hbWU6ICdHVElOMicsIHZhbHVlOiAnMDAwMDAwMDAwMDAwMDAnLCBtb2RlOiAndXNlcicsIG1heENoYXJhY3RlcnM6ICcxNCcsIHByaW50ZWQ6IGZhbHNlIH0sXG4gIHsgaWQ6ICdib3hfY291bnRlcicsIG5hbWU6ICdCT1hfQ09VTlRFUicsIHZhbHVlOiAnMDAwMDAnLCBtb2RlOiAndXNlcicsIG1heENoYXJhY3RlcnM6ICc1JywgcHJpbnRlZDogZmFsc2UgfSxcbiAgeyBpZDogJ2tyaXB0bycsIG5hbWU6ICdLUklQVE8nLCB2YWx1ZTogJzAwMDAnLCBtb2RlOiAndXNlcicsIG1heENoYXJhY3RlcnM6ICc0JywgcHJpbnRlZDogZmFsc2UgfSxcbiAgeyBpZDogJ2tyaXB0bzInLCBuYW1lOiAnS1JJUFRPMicsIHZhbHVlOiAnMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAnLCBtb2RlOiAndXNlcicsIG1heENoYXJhY3RlcnM6ICc0NCcsIHByaW50ZWQ6IGZhbHNlIH0sXG4gIHsgaWQ6ICdzbicsIG5hbWU6ICdTTicsIHZhbHVlczogWycwMDAwMDAnLCAnMDAwMDAwMDAwMDAwMCddLCBtb2RlOiAndXNlcicsIG1heENoYXJhY3RlcnM6ICc2IC8gMTMnLCBwcmludGVkOiBmYWxzZSB9LFxuICB7IGlkOiAnYzEnLCBuYW1lOiAnQzEnLCB2YWx1ZTogJ34xMDEnLCBtb2RlOiAnZml4ZWQnLCBtYXhDaGFyYWN0ZXJzOiAnNCcsIHByaW50ZWQ6IGZhbHNlIH0sXG4gIHsgaWQ6ICdjMicsIG5hbWU6ICdDMicsIHZhbHVlOiAnMjEnLCBtb2RlOiAnZml4ZWQnLCBtYXhDaGFyYWN0ZXJzOiAnMicsIHByaW50ZWQ6IGZhbHNlIH0sXG4gIHsgaWQ6ICdjMycsIG5hbWU6ICdDMycsIHZhbHVlczogWyd+ZDAyOTkxJywgJ35kMDI5OTMnXSwgbW9kZTogJ2ZpeGVkJywgbWF4Q2hhcmFjdGVyczogJzcnLCBwcmludGVkOiBmYWxzZSB9LFxuICB7IGlkOiAnYzQnLCBuYW1lOiAnQzQnLCB2YWx1ZTogJ35kMDI5OTInLCBtb2RlOiAnZml4ZWQnLCBtYXhDaGFyYWN0ZXJzOiAnNycsIHByaW50ZWQ6IGZhbHNlIH0sXG4gIHsgaWQ6ICdwcm9kdWN0X2RhdGUnLCBuYW1lOiAnUFJPRFVDVF9EQVRFJywgdmFsdWU6ICcwMDAwMDAwMDAwJywgbW9kZTogJ3VzZXInLCBtYXhDaGFyYWN0ZXJzOiAn4oCUJywgcHJpbnRlZDogdHJ1ZSB9LFxuICB7IGlkOiAncGFja2luZ19kYXRlJywgbmFtZTogJ1BBQ0tJTkdfREFURScsIHZhbHVlOiAnMDAwMDAwMDAwMCcsIG1vZGU6ICd1c2VyJywgbWF4Q2hhcmFjdGVyczogJ+KAlCcsIHByaW50ZWQ6IHRydWUgfSxcbiAgeyBpZDogJ2V4cGlyYXRpb25fZGF0ZScsIG5hbWU6ICdFWFBJUkFUSU9OX0RBVEUnLCB2YWx1ZTogJzAwMDAwMDAwMDAnLCBtb2RlOiAndXNlcicsIG1heENoYXJhY3RlcnM6ICfigJQnLCBwcmludGVkOiB0cnVlIH0sXG4gIHsgaWQ6ICdwYXJ0eScsIG5hbWU6ICdQQVJUWScsIHZhbHVlOiAnMDAwMDAwMDAnLCBtb2RlOiAndXNlcicsIG1heENoYXJhY3RlcnM6ICfigJQnLCBwcmludGVkOiB0cnVlIH0sXG4gIHsgaWQ6ICdyX251bScsIG5hbWU6ICdSX05VTScsIHZhbHVlOiAnMDAwJywgbW9kZTogJ3VzZXInLCBtYXhDaGFyYWN0ZXJzOiAn4oCUJywgcHJpbnRlZDogdHJ1ZSB9LFxuICB7IGlkOiAndGVhbScsIG5hbWU6ICdURUFNJywgdmFsdWU6ICcwMCcsIG1vZGU6ICd1c2VyJywgbWF4Q2hhcmFjdGVyczogJ+KAlCcsIHByaW50ZWQ6IHRydWUgfSxcbl07XG5cbmV4cG9ydCBmdW5jdGlvbiBUZXh0RmllbGRNb2RhbCgpIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGlkPVwidGV4dEZpZWxkTW9kYWxcIiBjbGFzc05hbWU9XCJtb2RhbCBtb2RhbC0tdGV4dC1maWVsZCBoaWRkZW5cIiBhcmlhLWhpZGRlbj1cInRydWVcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX2JhY2tkcm9wXCIgZGF0YS1tb2RhbC1jbG9zZT1cIjFcIj48L2Rpdj5cbiAgICAgIDxkaXZcbiAgICAgICAgY2xhc3NOYW1lPVwibW9kYWxfX2NhcmQgbW9kYWxfX2NhcmQtLXRleHQtZmllbGQgc3VyZmFjZS1jYXJkXCJcbiAgICAgICAgcm9sZT1cImRpYWxvZ1wiXG4gICAgICAgIGFyaWEtbW9kYWw9XCJ0cnVlXCJcbiAgICAgICAgYXJpYS1sYWJlbGxlZGJ5PVwidGV4dEZpZWxkTW9kYWxUaXRsZVwiXG4gICAgICAgIGFyaWEtZGVzY3JpYmVkYnk9XCJ0ZXh0RmllbGRNb2RhbFN1YnRpdGxlXCJcbiAgICAgID5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtb2RhbF9faGVhZGVyIHRleHRGaWVsZE1vZGFsX19oZWFkZXJcIj5cbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtb2RhbF9fdGl0bGVcIiBpZD1cInRleHRGaWVsZE1vZGFsVGl0bGVcIj5BZGQgdGV4dCBmaWVsZDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtb2RhbF9fc3VidGl0bGVcIiBpZD1cInRleHRGaWVsZE1vZGFsU3VidGl0bGVcIj5cbiAgICAgICAgICAgICAgQWRkIGEgcmVndWxhciBmaXhlZCB0ZXh0IGZpZWxkIG9yIHNlbGVjdCBvbmUgb3IgbW9yZSByZWFkeS1tYWRlIGZpZWxkcy5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHRGaWVsZE1vZGFsX19jb250ZW50XCI+XG4gICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cInRleHRGaWVsZE1vZGVDYXJkXCIgaHRtbEZvcj1cInRleHRGaWVsZE1vZGVGaXhlZFwiPlxuICAgICAgICAgICAgPGlucHV0IGlkPVwidGV4dEZpZWxkTW9kZUZpeGVkXCIgbmFtZT1cInRleHRGaWVsZE1vZGVcIiB0eXBlPVwicmFkaW9cIiB2YWx1ZT1cImZpeGVkXCIgZGVmYXVsdENoZWNrZWQgLz5cbiAgICAgICAgICAgIDxzcGFuPlxuICAgICAgICAgICAgICA8c3Ryb25nIGlkPVwidGV4dEZpZWxkTW9kZUZpeGVkVGl0bGVcIj5GaXhlZCB0ZXh0PC9zdHJvbmc+XG4gICAgICAgICAgICAgIDxzbWFsbCBpZD1cInRleHRGaWVsZE1vZGVGaXhlZERlc2NyaXB0aW9uXCI+Q3JlYXRlIHRoZSBzYW1lIGVkaXRhYmxlIGZpeGVkIHRleHQgZmllbGQgYXMgYmVmb3JlLjwvc21hbGw+XG4gICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgPC9sYWJlbD5cblxuICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9XCJ0ZXh0RmllbGRNb2RlQ2FyZFwiIGh0bWxGb3I9XCJ0ZXh0RmllbGRNb2RlUHJlc2V0c1wiPlxuICAgICAgICAgICAgPGlucHV0IGlkPVwidGV4dEZpZWxkTW9kZVByZXNldHNcIiBuYW1lPVwidGV4dEZpZWxkTW9kZVwiIHR5cGU9XCJyYWRpb1wiIHZhbHVlPVwicHJlc2V0c1wiIC8+XG4gICAgICAgICAgICA8c3Bhbj5cbiAgICAgICAgICAgICAgPHN0cm9uZyBpZD1cInRleHRGaWVsZE1vZGVQcmVzZXRzVGl0bGVcIj5SZWFkeS1tYWRlIGZpZWxkczwvc3Ryb25nPlxuICAgICAgICAgICAgICA8c21hbGwgaWQ9XCJ0ZXh0RmllbGRNb2RlUHJlc2V0c0Rlc2NyaXB0aW9uXCI+U2VsZWN0IHNldmVyYWwgZmllbGRzIHRvIGFkZCB0aGVtIGluIG9uZSB2ZXJ0aWNhbCBzdGFjay48L3NtYWxsPlxuICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgIDwvbGFiZWw+XG5cbiAgICAgICAgICA8ZGl2IGlkPVwidGV4dEZpZWxkUHJlc2V0TGlzdFwiIGNsYXNzTmFtZT1cInRleHRQcmVzZXRMaXN0XCI+XG4gICAgICAgICAgICB7VEVYVF9QUkVTRVRfQ0FSRFMubWFwKChwcmVzZXQpID0+IChcbiAgICAgICAgICAgICAgPEZyYWdtZW50IGtleT17cHJlc2V0LmlkfT5cbiAgICAgICAgICAgICAgICB7cHJlc2V0LmlkID09PSAncHJvZHVjdF9kYXRlJyA/IChcbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dFByZXNldExpc3RfX2RpdmlkZXJcIiBhcmlhLWhpZGRlbj1cInRydWVcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICApIDogbnVsbH1cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHRQcmVzZXRDYXJkXCIgZGF0YS10ZXh0LXByZXNldC1yb3c9e3ByZXNldC5pZH0+XG4gICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cInRleHRQcmVzZXRDYXJkX19tYWluXCIgaHRtbEZvcj17YHRleHRQcmVzZXQtJHtwcmVzZXQuaWR9YH0+XG4gICAgICAgICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgICAgICAgaWQ9e2B0ZXh0UHJlc2V0LSR7cHJlc2V0LmlkfWB9XG4gICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInRleHRQcmVzZXRDYXJkX19jaGVja2JveFwiXG4gICAgICAgICAgICAgICAgICAgIHR5cGU9XCJjaGVja2JveFwiXG4gICAgICAgICAgICAgICAgICAgIGRhdGEtdGV4dC1wcmVzZXQ9e3ByZXNldC5pZH1cbiAgICAgICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ0ZXh0UHJlc2V0Q2FyZF9fY29weVwiPlxuICAgICAgICAgICAgICAgICAgICA8c3Ryb25nPntwcmVzZXQubmFtZX08L3N0cm9uZz5cbiAgICAgICAgICAgICAgICAgICAge3ByZXNldC52YWx1ZSA/IDxjb2RlPntwcmVzZXQudmFsdWV9PC9jb2RlPiA6IG51bGx9XG4gICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgPC9sYWJlbD5cblxuICAgICAgICAgICAgICAgIHtwcmVzZXQudmFsdWVzID8gKFxuICAgICAgICAgICAgICAgICAgPHNlbGVjdFxuICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJzZWxlY3QgdGV4dFByZXNldENhcmRfX3ZhcmlhbnRcIlxuICAgICAgICAgICAgICAgICAgICBkYXRhLXRleHQtcHJlc2V0LXZhbHVlPXtwcmVzZXQuaWR9XG4gICAgICAgICAgICAgICAgICAgIGRlZmF1bHRWYWx1ZT1cIlwiXG4gICAgICAgICAgICAgICAgICAgIGRpc2FibGVkXG4gICAgICAgICAgICAgICAgICAgIGFyaWEtbGFiZWw9e2Ake3ByZXNldC5uYW1lfSB2YWx1ZWB9XG4gICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJcIj5TZWxlY3QgdmFsdWU8L29wdGlvbj5cbiAgICAgICAgICAgICAgICAgICAge3ByZXNldC52YWx1ZXMubWFwKCh2YWx1ZSkgPT4gPG9wdGlvbiB2YWx1ZT17dmFsdWV9IGtleT17dmFsdWV9Pnt2YWx1ZX08L29wdGlvbj4pfVxuICAgICAgICAgICAgICAgICAgPC9zZWxlY3Q+XG4gICAgICAgICAgICAgICAgKSA6IG51bGx9XG5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHRQcmVzZXRDYXJkX19tZXRhXCI+XG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9e3ByZXNldC5tb2RlID09PSAndXNlcicgPyAndGV4dFByZXNldFR5cGVVc2VyJyA6ICd0ZXh0UHJlc2V0VHlwZUZpeGVkJ30+XG4gICAgICAgICAgICAgICAgICAgIHtwcmVzZXQubW9kZSA9PT0gJ3VzZXInID8gJ1VzZXIgZW50ZXJlZCcgOiAnRml4ZWQnfVxuICAgICAgICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtwcmVzZXQucHJpbnRlZCA/ICd0ZXh0UHJlc2V0UHJpbnRQcmludGVkJyA6ICd0ZXh0UHJlc2V0UHJpbnRIaWRkZW4nfT5cbiAgICAgICAgICAgICAgICAgICAge3ByZXNldC5wcmludGVkID8gJ1ByaW50ZWQnIDogJ05vdCBwcmludGVkJ31cbiAgICAgICAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgIDxzcGFuPjxzcGFuIGNsYXNzTmFtZT1cInRleHRQcmVzZXRNYXhMYWJlbFwiPk1heDwvc3Bhbj46IHtwcmVzZXQubWF4Q2hhcmFjdGVyc308L3NwYW4+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0ZXh0UHJlc2V0Q2FyZF9fc3RhdHVzXCIgZGF0YS10ZXh0LXByZXNldC1zdGF0dXM9e3ByZXNldC5pZH0+PC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvRnJhZ21lbnQ+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1vZGFsX19hY3Rpb25zIHRleHRGaWVsZE1vZGFsX19hY3Rpb25zXCI+XG4gICAgICAgICAgPGRpdiBpZD1cInRleHRGaWVsZFByZXNldEVycm9yXCIgY2xhc3NOYW1lPVwibm90ZSB0ZXh0RmllbGRNb2RhbF9fZXJyb3JcIiBhcmlhLWxpdmU9XCJwb2xpdGVcIj48L2Rpdj5cbiAgICAgICAgICA8YnV0dG9uIGlkPVwiYnRuQ2FuY2VsVGV4dEZpZWxkXCIgY2xhc3NOYW1lPVwiYnRuIGJ0bi0tdGV4dFwiIHR5cGU9XCJidXR0b25cIj5DYW5jZWw8L2J1dHRvbj5cbiAgICAgICAgICA8YnV0dG9uIGlkPVwiYnRuQ29uZmlybVRleHRGaWVsZFwiIGNsYXNzTmFtZT1cImJ0biBidG4tLXByaW1hcnlcIiB0eXBlPVwiYnV0dG9uXCI+QWRkPC9idXR0b24+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICk7XG59XG4iXSwiZmlsZSI6IkM6L1VzZXJzL0dpZ2FHZW9yZ2UvRGVza3RvcC93aWxsb3ctcmVhY3Qtdml0ZS10ZXN0XzEuNC4wL3NyYy9jb21wb25lbnRzL1RleHRGaWVsZE1vZGFsLnRzeCJ9

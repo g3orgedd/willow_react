@@ -1,0 +1,75 @@
+4540ccfc PUSH EBP
+4540ccfd MOV EBP,ESP
+4540ccff MOV EDX,dword ptr [EBP + 0xc]
+4540cd02 ADD EDX,dword ptr [EBP + 0x8]
+4540cd05 PUSH EBX
+4540cd06 PUSH ESI
+4540cd07 MOV ESI,ECX
+4540cd09 SHL EDX,0x5
+4540cd0c PUSH EDI
+4540cd0d XOR ECX,ECX
+4540cd0f MOV EDI,dword ptr [ESI + 0x24]
+4540cd12 MOV EAX,dword ptr [ESI + 0x90]
+4540cd18 MOV EBX,dword ptr [EDI + EDX*0x1 + 0x8]
+4540cd1c SUB EBX,dword ptr [ESI + 0x100]
+4540cd22 SAR EBX,0x1
+4540cd24 MOVZX EAX,word ptr [EAX + EBX*0x2]
+4540cd28 ADD EBX,EAX
+4540cd2a MOV EAX,0x400
+4540cd2f MOV dword ptr [EBP + 0xc],EBX
+4540cd32 TEST word ptr [EDI + EDX*0x1 + 0x4],AX
+4540cd37 JZ 0x4540cd67
+4540cd39 MOV EBX,dword ptr [EBP + 0x10]
+4540cd3c INC EBX
+4540cd3d CMP EBX,dword ptr [EDI + EDX*0x1 + 0x10]
+4540cd41 JNC 0x4540cd5a
+4540cd43 MOV EAX,dword ptr [ESI + 0x6c]
+4540cd46 ADD EAX,dword ptr [EBP + 0xc]
+4540cd49 ADD EAX,dword ptr [EBP + 0x10]
+4540cd4c TEST byte ptr [EAX],0x2
+4540cd4f JZ 0x4540cd5a
+4540cd51 INC ECX
+4540cd52 DEC EAX
+4540cd53 INC EBX
+4540cd54 CMP EBX,dword ptr [EDI + EDX*0x1 + 0x10]
+4540cd58 JC 0x4540cd4c
+4540cd5a ADD dword ptr [EDI + EDX*0x1 + 0x14],ECX
+4540cd5e MOV EAX,dword ptr [ESI + 0x24]
+4540cd61 SUB dword ptr [EAX + EDX*0x1 + 0x10],ECX
+4540cd65 JMP 0x4540cd84
+4540cd67 CMP dword ptr [EBP + 0x10],ECX
+4540cd6a JL 0x4540cd80
+4540cd6c MOV EAX,dword ptr [ESI + 0x6c]
+4540cd6f ADD EAX,EBX
+4540cd71 ADD EAX,dword ptr [EBP + 0x10]
+4540cd74 TEST byte ptr [EAX],0x2
+4540cd77 JZ 0x4540cd80
+4540cd79 INC ECX
+4540cd7a DEC EAX
+4540cd7b CMP ECX,dword ptr [EBP + 0x10]
+4540cd7e JLE 0x4540cd74
+4540cd80 SUB dword ptr [EDI + EDX*0x1 + 0x10],ECX
+4540cd84 MOV EAX,dword ptr [ESI + 0x24]
+4540cd87 SUB dword ptr [EAX + EDX*0x1 + 0xc],ECX
+4540cd8b TEST ECX,ECX
+4540cd8d JLE 0x4540cdb5
+4540cd8f MOV ECX,dword ptr [ESI + 0x24]
+4540cd92 XOR EBX,EBX
+4540cd94 ADD ECX,EDX
+4540cd96 MOV EDI,dword ptr [ECX + 0x10]
+4540cd99 MOV dword ptr [ECX + 0x18],EBX
+4540cd9c TEST EDI,EDI
+4540cd9e JLE 0x4540cdb5
+4540cda0 MOV EDX,dword ptr [ECX + 0x14]
+4540cda3 SHL EDX,0x2
+4540cda6 MOV EAX,dword ptr [ESI + 0x48]
+4540cda9 ADD EBX,dword ptr [EAX + EDX*0x1]
+4540cdac LEA EDX,[EDX + 0x4]
+4540cdaf MOV dword ptr [ECX + 0x18],EBX
+4540cdb2 DEC EDI
+4540cdb3 JNZ 0x4540cda6
+4540cdb5 POP EDI
+4540cdb6 POP ESI
+4540cdb7 POP EBX
+4540cdb8 POP EBP
+4540cdb9 RET 0xc

@@ -1,0 +1,1756 @@
+{
+  "name": "CLCSSmallBarcode.dll",
+  "source": "C:\\Program Files (x86)\\CLARICOM\\Data\\CLCSSmallBarcode.dll",
+  "size": 855552,
+  "sha256": "7068b4674e98d4ed44f6025b44dc170f277adeef0929be20a817019a863324d9",
+  "imageBase": "42000000",
+  "exports": [
+    {
+      "name": "DllCanUnloadNow",
+      "ordinal": 1,
+      "va": "4204300b"
+    },
+    {
+      "name": "DllGetClassObject",
+      "ordinal": 2,
+      "va": "42043017"
+    },
+    {
+      "name": "DllRegisterServer",
+      "ordinal": 3,
+      "va": "42043067"
+    },
+    {
+      "name": "DllUnregisterServer",
+      "ordinal": 4,
+      "va": "42043076"
+    }
+  ],
+  "imports": [
+    {
+      "library": "KERNEL32.dll",
+      "names": [
+        "SetEnvironmentVariableA",
+        "ReadConsoleW",
+        "FlushFileBuffers",
+        "WriteConsoleW",
+        "SetStdHandle",
+        "SetFilePointerEx",
+        "GetConsoleMode",
+        "GetConsoleCP",
+        "LCMapStringW",
+        "CompareStringW",
+        "FreeEnvironmentStringsW",
+        "GetEnvironmentStringsW",
+        "GetCurrentProcessId",
+        "QueryPerformanceCounter",
+        "GetModuleFileNameA",
+        "GetFileType",
+        "GetStartupInfoW",
+        "TlsFree",
+        "TlsSetValue",
+        "TlsGetValue",
+        "TlsAlloc",
+        "ExpandEnvironmentStringsA",
+        "Sleep",
+        "SetUnhandledExceptionFilter",
+        "UnhandledExceptionFilter",
+        "GetStdHandle",
+        "HeapReAlloc",
+        "HeapSize",
+        "GetModuleHandleExW",
+        "ExitProcess",
+        "GetCPInfo",
+        "GetOEMCP",
+        "GetACP",
+        "IsValidCodePage",
+        "GetCommandLineA",
+        "GetTimeZoneInformation",
+        "GetSystemTimeAsFileTime",
+        "RtlUnwind",
+        "VirtualFree",
+        "VirtualAlloc",
+        "IsProcessorFeaturePresent",
+        "InterlockedPushEntrySList",
+        "InterlockedPopEntrySList",
+        "LoadLibraryExA",
+        "FindResourceW",
+        "lstrcmpiW",
+        "SizeofResource",
+        "LockResource",
+        "LoadResource",
+        "LoadLibraryExW",
+        "GetModuleFileNameW",
+        "FreeLibrary",
+        "DisableThreadLibraryCalls",
+        "DecodePointer",
+        "EncodePointer",
+        "SetLastError",
+        "FlushInstructionCache",
+        "GetCurrentThreadId",
+        "GetCurrentProcess",
+        "LeaveCriticalSection",
+        "EnterCriticalSection",
+        "DeleteCriticalSection",
+        "InitializeCriticalSectionAndSpinCount",
+        "RaiseException",
+        "GetTimeFormatW",
+        "OutputDebugStringA",
+        "GetDateFormatW",
+        "GetPrivateProfileIntW",
+        "CreateProcessW",
+        "WaitForSingleObject",
+        "GetCommandLineW",
+        "GetLastError",
+        "CloseHandle",
+        "WriteFile",
+        "ReadFile",
+        "CreateFileW",
+        "FormatMessageW",
+        "GetProcAddress",
+        "GetModuleHandleW",
+        "CreateDirectoryW",
+        "WritePrivateProfileStringW",
+        "GetPrivateProfileStringW",
+        "LocalFree",
+        "OutputDebugStringW",
+        "DebugBreak",
+        "FindFirstFileW",
+        "FindClose",
+        "WideCharToMultiByte",
+        "InitializeSListHead",
+        "GetProcessHeap",
+        "HeapFree",
+        "HeapAlloc",
+        "IsDebuggerPresent",
+        "MultiByteToWideChar",
+        "GetStringTypeW",
+        "lstrlenW",
+        "lstrlenA",
+        "MulDiv",
+        "GetLocalTime",
+        "TerminateProcess"
+      ]
+    },
+    {
+      "library": "USER32.dll",
+      "names": [
+        "GetDC",
+        "ReleaseDC",
+        "CharNextW",
+        "LoadBitmapW",
+        "IsWindowVisible",
+        "SetWindowTextW",
+        "GetWindowRect",
+        "ScreenToClient",
+        "MoveWindow",
+        "LoadStringW",
+        "SendDlgItemMessageW",
+        "WinHelpW",
+        "IsDialogMessageW",
+        "GetDialogBaseUnits",
+        "LoadCursorW",
+        "SetCursor",
+        "IsWindowEnabled",
+        "GetActiveWindow",
+        "SetDlgItemInt",
+        "DialogBoxParamW",
+        "CreateDialogParamW",
+        "IsWindow",
+        "PostMessageW",
+        "DestroyWindow",
+        "CallWindowProcW",
+        "DefWindowProcW",
+        "GetWindowTextLengthW",
+        "GetWindowTextW",
+        "EndPaint",
+        "BeginPaint",
+        "EnableWindow",
+        "SetFocus",
+        "ShowWindow",
+        "UnregisterClassW",
+        "GetMonitorInfoW",
+        "MonitorFromWindow",
+        "LoadImageW",
+        "GetWindow",
+        "SetWindowLongW",
+        "GetWindowLongW",
+        "MapWindowPoints",
+        "GetClientRect",
+        "GetDlgItem",
+        "EndDialog",
+        "SetWindowPos",
+        "SendMessageW",
+        "CharUpperW",
+        "MessageBoxW",
+        "UnionRect",
+        "SetRect",
+        "FillRect",
+        "GetParent"
+      ]
+    },
+    {
+      "library": "GDI32.dll",
+      "names": [
+        "GetTextExtentPointW",
+        "GetDeviceCaps",
+        "SetBkMode",
+        "SetWindowExtEx",
+        "SetViewportExtEx",
+        "StretchBlt",
+        "SetMapMode",
+        "GetWindowExtEx",
+        "GetViewportExtEx",
+        "CreateCompatibleBitmap",
+        "BitBlt",
+        "CreateDIBSection",
+        "GetStockObject",
+        "DeleteDC",
+        "CreateCompatibleDC",
+        "ExtTextOutW",
+        "GetObjectW",
+        "GetTextMetricsW",
+        "SetTextColor",
+        "SetBkColor",
+        "GetTextExtentExPointW",
+        "GetTextColor",
+        "GetCurrentObject",
+        "GetBkColor",
+        "Rectangle",
+        "CreateSolidBrush",
+        "CreatePen",
+        "SelectObject",
+        "GetTextExtentPoint32W",
+        "DeleteObject",
+        "CreateFontIndirectW"
+      ]
+    },
+    {
+      "library": "ADVAPI32.dll",
+      "names": [
+        "RegOpenKeyExA",
+        "RegCreateKeyExW",
+        "RegOpenKeyExW",
+        "RegQueryValueExW",
+        "RegSetValueExW",
+        "RegDeleteKeyW",
+        "RegDeleteValueW",
+        "RegQueryValueExA",
+        "RegCloseKey",
+        "RegQueryInfoKeyW",
+        "RegEnumKeyExW"
+      ]
+    },
+    {
+      "library": "SHELL32.dll",
+      "names": [
+        "SHGetFolderPathW"
+      ]
+    },
+    {
+      "library": "ole32.dll",
+      "names": [
+        "CoUninitialize",
+        "CoCreateInstance",
+        "CoInitialize",
+        "OleRun",
+        "CoTaskMemFree",
+        "CoTaskMemAlloc",
+        "CLSIDFromString",
+        "CLSIDFromProgID",
+        "CoCreateFreeThreadedMarshaler",
+        "CoTaskMemRealloc",
+        "StringFromGUID2"
+      ]
+    },
+    {
+      "library": "OLEAUT32.dll",
+      "names": [
+        "SysAllocString",
+        "SysAllocStringLen",
+        "SysFreeString",
+        "SysStringLen",
+        "SysStringByteLen",
+        "SysAllocStringByteLen",
+        "VariantInit",
+        "VariantClear",
+        "VarBstrCmp",
+        "VarBstrCat",
+        "SystemTimeToVariantTime",
+        "SysReAllocStringLen",
+        "GetErrorInfo",
+        "VariantTimeToSystemTime",
+        "VariantCopy",
+        "VarUI4FromStr",
+        "LoadTypeLib",
+        "RegisterTypeLib",
+        "UnRegisterTypeLib",
+        "OleCreatePropertyFrame"
+      ]
+    },
+    {
+      "library": "COMCTL32.dll",
+      "names": [
+        "PropertySheetW",
+        "DestroyPropertySheetPage",
+        "CreatePropertySheetPageW",
+        "ImageList_Add",
+        "ImageList_Create"
+      ]
+    }
+  ],
+  "interestingStrings": [
+    {
+      "va": "4208b9f8",
+      "fileOffset": 565240,
+      "encoding": "ascii",
+      "text": "CDataObjectMerge::GetDataObjects"
+    },
+    {
+      "va": "4208ba6c",
+      "fileOffset": 565356,
+      "encoding": "ascii",
+      "text": "CDataObjectMerge::PutDataObjects"
+    },
+    {
+      "va": "42091758",
+      "fileOffset": 589144,
+      "encoding": "ascii",
+      "text": "CRSSBarcodeBase::ValidateBarcodeData - Contains Invalid Characters"
+    },
+    {
+      "va": "420952c5",
+      "fileOffset": 604357,
+      "encoding": "ascii",
+      "text": "Rendering Data Matrix Barcode ECC200 Field: "
+    },
+    {
+      "va": "420952f5",
+      "fileOffset": 604405,
+      "encoding": "ascii",
+      "text": " Rendered Data Matrix ECC200 Barcode Field."
+    },
+    {
+      "va": "4209d438",
+      "fileOffset": 637496,
+      "encoding": "ascii",
+      "text": "CCapabilitiesCoder::BarcodesSupported - Couldn't get barcodes from the Capabilities"
+    },
+    {
+      "va": "4209d738",
+      "fileOffset": 638264,
+      "encoding": "ascii",
+      "text": "CDataMatrixProp::GenerateHumanReadable"
+    },
+    {
+      "va": "4209d7fc",
+      "fileOffset": 638460,
+      "encoding": "ascii",
+      "text": "CCLCSSmallBarcodeObj::DoDataMatrixResize"
+    },
+    {
+      "va": "4209d828",
+      "fileOffset": 638504,
+      "encoding": "ascii",
+      "text": "%s - Datamatrix Module Size %ld"
+    },
+    {
+      "va": "4209e048",
+      "fileOffset": 640584,
+      "encoding": "ascii",
+      "text": "CMicroPDF417BarcodeFieldProp::GenerateHumanReadable"
+    },
+    {
+      "va": "4209e07c",
+      "fileOffset": 640636,
+      "encoding": "ascii",
+      "text": "CMicroPDF417BarcodeFieldProp::PopulateModuleSizeCombo"
+    },
+    {
+      "va": "4209e143",
+      "fileOffset": 640835,
+      "encoding": "ascii",
+      "text": "BCCLCSSmallBarcodeObj::DoMicroPDF417Resize"
+    },
+    {
+      "va": "4209e326",
+      "fileOffset": 641318,
+      "encoding": "ascii",
+      "text": "V7CBarcode::GenerateHumanReadable"
+    },
+    {
+      "va": "4209e348",
+      "fileOffset": 641352,
+      "encoding": "ascii",
+      "text": "%s - pre-Resolve Default(%02x)"
+    },
+    {
+      "va": "4209e39f",
+      "fileOffset": 641439,
+      "encoding": "ascii",
+      "text": "@CSSmallBarcodeFieldProp::Activate - Unknown Barcode Type: %ld"
+    },
+    {
+      "va": "4209e3e8",
+      "fileOffset": 641512,
+      "encoding": "ascii",
+      "text": "CSmallBarcodeFieldProp::OnUIUpdate"
+    },
+    {
+      "va": "420a42e0",
+      "fileOffset": 665824,
+      "encoding": "ascii",
+      "text": "SetDefaultDllDirectories"
+    },
+    {
+      "va": "420a4350",
+      "fileOffset": 665936,
+      "encoding": "ascii",
+      "text": "GetUserDefaultLocaleName"
+    },
+    {
+      "va": "420a7000",
+      "fileOffset": 677376,
+      "encoding": "ascii",
+      "text": "`default constructor closure'"
+    },
+    {
+      "va": "420a73d8",
+      "fileOffset": 678360,
+      "encoding": "ascii",
+      "text": " Complete Object Locator'"
+    },
+    {
+      "va": "420a743c",
+      "fileOffset": 678460,
+      "encoding": "ascii",
+      "text": "GetUserObjectInformationW"
+    },
+    {
+      "va": "420a7500",
+      "fileOffset": 678656,
+      "encoding": "ascii",
+      "text": "C:\\AutomatedBuilds\\TFSTeamBuild\\Windows Applications\\Releases\\PCMS4.500\\CLARICOM\\Installation Directory\\PDB Files\\CLCSSmallBarcode.pdb"
+    },
+    {
+      "va": "420b5710",
+      "fileOffset": 736528,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.DLL"
+    },
+    {
+      "va": "420b5735",
+      "fileOffset": 736565,
+      "encoding": "ascii",
+      "text": "DllGetClassObject"
+    },
+    {
+      "va": "420b5d92",
+      "fileOffset": 738194,
+      "encoding": "ascii",
+      "text": "WaitForSingleObject"
+    },
+    {
+      "va": "420b6300",
+      "fileOffset": 739584,
+      "encoding": "ascii",
+      "text": "CreateFontIndirectW"
+    },
+    {
+      "va": "420b6316",
+      "fileOffset": 739606,
+      "encoding": "ascii",
+      "text": "DeleteObject"
+    },
+    {
+      "va": "420b633e",
+      "fileOffset": 739646,
+      "encoding": "ascii",
+      "text": "SelectObject"
+    },
+    {
+      "va": "420b6388",
+      "fileOffset": 739720,
+      "encoding": "ascii",
+      "text": "GetCurrentObject"
+    },
+    {
+      "va": "420b63f4",
+      "fileOffset": 739828,
+      "encoding": "ascii",
+      "text": "GetObjectW"
+    },
+    {
+      "va": "420b6432",
+      "fileOffset": 739890,
+      "encoding": "ascii",
+      "text": "GetStockObject"
+    },
+    {
+      "va": "420ba444",
+      "fileOffset": 755268,
+      "encoding": "ascii",
+      "text": ".?AVCCiffHelperUtil@@"
+    },
+    {
+      "va": "420ba464",
+      "fileOffset": 755300,
+      "encoding": "ascii",
+      "text": ".?AVCAllBarcodeRoot@@"
+    },
+    {
+      "va": "420ba484",
+      "fileOffset": 755332,
+      "encoding": "ascii",
+      "text": ".?AVC2DigitAddOnBarcode@@"
+    },
+    {
+      "va": "420ba4a8",
+      "fileOffset": 755368,
+      "encoding": "ascii",
+      "text": ".?AVCBarcodeBase@@"
+    },
+    {
+      "va": "420ba4c4",
+      "fileOffset": 755396,
+      "encoding": "ascii",
+      "text": ".?AVCCommonBarcode@@"
+    },
+    {
+      "va": "420ba4e4",
+      "fileOffset": 755428,
+      "encoding": "ascii",
+      "text": ".?AVC5DigitAddOnBarcode@@"
+    },
+    {
+      "va": "420ba588",
+      "fileOffset": 755592,
+      "encoding": "ascii",
+      "text": ".?AVCCommonBarcodeRender@@"
+    },
+    {
+      "va": "420ba5ac",
+      "fileOffset": 755628,
+      "encoding": "ascii",
+      "text": ".?AUTagTTFMFont@@"
+    },
+    {
+      "va": "420ba5c8",
+      "fileOffset": 755656,
+      "encoding": "ascii",
+      "text": ".?AVCTTFFontManager@@"
+    },
+    {
+      "va": "420ba604",
+      "fileOffset": 755716,
+      "encoding": "ascii",
+      "text": ".?AVCEAN13Barcode@@"
+    },
+    {
+      "va": "420ba620",
+      "fileOffset": 755744,
+      "encoding": "ascii",
+      "text": ".?AVCEAN8Barcode@@"
+    },
+    {
+      "va": "420ba6c0",
+      "fileOffset": 755904,
+      "encoding": "ascii",
+      "text": ".?AVCRSSBarcodeBase@@"
+    },
+    {
+      "va": "420ba7f4",
+      "fileOffset": 756212,
+      "encoding": "ascii",
+      "text": ".?AVCUPCABarcode@@"
+    },
+    {
+      "va": "420ba810",
+      "fileOffset": 756240,
+      "encoding": "ascii",
+      "text": ".?AVCUPCEBarcode@@"
+    },
+    {
+      "va": "420bad84",
+      "fileOffset": 757636,
+      "encoding": "ascii",
+      "text": ".?AVCSup2SmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420badb0",
+      "fileOffset": 757680,
+      "encoding": "ascii",
+      "text": ".?AVCOneDimensionSmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bade4",
+      "fileOffset": 757732,
+      "encoding": "ascii",
+      "text": ".?AVCSmallBarcodeObjHelperBase@@"
+    },
+    {
+      "va": "420bae10",
+      "fileOffset": 757776,
+      "encoding": "ascii",
+      "text": ".?AVCSup5SmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420baefc",
+      "fileOffset": 758012,
+      "encoding": "ascii",
+      "text": ".?AVCDataMatrixRender@@"
+    },
+    {
+      "va": "420baf44",
+      "fileOffset": 758084,
+      "encoding": "ascii",
+      "text": ".?AVCMicroPDF417BarcodeRender@@"
+    },
+    {
+      "va": "420baf8c",
+      "fileOffset": 758156,
+      "encoding": "ascii",
+      "text": ".?AVCQRBarcodeRender@@"
+    },
+    {
+      "va": "420bafe0",
+      "fileOffset": 758240,
+      "encoding": "ascii",
+      "text": ".?AVCLCSBarcodeCalcsBase@@"
+    },
+    {
+      "va": "420bb004",
+      "fileOffset": 758276,
+      "encoding": "ascii",
+      "text": ".?AVCLCSSmallBarcodeCalcs@@"
+    },
+    {
+      "va": "420bb028",
+      "fileOffset": 758312,
+      "encoding": "ascii",
+      "text": ".?AVCLCSCode39BarcodeCalcs@@"
+    },
+    {
+      "va": "420bb134",
+      "fileOffset": 758580,
+      "encoding": "ascii",
+      "text": ".?AVCRegObject@ATL@@"
+    },
+    {
+      "va": "420bb198",
+      "fileOffset": 758680,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bb1dc",
+      "fileOffset": 758748,
+      "encoding": "ascii",
+      "text": ".?AVCComObjectRootBase@ATL@@"
+    },
+    {
+      "va": "420bb260",
+      "fileOffset": 758880,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bb2fc",
+      "fileOffset": 759036,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bb494",
+      "fileOffset": 759444,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCLCSSmallBarcodeObj@@@ATL@@"
+    },
+    {
+      "va": "420bb4cc",
+      "fileOffset": 759500,
+      "encoding": "ascii",
+      "text": ".?AVCCLCSSmallBarcodeObj@@"
+    },
+    {
+      "va": "420bb4f0",
+      "fileOffset": 759536,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCCLCSSmallBarcodeObj@@$1?CLSID_CLCSSmallBarcodeObj@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "420bb730",
+      "fileOffset": 760112,
+      "encoding": "ascii",
+      "text": ".?AV?$CWindowImpl@VCCLCSSmallBarcodeObj@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@"
+    },
+    {
+      "va": "420bb7e8",
+      "fileOffset": 760296,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCCLCSSmallBarcodeObj@@@ATL@@"
+    },
+    {
+      "va": "420bb828",
+      "fileOffset": 760360,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObjectRootEx@VCComMultiThreadModelNoCS@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bb8e0",
+      "fileOffset": 760544,
+      "encoding": "ascii",
+      "text": ".?AVCSmallBarcodeFieldProp@@"
+    },
+    {
+      "va": "420bb908",
+      "fileOffset": 760584,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCSmallBarcodeFieldProp@@$1?CLSID_SmallBarcodeFieldProp@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "420bb970",
+      "fileOffset": 760688,
+      "encoding": "ascii",
+      "text": ".?AV?$IInternationalPropertyPageImpl@VCSmallBarcodeFieldProp@@$0GBOD@@@"
+    },
+    {
+      "va": "420bb9c0",
+      "fileOffset": 760768,
+      "encoding": "ascii",
+      "text": ".?AV?$IPropertyPageImpl@VCSmallBarcodeFieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bba00",
+      "fileOffset": 760832,
+      "encoding": "ascii",
+      "text": ".?AVCBarcodeCommonProp@@"
+    },
+    {
+      "va": "420bba28",
+      "fileOffset": 760872,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCSmallBarcodeFieldProp@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bba70",
+      "fileOffset": 760944,
+      "encoding": "ascii",
+      "text": ".?AV?$CLEventHandler@VCSmallBarcodeFieldProp@@@CLLanguageEventHandlerNamespace@@"
+    },
+    {
+      "va": "420bbacc",
+      "fileOffset": 761036,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCSmallBarcodeFieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bbb08",
+      "fileOffset": 761096,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCSmallBarcodeFieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bbd20",
+      "fileOffset": 761632,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCLCSCode39FieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bbd58",
+      "fileOffset": 761688,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCCLCSCode39FieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bbf94",
+      "fileOffset": 762260,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCEAN13PriceVerifierProp@@@ATL@@"
+    },
+    {
+      "va": "420bbfd0",
+      "fileOffset": 762320,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCEAN13PriceVerifierProp@@@ATL@@"
+    },
+    {
+      "va": "420bc1a4",
+      "fileOffset": 762788,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCRssProp2@@@ATL@@"
+    },
+    {
+      "va": "420bc1d0",
+      "fileOffset": 762832,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCRssProp2@@@ATL@@"
+    },
+    {
+      "va": "420bc200",
+      "fileOffset": 762880,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCDataMatrixProp@@@ATL@@"
+    },
+    {
+      "va": "420bc234",
+      "fileOffset": 762932,
+      "encoding": "ascii",
+      "text": ".?AVCDataMatrixProp@@"
+    },
+    {
+      "va": "420bc258",
+      "fileOffset": 762968,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCDataMatrixProp@@$1?CLSID_DataMatrixProp@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "420bc2b0",
+      "fileOffset": 763056,
+      "encoding": "ascii",
+      "text": ".?AV?$IInternationalPropertyPageImpl@VCDataMatrixProp@@$0GBOD@@@"
+    },
+    {
+      "va": "420bc2fc",
+      "fileOffset": 763132,
+      "encoding": "ascii",
+      "text": ".?AV?$IPropertyPageImpl@VCDataMatrixProp@@@ATL@@"
+    },
+    {
+      "va": "420bc338",
+      "fileOffset": 763192,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCDataMatrixProp@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bc37c",
+      "fileOffset": 763260,
+      "encoding": "ascii",
+      "text": ".?AVCDBarcodeModule@@"
+    },
+    {
+      "va": "420bc39c",
+      "fileOffset": 763292,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCDataMatrixProp@@@ATL@@"
+    },
+    {
+      "va": "420bc3d4",
+      "fileOffset": 763348,
+      "encoding": "ascii",
+      "text": ".?AVCMicroPDF417BarcodeFieldProp@@"
+    },
+    {
+      "va": "420bc400",
+      "fileOffset": 763392,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCMicroPDF417BarcodeFieldProp@@$1?CLSID_MicroPDF417BarcodeFieldProp@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "420bc470",
+      "fileOffset": 763504,
+      "encoding": "ascii",
+      "text": ".?AV?$IInternationalPropertyPageImpl@VCMicroPDF417BarcodeFieldProp@@$0GBOD@@@"
+    },
+    {
+      "va": "420bc4c8",
+      "fileOffset": 763592,
+      "encoding": "ascii",
+      "text": ".?AV?$IPropertyPageImpl@VCMicroPDF417BarcodeFieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bc510",
+      "fileOffset": 763664,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCMicroPDF417BarcodeFieldProp@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bc560",
+      "fileOffset": 763744,
+      "encoding": "ascii",
+      "text": ".?AV?$CLEventHandler@VCMicroPDF417BarcodeFieldProp@@@CLLanguageEventHandlerNamespace@@"
+    },
+    {
+      "va": "420bc5c0",
+      "fileOffset": 763840,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCMicroPDF417BarcodeFieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bc600",
+      "fileOffset": 763904,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCMicroPDF417BarcodeFieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bc644",
+      "fileOffset": 763972,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCQRBarcodeProperty@@@ATL@@"
+    },
+    {
+      "va": "420bc67c",
+      "fileOffset": 764028,
+      "encoding": "ascii",
+      "text": ".?AVCQRBarcodeProperty@@"
+    },
+    {
+      "va": "420bc6a0",
+      "fileOffset": 764064,
+      "encoding": "ascii",
+      "text": ".?AV?$CComCoClass@VCQRBarcodeProperty@@$1?CLSID_QRBarcodeProperty@@3U_GUID@@B@ATL@@"
+    },
+    {
+      "va": "420bc700",
+      "fileOffset": 764160,
+      "encoding": "ascii",
+      "text": ".?AV?$IInternationalPropertyPageImpl@VCQRBarcodeProperty@@$0GBOD@@@"
+    },
+    {
+      "va": "420bc74c",
+      "fileOffset": 764236,
+      "encoding": "ascii",
+      "text": ".?AV?$IPropertyPageImpl@VCQRBarcodeProperty@@@ATL@@"
+    },
+    {
+      "va": "420bc788",
+      "fileOffset": 764296,
+      "encoding": "ascii",
+      "text": ".?AV?$CDialogImpl@VCQRBarcodeProperty@@VCWindow@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bc7cc",
+      "fileOffset": 764364,
+      "encoding": "ascii",
+      "text": ".?AV?$CComAggObject@VCQRBarcodeProperty@@@ATL@@"
+    },
+    {
+      "va": "420bc808",
+      "fileOffset": 764424,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@V?$_Copy@UtagVARIANT@@@ATL@@V?$CCLVector@VCComVariant@ATL@@@@VCComSingleThreadModel@6@@ATL@@@ATL@@"
+    },
+    {
+      "va": "420bc8d0",
+      "fileOffset": 764624,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCCLCSSmallBarcodeObj@@@ATL@@"
+    },
+    {
+      "va": "420bc910",
+      "fileOffset": 764688,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCSmallBarcodeFieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bc958",
+      "fileOffset": 764760,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCCLCSCode39FieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bc998",
+      "fileOffset": 764824,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCEAN13PriceVerifierProp@@@ATL@@"
+    },
+    {
+      "va": "420bc9dc",
+      "fileOffset": 764892,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCRssProp2@@@ATL@@"
+    },
+    {
+      "va": "420bca14",
+      "fileOffset": 764948,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCDataMatrixProp@@@ATL@@"
+    },
+    {
+      "va": "420bca50",
+      "fileOffset": 765008,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCMicroPDF417BarcodeFieldProp@@@ATL@@"
+    },
+    {
+      "va": "420bca98",
+      "fileOffset": 765080,
+      "encoding": "ascii",
+      "text": ".?AV?$CComContainedObject@VCQRBarcodeProperty@@@ATL@@"
+    },
+    {
+      "va": "420bcb70",
+      "fileOffset": 765296,
+      "encoding": "ascii",
+      "text": ".?AV?$CComObject@VCCLCSToolBoxItem@@@ATL@@"
+    },
+    {
+      "va": "420bcba8",
+      "fileOffset": 765352,
+      "encoding": "ascii",
+      "text": ".?AV?$CLEventHandler@VCCLCSSmallBarcodeObj@@@CLLanguageEventHandlerNamespace@@"
+    },
+    {
+      "va": "420bcc00",
+      "fileOffset": 765440,
+      "encoding": "ascii",
+      "text": ".?AVCCode39SmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bcc30",
+      "fileOffset": 765488,
+      "encoding": "ascii",
+      "text": ".?AV?$CLEventHandler@VCDataMatrixProp@@@CLLanguageEventHandlerNamespace@@"
+    },
+    {
+      "va": "420bcc84",
+      "fileOffset": 765572,
+      "encoding": "ascii",
+      "text": ".?AVCDataMatrixSmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bcd18",
+      "fileOffset": 765720,
+      "encoding": "ascii",
+      "text": ".?AVCEAN13SmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bcd44",
+      "fileOffset": 765764,
+      "encoding": "ascii",
+      "text": ".?AVCEAN8SmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bceb0",
+      "fileOffset": 766128,
+      "encoding": "ascii",
+      "text": ".?AVCMicroPDF417SmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bcee0",
+      "fileOffset": 766176,
+      "encoding": "ascii",
+      "text": ".?AV?$CLEventHandler@VCQRBarcodeProperty@@@CLLanguageEventHandlerNamespace@@"
+    },
+    {
+      "va": "420bcf38",
+      "fileOffset": 766264,
+      "encoding": "ascii",
+      "text": ".?AVCQRSmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bcf60",
+      "fileOffset": 766304,
+      "encoding": "ascii",
+      "text": ".?AVCRSS14SmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bcfc4",
+      "fileOffset": 766404,
+      "encoding": "ascii",
+      "text": ".?AVCEANUPCBarcodeRender@@"
+    },
+    {
+      "va": "420bcfe8",
+      "fileOffset": 766440,
+      "encoding": "ascii",
+      "text": ".?AVCCode39BarcodeRender@@"
+    },
+    {
+      "va": "420bd0b4",
+      "fileOffset": 766644,
+      "encoding": "ascii",
+      "text": ".?AVCUPCASmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bd0e0",
+      "fileOffset": 766688,
+      "encoding": "ascii",
+      "text": ".?AVCUPCESmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420bd10c",
+      "fileOffset": 766732,
+      "encoding": "ascii",
+      "text": ".?AVCVarPriceEAN13SmallBarcodeObjHelper@@"
+    },
+    {
+      "va": "420cdd3f",
+      "fileOffset": 786751,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.CLCSSmallBarcodeObj.1 = s 'CLCSSmallBarcodeObj Class'"
+    },
+    {
+      "va": "420cddc6",
+      "fileOffset": 786886,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.CLCSSmallBarcodeObj = s 'CLCSSmallBarcodeObj Class'"
+    },
+    {
+      "va": "420cde48",
+      "fileOffset": 787016,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSSmallBarcode.CLCSSmallBarcodeObj.1'"
+    },
+    {
+      "va": "420cde98",
+      "fileOffset": 787096,
+      "encoding": "ascii",
+      "text": "ForceRemove {7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F} = s 'CLCSSmallBarcodeObj Class'"
+    },
+    {
+      "va": "420cdef4",
+      "fileOffset": 787188,
+      "encoding": "ascii",
+      "text": "ProgID = s 'CLCSSmallBarcode.CLCSSmallBarcodeObj.1'"
+    },
+    {
+      "va": "420cdf2c",
+      "fileOffset": 787244,
+      "encoding": "ascii",
+      "text": "VersionIndependentProgID = s 'CLCSSmallBarcode.CLCSSmallBarcodeObj'"
+    },
+    {
+      "va": "420ce09a",
+      "fileOffset": 787610,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.SmallBarcodeFieldProp.1 = s 'SmallBarcodeFieldProp Class'"
+    },
+    {
+      "va": "420ce125",
+      "fileOffset": 787749,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.SmallBarcodeFieldProp = s 'SmallBarcodeFieldProp Class'"
+    },
+    {
+      "va": "420ce1ab",
+      "fileOffset": 787883,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSSmallBarcode.SmallBarcodeFieldProp.1'"
+    },
+    {
+      "va": "420ce1fd",
+      "fileOffset": 787965,
+      "encoding": "ascii",
+      "text": "ForceRemove {8D65AE20-F5F9-11D4-8DAE-0050DAFE8A9F} = s 'SmallBarcodeFieldProp Class'"
+    },
+    {
+      "va": "420ce2ea",
+      "fileOffset": 788202,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.CLCSCode39FieldProp.1 = s 'CLCSCode39FieldProp Class'"
+    },
+    {
+      "va": "420ce371",
+      "fileOffset": 788337,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.CLCSCode39FieldProp = s 'CLCSCode39FieldProp Class'"
+    },
+    {
+      "va": "420ce3f3",
+      "fileOffset": 788467,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSSmallBarcode.CLCSCode39FieldProp.1'"
+    },
+    {
+      "va": "420ce52a",
+      "fileOffset": 788778,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.EAN13PriceVerifierProp.1 = s 'EAN13PriceVerifierProp Class'"
+    },
+    {
+      "va": "420ce5b7",
+      "fileOffset": 788919,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.EAN13PriceVerifierProp = s 'EAN13PriceVerifierProp Class'"
+    },
+    {
+      "va": "420ce63f",
+      "fileOffset": 789055,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSSmallBarcode.EAN13PriceVerifierProp.1'"
+    },
+    {
+      "va": "420ce77a",
+      "fileOffset": 789370,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.RssProp2.1 = s 'RssProp2 Class'"
+    },
+    {
+      "va": "420ce7eb",
+      "fileOffset": 789483,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.RssProp2 = s 'RssProp2 Class'"
+    },
+    {
+      "va": "420ce857",
+      "fileOffset": 789591,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSSmallBarcode.RssProp2.1'"
+    },
+    {
+      "va": "420ce97a",
+      "fileOffset": 789882,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.Datamatrix.1 = s 'Datamatrix Class'"
+    },
+    {
+      "va": "420ce9ef",
+      "fileOffset": 789999,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.Datamatrix = s 'Datamatrix Class'"
+    },
+    {
+      "va": "420cea5f",
+      "fileOffset": 790111,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSSmallBarcode.Datamatrix.1'"
+    },
+    {
+      "va": "420ceaa6",
+      "fileOffset": 790182,
+      "encoding": "ascii",
+      "text": "ForceRemove {AF797A5F-BC9D-41b7-B03C-475D1357F9E4} = s 'Datamatrix Class'"
+    },
+    {
+      "va": "420ceb82",
+      "fileOffset": 790402,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcodeField.MicroPDF417BarcodeFieldProp.1 = s 'MicroPDF417BarcodeFieldProp Class'"
+    },
+    {
+      "va": "420cec1e",
+      "fileOffset": 790558,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcodeField.MicroPDF417BarcodeFieldProp = s 'MicroPDF417BarcodeFieldProp Class'"
+    },
+    {
+      "va": "420cecb5",
+      "fileOffset": 790709,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSBarcodeField.PDF417BarcodeFieldProp.1'"
+    },
+    {
+      "va": "420ced08",
+      "fileOffset": 790792,
+      "encoding": "ascii",
+      "text": "ForceRemove {76E8EC16-0678-432d-B745-FFF765A38A31} = s 'MicroPDF417BarcodeFieldProp Class'"
+    },
+    {
+      "va": "420cedf2",
+      "fileOffset": 791026,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.QRBarcodeProperty.1 = s 'QRBarcodeProperty Class'"
+    },
+    {
+      "va": "420cee75",
+      "fileOffset": 791157,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode.QRBarcodeProperty = s 'QRBarcodeProperty Class'"
+    },
+    {
+      "va": "420ceef3",
+      "fileOffset": 791283,
+      "encoding": "ascii",
+      "text": "CurVer = s 'CLCSSmallBarcode.QRBarcodeProperty.1'"
+    },
+    {
+      "va": "420cef41",
+      "fileOffset": 791361,
+      "encoding": "ascii",
+      "text": "ForceRemove {355B319E-0F13-4473-80F3-9447FAB98A9B} = s 'QRBarcodeProperty Class'"
+    },
+    {
+      "va": "420d3f16",
+      "fileOffset": 811798,
+      "encoding": "ascii",
+      "text": "k[CLCSSMALLBARCODELibW"
+    },
+    {
+      "va": "420d3f35",
+      "fileOffset": 811829,
+      "encoding": "ascii",
+      "text": "8{jCLCSSmallBarcodeObjWd"
+    },
+    {
+      "va": "420d4084",
+      "fileOffset": 812164,
+      "encoding": "ascii",
+      "text": "varCiffFileW"
+    },
+    {
+      "va": "420d41d8",
+      "fileOffset": 812504,
+      "encoding": "ascii",
+      "text": "bstrFontName"
+    },
+    {
+      "va": "420d41ee",
+      "fileOffset": 812526,
+      "encoding": "ascii",
+      "text": "H<lFontPitchWW"
+    },
+    {
+      "va": "420d4207",
+      "fileOffset": 812551,
+      "encoding": "ascii",
+      "text": ";bstrSubImage"
+    },
+    {
+      "va": "420d423c",
+      "fileOffset": 812604,
+      "encoding": "ascii",
+      "text": "pVarCiffFieldWWWd"
+    },
+    {
+      "va": "420d4258",
+      "fileOffset": 812632,
+      "encoding": "ascii",
+      "text": "GetCiffW"
+    },
+    {
+      "va": "420d426c",
+      "fileOffset": 812652,
+      "encoding": "ascii",
+      "text": "varCiffWd"
+    },
+    {
+      "va": "420d42dc",
+      "fileOffset": 812764,
+      "encoding": "ascii",
+      "text": "GetCiffFileWX"
+    },
+    {
+      "va": "420d4613",
+      "fileOffset": 813587,
+      "encoding": "ascii",
+      "text": "ZlSubImageWWWL"
+    },
+    {
+      "va": "420d462c",
+      "fileOffset": 813612,
+      "encoding": "ascii",
+      "text": "get_WhichSubImageWWWL"
+    },
+    {
+      "va": "420d464c",
+      "fileOffset": 813644,
+      "encoding": "ascii",
+      "text": "put_WhichSubImageWWW"
+    },
+    {
+      "va": "420d4708",
+      "fileOffset": 813832,
+      "encoding": "ascii",
+      "text": "SmallBarcodeFieldPropWWWx"
+    },
+    {
+      "va": "420d4770",
+      "fileOffset": 813936,
+      "encoding": "ascii",
+      "text": "DataMatrixPropWW"
+    },
+    {
+      "va": "420d47a0",
+      "fileOffset": 813984,
+      "encoding": "ascii",
+      "text": "MicroPDF417BarcodeFieldPropWl"
+    },
+    {
+      "va": "420d47c8",
+      "fileOffset": 814024,
+      "encoding": "ascii",
+      "text": "QRBarcodePropertyWWW"
+    },
+    {
+      "va": "420d4a26",
+      "fileOffset": 814630,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcode 1.0 Type LibraryW"
+    },
+    {
+      "va": "420d4a4a",
+      "fileOffset": 814666,
+      "encoding": "ascii",
+      "text": "CLCSSmallBarcodeObj ClassW"
+    },
+    {
+      "va": "420d4af2",
+      "fileOffset": 814834,
+      "encoding": "ascii",
+      "text": "method GetCiff"
+    },
+    {
+      "va": "420d4b2e",
+      "fileOffset": 814894,
+      "encoding": "ascii",
+      "text": "method GetCiffFile"
+    },
+    {
+      "va": "420d4cde",
+      "fileOffset": 815326,
+      "encoding": "ascii",
+      "text": "method get_WhichSubImageWW"
+    },
+    {
+      "va": "420d4cfa",
+      "fileOffset": 815354,
+      "encoding": "ascii",
+      "text": "method put_WhichSubImageWW/"
+    },
+    {
+      "va": "420d4d8e",
+      "fileOffset": 815502,
+      "encoding": "ascii",
+      "text": "SmallBarcodeFieldProp ClassWWW"
+    },
+    {
+      "va": "420d4dea",
+      "fileOffset": 815594,
+      "encoding": "ascii",
+      "text": "DatamatrixProp ClassWW"
+    },
+    {
+      "va": "420d4e12",
+      "fileOffset": 815634,
+      "encoding": "ascii",
+      "text": "MicroPDF417BarcodeFieldProp ClassW"
+    },
+    {
+      "va": "420d4e36",
+      "fileOffset": 815670,
+      "encoding": "ascii",
+      "text": "QRBarcodeProperty ClassWWW"
+    },
+    {
+      "va": "42089bbc",
+      "fileOffset": 557500,
+      "encoding": "utf-16-le",
+      "text": "FixedText"
+    },
+    {
+      "va": "42089be4",
+      "fileOffset": 557540,
+      "encoding": "utf-16-le",
+      "text": "DateText"
+    },
+    {
+      "va": "42089bf8",
+      "fileOffset": 557560,
+      "encoding": "utf-16-le",
+      "text": "OffsetDateText"
+    },
+    {
+      "va": "42089c18",
+      "fileOffset": 557592,
+      "encoding": "utf-16-le",
+      "text": "CounterText"
+    },
+    {
+      "va": "42089d04",
+      "fileOffset": 557828,
+      "encoding": "utf-16-le",
+      "text": "HIBCBarcode"
+    },
+    {
+      "va": "4208a7f0",
+      "fileOffset": 560624,
+      "encoding": "utf-16-le",
+      "text": "Code 39 Encountered invalid barcode characters in field data: '"
+    },
+    {
+      "va": "4209153c",
+      "fileOffset": 588604,
+      "encoding": "utf-16-le",
+      "text": "BarcodeHeightIncorrect"
+    },
+    {
+      "va": "420933c8",
+      "fileOffset": 596424,
+      "encoding": "utf-16-le",
+      "text": "BarcodeContainsInvalidCharacters"
+    },
+    {
+      "va": "4209340c",
+      "fileOffset": 596492,
+      "encoding": "utf-16-le",
+      "text": "BarcodeOverrunsImageBounds"
+    },
+    {
+      "va": "42093444",
+      "fileOffset": 596548,
+      "encoding": "utf-16-le",
+      "text": "BarcodeLengthIncorrect"
+    },
+    {
+      "va": "42093474",
+      "fileOffset": 596596,
+      "encoding": "utf-16-le",
+      "text": "BarcodeInvalidCheckDigit"
+    },
+    {
+      "va": "420935b0",
+      "fileOffset": 596912,
+      "encoding": "utf-16-le",
+      "text": "Barcode overruns right of image. "
+    },
+    {
+      "va": "420935f8",
+      "fileOffset": 596984,
+      "encoding": "utf-16-le",
+      "text": "Barcode overruns left of image. "
+    },
+    {
+      "va": "42093640",
+      "fileOffset": 597056,
+      "encoding": "utf-16-le",
+      "text": "Barcode overruns bottom of image. "
+    },
+    {
+      "va": "42093688",
+      "fileOffset": 597128,
+      "encoding": "utf-16-le",
+      "text": "Barcode overruns top of image. "
+    },
+    {
+      "va": "42093e42",
+      "fileOffset": 599106,
+      "encoding": "utf-16-le",
+      "text": " Rendered RSS Barcode Field."
+    },
+    {
+      "va": "4209b382",
+      "fileOffset": 629122,
+      "encoding": "utf-16-le",
+      "text": "Rendering QR Barcode Field: "
+    },
+    {
+      "va": "4209b3be",
+      "fileOffset": 629182,
+      "encoding": "utf-16-le",
+      "text": " Rendered QR Barcode Field."
+    },
+    {
+      "va": "4209c37c",
+      "fileOffset": 633212,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    },
+    {
+      "va": "4209d370",
+      "fileOffset": 637296,
+      "encoding": "utf-16-le",
+      "text": "CLCSSmallBarcode"
+    },
+    {
+      "va": "4209d6c4",
+      "fileOffset": 638148,
+      "encoding": "utf-16-le",
+      "text": "DataMatrix"
+    },
+    {
+      "va": "4209d7e0",
+      "fileOffset": 638432,
+      "encoding": "utf-16-le",
+      "text": "Default Data"
+    },
+    {
+      "va": "4209e260",
+      "fileOffset": 641120,
+      "encoding": "utf-16-le",
+      "text": "QR Barcode"
+    },
+    {
+      "va": "420b711c",
+      "fileOffset": 742172,
+      "encoding": "utf-16-le",
+      "text": "BarcodeFineAdjust"
+    },
+    {
+      "va": "420c9bb0",
+      "fileOffset": 769968,
+      "encoding": "utf-16-le",
+      "text": "CLARiSOFT Small Barcode Based Field Component"
+    },
+    {
+      "va": "420c9c8c",
+      "fileOffset": 770188,
+      "encoding": "utf-16-le",
+      "text": "CLCSSmallBarcode Module"
+    },
+    {
+      "va": "420c9d0c",
+      "fileOffset": 770316,
+      "encoding": "utf-16-le",
+      "text": "CLCSSmallBarcode"
+    },
+    {
+      "va": "420c9d9c",
+      "fileOffset": 770460,
+      "encoding": "utf-16-le",
+      "text": "CLCSSmallBarcode.DLL"
+    },
+    {
+      "va": "420c9de8",
+      "fileOffset": 770536,
+      "encoding": "utf-16-le",
+      "text": "CLCSSmallBarcode Module"
+    },
+    {
+      "va": "420c9f9c",
+      "fileOffset": 770972,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_BARCODEBUILDERTYPE"
+    },
+    {
+      "va": "420ca87e",
+      "fileOffset": 773246,
+      "encoding": "utf-16-le",
+      "text": "IDD_BARCODECHOOSER"
+    },
+    {
+      "va": "420ca9fc",
+      "fileOffset": 773628,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_STATIC_BARCODEDATA"
+    },
+    {
+      "va": "420cae88",
+      "fileOffset": 774792,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_BARCODEDATATYPE"
+    },
+    {
+      "va": "420cb192",
+      "fileOffset": 775570,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_CHK_DBA_DEFAULTDATA"
+    },
+    {
+      "va": "420cb4d4",
+      "fileOffset": 776404,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_STATIC_BARCODEDATA"
+    },
+    {
+      "va": "420cb604",
+      "fileOffset": 776708,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_BARCODEDATATYPE"
+    },
+    {
+      "va": "420cbcf8",
+      "fileOffset": 778488,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_STATIC_BARCODEDATA"
+    },
+    {
+      "va": "420cc48c",
+      "fileOffset": 780428,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_RSS_BARCODEDATA_USECOMPOSITE"
+    },
+    {
+      "va": "420cc6d8",
+      "fileOffset": 781016,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_STATIC_BARCODEDATA"
+    },
+    {
+      "va": "420cc7cc",
+      "fileOffset": 781260,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_BARCODEDATATYPE"
+    },
+    {
+      "va": "420cc86c",
+      "fileOffset": 781420,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_RSS_BARCODEDATA_COMPOSITE"
+    },
+    {
+      "va": "420ccd00",
+      "fileOffset": 782592,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_STATIC_BARCODEDATA"
+    },
+    {
+      "va": "420cce40",
+      "fileOffset": 782912,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_BARCODEDATATYPE"
+    },
+    {
+      "va": "420ccf00",
+      "fileOffset": 783104,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_STATIC_BARCODEPRINTING"
+    },
+    {
+      "va": "420cd3bc",
+      "fileOffset": 784316,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_STATIC_BARCODEDATA"
+    },
+    {
+      "va": "420cd588",
+      "fileOffset": 784776,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_STATIC_BARCODETYPE"
+    },
+    {
+      "va": "420cda04",
+      "fileOffset": 785924,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_BARCODEDATATYPE"
+    },
+    {
+      "va": "420cdaec",
+      "fileOffset": 786156,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_BARCODEDATA"
+    },
+    {
+      "va": "420cdbec",
+      "fileOffset": 786412,
+      "encoding": "utf-16-le",
+      "text": "IDC_CS_STATIC_BARCODEPRINTING"
+    },
+    {
+      "va": "420cdc68",
+      "fileOffset": 786536,
+      "encoding": "utf-16-le",
+      "text": "CLRES_CS_S_BARCODEDATAFORMAT"
+    },
+    {
+      "va": "420d5c1a",
+      "fileOffset": 819226,
+      "encoding": "utf-16-le",
+      "text": "CLCSSmallBarcode"
+    },
+    {
+      "va": "420d5c3e",
+      "fileOffset": 819262,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    },
+    {
+      "va": "420d5d32",
+      "fileOffset": 819506,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    },
+    {
+      "va": "420d5d46",
+      "fileOffset": 819526,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    },
+    {
+      "va": "420d5d58",
+      "fileOffset": 819544,
+      "encoding": "utf-16-le",
+      "text": "Barcode"
+    }
+  ]
+}

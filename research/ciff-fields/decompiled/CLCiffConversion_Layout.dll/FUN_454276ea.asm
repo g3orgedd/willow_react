@@ -1,0 +1,2 @@
+454276ea SUB dword ptr [ESP + 0x4],0x4
+454276ef JMP 0x454276aa

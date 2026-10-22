@@ -1,0 +1,2612 @@
+{
+  "method": "createProductionCiffRuntime original parser/rendering/calculated-data/save functions, no custom mock resolver; includes final UTF16LE bytes",
+  "cases": [
+    {
+      "name": "native-0-fields",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-0-fields.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-0-fields.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "8D6497746DCEE313E3B58414836CE82C0B8685299735E1F26A6C04A81812AECD",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A",
+      "mask": "0",
+      "fieldCount": 0,
+      "rawCalculatedData": [],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-1-fields",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-1-fields.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-1-fields.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "8AD92D206919C901454DF419E6A8475C5D4953A5B6D986C17DCF83C62587A4A0",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo46NIDX1UC13xGAyQIn4N_RAnA0KIKsT9NP7HGSJBUkOIuT",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            48
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-2-fields",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-2-fields.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-2-fields.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "0FC23891CE65453AA16F7CE1B342C3BE4E79E00E072F57C9176270DEA749272B",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!9Mm2KE0IpSS!NR1HC!TQw0Rz5V!L7kT9uBDpESIRR_O2MS6JV3yS8UTVaVDMLVt3G88VcUTCKAlF9YC6ACL74RTP491Q!AEsVNB15!0L_28o6",
+      "mask": "3",
+      "fieldCount": 2,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            48
+          ]
+        },
+        {
+          "name": "F1",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-3-fields",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-3-fields.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-3-fields.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "4C3018590F7D2F25D71D3CD643D9F2EB5129CA42FFEE456DD71337AAD1BAC6EA",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!DMm27E2TCATm20C1UkB4dB4N2VfKOp4FLT7RAS!8SBUFc0J5BV!JRn1GR8PlB0gBQ_AVXIG6LAXFQB0PkGHt7Ra3BJU5n97URKyD4r9TR4IeN6m67L55vFA!7HiJ3WQPJRTc513ON6KLqFK_RB!RNWN3uEUS8IaU7SU",
+      "mask": "7",
+      "fieldCount": 3,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            48
+          ]
+        },
+        {
+          "name": "F1",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49
+          ]
+        },
+        {
+          "name": "F2",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-31-fields",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-31-fields.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-31-fields.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "A967C6DD3E4E3107A66DD452E250ADA9D6ED26F44C6C1DAE0D4ECC2CAD2DDCC8",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!DMm27E2TCATm20C1UkB4dB4N2VfKOp4FLT7RAS!8SBUFc0J5BV!JRn1GR8PlB0gBQ_AVXIG6LAXFQB0PkGHt7Ra3BJU5n97URKyD4r9TR4IeN6m67L55vFA!7HiJ3WQPJRTc513ON6KLqFK_RB!RNWN3uEUS8IaU7SU",
+      "mask": "7",
+      "fieldCount": 31,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            48
+          ]
+        },
+        {
+          "name": "F1",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49
+          ]
+        },
+        {
+          "name": "F2",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50
+          ]
+        },
+        {
+          "name": "F3",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51
+          ]
+        },
+        {
+          "name": "F4",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            52
+          ]
+        },
+        {
+          "name": "F5",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            53
+          ]
+        },
+        {
+          "name": "F6",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            54
+          ]
+        },
+        {
+          "name": "F7",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            55
+          ]
+        },
+        {
+          "name": "F8",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            56
+          ]
+        },
+        {
+          "name": "F9",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            57
+          ]
+        },
+        {
+          "name": "F10",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            48
+          ]
+        },
+        {
+          "name": "F11",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            49
+          ]
+        },
+        {
+          "name": "F12",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            50
+          ]
+        },
+        {
+          "name": "F13",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            51
+          ]
+        },
+        {
+          "name": "F14",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            52
+          ]
+        },
+        {
+          "name": "F15",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            53
+          ]
+        },
+        {
+          "name": "F16",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            54
+          ]
+        },
+        {
+          "name": "F17",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            55
+          ]
+        },
+        {
+          "name": "F18",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            56
+          ]
+        },
+        {
+          "name": "F19",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            57
+          ]
+        },
+        {
+          "name": "F20",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            48
+          ]
+        },
+        {
+          "name": "F21",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            49
+          ]
+        },
+        {
+          "name": "F22",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            50
+          ]
+        },
+        {
+          "name": "F23",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            51
+          ]
+        },
+        {
+          "name": "F24",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            52
+          ]
+        },
+        {
+          "name": "F25",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            53
+          ]
+        },
+        {
+          "name": "F26",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            54
+          ]
+        },
+        {
+          "name": "F27",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            55
+          ]
+        },
+        {
+          "name": "F28",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            56
+          ]
+        },
+        {
+          "name": "F29",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            57
+          ]
+        },
+        {
+          "name": "F30",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51,
+            48
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-32-fields",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-32-fields.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-32-fields.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "ADCAFC231E360E3416A983C9AA13553F9C296AE332B30CA2C713496CE791F451",
+      "token": "PyOA!LMeR5fENkGU!93sF7yOUOJUwBNTV7c7O_FAXNBE24uOFAV5G2USPNzOLdCFIJNt3GDP2O1MKPEt4QCJ7gOBj24YJNNIKoTOVLISIRIVSqQDOTV_OSp1R2K4y9EBOG!TAy3NOKLtU2FTRn18HNKT4S!45RSAPGAy7NGB4K8FZKTUIF4VNqAFS2Dk9",
+      "mask": "80000001",
+      "fieldCount": 32,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            48
+          ]
+        },
+        {
+          "name": "F1",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49
+          ]
+        },
+        {
+          "name": "F2",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50
+          ]
+        },
+        {
+          "name": "F3",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51
+          ]
+        },
+        {
+          "name": "F4",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            52
+          ]
+        },
+        {
+          "name": "F5",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            53
+          ]
+        },
+        {
+          "name": "F6",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            54
+          ]
+        },
+        {
+          "name": "F7",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            55
+          ]
+        },
+        {
+          "name": "F8",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            56
+          ]
+        },
+        {
+          "name": "F9",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            57
+          ]
+        },
+        {
+          "name": "F10",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            48
+          ]
+        },
+        {
+          "name": "F11",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            49
+          ]
+        },
+        {
+          "name": "F12",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            50
+          ]
+        },
+        {
+          "name": "F13",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            51
+          ]
+        },
+        {
+          "name": "F14",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            52
+          ]
+        },
+        {
+          "name": "F15",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            53
+          ]
+        },
+        {
+          "name": "F16",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            54
+          ]
+        },
+        {
+          "name": "F17",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            55
+          ]
+        },
+        {
+          "name": "F18",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            56
+          ]
+        },
+        {
+          "name": "F19",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            57
+          ]
+        },
+        {
+          "name": "F20",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            48
+          ]
+        },
+        {
+          "name": "F21",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            49
+          ]
+        },
+        {
+          "name": "F22",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            50
+          ]
+        },
+        {
+          "name": "F23",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            51
+          ]
+        },
+        {
+          "name": "F24",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            52
+          ]
+        },
+        {
+          "name": "F25",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            53
+          ]
+        },
+        {
+          "name": "F26",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            54
+          ]
+        },
+        {
+          "name": "F27",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            55
+          ]
+        },
+        {
+          "name": "F28",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            56
+          ]
+        },
+        {
+          "name": "F29",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            57
+          ]
+        },
+        {
+          "name": "F30",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51,
+            48
+          ]
+        },
+        {
+          "name": "F31",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51,
+            49
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-33-fields",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-33-fields.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-33-fields.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "72AFC1C2175EEB47D52FCBBFD0179B315125F6BB8540118D14BC280384442C51",
+      "token": "PyOA!LMeR5fENkGU!93sF7yOUOJUwBNTV7c7O_FAXNBE24uOFAV5G2USPNzOLdCFIJNt3GDP2O1MKPEt4QCJ7gOBj24YJNNIKoTOVLISIRIVSqQDOTV_OSp1R2K4y9EBOG!TAy3NOKLtU2FTRn18HNKT4S!45RSAPGAy7NGB4K8FZKTUIF4VNqAFS2Dk9",
+      "mask": "80000001",
+      "fieldCount": 33,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            48
+          ]
+        },
+        {
+          "name": "F1",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49
+          ]
+        },
+        {
+          "name": "F2",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50
+          ]
+        },
+        {
+          "name": "F3",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51
+          ]
+        },
+        {
+          "name": "F4",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            52
+          ]
+        },
+        {
+          "name": "F5",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            53
+          ]
+        },
+        {
+          "name": "F6",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            54
+          ]
+        },
+        {
+          "name": "F7",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            55
+          ]
+        },
+        {
+          "name": "F8",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            56
+          ]
+        },
+        {
+          "name": "F9",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            57
+          ]
+        },
+        {
+          "name": "F10",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            48
+          ]
+        },
+        {
+          "name": "F11",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            49
+          ]
+        },
+        {
+          "name": "F12",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            50
+          ]
+        },
+        {
+          "name": "F13",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            51
+          ]
+        },
+        {
+          "name": "F14",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            52
+          ]
+        },
+        {
+          "name": "F15",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            53
+          ]
+        },
+        {
+          "name": "F16",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            54
+          ]
+        },
+        {
+          "name": "F17",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            55
+          ]
+        },
+        {
+          "name": "F18",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            56
+          ]
+        },
+        {
+          "name": "F19",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            49,
+            57
+          ]
+        },
+        {
+          "name": "F20",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            48
+          ]
+        },
+        {
+          "name": "F21",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            49
+          ]
+        },
+        {
+          "name": "F22",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            50
+          ]
+        },
+        {
+          "name": "F23",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            51
+          ]
+        },
+        {
+          "name": "F24",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            52
+          ]
+        },
+        {
+          "name": "F25",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            53
+          ]
+        },
+        {
+          "name": "F26",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            54
+          ]
+        },
+        {
+          "name": "F27",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            55
+          ]
+        },
+        {
+          "name": "F28",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            56
+          ]
+        },
+        {
+          "name": "F29",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            50,
+            57
+          ]
+        },
+        {
+          "name": "F30",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51,
+            48
+          ]
+        },
+        {
+          "name": "F31",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51,
+            49
+          ]
+        },
+        {
+          "name": "F32",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            51,
+            50
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-multiple-subimages",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-multiple-subimages.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-multiple-subimages.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "F186738F78299703093C372321D778EC6AE2C5CF85475D6FDBEF69906496A1E0",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!E6qSDTBLr58U4RpIReAJ!AFyFOBR1j1UlN7Z06T7KaQ2Q9",
+      "mask": "4",
+      "fieldCount": 2,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            70,
+            73,
+            82,
+            83,
+            84
+          ]
+        },
+        {
+          "name": "F1",
+          "units": [
+            83,
+            69,
+            67,
+            79,
+            78,
+            68
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-hidden-graphic",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-hidden-graphic.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-hidden-graphic.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "7982A97601301074BCEE7419EB9D90FEBD5554171501C1A63DF6D2F80C19398B",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEGQD4UE8OlG3f7KkOUaI64HUt4AOC3gDKb7PK6P8DPtMQIEOqSMTLM4L7LH",
+      "mask": "2",
+      "fieldCount": 3,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            72,
+            73,
+            68,
+            68,
+            69,
+            78
+          ]
+        },
+        {
+          "name": "F1",
+          "units": [
+            71,
+            82,
+            65,
+            80,
+            72,
+            73,
+            67
+          ]
+        },
+        {
+          "name": "F2",
+          "units": [
+            86,
+            73,
+            83,
+            73,
+            66,
+            76,
+            69
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-nul-data",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-nul-data.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-nul-data.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "61EB8702E2B885749DC8B410C89FAC110C5A1933FB6557DB5512C29BCCCA7C45",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LK",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            97,
+            98
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-control-data",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-control-data.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-control-data.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "182EB4E90F4B792CC4FC8D72A118BD58A81E6333CA09680B427AAAB7E6B50534",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LKHyPNhDL7LQ_A3x74OO7y866NVmABsBMF2Gv5ExUMyHE!Q2xMNTH8S4ArEMyP6wEQs0Jw4RSKNoTCN6K1L0iJVy1Nb7",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            9,
+            103,
+            104,
+            10,
+            105,
+            106
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-empty-calculated-data",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-empty-calculated-data.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-empty-calculated-data.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "886D4698C15FCF5695890C1DF1F9FA185B47364B78303D2C85F5C4B7A07611F6",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!B",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": []
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "native-surrogate-clipping",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-surrogate-clipping.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-native-surrogate-clipping.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "52A7DECA0E60A0FAD85AFE0F323FE62A653BF6760EBA6D4430B1C42E9CCF91D7",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoB1H4E6GLsPLTBMiMC!3AxFHRBPX6PSKRVDG!RNUV8bT2HVUUNNB6JaGPNDQw7SXTSx6Iz2VuFGx2Iq6PGK4QV0p1TIVQmA5y3FrLE!A0!8VvIMWMAcS6DNEvC6!F3oTH!UJy76!BHtFVTBFxRHm18W9JM1UfCKuR9w2EZFA3V6NH",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            55357,
+            56832,
+            115,
+            117,
+            102,
+            102,
+            105,
+            120
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "conservative-constant-text",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\tests\\fixtures\\conservative\\constant-text.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-conservative-constant-text.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "C93A95859695BEF1DED6C9AF0F79F7272F8A5B0A15F7AF4EE0EE5A06EC0760D1",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo7MHD7zECt9FDTExTFyJONIFIDQcQElANkL5bRFEJ3p1O4K",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "Field00",
+          "units": [
+            85,
+            115,
+            101,
+            32,
+            66,
+            121
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "conservative-date",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\tests\\fixtures\\conservative\\date.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-conservative-date.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "A165100F170BB54507FC0853ECD3EEFB220D89F78BD4741E96F8CB11368E81A9",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoA1HSFEHC!0SmP042U9F",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "Field04",
+          "units": [
+            49,
+            48,
+            57
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "conservative-offset-date",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\tests\\fixtures\\conservative\\offset-date.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-conservative-offset-date.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "F13FB9714A010751637CA525BE870F952D5D7F5AE8DCD79CB539DFD3BD19A0DC",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoA1HSFEHC!9SmP5V60rTRiCVvU3uURJCUdSBj93fH1eP6oD",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "Field05",
+          "units": [
+            49,
+            57,
+            32,
+            65,
+            80,
+            82
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "conservative-external-text",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\tests\\fixtures\\conservative\\external-text.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-conservative-external-text.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "432B7A9A7F06D17E57ED84F712F7D02642D0D5C47F2A308D2EDD5D0067A1A42A",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo24HUTaGUNPIdMIWUDbMFDB8gVUnKDfDJkV7vNLwS7PV9VGSmKSmTIjLNYCIL34!GQ!ESXFQo1MTO5FCNBD0sV4S8UeLLnLQ8AOSUTWTGN1DD2T9RR8CI!M6yO4_7MRMTI2Qf06T0UMCJuGIZ3BRPV30OE7DUN3!D6mJU6RNqAUzS",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "Field02",
+          "units": [
+            80,
+            114,
+            101,
+            118,
+            105,
+            101,
+            119,
+            32,
+            102,
+            114,
+            111,
+            109,
+            32,
+            112,
+            114,
+            105,
+            111,
+            114,
+            32,
+            106,
+            111,
+            98
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "conservative-field-order",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\tests\\fixtures\\conservative\\field-order.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-conservative-field-order.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "117E67548ED18073F3232B612925712A5ADB6F21D941CAA57D282FC18CE6C063",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnS",
+      "mask": "1",
+      "fieldCount": 4,
+      "rawCalculatedData": [
+        {
+          "name": "Field00",
+          "units": [
+            65
+          ]
+        },
+        {
+          "name": "Field02",
+          "units": [
+            66
+          ]
+        },
+        {
+          "name": "Field11",
+          "units": [
+            69,
+            108,
+            101,
+            118,
+            101,
+            110
+          ]
+        },
+        {
+          "name": "Field03",
+          "units": [
+            84,
+            104,
+            114,
+            101,
+            101
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "runtime-runtime-counter",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\ciff-fields\\oracle\\runtime-counter.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-runtime-runtime-counter.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "465F4A361E3D9B8855A435E1EFF1CF70EE0962C55BF018FFB7534D22AA0BEF5C",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoB1H4E6GLsOLT3IiM6_CCqOCkU7n9",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "Field00",
+          "units": [
+            48,
+            48,
+            48,
+            48
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "runtime-runtime-time",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\ciff-fields\\oracle\\runtime-time.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-runtime-runtime-time.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "620CAD16E6B3B6F346898382DEEBECF41EFB4901502DFE098D00CE0CCE738A4C",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoB1H4E6GLsGLT3IiQ6lIFbTESQJIHAw4UZAMKV",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "Field00",
+          "units": [
+            48,
+            56,
+            58,
+            51,
+            49
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "runtime-runtime-date",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\ciff-fields\\oracle\\runtime-date.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-runtime-runtime-date.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "7527E1A0024448415BCB6A53B559A61607316340D9DC3E67BFCE490D969BCE89",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoA1HSFEHCzUKw73vOGkA3TPEpONMNDdE9A6MwINsU279EnKHNB6PFUvJAvP6WBHKVOsNOOFT3GONAHz4K!6",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "Field00",
+          "units": [
+            49,
+            55,
+            47,
+            49,
+            48,
+            47,
+            50,
+            48,
+            50,
+            54
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "runtime-runtime-user",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\ciff-fields\\oracle\\runtime-user.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-runtime-runtime-user.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "24BA5DD247366E4032EF09E59B1F72C3E051C2E24AC0FF5AEDF17F79E9A4B452",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFn6EH5Aj06gVJi1FmBQ0NLF2EzDOoI23J1PJDjLFaDCdH7KE0W4EnTStLAV4KoNM79",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "Field00",
+          "units": [
+            79,
+            80,
+            69,
+            82,
+            65,
+            84,
+            79,
+            82
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "runtime-runtime-source-field",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\ciff-fields\\oracle\\runtime-source-field.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-runtime-runtime-source-field.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "3477C8BA4E6D0C6F21F492D4C82913AEA9645BB17E44455B4DB3A53D868E254B",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PIUnBM9FJE9IW1PT6FUD7wA",
+      "mask": "1",
+      "fieldCount": 2,
+      "rawCalculatedData": [
+        {
+          "name": "SOURCE",
+          "units": [
+            65,
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "name": "TARGET",
+          "units": [
+            66,
+            67,
+            68
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-partial-source",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-partial-source.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-partial-source.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "B56C248C8545E925BE97D254FBB75CEE54F7ABE8551D5C7E17C1CB75D78F1946",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!C6mA3EIRj5BuT7IHTlHPvV3pENTBGQ78MLELCUJRQNIUBP",
+      "mask": "6",
+      "fieldCount": 6,
+      "rawCalculatedData": [
+        {
+          "name": "SOURCE",
+          "units": [
+            65,
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "name": "BCD",
+          "units": [
+            66,
+            67,
+            68
+          ]
+        },
+        {
+          "name": "CD",
+          "units": [
+            67,
+            68
+          ]
+        },
+        {
+          "name": "BCDE",
+          "units": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "name": "zero-count-back",
+          "units": [
+            65,
+            66,
+            67,
+            68
+          ]
+        },
+        {
+          "name": "suffix",
+          "units": [
+            68,
+            69
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-dynamic-pad-mode0",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-dynamic-pad-mode0.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-dynamic-pad-mode0.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "888793C0615102BE22DEF2A68634FD6905D08292909BBE0089647D5F5D378AFD",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PNSoHUKQQFSJh9D!A8iU6O8",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "PAD",
+          "units": [
+            65,
+            66,
+            48,
+            48,
+            48
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-dynamic-pad-mode1",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-dynamic-pad-mode1.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-dynamic-pad-mode1.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "E7C7C8E0DC1BC8A04057FF0D5407F70D5A9859FD1FE92C22022BAE04AE485D75",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoB1H4E6GLsOLT3IiM6_CCqOClODoET6OVm2Al7",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "PAD",
+          "units": [
+            48,
+            48,
+            48,
+            65,
+            66
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-dynamic-pad-defaults",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-dynamic-pad-defaults.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-dynamic-pad-defaults.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "7B656961814A6C7AA460EF649438E157B655C89C52F0A9A47D5E80F85D90C7B3",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PNSnEEUHDMOSqRQR6PV8Rq5",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "PAD",
+          "units": [
+            65,
+            66,
+            32,
+            32,
+            32
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-dynamic-pad-nul",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-dynamic-pad-nul.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-dynamic-pad-nul.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "FF0E9629A2527B3C78A682DE38B4B6657927C9645B6176A7C234EBBD3B2FA5F2",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "PAD",
+          "units": [
+            65,
+            66
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-static-no-padding",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-static-no-padding.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-static-no-padding.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "DB35B154E52FD4D0399FD661B69D1D4D86F735B309AD48F4DAA182A53E5B4581",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "PAD",
+          "units": [
+            65,
+            66
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-dynamic-no-truncation",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-dynamic-no-truncation.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-dynamic-no-truncation.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "4DE00F7239F99E56DACEFD85D2B6647E0B25CD6F7708477426656F23DD45B840",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PIUnBM9FJE9IW1PT6FUD7wA",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "PAD",
+          "units": [
+            65,
+            66,
+            67,
+            68,
+            69
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-user-empty-override",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-user-empty-override.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-user-empty-override.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "E385C29C89212D53AFECA5329F8FF68A942DF92300006E57D0211C41F4500E5B",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!B",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "USER",
+          "units": []
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-user-value-override",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-user-value-override.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-user-value-override.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "DA3B77EF7BB45FFA03FC9937877D5D951EA42C3BBEFB9E3BFFFB9D5BA5F0AB5D",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFn6EH5Aj06gVJi1FmBQ0NLF2EzDOoI23J1PJDjLFaDCdH7KE0W4EnTStLAV4KoNM79",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "USER",
+          "units": [
+            79,
+            80,
+            69,
+            82,
+            65,
+            84,
+            79,
+            82
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "resolved-user-pad-default",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\resolved-user-pad-default.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-resolved-user-pad-default.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "3C4525BD7FADD3EAEBCD3CDE901B13017DA8301937DDBC3A36227073FD888FD2",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC5p24PNSnEEUHDMOSqRQR6PV8Rq5",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "USER",
+          "units": [
+            65,
+            66,
+            32,
+            32,
+            32
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "optional-saveas",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\emitted-native-1-fields-optional.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-optional-saveas.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "C12E14D9519E006E0A00BB562C3A8777E3E484BC86CDE932890F1DA7DAA17269",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUWCNPDPKBIgIPz8RaOG!NAoNK!RR04LDK7CTEN0VuJBzSEcP9QF9HHC6MSVOFIV4X9455TkH3u36!6HwUACCIaM7lA35L9mDSMFUcEATARqPUKS7BOSHL51R80HMc1STAGUVJ_DSoJALTTiO1aQPEQLe60yCFwOJtMSi85pJCVADgVMWU72IKuMC_SUrCMC6KZ86qUJL5KzKKZVKFDFW1Ly42qQFYML9ATK4QDAU78RSB3jEVuO7xR836HyNUq4Hw3SjU4n8FqESk4FJBMxBIq4ArK3SJFr55L1Cs7GzLHbVILMU_DQH3FdREMINsUVlG7Z1VDN4a60NTIuS6bOEf37xGKE98qEUHQCg3InS7AJDLFN95OxV",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            86,
+            65,
+            76,
+            85,
+            69,
+            48
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "changed-control-data",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\native-1-fields.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-changed-control-data.ciff",
+      "status": "ok",
+      "suppliedPrinter": true,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "70C83065BCE9AB9667D346C19367AF2546CBC925BD71C545051E5C8677E71355",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFt7FAH4ZI8LKHyPNh0705IhU0p62PDHyUNsARxO1lH14B4uJ7Y7KrCA8CGqRFfECnHPG3ES2SUEL!SStVGEHDKRUqDTPGKEB2v8TF41q3KfRLXMQNOB69AjJKw4PsSBSC",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "F0",
+          "units": [
+            97,
+            98,
+            1,
+            99,
+            100,
+            29,
+            101,
+            102,
+            9,
+            103,
+            104,
+            13,
+            10,
+            105,
+            106
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "edited-nul-data",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\source-edited-nul-data.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-edited-nul-data.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "354D260F8C353E822167542B670F15FFB6FB2583C965513F19CFC01CEDBDE21E",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa3VjC",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "RAW",
+          "units": [
+            65,
+            66
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "dm-partial-pad",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\source-dm-partial-pad.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-dm-partial-pad.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "C1C5892F229417B88607DA2C18B8CA52B865D9B93182645EBA6E72ED7F5695F1",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEGQD3UC8GdKAyHU3D5T7DQMVcEJbD7jKAW84STNjS9x1USISJSPKOI66Sj7NpJ5CEEG7",
+      "mask": "2",
+      "fieldCount": 2,
+      "rawCalculatedData": [
+        {
+          "name": "SOURCE",
+          "units": [
+            65,
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "name": "DM",
+          "units": [
+            66,
+            67,
+            68,
+            48,
+            48,
+            48,
+            65,
+            66
+          ]
+        }
+      ],
+      "verifyNativeResolve": true,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "dm-direct-time",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\source-dm-direct-time.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-dm-direct-time.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-20T22:01:45.559Z",
+      "sha256": "8844D6A6AA93093FFAFE808B5C9285582C3628F8D8F4E232015F0700C32054B1",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGPFoB1H4E6GLsPLTBMiMC!R2_FJQR7w7Q!9APJKKU",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "DM",
+          "units": [
+            48,
+            49,
+            58,
+            48,
+            49
+          ]
+        }
+      ],
+      "verifyNativeResolve": true,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "second-subimage-literal-crlf",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\source-second-subimage-literal-crlf.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-second-subimage-literal-crlf.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "4687F1C6A0CC02F2FEAFFE3F0C072E117C97A47A2A67F26DD01052A001720BA7",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEGQD6UCQGlPRuSUgK7Q6MrG",
+      "mask": "2",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "FIRST",
+          "units": [
+            70,
+            73,
+            82,
+            83,
+            84
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "second-subimage-charref-cr",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\source-second-subimage-charref-cr.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-second-subimage-charref-cr.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "87C812C2E9C60036A19BA276235343666F6A1C7A06AD067DC3E082D9B5D5F833",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!86mAHEGQD6UCQGlPRuSUgK7Q6MrG",
+      "mask": "2",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "FIRST",
+          "units": [
+            70,
+            73,
+            82,
+            83,
+            84
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "first-subimage-charref-cr",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\source-first-subimage-charref-cr.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-first-subimage-charref-cr.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "ED6DAA5D95CB6DB00EEF2C0214DF640E76007AFEAC850901EDA22AC4A795C998",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnSCP3Oa1Vl41jJ0iRVqE",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "FIRST",
+          "units": [
+            65,
+            10,
+            66
+          ]
+        }
+      ],
+      "verifyNativeResolve": false,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "first-default-charref-cr",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\source-first-default-charref-cr.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-first-default-charref-cr.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "A5405950903059B5D9FA759CE8DD1FF3C4BF0733A989FBB09846E79E25EB60F0",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFnVSVSNLKLn95N6RcO74P",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "FIRST",
+          "units": [
+            68,
+            10,
+            69
+          ]
+        }
+      ],
+      "verifyNativeResolve": true,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "first-user-charref-cr",
+      "source": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\source-first-user-charref-cr.ciff",
+      "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\clst\\implementation-2026-10-21\\saved-first-user-charref-cr.ciff",
+      "status": "ok",
+      "suppliedPrinter": false,
+      "now": "2026-10-21T09:34:56.000Z",
+      "sha256": "3DA94BAFEA43446B51A2045D9CB77AD45098862E3FFD6A006E3E9450E1251FAA",
+      "token": "PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGOFo7MHD7zBStAAyD70A3ND",
+      "mask": "1",
+      "fieldCount": 1,
+      "rawCalculatedData": [
+        {
+          "name": "FIRST",
+          "units": [
+            85,
+            10,
+            86
+          ]
+        }
+      ],
+      "verifyNativeResolve": true,
+      "validation": {
+        "invalidPrintableFieldNames": [],
+        "invalidHardwareFieldNames": [],
+        "structuralErrors": [],
+        "ok": true
+      }
+    }
+  ]
+}

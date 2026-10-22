@@ -1,0 +1,2 @@
+6810ae9b MOV EAX,0x6810aea1
+6810aea0 RET

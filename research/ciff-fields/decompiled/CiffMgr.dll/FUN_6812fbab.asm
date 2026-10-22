@@ -1,0 +1,6 @@
+6812fbab PUSH EBP
+6812fbac MOV EBP,ESP
+6812fbae MOV EAX,dword ptr [EBP + 0x8]
+6812fbb1 MOV EAX,dword ptr [EAX*0x4 + 0x681601f0]
+6812fbb8 POP EBP
+6812fbb9 RET 0x4

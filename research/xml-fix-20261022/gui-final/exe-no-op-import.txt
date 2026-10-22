@@ -1,0 +1,71 @@
+Window: "CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-final/xml-exe-no-op-import.ciff", App: CLARiSOFT.exe.
+	0 окно CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-final/xml-exe-no-op-import.ciff Secondary Actions: Raise
+		1 панель ID: 59392
+			2 панель инструментов ID: 59392
+				3 поле со списком (settable, string) Value: 500% ID: 104
+					4 текстовый (settable, string) Value: 500%
+					5 кнопка Открыть ID: DropDown
+				6 текстовый DataFlex 6320(53mm) - Continuous
+				7 текстовый Default
+				8 кнопка Zoom In
+				9 кнопка Zoom Out
+				10 кнопка Select Coder
+			11 панель инструментов ID: 59392
+				12 кнопка (disabled) User Level (Ctrl+U)
+				13 кнопка New
+				14 кнопка Open
+				15 кнопка (disabled) Save
+				16 кнопка Print Preview
+				17 кнопка (disabled) Sub Image Preview
+				18 кнопка (disabled) Stitched Sub Image Preview
+				19 кнопка Print
+				20 кнопка Download to coder memory
+				21 кнопка (disabled) Delete
+				22 кнопка (disabled) Cut
+				23 кнопка (disabled) Copy
+				24 кнопка (disabled) Paste
+				25 кнопка (disabled) Undo
+				26 кнопка (disabled) Redo
+				27 кнопка (disabled) Horizontal Center
+				28 кнопка (disabled) Vertical Center
+				29 кнопка (disabled) Left Align
+				30 кнопка (disabled) Right Align
+				31 кнопка (disabled) Top Align
+				32 кнопка (disabled) Bottom Align
+				33 кнопка (disabled) Horizontal Spacing
+				34 кнопка (disabled) Vertical Spacing
+				35 кнопка (disabled) Bring to Front
+				36 кнопка (disabled) Send to Back
+				37 кнопка (disabled) Rotate Left
+				38 кнопка (disabled) Rotate Right
+				39 кнопка Select Language
+				40 кнопка About
+				41 кнопка Help Contents
+			42 панель инструментов ID: 10
+				43 элемент меню File
+				44 элемент меню Edit
+				45 элемент меню View
+				46 элемент меню Tools
+				47 элемент меню Help
+		48 строка состояния ID: 59393
+			49 текстовый Ready
+			50 текстовый Sub-Image 1
+			51 текстовый 24, 51
+			52 текстовый mm
+			53 текстовый
+		54 панель ID: 8086660
+			55 панель ID: 8087412
+				56 панель ID: 8087140
+					57 панель ID: 8087600
+				58 панель ID: 8087276
+					59 панель ID: 8086796
+					60 панель ID: 8087548
+			61 панель ID: 134809192
+		62 название (settable, string) Value: CLARiSOFT - C:/Users/GigaGeorge/Desktop/willow-react-vite-test_1.4.0/research/xml-fix-20261022/exports-final/xml-exe-no-op-import.ciff
+			63 строка меню Система ID: MenuBar
+				64 элемент меню Система
+			65 кнопка Свернуть
+			66 кнопка Восстановить
+			67 кнопка Закрыть
+
+The focused UI element is 59 панель ID: 8086796.

@@ -1,0 +1,27 @@
+4200d514 PUSH ESI
+4200d515 MOV ESI,ECX
+4200d517 PUSH EDI
+4200d518 XOR EDI,EDI
+4200d51a CMP dword ptr [ESI + 0x10],EDI
+4200d51d JZ 0x4200d530
+4200d51f CMP dword ptr [ESI + 0x14],EDI
+4200d522 JZ 0x4200d530
+4200d524 PUSH dword ptr [ESI + 0x14]
+4200d527 PUSH dword ptr [ESI + 0xc]
+4200d52a CALL dword ptr [0x420890b4]
+4200d530 PUSH dword ptr [ESI + 0xc]
+4200d533 CALL dword ptr [0x4208907c]
+4200d539 CMP dword ptr [ESI + 0x10],EDI
+4200d53c JZ 0x4200d547
+4200d53e PUSH dword ptr [ESI + 0x10]
+4200d541 CALL dword ptr [0x420890bc]
+4200d547 MOV dword ptr [ESI + 0xc],EDI
+4200d54a MOV dword ptr [ESI + 0x10],EDI
+4200d54d MOV dword ptr [ESI + 0x14],EDI
+4200d550 MOV dword ptr [ESI + 0x18],EDI
+4200d553 MOV dword ptr [ESI + 0x4],EDI
+4200d556 MOV dword ptr [ESI + 0x8],EDI
+4200d559 MOV dword ptr [ESI + 0x1c],EDI
+4200d55c POP EDI
+4200d55d POP ESI
+4200d55e RET

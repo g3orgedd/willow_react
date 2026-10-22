@@ -1,0 +1,1736 @@
+{
+  "mode": "web",
+  "caseId": "party-box-gtin",
+  "filename": "xml-web-party-box-gtin.ciff",
+  "actualLocation": "http://127.0.0.1:5173/",
+  "transport": "HTTP Vite without preload/IPC",
+  "fixtureConstruction": "Research fixture prepared inside actual renderer; production Save dialog button clicked",
+  "sourceXml": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<ImageDesign Version=\"23\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6320(53mm) - Continuous\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!A</ClStVersionInfo></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>1600</ImageWidth><ImageHeight>2400</ImageHeight><MaxImageWidth>1600</MaxImageWidth><MaxImageHeight>2400</MaxImageHeight><XRes>0.120000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>",
+  "builderDraft": {
+    "version": 1,
+    "creationKind": "preset-builder",
+    "base": {
+      "printerModel": "DataFlex 6320(53mm)",
+      "printMode": "Continuous",
+      "widthMm": 16,
+      "heightMm": 24
+    },
+    "dataSourceMode": "party-code",
+    "partyCode": {
+      "withBoxCounter": true,
+      "gtinFieldName": "GTIN"
+    },
+    "dataMatrix": {
+      "symbolSize": "22X22",
+      "snValue": "0000000000",
+      "moduleSize": 0.5
+    },
+    "fields": {
+      "party": {
+        "enabled": false,
+        "generation": "printer-input",
+        "defaultValue": "00000000",
+        "maxChars": null
+      },
+      "team": {
+        "enabled": false,
+        "generation": "printer-input",
+        "defaultValue": "00",
+        "maxChars": null
+      },
+      "rNum": {
+        "enabled": false,
+        "generation": "printer-input",
+        "defaultValue": "000",
+        "maxChars": null
+      },
+      "productDate": {
+        "enabled": false,
+        "generation": "printer-current",
+        "format": "dd/MM/yy",
+        "separator": ".",
+        "locale": "en",
+        "offset": {
+          "years": 0,
+          "months": 0,
+          "days": 0
+        }
+      },
+      "expirationDate": {
+        "enabled": false,
+        "generation": "printer-offset",
+        "format": "dd/MM/yy",
+        "separator": ".",
+        "locale": "en",
+        "offset": {
+          "years": 0,
+          "months": 0,
+          "days": 30
+        }
+      },
+      "packingDate": {
+        "enabled": false,
+        "generation": "printer-current",
+        "format": "dd/MM/yy",
+        "separator": ".",
+        "locale": "en",
+        "offset": {
+          "years": 0,
+          "months": 0,
+          "days": 0
+        }
+      },
+      "time": {
+        "enabled": false,
+        "format": "HH:mm",
+        "separator": ":"
+      }
+    }
+  },
+  "beforeAction": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1033,
+      "height": 1808,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "fields": [
+      {
+        "name": "Arial10",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 125,
+          "y": 100,
+          "w": 717,
+          "h": 392
+        }
+      },
+      {
+        "name": "Times13",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 150,
+          "y": 700,
+          "w": 700,
+          "h": 517
+        }
+      },
+      {
+        "name": "Courier8",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 200,
+          "y": 1500,
+          "w": 833,
+          "h": 308
+        }
+      }
+    ]
+  },
+  "preSave": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1300,
+      "height": 1300,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "canvas": {
+      "width": 1600,
+      "height": 2400,
+      "pixelsPerMm": 12
+    },
+    "fields": [
+      {
+        "name": "Field00",
+        "type": "Barcode",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 1100,
+          "h": 1100
+        },
+        "previewText": "DataMatrix 22X22",
+        "calculatedData": "~10100000000000000110000001000000000002100000",
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "data": {
+          "dataType": 5,
+          "defaultValue": "",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": null,
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": {
+          "clsid": "{7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F}",
+          "quietMargin": 0,
+          "bcH": 1100,
+          "dataMatrix": {
+            "moduleSize": 0.5,
+            "symbolSize": "22X22",
+            "segments": [
+              {
+                "index": 0,
+                "srcField": "C1",
+                "defaultValue": "~101",
+                "dataType": 5
+              },
+              {
+                "index": 1,
+                "srcField": "GTIN",
+                "defaultValue": "00000000000000",
+                "dataType": 5
+              },
+              {
+                "index": 2,
+                "srcField": "C3",
+                "defaultValue": "11",
+                "dataType": 5
+              },
+              {
+                "index": 3,
+                "srcField": "PRODUCT_DATE",
+                "defaultValue": "000000",
+                "dataType": 5
+              },
+              {
+                "index": 4,
+                "srcField": "C2",
+                "defaultValue": "10",
+                "dataType": 5
+              },
+              {
+                "index": 5,
+                "srcField": "SN",
+                "defaultValue": "0000000000",
+                "dataType": 5
+              },
+              {
+                "index": 6,
+                "srcField": "C4",
+                "defaultValue": "21",
+                "dataType": 5
+              },
+              {
+                "index": 7,
+                "srcField": "BOX_COUNTER",
+                "defaultValue": "00000",
+                "dataType": 5
+              }
+            ],
+            "structureDirty": true
+          }
+        },
+        "dataMatrixPreviewSegmentValues": [
+          "~101",
+          "00000000000000",
+          "11",
+          "000000",
+          "10",
+          "0000000000  ",
+          "21",
+          "00000"
+        ],
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": null,
+        "nativeMetrics": null,
+        "node": {
+          "className": "Group",
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            44,
+            44
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 132,
+            "height": 132
+          }
+        }
+      },
+      {
+        "name": "C1",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 0,
+          "w": 783,
+          "h": 392
+        },
+        "previewText": "~101",
+        "calculatedData": "~101",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "~101",
+          "maxChars": 4,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "~101",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 94,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "GTIN",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 492,
+          "w": 2683,
+          "h": 392
+        },
+        "previewText": "00000000000000",
+        "calculatedData": "00000000000000",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "00000000000000",
+          "maxChars": 14,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "00000000000000",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "00000000000000",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 322,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "C3",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 984,
+          "w": 358,
+          "h": 392
+        },
+        "previewText": "11",
+        "calculatedData": "11",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "11",
+          "maxChars": 7,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "11",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 43,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "PRODUCT_DATE",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 1475,
+          "w": 1150,
+          "h": 392
+        },
+        "previewText": "000000",
+        "calculatedData": "000000",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "000000",
+          "maxChars": 6,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "000000",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "000000",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 138,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "C2",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 1967,
+          "w": 383,
+          "h": 392
+        },
+        "previewText": "10",
+        "calculatedData": "10",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "10",
+          "maxChars": 2,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "10",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 46,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "SN",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 2459,
+          "w": 2117,
+          "h": 392
+        },
+        "previewText": "0000000000  ",
+        "calculatedData": "0000000000",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "0000000000",
+          "maxChars": 12,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "0000000000",
+          "mask": "0-9,A-Z,a-z",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "0000000000  ",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 254,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "C4",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 2900,
+          "w": 383,
+          "h": 392
+        },
+        "previewText": "21",
+        "calculatedData": "21",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "21",
+          "maxChars": 2,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "21",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 46,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "BOX_COUNTER",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 3330,
+          "w": 958,
+          "h": 392
+        },
+        "previewText": "00000",
+        "calculatedData": "00000",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "00000",
+          "maxChars": 5,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "00000",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "00000",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 115,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      }
+    ]
+  },
+  "aggregate": {
+    "width": 1300,
+    "height": 1300
+  },
+  "expectedImage": {
+    "width": 1300,
+    "height": 1300
+  },
+  "expectedMax": {
+    "width": 1600,
+    "height": 2400
+  },
+  "postSave": {
+    "subImage": {
+      "imageReference": "1",
+      "width": 1300,
+      "height": 1300,
+      "maxWidth": 1600,
+      "maxHeight": 2400,
+      "workspaceWidth": 1600,
+      "workspaceHeight": 2400,
+      "xRes": 0.12,
+      "yRes": null,
+      "orientation": 0,
+      "usedSizeDirty": false,
+      "printerType": "DataFlex 6320(53mm)"
+    },
+    "fields": [
+      {
+        "name": "Field00",
+        "type": "Barcode",
+        "printed": true,
+        "orientation": 0,
+        "geom": {
+          "x": 200,
+          "y": 200,
+          "w": 1100,
+          "h": 1100
+        },
+        "previewText": "DataMatrix 22X22",
+        "calculatedData": "~1010000000000000011000000100000000000  2100000",
+        "text": {
+          "pitch": 10,
+          "xMag": null
+        },
+        "data": {
+          "dataType": 5,
+          "defaultValue": "",
+          "maxChars": null,
+          "fixedLen": false,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": null,
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": {
+          "clsid": "{7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F}",
+          "quietMargin": 0,
+          "bcH": 1100,
+          "dataMatrix": {
+            "moduleSize": 0.5,
+            "symbolSize": "22X22",
+            "segments": [
+              {
+                "index": 0,
+                "srcField": "C1",
+                "defaultValue": "~101",
+                "dataType": 5,
+                "sourceObjectIndex": 0
+              },
+              {
+                "index": 1,
+                "srcField": "GTIN",
+                "defaultValue": "00000000000000",
+                "dataType": 5,
+                "sourceObjectIndex": 1
+              },
+              {
+                "index": 2,
+                "srcField": "C3",
+                "defaultValue": "11",
+                "dataType": 5,
+                "sourceObjectIndex": 2
+              },
+              {
+                "index": 3,
+                "srcField": "PRODUCT_DATE",
+                "defaultValue": "000000",
+                "dataType": 5,
+                "sourceObjectIndex": 3
+              },
+              {
+                "index": 4,
+                "srcField": "C2",
+                "defaultValue": "10",
+                "dataType": 5,
+                "sourceObjectIndex": 4
+              },
+              {
+                "index": 5,
+                "srcField": "SN",
+                "defaultValue": "0000000000  ",
+                "dataType": 5,
+                "sourceObjectIndex": 5
+              },
+              {
+                "index": 6,
+                "srcField": "C4",
+                "defaultValue": "21",
+                "dataType": 5,
+                "sourceObjectIndex": 6
+              },
+              {
+                "index": 7,
+                "srcField": "BOX_COUNTER",
+                "defaultValue": "00000",
+                "dataType": 5,
+                "sourceObjectIndex": 7
+              }
+            ],
+            "structureDirty": false
+          }
+        },
+        "dataMatrixPreviewSegmentValues": [
+          "~101",
+          "00000000000000",
+          "11",
+          "000000",
+          "10",
+          "0000000000  ",
+          "21",
+          "00000"
+        ],
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": null,
+        "nativeMetrics": null,
+        "node": {
+          "className": "Group",
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            44,
+            44
+          ],
+          "selfRect": {
+            "x": 0,
+            "y": 0,
+            "width": 132,
+            "height": 132
+          }
+        }
+      },
+      {
+        "name": "C1",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 0,
+          "w": 783,
+          "h": 392
+        },
+        "previewText": "~101",
+        "calculatedData": "~101",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "~101",
+          "maxChars": 4,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "~101",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 94,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "GTIN",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 492,
+          "w": 2683,
+          "h": 392
+        },
+        "previewText": "00000000000000",
+        "calculatedData": "00000000000000",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "00000000000000",
+          "maxChars": 14,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "00000000000000",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "00000000000000",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 322,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "C3",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 984,
+          "w": 358,
+          "h": 392
+        },
+        "previewText": "11",
+        "calculatedData": "11",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "11",
+          "maxChars": 7,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "11",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 43,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "PRODUCT_DATE",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 1475,
+          "w": 1150,
+          "h": 392
+        },
+        "previewText": "000000",
+        "calculatedData": "000000",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "000000",
+          "maxChars": 6,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "000000",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "000000",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 138,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "C2",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 1967,
+          "w": 383,
+          "h": 392
+        },
+        "previewText": "10",
+        "calculatedData": "10",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "10",
+          "maxChars": 2,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "10",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 46,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "SN",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 2459,
+          "w": 2117,
+          "h": 392
+        },
+        "previewText": "0000000000  ",
+        "calculatedData": "0000000000  ",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "0000000000",
+          "maxChars": 12,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "0000000000",
+          "mask": "0-9,A-Z,a-z",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "0000000000  ",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 254,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "C4",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 2900,
+          "w": 383,
+          "h": 392
+        },
+        "previewText": "21",
+        "calculatedData": "21",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "21",
+          "maxChars": 2,
+          "fixedLen": false,
+          "staticAttr": null,
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": false,
+          "textEntryMode": "fixed",
+          "userEnterData": "",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "21",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 46,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      },
+      {
+        "name": "BOX_COUNTER",
+        "type": "FixedText",
+        "printed": false,
+        "orientation": 0,
+        "geom": {
+          "x": 1750,
+          "y": 3330,
+          "w": 958,
+          "h": 392
+        },
+        "previewText": "00000",
+        "calculatedData": "00000",
+        "text": {
+          "pitch": 10,
+          "xMag": 100
+        },
+        "data": {
+          "dataType": 0,
+          "defaultValue": "00000",
+          "maxChars": 5,
+          "fixedLen": true,
+          "staticAttr": "0",
+          "parseAttr": null,
+          "referenceAttr": "",
+          "srcData": null,
+          "hasVarText": true,
+          "textEntryMode": "user",
+          "userEnterData": "00000",
+          "mask": "",
+          "offsetRef": null,
+          "dateLocale": null,
+          "counter": {
+            "noOfChars": null,
+            "significance": 0,
+            "startVal": null,
+            "endVal": null,
+            "stepSize": null,
+            "clrStCntType": ""
+          }
+        },
+        "barcode": null,
+        "dataMatrixPreviewSegmentValues": null,
+        "effectiveFont": {
+          "face": "Arial",
+          "pitch": 10,
+          "xMag": 100,
+          "yMag": 100,
+          "bold": false,
+          "italic": false
+        },
+        "nativeRequest": {
+          "text": "00000",
+          "face": "Arial",
+          "pitch": 10,
+          "pitchResolution": 1,
+          "bold": false,
+          "italic": false,
+          "xMag": 100,
+          "yMag": 100,
+          "charSpace": 0,
+          "xRes": 1200,
+          "yRes": 1200
+        },
+        "nativeMetrics": {
+          "width": 115,
+          "height": 47,
+          "fontFamily": 32
+        },
+        "node": null
+      }
+    ],
+    "validation": {
+      "invalidPrintableFieldNames": [],
+      "invalidHardwareFieldNames": [],
+      "structuralErrors": []
+    }
+  },
+  "expectedResolution": {
+    "xRes": 0.12,
+    "yRes": 0.12
+  },
+  "xmlAfterSave": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\r\n<ImageDesign Version=\"23\" xml:space=\"default\"><Header DesignedFor=\"DataFlex 6320(53mm) - Continuous\"><ClStVersionInfo>PyOA!LMe37jF5gGD_OEeQJPAIR3Et2HVCOk4RKDB93Hl9AjBVgIOzL2x64vRUW8LPDPLLM!BMqKMGRFtEFE14tJB8QHyE4c51D13SR5m2JC4C!HReJIzNMv7EaRC14TVSJX1Ti6D_S6QHLuGOoN2BIHtEKkTPwVMq4RaLNP4UrOELUSs51e139EUN1QgGBt63L0QEVRvKL!22pG2THF14PjEMl1UuEIqUQj16i9A2K4l7S_GUrKQL48XELK3</ClStVersionInfo></Header><SubImage ImageReference=\"1\"><SubHeader FormatName=\"Default\" PrinterFormatName=\"Default\"><ImageWidth>1300</ImageWidth><ImageHeight>1300</ImageHeight><MaxImageWidth>1600</MaxImageWidth><MaxImageHeight>2400</MaxImageHeight><XRes>0.120000</XRes><CurrentOrientation>0</CurrentOrientation></SubHeader><Field Name=\"Field00\"><FldType>Barcode</FldType><CLSID>{7A4AA4CF-F5CD-11D4-8DAE-0050DAFE8A9F}</CLSID><X>200</X><Y>200</Y><W>1100</W><H>1100</H><Ln>1</Ln><CalcData><![CDATA[~1010000000000000011000000100000000000  2100000]]></CalcData><Data><Object Reference=\"\"><DataType>5</DataType><Default><![CDATA[~101]]></Default><SrcField SrcFieldName=\"C1\"/></Object><Object Index=\"1\" Reference=\"\"><DataType>5</DataType><Default><![CDATA[00000000000000]]></Default><SrcField SrcFieldName=\"GTIN\"/></Object><Object Index=\"2\" Reference=\"\"><DataType>5</DataType><Default><![CDATA[11]]></Default><SrcField SrcFieldName=\"C3\"/></Object><Object Index=\"3\" Reference=\"\"><DataType>5</DataType><Default><![CDATA[000000]]></Default><SrcField SrcFieldName=\"PRODUCT_DATE\"/></Object><Object Index=\"4\" Reference=\"\"><DataType>5</DataType><Default><![CDATA[10]]></Default><SrcField SrcFieldName=\"C2\"/></Object><Object Index=\"5\" Reference=\"\"><DataType>5</DataType><Default><![CDATA[0000000000  ]]></Default><SrcField SrcFieldName=\"SN\"/></Object><Object Index=\"6\" Reference=\"\"><DataType>5</DataType><Default><![CDATA[21]]></Default><SrcField SrcFieldName=\"C4\"/></Object><Object Index=\"7\" Reference=\"\"><DataType>5</DataType><Default><![CDATA[00000]]></Default><SrcField SrcFieldName=\"BOX_COUNTER\"/></Object></Data><Barcode><BcH>1100</BcH><HR><HRFont/></HR><QuietMargin>0</QuietMargin><DataMatrix><ModuleSize>50</ModuleSize><SymbolSize>22X22</SymbolSize></DataMatrix></Barcode></Field><Field Name=\"C1\"><FldType>FixedText</FldType><Displayed>0</Displayed><X>1750</X><Y>0</Y><W>783</W><H>392</H><Ln>1</Ln><CalcData><![CDATA[~101]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><MaxNoOfChars>4</MaxNoOfChars><Default><![CDATA[~101]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"GTIN\"><FldType>FixedText</FldType><Displayed>0</Displayed><X>1750</X><Y>492</Y><W>2683</W><H>392</H><Ln>1</Ln><CalcData><![CDATA[00000000000000]]></CalcData><Data><Object Static=\"0\" Reference=\"\"><DataType>0</DataType><MaxNoOfChars>14</MaxNoOfChars><Default><![CDATA[00000000000000]]></Default><FixedLen/><VarText><UserEnterData><![CDATA[00000000000000]]></UserEnterData></VarText></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"C3\"><FldType>FixedText</FldType><Displayed>0</Displayed><X>1750</X><Y>984</Y><W>358</W><H>392</H><Ln>1</Ln><CalcData><![CDATA[11]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><MaxNoOfChars>7</MaxNoOfChars><Default><![CDATA[11]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"PRODUCT_DATE\"><FldType>FixedText</FldType><Displayed>0</Displayed><X>1750</X><Y>1475</Y><W>1150</W><H>392</H><Ln>1</Ln><CalcData><![CDATA[000000]]></CalcData><Data><Object Static=\"0\" Reference=\"\"><DataType>0</DataType><MaxNoOfChars>6</MaxNoOfChars><Default><![CDATA[000000]]></Default><FixedLen/><VarText><UserEnterData><![CDATA[000000]]></UserEnterData></VarText></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"C2\"><FldType>FixedText</FldType><Displayed>0</Displayed><X>1750</X><Y>1967</Y><W>383</W><H>392</H><Ln>1</Ln><CalcData><![CDATA[10]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><MaxNoOfChars>2</MaxNoOfChars><Default><![CDATA[10]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"SN\"><FldType>FixedText</FldType><Displayed>0</Displayed><X>1750</X><Y>2459</Y><W>2117</W><H>392</H><Ln>1</Ln><CalcData><![CDATA[0000000000  ]]></CalcData><Data><Object Static=\"0\" Reference=\"\"><DataType>0</DataType><MaxNoOfChars>12</MaxNoOfChars><Default><![CDATA[0000000000]]></Default><FixedLen/><VarText><Mask><![CDATA[0-9,A-Z,a-z]]></Mask><UserEnterData><![CDATA[0000000000]]></UserEnterData></VarText></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"C4\"><FldType>FixedText</FldType><Displayed>0</Displayed><X>1750</X><Y>2900</Y><W>383</W><H>392</H><Ln>1</Ln><CalcData><![CDATA[21]]></CalcData><Data><Object Reference=\"\"><DataType>0</DataType><MaxNoOfChars>2</MaxNoOfChars><Default><![CDATA[21]]></Default></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field><Field Name=\"BOX_COUNTER\"><FldType>FixedText</FldType><Displayed>0</Displayed><X>1750</X><Y>3330</Y><W>958</W><H>392</H><CalcData><![CDATA[00000]]></CalcData><Data><Object Static=\"0\" Reference=\"\"><DataType>0</DataType><MaxNoOfChars>5</MaxNoOfChars><Default><![CDATA[00000]]></Default><FixedLen/><VarText><UserEnterData><![CDATA[00000]]></UserEnterData></VarText></Object></Data><Text><Font><Pitch>10</Pitch></Font></Text></Field></SubImage><GenericSettings><ImageMapping><Map SubIMageRef=\"1\">1</Map></ImageMapping></GenericSettings></ImageDesign>",
+  "saveStartedAt": "2026-10-22T09:20:24.942Z",
+  "saveEndedAt": "2026-10-22T09:20:24.974Z",
+  "file": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\xml-fix-20261022\\exports-final\\xml-web-party-box-gtin.ciff",
+  "bytes": 10924,
+  "sha256": "a652446cc2590294e0d3714ca8ef9c6af6bd32ab8d8eacb7640dd8e50c41514c",
+  "screenshot": "web-party-box-gtin-editor.png",
+  "completedDownloadEvents": [
+    {
+      "event": "will-download",
+      "filename": "xml-web-normal.ciff",
+      "at": "2026-10-22T09:20:23.226Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-normal.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:23.297Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-no-op-import.ciff",
+      "at": "2026-10-22T09:20:23.484Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-no-op-import.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:23.505Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-rotation.ciff",
+      "at": "2026-10-22T09:20:23.681Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-rotation.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:23.704Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-hidden-outlier.ciff",
+      "at": "2026-10-22T09:20:23.889Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-hidden-outlier.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:23.910Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-all-hidden.ciff",
+      "at": "2026-10-22T09:20:24.079Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-all-hidden.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:24.102Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-last-field-deleted.ciff",
+      "at": "2026-10-22T09:20:24.274Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-last-field-deleted.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:24.299Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-anisotropic-yres.ciff",
+      "at": "2026-10-22T09:20:24.478Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-anisotropic-yres.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:24.500Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-party-gtin2.ciff",
+      "at": "2026-10-22T09:20:24.710Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-party-gtin2.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:24.733Z"
+    },
+    {
+      "event": "will-download",
+      "filename": "xml-web-party-box-gtin.ciff",
+      "at": "2026-10-22T09:20:24.945Z"
+    },
+    {
+      "event": "done",
+      "filename": "xml-web-party-box-gtin.ciff",
+      "state": "completed",
+      "at": "2026-10-22T09:20:24.971Z"
+    }
+  ],
+  "executable": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\node_modules\\electron\\dist\\electron.exe",
+  "preload": null,
+  "savePath": "Save button -> will-download -> setSavePath -> completed"
+}

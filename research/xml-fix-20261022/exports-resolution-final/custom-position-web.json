@@ -1,0 +1,5385 @@
+{
+  "capturedAt": "2026-10-22T13:03:23.606Z",
+  "mode": "web",
+  "nativeReferenceFile": "C:\\Users\\GigaGeorge\\Desktop\\willow-react-vite-test_1.4.0\\research\\resolution-preview-20261022\\native-field-resolutions\\position-results.json",
+  "nativeReferenceSha256": "8652636b513ad8c3949bebcac06ea61880676a7c07c37e0d484d9174cb42bf4d",
+  "scope": "Controlled fallback renderer against independent original COM custom-capability Draw corpus. No physical CIFF save or GUI screenshot implied.",
+  "captures": [
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 0,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": 0,
+          "offsetY": 0,
+          "differentPixels": 0,
+          "bestX": 0,
+          "bestY": 0,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot0-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          1,
+          0,
+          0,
+          1,
+          20,
+          20
+        ],
+        "cellWorldBounds": {
+          "x": 20,
+          "y": 20,
+          "width": 107,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 0,
+        "y": 0
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot0-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 0,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": 21,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 21,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot0-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          1,
+          0,
+          0,
+          1,
+          41,
+          30
+        ],
+        "cellWorldBounds": {
+          "x": 41,
+          "y": 30,
+          "width": 107,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 21,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot0-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 0,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": -2,
+          "offsetY": 1,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 1,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot0-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          1,
+          0,
+          0,
+          1,
+          18,
+          21
+        ],
+        "cellWorldBounds": {
+          "x": 18,
+          "y": 21,
+          "width": 107,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 1
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot0-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 90,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": 0,
+          "offsetY": 0,
+          "differentPixels": 0,
+          "bestX": 0,
+          "bestY": 0,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot90-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          6.123233995736766e-17,
+          1,
+          -1,
+          6.123233995736766e-17,
+          67,
+          20
+        ],
+        "cellWorldBounds": {
+          "x": 20,
+          "y": 20,
+          "width": 47,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 0,
+        "y": 0
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot90-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 90,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": 21,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 21,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot90-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          6.123233995736766e-17,
+          1,
+          -1,
+          6.123233995736766e-17,
+          88,
+          30
+        ],
+        "cellWorldBounds": {
+          "x": 41,
+          "y": 30,
+          "width": 47,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 21,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot90-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 90,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": -2,
+          "offsetY": 1,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 1,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot90-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          6.123233995736766e-17,
+          1,
+          -1,
+          6.123233995736766e-17,
+          65,
+          21
+        ],
+        "cellWorldBounds": {
+          "x": 18,
+          "y": 21,
+          "width": 47,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 1
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot90-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 180,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": 0,
+          "offsetY": 0,
+          "differentPixels": 0,
+          "bestX": 0,
+          "bestY": 0,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot180-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1,
+          1.2246467991473532e-16,
+          -1.2246467991473532e-16,
+          -1,
+          127,
+          67
+        ],
+        "cellWorldBounds": {
+          "x": 20,
+          "y": 20,
+          "width": 107,
+          "height": 47.000000000000014
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 0,
+        "y": 0
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot180-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 180,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": 21,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 21,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot180-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1,
+          1.2246467991473532e-16,
+          -1.2246467991473532e-16,
+          -1,
+          148,
+          77
+        ],
+        "cellWorldBounds": {
+          "x": 41,
+          "y": 30,
+          "width": 107,
+          "height": 47.000000000000014
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 21,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot180-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 180,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": -2,
+          "offsetY": 1,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 1,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot180-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1,
+          1.2246467991473532e-16,
+          -1.2246467991473532e-16,
+          -1,
+          125,
+          68
+        ],
+        "cellWorldBounds": {
+          "x": 18,
+          "y": 21,
+          "width": 107,
+          "height": 47.000000000000014
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 1
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot180-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 270,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": 0,
+          "offsetY": 0,
+          "differentPixels": 0,
+          "bestX": 0,
+          "bestY": 0,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot270-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1.8369701987210297e-16,
+          -1,
+          1,
+          -1.8369701987210297e-16,
+          20,
+          127
+        ],
+        "cellWorldBounds": {
+          "x": 19.99999999999998,
+          "y": 19.999999999999986,
+          "width": 47.00000000000002,
+          "height": 107.00000000000001
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 0,
+        "y": 0
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot270-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 270,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": 21,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 21,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot270-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1.8369701987210297e-16,
+          -1,
+          1,
+          -1.8369701987210297e-16,
+          41,
+          137
+        ],
+        "cellWorldBounds": {
+          "x": 40.99999999999998,
+          "y": 29.999999999999986,
+          "width": 47.00000000000002,
+          "height": 107.00000000000001
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 21,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot270-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-square",
+        "orientation": 270,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.12,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": -2,
+          "offsetY": 1,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 1,
+          "bestDifference": 0
+        },
+        "modelW": 892,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-square-rot270-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 892,
+        "h": 392
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1.8369701987210297e-16,
+          -1,
+          1,
+          -1.8369701987210297e-16,
+          18,
+          128
+        ],
+        "cellWorldBounds": {
+          "x": 17.99999999999998,
+          "y": 20.999999999999986,
+          "width": 47.00000000000002,
+          "height": 107.00000000000001
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 1
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-square-rot270-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 0,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 217,
+          "height": 96,
+          "placedWidth": 217,
+          "placedHeight": 96,
+          "offsetX": 0,
+          "offsetY": -1,
+          "differentPixels": 0,
+          "bestX": 0,
+          "bestY": -1,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot0-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          1,
+          0,
+          0,
+          0.5,
+          20,
+          19.5
+        ],
+        "cellWorldBounds": {
+          "x": 20,
+          "y": 19.5,
+          "width": 217,
+          "height": 48
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 0,
+        "y": -1
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot0-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 0,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 217,
+          "height": 96,
+          "placedWidth": 217,
+          "placedHeight": 96,
+          "offsetX": 21,
+          "offsetY": 20,
+          "differentPixels": 0,
+          "bestX": 21,
+          "bestY": 20,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot0-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          1,
+          0,
+          0,
+          0.5,
+          41,
+          30
+        ],
+        "cellWorldBounds": {
+          "x": 41,
+          "y": 30,
+          "width": 217,
+          "height": 48
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 21,
+        "y": 20
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot0-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 0,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 217,
+          "height": 96,
+          "placedWidth": 217,
+          "placedHeight": 96,
+          "offsetX": -2,
+          "offsetY": 3,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 3,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot0-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          1,
+          0,
+          0,
+          0.5,
+          18,
+          21.5
+        ],
+        "cellWorldBounds": {
+          "x": 18,
+          "y": 21.5,
+          "width": 217,
+          "height": 48
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 3
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot0-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 90,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 96,
+          "height": 217,
+          "placedWidth": 96,
+          "placedHeight": 217,
+          "offsetX": 0,
+          "offsetY": -1,
+          "differentPixels": 0,
+          "bestX": 0,
+          "bestY": -1,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot90-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          3.061616997868383e-17,
+          0.5,
+          -1,
+          6.123233995736766e-17,
+          116,
+          19.499999999999996
+        ],
+        "cellWorldBounds": {
+          "x": 20,
+          "y": 19.499999999999996,
+          "width": 96,
+          "height": 108.5
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 0,
+        "y": -1
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot90-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 90,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 96,
+          "height": 217,
+          "placedWidth": 96,
+          "placedHeight": 217,
+          "offsetX": 21,
+          "offsetY": 20,
+          "differentPixels": 0,
+          "bestX": 21,
+          "bestY": 20,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot90-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          3.061616997868383e-17,
+          0.5,
+          -1,
+          6.123233995736766e-17,
+          137,
+          30
+        ],
+        "cellWorldBounds": {
+          "x": 41,
+          "y": 30,
+          "width": 96,
+          "height": 108.5
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 21,
+        "y": 20
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot90-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 90,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 96,
+          "height": 217,
+          "placedWidth": 96,
+          "placedHeight": 217,
+          "offsetX": -2,
+          "offsetY": 3,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 3,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot90-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          3.061616997868383e-17,
+          0.5,
+          -1,
+          6.123233995736766e-17,
+          114,
+          21.5
+        ],
+        "cellWorldBounds": {
+          "x": 18,
+          "y": 21.5,
+          "width": 96,
+          "height": 108.5
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 3
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot90-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 180,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 217,
+          "height": 96,
+          "placedWidth": 217,
+          "placedHeight": 96,
+          "offsetX": 0,
+          "offsetY": -1,
+          "differentPixels": 0,
+          "bestX": 0,
+          "bestY": -1,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot180-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          -1,
+          1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -0.5,
+          237,
+          67.5
+        ],
+        "cellWorldBounds": {
+          "x": 20,
+          "y": 19.5,
+          "width": 217,
+          "height": 48.00000000000003
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 0,
+        "y": -1
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot180-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 180,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 217,
+          "height": 96,
+          "placedWidth": 217,
+          "placedHeight": 96,
+          "offsetX": 21,
+          "offsetY": 20,
+          "differentPixels": 0,
+          "bestX": 21,
+          "bestY": 20,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot180-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          -1,
+          1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -0.5,
+          258,
+          78.00000000000001
+        ],
+        "cellWorldBounds": {
+          "x": 41,
+          "y": 30.000000000000014,
+          "width": 217,
+          "height": 48.00000000000003
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 21,
+        "y": 20
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot180-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 180,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 217,
+          "height": 96,
+          "placedWidth": 217,
+          "placedHeight": 96,
+          "offsetX": -2,
+          "offsetY": 3,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 3,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot180-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          -1,
+          1.2246467991473532e-16,
+          -6.123233995736766e-17,
+          -0.5,
+          235,
+          69.5
+        ],
+        "cellWorldBounds": {
+          "x": 18,
+          "y": 21.5,
+          "width": 217,
+          "height": 48.00000000000003
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 3
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot180-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 270,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 96,
+          "height": 217,
+          "placedWidth": 96,
+          "placedHeight": 217,
+          "offsetX": 0,
+          "offsetY": -1,
+          "differentPixels": 0,
+          "bestX": 0,
+          "bestY": -1,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot270-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          -9.184850993605148e-17,
+          -0.5,
+          1,
+          -1.8369701987210297e-16,
+          19.999999999999982,
+          128
+        ],
+        "cellWorldBounds": {
+          "x": 19.99999999999996,
+          "y": 19.499999999999986,
+          "width": 96.00000000000003,
+          "height": 108.50000000000001
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 0,
+        "y": -1
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot270-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 270,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 96,
+          "height": 217,
+          "placedWidth": 96,
+          "placedHeight": 217,
+          "offsetX": 21,
+          "offsetY": 20,
+          "differentPixels": 0,
+          "bestX": 21,
+          "bestY": 20,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot270-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          -9.184850993605148e-17,
+          -0.5,
+          1,
+          -1.8369701987210297e-16,
+          40.99999999999998,
+          138.5
+        ],
+        "cellWorldBounds": {
+          "x": 40.99999999999996,
+          "y": 29.999999999999986,
+          "width": 96.00000000000001,
+          "height": 108.50000000000001
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 21,
+        "y": 20
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot270-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-x-double-caps-y-double",
+        "orientation": 270,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.24,
+        "fileY": 0.12,
+        "capsX": 0.12,
+        "capsY": 0.24,
+        "status": "ok",
+        "result": {
+          "width": 96,
+          "height": 217,
+          "placedWidth": 96,
+          "placedHeight": 217,
+          "offsetX": -2,
+          "offsetY": 3,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 3,
+          "bestDifference": 0
+        },
+        "modelW": 1808,
+        "modelH": 400,
+        "prefix": "file-x-double-caps-y-double-rot270-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.12,
+        "yRes": 0.24,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 1808,
+        "h": 400
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1200,
+        "yRes": 2400
+      },
+      "nativeMetrics": {
+        "width": 217,
+        "height": 96
+      },
+      "outlinePath": "M22.0313 77L22.0313 23.3281L2 23.3281L2 16.1563L50.2188 16.1563L50.2188 23.3281L30.0938 23.3281L30.0938 77ZM58.7188 77L58.7188 16.1563L102.7188 16.1563L102.7188 23.3281L66.7813 23.3281L66.7813 41.9688L100.4375 41.9688L100.4375 49.1094L66.7813 49.1094L66.7813 69.8125L104.125 69.8125L104.125 77ZM109.375 77L132.9063 45.2969L112.1563 16.1563L121.7344 16.1563L132.7813 31.7656Q136.2344 36.6094 137.6719 39.2344Q139.7188 35.9063 142.5 32.2969L154.7344 16.1563L163.5 16.1563L142.125 44.8281L165.1563 77L155.1875 77L139.875 55.2969Q138.5938 53.4219 137.2188 51.2188Q135.1875 54.5469 134.3125 55.7969L119.0469 77ZM187.0313 77L187.0313 23.3281L167 23.3281L167 16.1563L215.2188 16.1563L215.2188 23.3281L195.0938 23.3281L195.0938 77Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 217,
+          "height": 96
+        },
+        "absoluteMatrix": [
+          -9.184850993605148e-17,
+          -0.5,
+          1,
+          -1.8369701987210297e-16,
+          17.999999999999982,
+          130
+        ],
+        "cellWorldBounds": {
+          "x": 17.99999999999996,
+          "y": 21.499999999999986,
+          "width": 96.00000000000003,
+          "height": 108.50000000000001
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 3
+      },
+      "workerBitmap": "web-custom-file-x-double-caps-y-double-rot270-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 0,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": 1,
+          "offsetY": 0,
+          "differentPixels": 0,
+          "bestX": 1,
+          "bestY": 0,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot0-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          0.5,
+          0,
+          0,
+          1,
+          20.5,
+          20
+        ],
+        "cellWorldBounds": {
+          "x": 20.5,
+          "y": 20,
+          "width": 53.5,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 1,
+        "y": 0
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot0-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 0,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": 42,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 42,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot0-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          0.5,
+          0,
+          0,
+          1,
+          41,
+          30
+        ],
+        "cellWorldBounds": {
+          "x": 41,
+          "y": 30,
+          "width": 53.5,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 42,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot0-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 0,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": -3,
+          "offsetY": 1,
+          "differentPixels": 0,
+          "bestX": -3,
+          "bestY": 1,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot0-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          0.5,
+          0,
+          0,
+          1,
+          18.5,
+          21
+        ],
+        "cellWorldBounds": {
+          "x": 18.5,
+          "y": 21,
+          "width": 53.5,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -3,
+        "y": 1
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot0-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 90,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": 1,
+          "offsetY": 0,
+          "differentPixels": 0,
+          "bestX": 1,
+          "bestY": 0,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot90-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          6.123233995736766e-17,
+          1,
+          -0.5,
+          3.061616997868383e-17,
+          44,
+          20
+        ],
+        "cellWorldBounds": {
+          "x": 20.5,
+          "y": 20,
+          "width": 23.500000000000007,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 1,
+        "y": 0
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot90-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 90,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": 42,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 42,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot90-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          6.123233995736766e-17,
+          1,
+          -0.5,
+          3.061616997868383e-17,
+          64.5,
+          30.000000000000004
+        ],
+        "cellWorldBounds": {
+          "x": 41,
+          "y": 30.000000000000004,
+          "width": 23.5,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 42,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot90-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 90,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": -3,
+          "offsetY": 1,
+          "differentPixels": 0,
+          "bestX": -3,
+          "bestY": 1,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot90-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          6.123233995736766e-17,
+          1,
+          -0.5,
+          3.061616997868383e-17,
+          42,
+          21.000000000000004
+        ],
+        "cellWorldBounds": {
+          "x": 18.5,
+          "y": 21.000000000000004,
+          "width": 23.500000000000007,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -3,
+        "y": 1
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot90-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 180,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": 1,
+          "offsetY": 0,
+          "differentPixels": 0,
+          "bestX": 1,
+          "bestY": 0,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot180-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -0.5,
+          6.123233995736766e-17,
+          -1.2246467991473532e-16,
+          -1,
+          74,
+          67
+        ],
+        "cellWorldBounds": {
+          "x": 20.499999999999993,
+          "y": 20,
+          "width": 53.50000000000001,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 1,
+        "y": 0
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot180-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 180,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": 42,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 42,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot180-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -0.5,
+          6.123233995736766e-17,
+          -1.2246467991473532e-16,
+          -1,
+          94.5,
+          77
+        ],
+        "cellWorldBounds": {
+          "x": 40.99999999999999,
+          "y": 30,
+          "width": 53.50000000000001,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 42,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot180-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 180,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 107,
+          "height": 47,
+          "placedWidth": 107,
+          "placedHeight": 47,
+          "offsetX": -3,
+          "offsetY": 1,
+          "differentPixels": 0,
+          "bestX": -3,
+          "bestY": 1,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot180-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -0.5,
+          6.123233995736766e-17,
+          -1.2246467991473532e-16,
+          -1,
+          72,
+          68
+        ],
+        "cellWorldBounds": {
+          "x": 18.499999999999993,
+          "y": 21,
+          "width": 53.50000000000001,
+          "height": 47
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -3,
+        "y": 1
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot180-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 270,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": 1,
+          "offsetY": 0,
+          "differentPixels": 0,
+          "bestX": 1,
+          "bestY": 0,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot270-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1.8369701987210297e-16,
+          -1,
+          0.5,
+          -9.184850993605148e-17,
+          20.50000000000001,
+          127
+        ],
+        "cellWorldBounds": {
+          "x": 20.49999999999999,
+          "y": 20,
+          "width": 23.500000000000025,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 1,
+        "y": 0
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot270-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 270,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": 42,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 42,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot270-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1.8369701987210297e-16,
+          -1,
+          0.5,
+          -9.184850993605148e-17,
+          41.00000000000001,
+          137
+        ],
+        "cellWorldBounds": {
+          "x": 40.999999999999986,
+          "y": 30,
+          "width": 23.500000000000014,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 42,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot270-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "file-y-double-caps-x-double",
+        "orientation": 270,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.24,
+        "capsY": 0.12,
+        "status": "ok",
+        "result": {
+          "width": 47,
+          "height": 107,
+          "placedWidth": 47,
+          "placedHeight": 107,
+          "offsetX": -3,
+          "offsetY": 1,
+          "differentPixels": 0,
+          "bestX": -3,
+          "bestY": 1,
+          "bestDifference": 0
+        },
+        "modelW": 446,
+        "modelH": 392,
+        "prefix": "file-y-double-caps-x-double-rot270-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.24,
+        "yRes": 0.12,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 446,
+        "h": 392
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 2400,
+        "yRes": 1200
+      },
+      "nativeMetrics": {
+        "width": 107,
+        "height": 47
+      },
+      "outlinePath": "M10.8906 38L10.8906 11.4844L0.9844 11.4844L0.9844 7.9375L24.8125 7.9375L24.8125 11.4844L14.875 11.4844L14.875 38ZM29.3281 38L29.3281 7.9375L51.0625 7.9375L51.0625 11.4844L33.2969 11.4844L33.2969 20.6875L49.9375 20.6875L49.9375 24.2188L33.2969 24.2188L33.2969 34.4531L51.7656 34.4531L51.7656 38ZM54.1875 38L65.8125 22.3281L55.5625 7.9375L60.2969 7.9375L65.75 15.6406Q67.4531 18.0469 68.1719 19.3438Q69.1719 17.7031 70.5469 15.9063L76.5938 7.9375L80.9219 7.9375L70.3594 22.1094L81.75 38L76.8281 38L69.2656 27.2813Q68.625 26.3438 67.9531 25.2656Q66.9375 26.9063 66.5156 27.5156L58.9688 38ZM91.8906 38L91.8906 11.4844L81.9844 11.4844L81.9844 7.9375L105.8125 7.9375L105.8125 11.4844L95.875 11.4844L95.875 38Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 107,
+          "height": 47
+        },
+        "absoluteMatrix": [
+          -1.8369701987210297e-16,
+          -1,
+          0.5,
+          -9.184850993605148e-17,
+          18.50000000000001,
+          128
+        ],
+        "cellWorldBounds": {
+          "x": 18.49999999999999,
+          "y": 21,
+          "width": 23.500000000000025,
+          "height": 107
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -3,
+        "y": 1
+      },
+      "workerBitmap": "web-custom-file-y-double-caps-x-double-rot270-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 0,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 110,
+          "height": 50,
+          "placedWidth": 110,
+          "placedHeight": 50,
+          "offsetX": 1,
+          "offsetY": -1,
+          "differentPixels": 0,
+          "bestX": 1,
+          "bestY": -1,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot0-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          0.9600000000000001,
+          0,
+          0,
+          0.96,
+          20.96,
+          19.04
+        ],
+        "cellWorldBounds": {
+          "x": 20.96,
+          "y": 19.04,
+          "width": 105.6,
+          "height": 47.99999999999999
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 1,
+        "y": -1
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot0-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 0,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 110,
+          "height": 50,
+          "placedWidth": 110,
+          "placedHeight": 50,
+          "offsetX": 22,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 22,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot0-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          0.9600000000000001,
+          0,
+          0,
+          0.96,
+          41.12,
+          29.6
+        ],
+        "cellWorldBounds": {
+          "x": 41.12,
+          "y": 29.6,
+          "width": 105.6,
+          "height": 47.99999999999999
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 22,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot0-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 0,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 110,
+          "height": 50,
+          "placedWidth": 110,
+          "placedHeight": 50,
+          "offsetX": -2,
+          "offsetY": 2,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 2,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot0-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 0,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          0.9600000000000001,
+          0,
+          0,
+          0.96,
+          18.080000000000002,
+          21.92
+        ],
+        "cellWorldBounds": {
+          "x": 18.080000000000002,
+          "y": 21.92,
+          "width": 105.60000000000001,
+          "height": 48
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 2
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot0-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 90,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 50,
+          "height": 110,
+          "placedWidth": 50,
+          "placedHeight": 110,
+          "offsetX": 1,
+          "offsetY": -1,
+          "differentPixels": 0,
+          "bestX": 1,
+          "bestY": -1,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot90-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          5.878304635907296e-17,
+          0.9600000000000001,
+          -0.96,
+          5.878304635907295e-17,
+          68.96000000000001,
+          19.04
+        ],
+        "cellWorldBounds": {
+          "x": 20.960000000000008,
+          "y": 19.04,
+          "width": 48,
+          "height": 105.60000000000002
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 1,
+        "y": -1
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot90-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 90,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 50,
+          "height": 110,
+          "placedWidth": 50,
+          "placedHeight": 110,
+          "offsetX": 22,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 22,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot90-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          5.878304635907296e-17,
+          0.9600000000000001,
+          -0.96,
+          5.878304635907295e-17,
+          89.11999999999999,
+          29.6
+        ],
+        "cellWorldBounds": {
+          "x": 41.11999999999999,
+          "y": 29.6,
+          "width": 48,
+          "height": 105.60000000000002
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 22,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot90-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 90,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 50,
+          "height": 110,
+          "placedWidth": 50,
+          "placedHeight": 110,
+          "offsetX": -2,
+          "offsetY": 2,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 2,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot90-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 90,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          5.878304635907296e-17,
+          0.9600000000000001,
+          -0.96,
+          5.878304635907295e-17,
+          66.08,
+          21.92
+        ],
+        "cellWorldBounds": {
+          "x": 18.08,
+          "y": 21.92,
+          "width": 48,
+          "height": 105.60000000000001
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 2
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot90-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 180,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 110,
+          "height": 50,
+          "placedWidth": 110,
+          "placedHeight": 50,
+          "offsetX": 1,
+          "offsetY": -1,
+          "differentPixels": 0,
+          "bestX": 1,
+          "bestY": -1,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot180-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          -0.9600000000000001,
+          1.1756609271814592e-16,
+          -1.175660927181459e-16,
+          -0.96,
+          126.56000000000002,
+          67.03999999999999
+        ],
+        "cellWorldBounds": {
+          "x": 20.960000000000008,
+          "y": 19.039999999999992,
+          "width": 105.60000000000001,
+          "height": 48.000000000000014
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 1,
+        "y": -1
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot180-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 180,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 110,
+          "height": 50,
+          "placedWidth": 110,
+          "placedHeight": 50,
+          "offsetX": 22,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 22,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot180-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          -0.9600000000000001,
+          1.1756609271814592e-16,
+          -1.175660927181459e-16,
+          -0.96,
+          146.72000000000003,
+          77.60000000000001
+        ],
+        "cellWorldBounds": {
+          "x": 41.12000000000002,
+          "y": 29.60000000000001,
+          "width": 105.60000000000001,
+          "height": 48.000000000000014
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 22,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot180-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 180,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 110,
+          "height": 50,
+          "placedWidth": 110,
+          "placedHeight": 50,
+          "offsetX": -2,
+          "offsetY": 2,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 2,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot180-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 180,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          -0.9600000000000001,
+          1.1756609271814592e-16,
+          -1.175660927181459e-16,
+          -0.96,
+          123.68,
+          69.92
+        ],
+        "cellWorldBounds": {
+          "x": 18.08,
+          "y": 21.92,
+          "width": 105.60000000000001,
+          "height": 48.000000000000014
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 2
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot180-x-13-y12-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 270,
+        "x": 4,
+        "y": -4,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 50,
+          "height": 110,
+          "placedWidth": 50,
+          "placedHeight": 110,
+          "offsetX": 1,
+          "offsetY": -1,
+          "differentPixels": 0,
+          "bestX": 1,
+          "bestY": -1,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot270-x4-y-4"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 4,
+        "y": -4,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          -1.7634913907721887e-16,
+          -0.9600000000000001,
+          0.96,
+          -1.7634913907721884e-16,
+          20.96,
+          124.64
+        ],
+        "cellWorldBounds": {
+          "x": 20.959999999999983,
+          "y": 19.039999999999978,
+          "width": 48.00000000000003,
+          "height": 105.60000000000002
+        },
+        "fieldGroup": {
+          "x": 0.48,
+          "y": -0.48,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            20.48,
+            19.52
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 1,
+        "y": -1
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot270-x4-y-4-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 270,
+        "x": 173,
+        "y": 83,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 50,
+          "height": 110,
+          "placedWidth": 50,
+          "placedHeight": 110,
+          "offsetX": 22,
+          "offsetY": 10,
+          "differentPixels": 0,
+          "bestX": 22,
+          "bestY": 10,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot270-x173-y83"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": 173,
+        "y": 83,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          -1.7634913907721887e-16,
+          -0.9600000000000001,
+          0.96,
+          -1.7634913907721884e-16,
+          41.12,
+          135.20000000000002
+        ],
+        "cellWorldBounds": {
+          "x": 41.119999999999976,
+          "y": 29.599999999999994,
+          "width": 48.00000000000003,
+          "height": 105.60000000000002
+        },
+        "fieldGroup": {
+          "x": 20.759999999999998,
+          "y": 9.959999999999999,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            40.76,
+            29.96
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": 22,
+        "y": 10
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot270-x173-y83-worker.png"
+    },
+    {
+      "mode": "web",
+      "scope": "Actual renderer unknown-profile fallback with controlled capability axes; not a registered-printer save",
+      "reference": {
+        "case": "half-ties-caps-eighth",
+        "orientation": 270,
+        "x": -13,
+        "y": 12,
+        "fileX": 0.12,
+        "fileY": 0.24,
+        "capsX": 0.125,
+        "capsY": 0.125,
+        "status": "ok",
+        "result": {
+          "width": 50,
+          "height": 110,
+          "placedWidth": 50,
+          "placedHeight": 110,
+          "offsetX": -2,
+          "offsetY": 2,
+          "differentPixels": 0,
+          "bestX": -2,
+          "bestY": 2,
+          "bestDifference": 0
+        },
+        "modelW": 880,
+        "modelH": 400,
+        "prefix": "half-ties-caps-eighth-rot270-x-13-y12"
+      },
+      "actualLocation": "http://127.0.0.1:5173/",
+      "resolutionSelection": {
+        "xRes": 0.125,
+        "yRes": 0.125,
+        "source": "file-resolution-fallback"
+      },
+      "name": "PositionText",
+      "type": "FixedText",
+      "geom": {
+        "x": -13,
+        "y": 12,
+        "w": 880,
+        "h": 400
+      },
+      "orientation": 270,
+      "text": {
+        "pitch": 10,
+        "xMag": null,
+        "face": "Arial"
+      },
+      "nativeRequest": {
+        "text": "TEXT",
+        "face": "Arial",
+        "pitch": 10,
+        "pitchResolution": 1,
+        "bold": false,
+        "italic": false,
+        "xMag": 100,
+        "yMag": 100,
+        "charSpace": 0,
+        "xRes": 1250,
+        "yRes": 1250
+      },
+      "nativeMetrics": {
+        "width": 110,
+        "height": 50
+      },
+      "outlinePath": "M11.4063 40L11.4063 12.2188L1.0313 12.2188L1.0313 8.5L26 8.5L26 12.2188L15.5781 12.2188L15.5781 40ZM29.4844 40L29.4844 8.5L52.25 8.5L52.25 12.2188L33.6563 12.2188L33.6563 21.8594L51.0781 21.8594L51.0781 25.5625L33.6563 25.5625L33.6563 36.2813L52.9844 36.2813L52.9844 40ZM55.1875 40L67.375 23.5781L56.6406 8.5L61.5938 8.5L67.3125 16.5781Q69.0938 19.0938 69.8438 20.4531Q70.9063 18.7344 72.3438 16.8594L78.6719 8.5L83.2031 8.5L72.1406 23.3438L84.0625 40L78.9063 40L70.9844 28.7656Q70.3125 27.7969 69.6094 26.6563Q68.5625 28.375 68.1094 29.0156L60.2031 40ZM95.4063 40L95.4063 12.2188L85.0313 12.2188L85.0313 8.5L110 8.5L110 12.2188L99.5781 12.2188L99.5781 40Z",
+      "node": {
+        "className": "Path",
+        "native": true,
+        "vector": true,
+        "dataMatchesOutline": true,
+        "selfRect": {
+          "x": 0,
+          "y": 0,
+          "width": 110,
+          "height": 50
+        },
+        "absoluteMatrix": [
+          -1.7634913907721887e-16,
+          -0.9600000000000001,
+          0.96,
+          -1.7634913907721884e-16,
+          18.080000000000002,
+          127.52000000000001
+        ],
+        "cellWorldBounds": {
+          "x": 18.079999999999984,
+          "y": 21.919999999999987,
+          "width": 48.000000000000014,
+          "height": 105.60000000000002
+        },
+        "fieldGroup": {
+          "x": -1.56,
+          "y": 1.44,
+          "absoluteMatrix": [
+            1,
+            0,
+            0,
+            1,
+            18.44,
+            21.44
+          ]
+        },
+        "pixelsPerMm": 12
+      },
+      "nativeDotAnchor": {
+        "x": -2,
+        "y": 2
+      },
+      "workerBitmap": "web-custom-half-ties-caps-eighth-rot270-x-13-y12-worker.png"
+    }
+  ]
+}

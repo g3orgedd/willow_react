@@ -1,0 +1,2 @@
+454241a7 SUB dword ptr [ESP + 0x4],0x8
+454241ac JMP 0x4542418a
