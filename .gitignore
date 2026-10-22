@@ -3,7 +3,7 @@ node_modules/
 
 # Build outputs
 dist/
-desktop-release-local/
+desktop-release*/
 release/
 
 # Environment variables and secrets
